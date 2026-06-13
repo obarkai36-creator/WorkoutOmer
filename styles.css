@@ -1,0 +1,152 @@
+/* =============================================================================
+ * styles.css — dark, horizontal single-page dashboard.
+ * ========================================================================== */
+:root {
+  --bg:        #0e1116;
+  --bg-2:      #161b22;
+  --panel:     #1b212b;
+  --panel-2:   #222a36;
+  --line:      #2c3542;
+  --text:      #e6edf3;
+  --muted:     #8b97a7;
+  --accent:    #4ea1ff;
+  --green:     #3fb950;
+  --yellow:    #d6a426;
+  --orange:    #db7c2a;
+  --red:       #f0556b;
+  --shadow:    0 6px 22px rgba(0,0,0,.35);
+  --radius:    14px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: radial-gradient(1200px 600px at 10% -10%, #18202b 0%, var(--bg) 55%);
+  color: var(--text);
+  font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+
+/* ---- header --------------------------------------------------------------- */
+header.topbar {
+  display: flex; align-items: baseline; gap: 16px;
+  padding: 16px 22px; border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--bg-2), transparent);
+}
+header.topbar h1 { font-size: 18px; margin: 0; letter-spacing: .3px; }
+header.topbar .sub { color: var(--muted); font-size: 12.5px; }
+header.topbar .spacer { flex: 1; }
+header.topbar .pill {
+  font-size: 12px; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px;
+}
+header.topbar .pill b { color: var(--text); }
+
+/* ---- horizontal scroller -------------------------------------------------- */
+.scroller {
+  flex: 1; display: flex; gap: 18px;
+  overflow-x: auto; overflow-y: hidden;
+  padding: 20px 22px 26px;
+  scroll-snap-type: x proximity;
+  scrollbar-color: var(--line) transparent;
+}
+.scroller::-webkit-scrollbar { height: 12px; }
+.scroller::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; border: 3px solid var(--bg); }
+
+.panel {
+  scroll-snap-align: start;
+  flex: 0 0 auto; width: 380px;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.panel.wide { width: 520px; }
+.panel .head {
+  padding: 14px 16px 10px; border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; gap: 8px;
+}
+.panel .head .icon { font-size: 16px; }
+.panel .head h2 { font-size: 14.5px; margin: 0; flex: 1; }
+.panel .head .tag { font-size: 11px; color: var(--muted); }
+.panel .body { padding: 14px 16px; overflow-y: auto; flex: 1; }
+.panel .body::-webkit-scrollbar { width: 8px; }
+.panel .body::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; }
+
+/* ---- generic bits --------------------------------------------------------- */
+.kpi-row { display: flex; gap: 10px; margin-bottom: 14px; }
+.kpi {
+  flex: 1; background: var(--bg-2); border: 1px solid var(--line);
+  border-radius: 10px; padding: 10px 12px;
+}
+.kpi .v { font-size: 20px; font-weight: 700; }
+.kpi .l { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+canvas { max-width: 100%; }
+
+/* fatigue bars */
+.fatigue-section { margin-bottom: 14px; }
+.fatigue-section .sec-head {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12.5px; margin-bottom: 6px;
+}
+.fatigue-section .sec-head .name { font-weight: 600; }
+.bar { height: 16px; background: var(--bg-2); border-radius: 8px; overflow: hidden; position: relative; }
+.bar > span { display: block; height: 100%; border-radius: 8px; transition: width .4s ease; }
+.mrow { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
+.mrow .ml { width: 84px; font-size: 12px; color: var(--muted); flex: 0 0 auto; }
+.mrow .bar { flex: 1; }
+.mrow .mv { width: 58px; text-align: right; font-size: 11.5px; flex: 0 0 auto; }
+
+/* readiness dots */
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+
+/* recommendation card */
+.reco {
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px; margin-bottom: 12px;
+}
+.reco .big { font-size: 22px; font-weight: 700; }
+.reco .rest { font-size: 13px; margin-top: 4px; }
+.reco .when { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.chip {
+  display: inline-block; font-size: 11.5px; padding: 3px 9px; margin: 3px 4px 0 0;
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 999px;
+}
+
+/* alert / change list */
+.alert { display: flex; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.alert:last-child { border-bottom: 0; }
+.alert .sev { width: 4px; border-radius: 4px; flex: 0 0 auto; }
+.alert .t { font-weight: 600; font-size: 13px; }
+.alert .d { color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+.change { display: flex; gap: 9px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 12.5px; }
+.change:last-child { border-bottom: 0; }
+.change .num {
+  flex: 0 0 auto; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--accent); color: #04223f; font-weight: 700; font-size: 11px;
+  display: grid; place-items: center;
+}
+
+/* progress list */
+.prog { padding: 9px 0; border-bottom: 1px solid var(--line); }
+.prog:last-child { border-bottom: 0; }
+.prog .top { display: flex; align-items: baseline; gap: 8px; }
+.prog .top .name { font-weight: 600; font-size: 13px; flex: 1; }
+.prog .top .pr { color: var(--green); font-size: 11px; font-weight: 700; }
+.prog .meta { color: var(--muted); font-size: 11.5px; margin-top: 2px; }
+.delta-up { color: var(--green); }
+.delta-down { color: var(--red); }
+.delta-flat { color: var(--yellow); }
+
+/* timing */
+.dow { display: flex; gap: 4px; align-items: flex-end; height: 60px; margin-top: 6px; }
+.dow .col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; justify-content: flex-end; }
+.dow .col .b { width: 100%; background: var(--accent); border-radius: 4px 4px 0 0; min-height: 2px; }
+.dow .col .lbl { font-size: 10px; color: var(--muted); }
+
+footer.note { padding: 8px 22px 14px; color: var(--muted); font-size: 11.5px; }

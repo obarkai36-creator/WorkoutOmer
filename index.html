@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkoutOmer · Training Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Chart.js (charts). If offline, bars/lists still render; only canvases blank. -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>🏋️ <span id="athlete">Athlete</span>'s Training Dashboard</h1>
+    <span class="sub" id="latest-date"></span>
+    <span class="spacer"></span>
+    <span class="pill" id="session-count"></span>
+  </header>
+
+  <main class="scroller">
+    <!-- 1 -->
+    <section class="panel">
+      <div class="head"><span class="icon">🔥</span><h2>Muscle Fatigue</h2><span class="tag">by body section</span></div>
+      <div class="body" id="fatigue-body"></div>
+    </section>
+
+    <!-- 2 -->
+    <section class="panel wide">
+      <div class="head"><span class="icon">📈</span><h2>Workload Progress</h2><span class="tag">latest workout vs best</span></div>
+      <div class="body" id="progress-body"></div>
+    </section>
+
+    <!-- 3 -->
+    <section class="panel">
+      <div class="head"><span class="icon">🎯</span><h2>Next Session</h2><span class="tag">recovery & rest</span></div>
+      <div class="body" id="reco-body"></div>
+    </section>
+
+    <!-- 4 -->
+    <section class="panel">
+      <div class="head"><span class="icon">⚠️</span><h2>Injury Alerts</h2><span class="tag">load & balance</span></div>
+      <div class="body" id="alerts-body"></div>
+    </section>
+
+    <!-- 5 -->
+    <section class="panel">
+      <div class="head"><span class="icon">🛠️</span><h2>Suggested Changes</h2><span class="tag">programming</span></div>
+      <div class="body" id="changes-body"></div>
+    </section>
+
+    <!-- 6 -->
+    <section class="panel">
+      <div class="head"><span class="icon">🕒</span><h2>Workout Timing</h2><span class="tag">cadence & load</span></div>
+      <div class="body" id="timing-body"></div>
+    </section>
+  </main>
+
+  <footer class="note">
+    Scroll horizontally → to see all panels. Edit <code>data.js</code> to log workouts.
+    Fatigue/recovery are model estimates, not medical advice.
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
