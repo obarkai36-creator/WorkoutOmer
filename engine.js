@@ -386,6 +386,64 @@ function timingStats(workouts, now) {
   return { avgGap, longestGap, perWeek, avgHour, todPref, dow, daysSinceLast: round((now - times[times.length - 1]) / DAY, 1), total: workouts.length };
 }
 
+/* ---- relative strength (lift ÷ bodyweight) -------------------------------- */
+function relativeStrength(data) {
+  const bw = data.ATHLETE.bodyweightKg || 75;
+  const KEY = ["Bench Press", "Incline Bench Press", "Decline Bench Press", "Converging Shoulder Press",
+    "Diverging Seated Row", "Low Row", "Leg Press", "Seated Dips"];
+  const items = [];
+  for (const name of KEY) {
+    const ex = data.SNAPSHOT.find((e) => e.name === name);
+    if (!ex) continue;
+    const B = recStats(ex.best, ex.iso);
+    const orm = B.top1RM || B.topWeight;
+    if (!orm) continue;
+    items.push({ name, oneRM: round(orm, 1), ratio: round(orm / bw, 2) });
+  }
+  items.sort((a, b) => b.ratio - a.ratio);
+  return { bodyweightKg: bw, items };
+}
+
+/* ---- aerobic / cardio summary --------------------------------------------- */
+function aerobicSummary(workouts, athlete, now) {
+  const sessions = [];
+  for (const w of workouts)
+    for (const ex of w.exercises) {
+      if (ex.kind !== "aerobic") continue;
+      const dist = ex.distanceKm || 0, dur = ex.durationMin || 0;
+      sessions.push({ t: w.t, name: ex.name, distanceKm: dist, durationMin: dur, avgHr: ex.avgHr || null, pace: dist > 0 ? dur / dist : null });
+    }
+  sessions.sort((a, b) => b.t - a.t);
+  if (!sessions.length) return { any: false };
+
+  const withDist = sessions.filter((s) => s.distanceKm > 0);
+  const withPace = sessions.filter((s) => s.pace != null);
+  const withHr = sessions.filter((s) => s.avgHr != null);
+  const maxHr = 220 - (athlete.age || 30);
+  const zones = { Z1: 0, Z2: 0, Z3: 0, Z4: 0, Z5: 0 };
+  for (const s of withHr) { const f = s.avgHr / maxHr; zones[f < 0.6 ? "Z1" : f < 0.7 ? "Z2" : f < 0.8 ? "Z3" : f < 0.9 ? "Z4" : "Z5"]++; }
+
+  let paceTrend = null;
+  if (withPace.length >= 2) {
+    const recent = withPace.slice(0, Math.min(3, withPace.length));
+    const prior = withPace.slice(recent.length, recent.length + 3);
+    if (prior.length) paceTrend = round(sum(recent.map((s) => s.pace)) / recent.length - sum(prior.map((s) => s.pace)) / prior.length, 2);
+  }
+  return {
+    any: true, count: sessions.length,
+    km7: round(sum(sessions.filter((s) => now - s.t <= 7 * DAY).map((s) => s.distanceKm)), 1),
+    km28: round(sum(sessions.filter((s) => now - s.t <= 28 * DAY).map((s) => s.distanceKm)), 1),
+    totalKm: round(sum(sessions.map((s) => s.distanceKm)), 1),
+    longest: withDist.length ? round(Math.max(...withDist.map((s) => s.distanceKm)), 2) : 0,
+    avgHr: withHr.length ? round(sum(withHr.map((s) => s.avgHr)) / withHr.length) : null,
+    bestPace: withPace.length ? Math.min(...withPace.map((s) => s.pace)) : null,
+    avgPace: withPace.length ? sum(withPace.map((s) => s.pace)) / withPace.length : null,
+    paceTrend, zones, maxHr,
+    daysSinceLast: round((now - sessions[0].t) / DAY, 1),
+    recent: sessions.slice(0, 5),
+  };
+}
+
 /* ---- top-level assembly --------------------------------------------------- */
 function analyze(data, now = Date.now()) {
   const workouts = normalize(data);
@@ -399,7 +457,9 @@ function analyze(data, now = Date.now()) {
   const alerts = injuryAlerts(data, fatigue, trends, bal, recommendation, now);
   const changes = suggestedChanges(data, progress, bal, recommendation);
   const timing = timingStats(workouts, now);
-  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing };
+  const relstrength = relativeStrength(data);
+  const aerobic = aerobicSummary(workouts, data.ATHLETE, now);
+  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing, relstrength, aerobic };
 }
 
 if (typeof window !== "undefined") window.GYM_ENGINE = { analyze, READY_THRESHOLD };

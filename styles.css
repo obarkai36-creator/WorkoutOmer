@@ -163,7 +163,7 @@ body.pdf header.topbar { padding: 10px 16px; }
 body.pdf header.topbar h1 { font-size: 16px; }
 
 body.pdf .scroller {
-  display: grid; grid-template-columns: repeat(10, 1fr); gap: 10px;
+  display: grid; grid-template-columns: repeat(12, 1fr); gap: 10px;
   align-items: start; overflow: visible; height: auto; padding: 12px 16px;
   scroll-snap-type: none;
 }
@@ -173,13 +173,15 @@ body.pdf .panel, body.pdf .panel.wide {
 }
 /* Layout: row1 = three panels (span 2 each); row2 = two panels (span 3 each);
    row3 = Workload Progress full width. */
-/* Row 1: five info panels side by side (span 2 of 10 each). Row 2: progress full width. */
-body.pdf #panel-fatigue { order: 1; grid-column: span 2; }
-body.pdf #panel-reco    { order: 2; grid-column: span 2; }
-body.pdf #panel-alerts  { order: 3; grid-column: span 2; }
-body.pdf #panel-changes { order: 4; grid-column: span 2; }
-body.pdf #panel-timing  { order: 5; grid-column: span 2; }
-body.pdf #panel-progress{ order: 6; grid-column: 1 / -1; }
+/* Row 1: four panels (span 3 of 12). Row 2: three panels (span 4). Row 3: progress full width. */
+body.pdf #panel-fatigue { order: 1; grid-column: span 3; }
+body.pdf #panel-cardio  { order: 2; grid-column: span 3; }
+body.pdf #panel-reco    { order: 3; grid-column: span 3; }
+body.pdf #panel-alerts  { order: 4; grid-column: span 3; }
+body.pdf #panel-relstr  { order: 5; grid-column: span 4; }
+body.pdf #panel-changes { order: 6; grid-column: span 4; }
+body.pdf #panel-timing  { order: 7; grid-column: span 4; }
+body.pdf #panel-progress{ order: 8; grid-column: 1 / -1; }
 
 body.pdf .panel .body { overflow: visible; max-height: none; height: auto; padding: 10px 12px; }
 body.pdf .panel .head { padding: 8px 12px 6px; }

@@ -208,6 +208,56 @@
     }
   }
 
+  /* ---- 7. Aerobic / cardio ------------------------------------------------ */
+  function fmtPace(min) {
+    if (min == null) return "—";
+    const m = Math.floor(min), s = Math.round((min - m) * 60);
+    return `${m}:${String(s).padStart(2, "0")}/km`;
+  }
+  function renderCardio(a) {
+    const el = $("cardio-body"); const c = a.aerobic;
+    if (!c.any) { el.innerHTML = `<p class="muted">No cardio logged yet.</p>`; return; }
+    const zoneColors = { Z1: "#3fb950", Z2: "#4ea1ff", Z3: "#d6a426", Z4: "#db7c2a", Z5: "#f0556b" };
+    const zTotal = Object.values(c.zones).reduce((x, y) => x + y, 0) || 1;
+    let trend = "";
+    if (c.paceTrend != null) {
+      const secs = Math.round(Math.abs(c.paceTrend) * 60);
+      trend = c.paceTrend < -0.01 ? `<span class="delta-up">▲ ${secs}s/km faster</span>`
+        : c.paceTrend > 0.01 ? `<span class="delta-down">▼ ${secs}s/km slower</span>` : `<span class="delta-flat">▬ steady</span>`;
+    }
+    el.innerHTML = `
+      <div class="kpi-row">
+        <div class="kpi"><div class="v">${c.km28}<span style="font-size:12px"> km</span></div><div class="l">last 28 days</div></div>
+        <div class="kpi"><div class="v">${c.count}</div><div class="l">sessions</div></div>
+      </div>
+      <div class="kpi-row">
+        <div class="kpi"><div class="v">${fmtPace(c.avgPace)}</div><div class="l">avg pace</div></div>
+        <div class="kpi"><div class="v">${c.avgHr ?? "—"}<span style="font-size:12px"> bpm</span></div><div class="l">avg HR</div></div>
+      </div>
+      <div class="small" style="margin:2px 0 8px">Best ${fmtPace(c.bestPace)} &middot; longest ${c.longest} km &middot; ${c.daysSinceLast}d ago ${trend}</div>
+      <div class="small muted" style="margin-bottom:4px">HR zones (est, max ~${c.maxHr} bpm)</div>
+      <div class="loadbars" style="height:42px">
+        ${["Z1","Z2","Z3","Z4","Z5"].map((z) => `<div class="col"><div class="b" style="height:${(c.zones[z] / zTotal) * 34}px;background:${zoneColors[z]}"></div><div class="lbl">${z}</div></div>`).join("")}
+      </div>
+      <div class="small muted" style="margin:10px 0 4px">Recent</div>
+      ${c.recent.map((s) => `<div class="prog" style="padding:4px 0"><div class="top"><span class="name">${s.name}</span><span class="small muted">${new Date(s.t).toLocaleDateString(undefined, { month: "short", day: "numeric" })}</span></div><div class="meta">${s.distanceKm ? s.distanceKm + " km &middot; " : ""}${Math.round(s.durationMin)} min${s.pace != null ? " &middot; " + fmtPace(s.pace) : ""}${s.avgHr ? " &middot; " + s.avgHr + " bpm" : ""}</div></div>`).join("")}`;
+  }
+
+  /* ---- 8. Relative strength ----------------------------------------------- */
+  function renderRelStr(a) {
+    const el = $("relstr-body"); const r = a.relstrength;
+    if (!r.items.length) { el.innerHTML = `<p class="muted">No key compound lifts tracked.</p>`; return; }
+    const maxRatio = Math.max(...r.items.map((i) => i.ratio), 2.5);
+    el.innerHTML = `<div class="small muted" style="margin-bottom:8px">Estimated 1RM ÷ bodyweight (${r.bodyweightKg} kg)</div>` +
+      r.items.map((it) => `
+        <div class="mrow">
+          <span class="ml" style="width:130px">${it.name}</span>
+          <span class="bar"><span style="width:${Math.min((it.ratio / maxRatio) * 100, 100)}%;background:var(--accent)"></span></span>
+          <span class="mv"><b style="color:var(--text)">${it.ratio}×</b></span>
+        </div>
+        <div class="meta" style="margin:-1px 0 6px 138px;color:var(--muted);font-size:11px">est 1RM ${it.oneRM} kg</div>`).join("");
+  }
+
   /* ---- boot --------------------------------------------------------------- */
   function boot() {
     if (!window.GYM_DATA || !window.GYM_ENGINE) {
@@ -236,6 +286,8 @@
     renderAlerts(a);
     renderChanges(a);
     renderTiming(a);
+    renderCardio(a);
+    renderRelStr(a);
 
     // Signal to the PDF renderer that the page is fully drawn.
     window.__READY = true;
