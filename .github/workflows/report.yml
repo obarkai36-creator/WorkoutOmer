@@ -1,0 +1,42 @@
+name: Training report
+
+# Runs after each "log": whenever data.js changes on these branches.
+on:
+  push:
+    branches: [main, "claude/epic-bardeen-4l8r4c"]
+    paths: ["data.js"]
+  workflow_dispatch: {}
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Render dashboard to PDF
+        run: npm run render
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: training-report
+          path: report.pdf
+          if-no-files-found: error
+
+      - name: Email the report
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          REPORT_TO: ${{ secrets.REPORT_TO }}
+        run: npm run send

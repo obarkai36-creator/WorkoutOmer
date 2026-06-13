@@ -1,0 +1,16 @@
+{
+  "name": "workoutomer-report",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Renders the WorkoutOmer dashboard to a PDF and emails it after each log.",
+  "scripts": {
+    "render": "node report/render.mjs",
+    "send": "node report/send.mjs",
+    "report": "node report/render.mjs && node report/send.mjs"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16",
+    "playwright": "^1.49.1"
+  }
+}

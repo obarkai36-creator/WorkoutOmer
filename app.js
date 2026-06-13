@@ -209,6 +209,13 @@
     const params = new URLSearchParams(location.search);
     const now = params.get("now") ? new Date(params.get("now")).getTime() : Date.now();
 
+    // PDF/print mode (?pdf=1): reflow panels into a printable grid, no animation.
+    const pdfMode = params.get("pdf") === "1";
+    if (pdfMode) {
+      document.body.classList.add("pdf");
+      if (window.Chart) window.Chart.defaults.animation = false;
+    }
+
     const a = window.GYM_ENGINE.analyze(window.GYM_DATA, now);
     window.__ANALYSIS = a; // handy for debugging in the console
 
@@ -219,6 +226,9 @@
     renderAlerts(a);
     renderChanges(a);
     renderTiming(a);
+
+    // Signal to the PDF renderer that the page is fully drawn.
+    window.__READY = true;
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);

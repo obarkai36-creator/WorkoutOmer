@@ -150,3 +150,21 @@ canvas { max-width: 100%; }
 .dow .col .lbl { font-size: 10px; color: var(--muted); }
 
 footer.note { padding: 8px 22px 14px; color: var(--muted); font-size: 11.5px; }
+
+/* ---- PDF / print mode (?pdf=1) -------------------------------------------
+ * Reflow the horizontal scroller into a printable grid that paginates cleanly. */
+@page { size: A4 landscape; margin: 9mm; }
+body.pdf { height: auto; display: block; background: var(--bg); }
+body.pdf .scroller {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+  overflow: visible; height: auto; padding: 14px 16px;
+  scroll-snap-type: none;
+}
+body.pdf .panel,
+body.pdf .panel.wide { width: auto !important; flex: none; break-inside: avoid; }
+body.pdf .panel.wide { grid-column: 1 / -1; }     /* Workload Progress spans full width */
+body.pdf .panel .body { overflow: visible; max-height: none; height: auto; }
+body.pdf .scroller::-webkit-scrollbar,
+body.pdf .panel .body::-webkit-scrollbar { display: none; }
+body.pdf footer.note { break-inside: avoid; }
+body.pdf .prog, body.pdf .fatigue-section, body.pdf .alert, body.pdf .change { break-inside: avoid; }

@@ -74,6 +74,42 @@ it happens; also bump the matching `SNAPSHOT` entry when you hit a new best.
 
 These are training-model estimates to guide planning — **not medical advice.**
 
+## 📧 Auto-emailed PDF report (after each log)
+
+Every time `data.js` changes and is pushed, a GitHub Action renders the
+dashboard to a **landscape PDF** and emails it to you.
+
+- **Renderer:** `report/render.mjs` (headless Chromium via Playwright) → `report.pdf`,
+  laid out for print via the `?pdf=1` mode. "Now" is anchored to your most
+  recent logged session so the report reads correctly in CI.
+- **Email:** `report/send.mjs` (Gmail SMTP via nodemailer).
+- **Workflow:** `.github/workflows/report.yml` — runs on push to `data.js`
+  (and on manual *Run workflow*). The PDF is also uploaded as a build artifact.
+
+### One-time setup — add the email secret
+
+The Action can render the PDF without any setup, but to actually **send** the
+email it needs a Gmail **App Password** (a 16-char token, not your normal
+password):
+
+1. Enable 2-Step Verification on your Google account, then create an App
+   Password: <https://myaccount.google.com/apppasswords> (pick "Mail").
+2. In the GitHub repo: **Settings → Secrets and variables → Actions → New
+   repository secret**, and add:
+   - `SMTP_USER` = your Gmail address (e.g. `obarkai36@gmail.com`)
+   - `SMTP_PASS` = the 16-char App Password
+   - `REPORT_TO` *(optional)* = recipient; defaults to `SMTP_USER`
+3. Done. The next push that touches `data.js` emails you the PDF. Until the
+   secret exists, the run still succeeds and the PDF is downloadable from the
+   Action's artifacts.
+
+Run it locally too:
+```bash
+npm install && npx playwright install chromium
+SMTP_USER=you@gmail.com SMTP_PASS=app-password npm run report   # render + email
+npm run render                                                  # just make report.pdf
+```
+
 ## Files
 
 ```
@@ -81,8 +117,10 @@ index.html   markup + panel layout
 styles.css   dark theme, horizontal scroller
 data.js      YOUR workouts + exercise/muscle definitions  ← edit this
 engine.js    all calculations (pure functions)
-app.js       rendering + charts
+app.js       rendering + charts (+ ?pdf=1 print mode)
 vendor/      Chart.js bundled locally (no network needed)
+report/      render.mjs (HTML→PDF) + send.mjs (email)
+.github/     workflow that renders + emails on each push
 ```
 
 Everything runs **100% offline** — Chart.js is vendored in `vendor/`, so the
