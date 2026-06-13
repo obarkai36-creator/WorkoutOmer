@@ -38,7 +38,10 @@ jobs:
 
       - name: Email the report
         env:
-          # Accept the most common names so whichever you created is picked up.
+          # Preferred: Resend API key (any of these secret names).
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY || secrets.RESEND || secrets.RESEND_KEY }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+          # Fallback: Gmail SMTP (accepts several common secret names).
           SMTP_USER: ${{ secrets.SMTP_USER || vars.SMTP_USER }}
           SMTP_PASS: ${{ secrets.GMAIL || secrets.SMTP_PASS || secrets.SMTP_PASSWORD || secrets.GMAIL_APP_PASSWORD || secrets.GMAIL_PASSWORD || secrets.EMAIL_PASSWORD || secrets.APP_PASSWORD }}
           REPORT_TO: ${{ secrets.REPORT_TO || vars.REPORT_TO }}
