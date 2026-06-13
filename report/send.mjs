@@ -22,16 +22,19 @@ import vm from "node:vm";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const PDF = process.env.REPORT_PDF || resolve(ROOT, "report.pdf");
 
-const { SMTP_USER, SMTP_PASS } = process.env;
+const SMTP_PASS = process.env.SMTP_PASS;
+// Sender defaults to your Gmail if only the password secret was provided.
+const SMTP_USER = process.env.SMTP_USER || process.env.REPORT_TO || "obarkai36@gmail.com";
 const SMTP_HOST = process.env.SMTP_HOST || "smtp.gmail.com";
 const SMTP_PORT = Number(process.env.SMTP_PORT || 465);
 const REPORT_TO = process.env.REPORT_TO || SMTP_USER;
 
-if (!SMTP_USER || !SMTP_PASS) {
-  console.log("⚠ SMTP_USER / SMTP_PASS not set — skipping email send.");
-  console.log("  Add them as repo secrets to enable automatic delivery.");
+if (!SMTP_PASS) {
+  console.log("⚠ SMTP_PASS not set — skipping email send.");
+  console.log("  Add a repo *Actions* secret named SMTP_PASS (Gmail App Password) to enable delivery.");
   process.exit(0);
 }
+console.log(`Sending as ${SMTP_USER} → ${REPORT_TO} via ${SMTP_HOST}:${SMTP_PORT}`);
 if (!existsSync(PDF)) { console.error(`No PDF at ${PDF}; run the renderer first.`); process.exit(1); }
 
 /* Pull the latest session for a useful subject line. */
