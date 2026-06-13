@@ -1,128 +1,125 @@
 /* =============================================================================
  * engine.js — the "personal trainer" brain.
  * -----------------------------------------------------------------------------
- * Pure functions that turn the raw WORKOUTS data into:
- *   - per-muscle fatigue (%)            -> Muscle Fatigue panel
- *   - workload progress per exercise    -> Workload Progress panel
- *   - next recommended session + rest   -> Next Session panel
- *   - injury / overtraining alerts      -> Alerts panel
- *   - suggested programming changes     -> Changes panel
- *   - workout timing stats              -> Timing panel
- *
- * No external dependencies. Reads window.GYM_DATA (from data.js).
+ * Pure functions. Reads window.GYM_DATA (from data.js) and produces everything
+ * the dashboard renders. Two data sources:
+ *   - SNAPSHOT : latest-vs-best per exercise  -> Workload Progress, balance
+ *   - WORKOUTS : dated sessions               -> fatigue, recovery, timing, ACWR
  * ========================================================================== */
 
 const HOUR = 3600 * 1000;
 const DAY = 24 * HOUR;
 
-/* Fatigue is "ready to train again" when it drops below this %. */
-const READY_THRESHOLD = 30;
-/* Training a muscle while still above this % counts as too-soon / under-recovered. */
-const UNDERRECOVERED_THRESHOLD = 60;
+const READY_THRESHOLD = 30;             // % below which a muscle is "ready"
+const UNDERRECOVERED_THRESHOLD = 60;    // training above this % = too soon
+const MIN_SESSIONS_FOR_ACWR = 6;        // need this many in 28d for a reliable ratio
 
-/* ---- small helpers -------------------------------------------------------- */
 const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 const round = (v, d = 0) => { const p = 10 ** d; return Math.round(v * p) / p; };
 const sum = (arr) => arr.reduce((a, b) => a + b, 0);
 
-/* Estimate RPE (1-10) from average heart rate as a fraction of max HR. */
 function rpeFromHr(avgHr, age = 30) {
   const maxHr = 220 - age;
   const frac = clamp(avgHr / maxHr, 0.4, 1);
   return clamp(round((frac - 0.4) / 0.6 * 10, 1), 1, 10);
 }
-
-/* Epley estimated 1-rep-max from a working set. */
 function est1RM(weight, reps) {
-  if (weight <= 0) return 0;
+  if (weight <= 0 || reps <= 0) return 0;
   return weight * (1 + reps / 30);
 }
 
-/* ---- normalization -------------------------------------------------------- */
-/* Compute the training load each exercise produced, and split it onto muscles. */
-function computeExerciseLoad(ex, lib, athlete) {
-  const def = lib[ex.name];
-  if (!def) {
-    console.warn(`Unknown exercise "${ex.name}" — add it to EXERCISE_LIBRARY.`);
-    return { load: 0, top1RM: 0, topWeight: 0, muscles: {} };
+/* Volume / 1RM for a SNAPSHOT record: {sets,reps,weight} | {scheme:[...]} | iso */
+function recStats(rec, iso) {
+  if (!rec) return { volume: 0, top1RM: 0, topWeight: 0 };
+  const parts = rec.scheme ? rec.scheme : [rec];
+  let volume = 0, top1RM = 0, topWeight = 0;
+  for (const p of parts) {
+    const setsN = p.sets || 1;
+    const w = p.weight || 0;
+    if (iso || p.seconds) {
+      volume += setsN * (p.seconds || 0) * w;   // load·seconds
+    } else {
+      volume += setsN * (p.reps || 0) * w;      // volume load
+      const orm = est1RM(w, p.reps || 0);
+      if (orm > top1RM) top1RM = orm;
+    }
+    if (w > topWeight) topWeight = w;
   }
+  return { volume, top1RM, topWeight };
+}
 
-  let load = 0;
-  let top1RM = 0;
-  let topWeight = 0;
+/* ---- normalize dated WORKOUTS --------------------------------------------- */
+function computeSessionExercise(ex, lib, athlete) {
+  const def = lib[ex.name];
+  if (!def) { console.warn(`Unknown exercise "${ex.name}"`); return { load: 0, top1RM: 0, muscles: {}, kind: "strength" }; }
 
+  let load = 0, top1RM = 0, topWeight = 0;
   if (def.kind === "aerobic") {
     const rpe = ex.rpe != null ? ex.rpe : (ex.avgHr ? rpeFromHr(ex.avgHr) : 6);
-    // Aerobic load = minutes weighted by effort. Scaled so a solid 40-min
-    // tempo run lands in the same ballpark as a hard lifting session's
-    // contribution to its primary muscle (see normalization note below).
     load = (ex.durationMin || 0) * rpe * 1.5;
   } else {
     const base = def.bodyweight ? (athlete.bodyweightKg || 75) : 0;
     for (const s of ex.sets || []) {
-      const w = (s.weight != null ? s.weight : 0) + (def.bodyweight ? base : 0) + (s.added || 0);
-      const reps = s.reps || 0;
-      load += w * reps; // volume load (kg·reps)
-      const orm = est1RM(w, reps);
-      if (orm > top1RM) top1RM = orm;
+      const w = (s.weight != null ? s.weight : 0) + base + (s.added || 0);
+      if (def.iso || s.seconds) { load += w * (s.seconds || 0); }
+      else {
+        load += w * (s.reps || 0);
+        const orm = est1RM(w, s.reps || 0);
+        if (orm > top1RM) top1RM = orm;
+      }
       if (w > topWeight) topWeight = w;
     }
   }
-
   const muscles = {};
-  for (const [m, share] of Object.entries(def.muscles)) {
-    muscles[m] = load * share;
-  }
+  for (const [m, share] of Object.entries(def.muscles)) muscles[m] = load * share;
   return { load, top1RM, topWeight, muscles, kind: def.kind };
 }
 
-/* Turn raw workouts into a normalized, time-sorted (newest first) structure. */
 function normalize(data) {
   const { ATHLETE, EXERCISE_LIBRARY } = data;
   const workouts = data.WORKOUTS.map((w) => {
     const t = new Date(w.datetime).getTime();
-    const exercises = (w.exercises || []).map((ex) => {
-      const c = computeExerciseLoad(ex, EXERCISE_LIBRARY, ATHLETE);
-      return { ...ex, ...c };
-    });
-    // Sum muscle loads for the whole session.
+    const exercises = (w.exercises || []).map((ex) => ({ ...ex, ...computeSessionExercise(ex, EXERCISE_LIBRARY, ATHLETE) }));
     const muscleLoad = {};
-    for (const ex of exercises) {
-      for (const [m, v] of Object.entries(ex.muscles)) {
-        muscleLoad[m] = (muscleLoad[m] || 0) + v;
-      }
-    }
-    const isAerobic = exercises.some((e) => e.kind === "aerobic");
-    return { ...w, t, exercises, muscleLoad, isAerobic };
+    for (const ex of exercises)
+      for (const [m, v] of Object.entries(ex.muscles)) muscleLoad[m] = (muscleLoad[m] || 0) + v;
+    return { ...w, t, exercises, muscleLoad, isAerobic: exercises.some((e) => e.kind === "aerobic") };
   });
-  workouts.sort((a, b) => b.t - a.t); // newest first
+  workouts.sort((a, b) => b.t - a.t);
   return workouts;
 }
 
-/* Per-muscle reference load = the muscle's heaviest single session in history.
- * Used to express both fatigue and per-session stress on a comparable 0-100 scale. */
-function referenceLoads(workouts, muscles) {
-  const ref = {};
-  for (const m of Object.keys(muscles)) ref[m] = 0;
-  for (const w of workouts) {
-    for (const [m, v] of Object.entries(w.muscleLoad)) {
-      if (v > (ref[m] || 0)) ref[m] = v;
-    }
+/* Estimate a representative "hard session" load per muscle from the snapshot:
+ * the sum of the muscle's three biggest movements. Used so that incidental
+ * (secondary) work reads as proportionally less fatiguing than a focused day. */
+function snapshotReference(data) {
+  const perMuscle = {};
+  for (const ex of data.SNAPSHOT) {
+    const lib = data.EXERCISE_LIBRARY[ex.name];
+    if (!lib) continue;
+    const { volume } = recStats(ex.latest, ex.iso);
+    for (const [m, share] of Object.entries(lib.muscles)) (perMuscle[m] = perMuscle[m] || []).push(volume * share);
   }
-  // Avoid divide-by-zero for muscles never trained.
-  for (const m of Object.keys(ref)) if (!ref[m]) ref[m] = 1;
+  const ref = {};
+  for (const [m, arr] of Object.entries(perMuscle)) { arr.sort((a, b) => b - a); ref[m] = sum(arr.slice(0, 3)); }
   return ref;
 }
 
-/* ---- fatigue -------------------------------------------------------------- */
-/* Exponential recovery. `recoveryHours` is defined as the time for a maximal
- * session to decay down to READY_THRESHOLD (i.e. "ready to train hard again"),
- * so tau = recoveryHours / ln(100 / READY_THRESHOLD). */
+/* Per-muscle reference = max(heaviest logged session, representative snapshot session). */
+function referenceLoads(workouts, muscles, snapRef) {
+  const ref = {};
+  for (const m of Object.keys(muscles)) ref[m] = 0;
+  for (const w of workouts)
+    for (const [m, v] of Object.entries(w.muscleLoad)) if (v > (ref[m] || 0)) ref[m] = v;
+  for (const m of Object.keys(ref)) ref[m] = Math.max(ref[m], snapRef[m] || 0, 1);
+  return ref;
+}
+
+/* ---- fatigue (exponential recovery; recoveryHours = time to reach ready) -- */
 const TAU_FACTOR = Math.log(100 / READY_THRESHOLD);
 function muscleFatigue(workouts, muscles, ref, now) {
   const decayed = {};
   for (const m of Object.keys(muscles)) decayed[m] = 0;
-
   for (const w of workouts) {
     const hours = (now - w.t) / HOUR;
     if (hours < 0) continue;
@@ -131,32 +128,21 @@ function muscleFatigue(workouts, muscles, ref, now) {
       decayed[m] += load * Math.exp(-hours / tau);
     }
   }
-
   const result = {};
   for (const m of Object.keys(muscles)) {
     const pct = clamp((decayed[m] / ref[m]) * 100, 0, 100);
-    // Hours until this muscle decays below READY_THRESHOLD of its reference.
     const tau = muscles[m].recoveryHours / TAU_FACTOR;
     const target = ref[m] * (READY_THRESHOLD / 100);
     let readyInH = 0;
     if (decayed[m] > target) readyInH = tau * Math.log(decayed[m] / target);
-    result[m] = {
-      label: muscles[m].label,
-      section: muscles[m].section,
-      pct: round(pct),
-      readyInHours: round(readyInH, 1),
-      ready: pct < READY_THRESHOLD,
-    };
+    result[m] = { key: m, label: muscles[m].label, section: muscles[m].section, pct: round(pct), readyInHours: round(readyInH, 1), ready: pct < READY_THRESHOLD };
   }
   return result;
 }
 
-/* Aggregate muscle fatigue up to body sections. */
-function sectionFatigue(fatigue) {
+function sectionFatigue(fatigue, order) {
   const groups = {};
-  for (const f of Object.values(fatigue)) {
-    (groups[f.section] = groups[f.section] || []).push(f);
-  }
+  for (const f of Object.values(fatigue)) (groups[f.section] = groups[f.section] || []).push(f);
   const out = {};
   for (const [section, items] of Object.entries(groups)) {
     out[section] = {
@@ -166,267 +152,216 @@ function sectionFatigue(fatigue) {
       muscles: items.sort((a, b) => b.pct - a.pct),
     };
   }
-  return out;
+  // Return in display order.
+  const ordered = {};
+  for (const s of order) if (out[s]) ordered[s] = out[s];
+  for (const s of Object.keys(out)) if (!ordered[s]) ordered[s] = out[s];
+  return ordered;
 }
 
-/* ---- workload progress (latest workout) ----------------------------------- */
-function workloadProgress(workouts) {
-  if (!workouts.length) return { latest: null, items: [] };
-  const latest = workouts[0];
-  const history = workouts.slice(1);
-
-  const items = latest.exercises.map((ex) => {
-    // Best volume / best estimated 1RM for this exercise across all prior history.
-    let bestVol = ex.load, bestORM = ex.top1RM, prevVol = null, prevORM = null;
-    for (const w of history) {
-      const match = w.exercises.find((e) => e.name === ex.name);
-      if (!match) continue;
-      if (prevVol == null) { prevVol = match.load; prevORM = match.top1RM; }
-      if (match.load > bestVol) bestVol = match.load;
-      if (match.top1RM > bestORM) bestORM = match.top1RM;
-    }
-    const volVsBest = bestVol > 0 ? round((ex.load / bestVol) * 100) : 100;
-    const volVsPrev = prevVol ? round(((ex.load - prevVol) / prevVol) * 100, 1) : null;
-    const ormVsPrev = prevORM ? round(((ex.top1RM - prevORM) / prevORM) * 100, 1) : null;
-    return {
-      name: ex.name,
-      kind: ex.kind,
-      volume: round(ex.load),
-      bestVolume: round(bestVol),
-      volVsBest,
-      volVsPrev,
-      est1RM: round(ex.top1RM, 1),
-      ormVsPrev,
-      isPR: ex.load >= bestVol && history.some((w) => w.exercises.some((e) => e.name === ex.name)),
-      topWeight: ex.topWeight,
+/* ---- workload progress from SNAPSHOT (grouped by section) ----------------- */
+function snapshotProgress(data, workouts) {
+  const todayNames = new Set((workouts[0]?.exercises || []).map((e) => e.name));
+  const groups = {};
+  for (const ex of data.SNAPSHOT) {
+    const L = recStats(ex.latest, ex.iso);
+    const B = recStats(ex.best, ex.iso);
+    const pct = B.volume > 0 ? round((L.volume / B.volume) * 100) : 100;
+    const item = {
+      name: ex.name, section: ex.section, iso: !!ex.iso,
+      latestText: ex.latest?.text || "", bestText: ex.best?.text || "",
+      latestVol: round(L.volume), bestVol: round(B.volume), pct,
+      latest1RM: round(L.top1RM, 1), best1RM: round(B.top1RM, 1),
+      isPR: L.volume >= B.volume, belowPR: pct < 99,
+      gap: round(B.volume - L.volume),
+      inToday: todayNames.has(ex.name),
     };
-  });
-  return { latest, items };
+    (groups[ex.section] = groups[ex.section] || []).push(item);
+  }
+  // Order by SECTION_ORDER.
+  const ordered = {};
+  for (const s of data.SECTION_ORDER) if (groups[s]) ordered[s] = groups[s];
+  return ordered;
 }
 
-/* ---- weekly load + acute:chronic workload ratio (ACWR) -------------------- */
-/* Session "stress" = sum over muscles of (sessionMuscleLoad / refMuscle) * 100,
- * so strength and aerobic sessions land on one comparable scale. */
+/* ---- balance from SNAPSHOT (whole program) -------------------------------- */
+function balance(data) {
+  const muscles = data.MUSCLES;
+  let push = 0, pull = 0, quad = 0, ham = 0, core = 0;
+  const bySection = {};
+  for (const ex of data.SNAPSHOT) {
+    const lib = data.EXERCISE_LIBRARY[ex.name];
+    if (!lib) continue;
+    const { volume } = recStats(ex.latest, ex.iso);
+    for (const [m, share] of Object.entries(lib.muscles)) {
+      const v = volume * share;
+      const sec = muscles[m].section;
+      bySection[sec] = (bySection[sec] || 0) + v;
+      if (muscles[m].role === "push") push += v;
+      if (muscles[m].role === "pull") pull += v;
+      if (m === "quads") quad += v;
+      if (m === "hamstrings") ham += v;
+      if (m === "core") core += v;
+    }
+  }
+  return {
+    bySection,
+    pushPull: pull > 0 ? round(push / pull, 2) : null,
+    quadHam: ham > 0 ? round(quad / ham, 2) : null,
+    hasCore: core > 0,
+  };
+}
+
+/* ---- weekly load + ACWR (guarded for sparse data) ------------------------- */
 function sessionStress(w, ref) {
   return sum(Object.entries(w.muscleLoad).map(([m, v]) => (v / ref[m]) * 100));
 }
-
 function loadTrends(workouts, ref, now) {
-  // Weekly buckets for the last 6 weeks (oldest -> newest).
   const weeks = [];
   for (let i = 5; i >= 0; i--) {
-    const end = now - i * 7 * DAY;
-    const start = end - 7 * DAY;
+    const end = now - i * 7 * DAY, start = end - 7 * DAY;
     const inWeek = workouts.filter((w) => w.t > start && w.t <= end);
-    weeks.push({
-      label: i === 0 ? "This wk" : `-${i}wk`,
-      stress: round(sum(inWeek.map((w) => sessionStress(w, ref)))),
-      sessions: inWeek.length,
-    });
+    weeks.push({ label: i === 0 ? "This wk" : `-${i}w`, stress: round(sum(inWeek.map((w) => sessionStress(w, ref)))), sessions: inWeek.length });
   }
+  const acute = sum(workouts.filter((w) => now - w.t <= 7 * DAY).map((w) => sessionStress(w, ref)));
+  const last28 = workouts.filter((w) => now - w.t <= 28 * DAY);
+  const chronic = last28.length ? sum(last28.map((w) => sessionStress(w, ref))) / 4 : 0;
 
-  const acute = sum(
-    workouts.filter((w) => now - w.t <= 7 * DAY).map((w) => sessionStress(w, ref))
-  );
-  const last28 = workouts.filter((w) => now - w.t <= 28 * DAY).map((w) => sessionStress(w, ref));
-  const chronic = last28.length ? sum(last28) / 4 : 0; // avg weekly load over 4 wks
-  const acwr = chronic > 0 ? round(acute / chronic, 2) : null;
-
-  let acwrZone = "ok";
-  if (acwr != null) {
-    if (acwr > 1.5) acwrZone = "danger";
-    else if (acwr > 1.3) acwrZone = "caution";
-    else if (acwr < 0.8) acwrZone = "detraining";
+  let acwr = null, acwrZone = "insufficient";
+  if (last28.length >= MIN_SESSIONS_FOR_ACWR && chronic > 0) {
+    acwr = round(acute / chronic, 2);
+    acwrZone = acwr > 1.5 ? "danger" : acwr > 1.3 ? "caution" : acwr < 0.8 ? "detraining" : "ok";
   }
-  return { weeks, acute: round(acute), chronic: round(chronic), acwr, acwrZone };
+  return { weeks, acute: round(acute), chronic: round(chronic), acwr, acwrZone, sessions28: last28.length };
 }
 
 /* ---- next recommended session --------------------------------------------- */
-function recommendSession(workouts, sectionFat, now) {
-  const trainable = ["Push", "Pull", "Legs"].filter((s) => sectionFat[s]);
+function recommendSession(data, workouts, sectionFat, now) {
+  const muscles = data.MUSCLES;
+  // Trainable sections = those with at least one strength exercise in the snapshot.
+  const trainable = [...new Set(data.SNAPSHOT.map((e) => e.section))]
+    .filter((s) => sectionFat[s] && s !== "Cardio");
+
   if (!trainable.length) return null;
 
-  // Last time each section was trained (as primary focus).
+  // When was each section last the primary focus of a logged session?
   const lastTrained = {};
   for (const w of workouts) {
+    const total = sum(Object.values(w.muscleLoad)) || 1;
     for (const s of trainable) {
       if (lastTrained[s] != null) continue;
-      const sectionLoad = sum(
-        Object.entries(w.muscleLoad)
-          .filter(([m]) => GYM.MUSCLES[m].section === s)
-          .map(([, v]) => v)
-      );
-      const total = sum(Object.values(w.muscleLoad)) || 1;
-      if (sectionLoad / total > 0.4) lastTrained[s] = w.t;
+      const secLoad = sum(Object.entries(w.muscleLoad).filter(([m]) => muscles[m].section === s).map(([, v]) => v));
+      if (secLoad / total > 0.4) lastTrained[s] = w.t;
     }
   }
 
-  // Score: prefer the most-recovered section that's been waiting longest.
+  // Sensible tie-break priority when several sections are equally recovered.
+  const priority = { Legs: 0, Back: 1, Shoulders: 2, Chest: 3, Arms: 4 };
   const ranked = trainable
-    .map((s) => {
-      const f = sectionFat[s];
-      const daysSince = lastTrained[s] != null ? (now - lastTrained[s]) / DAY : 99;
-      return { section: s, fatigue: f.pct, readyInHours: f.readyInHours, daysSince: round(daysSince, 1) };
-    })
-    .sort((a, b) => a.readyInHours - b.readyInHours || b.daysSince - a.daysSince || a.fatigue - b.fatigue);
+    .map((s) => ({
+      section: s,
+      fatigue: sectionFat[s].pct,
+      readyInHours: sectionFat[s].readyInHours,
+      daysSince: lastTrained[s] != null ? round((now - lastTrained[s]) / DAY, 1) : null,
+    }))
+    .sort((a, b) =>
+      a.readyInHours - b.readyInHours ||
+      (b.daysSince == null ? 99 : b.daysSince) - (a.daysSince == null ? 99 : a.daysSince) ||
+      a.fatigue - b.fatigue ||
+      (priority[a.section] ?? 9) - (priority[b.section] ?? 9)
+    );
 
   const pick = ranked[0];
   const restHours = pick.readyInHours;
-  const readyAt = new Date(now + restHours * HOUR);
-
-  // Suggest concrete exercises: pull the most recent session that targeted this section.
-  const template = workouts.find((w) => {
-    const sectionLoad = sum(
-      Object.entries(w.muscleLoad)
-        .filter(([m]) => GYM.MUSCLES[m].section === pick.section)
-        .map(([, v]) => v)
-    );
-    const total = sum(Object.values(w.muscleLoad)) || 1;
-    return sectionLoad / total > 0.4;
-  });
-  const suggestedExercises = template ? template.exercises.map((e) => e.name) : [];
-
-  // Should you also fit in aerobic? (based on weekly target vs last 7 days)
-  const aerobicLast7 = workouts.filter(
-    (w) => now - w.t <= 7 * DAY && w.isAerobic
-  ).length;
+  const suggestedExercises = data.SNAPSHOT.filter((e) => e.section === pick.section).map((e) => e.name).slice(0, 7);
+  const aerobicLast7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
+  const lastAerobic = workouts.find((w) => w.isAerobic);
 
   return {
     section: pick.section,
     fatigue: pick.fatigue,
     restHours: round(restHours, 1),
     readyNow: restHours < 1,
-    readyAt,
+    readyAt: new Date(now + restHours * HOUR),
+    neverLogged: pick.daysSince == null,
     daysSince: pick.daysSince,
-    suggestedExercises,
-    ranked,
-    aerobicLast7,
-    aerobicTarget: GYM.ATHLETE.weeklyTarget.aerobicSessions,
+    suggestedExercises, ranked,
+    aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
+    daysSinceAerobic: lastAerobic ? round((now - lastAerobic.t) / DAY, 1) : null,
   };
 }
 
 /* ---- injury / overtraining alerts ----------------------------------------- */
-function injuryAlerts(workouts, fatigue, trends, progress, now) {
+function injuryAlerts(data, fatigue, trends, bal, rec, now) {
   const alerts = [];
 
-  // 1) Acute:chronic workload ratio
-  if (trends.acwr != null) {
-    if (trends.acwrZone === "danger")
-      alerts.push({ level: "high", title: "Training load spike", detail: `Acute:chronic workload ratio is ${trends.acwr} (>1.5). Sharp load jumps are the classic soft-tissue injury setup. Hold volume flat or deload this week.` });
-    else if (trends.acwrZone === "caution")
-      alerts.push({ level: "med", title: "Load climbing fast", detail: `ACWR is ${trends.acwr} (sweet spot 0.8–1.3). You're ramping quickly — keep added volume under ~10% next week.` });
-    else if (trends.acwrZone === "detraining")
-      alerts.push({ level: "low", title: "Load dropped off", detail: `ACWR is ${trends.acwr} (<0.8). Fitness may be slipping — a normal training week will bring this back.` });
-  }
+  if (trends.acwrZone === "insufficient")
+    alerts.push({ level: "low", title: "Building a load baseline", detail: `Only ${trends.sessions28} session(s) logged in the last 28 days, so the acute:chronic load ratio isn't reliable yet. Keep logging and this becomes a real injury-risk gauge.` });
+  else if (trends.acwrZone === "danger")
+    alerts.push({ level: "high", title: "Training load spike", detail: `Load ratio ${trends.acwr} (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload.` });
+  else if (trends.acwrZone === "caution")
+    alerts.push({ level: "med", title: "Load climbing fast", detail: `Load ratio ${trends.acwr} (sweet spot 0.8–1.3). Keep added volume under ~10% next week.` });
+  else if (trends.acwrZone === "detraining")
+    alerts.push({ level: "low", title: "Load dropped off", detail: `Load ratio ${trends.acwr} (<0.8). A normal training week will bring this back up.` });
 
-  // 2) Under-recovered muscles trained back-to-back
-  const tooSoon = [];
-  for (let i = 0; i < workouts.length - 1; i++) {
-    const w = workouts[i];
-    for (const m of Object.keys(w.muscleLoad)) {
-      const prev = workouts.slice(i + 1).find((p) => p.muscleLoad[m] > 0);
-      if (!prev) continue;
-      const gapH = (w.t - prev.t) / HOUR;
-      if (gapH < GYM.MUSCLES[m].recoveryHours * 0.6 && w.muscleLoad[m] > 0 && prev.muscleLoad[m] > 0) {
-        tooSoon.push(`${GYM.MUSCLES[m].label} (${round(gapH)}h apart)`);
-      }
-    }
-  }
-  if (tooSoon.length) {
-    const uniq = [...new Set(tooSoon)].slice(0, 4);
-    alerts.push({ level: "med", title: "Muscles trained before recovery", detail: `Recently hit again under-recovered: ${uniq.join(", ")}. Space these ~48–72h apart or keep the second session light.` });
-  }
-
-  // 3) Rapid single-lift jumps in the latest session
-  for (const it of progress.items) {
-    if (it.ormVsPrev != null && it.ormVsPrev > 12)
-      alerts.push({ level: "med", title: `Big jump on ${it.name}`, detail: `Estimated 1RM up ${it.ormVsPrev}% vs last time. Increases over ~10% per session raise strain/joint risk — smaller steps stick better.` });
-  }
-
-  // 4) Currently very fatigued sections
+  // Heavily fatigued muscles right now.
   for (const f of Object.values(fatigue)) {
-    if (f.pct >= 85)
-      alerts.push({ level: "low", title: `${f.label} heavily fatigued`, detail: `${f.label} is at ${f.pct}% — fully recovered in ~${f.readyInHours}h. Avoid loading it hard before then.` });
+    if (f.pct >= 80)
+      alerts.push({ level: "low", title: `${f.label} fatigued (${f.pct}%)`, detail: `Recovers in ~${f.readyInHours}h. Avoid loading it hard before then — you trained it most recently.` });
   }
 
-  // 5) Push/Pull imbalance over last 28 days
-  const bal = balance(workouts, now);
-  if (bal.pushPull > 1.4)
-    alerts.push({ level: "med", title: "Push outpacing pull", detail: `Push volume is ${bal.pushPull}× pull over 28 days. A push-dominant ratio pulls the shoulders forward and stresses the rotator cuff — add rows/face pulls.` });
-  else if (bal.pushPull < 0.7)
-    alerts.push({ level: "low", title: "Pull outpacing push", detail: `Pull volume is ${round(1 / bal.pushPull, 2)}× push over 28 days. Balance it out with more pressing.` });
+  // Long aerobic gap.
+  if (rec && rec.daysSinceAerobic != null && rec.daysSinceAerobic > 21)
+    alerts.push({ level: "med", title: "Aerobic base slipping", detail: `${rec.daysSinceAerobic} days since your last logged cardio. Your heart-rate fitness and between-session recovery fade without it — fit in an easy run or bike.` });
 
-  if (!alerts.length)
-    alerts.push({ level: "ok", title: "No red flags", detail: "Load, recovery and balance all look healthy. Keep progressing gradually." });
+  // Push/pull imbalance (program-wide).
+  if (bal.pushPull != null && bal.pushPull > 1.4)
+    alerts.push({ level: "med", title: "Push outpacing pull", detail: `Push volume is ${bal.pushPull}× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.` });
+  else if (bal.pushPull != null && bal.pushPull < 0.7)
+    alerts.push({ level: "low", title: "Pull outpacing push", detail: `Pull volume is ${round(1 / bal.pushPull, 2)}× push. Balance with more pressing.` });
+
+  // Quad/ham imbalance.
+  if (bal.quadHam != null && bal.quadHam > 3)
+    alerts.push({ level: "med", title: "Hamstrings undertrained", detail: `Quad volume is ${bal.quadHam}× hamstrings. A big front/back gap raises hamstring-strain and knee risk — prioritise leg curls / RDLs.` });
+
+  if (alerts.filter((a) => a.level !== "low").length === 0)
+    alerts.unshift({ level: "ok", title: "No major red flags", detail: "Nothing acutely concerning. The notes below are housekeeping, not warnings." });
 
   const order = { high: 0, med: 1, low: 2, ok: 3 };
   alerts.sort((a, b) => order[a.level] - order[b.level]);
   return alerts;
 }
 
-/* ---- balance helpers ------------------------------------------------------ */
-function balance(workouts, now) {
-  const recent = workouts.filter((w) => now - w.t <= 28 * DAY);
-  const bySection = {};
-  for (const w of recent) {
-    for (const [m, v] of Object.entries(w.muscleLoad)) {
-      const sec = GYM.MUSCLES[m].section;
-      bySection[sec] = (bySection[sec] || 0) + v;
-    }
-  }
-  const push = bySection.Push || 0;
-  const pull = bySection.Pull || 0;
-  // quad vs hamstring volume
-  let quad = 0, ham = 0;
-  for (const w of recent) { quad += w.muscleLoad.quads || 0; ham += w.muscleLoad.hamstrings || 0; }
-  return {
-    bySection,
-    pushPull: pull > 0 ? round(push / pull, 2) : null,
-    quadHam: ham > 0 ? round(quad / ham, 2) : null,
-  };
-}
-
 /* ---- suggested changes ---------------------------------------------------- */
-function suggestedChanges(workouts, fatigue, trends, progress, now) {
+function suggestedChanges(data, progress, bal, rec) {
   const changes = [];
-  const bal = balance(workouts, now);
 
-  // Balance-driven
+  // Lifts currently below their PR (biggest gaps first).
+  const below = [];
+  for (const items of Object.values(progress)) for (const it of items) if (it.belowPR) below.push(it);
+  below.sort((a, b) => a.pct - b.pct);
+  if (below.length) {
+    const top = below.slice(0, 3).map((b) => `${b.name} (${b.pct}% of best)`);
+    changes.push(`You're below your PR on ${below.length} lift${below.length > 1 ? "s" : ""} — closest wins first: ${top.join(", ")}. Add a rep or a set before adding weight.`);
+  }
+
+  // Balance.
   if (bal.pushPull != null && bal.pushPull > 1.3)
-    changes.push(`Add a pulling exercise (rows / face pulls) — push is ${bal.pushPull}× your pull volume. Aim for roughly 1:1.`);
-  if (bal.quadHam != null && bal.quadHam > 3)
-    changes.push(`Hamstrings are under-trained (quads ${bal.quadHam}× hamstrings). Add Romanian deadlifts or leg curls to protect the knees.`);
+    changes.push(`Add pulling volume — push is ${bal.pushPull}× your pull. Aim toward ~1:1 to keep shoulders healthy.`);
+  if (bal.quadHam != null && bal.quadHam > 2.5)
+    changes.push(`Hamstrings lag quads (${bal.quadHam}×). Keep RDLs/leg curls heavy and add a set.`);
 
-  // Stagnation: lifts in the latest session not improving vs previous
-  const stagnant = progress.items.filter((i) => i.ormVsPrev != null && i.ormVsPrev <= 0 && i.kind !== "aerobic");
-  if (stagnant.length)
-    changes.push(`Stalling on ${stagnant.map((s) => s.name).join(", ")}. Try a small deload then a fresh progression, or swap rep ranges.`);
+  // Direct core work.
+  if (!bal.hasCore)
+    changes.push(`No direct core work is tracked. Add planks / hanging leg raises — it carries over to your pressing and squatting stability.`);
 
-  // Untrained / neglected muscles (28d)
-  const trainedRecently = new Set();
-  for (const w of workouts.filter((w) => now - w.t <= 14 * DAY))
-    for (const m of Object.keys(w.muscleLoad)) trainedRecently.add(m);
-  const neglected = Object.keys(GYM.MUSCLES).filter(
-    (m) => m !== "cardio" && !trainedRecently.has(m)
-  );
-  if (neglected.length)
-    changes.push(`Not trained in 2 weeks: ${neglected.map((m) => GYM.MUSCLES[m].label).join(", ")}. Work them back into the rotation.`);
+  // Aerobic dose.
+  if (rec && rec.daysSinceAerobic != null && rec.daysSinceAerobic > 14)
+    changes.push(`Bring cardio back into the week (last logged ${rec.daysSinceAerobic} days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days.`);
+  else if (rec && rec.aerobicLast7 < rec.aerobicTarget)
+    changes.push(`Only ${rec.aerobicLast7}/${rec.aerobicTarget} aerobic sessions this week — add an easy run or row.`);
 
-  // Aerobic dose
-  const aerobic7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
-  const aTarget = GYM.ATHLETE.weeklyTarget.aerobicSessions;
-  if (aerobic7 < aTarget)
-    changes.push(`Only ${aerobic7}/${aTarget} aerobic sessions this week. Add an easy zone-2 run or row — it speeds recovery between lifts.`);
-
-  // Load management
-  if (trends.acwrZone === "danger" || trends.acwrZone === "caution")
-    changes.push(`Cap weekly volume growth at ~10%. Your load is climbing faster than your body adapts (ACWR ${trends.acwr}).`);
-  if (trends.acwrZone === "detraining")
-    changes.push(`You can safely add a little volume — recent load is below your 4-week baseline.`);
-
-  if (!changes.length)
-    changes.push("Programming looks balanced. Keep adding small increments and logging sessions.");
-
+  if (!changes.length) changes.push("Program looks balanced. Keep adding small increments and logging sessions.");
   return changes;
 }
 
@@ -434,58 +369,37 @@ function suggestedChanges(workouts, fatigue, trends, progress, now) {
 function timingStats(workouts, now) {
   if (!workouts.length) return null;
   const times = workouts.map((w) => w.t).sort((a, b) => a - b);
-
-  // Gaps between consecutive sessions (days).
   const gaps = [];
   for (let i = 1; i < times.length; i++) gaps.push((times[i] - times[i - 1]) / DAY);
   const avgGap = gaps.length ? round(sum(gaps) / gaps.length, 1) : null;
   const longestGap = gaps.length ? round(Math.max(...gaps), 1) : null;
+  const perWeek = round(workouts.filter((w) => now - w.t <= 28 * DAY).length / 4, 1);
 
-  // Sessions per week (last 28 days).
-  const last28 = workouts.filter((w) => now - w.t <= 28 * DAY).length;
-  const perWeek = round(last28 / 4, 1);
-
-  // Time-of-day preference.
   const hours = workouts.map((w) => new Date(w.t).getHours());
   const avgHour = round(sum(hours) / hours.length);
   const morning = hours.filter((h) => h < 12).length;
-  const evening = hours.length - morning;
-  const todPref = morning >= evening ? "morning" : "evening";
+  const todPref = morning >= hours.length - morning ? "morning" : "evening";
 
-  // Day-of-week distribution.
   const dow = [0, 0, 0, 0, 0, 0, 0];
   for (const w of workouts) dow[new Date(w.t).getDay()]++;
 
-  // Days since last session.
-  const daysSinceLast = round((now - times[times.length - 1]) / DAY, 1);
-
-  return {
-    avgGap, longestGap, perWeek,
-    avgHour, todPref, morning, evening, dow,
-    daysSinceLast,
-    total: workouts.length,
-  };
+  return { avgGap, longestGap, perWeek, avgHour, todPref, dow, daysSinceLast: round((now - times[times.length - 1]) / DAY, 1), total: workouts.length };
 }
 
 /* ---- top-level assembly --------------------------------------------------- */
-let GYM; // shared reference to raw data for helpers above
-
 function analyze(data, now = Date.now()) {
-  GYM = data;
   const workouts = normalize(data);
-  const ref = referenceLoads(workouts, data.MUSCLES);
+  const ref = referenceLoads(workouts, data.MUSCLES, snapshotReference(data));
   const fatigue = muscleFatigue(workouts, data.MUSCLES, ref, now);
-  const sections = sectionFatigue(fatigue);
-  const progress = workloadProgress(workouts);
+  const sections = sectionFatigue(fatigue, data.SECTION_ORDER);
+  const progress = snapshotProgress(data, workouts);
+  const bal = balance(data);
   const trends = loadTrends(workouts, ref, now);
-  const recommendation = recommendSession(workouts, sections, now);
-  const alerts = injuryAlerts(workouts, fatigue, trends, progress, now);
-  const changes = suggestedChanges(workouts, fatigue, trends, progress, now);
+  const recommendation = recommendSession(data, workouts, sections, now);
+  const alerts = injuryAlerts(data, fatigue, trends, bal, recommendation, now);
+  const changes = suggestedChanges(data, progress, bal, recommendation);
   const timing = timingStats(workouts, now);
-
-  return { now, workouts, ref, fatigue, sections, progress, trends, recommendation, alerts, changes, timing };
+  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing };
 }
 
-if (typeof window !== "undefined") {
-  window.GYM_ENGINE = { analyze, READY_THRESHOLD };
-}
+if (typeof window !== "undefined") window.GYM_ENGINE = { analyze, READY_THRESHOLD };

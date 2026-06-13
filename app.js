@@ -60,51 +60,39 @@
       </div>`).join("");
   }
 
-  /* ---- 2. Workload progress ---------------------------------------------- */
+  /* ---- 2. Workload progress (latest vs best, grouped by muscle group) ----- */
   function renderProgress(a) {
-    const { items } = a.progress;
     const el = $("progress-body");
-    if (!items.length) { el.innerHTML = `<p class="muted">No latest workout.</p>`; return; }
+    const groups = a.progress;
+    const sections = Object.keys(groups);
+    if (!sections.length) { el.innerHTML = `<p class="muted">No exercises tracked.</p>`; return; }
 
-    el.innerHTML = `<canvas id="progChart" height="${Math.max(150, items.length * 42)}"></canvas>
-      <div style="margin-top:12px">` + items.map((it) => {
-      const dParts = [];
-      if (it.kind !== "aerobic") {
-        if (it.ormVsPrev != null) {
-          const cls = it.ormVsPrev > 0.5 ? "delta-up" : it.ormVsPrev < -0.5 ? "delta-down" : "delta-flat";
-          const arr = it.ormVsPrev > 0.5 ? "▲" : it.ormVsPrev < -0.5 ? "▼" : "▬";
-          dParts.push(`<span class="${cls}">${arr} est 1RM ${it.est1RM}kg (${it.ormVsPrev > 0 ? "+" : ""}${it.ormVsPrev}%)</span>`);
-        } else {
-          dParts.push(`est 1RM ${it.est1RM}kg`);
-        }
-        dParts.push(`vol ${it.volume.toLocaleString()} (${it.volVsBest}% of best)`);
-      } else {
-        dParts.push(`load ${it.volume.toLocaleString()}`);
-      }
-      return `<div class="prog">
-        <div class="top"><span class="name">${it.name}</span>${it.isPR ? '<span class="pr">PR ★</span>' : ""}</div>
-        <div class="meta">${dParts.join(" &middot; ")}</div>
-      </div>`;
-    }).join("") + `</div>`;
+    // Summary: how many lifts are at PR vs below.
+    const all = sections.flatMap((s) => groups[s]);
+    const atPR = all.filter((i) => i.isPR).length;
 
-    new Chart($("progChart"), {
-      type: "bar",
-      data: {
-        labels: items.map((i) => i.name),
-        datasets: [
-          { label: "This session", data: items.map((i) => i.volume), backgroundColor: "#4ea1ff", borderRadius: 4 },
-          { label: "Personal best", data: items.map((i) => i.bestVolume), backgroundColor: "rgba(255,255,255,.14)", borderRadius: 4 },
-        ],
-      },
-      options: {
-        indexAxis: "y", responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { labels: { color: "#8b97a7", boxWidth: 12, font: { size: 10 } } } },
-        scales: {
-          x: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { color: "#2c3542" } },
-          y: { ticks: { color: "#c7d0db", font: { size: 11 } }, grid: { display: false } },
-        },
-      },
-    });
+    el.innerHTML = `
+      <div class="kpi-row">
+        <div class="kpi"><div class="v">${all.length}</div><div class="l">lifts tracked</div></div>
+        <div class="kpi"><div class="v" style="color:var(--green)">${atPR}</div><div class="l">at personal best</div></div>
+        <div class="kpi"><div class="v" style="color:var(--yellow)">${all.length - atPR}</div><div class="l">below best</div></div>
+      </div>
+      <div class="small muted" style="margin-bottom:8px">Bar = latest as % of your best · ★ = at/above PR · ● in today's session</div>
+      ${sections.map((s) => `
+        <div class="fatigue-section">
+          <div class="sec-head"><span class="name">${s}</span><span class="muted">${groups[s].length} lifts</span></div>
+          ${groups[s].map((it) => {
+            const col = it.isPR ? "var(--green)" : it.pct >= 90 ? "var(--yellow)" : "var(--orange)";
+            return `<div class="prog">
+              <div class="top">
+                <span class="name">${it.inToday ? "● " : ""}${it.name}</span>
+                ${it.isPR ? '<span class="pr">★</span>' : `<span class="delta-down small">${it.pct}%</span>`}
+              </div>
+              <div class="bar" style="margin:4px 0"><span style="width:${Math.min(it.pct,100)}%;background:${col}"></span></div>
+              <div class="meta">latest <b style="color:var(--text)">${it.latestText}</b>${it.belowPR ? ` &middot; best ${it.bestText}` : ""}${it.latest1RM ? " &middot; est 1RM " + it.latest1RM + "kg" : ""}</div>
+            </div>`;
+          }).join("")}
+        </div>`).join("")}`;
   }
 
   /* ---- 3. Next recommended session --------------------------------------- */
@@ -122,7 +110,7 @@
         <div class="muted small">RECOMMENDED NEXT SESSION</div>
         <div class="big">${r.section} day</div>
         <div class="rest">${restTxt}</div>
-        <div class="when">${r.readyNow ? "Earliest sensible slot: now" : "Ready around " + fmtWhen(r.readyAt)} &middot; last ${r.section.toLowerCase()} ${r.daysSince}d ago</div>
+        <div class="when">${r.readyNow ? "Earliest sensible slot: now" : "Ready around " + fmtWhen(r.readyAt)} &middot; ${r.neverLogged ? "no " + r.section.toLowerCase() + " session logged yet" : "last " + r.section.toLowerCase() + " " + r.daysSince + "d ago"}</div>
         <div style="margin-top:10px">
           ${r.suggestedExercises.map((e) => `<span class="chip">${e}</span>`).join("")}
         </div>
@@ -143,11 +131,11 @@
   function renderAlerts(a) {
     const el = $("alerts-body");
     const z = a.trends.acwrZone;
-    const zColor = { danger: "var(--red)", caution: "var(--orange)", detraining: "var(--yellow)", ok: "var(--green)" }[z] || "var(--green)";
+    const zColor = { danger: "var(--red)", caution: "var(--orange)", detraining: "var(--yellow)", ok: "var(--green)", insufficient: "var(--muted)" }[z] || "var(--green)";
     el.innerHTML = `
       <div class="kpi-row">
-        <div class="kpi"><div class="v" style="color:${zColor}">${a.trends.acwr ?? "—"}</div><div class="l">Load ratio (ACWR)</div></div>
-        <div class="kpi"><div class="v">${a.trends.acute}</div><div class="l">7-day load</div></div>
+        <div class="kpi"><div class="v" style="color:${zColor}">${a.trends.acwr ?? "n/a"}</div><div class="l">Load ratio (ACWR)</div></div>
+        <div class="kpi"><div class="v">${a.trends.sessions28}</div><div class="l">sessions / 28d</div></div>
       </div>
       ${a.alerts.map((al) => `
         <div class="alert">

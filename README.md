@@ -20,36 +20,47 @@ No build step, no backend, no install. Open `index.html` in any browser.
 | Panel | What it shows |
 |-------|---------------|
 | 🔥 **Muscle Fatigue** | Current fatigue % per body section (Push / Pull / Legs / Core / Aerobic) and per muscle, from recent volume decaying over each muscle's recovery window. |
-| 📈 **Workload Progress** | Every exercise in your latest workout: session volume vs. your all-time best, estimated 1RM, change vs. last time, and PR flags. |
+| 📈 **Workload Progress** | Every tracked lift, grouped by muscle group: latest vs. your personal best (as a % bar), PR stars, and which lifts you're currently below best on. Lifts in today's session are dotted (●). |
 | 🎯 **Next Session** | The most-recovered muscle group to train next, how long to rest first, the earliest sensible slot, and a suggested exercise list. |
 | ⚠️ **Injury Alerts** | Acute:chronic workload ratio (load spikes), under-recovered muscles trained too soon, big single-lift jumps, and push/pull imbalance. |
 | 🛠️ **Suggested Changes** | Programming tweaks — fix imbalances, address stalled lifts, hit neglected muscles, aerobic dose, load management. |
 | 🕒 **Workout Timing** | Sessions/week, average rest gap, typical time of day, day-of-week pattern, and a 6-week training-load trend. |
 
-## Logging workouts (`data.js`)
+## `data.js` has two parts
 
-Add newest entries to the **top** of the `WORKOUTS` array. The first entry is
-treated as your "latest workout."
-
-**Strength:**
+**1. `SNAPSHOT`** — your current *latest vs best* for every exercise, grouped by
+muscle group. No dates needed; powers Workload Progress and the balance checks.
 ```js
-{ datetime: "2026-06-12T07:20", note: "Legs", exercises: [
-    { name: "Back Squat", sets: [ { reps: 5, weight: 115 }, { reps: 5, weight: 110 } ] },
-    { name: "Pull-up",    sets: [ { reps: 8, added: 5 }, { reps: 7 } ] }, // bodyweight + 5kg
+{ name: "Bench Press", section: "Chest",
+  latest: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" },
+  best:   { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" } }
+```
+- Uniform sets → `{ sets, reps, weight }`. Mixed → `{ scheme: [ {sets,reps,weight}, ... ] }`.
+- Timed holds → add `iso: true` and use `{ sets, seconds, weight }`.
+- Dumbbell "each" loads are stored as **total kg** (16 each → 32); `text` keeps your original notation for display.
+
+**2. `WORKOUTS`** — actual **dated** sessions (newest first). These drive muscle
+fatigue, recovery, the next-session call, and timing. Log each session here as
+it happens; also bump the matching `SNAPSHOT` entry when you hit a new best.
+```js
+// strength
+{ datetime: "2026-06-13T09:00", note: "Chest + Biceps", exercises: [
+    { name: "Bench Press", sets: [ { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 } ] },
+]}
+// aerobic
+{ datetime: "2026-05-08T18:00", exercises: [
+    { name: "Outdoor Run", distanceKm: 2.0, durationMin: 13.2, avgHr: 148 },
 ]}
 ```
 
-**Aerobic:**
-```js
-{ datetime: "2026-06-05T18:45", exercises: [
-    { name: "Run", durationMin: 40, distanceKm: 7.5, avgHr: 158, rpe: 7 },
-]}
-```
+- Weights in **kg**, distances in **km**.
+- New exercise? Add it to `EXERCISE_LIBRARY` with the muscles it works and their share (1.0 = primary mover, lower = assisting), then reference it by name.
+- Tune recovery speed per muscle via `recoveryHours` in `MUSCLES`; sections come from `SECTION_ORDER`.
 
-- Weights are in **kg**, distances in **km**.
-- For bodyweight moves (pull-up, dips, plank), the load base is `ATHLETE.bodyweightKg`; use `added` for extra plates.
-- New exercise? Add it to `EXERCISE_LIBRARY` with the muscles it works and their share (1.0 = primary mover, lower = assisting).
-- Tune recovery speed per muscle via `recoveryHours` in `MUSCLES`.
+> **Note on the seeded data:** your undated per-muscle-group tables are loaded as
+> `SNAPSHOT` benchmarks (not recent sessions), so fatigue is driven only by
+> today's logged session + your cardio log. Muscle groups you haven't logged a
+> dated session for yet will read as "recovered" until you log one.
 
 ## How the model works (brief)
 
