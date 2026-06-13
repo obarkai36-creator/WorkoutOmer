@@ -40,6 +40,6 @@ jobs:
         env:
           # Accept the most common names so whichever you created is picked up.
           SMTP_USER: ${{ secrets.SMTP_USER || vars.SMTP_USER }}
-          SMTP_PASS: ${{ secrets.SMTP_PASS || secrets.SMTP_PASSWORD || secrets.GMAIL_APP_PASSWORD || secrets.GMAIL_PASSWORD || secrets.EMAIL_PASSWORD || secrets.APP_PASSWORD }}
+          SMTP_PASS: ${{ secrets.GMAIL || secrets.SMTP_PASS || secrets.SMTP_PASSWORD || secrets.GMAIL_APP_PASSWORD || secrets.GMAIL_PASSWORD || secrets.EMAIL_PASSWORD || secrets.APP_PASSWORD }}
           REPORT_TO: ${{ secrets.REPORT_TO || vars.REPORT_TO }}
         run: npm run send
