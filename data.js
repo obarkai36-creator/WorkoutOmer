@@ -186,9 +186,9 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
-  // TODAY — Chest + Biceps
+  // TODAY — Chest + Biceps (10:15–11:15), finished with an easy treadmill walk
   {
-    datetime: "2026-06-13T09:00", note: "Chest + Biceps",
+    datetime: "2026-06-13T10:15", note: "Chest + Biceps + treadmill walk",
     exercises: [
       { name: "Bench Press",         sets: [ { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 } ] },
       { name: "Incline Bench Press", sets: [ { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 } ] },
@@ -196,6 +196,8 @@ const WORKOUTS = [
       { name: "Incline Pec Fly",     sets: [ { reps: 8, weight: 32 }, { reps: 8, weight: 32 }, { reps: 8, weight: 32 }, { reps: 8, weight: 32 } ] },
       { name: "Incline Hammer Curl", sets: [ { reps: 8, weight: 16 }, { reps: 8, weight: 16 }, { reps: 8, weight: 16 }, { reps: 8, weight: 16 } ] },
       { name: "Incline DB Curl",     sets: [ { reps: 6, weight: 16 }, { reps: 6, weight: 16 }, { reps: 6, weight: 16 }, { reps: 6, weight: 16 } ] },
+      // ~15 min treadmill, small incline, 15:00/km pace (≈1.0 km), easy effort
+      { name: "Incline Walk",        durationMin: 15, distanceKm: 1.0, rpe: 3 },
     ],
   },
 
