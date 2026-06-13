@@ -70,5 +70,9 @@ index.html   markup + panel layout
 styles.css   dark theme, horizontal scroller
 data.js      YOUR workouts + exercise/muscle definitions  ← edit this
 engine.js    all calculations (pure functions)
-app.js       rendering + charts (Chart.js via CDN)
+app.js       rendering + charts
+vendor/      Chart.js bundled locally (no network needed)
 ```
+
+Everything runs **100% offline** — Chart.js is vendored in `vendor/`, so the
+dashboard works with no internet connection.
