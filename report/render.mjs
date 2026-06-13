@@ -42,17 +42,23 @@ async function main() {
     page.on("pageerror", (e) => errors.push(e.message));
     await page.goto(url.toString(), { waitUntil: "networkidle" });
     await page.waitForFunction("window.__READY === true", { timeout: 15000 });
-    await page.waitForTimeout(600); // let canvas charts paint
+    await page.waitForTimeout(300);
     if (errors.length) console.warn("Page errors:", errors.join("; "));
 
+    // Size the PDF page to the full content → guaranteed single landscape slide.
+    const dims = await page.evaluate(() => ({
+      w: Math.ceil(document.body.scrollWidth),
+      h: Math.ceil(document.body.scrollHeight),
+    }));
     await page.pdf({
       path: OUT,
-      landscape: true,
-      format: "A4",
       printBackground: true,
-      margin: { top: "9mm", bottom: "9mm", left: "9mm", right: "9mm" },
+      width: `${dims.w}px`,
+      height: `${dims.h}px`,
+      pageRanges: "1",
+      margin: { top: "0", bottom: "0", left: "0", right: "0" },
     });
-    console.log(`✓ Wrote ${OUT} (as of ${nowISO})`);
+    console.log(`✓ Wrote ${OUT} (${dims.w}×${dims.h}px, as of ${nowISO})`);
   } finally {
     await browser.close();
   }

@@ -5,6 +5,7 @@
 (function () {
   const $ = (id) => document.getElementById(id);
   const fmtPct = (v) => `${v}%`;
+  let IS_PDF = false; // set in boot(); avoids canvas charts in the printed PDF
 
   // Color ramp for fatigue / recovery (0% fresh -> 100% fried).
   function fatigueColor(pct) {
@@ -175,28 +176,36 @@
             <div class="lbl">${days[i][0]}</div>
           </div>`).join("")}
       </div>
-      <div class="small muted" style="margin:16px 0 6px">Weekly training load (6 wks)</div>
-      <canvas id="loadChart" height="150"></canvas>`;
+      <div class="small muted" style="margin:16px 0 6px">Weekly training load (6 wks)</div>` +
+      // PDF: lightweight CSS bars (no canvas). Screen: Chart.js line.
+      (IS_PDF
+        ? (() => {
+            const wk = a.trends.weeks, mx = Math.max(...wk.map((w) => w.stress), 1);
+            return `<div class="loadbars">${wk.map((w) => `<div class="col"><div class="b" style="height:${(w.stress / mx) * 46}px"></div><div class="lbl">${w.label}</div></div>`).join("")}</div>`;
+          })()
+        : `<canvas id="loadChart" height="150"></canvas>`);
 
-    new Chart($("loadChart"), {
-      type: "line",
-      data: {
-        labels: a.trends.weeks.map((w) => w.label),
-        datasets: [{
-          label: "Load", data: a.trends.weeks.map((w) => w.stress),
-          borderColor: "#4ea1ff", backgroundColor: "rgba(78,161,255,.15)",
-          fill: true, tension: .35, pointRadius: 3, pointBackgroundColor: "#4ea1ff",
-        }],
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-          x: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { display: false } },
-          y: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { color: "#2c3542" }, beginAtZero: true },
+    if (!IS_PDF) {
+      new Chart($("loadChart"), {
+        type: "line",
+        data: {
+          labels: a.trends.weeks.map((w) => w.label),
+          datasets: [{
+            label: "Load", data: a.trends.weeks.map((w) => w.stress),
+            borderColor: "#4ea1ff", backgroundColor: "rgba(78,161,255,.15)",
+            fill: true, tension: .35, pointRadius: 3, pointBackgroundColor: "#4ea1ff",
+          }],
         },
-      },
-    });
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { display: false } },
+            y: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { color: "#2c3542" }, beginAtZero: true },
+          },
+        },
+      });
+    }
   }
 
   /* ---- boot --------------------------------------------------------------- */
@@ -211,6 +220,7 @@
 
     // PDF/print mode (?pdf=1): reflow panels into a printable grid, no animation.
     const pdfMode = params.get("pdf") === "1";
+    IS_PDF = pdfMode;
     if (pdfMode) {
       document.body.classList.add("pdf");
       if (window.Chart) window.Chart.defaults.animation = false;
