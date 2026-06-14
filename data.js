@@ -88,6 +88,7 @@ const EXERCISE_LIBRARY = {
   // Calves (Legs)
   "Calf Raises Machine":            { kind: "strength", muscles: { calves: 1.0 } },
   "Standing Calf Raises (Frame)":   { kind: "strength", muscles: { calves: 1.0 } },
+  "Dumbbell Calf Raise":            { kind: "strength", muscles: { calves: 1.0 } },
 
   // Legs
   "Leg Press":              { kind: "strength", muscles: { quads: 1.0, glutes: 0.5, hamstrings: 0.3 } },
@@ -162,6 +163,7 @@ const SNAPSHOT = [
   // ---- Legs (incl. calves) ----
   { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 5, reps: 12, weight: 72, text: "72kg × 5×12" }, best: { sets: 5, reps: 12, weight: 72, text: "72kg × 5×12" } },
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
+  { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
   { name: "Leg Press",                    section: "Legs", latest: { sets: 3, reps: 8, weight: 132, text: "132kg × 3×8" }, best: { sets: 4, reps: 8, weight: 132, text: "132kg × 4×8" } },
   { name: "Angled Leg Press",             section: "Legs", latest: { sets: 4, reps: 8, weight: 131, text: "131kg setup × 4×8" }, best: { sets: 4, reps: 8, weight: 131, text: "131kg setup × 4×8" } },
   { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 10, weight: 111, text: "111kg × 4×10" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
@@ -170,9 +172,9 @@ const SNAPSHOT = [
   { name: "Outer Thigh",                  section: "Legs", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 5, reps: 10, weight: 79, text: "79kg × 5×10" } },
   { name: "Inner Thigh",                  section: "Legs", latest: { sets: 4, reps: 12, weight: 73, text: "73kg × 4×12" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
   { name: "Glute Extension",              section: "Legs", latest: { sets: 1, reps: 5, weight: 59, text: "59kg × 1×5 each" }, best: { sets: 1, reps: 5, weight: 59, text: "59kg × 1×5 each" } },
-  { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
-  { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
-  { name: "Hip Thrust",                   section: "Legs", latest: { sets: 2, reps: 10, weight: 24, text: "24kg × 2×10" }, best: { sets: 2, reps: 10, weight: 24, text: "24kg × 2×10" } },
+  { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 10, weight: 24, text: "24kg × 4×10" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
+  { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
+  { name: "Hip Thrust",                   section: "Legs", latest: { sets: 3, reps: 12, weight: 24, text: "24kg × 3×12" }, best: { sets: 3, reps: 12, weight: 24, text: "24kg × 3×12" } },
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
 ];
 
@@ -186,6 +188,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 14 Jun — Legs/Glutes at home (ended 23:28)
+  {
+    datetime: "2026-06-14T23:28", note: "Legs / Glutes (home)",
+    exercises: [
+      { name: "Dumbbell Sumo Squat", sets: [ { reps: 12, weight: 24 }, { reps: 12, weight: 24 }, { reps: 12, weight: 24 }, { reps: 12, weight: 24 } ] },
+      { name: "Dumbbell Calf Raise",  sets: [ { reps: 12, weight: 48 }, { reps: 12, weight: 48 }, { reps: 12, weight: 48 }, { reps: 12, weight: 48 } ] },
+      { name: "Dumbbell RDL",          sets: [ { reps: 10, weight: 24 }, { reps: 10, weight: 24 }, { reps: 10, weight: 24 }, { reps: 10, weight: 24 } ] },
+      { name: "Hip Thrust",            sets: [ { reps: 12, weight: 24 }, { reps: 12, weight: 24 }, { reps: 12, weight: 24 } ] },
+    ],
+  },
+
   // TODAY — Chest + Biceps (10:15–11:15), finished with an easy treadmill walk
   {
     datetime: "2026-06-13T10:15", note: "Chest + Biceps + treadmill walk",
