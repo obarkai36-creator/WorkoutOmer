@@ -265,6 +265,32 @@
         <div class="meta" style="margin:-1px 0 6px 138px;color:var(--muted);font-size:11px">est 1RM ${it.oneRM} kg</div>`).join("");
   }
 
+  /* ---- 9. Bodyweight tracker ---------------------------------------------- */
+  function renderBodyweight(a) {
+    const el = $("bw-body"); const b = a.bodyweight;
+    if (!b || !b.any) { el.innerHTML = `<p class="muted">No weigh-ins logged yet. Add them to the BODYWEIGHT log in data.js.</p>`; return; }
+    const hist = b.history.slice().reverse(); // oldest → newest for the chart
+    const lo = b.min, hi = b.max, span = (hi - lo) || 1;
+    const cls = b.delta < 0 ? "delta-up" : b.delta > 0 ? "delta-down" : "delta-flat";
+    const arrow = b.delta < 0 ? "▼" : b.delta > 0 ? "▲" : "▬";
+    const deltaTxt = b.delta == null ? "—" : `${arrow} ${Math.abs(b.delta)} kg`;
+    const netTxt = b.totalChange == null ? "" : ` &middot; net ${b.totalChange > 0 ? "+" : ""}${b.totalChange} kg`;
+    el.innerHTML = `
+      <div class="kpi-row">
+        <div class="kpi"><div class="v">${b.current}<span style="font-size:12px"> kg</span></div><div class="l">latest weigh-in</div></div>
+        <div class="kpi"><div class="v ${cls}" style="font-size:16px">${deltaTxt}</div><div class="l">since previous</div></div>
+      </div>
+      <div class="small muted" style="margin:2px 0 6px">range ${lo}–${hi} kg${netTxt}</div>
+      <div class="loadbars" style="height:54px">
+        ${hist.map((h) => {
+          const ht = 8 + ((h.kg - lo) / span) * 38;
+          return `<div class="col"><div class="b" style="height:${ht}px;background:var(--accent)" title="${h.kg} kg"></div><div class="lbl">${new Date(h.datetime).toLocaleDateString(undefined, { month: "short", day: "numeric" })}</div></div>`;
+        }).join("")}
+      </div>
+      <div class="small muted" style="margin:10px 0 4px">Weigh-ins</div>
+      ${b.history.map((h) => `<div class="prog" style="padding:3px 0"><div class="top"><span class="name">${h.kg} kg</span><span class="small muted">${new Date(h.datetime).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}</span></div></div>`).join("")}`;
+  }
+
   /* ---- boot --------------------------------------------------------------- */
   function boot() {
     if (!window.GYM_DATA || !window.GYM_ENGINE) {
@@ -295,6 +321,7 @@
     renderTiming(a);
     renderCardio(a);
     renderRelStr(a);
+    renderBodyweight(a);
 
     // Signal to the PDF renderer that the page is fully drawn.
     window.__READY = true;

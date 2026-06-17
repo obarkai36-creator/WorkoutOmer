@@ -391,9 +391,11 @@ function bodyweight(data) {
   const log = (data.BODYWEIGHT || []).slice().sort((a, b) => new Date(b.datetime) - new Date(a.datetime));
   if (!log.length) return { any: false, current: data.ATHLETE.bodyweightKg || 75, history: [] };
   const current = log[0].kg, prev = log[1]?.kg ?? null;
+  const earliest = log[log.length - 1].kg;
   return {
     any: true, current, prev,
     delta: prev != null ? round(current - prev, 2) : null,
+    totalChange: log.length > 1 ? round(current - earliest, 2) : null,
     latestDate: log[0].datetime,
     min: Math.min(...log.map((e) => e.kg)), max: Math.max(...log.map((e) => e.kg)),
     history: log,
