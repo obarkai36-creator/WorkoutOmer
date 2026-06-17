@@ -386,9 +386,23 @@ function timingStats(workouts, now) {
   return { avgGap, longestGap, perWeek, avgHour, todPref, dow, daysSinceLast: round((now - times[times.length - 1]) / DAY, 1), total: workouts.length };
 }
 
+/* ---- bodyweight log ------------------------------------------------------- */
+function bodyweight(data) {
+  const log = (data.BODYWEIGHT || []).slice().sort((a, b) => new Date(b.datetime) - new Date(a.datetime));
+  if (!log.length) return { any: false, current: data.ATHLETE.bodyweightKg || 75, history: [] };
+  const current = log[0].kg, prev = log[1]?.kg ?? null;
+  return {
+    any: true, current, prev,
+    delta: prev != null ? round(current - prev, 2) : null,
+    latestDate: log[0].datetime,
+    min: Math.min(...log.map((e) => e.kg)), max: Math.max(...log.map((e) => e.kg)),
+    history: log,
+  };
+}
+
 /* ---- relative strength (lift ÷ bodyweight) -------------------------------- */
-function relativeStrength(data) {
-  const bw = data.ATHLETE.bodyweightKg || 75;
+function relativeStrength(data, bwKg) {
+  const bw = bwKg || data.ATHLETE.bodyweightKg || 75;
   const KEY = ["Bench Press", "Incline Bench Press", "Decline Bench Press", "Converging Shoulder Press",
     "Diverging Seated Row", "Low Row", "Leg Press", "Seated Dips"];
   const items = [];
@@ -457,9 +471,10 @@ function analyze(data, now = Date.now()) {
   const alerts = injuryAlerts(data, fatigue, trends, bal, recommendation, now);
   const changes = suggestedChanges(data, progress, bal, recommendation);
   const timing = timingStats(workouts, now);
-  const relstrength = relativeStrength(data);
+  const bw = bodyweight(data);
+  const relstrength = relativeStrength(data, bw.current);
   const aerobic = aerobicSummary(workouts, data.ATHLETE, now);
-  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing, relstrength, aerobic };
+  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing, relstrength, aerobic, bodyweight: bw };
 }
 
 if (typeof window !== "undefined") window.GYM_ENGINE = { analyze, READY_THRESHOLD };

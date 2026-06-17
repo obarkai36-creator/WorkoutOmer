@@ -248,7 +248,14 @@
     const el = $("relstr-body"); const r = a.relstrength;
     if (!r.items.length) { el.innerHTML = `<p class="muted">No key compound lifts tracked.</p>`; return; }
     const maxRatio = Math.max(...r.items.map((i) => i.ratio), 2.5);
-    el.innerHTML = `<div class="small muted" style="margin-bottom:8px">Estimated 1RM ÷ bodyweight (${r.bodyweightKg} kg)</div>` +
+    const bw = a.bodyweight;
+    let bwLine = `bodyweight ${r.bodyweightKg} kg`;
+    if (bw && bw.any && bw.delta != null) {
+      const cls = bw.delta < 0 ? "delta-up" : bw.delta > 0 ? "delta-down" : "delta-flat";
+      const arrow = bw.delta < 0 ? "▼" : bw.delta > 0 ? "▲" : "▬";
+      bwLine = `bodyweight <b style="color:var(--text)">${bw.current} kg</b> <span class="${cls}">${arrow} ${Math.abs(bw.delta)} kg</span>`;
+    }
+    el.innerHTML = `<div class="small muted" style="margin-bottom:8px">Estimated 1RM ÷ ${bwLine}</div>` +
       r.items.map((it) => `
         <div class="mrow">
           <span class="ml" style="width:130px">${it.name}</span>

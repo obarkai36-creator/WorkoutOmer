@@ -18,14 +18,15 @@ import vm from "node:vm";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = process.env.REPORT_PDF || resolve(ROOT, "report.pdf");
 
-/* Read data.js (browser-style) to find the latest logged session timestamp. */
+/* Read data.js (browser-style) to find the most recent logged timestamp
+ * (workout or weigh-in) to anchor "now". */
 function latestWorkoutISO() {
   const ctx = { window: {}, console };
   vm.createContext(ctx);
   vm.runInContext(readFileSync(resolve(ROOT, "data.js"), "utf8"), ctx, { filename: "data.js" });
-  const workouts = ctx.window.GYM_DATA?.WORKOUTS || [];
-  let max = 0;
-  for (const w of workouts) { const t = new Date(w.datetime).getTime(); if (t > max) max = t; }
+  const d = ctx.window.GYM_DATA || {};
+  const stamps = [...(d.WORKOUTS || []), ...(d.BODYWEIGHT || [])].map((x) => new Date(x.datetime).getTime());
+  const max = stamps.length ? Math.max(...stamps) : 0;
   return max ? new Date(max).toISOString() : new Date().toISOString();
 }
 

@@ -16,10 +16,18 @@
 
 const ATHLETE = {
   name: "Omer",
-  bodyweightKg: 78,
+  bodyweightKg: 80.7, // most recent weigh-in (see BODYWEIGHT log)
   units: { weight: "kg", distance: "km" },
   weeklyTarget: { strengthSessions: 5, aerobicSessions: 2 },
 };
+
+/* ---- Bodyweight log (newest first) ----------------------------------------
+ * Used for relative-strength denominators, bodyweight-exercise load, and the
+ * weight trend shown on the Relative Strength panel. */
+const BODYWEIGHT = [
+  { datetime: "2026-06-17T05:30", kg: 80.7 },
+  { datetime: "2026-06-16T06:05", kg: 81.75 },
+];
 
 /* ---- Muscles -> body section, recovery window, and push/pull role --------- */
 const MUSCLES = {
@@ -57,6 +65,7 @@ const EXERCISE_LIBRARY = {
   "Low Row":                { kind: "strength", muscles: { back: 1.0, biceps: 0.4 } },
   "Lat Pulldown (Triangle)":{ kind: "strength", muscles: { back: 1.0, biceps: 0.4 } },
   "Reverse Incline DB Row": { kind: "strength", muscles: { back: 1.0, shoulders: 0.3, biceps: 0.3 } },
+  "Dumbbell Pullover":      { kind: "strength", muscles: { back: 1.0, chest: 0.4 } },
   "Dead Hang":              { kind: "strength", iso: true, bodyweight: true, muscles: { forearms: 1.0, back: 0.3 } },
 
   // Shoulders
@@ -131,17 +140,18 @@ const SNAPSHOT = [
   { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
   { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
-  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 8, weight: 48, text: "24kg each × 4×8" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
+  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
+  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" } },
   { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" }, best: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
-  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" }, best: { scheme: [ { sets: 3, reps: 11, weight: 32 }, { sets: 1, reps: 10, weight: 32 } ], text: "16kg each × 3×11 + 1×10" } },
+  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
   { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 10, weight: 28, text: "14kg each × 4×10" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 8, weight: 24, text: "12kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 24, text: "12kg each × 4×8" } },
   { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" } },
   { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 8, weight: 73, text: "73kg × 3×8" }, best: { sets: 3, reps: 8, weight: 73, text: "73kg × 3×8" } },
-  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 3, reps: 15, weight: 40, text: "20kg each × 3×15" }, best: { sets: 3, reps: 15, weight: 40, text: "20kg each × 3×15" } },
+  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
   { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 30, weight: 48, text: "24kg each × 4×30s" }, best: { sets: 4, seconds: 30, weight: 48, text: "24kg each × 4×30s" } },
 
   // ---- Arms: Triceps ----
@@ -188,6 +198,19 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 16 Jun — Back + Shoulders (13:30)
+  {
+    datetime: "2026-06-16T13:30", note: "Back + Shoulders",
+    exercises: [
+      { name: "Reverse Incline DB Row", sets: [ { reps: 10, weight: 48 }, { reps: 10, weight: 48 }, { reps: 10, weight: 48 }, { reps: 10, weight: 48 } ] },
+      { name: "Dumbbell Pullover",      sets: [ { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 } ] },
+      { name: "Dumbbell Shoulder Press", sets: [ { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 } ] },
+      { name: "Front Raises",           sets: [ { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 } ] },
+      { name: "Shoulder Shrugs",        sets: [ { reps: 10, weight: 48 }, { reps: 10, weight: 48 }, { reps: 10, weight: 48 }, { reps: 10, weight: 48 } ] },
+      { name: "Farmer's Hold",          sets: [ { seconds: 30, weight: 48 }, { seconds: 30, weight: 48 }, { seconds: 30, weight: 48 }, { seconds: 30, weight: 48 } ] },
+    ],
+  },
+
   // 14 Jun — Legs/Glutes at home (ended 23:28)
   {
     datetime: "2026-06-14T23:28", note: "Legs / Glutes (home)",
@@ -230,5 +253,5 @@ const WORKOUTS = [
 
 /* Expose for the engine. */
 if (typeof window !== "undefined") {
-  window.GYM_DATA = { ATHLETE, MUSCLES, SECTION_ORDER, EXERCISE_LIBRARY, SNAPSHOT, WORKOUTS };
+  window.GYM_DATA = { ATHLETE, MUSCLES, SECTION_ORDER, EXERCISE_LIBRARY, SNAPSHOT, WORKOUTS, BODYWEIGHT };
 }
