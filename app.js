@@ -302,10 +302,12 @@
     const now = params.get("now") ? new Date(params.get("now")).getTime() : Date.now();
 
     // PDF/print mode (?pdf=1): reflow panels into a printable grid, no animation.
+    // ?layout=wide|landscape|portrait selects the print grid (default wide).
     const pdfMode = params.get("pdf") === "1";
     IS_PDF = pdfMode;
     if (pdfMode) {
-      document.body.classList.add("pdf");
+      const layout = params.get("layout") || "wide";
+      document.body.classList.add("pdf", "layout-" + layout);
       if (window.Chart) window.Chart.defaults.animation = false;
     }
 

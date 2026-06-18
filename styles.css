@@ -151,45 +151,38 @@ canvas { max-width: 100%; }
 
 footer.note { padding: 8px 22px 14px; color: var(--muted); font-size: 11.5px; }
 
-/* ---- PDF / print mode (?pdf=1) -------------------------------------------
- * One fixed-size landscape "slide": all six panels packed into a single grid.
+/* ---- PDF / print mode (?pdf=1&layout=wide|landscape|portrait) ------------
+ * Shared print resets live on body.pdf; each layout-* class sets the grid.
  * The renderer sizes the PDF page to the content, so it's always one page. */
 @page { margin: 0; }
-body.pdf {
-  height: auto; display: block; width: 2880px;
-  background: var(--bg); font-size: 10.5px;
-}
+body.pdf { height: auto; display: block; background: var(--bg); font-size: 10.5px; }
 body.pdf header.topbar { padding: 10px 16px; }
 body.pdf header.topbar h1 { font-size: 16px; }
 
 body.pdf .scroller {
-  display: grid; grid-template-columns: repeat(8, 1fr); gap: 10px;
-  align-items: start; overflow: visible; height: auto; padding: 12px 16px;
-  scroll-snap-type: none;
+  display: grid; gap: 10px; align-items: start;
+  overflow: visible; height: auto; padding: 12px 16px; scroll-snap-type: none;
 }
 body.pdf .panel, body.pdf .panel.wide {
   width: auto !important; flex: none; overflow: hidden;
   break-inside: avoid; page-break-inside: avoid;
 }
-/* Layout: row1 = three panels (span 2 each); row2 = two panels (span 3 each);
-   row3 = Workload Progress full width. */
-/* Row 1: all eight info panels side by side. Row 2: Workload Progress full width. */
-body.pdf #panel-fatigue    { order: 1; grid-column: span 1; }
-body.pdf #panel-cardio     { order: 2; grid-column: span 1; }
-body.pdf #panel-reco       { order: 3; grid-column: span 1; }
-body.pdf #panel-alerts     { order: 4; grid-column: span 1; }
-body.pdf #panel-relstr     { order: 5; grid-column: span 1; }
-body.pdf #panel-bodyweight { order: 6; grid-column: span 1; }
-body.pdf #panel-changes    { order: 7; grid-column: span 1; }
-body.pdf #panel-timing     { order: 8; grid-column: span 1; }
-body.pdf #panel-progress   { order: 9; grid-column: 1 / -1; }
+/* Panel order (shared across layouts). */
+body.pdf #panel-fatigue    { order: 1; }
+body.pdf #panel-cardio     { order: 2; }
+body.pdf #panel-reco       { order: 3; }
+body.pdf #panel-alerts     { order: 4; }
+body.pdf #panel-relstr     { order: 5; }
+body.pdf #panel-bodyweight { order: 6; }
+body.pdf #panel-changes    { order: 7; }
+body.pdf #panel-timing     { order: 8; }
+body.pdf #panel-progress   { order: 9; }
 
 body.pdf .panel .body { overflow: visible; max-height: none; height: auto; padding: 10px 12px; }
 body.pdf .panel .head { padding: 8px 12px 6px; }
 body.pdf .panel .head h2 { font-size: 12.5px; }
 
-/* Workload Progress: flow the 40 lifts into compact columns. */
-body.pdf #panel-progress .body { column-count: 6; column-gap: 16px; }
+/* Workload Progress: flow the lifts into compact columns. */
 body.pdf #panel-progress .kpi-row { column-span: all; margin-bottom: 8px; }
 body.pdf #panel-progress .fatigue-section { break-inside: avoid; margin-bottom: 8px; }
 body.pdf #panel-progress .prog { padding: 2px 0; border-bottom: 0; break-inside: avoid; }
@@ -203,6 +196,38 @@ body.pdf .alert { padding: 6px 0; }
 body.pdf .change { padding: 5px 0; }
 body.pdf .scroller::-webkit-scrollbar, body.pdf .panel .body::-webkit-scrollbar { display: none; }
 body.pdf footer.note { display: none; }
+
+/* WIDE — all eight cards in one row, progress band below (very wide). */
+body.pdf.layout-wide { width: 2880px; }
+body.pdf.layout-wide .scroller { grid-template-columns: repeat(8, 1fr); }
+body.pdf.layout-wide .panel { grid-column: span 1; }
+body.pdf.layout-wide #panel-progress { grid-column: 1 / -1; }
+body.pdf.layout-wide #panel-progress .body { column-count: 6; column-gap: 16px; }
+
+/* LANDSCAPE — masonry: cards packed into balanced columns (no gaps),
+   Workload Progress as a full-width band beneath. */
+body.pdf.layout-landscape { width: 2300px; }
+body.pdf.layout-landscape .scroller {
+  display: block; column-count: 4; column-gap: 12px; padding: 12px 16px;
+}
+body.pdf.layout-landscape .panel {
+  display: block; width: auto; margin: 0 0 12px; break-inside: avoid;
+}
+body.pdf.layout-landscape #panel-progress { display: block; column-span: all; margin-top: 2px; }
+body.pdf.layout-landscape #panel-progress .body { column-count: 7; column-gap: 16px; }
+/* Let lifts flow evenly across the band's columns (fills the width, shortens it). */
+body.pdf.layout-landscape #panel-progress .fatigue-section { break-inside: auto; }
+body.pdf.layout-landscape #panel-progress .sec-head { break-after: avoid; }
+/* Compact the tall Muscle-Fatigue card so the top masonry row balances. */
+body.pdf.layout-landscape #panel-fatigue .fatigue-section { margin-bottom: 7px; }
+body.pdf.layout-landscape #panel-fatigue .mrow { margin: 1.5px 0; }
+
+/* PORTRAIT — 2 cards per row, progress band below (tall; phone/print friendly). */
+body.pdf.layout-portrait { width: 1180px; }
+body.pdf.layout-portrait .scroller { grid-template-columns: repeat(4, 1fr); }
+body.pdf.layout-portrait .panel { grid-column: span 2; }
+body.pdf.layout-portrait #panel-progress { grid-column: 1 / -1; }
+body.pdf.layout-portrait #panel-progress .body { column-count: 3; column-gap: 14px; }
 
 /* CSS weekly-load bars used in PDF instead of a canvas chart. */
 .loadbars { display: flex; align-items: flex-end; gap: 6px; height: 56px; margin-top: 6px; }
