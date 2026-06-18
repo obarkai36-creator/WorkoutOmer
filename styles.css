@@ -206,7 +206,7 @@ body.pdf.layout-wide #panel-progress .body { column-count: 6; column-gap: 16px; 
 
 /* LANDSCAPE — masonry: cards packed into balanced columns (no gaps),
    Workload Progress as a full-width band beneath. */
-body.pdf.layout-landscape { width: 2300px; }
+body.pdf.layout-landscape { width: 2720px; } /* ~16:9 with current content height */
 body.pdf.layout-landscape .scroller {
   display: block; column-count: 4; column-gap: 12px; padding: 12px 16px;
 }
