@@ -139,7 +139,7 @@ const SNAPSHOT = [
   { name: "Incline Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
   { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" }, best: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" } },
   { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
-  { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
+  { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
   { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 6, weight: 59, text: "59kg × 4×6" }, best: { sets: 4, reps: 7, weight: 59, text: "59kg × 4×7" } },
 
@@ -148,7 +148,7 @@ const SNAPSHOT = [
   { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
   { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
-  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" } },
+  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 9, weight: 18, text: "18kg × 4×9" }, best: { sets: 4, reps: 9, weight: 18, text: "18kg × 4×9" } },
   { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" }, best: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" } },
 
   // ---- Shoulders ----
@@ -162,16 +162,16 @@ const SNAPSHOT = [
   { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 30, weight: 48, text: "24kg each × 4×30s" }, best: { sets: 4, seconds: 30, weight: 48, text: "24kg each × 4×30s" } },
 
   // ---- Arms: Triceps ----
-  { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 32, text: "16kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 32, text: "16kg each × 4×6" } },
-  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 12, weight: 16, text: "16kg × 4×12" }, best: { sets: 4, reps: 12, weight: 16, text: "16kg × 4×12" } },
+  { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 4, weight: 36, text: "18kg each × 4×4" }, best: { sets: 4, reps: 6, weight: 32, text: "16kg each × 4×6" } },
+  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 12, weight: 18, text: "18kg × 4×12" }, best: { sets: 4, reps: 12, weight: 18, text: "18kg × 4×12" } },
   { name: "Seated Dips",                      section: "Arms", latest: { sets: 4, reps: 8, weight: 62, text: "62kg × 4×8" }, best: { sets: 4, reps: 8, weight: 62, text: "62kg × 4×8" } },
   { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
   { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" } },
 
   // ---- Arms: Biceps / Forearms ----
-  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" } },
-  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 5, weight: 18, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 18, text: "18kg each × 4×5" } },
+  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 4, weight: 20, text: "20kg each × 4×4" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" } },
+  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 4, weight: 20, text: "20kg each × 4×4" }, best: { sets: 4, reps: 5, weight: 18, text: "18kg each × 4×5" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
@@ -206,6 +206,29 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 23 Jun — Chest / Triceps / Shoulders / Back / Biceps, dumbbell session (20:50)
+  {
+    datetime: "2026-06-23T20:50", note: "Upper body (DB)",
+    exercises: [
+      { name: "Dumbbell Pec Fly",              sets: [ { reps: 7, weight: 36 }, { reps: 7, weight: 36 }, { reps: 7, weight: 36 }, { reps: 7, weight: 36 } ] },
+      { name: "Flat DB Triceps Extension",     sets: [ { reps: 4, weight: 36 }, { reps: 4, weight: 36 }, { reps: 4, weight: 36 }, { reps: 4, weight: 36 } ] },
+      { name: "Dumbbell Pullover",             sets: [ { reps: 9, weight: 18 }, { reps: 9, weight: 18 }, { reps: 9, weight: 18 }, { reps: 9, weight: 18 } ] },
+      { name: "Overhead DB Triceps Extension", sets: [ { reps: 12, weight: 18 }, { reps: 12, weight: 18 }, { reps: 12, weight: 18 }, { reps: 12, weight: 18 } ] },
+      { name: "Dumbbell Shoulder Press",       sets: [ { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 } ] },
+      { name: "Incline Hammer Curl",           sets: [ { reps: 4, weight: 20 }, { reps: 4, weight: 20 }, { reps: 4, weight: 20 }, { reps: 4, weight: 20 } ] },
+      { name: "Incline DB Curl",               sets: [ { reps: 4, weight: 20 }, { reps: 4, weight: 20 }, { reps: 4, weight: 20 }, { reps: 4, weight: 20 } ] },
+    ],
+  },
+
+  // 22 Jun — Incline treadmill walk (14:45): 40 min, 5–5.5 kph @ 4–8% incline,
+  // ~300 kcal (treadmill estimate). Moderate effort -> rpe 5.
+  {
+    datetime: "2026-06-22T14:45", note: "Incline treadmill walk (4–8%, ~300 kcal)",
+    exercises: [
+      { name: "Incline Walk", distanceKm: 3.5, durationMin: 40, rpe: 5 },
+    ],
+  },
+
   // 20 Jun — 3 km guided run, Or Akiva (08:10). No HR strap; avgHr ESTIMATED at
   // 150 bpm from his own ~6.5 min/km history (145–148), +drift over 20 min
   // continuous, negative splits (6'45→6'08), 24°C, at 81.4 kg. ≈79% HRmax (Z3).
