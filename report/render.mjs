@@ -34,7 +34,7 @@ async function main() {
   const nowISO = latestWorkoutISO();
   const url = new URL(pathToFileURL(resolve(ROOT, "index.html")));
   url.searchParams.set("pdf", "1");
-  url.searchParams.set("layout", process.env.REPORT_LAYOUT || "landscape");
+  url.searchParams.set("layout", process.env.REPORT_LAYOUT || "mobile");
   url.searchParams.set("now", nowISO);
 
   const browser = await chromium.launch();

@@ -166,14 +166,22 @@ function snapshotProgress(data, workouts) {
   for (const ex of data.SNAPSHOT) {
     const L = recStats(ex.latest, ex.iso);
     const B = recStats(ex.best, ex.iso);
-    const pct = B.volume > 0 ? round((L.volume / B.volume) * 100) : 100;
+    // Strength metric: estimated 1RM for rep-based lifts (accounts for weight AND
+    // reps, so a heavier set at fewer reps can still be a PR). Timed/iso holds
+    // have no 1RM, so fall back to load (weight x seconds).
+    const useRM = !ex.iso && (L.top1RM > 0 || B.top1RM > 0);
+    const Lm = useRM ? L.top1RM : L.volume;
+    const Bm = useRM ? B.top1RM : B.volume;
+    const peak = Math.max(Lm, Bm);
+    const pct = peak > 0 ? round((Lm / peak) * 100) : 100;
     const item = {
       name: ex.name, section: ex.section, iso: !!ex.iso,
       latestText: ex.latest?.text || "", bestText: ex.best?.text || "",
       latestVol: round(L.volume), bestVol: round(B.volume), pct,
       latest1RM: round(L.top1RM, 1), best1RM: round(B.top1RM, 1),
-      isPR: L.volume >= B.volume, belowPR: pct < 99,
-      gap: round(B.volume - L.volume),
+      metric: useRM ? "1RM" : "load",
+      isPR: Lm >= Bm, belowPR: pct < 99,
+      gap: round(Math.max(0, Bm - Lm)),
       inToday: todayNames.has(ex.name),
     };
     (groups[ex.section] = groups[ex.section] || []).push(item);

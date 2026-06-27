@@ -222,6 +222,33 @@ body.pdf.layout-landscape #panel-progress .sec-head { break-after: avoid; }
 body.pdf.layout-landscape #panel-fatigue .fatigue-section { margin-bottom: 7px; }
 body.pdf.layout-landscape #panel-fatigue .mrow { margin: 1.5px 0; }
 
+/* MOBILE — single column, phone-width. One tall page that fits a phone screen
+   and reads top-to-bottom without pinch-zoom. (Default for the emailed PDF.) */
+body.pdf.layout-mobile { width: 480px; font-size: 12.5px; }
+body.pdf.layout-mobile .scroller { display: block; padding: 12px 12px 18px; }
+body.pdf.layout-mobile .panel,
+body.pdf.layout-mobile .panel.wide {
+  display: block; width: auto !important; margin: 0 0 12px; break-inside: avoid;
+}
+body.pdf.layout-mobile header.topbar { padding: 12px 14px; flex-wrap: wrap; }
+body.pdf.layout-mobile header.topbar h1 { font-size: 17px; }
+body.pdf.layout-mobile .panel .head { padding: 11px 14px 8px; }
+body.pdf.layout-mobile .panel .head h2 { font-size: 15px; }
+body.pdf.layout-mobile .panel .body { padding: 12px 14px; }
+body.pdf.layout-mobile .kpi .v { font-size: 19px; }
+body.pdf.layout-mobile .kpi .l { font-size: 11px; }
+body.pdf.layout-mobile .reco .big { font-size: 23px; }
+body.pdf.layout-mobile .mrow { margin: 4px 0; }
+body.pdf.layout-mobile .mrow .ml { width: 80px; font-size: 12px; }
+body.pdf.layout-mobile .mrow .mv { font-size: 12px; }
+body.pdf.layout-mobile .bar { height: 15px; }
+/* Workload Progress: two readable columns keep the long list from running too tall. */
+body.pdf.layout-mobile #panel-progress .body { column-count: 2; column-gap: 12px; }
+body.pdf.layout-mobile #panel-progress .fatigue-section { break-inside: avoid; margin-bottom: 8px; }
+body.pdf.layout-mobile #panel-progress .prog { padding: 3px 0; border-bottom: 0; break-inside: avoid; }
+body.pdf.layout-mobile #panel-progress .prog .bar { height: 7px; margin: 2px 0 !important; }
+body.pdf.layout-mobile #panel-progress .prog .meta { font-size: 9.5px; }
+
 /* PORTRAIT — 2 cards per row, progress band below (tall; phone/print friendly). */
 body.pdf.layout-portrait { width: 1180px; }
 body.pdf.layout-portrait .scroller { grid-template-columns: repeat(4, 1fr); }
