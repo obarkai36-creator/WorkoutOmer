@@ -123,6 +123,7 @@ const EXERCISE_LIBRARY = {
   "Long Run":               { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.3, calves: 0.3 } },
   "Rehabilitation Run":     { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.2, calves: 0.2 } },
   "Incline Walk":           { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.2, calves: 0.2 } },
+  "Outdoor Walk":           { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.2, calves: 0.2 } },
   "Stationary Bike":        { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.4 } },
 };
 
@@ -144,12 +145,12 @@ const SNAPSHOT = [
   { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 6, weight: 59, text: "59kg × 4×6" }, best: { sets: 4, reps: 7, weight: 59, text: "59kg × 4×7" } },
 
   // ---- Back ----
-  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
-  { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
+  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 6, weight: 109, text: "109kg × 4×6" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
+  { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 6, weight: 79, text: "79kg × 4×6" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
-  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
-  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 9, weight: 18, text: "18kg × 4×9" }, best: { sets: 4, reps: 9, weight: 18, text: "18kg × 4×9" } },
-  { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" }, best: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" } },
+  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 9, weight: 52, text: "26kg each × 4×9" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
+  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" }, best: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" } },
+  { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 1, seconds: 30, weight: 81.4, text: "30 sec × 1" }, best: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
@@ -206,6 +207,36 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 27 Jun — Back / pull session (18:10)
+  {
+    datetime: "2026-06-27T18:10", note: "Back (pull)",
+    exercises: [
+      { name: "Diverging Seated Row",   sets: [ { reps: 6, weight: 109 }, { reps: 6, weight: 109 }, { reps: 6, weight: 109 }, { reps: 6, weight: 109 } ] },
+      { name: "Low Row",                sets: [ { reps: 6, weight: 79 }, { reps: 6, weight: 79 }, { reps: 6, weight: 79 }, { reps: 6, weight: 79 } ] },
+      { name: "Reverse Incline DB Row", sets: [ { reps: 9, weight: 52 }, { reps: 9, weight: 52 }, { reps: 9, weight: 52 }, { reps: 9, weight: 52 } ] },
+      { name: "Dumbbell Pullover",      sets: [ { reps: 10, weight: 18 }, { reps: 10, weight: 18 }, { reps: 10, weight: 18 }, { reps: 10, weight: 18 } ] },
+      { name: "Dead Hang",              sets: [ { seconds: 30 } ] },
+    ],
+  },
+
+  // 27 Jun — Beach walk, alternating sand (08:15). 60 min; soft sand raises
+  // effort -> rpe 6. Distance ~4.3 km estimated (no GPS).
+  {
+    datetime: "2026-06-27T08:15", note: "Beach walk — alternating sand",
+    exercises: [
+      { name: "Outdoor Walk", distanceKm: 4.3, durationMin: 60, rpe: 6 },
+    ],
+  },
+
+  // 26 Jun — Flat road/sidewalk walk (clock-time approximate). 50 min, ~4.5 km,
+  // easy effort -> rpe 3.
+  {
+    datetime: "2026-06-26T17:00", note: "Flat walk (road/sidewalk)",
+    exercises: [
+      { name: "Outdoor Walk", distanceKm: 4.5, durationMin: 50, rpe: 3 },
+    ],
+  },
+
   // 23 Jun — Chest / Triceps / Shoulders / Back / Biceps, dumbbell session (20:50)
   {
     datetime: "2026-06-23T20:50", note: "Upper body (DB)",
