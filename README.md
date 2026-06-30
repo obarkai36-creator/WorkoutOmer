@@ -13,7 +13,7 @@ This repo hosts two connected projects with **different delivery rules**:
 | Tracker | Lives in | Logged as | Delivery |
 |---------|----------|-----------|----------|
 | **Workout** (this dashboard) | repo root (`data.js`, `engine.js`, …) | "Workout: …" | **Auto-emailed** mobile PDF after each log (push to `data.js` → GitHub Action) |
-| **Nutrition / intake** | [`intake/`](intake/) (Python) | "Nutrition: …" | **In chat at end of day** — `python3 intake/generate_dashboard.py` → HTML rendered & posted in chat. **Never emailed** (the Action only watches root `data.js`). |
+| **Nutrition / intake** | [`intake/`](intake/) (Python) | "Nutrition: …" | **In chat at end of day** — `python3 intake/generate_dashboard.py` → HTML rendered **to a PDF** and posted in chat (preferred format; tall PNGs exceed mobile image-viewer limits). **Never emailed** (the Action only watches root `data.js`). |
 
 Weigh-ins and workouts logged here are also mirrored into `intake/data/metrics/`
 so the nutrition dashboard's weight trend + Training panel stay current.
