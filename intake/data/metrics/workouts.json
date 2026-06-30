@@ -1,0 +1,30 @@
+{
+  "_note": "Training sessions + latest report snapshot from the exercise-log project (Omer's Training Dashboard). Keyed by date.",
+  "report_snapshot": {
+    "report_date": "2026-06-27",
+    "latest_session": "Back (pull)",
+    "sessions_logged": 21,
+    "sessions_per_week": 2.5,
+    "typical_time": "evening",
+    "aerobic_28d_km": 16.4,
+    "aerobic_sessions_28d": 16,
+    "avg_pace": "9:13/km",
+    "avg_hr": 142,
+    "acwr": 1.57,
+    "recommended_next": "Shoulders day",
+    "alerts": [
+      "Training-load spike — ACWR 1.57 (>1.5); hold volume flat or deload to avoid soft-tissue injury.",
+      "Push volume 1.54× pull — add rows / rear-delt work to protect shoulders.",
+      "No direct core work tracked — add planks / hanging leg raises."
+    ]
+  },
+  "entries": [
+    {"date": "2026-06-13", "type": "Incline Walk", "duration_min": 15, "intensity": "easy", "notes": "1 km", "_source": "training report"},
+    {"date": "2026-06-20", "type": "Outdoor Run", "duration_min": 20, "intensity": "moderate", "notes": "3.06 km · 6:34/km · 150 bpm", "_source": "training report"},
+    {"date": "2026-06-22", "type": "Incline Walk", "duration_min": 40, "intensity": "easy", "notes": "3.5 km", "_source": "training report"},
+    {"date": "2026-06-26", "type": "Outdoor Walk", "duration_min": 50, "intensity": "easy", "notes": "4.5 km · 11:07/km", "_source": "training report"},
+    {"date": "2026-06-27", "type": "Strength — Back (pull)", "duration_min": null, "intensity": "moderate", "notes": "21st session logged; back fatigue 100% post-session", "_source": "training report"},
+    {"date": "2026-06-27", "type": "Outdoor Walk", "duration_min": 60, "intensity": "easy", "notes": "4.3 km · 13:57/km", "_source": "training report"},
+    {"date": "2026-06-30", "type": "Strength — Shoulders/Chest (push)", "duration_min": null, "intensity": "moderate", "notes": "DB shoulder press 14kg×4×12; seated lateral raises 14kg×4×7; front raises 16kg×3×10; incline pec fly 14kg×4×12; DB bench 14kg×4×15. (Followed report's recommended Shoulders day.)", "_source": "manual log"}
+  ]
+}

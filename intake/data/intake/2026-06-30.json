@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-30",
+  "day_number": 3,
+  "in_progress": true,
+  "workout_today": true,
+  "workout_summary": "15:00 push session — shoulders/chest (DB shoulder press, lateral & front raises, incline pec fly, DB bench).",
+  "_status": "Day in progress — initial entry (breakfast). More items expected through the day.",
+  "items": [
+    {"time": "07:10", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "07:15", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "~15-20 (est)", "kcal": 40, "protein_g": 2, "carbs_g": 9, "fat_g": 0.5, "fiber_g": 2.5},
+    {"time": "07:15", "name": "Breakfast — baby mozzarella", "category": "food", "qty": "~50 g (est)", "kcal": 140, "protein_g": 10, "carbs_g": 1, "fat_g": 11, "fiber_g": 0},
+    {"time": "07:15", "name": "Breakfast — scrambled eggs", "category": "food", "qty": "2 scoops (~2 eggs)", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 13, "fiber_g": 0},
+    {"time": "07:15", "name": "Breakfast — egg whites", "category": "food", "qty": "3", "kcal": 51, "protein_g": 11, "carbs_g": 0.7, "fat_g": 0.2, "fiber_g": 0},
+    {"time": "07:15", "name": "Breakfast — hard cheese", "category": "food", "qty": "1 piece ~30 g (est)", "kcal": 120, "protein_g": 8, "carbs_g": 1, "fat_g": 9, "fiber_g": 0},
+    {"time": "07:15", "name": "Breakfast — almonds", "category": "food", "qty": "3", "kcal": 21, "protein_g": 0.8, "carbs_g": 0.7, "fat_g": 1.8, "fiber_g": 0.4},
+    {"time": "07:15", "name": "Breakfast — melon", "category": "food", "qty": "some (~80 g est)", "kcal": 27, "protein_g": 0.6, "carbs_g": 7, "fat_g": 0.2, "fiber_g": 0.7},
+    {"time": "07:40", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "08:27", "name": "Breakfast addition — melon cubes", "category": "food", "qty": "~120 g (est)", "kcal": 50, "protein_g": 0.6, "carbs_g": 12, "fat_g": 0.2, "fiber_g": 1.5},
+    {"time": "14:00", "name": "Cinnamon crumble protein donuts", "category": "food", "qty": "1 pack (2 donuts, 63g)", "kcal": 160, "protein_g": 20, "carbs_g": 25, "fat_g": 6, "fiber_g": 8, "note": "label: 0g sugar, 13g erythritol, sodium 380mg, calcium 20%"},
+    {"time": "14:45", "name": "Single espresso", "category": "drink", "qty": "1", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:40", "name": "Single espresso", "category": "drink", "qty": "1", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
+  "micros_sperm_priority": {
+    "zinc_mg": 20,
+    "selenium_mcg": 230,
+    "folate_mcg_dfe": 717,
+    "omega3_epa_dha_mg": 50,
+    "vitamin_c_mg": 290,
+    "vitamin_d_iu": 2080,
+    "vitamin_e_mg": 20,
+    "lycopene_mg": 3
+  },
+  "caffeine_shots": 4,
+  "assumptions": [
+    "Breakfast portions estimated from photo + description (mozzarella ~50g, eggs ~2, hard cheese ~30g).",
+    "'Breakfast addition' confirmed melon (~120g).",
+    "Cherry tomato count ~15-20 from photo.",
+    "Micros are running totals — will finalize at day close (omega-3 supplement typically post-lunch).",
+    "Protein donuts confirmed from label: 160 kcal, 20g protein, 25g carb (8g fiber, 13g erythritol, 0g sugar), 6g fat."
+  ],
+  "status_note": "In progress. High-protein breakfast (~45 g already) — great start. Fat also climbing (~36 g) from mozzarella + eggs + hard cheese, so lean toward leaner protein the rest of the day to stay under the fat target."
+}

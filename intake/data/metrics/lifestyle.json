@@ -1,0 +1,13 @@
+{
+  "_note": "Lifestyle events that affect fertility/recovery parameters (travel, heat exposure, poor/no sleep, illness, high stress, alcohol spikes). Each feeds the weekly sperm-optimization score. severity: mild | moderate | high.",
+  "events": [
+    {
+      "date": "2026-06-29",
+      "type": "travel",
+      "description": "3-hour daytime flight",
+      "affects": ["heat_travel_exposure"],
+      "severity": "mild",
+      "notes": "Prolonged sitting + cabin environment (mild scrotal heat, sedentary, dehydration risk). Daytime — no sleep disruption. Minor, occasional-frequency impact."
+    }
+  ]
+}

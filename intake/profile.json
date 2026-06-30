@@ -1,0 +1,99 @@
+{
+  "name": "User",
+  "updated": "2026-06-27",
+  "personal": {
+    "sex": "male",
+    "age": 26,
+    "height_cm": 171,
+    "_height_note": "Derived from BMI 27.8 at 81.4 kg (~171 cm). Confirm when convenient.",
+    "baseline_weight_kg": 81.4,
+    "baseline_date": "2026-06-27",
+    "scale": "Eufy Smart Scale"
+  },
+  "baseline_body_composition": {
+    "weight_kg": 81.4,
+    "bmi": 27.8,
+    "body_fat_pct": 27.3,
+    "resting_heart_rate": 65,
+    "muscle_mass_kg": 56.2,
+    "bmr_kcal": 1725,
+    "water_pct": 49.5,
+    "lean_body_mass_kg": 59.2,
+    "bone_mass_kg": 3.0,
+    "protein_pct": 15.3,
+    "visceral_fat": 11.0,
+    "skeletal_muscle_mass_kg": 30.8
+  },
+  "goals": {
+    "primary": ["weight_loss", "muscle_retention", "sperm_optimization"],
+    "target_weight_kg": [76, 78],
+    "deadline": null,
+    "target_loss_rate_kg_per_week": 0.4,
+    "conception": {
+      "actively_trying": false,
+      "plan_to_start_within_months": 6,
+      "_note": "Ramp sperm optimization progressively over the next ~6 months."
+    }
+  },
+  "lifestyle": {
+    "work": "Mixed desk + hands-on training (walking between participants / at exhibitions)",
+    "eating_window": "09:00-20:00",
+    "smoking": "none",
+    "sleep": {
+      "consistency": "usually consistent",
+      "notes": "Mostly day/evening flights preserve sleep. Exception: Fri 2026-07-03 night flight with no sleep beforehand — flag as a recovery/sperm hit that week."
+    },
+    "alcohol": {
+      "frequency": "<= 1 glass per week",
+      "types": ["red wine", "beer", "single whiskey", "cocktail"]
+    },
+    "caffeine": {
+      "daily": "4 espresso portions (1 double + 2 single)",
+      "cutoff": "16:00",
+      "note": "Cutoff is sleep-friendly; total ~4 shots/day is moderate."
+    },
+    "stress": "low",
+    "travel": {
+      "baseline": "~1 flight/month",
+      "upcoming_heavy": "Jun-Jul 2026: 4 flights",
+      "scoring_note": "Log each trip as it happens; impact weighted by destination weather (heat) and travel type (night/no-sleep flights count heavier).",
+      "flights": [
+        {"date": "2026-06-29", "type": "3-hour daytime flight", "destination": null, "weather": null},
+        {"date": "2026-07-03", "type": "night flight, no sleep before", "destination": null, "weather": null}
+      ]
+    },
+    "heat_exposure": {
+      "direct": "minimal",
+      "details": "No laptop on lap, no sauna, no hot tub."
+    }
+  },
+  "diet": {
+    "restrictions": ["avoid tuna"],
+    "allergies": [],
+    "style": "omnivore",
+    "_note": "Tuna avoided (mercury — also relevant to fertility). Otherwise unrestricted."
+  },
+  "targets": {
+    "_basis": "BMR 1725 (scale) x activity ~1.45 ≈ 2500 TDEE; ~450 kcal deficit → ~0.4 kg/week with high protein to retain muscle.",
+    "calories_kcal": 2050,
+    "protein_g": 165,
+    "carbs_g": 190,
+    "fat_g": 65,
+    "fiber_g": 32,
+    "micros_sperm_priority": {
+      "zinc_mg": 11,
+      "selenium_mcg": 55,
+      "folate_mcg_dfe": 400,
+      "omega3_epa_dha_mg": 1000,
+      "vitamin_c_mg": 90,
+      "vitamin_d_iu": 2000,
+      "vitamin_e_mg": 15,
+      "lycopene_mg": 8
+    }
+  },
+  "exercise_dashboard": {
+    "source": "external project (separate)",
+    "import_method": "manual — drop CSV/JSON into data/imports/, or report weight + workout-done",
+    "_note": "No automatic cross-repo access available this session."
+  }
+}

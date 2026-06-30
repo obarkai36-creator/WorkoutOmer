@@ -1,0 +1,74 @@
+{
+  "_note": "Current supplement stack. Micronutrient amounts for the multivitamin are best-known estimates flagged for verification against the physical bottle (iHerb/Thorne block automated label fetch).",
+  "stack": [
+    {
+      "id": "thorne_basic_nutrients_2day",
+      "name": "Thorne Basic Nutrients 2/Day",
+      "type": "multivitamin",
+      "serving": "2 capsules",
+      "servings_per_container": 60,
+      "timing": "post-breakfast (or afternoon if forgotten)",
+      "verified": true,
+      "_verify_note": "Full formula confirmed from both label panels (photos 2026-06-27).",
+      "provides": {
+        "vitamin_a_mcg": 1050,
+        "vitamin_c_mg": 250,
+        "vitamin_d_iu": 2000,
+        "vitamin_e_mg": 16.5,
+        "vitamin_k_mcg": 400,
+        "thiamin_mg": 50,
+        "riboflavin_mg": 12,
+        "niacin_mg": 50,
+        "vitamin_b6_mg": 20,
+        "folate_mcg_dfe": 667,
+        "vitamin_b12_mcg": 600,
+        "biotin_mcg": 500,
+        "pantothenic_acid_mg": 45,
+        "calcium_mg": 52,
+        "iodine_mcg": 75,
+        "magnesium_mg": 50,
+        "zinc_mg": 15,
+        "selenium_mcg": 200,
+        "copper_mg": 0.5,
+        "manganese_mg": 2,
+        "chromium_mcg": 400,
+        "gamma_tocopherol_mg": 20,
+        "boron_mg": 2,
+        "lutein_mcg": 140
+      }
+    },
+    {
+      "id": "cgn_creatine_monohydrate",
+      "name": "California Gold Nutrition Creatine Monohydrate",
+      "type": "creatine",
+      "serving": "~5 g",
+      "timing": "after workout (or post-dinner on non-workout days)",
+      "verified": true,
+      "provides_estimate": { "creatine_g": 5 }
+    },
+    {
+      "id": "cgn_omega3_premium",
+      "name": "California Gold Nutrition Omega-3 Premium Fish Oil",
+      "type": "omega3",
+      "serving": "2 softgels (typical)",
+      "timing": "post-lunch",
+      "verified": false,
+      "provides_estimate": { "omega3_epa_dha_mg": 1000, "epa_mg": 360, "dha_mg": 240 }
+    },
+    {
+      "id": "thorne_zinc_picolinate_15",
+      "name": "Thorne Zinc Picolinate 15 mg",
+      "type": "zinc",
+      "serving": "1 capsule",
+      "timing": "before bed",
+      "verified": true,
+      "provides_estimate": { "zinc_mg": 15 }
+    }
+  ],
+  "candidate_additions_for_review": [
+    {"name": "CoQ10 (ubiquinol)", "dose": "200-300 mg/day", "rationale": "Sperm motility & concentration (RCT evidence)."},
+    {"name": "L-carnitine", "dose": "2 g/day", "rationale": "Sperm motility."},
+    {"name": "Lycopene", "dose": "14 mg/day", "rationale": "Motility & morphology."},
+    {"name": "Vitamin D", "dose": "check blood level first", "rationale": "Already ~2000 IU from multi; test before stacking."}
+  ]
+}
