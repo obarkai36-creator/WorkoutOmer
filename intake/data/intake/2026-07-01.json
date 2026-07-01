@@ -1,10 +1,10 @@
 {
   "date": "2026-07-01",
   "day_number": 4,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day in progress — breakfast logged (07:00). More items expected through the day.",
+  "_status": "Day complete.",
   "items": [
     {"time": "07:00", "name": "Breakfast — hard-boiled egg whites", "category": "food", "qty": "2.5 eggs, whites only", "kcal": 43, "protein_g": 9, "carbs_g": 0.5, "fat_g": 0.2, "fiber_g": 0},
     {"time": "07:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "10", "kcal": 27, "protein_g": 1.3, "carbs_g": 6, "fat_g": 0.3, "fiber_g": 1.8},
@@ -19,24 +19,28 @@
     {"time": "15:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "17:00", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "17:00 — past the usual 16:00 caffeine cutoff"},
     {"time": "18:15", "name": "Peroni draft beer", "category": "drink", "qty": "~750 ml", "kcal": 320, "protein_g": 3, "carbs_g": 20, "fat_g": 0, "fiber_g": 0, "note": "~5% ABV, pre-dinner (~2.5 units)"},
-    {"time": "18:30", "name": "Mozzarella & prosciutto (split dish)", "category": "food", "qty": "~half a shared plate (~70 g mozzarella + ~35 g prosciutto est)", "kcal": 240, "protein_g": 20, "carbs_g": 1, "fat_g": 18, "fiber_g": 0}
+    {"time": "18:30", "name": "Mozzarella & prosciutto (split dish)", "category": "food", "qty": "~half a shared plate (~70 g mozzarella + ~35 g prosciutto est)", "kcal": 240, "protein_g": 20, "carbs_g": 1, "fat_g": 18, "fiber_g": 0},
+    {"time": "21:00", "name": "Dinner — shared, multiple courses (not itemized)", "category": "food", "qty": "estimate — food shared across several courses, no exact tracking", "kcal": 1150, "protein_g": 68, "carbs_g": 88, "fat_g": 62, "fiber_g": 6, "note": "APPROXIMATE per your call: high calorie, high protein, high fat, moderate carbs"},
+    {"time": "22:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "23:50", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 cap (bedtime)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 21,
-    "selenium_mcg": 270,
-    "folate_mcg_dfe": 722,
+    "zinc_mg": 39,
+    "selenium_mcg": 300,
+    "folate_mcg_dfe": 740,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 310,
+    "vitamin_c_mg": 320,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 17.5,
-    "lycopene_mg": 4
+    "vitamin_e_mg": 19,
+    "lycopene_mg": 7
   },
   "caffeine_shots": 2,
   "assumptions": [
     "Egg whites: 2.5 eggs' worth, yolks discarded (~17 kcal / 3.6 g protein per white).",
     "8 baby mozzarella ~70 g; hard cheese 0.5 piece ~25 g (sized from photo).",
     "Melon + pineapple bowl ~200 g, matched to yesterday's fruit quantity.",
-    "Micros are running totals — multivitamin logged 07:35; omega-3 (post-lunch) and zinc (bedtime) not yet taken; finalize at day close."
+    "Micros: multivitamin (07:35) + omega-3 (15:15) + bedtime zinc (23:50) taken; dinner micros folded in as estimates.",
+    "Dinner NOT itemized — food shared across multiple courses, no exact tracking. Logged as a single approximate entry (~1,150 kcal / 68 g protein / 88 g carb / 62 g fat) matching your call of high calorie, high protein, high fat, moderate carbs. Treat dinner macros as ballpark."
   ],
-  "status_note": "Day in progress — pre-dinner. Running ~1,835 kcal, ~130 g protein, ~84 g fat, ~14 g fiber before dinner. Protein is excellent, but fat is already over target (mozzarella, prosciutto, Caesar dressing) and there's a beer in — with dinner still to come the day will land well over 2,050 kcal. Second day in a row with alcohol (750 ml beer today after last night's spritz + limoncello) — logged as a lifestyle event; worth a couple of dry days after to protect the weekly alcohol factor. Multivitamin + omega-3 taken; bedtime zinc to come."
+  "status_note": "Day complete. High-calorie, high-protein, high-fat, moderate-carb day (~2,985 kcal / ~198 g protein / ~189 g carb / ~146 g fat). Dinner was shared across multiple courses and estimated, not itemized. Protein was excellent all day; fat ran well over target (cheese, prosciutto, Caesar dressing, dinner). Full supplement stack in (multi, omega-3, creatine, zinc); all sperm-priority micros met. Second straight day with alcohol (750 ml beer) — logged as a lifestyle event; a couple of dry days now would restore the weekly alcohol factor."
 }
