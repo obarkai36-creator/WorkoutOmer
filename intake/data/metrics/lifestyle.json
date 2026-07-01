@@ -16,6 +16,14 @@
       "affects": ["alcohol"],
       "severity": "moderate",
       "notes": "Well above the usual <=1 glass/week baseline. One-off social dinner; returning to baseline keeps the weekly alcohol factor healthy."
+    },
+    {
+      "date": "2026-07-01",
+      "type": "alcohol",
+      "description": "~750 ml Peroni draft beer (~2.5 units), pre-dinner",
+      "affects": ["alcohol"],
+      "severity": "moderate",
+      "notes": "Second consecutive day with alcohol (after 30 Jun spritz + limoncello). Two drinking days in one week pulls the weekly alcohol factor down noticeably vs the <=1/week baseline — a few dry days would restore it."
     }
   ]
 }
