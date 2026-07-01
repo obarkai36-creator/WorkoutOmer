@@ -15,13 +15,14 @@
     {"time": "12:00", "name": "Chocolate protein donuts", "category": "food", "qty": "1 pack (2 donuts, 61g)", "kcal": 160, "protein_g": 20, "carbs_g": 23, "fat_g": 6, "fiber_g": 6, "note": "label: 0g sugar, 12g erythritol, sodium 380mg, calcium 20%, iron 20%"},
     {"time": "13:30", "name": "Chicken Caesar salad", "category": "food", "qty": "full salad, thick chicken breast, ~½ croutons eaten", "kcal": 620, "protein_g": 56, "carbs_g": 18, "fat_g": 36, "fiber_g": 3, "note": "romaine, shaved parmesan, creamy Caesar dressing; dressing + cheese drive the fat"},
     {"time": "13:30", "name": "Bread", "category": "food", "qty": "0.5 piece (~15 g)", "kcal": 50, "protein_g": 1.5, "carbs_g": 9, "fat_g": 0.8, "fiber_g": 0.6},
-    {"time": "13:30", "name": "Coke Zero", "category": "drink", "qty": "1", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:30", "name": "Coke Zero", "category": "drink", "qty": "1", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 19,
     "selenium_mcg": 255,
     "folate_mcg_dfe": 722,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 310,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 17.5,
@@ -34,5 +35,5 @@
     "Melon + pineapple bowl ~200 g, matched to yesterday's fruit quantity.",
     "Micros are running totals — multivitamin logged 07:35; omega-3 (post-lunch) and zinc (bedtime) not yet taken; finalize at day close."
   ],
-  "status_note": "Day in progress. Through a chicken Caesar lunch: ~1,270 kcal, ~108 g protein, ~66 g fat, ~14 g fiber. Protein is excellent; fat has already reached the daily target (65 g) mainly from the Caesar dressing + parmesan, so keep dinner leaner (grilled protein + veg, easy on oils/cheese) to land the day near target. Multivitamin taken; omega-3 (post-lunch) and zinc (bedtime) still to come."
+  "status_note": "Day in progress. Through a chicken Caesar lunch: ~1,270 kcal, ~108 g protein, ~66 g fat, ~14 g fiber. Protein is excellent; fat has already reached the daily target (65 g) mainly from the Caesar dressing + parmesan, so keep dinner leaner (grilled protein + veg, easy on oils/cheese) to land the day near target. Multivitamin + omega-3 taken; bedtime zinc still to come."
 }
