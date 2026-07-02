@@ -14,13 +14,14 @@
     {"time": "19:30", "name": "Pro pita (high-protein)", "category": "food", "qty": "2 pitas", "kcal": 330, "protein_g": 28, "carbs_g": 42, "fat_g": 5, "fiber_g": 9, "note": "estimate for high-protein pita (~165 kcal / 14 g protein each) — share the label if you want it exact + saved"},
     {"time": "19:30", "name": "Homemade chicken meatballs (veg-loaded)", "category": "food", "qty": "310 g", "kcal": 545, "protein_g": 48, "carbs_g": 24, "fat_g": 27, "fiber_g": 3, "note": "estimate from recipe (1kg ground chicken, fried onion, grated sweet potato + zucchini, 2 eggs, ½ cup breadcrumbs, ketchup); ~176 kcal/100g. Saved to references/foods.json"},
     {"time": "19:30", "name": "Grilled cherry tomatoes", "category": "food", "qty": "small bowl (~110 g)", "kcal": 60, "protein_g": 1.5, "carbs_g": 8, "fat_g": 3, "fiber_g": 2, "note": "roasted with a little oil; cooked tomatoes = bioavailable lycopene"},
-    {"time": "19:30", "name": "Spelt pasta & chicken breast (2 bites)", "category": "food", "qty": "2 bites of a shared dish", "kcal": 90, "protein_g": 7, "carbs_g": 10, "fat_g": 3, "fiber_g": 1, "note": "small taste from a shared dish (IG recipe); rough estimate"}
+    {"time": "19:30", "name": "Spelt pasta & chicken breast (2 bites)", "category": "food", "qty": "2 bites of a shared dish", "kcal": 90, "protein_g": 7, "carbs_g": 10, "fat_g": 3, "fiber_g": 1, "note": "small taste from a shared dish (IG recipe); rough estimate"},
+    {"time": "20:25", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 21,
     "selenium_mcg": 263,
     "folate_mcg_dfe": 722,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 270,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 19.5,
