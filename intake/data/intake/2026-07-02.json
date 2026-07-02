@@ -1,0 +1,28 @@
+{
+  "date": "2026-07-02",
+  "day_number": 5,
+  "in_progress": true,
+  "workout_today": false,
+  "workout_summary": null,
+  "_status": "Day in progress — morning (double espresso + coconut snack). More items expected.",
+  "items": [
+    {"time": "08:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "11:00", "name": "Coconut snack", "category": "food", "qty": "1 unit (~20 g est)", "kcal": 89, "protein_g": 1, "carbs_g": 11, "fat_g": 4.2, "fiber_g": 1, "note": "estimate from partially-legible label: ~444 kcal/100g, fat 21.2 g/100g, ~89 kcal/unit"}
+  ],
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 3,
+    "folate_mcg_dfe": 2,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "caffeine_shots": 2,
+  "assumptions": [
+    "Coconut snack estimated from a partially-legible Hebrew label (~444 kcal/100 g, 21.2 g fat/100 g); assumed ~20 g unit → ~89 kcal. Correct me if the pack size/kcal differs.",
+    "Micros are running dietary totals — multivitamin/omega-3/zinc not yet taken; finalize at day close."
+  ],
+  "status_note": "Day in progress — light morning start (double espresso + a coconut snack). Supplements not in yet."
+}
