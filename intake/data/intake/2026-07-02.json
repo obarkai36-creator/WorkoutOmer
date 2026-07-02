@@ -7,7 +7,7 @@
   "_status": "Day in progress — morning (double espresso + coconut snack). More items expected.",
   "items": [
     {"time": "08:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "11:00", "name": "Coconut snack", "category": "food", "qty": "1 unit (~20 g est)", "kcal": 89, "protein_g": 1, "carbs_g": 11, "fat_g": 4.2, "fiber_g": 1, "note": "estimate from partially-legible label: ~444 kcal/100g, fat 21.2 g/100g, ~89 kcal/unit"}
+    {"time": "11:00", "name": "El Al coconut snack", "category": "food", "qty": "1 unit (20 g)", "kcal": 89, "protein_g": 1, "carbs_g": 11, "fat_g": 4.2, "fiber_g": 1, "note": "confirmed 20 g unit (label ~444 kcal/100g); saved to references/foods.json for reuse"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -21,7 +21,7 @@
   },
   "caffeine_shots": 2,
   "assumptions": [
-    "Coconut snack estimated from a partially-legible Hebrew label (~444 kcal/100 g, 21.2 g fat/100 g); assumed ~20 g unit → ~89 kcal. Correct me if the pack size/kcal differs.",
+    "El Al coconut snack: 20 g unit confirmed → 89 kcal; stored in references/foods.json for future one-shot logging.",
     "Micros are running dietary totals — multivitamin/omega-3/zinc not yet taken; finalize at day close."
   ],
   "status_note": "Day in progress — light morning start (double espresso + a coconut snack). Supplements not in yet."

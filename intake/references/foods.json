@@ -1,0 +1,17 @@
+{
+  "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
+  "items": [
+    {
+      "id": "elal_coconut_snack",
+      "name": "El Al coconut snack",
+      "serving": "1 unit (20 g)",
+      "kcal": 89,
+      "protein_g": 1,
+      "carbs_g": 11,
+      "fat_g": 4.2,
+      "fiber_g": 1,
+      "verified": true,
+      "source": "Label ~444 kcal/100 g, 21.2 g fat/100 g; 20 g unit confirmed by user 2026-07-02. Served on El Al flights."
+    }
+  ]
+}
