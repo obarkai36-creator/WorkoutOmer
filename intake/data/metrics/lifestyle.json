@@ -24,6 +24,22 @@
       "affects": ["alcohol"],
       "severity": "moderate",
       "notes": "Second consecutive day with alcohol (after 30 Jun spritz + limoncello). Two drinking days in one week pulls the weekly alcohol factor down noticeably vs the <=1/week baseline — a few dry days would restore it."
+    },
+    {
+      "date": "2026-07-02",
+      "type": "travel",
+      "description": "3-hour flight (travel day)",
+      "affects": ["heat_travel_exposure"],
+      "severity": "mild",
+      "notes": "Prolonged sitting + cabin environment (mild scrotal heat, sedentary, dehydration risk). First of back-to-back travel days."
+    },
+    {
+      "date": "2026-07-03",
+      "type": "travel",
+      "description": "5-hour red-eye flight with minimal sleep",
+      "affects": ["heat_travel_exposure", "sleep"],
+      "severity": "high",
+      "notes": "Overnight red-eye between the two travel days — minimal/no sleep plus a longer flight. Back-to-back flights + a sleepless night are a meaningful recovery/fertility hit for the week; prioritise catch-up sleep and hydration after landing."
     }
   ]
 }
