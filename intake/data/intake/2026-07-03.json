@@ -10,23 +10,27 @@
     {"time": "00:40", "name": "Homemade chocolate-chip cookie", "category": "food", "qty": "1 cookie (~45 g est)", "kcal": 220, "protein_g": 3, "carbs_g": 28, "fat_g": 11, "fiber_g": 1, "note": "thick homemade choc-chip cookie; portion estimated from photo"},
     {"time": "03:45", "name": "Pro pita (high-protein)", "category": "food", "qty": "1 pita", "kcal": 165, "protein_g": 14, "carbs_g": 21, "fat_g": 2.5, "fiber_g": 4.5, "note": "estimate (~165 kcal / 14 g protein) — share the label to pin exact"},
     {"time": "03:45", "name": "Yellow cheese slices", "category": "food", "qty": "2 slices (~50 g)", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0},
-    {"time": "06:00", "name": "El Al cocoa-coconut snack", "category": "food", "qty": "1 unit (~20 g)", "kcal": 92, "protein_g": 1, "carbs_g": 10, "fat_g": 5, "fiber_g": 1, "note": "06:00 local (tz +1); estimated from the El Al coconut snack, cocoa variant — share label to pin exact"}
+    {"time": "06:00", "name": "El Al cocoa-coconut snack", "category": "food", "qty": "1 unit (~20 g)", "kcal": 92, "protein_g": 1, "carbs_g": 10, "fat_g": 5, "fiber_g": 1, "note": "06:00 local (tz +1); estimated from the El Al coconut snack, cocoa variant — share label to pin exact"},
+    {"time": "09:15", "name": "Pro pita (high-protein)", "category": "food", "qty": "1 pita", "kcal": 165, "protein_g": 14, "carbs_g": 21, "fat_g": 2.5, "fiber_g": 4.5, "note": "estimate (~165 kcal / 14 g protein)"},
+    {"time": "09:15", "name": "Yellow cheese slices", "category": "food", "qty": "2 slices (~50 g)", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0},
+    {"time": "09:15", "name": "Simfonia cheese (smeared)", "category": "food", "qty": "~20 g smear", "kcal": 60, "protein_g": 4, "carbs_g": 1, "fat_g": 5, "fiber_g": 0},
+    {"time": "09:25", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2,
-    "selenium_mcg": 17,
-    "folate_mcg_dfe": 15,
+    "zinc_mg": 19,
+    "selenium_mcg": 232,
+    "folate_mcg_dfe": 692,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 250,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
     "lycopene_mg": 0
   },
   "caffeine_shots": 2,
   "assumptions": [
     "Homemade cookie ~45 g, estimated from photo (thick choc-chip).",
     "Timezone shifted +1 mid-day (travel); item times from 06:00 on are local (+1).",
-    "Micros are running dietary totals — supplements not yet taken; finalize at day close."
+    "Micros are running totals — multivitamin logged 09:25; omega-3 and bedtime zinc not yet taken; finalize at day close."
   ],
   "status_note": "Day in progress — rough switch from Day 5 on only ~2.5 h sleep (red-eye). Started 00:40 with a double espresso + a homemade cookie. Travel day (5-hour flight). Sleep debt + back-to-back flights are the week's main recovery drag — catch-up sleep + hydration after landing is the priority."
 }
