@@ -207,6 +207,22 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 4 Jul — Long city walk, London (full-day event; steps via Samsung Health)
+  {
+    datetime: "2026-07-04T12:00", note: "Long city walk — London (full-day)",
+    exercises: [
+      { name: "Outdoor Walk", distanceKm: 10.43, durationMin: 130, rpe: 3 },
+    ],
+  },
+
+  // 3 Jul — Full-day city walking on a travel/red-eye day (~16K steps)
+  {
+    datetime: "2026-07-03T12:00", note: "Full-day city walking (travel day)",
+    exercises: [
+      { name: "Outdoor Walk", distanceKm: 11.5, durationMin: 150, rpe: 3 },
+    ],
+  },
+
   // 30 Jun — Shoulders + Chest, light / high-rep (15:00)
   {
     datetime: "2026-06-30T15:00", note: "Shoulders + Chest (light/high-rep)",
