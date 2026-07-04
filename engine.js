@@ -281,7 +281,15 @@ function recommendSession(data, workouts, sectionFat, now) {
 
   const pick = ranked[0];
   const restHours = pick.readyInHours;
-  const suggestedExercises = data.SNAPSHOT.filter((e) => e.section === pick.section).map((e) => e.name).slice(0, 7);
+  // Recommended lifts for the picked section, each with your current best +
+  // est 1RM, so you have a target to hit/beat during the session.
+  const suggestedExercises = data.SNAPSHOT
+    .filter((e) => e.section === pick.section)
+    .slice(0, 7)
+    .map((e) => {
+      const B = recStats(e.best, e.iso);
+      return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso };
+    });
   const aerobicLast7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
   const lastAerobic = workouts.find((w) => w.isAerobic);
 

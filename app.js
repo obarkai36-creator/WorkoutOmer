@@ -112,8 +112,13 @@
         <div class="big">${r.section} day</div>
         <div class="rest">${restTxt}</div>
         <div class="when">${r.readyNow ? "Earliest sensible slot: now" : "Ready around " + fmtWhen(r.readyAt)} &middot; ${r.neverLogged ? "no " + r.section.toLowerCase() + " session logged yet" : "last " + r.section.toLowerCase() + " " + r.daysSince + "d ago"}</div>
-        <div style="margin-top:10px">
-          ${r.suggestedExercises.map((e) => `<span class="chip">${e}</span>`).join("")}
+        <div class="small muted" style="margin-top:12px;margin-bottom:2px">Suggested lifts &middot; your best (target to beat)</div>
+        <div class="reco-lifts">
+          ${r.suggestedExercises.map((e) => `
+            <div class="reco-lift">
+              <span class="rl-name">${e.name}</span>
+              <span class="rl-best">${e.best || "—"}${e.best1RM && !e.iso ? ` <span class="rl-orm">1RM ${e.best1RM}kg</span>` : ""}</span>
+            </div>`).join("")}
         </div>
       </div>
       <div class="small muted" style="margin-bottom:8px">Recovery ranking</div>
