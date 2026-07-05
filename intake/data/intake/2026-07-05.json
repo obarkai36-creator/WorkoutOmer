@@ -9,17 +9,20 @@
     {"time": "09:30", "name": "Eggs Royale w/ smoked salmon & grilled tomato", "category": "food", "qty": "2 poached eggs, hollandaise, smoked salmon, muffin, grilled tomatoes", "kcal": 580, "protein_g": 28, "carbs_g": 34, "fat_g": 36, "fiber_g": 4, "note": "brunch; hollandaise = fat-heavy. Salmon adds dietary omega-3; grilled tomato adds lycopene", "time_approx": true},
     {"time": "11:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:10", "name": "Beef carpaccio (Steak and Company)", "category": "food", "qty": "1 starter plate", "kcal": 480, "protein_g": 29, "carbs_g": 6, "fat_g": 38, "fiber_g": 2, "note": "thin raw beef, rocket, shaved parmesan, walnuts, creamy dressing + olive oil — dressing/cheese/nuts drive the fat"},
-    {"time": "13:30", "name": "Sirloin steak main (Steak and Company)", "category": "food", "qty": "~250 g sirloin + béarnaise + garlic-herb butter (mostly eaten)", "kcal": 740, "protein_g": 51, "carbs_g": 1, "fat_g": 58, "fiber_g": 1, "note": "finished the steak per the 'after' photo; béarnaise + garlic butter make it very fat-heavy", "time_approx": true}
+    {"time": "13:30", "name": "Sirloin steak main (Steak and Company)", "category": "food", "qty": "~250 g sirloin + béarnaise + garlic-herb butter (mostly eaten)", "kcal": 740, "protein_g": 51, "carbs_g": 1, "fat_g": 58, "fiber_g": 1, "note": "finished the steak per the 'after' photo; béarnaise + garlic butter make it very fat-heavy", "time_approx": true},
+    {"time": "19:15", "name": "Chicken al Mattone (Jamie's Italian)", "category": "food", "qty": "1 main (herby lemon chicken breast, passata, rocket, parmesan)", "kcal": 480, "protein_g": 52, "carbs_g": 10, "fat_g": 21, "fiber_g": 2, "note": "chosen as the lean high-protein option to offset a fat-heavy day"},
+    {"time": "19:15", "name": "Green Beans Pomodoro (side)", "category": "food", "qty": "1 side", "kcal": 120, "protein_g": 4, "carbs_g": 14, "fat_g": 5, "fiber_g": 5, "note": "green beans in tomato sauce — fiber, low fat"},
+    {"time": "19:45", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 14,
-    "selenium_mcg": 90,
-    "folate_mcg_dfe": 45,
+    "zinc_mg": 32,
+    "selenium_mcg": 315,
+    "folate_mcg_dfe": 742,
     "omega3_epa_dha_mg": 1500,
-    "vitamin_c_mg": 15,
-    "vitamin_d_iu": 240,
-    "vitamin_e_mg": 2,
-    "lycopene_mg": 8
+    "vitamin_c_mg": 280,
+    "vitamin_d_iu": 2240,
+    "vitamin_e_mg": 18.5,
+    "lycopene_mg": 11
   },
   "caffeine_shots": 0,
   "assumptions": [
@@ -29,5 +32,5 @@
     "Beef carpaccio confirmed as a full personal portion.",
     "Micros are running totals — multivitamin/bedtime zinc not logged yet."
   ],
-  "status_note": "Day in progress (Sunday) — two rich restaurant meals: brunch Eggs Royale + a Steak and Company carpaccio & sirloin. Protein strong (~108 g so far) but fat is very high (~132 g vs 65 g target) from hollandaise, béarnaise, garlic butter, and the carpaccio's cheese/walnuts/dressing. Calories still moderate (~1,800). If steering the rest of the day: keep it lean, high-protein, near-zero added fat (a protein shake/yogurt, lean meat or veg), and ideally a walk."
+  "status_note": "Day in progress (Sunday). Fat-heavy eating-out day (~2,400 kcal, ~164 g protein, ~65 g carb, ~158 g fat) — hollandaise/béarnaise/garlic-butter/carpaccio stacked the fat to ~2.4× target. But the dinner call was spot-on: a lean chicken breast + green beans landed protein essentially ON target (~164/165) without adding much fat, and pushed fiber/lycopene up. All sperm-priority micros met. The takeaway repeats from yesterday: on rich restaurant days, anchor the last meal on lean protein — it rescued the protein number again."
 }
