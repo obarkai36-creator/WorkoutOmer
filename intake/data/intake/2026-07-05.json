@@ -1,10 +1,10 @@
 {
   "date": "2026-07-05",
   "day_number": 8,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Full-day walking — 17,133 steps / 13.35 km / 529 active kcal / 174 min active (Samsung Health).",
-  "_status": "Day in progress (Sunday) — brunch + Steak and Company lunch (carpaccio + sirloin) logged.",
+  "_status": "Day complete.",
   "items": [
     {"time": "09:30", "name": "Eggs Royale w/ smoked salmon & grilled tomato", "category": "food", "qty": "2 poached eggs, hollandaise, smoked salmon, muffin, grilled tomatoes", "kcal": 580, "protein_g": 28, "carbs_g": 34, "fat_g": 36, "fiber_g": 4, "note": "brunch; hollandaise = fat-heavy. Salmon adds dietary omega-3; grilled tomato adds lycopene", "time_approx": true},
     {"time": "11:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
@@ -14,10 +14,11 @@
     {"time": "19:15", "name": "Green Beans Pomodoro (side)", "category": "food", "qty": "1 side", "kcal": 120, "protein_g": 4, "carbs_g": 14, "fat_g": 5, "fiber_g": 5, "note": "green beans in tomato sauce — fiber, low fat"},
     {"time": "19:45", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "20:55", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "21:00", "name": "Rioja red wine", "category": "drink", "qty": "~0.5 glass (~90 ml)", "kcal": 75, "protein_g": 0, "carbs_g": 2, "fat_g": 0, "fiber_g": 0, "note": "~0.5 unit"}
+    {"time": "21:00", "name": "Rioja red wine", "category": "drink", "qty": "~0.5 glass (~90 ml)", "kcal": 75, "protein_g": 0, "carbs_g": 2, "fat_g": 0, "fiber_g": 0, "note": "~0.5 unit"},
+    {"time": "00:44", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 cap (bedtime, just past midnight)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 32,
+    "zinc_mg": 47,
     "selenium_mcg": 315,
     "folate_mcg_dfe": 742,
     "omega3_epa_dha_mg": 1500,
@@ -34,5 +35,5 @@
     "Beef carpaccio confirmed as a full personal portion.",
     "Micros are running totals — multivitamin/bedtime zinc not logged yet."
   ],
-  "status_note": "Day in progress (Sunday). Fat-heavy eating-out day (~2,400 kcal, ~164 g protein, ~65 g carb, ~158 g fat) — hollandaise/béarnaise/garlic-butter/carpaccio stacked the fat to ~2.4× target. But the dinner call was spot-on: a lean chicken breast + green beans landed protein essentially ON target (~164/165) without adding much fat, and pushed fiber/lycopene up. All sperm-priority micros met. The takeaway repeats from yesterday: on rich restaurant days, anchor the last meal on lean protein — it rescued the protein number again."
+  "status_note": "Day complete (Sunday). Fat-heavy eating-out day (~2,475 kcal, ~164 g protein, ~67 g carb, ~158 g fat, ~14 g fiber) — hollandaise/béarnaise/garlic-butter/carpaccio stacked fat to ~2.4× target. But two things went right: the deliberate lean-chicken-breast + green-beans dinner landed protein essentially ON target (164/165) without piling fat, and a big 13.35 km / 17.1K-step walking day (~529 active kcal) offset a large chunk of the calories. Full supplement stack in; all sperm-priority micros met. One watch-item: this was the 4th alcohol day of the week (0.5 glass wine) — small but frequent; a run of dry days would help the weekly alcohol factor."
 }
