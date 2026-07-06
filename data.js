@@ -207,6 +207,19 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 6 Jul — Push + arms at a travel gym (machine weights not comparable to home,
+  // so SNAPSHOT PRs left untouched; logged for fatigue/recovery/timing)
+  {
+    datetime: "2026-07-06T17:00", note: "Push + arms (travel gym)",
+    exercises: [
+      { name: "Chest Press Machine",       sets: [ { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 } ] },
+      { name: "Incline Bench Press",        sets: [ { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 } ] },
+      { name: "Converging Shoulder Press",  sets: [ { reps: 6, weight: 82 }, { reps: 6, weight: 82 }, { reps: 6, weight: 82 }, { reps: 6, weight: 82 } ] },
+      { name: "Incline Hammer Curl",        sets: [ { reps: 8, weight: 16 }, { reps: 8, weight: 16 }, { reps: 8, weight: 16 }, { reps: 8, weight: 16 } ] },
+      { name: "Incline DB Curl",            sets: [ { reps: 6, weight: 16 }, { reps: 6, weight: 16 }, { reps: 6, weight: 16 }, { reps: 6, weight: 16 } ] },
+    ],
+  },
+
   // 5 Jul — Full-day walking, London (Samsung Health: 17,133 steps / 13.35 km)
   {
     datetime: "2026-07-05T12:00", note: "Full-day walking — London",
