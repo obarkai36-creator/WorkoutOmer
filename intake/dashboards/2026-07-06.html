@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intake Dashboard · 2026-07-06</title>
+<style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+           --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+          font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:1100px; margin:0 auto; padding:24px 18px 60px; }
+  header.top { display:flex; justify-content:space-between; align-items:flex-end;
+                flex-wrap:wrap; gap:12px; margin-bottom:20px; }
+  .title { font-size:22px; font-weight:700; }
+  .subtitle { color:var(--muted); }
+  .daychip { background:linear-gradient(135deg,#1d4ed8,#0ea5e9); color:#fff;
+              padding:8px 14px; border-radius:12px; font-weight:700; }
+  .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:16px;
+            padding:18px; }
+  .panel.span { grid-column:1 / -1; }
+  .panel h2 { margin:0 0 14px; font-size:13px; letter-spacing:.08em;
+               text-transform:uppercase; color:var(--muted); }
+  .metric { margin:10px 0; }
+  .metric-top { display:flex; justify-content:space-between; font-size:13px; margin-bottom:5px; }
+  .vals { font-variant-numeric:tabular-nums; font-weight:600; }
+  .muted { color:var(--muted); font-weight:400; }
+  .track { height:8px; background:#0a1019; border-radius:6px; overflow:hidden; }
+  .fill { height:100%; border-radius:6px; transition:width .3s; }
+  .bignum { font-size:40px; font-weight:800; line-height:1; }
+  .bignum small { font-size:16px; color:var(--muted); font-weight:600; }
+  .goalline { color:var(--muted); margin-top:6px; }
+  .chips { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:14px; }
+  .chip { background:var(--panel2); border:1px solid var(--line); border-radius:10px;
+           padding:10px; text-align:center; }
+  .chip-v { font-size:18px; font-weight:700; }
+  .chip-k { font-size:11px; color:var(--muted); margin-top:2px; }
+  .spark { height:90px; margin-top:6px; }
+  table { width:100%; border-collapse:collapse; }
+  th,td { text-align:left; padding:7px 6px; border-bottom:1px solid var(--line); font-size:13px; }
+  th { color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.05em; }
+  .t-time { color:var(--muted); width:54px; font-variant-numeric:tabular-nums; }
+  .t-num { text-align:right; font-variant-numeric:tabular-nums; width:52px; }
+  .t-total td { font-weight:700; border-top:2px solid var(--line); border-bottom:none; color:var(--text); }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:8px; }
+  .ring-wrap { display:flex; flex-direction:column; align-items:center; }
+  .ring-num { fill:var(--text); font-size:30px; font-weight:800; }
+  .ring-sub { fill:var(--muted); font-size:11px; }
+  .ring-label { font-weight:700; margin-top:6px; }
+  .sperm-flex { display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
+  .sperm-flex .factors { flex:1; min-width:240px; }
+  .note { background:var(--panel2); border-left:3px solid var(--accent);
+           padding:10px 12px; border-radius:8px; color:var(--text); margin-top:4px; }
+  .chips.four { grid-template-columns:repeat(4,1fr); margin-top:0; }
+  .tr-line { margin:12px 0 14px; font-size:14px; }
+  .tr-cols { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .ev-ul { list-style:none; margin:0; padding:0; }
+  .ev-ul li { font-size:13px; padding:5px 0; border-bottom:1px solid var(--line); }
+  .alert { background:var(--panel2); border-left:3px solid #f59e0b; padding:8px 10px;
+            border-radius:8px; margin-bottom:8px; font-size:13px; }
+  .lifestyle { margin-top:14px; }
+  .ls-h { font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+  .lifestyle ul { list-style:none; margin:0; padding:0; }
+  .lifestyle li { font-size:13px; padding:5px 0; border-bottom:1px solid var(--line); }
+  .ev-dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:8px; }
+  .locked { display:flex; gap:14px; align-items:center; padding:8px 0; }
+  .lock-ico { font-size:30px; }
+  .footer { color:var(--muted); font-size:12px; text-align:center; margin-top:26px; }
+  @media(max-width:720px){ .grid{grid-template-columns:1fr;} .chips{grid-template-columns:repeat(3,1fr);}
+    .chips.four{grid-template-columns:repeat(2,1fr);} .tr-cols{grid-template-columns:1fr;} }
+</style></head>
+<body><div class="wrap">
+
+  <header class="top">
+    <div>
+      <div class="title">Nutrition &amp; Intake Dashboard</div>
+      <div class="subtitle">Monday, 06 July 2026 · Goals: weight loss · muscle retention · sperm optimization</div>
+    </div>
+    <div class="daychip">Day 9</div>
+  </header>
+
+  <div class="grid">
+
+    <div class="panel span">
+      <h2>Status &amp; Progress</h2>
+      <div class="note">Day complete. Fat-forward day (~2,410 kcal, ~184 g protein, ~117 g carb, ~130 g fat, ~9 g fiber) — clotted cream, steak, melanzane and chicken skin/wings kept fat ~2× target. But the standout: back on the weights (push + arms, two PRs), and the lean-protein BBQ dinner (½ chicken + sliced turkey + wings) drove protein to ~184 g — well over target on a lifting day, ideal for muscle retention. Carbs/fiber finished low. Supplements: multivitamin, omega-3, creatine in; bedtime zinc skipped tonight (next one Friday) — zinc still hit 29 mg from the multi + food.</div>
+    </div>
+
+    <div class="panel">
+      <h2>Weight &amp; Body Composition</h2>
+      <div class="bignum">81.4<small> kg</small></div>
+      <div class="goalline">Target 76–78 kg · <b>3.4 kg to go</b> · since start -0.3 kg</div>
+      <svg viewBox="0 0 560 90" width="100%" preserveAspectRatio="none" class="spark">
+      <polyline fill="none" stroke="#38bdf8" stroke-width="2" points="8.0,8.0 144.0,82.0 280.0,15.0 416.0,32.7 552.0,32.7"/>
+      <circle cx="8.0" cy="8.0" r="3" fill="#38bdf8"/><circle cx="144.0" cy="82.0" r="3" fill="#38bdf8"/><circle cx="280.0" cy="15.0" r="3" fill="#38bdf8"/><circle cx="416.0" cy="32.7" r="3" fill="#38bdf8"/><circle cx="552.0" cy="32.7" r="3" fill="#38bdf8"/>
+      <circle cx="552.0" cy="32.7" r="4.5" fill="#22c55e"/>
+    </svg>
+      <div class="chips"><div class='chip'><div class='chip-v'>27.3</div><div class='chip-k'>Body fat %</div></div><div class='chip'><div class='chip-v'>30.8</div><div class='chip-k'>Skeletal muscle kg</div></div><div class='chip'><div class='chip-v'>11.0</div><div class='chip-k'>Visceral fat</div></div><div class='chip'><div class='chip-v'>56.2</div><div class='chip-k'>Muscle mass kg</div></div><div class='chip'><div class='chip-v'>1725</div><div class='chip-k'>BMR kcal</div></div><div class='chip'><div class='chip-v'>65</div><div class='chip-k'>Resting HR</div></div></div>
+    </div>
+
+    <div class="panel">
+      <h2>Sperm Optimization</h2>
+      <div class="locked">
+          <div class="lock-ico">🔒</div>
+          <div><b>Score unlocks after 14 logged days.</b>
+          <div class="muted">9 / 14 logged · 5 day(s) to go. Logging the inputs (nutrition, sleep, alcohol, heat/travel) now; the weighted estimate switches on at day 14.</div></div>
+        </div>
+      <div class='lifestyle'><div class='ls-h'>Lifestyle log · last 7 days</div><ul><li><span class='ev-dot' style='background:#f59e0b'></span><b>2026-07-05</b> · ~0.5 glass Rioja red wine <span class='muted'>· alcohol · mild</span></li><li><span class='ev-dot' style='background:#ef4444'></span><b>2026-07-03</b> · 5-hour red-eye flight — only ~2.5 h sleep <span class='muted'>· travel · high</span></li><li><span class='ev-dot' style='background:#f59e0b'></span><b>2026-07-03</b> · Singha beer (~0.7 of a 330 ml bottle, ~1 unit) at lunch <span class='muted'>· alcohol · mild</span></li><li><span class='ev-dot' style='background:#f59e0b'></span><b>2026-07-02</b> · 3-hour flight (travel day) <span class='muted'>· travel · mild</span></li><li><span class='ev-dot' style='background:#f97316'></span><b>2026-07-01</b> · ~750 ml Peroni draft beer (~2.5 units), pre-dinner <span class='muted'>· alcohol · moderate</span></li><li><span class='ev-dot' style='background:#f97316'></span><b>2026-06-30</b> · 3 Aperol spritz + limoncello (dinner out) <span class='muted'>· alcohol · moderate</span></li></ul></div>
+    </div>
+
+    <div class="panel">
+      <h2>Macros · today</h2>
+      
+      <div class="metric">
+        <div class="metric-top"><span>Calories (kcal)</span><span class="vals">2411 <span class="muted">/ 2050</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#f59e0b"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Protein (g)</span><span class="vals">184.5 <span class="muted">/ 165</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Carbs (g)</span><span class="vals">117 <span class="muted">/ 190</span></span></div>
+        <div class="track"><div class="fill" style="width:62%;background:#3b82f6"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Fat (g)</span><span class="vals">130 <span class="muted">/ 65</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#ef4444"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Fiber (g)</span><span class="vals">9 <span class="muted">/ 32</span></span></div>
+        <div class="track"><div class="fill" style="width:28%;background:#f59e0b"></div></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Sperm-priority micronutrients · today</h2>
+      
+      <div class="metric">
+        <div class="metric-top"><span>zinc mg</span><span class="vals">29 <span class="muted">/ 11</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>selenium mcg</span><span class="vals">300 <span class="muted">/ 55</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>folate mcg dfe</span><span class="vals">707 <span class="muted">/ 400</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>omega3 epa dha mg</span><span class="vals">1000 <span class="muted">/ 1000</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>vitamin c mg</span><span class="vals">265 <span class="muted">/ 90</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>vitamin d iu</span><span class="vals">2020 <span class="muted">/ 2000</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>vitamin e mg</span><span class="vals">18.5 <span class="muted">/ 15</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>lycopene mg</span><span class="vals">5 <span class="muted">/ 8</span></span></div>
+        <div class="track"><div class="fill" style="width:62%;background:#3b82f6"></div></div>
+      </div>
+    </div>
+
+    <div class="panel span">
+      <h2>Training · from exercise dashboard (report 2026-06-27)</h2>
+      <div class="chips four"><div class='chip'><div class='chip-v' style=''>2.5/wk</div><div class='chip-k'>Sessions</div></div><div class='chip'><div class='chip-v' style=''>16.4 km</div><div class='chip-k'>Cardio 28d</div></div><div class='chip'><div class='chip-v' style=''>142 bpm</div><div class='chip-k'>Avg HR</div></div><div class='chip'><div class='chip-v' style='color:#ef4444'>1.57</div><div class='chip-k'>Load ratio</div></div></div>
+      <div class="tr-line">Latest: <b>Back (pull)</b> · Recommended next: <b>Shoulders day</b></div>
+      <div class="tr-cols">
+        <div><div class="ls-h">Recent sessions (14d)</div><ul class="ev-ul"><li><b>2026-07-06</b> · Strength — Push + arms (travel gym) <span class='muted'>· Chest press 73kg×4×6; incline chest press 73kg×4×6; shoulder press 82kg×4×6; incline hammer curls 16kg each×4×8; incline DB curls 16kg×4×6 (travel gym — machine weights not comparable, home PRs unchanged)</span></li><li><b>2026-07-05</b> · Walking (full day) <span class='muted'>· 174 min</span> <span class='muted'>· 17,133 steps / 13.35 km / 529 active kcal / 174 min active (Samsung Health)</span></li><li><b>2026-07-04</b> · Walking (long city walk) <span class='muted'>· 13,649 steps / 10.43 km / 418 active kcal (Samsung Health, up to 13:00)</span></li><li><b>2026-07-03</b> · Walking / steps <span class='muted'>· ~16K steps across multiple events despite a travel/red-eye day; ongoing back pain worked through</span></li><li><b>2026-06-30</b> · Strength — Shoulders/Chest (push) <span class='muted'>· DB shoulder press 14kg×4×12; seated lateral raises 14kg×4×7; front raises 16kg×3×10; incline pec fly 14kg×4×12; DB bench 14kg×4×15. (Followed report's recommended Shoulders day.)</span></li><li><b>2026-06-27</b> · Strength — Back (pull) <span class='muted'>· 21st session logged; back fatigue 100% post-session</span></li><li><b>2026-06-27</b> · Outdoor Walk <span class='muted'>· 60 min</span> <span class='muted'>· 4.3 km · 13:57/km</span></li><li><b>2026-06-26</b> · Outdoor Walk <span class='muted'>· 50 min</span> <span class='muted'>· 4.5 km · 11:07/km</span></li></ul></div>
+        <div><div class="ls-h">Load &amp; balance alerts</div><div class='alert'>Training-load spike — ACWR 1.57 (>1.5); hold volume flat or deload to avoid soft-tissue injury.</div><div class='alert'>Push volume 1.54× pull — add rows / rear-delt work to protect shoulders.</div><div class='alert'>No direct core work tracked — add planks / hanging leg raises.</div></div>
+      </div>
+    </div>
+    <div class="panel span">
+      <h2>Intake Log · today</h2>
+      <table>
+        <thead><tr><th>Time</th><th>Item</th><th class="t-num">kcal</th><th class="t-num">prot</th><th class="t-num">carb</th><th class="t-num">fat</th><th class="t-num">fib</th></tr></thead>
+        <tbody><tr>
+          <td class="t-time">10:00</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Plain scone with jam & clotted cream<span class="muted"> · 1 scone + jam + clotted cream</span></td>
+          <td class="t-num">495</td>
+          <td class="t-num">6</td>
+          <td class="t-num">53</td>
+          <td class="t-num">30</td>
+          <td class="t-num">1.5</td>
+        </tr><tr>
+          <td class="t-time">12:50</td>
+          <td><span class="dot" style="background:#22c55e"></span>Omega-3 fish oil (EPA/DHA)<span class="muted"> · 2 softgels (~1000 mg EPA/DHA)</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">14:00</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Flat Iron steak w/ peppercorn sauce<span class="muted"> · 1 flat iron (~250 g) + sauce</span></td>
+          <td class="t-num">530</td>
+          <td class="t-num">56</td>
+          <td class="t-num">2</td>
+          <td class="t-num">29</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">14:00</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Melanzane (aubergine parmigiana, small side)<span class="muted"> · small side</span></td>
+          <td class="t-num">200</td>
+          <td class="t-num">8</td>
+          <td class="t-num">12</td>
+          <td class="t-num">13</td>
+          <td class="t-num">3</td>
+        </tr><tr>
+          <td class="t-time">14:20</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Ice cream (6 bites)<span class="muted"> · ~6 bites</span></td>
+          <td class="t-num">130</td>
+          <td class="t-num">2.5</td>
+          <td class="t-num">15</td>
+          <td class="t-num">7</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">15:15</td>
+          <td><span class="dot" style="background:#a78bfa"></span>Double espresso<span class="muted"> · 1 double</span></td>
+          <td class="t-num">6</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">17:35</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Smoked ½ free-range chicken w/ salad, slaw, pickles (Bodean's)<span class="muted"> · ½ chicken + Boston salad + vinegar slaw + pickles</span></td>
+          <td class="t-num">585</td>
+          <td class="t-num">62</td>
+          <td class="t-num">15</td>
+          <td class="t-num">31</td>
+          <td class="t-num">4</td>
+        </tr><tr>
+          <td class="t-time">17:35</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Sliced smoked turkey (side)<span class="muted"> · ~150 g</span></td>
+          <td class="t-num">165</td>
+          <td class="t-num">33</td>
+          <td class="t-num">0</td>
+          <td class="t-num">3</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">17:35</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Smoked chicken wings (4 half-wings)<span class="muted"> · 4 half-wings</span></td>
+          <td class="t-num">180</td>
+          <td class="t-num">15</td>
+          <td class="t-num">2</td>
+          <td class="t-num">12</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">17:57</td>
+          <td><span class="dot" style="background:#22c55e"></span>Creatine monohydrate<span class="muted"> · 3 g</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">18:00</td>
+          <td><span class="dot" style="background:#22c55e"></span>Thorne Basic Nutrients 2/Day<span class="muted"> · 2 caps</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">20:00</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Macarons<span class="muted"> · 2</span></td>
+          <td class="t-num">120</td>
+          <td class="t-num">2</td>
+          <td class="t-num">18</td>
+          <td class="t-num">5</td>
+          <td class="t-num">0.5</td>
+        </tr><tr class="t-total">
+          <td></td><td>Total</td>
+          <td class="t-num">2411</td>
+          <td class="t-num">184.5</td>
+          <td class="t-num">117</td>
+          <td class="t-num">130</td>
+          <td class="t-num">9</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel span">
+      <h2>Suggestions &amp; Recommendations</h2>
+      <div class="locked">
+          <div class="lock-ico">🔒</div>
+          <div><b>Recommendations unlock after 14 logged days.</b>
+          <div class="muted">9 / 14 logged · 5 day(s) to go. Building your baseline before suggesting changes.</div></div>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="footer">Generated 2026-07-06 21:32 · data in /data · edit profile.json to adjust targets</div>
+</div></body></html>
