@@ -7,6 +7,7 @@
   "_status": "Day in progress — cream-tea breakfast + Flat Iron lunch logged. Supplements not logged yet.",
   "items": [
     {"time": "10:00", "name": "Plain scone with jam & clotted cream", "category": "food", "qty": "1 scone + jam + clotted cream", "kcal": 495, "protein_g": 6, "carbs_g": 53, "fat_g": 30, "fiber_g": 1.5, "note": "classic cream tea; the 'other spread' is clotted cream (~60% fat), not butter — the main fat here", "time_approx": true},
+    {"time": "12:50", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:00", "name": "Flat Iron steak w/ peppercorn sauce", "category": "food", "qty": "1 flat iron (~250 g) + sauce", "kcal": 530, "protein_g": 56, "carbs_g": 2, "fat_g": 29, "fiber_g": 0, "note": "lean featherblade cut; peppercorn sauce on the side", "time_approx": true},
     {"time": "14:00", "name": "Melanzane (aubergine parmigiana, small side)", "category": "food", "qty": "small side", "kcal": 200, "protein_g": 8, "carbs_g": 12, "fat_g": 13, "fiber_g": 3, "note": "baked aubergine, tomato, parmesan/mozzarella — oily/cheesy but adds fiber + lycopene"},
     {"time": "14:20", "name": "Ice cream (6 bites)", "category": "food", "qty": "~6 bites", "kcal": 130, "protein_g": 2.5, "carbs_g": 15, "fat_g": 7, "fiber_g": 0, "note": "small dessert taste"}
@@ -15,7 +16,7 @@
     "zinc_mg": 10,
     "selenium_mcg": 30,
     "folate_mcg_dfe": 30,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 10,
     "vitamin_d_iu": 20,
     "vitamin_e_mg": 2,
