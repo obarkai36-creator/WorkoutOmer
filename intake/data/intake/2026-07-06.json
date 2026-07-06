@@ -11,11 +11,13 @@
     {"time": "14:00", "name": "Flat Iron steak w/ peppercorn sauce", "category": "food", "qty": "1 flat iron (~250 g) + sauce", "kcal": 530, "protein_g": 56, "carbs_g": 2, "fat_g": 29, "fiber_g": 0, "note": "lean featherblade cut; peppercorn sauce on the side", "time_approx": true},
     {"time": "14:00", "name": "Melanzane (aubergine parmigiana, small side)", "category": "food", "qty": "small side", "kcal": 200, "protein_g": 8, "carbs_g": 12, "fat_g": 13, "fiber_g": 3, "note": "baked aubergine, tomato, parmesan/mozzarella — oily/cheesy but adds fiber + lycopene"},
     {"time": "14:20", "name": "Ice cream (6 bites)", "category": "food", "qty": "~6 bites", "kcal": 130, "protein_g": 2.5, "carbs_g": 15, "fat_g": 7, "fiber_g": 0, "note": "small dessert taste"},
+    {"time": "15:15", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "17:35", "name": "Smoked ½ free-range chicken w/ salad, slaw, pickles (Bodean's)", "category": "food", "qty": "½ chicken + Boston salad + vinegar slaw + pickles", "kcal": 585, "protein_g": 62, "carbs_g": 15, "fat_g": 31, "fiber_g": 4, "note": "lean-protein pick as recommended; skin adds some fat; salad/slaw = fiber"},
     {"time": "17:35", "name": "Sliced smoked turkey (side)", "category": "food", "qty": "~150 g", "kcal": 165, "protein_g": 33, "carbs_g": 0, "fat_g": 3, "fiber_g": 0, "note": "very lean protein add-on"},
     {"time": "17:35", "name": "Smoked chicken wings (4 half-wings)", "category": "food", "qty": "4 half-wings", "kcal": 180, "protein_g": 15, "carbs_g": 2, "fat_g": 12, "fiber_g": 0, "note": "BBQ glazed"},
     {"time": "17:57", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "18:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "18:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "20:00", "name": "Macarons", "category": "food", "qty": "2", "kcal": 120, "protein_g": 2, "carbs_g": 18, "fat_g": 5, "fiber_g": 0.5, "note": "120 kcal total per label"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 29,
@@ -27,7 +29,7 @@
     "vitamin_e_mg": 18.5,
     "lycopene_mg": 5
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "assumptions": [
     "Breakfast is a cream tea: 1 plain scone + jam + clotted cream (identified from photo — thick pale spread, not butter). Clotted cream is the main fat.",
     "Flat Iron steak ~250 g lean featherblade; small melanzane side; 6 bites of ice cream estimated.",
