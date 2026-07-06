@@ -136,13 +136,13 @@ const SNAPSHOT = [
   // ---- Chest ----
   { name: "Bench Press",         section: "Chest", latest: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" }, best: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" } },
   { name: "Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 15, weight: 28, text: "14kg each × 4×15" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Incline Bench Press", section: "Chest", latest: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" }, best: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" } },
+  { name: "Incline Bench Press", section: "Chest", latest: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
   { name: "Incline Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
   { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" }, best: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" } },
   { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 12, weight: 28, text: "14kg each × 4×12" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
-  { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 6, weight: 59, text: "59kg × 4×6" }, best: { sets: 4, reps: 7, weight: 59, text: "59kg × 4×7" } },
+  { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
   { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 6, weight: 109, text: "109kg × 4×6" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
@@ -153,7 +153,7 @@ const SNAPSHOT = [
   { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 1, seconds: 30, weight: 81.4, text: "30 sec × 1" }, best: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" } },
 
   // ---- Shoulders ----
-  { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
+  { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 82, text: "82kg × 4×6" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 4, reps: 12, weight: 28, text: "14kg each × 4×12" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
   { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 10, weight: 28, text: "14kg each × 4×10" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
@@ -171,8 +171,8 @@ const SNAPSHOT = [
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" } },
 
   // ---- Arms: Biceps / Forearms ----
-  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 4, weight: 20, text: "20kg each × 4×4" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" } },
-  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 4, weight: 20, text: "20kg each × 4×4" }, best: { sets: 4, reps: 5, weight: 18, text: "18kg each × 4×5" } },
+  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 8, weight: 16, text: "16kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" } },
+  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 6, weight: 16, text: "16kg each × 4×6" }, best: { sets: 4, reps: 5, weight: 18, text: "18kg each × 4×5" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
@@ -207,8 +207,8 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
-  // 6 Jul — Push + arms at a travel gym (machine weights not comparable to home,
-  // so SNAPSHOT PRs left untouched; logged for fatigue/recovery/timing)
+  // 6 Jul — Push + arms at a travel gym (machines comparable to home per user;
+  // logged as regular lifts, SNAPSHOT PRs updated: chest press & incline press PRs)
   {
     datetime: "2026-07-06T17:00", note: "Push + arms (travel gym)",
     exercises: [
