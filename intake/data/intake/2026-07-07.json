@@ -13,7 +13,9 @@
     {"time": "08:10", "name": "Breakfast — bread roll (half)", "category": "food", "qty": "½ roll", "kcal": 110, "protein_g": 4, "carbs_g": 20, "fat_g": 1, "fiber_g": 1},
     {"time": "08:10", "name": "Breakfast — avocado (on bread)", "category": "food", "qty": "~30 g", "kcal": 50, "protein_g": 1, "carbs_g": 3, "fat_g": 5, "fiber_g": 2, "note": "confirmed mashed avocado"},
     {"time": "08:25", "name": "Breakfast — melon (honeydew)", "category": "food", "qty": "~130 g (~8 chunks)", "kcal": 46, "protein_g": 0.7, "carbs_g": 11.5, "fat_g": 0.2, "fiber_g": 1},
-    {"time": "08:35", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:35", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:45", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:40", "name": "KitKat Dark (personal pack)", "category": "food", "qty": "1 pack", "kcal": 104, "protein_g": 1.3, "carbs_g": 11, "fat_g": 6, "fiber_g": 0.7, "note": "104 kcal per label"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 17,
@@ -25,7 +27,7 @@
     "vitamin_e_mg": 18.5,
     "lycopene_mg": 8
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "assumptions": [
     "Breakfast fully confirmed with user: smoked salmon a few slices (~40 g), egg whites (3.5, incl. the white dollop), half hash brown, half bread roll, mashed avocado.",
     "Salmon adds dietary omega-3 (~500 mg) + vit D/selenium; cherry tomatoes drive lycopene.",
