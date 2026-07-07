@@ -4,14 +4,14 @@
   "in_progress": true,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day in progress — hotel breakfast logged (provisional, pending a few confirmations).",
+  "_status": "Day in progress — hotel breakfast logged (confirmed: egg whites, ½ hash brown, ½ roll, avocado).",
   "items": [
     {"time": "08:10", "name": "Breakfast — smoked salmon", "category": "food", "qty": "~40 g (est)", "kcal": 60, "protein_g": 9, "carbs_g": 0, "fat_g": 2, "fiber_g": 0, "time_approx": true},
-    {"time": "08:10", "name": "Breakfast — boiled eggs", "category": "food", "qty": "2 whole (assumed)", "kcal": 140, "protein_g": 12, "carbs_g": 1, "fat_g": 10, "fiber_g": 0},
+    {"time": "08:10", "name": "Breakfast — egg whites", "category": "food", "qty": "3.5 eggs' worth (incl. the white dollop)", "kcal": 60, "protein_g": 13, "carbs_g": 1, "fat_g": 0, "fiber_g": 0, "note": "whites only, per your usual"},
     {"time": "08:10", "name": "Breakfast — cherry tomatoes & cucumber", "category": "food", "qty": "~150 g tomato + ~100 g cucumber", "kcal": 42, "protein_g": 2, "carbs_g": 9, "fat_g": 1, "fiber_g": 3},
-    {"time": "08:10", "name": "Breakfast — bread (flatbread + roll)", "category": "food", "qty": "~80 g (est)", "kcal": 210, "protein_g": 7, "carbs_g": 40, "fat_g": 2, "fiber_g": 2},
-    {"time": "08:10", "name": "Breakfast — avocado spread (assumed)", "category": "food", "qty": "~30 g", "kcal": 50, "protein_g": 1, "carbs_g": 3, "fat_g": 5, "fiber_g": 2, "note": "green-yellow spread — assumed mashed avocado; confirm vs hummus"},
-    {"time": "08:10", "name": "Breakfast — cream cheese (assumed)", "category": "food", "qty": "~20 g dollop", "kcal": 70, "protein_g": 1.5, "carbs_g": 1, "fat_g": 7, "fiber_g": 0, "note": "white dollop — assumed cream cheese; confirm vs labneh/yogurt"}
+    {"time": "08:10", "name": "Breakfast — hash brown (half)", "category": "food", "qty": "½", "kcal": 75, "protein_g": 1, "carbs_g": 8, "fat_g": 4.5, "fiber_g": 1, "note": "the triangle is a half hash brown (fried potato)"},
+    {"time": "08:10", "name": "Breakfast — bread roll (half)", "category": "food", "qty": "½ roll", "kcal": 110, "protein_g": 4, "carbs_g": 20, "fat_g": 1, "fiber_g": 1},
+    {"time": "08:10", "name": "Breakfast — avocado (on bread)", "category": "food", "qty": "~30 g", "kcal": 50, "protein_g": 1, "carbs_g": 3, "fat_g": 5, "fiber_g": 2, "note": "confirmed mashed avocado"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2,
@@ -19,15 +19,15 @@
     "folate_mcg_dfe": 40,
     "omega3_epa_dha_mg": 500,
     "vitamin_c_mg": 25,
-    "vitamin_d_iu": 200,
+    "vitamin_d_iu": 120,
     "vitamin_e_mg": 2,
     "lycopene_mg": 8
   },
   "caffeine_shots": 0,
   "assumptions": [
-    "Hotel breakfast estimated from photo; several items pending confirmation (spread type, egg count/whole-vs-whites, bread amount, salmon amount, white dollop).",
+    "Breakfast confirmed with user: egg whites (3.5, incl. the white dollop), the 'flatbread' triangle is a half hash brown, half bread roll, spread is mashed avocado. Smoked salmon amount not confirmed (~40 g est).",
     "Salmon adds dietary omega-3 (~500 mg) + vit D/selenium; cherry tomatoes drive lycopene.",
     "Micros running — supplements not logged yet."
   ],
-  "status_note": "Day in progress — a healthy, protein-decent hotel breakfast (smoked salmon + eggs + veg + bread). Provisional pending your answers on the spread and portions. Good contrast to the week's rich meals; lean start."
+  "status_note": "Day in progress — a genuinely lean, high-quality hotel breakfast: smoked salmon + egg whites + veg + a little bread & avocado (~395 kcal, ~30 g protein, ~14 g fat). Refreshingly light after the week's rich meals — good protein, low fat, some fiber and lycopene. Supplements not logged yet."
 }
