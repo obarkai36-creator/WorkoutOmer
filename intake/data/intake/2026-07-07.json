@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-07",
+  "day_number": 10,
+  "in_progress": true,
+  "workout_today": false,
+  "workout_summary": null,
+  "_status": "Day in progress — hotel breakfast logged (provisional, pending a few confirmations).",
+  "items": [
+    {"time": "08:10", "name": "Breakfast — smoked salmon", "category": "food", "qty": "~40 g (est)", "kcal": 60, "protein_g": 9, "carbs_g": 0, "fat_g": 2, "fiber_g": 0, "time_approx": true},
+    {"time": "08:10", "name": "Breakfast — boiled eggs", "category": "food", "qty": "2 whole (assumed)", "kcal": 140, "protein_g": 12, "carbs_g": 1, "fat_g": 10, "fiber_g": 0},
+    {"time": "08:10", "name": "Breakfast — cherry tomatoes & cucumber", "category": "food", "qty": "~150 g tomato + ~100 g cucumber", "kcal": 42, "protein_g": 2, "carbs_g": 9, "fat_g": 1, "fiber_g": 3},
+    {"time": "08:10", "name": "Breakfast — bread (flatbread + roll)", "category": "food", "qty": "~80 g (est)", "kcal": 210, "protein_g": 7, "carbs_g": 40, "fat_g": 2, "fiber_g": 2},
+    {"time": "08:10", "name": "Breakfast — avocado spread (assumed)", "category": "food", "qty": "~30 g", "kcal": 50, "protein_g": 1, "carbs_g": 3, "fat_g": 5, "fiber_g": 2, "note": "green-yellow spread — assumed mashed avocado; confirm vs hummus"},
+    {"time": "08:10", "name": "Breakfast — cream cheese (assumed)", "category": "food", "qty": "~20 g dollop", "kcal": 70, "protein_g": 1.5, "carbs_g": 1, "fat_g": 7, "fiber_g": 0, "note": "white dollop — assumed cream cheese; confirm vs labneh/yogurt"}
+  ],
+  "micros_sperm_priority": {
+    "zinc_mg": 2,
+    "selenium_mcg": 40,
+    "folate_mcg_dfe": 40,
+    "omega3_epa_dha_mg": 500,
+    "vitamin_c_mg": 25,
+    "vitamin_d_iu": 200,
+    "vitamin_e_mg": 2,
+    "lycopene_mg": 8
+  },
+  "caffeine_shots": 0,
+  "assumptions": [
+    "Hotel breakfast estimated from photo; several items pending confirmation (spread type, egg count/whole-vs-whites, bread amount, salmon amount, white dollop).",
+    "Salmon adds dietary omega-3 (~500 mg) + vit D/selenium; cherry tomatoes drive lycopene.",
+    "Micros running — supplements not logged yet."
+  ],
+  "status_note": "Day in progress — a healthy, protein-decent hotel breakfast (smoked salmon + eggs + veg + bread). Provisional pending your answers on the spread and portions. Good contrast to the week's rich meals; lean start."
+}
