@@ -1,10 +1,10 @@
 {
   "date": "2026-07-08",
   "day_number": 11,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day in progress — breakfast + multivitamin logged; snacks + lunch/dessert pending (images to be re-sent).",
+  "_status": "Day complete.",
   "items": [
     {"time": "08:00", "name": "Breakfast — scrambled eggs", "category": "food", "qty": "~2.5 eggs", "kcal": 200, "protein_g": 16, "carbs_g": 2, "fat_g": 14, "fiber_g": 0},
     {"time": "08:00", "name": "Breakfast — cherry & grilled tomatoes", "category": "food", "qty": "~150 g", "kcal": 30, "protein_g": 1.5, "carbs_g": 6, "fat_g": 0.3, "fiber_g": 2},
@@ -34,7 +34,8 @@
     {"time": "20:30", "name": "Dessert — Bread pudding, challah, crème anglaise, plums, sour cream ice cream (bite)", "category": "food", "qty": "1 bite, ~30 g", "kcal": 115, "protein_g": 2, "carbs_g": 14, "fat_g": 5, "fiber_g": 0.5, "time_approx": true},
     {"time": "20:30", "name": "Dessert — Olive oil cake, oregano honey, almond tuile, salted almonds, yoghurt ice cream (bite)", "category": "food", "qty": "1 bite, ~30 g", "kcal": 120, "protein_g": 2, "carbs_g": 13, "fat_g": 6, "fiber_g": 0.5, "time_approx": true},
     {"time": "20:30", "name": "Pistachio puff pastry (mignardise, small)", "category": "food", "qty": "1 small piece", "kcal": 130, "protein_g": 2, "carbs_g": 12, "fat_g": 8, "fiber_g": 0.5, "time_approx": true, "note": "not on printed menu — small pistachio-cream puff pastry"},
-    {"time": "20:30", "name": "Strawberries", "category": "food", "qty": "4", "kcal": 20, "protein_g": 0.4, "carbs_g": 4.5, "fat_g": 0.2, "fiber_g": 1.5, "time_approx": true}
+    {"time": "20:30", "name": "Strawberries", "category": "food", "qty": "4", "kcal": 20, "protein_g": 0.4, "carbs_g": 4.5, "fat_g": 0.2, "fiber_g": 1.5, "time_approx": true},
+    {"time": "22:07", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 23,
@@ -54,7 +55,7 @@
     "Dinner at claro; London (small-plates, shared): menu photographed + 8 individual-plate photos matched against it. User confirmed 7 dishes plus ~2 bites of the freekeh gnocchi and 2 very small glasses of red wine; photos are the user's own portions (not the full shared serving), so quantities are estimated from what's shown (near-empty plates = portion mostly eaten) rather than divided further among diners.",
     "Portion sizes for shared plates (venison tartare, sashimi, veg salad, salsify, lamb, trout, gnocchi) are visual estimates — no gram scale, so treat dinner macros as approximate.",
     "Dessert: user confirmed a bite of each of the 3 menu desserts (dark chocolate mousse, bread pudding, olive oil cake), plus 1 small pistachio puff pastry (mignardise, not on printed menu) and 4 strawberries. Bite sizes (~30 g each) are estimates, not weighed.",
-    "Micros running — creatine and bedtime zinc not logged yet."
+    "Zinc deferred to Friday per plan; not a missed dose."
   ],
-  "status_note": "Day in progress — veg-forward breakfast, light canapé snacks, strong chicken lunch, then a big shared-plates dinner at claro; London (frena bread, venison tartare, yellowtail sashimi, veg salad, salsify, lamb platter, smoked trout, a taste of gnocchi, 2 small glasses of red wine) capped off with a bite of all 3 menu desserts + a pistachio puff pastry + 4 strawberries. Running ~3,848 kcal, ~199 g protein, ~293 g carb, ~187 g fat, ~38 g fiber — well over the 2,050 kcal target (dinner + dessert added ~2,320 kcal combined) but protein and fiber both cleared target. Fat is very high (~187 g vs 65 g target) from feta/olive oil/lamb/cream-based desserts stacking across the whole meal. Omega-3 in from breakfast/lunch supplement plus oily fish at dinner; creatine not taken yet, zinc deferred to Friday — day isn't closed out until creatine is logged. 6th alcohol day recently (small pours, ~1.9 units) — still worth tracking against the <=1 glass/week baseline."
+  "status_note": "Day complete — veg-forward breakfast, light canapé snacks, strong chicken lunch, then a big shared-plates dinner at claro; London (frena bread, venison tartare, yellowtail sashimi, veg salad, salsify, lamb platter, smoked trout, a taste of gnocchi, 2 small glasses of red wine) capped off with a bite of all 3 menu desserts + a pistachio puff pastry + 4 strawberries, creatine at 22:07. Total ~3,848 kcal, ~199 g protein, ~293 g carb, ~187 g fat, ~38 g fiber — well over the 2,050 kcal target (dinner + dessert added ~2,320 kcal combined) but protein and fiber both cleared target. Fat is very high (~187 g vs 65 g target) from feta/olive oil/lamb/cream-based desserts stacking across the whole meal. Omega-3 in from breakfast/lunch supplement plus oily fish at dinner; zinc deferred to Friday per plan. 6th alcohol day recently (small pours, ~1.9 units) — still worth tracking against the <=1 glass/week baseline."
 }
