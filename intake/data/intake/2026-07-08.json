@@ -29,16 +29,21 @@
     {"time": "19:45", "name": "Dinner — Lamb platter, tzatziki, matbucha, pickled vegetables, pita bread", "category": "food", "qty": "personal portion, ~100 g lamb + pita", "kcal": 340, "protein_g": 23, "carbs_g": 14, "fat_g": 20, "fiber_g": 1.5, "time_approx": true},
     {"time": "19:45", "name": "Dinner — Smoked pink trout, potato salad, green beans, spring onion, white horseradish sauce", "category": "food", "qty": "personal portion, ~90 g fish + sides", "kcal": 260, "protein_g": 19, "carbs_g": 10, "fat_g": 15, "fiber_g": 1.5, "time_approx": true},
     {"time": "19:45", "name": "Dinner — Freekeh gnocchi alla romana, wild mushrooms, sour cream, pecorino (tasted only)", "category": "food", "qty": "~2 bites", "kcal": 95, "protein_g": 3, "carbs_g": 10, "fat_g": 4, "fiber_g": 1, "time_approx": true, "note": "just a taste, not a full portion"},
-    {"time": "19:30", "name": "Red wine", "category": "drink", "qty": "2 very small glasses (~75 ml each)", "kcal": 125, "protein_g": 0, "carbs_g": 3, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "~1.9 UK units total"}
+    {"time": "19:30", "name": "Red wine", "category": "drink", "qty": "2 very small glasses (~75 ml each)", "kcal": 125, "protein_g": 0, "carbs_g": 3, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "~1.9 UK units total"},
+    {"time": "20:30", "name": "Dessert — Dark chocolate mousse, tahini crumble, crème anglaise, sesame tuile (bite)", "category": "food", "qty": "1 bite, ~30 g", "kcal": 100, "protein_g": 2, "carbs_g": 9, "fat_g": 6, "fiber_g": 0.5, "time_approx": true},
+    {"time": "20:30", "name": "Dessert — Bread pudding, challah, crème anglaise, plums, sour cream ice cream (bite)", "category": "food", "qty": "1 bite, ~30 g", "kcal": 115, "protein_g": 2, "carbs_g": 14, "fat_g": 5, "fiber_g": 0.5, "time_approx": true},
+    {"time": "20:30", "name": "Dessert — Olive oil cake, oregano honey, almond tuile, salted almonds, yoghurt ice cream (bite)", "category": "food", "qty": "1 bite, ~30 g", "kcal": 120, "protein_g": 2, "carbs_g": 13, "fat_g": 6, "fiber_g": 0.5, "time_approx": true},
+    {"time": "20:30", "name": "Pistachio puff pastry (mignardise, small)", "category": "food", "qty": "1 small piece", "kcal": 130, "protein_g": 2, "carbs_g": 12, "fat_g": 8, "fiber_g": 0.5, "time_approx": true, "note": "not on printed menu — small pistachio-cream puff pastry"},
+    {"time": "20:30", "name": "Strawberries", "category": "food", "qty": "4", "kcal": 20, "protein_g": 0.4, "carbs_g": 4.5, "fat_g": 0.2, "fiber_g": 1.5, "time_approx": true}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 23,
     "selenium_mcg": 318,
     "folate_mcg_dfe": 760,
     "omega3_epa_dha_mg": 1930,
-    "vitamin_c_mg": 320,
+    "vitamin_c_mg": 355,
     "vitamin_d_iu": 2520,
-    "vitamin_e_mg": 21,
+    "vitamin_e_mg": 22,
     "lycopene_mg": 15
   },
   "caffeine_shots": 0,
@@ -48,7 +53,8 @@
     "13:00 lunch main logged from photo: roast chicken in tomato-white-bean sauce (portion + extra 1/3, ~240 g chicken), potato-mushroom-spinach gratin, broccolini/green beans. Dessert (small strawberry-lemon Eton mess) logged from description — image rejected by API.",
     "Dinner at claro; London (small-plates, shared): menu photographed + 8 individual-plate photos matched against it. User confirmed 7 dishes plus ~2 bites of the freekeh gnocchi and 2 very small glasses of red wine; photos are the user's own portions (not the full shared serving), so quantities are estimated from what's shown (near-empty plates = portion mostly eaten) rather than divided further among diners.",
     "Portion sizes for shared plates (venison tartare, sashimi, veg salad, salsify, lamb, trout, gnocchi) are visual estimates — no gram scale, so treat dinner macros as approximate.",
+    "Dessert: user confirmed a bite of each of the 3 menu desserts (dark chocolate mousse, bread pudding, olive oil cake), plus 1 small pistachio puff pastry (mignardise, not on printed menu) and 4 strawberries. Bite sizes (~30 g each) are estimates, not weighed.",
     "Micros running — creatine and bedtime zinc not logged yet."
   ],
-  "status_note": "Day in progress — veg-forward breakfast, light canapé snacks, strong chicken lunch, then a big shared-plates dinner at claro; London (frena bread, venison tartare, yellowtail sashimi, veg salad, salsify, lamb platter, smoked trout, a taste of gnocchi, 2 small glasses of red wine). Running ~3,365 kcal, ~191 g protein, ~260 g carb, ~140 g fat, ~34.5 g fiber — well over the 2,050 kcal target (dinner alone added ~1,835 kcal) but protein is excellent and fiber cleared target thanks to the veg-forward starters. Fat is high from feta/olive oil/lamb across multiple dishes. Omega-3 in from breakfast/lunch supplement plus oily fish at dinner; creatine not taken yet, zinc deferred to Friday. 6th alcohol day recently (small pours, ~1.9 units) — still worth tracking against the <=1 glass/week baseline."
+  "status_note": "Day in progress — veg-forward breakfast, light canapé snacks, strong chicken lunch, then a big shared-plates dinner at claro; London (frena bread, venison tartare, yellowtail sashimi, veg salad, salsify, lamb platter, smoked trout, a taste of gnocchi, 2 small glasses of red wine) capped off with a bite of all 3 menu desserts + a pistachio puff pastry + 4 strawberries. Running ~3,848 kcal, ~199 g protein, ~293 g carb, ~187 g fat, ~38 g fiber — well over the 2,050 kcal target (dinner + dessert added ~2,320 kcal combined) but protein and fiber both cleared target. Fat is very high (~187 g vs 65 g target) from feta/olive oil/lamb/cream-based desserts stacking across the whole meal. Omega-3 in from breakfast/lunch supplement plus oily fish at dinner; creatine not taken yet, zinc deferred to Friday — day isn't closed out until creatine is logged. 6th alcohol day recently (small pours, ~1.9 units) — still worth tracking against the <=1 glass/week baseline."
 }
