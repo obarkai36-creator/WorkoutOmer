@@ -18,13 +18,15 @@
     {"time": "10:45", "name": "Fruit smoothie (mini shot)", "category": "drink", "qty": "1 mini shot (~50 ml)", "kcal": 30, "protein_g": 0.5, "carbs_g": 7, "fat_g": 0, "fiber_g": 0.5, "note": "pink fruit smoothie"},
     {"time": "13:00", "name": "Lunch — roast chicken breast in tomato & white-bean sauce", "category": "food", "qty": "plate portion + extra ⅓ (~240 g chicken)", "kcal": 430, "protein_g": 56, "carbs_g": 10, "fat_g": 16, "fiber_g": 2, "note": "sliced roast chicken, tomato & cannellini-bean ragout; portion incl. the added third"},
     {"time": "13:00", "name": "Lunch — creamy potato, mushroom & spinach gratin", "category": "food", "qty": "~150 g side", "kcal": 200, "protein_g": 4, "carbs_g": 18, "fat_g": 12, "fiber_g": 2, "note": "dauphinoise-style, cream-based"},
-    {"time": "13:00", "name": "Lunch — broccolini & green beans", "category": "food", "qty": "~100 g", "kcal": 50, "protein_g": 3, "carbs_g": 5, "fat_g": 2, "fiber_g": 3, "note": "lightly oiled"}
+    {"time": "13:00", "name": "Lunch — broccolini & green beans", "category": "food", "qty": "~100 g", "kcal": 50, "protein_g": 3, "carbs_g": 5, "fat_g": 2, "fiber_g": 3, "note": "lightly oiled"},
+    {"time": "13:30", "name": "Dessert — strawberry-lemon Eton mess (small)", "category": "food", "qty": "small serving", "kcal": 180, "protein_g": 2, "carbs_g": 22, "fat_g": 9, "fiber_g": 1, "note": "meringue, whipped cream, strawberries, lemon; logged from description (image rejected by API)"},
+    {"time": "14:05", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 19,
     "selenium_mcg": 270,
     "folate_mcg_dfe": 720,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 300,
     "vitamin_d_iu": 2020,
     "vitamin_e_mg": 18,
@@ -34,8 +36,8 @@
   "assumptions": [
     "Breakfast estimated from before/after photos (ate most; left a little avocado/egg/potato).",
     "10:45 snacks confirmed: 1 mini cream tartlet + 1 pink fruit-smoothie shot.",
-    "13:00 lunch main logged from photo: roast chicken in tomato-white-bean sauce (portion + extra 1/3, ~240 g chicken), potato-mushroom-spinach gratin, broccolini/green beans. PENDING: lunch dessert (image to be re-sent).",
+    "13:00 lunch main logged from photo: roast chicken in tomato-white-bean sauce (portion + extra 1/3, ~240 g chicken), potato-mushroom-spinach gratin, broccolini/green beans. Dessert (small strawberry-lemon Eton mess) logged from description — image rejected by API.",
     "Micros running — omega-3/creatine/bedtime zinc not logged yet."
   ],
-  "status_note": "Day in progress — veg-forward breakfast, light canapé snacks, then a strong lunch: ~240 g roast chicken in tomato-bean sauce + gratin + greens. Running ~1,350 kcal, ~92 g protein, ~44 g fat — protein pacing well, fat comfortably in range for once. Lunch dessert still to log; omega-3/creatine not taken yet."
+  "status_note": "Day in progress — veg-forward breakfast, light canapé snacks, a strong chicken lunch + small Eton mess. Running ~1,530 kcal, ~94 g protein, ~140 g carb, ~53 g fat — protein pacing well and fat still in range even after dessert. Omega-3 in (14:05); creatine not taken yet, zinc deferred to Friday."
 }
