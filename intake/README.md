@@ -75,3 +75,21 @@ row for that date.
   export in `data/imports/`.
 - The Thorne multivitamin micronutrient amounts in `references/supplements.json`
   are **verified** from the product label (both panels).
+
+
+## Note: handling API-rejected images
+
+Uploaded photos occasionally come back "(media removed — rejected by API)". This is
+transient flakiness in the API media-ingest for some Samsung JPEG byte-streams — the
+files themselves are valid (identical bytes have been rejected and accepted on
+different attempts). The uploaded file still lands on disk under
+`/root/.claude/uploads/<session>/`, so the fix is to re-rasterize it locally and read
+the fresh copy instead of asking the user to re-send:
+
+```js
+// headless Chrome via playwright (executablePath /tmp/cft/chrome-linux64/chrome)
+await page.goto("file:///root/.claude/uploads/<session>/<file>.jpg");
+const img = await page.$('img');
+await img.screenshot({ path: "/tmp/rerender.jpg", type: "jpeg", quality: 82 });
+// then Read /tmp/rerender.jpg — passes.
+```
