@@ -1,10 +1,10 @@
 {
   "date": "2026-07-09",
   "day_number": 12,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Morning run (Nike Run Club), 06:45: 2.01 km along the Thames (England), 11:36 total time, avg pace 5'46\"/km, cadence 162, 159 kcal, 22°C. Positive split — first km faster than the second.",
-  "_status": "Day in progress — morning run + breakfast logged.",
+  "_status": "Day complete.",
   "items": [
     {"time": "08:00", "name": "Breakfast — prosciutto", "category": "food", "qty": "~25 g (4-5 slices)", "kcal": 55, "protein_g": 5, "carbs_g": 0, "fat_g": 4, "fiber_g": 0},
     {"time": "08:00", "name": "Breakfast — grilled tomato", "category": "food", "qty": "~80 g (2 halves)", "kcal": 20, "protein_g": 0.5, "carbs_g": 4, "fat_g": 0.2, "fiber_g": 1},
@@ -26,7 +26,8 @@
     {"time": "12:40", "name": "Dessert — passionfruit crème brûlée (personal size)", "category": "food", "qty": "1 ramekin, ~90 g", "kcal": 280, "protein_g": 4, "carbs_g": 28, "fat_g": 18, "fiber_g": 0},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "18:25", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "19:30", "name": "Dinner — Caesar salad with double chicken (Vapiano London)", "category": "food", "qty": "1 salad, double chicken portion (~240 g chicken)", "kcal": 770, "protein_g": 86, "carbs_g": 22, "fat_g": 36, "fiber_g": 4, "time_approx": true, "note": "romaine, parmesan, croutons, Caesar dressing + 2x grilled chicken breast portions"}
+    {"time": "19:30", "name": "Dinner — Caesar salad with double chicken (Vapiano London)", "category": "food", "qty": "1 salad, double chicken portion (~240 g chicken)", "kcal": 770, "protein_g": 86, "carbs_g": 22, "fat_g": 36, "fiber_g": 4, "time_approx": true, "note": "romaine, parmesan, croutons, Caesar dressing + 2x grilled chicken breast portions"},
+    {"time": "21:30", "name": "Beer", "category": "drink", "qty": "1 pint", "kcal": 215, "protein_g": 2, "carbs_g": 15, "fat_g": 0, "fiber_g": 0, "note": "~2 units, type unspecified — generic lager estimate"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 22,
@@ -46,7 +47,8 @@
     "Lunch logged from description (no photo): green coleslaw side, 1 spoon of gnocchi (tasted), 250 g chicken curry with lentils, chopped salad, personal passionfruit crème brûlée. Portion sizes estimated from description, not weighed.",
     "Corrected: the 250 g is the chicken itself (curry), not the combined dish weight — lentils are a small side component. Revised the curry item's protein/calories up accordingly.",
     "Multivitamin micros use the verified Thorne label values from references/supplements.json.",
-    "Dinner logged from description (no photo): Caesar salad with double chicken from Vapiano London. Estimated from a standard Vapiano chicken Caesar (~580 kcal single portion, consistent with the 7 Jul entry) plus a second chicken portion (~190 kcal, 36 g protein) for the double. Not weighed."
+    "Dinner logged from description (no photo): Caesar salad with double chicken from Vapiano London. Estimated from a standard Vapiano chicken Caesar (~580 kcal single portion, consistent with the 7 Jul entry) plus a second chicken portion (~190 kcal, 36 g protein) for the double. Not weighed.",
+    "1 pint of beer at 21:30, type unspecified — generic lager estimate (~2 units)."
   ],
-  "status_note": "Day in progress. 06:45 run (2.01 km, positive split), breakfast at 08:00, 3 espressos + creatine through the morning, a substantial lunch (green coleslaw, a spoon of gnocchi, 250 g chicken curry [chicken portion] with a small side of lentils, chopped salad, passionfruit crème brûlée) plus omega-3, multivitamin at 18:25, then a Caesar salad with double chicken at Vapiano for dinner. Running ~2,409 kcal, ~174 g protein, ~146 g carb, ~126 g fat, ~23 g fiber — a very high-protein day (already past the 165 g target) driven by two big chicken portions at lunch and dinner; calories now above the 2,050 target too, largely from the crème brûlée and dinner's dressing/cheese/croutons."
+  "status_note": "Day complete. 06:45 run (2.01 km, positive split), breakfast at 08:00, 3 espressos + creatine through the morning, a substantial lunch (green coleslaw, a spoon of gnocchi, 250 g chicken curry [chicken portion] with a small side of lentils, chopped salad, passionfruit crème brûlée) plus omega-3, multivitamin at 18:25, Caesar salad with double chicken at Vapiano for dinner, and a pint of beer to close the day. Total ~2,624 kcal, ~176 g protein, ~161 g carb, ~126 g fat, ~23 g fiber — protein came in well past the 165 g target (two big chicken portions today), calories/fat also ran over target (crème brûlée + Caesar dressing/cheese/croutons), fiber landed just under the 32 g target. 7th alcohol day recently — worth flagging again against the <=1 glass/week baseline."
 }
