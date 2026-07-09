@@ -3,7 +3,7 @@ name: Training report
 # Runs after each "log": whenever data.js changes on these branches.
 on:
   push:
-    branches: [main, "claude/epic-bardeen-4l8r4c"]
+    branches: [main, "claude/epic-bardeen-4l8r4c", "claude/session-continuity-test-nez2sf"]
     paths: ["data.js"]
   workflow_dispatch: {}
 
