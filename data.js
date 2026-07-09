@@ -207,6 +207,14 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 9 Jul — Morning run along the Thames (Nike Run Club, ~159 kcal per app)
+  {
+    datetime: "2026-07-09T06:45", note: "Morning run — Thames path, positive split, 22°C, ~159 kcal (Nike Run Club)",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 2.01, durationMin: 11.6, cadence: 162 },
+    ],
+  },
+
   // 6 Jul — Push + arms at a travel gym (machines comparable to home per user;
   // logged as regular lifts, SNAPSHOT PRs updated: chest press & incline press PRs)
   {
