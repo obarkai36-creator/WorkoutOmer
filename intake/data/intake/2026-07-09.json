@@ -4,21 +4,33 @@
   "in_progress": true,
   "workout_today": true,
   "workout_summary": "Morning run (Nike Run Club), 06:45: 2.01 km along the Thames (England), 11:36 total time, avg pace 5'46\"/km, cadence 162, 159 kcal, 22°C. Positive split — first km faster than the second.",
-  "_status": "Day just opened — morning run logged, no food/drink/supplements yet.",
-  "items": [],
-  "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 0
-  },
-  "caffeine_shots": 0,
-  "assumptions": [
-    "Morning run logged from Nike Run Club screenshot (2.01 km, 11:36, 5'46\"/km pace, cadence 162, 159 kcal per app, 22°C). Positive split noted by user."
+  "_status": "Day in progress — morning run + breakfast logged.",
+  "items": [
+    {"time": "08:00", "name": "Breakfast — prosciutto", "category": "food", "qty": "~25 g (4-5 slices)", "kcal": 55, "protein_g": 5, "carbs_g": 0, "fat_g": 4, "fiber_g": 0},
+    {"time": "08:00", "name": "Breakfast — grilled tomato", "category": "food", "qty": "~80 g (2 halves)", "kcal": 20, "protein_g": 0.5, "carbs_g": 4, "fat_g": 0.2, "fiber_g": 1},
+    {"time": "08:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "~120 g (~8)", "kcal": 22, "protein_g": 1, "carbs_g": 5, "fat_g": 0.3, "fiber_g": 1.5},
+    {"time": "08:00", "name": "Breakfast — cucumber", "category": "food", "qty": "~60 g", "kcal": 10, "protein_g": 0.5, "carbs_g": 2, "fat_g": 0, "fiber_g": 1},
+    {"time": "08:00", "name": "Breakfast — sautéed mushrooms", "category": "food", "qty": "~50 g", "kcal": 25, "protein_g": 1.5, "carbs_g": 2, "fat_g": 1, "fiber_g": 1},
+    {"time": "08:00", "name": "Breakfast — hash brown", "category": "food", "qty": "1 triangle (~50 g)", "kcal": 130, "protein_g": 1.5, "carbs_g": 14, "fat_g": 8, "fiber_g": 1},
+    {"time": "08:00", "name": "Breakfast — scrambled eggs", "category": "food", "qty": "~70% of plate eaten (~2 eggs' worth)", "kcal": 161, "protein_g": 13.3, "carbs_g": 1.4, "fat_g": 11.2, "fiber_g": 0, "note": "part of the bread+egg+avocado combo — ~3 bites left behind"},
+    {"time": "08:00", "name": "Breakfast — avocado", "category": "food", "qty": "~70% of plate eaten (~50 g)", "kcal": 81, "protein_g": 1, "carbs_g": 4.2, "fat_g": 7, "fiber_g": 3.2, "note": "part of the bread+egg+avocado combo — ~3 bites left behind"},
+    {"time": "08:00", "name": "Breakfast — seeded wholegrain bread", "category": "food", "qty": "~70% of 1 slice eaten (~35 g)", "kcal": 91, "protein_g": 3.5, "carbs_g": 15.4, "fat_g": 1.4, "fiber_g": 2.1, "note": "3 bites of the bread+egg+avocado combo left behind"},
+    {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
-  "status_note": "Day just opened. 06:45 run done (2.01 km, positive split) — no food logged yet."
+  "micros_sperm_priority": {
+    "zinc_mg": 1.5,
+    "selenium_mcg": 20,
+    "folate_mcg_dfe": 40,
+    "omega3_epa_dha_mg": 60,
+    "vitamin_c_mg": 25,
+    "vitamin_d_iu": 90,
+    "vitamin_e_mg": 2,
+    "lycopene_mg": 4
+  },
+  "caffeine_shots": 1,
+  "assumptions": [
+    "Morning run logged from Nike Run Club screenshot (2.01 km, 11:36, 5'46\"/km pace, cadence 162, 159 kcal per app, 22°C). Positive split noted by user.",
+    "Breakfast logged from photo: prosciutto, grilled tomato, cherry tomatoes, cucumber, sautéed mushrooms, hash brown, scrambled eggs, avocado, seeded wholegrain bread + espresso. User confirmed 3 bites of the bread+egg+avocado combo were left behind — those three items discounted to ~70% eaten; everything else on the plate assumed fully eaten. Portion sizes are visual estimates, not weighed."
+  ],
+  "status_note": "Day in progress. 06:45 run (2.01 km, positive split) then breakfast at 08:00 — a protein/veg-forward plate (prosciutto, eggs, hash brown, tomatoes, cucumber, mushrooms, avocado, bread) with a small amount of the bread+egg+avocado combo left unfinished. Running ~594 kcal, ~27 g protein, ~48 g carb, ~33 g fat, ~11 g fiber, 1 caffeine shot."
 }
