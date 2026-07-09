@@ -25,11 +25,12 @@
     {"time": "12:40", "name": "Lunch — chopped salad", "category": "food", "qty": "~150 g", "kcal": 60, "protein_g": 2, "carbs_g": 8, "fat_g": 2, "fiber_g": 3},
     {"time": "12:40", "name": "Dessert — passionfruit crème brûlée (personal size)", "category": "food", "qty": "1 ramekin, ~90 g", "kcal": 280, "protein_g": 4, "carbs_g": 28, "fat_g": 18, "fiber_g": 0},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "18:25", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "18:25", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "19:30", "name": "Dinner — Caesar salad with double chicken (Vapiano London)", "category": "food", "qty": "1 salad, double chicken portion (~240 g chicken)", "kcal": 770, "protein_g": 86, "carbs_g": 22, "fat_g": 36, "fiber_g": 4, "time_approx": true, "note": "romaine, parmesan, croutons, Caesar dressing + 2x grilled chicken breast portions"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 20,
-    "selenium_mcg": 281,
+    "zinc_mg": 22,
+    "selenium_mcg": 339,
     "folate_mcg_dfe": 784,
     "omega3_epa_dha_mg": 1110,
     "vitamin_c_mg": 295,
@@ -44,7 +45,8 @@
     "2 espressos logged between breakfast and lunch — exact times not given, approximated at 10:00 and 11:30.",
     "Lunch logged from description (no photo): green coleslaw side, 1 spoon of gnocchi (tasted), 250 g chicken curry with lentils, chopped salad, personal passionfruit crème brûlée. Portion sizes estimated from description, not weighed.",
     "Corrected: the 250 g is the chicken itself (curry), not the combined dish weight — lentils are a small side component. Revised the curry item's protein/calories up accordingly.",
-    "Multivitamin micros use the verified Thorne label values from references/supplements.json."
+    "Multivitamin micros use the verified Thorne label values from references/supplements.json.",
+    "Dinner logged from description (no photo): Caesar salad with double chicken from Vapiano London. Estimated from a standard Vapiano chicken Caesar (~580 kcal single portion, consistent with the 7 Jul entry) plus a second chicken portion (~190 kcal, 36 g protein) for the double. Not weighed."
   ],
-  "status_note": "Day in progress. 06:45 run (2.01 km, positive split), breakfast at 08:00, 3 espressos + creatine through the morning, a substantial lunch (green coleslaw, a spoon of gnocchi, 250 g chicken curry [chicken portion] with a small side of lentils, chopped salad, passionfruit crème brûlée) plus omega-3, then multivitamin at 18:25. Running ~1,639 kcal, ~88 g protein, ~124 g carb, ~90 g fat, ~19 g fiber — protein well ahead of pace thanks to the full 250 g chicken portion; fat still elevated mainly from the crème brûlée and curry sauce. Sperm-priority micros now strong across the board with the multivitamin in."
+  "status_note": "Day in progress. 06:45 run (2.01 km, positive split), breakfast at 08:00, 3 espressos + creatine through the morning, a substantial lunch (green coleslaw, a spoon of gnocchi, 250 g chicken curry [chicken portion] with a small side of lentils, chopped salad, passionfruit crème brûlée) plus omega-3, multivitamin at 18:25, then a Caesar salad with double chicken at Vapiano for dinner. Running ~2,409 kcal, ~174 g protein, ~146 g carb, ~126 g fat, ~23 g fiber — a very high-protein day (already past the 165 g target) driven by two big chicken portions at lunch and dinner; calories now above the 2,050 target too, largely from the crème brûlée and dinner's dressing/cheese/croutons."
 }
