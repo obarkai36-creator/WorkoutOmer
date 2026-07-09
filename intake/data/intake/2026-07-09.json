@@ -16,22 +16,32 @@
     {"time": "08:00", "name": "Breakfast — avocado", "category": "food", "qty": "~70% of plate eaten (~50 g)", "kcal": 81, "protein_g": 1, "carbs_g": 4.2, "fat_g": 7, "fiber_g": 3.2, "note": "part of the bread+egg+avocado combo — ~3 bites left behind"},
     {"time": "08:00", "name": "Breakfast — seeded wholegrain bread", "category": "food", "qty": "~70% of 1 slice eaten (~35 g)", "kcal": 91, "protein_g": 3.5, "carbs_g": 15.4, "fat_g": 1.4, "fiber_g": 2.1, "note": "3 bites of the bread+egg+avocado combo left behind"},
     {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "08:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:00", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "one of 2 espressos between breakfast and lunch"},
+    {"time": "11:30", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "one of 2 espressos between breakfast and lunch"},
+    {"time": "12:40", "name": "Lunch — green coleslaw", "category": "food", "qty": "~80 g side", "kcal": 100, "protein_g": 1, "carbs_g": 7, "fat_g": 8, "fiber_g": 2},
+    {"time": "12:40", "name": "Lunch — gnocchi (1 spoon, tasted)", "category": "food", "qty": "~30 g", "kcal": 50, "protein_g": 1.5, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 0.5},
+    {"time": "12:40", "name": "Lunch — chicken curry with lentils", "category": "food", "qty": "250 g", "kcal": 355, "protein_g": 29, "carbs_g": 21, "fat_g": 17, "fiber_g": 4},
+    {"time": "12:40", "name": "Lunch — chopped salad", "category": "food", "qty": "~150 g", "kcal": 60, "protein_g": 2, "carbs_g": 8, "fat_g": 2, "fiber_g": 3},
+    {"time": "12:40", "name": "Dessert — passionfruit crème brûlée (personal size)", "category": "food", "qty": "1 ramekin, ~90 g", "kcal": 280, "protein_g": 4, "carbs_g": 28, "fat_g": 18, "fiber_g": 0},
+    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 1.5,
-    "selenium_mcg": 20,
-    "folate_mcg_dfe": 40,
-    "omega3_epa_dha_mg": 60,
-    "vitamin_c_mg": 25,
+    "zinc_mg": 3.5,
+    "selenium_mcg": 54,
+    "folate_mcg_dfe": 185,
+    "omega3_epa_dha_mg": 1110,
+    "vitamin_c_mg": 45,
     "vitamin_d_iu": 90,
-    "vitamin_e_mg": 2,
-    "lycopene_mg": 4
+    "vitamin_e_mg": 3,
+    "lycopene_mg": 6
   },
-  "caffeine_shots": 1,
+  "caffeine_shots": 3,
   "assumptions": [
     "Morning run logged from Nike Run Club screenshot (2.01 km, 11:36, 5'46\"/km pace, cadence 162, 159 kcal per app, 22°C). Positive split noted by user.",
-    "Breakfast logged from photo: prosciutto, grilled tomato, cherry tomatoes, cucumber, sautéed mushrooms, hash brown, scrambled eggs, avocado, seeded wholegrain bread + espresso. User confirmed 3 bites of the bread+egg+avocado combo were left behind — those three items discounted to ~70% eaten; everything else on the plate assumed fully eaten. Portion sizes are visual estimates, not weighed."
+    "Breakfast logged from photo: prosciutto, grilled tomato, cherry tomatoes, cucumber, sautéed mushrooms, hash brown, scrambled eggs, avocado, seeded wholegrain bread + espresso. User confirmed 3 bites of the bread+egg+avocado combo were left behind — those three items discounted to ~70% eaten; everything else on the plate assumed fully eaten. Portion sizes are visual estimates, not weighed.",
+    "2 espressos logged between breakfast and lunch — exact times not given, approximated at 10:00 and 11:30.",
+    "Lunch logged from description (no photo): green coleslaw side, 1 spoon of gnocchi (tasted), 250 g chicken curry with lentils, chopped salad, personal passionfruit crème brûlée. Portion sizes estimated from description, not weighed."
   ],
-  "status_note": "Day in progress. 06:45 run (2.01 km, positive split) then breakfast at 08:00 — a protein/veg-forward plate (prosciutto, eggs, hash brown, tomatoes, cucumber, mushrooms, avocado, bread) with a small amount of the bread+egg+avocado combo left unfinished. Running ~594 kcal, ~27 g protein, ~48 g carb, ~33 g fat, ~11 g fiber, 1 caffeine shot."
+  "status_note": "Day in progress. 06:45 run (2.01 km, positive split), breakfast at 08:00, 3 espressos + creatine through the morning, then a substantial lunch (green coleslaw, a spoon of gnocchi, 250 g chicken curry with lentils, chopped salad, passionfruit crème brûlée) plus omega-3. Running ~1,449 kcal, ~66 g protein, ~124 g carb, ~79 g fat, ~20 g fiber — good protein/fiber pace from breakfast + the lentil curry; the crème brûlée is the big fat/sugar spike of the day so far."
 }
