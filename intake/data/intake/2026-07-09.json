@@ -21,15 +21,15 @@
     {"time": "11:30", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "one of 2 espressos between breakfast and lunch"},
     {"time": "12:40", "name": "Lunch — green coleslaw", "category": "food", "qty": "~80 g side", "kcal": 100, "protein_g": 1, "carbs_g": 7, "fat_g": 8, "fiber_g": 2},
     {"time": "12:40", "name": "Lunch — gnocchi (1 spoon, tasted)", "category": "food", "qty": "~30 g", "kcal": 50, "protein_g": 1.5, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 0.5},
-    {"time": "12:40", "name": "Lunch — chicken curry with lentils", "category": "food", "qty": "250 g", "kcal": 355, "protein_g": 29, "carbs_g": 21, "fat_g": 17, "fiber_g": 4},
+    {"time": "12:40", "name": "Lunch — chicken curry with lentils", "category": "food", "qty": "250 g chicken (curry) + small amount of lentils", "kcal": 545, "protein_g": 51, "carbs_g": 21, "fat_g": 28, "fiber_g": 3, "note": "250 g is the chicken itself; lentils are a small side component, not the bulk of the dish"},
     {"time": "12:40", "name": "Lunch — chopped salad", "category": "food", "qty": "~150 g", "kcal": 60, "protein_g": 2, "carbs_g": 8, "fat_g": 2, "fiber_g": 3},
     {"time": "12:40", "name": "Dessert — passionfruit crème brûlée (personal size)", "category": "food", "qty": "1 ramekin, ~90 g", "kcal": 280, "protein_g": 4, "carbs_g": 28, "fat_g": 18, "fiber_g": 0},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 3.5,
-    "selenium_mcg": 54,
-    "folate_mcg_dfe": 185,
+    "zinc_mg": 5,
+    "selenium_mcg": 81,
+    "folate_mcg_dfe": 117,
     "omega3_epa_dha_mg": 1110,
     "vitamin_c_mg": 45,
     "vitamin_d_iu": 90,
@@ -41,7 +41,8 @@
     "Morning run logged from Nike Run Club screenshot (2.01 km, 11:36, 5'46\"/km pace, cadence 162, 159 kcal per app, 22°C). Positive split noted by user.",
     "Breakfast logged from photo: prosciutto, grilled tomato, cherry tomatoes, cucumber, sautéed mushrooms, hash brown, scrambled eggs, avocado, seeded wholegrain bread + espresso. User confirmed 3 bites of the bread+egg+avocado combo were left behind — those three items discounted to ~70% eaten; everything else on the plate assumed fully eaten. Portion sizes are visual estimates, not weighed.",
     "2 espressos logged between breakfast and lunch — exact times not given, approximated at 10:00 and 11:30.",
-    "Lunch logged from description (no photo): green coleslaw side, 1 spoon of gnocchi (tasted), 250 g chicken curry with lentils, chopped salad, personal passionfruit crème brûlée. Portion sizes estimated from description, not weighed."
+    "Lunch logged from description (no photo): green coleslaw side, 1 spoon of gnocchi (tasted), 250 g chicken curry with lentils, chopped salad, personal passionfruit crème brûlée. Portion sizes estimated from description, not weighed.",
+    "Corrected: the 250 g is the chicken itself (curry), not the combined dish weight — lentils are a small side component. Revised the curry item's protein/calories up accordingly."
   ],
-  "status_note": "Day in progress. 06:45 run (2.01 km, positive split), breakfast at 08:00, 3 espressos + creatine through the morning, then a substantial lunch (green coleslaw, a spoon of gnocchi, 250 g chicken curry with lentils, chopped salad, passionfruit crème brûlée) plus omega-3. Running ~1,449 kcal, ~66 g protein, ~124 g carb, ~79 g fat, ~20 g fiber — good protein/fiber pace from breakfast + the lentil curry; the crème brûlée is the big fat/sugar spike of the day so far."
+  "status_note": "Day in progress. 06:45 run (2.01 km, positive split), breakfast at 08:00, 3 espressos + creatine through the morning, then a substantial lunch (green coleslaw, a spoon of gnocchi, 250 g chicken curry [chicken portion] with a small side of lentils, chopped salad, passionfruit crème brûlée) plus omega-3. Running ~1,639 kcal, ~88 g protein, ~124 g carb, ~90 g fat, ~19 g fiber — protein now well ahead of pace thanks to the full 250 g chicken portion; fat still elevated mainly from the crème brûlée and curry sauce."
 }
