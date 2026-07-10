@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "elal_gouda_omelette_pretzel_sandwich",
+      "name": "El Al pretzel sandwich with gouda & omelette",
+      "serving": "1 whole (165 g)",
+      "kcal": 505,
+      "protein_g": 15,
+      "carbs_g": 43,
+      "fat_g": 29,
+      "fiber_g": 2,
+      "verified": true,
+      "source": "Label ~308 kcal/100g, fat 17.4g/100g, protein 8.9g/100g × 165g; sodium ~760mg. Confirmed 2026-07-02, reused 2026-07-10. Recurring El Al in-flight meal."
+    },
+    {
       "id": "elal_coconut_snack",
       "name": "El Al coconut snack",
       "serving": "1 unit (20 g)",
