@@ -8,7 +8,8 @@
   "items": [
     {"time": "08:00", "name": "Breakfast — bite-sized croissant", "category": "food", "qty": "1, mini (~15 g)", "kcal": 65, "protein_g": 1.5, "carbs_g": 7, "fat_g": 3.5, "fiber_g": 0.5, "time_approx": true},
     {"time": "08:00", "name": "Breakfast — strawberries", "category": "food", "qty": "4", "kcal": 20, "protein_g": 0.4, "carbs_g": 4.5, "fat_g": 0.2, "fiber_g": 1.5, "time_approx": true},
-    {"time": "08:00", "name": "Breakfast — hash brown", "category": "food", "qty": "1 (~50 g)", "kcal": 130, "protein_g": 1.5, "carbs_g": 14, "fat_g": 8, "fiber_g": 1, "time_approx": true}
+    {"time": "08:00", "name": "Breakfast — hash brown", "category": "food", "qty": "1 (~50 g)", "kcal": 130, "protein_g": 1.5, "carbs_g": 14, "fat_g": 8, "fiber_g": 1, "time_approx": true},
+    {"time": "08:00", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0.3,
@@ -20,9 +21,9 @@
     "vitamin_e_mg": 0.5,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "assumptions": [
-    "Breakfast logged from description (no photo): 1 bite-sized croissant, 4 strawberries, 1 hash brown. Light breakfast — portion sizes estimated, not weighed."
+    "Breakfast logged from description (no photo): 1 bite-sized croissant, 4 strawberries, 1 hash brown + single espresso. Light breakfast — portion sizes estimated, not weighed."
   ],
-  "status_note": "Day just opened. Light breakfast (mini croissant, strawberries, hash brown) — ~215 kcal, ~3 g protein, ~26 g carb, ~12 g fat, ~3 g fiber so far."
+  "status_note": "Day just opened. Light breakfast (mini croissant, strawberries, hash brown) + single espresso — ~218 kcal, ~3 g protein, ~26 g carb, ~12 g fat, ~3 g fiber, 1 caffeine shot so far."
 }
