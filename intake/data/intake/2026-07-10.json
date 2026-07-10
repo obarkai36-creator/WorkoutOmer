@@ -16,7 +16,8 @@
     {"time": "19:30", "name": "Dinner — chicken schnitzel", "category": "food", "qty": "200 g", "kcal": 470, "protein_g": 40, "carbs_g": 24, "fat_g": 24, "fiber_g": 1, "time_approx": true, "note": "breaded, fried"},
     {"time": "19:30", "name": "Dinner — sirloin steak (fat trimmed)", "category": "food", "qty": "200 g", "kcal": 360, "protein_g": 62, "carbs_g": 0, "fat_g": 12, "fiber_g": 0, "time_approx": true, "note": "lean, visible fat removed"},
     {"time": "19:30", "name": "Dinner — baked potato", "category": "food", "qty": "1 medium", "kcal": 160, "protein_g": 4, "carbs_g": 37, "fat_g": 0.2, "fiber_g": 4, "time_approx": true},
-    {"time": "20:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "20:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "21:15", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 pot (~150 g)", "kcal": 120, "protein_g": 20, "carbs_g": 9, "fat_g": 1, "fiber_g": 0, "note": "generic high-protein yogurt estimate — brand not specified"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 27.3,
@@ -35,7 +36,8 @@
     "Time zone shifted +2 after landing — 13:00 omega-3 and 14:20 snack logged in local (new) time; all times from this point on are in the new zone.",
     "14:20 chocolate coconut snack reused the verified elal_coconut_snack reference (references/foods.json) — same recurring El Al item as 2 Jul.",
     "Dinner logged from description (no photo): 200 g chicken schnitzel, 200 g sirloin steak (fat trimmed), 1 baked potato. No time given — approximated at 19:30. Portion sizes as stated; per-100g macros estimated, not weighed.",
-    "Multivitamin micros use the verified Thorne label values from references/supplements.json."
+    "Multivitamin micros use the verified Thorne label values from references/supplements.json.",
+    "21:15 vanilla protein yogurt — brand not specified, used a generic high-protein yogurt estimate (~150 g pot, 20 g protein)."
   ],
-  "status_note": "Day in progress. Light breakfast (mini croissant, strawberries, hash brown) + single espresso, El Al gouda & omelette sandwich in-flight, omega-3 + chocolate coconut snack post-landing (tz +2), a big double-protein dinner (200 g chicken schnitzel, 200 g lean sirloin, baked potato), then multivitamin at 20:00. Running ~1,802 kcal, ~125 g protein, ~141 g carb, ~81 g fat, ~11 g fiber, 1 caffeine shot — protein already close to the 165 g target and micros now strong across the board. Day likely isn't done yet."
+  "status_note": "Day in progress. Light breakfast (mini croissant, strawberries, hash brown) + single espresso, El Al gouda & omelette sandwich in-flight, omega-3 + chocolate coconut snack post-landing (tz +2), a big double-protein dinner (200 g chicken schnitzel, 200 g lean sirloin, baked potato), multivitamin at 20:00, then a protein yogurt at 21:15. Running ~1,922 kcal, ~145 g protein, ~150 g carb, ~82 g fat, ~11 g fiber, 1 caffeine shot — protein well ahead of pace, closing in on the 165 g target."
 }
