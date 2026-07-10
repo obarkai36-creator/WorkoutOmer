@@ -11,7 +11,8 @@
     {"time": "08:00", "name": "Breakfast — hash brown", "category": "food", "qty": "1 (~50 g)", "kcal": 130, "protein_g": 1.5, "carbs_g": 14, "fat_g": 8, "fiber_g": 1, "time_approx": true},
     {"time": "08:00", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
     {"time": "10:30", "name": "In-flight meal — pretzel sandwich with gouda & omelette (El Al)", "category": "food", "qty": "1 whole (165 g)", "kcal": 505, "protein_g": 15, "carbs_g": 43, "fat_g": 29, "fiber_g": 2, "time_approx": true, "note": "reused from verified label values logged 2 Jul (~308 kcal/100g, fat 17.4g/100g, protein 8.9g/100g × 165g; sodium ~760mg)"},
-    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "local time zone +2 (post-flight landing zone)"}
+    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "local time zone +2 (post-flight landing zone)"},
+    {"time": "14:20", "name": "Snack — chocolate coconut snack (El Al)", "category": "food", "qty": "1 unit (20 g)", "kcal": 89, "protein_g": 1, "carbs_g": 11, "fat_g": 4.2, "fiber_g": 1, "note": "reused verified reference (elal_coconut_snack, ~444 kcal/100g, 21.2g fat/100g); local time zone +2"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 1.3,
@@ -27,7 +28,8 @@
   "assumptions": [
     "Breakfast logged from description (no photo): 1 bite-sized croissant, 4 strawberries, 1 hash brown + single espresso. Light breakfast — portion sizes estimated, not weighed.",
     "In-flight meal (El Al pretzel sandwich, gouda & omelette) reused verified values from the 2 Jul entry (same recurring item) rather than re-estimating — now also saved to references/foods.json for future reuse. Time approximated at 10:30 (exact serving time not given) on the 4:50hr daytime flight.",
-    "Time zone shifted +2 after landing — 13:00 omega-3 logged in local (new) time; all times from this point on are in the new zone."
+    "Time zone shifted +2 after landing — 13:00 omega-3 and 14:20 snack logged in local (new) time; all times from this point on are in the new zone.",
+    "14:20 chocolate coconut snack reused the verified elal_coconut_snack reference (references/foods.json) — same recurring El Al item as 2 Jul."
   ],
-  "status_note": "Day in progress. Light breakfast (mini croissant, strawberries, hash brown) + single espresso, then the familiar El Al gouda & omelette pretzel sandwich in-flight, omega-3 at 13:00 local (tz +2 after landing). Running ~723 kcal, ~18 g protein, ~69 g carb, ~41 g fat, ~5 g fiber, 1 caffeine shot so far."
+  "status_note": "Day in progress. Light breakfast (mini croissant, strawberries, hash brown) + single espresso, then the familiar El Al gouda & omelette pretzel sandwich in-flight, omega-3 at 13:00, chocolate coconut snack at 14:20 (all local, tz +2 after landing). Running ~812 kcal, ~19 g protein, ~80 g carb, ~45 g fat, ~6 g fiber, 1 caffeine shot so far."
 }
