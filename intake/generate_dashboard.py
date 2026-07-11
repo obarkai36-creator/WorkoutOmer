@@ -7,10 +7,12 @@ Usage:
 If no date is given, the most recent file in data/intake/ is used.
 Reads: profile.json, references/supplements.json, data/metrics/weight.json,
 data/metrics/sperm.json, data/metrics/lifestyle.json, data/metrics/sleep.json,
-data/metrics/ejaculation.json, data/intake/<date>.json (all of them, for the
-sperm-score/suggestions computation once the 14-day baseline unlocks)
+data/metrics/ejaculation.json, data/metrics/energy.json, data/intake/<date>.json
+(all of them, for the sperm-score/suggestions computation once the 14-day
+baseline unlocks, and for the daily energy score which has no such gate)
 Writes: dashboards/<date>.html, data/metrics/sperm.json (appends/updates the
-current week's computed factors once unlocked)
+current 7-day window's computed factors, daily), data/metrics/energy.json
+(appends/updates today's computed energy score, daily)
 """
 import json
 import sys
@@ -238,6 +240,96 @@ def persist_computed_week(week):
         f.write("\n")
 
 
+# ---------- daily energy score -----------------------------------------------
+#
+# Parameters and weighting are based on a web search conducted with the user
+# (Zoe/Healthline/SmartWellness-style consumer wellness sources + PMC sleep-
+# research): sleep duration (7-9h ideal), balanced/blood-sugar-stable
+# nutrition, regular movement, caffeine kept under ~400mg/day (~5 shots) and
+# clear of the evening cutoff, and alcohol's well-documented next-day hit to
+# sleep quality and perceived energy (~4% sleep-quality decline per drink).
+# This is a same-day metric (last night + today), refreshed on every render —
+# unlike the sperm score it doesn't need a 14-day baseline first.
+
+def compute_energy_score(profile, target_date, todays_intake, sleep_entries, lifestyle_events, workout_entries):
+    td = pdate(target_date)
+    t = profile["targets"]
+
+    # sleep: last night (the night whose wake-up date is target_date)
+    night = next((e for e in sleep_entries if e["date"] == target_date), None)
+    if night:
+        h = night["duration_hours"]
+        sleep_score = round(clamp(100 - abs(h - clamp(h, 7, 9)) * 15))
+    else:
+        sleep_score = 70  # neutral — no night logged for this date yet
+
+    # nutrition: today's protein/fiber/calorie adherence (blood-sugar-stability proxy)
+    items = todays_intake.get("items", [])
+    kcal = sum(i.get("kcal", 0) for i in items)
+    protein = sum(i.get("protein_g", 0) for i in items)
+    fiber = sum(i.get("fiber_g", 0) for i in items)
+    protein_score = clamp(protein / t["protein_g"] * 100) if t["protein_g"] else 100
+    fiber_score = clamp(fiber / t["fiber_g"] * 100) if t["fiber_g"] else 100
+    kcal_score = clamp(100 - abs(kcal - t["calories_kcal"]) / t["calories_kcal"] * 150) if t["calories_kcal"] else 100
+    nutrition_score = round((protein_score + fiber_score + kcal_score) / 3)
+
+    # movement: recency of any logged workout (regular movement supports energy)
+    workout_dates = sorted(pdate(w["date"]) for w in workout_entries if pdate(w["date"]) <= td)
+    if workout_dates:
+        days_since = (td - workout_dates[-1]).days
+        movement_score = round(clamp(100 - days_since * 20))
+    else:
+        movement_score = 50  # neutral — no workout history at all yet
+
+    # caffeine: total vs a ~400mg/day (~5 shots) soft cap, plus timing vs the profile's cutoff
+    caffeine_shots = todays_intake.get("caffeine_shots", 0)
+    cutoff_str = profile["lifestyle"]["caffeine"].get("cutoff", "16:00")
+    cutoff_min = int(cutoff_str.split(":")[0]) * 60 + int(cutoff_str.split(":")[1])
+    caffeinated = [i for i in items if i.get("category") == "drink" and
+                   any(kw in i.get("name", "").lower() for kw in ("espresso", "coffee", "caffeine", "energy drink"))]
+    late_caffeine = any(
+        int(i["time"].split(":")[0]) * 60 + int(i["time"].split(":")[1]) > cutoff_min
+        for i in caffeinated if ":" in i.get("time", "")
+    )
+    caffeine_score = round(clamp(100 - max(0, caffeine_shots - 5) * 15 - (25 if late_caffeine else 0)))
+
+    # alcohol: logged today or yesterday still measurably hits sleep quality/energy
+    alcohol_dates = {e["date"] for e in lifestyle_events if e.get("type") == "alcohol"}
+    yesterday = (td - timedelta(days=1)).strftime("%Y-%m-%d")
+    alcohol_penalty = (30 if target_date in alcohol_dates else 0) + (20 if yesterday in alcohol_dates else 0)
+    alcohol_score = round(clamp(100 - alcohol_penalty))
+
+    weights = {"sleep": 0.35, "nutrition": 0.2, "movement": 0.15, "caffeine": 0.1, "alcohol": 0.2}
+    factors = {"sleep": sleep_score, "nutrition": nutrition_score, "movement": movement_score,
+               "caffeine": caffeine_score, "alcohol": alcohol_score}
+    overall = round(sum(factors[k] * w for k, w in weights.items()))
+
+    caveats = [c for c in [
+        "no sleep logged for last night" if not night else "",
+        "no workout history yet" if not workout_dates else "",
+    ] if c]
+    notes = f"Computed for {target_date} from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement." \
+        + (" (" + "; ".join(caveats) + ")" if caveats else "")
+
+    return {"date": target_date, "overall": overall, "factors": factors, "notes": notes}
+
+
+def persist_computed_energy(day):
+    path = os.path.join(ROOT, "data/metrics/energy.json")
+    with open(path, encoding="utf-8") as f:
+        energy = json.load(f)
+    days = energy["days"]
+    existing = next((d for d in days if d["date"] == day["date"]), None)
+    if existing:
+        existing.update(day)
+    else:
+        days.append(day)
+    days.sort(key=lambda d: d["date"])
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(energy, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+
 # ---------- real suggestions engine (post 14-day unlock) --------------------
 
 def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifestyle_events, target_date, ejac_entries):
@@ -310,6 +402,10 @@ def build(target_date):
         ejaculation = load("data/metrics/ejaculation.json")
     except FileNotFoundError:
         ejaculation = {"entries": []}
+    try:
+        energy_store = load("data/metrics/energy.json")
+    except FileNotFoundError:
+        energy_store = {"model": {"weights": {}, "bands": []}, "days": []}
 
     t = profile["targets"]
     items = intake["items"]
@@ -376,6 +472,27 @@ def build(target_date):
     else:
         sleep_panel = ""
         sleep_note_line = ""
+
+    # daily energy score (no unlock gate — same-day metric, not a historical trend)
+    energy = compute_energy_score(profile, target_date, intake, sleep.get("entries", []),
+                                   lifestyle.get("events", []), workouts.get("entries", []))
+    persist_computed_energy(energy)
+    eband = band_for(energy["overall"], energy_store["model"]["bands"])
+    efactors = "".join(
+        f"""<div class="metric">
+          <div class="metric-top"><span>{k}</span><span class="vals">{v:g}</span></div>
+          <div class="track"><div class="fill" style="width:{v:.0f}%;background:{eband['color']}"></div></div>
+        </div>""" for k, v in energy["factors"].items()
+    )
+    energy_panel = f"""
+    <div class="panel">
+      <h2>Energy Score · today</h2>
+      <div class="sperm-flex">
+        {ring(energy["overall"], eband["color"], eband["label"])}
+        <div class="factors">{efactors}</div>
+      </div>
+      <div class="note" style="margin-top:14px">{energy["notes"]}</div>
+    </div>"""
 
     # lifestyle events in the 7 days up to the dashboard date
     recent_events = sorted(
@@ -510,7 +627,7 @@ def build(target_date):
     # Sperm panel: locked (no score/ring) until the 14-day baseline; the
     # Lifestyle log below is always shown (it's real logged data, not an estimate).
     if score_unlocked:
-        sperm_title = f"Sperm Optimization · weekly ({wk['week_start']} → {wk['week_end']})"
+        sperm_title = f"Sperm Optimization · trailing 7 days, updated daily ({wk['week_start']} → {wk['week_end']})"
         sperm_score_html = f"""
       <div class="sperm-flex">
         {ring(overall, sband['color'], sband['label'])}
@@ -623,7 +740,7 @@ def build(target_date):
       <h2>Status &amp; Progress</h2>
       <div class="note">{intake.get('status_note','')}</div>
     </div>
-
+{energy_panel}
     <div class="panel">
       <h2>Weight &amp; Body Composition</h2>
       <div class="bignum">{latest['weight_kg']:g}<small> kg</small></div>
@@ -674,7 +791,7 @@ def build(target_date):
         f.write(html)
     score_str = f"{overall:.0f}" if score_unlocked else f"locked ({days_logged}/{UNLOCK_DAYS}d)"
     print(f"Wrote {out}  (calories {tot['kcal']:g}, protein {tot['protein_g']:g} g, "
-          f"sperm score {score_str}, days logged {days_logged})")
+          f"sperm score {score_str}, energy score {energy['overall']}, days logged {days_logged})")
 
 
 if __name__ == "__main__":

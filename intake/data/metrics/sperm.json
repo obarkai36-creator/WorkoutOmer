@@ -1,5 +1,5 @@
 {
-  "_note": "Weekly sperm-optimization score. Sub-factors are 0-100. Overall = weighted sum. Updated weekly, not daily. Demo week below is illustrative.",
+  "_note": "Sperm-optimization score. Sub-factors are 0-100. Overall = weighted sum. Computed fresh every dashboard render (i.e. daily) from a trailing 7-day window ending on the render date — the 7-day span itself is intentional (sperm parameters reflect ~weeks of buildup, not a single day), but the number now updates daily as that window rolls forward, not on a fixed weekly cadence.",
   "model": {
     "weights": {
       "nutrition": 0.36,

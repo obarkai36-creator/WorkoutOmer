@@ -12,7 +12,8 @@ references/supplements.json  # current supplement stack (verified) + candidate a
 references/import_templates/ # example CSVs for exercise/scale exports
 data/intake/YYYY-MM-DD.json  # one file per day: timestamped items + macro analysis
 data/metrics/weight.json     # body-composition log (Eufy Smart Scale)
-data/metrics/sperm.json      # weekly sperm-optimization score (sub-factors + weights)
+data/metrics/sperm.json      # sperm-optimization score: trailing 7-day window, recomputed + persisted daily (sub-factors + weights)
+data/metrics/energy.json     # daily energy score (sleep/nutrition/movement/caffeine/alcohol), recomputed + persisted every render
 data/metrics/lifestyle.json  # travel / heat / sleep / stress events that affect scoring
 data/metrics/workouts.json   # training sessions + report_snapshot (kept in sync with ../data.js — see sync_training_snapshot.mjs)
 data/metrics/sleep.json      # nightly sleep log (manual entry — Health Connect is US-only, not accessible yet)

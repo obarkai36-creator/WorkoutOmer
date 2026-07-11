@@ -1,0 +1,48 @@
+{
+  "_note": "Daily energy score (0-100), computed fresh every dashboard render from last night's sleep + today's nutrition/caffeine/alcohol/movement — a same-day metric, unlike the sperm score's rolling 7-day window. Sources for the model: sleep 7-9h band, blood-sugar-stable nutrition, regular movement, caffeine <=~400mg (~5 shots) with a cutoff before bed, and alcohol's next-day sleep-quality hit (see generate_dashboard.py compute_energy_score for citations discussed with the user).",
+  "model": {
+    "weights": {
+      "sleep": 0.35,
+      "nutrition": 0.2,
+      "movement": 0.15,
+      "caffeine": 0.1,
+      "alcohol": 0.2
+    },
+    "bands": [
+      {
+        "min": 0,
+        "label": "Low",
+        "color": "#ef4444"
+      },
+      {
+        "min": 50,
+        "label": "Moderate",
+        "color": "#f59e0b"
+      },
+      {
+        "min": 70,
+        "label": "Good",
+        "color": "#3b82f6"
+      },
+      {
+        "min": 85,
+        "label": "High",
+        "color": "#22c55e"
+      }
+    ]
+  },
+  "days": [
+    {
+      "date": "2026-07-11",
+      "overall": 88,
+      "factors": {
+        "sleep": 66,
+        "nutrition": 98,
+        "movement": 100,
+        "caffeine": 100,
+        "alcohol": 100
+      },
+      "notes": "Computed for 2026-07-11 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+    }
+  ]
+}
