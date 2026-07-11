@@ -16,16 +16,17 @@
     {"time": "13:35", "name": "Maple-Balsamic Mustard Vinaigrette (homemade)", "category": "food", "qty": "~25 ml (olive oil, balsamic vinegar, mustard, maple syrup, lemon juice)", "kcal": 125, "protein_g": 0.1, "carbs_g": 4, "fat_g": 12, "fiber_g": 0, "note": "estimated pour for the 0.75 salad portion; recipe saved to references/foods.json"},
     {"time": "15:55", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:54", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:45", "name": "Snack — honeydew melon", "category": "food", "qty": "0.3 of a whole melon (~240 g)", "kcal": 86, "protein_g": 1.2, "carbs_g": 22, "fat_g": 0.2, "fiber_g": 2}
+    {"time": "16:45", "name": "Snack — honeydew melon", "category": "food", "qty": "0.3 of a whole melon (~240 g)", "kcal": 86, "protein_g": 1.2, "carbs_g": 22, "fat_g": 0.2, "fiber_g": 2},
+    {"time": "17:48", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.5,
-    "selenium_mcg": 101,
-    "folate_mcg_dfe": 430,
+    "zinc_mg": 17.5,
+    "selenium_mcg": 301,
+    "folate_mcg_dfe": 1097,
     "omega3_epa_dha_mg": 1540,
-    "vitamin_c_mg": 205,
-    "vitamin_d_iu": 135,
-    "vitamin_e_mg": 3.4,
+    "vitamin_c_mg": 455,
+    "vitamin_d_iu": 2135,
+    "vitamin_e_mg": 19.9,
     "lycopene_mg": 15
   },
   "caffeine_shots": 4,
@@ -33,7 +34,8 @@
     "Eufy weigh-in at 12:10 logged to data/metrics/weight.json: 80.95 kg, BMI 27.6, body fat 27.0%, body fat mass 21.80 kg, skeletal muscle mass 30.80 kg, visceral fat 11.0, muscle mass 56.10 kg, lean body mass 59.10 kg, bone mass 3.00 kg, protein 15.2%, subcutaneous fat 23.8%, water 50.0%, BMR 1718 kcal, resting HR 67 bpm, body age 29, body type Average. vs. the 27 Jun baseline: weight down 0.45 kg, body fat down 0.3 pp — modest progress in the right direction.",
     "Sleep is now tracked nightly in the new data/metrics/sleep.json (manual entry each morning — Health Connect integration is US-only, not available). Night of 10-11 Jul logged: 00:30-11:45, 11.25h — long catch-up sleep after the 10 Jul travel day, not a typical baseline night.",
     "Lunch logged from description (no photo): 150 g baked potatoes, 150 g + 120 g (two servings) denis fish (sea bream) baked with butter, 6 baked cherry tomatoes, a small baked red onion side (quantity not given), and 0.75 of a large shared salad (whole recipe: 1 caesar lettuce, 35 cherry tomatoes, 0.5 red onion, 150 g drained baby mozzarella), dressed with a homemade Maple-Balsamic Mustard Vinaigrette (olive oil, balsamic vinegar, mustard, maple syrup, lemon juice — estimated ~25 ml pour, saved to references/foods.json as a recurring item). Salad quantity scaled to the 0.75 portion actually eaten. Fish, lettuce, and tomato quantities drive strong folate/omega-3/vitamin C/lycopene today.",
-    "Red onion side: no better quantity estimate available — kept the original ~50 g assumption as-is."
+    "Red onion side: no better quantity estimate available — kept the original ~50 g assumption as-is.",
+    "Multivitamin micros use the verified Thorne label values from references/supplements.json."
   ],
-  "status_note": "Day in progress. Double espresso at 12:15, then a big lunch at 13:35 — baked potatoes, two servings of denis fish (baked with butter, 270 g total), baked cherry tomatoes and red onion, plus 0.75 of a large caesar-mozzarella salad with a homemade maple-balsamic-mustard vinaigrette. Running ~1,307 kcal, ~89 g protein, ~102 g carb, ~65 g fat, ~20 g fiber, 4 caffeine shots (2nd double espresso at 15:55), omega-3 at 15:54, honeydew melon snack at 16:45. Protein already more than half of target and fiber well ahead thanks to the lettuce-heavy salad; fat picked up with the oil-based dressing. Weigh-in shows continued slow progress: 80.95 kg (down from 81.4 kg baseline), body fat 27.0% (down from 27.3%). Sleep tracking now added — 11.25h logged for last night (catch-up sleep post-travel)."
+  "status_note": "Day in progress. Double espresso at 12:15, then a big lunch at 13:35 — baked potatoes, two servings of denis fish (baked with butter, 270 g total), baked cherry tomatoes and red onion, plus 0.75 of a large caesar-mozzarella salad with a homemade maple-balsamic-mustard vinaigrette. Running ~1,307 kcal, ~89 g protein, ~102 g carb, ~65 g fat, ~20 g fiber, 4 caffeine shots (2nd double espresso at 15:55), omega-3 at 15:54, honeydew melon snack at 16:45, multivitamin at 17:48. Protein already more than half of target and fiber well ahead thanks to the lettuce-heavy salad; fat picked up with the oil-based dressing; micros now strong across the board. Weigh-in shows continued slow progress: 80.95 kg (down from 81.4 kg baseline), body fat 27.0% (down from 27.3%). Sleep tracking now added — 11.25h logged for last night (catch-up sleep post-travel)."
 }
