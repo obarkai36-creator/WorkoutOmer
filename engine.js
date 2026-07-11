@@ -393,8 +393,9 @@ function timingStats(workouts, now) {
 
   const hours = workouts.map((w) => new Date(w.t).getHours());
   const avgHour = round(sum(hours) / hours.length);
-  const morning = hours.filter((h) => h < 12).length;
-  const todPref = morning >= hours.length - morning ? "morning" : "evening";
+  // Derived from avgHour (not a separate morning-session count) so the label
+  // always matches the "~Xh:00" figure shown next to it.
+  const todPref = avgHour < 12 ? "morning" : avgHour < 17 ? "afternoon" : "evening";
 
   const dow = [0, 0, 0, 0, 0, 0, 0];
   for (const w of workouts) dow[new Date(w.t).getDay()]++;
