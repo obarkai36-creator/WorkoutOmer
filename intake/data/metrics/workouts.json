@@ -2,16 +2,16 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-07-11",
-    "latest_session": "Morning run — Thames path, positive split, 22°C, ~159 kcal (Nike Run Club)",
-    "sessions_logged": 27,
+    "latest_session": "Legs",
+    "sessions_logged": 28,
     "sessions_per_week": 4,
     "typical_time": "evening",
-    "aerobic_28d_km": 53.7,
-    "aerobic_sessions_28d": 9,
+    "aerobic_28d_km": 52.7,
+    "aerobic_sessions_28d": 8,
     "avg_pace": "9:36/km",
     "avg_hr": 142,
-    "acwr": 0.82,
-    "recommended_next": "Legs day",
+    "acwr": 1.27,
+    "recommended_next": "Chest day",
     "alerts": [
       "Push volume is 1.52× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
@@ -111,6 +111,14 @@
       "duration_min": 12,
       "intensity": "moderate",
       "notes": "2.01 km · 5'46\"/km avg pace · 11:36 · cadence 162 · 159 kcal (Nike Run Club, 06:45, along the Thames, 22°C) — positive split, first km faster than second",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-11",
+      "type": "Strength — Legs",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Calf raises machine 77kg×4×10 (PR); Angled leg press 202kg setup [70kg each side + 62kg frame]×4×6 (PR); Leg extensions 111kg×4×12; Outer thigh 79kg×4×8; Inner thigh 75kg×3×10 (PR); Leg press 132kg×4×8. Followed the report's recommended Legs day.",
       "_source": "manual log"
     }
   ]

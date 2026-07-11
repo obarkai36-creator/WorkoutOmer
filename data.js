@@ -190,16 +190,16 @@ const SNAPSHOT = [
   { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" } },
 
   // ---- Legs (incl. calves) ----
-  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 5, reps: 12, weight: 72, text: "72kg × 5×12" }, best: { sets: 5, reps: 12, weight: 72, text: "72kg × 5×12" } },
+  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 10, weight: 77, text: "77kg × 4×10" }, best: { sets: 4, reps: 10, weight: 77, text: "77kg × 4×10" } },
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
   { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Leg Press",                    section: "Legs", latest: { sets: 3, reps: 8, weight: 132, text: "132kg × 3×8" }, best: { sets: 4, reps: 8, weight: 132, text: "132kg × 4×8" } },
-  { name: "Angled Leg Press",             section: "Legs", latest: { sets: 4, reps: 8, weight: 131, text: "131kg setup × 4×8" }, best: { sets: 4, reps: 8, weight: 131, text: "131kg setup × 4×8" } },
-  { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 10, weight: 111, text: "111kg × 4×10" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
+  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 8, weight: 132, text: "132kg × 4×8" }, best: { sets: 4, reps: 8, weight: 132, text: "132kg × 4×8" } },
+  { name: "Angled Leg Press",             section: "Legs", latest: { sets: 4, reps: 6, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×6" }, best: { sets: 4, reps: 6, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×6" } },
+  { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 4, reps: 10, weight: 23.25, text: "23.25kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 23.25, text: "23.25kg each × 4×10" } },
   { name: "Leg Curls",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Outer Thigh",                  section: "Legs", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 5, reps: 10, weight: 79, text: "79kg × 5×10" } },
-  { name: "Inner Thigh",                  section: "Legs", latest: { sets: 4, reps: 12, weight: 73, text: "73kg × 4×12" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
+  { name: "Inner Thigh",                  section: "Legs", latest: { sets: 3, reps: 10, weight: 75, text: "75kg × 3×10" }, best: { sets: 3, reps: 10, weight: 75, text: "75kg × 3×10" } },
   { name: "Glute Extension",              section: "Legs", latest: { sets: 1, reps: 5, weight: 59, text: "59kg × 1×5 each" }, best: { sets: 1, reps: 5, weight: 59, text: "59kg × 1×5 each" } },
   { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 10, weight: 24, text: "24kg × 4×10" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
   { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
@@ -217,6 +217,19 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 11 Jul — Legs (followed the report's recommended Legs day)
+  {
+    datetime: "2026-07-11T21:00", note: "Legs",
+    exercises: [
+      { name: "Calf Raises Machine", sets: [ { reps: 10, weight: 77 }, { reps: 10, weight: 77 }, { reps: 10, weight: 77 }, { reps: 10, weight: 77 } ] },
+      { name: "Angled Leg Press",    sets: [ { reps: 6, weight: 202 }, { reps: 6, weight: 202 }, { reps: 6, weight: 202 }, { reps: 6, weight: 202 } ] },
+      { name: "Leg Extensions",      sets: [ { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 } ] },
+      { name: "Outer Thigh",         sets: [ { reps: 8, weight: 79 }, { reps: 8, weight: 79 }, { reps: 8, weight: 79 }, { reps: 8, weight: 79 } ] },
+      { name: "Inner Thigh",         sets: [ { reps: 10, weight: 75 }, { reps: 10, weight: 75 }, { reps: 10, weight: 75 } ] },
+      { name: "Leg Press",           sets: [ { reps: 8, weight: 132 }, { reps: 8, weight: 132 }, { reps: 8, weight: 132 }, { reps: 8, weight: 132 } ] },
+    ],
+  },
+
   // 9 Jul — Morning run along the Thames (Nike Run Club, ~159 kcal per app)
   {
     datetime: "2026-07-09T06:45", note: "Morning run — Thames path, positive split, 22°C, ~159 kcal (Nike Run Club)",
