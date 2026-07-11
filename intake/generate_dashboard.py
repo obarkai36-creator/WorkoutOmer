@@ -6,8 +6,11 @@ Usage:
 
 If no date is given, the most recent file in data/intake/ is used.
 Reads: profile.json, references/supplements.json, data/metrics/weight.json,
-data/metrics/sperm.json, data/intake/<date>.json
-Writes: dashboards/<date>.html
+data/metrics/sperm.json, data/metrics/lifestyle.json, data/metrics/sleep.json,
+data/metrics/ejaculation.json, data/intake/<date>.json (all of them, for the
+sperm-score/suggestions computation once the 14-day baseline unlocks)
+Writes: dashboards/<date>.html, data/metrics/sperm.json (appends/updates the
+current week's computed factors once unlocked)
 """
 import json
 import sys
@@ -126,7 +129,7 @@ def load_all_intake_days():
 
 # ---------- real weekly sperm-optimization score (post 14-day unlock) -------
 
-def compute_current_week(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events):
+def compute_current_week(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events, ejac_entries):
     """Computes this week's sperm-optimization factors from real logged data
     (trailing 7 days ending at target_date), replacing the illustrative demo
     week that ships in sperm.json before enough real data exists."""
@@ -190,13 +193,26 @@ def compute_current_week(profile, target_date, all_days, weight_entries, sleep_e
     smoking_status = profile["lifestyle"].get("smoking", "none")
     smoking = 100 if smoking_status == "none" else 60 if "occasional" in smoking_status else 20
 
+    # ejaculatory frequency: research favors short, regular intervals (~every
+    # 1-2 days / 4-7x per week) over long abstinence, which raises DNA
+    # fragmentation — count events in-window against that ideal frequency.
+    week_ejac = [e for e in ejac_entries if in_week(e["date"])]
+    if ejac_entries:
+        ejaculatory_frequency = round(clamp(100 - max(0, 4 - len(week_ejac)) * 15))
+    else:
+        ejaculatory_frequency = 70  # neutral default — tracking just started, no history yet
+
     factors = {
         "nutrition": nutrition, "body_composition": body_composition, "sleep": sleep_factor,
         "alcohol": alcohol, "heat_travel_exposure": heat_travel_exposure, "smoking": smoking,
+        "ejaculatory_frequency": ejaculatory_frequency,
     }
+    caveats = [c for c in [
+        "No nights logged in this window yet — sleep factor defaulted to neutral." if not week_nights else "",
+        "No ejaculation events logged yet — factor defaulted to neutral." if not ejac_entries else "",
+    ] if c]
     notes = (f"Computed from real logged data for {week_start.strftime('%Y-%m-%d')} → {target_date} "
-             f"({len(week_days)} day(s) logged this window). "
-             f"{'No nights logged in this window yet — sleep factor defaulted to neutral.' if not week_nights else ''}")
+             f"({len(week_days)} day(s) logged this window)." + (" " + " ".join(caveats) if caveats else ""))
     return {
         "week_start": week_start.strftime("%Y-%m-%d"), "week_end": target_date,
         "factors": factors, "notes": notes.strip(), "sample": False,
@@ -224,7 +240,7 @@ def persist_computed_week(week):
 
 # ---------- real suggestions engine (post 14-day unlock) --------------------
 
-def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifestyle_events, target_date):
+def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifestyle_events, target_date, ejac_entries):
     """Concrete, data-driven suggestions from the full logged history so far
     — replaces the placeholder 'engine active' message."""
     t = profile["targets"]
@@ -255,6 +271,12 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
         avg_sleep = sum(e["duration_hours"] for e in sleep_entries) / len(sleep_entries)
         sugg.append(f"Average logged sleep is {avg_sleep:.1f}h across {len(sleep_entries)} night(s) tracked — keep logging nightly to get a reliable trend (still an early sample).")
 
+    if not ejac_entries:
+        sugg.append("Ejaculatory frequency tracking just started with no events logged yet — research favors short, regular intervals (~every 1-2 days) over long abstinence for sperm motility and DNA integrity, so log each event to get a real read on this factor.")
+    else:
+        recent_ejac = [e for e in ejac_entries if (pdate(target_date) - pdate(e["date"])).days < 14]
+        sugg.append(f"{len(recent_ejac)} ejaculation event(s) logged in the last 14 days — aiming for roughly every 1-2 days (8-14 over a 14-day span) tracks best with the sperm-quality research.")
+
     if weight_entries:
         baseline_w = profile["personal"]["baseline_weight_kg"]
         last_w = weight_entries[-1]["weight_kg"]
@@ -284,6 +306,10 @@ def build(target_date):
         sleep = load("data/metrics/sleep.json")
     except FileNotFoundError:
         sleep = {"entries": []}
+    try:
+        ejaculation = load("data/metrics/ejaculation.json")
+    except FileNotFoundError:
+        ejaculation = {"entries": []}
 
     t = profile["targets"]
     items = intake["items"]
@@ -314,7 +340,8 @@ def build(target_date):
 
     if score_unlocked:
         wk = compute_current_week(profile, target_date, all_days, entries,
-                                   sleep.get("entries", []), lifestyle.get("events", []))
+                                   sleep.get("entries", []), lifestyle.get("events", []),
+                                   ejaculation.get("entries", []))
         persist_computed_week(wk)
     else:
         wk = sperm["weeks"][-1]
@@ -468,7 +495,8 @@ def build(target_date):
 
     if suggestions_unlocked:
         suggestions = generate_suggestions(profile, all_days, entries,
-                                            sleep.get("entries", []), lifestyle.get("events", []), target_date)
+                                            sleep.get("entries", []), lifestyle.get("events", []), target_date,
+                                            ejaculation.get("entries", []))
         sugg_body = ("<ul class='sugg-ul'>" + "".join(f"<li>{s}</li>" for s in suggestions) + "</ul>") if suggestions \
             else "<p class='muted'>Not enough signal yet to generate suggestions.</p>"
     else:

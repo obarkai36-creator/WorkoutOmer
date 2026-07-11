@@ -2,13 +2,15 @@
   "_note": "Weekly sperm-optimization score. Sub-factors are 0-100. Overall = weighted sum. Updated weekly, not daily. Demo week below is illustrative.",
   "model": {
     "weights": {
-      "nutrition": 0.4,
-      "body_composition": 0.2,
-      "sleep": 0.15,
-      "alcohol": 0.1,
-      "heat_travel_exposure": 0.1,
-      "smoking": 0.05
+      "nutrition": 0.36,
+      "body_composition": 0.18,
+      "sleep": 0.135,
+      "alcohol": 0.09,
+      "heat_travel_exposure": 0.09,
+      "smoking": 0.045,
+      "ejaculatory_frequency": 0.1
     },
+    "_weights_note": "ejaculatory_frequency added 2026-07-11 at 10% weight; the other six factors were scaled down proportionally (x0.9) from their original values so all weights still sum to 1.0.",
     "bands": [
       {
         "min": 0,
@@ -42,9 +44,10 @@
         "sleep": 66,
         "alcohol": 40,
         "heat_travel_exposure": 82,
-        "smoking": 100
+        "smoking": 100,
+        "ejaculatory_frequency": 70
       },
-      "notes": "Computed from real logged data for 2026-07-05 → 2026-07-11 (7 day(s) logged this window).",
+      "notes": "Computed from real logged data for 2026-07-05 → 2026-07-11 (7 day(s) logged this window). No ejaculation events logged yet — factor defaulted to neutral.",
       "sample": false
     }
   ]
