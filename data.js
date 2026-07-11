@@ -257,7 +257,7 @@ const WORKOUTS = [
 
   // 5 Jul — Full-day walking, London (Samsung Health: 17,133 steps / 13.35 km)
   {
-    datetime: "2026-07-05T12:00", note: "Full-day walking — London",
+    datetime: "2026-07-05T12:00", timeUnknown: true, note: "Full-day walking — London",
     exercises: [
       { name: "Outdoor Walk", distanceKm: 13.35, durationMin: 174, rpe: 3 },
     ],
@@ -265,7 +265,7 @@ const WORKOUTS = [
 
   // 4 Jul — Long city walk, London (full-day event; steps via Samsung Health)
   {
-    datetime: "2026-07-04T12:00", note: "Long city walk — London (full-day)",
+    datetime: "2026-07-04T12:00", timeUnknown: true, note: "Long city walk — London (full-day)",
     exercises: [
       { name: "Outdoor Walk", distanceKm: 10.43, durationMin: 130, rpe: 3 },
     ],
@@ -273,7 +273,7 @@ const WORKOUTS = [
 
   // 3 Jul — Full-day city walking on a travel/red-eye day (~16K steps)
   {
-    datetime: "2026-07-03T12:00", note: "Full-day city walking (travel day)",
+    datetime: "2026-07-03T12:00", timeUnknown: true, note: "Full-day city walking (travel day)",
     exercises: [
       { name: "Outdoor Walk", distanceKm: 11.5, durationMin: 150, rpe: 3 },
     ],
@@ -407,18 +407,19 @@ const WORKOUTS = [
     ],
   },
 
-  // Cardio log (dates are day.month 2026; clock-times are placeholders)
-  { datetime: "2026-05-08T18:00", exercises: [ { name: "Outdoor Run",        distanceKm: 2.00, durationMin: 13.2, avgHr: 148 } ] },
-  { datetime: "2026-05-01T19:00", exercises: [ { name: "Stationary Bike",    durationMin: 70, rpe: 5 } ] },
-  { datetime: "2026-04-21T18:00", exercises: [ { name: "Outdoor Run",        distanceKm: 2.50, durationMin: 16.4, avgHr: 145 } ] },
-  { datetime: "2026-04-05T08:00", exercises: [ { name: "Incline Walk",       distanceKm: 2.98, durationMin: 35.1, avgHr: 117 } ] },
-  { datetime: "2026-04-02T08:00", exercises: [ { name: "Incline Walk",       distanceKm: 3.84, durationMin: 42.0, avgHr: 115 } ] },
-  { datetime: "2026-03-30T08:00", exercises: [ { name: "Incline Walk",       distanceKm: 3.38, durationMin: 39.4, rpe: 4 } ] },
-  { datetime: "2026-03-23T18:00", exercises: [ { name: "Outdoor Run",        distanceKm: 2.00, durationMin: 12.5, avgHr: 147 } ] },
-  { datetime: "2026-03-16T18:00", exercises: [ { name: "Outdoor Run",        distanceKm: 2.50, durationMin: 16.1, avgHr: 147 } ] },
-  { datetime: "2026-03-11T18:00", exercises: [ { name: "Outdoor Run",        distanceKm: 2.51, durationMin: 14.7, avgHr: 154 } ] },
-  { datetime: "2026-03-02T18:00", exercises: [ { name: "Rehabilitation Run", distanceKm: 3.00, durationMin: 22.1, avgHr: 145 } ] },
-  { datetime: "2026-02-27T09:00", exercises: [ { name: "Long Run",           distanceKm: 10.00, durationMin: 66.25, avgHr: 156 } ] },
+  // Cardio log (dates are day.month 2026; clock-times are placeholders — timeUnknown
+  // excludes these from the time-of-day / typical-time stat, dates still count elsewhere)
+  { datetime: "2026-05-08T18:00", timeUnknown: true, exercises: [ { name: "Outdoor Run",        distanceKm: 2.00, durationMin: 13.2, avgHr: 148 } ] },
+  { datetime: "2026-05-01T19:00", timeUnknown: true, exercises: [ { name: "Stationary Bike",    durationMin: 70, rpe: 5 } ] },
+  { datetime: "2026-04-21T18:00", timeUnknown: true, exercises: [ { name: "Outdoor Run",        distanceKm: 2.50, durationMin: 16.4, avgHr: 145 } ] },
+  { datetime: "2026-04-05T08:00", timeUnknown: true, exercises: [ { name: "Incline Walk",       distanceKm: 2.98, durationMin: 35.1, avgHr: 117 } ] },
+  { datetime: "2026-04-02T08:00", timeUnknown: true, exercises: [ { name: "Incline Walk",       distanceKm: 3.84, durationMin: 42.0, avgHr: 115 } ] },
+  { datetime: "2026-03-30T08:00", timeUnknown: true, exercises: [ { name: "Incline Walk",       distanceKm: 3.38, durationMin: 39.4, rpe: 4 } ] },
+  { datetime: "2026-03-23T18:00", timeUnknown: true, exercises: [ { name: "Outdoor Run",        distanceKm: 2.00, durationMin: 12.5, avgHr: 147 } ] },
+  { datetime: "2026-03-16T18:00", timeUnknown: true, exercises: [ { name: "Outdoor Run",        distanceKm: 2.50, durationMin: 16.1, avgHr: 147 } ] },
+  { datetime: "2026-03-11T18:00", timeUnknown: true, exercises: [ { name: "Outdoor Run",        distanceKm: 2.51, durationMin: 14.7, avgHr: 154 } ] },
+  { datetime: "2026-03-02T18:00", timeUnknown: true, exercises: [ { name: "Rehabilitation Run", distanceKm: 3.00, durationMin: 22.1, avgHr: 145 } ] },
+  { datetime: "2026-02-27T09:00", timeUnknown: true, exercises: [ { name: "Long Run",           distanceKm: 10.00, durationMin: 66.25, avgHr: 156 } ] },
 ];
 
 /* Expose for the engine. */

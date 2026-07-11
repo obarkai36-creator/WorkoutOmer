@@ -391,11 +391,15 @@ function timingStats(workouts, now) {
   const longestGap = gaps.length ? round(Math.max(...gaps), 1) : null;
   const perWeek = round(workouts.filter((w) => now - w.t <= 28 * DAY).length / 4, 1);
 
-  const hours = workouts.map((w) => new Date(w.t).getHours());
-  const avgHour = round(sum(hours) / hours.length);
+  // Sessions with timeUnknown (placeholder clock-times — e.g. full-day step
+  // totals with no real start time) are excluded here so they don't skew the
+  // typical-time stat, but still count everywhere else (gaps, frequency, dow).
+  const timedWorkouts = workouts.filter((w) => !w.timeUnknown);
+  const hours = timedWorkouts.map((w) => new Date(w.t).getHours());
+  const avgHour = hours.length ? round(sum(hours) / hours.length) : null;
   // Derived from avgHour (not a separate morning-session count) so the label
   // always matches the "~Xh:00" figure shown next to it.
-  const todPref = avgHour < 12 ? "morning" : avgHour < 17 ? "afternoon" : "evening";
+  const todPref = avgHour == null ? null : avgHour < 12 ? "morning" : avgHour < 17 ? "afternoon" : "evening";
 
   const dow = [0, 0, 0, 0, 0, 0, 0];
   for (const w of workouts) dow[new Date(w.t).getDay()]++;
