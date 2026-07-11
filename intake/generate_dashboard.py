@@ -13,7 +13,7 @@ import json
 import sys
 import glob
 import os
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -107,6 +107,163 @@ def band_for(score, bands):
     return chosen
 
 
+def clamp(v, lo=0, hi=100):
+    return max(lo, min(hi, v))
+
+
+def pdate(s):
+    return datetime.strptime(s, "%Y-%m-%d")
+
+
+def load_all_intake_days():
+    """All logged daily intake files, sorted oldest -> newest."""
+    days = []
+    for path in sorted(glob.glob(os.path.join(ROOT, "data/intake/*.json"))):
+        with open(path, encoding="utf-8") as f:
+            days.append(json.load(f))
+    return days
+
+
+# ---------- real weekly sperm-optimization score (post 14-day unlock) -------
+
+def compute_current_week(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events):
+    """Computes this week's sperm-optimization factors from real logged data
+    (trailing 7 days ending at target_date), replacing the illustrative demo
+    week that ships in sperm.json before enough real data exists."""
+    td = pdate(target_date)
+    week_start = td - timedelta(days=6)
+    t = profile["targets"]
+
+    def in_week(d_str):
+        d = pdate(d_str)
+        return week_start <= d <= td
+
+    week_days = [d for d in all_days if in_week(d["date"])]
+
+    # nutrition: daily average of protein/fiber attainment + calorie adherence
+    day_scores = []
+    for d in week_days:
+        items = d.get("items", [])
+        kcal = sum(i.get("kcal", 0) for i in items)
+        protein = sum(i.get("protein_g", 0) for i in items)
+        fiber = sum(i.get("fiber_g", 0) for i in items)
+        protein_score = clamp(protein / t["protein_g"] * 100) if t["protein_g"] else 100
+        fiber_score = clamp(fiber / t["fiber_g"] * 100) if t["fiber_g"] else 100
+        kcal_score = clamp(100 - abs(kcal - t["calories_kcal"]) / t["calories_kcal"] * 150) if t["calories_kcal"] else 100
+        day_scores.append((protein_score + fiber_score + kcal_score) / 3)
+    nutrition = round(sum(day_scores) / len(day_scores)) if day_scores else 50
+
+    # body composition: actual weekly weight-loss pace vs the target pace
+    goals = profile["goals"]
+    target_rate = goals.get("target_loss_rate_kg_per_week") or 0
+    bc_entries = [e for e in weight_entries if pdate(e["date"]) <= td]
+    if bc_entries and target_rate:
+        latest_w = bc_entries[-1]
+        baseline_w = profile["personal"]["baseline_weight_kg"]
+        baseline_date = pdate(profile["personal"]["baseline_date"])
+        latest_date = pdate(latest_w["date"])
+        weeks_elapsed = max((latest_date - baseline_date).days / 7, 0.5)
+        actual_rate = (baseline_w - latest_w["weight_kg"]) / weeks_elapsed
+        body_composition = round(clamp(actual_rate / target_rate * 100))
+    else:
+        body_composition = 50
+
+    # sleep: nights in-window vs a healthy 7-9h band
+    week_nights = [e for e in sleep_entries if in_week(e["date"])]
+    if week_nights:
+        night_scores = [clamp(100 - abs(n["duration_hours"] - clamp(n["duration_hours"], 7, 9)) * 15) for n in week_nights]
+        sleep_factor = round(sum(night_scores) / len(night_scores))
+    else:
+        sleep_factor = 70  # neutral default — no nights logged in this window yet
+
+    # alcohol: distinct drinking days in-window vs the <=1/week baseline
+    alcohol_days = {e["date"] for e in lifestyle_events if e.get("type") == "alcohol" and in_week(e["date"])}
+    alcohol = round(clamp(100 - max(0, len(alcohol_days) - 1) * 20))
+
+    # heat/travel exposure: severity-weighted events in-window
+    sev_penalty = {"mild": 8, "moderate": 18, "high": 35}
+    travel_events = [e for e in lifestyle_events if "heat_travel_exposure" in e.get("affects", []) and in_week(e["date"])]
+    penalty = sum(sev_penalty.get(e.get("severity"), 10) for e in travel_events)
+    heat_travel_exposure = round(clamp(100 - penalty))
+
+    # smoking: static from profile (no daily tracking exists for this)
+    smoking_status = profile["lifestyle"].get("smoking", "none")
+    smoking = 100 if smoking_status == "none" else 60 if "occasional" in smoking_status else 20
+
+    factors = {
+        "nutrition": nutrition, "body_composition": body_composition, "sleep": sleep_factor,
+        "alcohol": alcohol, "heat_travel_exposure": heat_travel_exposure, "smoking": smoking,
+    }
+    notes = (f"Computed from real logged data for {week_start.strftime('%Y-%m-%d')} → {target_date} "
+             f"({len(week_days)} day(s) logged this window). "
+             f"{'No nights logged in this window yet — sleep factor defaulted to neutral.' if not week_nights else ''}")
+    return {
+        "week_start": week_start.strftime("%Y-%m-%d"), "week_end": target_date,
+        "factors": factors, "notes": notes.strip(), "sample": False,
+    }
+
+
+def persist_computed_week(week):
+    """Append/update this week's computed factors in sperm.json so there's a
+    real growing history, instead of discarding the computation each render."""
+    path = os.path.join(ROOT, "data/metrics/sperm.json")
+    with open(path, encoding="utf-8") as f:
+        sperm = json.load(f)
+    weeks = sperm["weeks"]
+    weeks[:] = [w for w in weeks if not w.get("sample")]  # drop the illustrative demo week once real data exists
+    existing = next((w for w in weeks if w["week_start"] == week["week_start"]), None)
+    if existing:
+        existing.update(week)
+    else:
+        weeks.append(week)
+    weeks.sort(key=lambda w: w["week_start"])
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(sperm, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+
+# ---------- real suggestions engine (post 14-day unlock) --------------------
+
+def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifestyle_events, target_date):
+    """Concrete, data-driven suggestions from the full logged history so far
+    — replaces the placeholder 'engine active' message."""
+    t = profile["targets"]
+    sugg = []
+
+    n = len(all_days)
+    protein_hit = sum(1 for d in all_days if sum(i.get("protein_g", 0) for i in d.get("items", [])) >= t["protein_g"])
+    fiber_hit = sum(1 for d in all_days if sum(i.get("fiber_g", 0) for i in d.get("items", [])) >= t["fiber_g"])
+    kcal_over = sum(1 for d in all_days if sum(i.get("kcal", 0) for i in d.get("items", [])) > t["calories_kcal"] * 1.1)
+
+    if protein_hit / n >= 0.7:
+        sugg.append(f"Protein target hit on {protein_hit}/{n} logged days — strong, consistent muscle-retention support. Keep it up.")
+    else:
+        sugg.append(f"Protein target hit on only {protein_hit}/{n} logged days — add a protein source to lighter meals to close the gap more consistently.")
+
+    if fiber_hit / n < 0.5:
+        sugg.append(f"Fiber cleared target on {fiber_hit}/{n} days — veg-forward meals (like the lettuce/tomato-heavy days) clear it easily; lean on those more often.")
+
+    if kcal_over / n >= 0.3:
+        sugg.append(f"Calories ran 10%+ over target on {kcal_over}/{n} days, mostly around restaurant meals and desserts — no single day is a problem, but the pattern is worth watching against the weight-loss goal.")
+
+    alcohol_days_14 = sorted({e["date"] for e in lifestyle_events if e.get("type") == "alcohol"})
+    recent_alcohol = [d for d in alcohol_days_14 if (pdate(target_date) - pdate(d)).days < 14]
+    if len(recent_alcohol) >= 5:
+        sugg.append(f"Alcohol logged on {len(recent_alcohol)} of the last 14 days — well above the <=1/week baseline and the most consistent drag on the sperm-optimization score. A genuine dry stretch is the single highest-leverage change available right now.")
+
+    if sleep_entries:
+        avg_sleep = sum(e["duration_hours"] for e in sleep_entries) / len(sleep_entries)
+        sugg.append(f"Average logged sleep is {avg_sleep:.1f}h across {len(sleep_entries)} night(s) tracked — keep logging nightly to get a reliable trend (still an early sample).")
+
+    if weight_entries:
+        baseline_w = profile["personal"]["baseline_weight_kg"]
+        last_w = weight_entries[-1]["weight_kg"]
+        lo_t, hi_t = profile["goals"]["target_weight_kg"]
+        sugg.append(f"Weight is {last_w - baseline_w:+.2f} kg vs. the {profile['personal']['baseline_date']} baseline, {round(max(0, last_w - hi_t), 1)} kg from the {lo_t}-{hi_t} kg target range — pace is steady but slower than the 0.4 kg/week goal; tightening portions on non-restaurant days would help most.")
+
+    return sugg[:6]
+
+
 # ---------- main build ----------
 
 def build(target_date):
@@ -144,16 +301,26 @@ def build(target_date):
     to_go = max(0, latest["weight_kg"] - hi_t)
 
     # sperm panel
-    wk = sperm["weeks"][-1]
-    weights = sperm["model"]["weights"]
-    overall = sum(wk["factors"][k] * w for k, w in weights.items())
-    sband = band_for(overall, sperm["model"]["bands"])
     # The weighted score is only surfaced once a 14-day baseline exists (same
     # gate as Suggestions). Before that the inputs are logged but no estimate
-    # is shown — the demo week must not read as a real score.
+    # is shown — the demo week must not read as a real score. Once unlocked,
+    # replace the illustrative demo week with one computed from real logged
+    # data (nutrition, body composition, sleep, alcohol, travel) instead of
+    # the static seed entry in sperm.json.
     UNLOCK_DAYS = 14
     days_logged = count_intake_days()
     score_unlocked = days_logged >= UNLOCK_DAYS
+    all_days = load_all_intake_days()
+
+    if score_unlocked:
+        wk = compute_current_week(profile, target_date, all_days, entries,
+                                   sleep.get("entries", []), lifestyle.get("events", []))
+        persist_computed_week(wk)
+    else:
+        wk = sperm["weeks"][-1]
+    weights = sperm["model"]["weights"]
+    overall = sum(wk["factors"][k] * w for k, w in weights.items())
+    sband = band_for(overall, sperm["model"]["bands"])
 
     td_ref = datetime.strptime(target_date, "%Y-%m-%d")
 
@@ -300,7 +467,10 @@ def build(target_date):
     )
 
     if suggestions_unlocked:
-        sugg_body = "<p class='muted'>Suggestions engine active — review generated recommendations here.</p>"
+        suggestions = generate_suggestions(profile, all_days, entries,
+                                            sleep.get("entries", []), lifestyle.get("events", []), target_date)
+        sugg_body = ("<ul class='sugg-ul'>" + "".join(f"<li>{s}</li>" for s in suggestions) + "</ul>") if suggestions \
+            else "<p class='muted'>Not enough signal yet to generate suggestions.</p>"
     else:
         remaining = 14 - days_logged
         sugg_body = f"""<div class="locked">
@@ -398,6 +568,11 @@ def build(target_date):
   .lifestyle ul {{ list-style:none; margin:0; padding:0; }}
   .lifestyle li {{ font-size:13px; padding:5px 0; border-bottom:1px solid var(--line); }}
   .ev-dot {{ display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:8px; }}
+  .sugg-ul {{ list-style:none; margin:0; padding:0; }}
+  .sugg-ul li {{ font-size:14px; padding:10px 0 10px 16px; border-bottom:1px solid var(--line);
+                 border-left:3px solid var(--accent); background:var(--panel2); border-radius:6px;
+                 margin-bottom:8px; }}
+  .sugg-ul li:last-child {{ margin-bottom:0; }}
   .locked {{ display:flex; gap:14px; align-items:center; padding:8px 0; }}
   .lock-ico {{ font-size:30px; }}
   .footer {{ color:var(--muted); font-size:12px; text-align:center; margin-top:26px; }}

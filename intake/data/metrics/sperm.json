@@ -2,34 +2,50 @@
   "_note": "Weekly sperm-optimization score. Sub-factors are 0-100. Overall = weighted sum. Updated weekly, not daily. Demo week below is illustrative.",
   "model": {
     "weights": {
-      "nutrition": 0.40,
-      "body_composition": 0.20,
+      "nutrition": 0.4,
+      "body_composition": 0.2,
       "sleep": 0.15,
-      "alcohol": 0.10,
-      "heat_travel_exposure": 0.10,
+      "alcohol": 0.1,
+      "heat_travel_exposure": 0.1,
       "smoking": 0.05
     },
     "bands": [
-      {"min": 0, "label": "Needs work", "color": "#ef4444"},
-      {"min": 50, "label": "Building", "color": "#f59e0b"},
-      {"min": 70, "label": "Good", "color": "#3b82f6"},
-      {"min": 85, "label": "Optimized", "color": "#22c55e"}
+      {
+        "min": 0,
+        "label": "Needs work",
+        "color": "#ef4444"
+      },
+      {
+        "min": 50,
+        "label": "Building",
+        "color": "#f59e0b"
+      },
+      {
+        "min": 70,
+        "label": "Good",
+        "color": "#3b82f6"
+      },
+      {
+        "min": 85,
+        "label": "Optimized",
+        "color": "#22c55e"
+      }
     ]
   },
   "weeks": [
     {
-      "week_start": "2026-06-22",
-      "week_end": "2026-06-28",
+      "week_start": "2026-07-05",
+      "week_end": "2026-07-11",
       "factors": {
-        "nutrition": 72,
-        "body_composition": 60,
-        "sleep": 82,
-        "alcohol": 95,
-        "heat_travel_exposure": 85,
+        "nutrition": 75,
+        "body_composition": 56,
+        "sleep": 66,
+        "alcohol": 40,
+        "heat_travel_exposure": 82,
         "smoking": 100
       },
-      "notes": "Demo week, now using real lifestyle inputs: alcohol <=1/week, consistent sleep with 16:00 caffeine cutoff, minimal heat exposure. Main lever is body composition (BMI 27.8 -> target). Watch the 2026-07-03 night flight next week.",
-      "sample": true
+      "notes": "Computed from real logged data for 2026-07-05 → 2026-07-11 (7 day(s) logged this window).",
+      "sample": false
     }
   ]
 }
