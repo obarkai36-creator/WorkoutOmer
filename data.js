@@ -25,6 +25,7 @@ const ATHLETE = {
  * Used for relative-strength denominators, bodyweight-exercise load, and the
  * weight trend shown on the Relative Strength panel. */
 const BODYWEIGHT = [
+  { datetime: "2026-07-11T12:10", kg: 80.95 },
   { datetime: "2026-06-20T07:05", kg: 81.4 },
   { datetime: "2026-06-19T07:52", kg: 81.65 },
   { datetime: "2026-06-17T05:30", kg: 80.7 },

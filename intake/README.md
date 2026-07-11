@@ -14,11 +14,12 @@ data/intake/YYYY-MM-DD.json  # one file per day: timestamped items + macro analy
 data/metrics/weight.json     # body-composition log (Eufy Smart Scale)
 data/metrics/sperm.json      # weekly sperm-optimization score (sub-factors + weights)
 data/metrics/lifestyle.json  # travel / heat / sleep / stress events that affect scoring
-data/metrics/workouts.json   # training sessions (imported from exercise project)
+data/metrics/workouts.json   # training sessions + report_snapshot (kept in sync with ../data.js — see sync_training_snapshot.mjs)
 data/metrics/sleep.json      # nightly sleep log (manual entry — Health Connect is US-only, not accessible yet)
 data/imports/                # drop CSV/JSON exports here, then run import_data.py
 generate_dashboard.py        # renders dashboards/<date>.html from the JSON above
 import_data.py               # merges data/imports/ files into the metrics stores
+sync_training_snapshot.mjs   # refreshes workouts.json's report_snapshot by running ../data.js + ../engine.js live
 dashboards/YYYY-MM-DD.html   # daily export (also sent in chat)
 ```
 
@@ -32,6 +33,13 @@ dashboards/YYYY-MM-DD.html   # daily export (also sent in chat)
 Log lifestyle events as they happen (a flight, poor sleep, sauna, high-stress
 stretch) — they're recorded in `data/metrics/lifestyle.json` and feed the weekly
 sperm score; recent ones show in the dashboard's Lifestyle log.
+
+Whenever `../data.js` changes (new workout, new weigh-in), run
+`node intake/sync_training_snapshot.mjs` before regenerating the nutrition
+dashboard — it recomputes `workouts.json`'s `report_snapshot` from the same
+`data.js` + `engine.js` the workout dashboard uses, so the Training panel's
+"Latest" / "Recommended next" / alerts always match what the workout
+dashboard itself is showing (rather than drifting out of sync).
 
 ## Panels
 
