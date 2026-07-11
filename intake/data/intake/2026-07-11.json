@@ -17,17 +17,22 @@
     {"time": "15:55", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:54", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "16:45", "name": "Snack — honeydew melon", "category": "food", "qty": "0.3 of a whole melon (~240 g)", "kcal": 86, "protein_g": 1.2, "carbs_g": 22, "fat_g": 0.2, "fiber_g": 2},
-    {"time": "17:48", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "17:48", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "18:45", "name": "Dinner — pro spelt pita (high-protein)", "category": "food", "qty": "2", "kcal": 280, "protein_g": 18, "carbs_g": 36, "fat_g": 5, "fiber_g": 8, "note": "protein-enriched spelt pita, brand not specified — estimated"},
+    {"time": "18:45", "name": "Dinner — yellow cheese slices", "category": "food", "qty": "3 slices", "kcal": 210, "protein_g": 13.5, "carbs_g": 1, "fat_g": 16.5, "fiber_g": 0},
+    {"time": "18:45", "name": "Dinner — homemade labaneh", "category": "food", "qty": "2 spoons (~30 g)", "kcal": 39, "protein_g": 1.5, "carbs_g": 1.2, "fat_g": 4.5, "fiber_g": 0},
+    {"time": "18:45", "name": "Dinner — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0},
+    {"time": "18:45", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "20", "kcal": 54, "protein_g": 2.7, "carbs_g": 11.7, "fat_g": 0.6, "fiber_g": 3.6}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 17.5,
-    "selenium_mcg": 301,
+    "zinc_mg": 20.3,
+    "selenium_mcg": 331,
     "folate_mcg_dfe": 1097,
     "omega3_epa_dha_mg": 1540,
-    "vitamin_c_mg": 455,
-    "vitamin_d_iu": 2135,
+    "vitamin_c_mg": 497,
+    "vitamin_d_iu": 2215,
     "vitamin_e_mg": 19.9,
-    "lycopene_mg": 15
+    "lycopene_mg": 24
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -35,7 +40,8 @@
     "Sleep is now tracked nightly in the new data/metrics/sleep.json (manual entry each morning — Health Connect integration is US-only, not available). Night of 10-11 Jul logged: 00:30-11:45, 11.25h — long catch-up sleep after the 10 Jul travel day, not a typical baseline night.",
     "Lunch logged from description (no photo): 150 g baked potatoes, 150 g + 120 g (two servings) denis fish (sea bream) baked with butter, 6 baked cherry tomatoes, a small baked red onion side (quantity not given), and 0.75 of a large shared salad (whole recipe: 1 caesar lettuce, 35 cherry tomatoes, 0.5 red onion, 150 g drained baby mozzarella), dressed with a homemade Maple-Balsamic Mustard Vinaigrette (olive oil, balsamic vinegar, mustard, maple syrup, lemon juice — estimated ~25 ml pour, saved to references/foods.json as a recurring item). Salad quantity scaled to the 0.75 portion actually eaten. Fish, lettuce, and tomato quantities drive strong folate/omega-3/vitamin C/lycopene today.",
     "Red onion side: no better quantity estimate available — kept the original ~50 g assumption as-is.",
-    "Multivitamin micros use the verified Thorne label values from references/supplements.json."
+    "Multivitamin micros use the verified Thorne label values from references/supplements.json.",
+    "Dinner logged from description (no photo): 2 protein-enriched spelt pitas (brand not specified), 3 yellow cheese slices, 2 spoons homemade labaneh, 2 eggs sunny side up, 20 cherry tomatoes. Portion sizes are estimates, not weighed."
   ],
-  "status_note": "Day in progress. Double espresso at 12:15, then a big lunch at 13:35 — baked potatoes, two servings of denis fish (baked with butter, 270 g total), baked cherry tomatoes and red onion, plus 0.75 of a large caesar-mozzarella salad with a homemade maple-balsamic-mustard vinaigrette. Running ~1,307 kcal, ~89 g protein, ~102 g carb, ~65 g fat, ~20 g fiber, 4 caffeine shots (2nd double espresso at 15:55), omega-3 at 15:54, honeydew melon snack at 16:45, multivitamin at 17:48. Protein already more than half of target and fiber well ahead thanks to the lettuce-heavy salad; fat picked up with the oil-based dressing; micros now strong across the board. Weigh-in shows continued slow progress: 80.95 kg (down from 81.4 kg baseline), body fat 27.0% (down from 27.3%). Sleep tracking now added — 11.25h logged for last night (catch-up sleep post-travel)."
+  "status_note": "Day in progress. Double espresso at 12:15, a big lunch at 13:35 (baked potatoes, 270 g denis fish, baked cherry tomatoes and red onion, 0.75 of a large caesar-mozzarella salad with homemade vinaigrette), 2nd double espresso + omega-3 mid-afternoon, honeydew melon snack, multivitamin at 17:48, then a dairy/egg-forward dinner at 18:45 (2 protein spelt pitas, yellow cheese, labaneh, 2 fried eggs, 20 cherry tomatoes). Running ~2,070 kcal, ~137 g protein, ~152 g carb, ~106 g fat, ~31 g fiber, 4 caffeine shots. Protein now well past target, fiber cleared target too (pita + tomatoes + melon), but fat and calories are both running high for the day. Weigh-in shows continued slow progress: 80.95 kg (down from 81.4 kg baseline), body fat 27.0% (down from 27.3%). Sleep tracking now added — 11.25h logged for last night (catch-up sleep post-travel)."
 }
