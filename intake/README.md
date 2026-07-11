@@ -15,6 +15,7 @@ data/metrics/weight.json     # body-composition log (Eufy Smart Scale)
 data/metrics/sperm.json      # weekly sperm-optimization score (sub-factors + weights)
 data/metrics/lifestyle.json  # travel / heat / sleep / stress events that affect scoring
 data/metrics/workouts.json   # training sessions (imported from exercise project)
+data/metrics/sleep.json      # nightly sleep log (manual entry — Health Connect is US-only, not accessible yet)
 data/imports/                # drop CSV/JSON exports here, then run import_data.py
 generate_dashboard.py        # renders dashboards/<date>.html from the JSON above
 import_data.py               # merges data/imports/ files into the metrics stores

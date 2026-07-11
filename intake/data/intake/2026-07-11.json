@@ -20,7 +20,8 @@
   },
   "caffeine_shots": 2,
   "assumptions": [
-    "Eufy weigh-in at 12:10 logged to data/metrics/weight.json: 80.95 kg, BMI 27.6, body fat 27.0%, body fat mass 21.80 kg, skeletal muscle mass 30.80 kg, visceral fat 11.0, muscle mass 56.10 kg, lean body mass 59.10 kg, bone mass 3.00 kg, protein 15.2%, subcutaneous fat 23.8%, water 50.0%, BMR 1718 kcal, resting HR 67 bpm, body age 29, body type Average. vs. the 27 Jun baseline: weight down 0.45 kg, body fat down 0.3 pp — modest progress in the right direction."
+    "Eufy weigh-in at 12:10 logged to data/metrics/weight.json: 80.95 kg, BMI 27.6, body fat 27.0%, body fat mass 21.80 kg, skeletal muscle mass 30.80 kg, visceral fat 11.0, muscle mass 56.10 kg, lean body mass 59.10 kg, bone mass 3.00 kg, protein 15.2%, subcutaneous fat 23.8%, water 50.0%, BMR 1718 kcal, resting HR 67 bpm, body age 29, body type Average. vs. the 27 Jun baseline: weight down 0.45 kg, body fat down 0.3 pp — modest progress in the right direction.",
+    "Sleep is now tracked nightly in the new data/metrics/sleep.json (manual entry each morning — Health Connect integration is US-only, not available). Night of 10-11 Jul logged: 00:30-11:45, 11.25h — long catch-up sleep after the 10 Jul travel day, not a typical baseline night."
   ],
-  "status_note": "Day just opened. Double espresso at 12:15 (2 caffeine shots). Weigh-in shows continued slow progress: 80.95 kg (down from 81.4 kg baseline), body fat 27.0% (down from 27.3%)."
+  "status_note": "Day just opened. Double espresso at 12:15 (2 caffeine shots). Weigh-in shows continued slow progress: 80.95 kg (down from 81.4 kg baseline), body fat 27.0% (down from 27.3%). Sleep tracking now added — 11.25h logged for last night (catch-up sleep post-travel)."
 }
