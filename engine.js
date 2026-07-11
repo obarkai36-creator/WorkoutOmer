@@ -418,6 +418,19 @@ function bodyweight(data) {
   };
 }
 
+/* ---- sleep log -------------------------------------------------------------
+ * Manual nightly entries (SLEEP in data.js). Feeds the Sleep panel and a
+ * short recovery caution on the Next Session recommendation. */
+function sleepSummary(data, now) {
+  const log = (data.SLEEP || []).slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+  if (!log.length) return { any: false, history: [] };
+  const current = log[0];
+  const last7 = log.filter((e) => (now - new Date(e.date).getTime()) / DAY <= 7);
+  const avg7 = last7.length ? round(sum(last7.map((e) => e.hours)) / last7.length, 1) : null;
+  const status = current.hours < 6 ? "low" : current.hours > 9.5 ? "long" : "good";
+  return { any: true, current, avg7, status, history: log };
+}
+
 /* ---- relative strength (lift ÷ bodyweight) -------------------------------- */
 function relativeStrength(data, bwKg) {
   const bw = bwKg || data.ATHLETE.bodyweightKg || 75;
@@ -492,7 +505,8 @@ function analyze(data, now = Date.now()) {
   const bw = bodyweight(data);
   const relstrength = relativeStrength(data, bw.current);
   const aerobic = aerobicSummary(workouts, data.ATHLETE, now);
-  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing, relstrength, aerobic, bodyweight: bw };
+  const sleep = sleepSummary(data, now);
+  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing, relstrength, aerobic, bodyweight: bw, sleep };
 }
 
 if (typeof window !== "undefined") window.GYM_ENGINE = { analyze, READY_THRESHOLD };

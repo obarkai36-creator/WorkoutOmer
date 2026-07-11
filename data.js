@@ -31,6 +31,15 @@ const BODYWEIGHT = [
   { datetime: "2026-06-16T06:05", kg: 81.75 },
 ];
 
+/* ---- Sleep log (newest first) ----------------------------------------------
+ * Manual entry each morning (no wearable / automatic feed — Health Connect
+ * integration is US-only, not accessible yet). Feeds the Sleep panel and the
+ * recovery note on the Next Session recommendation. */
+const SLEEP = [
+  // 10-11 Jul — long catch-up sleep after the 10 Jul travel day (4:50hr flight, tz +2 shift)
+  { date: "2026-07-11", start: "00:30", end: "11:45", hours: 11.25, note: "catch-up sleep post-travel" },
+];
+
 /* ---- Muscles -> body section, recovery window, and push/pull role --------- */
 const MUSCLES = {
   chest:      { label: "Chest",      section: "Chest",     recoveryHours: 72, role: "push" },
@@ -396,5 +405,5 @@ const WORKOUTS = [
 
 /* Expose for the engine. */
 if (typeof window !== "undefined") {
-  window.GYM_DATA = { ATHLETE, MUSCLES, SECTION_ORDER, EXERCISE_LIBRARY, SNAPSHOT, WORKOUTS, BODYWEIGHT };
+  window.GYM_DATA = { ATHLETE, MUSCLES, SECTION_ORDER, EXERCISE_LIBRARY, SNAPSHOT, WORKOUTS, BODYWEIGHT, SLEEP };
 }

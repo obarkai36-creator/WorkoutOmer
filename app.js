@@ -130,7 +130,11 @@
         </div>`).join("")}
       <div class="small muted" style="margin-top:12px">
         Aerobic this week: <b style="color:var(--text)">${r.aerobicLast7}/${r.aerobicTarget}</b>${r.aerobicLast7 < r.aerobicTarget ? " — fit in an easy session" : " — on track"}
-      </div>`;
+      </div>
+      ${a.sleep && a.sleep.any && a.sleep.status === "low" ? `
+      <div class="small" style="margin-top:8px;color:var(--yellow)">
+        ⚠ Only ${a.sleep.current.hours}h sleep last night — recovery runs slower on short sleep; consider an easier session or a shorter rest-ready window than shown above.
+      </div>` : ""}`;
   }
 
   /* ---- 4. Injury alerts --------------------------------------------------- */
@@ -270,6 +274,28 @@
         <div class="meta" style="margin:-1px 0 6px 138px;color:var(--muted);font-size:11px">est 1RM ${it.oneRM} kg</div>`).join("");
   }
 
+  /* ---- 10. Sleep ----------------------------------------------------------- */
+  const sleepStatusColor = { low: "var(--red)", good: "var(--green)", long: "var(--yellow)" };
+  const sleepStatusLabel = { low: "short", good: "on target", long: "long (catch-up)" };
+  function renderSleep(a) {
+    const el = $("sleep-body"); const s = a.sleep;
+    if (!s || !s.any) { el.innerHTML = `<p class="muted">No sleep logged yet. Add nights to the SLEEP log in data.js.</p>`; return; }
+    const col = sleepStatusColor[s.status] || "var(--text)";
+    const hist = s.history.slice(0, 7);
+    const maxH = Math.max(...hist.map((h) => h.hours), 1);
+    el.innerHTML = `
+      <div class="kpi-row">
+        <div class="kpi"><div class="v" style="color:${col}">${s.current.hours}<span style="font-size:12px"> h</span></div><div class="l">last night</div></div>
+        <div class="kpi"><div class="v">${s.avg7 ?? "—"}<span style="font-size:12px"> h</span></div><div class="l">7-day avg</div></div>
+      </div>
+      <div class="small muted" style="margin:2px 0 6px">${s.current.start}–${s.current.end} &middot; <span style="color:${col}">${sleepStatusLabel[s.status]}</span>${s.current.note ? " &middot; " + s.current.note : ""}</div>
+      <div class="loadbars" style="height:54px">
+        ${hist.slice().reverse().map((h) => `<div class="col"><div class="b" style="height:${(h.hours / maxH) * 46}px;background:${sleepStatusColor[h.hours < 6 ? "low" : h.hours > 9.5 ? "long" : "good"]}" title="${h.hours}h"></div><div class="lbl">${new Date(h.date).toLocaleDateString(undefined, { month: "short", day: "numeric" })}</div></div>`).join("")}
+      </div>
+      <div class="small muted" style="margin:10px 0 4px">Nights</div>
+      ${hist.map((h) => `<div class="prog" style="padding:3px 0"><div class="top"><span class="name">${h.hours} h</span><span class="small muted">${new Date(h.date).toLocaleDateString(undefined, { month: "short", day: "numeric" })}</span></div><div class="meta">${h.start}–${h.end}${h.note ? " &middot; " + h.note : ""}</div></div>`).join("")}`;
+  }
+
   /* ---- 9. Bodyweight tracker ---------------------------------------------- */
   function renderBodyweight(a) {
     const el = $("bw-body"); const b = a.bodyweight;
@@ -329,6 +355,7 @@
     renderCardio(a);
     renderRelStr(a);
     renderBodyweight(a);
+    renderSleep(a);
 
     // Signal to the PDF renderer that the page is fully drawn.
     window.__READY = true;

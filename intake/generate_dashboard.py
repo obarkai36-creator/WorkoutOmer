@@ -123,6 +123,10 @@ def build(target_date):
         workouts = load("data/metrics/workouts.json")
     except FileNotFoundError:
         workouts = {"entries": [], "report_snapshot": {}}
+    try:
+        sleep = load("data/metrics/sleep.json")
+    except FileNotFoundError:
+        sleep = {"entries": []}
 
     t = profile["targets"]
     items = intake["items"]
@@ -151,8 +155,35 @@ def build(target_date):
     days_logged = count_intake_days()
     score_unlocked = days_logged >= UNLOCK_DAYS
 
-    # lifestyle events in the 7 days up to the dashboard date
     td_ref = datetime.strptime(target_date, "%Y-%m-%d")
+
+    # sleep panel (manual nightly entries — Health Connect is US-only, not accessible yet)
+    sleep_upto = sorted(
+        [e for e in sleep.get("entries", []) if e["date"] <= target_date],
+        key=lambda e: e["date"])
+    if sleep_upto:
+        latest_sleep = sleep_upto[-1]
+        last7_sleep = [e for e in sleep_upto
+                       if 0 <= (td_ref - datetime.strptime(e["date"], "%Y-%m-%d")).days < 7]
+        avg7_sleep = round(sum(e["duration_hours"] for e in last7_sleep) / len(last7_sleep), 1)
+        h = latest_sleep["duration_hours"]
+        sleep_status = "low" if h < 6 else "long" if h > 9.5 else "good"
+        sleep_color = {"low": "#ef4444", "good": "#22c55e", "long": "#f59e0b"}[sleep_status]
+        sleep_label = {"low": "short", "good": "on target", "long": "long (catch-up)"}[sleep_status]
+        note_html = f"<div class='note' style='margin-top:10px'>{latest_sleep['notes']}</div>" if latest_sleep.get("notes") else ""
+        sleep_panel = f"""
+    <div class="panel">
+      <h2>Sleep</h2>
+      <div class="bignum" style="color:{sleep_color}">{h:g}<small> h</small></div>
+      <div class="goalline">{latest_sleep['sleep_start']}–{latest_sleep['sleep_end']} · <b style="color:{sleep_color}">{sleep_label}</b> · {avg7_sleep:g}h 7-day avg</div>
+      {note_html}
+    </div>"""
+        sleep_note_line = f"<div class='small' style='margin-top:8px;color:{sleep_color}'>Sleep last night: <b>{h:g}h</b> ({sleep_label})</div>"
+    else:
+        sleep_panel = ""
+        sleep_note_line = ""
+
+    # lifestyle events in the 7 days up to the dashboard date
     recent_events = sorted(
         [e for e in lifestyle.get("events", [])
          if 0 <= (td_ref - datetime.strptime(e["date"], "%Y-%m-%d")).days < 7],
@@ -401,9 +432,10 @@ def build(target_date):
     <div class="panel">
       <h2>{sperm_title}</h2>
       {sperm_score_html}
+      {sleep_note_line}
       {lifestyle_html}
     </div>
-
+{sleep_panel}
     <div class="panel">
       <h2>Macros · today</h2>
       {macro_rows}
