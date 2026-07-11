@@ -39,6 +39,30 @@
       "source": "Estimated from a typical vinaigrette ratio (oil-dominant, ~3:1 oil:acid, plus a spoon each of mustard/maple). Recurring homemade salad dressing — refine per-ml if a batch is ever measured."
     },
     {
+      "id": "agami_pita_pro_spelt",
+      "name": "Agami Pita Pro (whole spelt, protein-enriched)",
+      "serving": "1 unit (68 g)",
+      "kcal": 140,
+      "protein_g": 15,
+      "carbs_g": 19,
+      "fat_g": 2.5,
+      "fiber_g": 9,
+      "verified": true,
+      "source": "Manufacturer/product data (agamibakery.co.il, cross-checked via foodsdictionary.co.il, product page itself bot-blocked): ~20g protein/100g, enriched with soy + pea protein, ~70% less carb than white pita, ~10g net/available carb per ~70g pita (implying high fiber). Confirmed 2026-07-11 correcting an earlier generic-pita estimate."
+    },
+    {
+      "id": "tnuva_emek_light_yellow_cheese_9pct",
+      "name": "Tnuva Emek Light yellow cheese, 9% fat",
+      "serving": "1 slice (25 g)",
+      "kcal": 50,
+      "protein_g": 7.5,
+      "carbs_g": 0,
+      "fat_g": 2.25,
+      "fiber_g": 0,
+      "verified": true,
+      "source": "Label data (per 100g: 201 kcal, 30g protein, 0g carb, 9g fat, 530mg sodium, 900mg calcium, 27mg cholesterol, 5.4g saturated fat), tnuva.co.il product page bot-blocked, cross-checked via medplus.co.il. Slice weight (25g) confirmed by user 2026-07-11, correcting an earlier generic yellow-cheese estimate."
+    },
+    {
       "id": "homemade_chicken_meatballs_veg",
       "name": "Homemade chicken meatballs (veg-loaded)",
       "serving": "per 100 g cooked",
