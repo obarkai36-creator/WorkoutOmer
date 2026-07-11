@@ -14,13 +14,14 @@
     {"time": "13:35", "name": "Lunch — baked red onion", "category": "food", "qty": "small side, ~50 g", "kcal": 25, "protein_g": 0.5, "carbs_g": 5, "fat_g": 1, "fiber_g": 1, "note": "quantity not specified — estimated small side portion"},
     {"time": "13:35", "name": "Lunch — large salad (caesar lettuce, cherry tomatoes, red onion, baby mozzarella)", "category": "food", "qty": "0.75 of a large salad (whole recipe: 1 caesar lettuce, 35 cherry tomatoes, 0.5 red onion, 150 g drained baby mozzarella)", "kcal": 459, "protein_g": 28, "carbs_g": 34, "fat_g": 26, "fiber_g": 12, "note": "portion = 0.75 x full recipe"},
     {"time": "13:35", "name": "Maple-Balsamic Mustard Vinaigrette (homemade)", "category": "food", "qty": "~25 ml (olive oil, balsamic vinegar, mustard, maple syrup, lemon juice)", "kcal": 125, "protein_g": 0.1, "carbs_g": 4, "fat_g": 12, "fiber_g": 0, "note": "estimated pour for the 0.75 salad portion; recipe saved to references/foods.json"},
-    {"time": "15:55", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:55", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:54", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.5,
     "selenium_mcg": 101,
     "folate_mcg_dfe": 430,
-    "omega3_epa_dha_mg": 540,
+    "omega3_epa_dha_mg": 1540,
     "vitamin_c_mg": 162,
     "vitamin_d_iu": 135,
     "vitamin_e_mg": 3.4,
@@ -33,5 +34,5 @@
     "Lunch logged from description (no photo): 150 g baked potatoes, 150 g + 120 g (two servings) denis fish (sea bream) baked with butter, 6 baked cherry tomatoes, a small baked red onion side (quantity not given), and 0.75 of a large shared salad (whole recipe: 1 caesar lettuce, 35 cherry tomatoes, 0.5 red onion, 150 g drained baby mozzarella), dressed with a homemade Maple-Balsamic Mustard Vinaigrette (olive oil, balsamic vinegar, mustard, maple syrup, lemon juice — estimated ~25 ml pour, saved to references/foods.json as a recurring item). Salad quantity scaled to the 0.75 portion actually eaten. Fish, lettuce, and tomato quantities drive strong folate/omega-3/vitamin C/lycopene today.",
     "Red onion side: no better quantity estimate available — kept the original ~50 g assumption as-is."
   ],
-  "status_note": "Day in progress. Double espresso at 12:15, then a big lunch at 13:35 — baked potatoes, two servings of denis fish (baked with butter, 270 g total), baked cherry tomatoes and red onion, plus 0.75 of a large caesar-mozzarella salad with a homemade maple-balsamic-mustard vinaigrette. Running ~1,221 kcal, ~88 g protein, ~80 g carb, ~65 g fat, ~18 g fiber, 4 caffeine shots (2nd double espresso at 15:55) — protein already more than half of target and fiber well ahead thanks to the lettuce-heavy salad; fat picked up with the oil-based dressing. Weigh-in shows continued slow progress: 80.95 kg (down from 81.4 kg baseline), body fat 27.0% (down from 27.3%). Sleep tracking now added — 11.25h logged for last night (catch-up sleep post-travel)."
+  "status_note": "Day in progress. Double espresso at 12:15, then a big lunch at 13:35 — baked potatoes, two servings of denis fish (baked with butter, 270 g total), baked cherry tomatoes and red onion, plus 0.75 of a large caesar-mozzarella salad with a homemade maple-balsamic-mustard vinaigrette. Running ~1,221 kcal, ~88 g protein, ~80 g carb, ~65 g fat, ~18 g fiber, 4 caffeine shots (2nd double espresso at 15:55), omega-3 in at 15:54. Protein already more than half of target and fiber well ahead thanks to the lettuce-heavy salad; fat picked up with the oil-based dressing. Weigh-in shows continued slow progress: 80.95 kg (down from 81.4 kg baseline), body fat 27.0% (down from 27.3%). Sleep tracking now added — 11.25h logged for last night (catch-up sleep post-travel)."
 }
