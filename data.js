@@ -194,6 +194,10 @@ const SNAPSHOT = [
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
   { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
   { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 8, weight: 132, text: "132kg × 4×8" }, best: { sets: 4, reps: 8, weight: 132, text: "132kg × 4×8" } },
+  // NOTE: 11 Jul (202kg) is the first entry counting the full setup total
+  // (plates each side x2 + sled/frame weight). Earlier entries (e.g. 131kg)
+  // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
+  // as not directly comparable; use the each-side+frame total from now on.
   { name: "Angled Leg Press",             section: "Legs", latest: { sets: 4, reps: 6, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×6" }, best: { sets: 4, reps: 6, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×6" } },
   { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 4, reps: 10, weight: 23.25, text: "23.25kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 23.25, text: "23.25kg each × 4×10" } },
