@@ -12,23 +12,28 @@
     {"time": "08:45", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.8, "fiber_g": 0},
     {"time": "08:45", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "10:15", "name": "Snack — almonds & walnuts", "category": "food", "qty": "2 almonds, 2 walnuts", "kcal": 66, "protein_g": 1.7, "carbs_g": 1.5, "fat_g": 6.4, "fiber_g": 0.7},
-    {"time": "10:30", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "10:30", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "12:15", "name": "Lunch — homemade chicken meatballs (veg-loaded)", "category": "food", "qty": "4 balls (~140 g)", "kcal": 246, "protein_g": 21.7, "carbs_g": 11.2, "fat_g": 12.2, "fiber_g": 1.4, "note": "using the saved recipe reference (176 kcal/100g cooked); ~35g/ball estimated"},
+    {"time": "12:15", "name": "Lunch — chicken schnitzel", "category": "food", "qty": "130 g", "kcal": 306, "protein_g": 26, "carbs_g": 15.6, "fat_g": 15.6, "fiber_g": 0.7, "note": "breaded, fried"},
+    {"time": "12:15", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "15", "kcal": 41, "protein_g": 2, "carbs_g": 8.8, "fat_g": 0.5, "fiber_g": 2.7},
+    {"time": "12:15", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 17.3,
-    "selenium_mcg": 204,
+    "zinc_mg": 20,
+    "selenium_mcg": 269,
     "folate_mcg_dfe": 667,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 303,
+    "vitamin_c_mg": 343,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.8,
-    "lycopene_mg": 11
+    "lycopene_mg": 18
   },
   "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged as two fragments (02:45-04:00, 04:50-05:03), ~1.47h total — a very short, fragmented night, sharply down from the 11.25h catch-up night before. Logged to data/metrics/sleep.json.",
     "Breakfast: 25 cherry tomatoes + 3 slices Tnuva Emek Light 9% yellow cheese, reusing the verified 25g/slice reference. Chicken balls + schnitzel lunch noted for later, not yet logged.",
-    "Multivitamin micros use the verified Thorne label values from references/supplements.json."
+    "Multivitamin micros use the verified Thorne label values from references/supplements.json.",
+    "Lunch (12:15): 4 homemade chicken meatballs (~140g, using saved recipe ref) + 130g chicken schnitzel + 15 cherry tomatoes + 1 whole cucumber. Meatball count/weight and cucumber/tomato weights are estimates, not weighed."
   ],
-  "status_note": "Day in progress. Very short, fragmented sleep last night (~1.47h across two segments), double espresso + grape snack early, breakfast at 08:45 (cherry tomatoes, yellow cheese, single espresso), a small nut snack at 10:15, then multivitamin at 10:30. Running ~362 kcal, ~29 g protein, ~35 g carb, ~14 g fat, ~6 g fiber, 3 caffeine shots — micros now strong. Main lunch (chicken balls + schnitzel) still pending."
+  "status_note": "Day in progress. Very short, fragmented sleep last night (~1.47h across two segments), double espresso + grape snack early, breakfast at 08:45 (cherry tomatoes, yellow cheese, single espresso), a small nut snack at 10:15, multivitamin at 10:30, then lunch at 12:15 (4 chicken meatballs, 130g schnitzel, cherry tomatoes, cucumber). Running ~1,000 kcal, ~80 g protein, ~81 g carb, ~43 g fat, ~12 g fiber, 3 caffeine shots — a big double-chicken lunch pushed protein well ahead."
 }
