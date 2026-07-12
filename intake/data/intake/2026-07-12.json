@@ -21,24 +21,31 @@
     {"time": "15:00", "name": "Snack — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.8, "fiber_g": 0},
     {"time": "15:00", "name": "Snack — cherry tomatoes", "category": "food", "qty": "20", "kcal": 54, "protein_g": 2.7, "carbs_g": 11.7, "fat_g": 0.6, "fiber_g": 3.6},
     {"time": "15:00", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:30", "name": "Snack — green apple", "category": "food", "qty": "1 medium (~150 g)", "kcal": 78, "protein_g": 0.5, "carbs_g": 21, "fat_g": 0.3, "fiber_g": 3.6}
+    {"time": "15:30", "name": "Snack — green apple", "category": "food", "qty": "1 medium (~150 g)", "kcal": 78, "protein_g": 0.5, "carbs_g": 21, "fat_g": 0.3, "fiber_g": 3.6},
+    {"time": "17:45", "name": "Dinner — Agami Pita Pro (whole spelt, protein-enriched)", "category": "food", "qty": "2 (68 g each)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "note": "using verified reference"},
+    {"time": "17:45", "name": "Dinner — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (25 g each, 50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0},
+    {"time": "17:45", "name": "Dinner — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0},
+    {"time": "17:45", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "15", "kcal": 41, "protein_g": 2, "carbs_g": 8.8, "fat_g": 0.5, "fiber_g": 2.7},
+    {"time": "17:45", "name": "Dinner — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5},
+    {"time": "17:45", "name": "Dinner — homemade labaneh", "category": "food", "qty": "2 spoons (~30 g)", "kcal": 39, "protein_g": 1.5, "carbs_g": 1.2, "fat_g": 4.5, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 22.3,
-    "selenium_mcg": 273,
+    "zinc_mg": 24.8,
+    "selenium_mcg": 306,
     "folate_mcg_dfe": 667,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 392,
-    "vitamin_d_iu": 2000,
+    "vitamin_c_mg": 432,
+    "vitamin_d_iu": 2080,
     "vitamin_e_mg": 16.8,
-    "lycopene_mg": 27
+    "lycopene_mg": 34
   },
   "caffeine_shots": 5,
   "assumptions": [
     "Sleep logged as two fragments (02:45-04:00, 04:50-05:03), ~1.47h total — a very short, fragmented night, sharply down from the 11.25h catch-up night before. Logged to data/metrics/sleep.json.",
     "Breakfast: 25 cherry tomatoes + 3 slices Tnuva Emek Light 9% yellow cheese, reusing the verified 25g/slice reference. Chicken balls + schnitzel lunch noted for later, not yet logged.",
     "Multivitamin micros use the verified Thorne label values from references/supplements.json.",
-    "Lunch (12:15): 4 homemade chicken meatballs (~140g, using saved recipe ref) + 130g chicken schnitzel + 15 cherry tomatoes + 1 whole cucumber. Meatball count/weight and cucumber/tomato weights are estimates, not weighed."
+    "Lunch (12:15): 4 homemade chicken meatballs (~140g, using saved recipe ref) + 130g chicken schnitzel + 15 cherry tomatoes + 1 whole cucumber. Meatball count/weight and cucumber/tomato weights are estimates, not weighed.",
+    "Dinner (17:45): 2 Agami Pita Pro + 2 Tnuva Emek Light yellow cheese slices (both verified references) + 2 eggs sunny side up + 15 cherry tomatoes + 1 cucumber + 2 spoons homemade labaneh. Eggs/labaneh/veg quantities are estimates, not weighed."
   ],
-  "status_note": "Day in progress. Very short, fragmented sleep last night (~1.47h across two segments), double espresso + grape snack early, breakfast at 08:45 (cherry tomatoes, yellow cheese, single espresso), a small nut snack at 10:15, multivitamin at 10:30, then lunch at 12:15 (4 chicken meatballs, 130g schnitzel, cherry tomatoes, cucumber). Omega-3 at 14:15, another cheese/tomato snack + double espresso at 15:00, then a green apple at 15:30. Running ~1,288 kcal, ~106 g protein, ~114 g carb, ~51 g fat, ~20 g fiber, 5 caffeine shots — protein now well past the 165g target's halfway point and climbing fast; fiber cleared target; caffeine also at the daily baseline (4 shots) and already over."
+  "status_note": "Day complete-ish (more may follow). Very short, fragmented sleep last night (~1.47h across two segments), double espresso + grape snack early, breakfast at 08:45 (cherry tomatoes, yellow cheese, single espresso), a small nut snack at 10:15, multivitamin at 10:30, lunch at 12:15 (4 chicken meatballs, 130g schnitzel, cherry tomatoes, cucumber), omega-3 at 14:15, another cheese/tomato snack + double espresso at 15:00, a green apple at 15:30, then dinner at 17:45 (2 pro spelt pitas, yellow cheese, 2 fried eggs, cherry tomatoes, cucumber, labaneh). Running ~1,973 kcal, ~168 g protein, ~173 g carb, ~79 g fat, ~42 g fiber, 5 caffeine shots — protein now past the 165g target, fiber more than cleared target, calories still under target despite the volume, likely thanks to the lean/veg-heavy choices all day. Rough sleep night is the main outlier to watch."
 }
