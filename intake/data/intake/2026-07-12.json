@@ -10,7 +10,8 @@
     {"time": "05:30", "name": "Snack — green grapes", "category": "food", "qty": "20", "kcal": 69, "protein_g": 0.6, "carbs_g": 18, "fat_g": 0.2, "fiber_g": 0.9},
     {"time": "08:45", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "25", "kcal": 68, "protein_g": 3.4, "carbs_g": 15, "fat_g": 0.8, "fiber_g": 4.5},
     {"time": "08:45", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.8, "fiber_g": 0},
-    {"time": "08:45", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:45", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:15", "name": "Snack — almonds & walnuts", "category": "food", "qty": "2 almonds, 2 walnuts", "kcal": 66, "protein_g": 1.7, "carbs_g": 1.5, "fat_g": 6.4, "fiber_g": 0.7}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.3,
@@ -19,7 +20,7 @@
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 53,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_e_mg": 0.3,
     "lycopene_mg": 11
   },
   "caffeine_shots": 3,
@@ -27,5 +28,5 @@
     "Sleep logged as two fragments (02:45-04:00, 04:50-05:03), ~1.47h total — a very short, fragmented night, sharply down from the 11.25h catch-up night before. Logged to data/metrics/sleep.json.",
     "Breakfast: 25 cherry tomatoes + 3 slices Tnuva Emek Light 9% yellow cheese, reusing the verified 25g/slice reference. Chicken balls + schnitzel lunch noted for later, not yet logged."
   ],
-  "status_note": "Day in progress. Very short, fragmented sleep last night (~1.47h across two segments), double espresso + grape snack early, then breakfast at 08:45 (cherry tomatoes, yellow cheese, single espresso). Running ~296 kcal, ~27 g protein, ~33 g carb, ~8 g fat, ~5 g fiber, 3 caffeine shots. Main lunch (chicken balls + schnitzel) still pending."
+  "status_note": "Day in progress. Very short, fragmented sleep last night (~1.47h across two segments), double espresso + grape snack early, breakfast at 08:45 (cherry tomatoes, yellow cheese, single espresso), then a small nut snack at 10:15. Running ~362 kcal, ~29 g protein, ~35 g carb, ~14 g fat, ~6 g fiber, 3 caffeine shots. Main lunch (chicken balls + schnitzel) still pending."
 }
