@@ -11,12 +11,12 @@
     {"time": "09:30", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.8, "fiber_g": 0, "time_approx": true},
     {"time": "09:30", "name": "Breakfast — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true},
     {"time": "09:30", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "13:30", "name": "Lunch — mixed veal/turkey shawarma laffa wrap", "category": "food", "qty": "1 laffa wrap (hummus, tahini, spicy drizzle, red onion, purple cabbage, pickles)", "kcal": 882, "protein_g": 53, "carbs_g": 83, "fat_g": 36, "fiber_g": 8, "note": "large laffa flatbread (~130g) + ~150g mixed veal/turkey shawarma meat + hummus spread + tahini drizzle + spicy drizzle + onion/cabbage/pickle garnish — estimated, not weighed"},
+    {"time": "13:30", "name": "Lunch — mixed veal/turkey shawarma laffa wrap", "category": "food", "qty": "1 laffa wrap (hummus, tahini, spicy drizzle, red onion, purple cabbage, pickles)", "kcal": 994, "protein_g": 65.6, "carbs_g": 83, "fat_g": 42.5, "fiber_g": 8, "note": "large laffa flatbread (~130g) + ~200g mixed veal/turkey shawarma meat (50/50 split) + hummus spread + tahini drizzle + spicy drizzle + onion/cabbage/pickle garnish — corrected meat weight from 150g to 200g; still an estimate, not weighed"},
     {"time": "15:10", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 8.9,
-    "selenium_mcg": 34,
+    "zinc_mg": 10.9,
+    "selenium_mcg": 44,
     "folate_mcg_dfe": 0,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 18,
@@ -30,7 +30,7 @@
     "Eufy weigh-in logged to data/metrics/weight.json: 81.00 kg, BMI 27.7, body fat 27.1% (flagged extremely high by the app), body fat mass 21.90 kg, skeletal muscle 30.80 kg, muscle mass 56.10 kg, visceral fat 11.0, lean body mass 59.10 kg, bone mass 3.00 kg, protein 15.3%, subcutaneous fat 23.8%, water 49.9%, BMR 1719 kcal, resting HR 60 bpm, body age 29, body type now 'Muscular Overweight' (was 'Average' on 11 Jul). vs. 11 Jul: weight +0.05 kg, body fat +0.1pp — essentially flat, still within normal day-to-day fluctuation, not a real reversal of the slow downward trend.",
     "09:00 chocolate rolled cookie (מגולגלות שוקולד): user shared a reference recipe link (mako.co.il, Keren Agam's Ferrero-filled version) and said their homemade version is similar. The mako.co.il page is bot-blocked (403), so exact ingredients weren't retrievable — estimated a standard butter-shortcrust + chocolate-hazelnut-spread rolled cookie (~130 kcal/30g) and saved it to references/foods.json for reuse. Time approximated (\"this morning\").",
     "Breakfast (no exact time given, approximated 09:30): 3 Tnuva Emek Light yellow cheese slices (verified reference) + 1 whole cucumber.",
-    "Lunch (13:30): mixed veal/turkey shawarma in a laffa wrap with hummus, tahini, spicy drizzle, red onion, purple cabbage, pickles. Logged as one combined item — meat/bread/spread quantities are estimates, not weighed."
+    "Lunch (13:30): mixed veal/turkey shawarma in a laffa wrap with hummus, tahini, spicy drizzle, red onion, purple cabbage, pickles. Logged as one combined item — meat corrected to ~200g (50/50 veal/turkey); bread/spread quantities remain estimates, not weighed."
   ],
-  "status_note": "Day in progress. Good night's sleep (~7.92h, 22:35-06:30). Weigh-in: 81.00 kg (BMI 27.7, body fat 27.1%) — essentially flat vs. 11 Jul (80.95 kg), resting HR notably lower at 60 bpm. Morning snack (cookie + double espresso), breakfast (yellow cheese, cucumber, espresso), then a big shawarma laffa wrap for lunch at 13:30, plus an espresso at 15:10. Running ~1,219 kcal, ~80 g protein, ~109 g carb, ~50 g fat, ~10 g fiber, 4 caffeine shots — protein pace is strong on the back of the shawarma lunch."
+  "status_note": "Day in progress. Good night's sleep (~7.92h, 22:35-06:30). Weigh-in: 81.00 kg (BMI 27.7, body fat 27.1%) — essentially flat vs. 11 Jul (80.95 kg), resting HR notably lower at 60 bpm. Morning snack (cookie + double espresso), breakfast (yellow cheese, cucumber, espresso), then a big shawarma laffa wrap for lunch at 13:30 (~200g meat), plus an espresso at 15:10. Running ~1,331 kcal, ~92 g protein, ~109 g carb, ~57 g fat, ~10 g fiber, 4 caffeine shots — protein pace is strong on the back of the shawarma lunch."
 }
