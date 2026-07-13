@@ -63,6 +63,19 @@
       "source": "Label data (per 100g: 201 kcal, 30g protein, 0g carb, 9g fat, 530mg sodium, 900mg calcium, 27mg cholesterol, 5.4g saturated fat), tnuva.co.il product page bot-blocked, cross-checked via medplus.co.il. Slice weight (25g) confirmed by user 2026-07-11, correcting an earlier generic yellow-cheese estimate."
     },
     {
+      "id": "migulgalot_shokolad_ferrero",
+      "name": "מגולגלות שוקולד (chocolate rolled cookies, homemade — similar to Keren Agam's Ferrero-filled recipe)",
+      "serving": "1 cookie (30 g)",
+      "kcal": 130,
+      "protein_g": 2,
+      "carbs_g": 15,
+      "fat_g": 7,
+      "fiber_g": 0.5,
+      "verified": false,
+      "recipe": "Rolled shortcrust-pastry cookie (butter/margarine, flour, sugar, egg dough) spread with chocolate-hazelnut spread, rolled into a log, sliced and baked — pinwheel/rugelach-style. User's homemade version is 'similar to' the linked recipe, not identical.",
+      "source": "Reference recipe: mako.co.il \"מגולגלות שוקולד פררו\" by Keren Agam (https://www.mako.co.il/food-weekend/keren_baking_for_sabbath/Recipe-afed6b4e15ade91026.htm) — page bot-blocked (403), so exact ingredient quantities weren't retrievable. Estimated from typical butter-shortcrust + chocolate-hazelnut-spread rolled cookie macros (~430 kcal/100g). Refine if the user's actual recipe/quantities are ever provided."
+    },
+    {
       "id": "homemade_chicken_meatballs_veg",
       "name": "Homemade chicken meatballs (veg-loaded)",
       "serving": "per 100 g cooked",

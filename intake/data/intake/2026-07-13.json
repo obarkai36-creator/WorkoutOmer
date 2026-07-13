@@ -5,7 +5,9 @@
   "workout_today": false,
   "workout_summary": null,
   "_status": "Day just opened — sleep logged.",
-  "items": [],
+  "items": [
+    {"time": "09:00", "name": "Snack — מגולגלות שוקולד (homemade chocolate rolled cookie)", "category": "food", "qty": "1 cookie (30 g)", "kcal": 130, "protein_g": 2, "carbs_g": 15, "fat_g": 7, "fiber_g": 0.5, "time_approx": true, "note": "homemade, similar to the saved Keren Agam Ferrero-style reference recipe"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -19,7 +21,8 @@
   "caffeine_shots": 0,
   "assumptions": [
     "Sleep logged: 22:35-06:30, ~7.92h — a solid full night, a strong bounce-back from the fragmented ~1.47h night on 11-12 Jul.",
-    "Eufy weigh-in logged to data/metrics/weight.json: 81.00 kg, BMI 27.7, body fat 27.1% (flagged extremely high by the app), body fat mass 21.90 kg, skeletal muscle 30.80 kg, muscle mass 56.10 kg, visceral fat 11.0, lean body mass 59.10 kg, bone mass 3.00 kg, protein 15.3%, subcutaneous fat 23.8%, water 49.9%, BMR 1719 kcal, resting HR 60 bpm, body age 29, body type now 'Muscular Overweight' (was 'Average' on 11 Jul). vs. 11 Jul: weight +0.05 kg, body fat +0.1pp — essentially flat, still within normal day-to-day fluctuation, not a real reversal of the slow downward trend."
+    "Eufy weigh-in logged to data/metrics/weight.json: 81.00 kg, BMI 27.7, body fat 27.1% (flagged extremely high by the app), body fat mass 21.90 kg, skeletal muscle 30.80 kg, muscle mass 56.10 kg, visceral fat 11.0, lean body mass 59.10 kg, bone mass 3.00 kg, protein 15.3%, subcutaneous fat 23.8%, water 49.9%, BMR 1719 kcal, resting HR 60 bpm, body age 29, body type now 'Muscular Overweight' (was 'Average' on 11 Jul). vs. 11 Jul: weight +0.05 kg, body fat +0.1pp — essentially flat, still within normal day-to-day fluctuation, not a real reversal of the slow downward trend.",
+    "09:00 chocolate rolled cookie (מגולגלות שוקולד): user shared a reference recipe link (mako.co.il, Keren Agam's Ferrero-filled version) and said their homemade version is similar. The mako.co.il page is bot-blocked (403), so exact ingredients weren't retrievable — estimated a standard butter-shortcrust + chocolate-hazelnut-spread rolled cookie (~130 kcal/30g) and saved it to references/foods.json for reuse. Time approximated (\"this morning\")."
   ],
-  "status_note": "Day in progress. Good night's sleep (~7.92h, 22:35-06:30). Weigh-in: 81.00 kg (BMI 27.7, body fat 27.1%) — essentially flat vs. 11 Jul (80.95 kg), resting HR notably lower at 60 bpm. No food logged yet."
+  "status_note": "Day in progress. Good night's sleep (~7.92h, 22:35-06:30). Weigh-in: 81.00 kg (BMI 27.7, body fat 27.1%) — essentially flat vs. 11 Jul (80.95 kg), resting HR notably lower at 60 bpm. Snack: 1 homemade chocolate rolled cookie (~30g) this morning. Running ~130 kcal, ~2 g protein, ~15 g carb, ~7 g fat, ~0.5 g fiber."
 }
