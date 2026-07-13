@@ -2,6 +2,7 @@
   "_note": "Nightly sleep log, entered manually each morning (no wearable / automatic feed available — Health Connect integration is US-only and not accessible yet). Feeds energy, sperm-optimization (sleep sub-factor, 15% weight in sperm.json), and fatigue tracking.",
   "entries": [
     {"date": "2026-07-11", "night_of": "2026-07-10", "sleep_start": "00:30", "sleep_end": "11:45", "duration_hours": 11.25, "quality": null, "notes": "Long catch-up sleep — night after the 10 Jul travel day (4:50hr daytime flight, tz +2 shift). Well above typical baseline; likely recovery sleep rather than a new normal."},
-    {"date": "2026-07-12", "night_of": "2026-07-11", "sleep_start": "02:45", "sleep_end": "05:03", "duration_hours": 1.47, "quality": null, "segments": [{"start": "02:45", "end": "04:00"}, {"start": "04:50", "end": "05:03"}], "notes": "Fragmented, very short night — two segments (1h15m + 13m) totaling ~1.47h. Significant sleep debt; a sharp swing from the 11.25h catch-up night before."}
+    {"date": "2026-07-12", "night_of": "2026-07-11", "sleep_start": "02:45", "sleep_end": "05:03", "duration_hours": 1.47, "quality": null, "segments": [{"start": "02:45", "end": "04:00"}, {"start": "04:50", "end": "05:03"}], "notes": "Fragmented, very short night — two segments (1h15m + 13m) totaling ~1.47h. Significant sleep debt; a sharp swing from the 11.25h catch-up night before."},
+    {"date": "2026-07-13", "night_of": "2026-07-12", "sleep_start": "22:35", "sleep_end": "06:30", "duration_hours": 7.92, "quality": null, "notes": "Solid full night, squarely in the 7-9h range — good recovery after the fragmented ~1.47h night before."}
   ]
 }
