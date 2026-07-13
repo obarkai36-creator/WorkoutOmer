@@ -13,14 +13,15 @@
     {"time": "09:30", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:30", "name": "Lunch — mixed veal/turkey shawarma laffa wrap", "category": "food", "qty": "1 laffa wrap (hummus, tahini, spicy drizzle, red onion, purple cabbage, pickles)", "kcal": 994, "protein_g": 65.6, "carbs_g": 83, "fat_g": 42.5, "fiber_g": 8, "note": "large laffa flatbread (~130g) + ~200g mixed veal/turkey shawarma meat (50/50 split) + hummus spread + tahini drizzle + spicy drizzle + onion/cabbage/pickle garnish — corrected meat weight from 150g to 200g; still an estimate, not weighed"},
     {"time": "15:10", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:45", "name": "Snack — banana (small)", "category": "food", "qty": "1 small (~90 g)", "kcal": 78, "protein_g": 1, "carbs_g": 20, "fat_g": 0.3, "fiber_g": 2.2}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 10.9,
     "selenium_mcg": 44,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 18,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 18,
+    "vitamin_c_mg": 27,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0.4,
     "lycopene_mg": 0
@@ -33,5 +34,5 @@
     "Breakfast (no exact time given, approximated 09:30): 3 Tnuva Emek Light yellow cheese slices (verified reference) + 1 whole cucumber.",
     "Lunch (13:30): mixed veal/turkey shawarma in a laffa wrap with hummus, tahini, spicy drizzle, red onion, purple cabbage, pickles. Logged as one combined item — meat corrected to ~200g (50/50 veal/turkey); bread/spread quantities remain estimates, not weighed."
   ],
-  "status_note": "Day in progress. Good night's sleep (~7.92h, 22:35-06:30). Weigh-in: 81.00 kg (BMI 27.7, body fat 27.1%) — essentially flat vs. 11 Jul (80.95 kg), resting HR notably lower at 60 bpm. Morning snack (cookie + double espresso), breakfast (yellow cheese, cucumber, espresso), then a big shawarma laffa wrap for lunch at 13:30 (~200g meat), plus an espresso at 15:10. Omega-3 in at 15:30. Running ~1,331 kcal, ~92 g protein, ~109 g carb, ~57 g fat, ~10 g fiber, 4 caffeine shots — protein pace is strong on the back of the shawarma lunch."
+  "status_note": "Day in progress. Good night's sleep (~7.92h, 22:35-06:30). Weigh-in: 81.00 kg (BMI 27.7, body fat 27.1%) — essentially flat vs. 11 Jul (80.95 kg), resting HR notably lower at 60 bpm. Morning snack (cookie + double espresso), breakfast (yellow cheese, cucumber, espresso), then a big shawarma laffa wrap for lunch at 13:30 (~200g meat), plus an espresso at 15:10. Omega-3 at 15:30, then a small banana at 16:45. Running ~1,409 kcal, ~93 g protein, ~129 g carb, ~57 g fat, ~12 g fiber, 4 caffeine shots — protein pace is strong on the back of the shawarma lunch."
 }
