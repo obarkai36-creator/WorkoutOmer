@@ -9,7 +9,8 @@
     {"time": "09:00", "name": "Snack — מגולגלות שוקולד (homemade chocolate rolled cookie)", "category": "food", "qty": "1 cookie (30 g)", "kcal": 130, "protein_g": 2, "carbs_g": 15, "fat_g": 7, "fiber_g": 0.5, "time_approx": true, "note": "homemade, similar to the saved Keren Agam Ferrero-style reference recipe"},
     {"time": "09:00", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
     {"time": "09:30", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.8, "fiber_g": 0, "time_approx": true},
-    {"time": "09:30", "name": "Breakfast — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true}
+    {"time": "09:30", "name": "Breakfast — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true},
+    {"time": "09:30", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.3,
@@ -21,12 +22,12 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 22:35-06:30, ~7.92h — a solid full night, a strong bounce-back from the fragmented ~1.47h night on 11-12 Jul.",
     "Eufy weigh-in logged to data/metrics/weight.json: 81.00 kg, BMI 27.7, body fat 27.1% (flagged extremely high by the app), body fat mass 21.90 kg, skeletal muscle 30.80 kg, muscle mass 56.10 kg, visceral fat 11.0, lean body mass 59.10 kg, bone mass 3.00 kg, protein 15.3%, subcutaneous fat 23.8%, water 49.9%, BMR 1719 kcal, resting HR 60 bpm, body age 29, body type now 'Muscular Overweight' (was 'Average' on 11 Jul). vs. 11 Jul: weight +0.05 kg, body fat +0.1pp — essentially flat, still within normal day-to-day fluctuation, not a real reversal of the slow downward trend.",
     "09:00 chocolate rolled cookie (מגולגלות שוקולד): user shared a reference recipe link (mako.co.il, Keren Agam's Ferrero-filled version) and said their homemade version is similar. The mako.co.il page is bot-blocked (403), so exact ingredients weren't retrievable — estimated a standard butter-shortcrust + chocolate-hazelnut-spread rolled cookie (~130 kcal/30g) and saved it to references/foods.json for reuse. Time approximated (\"this morning\").",
     "Breakfast (no exact time given, approximated 09:30): 3 Tnuva Emek Light yellow cheese slices (verified reference) + 1 whole cucumber."
   ],
-  "status_note": "Day in progress. Good night's sleep (~7.92h, 22:35-06:30). Weigh-in: 81.00 kg (BMI 27.7, body fat 27.1%) — essentially flat vs. 11 Jul (80.95 kg), resting HR notably lower at 60 bpm. Morning snack (cookie + double espresso), then breakfast (yellow cheese, cucumber). Running ~331 kcal, ~26.5 g protein, ~26 g carb, ~14 g fat, ~2 g fiber, 2 caffeine shots."
+  "status_note": "Day in progress. Good night's sleep (~7.92h, 22:35-06:30). Weigh-in: 81.00 kg (BMI 27.7, body fat 27.1%) — essentially flat vs. 11 Jul (80.95 kg), resting HR notably lower at 60 bpm. Morning snack (cookie + double espresso), then breakfast (yellow cheese, cucumber). Plus a single espresso at 09:30. Running ~334 kcal, ~26.5 g protein, ~26 g carb, ~14 g fat, ~2 g fiber, 3 caffeine shots."
 }
