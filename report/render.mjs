@@ -32,9 +32,10 @@ function latestWorkoutISO() {
 
 async function main() {
   const nowISO = latestWorkoutISO();
+  const layout = process.env.REPORT_LAYOUT || "mobile";
   const url = new URL(pathToFileURL(resolve(ROOT, "index.html")));
   url.searchParams.set("pdf", "1");
-  url.searchParams.set("layout", process.env.REPORT_LAYOUT || "mobile");
+  url.searchParams.set("layout", layout);
   url.searchParams.set("now", nowISO);
 
   const browser = await chromium.launch();
@@ -47,20 +48,38 @@ async function main() {
     await page.waitForTimeout(300);
     if (errors.length) console.warn("Page errors:", errors.join("; "));
 
-    // Size the PDF page to the full content → guaranteed single landscape slide.
-    const dims = await page.evaluate(() => ({
-      w: Math.ceil(document.body.scrollWidth),
-      h: Math.ceil(document.body.scrollHeight),
-    }));
-    await page.pdf({
-      path: OUT,
-      printBackground: true,
-      width: `${dims.w}px`,
-      height: `${dims.h}px`,
-      pageRanges: "1",
-      margin: { top: "0", bottom: "0", left: "0", right: "0" },
-    });
-    console.log(`✓ Wrote ${OUT} (${dims.w}×${dims.h}px, as of ${nowISO})`);
+    if (layout === "mobile") {
+      // Paginate into normal phone-screen-height pages instead of one huge
+      // single page sized to full content: as the dashboard has grown, that
+      // single page got tall enough (5000px+) that some PDF viewers failed
+      // to fully render it, silently dropping the last panel (Workload
+      // Progress) near the bottom.
+      const width = await page.evaluate(() => Math.ceil(document.body.scrollWidth));
+      await page.pdf({
+        path: OUT,
+        printBackground: true,
+        width: `${width}px`,
+        height: "900px",
+        margin: { top: "0", bottom: "0", left: "0", right: "0" },
+      });
+      console.log(`✓ Wrote ${OUT} (${width}px wide, paginated, as of ${nowISO})`);
+    } else {
+      // Other layouts are single dense grids, not extreme aspect ratios →
+      // size the page to the full content for one guaranteed slide.
+      const dims = await page.evaluate(() => ({
+        w: Math.ceil(document.body.scrollWidth),
+        h: Math.ceil(document.body.scrollHeight),
+      }));
+      await page.pdf({
+        path: OUT,
+        printBackground: true,
+        width: `${dims.w}px`,
+        height: `${dims.h}px`,
+        pageRanges: "1",
+        margin: { top: "0", bottom: "0", left: "0", right: "0" },
+      });
+      console.log(`✓ Wrote ${OUT} (${dims.w}×${dims.h}px, as of ${nowISO})`);
+    }
   } finally {
     await browser.close();
   }
