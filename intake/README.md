@@ -22,7 +22,7 @@ data/imports/                # drop CSV/JSON exports here, then run import_data.
 generate_dashboard.py        # renders dashboards/<date>.html from the JSON above
 import_data.py               # merges data/imports/ files into the metrics stores
 sync_training_snapshot.mjs   # refreshes workouts.json's report_snapshot by running ../data.js + ../engine.js live
-dashboards/YYYY-MM-DD.html   # daily export (also sent in chat)
+dashboards/YYYY-MM-DD.html   # daily export — sent as a file in chat at end-of-day close-out
 ```
 
 ## Daily flow
@@ -30,7 +30,11 @@ dashboards/YYYY-MM-DD.html   # daily export (also sent in chat)
 1. Log food/drink (text or photo) with the time — items are analyzed into macros + micros.
 2. Day's data is written to `data/intake/YYYY-MM-DD.json`.
 3. Run `python3 generate_dashboard.py [YYYY-MM-DD]` (defaults to latest day).
-4. Dashboard HTML lands in `dashboards/` and is shared in chat.
+4. Dashboard HTML lands in `dashboards/`. This dashboard is chat-only (no
+   auto-email, unlike the workout dashboard) — so at end-of-day close-out
+   (`in_progress` set to `false`), always send the rendered
+   `dashboards/YYYY-MM-DD.html` as a file in chat, not just a text summary of
+   the scores. That's the only place this dashboard ever gets delivered.
 
 Log lifestyle events as they happen (a flight, poor sleep, sauna, high-stress
 stretch) — they're recorded in `data/metrics/lifestyle.json` and feed the weekly
