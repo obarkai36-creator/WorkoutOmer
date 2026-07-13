@@ -128,6 +128,10 @@ const EXERCISE_LIBRARY = {
   "Hip Thrust":             { kind: "strength", muscles: { glutes: 1.0, hamstrings: 0.4 } },
   "Glute Bridge":           { kind: "strength", bodyweight: true, muscles: { glutes: 1.0 } },
 
+  // Core
+  "Plank":                  { kind: "strength", iso: true, bodyweight: true, muscles: { core: 1.0 } },
+  "Stretching / Mobility (rehab)": { kind: "mobility", iso: true, muscles: {} },
+
   // Cardio
   "Outdoor Run":            { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.3, calves: 0.3 } },
   "Long Run":               { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.3, calves: 0.3 } },
@@ -209,6 +213,9 @@ const SNAPSHOT = [
   { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
   { name: "Hip Thrust",                   section: "Legs", latest: { sets: 3, reps: 12, weight: 24, text: "24kg × 3×12" }, best: { sets: 3, reps: 12, weight: 24, text: "24kg × 3×12" } },
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
+
+  // ---- Core ----
+  { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 30, weight: 81, text: "BW × 3×30s" }, best: { sets: 3, seconds: 30, weight: 81, text: "BW × 3×30s" } },
 ];
 
 /* ---- WORKOUTS — dated sessions (newest first) ------------------------------
@@ -221,6 +228,15 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 13 Jul — Stretching / rehab session + planks (21:05)
+  {
+    datetime: "2026-07-13T21:05", note: "Stretching / rehab + planks",
+    exercises: [
+      { name: "Stretching / Mobility (rehab)", sets: [ { seconds: 1200 } ] },
+      { name: "Plank", sets: [ { seconds: 30 }, { seconds: 30 }, { seconds: 30 } ] },
+    ],
+  },
+
   // 11 Jul — Legs (followed the report's recommended Legs day)
   {
     datetime: "2026-07-11T21:00", note: "Legs",
