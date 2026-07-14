@@ -7,7 +7,12 @@
   "_status": "Day in progress — sleep + morning espresso logged.",
   "items": [
     {"time": "07:00", "name": "Breakfast — milk protein drink, vanilla (no added sugar)", "category": "drink", "qty": "330 ml", "kcal": 185, "protein_g": 33, "carbs_g": 12.2, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "label per 100ml: 56 kcal, 10g protein, 0g fat, 3.7g carbs (3.7g sugar), 44mg sodium, 294mg calcium; sweetened with sucralose, no added sugar"},
-    {"time": "07:30", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "07:30", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "12:55", "name": "Arak", "category": "drink", "qty": "1 shot (~30 ml, ~40% ABV)", "kcal": 68, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "unsweetened anise spirit, ~1.2 standard alcohol units"},
+    {"time": "12:55", "name": "Aperol spritz", "category": "drink", "qty": "0.5 lowball glass (~75 ml, Aperol + prosecco + soda)", "kcal": 55, "protein_g": 0, "carbs_g": 5, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "~0.9 standard alcohol units; estimated from typical Aperol spritz proportions"},
+    {"time": "12:55", "name": "Shakshuka, 2 eggs", "category": "food", "qty": "2 eggs poached in tomato-pepper sauce", "kcal": 320, "protein_g": 15, "carbs_g": 14, "fat_g": 22, "fiber_g": 3, "time_approx": true, "note": "estimated: 2 large eggs + typical tomato/pepper/onion sauce with olive oil; exact oil quantity not weighed"},
+    {"time": "12:55", "name": "Egg, hard boiled", "category": "food", "qty": "1 large", "kcal": 78, "protein_g": 6.3, "carbs_g": 0.6, "fat_g": 5.3, "fiber_g": 0, "time_approx": true},
+    {"time": "12:55", "name": "Watermelon", "category": "food", "qty": "3 cuts (~330 g)", "kcal": 99, "protein_g": 2, "carbs_g": 25.1, "fat_g": 0.5, "fiber_g": 1.3, "time_approx": true}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -17,12 +22,13 @@
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 16.2
   },
   "caffeine_shots": 1,
   "assumptions": [
     "Sleep logged: 23:00-05:20, ~6.33h — a bit short of the 7-9h target band, but one continuous stretch, no fragmentation.",
-    "07:00 breakfast (approx. time, \"early breakfast\"): 330ml milk protein drink, vanilla, no added sugar — read directly from the product label (Hebrew nutrition table): 56 kcal/100ml, 10g protein/100ml, 0g fat, 3.7g carbs (all sugar)/100ml, scaled to the 330ml serving. High-protein, fat-free, low-carb — a strong start on the protein target."
+    "07:00 breakfast (approx. time, \"early breakfast\"): 330ml milk protein drink, vanilla, no added sugar — read directly from the product label (Hebrew nutrition table): 56 kcal/100ml, 10g protein/100ml, 0g fat, 3.7g carbs (all sugar)/100ml, scaled to the 330ml serving. High-protein, fat-free, low-carb — a strong start on the protein target.",
+    "~12:55 (time not given, approximated to \"just now\" at message time): snacks batch — 1 shot arak (~30ml, unsweetened anise spirit, ~1.2 units), 0.5 lowball Aperol spritz (~75ml, ~0.9 units), shakshuka with 2 eggs (estimated sauce + oil, not weighed), 1 hard-boiled egg, 3 cuts of watermelon (~330g total, estimated ~110g/cut). Watermelon contributed the day's lycopene (~16.2mg). Logged an alcohol lifestyle event for today (~2 units total) — first drinking day since 9 Jul, ending a 4-day dry stretch, so a one-off rather than a return to the earlier daily-drinking pattern."
   ],
-  "status_note": "Day in progress. Slept ~6.33h (23:00-05:20) — a bit under the 7-9h target band, but solid, unfragmented sleep. Breakfast: 330ml vanilla milk protein drink (~185 kcal, 33g protein, 12.2g carb, 0g fat) then a single espresso at 07:30. Running ~188 kcal, ~33g protein, ~12.2g carb, 0g fat, 0g fiber, 1 caffeine shot — excellent protein start to the day."
+  "status_note": "Day in progress. Slept ~6.33h (23:00-05:20) — a bit under the 7-9h target band, but solid, unfragmented sleep. Breakfast: 330ml vanilla milk protein drink then a single espresso at 07:30. Midday snacks: arak shot, half an Aperol spritz, 2-egg shakshuka, a hard-boiled egg, and 3 cuts of watermelon. Running ~808 kcal, ~56.3g protein, ~56.9g carb, ~27.8g fat, ~4.3g fiber, 1 caffeine shot, ~2 alcohol units — solid protein pace, first drink in 4 days."
 }
