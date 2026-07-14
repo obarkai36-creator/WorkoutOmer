@@ -4,8 +4,10 @@
   "in_progress": true,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
-  "items": [],
+  "_status": "Day in progress — sleep + morning espresso logged.",
+  "items": [
+    {"time": "07:30", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,9 +18,9 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "assumptions": [
     "Sleep logged: 23:00-05:20, ~6.33h — a bit short of the 7-9h target band, but one continuous stretch, no fragmentation."
   ],
-  "status_note": "Day just opened. Slept ~6.33h (23:00-05:20) — a bit under the 7-9h target band, but solid, unfragmented sleep. Nothing else logged yet."
+  "status_note": "Day in progress. Slept ~6.33h (23:00-05:20) — a bit under the 7-9h target band, but solid, unfragmented sleep. 07:30 single espresso (3 kcal, 1 caffeine shot). Nothing else logged yet."
 }
