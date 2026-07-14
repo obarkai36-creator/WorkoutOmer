@@ -17,22 +17,24 @@
     {"time": "16:30", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
     {"time": "17:30", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "time_approx": true},
     {"time": "18:30", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
-    {"time": "20:00", "name": "Dinner — buffet (includes fish)", "category": "food", "qty": "buffet-style plate, not precisely tracked", "kcal": 650, "protein_g": 45, "carbs_g": 15, "fat_g": 40, "fiber_g": 4, "time_approx": true, "note": "Not exact tracking — buffet-style eating, per user's own directional guidance. Includes fish (type/quantity not specified, so no dietary omega-3 credit added to micros)."}
+    {"time": "20:00", "name": "Dinner — buffet (includes fish)", "category": "food", "qty": "buffet-style plate, not precisely tracked", "kcal": 650, "protein_g": 45, "carbs_g": 15, "fat_g": 40, "fiber_g": 4, "time_approx": true, "note": "Not exact tracking — buffet-style eating, per user's own directional guidance. Includes fish (type/quantity not specified, so no dietary omega-3 credit added to micros)."},
+    {"time": "21:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "macro_display_override": {
     "kcal": "High",
     "protein_g": "High",
     "fat_g": "High",
-    "carbs_g": "Moderate / meets expectations"
+    "carbs_g": "Moderate / meets expectations",
+    "fiber_g": "High"
   },
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 667,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 250,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
     "lycopene_mg": 16.2
   },
   "caffeine_shots": 3,
@@ -43,7 +45,8 @@
     "13:00 lunch: buffet-style meal, explicitly not precisely tracked per the user — meat, chicken, tomatoes, some pita, some lettuce, sweet potato. Logged as a single combined estimate rather than itemized/weighed portions, directionally calibrated to the user's own guidance (high calories/fat/protein from generous meat+chicken; fiber meeting expectations from the pita/veg/sweet potato) rather than false precision. Supplements to be taken as usual today — not yet logged; will log with real times once taken.",
     "16:30-18:30 window: 2 espressos (40ml each, 16:30 and 18:30) + 1 medium green apple (~180g) around 17:30 — exact sub-times within the window approximated/spread evenly since only the overall window was given.",
     "20:00 dinner: buffet-style, no exact calculation, per the user — included fish. Logged as a single directional estimate (not itemized/weighed), same approach as lunch. Skipping the omega-3 fish oil supplement today since fish was eaten at dinner — no dietary omega-3 mg credit added to micros since the fish type/quantity wasn't specified (avoiding a fabricated number).",
-    "Per the user's explicit request, the dashboard's daily macro summary (Calories/Protein/Fat/Carbs bars) shows qualitative labels today instead of exact totals — High/High/High/Moderate — since both lunch and dinner were buffet-style with no precise tracking. Underlying item-level numbers are still directional estimates (used for bar fill/color and internal scoring) but are not the point of today's log; the log table below still shows those estimate numbers per item for reference."
+    "Per the user's explicit request, the dashboard's daily macro summary (Calories/Protein/Fat/Carbs/Fiber bars) shows qualitative labels today instead of exact totals — High/High/High/Moderate/High — since both lunch and dinner were buffet-style with no precise tracking. Underlying item-level numbers are still directional estimates (used for bar fill/color and internal scoring) but are not the point of today's log; the log table below still shows those estimate numbers per item for reference.",
+    "21:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority set to the verified label/supplement-fact values for this product (zinc 15mg, selenium 200mcg, folate 667mcg DFE, vitamin C 250mg, vitamin D 2000IU, vitamin E 16.5mg) — zero kcal/macros."
   ],
-  "status_note": "Day in progress. Slept ~6.33h (23:00-05:20) — a bit under the 7-9h target band. Breakfast: vanilla milk protein drink + espresso. Midday: arak, half an Aperol spritz, 2-egg shakshuka, a hard-boiled egg, watermelon, then a buffet lunch (meat, chicken, tomatoes, pita, lettuce, sweet potato — not precisely tracked). Afternoon: 2 more espressos and a green apple. Dinner: buffet again, included fish (also not precisely tracked) — skipping the omega-3 supplement today as a result. Per the user's request, today's macro summary reads qualitatively: Calories High, Protein High, Fat High, Carbs Moderate/meets expectations — both main meals were buffet-style, so exact totals aren't meaningful today. 3 caffeine shots, ~2 alcohol units."
+  "status_note": "Day in progress. Slept ~6.33h (23:00-05:20) — a bit under the 7-9h target band. Breakfast: vanilla milk protein drink + espresso. Midday: arak, half an Aperol spritz, 2-egg shakshuka, a hard-boiled egg, watermelon, then a buffet lunch (meat, chicken, tomatoes, pita, lettuce, sweet potato — not precisely tracked). Afternoon: 2 more espressos and a green apple. Dinner: buffet again, included fish (also not precisely tracked) — skipping the omega-3 supplement today as a result. Multivitamin at 21:00. Per the user's request, today's macro summary reads qualitatively: Calories High, Protein High, Fat High, Carbs Moderate/meets expectations, Fiber High — both main meals were buffet-style, so exact totals aren't meaningful today. 3 caffeine shots, ~2 alcohol units."
 }

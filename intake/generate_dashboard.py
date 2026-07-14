@@ -565,7 +565,7 @@ def build(target_date):
         + bar(tot["protein_g"], t["protein_g"], "Protein (g)", label=macro_override.get("protein_g"))
         + bar(tot["carbs_g"], t["carbs_g"], "Carbs (g)", label=macro_override.get("carbs_g"))
         + bar(tot["fat_g"], t["fat_g"], "Fat (g)", reverse_over=True, label=macro_override.get("fat_g"))
-        + bar(tot["fiber_g"], t["fiber_g"], "Fiber (g)")
+        + bar(tot["fiber_g"], t["fiber_g"], "Fiber (g)", label=macro_override.get("fiber_g"))
     )
 
     micro_rows = "".join(
