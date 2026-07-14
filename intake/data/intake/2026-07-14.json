@@ -6,6 +6,7 @@
   "workout_summary": null,
   "_status": "Day in progress — sleep + morning espresso logged.",
   "items": [
+    {"time": "07:00", "name": "Breakfast — milk protein drink, vanilla (no added sugar)", "category": "drink", "qty": "330 ml", "kcal": 185, "protein_g": 33, "carbs_g": 12.2, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "label per 100ml: 56 kcal, 10g protein, 0g fat, 3.7g carbs (3.7g sugar), 44mg sodium, 294mg calcium; sweetened with sucralose, no added sugar"},
     {"time": "07:30", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
@@ -20,7 +21,8 @@
   },
   "caffeine_shots": 1,
   "assumptions": [
-    "Sleep logged: 23:00-05:20, ~6.33h — a bit short of the 7-9h target band, but one continuous stretch, no fragmentation."
+    "Sleep logged: 23:00-05:20, ~6.33h — a bit short of the 7-9h target band, but one continuous stretch, no fragmentation.",
+    "07:00 breakfast (approx. time, \"early breakfast\"): 330ml milk protein drink, vanilla, no added sugar — read directly from the product label (Hebrew nutrition table): 56 kcal/100ml, 10g protein/100ml, 0g fat, 3.7g carbs (all sugar)/100ml, scaled to the 330ml serving. High-protein, fat-free, low-carb — a strong start on the protein target."
   ],
-  "status_note": "Day in progress. Slept ~6.33h (23:00-05:20) — a bit under the 7-9h target band, but solid, unfragmented sleep. 07:30 single espresso (3 kcal, 1 caffeine shot). Nothing else logged yet."
+  "status_note": "Day in progress. Slept ~6.33h (23:00-05:20) — a bit under the 7-9h target band, but solid, unfragmented sleep. Breakfast: 330ml vanilla milk protein drink (~185 kcal, 33g protein, 12.2g carb, 0g fat) then a single espresso at 07:30. Running ~188 kcal, ~33g protein, ~12.2g carb, 0g fat, 0g fiber, 1 caffeine shot — excellent protein start to the day."
 }
