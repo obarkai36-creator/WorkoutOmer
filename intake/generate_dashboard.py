@@ -43,8 +43,11 @@ def count_intake_days():
 
 # ---------- small render helpers ----------
 
-def bar(value, target, unit="", reverse_over=False):
-    """A labelled progress bar. reverse_over=True => going over target is bad (amber/red)."""
+def bar(value, target, unit="", reverse_over=False, label=None):
+    """A labelled progress bar. reverse_over=True => going over target is bad (amber/red).
+    label, if given, replaces the numeric "value / target" text (bar fill/color still
+    reflect the real numbers) — for days logged qualitatively (e.g. buffet-style, no
+    exact tracking) rather than item-by-item."""
     pct = 0 if not target else min(value / target * 100, 100)
     over = target and value > target * 1.05
     if reverse_over and over:
@@ -55,9 +58,10 @@ def bar(value, target, unit="", reverse_over=False):
         color = "#3b82f6"
     else:
         color = "#f59e0b"
+    display = label if label else f"{value:g} <span class=\"muted\">/ {target:g}</span>"
     return f"""
       <div class="metric">
-        <div class="metric-top"><span>{unit}</span><span class="vals">{value:g} <span class="muted">/ {target:g}</span></span></div>
+        <div class="metric-top"><span>{unit}</span><span class="vals">{display}</span></div>
         <div class="track"><div class="fill" style="width:{pct:.0f}%;background:{color}"></div></div>
       </div>"""
 
@@ -555,11 +559,12 @@ def build(target_date):
     suggestions_unlocked = days_logged >= UNLOCK_DAYS
 
     # ----- HTML pieces -----
+    macro_override = intake.get("macro_display_override", {})
     macro_rows = (
-        bar(tot["kcal"], t["calories_kcal"], "Calories (kcal)", reverse_over=True)
-        + bar(tot["protein_g"], t["protein_g"], "Protein (g)")
-        + bar(tot["carbs_g"], t["carbs_g"], "Carbs (g)")
-        + bar(tot["fat_g"], t["fat_g"], "Fat (g)", reverse_over=True)
+        bar(tot["kcal"], t["calories_kcal"], "Calories (kcal)", reverse_over=True, label=macro_override.get("kcal"))
+        + bar(tot["protein_g"], t["protein_g"], "Protein (g)", label=macro_override.get("protein_g"))
+        + bar(tot["carbs_g"], t["carbs_g"], "Carbs (g)", label=macro_override.get("carbs_g"))
+        + bar(tot["fat_g"], t["fat_g"], "Fat (g)", reverse_over=True, label=macro_override.get("fat_g"))
         + bar(tot["fiber_g"], t["fiber_g"], "Fiber (g)")
     )
 
