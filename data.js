@@ -38,6 +38,12 @@ const BODYWEIGHT = [
  * integration is US-only, not accessible yet). Feeds the Sleep panel and the
  * recovery note on the Next Session recommendation. */
 const SLEEP = [
+  // 13-14 Jul — moderate night, one continuous stretch
+  { date: "2026-07-14", start: "23:00", end: "05:20", hours: 6.33, note: "a bit under the 7-9h target, no fragmentation" },
+  // 12-13 Jul — solid full night, good recovery after the fragmented night before
+  { date: "2026-07-13", start: "22:35", end: "06:30", hours: 7.92, note: "solid full night" },
+  // 11-12 Jul — fragmented, very short night (two segments)
+  { date: "2026-07-12", start: "02:45", end: "05:03", hours: 1.47, note: "fragmented — two segments (1h15m + 13m)" },
   // 10-11 Jul — long catch-up sleep after the 10 Jul travel day (4:50hr flight, tz +2 shift)
   { date: "2026-07-11", start: "00:30", end: "11:45", hours: 11.25, note: "catch-up sleep post-travel" },
 ];
