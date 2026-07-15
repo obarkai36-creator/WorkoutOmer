@@ -8,23 +8,26 @@
   "items": [
     {"time": "07:15", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:15", "name": "Green grapes", "category": "food", "qty": "2 grapes (~10 g)", "kcal": 7, "protein_g": 0.1, "carbs_g": 1.8, "fat_g": 0, "fiber_g": 0.1},
-    {"time": "08:50", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "post-workout dose"}
+    {"time": "08:50", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "post-workout dose"},
+    {"time": "09:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (25 g each, 50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "time_approx": true},
+    {"time": "09:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "15 (~255 g)", "kcal": 46, "protein_g": 2.3, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 3, "time_approx": true}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 38,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 35.7,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 6.6
   },
   "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 01:10-06:45, ~5.58h — below the 7-9h target band, late bedtime (post-buffet day), one continuous stretch, no fragmentation.",
     "07:35 Chest workout, logged to data.js WORKOUTS (followed the report's recommended Chest day). Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 — a PR (more reps at the same weight than the prior 72.5kg×4×5 best); Incline bench press 72.5kg×4×5 (below the 73kg×4×6 best, not a PR); Incline pec fly 18kg each×4×8 (ties existing best exactly). Re-ran sync_training_snapshot.mjs and mirrored the session into metrics/workouts.json. ACWR now 1.26 (caution zone); recommended next session is Arms day.",
-    "07:15 double espresso (2 caffeine shots) + 2 green grapes (~10g, trivial), and 08:50 creatine monohydrate (5g, post-workout) — all zero/near-zero kcal."
+    "07:15 double espresso (2 caffeine shots) + 2 green grapes (~10g, trivial), and 08:50 creatine monohydrate (5g, post-workout) — all zero/near-zero kcal.",
+    "09:00 breakfast (time not given, approximated post-workout): 2 Tnuva Emek Light yellow cheese slices (verified reference) + 15 cherry tomatoes (~255g, standard tomato values). Tomatoes contributed the day's first micros — lycopene ~6.6mg, vitamin C ~35.7mg, folate ~38mcg DFE."
   ],
-  "status_note": "Day in progress. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best), then a double espresso + 2 green grapes (07:15) and post-workout creatine (08:50, 5g). Running ~13 kcal, 2 caffeine shots — day otherwise just getting started."
+  "status_note": "Day in progress. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best), then a double espresso + 2 green grapes (07:15), post-workout creatine (08:50), and breakfast (~09:00): yellow cheese + cherry tomatoes. Running ~159 kcal, ~17.4g protein, ~11.8g carb, ~5g fat, ~3.1g fiber, 2 caffeine shots."
 }
