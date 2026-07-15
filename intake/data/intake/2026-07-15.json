@@ -17,16 +17,17 @@
     {"time": "15:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:30", "name": "Snack — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (25 g each, 50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0},
     {"time": "15:30", "name": "Snack — cherry tomatoes", "category": "food", "qty": "5 (~85 g)", "kcal": 15, "protein_g": 0.8, "carbs_g": 3.3, "fat_g": 0.2, "fiber_g": 1},
-    {"time": "17:00", "name": "Milk protein drink, vanilla (no added sugar)", "category": "drink", "qty": "330 ml", "kcal": 185, "protein_g": 33, "carbs_g": 12.2, "fat_g": 0, "fiber_g": 0, "note": "same product as 14 Jul — label per 100ml: 56 kcal, 10g protein, 0g fat, 3.7g carbs (sugar); see references/foods.json"}
+    {"time": "17:00", "name": "Milk protein drink, vanilla (no added sugar)", "category": "drink", "qty": "330 ml", "kcal": 185, "protein_g": 33, "carbs_g": 12.2, "fat_g": 0, "fiber_g": 0, "note": "same product as 14 Jul — label per 100ml: 56 kcal, 10g protein, 0g fat, 3.7g carbs (sugar); see references/foods.json"},
+    {"time": "18:30", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 50.8,
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 717.8,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 47.6,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 297.6,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
     "lycopene_mg": 8.8
   },
   "caffeine_shots": 4,
@@ -38,7 +39,8 @@
     "12:00 lunch: large cucumber salad with chicken from Mi Casa (Herzliya), ordered via Wolt (product link provided). The Wolt product page itself was bot-blocked (403), same pattern as other delivery-app pages, and web search didn't surface a detailed breakdown either — but the user then shared a photo of the product's actual Hebrew description, which corrected the picture entirely: chicken (or tofu), cucumbers, mint, cilantro, bean sprouts, bean-thread/glass noodles, roasted nut/seed mix, yuzu vinaigrette — a Vietnamese-style noodle salad, not a plain olive-oil chopped salad as first guessed. Revised the estimate down in fat and up in carbs accordingly (glass noodles + nuts add real carbs; yuzu vinaigrette is lighter than an olive-oil dressing). Portions (chicken ~170g, noodles ~60g cooked, nut mix ~20g) still assumed, not weighed.",
     "~13:00 black coffee, 2 spoons (strong instant, no milk/sugar) — counted as 2 caffeine shots given the double-strength preparation. 15:00 banana (medium, ~118g) + omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — the day's first omega-3 micro credit.",
     "15:30 snack: 2 more Tnuva Emek Light yellow cheese slices (verified reference) + 5 cherry tomatoes (~85g). Added a bit more lycopene, vitamin C, and folate on top of breakfast's tomatoes.",
-    "17:00: same vanilla milk protein drink (no added sugar) as 14 Jul, 330ml — reused the verified reference values from references/foods.json rather than re-deriving from the label."
+    "17:00: same vanilla milk protein drink (no added sugar) as 14 Jul, 330ml — reused the verified reference values from references/foods.json rather than re-deriving from the label.",
+    "18:30 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority set to the verified supplement-fact values (zinc 15mg, selenium 200mcg, folate 667mcg DFE, vitamin C 250mg, vitamin D 2000IU, vitamin E 16.5mg) added on top of the day's food-sourced micros — zero kcal/macros."
   ],
-  "status_note": "Day in progress. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best), then a double espresso + 2 green grapes (07:15), post-workout creatine (08:50), breakfast (~09:00, yellow cheese + cherry tomatoes), lunch at 12:00 (Mi Casa Vietnamese-style noodle salad with chicken), black coffee (~13:00), a banana + omega-3 at 15:00, a yellow cheese + cherry tomato snack at 15:30, and the vanilla milk protein drink again at 17:00. Running ~1,159 kcal, ~126.8g protein, ~87.1g carb, ~34.1g fat, ~10.5g fiber, 4 caffeine shots — strong protein day."
+  "status_note": "Day in progress. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best), then a double espresso + 2 green grapes (07:15), post-workout creatine (08:50), breakfast (~09:00, yellow cheese + cherry tomatoes), lunch at 12:00 (Mi Casa Vietnamese-style noodle salad with chicken), black coffee (~13:00), a banana + omega-3 at 15:00, a yellow cheese + cherry tomato snack at 15:30, the vanilla milk protein drink again at 17:00, and multivitamin at 18:30. Running ~1,159 kcal, ~126.8g protein, ~87.1g carb, ~34.1g fat, ~10.5g fiber, 4 caffeine shots — strong protein day, micros now well covered."
 }
