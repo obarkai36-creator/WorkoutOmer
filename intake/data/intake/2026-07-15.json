@@ -1,10 +1,10 @@
 {
   "date": "2026-07-15",
   "day_number": 18,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Chest, 07:35: Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 (PR); Incline bench press 72.5kg×4×5; Incline pec fly 18kg each×4×8 (ties best).",
-  "_status": "Day in progress — sleep + morning chest workout logged.",
+  "_status": "Day closed out. Chest workout (PR), full day of food/drink/supplements logged, dinner out at Uma Sushi.",
   "items": [
     {"time": "07:15", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:15", "name": "Green grapes", "category": "food", "qty": "2 grapes (~10 g)", "kcal": 7, "protein_g": 0.1, "carbs_g": 1.8, "fat_g": 0, "fiber_g": 0.1},
@@ -23,7 +23,8 @@
     {"time": "18:45", "name": "Snack — cherry tomatoes", "category": "food", "qty": "2 (~34 g)", "kcal": 6, "protein_g": 0.3, "carbs_g": 1.3, "fat_g": 0.1, "fiber_g": 0.4},
     {"time": "21:00", "name": "Dinner — Uma Sushi, Hanoi salad (סלט מהאנוי)", "category": "food", "qty": "1 salad", "kcal": 425, "protein_g": 36, "carbs_g": 26.5, "fat_g": 15, "fiber_g": 5.4, "note": "Estimated — Uma's own page was bot-blocked (403), but a web search surfaced the actual composition: chicken, bean noodles, coriander, purple cabbage, avocado, lettuce, chili, cucumber, peanuts in ponzu sauce. Portions assumed, not weighed."},
     {"time": "21:00", "name": "Dinner — Uma Sushi, sashimi (3 fish)", "category": "food", "qty": "~90 g raw fish (tuna, salmon, sea bream) + ponzu", "kcal": 145, "protein_g": 19, "carbs_g": 1, "fat_g": 5.9, "fiber_g": 0, "note": "Estimated — web search confirmed tuna/salmon/sea bream with micro basil, lemon zest, ponzu, but not exact weights; assumed ~90g total raw fish."},
-    {"time": "21:00", "name": "Dinner — Uma Sushi, Shimon roll (שמעון), half order", "category": "food", "qty": "0.5 roll", "kcal": 230, "protein_g": 12, "carbs_g": 26, "fat_g": 9, "fiber_g": 1.5, "note": "No ingredient breakdown found for this specific named roll (bot-blocked page, not surfaced by search) — estimated as half of a typical specialty roll (rice, fish, avocado, ~8 pieces full roll). Flag for correction if exact ingredients are ever confirmed."}
+    {"time": "21:00", "name": "Dinner — Uma Sushi, Shimon roll (שמעון), half order", "category": "food", "qty": "0.5 roll", "kcal": 230, "protein_g": 12, "carbs_g": 26, "fat_g": 9, "fiber_g": 1.5, "note": "No ingredient breakdown found for this specific named roll (bot-blocked page, not surfaced by search) — estimated as half of a typical specialty roll (rice, fish, avocado, ~8 pieces full roll). Flag for correction if exact ingredients are ever confirmed."},
+    {"time": "22:35", "name": "Watermelon", "category": "food", "qty": "500 g", "kcal": 150, "protein_g": 3, "carbs_g": 38, "fat_g": 0.75, "fiber_g": 2}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -33,7 +34,7 @@
     "vitamin_c_mg": 302.4,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 9.7
+    "lycopene_mg": 34.2
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -47,7 +48,8 @@
     "17:00: same vanilla milk protein drink (no added sugar) as 14 Jul, 330ml — reused the verified reference values from references/foods.json rather than re-deriving from the label.",
     "18:30 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority set to the verified supplement-fact values (zinc 15mg, selenium 200mcg, folate 667mcg DFE, vitamin C 250mg, vitamin D 2000IU, vitamin E 16.5mg) added on top of the day's food-sourced micros — zero kcal/macros.",
     "18:45 snack: 1 more Tnuva Emek Light yellow cheese slice + 2 cherry tomatoes (~34g) — small top-up, third cheese+tomato snack of the day.",
-    "21:00 dinner: Uma Sushi (product link provided). Same pattern as Mi Casa — Uma's own site was bot-blocked (403) — but a web search surfaced the actual composition for two of the three items: Hanoi salad (chicken, bean noodles, coriander, purple cabbage, avocado, lettuce, chili, cucumber, peanuts, ponzu) and the 3-fish sashimi (tuna, salmon, sea bream, micro basil, lemon zest, ponzu). The 'Shimon' roll (half order) wasn't found anywhere online — estimated generically as half a typical specialty roll. All three logged as directional estimates; portions not weighed. Sashimi's salmon likely added some dietary omega-3 on top of today's supplement dose, not quantified/credited to avoid a fabricated number."
+    "21:00 dinner: Uma Sushi (product link provided). Same pattern as Mi Casa — Uma's own site was bot-blocked (403) — but a web search surfaced the actual composition for two of the three items: Hanoi salad (chicken, bean noodles, coriander, purple cabbage, avocado, lettuce, chili, cucumber, peanuts, ponzu) and the 3-fish sashimi (tuna, salmon, sea bream, micro basil, lemon zest, ponzu). The 'Shimon' roll (half order) wasn't found anywhere online — estimated generically as half a typical specialty roll. All three logged as directional estimates; portions not weighed. Sashimi's salmon likely added some dietary omega-3 on top of today's supplement dose, not quantified/credited to avoid a fabricated number.",
+    "22:35 watermelon, 500g — standard reference values, adding the day's largest lycopene contribution (~24.5mg) on top of the tomatoes from earlier."
   ],
-  "status_note": "Day in progress. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best), then a double espresso + 2 green grapes (07:15), post-workout creatine (08:50), breakfast (~09:00, yellow cheese + cherry tomatoes), lunch at 12:00 (Mi Casa Vietnamese-style noodle salad with chicken), black coffee (~13:00), a banana + omega-3 at 15:00, cheese + tomato snacks at 15:30 and 18:45, the vanilla milk protein drink at 17:00, multivitamin at 18:30, and dinner at 21:00 (Uma Sushi — Hanoi salad, 3-fish sashimi, half a Shimon roll; all estimated). Running ~2,015 kcal, ~201.6g protein, ~141.9g carb, ~66.4g fat, ~17.8g fiber, 4 caffeine shots — a very strong protein day overall."
+  "status_note": "Day complete. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best), then a double espresso + 2 green grapes (07:15), post-workout creatine (08:50), breakfast (~09:00, yellow cheese + cherry tomatoes), lunch at 12:00 (Mi Casa Vietnamese-style noodle salad with chicken), black coffee (~13:00), a banana + omega-3 at 15:00, cheese + tomato snacks at 15:30 and 18:45, the vanilla milk protein drink at 17:00, multivitamin at 18:30, dinner at 21:00 (Uma Sushi — Hanoi salad, 3-fish sashimi, half a Shimon roll; all estimated), and 500g watermelon at 22:35. Final totals: ~2,165 kcal, ~204.6g protein, ~179.9g carb, ~67.2g fat, ~19.8g fiber, 4 caffeine shots — a big, protein-heavy day capped off with a chest PR this morning."
 }
