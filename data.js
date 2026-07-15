@@ -157,15 +157,15 @@ const EXERCISE_LIBRARY = {
  */
 const SNAPSHOT = [
   // ---- Chest ----
-  { name: "Bench Press",         section: "Chest", latest: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" }, best: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" } },
+  { name: "Bench Press",         section: "Chest", latest: { sets: 4, reps: 6, weight: 72.5, text: "72.5kg × 4×6" }, best: { sets: 4, reps: 6, weight: 72.5, text: "72.5kg × 4×6" } },
   { name: "Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 15, weight: 28, text: "14kg each × 4×15" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Incline Bench Press", section: "Chest", latest: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
+  { name: "Incline Bench Press", section: "Chest", latest: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
   { name: "Incline Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
   { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" }, best: { sets: 4, reps: 5, weight: 72.5, text: "72.5kg × 4×5" } },
-  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 12, weight: 28, text: "14kg each × 4×12" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
+  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
-  { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
+  { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 4, weight: 73, text: "73kg × 4×4" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
   { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 6, weight: 109, text: "109kg × 4×6" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
@@ -237,6 +237,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 15 Jul — Chest (07:35)
+  {
+    datetime: "2026-07-15T07:35", note: "Chest",
+    exercises: [
+      { name: "Chest Press Machine", sets: [ { reps: 4, weight: 73 }, { reps: 4, weight: 73 }, { reps: 4, weight: 73 }, { reps: 4, weight: 73 } ] },
+      { name: "Bench Press",         sets: [ { reps: 6, weight: 72.5 }, { reps: 6, weight: 72.5 }, { reps: 6, weight: 72.5 }, { reps: 6, weight: 72.5 } ] },
+      { name: "Incline Bench Press", sets: [ { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 }, { reps: 5, weight: 72.5 } ] },
+      { name: "Incline Pec Fly",     sets: [ { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 } ] },
+    ],
+  },
+
   // 13 Jul — Stretching / rehab session + planks (21:05)
   {
     datetime: "2026-07-13T21:05", note: "Stretching / rehab + planks",

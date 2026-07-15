@@ -2,9 +2,9 @@
   "date": "2026-07-15",
   "day_number": 18,
   "in_progress": true,
-  "workout_today": false,
-  "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "workout_today": true,
+  "workout_summary": "Chest, 07:35: Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 (PR); Incline bench press 72.5kg×4×5; Incline pec fly 18kg each×4×8 (ties best).",
+  "_status": "Day in progress — sleep + morning chest workout logged.",
   "items": [],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -18,7 +18,8 @@
   },
   "caffeine_shots": 0,
   "assumptions": [
-    "Sleep logged: 01:10-06:45, ~5.58h — below the 7-9h target band, late bedtime (post-buffet day), one continuous stretch, no fragmentation."
+    "Sleep logged: 01:10-06:45, ~5.58h — below the 7-9h target band, late bedtime (post-buffet day), one continuous stretch, no fragmentation.",
+    "07:35 Chest workout, logged to data.js WORKOUTS (followed the report's recommended Chest day). Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 — a PR (more reps at the same weight than the prior 72.5kg×4×5 best); Incline bench press 72.5kg×4×5 (below the 73kg×4×6 best, not a PR); Incline pec fly 18kg each×4×8 (ties existing best exactly). Re-ran sync_training_snapshot.mjs and mirrored the session into metrics/workouts.json. ACWR now 1.26 (caution zone); recommended next session is Arms day."
   ],
-  "status_note": "Day just opened. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Nothing else logged yet."
+  "status_note": "Day in progress. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best). Nothing else logged yet today."
 }

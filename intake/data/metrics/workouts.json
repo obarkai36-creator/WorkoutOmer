@@ -2,18 +2,18 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-07-15",
-    "latest_session": "Stretching / rehab + planks",
-    "sessions_logged": 29,
-    "sessions_per_week": 3.8,
+    "latest_session": "Chest",
+    "sessions_logged": 30,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 52.7,
     "aerobic_sessions_28d": 8,
     "avg_pace": "9:36/km",
     "avg_hr": 142,
-    "acwr": 1.01,
-    "recommended_next": "Chest day",
+    "acwr": 1.26,
+    "recommended_next": "Arms day",
     "alerts": [
-      "Push volume is 1.52× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
   },
   "entries": [
@@ -127,6 +127,14 @@
       "duration_min": 20,
       "intensity": "easy",
       "notes": "20 min stretching/rehab session, then plank 3×30s (bodyweight, first time logged).",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-15",
+      "type": "Strength — Chest",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 (PR — more reps at the same weight than the prior 72.5kg×4×5 best); Incline bench press 72.5kg×4×5; Incline pec fly 18kg each×4×8 (ties existing best). 07:35.",
       "_source": "manual log"
     }
   ]
