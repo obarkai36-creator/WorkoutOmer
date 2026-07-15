@@ -5,7 +5,10 @@
   "workout_today": true,
   "workout_summary": "Chest, 07:35: Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 (PR); Incline bench press 72.5kg×4×5; Incline pec fly 18kg each×4×8 (ties best).",
   "_status": "Day in progress — sleep + morning chest workout logged.",
-  "items": [],
+  "items": [
+    {"time": "07:15", "name": "Double espresso", "category": "drink", "qty": "1 double (80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "08:50", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "post-workout dose"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,10 +19,11 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 01:10-06:45, ~5.58h — below the 7-9h target band, late bedtime (post-buffet day), one continuous stretch, no fragmentation.",
-    "07:35 Chest workout, logged to data.js WORKOUTS (followed the report's recommended Chest day). Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 — a PR (more reps at the same weight than the prior 72.5kg×4×5 best); Incline bench press 72.5kg×4×5 (below the 73kg×4×6 best, not a PR); Incline pec fly 18kg each×4×8 (ties existing best exactly). Re-ran sync_training_snapshot.mjs and mirrored the session into metrics/workouts.json. ACWR now 1.26 (caution zone); recommended next session is Arms day."
+    "07:35 Chest workout, logged to data.js WORKOUTS (followed the report's recommended Chest day). Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 — a PR (more reps at the same weight than the prior 72.5kg×4×5 best); Incline bench press 72.5kg×4×5 (below the 73kg×4×6 best, not a PR); Incline pec fly 18kg each×4×8 (ties existing best exactly). Re-ran sync_training_snapshot.mjs and mirrored the session into metrics/workouts.json. ACWR now 1.26 (caution zone); recommended next session is Arms day.",
+    "07:15 double espresso (2 caffeine shots) and 08:50 creatine monohydrate (5g, post-workout) — both zero/near-zero kcal."
   ],
-  "status_note": "Day in progress. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best). Nothing else logged yet today."
+  "status_note": "Day in progress. Slept ~5.58h (01:10-06:45) — a short night, below the 7-9h target band, but one continuous stretch. Chest workout at 07:35 (Chest press machine, Bench press — new PR, Incline bench press, Incline pec fly — ties best), then a double espresso (07:15) and post-workout creatine (08:50, 5g). Running ~6 kcal, 2 caffeine shots — day otherwise just getting started."
 }
