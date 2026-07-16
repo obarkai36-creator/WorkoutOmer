@@ -15,17 +15,19 @@
     {"time": "13:00", "name": "Avocado, half", "category": "food", "qty": "0.5 avocado (~75 g)", "kcal": 120, "protein_g": 1.5, "carbs_g": 6.4, "fat_g": 11, "fiber_g": 5, "time_approx": true},
     {"time": "12:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:00", "name": "Snack — banana (small)", "category": "food", "qty": "1 small (~90 g)", "kcal": 78, "protein_g": 1, "carbs_g": 20, "fat_g": 0.3, "fiber_g": 2.2},
-    {"time": "14:25", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:25", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:50", "name": "Snack — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (25 g each, 50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0},
+    {"time": "15:50", "name": "Snack — cherry tomatoes", "category": "food", "qty": "15 (~255 g)", "kcal": 46, "protein_g": 2.3, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 3}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
-    "folate_mcg_dfe": 718,
+    "folate_mcg_dfe": 756,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 297.6,
+    "vitamin_c_mg": 333.3,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 15.4
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -36,7 +38,8 @@
     "10:15 single white chocolate-covered Oreo — estimated from standard White Fudge Covered Oreo values (~140 kcal per 2-cookie/29g serving), halved for one cookie.",
     "13:00 lunch (time not given, approximated): same Mi Casa Vietnamese-style noodle salad with chicken as 15 Jul, reusing yesterday's estimate, plus half an avocado (~75g, standard avocado values) added on the side.",
     "12:30 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target.",
-    "14:00 small banana (~90g) + 14:25 espresso (40ml, 1 caffeine shot)."
+    "14:00 small banana (~90g) + 14:25 espresso (40ml, 1 caffeine shot).",
+    "15:50 snack: 2 more Tnuva Emek Light yellow cheese slices + 15 cherry tomatoes (~255g). Added another round of lycopene/vitamin C/folate."
   ],
-  "status_note": "Day in progress. Slept ~5.42h (01:00-06:25) — a short night, below the 7-9h target band. Espresso at 08:00, breakfast at 09:25 (yellow cheese + cherry tomatoes), multivitamin at 10:00, a white chocolate Oreo at 10:15, omega-3 at 12:30, lunch at 13:00 (same Mi Casa noodle salad as yesterday + half an avocado), a small banana at 14:00, and another espresso at 14:25. Running ~1,075 kcal, ~87.6g protein, ~81.2g carb, ~45.75g fat, ~14.9g fiber, 2 caffeine shots."
+  "status_note": "Day in progress. Slept ~5.42h (01:00-06:25) — a short night, below the 7-9h target band. Espresso at 08:00, breakfast at 09:25 (yellow cheese + cherry tomatoes), multivitamin at 10:00, a white chocolate Oreo at 10:15, omega-3 at 12:30, lunch at 13:00 (same Mi Casa noodle salad as yesterday + half an avocado), a small banana at 14:00, another espresso at 14:25, and a cheese + tomato snack at 15:50. Running ~1,221 kcal, ~104.9g protein, ~91.2g carb, ~50.75g fat, ~17.9g fiber, 2 caffeine shots."
 }
