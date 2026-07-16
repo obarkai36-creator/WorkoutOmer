@@ -1,10 +1,10 @@
 {
   "date": "2026-07-16",
   "day_number": 19,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day in progress — sleep + morning espresso logged.",
+  "_status": "Day closed out. Full day logged: sleep, chest-workout-adjacent supplements, meals/snacks, multivitamin, omega-3, creatine.",
   "items": [
     {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:25", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0},
@@ -22,7 +22,8 @@
     {"time": "18:15", "name": "Dinner — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0},
     {"time": "18:15", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4.1},
     {"time": "18:15", "name": "Dinner — balsamic drizzle", "category": "food", "qty": "~1 tbsp (15 ml)", "kcal": 14, "protein_g": 0, "carbs_g": 2.7, "fat_g": 0, "fiber_g": 0, "note": "plain balsamic vinegar drizzle, not the full oil-based vinaigrette"},
-    {"time": "19:45", "name": "Post-dinner snack — watermelon", "category": "food", "qty": "750 g", "kcal": 225, "protein_g": 4.5, "carbs_g": 57, "fat_g": 1.1, "fiber_g": 3}
+    {"time": "19:45", "name": "Post-dinner snack — watermelon", "category": "food", "qty": "750 g", "kcal": 225, "protein_g": 4.5, "carbs_g": 57, "fat_g": 1.1, "fiber_g": 3},
+    {"time": "21:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -46,7 +47,8 @@
     "14:00 small banana (~90g) + 14:25 espresso (40ml, 1 caffeine shot).",
     "15:50 snack: 2 more Tnuva Emek Light yellow cheese slices + 15 cherry tomatoes (~255g). Added another round of lycopene/vitamin C/folate.",
     "18:15 dinner: 2 Agami Pita Pro spelt pitas + 4 Tnuva Emek Light yellow cheese slices + 20 cherry tomatoes (~340g) + a balsamic drizzle (~1 tbsp, plain vinegar — no oil, unlike the full vinaigrette recipe). Third and largest tomato serving of the day, pushing lycopene/vitamin C/folate well past target.",
-    "19:45 post-dinner snack: 750g watermelon — standard reference values, pushed lycopene well past target (~61mg vs 8mg target) on the back of tonight's tomatoes too."
+    "19:45 post-dinner snack: 750g watermelon — standard reference values, pushed lycopene well past target (~61mg vs 8mg target) on the back of tonight's tomatoes too.",
+    "21:00 creatine monohydrate, 5g — zero kcal/macros. End of day."
   ],
-  "status_note": "Day in progress. Slept ~5.42h (01:00-06:25) — a short night, below the 7-9h target band. Espresso at 08:00, breakfast at 09:25 (yellow cheese + cherry tomatoes), multivitamin at 10:00, a white chocolate Oreo at 10:15, omega-3 at 12:30, lunch at 13:00 (Mi Casa noodle salad + half an avocado), a small banana at 14:00, another espresso at 14:25, a cheese + tomato snack at 15:50, dinner at 18:15 (2 spelt pitas, 4 yellow cheese, 20 cherry tomatoes, balsamic drizzle), and 750g watermelon at 19:45. Running ~2,001 kcal, ~172.5g protein, ~202.2g carb, ~66.55g fat, ~43g fiber, 2 caffeine shots — protein and fiber targets both cleared comfortably."
+  "status_note": "Day complete. Slept ~5.42h (01:00-06:25) — a short night, below the 7-9h target band, third late-bedtime night in a row. Chest workout at 07:35 (Bench Press PR). Espresso at 08:00, breakfast at 09:25 (yellow cheese + cherry tomatoes), multivitamin at 10:00, a white chocolate Oreo at 10:15, omega-3 at 12:30, lunch at 13:00 (Mi Casa noodle salad + half an avocado), a small banana at 14:00, another espresso at 14:25, a cheese + tomato snack at 15:50, dinner at 18:15 (2 spelt pitas, 4 yellow cheese, 20 cherry tomatoes, balsamic drizzle), 750g watermelon at 19:45, and creatine at 21:00. Final totals: ~2,001 kcal, ~172.5g protein, ~202.2g carb, ~66.55g fat, ~43g fiber, 2 caffeine shots — protein and fiber targets both cleared comfortably; lycopene far over target on three tomato servings + watermelon."
 }
