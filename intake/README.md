@@ -20,9 +20,12 @@ data/metrics/sleep.json      # nightly sleep log (manual entry — Health Connec
 data/metrics/ejaculation.json # ejaculatory frequency log (date, time, self/partnered) — feeds the sperm score
 data/imports/                # drop CSV/JSON exports here, then run import_data.py
 generate_dashboard.py        # renders dashboards/<date>.html from the JSON above
+generate_monthly_recap.py    # renders dashboards/monthly/<YYYY-MM>.html — accumulated stats vs the prior month
+monthly_training_stats.mjs   # training-side stats for the recap, replaying engine.js "as of" a month's last day
 import_data.py               # merges data/imports/ files into the metrics stores
 sync_training_snapshot.mjs   # refreshes workouts.json's report_snapshot by running ../data.js + ../engine.js live
 dashboards/YYYY-MM-DD.html   # daily export — sent as a file in chat at end-of-day close-out
+dashboards/monthly/YYYY-MM.html # monthly recap — sent as a file in chat on the last day of the month, once closed
 ```
 
 ## Daily flow
@@ -52,6 +55,28 @@ dashboard itself is showing (rather than drifting out of sync).
 Status & progress · Weight & body composition · Sperm optimization (weekly) +
 Lifestyle log · Macros (today) · Sperm-priority micronutrients · Intake log ·
 Suggestions (unlocks after 14 logged days).
+
+## Monthly recap
+
+`generate_monthly_recap.py [YYYY-MM]` aggregates both dashboards' data across
+a full calendar month and compares it to the previous month: nutrition
+averages + protein-target adherence, weight trend, training (sessions, PRs,
+ACWR, push/pull balance — via `monthly_training_stats.mjs` replaying
+`../engine.js` as of that month's last day, same technique
+`sync_training_snapshot.mjs` uses for "now"), sperm/energy score averages +
+best/worst week, lifestyle (alcohol days, sleep, ejaculatory frequency), a
+month-vs-month table, and data-driven recommendations. Same visual system as
+the daily dashboard.
+
+**Only run this once the target month is actually over and its last day is
+closed out** (`in_progress: false`) — training-load stats are computed "as
+of" the month's last calendar day, so running it mid-month against a future
+date gives nonsense (e.g. ACWR crashing to 0 because no sessions exist yet
+between today and the fake future "now"). A Routine checks daily on the 28th
+through 31st of each month and, once the last day of the month is both
+(a) actually the last day and (b) closed out, runs this automatically and
+sends the result in chat — same chat-only delivery as the daily dashboard,
+never auto-emailed.
 
 ## Targets (editable in `profile.json`)
 
