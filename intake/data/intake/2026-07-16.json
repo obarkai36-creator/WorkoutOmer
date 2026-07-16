@@ -10,7 +10,9 @@
     {"time": "09:25", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0},
     {"time": "09:25", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4.1},
     {"time": "10:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "10:15", "name": "White chocolate-covered Oreo", "category": "food", "qty": "1 cookie (standard)", "kcal": 70, "protein_g": 0.5, "carbs_g": 9.5, "fat_g": 3, "fiber_g": 0.3, "note": "estimated from standard White Fudge Covered Oreo values (~140 kcal per 2-cookie/29g serving), halved for a single cookie"}
+    {"time": "10:15", "name": "White chocolate-covered Oreo", "category": "food", "qty": "1 cookie (standard)", "kcal": 70, "protein_g": 0.5, "carbs_g": 9.5, "fat_g": 3, "fiber_g": 0.3, "note": "estimated from standard White Fudge Covered Oreo values (~140 kcal per 2-cookie/29g serving), halved for a single cookie"},
+    {"time": "13:00", "name": "Lunch — Mi Casa (Herzliya) Vietnamese-style noodle salad with chicken", "category": "food", "qty": "1 large salad + chicken (same as 15 Jul lunch)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "time_approx": true, "note": "Same order as yesterday's lunch — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Reused yesterday's estimate."},
+    {"time": "13:00", "name": "Avocado, half", "category": "food", "qty": "0.5 avocado (~75 g)", "kcal": 120, "protein_g": 1.5, "carbs_g": 6.4, "fat_g": 11, "fiber_g": 5, "time_approx": true}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -28,7 +30,8 @@
     "08:00 espresso (40ml) — 1 caffeine shot, negligible kcal.",
     "09:25 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard tomato values). Tomatoes gave the day's first micros — lycopene ~8.8mg, vitamin C ~47.6mg, folate ~51mcg DFE.",
     "10:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority set to the verified supplement-fact values (zinc 15mg, selenium 200mcg, folate 667mcg DFE, vitamin C 250mg, vitamin D 2000IU, vitamin E 16.5mg) added on top of the tomatoes — zero kcal/macros.",
-    "10:15 single white chocolate-covered Oreo — estimated from standard White Fudge Covered Oreo values (~140 kcal per 2-cookie/29g serving), halved for one cookie."
+    "10:15 single white chocolate-covered Oreo — estimated from standard White Fudge Covered Oreo values (~140 kcal per 2-cookie/29g serving), halved for one cookie.",
+    "13:00 lunch (time not given, approximated): same Mi Casa Vietnamese-style noodle salad with chicken as 15 Jul, reusing yesterday's estimate, plus half an avocado (~75g, standard avocado values) added on the side."
   ],
-  "status_note": "Day in progress. Slept ~5.42h (01:00-06:25) — a short night, below the 7-9h target band. Espresso at 08:00, breakfast at 09:25 (yellow cheese + cherry tomatoes), multivitamin at 10:00, a white chocolate Oreo at 10:15. Running ~284 kcal, ~26.1g protein, ~22.8g carb, ~10.45g fat, ~4.4g fiber, 1 caffeine shot."
+  "status_note": "Day in progress. Slept ~5.42h (01:00-06:25) — a short night, below the 7-9h target band. Espresso at 08:00, breakfast at 09:25 (yellow cheese + cherry tomatoes), multivitamin at 10:00, a white chocolate Oreo at 10:15, and lunch at 13:00 (same Mi Casa noodle salad as yesterday + half an avocado). Running ~994 kcal, ~86.6g protein, ~61.2g carb, ~45.45g fat, ~12.7g fiber, 1 caffeine shot."
 }
