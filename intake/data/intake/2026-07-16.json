@@ -8,23 +8,25 @@
   "items": [
     {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:25", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0},
-    {"time": "09:25", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4.1}
+    {"time": "09:25", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4.1},
+    {"time": "10:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 51,
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 718,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 47.6,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 297.6,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
     "lycopene_mg": 8.8
   },
   "caffeine_shots": 1,
   "assumptions": [
     "Sleep logged: 01:00-06:25, ~5.42h — below the 7-9h target band, third late-bedtime night in a row, one continuous stretch, no fragmentation.",
     "08:00 espresso (40ml) — 1 caffeine shot, negligible kcal.",
-    "09:25 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard tomato values). Tomatoes gave the day's first micros — lycopene ~8.8mg, vitamin C ~47.6mg, folate ~51mcg DFE."
+    "09:25 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard tomato values). Tomatoes gave the day's first micros — lycopene ~8.8mg, vitamin C ~47.6mg, folate ~51mcg DFE.",
+    "10:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority set to the verified supplement-fact values (zinc 15mg, selenium 200mcg, folate 667mcg DFE, vitamin C 250mg, vitamin D 2000IU, vitamin E 16.5mg) added on top of the tomatoes — zero kcal/macros."
   ],
-  "status_note": "Day in progress. Slept ~5.42h (01:00-06:25) — a short night, below the 7-9h target band. Espresso at 08:00, then breakfast at 09:25 (yellow cheese + cherry tomatoes). Running ~214 kcal, ~25.6g protein, ~13.3g carb, ~7.45g fat, ~4.1g fiber, 1 caffeine shot."
+  "status_note": "Day in progress. Slept ~5.42h (01:00-06:25) — a short night, below the 7-9h target band. Espresso at 08:00, breakfast at 09:25 (yellow cheese + cherry tomatoes), multivitamin at 10:00. Running ~214 kcal, ~25.6g protein, ~13.3g carb, ~7.45g fat, ~4.1g fiber, 1 caffeine shot — micros already well covered early in the day."
 }
