@@ -1,19 +1,19 @@
 {
   "date": "2026-07-17",
   "day_number": 20,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "_status": "Day closed out. Nutrition/calorie tracking skipped for the day (too many variables); sleep, weigh-in, caffeine, and supplements logged.",
   "items": [],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 667,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 250,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
     "lycopene_mg": 0
   },
   "caffeine_shots": 2,
@@ -29,7 +29,8 @@
     "Eufy weigh-in at 07:45 logged to data/metrics/weight.json: 81.55 kg, BMI 27.8, body fat 27.3%, body fat mass 22.20 kg, skeletal muscle mass 30.90 kg, visceral fat 11.0, muscle mass 56.30 kg, lean body mass 59.40 kg, bone mass 3.00 kg, protein 15.3%, subcutaneous fat 24.0%, water 49.7%, BMR 1726 kcal, resting HR 79 bpm, body age 29, body type Muscular Overweight (unchanged). vs. 13 Jul: weight +0.55 kg, body fat +0.2pp, resting HR +19 bpm — within normal fluctuation for weight/body fat, but the HR jump is notable (worth watching, may reflect the short-sleep stretch just before this reading rather than a real fitness change). Cross-synced into data.js BODYWEIGHT and refreshed ATHLETE.bodyweightKg (81.00 → 81.55 kg).",
     "User called the day off from calorie/nutrition tracking — too many variables today. Only supplements and sleep are being logged; food/drink items are intentionally not itemized (macros panel marked 'Not tracked'). Double espresso at 07:50 is a caffeine-shot count only (caffeine_shots: 2), not a nutrition line item.",
     "14:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target.",
-    "17:00 creatine monohydrate, 5g — zero kcal/macros."
+    "17:00 creatine monohydrate, 5g — zero kcal/macros.",
+    "20:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority set to the verified supplement-fact values (zinc 15mg, selenium 200mcg, folate 667mcg DFE, vitamin C 250mg, vitamin D 2000IU, vitamin E 16.5mg) — zero kcal/macros. End of day."
   ],
-  "status_note": "Slept ~8.83h (22:30-07:20) — a long, solid night, squarely in the 7-9h target band. Weigh-in: 81.55 kg (+0.55 kg vs 13 Jul), body fat 27.3%. Nutrition/calorie tracking is off for today (too many variables) — only supplements and sleep are being logged. 2 caffeine shots so far (double espresso, 07:50); omega-3 at 14:00; creatine 5g at 17:00."
+  "status_note": "Day closed out. Slept ~8.83h (22:30-07:20) — a long, solid night, squarely in the 7-9h target band. Weigh-in: 81.55 kg (+0.55 kg vs 13 Jul), body fat 27.3%. Nutrition/calorie tracking was skipped for the day (too many variables) — only supplements and sleep logged. Double espresso at 07:50 (2 caffeine shots), omega-3 at 14:00, creatine 5g at 17:00, multivitamin at 20:00."
 }
