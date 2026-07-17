@@ -5,7 +5,9 @@
   "workout_today": false,
   "workout_summary": null,
   "_status": "Day just opened — sleep logged.",
-  "items": [],
+  "items": [
+    {"time": "07:50", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,9 +18,11 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "assumptions": [
-    "Sleep logged: 22:30-07:20, ~8.83h — squarely in the 7-9h target band, a strong bounce-back after three consecutive short/late nights."
+    "Sleep logged: 22:30-07:20, ~8.83h — squarely in the 7-9h target band, a strong bounce-back after three consecutive short/late nights.",
+    "Eufy weigh-in at 07:45 logged to data/metrics/weight.json: 81.55 kg, BMI 27.8, body fat 27.3%, body fat mass 22.20 kg, skeletal muscle mass 30.90 kg, visceral fat 11.0, muscle mass 56.30 kg, lean body mass 59.40 kg, bone mass 3.00 kg, protein 15.3%, subcutaneous fat 24.0%, water 49.7%, BMR 1726 kcal, resting HR 79 bpm, body age 29, body type Muscular Overweight (unchanged). vs. 13 Jul: weight +0.55 kg, body fat +0.2pp, resting HR +19 bpm — within normal fluctuation for weight/body fat, but the HR jump is notable (worth watching, may reflect the short-sleep stretch just before this reading rather than a real fitness change). Cross-synced into data.js BODYWEIGHT and refreshed ATHLETE.bodyweightKg (81.00 → 81.55 kg).",
+    "07:50: double espresso."
   ],
-  "status_note": "Day just opened. Slept ~8.83h (22:30-07:20) — a long, solid night, squarely in the 7-9h target band. Nothing else logged yet."
+  "status_note": "Slept ~8.83h (22:30-07:20) — a long, solid night, squarely in the 7-9h target band. Weigh-in: 81.55 kg (+0.55 kg vs 13 Jul), body fat 27.3%. Double espresso at 07:50 (caffeine_shots: 1). Awaiting details on the homemade rolled item before logging it."
 }
