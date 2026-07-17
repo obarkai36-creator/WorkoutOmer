@@ -33,7 +33,7 @@ so the nutrition dashboard's weight trend + Training panel stay current.
 |-------|---------------|
 | 🔥 **Muscle Fatigue** | Current fatigue % per body section (Push / Pull / Legs / Core / Aerobic) and per muscle, from recent volume decaying over each muscle's recovery window. |
 | 📈 **Workload Progress** | Every tracked lift, grouped by muscle group: latest vs. your personal best (as a % bar), PR stars, and which lifts you're currently below best on. Lifts in today's session are dotted (●). |
-| 🎯 **Next Session** | The most-recovered muscle group to train next, how long to rest first, the earliest sensible slot, and a suggested exercise list. |
+| 🎯 **Next Session** | The most-recovered muscle group to train next, how long to rest first, the earliest sensible slot, and a suggested exercise list ordered/annotated for program balance (push/pull, quad/ham) and current training load — not just "beat your best everywhere." |
 | ⚠️ **Injury Alerts** | Acute:chronic workload ratio (load spikes), under-recovered muscles trained too soon, big single-lift jumps, and push/pull imbalance. |
 | 🛠️ **Suggested Changes** | Programming tweaks — fix imbalances, address stalled lifts, hit neglected muscles, aerobic dose, load management. |
 | 🕒 **Workout Timing** | Sessions/week, average rest gap, typical time of day, day-of-week pattern, and a 6-week training-load trend. |

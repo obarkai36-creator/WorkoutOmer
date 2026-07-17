@@ -244,7 +244,7 @@ function loadTrends(workouts, ref, now) {
 }
 
 /* ---- next recommended session --------------------------------------------- */
-function recommendSession(data, workouts, sectionFat, now) {
+function recommendSession(data, workouts, sectionFat, now, bal, trends) {
   const muscles = data.MUSCLES;
   // Trainable sections = those with at least one strength exercise in the snapshot.
   const trainable = [...new Set(data.SNAPSHOT.map((e) => e.section))]
@@ -263,8 +263,16 @@ function recommendSession(data, workouts, sectionFat, now) {
     }
   }
 
-  // Sensible tie-break priority when several sections are equally recovered.
+  // Sensible tie-break priority when several sections are equally recovered —
+  // nudged by the program-wide push/pull balance so a corrective section wins
+  // ties instead of the fixed default order. Physiological readiness (sorted
+  // first, below) always outranks this: balance never pulls in an unrecovered
+  // muscle, it only breaks ties among sections that are already comparably ready.
   const priority = { Legs: 0, Back: 1, Shoulders: 2, Chest: 3, Arms: 4 };
+  if (bal && bal.pushPull != null) {
+    if (bal.pushPull > 1.3) { priority.Back = -1; priority.Chest = 5; }
+    else if (bal.pushPull < 0.7) { priority.Chest = -1; priority.Back = 5; }
+  }
   const ranked = trainable
     .map((s) => ({
       section: s,
@@ -281,15 +289,46 @@ function recommendSession(data, workouts, sectionFat, now) {
 
   const pick = ranked[0];
   const restHours = pick.readyInHours;
-  // Recommended lifts for the picked section, each with your current best +
-  // est 1RM, so you have a target to hit/beat during the session.
-  const suggestedExercises = data.SNAPSHOT
+
+  // Exercises for the picked section, each with your current best + est 1RM
+  // (kept as reference, not the goal in itself) — ordered and annotated below
+  // to reflect what actually keeps the program balanced this session.
+  let suggestedExercises = data.SNAPSHOT
     .filter((e) => e.section === pick.section)
-    .slice(0, 7)
     .map((e) => {
       const B = recStats(e.best, e.iso);
-      return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso };
+      const lib = data.EXERCISE_LIBRARY[e.name];
+      return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso, lib };
     });
+
+  const guidance = [];
+  if (pick.section === "Legs" && bal && bal.quadHam != null && bal.quadHam > 2.5) {
+    const hamBias = (e) => (e.lib?.muscles?.hamstrings || 0) - (e.lib?.muscles?.quads || 0);
+    suggestedExercises.sort((a, b) => hamBias(b) - hamBias(a));
+    guidance.push(`Quads are outpacing hamstrings ${bal.quadHam}× across the program — lead with RDLs / leg curls / glute-hamstring work today rather than quad-dominant lifts.`);
+  } else if (pick.section === "Arms" && bal && bal.pushPull != null) {
+    const armBias = (e) => (e.lib?.muscles?.biceps || 0) - (e.lib?.muscles?.triceps || 0);
+    if (bal.pushPull > 1.3) {
+      suggestedExercises.sort((a, b) => armBias(b) - armBias(a));
+      guidance.push(`Push is ahead of pull ${bal.pushPull}× program-wide — favor biceps/curl work over triceps today.`);
+    } else if (bal.pushPull < 0.7) {
+      suggestedExercises.sort((a, b) => armBias(a) - armBias(b));
+      guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — favor triceps/press work over curls today.`);
+    }
+  } else if (pick.section === "Back" && bal && bal.pushPull != null && bal.pushPull > 1.3) {
+    guidance.push(`Push is ahead of pull ${bal.pushPull}× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short.`);
+  } else if (pick.section === "Chest" && bal && bal.pushPull != null && bal.pushPull < 0.7) {
+    guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — good timing for a push day.`);
+  }
+  suggestedExercises = suggestedExercises.slice(0, 7).map(({ lib, ...rest }) => rest);
+
+  if (trends && trends.acwrZone === "danger")
+    guidance.push(`Load ratio ${trends.acwr} is in the danger zone — keep weight/sets flat this session, no PR attempts.`);
+  else if (trends && trends.acwrZone === "caution")
+    guidance.push(`Load ratio ${trends.acwr} is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR.`);
+  else if (trends && trends.acwrZone === "detraining")
+    guidance.push(`Load ratio ${trends.acwr} has dipped — a normal, or even a slightly harder, session is fine.`);
+
   const aerobicLast7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
   const lastAerobic = workouts.find((w) => w.isAerobic);
 
@@ -301,7 +340,7 @@ function recommendSession(data, workouts, sectionFat, now) {
     readyAt: new Date(now + restHours * HOUR),
     neverLogged: pick.daysSince == null,
     daysSince: pick.daysSince,
-    suggestedExercises, ranked,
+    suggestedExercises, guidance, ranked,
     aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
     daysSinceAerobic: lastAerobic ? round((now - lastAerobic.t) / DAY, 1) : null,
   };
@@ -503,7 +542,7 @@ function analyze(data, now = Date.now()) {
   const progress = snapshotProgress(data, workouts);
   const bal = balance(data);
   const trends = loadTrends(workouts, ref, now);
-  const recommendation = recommendSession(data, workouts, sections, now);
+  const recommendation = recommendSession(data, workouts, sections, now, bal, trends);
   const alerts = injuryAlerts(data, fatigue, trends, bal, recommendation, now);
   const changes = suggestedChanges(data, progress, bal, recommendation);
   const timing = timingStats(workouts, now);

@@ -112,7 +112,10 @@
         <div class="big">${r.section} day</div>
         <div class="rest">${restTxt}</div>
         <div class="when">${r.readyNow ? "Earliest sensible slot: now" : "Ready around " + fmtWhen(r.readyAt)} &middot; ${r.neverLogged ? "no " + r.section.toLowerCase() + " session logged yet" : "last " + r.section.toLowerCase() + " " + r.daysSince + "d ago"}</div>
-        <div class="small muted" style="margin-top:12px;margin-bottom:2px">Suggested lifts &middot; your best (target to beat)</div>
+        ${r.guidance && r.guidance.length ? `
+        <div class="small muted" style="margin-top:12px;margin-bottom:2px">SESSION FOCUS</div>
+        ${r.guidance.map((g) => `<div class="small" style="margin-bottom:4px">${g}</div>`).join("")}` : ""}
+        <div class="small muted" style="margin-top:12px;margin-bottom:2px">Suggested lifts &middot; reference: your current best</div>
         <div class="reco-lifts">
           ${r.suggestedExercises.map((e) => `
             <div class="reco-lift">
