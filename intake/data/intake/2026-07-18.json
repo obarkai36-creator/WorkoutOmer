@@ -5,7 +5,9 @@
   "workout_today": false,
   "workout_summary": null,
   "_status": "Day just opened — sleep logged.",
-  "items": [],
+  "items": [
+    {"time": "10:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,10 +18,11 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:15-09:00, ~9.75h — just above the 7-9h target band, a strong recovery night.",
-    "Eufy weigh-in at 10:00 logged to data/metrics/weight.json: 81.25 kg, BMI 27.7, body fat 27.2% (flagged extremely high by the app), body fat mass 22.00 kg, skeletal muscle mass 30.80 kg, visceral fat 11.0, muscle mass 56.20 kg, lean body mass 59.30 kg, bone mass 3.00 kg, protein 15.3% (flagged low), subcutaneous fat 23.9%, water 49.8%, BMR 1722 kcal, resting HR 62 bpm (back to standard/green), body age 29, body type Muscular Overweight (unchanged). vs. 17 Jul: weight -0.30 kg, body fat -0.1pp — both flat/slightly down, and resting HR dropped 17 bpm back to a normal range, confirming yesterday's 79 bpm reading was likely a short-sleep-related blip rather than a real trend. Cross-synced into data.js BODYWEIGHT and refreshed ATHLETE.bodyweightKg (81.55 → 81.25 kg)."
+    "Eufy weigh-in at 10:00 logged to data/metrics/weight.json: 81.25 kg, BMI 27.7, body fat 27.2% (flagged extremely high by the app), body fat mass 22.00 kg, skeletal muscle mass 30.80 kg, visceral fat 11.0, muscle mass 56.20 kg, lean body mass 59.30 kg, bone mass 3.00 kg, protein 15.3% (flagged low), subcutaneous fat 23.9%, water 49.8%, BMR 1722 kcal, resting HR 62 bpm (back to standard/green), body age 29, body type Muscular Overweight (unchanged). vs. 17 Jul: weight -0.30 kg, body fat -0.1pp — both flat/slightly down, and resting HR dropped 17 bpm back to a normal range, confirming yesterday's 79 bpm reading was likely a short-sleep-related blip rather than a real trend. Cross-synced into data.js BODYWEIGHT and refreshed ATHLETE.bodyweightKg (81.55 → 81.25 kg).",
+    "10:10 double espresso (40ml)."
   ],
-  "status_note": "Slept ~9.75h (23:15-09:00) — a very long, solid night, just above the 7-9h target band. Weigh-in: 81.25 kg (-0.30 kg vs 17 Jul), body fat 27.2%, resting HR back down to 62 bpm (confirms yesterday's 79 bpm was a short-sleep blip)."
+  "status_note": "Slept ~9.75h (23:15-09:00) — a very long, solid night, just above the 7-9h target band. Weigh-in: 81.25 kg (-0.30 kg vs 17 Jul), body fat 27.2%, resting HR back down to 62 bpm (confirms yesterday's 79 bpm was a short-sleep blip). Double espresso at 10:10 (caffeine_shots: 2)."
 }
