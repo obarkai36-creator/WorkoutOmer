@@ -15,7 +15,8 @@
     {"time": "13:30", "name": "Lunch — baked red onion", "category": "food", "qty": "0.5 large red onion, ~85 g", "kcal": 43, "protein_g": 0.9, "carbs_g": 8.5, "fat_g": 1.7, "fiber_g": 1.7, "time_approx": true, "note": "side dish, separate from the salad's onion — estimate, not weighed"},
     {"time": "13:30", "name": "Lunch — baked cherry tomatoes", "category": "food", "qty": "7", "kcal": 41, "protein_g": 1.2, "carbs_g": 5.8, "fat_g": 1.8, "fiber_g": 1.8, "time_approx": true, "note": "side dish, separate from the salad's tomatoes"},
     {"time": "16:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:05", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:05", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:30", "name": "Honeydew melon", "category": "food", "qty": "350 g", "kcal": 125, "protein_g": 1.8, "carbs_g": 32, "fat_g": 0.3, "fiber_g": 3, "note": "same per-100g reference as the 11 Jul honeydew snack"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 16.3,
@@ -38,7 +39,8 @@
     "Salad recipe structure matches 11 Jul exactly except 30 cherry tomatoes (vs 35) and a 0.7 portion eaten (vs 0.75) — scaled from that day's per-ingredient math.",
     "Fish and tomatoes are today's food-based micro drivers: ~500mg omega-3 and ~121mcg selenium + 200IU vitamin D from the 250g denis fish (same per-100g fish-micro rate implied by the 11 Jul day's totals); ~12.3mg lycopene + ~67mg vitamin C + ~72mcg folate DFE from today's cherry tomatoes (salad + baked side), on top of this morning's watermelon lycopene.",
     "16:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
-    "16:05 double espresso (40ml)."
+    "16:05 double espresso (40ml).",
+    "16:30 honeydew melon, 350g — same per-100g reference as the 11 Jul snack (35.8kcal/100g)."
   ],
-  "status_note": "Slept ~9.75h (23:15-09:00) — a very long, solid night, just above the 7-9h target band. Weigh-in: 81.25 kg (-0.30 kg vs 17 Jul), body fat 27.2%, resting HR back down to 62 bpm (confirms yesterday's 79 bpm was a short-sleep blip). Double espresso at 10:10, a big lunch at 13:30 (potatoes in olive oil, 250g denis fish baked with butter, 0.7 of a lettuce/tomato/onion/mozzarella salad with homemade vinaigrette, plus baked onion and tomatoes), multivitamin at 16:00, and another double espresso at 16:05 (4 caffeine shots so far) — fish driving omega-3/selenium/vitamin D, tomatoes driving lycopene/vitamin C/folate, multivitamin topping off the rest."
+  "status_note": "Slept ~9.75h (23:15-09:00) — a very long, solid night, just above the 7-9h target band. Weigh-in: 81.25 kg (-0.30 kg vs 17 Jul), body fat 27.2%, resting HR back down to 62 bpm (confirms yesterday's 79 bpm was a short-sleep blip). Double espresso at 10:10, a big lunch at 13:30 (potatoes in olive oil, 250g denis fish baked with butter, 0.7 of a lettuce/tomato/onion/mozzarella salad with homemade vinaigrette, plus baked onion and tomatoes), multivitamin and another double espresso at 16:00/16:05, and 350g honeydew melon at 16:30 (4 caffeine shots so far) — fish driving omega-3/selenium/vitamin D, tomatoes driving lycopene/vitamin C/folate, multivitamin topping off the rest."
 }
