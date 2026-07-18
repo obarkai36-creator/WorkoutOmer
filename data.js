@@ -181,7 +181,7 @@ const SNAPSHOT = [
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
   { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 9, weight: 52, text: "26kg each × 4×9" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
   { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" }, best: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" } },
-  { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 1, seconds: 30, weight: 81.4, text: "30 sec × 1" }, best: { sets: 3, seconds: 20, weight: 78, text: "20 sec × 3" } },
+  { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 3, seconds: 20, weight: 81.25, text: "20 sec × 3" }, best: { sets: 3, seconds: 20, weight: 81.25, text: "20 sec × 3" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 82, text: "82kg × 4×6" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
@@ -202,11 +202,11 @@ const SNAPSHOT = [
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" } },
 
   // ---- Arms: Biceps / Forearms ----
-  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 8, weight: 16, text: "16kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" } },
-  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 6, weight: 16, text: "16kg each × 4×6" }, best: { sets: 4, reps: 5, weight: 18, text: "18kg each × 4×5" } },
+  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" } },
+  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 5, weight: 18, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 18, text: "18kg each × 4×5" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
-  { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
+  { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 2, reps: 6, weight: 45, text: "45kg × 2×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
   { name: "Half Curl",            section: "Arms", latest: { sets: 4, reps: 6, weight: 32, text: "16kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 32, text: "16kg each × 4×6" } },
   { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" } },
 
@@ -232,7 +232,7 @@ const SNAPSHOT = [
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
 
   // ---- Core ----
-  { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 30, weight: 81, text: "BW × 3×30s" }, best: { sets: 3, seconds: 30, weight: 81, text: "BW × 3×30s" } },
+  { name: "Plank", section: "Core", iso: true, latest: { sets: 1, seconds: 45, weight: 81.25, text: "BW × 1×45s" }, best: { sets: 3, seconds: 30, weight: 81, text: "BW × 3×30s" } },
 ];
 
 /* ---- WORKOUTS — dated sessions (newest first) ------------------------------
@@ -245,6 +245,20 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 18 Jul — Arms (18:20, followed the report's recommended Arms day)
+  {
+    datetime: "2026-07-18T18:20", note: "Arms",
+    exercises: [
+      { name: "Incline Hammer Curl", sets: [ { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 } ] },
+      { name: "Incline DB Curl",     sets: [ { reps: 5, weight: 18 }, { reps: 5, weight: 18 }, { reps: 5, weight: 18 }, { reps: 5, weight: 18 } ] },
+      { name: "Half Curl",           sets: [ { reps: 6, weight: 32 }, { reps: 6, weight: 32 }, { reps: 6, weight: 32 }, { reps: 6, weight: 32 } ] },
+      { name: "Forearm Twists",      sets: [ { reps: 10, weight: 24 }, { reps: 10, weight: 24 }, { reps: 10, weight: 24 }, { reps: 10, weight: 24 } ] },
+      { name: "Dead Hang",           sets: [ { seconds: 20 }, { seconds: 20 }, { seconds: 20 } ] },
+      { name: "Biceps Curl Machine", sets: [ { reps: 6, weight: 45 }, { reps: 6, weight: 45 } ] },
+      { name: "Plank",               sets: [ { seconds: 45 } ] },
+    ],
+  },
+
   // 15 Jul — Chest (07:35)
   {
     datetime: "2026-07-15T07:35", note: "Chest",

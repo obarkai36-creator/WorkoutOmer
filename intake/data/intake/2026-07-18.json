@@ -2,9 +2,9 @@
   "date": "2026-07-18",
   "day_number": 21,
   "in_progress": true,
-  "workout_today": false,
-  "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "workout_today": true,
+  "workout_summary": "Arms, 18:20 (followed the report's recommended Arms day): Incline hammer curl 18kg each×4×8 (ties best); Incline DB curl 18kg each×4×5 (ties best); Half curl 16kg each×4×6 (ties best); Forearm twists 12kg each×4×10 (ties best); Dead hang 20s×3 (PR — same duration as prior best but at a heavier bodyweight, 81.25kg); Biceps curl machine 45kg×2×6 (fewer sets, not a PR); Plank 45s×1 (longer single hold, lower total volume than the 3×30s best).",
+  "_status": "Arms workout logged (Dead Hang PR); day still open.",
   "items": [
     {"time": "10:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "10:25", "name": "Watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.45, "fiber_g": 1.2},
@@ -40,7 +40,8 @@
     "Fish and tomatoes are today's food-based micro drivers: ~500mg omega-3 and ~121mcg selenium + 200IU vitamin D from the 250g denis fish (same per-100g fish-micro rate implied by the 11 Jul day's totals); ~12.3mg lycopene + ~67mg vitamin C + ~72mcg folate DFE from today's cherry tomatoes (salad + baked side), on top of this morning's watermelon lycopene.",
     "16:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
     "16:05 double espresso (40ml).",
-    "16:30 honeydew melon, 350g — same per-100g reference as the 11 Jul snack (35.8kcal/100g)."
+    "16:30 honeydew melon, 350g — same per-100g reference as the 11 Jul snack (35.8kcal/100g).",
+    "18:20 Arms workout, logged to data.js WORKOUTS (followed the report's recommended Arms day). Incline hammer curl 18kg each×4×8, Incline DB curl 18kg each×4×5, Half curl 16kg each×4×6, and Forearm twists 12kg each×4×10 all tied their existing bests exactly. Dead hang 20s×3 is a PR — same duration/sets as the prior best but held at today's heavier bodyweight (81.25kg vs 78kg), which raises the iso load-time total. Biceps curl machine 45kg×2×6 (only 2 sets vs the 3×6 best, not a PR). Plank 45s×1 — a longer single hold than the 3×30s best, but lower total load-time, so not a PR. Re-ran sync_training_snapshot.mjs and mirrored the session into metrics/workouts.json. ACWR jumped to 1.7 (danger zone, up from 1.39) — flagged by the dashboard to hold volume flat or deload next session; recommended next session is now Back day (also favored by the push/pull balance logic, since push is 1.43× pull program-wide)."
   ],
-  "status_note": "Slept ~9.75h (23:15-09:00) — a very long, solid night, just above the 7-9h target band. Weigh-in: 81.25 kg (-0.30 kg vs 17 Jul), body fat 27.2%, resting HR back down to 62 bpm (confirms yesterday's 79 bpm was a short-sleep blip). Double espresso at 10:10, a big lunch at 13:30 (potatoes in olive oil, 250g denis fish baked with butter, 0.7 of a lettuce/tomato/onion/mozzarella salad with homemade vinaigrette, plus baked onion and tomatoes), multivitamin and another double espresso at 16:00/16:05, and 350g honeydew melon at 16:30 (4 caffeine shots so far) — fish driving omega-3/selenium/vitamin D, tomatoes driving lycopene/vitamin C/folate, multivitamin topping off the rest."
+  "status_note": "Slept ~9.75h (23:15-09:00) — a very long, solid night, just above the 7-9h target band. Weigh-in: 81.25 kg (-0.30 kg vs 17 Jul), body fat 27.2%, resting HR back down to 62 bpm (confirms yesterday's 79 bpm was a short-sleep blip). Double espresso at 10:10, a big lunch at 13:30 (potatoes in olive oil, 250g denis fish baked with butter, 0.7 of a lettuce/tomato/onion/mozzarella salad with homemade vinaigrette, plus baked onion and tomatoes), multivitamin and another double espresso at 16:00/16:05, 350g honeydew melon at 16:30, and an Arms workout at 18:20 (Dead Hang PR at heavier bodyweight; 4 exercises tied bests) — fish driving omega-3/selenium/vitamin D, tomatoes driving lycopene/vitamin C/folate. ACWR now in the danger zone (1.7) — next session should hold volume flat or deload; recommended next is Back day."
 }
