@@ -1,18 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-07-17",
+    "report_date": "2026-07-18",
     "latest_session": "Chest",
     "sessions_logged": 30,
-    "sessions_per_week": 4,
+    "sessions_per_week": 3.8,
     "typical_time": "afternoon",
     "aerobic_28d_km": 52.7,
     "aerobic_sessions_28d": 8,
     "avg_pace": "9:36/km",
     "avg_hr": 142,
-    "acwr": 1.23,
+    "acwr": 1.39,
     "recommended_next": "Arms day",
     "alerts": [
+      "Load ratio 1.39 (sweet spot 0.8–1.3). Keep added volume under ~10% next week.",
       "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
   },

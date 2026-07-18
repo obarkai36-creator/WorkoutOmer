@@ -16,7 +16,7 @@
 
 const ATHLETE = {
   name: "Omer",
-  bodyweightKg: 81.55, // most recent weigh-in (see BODYWEIGHT log)
+  bodyweightKg: 81.25, // most recent weigh-in (see BODYWEIGHT log)
   units: { weight: "kg", distance: "km" },
   weeklyTarget: { strengthSessions: 5, aerobicSessions: 2 },
 };
@@ -25,6 +25,7 @@ const ATHLETE = {
  * Used for relative-strength denominators, bodyweight-exercise load, and the
  * weight trend shown on the Relative Strength panel. */
 const BODYWEIGHT = [
+  { datetime: "2026-07-18T10:00", kg: 81.25 },
   { datetime: "2026-07-17T07:45", kg: 81.55 },
   { datetime: "2026-07-13T00:00", kg: 81.0 },
   { datetime: "2026-07-11T12:10", kg: 80.95 },
