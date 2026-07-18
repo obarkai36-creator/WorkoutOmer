@@ -1,10 +1,10 @@
 {
   "date": "2026-07-18",
   "day_number": 21,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Arms, 18:20 (followed the report's recommended Arms day): Incline hammer curl 18kg each×4×8 (ties best); Incline DB curl 18kg each×4×5 (ties best); Half curl 16kg each×4×6 (ties best); Forearm twists 12kg each×4×10 (ties best); Dead hang 20s×3 (PR — same duration as prior best but at a heavier bodyweight, 81.25kg); Biceps curl machine 45kg×2×6 (fewer sets, not a PR); Plank 45s×1 (longer single hold, lower total volume than the 3×30s best).",
-  "_status": "Arms workout logged (Dead Hang PR); day still open.",
+  "_status": "Day closed out. Arms workout (Dead Hang PR), weigh-in, and a full day of food/drink/supplements logged.",
   "items": [
     {"time": "10:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "10:25", "name": "Watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.45, "fiber_g": 1.2},
@@ -23,7 +23,9 @@
     {"time": "19:35", "name": "Dinner — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0, "note": "same estimate as prior sunny-side-up egg entries"},
     {"time": "19:35", "name": "Dinner — white cabbage salad in lemon", "category": "food", "qty": "125 g", "kcal": 35, "protein_g": 1.7, "carbs_g": 8, "fat_g": 0.2, "fiber_g": 3, "note": "standard raw cabbage values + lemon juice (no oil mentioned) — estimate, not weighed"},
     {"time": "20:25", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "21:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "21:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "22:30", "name": "Red grapes", "category": "food", "qty": "20", "kcal": 69, "protein_g": 0.6, "carbs_g": 18, "fat_g": 0.2, "fiber_g": 0.9, "note": "same per-grape reference as prior green-grape entries (nutritionally near-identical)"},
+    {"time": "22:30", "name": "Yellow cheese, 9% fat", "category": "food", "qty": "2 slices (25 g each, 50 g)", "kcal": 101, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified reference, reused"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 16.3,
@@ -51,7 +53,8 @@
     "18:20 Arms workout, logged to data.js WORKOUTS (followed the report's recommended Arms day). Incline hammer curl 18kg each×4×8, Incline DB curl 18kg each×4×5, Half curl 16kg each×4×6, and Forearm twists 12kg each×4×10 all tied their existing bests exactly. Dead hang 20s×3 is a PR — same duration/sets as the prior best but held at today's heavier bodyweight (81.25kg vs 78kg), which raises the iso load-time total. Biceps curl machine 45kg×2×6 (only 2 sets vs the 3×6 best, not a PR). Plank 45s×1 — a longer single hold than the 3×30s best, but lower total load-time, so not a PR. Re-ran sync_training_snapshot.mjs and mirrored the session into metrics/workouts.json. ACWR jumped to 1.7 (danger zone, up from 1.39) — flagged by the dashboard to hold volume flat or deload next session; recommended next session is now Back day (also favored by the push/pull balance logic, since push is 1.43× pull program-wide).",
     "Dinner logged from description (no photo): 2 Agami Pita Pro spelt pitas + 2 Tnuva Emek Light yellow cheese slices (both verified references, reused) + 2 spoons Simfonia 5% cheese spread (~40-60g, recurring estimate doubled from the 29 Jun/3 Jul per-spoon value) + 2 sunny side up eggs (same estimate as prior egg entries) + 125g white cabbage salad in lemon (standard raw cabbage values, no oil mentioned — estimate). Post-workout, high-protein dinner.",
     "20:25 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, on top of the ~500mg already from today's denis fish, bringing the day's total to 1500mg.",
-    "21:45 creatine monohydrate, 5g — zero kcal/macros. Post-workout day."
+    "21:45 creatine monohydrate, 5g — zero kcal/macros. Post-workout day.",
+    "22:30 end-of-day snack: 20 red grapes (~69 kcal, same per-grape reference as prior green-grape entries) + 2 more yellow cheese slices (101 kcal, verified reference). End of day."
   ],
-  "status_note": "Slept ~9.75h (23:15-09:00) — a very long, solid night, just above the 7-9h target band. Weigh-in: 81.25 kg (-0.30 kg vs 17 Jul), body fat 27.2%, resting HR back down to 62 bpm (confirms yesterday's 79 bpm was a short-sleep blip). Double espresso at 10:10, a big lunch at 13:30 (potatoes in olive oil, 250g denis fish baked with butter, 0.7 of a lettuce/tomato/onion/mozzarella salad with homemade vinaigrette, plus baked onion and tomatoes), multivitamin and another double espresso at 16:00/16:05, 350g honeydew melon at 16:30, an Arms workout at 18:20 (Dead Hang PR at heavier bodyweight; 4 exercises tied bests), dinner at 19:35 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 2 fried eggs, white cabbage salad in lemon), omega-3 at 20:25 (1500mg total today, fish + supplement), and creatine 5g at 21:45 — fish driving omega-3/selenium/vitamin D, tomatoes driving lycopene/vitamin C/folate. ACWR now in the danger zone (1.7) — next session should hold volume flat or deload; recommended next is Back day."
+  "status_note": "Day complete. Slept ~9.75h (23:15-09:00) — a long, solid recovery night. Weigh-in: 81.25 kg (-0.30 kg vs 17 Jul), body fat 27.2%, resting HR back down to 62 bpm. Double espresso at 10:10, a big lunch at 13:30 (potatoes in olive oil, 250g denis fish baked with butter, lettuce/tomato/onion/mozzarella salad with homemade vinaigrette, baked onion and tomatoes), multivitamin and another double espresso at 16:00/16:05, 350g honeydew melon at 16:30, an Arms workout at 18:20 (Dead Hang PR at heavier bodyweight; 4 exercises tied bests), dinner at 19:35 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 2 fried eggs, white cabbage salad in lemon), omega-3 and creatine at 20:25/21:45, and a grapes + yellow cheese snack at 22:30. Final totals: ~2,345 kcal, ~166g protein, ~196g carb, ~111g fat, ~44g fiber, 4 caffeine shots — a big, protein-forward training day; fish and multivitamin cleared every micro target comfortably. ACWR now in the danger zone (1.7) after today's Arms session — hold volume flat or deload next time; recommended next session is Back day."
 }
