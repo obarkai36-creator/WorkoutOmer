@@ -1,10 +1,10 @@
 {
   "date": "2026-07-19",
   "day_number": 22,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Outdoor Run, clock time not given: 3.7km in 25 min (~6:45/km avg pace).",
-  "_status": "Outdoor run logged; day still open.",
+  "_status": "Day closed out. Outdoor run, weigh-in-free day, full day of food/drink/supplements logged.",
   "items": [
     {"time": "08:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:20", "name": "Strawberry protein yogurt", "category": "food", "qty": "1 pot (~150 g)", "kcal": 120, "protein_g": 20, "carbs_g": 9, "fat_g": 1, "fiber_g": 0, "note": "generic high-protein yogurt estimate, same as the 11 Jul vanilla version — brand not specified"},
@@ -26,7 +26,8 @@
     {"time": "21:17", "name": "Danone PRO Strawberry Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "corrected: real Israeli Danone PRO line (not YoPro), web-sourced per-100g values doubled for the 200g cup — saved to references/foods.json"},
     {"time": "22:10", "name": "Bulgarian cheese, 5% fat", "category": "food", "qty": "100 g", "kcal": 110, "protein_g": 14, "carbs_g": 2, "fat_g": 5, "fiber_g": 0, "note": "same per-100g rate derived from the 12 Jul watermelon+cheese dish"},
     {"time": "22:10", "name": "Watermelon", "category": "food", "qty": "200 g", "kcal": 60, "protein_g": 1.2, "carbs_g": 15.2, "fat_g": 0.3, "fiber_g": 0.8, "note": "standard reference values"},
-    {"time": "22:10", "name": "Green grapes", "category": "food", "qty": "10", "kcal": 35, "protein_g": 0.3, "carbs_g": 9, "fat_g": 0.1, "fiber_g": 0.5, "note": "same per-grape reference as prior grape entries"}
+    {"time": "22:10", "name": "Green grapes", "category": "food", "qty": "10", "kcal": 35, "protein_g": 0.3, "carbs_g": 9, "fat_g": 0.1, "fiber_g": 0.5, "note": "same per-grape reference as prior grape entries"},
+    {"time": "22:30", "name": "Green grapes", "category": "food", "qty": "20", "kcal": 69, "protein_g": 0.6, "carbs_g": 18, "fat_g": 0.2, "fiber_g": 0.9, "note": "same per-grape reference as prior grape entries", "time_approx": true}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -52,7 +53,8 @@
     "Outdoor Run logged to data.js WORKOUTS (clock time not given — placed at a placeholder midday slot, timeUnknown flag set, so the 'typical time of day' stat stays honest). 3.7km in 25 min, ~6:45/km average pace. Re-ran sync_training_snapshot.mjs and mirrored the session into metrics/workouts.json. ACWR eased back to 1.04 (ok zone, down from 1.7 after the Arms day); recommended next session is still Back day (favored by the push/pull balance logic — push is 1.43× pull program-wide).",
     "21:15 creatine monohydrate, 5g — zero kcal/macros.",
     "21:17 Danone PRO Strawberry Yogurt, 0% fat, 20g-protein cup (200g) — corrected after user flagged the initial 'YoPro' lookup as the wrong product; the real Israeli line is Danone PRO (דנונה פרו), branded 20g protein per cup. Web-sourced per-100g values (56 kcal, 10g protein, 3.5g carb, 0g fat) doubled for the 200g cup: 112 kcal, 20g protein, 7g carb, 0g fat. Saved to references/foods.json, replacing the incorrect YoPro entry.",
-    "22:10 snack: 100g Bulgarian cheese 5% fat (per-100g rate derived from the 12 Jul watermelon+cheese dish) + 200g watermelon (standard reference, ~16.3mg lycopene) + 10 green grapes."
+    "22:10 snack: 100g Bulgarian cheese 5% fat (per-100g rate derived from the 12 Jul watermelon+cheese dish) + 200g watermelon (standard reference, ~16.3mg lycopene) + 10 green grapes.",
+    "22:30 end-of-day snack: 20 more green grapes (same per-grape reference). End of day."
   ],
-  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), another double espresso at 15:55, multivitamin at 16:30, dinner at 18:00 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 15 cherry tomatoes, 2 fried eggs, red grapes), omega-3 at 19:00, an outdoor run (3.7km/25min, ~6:45/km), creatine 5g at 21:15, a Danone PRO strawberry protein yogurt at 21:17 (corrected product/values), and a late snack at 22:10 (Bulgarian cheese, watermelon, green grapes) — 4 caffeine shots so far; tomatoes and watermelon driving lycopene well past target."
+  "status_note": "Day complete. Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), another double espresso at 15:55, multivitamin at 16:30, dinner at 18:00 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 15 cherry tomatoes, 2 fried eggs, red grapes), omega-3 at 19:00, an outdoor run (3.7km/25min, ~6:45/km), creatine 5g at 21:15, a Danone PRO strawberry protein yogurt at 21:17, a snack at 22:10 (Bulgarian cheese, watermelon, green grapes), and a final grapes snack at 22:30. Final totals: ~2,188 kcal, ~169g protein, ~232g carb, ~110g fat, ~46g fiber, 4 caffeine shots — protein target cleared comfortably; tomatoes and watermelon drove lycopene/vitamin C/folate well past target, and the multivitamin topped off the rest. ACWR ended the day back in the ok zone (1.04) after the Arms-day spike; recommended next session is Back day."
 }
