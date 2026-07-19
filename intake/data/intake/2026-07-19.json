@@ -14,17 +14,23 @@
     {"time": "13:00", "name": "Lunch — homemade matbucha (cherry tomato based)", "category": "food", "qty": "4 spoons (~80 g)", "kcal": 120, "protein_g": 2, "carbs_g": 12, "fat_g": 8, "fiber_g": 2.8, "note": "cooked tomato-pepper relish in olive oil — estimate, not weighed; cooking concentrates lycopene"},
     {"time": "13:00", "name": "Dark chocolate praline (small)", "category": "food", "qty": "1 small piece (~15 g)", "kcal": 83, "protein_g": 1, "carbs_g": 8, "fat_g": 5.5, "fiber_g": 1, "note": "standard small dark-chocolate praline estimate"},
     {"time": "15:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:30", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:30", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "18:00", "name": "Dinner — Agami Pita Pro (whole spelt, protein-enriched)", "category": "food", "qty": "2 (68 g each)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "note": "verified reference, reused"},
+    {"time": "18:00", "name": "Dinner — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 151, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.8, "fiber_g": 0, "note": "verified reference, reused"},
+    {"time": "18:00", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 spoons (~40-60 g)", "kcal": 120, "protein_g": 7, "carbs_g": 2, "fat_g": 10, "fiber_g": 0, "note": "recurring estimate, same as yesterday's dinner"},
+    {"time": "18:00", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "15 (~255 g)", "kcal": 46, "protein_g": 2.3, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 3, "note": "standard tomato reference values"},
+    {"time": "18:00", "name": "Dinner — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0, "note": "same estimate as prior sunny-side-up egg entries"},
+    {"time": "18:00", "name": "Dinner — red grapes", "category": "food", "qty": "2 (~10 g)", "kcal": 7, "protein_g": 0.1, "carbs_g": 1.8, "fat_g": 0, "fiber_g": 0.1, "note": "same per-grape reference as prior green-grape entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
-    "folate_mcg_dfe": 732,
+    "folate_mcg_dfe": 770.3,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 312.6,
+    "vitamin_c_mg": 348.3,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 22.1
+    "lycopene_mg": 28.7
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -34,7 +40,8 @@
     "Lunch logged from description (no photo): 160g cooked hamburger patty (same per-100g rate as prior beef-patty entries), 150g baked potatoes (same reference as 11 Jul), a lettuce & tomato salad (2 lettuce leaves/pieces + 3 tomatoes, ~390g) dressed with olive oil and lemon juice (simpler than the usual Maple-Balsamic vinaigrette — no vinegar/mustard/maple this time), 4 spoons (~80g) of homemade cherry-tomato matbucha, and a small dark chocolate praline.",
     "Tomatoes (salad + matbucha) are today's micro drivers: ~22.1mg lycopene, ~62.6mg vitamin C, ~65mcg folate DFE — cooked matbucha estimated at a higher per-gram lycopene concentration than raw tomato, since cooking/reduction concentrates it.",
     "15:55 double espresso (40ml).",
-    "16:30 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros."
+    "16:30 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
+    "Dinner logged from description (no photo) at 18:00: 2 Agami Pita Pro spelt pitas + 3 Tnuva Emek Light yellow cheese slices (both verified references, reused) + 2 spoons Simfonia 5% cheese spread + 15 cherry tomatoes (~255g, standard reference) + 2 sunny side up eggs + 2 red grapes. Tomatoes added another round of lycopene/vitamin C/folate on top of the multivitamin and lunch's tomato dishes."
   ],
-  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), another double espresso at 15:55, and multivitamin at 16:30 (4 caffeine shots so far) — tomatoes (salad + matbucha) driving lycopene/vitamin C/folate, multivitamin topping off the rest."
+  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), another double espresso at 15:55, multivitamin at 16:30, and dinner at 18:00 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 15 cherry tomatoes, 2 fried eggs, red grapes) — 4 caffeine shots so far; tomatoes (lunch + dinner) and multivitamin driving lycopene/vitamin C/folate well past target."
 }
