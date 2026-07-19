@@ -113,16 +113,16 @@
       "source": "Read directly from the product's Hebrew nutrition label, per 100ml: 56 kcal, 0g fat, 44mg sodium, 3.7g carbs (3.7g sugar, 1 sugar-cube equivalent), 10g protein, 294mg calcium. Sweetened with sucralose, no added sugar; contains carotene coloring and an anti-foaming agent (E900). Confirmed 2026-07-14 (330ml serving logged as breakfast)."
     },
     {
-      "id": "danone_yopro_strawberry_high_protein",
-      "name": "Danone YoPro High Protein Strawberry Yoghurt",
-      "serving": "1 pot (~160 g)",
-      "kcal": 96,
-      "protein_g": 15,
-      "carbs_g": 6.5,
-      "fat_g": 0.2,
+      "id": "danone_pro_strawberry_0pct",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat (20g protein cup)",
+      "serving": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
       "fiber_g": 0,
       "verified": false,
-      "source": "Web search (Carb Manager) gave ~95 kcal / 15g protein per serving for Danone YoPro High Protein Strawberry; serving size assumed at the line's typical ~160g pot. Not an exact label read — refine if the physical pack is checked."
+      "source": "Corrected 2026-07-19 — the initial 'YoPro' guess was wrong (different product/market). This is the actual Israeli Danone PRO line (דנונה פרו), 0% fat, branded '20g protein per cup'. Per-100g values from web search (foodsdictionary.co.il / foodiepedia.co.il): 56 kcal, 10g protein, 3.5g carbs, 0g fat; doubled for the 200g cup. Not a direct label screenshot — refine if the physical pack is checked."
     }
   ]
 }
