@@ -20,13 +20,14 @@
     {"time": "18:00", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 spoons (~40-60 g)", "kcal": 120, "protein_g": 7, "carbs_g": 2, "fat_g": 10, "fiber_g": 0, "note": "recurring estimate, same as yesterday's dinner"},
     {"time": "18:00", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "15 (~255 g)", "kcal": 46, "protein_g": 2.3, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 3, "note": "standard tomato reference values"},
     {"time": "18:00", "name": "Dinner — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0, "note": "same estimate as prior sunny-side-up egg entries"},
-    {"time": "18:00", "name": "Dinner — red grapes", "category": "food", "qty": "2 (~10 g)", "kcal": 7, "protein_g": 0.1, "carbs_g": 1.8, "fat_g": 0, "fiber_g": 0.1, "note": "same per-grape reference as prior green-grape entries"}
+    {"time": "18:00", "name": "Dinner — red grapes", "category": "food", "qty": "2 (~10 g)", "kcal": 7, "protein_g": 0.1, "carbs_g": 1.8, "fat_g": 0, "fiber_g": 0.1, "note": "same per-grape reference as prior green-grape entries"},
+    {"time": "19:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
     "folate_mcg_dfe": 770.3,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 348.3,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
@@ -41,7 +42,8 @@
     "Tomatoes (salad + matbucha) are today's micro drivers: ~22.1mg lycopene, ~62.6mg vitamin C, ~65mcg folate DFE — cooked matbucha estimated at a higher per-gram lycopene concentration than raw tomato, since cooking/reduction concentrates it.",
     "15:55 double espresso (40ml).",
     "16:30 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
-    "Dinner logged from description (no photo) at 18:00: 2 Agami Pita Pro spelt pitas + 3 Tnuva Emek Light yellow cheese slices (both verified references, reused) + 2 spoons Simfonia 5% cheese spread + 15 cherry tomatoes (~255g, standard reference) + 2 sunny side up eggs + 2 red grapes. Tomatoes added another round of lycopene/vitamin C/folate on top of the multivitamin and lunch's tomato dishes."
+    "Dinner logged from description (no photo) at 18:00: 2 Agami Pita Pro spelt pitas + 3 Tnuva Emek Light yellow cheese slices (both verified references, reused) + 2 spoons Simfonia 5% cheese spread + 15 cherry tomatoes (~255g, standard reference) + 2 sunny side up eggs + 2 red grapes. Tomatoes added another round of lycopene/vitamin C/folate on top of the multivitamin and lunch's tomato dishes.",
+    "19:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target."
   ],
-  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), another double espresso at 15:55, multivitamin at 16:30, and dinner at 18:00 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 15 cherry tomatoes, 2 fried eggs, red grapes) — 4 caffeine shots so far; tomatoes (lunch + dinner) and multivitamin driving lycopene/vitamin C/folate well past target."
+  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), another double espresso at 15:55, multivitamin at 16:30, dinner at 18:00 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 15 cherry tomatoes, 2 fried eggs, red grapes), and omega-3 at 19:00 — 4 caffeine shots so far; tomatoes (lunch + dinner) and multivitamin driving lycopene/vitamin C/folate well past target, omega-3 now at target."
 }
