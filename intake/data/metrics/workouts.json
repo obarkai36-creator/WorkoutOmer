@@ -1,19 +1,18 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-07-18",
-    "latest_session": "Arms",
-    "sessions_logged": 31,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-07-19",
+    "latest_session": "Outdoor Run",
+    "sessions_logged": 32,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 49.6,
-    "aerobic_sessions_28d": 7,
-    "avg_pace": "9:36/km",
+    "aerobic_28d_km": 53.3,
+    "aerobic_sessions_28d": 8,
+    "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 1.7,
+    "acwr": 1.04,
     "recommended_next": "Back day",
     "alerts": [
-      "Load ratio 1.7 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload.",
       "Push volume is 1.43× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
   },
@@ -144,6 +143,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Incline hammer curl 18kg each×4×8 (ties best); Incline DB curl 18kg each×4×5 (ties best); Half curl 16kg each×4×6 (ties best); Forearm twists 12kg each×4×10 (ties best); Dead hang 20s×3 (PR — same duration as prior best but at a heavier bodyweight, 81.25kg); Biceps curl machine 45kg×2×6 (fewer sets than the 3×6 best, not a PR); Plank 45s×1 (single longer hold, but lower total volume than the 3×30s best). Followed the report's recommended Arms day. 18:20.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-19",
+      "type": "Outdoor Run",
+      "duration_min": 25,
+      "intensity": "moderate",
+      "notes": "3.7 km · 6:45/km avg pace (clock time not given).",
       "_source": "manual log"
     }
   ]

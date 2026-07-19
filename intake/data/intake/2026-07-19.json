@@ -2,9 +2,9 @@
   "date": "2026-07-19",
   "day_number": 22,
   "in_progress": true,
-  "workout_today": false,
-  "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "workout_today": true,
+  "workout_summary": "Outdoor Run, clock time not given: 3.7km in 25 min (~6:45/km avg pace).",
+  "_status": "Outdoor run logged; day still open.",
   "items": [
     {"time": "08:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:20", "name": "Strawberry protein yogurt", "category": "food", "qty": "1 pot (~150 g)", "kcal": 120, "protein_g": 20, "carbs_g": 9, "fat_g": 1, "fiber_g": 0, "note": "generic high-protein yogurt estimate, same as the 11 Jul vanilla version — brand not specified"},
@@ -43,7 +43,8 @@
     "15:55 double espresso (40ml).",
     "16:30 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
     "Dinner logged from description (no photo) at 18:00: 2 Agami Pita Pro spelt pitas + 3 Tnuva Emek Light yellow cheese slices (both verified references, reused) + 2 spoons Simfonia 5% cheese spread + 15 cherry tomatoes (~255g, standard reference) + 2 sunny side up eggs + 2 red grapes. Tomatoes added another round of lycopene/vitamin C/folate on top of the multivitamin and lunch's tomato dishes.",
-    "19:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target."
+    "19:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target.",
+    "Outdoor Run logged to data.js WORKOUTS (clock time not given — placed at a placeholder midday slot, timeUnknown flag set, so the 'typical time of day' stat stays honest). 3.7km in 25 min, ~6:45/km average pace. Re-ran sync_training_snapshot.mjs and mirrored the session into metrics/workouts.json. ACWR eased back to 1.04 (ok zone, down from 1.7 after the Arms day); recommended next session is still Back day (favored by the push/pull balance logic — push is 1.43× pull program-wide)."
   ],
-  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), another double espresso at 15:55, multivitamin at 16:30, dinner at 18:00 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 15 cherry tomatoes, 2 fried eggs, red grapes), and omega-3 at 19:00 — 4 caffeine shots so far; tomatoes (lunch + dinner) and multivitamin driving lycopene/vitamin C/folate well past target, omega-3 now at target."
+  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), another double espresso at 15:55, multivitamin at 16:30, dinner at 18:00 (2 protein spelt pitas, yellow cheese, Simfonia cheese spread, 15 cherry tomatoes, 2 fried eggs, red grapes), omega-3 at 19:00, and an outdoor run (3.7km/25min, ~6:45/km) — 4 caffeine shots so far; tomatoes (lunch + dinner) and multivitamin driving lycopene/vitamin C/folate well past target. ACWR back to the ok zone (1.04); recommended next session is Back day."
 }

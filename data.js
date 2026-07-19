@@ -247,6 +247,14 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 19 Jul — Outdoor Run (clock time not given)
+  {
+    datetime: "2026-07-19T12:00", timeUnknown: true, note: "Outdoor Run",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 3.7, durationMin: 25 },
+    ],
+  },
+
   // 18 Jul — Arms (18:20, followed the report's recommended Arms day)
   {
     datetime: "2026-07-18T18:20", note: "Arms",
