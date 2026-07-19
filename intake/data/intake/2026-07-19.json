@@ -12,7 +12,8 @@
     {"time": "13:00", "name": "Lunch — baked potatoes", "category": "food", "qty": "150 g", "kcal": 133, "protein_g": 4, "carbs_g": 31, "fat_g": 0.3, "fiber_g": 3, "note": "same reference as the 11 Jul baked potatoes"},
     {"time": "13:00", "name": "Lunch — lettuce & tomato salad, olive oil & lemon dressing", "category": "food", "qty": "2 lettuce leaves/pieces + 3 tomatoes (~390 g), ~1 tbsp olive oil + lemon juice", "kcal": 198, "protein_g": 4.2, "carbs_g": 17.5, "fat_g": 14.4, "fiber_g": 5.9, "note": "standard raw lettuce/tomato values + a modest oil-and-lemon dressing (~1 tbsp oil) — estimate, not weighed"},
     {"time": "13:00", "name": "Lunch — homemade matbucha (cherry tomato based)", "category": "food", "qty": "4 spoons (~80 g)", "kcal": 120, "protein_g": 2, "carbs_g": 12, "fat_g": 8, "fiber_g": 2.8, "note": "cooked tomato-pepper relish in olive oil — estimate, not weighed; cooking concentrates lycopene"},
-    {"time": "13:00", "name": "Dark chocolate praline (small)", "category": "food", "qty": "1 small piece (~15 g)", "kcal": 83, "protein_g": 1, "carbs_g": 8, "fat_g": 5.5, "fiber_g": 1, "note": "standard small dark-chocolate praline estimate"}
+    {"time": "13:00", "name": "Dark chocolate praline (small)", "category": "food", "qty": "1 small piece (~15 g)", "kcal": 83, "protein_g": 1, "carbs_g": 8, "fat_g": 5.5, "fiber_g": 1, "note": "standard small dark-chocolate praline estimate"},
+    {"time": "15:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -24,13 +25,14 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 22.1
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 01:50-08:20, ~6.5h — a bit short of the 7-9h target band, late bedtime, one continuous stretch.",
     "08:55 double espresso (40ml).",
     "09:20 strawberry protein yogurt, 1 pot (~150g) — same generic high-protein yogurt estimate used for the 11 Jul vanilla version.",
     "Lunch logged from description (no photo): 160g cooked hamburger patty (same per-100g rate as prior beef-patty entries), 150g baked potatoes (same reference as 11 Jul), a lettuce & tomato salad (2 lettuce leaves/pieces + 3 tomatoes, ~390g) dressed with olive oil and lemon juice (simpler than the usual Maple-Balsamic vinaigrette — no vinegar/mustard/maple this time), 4 spoons (~80g) of homemade cherry-tomato matbucha, and a small dark chocolate praline.",
-    "Tomatoes (salad + matbucha) are today's micro drivers: ~22.1mg lycopene, ~62.6mg vitamin C, ~65mcg folate DFE — cooked matbucha estimated at a higher per-gram lycopene concentration than raw tomato, since cooking/reduction concentrates it."
+    "Tomatoes (salad + matbucha) are today's micro drivers: ~22.1mg lycopene, ~62.6mg vitamin C, ~65mcg folate DFE — cooked matbucha estimated at a higher per-gram lycopene concentration than raw tomato, since cooking/reduction concentrates it.",
+    "15:55 double espresso (40ml)."
   ],
-  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55 (caffeine_shots: 2), strawberry protein yogurt at 09:20, and lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline) — tomatoes (salad + matbucha) driving lycopene/vitamin C/folate."
+  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55, strawberry protein yogurt at 09:20, lunch at 13:00 (160g hamburger patty, baked potatoes, lettuce/tomato salad in olive oil & lemon, homemade matbucha, a small dark chocolate praline), and another double espresso at 15:55 (4 caffeine shots so far) — tomatoes (salad + matbucha) driving lycopene/vitamin C/folate."
 }
