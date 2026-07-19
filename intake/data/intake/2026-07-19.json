@@ -6,7 +6,8 @@
   "workout_summary": null,
   "_status": "Day just opened — sleep logged.",
   "items": [
-    {"time": "08:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:20", "name": "Strawberry protein yogurt", "category": "food", "qty": "1 pot (~150 g)", "kcal": 120, "protein_g": 20, "carbs_g": 9, "fat_g": 1, "fiber_g": 0, "note": "generic high-protein yogurt estimate, same as the 11 Jul vanilla version — brand not specified"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -21,7 +22,8 @@
   "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 01:50-08:20, ~6.5h — a bit short of the 7-9h target band, late bedtime, one continuous stretch.",
-    "08:55 double espresso (40ml)."
+    "08:55 double espresso (40ml).",
+    "09:20 strawberry protein yogurt, 1 pot (~150g) — same generic high-protein yogurt estimate used for the 11 Jul vanilla version."
   ],
-  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55 (caffeine_shots: 2)."
+  "status_note": "Slept ~6.5h (01:50-08:20) — a bit short of the 7-9h target band, late bedtime. Double espresso at 08:55 (caffeine_shots: 2), strawberry protein yogurt at 09:20."
 }
