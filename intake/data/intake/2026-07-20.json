@@ -19,16 +19,17 @@
     {"time": "18:25", "name": "Dark chocolate praline (small)", "category": "food", "qty": "1 small piece (~15 g)", "kcal": 83, "protein_g": 1, "carbs_g": 8, "fat_g": 5.5, "fiber_g": 1, "note": "standard small dark-chocolate praline estimate, same as yesterday's"},
     {"time": "19:50", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "20:15", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "time_approx": true, "note": "verified reference, reused"},
-    {"time": "20:15", "name": "Snack — red grapes", "category": "food", "qty": "15", "kcal": 52, "protein_g": 0.5, "carbs_g": 13.5, "fat_g": 0.2, "fiber_g": 0.7, "time_approx": true, "note": "same per-grape reference as prior grape entries"}
+    {"time": "20:15", "name": "Snack — red grapes", "category": "food", "qty": "15", "kcal": 52, "protein_g": 0.5, "carbs_g": 13.5, "fat_g": 0.2, "fiber_g": 0.7, "time_approx": true, "note": "same per-grape reference as prior grape entries"},
+    {"time": "20:50", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 59.9,
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 726.9,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 58.1,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 308.1,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
     "lycopene_mg": 24.8
   },
   "caffeine_shots": 3,
@@ -42,7 +43,8 @@
     "16:00 green apple, 1 medium (~180g) — same reference as prior green-apple entries.",
     "Dinner logged from description (no photo) at 18:25: 2 Agami Pita Pro spelt pitas (verified reference) + 200g meatballs in red/tomato sauce (estimate, no recipe given) + 4 spoons homemade matbucha (same per-spoon rate as yesterday) + a small dark chocolate praline. Meatball sauce and matbucha both tomato-based — added a modest lycopene/vitamin C/folate contribution (meatball sauce ~4mg lycopene, matbucha ~12mg) on top of this morning's tomatoes.",
     "19:50 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target.",
-    "20:15 snack (time not given, approximated): 1 more yellow cheese slice + 15 red grapes."
+    "20:15 snack (time not given, approximated): 1 more yellow cheese slice + 15 red grapes.",
+    "20:50 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros."
   ],
-  "status_note": "Slept ~4.67h (01:50-06:30) — a short night, well below the 7-9h target band. Espresso at 08:05, breakfast at 08:15 (yellow cheese + cherry tomatoes), another espresso at 09:40, lunch at 13:30 (Mi Casa cucumber/chicken salad, same as before), a third espresso at 14:00, a green apple at 16:00, dinner at 18:25 (2 protein spelt pitas, meatballs in red sauce, homemade matbucha, a small dark chocolate praline), omega-3 at 19:50, and a cheese + grapes snack at 20:15 — 3 caffeine shots today; tomatoes/matbucha driving lycopene/vitamin C/folate, omega-3 now at target."
+  "status_note": "Slept ~4.67h (01:50-06:30) — a short night, well below the 7-9h target band. Espresso at 08:05, breakfast at 08:15 (yellow cheese + cherry tomatoes), another espresso at 09:40, lunch at 13:30 (Mi Casa cucumber/chicken salad, same as before), a third espresso at 14:00, a green apple at 16:00, dinner at 18:25 (2 protein spelt pitas, meatballs in red sauce, homemade matbucha, a small dark chocolate praline), omega-3 at 19:50, a cheese + grapes snack at 20:15, and multivitamin at 20:50 — 3 caffeine shots today; tomatoes/matbucha and the multivitamin driving all micros comfortably past target."
 }
