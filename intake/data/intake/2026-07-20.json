@@ -12,17 +12,21 @@
     {"time": "09:40", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:30", "name": "Lunch — Mi Casa (Herzliya) large cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as 15/16 Jul)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "time_approx": true, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Reused the 15 Jul estimate."},
     {"time": "14:00", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:00", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "note": "same reference as prior green-apple entries"}
+    {"time": "16:00", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "note": "same reference as prior green-apple entries"},
+    {"time": "18:25", "name": "Dinner — Agami Pita Pro (whole spelt, protein-enriched)", "category": "food", "qty": "2 (68 g each)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "note": "verified reference, reused"},
+    {"time": "18:25", "name": "Dinner — meatballs in red (tomato) sauce", "category": "food", "qty": "200 g", "kcal": 380, "protein_g": 30, "carbs_g": 12, "fat_g": 22, "fiber_g": 2, "note": "estimate for meat + tomato sauce combined (~190kcal/100g) — not weighed, no recipe given"},
+    {"time": "18:25", "name": "Dinner — homemade matbucha (cherry tomato based)", "category": "food", "qty": "4 spoons (~80 g)", "kcal": 120, "protein_g": 2, "carbs_g": 12, "fat_g": 8, "fiber_g": 2.8, "note": "same per-spoon rate as yesterday's matbucha — cooking concentrates lycopene"},
+    {"time": "18:25", "name": "Dark chocolate praline (small)", "category": "food", "qty": "1 small piece (~15 g)", "kcal": 83, "protein_g": 1, "carbs_g": 8, "fat_g": 5.5, "fiber_g": 1, "note": "standard small dark-chocolate praline estimate, same as yesterday's"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 51,
+    "folate_mcg_dfe": 59.9,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 47.6,
+    "vitamin_c_mg": 58.1,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 24.8
   },
   "caffeine_shots": 3,
   "assumptions": [
@@ -32,7 +36,8 @@
     "09:40 espresso (40ml).",
     "13:30 lunch (time not given, approximated): Mi Casa Vietnamese-style cucumber/chicken noodle salad — same order as 15/16 Jul, reusing that estimate.",
     "14:00 espresso (40ml).",
-    "16:00 green apple, 1 medium (~180g) — same reference as prior green-apple entries."
+    "16:00 green apple, 1 medium (~180g) — same reference as prior green-apple entries.",
+    "Dinner logged from description (no photo) at 18:25: 2 Agami Pita Pro spelt pitas (verified reference) + 200g meatballs in red/tomato sauce (estimate, no recipe given) + 4 spoons homemade matbucha (same per-spoon rate as yesterday) + a small dark chocolate praline. Meatball sauce and matbucha both tomato-based — added a modest lycopene/vitamin C/folate contribution (meatball sauce ~4mg lycopene, matbucha ~12mg) on top of this morning's tomatoes."
   ],
-  "status_note": "Slept ~4.67h (01:50-06:30) — a short night, well below the 7-9h target band. Espresso at 08:05, breakfast at 08:15 (yellow cheese + cherry tomatoes), another espresso at 09:40, lunch at 13:30 (Mi Casa cucumber/chicken salad, same as before), a third espresso at 14:00 (caffeine_shots: 3), and a green apple at 16:00."
+  "status_note": "Slept ~4.67h (01:50-06:30) — a short night, well below the 7-9h target band. Espresso at 08:05, breakfast at 08:15 (yellow cheese + cherry tomatoes), another espresso at 09:40, lunch at 13:30 (Mi Casa cucumber/chicken salad, same as before), a third espresso at 14:00, a green apple at 16:00, and dinner at 18:25 (2 protein spelt pitas, meatballs in red sauce, homemade matbucha, a small dark chocolate praline) — 3 caffeine shots today; tomatoes/matbucha driving lycopene/vitamin C/folate."
 }
