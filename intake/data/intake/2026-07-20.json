@@ -9,7 +9,9 @@
     {"time": "08:05", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "08:15", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (25 g each, 100 g)", "kcal": 201, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "verified reference, reused"},
     {"time": "08:15", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4.1, "time_approx": true, "note": "standard tomato reference values"},
-    {"time": "09:40", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "09:40", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:30", "name": "Lunch — Mi Casa (Herzliya) large cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as 15/16 Jul)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "time_approx": true, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Reused the 15 Jul estimate."},
+    {"time": "14:00", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -21,12 +23,14 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 8.8
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 01:50-06:30, ~4.67h — well below the 7-9h target band, late bedtime, one continuous stretch.",
     "08:05 espresso (40ml).",
     "08:15 breakfast (time not given, approximated): 4 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51mcg DFE.",
-    "09:40 espresso (40ml)."
+    "09:40 espresso (40ml).",
+    "13:30 lunch (time not given, approximated): Mi Casa Vietnamese-style cucumber/chicken noodle salad — same order as 15/16 Jul, reusing that estimate.",
+    "14:00 espresso (40ml)."
   ],
-  "status_note": "Slept ~4.67h (01:50-06:30) — a short night, well below the 7-9h target band. Espresso at 08:05, breakfast at 08:15 (yellow cheese + cherry tomatoes), and another espresso at 09:40 (caffeine_shots: 2)."
+  "status_note": "Slept ~4.67h (01:50-06:30) — a short night, well below the 7-9h target band. Espresso at 08:05, breakfast at 08:15 (yellow cheese + cherry tomatoes), another espresso at 09:40, lunch at 13:30 (Mi Casa cucumber/chicken salad, same as before), and a third espresso at 14:00 (caffeine_shots: 3)."
 }
