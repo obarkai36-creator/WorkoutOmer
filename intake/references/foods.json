@@ -127,14 +127,14 @@
     {
       "id": "tnuva_go_granola_20g_protein",
       "name": "Tnuva GO high-protein yogurt with granola (20g protein)",
-      "serving": "1 cup + granola topping",
-      "kcal": 253,
-      "protein_g": 21.5,
-      "carbs_g": 19.6,
-      "fat_g": 8.8,
-      "fiber_g": 1.2,
-      "verified": false,
-      "source": "Product page bot-blocked (403). Base Tnuva GO 20g-protein cup is well-documented via web search (163 kcal, 20g protein, 7.6g carb, 5.8g fat); added a typical ~20g granola topping (~90 kcal, 12g carb, 3g fat, 1.2g fiber) since the combined product's own label wasn't found. Not an exact label read — refine if the physical pack is checked."
+      "serving": "1 cup (178 g)",
+      "kcal": 203,
+      "protein_g": 20.1,
+      "carbs_g": 20.3,
+      "fat_g": 4.3,
+      "fiber_g": 1.4,
+      "verified": true,
+      "source": "Read directly from the product's Hebrew nutrition label (user-provided screenshot), per 100g: 114 kcal, 11.3g protein, 11.4g carb (6.2g sugar), 2.4g fat (1.4g saturated, 0.5g trans), 0.8g fiber, 20mg cholesterol, 170mg sodium. Pack weight confirmed at 178g. Confirmed 2026-07-21, replacing an earlier bot-blocked-page estimate that had overstated fat/kcal."
     }
   ]
 }
