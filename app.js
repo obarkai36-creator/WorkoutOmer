@@ -115,12 +115,15 @@
         ${r.guidance && r.guidance.length ? `
         <div class="small muted" style="margin-top:12px;margin-bottom:2px">SESSION FOCUS</div>
         ${r.guidance.map((g) => `<div class="small" style="margin-bottom:4px">${g}</div>`).join("")}` : ""}
-        <div class="small muted" style="margin-top:12px;margin-bottom:2px">Suggested lifts &middot; reference: your current best</div>
+        <div class="small muted" style="margin-top:12px;margin-bottom:2px">Suggested lifts &middot; next-session target</div>
         <div class="reco-lifts">
           ${r.suggestedExercises.map((e) => `
             <div class="reco-lift">
-              <span class="rl-name">${e.name}</span>
-              <span class="rl-best">${e.best || "—"}${e.best1RM && !e.iso ? ` <span class="rl-orm">1RM ${e.best1RM}kg</span>` : ""}</span>
+              <div class="rl-row">
+                <span class="rl-name">${e.name}</span>
+                <span class="rl-best" style="${e.target?.status === 'rebuild' ? 'color:var(--yellow)' : ''}">${e.target ? e.target.text : (e.best || "—")}</span>
+              </div>
+              <div class="small muted" style="margin-top:2px">best ${e.best || "—"}${e.best1RM && !e.iso ? ` &middot; est 1RM ${e.best1RM}kg` : ""}</div>
             </div>`).join("")}
         </div>
       </div>

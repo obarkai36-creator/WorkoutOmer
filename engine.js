@@ -243,6 +243,43 @@ function loadTrends(workouts, ref, now) {
   return { weeks, acute: round(acute), chronic: round(chronic), acwr, acwrZone, sessions28: last28.length };
 }
 
+/* ---- next-session lift target ---------------------------------------------
+ * Turns "your best" into an actual next-session target using double
+ * progression: add reps each session until a rep ceiling, then step the
+ * weight up and drop back to a restart rep count. If the latest session came
+ * in below best (a bad day, travel gym, fatigue), the target is to rebuild to
+ * best first rather than pushing past it blindly. */
+const REP_CEILING = 12, REP_RESTART = 8;
+function weightIncrement(w) {
+  if (w >= 100) return 5;
+  if (w >= 40) return 2.5;
+  if (w >= 15) return 2;
+  return 1;
+}
+function nextLiftTarget(e) {
+  const best = e.best, latest = e.latest;
+  if (!best) return null;
+  const bestStats = recStats(best, e.iso);
+  const latestStats = recStats(latest, e.iso);
+  const atBest = e.iso
+    ? latestStats.volume >= bestStats.volume * 0.999
+    : latestStats.top1RM >= bestStats.top1RM * 0.999;
+
+  if (!atBest) {
+    return { status: "rebuild", text: `Rebuild to best (${best.text})`, note: `Last session came in under your best (${best.text}) — rebuild to that before pushing further.` };
+  }
+  if (e.iso) {
+    const seconds = (best.seconds || 0) + 5;
+    return { status: "progress", text: `+5s (aim ${best.sets}×${seconds}s)`, note: `Add 5s per set from your best (${best.text}) — aim for ${best.sets}×${seconds}s.` };
+  }
+  if ((best.reps || 0) < REP_CEILING) {
+    const reps = best.reps + 1;
+    return { status: "progress", text: `+1 rep (aim ${best.sets}×${reps})`, note: `Add 1 rep per set at the same weight — aim for ${best.sets}×${reps} from ${best.text}.` };
+  }
+  const inc = weightIncrement(best.weight || 0);
+  return { status: "progress", text: `+${inc}kg (reset to ${best.sets}×${REP_RESTART})`, note: `You're at ${best.reps} reps on ${best.text} — step the weight up ~${inc}kg and reset to ${best.sets}×${REP_RESTART}.` };
+}
+
 /* ---- next recommended session --------------------------------------------- */
 function recommendSession(data, workouts, sectionFat, now, bal, trends) {
   const muscles = data.MUSCLES;
@@ -290,15 +327,17 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends) {
   const pick = ranked[0];
   const restHours = pick.readyInHours;
 
-  // Exercises for the picked section, each with your current best + est 1RM
-  // (kept as reference, not the goal in itself) — ordered and annotated below
-  // to reflect what actually keeps the program balanced this session.
+  // Exercises for the picked section. "best" is kept as a reference point;
+  // "target" is the actual next-session ask, computed from latest-vs-best via
+  // double progression (see nextLiftTarget) — ordered and annotated below to
+  // reflect what actually keeps the program balanced this session.
   let suggestedExercises = data.SNAPSHOT
     .filter((e) => e.section === pick.section)
     .map((e) => {
       const B = recStats(e.best, e.iso);
       const lib = data.EXERCISE_LIBRARY[e.name];
-      return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso, lib };
+      const target = nextLiftTarget(e);
+      return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso, target, lib };
     });
 
   const guidance = [];
