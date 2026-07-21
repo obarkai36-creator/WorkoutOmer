@@ -182,10 +182,10 @@ const SNAPSHOT = [
   { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 4, weight: 73, text: "73kg × 4×4" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
-  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 6, weight: 109, text: "109kg × 4×6" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
-  { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 6, weight: 79, text: "79kg × 4×6" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
+  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
+  { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
-  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 9, weight: 52, text: "26kg each × 4×9" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
+  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
   { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" }, best: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" } },
   { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 3, seconds: 20, weight: 81.25, text: "20 sec × 3" }, best: { sets: 3, seconds: 20, weight: 81.25, text: "20 sec × 3" } },
 
@@ -251,6 +251,18 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 21 Jul — Back (15:30, followed the report's recommended Back day)
+  {
+    datetime: "2026-07-21T15:30", note: "Back",
+    exercises: [
+      { name: "Diverging Seated Row",   sets: [ { reps: 8, weight: 97 }, { reps: 8, weight: 97 }, { reps: 8, weight: 97 }, { reps: 8, weight: 97 } ] },
+      { name: "Low Row",                sets: [ { reps: 8, weight: 79 }, { reps: 8, weight: 79 }, { reps: 8, weight: 79 }, { reps: 8, weight: 79 } ] },
+      { name: "Reverse Incline DB Row", sets: [ { reps: 10, weight: 48 }, { reps: 10, weight: 48 }, { reps: 10, weight: 48 }, { reps: 10, weight: 48 } ] },
+      { name: "Dumbbell Pullover",      sets: [ { reps: 10, weight: 18 }, { reps: 10, weight: 18 }, { reps: 10, weight: 18 }, { reps: 10, weight: 18 } ] },
+      { name: "Dead Hang",              sets: [ { seconds: 20 }, { seconds: 20 }, { seconds: 20 } ] },
+    ],
+  },
+
   // 19 Jul — Outdoor Run (clock time not given)
   {
     datetime: "2026-07-19T12:00", timeUnknown: true, note: "Outdoor Run",
