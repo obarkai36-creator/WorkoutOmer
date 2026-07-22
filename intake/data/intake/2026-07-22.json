@@ -6,22 +6,27 @@
   "workout_summary": null,
   "_status": "Day just opened — sleep logged.",
   "items": [
-    {"time": "06:40", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "06:40", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (25 g each, 100 g)", "kcal": 201, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified reference, reused"},
+    {"time": "09:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "15 (~255 g)", "kcal": 46, "protein_g": 2.3, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 3, "note": "standard tomato reference values"},
+    {"time": "09:20", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 705.3,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "vitamin_c_mg": 285.7,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
+    "lycopene_mg": 6.6
   },
   "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:35-05:40, ~6.08h — a bit short of the 7-9h target band, one continuous stretch.",
-    "06:40 double espresso (40ml)."
+    "06:40 double espresso (40ml).",
+    "09:00 breakfast: 4 Tnuva Emek Light yellow cheese slices (verified reference) + 15 cherry tomatoes (~255g, standard reference). Tomatoes gave the day's first micros — lycopene 6.6mg, vitamin C 35.7mg, folate 38.3mcg DFE.",
+    "09:20 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros."
   ],
-  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40 (caffeine_shots: 2)."
+  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), and multivitamin at 09:20 (caffeine_shots: 2)."
 }
