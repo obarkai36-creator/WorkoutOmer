@@ -22,17 +22,19 @@
     {"time": "15:20", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:20", "name": "Mini Twix bar", "category": "food", "qty": "1 mini (~10 g)", "kcal": 48, "protein_g": 0.4, "carbs_g": 6.2, "fat_g": 2.4, "fiber_g": 0.2, "note": "standard Twix Minis reference values"},
     {"time": "17:40", "name": "Honeydew melon", "category": "food", "qty": "0.3 of a small melon (~240 g)", "kcal": 86, "protein_g": 1.2, "carbs_g": 22, "fat_g": 0.2, "fiber_g": 2, "note": "same per-fraction reference as prior honeydew entries"},
-    {"time": "17:40", "name": "Red grapes", "category": "food", "qty": "15", "kcal": 52, "protein_g": 0.5, "carbs_g": 13.5, "fat_g": 0.2, "fiber_g": 0.7, "note": "quantity read as \"q5\" — interpreted as 15 (likely a typo for 15); same per-grape reference as prior entries"}
+    {"time": "17:40", "name": "Red grapes", "category": "food", "qty": "15", "kcal": 52, "protein_g": 0.5, "carbs_g": 13.5, "fat_g": 0.2, "fiber_g": 0.7, "note": "quantity read as \"q5\" — interpreted as 15 (likely a typo for 15); same per-grape reference as prior entries"},
+    {"time": "18:30", "name": "Pre-dinner snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "time_approx": true, "note": "verified reference, reused"},
+    {"time": "18:30", "name": "Pre-dinner snack — cherry tomatoes", "category": "food", "qty": "5", "kcal": 15, "protein_g": 0.8, "carbs_g": 3.3, "fat_g": 0.2, "fiber_g": 1, "time_approx": true, "note": "standard tomato reference values"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 17.9,
     "selenium_mcg": 200,
-    "folate_mcg_dfe": 1009.3,
+    "folate_mcg_dfe": 1022.1,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 285.7,
+    "vitamin_c_mg": 297.6,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 6.6
+    "lycopene_mg": 8.8
   },
   "caffeine_shots": 5,
   "assumptions": [
@@ -46,7 +48,8 @@
     "14:00 espresso (40ml).",
     "14:50 green apple, 1 medium (~180g) — same reference as prior green-apple entries.",
     "15:20 espresso (40ml) + 1 mini Twix bar (~10g, standard reference).",
-    "17:40 snack: 0.3 of a small honeydew melon (~240g, same reference as prior honeydew entries) + red grapes — quantity given as \"q5\", read as 15 (likely a typo/fat-finger for 15, flagging the assumption)."
+    "17:40 snack: 0.3 of a small honeydew melon (~240g, same reference as prior honeydew entries) + red grapes — quantity given as \"q5\", read as 15 (likely a typo/fat-finger for 15, flagging the assumption).",
+    "18:30 pre-dinner snack (time not given, approximated): 1 more yellow cheese slice + 5 cherry tomatoes."
   ],
-  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion), omega-3 at 12:55, another espresso at 14:00, a green apple at 14:50, an espresso + mini Twix bar at 15:20, and a honeydew melon + grapes snack at 17:40 — caffeine_shots: 5; lentil salad driving folate/fiber well past target, omega-3 now at target."
+  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion), omega-3 at 12:55, another espresso at 14:00, a green apple at 14:50, an espresso + mini Twix bar at 15:20, a honeydew melon + grapes snack at 17:40, and a pre-dinner cheese + tomato snack at 18:30 — caffeine_shots: 5; lentil salad driving folate/fiber well past target, omega-3 now at target."
 }
