@@ -1,10 +1,10 @@
 {
   "date": "2026-07-22",
   "day_number": 25,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "_status": "Day closed out. No workout today; full day of food/drink/supplements logged.",
   "items": [
     {"time": "06:40", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (25 g each, 100 g)", "kcal": 201, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified reference, reused"},
@@ -28,7 +28,8 @@
     {"time": "19:30", "name": "Dinner — whole spelt pita (500g/8 pack)", "category": "food", "qty": "2 (62.5 g each, 125 g)", "kcal": 251, "protein_g": 28.4, "carbs_g": 34.9, "fat_g": 4.6, "fiber_g": 16.5, "time_approx": true, "note": "energy (201kcal/100g) and protein (22.7g/100g) read from the label; carb/fat/fiber inferred from the very similar Agami Pita Pro reference (same protein-enriched spelt pita category) since the label's other rows weren't fully confirmed"},
     {"time": "19:30", "name": "Dinner — large salad (lettuce, cherry tomatoes, red onion)", "category": "food", "qty": "~350 g", "kcal": 69, "protein_g": 3.8, "carbs_g": 15.1, "fat_g": 0.5, "fiber_g": 5.7, "time_approx": true, "note": "standard raw-veg values, no dressing mentioned — estimate, not weighed"},
     {"time": "19:30", "name": "Dinner — egg salad in light mayonnaise", "category": "food", "qty": "3 spoons (~90 g) of a batch made with 7 eggs + 1.5 tbsp light mayo", "kcal": 145, "protein_g": 10.7, "carbs_g": 1.4, "fat_g": 10.3, "fiber_g": 0, "time_approx": true, "note": "batch estimated at ~372g total (7 eggs + mayo); portion scaled to ~90g (3 serving spoons) — estimate, not weighed"},
-    {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 tbsp (~40-60 g)", "kcal": 120, "protein_g": 7, "carbs_g": 2, "fat_g": 10, "fiber_g": 0, "time_approx": true, "note": "recurring estimate, same as prior Simfonia entries"}
+    {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 tbsp (~40-60 g)", "kcal": 120, "protein_g": 7, "carbs_g": 2, "fat_g": 10, "fiber_g": 0, "time_approx": true, "note": "recurring estimate, same as prior Simfonia entries"},
+    {"time": "20:00", "name": "Dessert — watermelon", "category": "food", "qty": "100 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 7.6, "fat_g": 0.2, "fiber_g": 0.4, "time_approx": true, "note": "standard reference values"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 17.9,
@@ -38,7 +39,7 @@
     "vitamin_c_mg": 318.6,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 12.7
+    "lycopene_mg": 20.8
   },
   "caffeine_shots": 5,
   "assumptions": [
@@ -54,7 +55,8 @@
     "15:20 espresso (40ml) + 1 mini Twix bar (~10g, standard reference).",
     "17:40 snack: 0.3 of a small honeydew melon (~240g, same reference as prior honeydew entries) + red grapes — quantity given as \"q5\", read as 15 (likely a typo/fat-finger for 15, flagging the assumption).",
     "18:30 pre-dinner snack (time not given, approximated): 1 more yellow cheese slice + 5 cherry tomatoes.",
-    "Dinner logged from description (no photo), time approximated at 19:30: 2 whole-spelt pitas from the newly-opened 500g/8 pack (62.5g each, 201kcal/100g and 22.7g protein/100g confirmed from the label after a back-and-forth reading it; carb/fat/fiber inferred from the very similar Agami Pita Pro reference since the rest of this label's rows weren't fully confirmed) + a large lettuce/cherry tomato/red onion salad (~350g, no dressing mentioned) + 3 spoons of egg salad in light mayo (batch made with 7 eggs + 1.5 tbsp light mayo, portion scaled to ~90g of the ~372g batch) + 2 tbsp Simfonia 5% cheese spread (recurring estimate). Salad tomatoes added another round of lycopene/vitamin C/folate."
+    "Dinner logged from description (no photo), time approximated at 19:30: 2 whole-spelt pitas from the newly-opened 500g/8 pack (62.5g each, 201kcal/100g and 22.7g protein/100g confirmed from the label after a back-and-forth reading it; carb/fat/fiber inferred from the very similar Agami Pita Pro reference since the rest of this label's rows weren't fully confirmed) + a large lettuce/cherry tomato/red onion salad (~350g, no dressing mentioned) + 3 spoons of egg salad in light mayo (batch made with 7 eggs + 1.5 tbsp light mayo, portion scaled to ~90g of the ~372g batch) + 2 tbsp Simfonia 5% cheese spread (recurring estimate). Salad tomatoes added another round of lycopene/vitamin C/folate.",
+    "20:00 dessert: 100g watermelon (standard reference values). End of day."
   ],
-  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion), omega-3 at 12:55, another espresso at 14:00, a green apple at 14:50, an espresso + mini Twix bar at 15:20, a honeydew melon + grapes snack at 17:40, a pre-dinner cheese + tomato snack at 18:30, and dinner at 19:30 (2 new-pack spelt pitas, a large salad, egg salad in light mayo, Simfonia cheese spread) — caffeine_shots: 5; lentil salad and dinner's tomatoes driving folate/lycopene/vitamin C well past target, omega-3 now at target."
+  "status_note": "Day complete. Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion), omega-3 at 12:55, another espresso at 14:00, a green apple at 14:50, an espresso + mini Twix bar at 15:20, a honeydew melon + grapes snack at 17:40, a pre-dinner cheese + tomato snack at 18:30, dinner at 19:30 (2 new-pack spelt pitas, a large salad, egg salad in light mayo, Simfonia cheese spread), and a watermelon dessert at 20:00. Final totals: ~2,010 kcal, ~161g protein, ~205g carb, ~72g fat, ~54g fiber, 5 caffeine shots — a big protein and fiber day; lentil salad and dinner's tomatoes drove folate/lycopene/vitamin C well past target, and omega-3 hit target. No workout today."
 }
