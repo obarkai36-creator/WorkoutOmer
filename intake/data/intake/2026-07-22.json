@@ -17,6 +17,7 @@
     {"time": "13:00", "name": "Lunch — pickle", "category": "food", "qty": "1 (~40 g)", "kcal": 5, "protein_g": 0.2, "carbs_g": 1, "fat_g": 0, "fiber_g": 0.5, "time_approx": true, "note": "standard dill pickle reference"},
     {"time": "13:00", "name": "Lunch — grilled onion", "category": "food", "qty": "50 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 4.7, "fat_g": 1.5, "fiber_g": 0.9, "time_approx": true, "note": "standard onion values + light grilling oil — estimate, not weighed"},
     {"time": "12:55", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:00", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:50", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "note": "same reference as prior green-apple entries"}
   ],
   "micros_sperm_priority": {
@@ -29,7 +30,7 @@
     "vitamin_e_mg": 16.5,
     "lycopene_mg": 6.6
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:35-05:40, ~6.08h — a bit short of the 7-9h target band, one continuous stretch.",
     "06:40 double espresso (40ml).",
@@ -38,7 +39,8 @@
     "10:15 espresso (40ml).",
     "Lunch logged from description (no photo), time approximated at 13:00: 150g grilled chicken breast + 100g white cabbage salad in lemon sauce (same rate as the 20 Jul cabbage salad) + 300g black lentil salad with red onion, sweet potato and walnuts (corrected from an initial plain-lentils guess — estimated composition ~150g lentils/80g sweet potato/30g red onion/20g walnuts/10g oil dressing) + 1 pickle + 50g grilled onion. Lentil salad is the day's big folate/fiber driver.",
     "12:55 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target.",
+    "14:00 espresso (40ml).",
     "14:50 green apple, 1 medium (~180g) — same reference as prior green-apple entries."
   ],
-  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion), omega-3 at 12:55, and a green apple at 14:50 — caffeine_shots: 3; lentil salad driving folate/fiber well past target, omega-3 now at target."
+  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion), omega-3 at 12:55, another espresso at 14:00, and a green apple at 14:50 — caffeine_shots: 4; lentil salad driving folate/fiber well past target, omega-3 now at target."
 }
