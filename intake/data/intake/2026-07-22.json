@@ -10,12 +10,17 @@
     {"time": "09:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (25 g each, 100 g)", "kcal": 201, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified reference, reused"},
     {"time": "09:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "15 (~255 g)", "kcal": 46, "protein_g": 2.3, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 3, "note": "standard tomato reference values"},
     {"time": "09:20", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "10:15", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "10:15", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:00", "name": "Lunch — grilled chicken breast", "category": "food", "qty": "150 g", "kcal": 248, "protein_g": 46.5, "carbs_g": 0, "fat_g": 5.4, "fiber_g": 0, "time_approx": true, "note": "standard grilled skinless chicken breast reference"},
+    {"time": "13:00", "name": "Lunch — white cabbage salad in lemon sauce", "category": "food", "qty": "100 g", "kcal": 28, "protein_g": 1.4, "carbs_g": 6.4, "fat_g": 0.2, "fiber_g": 2.4, "time_approx": true, "note": "same per-100g rate as the 20 Jul cabbage salad"},
+    {"time": "13:00", "name": "Lunch — black lentil salad (red onion, sweet potato, walnuts)", "category": "food", "qty": "300 g", "kcal": 477, "protein_g": 18.4, "carbs_g": 52.4, "fat_g": 23.7, "fiber_g": 16.1, "time_approx": true, "note": "estimated composition: ~150g cooked black lentils, ~80g roasted sweet potato, ~30g red onion, ~20g walnuts, ~10g oil dressing — not weighed; major folate/fiber driver today"},
+    {"time": "13:00", "name": "Lunch — pickle", "category": "food", "qty": "1 (~40 g)", "kcal": 5, "protein_g": 0.2, "carbs_g": 1, "fat_g": 0, "fiber_g": 0.5, "time_approx": true, "note": "standard dill pickle reference"},
+    {"time": "13:00", "name": "Lunch — grilled onion", "category": "food", "qty": "50 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 4.7, "fat_g": 1.5, "fiber_g": 0.9, "time_approx": true, "note": "standard onion values + light grilling oil — estimate, not weighed"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 15,
+    "zinc_mg": 17.9,
     "selenium_mcg": 200,
-    "folate_mcg_dfe": 705.3,
+    "folate_mcg_dfe": 1009.3,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 285.7,
     "vitamin_d_iu": 2000,
@@ -28,7 +33,8 @@
     "06:40 double espresso (40ml).",
     "09:00 breakfast: 4 Tnuva Emek Light yellow cheese slices (verified reference) + 15 cherry tomatoes (~255g, standard reference). Tomatoes gave the day's first micros — lycopene 6.6mg, vitamin C 35.7mg, folate 38.3mcg DFE.",
     "09:20 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
-    "10:15 espresso (40ml)."
+    "10:15 espresso (40ml).",
+    "Lunch logged from description (no photo), time approximated at 13:00: 150g grilled chicken breast + 100g white cabbage salad in lemon sauce (same rate as the 20 Jul cabbage salad) + 300g black lentil salad with red onion, sweet potato and walnuts (corrected from an initial plain-lentils guess — estimated composition ~150g lentils/80g sweet potato/30g red onion/20g walnuts/10g oil dressing) + 1 pickle + 50g grilled onion. Lentil salad is the day's big folate/fiber driver."
   ],
-  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, and another espresso at 10:15 (caffeine_shots: 3)."
+  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, and lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion) — caffeine_shots: 3; lentil salad driving folate/fiber well past target."
 }
