@@ -40,6 +40,8 @@ const BODYWEIGHT = [
  * integration is US-only, not accessible yet). Feeds the Sleep panel and the
  * recovery note on the Next Session recommendation. */
 const SLEEP = [
+  // 21-22 Jul — moderate night, a bit short of the 7-9h target band
+  { date: "2026-07-22", start: "23:35", end: "05:40", hours: 6.08, note: "below the 7-9h target, no fragmentation" },
   // 20-21 Jul — solid full night, bounce-back after two short nights
   { date: "2026-07-21", start: "22:50", end: "06:30", hours: 7.67, note: "squarely in the 7-9h target, strong bounce-back" },
   // 19-20 Jul — short night, well below the 7-9h target band
