@@ -135,6 +135,18 @@
       "fiber_g": 1.4,
       "verified": true,
       "source": "Read directly from the product's Hebrew nutrition label (user-provided screenshot), per 100g: 114 kcal, 11.3g protein, 11.4g carb (6.2g sugar), 2.4g fat (1.4g saturated, 0.5g trans), 0.8g fiber, 20mg cholesterol, 170mg sodium. Pack weight confirmed at 178g. Confirmed 2026-07-21, replacing an earlier bot-blocked-page estimate that had overstated fat/kcal."
+    },
+    {
+      "id": "whole_spelt_pita_500g_8pack",
+      "name": "Whole spelt pita (500g/8 pack)",
+      "serving": "1 unit (62.5 g)",
+      "kcal": 126,
+      "protein_g": 14.2,
+      "carbs_g": 17.4,
+      "fat_g": 2.3,
+      "fiber_g": 8.3,
+      "verified": false,
+      "source": "Energy (201 kcal/100g) and protein (22.7g/100g) read from the product's Hebrew label (user-provided photo, tivtaam.co.il product, exact catalog page bot-blocked). Reading the rotated/blurry/crumpled label was corrected twice before landing on 201 kcal/100g as the actual per-100g energy value. Carb/fat/fiber weren't confirmed from the remaining label rows — inferred from the very similar Agami Pita Pro reference (same protein-enriched whole-spelt pita category, comparable protein rate). Refine if the rest of the label is re-checked."
     }
   ]
 }

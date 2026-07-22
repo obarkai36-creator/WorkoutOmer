@@ -24,17 +24,21 @@
     {"time": "17:40", "name": "Honeydew melon", "category": "food", "qty": "0.3 of a small melon (~240 g)", "kcal": 86, "protein_g": 1.2, "carbs_g": 22, "fat_g": 0.2, "fiber_g": 2, "note": "same per-fraction reference as prior honeydew entries"},
     {"time": "17:40", "name": "Red grapes", "category": "food", "qty": "15", "kcal": 52, "protein_g": 0.5, "carbs_g": 13.5, "fat_g": 0.2, "fiber_g": 0.7, "note": "quantity read as \"q5\" — interpreted as 15 (likely a typo for 15); same per-grape reference as prior entries"},
     {"time": "18:30", "name": "Pre-dinner snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "time_approx": true, "note": "verified reference, reused"},
-    {"time": "18:30", "name": "Pre-dinner snack — cherry tomatoes", "category": "food", "qty": "5", "kcal": 15, "protein_g": 0.8, "carbs_g": 3.3, "fat_g": 0.2, "fiber_g": 1, "time_approx": true, "note": "standard tomato reference values"}
+    {"time": "18:30", "name": "Pre-dinner snack — cherry tomatoes", "category": "food", "qty": "5", "kcal": 15, "protein_g": 0.8, "carbs_g": 3.3, "fat_g": 0.2, "fiber_g": 1, "time_approx": true, "note": "standard tomato reference values"},
+    {"time": "19:30", "name": "Dinner — whole spelt pita (500g/8 pack)", "category": "food", "qty": "2 (62.5 g each, 125 g)", "kcal": 251, "protein_g": 28.4, "carbs_g": 34.9, "fat_g": 4.6, "fiber_g": 16.5, "time_approx": true, "note": "energy (201kcal/100g) and protein (22.7g/100g) read from the label; carb/fat/fiber inferred from the very similar Agami Pita Pro reference (same protein-enriched spelt pita category) since the label's other rows weren't fully confirmed"},
+    {"time": "19:30", "name": "Dinner — large salad (lettuce, cherry tomatoes, red onion)", "category": "food", "qty": "~350 g", "kcal": 69, "protein_g": 3.8, "carbs_g": 15.1, "fat_g": 0.5, "fiber_g": 5.7, "time_approx": true, "note": "standard raw-veg values, no dressing mentioned — estimate, not weighed"},
+    {"time": "19:30", "name": "Dinner — egg salad in light mayonnaise", "category": "food", "qty": "3 spoons (~90 g) of a batch made with 7 eggs + 1.5 tbsp light mayo", "kcal": 145, "protein_g": 10.7, "carbs_g": 1.4, "fat_g": 10.3, "fiber_g": 0, "time_approx": true, "note": "batch estimated at ~372g total (7 eggs + mayo); portion scaled to ~90g (3 serving spoons) — estimate, not weighed"},
+    {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 tbsp (~40-60 g)", "kcal": 120, "protein_g": 7, "carbs_g": 2, "fat_g": 10, "fiber_g": 0, "time_approx": true, "note": "recurring estimate, same as prior Simfonia entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 17.9,
     "selenium_mcg": 200,
-    "folate_mcg_dfe": 1022.1,
+    "folate_mcg_dfe": 1044.6,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 297.6,
+    "vitamin_c_mg": 318.6,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 12.7
   },
   "caffeine_shots": 5,
   "assumptions": [
@@ -49,7 +53,8 @@
     "14:50 green apple, 1 medium (~180g) — same reference as prior green-apple entries.",
     "15:20 espresso (40ml) + 1 mini Twix bar (~10g, standard reference).",
     "17:40 snack: 0.3 of a small honeydew melon (~240g, same reference as prior honeydew entries) + red grapes — quantity given as \"q5\", read as 15 (likely a typo/fat-finger for 15, flagging the assumption).",
-    "18:30 pre-dinner snack (time not given, approximated): 1 more yellow cheese slice + 5 cherry tomatoes."
+    "18:30 pre-dinner snack (time not given, approximated): 1 more yellow cheese slice + 5 cherry tomatoes.",
+    "Dinner logged from description (no photo), time approximated at 19:30: 2 whole-spelt pitas from the newly-opened 500g/8 pack (62.5g each, 201kcal/100g and 22.7g protein/100g confirmed from the label after a back-and-forth reading it; carb/fat/fiber inferred from the very similar Agami Pita Pro reference since the rest of this label's rows weren't fully confirmed) + a large lettuce/cherry tomato/red onion salad (~350g, no dressing mentioned) + 3 spoons of egg salad in light mayo (batch made with 7 eggs + 1.5 tbsp light mayo, portion scaled to ~90g of the ~372g batch) + 2 tbsp Simfonia 5% cheese spread (recurring estimate). Salad tomatoes added another round of lycopene/vitamin C/folate."
   ],
-  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion), omega-3 at 12:55, another espresso at 14:00, a green apple at 14:50, an espresso + mini Twix bar at 15:20, a honeydew melon + grapes snack at 17:40, and a pre-dinner cheese + tomato snack at 18:30 — caffeine_shots: 5; lentil salad driving folate/fiber well past target, omega-3 now at target."
+  "status_note": "Slept ~6.08h (23:35-05:40) — a bit short of the 7-9h target band. Double espresso at 06:40, breakfast at 09:00 (yellow cheese + cherry tomatoes), multivitamin at 09:20, another espresso at 10:15, lunch at 13:00 (grilled chicken, cabbage salad, black lentil salad with sweet potato and walnuts, pickle, grilled onion), omega-3 at 12:55, another espresso at 14:00, a green apple at 14:50, an espresso + mini Twix bar at 15:20, a honeydew melon + grapes snack at 17:40, a pre-dinner cheese + tomato snack at 18:30, and dinner at 19:30 (2 new-pack spelt pitas, a large salad, egg salad in light mayo, Simfonia cheese spread) — caffeine_shots: 5; lentil salad and dinner's tomatoes driving folate/lycopene/vitamin C well past target, omega-3 now at target."
 }
