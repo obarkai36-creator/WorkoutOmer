@@ -5,7 +5,9 @@
   "workout_today": false,
   "workout_summary": null,
   "_status": "Day just opened — sleep logged.",
-  "items": [],
+  "items": [
+    {"time": "07:00", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,9 +18,10 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "assumptions": [
-    "Sleep logged: 22:50-06:25, ~7.58h — squarely in the 7-9h target band, one continuous stretch."
+    "Sleep logged: 22:50-06:25, ~7.58h — squarely in the 7-9h target band, one continuous stretch.",
+    "07:00 espresso (40ml)."
   ],
-  "status_note": "Day just opened. Slept ~7.58h (22:50-06:25) — a solid full night, squarely in the 7-9h target band. Nothing else logged yet."
+  "status_note": "Slept ~7.58h (22:50-06:25) — a solid full night, squarely in the 7-9h target band. Espresso at 07:00 (caffeine_shots: 1)."
 }
