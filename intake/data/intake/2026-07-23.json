@@ -18,13 +18,14 @@
     {"time": "19:30", "name": "Dinner — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (25 g each, 100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "verified reference, reused"},
     {"time": "19:30", "name": "Dinner — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0, "time_approx": true, "note": "same estimate as prior sunny-side-up egg entries"},
     {"time": "19:30", "name": "Dinner — Simfonia garlic cheese spread, 5% fat", "category": "food", "qty": "2 spoons (~40-60 g)", "kcal": 120, "protein_g": 7, "carbs_g": 2, "fat_g": 10, "fiber_g": 0, "time_approx": true, "note": "same macro reference as regular Simfonia 5%, garlic-flavored variant"},
-    {"time": "19:30", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "30 (~510 g)", "kcal": 92, "protein_g": 4.6, "carbs_g": 20, "fat_g": 1, "fiber_g": 6, "time_approx": true, "note": "standard tomato reference values, doubled from the usual 15-tomato portion"}
+    {"time": "19:30", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "30 (~510 g)", "kcal": 92, "protein_g": 4.6, "carbs_g": 20, "fat_g": 1, "fiber_g": 6, "time_approx": true, "note": "standard tomato reference values, doubled from the usual 15-tomato portion"},
+    {"time": "18:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.5,
     "selenium_mcg": 6,
     "folate_mcg_dfe": 101.6,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 81.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0.5,
@@ -39,7 +40,8 @@
     "Lunch (time approximated at 13:00): 160g cooked spelt pasta (generic whole-grain spelt reference, ~127kcal/100g) + 220g beef bolognese sauce (standard homemade ground-beef/tomato/onion/carrot reference, ~150kcal/100g). Beef contributed the day's first zinc/selenium, tomato base gave some lycopene/vitamin C/folate — estimates, not weighed by ingredient.",
     "14:45 dark chocolate cube (~5g), standard 70% dark chocolate reference — no meaningful micros in the tracked priority list.",
     "14:40 double espresso (~60-80ml, counts as 2 caffeine shots) and 17:00 double espresso (same).",
-    "Dinner (time approximated at 19:30): 2 Agami Pita Pro spelt pitas + 4 Tnuva Emek Light yellow cheese slices (both verified references) + 2 sunny side up eggs + 2 spoons garlic Simfonia 5% cheese spread (same macro reference as plain Simfonia) + 30 cherry tomatoes (~510g, doubled the usual 15-tomato reference). Tomatoes drove another round of lycopene/vitamin C/folate."
+    "Dinner (time approximated at 19:30): 2 Agami Pita Pro spelt pitas + 4 Tnuva Emek Light yellow cheese slices (both verified references) + 2 sunny side up eggs + 2 spoons garlic Simfonia 5% cheese spread (same macro reference as plain Simfonia) + 30 cherry tomatoes (~510g, doubled the usual 15-tomato reference). Tomatoes drove another round of lycopene/vitamin C/folate.",
+    "18:45 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target."
   ],
-  "status_note": "Slept ~7.58h (22:50-06:25) — a solid full night, squarely in the 7-9h target band. Espresso at 07:00, 2 protein cinnamon donuts at 08:00, another espresso at 08:30, lunch at 13:00 (spelt pasta with beef bolognese), a dark chocolate cube at 14:45, double espressos at 14:40 and 17:00, and dinner at 19:30 (spelt pitas, yellow cheese, sunny side up eggs, garlic Simfonia, cherry tomatoes) (caffeine_shots: 6)."
+  "status_note": "Slept ~7.58h (22:50-06:25) — a solid full night, squarely in the 7-9h target band. Espresso at 07:00, 2 protein cinnamon donuts at 08:00, another espresso at 08:30, lunch at 13:00 (spelt pasta with beef bolognese), a dark chocolate cube at 14:45, double espressos at 14:40 and 17:00, dinner at 19:30 (spelt pitas, yellow cheese, sunny side up eggs, garlic Simfonia, cherry tomatoes), and omega-3 at 18:45 (caffeine_shots: 6)."
 }
