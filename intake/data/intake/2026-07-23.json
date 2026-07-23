@@ -20,7 +20,8 @@
     {"time": "19:30", "name": "Dinner — Simfonia garlic cheese spread, 5% fat", "category": "food", "qty": "2 spoons (~40-60 g)", "kcal": 120, "protein_g": 7, "carbs_g": 2, "fat_g": 10, "fiber_g": 0, "time_approx": true, "note": "same macro reference as regular Simfonia 5%, garlic-flavored variant"},
     {"time": "19:30", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "30 (~510 g)", "kcal": 92, "protein_g": 4.6, "carbs_g": 20, "fat_g": 1, "fiber_g": 6, "time_approx": true, "note": "standard tomato reference values, doubled from the usual 15-tomato portion"},
     {"time": "18:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "20:20", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior strawberry entries, vanilla flavor, same macro profile (20g protein/cup); flag if a different brand"}
+    {"time": "20:20", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior strawberry entries, vanilla flavor, same macro profile (20g protein/cup); flag if a different brand"},
+    {"time": "20:45", "name": "Watermelon", "category": "food", "qty": "700 g", "kcal": 210, "protein_g": 4.2, "carbs_g": 53.2, "fat_g": 1.4, "fiber_g": 2.8, "time_approx": true, "note": "no time given, approximated after the 20:20 yogurt — standard reference values"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.5,
@@ -30,7 +31,7 @@
     "vitamin_c_mg": 81.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0.5,
-    "lycopene_mg": 22.2
+    "lycopene_mg": 79.1
   },
   "caffeine_shots": 6,
   "assumptions": [
@@ -43,7 +44,8 @@
     "14:40 double espresso (~60-80ml, counts as 2 caffeine shots) and 17:00 double espresso (same).",
     "Dinner (time approximated at 19:30): 2 Agami Pita Pro spelt pitas + 4 Tnuva Emek Light yellow cheese slices (both verified references) + 2 sunny side up eggs + 2 spoons garlic Simfonia 5% cheese spread (same macro reference as plain Simfonia) + 30 cherry tomatoes (~510g, doubled the usual 15-tomato reference). Tomatoes drove another round of lycopene/vitamin C/folate.",
     "18:45 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target.",
-    "20:20 vanilla protein yogurt — no brand specified, assumed the same Danone PRO 0% line used for prior strawberry entries (1 cup, 200g, 20g protein), just vanilla flavor. Same macros as the strawberry reference."
+    "20:20 vanilla protein yogurt — no brand specified, assumed the same Danone PRO 0% line used for prior strawberry entries (1 cup, 200g, 20g protein), just vanilla flavor. Same macros as the strawberry reference.",
+    "700g watermelon, no time given (approximated at 20:45, after the yogurt) — standard reference values (~8.13mg lycopene/100g), pushed the day's lycopene well past target."
   ],
-  "status_note": "Slept ~7.58h (22:50-06:25) — a solid full night, squarely in the 7-9h target band. Espresso at 07:00, 2 protein cinnamon donuts at 08:00, another espresso at 08:30, lunch at 13:00 (spelt pasta with beef bolognese), a dark chocolate cube at 14:45, double espressos at 14:40 and 17:00, dinner at 19:30 (spelt pitas, yellow cheese, sunny side up eggs, garlic Simfonia, cherry tomatoes), omega-3 at 18:45, and a vanilla protein yogurt at 20:20 (caffeine_shots: 6)."
+  "status_note": "Slept ~7.58h (22:50-06:25) — a solid full night, squarely in the 7-9h target band. Espresso at 07:00, 2 protein cinnamon donuts at 08:00, another espresso at 08:30, lunch at 13:00 (spelt pasta with beef bolognese), a dark chocolate cube at 14:45, double espressos at 14:40 and 17:00, dinner at 19:30 (spelt pitas, yellow cheese, sunny side up eggs, garlic Simfonia, cherry tomatoes), omega-3 at 18:45, a vanilla protein yogurt at 20:20, and 700g watermelon at 20:45 (caffeine_shots: 6)."
 }
