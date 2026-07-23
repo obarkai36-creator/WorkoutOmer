@@ -11,7 +11,9 @@
     {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Lunch — cooked spelt pasta", "category": "food", "qty": "160 g", "kcal": 203, "protein_g": 8.9, "carbs_g": 42.7, "fat_g": 1.3, "fiber_g": 6.4, "time_approx": true, "note": "generic whole-grain spelt pasta reference (~127 kcal/100g cooked), not a specific brand"},
     {"time": "13:00", "name": "Lunch — beef bolognese sauce", "category": "food", "qty": "220 g", "kcal": 330, "protein_g": 22, "carbs_g": 13.2, "fat_g": 20.9, "fiber_g": 2.9, "time_approx": true, "note": "standard homemade ground-beef bolognese reference (~150kcal/100g: beef + tomato/onion/carrot base), not weighed by ingredient"},
-    {"time": "14:45", "name": "Dark chocolate cube", "category": "food", "qty": "1 cube (~5 g)", "kcal": 28, "protein_g": 0.3, "carbs_g": 2.4, "fat_g": 2, "fiber_g": 0.4, "note": "standard 70% dark chocolate reference, single square/cube"}
+    {"time": "14:45", "name": "Dark chocolate cube", "category": "food", "qty": "1 cube (~5 g)", "kcal": 28, "protein_g": 0.3, "carbs_g": 2.4, "fat_g": 2, "fiber_g": 0.4, "note": "standard 70% dark chocolate reference, single square/cube"},
+    {"time": "14:40", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "17:00", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.5,
@@ -23,14 +25,15 @@
     "vitamin_e_mg": 0.5,
     "lycopene_mg": 9
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 6,
   "assumptions": [
     "Sleep logged: 22:50-06:25, ~7.58h — squarely in the 7-9h target band, one continuous stretch.",
     "07:00 espresso (40ml).",
     "08:00 Legendary Foods Protein Donuts, Cinnamon Crumble — assumed 2 donuts (product's own default serving size) since no count was given. Web-search reference (myfooddata): 80kcal/10g protein/13g carb/4g fiber/3g fat per donut, doubled for 2. High-fiber, low-sugar keto-style protein donut.",
     "08:30 espresso (40ml).",
     "Lunch (time approximated at 13:00): 160g cooked spelt pasta (generic whole-grain spelt reference, ~127kcal/100g) + 220g beef bolognese sauce (standard homemade ground-beef/tomato/onion/carrot reference, ~150kcal/100g). Beef contributed the day's first zinc/selenium, tomato base gave some lycopene/vitamin C/folate — estimates, not weighed by ingredient.",
-    "14:45 dark chocolate cube (~5g), standard 70% dark chocolate reference — no meaningful micros in the tracked priority list."
+    "14:45 dark chocolate cube (~5g), standard 70% dark chocolate reference — no meaningful micros in the tracked priority list.",
+    "14:40 double espresso (~60-80ml, counts as 2 caffeine shots) and 17:00 double espresso (same)."
   ],
-  "status_note": "Slept ~7.58h (22:50-06:25) — a solid full night, squarely in the 7-9h target band. Espresso at 07:00, 2 protein cinnamon donuts at 08:00, another espresso at 08:30, lunch at 13:00 (spelt pasta with beef bolognese), and a dark chocolate cube at 14:45 (caffeine_shots: 2)."
+  "status_note": "Slept ~7.58h (22:50-06:25) — a solid full night, squarely in the 7-9h target band. Espresso at 07:00, 2 protein cinnamon donuts at 08:00, another espresso at 08:30, lunch at 13:00 (spelt pasta with beef bolognese), a dark chocolate cube at 14:45, and double espressos at 14:40 and 17:00 (caffeine_shots: 6)."
 }
