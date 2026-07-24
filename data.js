@@ -160,6 +160,8 @@ const EXERCISE_LIBRARY = {
 
   // Core
   "Plank":                  { kind: "strength", iso: true, bodyweight: true, muscles: { core: 1.0 } },
+  "VKR":                    { kind: "strength", bodyweight: true, muscles: { core: 1.0 } },
+  "VKR to Sides":           { kind: "strength", bodyweight: true, muscles: { core: 1.0 } },
   "Stretching / Mobility (rehab)": { kind: "mobility", iso: true, muscles: {} },
 
   // Cardio
@@ -198,12 +200,12 @@ const SNAPSHOT = [
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 82, text: "82kg × 4×6" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
-  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 4, reps: 12, weight: 28, text: "14kg each × 4×12" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
-  { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 10, weight: 28, text: "14kg each × 4×10" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
+  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 4, reps: 9, weight: 36, text: "18kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 36, text: "18kg each × 4×9" } },
+  { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
-  { name: "Front Raises",              section: "Shoulders", latest: { sets: 3, reps: 10, weight: 16, text: "16kg × 3×10" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" } },
+  { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" } },
   { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 8, weight: 73, text: "73kg × 3×8" }, best: { sets: 3, reps: 8, weight: 73, text: "73kg × 3×8" } },
-  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
+  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" }, best: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" } },
   { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 30, weight: 48, text: "24kg each × 4×30s" }, best: { sets: 4, seconds: 30, weight: 48, text: "24kg each × 4×30s" } },
 
   // ---- Arms: Triceps ----
@@ -246,6 +248,8 @@ const SNAPSHOT = [
 
   // ---- Core ----
   { name: "Plank", section: "Core", iso: true, latest: { sets: 1, seconds: 45, weight: 81.25, text: "BW × 1×45s" }, best: { sets: 3, seconds: 30, weight: 81, text: "BW × 3×30s" } },
+  { name: "VKR", section: "Core", latest: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" }, best: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" } },
+  { name: "VKR to Sides", section: "Core", latest: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" }, best: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" } },
 ];
 
 /* ---- WORKOUTS — dated sessions (newest first) ------------------------------
@@ -258,6 +262,19 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 24 Jul — Shoulders (10:20, followed the report's recommended Shoulders day)
+  {
+    datetime: "2026-07-24T10:20", note: "Shoulders",
+    exercises: [
+      { name: "Front Raises",           sets: [ { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 } ] },
+      { name: "Dumbbell Shoulder Press", sets: [ { reps: 9, weight: 36 }, { reps: 9, weight: 36 }, { reps: 9, weight: 36 }, { reps: 9, weight: 36 } ] },
+      { name: "Shoulder Shrugs",        sets: [ { reps: 11, weight: 48 }, { reps: 11, weight: 48 }, { reps: 11, weight: 48 }, { reps: 11, weight: 48 } ] },
+      { name: "Lateral Raises",         sets: [ { reps: 8, weight: 32 }, { reps: 8, weight: 32 }, { reps: 8, weight: 32 }, { reps: 8, weight: 32 } ] },
+      { name: "VKR",                    sets: [ { reps: 8 }, { reps: 8 }, { reps: 8 }, { reps: 8 } ] },
+      { name: "VKR to Sides",           sets: [ { reps: 8 }, { reps: 8 }, { reps: 8 }, { reps: 8 } ] },
+    ],
+  },
+
   // 21 Jul — Back (15:30, followed the report's recommended Back day)
   {
     datetime: "2026-07-21T15:30", note: "Back",
