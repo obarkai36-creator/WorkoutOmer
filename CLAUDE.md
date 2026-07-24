@@ -11,3 +11,12 @@
   sending/processing rather than waiting for the real 32MB error, so the user
   never has to abandon a session over it. Suggest splitting into multiple
   smaller messages as the workaround.
+- Workout dashboard auto-email gate: the report.yml GitHub Action only sends
+  the emailed report when it detects a genuinely new WORKOUTS entry in
+  data.js (check_new_workout.mjs). If an exercise is added to a workout
+  *after* that workout's session was already logged and pushed (same date,
+  editing the existing entry rather than adding a new one), the auto-email
+  gate will skip it — so the emailed report will silently miss the addition.
+  In that situation, manually trigger the report.yml workflow via
+  workflow_dispatch right after pushing, without waiting to be asked —
+  don't make the user discover the gap by asking "did you send it?".
