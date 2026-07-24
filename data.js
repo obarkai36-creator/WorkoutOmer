@@ -204,7 +204,7 @@ const SNAPSHOT = [
   { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
   { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" } },
-  { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 8, weight: 73, text: "73kg × 3×8" }, best: { sets: 3, reps: 8, weight: 73, text: "73kg × 3×8" } },
+  { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 9, weight: 73, text: "73kg × 3×9" }, best: { sets: 3, reps: 9, weight: 73, text: "73kg × 3×9" } },
   { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" }, best: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" } },
   { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 30, weight: 48, text: "24kg each × 4×30s" }, best: { sets: 4, seconds: 30, weight: 48, text: "24kg each × 4×30s" } },
 
@@ -270,6 +270,7 @@ const WORKOUTS = [
       { name: "Dumbbell Shoulder Press", sets: [ { reps: 9, weight: 36 }, { reps: 9, weight: 36 }, { reps: 9, weight: 36 }, { reps: 9, weight: 36 } ] },
       { name: "Shoulder Shrugs",        sets: [ { reps: 11, weight: 48 }, { reps: 11, weight: 48 }, { reps: 11, weight: 48 }, { reps: 11, weight: 48 } ] },
       { name: "Lateral Raises",         sets: [ { reps: 8, weight: 32 }, { reps: 8, weight: 32 }, { reps: 8, weight: 32 }, { reps: 8, weight: 32 } ] },
+      { name: "Rear Delt Machine",      sets: [ { reps: 9, weight: 73 }, { reps: 9, weight: 73 }, { reps: 9, weight: 73 } ] },
       { name: "VKR",                    sets: [ { reps: 8 }, { reps: 8 }, { reps: 8 }, { reps: 8 } ] },
       { name: "VKR to Sides",           sets: [ { reps: 8 }, { reps: 8 }, { reps: 8 }, { reps: 8 } ] },
     ],
