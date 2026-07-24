@@ -15,7 +15,8 @@
     {"time": "13:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "10 (~170 g)", "kcal": 31, "protein_g": 1.5, "carbs_g": 6.7, "fat_g": 0.3, "fiber_g": 2, "time_approx": true, "note": "standard tomato reference values"},
     {"time": "13:00", "name": "Lunch — Simfonia garlic & herb cheese spread, 5% fat", "category": "food", "qty": "2 tbsp (~40-60 g)", "kcal": 120, "protein_g": 7, "carbs_g": 2, "fat_g": 10, "fiber_g": 0, "time_approx": true, "note": "same macro reference as regular Simfonia 5%, garlic & herb flavor variant"},
     {"time": "14:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:46", "name": "Taste test — chicken & spelt pasta batch dish", "category": "food", "qty": "2 bites (~35 g)", "kcal": 75, "protein_g": 5.7, "carbs_g": 10, "fat_g": 1.4, "fiber_g": 1.3, "note": "small taste of next week's meal-prep batch (214kcal/100g reference); ~35g estimated for 2 bites"}
+    {"time": "14:46", "name": "Taste test — chicken & spelt pasta batch dish", "category": "food", "qty": "2 bites (~35 g)", "kcal": 75, "protein_g": 5.7, "carbs_g": 10, "fat_g": 1.4, "fiber_g": 1.3, "note": "small taste of next week's meal-prep batch (214kcal/100g reference); ~35g estimated for 2 bites"},
+    {"time": "14:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -27,7 +28,7 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 7.6
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:00-08:00, 9h — just above the 7-9h target band, one continuous stretch.",
     "09:00 weigh-in (Eufy full body composition): 81.20kg, BMI 27.7, body fat 27.2%, body fat mass 22.00kg, skeletal muscle mass 30.80kg, visceral fat 11.0, muscle mass 56.20kg, lean body mass 59.20kg, bone mass 3.00kg, protein 15.3%, subcutaneous fat 23.9%, water 49.8%, BMR 1722kcal, resting heart rate 72bpm, body age 29, body type Muscular Overweight. Down 0.05kg vs 18 Jul, composition essentially flat.",
@@ -37,7 +38,8 @@
     "Addition to workout: Rear delt machine 73kg×3×9 (new PR, +1 rep at same weight vs the prior 73kg×3×8 best). Mirrored to data.js SNAPSHOT/WORKOUTS and workouts.json; report_snapshot resynced (34 sessions, ACWR 1.22, recommends Legs next).",
     "Lunch (time approximated at 13:00): 2 Agami Pita Pro spelt pitas + 4 Tnuva Emek Light yellow cheese slices (both verified references) + 2 sunny side up eggs + 1 medium tomato + 10 cherry tomatoes + 2 tbsp garlic & herb Simfonia 5% cheese spread (same macro reference as plain Simfonia). Tomatoes gave the day's first lycopene/vitamin C/folate.",
     "14:15 creatine monohydrate, 5g — zero kcal/macros.",
-    "14:46 taste test (2 bites, ~35g) of next week's chicken & spelt pasta meal-prep batch — calculated at 214kcal/100g from the full ingredient list + final dish weight (2000g), saved to foods.json for reuse next week."
+    "14:46 taste test (2 bites, ~35g) of next week's chicken & spelt pasta meal-prep batch — calculated at 214kcal/100g from the full ingredient list + final dish weight (2000g), saved to foods.json for reuse next week.",
+    "14:55 double espresso (~60-80ml, counts as 2 caffeine shots)."
   ],
-  "status_note": "Slept 9h (23:00-08:00) — a long, solid night, just above the 7-9h target band. Weigh-in at 09:00: 81.20kg (-0.05kg vs 18 Jul), body fat 27.2%, composition steady. Double espresso at 09:10, a vanilla protein yogurt at 09:45, a Shoulders workout at 10:20 (3 PRs: Dumbbell Shoulder Press, Shoulder Shrugs, Rear Delt Machine, plus 2 new core exercises), lunch at 13:00 (spelt pitas, yellow cheese, sunny side up eggs, tomato + cherry tomatoes, garlic & herb Simfonia), creatine at 14:15, and a 2-bite taste test of next week's meal-prep batch at 14:46 (caffeine_shots: 2)."
+  "status_note": "Slept 9h (23:00-08:00) — a long, solid night, just above the 7-9h target band. Weigh-in at 09:00: 81.20kg (-0.05kg vs 18 Jul), body fat 27.2%, composition steady. Double espresso at 09:10, a vanilla protein yogurt at 09:45, a Shoulders workout at 10:20 (3 PRs: Dumbbell Shoulder Press, Shoulder Shrugs, Rear Delt Machine, plus 2 new core exercises), lunch at 13:00 (spelt pitas, yellow cheese, sunny side up eggs, tomato + cherry tomatoes, garlic & herb Simfonia), creatine at 14:15, a 2-bite taste test of next week's meal-prep batch at 14:46, and another double espresso at 14:55 (caffeine_shots: 4)."
 }
