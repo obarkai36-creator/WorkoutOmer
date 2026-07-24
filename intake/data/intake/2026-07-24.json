@@ -5,7 +5,9 @@
   "workout_today": false,
   "workout_summary": null,
   "_status": "Day just opened — sleep and weigh-in logged.",
-  "items": [],
+  "items": [
+    {"time": "09:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,10 +18,11 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:00-08:00, 9h — just above the 7-9h target band, one continuous stretch.",
-    "09:00 weigh-in (Eufy full body composition): 81.20kg, BMI 27.7, body fat 27.2%, body fat mass 22.00kg, skeletal muscle mass 30.80kg, visceral fat 11.0, muscle mass 56.20kg, lean body mass 59.20kg, bone mass 3.00kg, protein 15.3%, subcutaneous fat 23.9%, water 49.8%, BMR 1722kcal, resting heart rate 72bpm, body age 29, body type Muscular Overweight. Down 0.05kg vs 18 Jul, composition essentially flat."
+    "09:00 weigh-in (Eufy full body composition): 81.20kg, BMI 27.7, body fat 27.2%, body fat mass 22.00kg, skeletal muscle mass 30.80kg, visceral fat 11.0, muscle mass 56.20kg, lean body mass 59.20kg, bone mass 3.00kg, protein 15.3%, subcutaneous fat 23.9%, water 49.8%, BMR 1722kcal, resting heart rate 72bpm, body age 29, body type Muscular Overweight. Down 0.05kg vs 18 Jul, composition essentially flat.",
+    "09:10 double espresso (~60-80ml, counts as 2 caffeine shots)."
   ],
-  "status_note": "Slept 9h (23:00-08:00) — a long, solid night, just above the 7-9h target band. Weigh-in at 09:00: 81.20kg (-0.05kg vs 18 Jul), body fat 27.2%, composition steady."
+  "status_note": "Slept 9h (23:00-08:00) — a long, solid night, just above the 7-9h target band. Weigh-in at 09:00: 81.20kg (-0.05kg vs 18 Jul), body fat 27.2%, composition steady. Double espresso at 09:10 (caffeine_shots: 2)."
 }
