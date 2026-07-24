@@ -209,7 +209,8 @@ def aggregate_month(ym, profile, sperm_model, all_days, weight_entries, sleep_en
 
     days = [d for d in all_days if in_range(d["date"], start, end)]
     n_days = len(days)
-    protein_hit = sum(1 for d in days if day_tot(d, "protein_g") >= t["protein_g"])
+    macro_days = [d for d in days if not d.get("exclude_from_monthly_macros")]
+    protein_hit = sum(1 for d in macro_days if day_tot(d, "protein_g") >= t["protein_g"])
 
     w_in = [e for e in weight_entries if in_range(e["date"], start, end)]
     s_in = [e for e in sleep_entries if in_range(e["date"], start, end)]
@@ -238,12 +239,12 @@ def aggregate_month(ym, profile, sperm_model, all_days, weight_entries, sleep_en
 
     return {
         "ym": ym, "n_days": n_days,
-        "kcal_avg": safe_avg([day_tot(d, "kcal") for d in days], 0),
-        "protein_avg": safe_avg([day_tot(d, "protein_g") for d in days], 1),
-        "carbs_avg": safe_avg([day_tot(d, "carbs_g") for d in days], 1),
-        "fat_avg": safe_avg([day_tot(d, "fat_g") for d in days], 1),
-        "fiber_avg": safe_avg([day_tot(d, "fiber_g") for d in days], 1),
-        "protein_adherence": round(protein_hit / n_days * 100) if n_days else None,
+        "kcal_avg": safe_avg([day_tot(d, "kcal") for d in macro_days], 0),
+        "protein_avg": safe_avg([day_tot(d, "protein_g") for d in macro_days], 1),
+        "carbs_avg": safe_avg([day_tot(d, "carbs_g") for d in macro_days], 1),
+        "fat_avg": safe_avg([day_tot(d, "fat_g") for d in macro_days], 1),
+        "fiber_avg": safe_avg([day_tot(d, "fiber_g") for d in macro_days], 1),
+        "protein_adherence": round(protein_hit / len(macro_days) * 100) if macro_days else None,
         "weight_avg": safe_avg([e["weight_kg"] for e in w_in], 1),
         "weight_series": [(e["date"], e["weight_kg"]) for e in w_in],
         "sleep_avg": safe_avg([e["duration_hours"] for e in s_in], 2),
