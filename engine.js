@@ -280,6 +280,15 @@ function nextLiftTarget(e) {
   return { status: "progress", text: `+${inc}kg (reset to ${best.sets}×${REP_RESTART})`, note: `You're at ${best.reps} reps on ${best.text} — step the weight up ~${inc}kg and reset to ${best.sets}×${REP_RESTART}.` };
 }
 
+/* Exercises to leave out of the Next Session suggestion list specifically
+ * (SNAPSHOT/Workload Progress/balance still track them in full) — either
+ * superseded by another exercise or deliberately deduped so only one variant
+ * of a redundant pair gets suggested. */
+const SUGGESTION_EXCLUDE = new Set([
+  "Leg Extensions",              // machine maxed out; superseded by Single-Leg Extensions
+  "Standing Calf Raises (Frame)", // keep only Calf Raises Machine in suggestions
+]);
+
 /* ---- next recommended session --------------------------------------------- */
 function recommendSession(data, workouts, sectionFat, now, bal, trends) {
   const muscles = data.MUSCLES;
@@ -332,7 +341,7 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends) {
   // double progression (see nextLiftTarget) — ordered and annotated below to
   // reflect what actually keeps the program balanced this session.
   let suggestedExercises = data.SNAPSHOT
-    .filter((e) => e.section === pick.section)
+    .filter((e) => e.section === pick.section && !SUGGESTION_EXCLUDE.has(e.name))
     .map((e) => {
       const B = recStats(e.best, e.iso);
       const lib = data.EXERCISE_LIBRARY[e.name];
