@@ -1,19 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-07-24",
-    "latest_session": "Shoulders",
-    "sessions_logged": 34,
+    "report_date": "2026-07-25",
+    "latest_session": "Legs",
+    "sessions_logged": 35,
     "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 49.8,
-    "aerobic_sessions_28d": 7,
+    "aerobic_28d_km": 45.3,
+    "aerobic_sessions_28d": 6,
     "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 1.22,
-    "recommended_next": "Legs day",
+    "acwr": 1.62,
+    "recommended_next": "Core day",
     "alerts": [
-      "Nothing acutely concerning. The notes below are housekeeping, not warnings."
+      "Load ratio 1.62 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload."
     ]
   },
   "entries": [
@@ -167,6 +167,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Front raises 18kg KB×4×8 (ties best); Dumbbell shoulder press 18kg each×4×9 (new PR, +1 rep at same weight); Shoulder shrugs 24kg each×4×11 (new PR, +1 rep at same weight); Lateral raises 16kg each×4×8 (ties best); Rear delt machine 73kg×3×9 (new PR, +1 rep at same weight); VKR 4×8 and VKR to sides 4×8 (new bodyweight core exercises, first log). Followed the report's recommended Shoulders day. 10:20.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-25",
+      "type": "Strength — Legs",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Calf raises machine 76kg×4×11 (65kg add + 11kg frame; new PR by est. 1RM vs 77kg×4×10); Leg press 132kg×4×10 (new PR, +2 reps at same weight); Angled leg press 202kg setup [70kg each side + 62kg frame]×4×7 (new PR, +1 rep at same weight); Single-leg extensions 57kg each×4×6 (new PR — large jump from the prior 23.25kg-each reference, possibly a different machine setting; flagged); Outer thigh 79kg×4×10 (ties best by weight/reps, fewer total sets — 4 vs 5); Inner thigh 79kg×3×8 (new PR by est. 1RM vs 75kg×3×10, essentially equivalent). Followed the report's recommended Legs day. 10:20.",
       "_source": "manual log"
     }
   ]
