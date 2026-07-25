@@ -1,0 +1,34 @@
+{
+  "date": "2026-07-25",
+  "day_number": 28,
+  "in_progress": true,
+  "workout_today": false,
+  "workout_summary": null,
+  "_status": "Day just opened — sleep logged. Food/nutrition tracking skipped today per user request; only caffeine and supplements will be logged.",
+  "items": [],
+  "macro_display_override": {
+    "kcal": "Not tracked",
+    "protein_g": "Not tracked",
+    "carbs_g": "Not tracked",
+    "fat_g": "Not tracked",
+    "fiber_g": "Not tracked"
+  },
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User opted out of food/nutrition tracking for the day (only caffeine and supplements logged) — excluded from monthly kcal/protein/carbs/fat/fiber averages and protein-adherence rate.",
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "caffeine_shots": 0,
+  "assumptions": [
+    "Sleep logged: 23:45-08:30, 8.75h — squarely in the 7-9h target band, one continuous stretch.",
+    "Per the user's request (made the prior evening), today's food/nutrition is not being tracked — only caffeine and supplements will be logged. Macro panel shows 'Not tracked' and today is excluded from monthly macro averages."
+  ],
+  "status_note": "Slept 8.75h (23:45-08:30) — a long, solid night, squarely in the 7-9h target band. Food/nutrition tracking skipped today per user request; only caffeine and supplements will be logged."
+}
