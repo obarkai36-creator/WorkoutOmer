@@ -13,7 +13,8 @@
     {"time": "10:30", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Lunch — Mi Casa (Herzliya) large cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as 15/16/20 Jul)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "time_approx": true, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Reused the established estimate."},
     {"time": "13:30", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "13:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:20", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -25,7 +26,7 @@
     "vitamin_e_mg": 16.5,
     "lycopene_mg": 8.8
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:45-06:15, ~6.5h — a bit short of the 7-9h target band, one continuous stretch.",
     "08:10 espresso (40ml).",
@@ -34,7 +35,8 @@
     "10:30 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
     "Lunch (time not given, approximated at 13:00): Mi Casa Vietnamese-style cucumber/chicken noodle salad, same order as previously logged (15/16/20 Jul) — reusing that estimate.",
     "13:30 espresso (40ml).",
-    "13:45 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target."
+    "13:45 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target.",
+    "15:20 espresso (40ml)."
   ],
-  "status_note": "Slept ~6.5h (23:45-06:15) — a bit short of the 7-9h target band. Espresso at 08:10, breakfast at 09:00 (yellow cheese + cherry tomatoes), another espresso at 10:00, multivitamin at 10:30, lunch at 13:00 (Mi Casa cucumber salad with chicken, same as before), another espresso at 13:30, and omega-3 at 13:45 (caffeine_shots: 3)."
+  "status_note": "Slept ~6.5h (23:45-06:15) — a bit short of the 7-9h target band. Espresso at 08:10, breakfast at 09:00 (yellow cheese + cherry tomatoes), another espresso at 10:00, multivitamin at 10:30, lunch at 13:00 (Mi Casa cucumber salad with chicken, same as before), another espresso at 13:30, omega-3 at 13:45, and another espresso at 15:20 (caffeine_shots: 4)."
 }
