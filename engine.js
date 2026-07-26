@@ -293,8 +293,11 @@ const SUGGESTION_EXCLUDE = new Set([
 function recommendSession(data, workouts, sectionFat, now, bal, trends) {
   const muscles = data.MUSCLES;
   // Trainable sections = those with at least one strength exercise in the snapshot.
+  // Core isn't suggested as a standalone session — it still fully tracks
+  // fatigue/workload/balance and any Core exercises logged as part of a real
+  // workout still count normally; it just never wins the top-level pick.
   const trainable = [...new Set(data.SNAPSHOT.map((e) => e.section))]
-    .filter((s) => sectionFat[s] && s !== "Cardio");
+    .filter((s) => sectionFat[s] && s !== "Cardio" && s !== "Core");
 
   if (!trainable.length) return null;
 
