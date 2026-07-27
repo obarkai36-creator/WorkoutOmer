@@ -9,7 +9,8 @@
     {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "08:55", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (25 g each, 100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "no fat % specified, assumed the usual 9% reference"},
     {"time": "08:55", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4.1, "note": "standard tomato reference values"},
-    {"time": "09:03", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "09:03", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:15", "name": "Caffeine-free tea", "category": "drink", "qty": "1 cup (~250 ml)", "kcal": 2, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "herbal/caffeine-free — no caffeine shot added"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -26,7 +27,8 @@
     "Sleep logged: 23:15-06:30, ~7.25h — squarely in the 7-9h target band, one continuous stretch.",
     "08:00 espresso (40ml).",
     "08:55 breakfast: 4 yellow cheese slices (no fat % given, assumed the usual Tnuva Emek Light 9% reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51.1mcg DFE.",
-    "09:03 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros."
+    "09:03 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
+    "10:15 caffeine-free tea (~250ml) — negligible kcal, no caffeine shot added."
   ],
-  "status_note": "Slept ~7.25h (23:15-06:30) — a solid full night, squarely in the 7-9h target band. Espresso at 08:00, breakfast at 08:55 (yellow cheese + cherry tomatoes), and multivitamin at 09:03 (caffeine_shots: 1)."
+  "status_note": "Slept ~7.25h (23:15-06:30) — a solid full night, squarely in the 7-9h target band. Espresso at 08:00, breakfast at 08:55 (yellow cheese + cherry tomatoes), multivitamin at 09:03, and caffeine-free tea at 10:15 (caffeine_shots: 1)."
 }
