@@ -14,19 +14,21 @@
     {"time": "11:00", "name": "Snack — almonds", "category": "food", "qty": "2", "kcal": 14, "protein_g": 0.5, "carbs_g": 0.5, "fat_g": 1.2, "fiber_g": 0.3, "note": "standard almond reference (~7kcal each)"},
     {"time": "11:00", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified reference, reused"},
     {"time": "12:25", "name": "Lunch — Mi Casa (Herzliya) large cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as previously logged)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Reused the established estimate."},
-    {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:15", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
     "folate_mcg_dfe": 718.1,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 297.6,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
     "lycopene_mg": 8.8
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 23:15-06:30, ~7.25h — squarely in the 7-9h target band, one continuous stretch.",
     "08:00 espresso (40ml).",
@@ -35,7 +37,8 @@
     "10:15 caffeine-free tea (~250ml) — negligible kcal, no caffeine shot added.",
     "11:00 snack: 2 almonds (standard reference) + 1 yellow cheese slice (verified reference, reused).",
     "12:25 lunch: Mi Casa Vietnamese-style cucumber/chicken noodle salad, same order as previously logged — reusing that estimate.",
-    "12:45 espresso (40ml)."
+    "12:45 espresso (40ml).",
+    "14:15 espresso (40ml) and omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — omega-3 zero kcal/macros, brings the day's omega-3 micro to target."
   ],
-  "status_note": "Slept ~7.25h (23:15-06:30) — a solid full night, squarely in the 7-9h target band. Espresso at 08:00, breakfast at 08:55 (yellow cheese + cherry tomatoes), multivitamin at 09:03, caffeine-free tea at 10:15, a snack (almonds + yellow cheese) at 11:00, lunch at 12:25 (Mi Casa cucumber salad with chicken), and another espresso at 12:45 (caffeine_shots: 2)."
+  "status_note": "Slept ~7.25h (23:15-06:30) — a solid full night, squarely in the 7-9h target band. Espresso at 08:00, breakfast at 08:55 (yellow cheese + cherry tomatoes), multivitamin at 09:03, caffeine-free tea at 10:15, a snack (almonds + yellow cheese) at 11:00, lunch at 12:25 (Mi Casa cucumber salad with chicken), another espresso at 12:45, and espresso + omega-3 at 14:15 (caffeine_shots: 3)."
 }
