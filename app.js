@@ -106,15 +106,20 @@
       ? `<span style="color:var(--green)">Ready to train now</span>`
       : `Rest <b>${humanHours(r.restHours)}</b> before training`;
 
+    const whenLine = r.deload
+      ? "Lighter loads, capped reps, no PR attempts this session."
+      : (r.readyNow ? "Earliest sensible slot: now" : "Ready around " + fmtWhen(r.readyAt)) + " &middot; " +
+        (r.neverLogged ? "no " + r.section.toLowerCase() + " session logged yet" : "last " + r.section.toLowerCase() + " " + r.daysSince + "d ago");
+
     el.innerHTML = `
       <div class="reco">
         <div class="muted small">RECOMMENDED NEXT SESSION</div>
-        <div class="big">${r.section} day</div>
+        <div class="big">${r.deload ? "Full Body — Deload" : r.section + " day"}</div>
         <div class="rest">${restTxt}</div>
-        <div class="when">${r.readyNow ? "Earliest sensible slot: now" : "Ready around " + fmtWhen(r.readyAt)} &middot; ${r.neverLogged ? "no " + r.section.toLowerCase() + " session logged yet" : "last " + r.section.toLowerCase() + " " + r.daysSince + "d ago"}</div>
+        <div class="when">${whenLine}</div>
         ${r.guidance && r.guidance.length ? `
-        <div class="small muted" style="margin-top:12px;margin-bottom:2px">SESSION FOCUS</div>
-        ${r.guidance.map((g) => `<div class="small" style="margin-bottom:4px">${g}</div>`).join("")}` : ""}
+        <div class="small muted" style="margin-top:12px;margin-bottom:2px">${r.deload ? "WHY A DELOAD" : "SESSION FOCUS"}</div>
+        ${r.guidance.map((g) => `<div class="small" style="margin-bottom:4px${r.deload ? ';color:var(--yellow)' : ''}">${g}</div>`).join("")}` : ""}
         <div class="small muted" style="margin-top:12px;margin-bottom:2px">Suggested lifts &middot; next-session target</div>
         <div class="reco-lifts">
           ${r.suggestedExercises.map((e) => `
@@ -127,13 +132,14 @@
             </div>`).join("")}
         </div>
       </div>
+      ${r.ranked.length ? `
       <div class="small muted" style="margin-bottom:8px">Recovery ranking</div>
       ${r.ranked.map((x) => `
         <div class="mrow">
           <span class="ml">${x.section}</span>
           <span class="bar"><span style="width:${x.fatigue}%;background:${fatigueColor(x.fatigue)}"></span></span>
           <span class="mv">${x.readyInHours < 1 ? "ready" : humanHours(x.readyInHours)}</span>
-        </div>`).join("")}
+        </div>`).join("")}` : ""}
       <div class="small muted" style="margin-top:12px">
         Aerobic this week: <b style="color:var(--text)">${r.aerobicLast7}/${r.aerobicTarget}</b>${r.aerobicLast7 < r.aerobicTarget ? " — fit in an easy session" : " — on track"}
       </div>

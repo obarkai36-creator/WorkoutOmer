@@ -51,7 +51,7 @@ const snapshot = {
   avg_pace: fmtPace(a.aerobic.avgPace),
   avg_hr: a.aerobic.avgHr,
   acwr: a.trends.acwr,
-  recommended_next: `${a.recommendation.section} day`,
+  recommended_next: a.recommendation.deload ? "Full Body (Deload) day" : `${a.recommendation.section} day`,
   alerts: a.alerts.map((al) => al.detail),
 };
 

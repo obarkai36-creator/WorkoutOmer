@@ -289,8 +289,88 @@ const SUGGESTION_EXCLUDE = new Set([
   "Standing Calf Raises (Frame)", // keep only Calf Raises Machine in suggestions
 ]);
 
+/* ---- deload check ----------------------------------------------------------
+ * Whether the next session should be a light, full-body deload rather than
+ * the normal per-section progression pick. Primary driver is training load
+ * from the logged entries (ACWR danger zone); short-sleep and a notable
+ * bodyweight drop are lifestyle-fatigue signals that strengthen the call but
+ * aren't required on their own — they're reported either way so the reasoning
+ * is visible, not just the verdict. */
+function deloadCheck(trends, sleep, bw) {
+  const reasons = [];
+  const loadSpike = !!(trends && trends.acwrZone === "danger");
+  if (loadSpike) reasons.push(`Load ratio (ACWR) ${trends.acwr} is in the danger zone (>1.5) from your recent logged sessions.`);
+
+  const shortSleep = !!(sleep && sleep.any && sleep.avg7 != null && sleep.avg7 < 7);
+  if (shortSleep) reasons.push(`7-day average sleep is only ${sleep.avg7}h — under-recovered going into training.`);
+
+  const bwDrop = !!(bw && bw.any && bw.delta != null && bw.delta <= -0.5);
+  if (bwDrop) reasons.push(`Bodyweight dropped ${Math.abs(bw.delta)}kg since your last weigh-in — another sign of accumulated fatigue/under-recovery.`);
+
+  return { recommend: loadSpike, reasons };
+}
+
+/* Pick each section's highest-1RM non-iso lift as the one compound exercise
+ * to include in a deload session (skips bodyweight iso holds, which don't
+ * have a top1RM and would otherwise never win). */
+function primaryLiftForSection(data, section) {
+  let top = null, topRM = -1;
+  for (const e of data.SNAPSHOT) {
+    if (e.section !== section || e.iso) continue;
+    const B = recStats(e.best, false);
+    if (B.top1RM > topRM) { topRM = B.top1RM; top = e; }
+  }
+  return top;
+}
+
+function deloadRound(w) {
+  return Math.round(w / 2.5) * 2.5;
+}
+
+function deloadTarget(e) {
+  const best = e.best;
+  if (!best) return null;
+  const weight = deloadRound((best.weight || 0) * 0.87);
+  const reps = Math.max(5, (best.reps || 8) - 2);
+  return {
+    status: "deload",
+    text: `${weight}kg × ${best.sets}×${reps} (deload)`,
+    note: `~13% lighter than your best (${best.text}), reps capped well short of failure — recovery session, no PR attempt.`,
+  };
+}
+
 /* ---- next recommended session --------------------------------------------- */
-function recommendSession(data, workouts, sectionFat, now, bal, trends) {
+function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, bw) {
+  const deload = deloadCheck(trends, sleep, bw);
+  if (deload.recommend) {
+    const sections = ["Chest", "Back", "Shoulders", "Legs", "Arms"];
+    const suggestedExercises = sections
+      .map((s) => primaryLiftForSection(data, s))
+      .filter(Boolean)
+      .map((e) => {
+        const B = recStats(e.best, false);
+        return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: false, target: deloadTarget(e) };
+      });
+    const aerobicLast7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
+    const lastAerobicDeload = workouts.find((w) => w.isAerobic);
+    return {
+      section: "Full Body",
+      deload: true,
+      deloadReasons: deload.reasons,
+      fatigue: null,
+      restHours: 0,
+      readyNow: true,
+      readyAt: new Date(now),
+      neverLogged: false,
+      daysSince: null,
+      suggestedExercises,
+      guidance: deload.reasons,
+      ranked: [],
+      aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
+      daysSinceAerobic: lastAerobicDeload ? round((now - lastAerobicDeload.t) / DAY, 1) : null,
+    };
+  }
+
   const muscles = data.MUSCLES;
   // Trainable sections = those with at least one strength exercise in the snapshot.
   // Core isn't suggested as a standalone session — it still fully tracks
@@ -593,14 +673,14 @@ function analyze(data, now = Date.now()) {
   const progress = snapshotProgress(data, workouts);
   const bal = balance(data);
   const trends = loadTrends(workouts, ref, now);
-  const recommendation = recommendSession(data, workouts, sections, now, bal, trends);
+  const bw = bodyweight(data);
+  const sleep = sleepSummary(data, now);
+  const recommendation = recommendSession(data, workouts, sections, now, bal, trends, sleep, bw);
   const alerts = injuryAlerts(data, fatigue, trends, bal, recommendation, now);
   const changes = suggestedChanges(data, progress, bal, recommendation);
   const timing = timingStats(workouts, now);
-  const bw = bodyweight(data);
   const relstrength = relativeStrength(data, bw.current);
   const aerobic = aerobicSummary(workouts, data.ATHLETE, now);
-  const sleep = sleepSummary(data, now);
   return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing, relstrength, aerobic, bodyweight: bw, sleep };
 }
 
