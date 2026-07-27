@@ -20,3 +20,12 @@
   In that situation, manually trigger the report.yml workflow via
   workflow_dispatch right after pushing, without waiting to be asked —
   don't make the user discover the gap by asking "did you send it?".
+- Monthly recap: hold off generating intake/dashboards/monthly/<YYYY-MM>.html
+  until the user explicitly signals it's time (e.g. "it's Aug 1st, run the
+  July recap") — don't run generate_monthly_recap.py proactively before then.
+- Standing permission (given 2026-07-27): proactively suggest full-body
+  deload sessions when training-load signals call for it (e.g. repeated ACWR
+  alerts >1.5 with no deload taken), and proactively make intake-based
+  suggestions about food, coffee/caffeine, or alcohol patterns when the
+  logged data supports it — don't hold back on these just to stay neutral.
+  Still frame them as suggestions/observations, not mandates.
