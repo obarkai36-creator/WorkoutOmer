@@ -19,17 +19,22 @@
     {"time": "14:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:30", "name": "Snack — cottage cheese with honey", "category": "food", "qty": "100 g cottage cheese + ~1 tsp (7 g) honey drizzled", "kcal": 119, "protein_g": 11.1, "carbs_g": 9.1, "fat_g": 4.3, "fiber_g": 0, "time_approx": true, "note": "standard cottage cheese (~4% fat) + honey reference; honey amount estimated at ~1 tsp since only 'drizzled' was given"},
     {"time": "15:30", "name": "Snack — Bagele (בייגלה)", "category": "food", "qty": "3 units (not packs, ~1.5g each)", "kcal": 18, "protein_g": 0.5, "carbs_g": 3, "fat_g": 0.5, "fiber_g": 0.2, "time_approx": true, "note": "small wheat pretzel-ring snack, standard reference per individual piece"},
-    {"time": "16:15", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:15", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "19:45", "name": "Dinner — Agami Pita Pro spelt pitas", "category": "food", "qty": "2 (68 g each, 136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "time_approx": true, "note": "verified reference, reused"},
+    {"time": "19:45", "name": "Dinner — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (25 g each, 75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "time_approx": true, "note": "verified reference, reused"},
+    {"time": "19:45", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 tsp (~13 g)", "kcal": 40, "protein_g": 2.3, "carbs_g": 0.7, "fat_g": 3.3, "fiber_g": 0, "time_approx": true, "note": "scaled down from the usual 2 tbsp reference (1 tbsp = 3 tsp)"},
+    {"time": "19:45", "name": "Dinner — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0, "time_approx": true, "note": "same estimate as prior sunny-side-up egg entries"},
+    {"time": "19:45", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4.1, "time_approx": true, "note": "standard tomato reference values"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
-    "folate_mcg_dfe": 718.1,
+    "folate_mcg_dfe": 769.2,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 297.6,
+    "vitamin_c_mg": 345.2,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 17.6
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -43,7 +48,8 @@
     "12:45 espresso (40ml).",
     "14:15 espresso (40ml) and omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — omega-3 zero kcal/macros, brings the day's omega-3 micro to target.",
     "Snack, no time given (approximated at 15:30): 100g cottage cheese drizzled with honey (~1 tsp/7g assumed, since no amount given) + 3 individual Bagele (בייגלה) pieces — clarified as units, not packs, so estimated per-piece rather than per-bag.",
-    "16:15 espresso (40ml)."
+    "16:15 espresso (40ml).",
+    "Dinner (19:45): 2 Agami Pita Pro spelt pitas + 3 Tnuva Emek Light yellow cheese slices (both verified references) + 2 tsp Simfonia cheese spread (scaled down from the usual 2 tbsp reference) + 2 sunny side up eggs + 20 cherry tomatoes. Tomatoes added another round of lycopene/vitamin C/folate."
   ],
-  "status_note": "Slept ~7.25h (23:15-06:30) — a solid full night, squarely in the 7-9h target band. Espresso at 08:00, breakfast at 08:55 (yellow cheese + cherry tomatoes), multivitamin at 09:03, caffeine-free tea at 10:15, a snack (almonds + yellow cheese) at 11:00, lunch at 12:25 (Mi Casa cucumber salad with chicken), another espresso at 12:45, espresso + omega-3 at 14:15, a snack (cottage cheese with honey + 3 Bagele) at 15:30, and another espresso at 16:15 (caffeine_shots: 4)."
+  "status_note": "Slept ~7.25h (23:15-06:30) — a solid full night, squarely in the 7-9h target band. Espresso at 08:00, breakfast at 08:55 (yellow cheese + cherry tomatoes), multivitamin at 09:03, caffeine-free tea at 10:15, a snack (almonds + yellow cheese) at 11:00, lunch at 12:25 (Mi Casa cucumber salad with chicken), another espresso at 12:45, espresso + omega-3 at 14:15, a snack (cottage cheese with honey + 3 Bagele) at 15:30, another espresso at 16:15, and dinner at 19:45 (spelt pitas, yellow cheese, Simfonia, sunny side up eggs, cherry tomatoes) (caffeine_shots: 4)."
 }
