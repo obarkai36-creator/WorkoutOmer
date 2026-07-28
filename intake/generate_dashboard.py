@@ -315,7 +315,18 @@ def compute_energy_score(profile, target_date, todays_intake, sleep_entries, lif
     notes = f"Computed for {target_date} from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement." \
         + (" (" + "; ".join(caveats) + ")" if caveats else "")
 
-    return {"date": target_date, "overall": overall, "factors": factors, "notes": notes}
+    # Raw numbers behind each factor score, for the "advanced stats" breakdown —
+    # what actually drove the 0-100 sub-score, not just the sub-score itself.
+    details = {
+        "sleep": f"{h:g}h last night (target 7-9h)" if night else "no sleep logged for last night",
+        "nutrition": f"{kcal:g}/{t['calories_kcal']:g} kcal · {protein:g}/{t['protein_g']:g}g protein · {fiber:g}/{t['fiber_g']:g}g fiber",
+        "movement": f"last workout {days_since}d ago" if workout_dates else "no workout history yet",
+        "caffeine": f"{caffeine_shots:g} shot(s) today (soft cap ~5)" + (", one after cutoff" if late_caffeine else ""),
+        "alcohol": "logged today" if target_date in alcohol_dates
+                   else ("logged yesterday" if yesterday in alcohol_dates else "none in the last 2 days"),
+    }
+
+    return {"date": target_date, "overall": overall, "factors": factors, "details": details, "notes": notes}
 
 
 def persist_computed_energy(day):
@@ -459,17 +470,25 @@ def build(target_date):
         latest_sleep = sleep_upto[-1]
         last7_sleep = [e for e in sleep_upto
                        if 0 <= (td_ref - datetime.strptime(e["date"], "%Y-%m-%d")).days < 7]
+        last14_sleep = [e for e in sleep_upto
+                        if 0 <= (td_ref - datetime.strptime(e["date"], "%Y-%m-%d")).days < 14]
         avg7_sleep = round(sum(e["duration_hours"] for e in last7_sleep) / len(last7_sleep), 1)
+        avg14_sleep = round(sum(e["duration_hours"] for e in last14_sleep) / len(last14_sleep), 1) if last14_sleep else None
+        nights_short7 = sum(1 for e in last7_sleep if e["duration_hours"] < 6)
+        nights_long7 = sum(1 for e in last7_sleep if e["duration_hours"] > 9.5)
         h = latest_sleep["duration_hours"]
         sleep_status = "low" if h < 6 else "long" if h > 9.5 else "good"
         sleep_color = {"low": "#ef4444", "good": "#22c55e", "long": "#f59e0b"}[sleep_status]
         sleep_label = {"low": "short", "good": "on target", "long": "long (catch-up)"}[sleep_status]
         note_html = f"<div class='note' style='margin-top:10px'>{latest_sleep['notes']}</div>" if latest_sleep.get("notes") else ""
+        avg14_html = f" · {avg14_sleep:g}h 14-day avg" if avg14_sleep is not None else ""
         sleep_panel = f"""
     <div class="panel">
       <h2>Sleep</h2>
       <div class="bignum" style="color:{sleep_color}">{h:g}<small> h</small></div>
-      <div class="goalline">{latest_sleep['sleep_start']}–{latest_sleep['sleep_end']} · <b style="color:{sleep_color}">{sleep_label}</b> · {avg7_sleep:g}h 7-day avg</div>
+      <div class="goalline">{latest_sleep['sleep_start']}–{latest_sleep['sleep_end']} · <b style="color:{sleep_color}">{sleep_label}</b> · {avg7_sleep:g}h 7-day avg{avg14_html}</div>
+      {sparkline(sleep_upto[-14:], 'duration_hours')}
+      <div class="small muted" style="margin-top:6px">Last 7 nights: <b style="color:{'#ef4444' if nights_short7 else 'var(--text)'}">{nights_short7} short</b> (&lt;6h) · <b style="color:{'#f59e0b' if nights_long7 else 'var(--text)'}">{nights_long7} long</b> (&gt;9.5h) of {len(last7_sleep)} logged</div>
       {note_html}
     </div>"""
         sleep_note_line = f"<div class='small' style='margin-top:8px;color:{sleep_color}'>Sleep last night: <b>{h:g}h</b> ({sleep_label})</div>"
@@ -482,10 +501,12 @@ def build(target_date):
                                    lifestyle.get("events", []), workouts.get("entries", []))
     persist_computed_energy(energy)
     eband = band_for(energy["overall"], energy_store["model"]["bands"])
+    edetails = energy.get("details", {})
     efactors = "".join(
         f"""<div class="metric">
           <div class="metric-top"><span>{k}</span><span class="vals">{v:g}</span></div>
           <div class="track"><div class="fill" style="width:{v:.0f}%;background:{eband['color']}"></div></div>
+          <div class="small muted" style="margin-top:2px">{edetails.get(k,'')}</div>
         </div>""" for k, v in energy["factors"].items()
     )
     energy_panel = f"""
@@ -599,12 +620,21 @@ def build(target_date):
     comp_cards = "".join(
         f"<div class='chip'><div class='chip-v'>{v}</div><div class='chip-k'>{k}</div></div>"
         for k, v in [
+            ("BMI", latest.get("bmi", bc["bmi"])),
             ("Body fat %", latest.get("body_fat_pct", bc["body_fat_pct"])),
-            ("Skeletal muscle kg", latest.get("skeletal_muscle_mass_kg", bc["skeletal_muscle_mass_kg"])),
+            ("Body fat mass kg", latest.get("body_fat_mass_kg", "—")),
+            ("Subcutaneous fat %", latest.get("subcutaneous_fat_pct", "—")),
             ("Visceral fat", latest.get("visceral_fat", bc["visceral_fat"])),
+            ("Skeletal muscle kg", latest.get("skeletal_muscle_mass_kg", bc["skeletal_muscle_mass_kg"])),
             ("Muscle mass kg", latest.get("muscle_mass_kg", bc["muscle_mass_kg"])),
+            ("Lean body mass kg", latest.get("lean_body_mass_kg", bc["lean_body_mass_kg"])),
+            ("Protein %", latest.get("protein_pct", bc["protein_pct"])),
+            ("Water %", latest.get("water_pct", bc["water_pct"])),
+            ("Bone mass kg", latest.get("bone_mass_kg", bc["bone_mass_kg"])),
             ("BMR kcal", latest.get("bmr_kcal", bc["bmr_kcal"])),
             ("Resting HR", latest.get("resting_heart_rate", bc["resting_heart_rate"])),
+            ("Body age", latest.get("body_age", "—")),
+            ("Body type", latest.get("body_type", "—")),
         ]
     )
 
