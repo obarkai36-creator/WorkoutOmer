@@ -589,6 +589,29 @@ def build(target_date):
         + bar(tot["fiber_g"], t["fiber_g"], "Fiber (g)", label=macro_override.get("fiber_g"))
     )
 
+    # 7-day rolling average — so one qualitative/buffet/opt-out day doesn't
+    # read as a miss when the week-level trend is fine. Days flagged
+    # exclude_from_monthly_macros (same flag the monthly recap respects) are
+    # left out of the average; the 14-day sparkline still plots every day's
+    # raw total so the trend line has no gaps.
+    def day_tot(d, key):
+        return sum(i.get(key, 0) for i in d.get("items", []))
+
+    days14 = [d for d in all_days if 0 <= (td_ref - pdate(d["date"])).days < 14]
+    days7_for_avg = [d for d in days14 if (td_ref - pdate(d["date"])).days < 7
+                     and not d.get("exclude_from_monthly_macros")]
+    if days7_for_avg:
+        avg7_kcal = round(sum(day_tot(d, "kcal") for d in days7_for_avg) / len(days7_for_avg))
+        avg7_protein = round(sum(day_tot(d, "protein_g") for d in days7_for_avg) / len(days7_for_avg), 1)
+        excluded7 = sum(1 for d in days14 if (td_ref - pdate(d["date"])).days < 7
+                        and d.get("exclude_from_monthly_macros"))
+        excl_note = f" ({excluded7} day(s) excluded — not tracked/qualitative)" if excluded7 else ""
+        rolling_html = f"""
+      <div class="small muted" style="margin-top:12px">7-day avg ({len(days7_for_avg)} day(s)): <b style="color:var(--text)">{avg7_kcal:g} kcal</b> &middot; <b style="color:var(--text)">{avg7_protein:g}g protein</b>{excl_note}</div>
+      {sparkline(sorted([{"date": d["date"], "kcal": day_tot(d, "kcal")} for d in days14], key=lambda e: e["date"]), "kcal")}"""
+    else:
+        rolling_html = ""
+
     micro_rows = "".join(
         bar(micros.get(k, 0), mtarg[k], k.replace("_", " ")) for k in mtarg
     )
@@ -794,6 +817,7 @@ def build(target_date):
     <div class="panel">
       <h2>Macros · today</h2>
       {macro_rows}
+      {rolling_html}
     </div>
 
     <div class="panel">

@@ -150,10 +150,19 @@
   }
 
   /* ---- 4. Injury alerts --------------------------------------------------- */
+  function acwrZoneColor(v) {
+    if (v == null) return "#8b97a7";
+    if (v > 1.5) return "var(--red)";
+    if (v > 1.3) return "var(--orange)";
+    if (v < 0.8) return "var(--yellow)";
+    return "var(--green)";
+  }
+
   function renderAlerts(a) {
     const el = $("alerts-body");
     const z = a.trends.acwrZone;
     const zColor = { danger: "var(--red)", caution: "var(--orange)", detraining: "var(--yellow)", ok: "var(--green)", insufficient: "var(--muted)" }[z] || "var(--green)";
+    const acwrWeeks = a.trends.weeks.filter((w) => w.acwr != null);
     el.innerHTML = `
       <div class="kpi-row">
         <div class="kpi"><div class="v" style="color:${zColor}">${a.trends.acwr ?? "n/a"}</div><div class="l">Load ratio (ACWR)</div></div>
@@ -163,7 +172,38 @@
         <div class="alert">
           <div class="sev" style="background:${sevColor[al.level]}"></div>
           <div><div class="t">${al.title}</div><div class="d">${al.detail}</div></div>
-        </div>`).join("")}`;
+        </div>`).join("")}
+      ${acwrWeeks.length >= 2 ? `
+      <div class="small muted" style="margin:16px 0 6px">Load ratio trend (6 wks) &middot; danger &gt;1.5, sweet spot 0.8&ndash;1.3</div>` +
+      (IS_PDF
+        ? (() => {
+            const mx = Math.max(...acwrWeeks.map((w) => w.acwr), 1.5);
+            return `<div class="loadbars">${acwrWeeks.map((w) => `<div class="col"><div class="b" style="height:${(w.acwr / mx) * 46}px;background:${acwrZoneColor(w.acwr)}"></div><div class="lbl">${w.label}</div></div>`).join("")}</div>`;
+          })()
+        : `<canvas id="acwrChart" height="150"></canvas>`) : ""}`;
+
+    if (!IS_PDF && acwrWeeks.length >= 2) {
+      new Chart($("acwrChart"), {
+        type: "line",
+        data: {
+          labels: acwrWeeks.map((w) => w.label),
+          datasets: [{
+            label: "ACWR", data: acwrWeeks.map((w) => w.acwr),
+            borderColor: "#4ea1ff", backgroundColor: "rgba(78,161,255,.15)",
+            fill: true, tension: .35, pointRadius: 4,
+            pointBackgroundColor: acwrWeeks.map((w) => acwrZoneColor(w.acwr)),
+          }],
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { display: false } },
+            y: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { color: "rgba(255,255,255,.06)" }, suggestedMin: 0 },
+          },
+        },
+      });
+    }
   }
 
   /* ---- 5. Suggested changes ---------------------------------------------- */

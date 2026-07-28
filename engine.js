@@ -229,7 +229,14 @@ function loadTrends(workouts, ref, now) {
   for (let i = 5; i >= 0; i--) {
     const end = now - i * 7 * DAY, start = end - 7 * DAY;
     const inWeek = workouts.filter((w) => w.t > start && w.t <= end);
-    weeks.push({ label: i === 0 ? "This wk" : `-${i}w`, stress: round(sum(inWeek.map((w) => sessionStress(w, ref)))), sessions: inWeek.length });
+    // ACWR as it stood at the end of this week — same acute:chronic formula as
+    // the live number below, just replayed at each past week's end date, so
+    // the trend shows how the ratio actually got here rather than a single point.
+    const acuteAtEnd = sum(workouts.filter((w) => end - w.t > 0 && end - w.t <= 7 * DAY).map((w) => sessionStress(w, ref)));
+    const last28AtEnd = workouts.filter((w) => end - w.t > 0 && end - w.t <= 28 * DAY);
+    const chronicAtEnd = last28AtEnd.length ? sum(last28AtEnd.map((w) => sessionStress(w, ref))) / 4 : 0;
+    const acwrAtEnd = (last28AtEnd.length >= MIN_SESSIONS_FOR_ACWR && chronicAtEnd > 0) ? round(acuteAtEnd / chronicAtEnd, 2) : null;
+    weeks.push({ label: i === 0 ? "This wk" : `-${i}w`, stress: round(sum(inWeek.map((w) => sessionStress(w, ref)))), sessions: inWeek.length, acwr: acwrAtEnd });
   }
   const acute = sum(workouts.filter((w) => now - w.t <= 7 * DAY).map((w) => sessionStress(w, ref)));
   const last28 = workouts.filter((w) => now - w.t <= 28 * DAY);
