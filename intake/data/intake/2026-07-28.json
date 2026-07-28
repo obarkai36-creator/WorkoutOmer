@@ -13,7 +13,8 @@
     {"time": "10:35", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "12:00", "name": "Lunch — chicken & spelt pasta batch dish", "category": "food", "qty": "400 g", "kcal": 856, "protein_g": 65.2, "carbs_g": 114, "fat_g": 15.6, "fiber_g": 15.2, "note": "pre-logged; from the meal-prep batch calculated 24 Jul (214kcal/100g reference)"},
     {"time": "12:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "15 (~255 g)", "kcal": 46, "protein_g": 2.3, "carbs_g": 10, "fat_g": 0.5, "fiber_g": 3, "note": "standard tomato reference values"},
-    {"time": "12:00", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "standard cucumber reference values"}
+    {"time": "12:00", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "standard cucumber reference values"},
+    {"time": "12:55", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -25,7 +26,7 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 17.6
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:45-06:55, ~7.17h — squarely in the 7-9h target band, one continuous stretch.",
     "07:00 weigh-in (Eufy full body composition): 81.00kg, BMI 27.7, body fat 27.1%, body fat mass 21.90kg, skeletal muscle mass 30.80kg, visceral fat 11.0, muscle mass 56.10kg, lean body mass 59.10kg, bone mass 3.00kg, protein 15.3%, subcutaneous fat 23.8%, water 49.9%, BMR 1719kcal, resting heart rate 79bpm, body age 29, body type Muscular Overweight. Down 0.20kg vs 24 Jul, composition essentially flat/slightly improved (body fat 27.2%→27.1%).",
@@ -34,7 +35,8 @@
     "09:05 caffeine-free tea (~250ml) — negligible kcal, no caffeine shot added.",
     "10:35 espresso (40ml).",
     "12:00 lunch pre-logged: 400g of the chicken & spelt pasta meal-prep batch (calculated 24 Jul, 214kcal/100g reference) — 856kcal, 65.2g protein, 114g carb, 15.6g fat, 15.2g fiber.",
-    "12:00 lunch also: 15 cherry tomatoes + 1 whole cucumber (both standard reference values). Tomatoes added another round of lycopene/vitamin C/folate."
+    "12:00 lunch also: 15 cherry tomatoes + 1 whole cucumber (both standard reference values). Tomatoes added another round of lycopene/vitamin C/folate.",
+    "12:55 espresso (40ml)."
   ],
-  "status_note": "Slept ~7.17h (23:45-06:55) — a solid full night, squarely in the 7-9h target band. Weigh-in at 07:00: 81.00kg (-0.20kg vs 24 Jul), body fat 27.1%, composition steady. Double espresso at 07:12, breakfast at 08:00 (yellow cheese + cherry tomatoes), caffeine-free tea at 09:05, an espresso at 10:35, and lunch at 12:00 (400g chicken & spelt pasta batch, 15 cherry tomatoes, 1 cucumber) (caffeine_shots: 3)."
+  "status_note": "Slept ~7.17h (23:45-06:55) — a solid full night, squarely in the 7-9h target band. Weigh-in at 07:00: 81.00kg (-0.20kg vs 24 Jul), body fat 27.1%, composition steady. Double espresso at 07:12, breakfast at 08:00 (yellow cheese + cherry tomatoes), caffeine-free tea at 09:05, an espresso at 10:35, lunch at 12:00 (400g chicken & spelt pasta batch, 15 cherry tomatoes, 1 cucumber), and another espresso at 12:55 (caffeine_shots: 4)."
 }
