@@ -18,16 +18,17 @@
     {"time": "14:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:25", "name": "Danone PRO Strawberry Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "verified reference, reused"},
     {"time": "16:00", "name": "Granola", "category": "food", "qty": "2 tsp (~10 g)", "kcal": 47, "protein_g": 1, "carbs_g": 6.4, "fat_g": 2, "fiber_g": 0.7, "note": "generic granola reference (~471kcal/100g, 10g protein/100g, 64g carb/100g, 20g fat/100g, 7g fiber/100g), no brand given"},
-    {"time": "16:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "20:00", "name": "Dinner — qualitative (denis fish, salmon sashimi, cabbage/burrata/pecan salads, potato, corn)", "category": "food", "qty": "1 plate, unknown amounts", "kcal": 650, "protein_g": 58, "carbs_g": 22, "fat_g": 34, "fiber_g": 6, "time_approx": true, "note": "Per the user's own directional guidance: low carb, mid fat, high protein, moderate calories, good micros. Items: ~120g denis fish, some salmon sashimi, white cabbage salad, burrata salad, pecan salad with balsamic-based dressing, some white potato and corn — amounts not weighed. Single combined directional estimate."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 15,
-    "selenium_mcg": 200,
-    "folate_mcg_dfe": 769.1,
-    "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 345.2,
-    "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 16.5,
+    "zinc_mg": 17,
+    "selenium_mcg": 230,
+    "folate_mcg_dfe": 809.1,
+    "omega3_epa_dha_mg": 1400,
+    "vitamin_c_mg": 360.2,
+    "vitamin_d_iu": 2300,
+    "vitamin_e_mg": 17.5,
     "lycopene_mg": 17.6
   },
   "caffeine_shots": 4,
@@ -44,7 +45,8 @@
     "14:00 omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — zero kcal/macros, sets omega3_epa_dha_mg to 1000 (target hit).",
     "15:25 Danone PRO Strawberry Yogurt, 0% fat, 20g-protein cup (200g) — verified reference, reused.",
     "16:00 granola, 2 tsp (~10g) — no brand given, generic granola reference used (~471kcal/100g).",
-    "16:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros."
+    "16:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
+    "20:00 dinner (time not given, approximated), logged directionally per the user's own guidance (low carb, mid fat, high protein, moderate calories, good micros) rather than itemized weights: ~120g denis fish, some salmon sashimi, white cabbage salad, burrata salad, pecan salad with balsamic dressing, some white potato and corn. Fish/sashimi added a moderate omega-3/selenium/vitamin D bump; cabbage/corn added a modest vitamin C/folate bump; pecans/burrata added a touch of zinc."
   ],
-  "status_note": "Slept ~7.17h (23:45-06:55) — a solid full night, squarely in the 7-9h target band. Weigh-in at 07:00: 81.00kg (-0.20kg vs 24 Jul), body fat 27.1%, composition steady. Double espresso at 07:12, breakfast at 08:00 (yellow cheese + cherry tomatoes), caffeine-free tea at 09:05, an espresso at 10:35, lunch at 12:00 (400g chicken & spelt pasta batch, 15 cherry tomatoes, 1 cucumber), another espresso at 12:55, omega-3 at 14:00, a strawberry protein yogurt at 15:25, and granola + a multivitamin at 16:00 (caffeine_shots: 4)."
+  "status_note": "Slept ~7.17h (23:45-06:55) — a solid full night, squarely in the 7-9h target band. Weigh-in at 07:00: 81.00kg (-0.20kg vs 24 Jul), body fat 27.1%, composition steady. Double espresso at 07:12, breakfast at 08:00 (yellow cheese + cherry tomatoes), caffeine-free tea at 09:05, an espresso at 10:35, lunch at 12:00 (400g chicken & spelt pasta batch, 15 cherry tomatoes, 1 cucumber), another espresso at 12:55, omega-3 at 14:00, a strawberry protein yogurt at 15:25, granola + a multivitamin at 16:00, and dinner at 20:00 (denis fish, salmon sashimi, cabbage/burrata/pecan salads, potato, corn — logged directionally: low carb, mid fat, high protein, moderate calories) (caffeine_shots: 4)."
 }
