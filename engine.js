@@ -296,17 +296,25 @@ const SUGGESTION_EXCLUDE = new Set([
   "Standing Calf Raises (Frame)", // keep only Calf Raises Machine in suggestions
 ]);
 
+const EXTREME_ACWR = 2.0; // well past the danger-zone floor (>1.5) — high enough to justify a deload even right after another one
+
 /* ---- deload check ----------------------------------------------------------
  * Whether the next session should be a light, full-body deload rather than
  * the normal per-section progression pick. Primary driver is training load
  * from the logged entries (ACWR danger zone); short-sleep and a notable
  * bodyweight drop are lifestyle-fatigue signals that strengthen the call but
  * aren't required on their own — they're reported either way so the reasoning
- * is visible, not just the verdict. */
-function deloadCheck(trends, sleep, bw) {
+ * is visible, not just the verdict. Deloads are never recommended back-to-back
+ * (the whole point is one lighter session to bring load back down) unless the
+ * ratio is still extreme afterward. */
+function deloadCheck(trends, sleep, bw, lastWasDeload) {
   const reasons = [];
   const loadSpike = !!(trends && trends.acwrZone === "danger");
-  if (loadSpike) reasons.push(`Load ratio (ACWR) ${trends.acwr} is in the danger zone (>1.5) from your recent logged sessions.`);
+  const extreme = !!(trends && trends.acwr != null && trends.acwr >= EXTREME_ACWR);
+  const blockedByRecentDeload = loadSpike && lastWasDeload && !extreme;
+
+  if (loadSpike && !blockedByRecentDeload) reasons.push(`Load ratio (ACWR) ${trends.acwr} is in the danger zone (>1.5) from your recent logged sessions.`);
+  if (extreme && lastWasDeload) reasons.push(`Load ratio (ACWR) ${trends.acwr} is still extremely high (≥${EXTREME_ACWR}) even after your last session was a deload — another one is warranted despite training back-to-back.`);
 
   const shortSleep = !!(sleep && sleep.any && sleep.avg7 != null && sleep.avg7 < 7);
   if (shortSleep) reasons.push(`7-day average sleep is only ${sleep.avg7}h — under-recovered going into training.`);
@@ -314,7 +322,7 @@ function deloadCheck(trends, sleep, bw) {
   const bwDrop = !!(bw && bw.any && bw.delta != null && bw.delta <= -0.5);
   if (bwDrop) reasons.push(`Bodyweight dropped ${Math.abs(bw.delta)}kg since your last weigh-in — another sign of accumulated fatigue/under-recovery.`);
 
-  return { recommend: loadSpike, reasons };
+  return { recommend: loadSpike && !blockedByRecentDeload, reasons };
 }
 
 /* Pick each section's highest-1RM non-iso lift as the one compound exercise
@@ -348,7 +356,8 @@ function deloadTarget(e) {
 
 /* ---- next recommended session --------------------------------------------- */
 function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, bw) {
-  const deload = deloadCheck(trends, sleep, bw);
+  const lastWasDeload = !!(workouts[0] && /deload/i.test(workouts[0].note || ""));
+  const deload = deloadCheck(trends, sleep, bw, lastWasDeload);
   if (deload.recommend) {
     const sections = ["Chest", "Back", "Shoulders", "Legs", "Arms"];
     const suggestedExercises = sections
