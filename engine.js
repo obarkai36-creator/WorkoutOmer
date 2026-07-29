@@ -263,7 +263,7 @@ function weightIncrement(w) {
   if (w >= 15) return 2;
   return 1;
 }
-function nextLiftTarget(e) {
+function nextLiftTarget(e, holdLoad) {
   const best = e.best, latest = e.latest;
   if (!best) return null;
   const bestStats = recStats(best, e.iso);
@@ -274,6 +274,9 @@ function nextLiftTarget(e) {
 
   if (!atBest) {
     return { status: "rebuild", text: `Rebuild to best (${best.text})`, note: `Last session came in under your best (${best.text}) — rebuild to that before pushing further.` };
+  }
+  if (holdLoad) {
+    return { status: "hold", text: `Hold at best (${best.text})`, note: `Load ratio is elevated — repeat your best (${best.text}) rather than pushing for a PR this session.` };
   }
   if (e.iso) {
     const seconds = (best.seconds || 0) + 5;
@@ -439,12 +442,16 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
   // "target" is the actual next-session ask, computed from latest-vs-best via
   // double progression (see nextLiftTarget) — ordered and annotated below to
   // reflect what actually keeps the program balanced this session.
+  // Danger-zone ACWR is the same signal that puts "no PR attempts" in the
+  // guidance text below — the per-exercise targets need to agree with that,
+  // not keep suggesting weight/rep PRs while the copy says to hold flat.
+  const holdLoad = !!(trends && trends.acwrZone === "danger");
   let suggestedExercises = data.SNAPSHOT
     .filter((e) => e.section === pick.section && !SUGGESTION_EXCLUDE.has(e.name))
     .map((e) => {
       const B = recStats(e.best, e.iso);
       const lib = data.EXERCISE_LIBRARY[e.name];
-      const target = nextLiftTarget(e);
+      const target = nextLiftTarget(e, holdLoad);
       return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso, target, lib };
     });
 

@@ -126,7 +126,7 @@
             <div class="reco-lift">
               <div class="rl-row">
                 <span class="rl-name">${e.name}</span>
-                <span class="rl-best" style="${e.target?.status === 'rebuild' ? 'color:var(--yellow)' : ''}">${e.target ? e.target.text : (e.best || "—")}</span>
+                <span class="rl-best" style="${e.target?.status === 'rebuild' || e.target?.status === 'hold' ? 'color:var(--yellow)' : ''}">${e.target ? e.target.text : (e.best || "—")}</span>
               </div>
               <div class="small muted" style="margin-top:2px">best ${e.best || "—"}${e.best1RM && !e.iso ? ` &middot; est 1RM ${e.best1RM}kg` : ""}</div>
             </div>`).join("")}
