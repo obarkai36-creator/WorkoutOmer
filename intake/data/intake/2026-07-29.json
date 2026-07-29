@@ -15,16 +15,17 @@
     {"time": "12:00", "name": "Lunch — chicken & spelt pasta batch dish", "category": "food", "qty": "400 g", "kcal": 856, "protein_g": 65.2, "carbs_g": 114, "fat_g": 15.6, "fiber_g": 15.2, "time_approx": true, "note": "from the meal-prep batch calculated 24 Jul (214kcal/100g reference)"},
     {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "16:20", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:30", "name": "Personal cocoa sorbet, small container", "category": "food", "qty": "1 small personal container (105 ml)", "kcal": 158, "protein_g": 1.6, "carbs_g": 34.7, "fat_g": 1.6, "fiber_g": 2.1, "note": "user confirmed container size 105ml — scaled from the generic cocoa sorbet reference (water/sugar/cocoa base, ~150kcal/100g), no brand given"}
+    {"time": "16:30", "name": "Personal cocoa sorbet, small container", "category": "food", "qty": "1 small personal container (105 ml)", "kcal": 158, "protein_g": 1.6, "carbs_g": 34.7, "fat_g": 1.6, "fiber_g": 2.1, "note": "user confirmed container size 105ml — scaled from the generic cocoa sorbet reference (water/sugar/cocoa base, ~150kcal/100g), no brand given"},
+    {"time": "17:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 51.0,
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 718.0,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 47.6,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 297.6,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
     "lycopene_mg": 8.8
   },
   "caffeine_shots": 5,
@@ -39,7 +40,8 @@
     "12:00 lunch (time not given, approximated): 400g of the chicken & spelt pasta meal-prep batch (calculated 24 Jul, 214kcal/100g reference) — 856kcal, 65.2g protein, 114g carb, 15.6g fat, 15.2g fiber.",
     "14:30 espresso (40ml).",
     "16:20 espresso (40ml).",
-    "16:30 personal cocoa sorbet, small container — no brand given, generic cocoa sorbet estimate (first log); user confirmed container size is 105ml, scaled from ~100g to 105g accordingly (was 150kcal, now 158kcal)."
+    "16:30 personal cocoa sorbet, small container — no brand given, generic cocoa sorbet estimate (first log); user confirmed container size is 105ml, scaled from ~100g to 105g accordingly (was 150kcal, now 158kcal).",
+    "17:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros."
   ],
-  "status_note": "Slept ~6.25h (23:15-05:30) — a bit short of the 7-9h target band, one continuous stretch. Double espresso at 05:45, then a Full Body (Deload) workout at 06:10 (5 exercises, all ~85-87% of best, capped reps — a genuine recovery session per the ACWR flag), creatine at 07:15, breakfast at 08:30 (yellow cheese, a Fitness Thin Sweet Potato Cracker — corrected to the real pack label, 33kcal — and cherry tomatoes), another espresso at 10:30, lunch at 12:00 (400g of the chicken & spelt pasta batch), two more espressos at 14:30 and 16:20, and a personal cocoa sorbet at 16:30 (caffeine_shots: 5)."
+  "status_note": "Slept ~6.25h (23:15-05:30) — a bit short of the 7-9h target band, one continuous stretch. Double espresso at 05:45, then a Full Body (Deload) workout at 06:10 (5 exercises, all ~85-87% of best, capped reps — a genuine recovery session per the ACWR flag), creatine at 07:15, breakfast at 08:30 (yellow cheese, a Fitness Thin Sweet Potato Cracker — corrected to the real pack label, 33kcal — and cherry tomatoes), another espresso at 10:30, lunch at 12:00 (400g of the chicken & spelt pasta batch), two more espressos at 14:30 and 16:20, a personal cocoa sorbet at 16:30, and a multivitamin at 17:00 (caffeine_shots: 5)."
 }
