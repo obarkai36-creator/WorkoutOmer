@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "fitness_sweet_potato_cracker",
+      "name": "Fitness Thin Sweet Potato Cracker (Osem-Nestlé)",
+      "serving": "1 piece/serving (~30 g)",
+      "kcal": 138,
+      "protein_g": 3.5,
+      "carbs_g": 19.5,
+      "fat_g": 4.7,
+      "fiber_g": 1.5,
+      "verified": false,
+      "source": "User shared the real product page (osem-nestle.co.il, Fitness THIN בטטה line) 2026-07-29. Per-100g values from web search (foodsdictionary.co.il/foodiepedia.co.il): 459kcal, 11.5g protein, 65g carb, 15.5g fat, 5g fiber; foodiepedia's own per-serving figure (~30g, 137.7kcal) matches a single piece. Not a direct label screenshot — refine if the physical pack is checked. Replaces an earlier generic crispbread guess used the same day."
+    },
+    {
       "id": "elal_gouda_omelette_pretzel_sandwich",
       "name": "El Al pretzel sandwich with gouda & omelette",
       "serving": "1 whole (165 g)",
