@@ -1,12 +1,12 @@
 {
   "date": "2026-07-29",
   "day_number": 32,
-  "in_progress": true,
+  "in_progress": false,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Dinner at Greco (shared plates) was explicitly not tracked per the user's request — a meaningful chunk of the day's intake is missing, so today's kcal/protein/carbs/fat/fiber totals would understate actual intake. Excluded from the monthly macro averages and protein-adherence rate; other stats (sleep, weigh-in, workout, sperm/energy score) still count normally.",
   "workout_today": true,
   "workout_summary": "Full Body (Deload) — Pec Fly Machine 73kg×3×6, Diverging Seated Row 84kg×4×6, Converging Shoulder Press 68kg×4×6, Angled Leg Press 172kg×4×5, Rope Cable Extension 64kg×4×6. All ~85-87% of best with capped reps, following the ACWR-driven deload recommendation. No PR attempts.",
-  "_status": "Day just opened — sleep, espresso, and a Full Body deload workout logged.",
+  "_status": "Day closed out. Sleep, workout, and food/drink/supplements logged (dinner untracked per user request).",
   "items": [
     {"time": "05:45", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
@@ -53,5 +53,5 @@
     "19:40 omega-3 fish oil — user explicitly flagged this as an incomplete dose (didn't finish the usual 2 softgels), so no omega3_epa_dha_mg credit added; today's omega-3 target is not considered hit.",
     "19:40 (per user) Dinner at Greco — shared plates, explicitly not tracked. No item/macros logged for this meal; excluded from the day's kcal/protein/carb/fat/fiber totals per the user's request."
   ],
-  "status_note": "Slept ~6.25h (23:15-05:30) — a bit short of the 7-9h target band, one continuous stretch. Double espresso at 05:45, then a Full Body (Deload) workout at 06:10 (5 exercises, all ~85-87% of best, capped reps — a genuine recovery session per the ACWR flag), creatine at 07:15, breakfast at 08:30 (yellow cheese, a Fitness Thin Sweet Potato Cracker — corrected to the real pack label, 33kcal — and cherry tomatoes), another espresso at 10:30, lunch at 12:00 (400g of the chicken & spelt pasta batch), two more espressos at 14:30 and 16:20, a personal cocoa sorbet at 16:30, a multivitamin at 17:00, a snack at 17:45 (yellow cheese, cherry tomatoes), another espresso at 19:15, an incomplete omega-3 dose at 19:40, and dinner at Greco (shared plates, not tracked per user request) (caffeine_shots: 6). Today excluded from monthly macro averages since dinner is untracked."
+  "status_note": "Day complete. Slept ~6.25h (23:15-05:30) — a bit short of the 7-9h target band, one continuous stretch. Double espresso at 05:45, then a Full Body (Deload) workout at 06:10 (5 exercises, all ~85-87% of best, capped reps — a genuine recovery session per the ACWR flag), creatine at 07:15, breakfast at 08:30 (yellow cheese, a Fitness Thin Sweet Potato Cracker — corrected to the real pack label, 33kcal — and cherry tomatoes), another espresso at 10:30, lunch at 12:00 (400g of the chicken & spelt pasta batch), two more espressos at 14:30 and 16:20, a personal cocoa sorbet at 16:30, a multivitamin at 17:00, a snack at 17:45 (yellow cheese, cherry tomatoes), another espresso at 19:15, an incomplete omega-3 dose at 19:40, and dinner at Greco (shared plates, not tracked per user request) (caffeine_shots: 6). Today excluded from monthly macro averages since dinner is untracked."
 }
