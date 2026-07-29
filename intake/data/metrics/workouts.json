@@ -1,19 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-07-28",
-    "latest_session": "Chest",
-    "sessions_logged": 36,
+    "report_date": "2026-07-29",
+    "latest_session": "Full Body (Deload)",
+    "sessions_logged": 37,
     "sessions_per_week": 3.8,
     "typical_time": "afternoon",
     "aerobic_28d_km": 41,
     "aerobic_sessions_28d": 5,
     "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 1.66,
+    "acwr": 1.52,
     "recommended_next": "Full Body (Deload) day",
     "alerts": [
-      "Load ratio 1.66 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload."
+      "Load ratio 1.52 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload."
     ]
   },
   "entries": [
@@ -183,6 +183,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Bench press 72.5kg [26.25kg each side + 20kg bar]×4×7 (new PR, +1 rep at same weight vs 72.5kg×4×6); Incline bench press 72.5kg×4×6 (user-corrected new best — disregards the earlier 73kg×4×6 entry); Decline bench press 72.5kg×4×6 (new PR, +1 rep at same weight vs 72.5kg×4×5); VKR 4×10 (new PR, +2 reps vs 4×8); VKR to sides 4×8 (ties best). Followed the report's recommended Chest day. 20:20.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Strength — Full Body (Deload)",
+      "duration_min": null,
+      "intensity": "light",
+      "notes": "Pec Fly Machine 73kg×3×6, Diverging Seated Row 84kg×4×6, Converging Shoulder Press 68kg×4×6, Angled Leg Press 172kg×4×5, Rope Cable Extension 64kg×4×6 — one lift per section, all ~85-87% of best with capped reps. Followed up on the ACWR-driven deload recommendation (1.66-1.67 in the danger zone). No PR attempts; all bests unchanged. 06:10.",
       "_source": "manual log"
     }
   ]

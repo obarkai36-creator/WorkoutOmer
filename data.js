@@ -198,11 +198,11 @@ const SNAPSHOT = [
   { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 6, weight: 72.5, text: "72.5kg × 4×6" }, best: { sets: 4, reps: 6, weight: 72.5, text: "72.5kg × 4×6" } },
   { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
-  { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
+  { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 6, weight: 73, text: "73kg × 3×6 (deload)" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
   { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 4, weight: 73, text: "73kg × 4×4" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
-  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
+  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 6, weight: 84, text: "84kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
   { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
   { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 48, text: "24kg each × 4×10" } },
@@ -210,7 +210,7 @@ const SNAPSHOT = [
   { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 3, seconds: 20, weight: 81.25, text: "20 sec × 3" }, best: { sets: 3, seconds: 20, weight: 81.25, text: "20 sec × 3" } },
 
   // ---- Shoulders ----
-  { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 82, text: "82kg × 4×6" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
+  { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 4, reps: 9, weight: 36, text: "18kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 36, text: "18kg each × 4×9" } },
   { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
@@ -224,7 +224,7 @@ const SNAPSHOT = [
   { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 12, weight: 18, text: "18kg × 4×12" }, best: { sets: 4, reps: 12, weight: 18, text: "18kg × 4×12" } },
   { name: "Seated Dips",                      section: "Arms", latest: { sets: 4, reps: 8, weight: 62, text: "62kg × 4×8" }, best: { sets: 4, reps: 8, weight: 62, text: "62kg × 4×8" } },
   { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
-  { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
+  { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 6, weight: 64, text: "64kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" } },
 
   // ---- Arms: Biceps / Forearms ----
@@ -245,7 +245,7 @@ const SNAPSHOT = [
   // (plates each side x2 + sled/frame weight). Earlier entries (e.g. 131kg)
   // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
   // as not directly comparable; use the each-side+frame total from now on.
-  { name: "Angled Leg Press",             section: "Legs", latest: { sets: 4, reps: 7, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×7" }, best: { sets: 4, reps: 7, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×7" } },
+  { name: "Angled Leg Press",             section: "Legs", latest: { sets: 4, reps: 5, weight: 172, text: "172kg × 4×5 (deload)" }, best: { sets: 4, reps: 7, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×7" } },
   { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 4, reps: 6, weight: 57, text: "57kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 57, text: "57kg each × 4×6" } },
   { name: "Leg Curls",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
@@ -273,6 +273,18 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 29 Jul — Full Body (Deload) (06:10, one lift per section at ~87% of best, following the deload recommendation)
+  {
+    datetime: "2026-07-29T06:10", note: "Full Body (Deload)",
+    exercises: [
+      { name: "Pec Fly Machine",           sets: [ { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 } ] },
+      { name: "Diverging Seated Row",      sets: [ { reps: 6, weight: 84 }, { reps: 6, weight: 84 }, { reps: 6, weight: 84 }, { reps: 6, weight: 84 } ] },
+      { name: "Converging Shoulder Press", sets: [ { reps: 6, weight: 68 }, { reps: 6, weight: 68 }, { reps: 6, weight: 68 }, { reps: 6, weight: 68 } ] },
+      { name: "Angled Leg Press",          sets: [ { reps: 5, weight: 172 }, { reps: 5, weight: 172 }, { reps: 5, weight: 172 }, { reps: 5, weight: 172 } ] },
+      { name: "Rope Cable Extension",      sets: [ { reps: 6, weight: 64 }, { reps: 6, weight: 64 }, { reps: 6, weight: 64 }, { reps: 6, weight: 64 } ] },
+    ],
+  },
+
   // 27 Jul — Chest (20:20, followed the report's recommended Chest day)
   {
     datetime: "2026-07-27T20:20", note: "Chest",

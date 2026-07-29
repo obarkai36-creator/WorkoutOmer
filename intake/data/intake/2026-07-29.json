@@ -2,9 +2,9 @@
   "date": "2026-07-29",
   "day_number": 32,
   "in_progress": true,
-  "workout_today": false,
-  "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "workout_today": true,
+  "workout_summary": "Full Body (Deload) — Pec Fly Machine 73kg×3×6, Diverging Seated Row 84kg×4×6, Converging Shoulder Press 68kg×4×6, Angled Leg Press 172kg×4×5, Rope Cable Extension 64kg×4×6. All ~85-87% of best with capped reps, following the ACWR-driven deload recommendation. No PR attempts.",
+  "_status": "Day just opened — sleep, espresso, and a Full Body deload workout logged.",
   "items": [
     {"time": "05:45", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
@@ -21,7 +21,8 @@
   "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:15-05:30, ~6.25h — a bit short of the 7-9h target band, one continuous stretch.",
-    "05:45 double espresso (~60-80ml, counts as 2 caffeine shots)."
+    "05:45 double espresso (~60-80ml, counts as 2 caffeine shots).",
+    "06:10 Full Body (Deload) workout: Pec Fly Machine 73kg×3×6, Diverging Seated Row 84kg×4×6, Converging Shoulder Press 68kg×4×6, Angled Leg Press 172kg×4×5, Rope Cable Extension 64kg×4×6 — one lift per section, all ~85-87% of best with capped reps, following up on the ACWR-driven deload recommendation (1.66-1.67, danger zone). No PRs attempted; all bests unchanged. Mirrored to data.js WORKOUTS/SNAPSHOT and workouts.json."
   ],
-  "status_note": "Slept ~6.25h (23:15-05:30) — a bit short of the 7-9h target band, one continuous stretch. Double espresso at 05:45 (caffeine_shots: 2)."
+  "status_note": "Slept ~6.25h (23:15-05:30) — a bit short of the 7-9h target band, one continuous stretch. Double espresso at 05:45, then a Full Body (Deload) workout at 06:10 (5 exercises, all ~85-87% of best, capped reps — a genuine recovery session per the ACWR flag) (caffeine_shots: 2)."
 }
