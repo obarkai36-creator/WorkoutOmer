@@ -2,6 +2,8 @@
   "date": "2026-07-29",
   "day_number": 32,
   "in_progress": true,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "Dinner at Greco (shared plates) was explicitly not tracked per the user's request — a meaningful chunk of the day's intake is missing, so today's kcal/protein/carbs/fat/fiber totals would understate actual intake. Excluded from the monthly macro averages and protein-adherence rate; other stats (sleep, weigh-in, workout, sperm/energy score) still count normally.",
   "workout_today": true,
   "workout_summary": "Full Body (Deload) — Pec Fly Machine 73kg×3×6, Diverging Seated Row 84kg×4×6, Converging Shoulder Press 68kg×4×6, Angled Leg Press 172kg×4×5, Rope Cable Extension 64kg×4×6. All ~85-87% of best with capped reps, following the ACWR-driven deload recommendation. No PR attempts.",
   "_status": "Day just opened — sleep, espresso, and a Full Body deload workout logged.",
@@ -18,7 +20,9 @@
     {"time": "16:30", "name": "Personal cocoa sorbet, small container", "category": "food", "qty": "1 small personal container (105 ml)", "kcal": 158, "protein_g": 1.6, "carbs_g": 34.7, "fat_g": 1.6, "fiber_g": 2.1, "note": "user confirmed container size 105ml — scaled from the generic cocoa sorbet reference (water/sugar/cocoa base, ~150kcal/100g), no brand given"},
     {"time": "17:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "17:45", "name": "Snack — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified reference, reused"},
-    {"time": "17:45", "name": "Snack — cherry tomatoes", "category": "food", "qty": "3 (~51 g)", "kcal": 9, "protein_g": 0.5, "carbs_g": 2, "fat_g": 0.1, "fiber_g": 0.6, "note": "standard tomato reference values"}
+    {"time": "17:45", "name": "Snack — cherry tomatoes", "category": "food", "qty": "3 (~51 g)", "kcal": 9, "protein_g": 0.5, "carbs_g": 2, "fat_g": 0.1, "fiber_g": 0.6, "note": "standard tomato reference values"},
+    {"time": "19:15", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "19:40", "name": "Omega-3 fish oil (EPA/DHA) — incomplete dose", "category": "supplement", "qty": "incomplete (partial, amount not specified)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "user flagged as an incomplete dose — not counted toward the full ~1000mg EPA/DHA target since the actual amount taken isn't known"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -30,7 +34,7 @@
     "vitamin_e_mg": 16.5,
     "lycopene_mg": 10.1
   },
-  "caffeine_shots": 5,
+  "caffeine_shots": 6,
   "assumptions": [
     "Sleep logged: 23:15-05:30, ~6.25h — a bit short of the 7-9h target band, one continuous stretch.",
     "05:45 double espresso (~60-80ml, counts as 2 caffeine shots).",
@@ -44,7 +48,10 @@
     "16:20 espresso (40ml).",
     "16:30 personal cocoa sorbet, small container — no brand given, generic cocoa sorbet estimate (first log); user confirmed container size is 105ml, scaled from ~100g to 105g accordingly (was 150kcal, now 158kcal).",
     "17:00 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
-    "17:45 snack: 1 Tnuva Emek Light yellow cheese slice (verified reference) + 3 cherry tomatoes (~51g, standard reference)."
+    "17:45 snack: 1 Tnuva Emek Light yellow cheese slice (verified reference) + 3 cherry tomatoes (~51g, standard reference).",
+    "19:15 espresso (40ml).",
+    "19:40 omega-3 fish oil — user explicitly flagged this as an incomplete dose (didn't finish the usual 2 softgels), so no omega3_epa_dha_mg credit added; today's omega-3 target is not considered hit.",
+    "19:40 (per user) Dinner at Greco — shared plates, explicitly not tracked. No item/macros logged for this meal; excluded from the day's kcal/protein/carb/fat/fiber totals per the user's request."
   ],
-  "status_note": "Slept ~6.25h (23:15-05:30) — a bit short of the 7-9h target band, one continuous stretch. Double espresso at 05:45, then a Full Body (Deload) workout at 06:10 (5 exercises, all ~85-87% of best, capped reps — a genuine recovery session per the ACWR flag), creatine at 07:15, breakfast at 08:30 (yellow cheese, a Fitness Thin Sweet Potato Cracker — corrected to the real pack label, 33kcal — and cherry tomatoes), another espresso at 10:30, lunch at 12:00 (400g of the chicken & spelt pasta batch), two more espressos at 14:30 and 16:20, a personal cocoa sorbet at 16:30, a multivitamin at 17:00, and a snack at 17:45 (yellow cheese, cherry tomatoes) (caffeine_shots: 5)."
+  "status_note": "Slept ~6.25h (23:15-05:30) — a bit short of the 7-9h target band, one continuous stretch. Double espresso at 05:45, then a Full Body (Deload) workout at 06:10 (5 exercises, all ~85-87% of best, capped reps — a genuine recovery session per the ACWR flag), creatine at 07:15, breakfast at 08:30 (yellow cheese, a Fitness Thin Sweet Potato Cracker — corrected to the real pack label, 33kcal — and cherry tomatoes), another espresso at 10:30, lunch at 12:00 (400g of the chicken & spelt pasta batch), two more espressos at 14:30 and 16:20, a personal cocoa sorbet at 16:30, a multivitamin at 17:00, a snack at 17:45 (yellow cheese, cherry tomatoes), another espresso at 19:15, an incomplete omega-3 dose at 19:40, and dinner at Greco (shared plates, not tracked per user request) (caffeine_shots: 6). Today excluded from monthly macro averages since dinner is untracked."
 }
