@@ -9,16 +9,17 @@
     {"time": "07:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "10:30", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "10:30", "name": "Natural squeezed orange juice", "category": "drink", "qty": "1 glass (~200 ml, amount not given)", "kcal": 90, "protein_g": 1.4, "carbs_g": 20.8, "fat_g": 0.4, "fiber_g": 0.4, "note": "no amount given — assumed a typical glass; standard fresh-squeezed OJ reference (~45kcal/100ml), first time logged"},
-    {"time": "10:30", "name": "Chocopate ball (small)", "category": "food", "qty": "1 small (~18 g)", "kcal": 70, "protein_g": 1, "carbs_g": 12, "fat_g": 3, "fiber_g": 1.5, "note": "no brand/recipe given — generic small chocolate-coated date-ball estimate, first time logged"}
+    {"time": "10:30", "name": "Chocopate ball (small)", "category": "food", "qty": "1 small (~18 g)", "kcal": 70, "protein_g": 1, "carbs_g": 12, "fat_g": 3, "fiber_g": 1.5, "note": "no brand/recipe given — generic small chocolate-coated date-ball estimate, first time logged"},
+    {"time": "11:38", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 35,
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 702,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 100,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 350,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
     "lycopene_mg": 0
   },
   "caffeine_shots": 3,
@@ -27,7 +28,8 @@
     "07:10 double espresso (~60-80ml, counts as 2 caffeine shots).",
     "10:30 espresso (40ml).",
     "10:30 natural squeezed orange juice — no amount given, assumed a typical ~200ml glass (standard fresh-squeezed reference, ~45kcal/100ml). Gave the day's first micros — vitamin C ~100mg, folate ~35mcg DFE.",
-    "10:30 chocopate ball (small) — no brand/recipe given, generic chocolate-coated date-ball estimate (~18g), first time logged."
+    "10:30 chocopate ball (small) — no brand/recipe given, generic chocolate-coated date-ball estimate (~18g), first time logged.",
+    "11:38 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros."
   ],
-  "status_note": "Slept ~7.92h (22:50-06:45) — a solid full night, squarely in the 7-9h target band. Double espresso at 07:10, then at 10:30 a single espresso, a glass of natural squeezed orange juice, and a small chocopate ball (caffeine_shots: 3)."
+  "status_note": "Slept ~7.92h (22:50-06:45) — a solid full night, squarely in the 7-9h target band. Double espresso at 07:10, then at 10:30 a single espresso, a glass of natural squeezed orange juice, and a small chocopate ball, and a multivitamin at 11:38 (caffeine_shots: 3)."
 }
