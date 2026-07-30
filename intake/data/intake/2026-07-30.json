@@ -15,7 +15,8 @@
     {"time": "13:00", "name": "Lunch — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (25 g each, 100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "verified reference, reused"},
     {"time": "13:00", "name": "Lunch — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 tsp (~13 g)", "kcal": 40, "protein_g": 2.3, "carbs_g": 0.7, "fat_g": 3.3, "fiber_g": 0, "time_approx": true, "note": "scaled down from the usual 2 tbsp reference (1 tbsp = 3 tsp)"},
     {"time": "13:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4, "time_approx": true, "note": "standard tomato reference values"},
-    {"time": "13:00", "name": "Lunch — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0, "time_approx": true, "note": "same estimate as prior sunny-side-up egg entries"}
+    {"time": "13:00", "name": "Lunch — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0, "time_approx": true, "note": "same estimate as prior sunny-side-up egg entries"},
+    {"time": "13:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -27,7 +28,7 @@
     "vitamin_e_mg": 16.5,
     "lycopene_mg": 8.8
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 5,
   "assumptions": [
     "Sleep logged: 22:50-06:45, ~7.92h — squarely in the 7-9h target band, one continuous stretch.",
     "07:10 double espresso (~60-80ml, counts as 2 caffeine shots).",
@@ -35,7 +36,8 @@
     "10:30 natural squeezed orange juice — no amount given, assumed a typical ~200ml glass (standard fresh-squeezed reference, ~45kcal/100ml). Gave the day's first micros — vitamin C ~100mg, folate ~35mcg DFE.",
     "10:30 chocopate ball (small) — no brand/recipe given, generic chocolate-coated date-ball estimate (~18g), first time logged.",
     "11:38 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
-    "13:00 lunch (time not given, approximated): 2 Agami Pita Pro spelt pitas + 4 Tnuva Emek Light yellow cheese slices + 2 tsp Simfonia cheese spread (scaled down from the usual 2 tbsp reference) + 20 cherry tomatoes (~340g, standard reference) + 2 sunny side up eggs. Tomatoes added another round of lycopene/vitamin C/folate on top of the multivitamin."
+    "13:00 lunch (time not given, approximated): 2 Agami Pita Pro spelt pitas + 4 Tnuva Emek Light yellow cheese slices + 2 tsp Simfonia cheese spread (scaled down from the usual 2 tbsp reference) + 20 cherry tomatoes (~340g, standard reference) + 2 sunny side up eggs. Tomatoes added another round of lycopene/vitamin C/folate on top of the multivitamin.",
+    "13:55 double espresso (~60-80ml, counts as 2 caffeine shots)."
   ],
-  "status_note": "Slept ~7.92h (22:50-06:45) — a solid full night, squarely in the 7-9h target band. Double espresso at 07:10, then at 10:30 a single espresso, a glass of natural squeezed orange juice, and a small chocopate ball, a multivitamin at 11:38, and lunch at 13:00 (2 pro pitas, 4 yellow cheese, Simfonia, 20 cherry tomatoes, 2 sunny side up eggs) (caffeine_shots: 3)."
+  "status_note": "Slept ~7.92h (22:50-06:45) — a solid full night, squarely in the 7-9h target band. Double espresso at 07:10, then at 10:30 a single espresso, a glass of natural squeezed orange juice, and a small chocopate ball, a multivitamin at 11:38, lunch at 13:00 (2 pro pitas, 4 yellow cheese, Simfonia, 20 cherry tomatoes, 2 sunny side up eggs), and another double espresso at 13:55 (caffeine_shots: 5)."
 }
