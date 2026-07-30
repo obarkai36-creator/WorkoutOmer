@@ -29,3 +29,14 @@
   suggestions about food, coffee/caffeine, or alcohol patterns when the
   logged data supports it — don't hold back on these just to stay neutral.
   Still frame them as suggestions/observations, not mandates.
+- Allergy medication reminders (started 2026-07-30, temporary — "next few
+  months" while on this course; ask the user when they stop so this line can
+  be removed): they're taking a nasal spray 2x/day and a pill 1x/day
+  (morning). Remind them to take these at two points in the daily logging
+  flow, not by scanning the clock:
+    - Morning: right after that day's sleep entry is logged, remind them to
+      take the spray + the pill (both AM doses).
+    - Night: right after that day's dinner is logged, remind them to take
+      the spray (PM dose).
+  These are chat reminders only — don't log the medication itself as an
+  intake item unless the user explicitly tells you they took it.
