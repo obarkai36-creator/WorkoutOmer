@@ -1,10 +1,10 @@
 {
   "date": "2026-07-30",
   "day_number": 33,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "_status": "Day closed out. No workout today; full day of food/drink/supplements/sleep logged.",
   "items": [
     {"time": "07:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "10:30", "name": "Espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
@@ -24,13 +24,15 @@
     {"time": "20:00", "name": "Dinner — french fries with mayo and ketchup", "category": "food", "qty": "6 fries + dip", "kcal": 187, "protein_g": 1.5, "carbs_g": 16.4, "fat_g": 12.8, "fiber_g": 1.2, "time_approx": true, "note": "estimated: ~35g fries (standard fried-potato reference) + ~10g mayo + ~10g ketchup for dipping."},
     {"time": "20:00", "name": "Dinner — chicken caesar salad, extra extra chicken, no cheese (kosher)", "category": "food", "qty": "1 full salad, double chicken portion, no cheese", "kcal": 642, "protein_g": 61, "carbs_g": 25, "fat_g": 32.2, "fiber_g": 3, "time_approx": true, "note": "revised down per user feedback: chicken add-on lowered from ~250g to ~180g grilled breast (romaine + croutons + caesar dressing, no cheese, kosher, unchanged)."},
     {"time": "20:00", "name": "Dinner — burger (20% portion, incl. bun and mayo spread)", "category": "food", "qty": "0.20 of a 250g (pre-cooked) burger incl. bun + mayo", "kcal": 185, "protein_g": 14.1, "carbs_g": 7, "fat_g": 11.3, "fiber_g": 0.3, "time_approx": true, "note": "estimated full burger (250g cooked beef patty + ~70g bun + ~15g mayo) ≈ 925kcal/70.5p/35c/56.5f/1.5fiber, then scaled to the 20% portion eaten."},
-    {"time": "20:00", "name": "Johnny Walker Black (1 portion)", "category": "drink", "qty": "1 shot (~30 ml, 40% ABV)", "kcal": 70, "protein_g": 0, "carbs_g": 0.1, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "~1.2 standard alcohol units, same convention as prior spirit-shot entries; no sugar/mixer."}
+    {"time": "20:00", "name": "Johnny Walker Black (1 portion)", "category": "drink", "qty": "1 shot (~30 ml, 40% ABV)", "kcal": 70, "protein_g": 0, "carbs_g": 0.1, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "~1.2 standard alcohol units, same convention as prior spirit-shot entries; no sugar/mixer."},
+    {"time": "21:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "21:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
     "folate_mcg_dfe": 753,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 397.6,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
@@ -50,7 +52,9 @@
     "17:30 ejaculation event (partnered, full penetration) — logged to ejaculation.json, not a nutrition item.",
     "18:05 milk chocolate cube (~5g), standard milk chocolate reference — no meaningful micros in the tracked priority list.",
     "20:00 date-night dinner at Patrick's Caesarea (time not given, approximated): tried to source the actual menu (patricks-caesarea.co.il, the 10bis delivery menu, and the sister Patrick's Petah Tikva site) to calculate real figures per the user's request, but every page returned a 403 (bot-blocked) — same pattern hit earlier this session with other Israeli restaurant/product sites. Fell back to careful culinary estimates per dish, each flagged individually: sirloin pistachio carpaccio starter (~100g sirloin + pistachio + oil), 5 BBQ chicken wing pieces, 6 fries with mayo/ketchup dip, a full caesar salad with double (\"extra extra\") chicken and no cheese (kosher), 20% of a 250g burger (patty+bun+mayo), and 1 shot (~30ml) Johnny Walker Black (~1.2 alcohol units). First alcohol logged since 14 Jul (16-day dry stretch).",
-    "Correction (user flagged both as too high): wings revised down from a whole-wing-sized estimate (~95kcal/piece) to a half-wing-segment estimate (~65kcal/piece incl. sauce), 475kcal→325kcal for the 5 pieces. Caesar salad chicken add-on revised down from ~250g to ~180g grilled breast, 757kcal→642kcal for the salad."
+    "Correction (user flagged both as too high): wings revised down from a whole-wing-sized estimate (~95kcal/piece) to a half-wing-segment estimate (~65kcal/piece incl. sauce), 475kcal→325kcal for the 5 pieces. Caesar salad chicken add-on revised down from ~250g to ~180g grilled breast, 757kcal→642kcal for the salad.",
+    "21:00 omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
+    "21:00 creatine monohydrate, 5g — zero kcal/macros. End of day."
   ],
-  "status_note": "Slept ~7.92h (22:50-06:45) — a solid full night, squarely in the 7-9h target band. Double espresso at 07:10, then at 10:30 a single espresso, a glass of natural squeezed orange juice, and a small chocopate ball, a multivitamin at 11:38, lunch at 13:00 (2 pro pitas, 4 yellow cheese, Simfonia, 20 cherry tomatoes, 2 sunny side up eggs), another double espresso at 13:55, a honeydew melon snack at 15:15, an ejaculation event (partnered) at 17:30, a milk chocolate cube at 18:05, and a date-night dinner at 20:00 at Patrick's Caesarea (carpaccio starter, BBQ wings, fries, extra-chicken caesar salad, a burger portion, and a Johnny Walker Black — menu page bot-blocked, so figures are careful estimates, not menu-sourced; wings and salad chicken revised down after user feedback) (caffeine_shots: 5)."
+  "status_note": "Day complete. Slept ~7.92h (22:50-06:45) — a solid full night, squarely in the 7-9h target band. Double espresso at 07:10, then at 10:30 a single espresso, a glass of natural squeezed orange juice, and a small chocopate ball, a multivitamin at 11:38, lunch at 13:00 (2 pro pitas, 4 yellow cheese, Simfonia, 20 cherry tomatoes, 2 sunny side up eggs), another double espresso at 13:55, a honeydew melon snack at 15:15, an ejaculation event (partnered) at 17:30, a milk chocolate cube at 18:05, a date-night dinner at 20:00 at Patrick's Caesarea (carpaccio starter, BBQ wings, fries, extra-chicken caesar salad, a burger portion, and a Johnny Walker Black — menu page bot-blocked, so figures are careful estimates, not menu-sourced; wings and salad chicken revised down after user feedback), and omega-3 + creatine to close the day (caffeine_shots: 5). No workout today."
 }
