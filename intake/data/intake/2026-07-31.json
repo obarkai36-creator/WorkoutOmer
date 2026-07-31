@@ -13,7 +13,7 @@
     {"time": "09:30", "name": "Kebab tortilla (taste)", "category": "food", "qty": "2 bites (~55 g)", "kcal": 138, "protein_g": 6.6, "carbs_g": 11, "fat_g": 7.2, "fiber_g": 0.8, "note": "from Eitan Meats — no exact recipe given, generic kebab-wrap composite reference (~250kcal/100g), first time logged"},
     {"time": "10:25", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "11:00", "name": "Breakfast — Danone PRO Strawberry Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "verified reference, reused"},
-    {"time": "11:00", "name": "Breakfast — Fitness Chocolate breakfast cereal", "category": "food", "qty": "1 spoon (~8 g)", "kcal": 32, "protein_g": 0.7, "carbs_g": 5.7, "fat_g": 0.6, "fiber_g": 0.5, "note": "user shared the real product page — page itself bot-blocked, web-sourced per-100g values used (396kcal, 8.6g protein, 71.3g carb, 7g fat; fiber estimated). Saved to references/foods.json"}
+    {"time": "11:00", "name": "Breakfast — Fitness Chocolate breakfast cereal", "category": "food", "qty": "1 spoon (~8 g)", "kcal": 32, "protein_g": 0.7, "carbs_g": 5.6, "fat_g": 0.6, "fiber_g": 0.5, "note": "confirmed with a direct label photo, per 100g: 395kcal/8.6p/69.5c/7.2f, 198mg sodium — very close to the earlier web-sourced estimate. Fiber still not shown on the label, kept as an estimate. Saved to references/foods.json"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -32,7 +32,7 @@
     "09:00 double espresso (~60-80ml, counts as 2 caffeine shots).",
     "09:30 taste bites at Eitan Meats: 1 bite chorizo (~15g) + 2 bites kebab tortilla (~55g) — no exact recipes given, generic references used, both first time logged.",
     "10:25 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
-    "11:00 breakfast: Danone PRO Strawberry Yogurt (verified reference) + 1 spoon Fitness Chocolate cereal (~8g) — user shared the real product page, but the page itself was bot-blocked (403); used web-sourced per-100g values instead (396kcal/8.6p/71.3c/7f), fiber estimated. Saved to references/foods.json."
+    "11:00 breakfast: Danone PRO Strawberry Yogurt (verified reference) + 1 spoon Fitness Chocolate cereal (~8g) — user shared a direct label photo confirming per-100g values (395kcal/8.6p/69.5c/7.2f, 198mg sodium), matching the earlier web-sourced estimate closely. Saved to references/foods.json as verified (fiber still an estimate — not shown on this label view)."
   ],
   "status_note": "Slept ~8.75h (23:15-08:00) — a long, solid night, squarely in the 7-9h target band. Started the allergy medication course at 08:40 (Rhinolast spray + Bilaxten pill), a double espresso at 09:00, taste bites at Eitan Meats at 09:30 (chorizo, kebab tortilla), a multivitamin at 10:25, and breakfast at 11:00 (strawberry protein yogurt, a spoon of Fitness Chocolate cereal) (caffeine_shots: 2)."
 }
