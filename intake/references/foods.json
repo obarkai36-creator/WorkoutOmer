@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "fitness_chocolate_cereal",
+      "name": "Fitness Chocolate breakfast cereal (Osem-Nestlé, 375g box)",
+      "serving": "1 spoon (~8 g)",
+      "kcal": 32,
+      "protein_g": 0.7,
+      "carbs_g": 5.7,
+      "fat_g": 0.6,
+      "fiber_g": 0.5,
+      "verified": false,
+      "source": "User shared the real product page (osem-nestle.co.il) 2026-07-31; page itself was bot-blocked, so per-100g values sourced via web search (foodsdictionary.co.il/foodiepedia.co.il): 396kcal, 8.6g protein, 71.3g carb, 7g fat per 100g (matches the label's own 119kcal/30g serving figure). Fiber not found in search snippets — estimated ~6g/100g for a whole-grain cereal, flagged for correction if checked."
+    },
+    {
       "id": "fitness_sweet_potato_cracker",
       "name": "Fitness Thin Sweet Potato Cracker (Osem-Nestlé)",
       "serving": "1 piece (~7 g)",
