@@ -13,17 +13,23 @@
     {"time": "09:30", "name": "Kebab tortilla (taste)", "category": "food", "qty": "2 bites (~55 g)", "kcal": 138, "protein_g": 6.6, "carbs_g": 11, "fat_g": 7.2, "fiber_g": 0.8, "note": "from Eitan Meats — no exact recipe given, generic kebab-wrap composite reference (~250kcal/100g), first time logged"},
     {"time": "10:25", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "11:00", "name": "Breakfast — Danone PRO Strawberry Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "verified reference, reused"},
-    {"time": "11:00", "name": "Breakfast — Fitness Chocolate breakfast cereal", "category": "food", "qty": "1 spoon (~8 g)", "kcal": 32, "protein_g": 0.7, "carbs_g": 5.6, "fat_g": 0.6, "fiber_g": 0.5, "note": "confirmed with a direct label photo, per 100g: 395kcal/8.6p/69.5c/7.2f, 198mg sodium — very close to the earlier web-sourced estimate. Fiber still not shown on the label, kept as an estimate. Saved to references/foods.json"}
+    {"time": "11:00", "name": "Breakfast — Fitness Chocolate breakfast cereal", "category": "food", "qty": "1 spoon (~8 g)", "kcal": 32, "protein_g": 0.7, "carbs_g": 5.6, "fat_g": 0.6, "fiber_g": 0.5, "note": "confirmed with a direct label photo, per 100g: 395kcal/8.6p/69.5c/7.2f, 198mg sodium — very close to the earlier web-sourced estimate. Fiber still not shown on the label, kept as an estimate. Saved to references/foods.json"},
+    {"time": "13:00", "name": "Lunch — Agami Pita Pro spelt pitas", "category": "food", "qty": "2 (68 g each, 136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "time_approx": true, "note": "verified reference, reused"},
+    {"time": "13:00", "name": "Lunch — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (25 g each, 50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "time_approx": true, "note": "verified reference, reused"},
+    {"time": "13:00", "name": "Lunch — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 tsp (~13 g)", "kcal": 40, "protein_g": 2.3, "carbs_g": 0.7, "fat_g": 3.3, "fiber_g": 0, "time_approx": true, "note": "scaled down from the usual 2 tbsp reference (1 tbsp = 3 tsp)"},
+    {"time": "13:00", "name": "Lunch — garlic powder (sprinkle)", "category": "food", "qty": "~1 g", "kcal": 3, "protein_g": 0.2, "carbs_g": 0.7, "fat_g": 0, "fiber_g": 0.1, "note": "garnish amount, standard garlic powder reference"},
+    {"time": "13:00", "name": "Lunch — salad (lettuce, cherry tomatoes, red onion, baby mozzarella)", "category": "food", "qty": "0.6 of a large salad (whole recipe: 1 lettuce head, 30 cherry tomatoes, 1 red onion ~170g, 80 g baby mozzarella)", "kcal": 258, "protein_g": 15.3, "carbs_g": 28.8, "fat_g": 11.4, "fiber_g": 9.5, "time_approx": true, "note": "same recipe structure as prior salads (11/18 Jul) but recalculated for today's amounts — a full onion (vs half) and less mozzarella (80g vs 150g) this time."},
+    {"time": "13:00", "name": "Maple-Balsamic Mustard Vinaigrette (homemade)", "category": "food", "qty": "~25 ml (olive oil, balsamic vinegar, mustard, maple syrup, lemon juice)", "kcal": 125, "protein_g": 0.1, "carbs_g": 4, "fat_g": 12, "fiber_g": 0, "time_approx": true, "note": "same recipe as before, reused from references/foods.json — \"as before\""}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
-    "folate_mcg_dfe": 667,
+    "folate_mcg_dfe": 743.6,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 250,
+    "vitamin_c_mg": 321.4,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 0
+    "lycopene_mg": 13.2
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -32,7 +38,8 @@
     "09:00 double espresso (~60-80ml, counts as 2 caffeine shots).",
     "09:30 taste bites at Eitan Meats: 1 bite chorizo (~15g) + 2 bites kebab tortilla (~55g) — no exact recipes given, generic references used, both first time logged.",
     "10:25 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority raised by the verified supplement-fact values on top of the food-based totals (zinc +15mg, selenium +200mcg, folate +667mcg DFE, vitamin C +250mg, vitamin D +2000IU, vitamin E +16.5mg) — zero kcal/macros.",
-    "11:00 breakfast: Danone PRO Strawberry Yogurt (verified reference) + 1 spoon Fitness Chocolate cereal (~8g) — user shared a direct label photo confirming per-100g values (395kcal/8.6p/69.5c/7.2f, 198mg sodium), matching the earlier web-sourced estimate closely. Saved to references/foods.json as verified (fiber still an estimate — not shown on this label view)."
+    "11:00 breakfast: Danone PRO Strawberry Yogurt (verified reference) + 1 spoon Fitness Chocolate cereal (~8g) — user shared a direct label photo confirming per-100g values (395kcal/8.6p/69.5c/7.2f, 198mg sodium), matching the earlier web-sourced estimate closely. Saved to references/foods.json as verified (fiber still an estimate — not shown on this label view).",
+    "13:00 lunch (time not given, approximated): 2 Agami Pita Pro spelt pitas + 2 Tnuva Emek Light yellow cheese slices + 2 tsp Simfonia cheese spread + a garlic powder sprinkle + 0.6 of a large salad (lettuce, 30 cherry tomatoes, 1 full red onion ~170g, 80g baby mozzarella) + ~25ml homemade Maple-Balsamic Mustard Vinaigrette. Recomputed the salad from per-ingredient reference rates rather than reusing the 11/18 Jul flat totals, since today's onion (full vs half) and mozzarella (80g vs 150g) amounts differ. Tomatoes gave the day's first real micros — lycopene 13.2mg, vitamin C 71.4mg, folate 76.6mcg DFE."
   ],
-  "status_note": "Slept ~8.75h (23:15-08:00) — a long, solid night, squarely in the 7-9h target band. Started the allergy medication course at 08:40 (Rhinolast spray + Bilaxten pill), a double espresso at 09:00, taste bites at Eitan Meats at 09:30 (chorizo, kebab tortilla), a multivitamin at 10:25, and breakfast at 11:00 (strawberry protein yogurt, a spoon of Fitness Chocolate cereal) (caffeine_shots: 2)."
+  "status_note": "Slept ~8.75h (23:15-08:00) — a long, solid night, squarely in the 7-9h target band. Started the allergy medication course at 08:40 (Rhinolast spray + Bilaxten pill), a double espresso at 09:00, taste bites at Eitan Meats at 09:30 (chorizo, kebab tortilla), a multivitamin at 10:25, breakfast at 11:00 (strawberry protein yogurt, a spoon of Fitness Chocolate cereal), and lunch at 13:00 (2 pro pitas, yellow cheese, Simfonia, garlic powder, a lettuce/tomato/onion/mozzarella salad with balsamic vinaigrette) (caffeine_shots: 2)."
 }
