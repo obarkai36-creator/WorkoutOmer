@@ -18,9 +18,26 @@ import json
 import sys
 import glob
 import os
+import subprocess
 from datetime import date, datetime, timedelta
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
+
+def refresh_training_snapshot():
+    """Recompute data/metrics/workouts.json's report_snapshot against right
+    now, not just whenever data.js was last edited. The load ratio (ACWR) is
+    time-relative (7-day acute vs 28-day chronic load) — it keeps decaying
+    as rest days pass even with no new session logged, so the snapshot needs
+    refreshing on every dashboard build, not only on training days."""
+    script = os.path.join(ROOT, "sync_training_snapshot.mjs")
+    if not os.path.exists(script):
+        return
+    try:
+        subprocess.run(["node", script], cwd=ROOT, capture_output=True,
+                        timeout=15, check=True)
+    except Exception as e:
+        print(f"Warning: could not refresh training snapshot ({e})", file=sys.stderr)
 
 # Selenium is tracked daily (not as a weekly average like the other
 # micros below) because a single concentrated source (a few Brazil nuts)
@@ -447,6 +464,7 @@ def build(target_date):
         lifestyle = load("data/metrics/lifestyle.json")
     except FileNotFoundError:
         lifestyle = {"events": []}
+    refresh_training_snapshot()
     try:
         workouts = load("data/metrics/workouts.json")
     except FileNotFoundError:

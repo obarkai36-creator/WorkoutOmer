@@ -1,19 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-07-29",
+    "report_date": "2026-07-31",
     "latest_session": "Full Body (Deload)",
     "sessions_logged": 37,
-    "sessions_per_week": 3.8,
+    "sessions_per_week": 3.5,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 41,
-    "aerobic_sessions_28d": 5,
+    "aerobic_28d_km": 29.5,
+    "aerobic_sessions_28d": 4,
     "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 1.52,
-    "recommended_next": "Back day",
+    "acwr": 1.26,
+    "recommended_next": "Chest day",
     "alerts": [
-      "Load ratio 1.52 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload."
+      "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
   "entries": [
