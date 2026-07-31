@@ -41,3 +41,22 @@
       the spray (PM dose).
   These are chat reminders only — don't log the medication itself as an
   intake item unless the user explicitly tells you they took it.
+- Multivitamin swap trial (decided 2026-07-31, "at least a few weeks" —
+  reassess with the user after that): plan is to replace Thorne Basic
+  Nutrients 2/Day with Mayven Full Volume Gummies (3 gummies/serving) +
+  resuming Thorne Zinc Picolinate 15mg (already in the supplement stack,
+  intake/references/supplements.json). The user still has some Thorne left,
+  so **keep logging "multivit" as Thorne as normal until the user explicitly
+  logs the Mayven gummies for the first time** — only then switch the
+  standing default so future multivitamin-type log entries are read as
+  gummies + zinc instead of Thorne.
+  Per the gummies' label (photographed 2026-07-31): they cover some folate
+  (~100mcg DFE, well under Thorne's 667mcg) and some zinc, but have NO
+  selenium, vitamin C, vitamin D, or vitamin E at all — a real gap versus
+  Thorne. Once the swap is active, proactively suggest specific foods
+  throughout the day's logging flow (not just when asked) to help close
+  those gaps: vitamin C (citrus, peppers, tomatoes), vitamin D (fatty fish,
+  eggs, sun exposure), vitamin E (nuts, seeds, oils), selenium (Brazil nuts,
+  fish, eggs), and extra folate (leafy greens, legumes). Frame as
+  suggestions per the existing standing permission for intake-based
+  suggestions, not mandates.

@@ -1,5 +1,5 @@
 {
-  "_note": "Current supplement stack. Micronutrient amounts for the multivitamin are best-known estimates flagged for verification against the physical bottle (iHerb/Thorne block automated label fetch).",
+  "_note": "Current supplement stack. Micronutrient amounts for the multivitamin are best-known estimates flagged for verification against the physical bottle (iHerb/Thorne block automated label fetch). Planned swap (2026-07-31, trial for a few weeks): Thorne Basic Nutrients 2/Day -> Mayven Full Volume Gummies + resumed Thorne Zinc Picolinate 15mg, once current Thorne stock runs out. See CLAUDE.md for the exact trigger condition.",
   "stack": [
     {
       "id": "thorne_basic_nutrients_2day",
@@ -54,6 +54,27 @@
       "timing": "post-lunch",
       "verified": false,
       "provides_estimate": { "omega3_epa_dha_mg": 1000, "epa_mg": 360, "dha_mg": 240 }
+    },
+    {
+      "id": "mayven_full_volume_gummies",
+      "name": "Mayven Full Volume Gummies (hair/nail multivitamin)",
+      "type": "multivitamin",
+      "serving": "3 gummies",
+      "servings_per_container": 20,
+      "timing": "not yet started — planned replacement for Thorne Basic Nutrients 2/Day once current Thorne stock runs out",
+      "verified": true,
+      "_verify_note": "Read from a physical label photo (2026-07-31). A hair-volume-focused gummy, not a general/fertility multi — heavy on biotin/B-vitamins/vitamin A, but the label shows NO selenium, vitamin C, vitamin D, or vitamin E. Zinc figure is approximate (label was hard to fully resolve); refine if checked again.",
+      "provides": {
+        "folate_mcg_dfe": 100,
+        "zinc_mg": 2.8,
+        "selenium_mcg": 0,
+        "vitamin_c_mg": 0,
+        "vitamin_d_iu": 0,
+        "vitamin_e_mg": 0,
+        "biotin_mcg": 500,
+        "vitamin_b12_mcg": 5,
+        "vitamin_b6_mg": 1
+      }
     },
     {
       "id": "thorne_zinc_picolinate_15",
