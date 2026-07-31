@@ -22,7 +22,8 @@
     {"time": "13:00", "name": "Maple-Balsamic Mustard Vinaigrette (homemade)", "category": "food", "qty": "~25 ml (olive oil, balsamic vinegar, mustard, maple syrup, lemon juice)", "kcal": 125, "protein_g": 0.1, "carbs_g": 4, "fat_g": 12, "fiber_g": 0, "time_approx": true, "note": "same recipe as before, reused from references/foods.json — \"as before\""},
     {"time": "13:38", "name": "Chocolate cube", "category": "food", "qty": "1 cube (~5 g)", "kcal": 27, "protein_g": 0.4, "carbs_g": 3, "fat_g": 1.5, "fiber_g": 0.1, "note": "milk vs dark not specified — assumed milk chocolate reference (the more frequently logged type this session), flag if it was dark"},
     {"time": "14:25", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:50", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:50", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:05", "name": "Snack — honeydew melon", "category": "food", "qty": "450 g", "kcal": 161, "protein_g": 2.3, "carbs_g": 41.3, "fat_g": 0.4, "fiber_g": 3.8, "note": "same per-gram reference as prior honeydew entries (35.8kcal/100g)"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -46,7 +47,8 @@
     "13:38 chocolate cube (~5g) — milk vs dark not specified, assumed milk chocolate reference (standard, single square/cube).",
     "14:25 omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
     "15:15 ejaculation event (partnered, full penetration) — logged to ejaculation.json, not a nutrition item.",
-    "15:50 double espresso (~60-80ml, counts as 2 caffeine shots)."
+    "15:50 double espresso (~60-80ml, counts as 2 caffeine shots).",
+    "16:05 snack: 450g honeydew melon, same per-gram reference as prior honeydew entries (35.8kcal/100g)."
   ],
-  "status_note": "Slept ~8.75h (23:15-08:00) — a long, solid night, squarely in the 7-9h target band. Started the allergy medication course at 08:40 (Rhinolast spray + Bilaxten pill), a double espresso at 09:00, taste bites at Eitan Meats at 09:30 (chorizo, kebab tortilla), a multivitamin at 10:25, breakfast at 11:00 (strawberry protein yogurt, a spoon of Fitness Chocolate cereal), lunch at 13:00 (2 pro pitas, yellow cheese, Simfonia, garlic powder, a lettuce/tomato/onion/mozzarella salad with balsamic vinaigrette), a chocolate cube at 13:38, omega-3 at 14:25, an ejaculation event (partnered) at 15:15, and another double espresso at 15:50 (caffeine_shots: 4)."
+  "status_note": "Slept ~8.75h (23:15-08:00) — a long, solid night, squarely in the 7-9h target band. Started the allergy medication course at 08:40 (Rhinolast spray + Bilaxten pill), a double espresso at 09:00, taste bites at Eitan Meats at 09:30 (chorizo, kebab tortilla), a multivitamin at 10:25, breakfast at 11:00 (strawberry protein yogurt, a spoon of Fitness Chocolate cereal), lunch at 13:00 (2 pro pitas, yellow cheese, Simfonia, garlic powder, a lettuce/tomato/onion/mozzarella salad with balsamic vinaigrette), a chocolate cube at 13:38, omega-3 at 14:25, an ejaculation event (partnered) at 15:15, another double espresso at 15:50, and a honeydew melon snack at 16:05 (caffeine_shots: 4)."
 }
