@@ -1,10 +1,10 @@
 {
   "date": "2026-07-31",
   "day_number": 34,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "_status": "Day closed out. No workout today; full day of food/drink/supplements/sleep logged.",
   "items": [
     {"time": "08:40", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication, first day of the course — AM dose of the 2x/day spray"},
     {"time": "08:40", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication, first day of the course — 1x/day pill"},
@@ -34,7 +34,8 @@
     {"time": "19:45", "name": "Dinner — eggplant in vinegar", "category": "food", "qty": "~100 g", "kcal": 70, "protein_g": 1, "carbs_g": 6, "fat_g": 5, "fiber_g": 3, "time_approx": true, "note": "cooked eggplant with a light oil/vinegar marinade — estimated, not weighed, first time logged"},
     {"time": "19:45", "name": "Red wine (small serving)", "category": "drink", "qty": "~100 ml", "kcal": 85, "protein_g": 0, "carbs_g": 2.6, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "standard red wine reference (~85kcal/100ml), ~1 standard alcohol unit — first alcohol since the 30 Jul Johnny Walker Black at Patrick's Caesarea"},
     {"time": "20:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
-    {"time": "20:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "20:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "20:30", "name": "Dessert — honeydew melon", "category": "food", "qty": "200 g", "kcal": 72, "protein_g": 1, "carbs_g": 18.3, "fat_g": 0.2, "fiber_g": 1.7, "time_approx": true, "note": "same per-gram reference as prior honeydew entries (35.8kcal/100g)"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -65,7 +66,8 @@
     "19:15 0.5 homemade chicken meatball (~17.5g), using the saved recipe reference (176kcal/100g, ~35g/ball).",
     "19:45 dinner (time not given, approximated): 5 homemade chicken meatballs (saved recipe reference) + 3 pieces grilled chicken breast (~60g each, same thin-cutlet size as the earlier photo) + a baked broccoli/cauliflower/potato serving (~300g, roughly equal parts, estimated) + a double serving of cabbage salad in soy/olive-oil/balsamic dressing (~300g, oil-forward — estimated, not weighed) + eggplant in vinegar (~100g, first time logged, estimated) + a small (~100ml) red wine serving (~1 standard alcohol unit). None of the food items were weighed; all flagged as estimates.",
     "20:15 Rhinolast (PM dose) — completes the day's 2x/day spray course.",
-    "20:15 creatine monohydrate, 4.5g — zero kcal/macros."
+    "20:15 creatine monohydrate, 4.5g — zero kcal/macros.",
+    "20:30 dessert: 200g honeydew melon, same per-gram reference as prior honeydew entries (35.8kcal/100g). End of day."
   ],
-  "status_note": "Slept ~8.75h (23:15-08:00) — a long, solid night, squarely in the 7-9h target band. Started the allergy medication course at 08:40 (Rhinolast spray + Bilaxten pill), a double espresso at 09:00, taste bites at Eitan Meats at 09:30 (chorizo, kebab tortilla), a multivitamin at 10:25, breakfast at 11:00 (strawberry protein yogurt, a spoon of Fitness Chocolate cereal), lunch at 13:00 (2 pro pitas, yellow cheese, Simfonia, garlic powder, a lettuce/tomato/onion/mozzarella salad with balsamic vinaigrette), a chocolate cube at 13:38, omega-3 at 14:25, an ejaculation event (partnered) at 15:15, another double espresso at 15:50, a honeydew melon snack at 16:05, a chicken breast plus a taste of chocolate cake with ganache at 18:30, half a chicken meatball at 19:15, dinner at 19:45 (5 chicken meatballs, 3 pieces chicken breast, baked broccoli/cauliflower/potatoes, a double cabbage salad, eggplant in vinegar, a small red wine), and the PM allergy spray + creatine at 20:15 (caffeine_shots: 4)."
+  "status_note": "Day complete. Slept ~8.75h (23:15-08:00) — a long, solid night, squarely in the 7-9h target band. Started the allergy medication course at 08:40 (Rhinolast spray + Bilaxten pill), a double espresso at 09:00, taste bites at Eitan Meats at 09:30 (chorizo, kebab tortilla), a multivitamin at 10:25, breakfast at 11:00 (strawberry protein yogurt, a spoon of Fitness Chocolate cereal), lunch at 13:00 (2 pro pitas, yellow cheese, Simfonia, garlic powder, a lettuce/tomato/onion/mozzarella salad with balsamic vinaigrette), a chocolate cube at 13:38, omega-3 at 14:25, an ejaculation event (partnered) at 15:15, another double espresso at 15:50, a honeydew melon snack at 16:05, a chicken breast plus a taste of chocolate cake with ganache at 18:30, half a chicken meatball at 19:15, dinner at 19:45 (5 chicken meatballs, 3 pieces chicken breast, baked broccoli/cauliflower/potatoes, a double cabbage salad, eggplant in vinegar, a small red wine), the PM allergy spray + creatine at 20:15, and a honeydew melon dessert at 20:30 (caffeine_shots: 4). No workout today — first full day on the allergy medication course, completed both doses."
 }
