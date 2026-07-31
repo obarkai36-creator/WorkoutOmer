@@ -22,6 +22,22 @@ from datetime import date, datetime, timedelta
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
+# Selenium is tracked daily (not as a weekly average like the other
+# micros below) because a single concentrated source (a few Brazil nuts)
+# can spike well past a safe day's intake in one sitting — averaging it
+# over a week could mask that. NIH ODS tolerable upper intake level, adults.
+SELENIUM_UL_MCG = 400
+
+# Vitamin C/E/D and folate all have body reserves lasting days-to-weeks, so
+# a rolling 7-day average is a more physiologically meaningful target than
+# forcing every single day to individually clear the daily number.
+WEEKLY_TRACKED_MICROS = [
+    ("vitamin_c_mg", "Vitamin C", "citrus, peppers, tomatoes"),
+    ("vitamin_e_mg", "Vitamin E", "nuts, seeds, oils"),
+    ("vitamin_d_iu", "Vitamin D", "fatty fish, eggs, or sun exposure"),
+    ("folate_mcg_dfe", "Folate", "leafy greens, legumes"),
+]
+
 
 def load(path):
     with open(os.path.join(ROOT, path), encoding="utf-8") as f:
@@ -369,6 +385,32 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
     if kcal_over / n >= 0.3:
         sugg.append(f"Calories ran 10%+ over target on {kcal_over}/{n} days, mostly around restaurant meals and desserts — no single day is a problem, but the pattern is worth watching against the weight-loss goal.")
 
+    # Selenium: tracked daily, not weekly — see SELENIUM_UL_MCG comment above.
+    mtarg = t["micros_sperm_priority"]
+    today_data = next((d for d in all_days if d["date"] == target_date), None)
+    today_micros = today_data.get("micros_sperm_priority", {}) if today_data else {}
+    sel_today = today_micros.get("selenium_mcg", 0)
+    sel_target = mtarg.get("selenium_mcg")
+    if sel_target:
+        if sel_today >= SELENIUM_UL_MCG:
+            sugg.append(f"Selenium today is {sel_today:g}mcg — at or above the ~{SELENIUM_UL_MCG}mcg/day safe upper limit (tracked daily, not weekly, since a Brazil-nut serving can spike it fast). Skip any more concentrated sources for the rest of today.")
+        elif sel_today < sel_target:
+            sugg.append(f"Selenium today is {sel_today:g}mcg vs the ~{sel_target}mcg target (tracked daily, not weekly, since it can overshoot in one sitting) — 2-3 Brazil nuts, fish, or eggs would close the gap without real risk of going over.")
+
+    # Vitamin C/E/D and folate: tracked as a 7-day rolling average — see
+    # WEEKLY_TRACKED_MICROS comment above.
+    last7 = [d for d in all_days if 0 <= (pdate(target_date) - pdate(d["date"])).days < 7]
+    if last7:
+        for key, label, foods in WEEKLY_TRACKED_MICROS:
+            target = mtarg.get(key)
+            if not target:
+                continue
+            vals = [d.get("micros_sperm_priority", {}).get(key, 0) for d in last7]
+            avg = sum(vals) / len(vals)
+            if avg < target:
+                pct = round(avg / target * 100)
+                sugg.append(f"{label} averaging {avg:.0f} vs a ~{target:g} target over the last {len(last7)} day(s) ({pct}%) — tracked weekly, not daily (a slow-reserve nutrient) — add {foods} on a lighter day to bring the average up.")
+
     alcohol_days_14 = sorted({e["date"] for e in lifestyle_events if e.get("type") == "alcohol"})
     recent_alcohol = [d for d in alcohol_days_14 if (pdate(target_date) - pdate(d)).days < 14]
     if len(recent_alcohol) >= 5:
@@ -390,7 +432,7 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
         lo_t, hi_t = profile["goals"]["target_weight_kg"]
         sugg.append(f"Weight is {last_w - baseline_w:+.2f} kg vs. the {profile['personal']['baseline_date']} baseline, {round(max(0, last_w - hi_t), 1)} kg from the {lo_t}-{hi_t} kg target range — pace is steady but slower than the 0.4 kg/week goal; tightening portions on non-restaurant days would help most.")
 
-    return sugg[:6]
+    return sugg[:10]
 
 
 # ---------- main build ----------
