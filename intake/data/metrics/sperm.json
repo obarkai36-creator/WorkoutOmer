@@ -334,6 +334,21 @@
       },
       "notes": "Computed from real logged data for 2026-07-24 → 2026-07-30 (7 day(s) logged this window).",
       "sample": false
+    },
+    {
+      "week_start": "2026-07-25",
+      "week_end": "2026-07-31",
+      "factors": {
+        "nutrition": 61,
+        "body_composition": 23,
+        "sleep": 97,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-25 → 2026-07-31 (7 day(s) logged this window).",
+      "sample": false
     }
   ]
 }
