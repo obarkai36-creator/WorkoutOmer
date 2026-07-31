@@ -20,9 +20,13 @@
   In that situation, manually trigger the report.yml workflow via
   workflow_dispatch right after pushing, without waiting to be asked —
   don't make the user discover the gap by asking "did you send it?".
-- Monthly recap: hold off generating intake/dashboards/monthly/<YYYY-MM>.html
-  until the user explicitly signals it's time (e.g. "it's Aug 1st, run the
-  July recap") — don't run generate_monthly_recap.py proactively before then.
+- Monthly recap (automated 2026-07-31): a Routine ("Monthly recap generator",
+  trigger trig_01Gxt8g3RG6GfePJ2ZbTTCMr) fires on the 1st of every month,
+  generates the previous month's intake/dashboards/monthly/<YYYY-MM>.html via
+  generate_monthly_recap.py, commits/pushes it, and sends it to the user
+  automatically. Don't generate it manually anymore unless the user asks for
+  an ad-hoc recap or the automated run visibly failed/was skipped — check
+  `list_triggers`/recent commits first rather than assuming it didn't run.
 - Standing permission (given 2026-07-27): proactively suggest full-body
   deload sessions when training-load signals call for it (e.g. repeated ACWR
   alerts >1.5 with no deload taken), and proactively make intake-based
