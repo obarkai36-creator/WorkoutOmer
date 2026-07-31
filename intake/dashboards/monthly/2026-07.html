@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monthly Recap · July 2026</title>
+<style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+           --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8;
+           --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; --info:#3b82f6; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; padding:0; background:var(--bg); }
+  body { color:var(--text);
+          font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:1100px; margin:0 auto; padding:24px 18px 60px; }
+  header.top { display:flex; justify-content:space-between; align-items:flex-end;
+                flex-wrap:wrap; gap:12px; margin-bottom:20px; }
+  .title { font-size:22px; font-weight:700; }
+  .subtitle { color:var(--muted); }
+  .daychip { background:linear-gradient(135deg,#1d4ed8,#0ea5e9); color:#fff;
+              padding:8px 14px; border-radius:12px; font-weight:700; white-space:nowrap; }
+  .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:16px;
+            padding:18px; }
+  .panel.span { grid-column:1 / -1; }
+  .panel h2 { margin:0 0 14px; font-size:13px; letter-spacing:.08em;
+               text-transform:uppercase; color:var(--muted); }
+  .metric { margin:10px 0; }
+  .metric-top { display:flex; justify-content:space-between; font-size:13px; margin-bottom:5px; }
+  .vals { font-variant-numeric:tabular-nums; font-weight:600; }
+  .muted { color:var(--muted); font-weight:400; }
+  .track { height:8px; background:#0a1019; border-radius:6px; overflow:hidden; }
+  .fill { height:100%; border-radius:6px; }
+  .bignum { font-size:40px; font-weight:800; line-height:1; font-variant-numeric:tabular-nums; }
+  .bignum small { font-size:16px; color:var(--muted); font-weight:600; }
+  .goalline { color:var(--muted); margin-top:6px; }
+  .chips { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .chip { background:var(--panel2); border:1px solid var(--line); border-radius:10px;
+           padding:12px 10px; text-align:center; }
+  .chip-v { font-size:19px; font-weight:700; font-variant-numeric:tabular-nums; }
+  .chip-delta { font-size:12px; font-weight:700; margin-top:3px; font-variant-numeric:tabular-nums; }
+  .chip-k { font-size:11px; color:var(--muted); margin-top:3px; }
+  .up-good { color:var(--good); } .up-bad { color:var(--bad); }
+  .spark-wrap{ margin-top:6px; }
+  .spark-legend { display:flex; gap:16px; font-size:11px; color:var(--muted); margin-top:6px; }
+  .spark-legend span::before { content:""; display:inline-block; width:10px; height:2px;
+    margin-right:5px; vertical-align:middle; }
+  table { width:100%; border-collapse:collapse; }
+  th,td { text-align:left; padding:9px 8px; border-bottom:1px solid var(--line); font-size:13.5px; }
+  th { color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.05em; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .dtable-wrap { overflow-x:auto; }
+  .ring-wrap { display:flex; flex-direction:column; align-items:center; }
+  .ring-num { fill:var(--text); font-size:26px; font-weight:800; }
+  .ring-sub { fill:var(--muted); font-size:10px; }
+  .ring-label { font-weight:700; margin-top:6px; font-size:13px; }
+  .ring-row { display:flex; gap:28px; justify-content:space-around; flex-wrap:wrap; }
+  .note { background:var(--panel2); border-left:3px solid var(--accent);
+           padding:10px 12px; border-radius:8px; color:var(--text); margin-top:4px; font-size:13.5px; }
+  .sugg-ul { list-style:none; margin:0; padding:0; }
+  .sugg-ul li { font-size:14px; padding:10px 0 10px 16px; border-bottom:1px solid var(--line);
+                 border-left:3px solid var(--accent); background:var(--panel2); border-radius:6px;
+                 margin-bottom:8px; }
+  .sugg-ul li:last-child { margin-bottom:0; }
+  .sugg-ul li b.tag { display:inline-block; font-size:10.5px; letter-spacing:.04em; text-transform:uppercase;
+    color:var(--bg); background:var(--accent); padding:2px 7px; border-radius:5px; margin-right:8px;
+    font-weight:700; vertical-align:2px; }
+  .pr-ul { list-style:none; margin:10px 0 0; padding:0; }
+  .pr-ul li { font-size:13.5px; padding:7px 0; border-bottom:1px solid var(--line); }
+  .pr-ul li:last-child { border-bottom:none; }
+  .pr-ul .pr-star { color:var(--good); margin-right:6px; }
+  .two-col { display:grid; grid-template-columns:1.3fr 1fr; gap:18px; }
+  .footer { color:var(--muted); font-size:12px; text-align:center; margin-top:26px; }
+  @media(max-width:720px){ .grid{grid-template-columns:1fr;} .chips{grid-template-columns:repeat(2,1fr);}
+    .two-col{grid-template-columns:1fr;} .ring-row{gap:16px;} }
+</style></head>
+<body><div class="wrap">
+
+  <header class="top">
+    <div>
+      <div class="title">Monthly Recap</div>
+      <div class="subtitle">July 2026 · 31 day(s) logged · vs June 2026</div>
+    </div>
+    <div class="daychip">2026-07</div>
+  </header>
+
+  <div class="grid">
+
+    <div class="panel span">
+      <h2>Executive Summary</h2>
+      <div class="chips"><div class="chip"><div class="chip-v">74</div><div class="chip-delta muted">no prior data</div><div class="chip-k">Avg sperm score</div></div><div class="chip"><div class="chip-v">88</div><div class="chip-delta muted">no prior data</div><div class="chip-k">Avg energy score</div></div><div class="chip"><div class="chip-v">81.2 kg</div><div class="chip-delta up-good">▼ -0.2 kg vs last month</div><div class="chip-k">Avg weight</div></div><div class="chip"><div class="chip-v">64%</div><div class="chip-delta up-bad">▼ -3.0pp vs last month</div><div class="chip-k">Protein-target days</div></div></div>
+      <div class="note" style="margin-top:14px">Nutrition logged on 31 day(s) this month vs 3 last month. See Recommendations below for what moved and what to watch.</div>
+    </div>
+
+    <div class="panel">
+      <h2>Nutrition · monthly average vs target</h2>
+      
+      <div class="metric">
+        <div class="metric-top"><span>Calories (kcal)</span><span class="vals">2275 <span class="muted">/ 2050</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#f59e0b"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Protein (g)</span><span class="vals">167.4 <span class="muted">/ 165</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Carbs (g)</span><span class="vals">172.4 <span class="muted">/ 190</span></span></div>
+        <div class="track"><div class="fill" style="width:91%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Fat (g)</span><span class="vals">100.4 <span class="muted">/ 65</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#ef4444"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Fiber (g)</span><span class="vals">29.5 <span class="muted">/ 32</span></span></div>
+        <div class="track"><div class="fill" style="width:92%;background:#22c55e"></div></div>
+      </div>
+    </div>
+
+    
+    <div class="panel">
+      <h2>Weight &amp; Body Composition · trend</h2>
+      <div class="bignum">81.2<small> kg avg</small></div>
+      <div class="goalline">Target 76-78 kg · 2026-06 avg was 81.4 kg</div>
+      <div class="spark-wrap">
+      <svg viewBox="0 0 560 90" width="100%" preserveAspectRatio="none" style="height:90px">
+        <polyline fill="none" stroke="#8b9bb0" stroke-width="2" stroke-dasharray="4,3" points="280.0,8.0 298.1,82.0 334.4,15.0 352.5,32.7 479.5,32.7"/><polyline fill="none" stroke="#38bdf8" stroke-width="2.5" points="189.3,64.4 225.6,60.9 298.1,22.1 316.3,43.2 425.1,46.8 497.6,60.9"/><circle cx="189.3" cy="64.4" r="3" fill="#38bdf8"/><circle cx="225.6" cy="60.9" r="3" fill="#38bdf8"/><circle cx="298.1" cy="22.1" r="3" fill="#38bdf8"/><circle cx="316.3" cy="43.2" r="3" fill="#38bdf8"/><circle cx="425.1" cy="46.8" r="3" fill="#38bdf8"/><circle cx="497.6" cy="60.9" r="3" fill="#38bdf8"/><circle cx="497.6" cy="60.9" r="4.5" fill="#22c55e"/>
+      </svg>
+      <div class="spark-legend">
+        <span style="border-top:2px solid #38bdf8">July 2026</span>
+        <span style="border-top:2px dashed #8b9bb0">June 2026</span>
+      </div>
+    </div>
+    </div>
+
+    <div class="panel span">
+      <h2>Training Summary</h2>
+      <div class="chips">
+        <div class="chip"><div class="chip-v">15</div>
+          <div class="chip-delta muted">pace ~3.5/wk · 2026-06 had 11</div>
+          <div class="chip-k">Sessions logged</div></div>
+        <div class="chip"><div class="chip-v">3</div>
+          <div class="chip-delta muted">2026-06 had 0</div>
+          <div class="chip-k">New PRs</div></div>
+        <div class="chip"><div class="chip-v" style="color:#22c55e">1.26</div>
+          <div class='chip-delta up-good'>▼ from 3.03</div>
+          <div class="chip-k">Avg load ratio (ACWR)</div></div>
+        <div class="chip"><div class="chip-v">Chest day</div>
+          <div class="chip-delta muted">as of month end</div>
+          <div class="chip-k">Recommended next</div></div>
+      </div>
+      <div class="two-col" style="margin-top:16px">
+        <div>
+          <div class="muted" style="font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">PRs this month</div>
+          <ul class="pr-ul"><li><span class='pr-star'>★</span><b>2026-07-11</b> — Calf raises machine 77kg×4×10 (PR); Angled leg press 202kg setup [70kg each side + 62kg frame]×4×6 (PR); Leg extensions 111kg×4×12; Outer…</li><li><span class='pr-star'>★</span><b>2026-07-15</b> — Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 (PR — more reps at the same weight than the prior 72.5kg×4×5 best); Incline bench…</li><li><span class='pr-star'>★</span><b>2026-07-18</b> — Incline hammer curl 18kg each×4×8 (ties best); Incline DB curl 18kg each×4×5 (ties best); Half curl 16kg each×4×6 (ties best); Forearm…</li></ul>
+        </div>
+        <div>
+          <div class="muted" style="font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Alerts, as of month end</div>
+          <div class='note' style='margin-bottom:8px'>Nothing acutely concerning. The notes below are housekeeping, not warnings.</div>
+        </div>
+      </div>
+    </div>
+    <div class='panel'><h2>Sperm &amp; Energy Score · monthly average</h2><div class='ring-row'><div class="ring-wrap">
+      <svg viewBox="0 0 130 130" width="120" height="120">
+        <circle cx="65" cy="65" r="52" fill="none" stroke="#1f2937" stroke-width="12"/>
+        <circle cx="65" cy="65" r="52" fill="none" stroke="#3b82f6" stroke-width="12"
+          stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="84.9"
+          transform="rotate(-90 65 65)"/>
+        <text x="65" y="60" text-anchor="middle" class="ring-num">74</text>
+        <text x="65" y="82" text-anchor="middle" class="ring-sub">/ 100</text>
+      </svg>
+      <div class="ring-label" style="color:#3b82f6">Sperm · Good</div>
+    </div><div class="ring-wrap">
+      <svg viewBox="0 0 130 130" width="120" height="120">
+        <circle cx="65" cy="65" r="52" fill="none" stroke="#1f2937" stroke-width="12"/>
+        <circle cx="65" cy="65" r="52" fill="none" stroke="#22c55e" stroke-width="12"
+          stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="39.2"
+          transform="rotate(-90 65 65)"/>
+        <text x="65" y="60" text-anchor="middle" class="ring-num">88</text>
+        <text x="65" y="82" text-anchor="middle" class="ring-sub">/ 100</text>
+      </svg>
+      <div class="ring-label" style="color:#22c55e">Energy · High</div>
+    </div></div><div class='note' style='margin-top:14px'>Best week: sperm score, week ending 2026-07-16. Worst week: week ending 2026-07-11. Best day: energy 99 (2026-07-13). Worst day: 67 (2026-07-12).</div></div>
+    
+    <div class="panel">
+      <h2>Lifestyle</h2>
+      <div class="metric">
+        <div class="metric-top"><span>Alcohol days</span><span class="vals">9 <span class="muted">/ 31 days (2026-06: 1)</span></span></div>
+        <div class="track"><div class="fill" style="width:29.03225806451613%;background:#f59e0b"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Avg sleep</span><span class="vals">7.17h <span class="muted">(2026-06: —)</span></span></div>
+        <div class="track"><div class="fill" style="width:79.66666666666666%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Nights &lt; 6h</span><span class="vals">4 <span class="muted">/ 21 (2026-06: 0/0)</span></span></div>
+        <div class="track"><div class="fill" style="width:19.047619047619047%;background:#f59e0b"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Ejaculatory frequency</span><span class="vals">~1.9d avg gap <span class="muted">(target 1-2d)</span></span></div>
+        <div class="track"><div class="fill" style="width:62.0%;background:#3b82f6"></div></div>
+      </div>
+    </div>
+
+    <div class="panel span">
+      <h2>July 2026 vs June 2026</h2>
+      <div class="dtable-wrap">
+        <table>
+          <thead><tr><th>Metric</th><th class="num">2026-07</th><th class="num">2026-06</th><th class="num">Δ</th></tr></thead>
+          <tbody><tr><td>Avg weight (kg)</td><td class='num'>81.2</td><td class='num'>81.4</td><td class='num' style='color:var(--good)'>-0.2</td></tr><tr><td>Avg sperm score</td><td class='num'>74</td><td class='num'>—</td><td class='num' style='color:var(--muted)'>—</td></tr><tr><td>Avg energy score</td><td class='num'>88</td><td class='num'>—</td><td class='num' style='color:var(--muted)'>—</td></tr><tr><td>Avg daily protein (g)</td><td class='num'>167</td><td class='num'>166</td><td class='num' style='color:var(--good)'>+1</td></tr><tr><td>Protein-target adherence (%)</td><td class='num'>64</td><td class='num'>67</td><td class='num' style='color:var(--bad)'>-3</td></tr><tr><td>Sessions logged</td><td class='num'>15</td><td class='num'>11</td><td class='num' style='color:var(--muted)'>+4</td></tr><tr><td>Avg sleep (h)</td><td class='num'>7.2</td><td class='num'>—</td><td class='num' style='color:var(--muted)'>—</td></tr><tr><td>Alcohol days</td><td class='num'>9</td><td class='num'>1</td><td class='num' style='color:var(--bad)'>+8</td></tr><tr><td>Avg load ratio (ACWR)</td><td class='num'>1.26</td><td class='num'>3.03</td><td class='num' style='color:var(--good)'>-1.77</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="panel span">
+      <h2>Recommendations</h2>
+      <ul class='sugg-ul'><li><b class='tag'>Sperm</b>Alcohol logged on 9 days this month (was 1) — worth watching against the <=1/week baseline.</li></ul>
+    </div>
+
+  </div>
+
+  <div class="footer">Generated 2026-07-31 19:00 · Monthly Recap · same visual system as the daily dashboards</div>
+</div></body></html>
