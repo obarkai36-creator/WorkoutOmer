@@ -15,7 +15,8 @@
     {"time": "10:00", "name": "Post-workout — cottage cheese, drizzled with honey", "category": "food", "qty": "150 g cottage cheese + ~1 tsp (7 g) honey", "kcal": 168, "protein_g": 16.7, "carbs_g": 10.8, "fat_g": 6.5, "fiber_g": 0, "time_approx": true, "note": "standard cottage cheese (~4% fat) reference, scaled to 150g; honey amount estimated at ~1 tsp since only \"drizzle\" was given"},
     {"time": "10:00", "name": "Post-workout — salad (lettuce, red onion, cherry tomatoes, honey mustard dressing)", "category": "food", "qty": "10 bites — amounts not weighed", "kcal": 270, "protein_g": 1.8, "carbs_g": 16, "fat_g": 22.2, "fiber_g": 3, "time_approx": true, "note": "no exact weights/tomato count given — estimated as ~150g mixed veg + ~50g oil-forward honey mustard vinaigrette across 10 bites, first time logged"},
     {"time": "10:05", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
-    {"time": "10:30", "name": "Snack — honeydew melon (bites)", "category": "food", "qty": "10 bites (~15g each, ~150 g)", "kcal": 54, "protein_g": 0.8, "carbs_g": 13.8, "fat_g": 0.1, "fiber_g": 1.3, "note": "same per-gram reference as prior honeydew entries (35.8kcal/100g)"}
+    {"time": "10:30", "name": "Snack — honeydew melon (bites)", "category": "food", "qty": "10 bites (~15g each, ~150 g)", "kcal": 54, "protein_g": 0.8, "carbs_g": 13.8, "fat_g": 0.1, "fiber_g": 1.3, "note": "same per-gram reference as prior honeydew entries (35.8kcal/100g)"},
+    {"time": "12:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -27,7 +28,7 @@
     "vitamin_e_mg": 3.5,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:30-06:50, ~7.33h — squarely in the 7-9h target band, one continuous stretch.",
     "07:27 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill) — zero kcal/macros.",
@@ -37,7 +38,8 @@
     "09:00 Back + Arms workout: Dumbbell Pullover 18kg×4×10 (ties best), Reverse Incline DB Row 26kg each×4×8 (new PR, +2kg each side vs 24kg each×4×10), Incline DB Curl 18kg each×4×6 (new PR, +1 rep at same weight), Incline Hammer Curl 18kg each×4×8 (ties best), Half Curl 18kg each×4×5 (new PR by est. 1RM vs 16kg each×4×6), Dead Hang 25s×3 (new PR, +5s vs 20s×3, at 81.00kg bodyweight). Mirrored to data.js WORKOUTS/SNAPSHOT and workouts.json.",
     "10:00 post-workout meal (time not given, approximated): 1 bite chocolate cake (generic reference) + 150g cottage cheese drizzled with honey (~1 tsp) + a 10-bite salad (lettuce, red onion, cherry tomatoes, honey mustard dressing). None of these were weighed; all flagged as estimates. Tomato count not given, so no separate lycopene/vitamin C credit broken out this time.",
     "10:05 creatine monohydrate, 4.5g — zero kcal/macros.",
-    "10:30 snack: 10 honeydew melon bites (~15g each, ~150g), same per-gram reference as prior honeydew entries (35.8kcal/100g)."
+    "10:30 snack: 10 honeydew melon bites (~15g each, ~150g), same per-gram reference as prior honeydew entries (35.8kcal/100g).",
+    "12:10 second double espresso (~60-80ml, counts as 2 more caffeine shots — 4 total today)."
   ],
-  "status_note": "Slept ~7.33h (23:30-06:50) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:27, a double espresso at 08:00, one bowl of a cabbage/sprout salad with almonds, pine nuts, and yesterday's dressing at 08:10, a taste of homemade dark chocolate quinoa at 08:30, a Back + Arms workout at 09:00 (4 new PRs: Reverse Incline DB Row, Incline DB Curl, Half Curl, Dead Hang), a post-workout meal at 10:00 (chocolate cake bite, cottage cheese with honey, a honey-mustard salad), creatine at 10:05, and a honeydew melon snack at 10:30 (caffeine_shots: 2)."
+  "status_note": "Slept ~7.33h (23:30-06:50) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:27, a double espresso at 08:00, one bowl of a cabbage/sprout salad with almonds, pine nuts, and yesterday's dressing at 08:10, a taste of homemade dark chocolate quinoa at 08:30, a Back + Arms workout at 09:00 (4 new PRs: Reverse Incline DB Row, Incline DB Curl, Half Curl, Dead Hang), a post-workout meal at 10:00 (chocolate cake bite, cottage cheese with honey, a honey-mustard salad), creatine at 10:05, a honeydew melon snack at 10:30, and a second double espresso at 12:10 (caffeine_shots: 4)."
 }
