@@ -2,9 +2,9 @@
   "date": "2026-08-01",
   "day_number": 35,
   "in_progress": true,
-  "workout_today": false,
-  "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "workout_today": true,
+  "workout_summary": "Back + Arms (09:00): Dumbbell Pullover 18kg×4×10 (ties best); Reverse Incline DB Row 26kg each×4×8 (new PR); Incline DB Curl 18kg each×4×6 (new PR, +1 rep); Incline Hammer Curl 18kg each×4×8 (ties best); Half Curl 18kg each×4×5 (new PR by est. 1RM); Dead Hang 25s×3 (new PR, +5s). 4 new PRs.",
+  "_status": "Day just opened — sleep and a Back + Arms workout logged.",
   "items": [
     {"time": "07:27", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:27", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -28,7 +28,8 @@
     "07:27 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill) — zero kcal/macros.",
     "08:00 double espresso (~60-80ml, counts as 2 caffeine shots).",
     "08:10 white cabbage & sprout salad with almonds, pine nuts, and the same sauce entered yesterday (soy/olive-oil/balsamic dressing) — one personal-serving bowl, not two (corrected — the earlier duplicate second-bowl entry was removed). Cabbage base uses the standard reference, sprouts/almonds/pine nuts are first-time-logged additions with estimated portions (~10g each for the nuts). Almonds + pine nuts gave the day's first vitamin E.",
-    "08:30 dark chocolate quinoa (homemade, ~10g taste) — estimated from the linked batchen.cooking recipe (100g milk chocolate + 100g dark chocolate + 2 tbsp olive oil + 1⅓ cup toasted quinoa, ~483kcal/100g of the finished mix), scaled to 10g. First time logged."
+    "08:30 dark chocolate quinoa (homemade, ~10g taste) — estimated from the linked batchen.cooking recipe (100g milk chocolate + 100g dark chocolate + 2 tbsp olive oil + 1⅓ cup toasted quinoa, ~483kcal/100g of the finished mix), scaled to 10g. First time logged.",
+    "09:00 Back + Arms workout: Dumbbell Pullover 18kg×4×10 (ties best), Reverse Incline DB Row 26kg each×4×8 (new PR, +2kg each side vs 24kg each×4×10), Incline DB Curl 18kg each×4×6 (new PR, +1 rep at same weight), Incline Hammer Curl 18kg each×4×8 (ties best), Half Curl 18kg each×4×5 (new PR by est. 1RM vs 16kg each×4×6), Dead Hang 25s×3 (new PR, +5s vs 20s×3, at 81.00kg bodyweight). Mirrored to data.js WORKOUTS/SNAPSHOT and workouts.json."
   ],
-  "status_note": "Slept ~7.33h (23:30-06:50) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:27, a double espresso at 08:00, one bowl of a cabbage/sprout salad with almonds, pine nuts, and yesterday's dressing at 08:10, and a taste of homemade dark chocolate quinoa at 08:30 (caffeine_shots: 2)."
+  "status_note": "Slept ~7.33h (23:30-06:50) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:27, a double espresso at 08:00, one bowl of a cabbage/sprout salad with almonds, pine nuts, and yesterday's dressing at 08:10, a taste of homemade dark chocolate quinoa at 08:30, and a Back + Arms workout at 09:00 (4 new PRs: Reverse Incline DB Row, Incline DB Curl, Half Curl, Dead Hang) (caffeine_shots: 2)."
 }
