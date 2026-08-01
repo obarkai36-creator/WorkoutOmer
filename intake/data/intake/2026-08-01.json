@@ -2,6 +2,7 @@
   "date": "2026-08-01",
   "day_number": 35,
   "in_progress": true,
+  "exclude_from_monthly_macros": true,
   "workout_today": true,
   "workout_summary": "Back + Arms (09:00): Dumbbell Pullover 18kg×4×10 (ties best); Reverse Incline DB Row 26kg each×4×8 (new PR); Incline DB Curl 18kg each×4×6 (new PR, +1 rep); Incline Hammer Curl 18kg each×4×8 (ties best); Half Curl 18kg each×4×5 (new PR by est. 1RM); Dead Hang 25s×3 (new PR, +5s). 4 new PRs.",
   "_status": "Day just opened — sleep and a Back + Arms workout logged.",
@@ -17,6 +18,7 @@
     {"time": "10:05", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
     {"time": "10:30", "name": "Snack — honeydew melon (bites)", "category": "food", "qty": "10 bites (~15g each, ~150 g)", "kcal": 54, "protein_g": 0.8, "carbs_g": 13.8, "fat_g": 0.1, "fiber_g": 1.3, "note": "same per-gram reference as prior honeydew entries (35.8kcal/100g)"},
     {"time": "12:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "12:25", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Lunch — homemade chicken meatballs (veg-loaded)", "category": "food", "qty": "8 balls (~280 g)", "kcal": 493, "protein_g": 43.4, "carbs_g": 22.4, "fat_g": 24.4, "fiber_g": 2.8, "time_approx": true, "note": "using the saved recipe reference (176kcal/100g cooked, ~35g/ball)"},
     {"time": "13:00", "name": "Lunch — white cabbage salad, soy-based sauce", "category": "food", "qty": "3 spoons (~110 g) — amounts not weighed", "kcal": 135, "protein_g": 1.9, "carbs_g": 7.8, "fat_g": 11.1, "fiber_g": 2.8, "time_approx": true, "note": "same soy/oil/balsamic-style dressing reference as prior cabbage salad entries (~122kcal/100g); spoon size estimated ~35-40g each"},
     {"time": "13:00", "name": "Lunch — grilled broccoli & cauliflower", "category": "food", "qty": "1 serving (~150 g, roughly equal parts) + light grilling oil — no potato this time", "kcal": 90, "protein_g": 3.5, "carbs_g": 9, "fat_g": 5.5, "fiber_g": 3.5, "time_approx": true, "note": "standard broccoli/cauliflower references + ~1 tsp oil; good source of vitamin C and folate — credited below"},
@@ -25,13 +27,15 @@
     {"time": "15:30", "name": "Green grapes", "category": "food", "qty": "20 grapes (~100 g)", "kcal": 69, "protein_g": 0.7, "carbs_g": 18.1, "fat_g": 0.2, "fiber_g": 0.9, "note": "standard green seedless grape reference (~69kcal/100g, ~5g/grape), first time logged"},
     {"time": "16:30", "name": "Multivitamin (Thorne Basic Nutrients 2/Day)", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "still logging as Thorne per standing plan — Mayven gummies not yet logged for the first time"},
     {"time": "17:30", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "20:00", "name": "Red wine", "category": "drink", "qty": "small serving (~100 ml)", "kcal": 85, "protein_g": 0.1, "carbs_g": 2.6, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "no dinner logged tonight — day's protein/fat/kcal already ran high through the afternoon; standard red wine reference (~85kcal/100ml, ~1 unit). Also logged to lifestyle.json (3rd drinking day in a row)."}
+    {"time": "20:00", "name": "Red wine", "category": "drink", "qty": "small serving (~100 ml)", "kcal": 85, "protein_g": 0.1, "carbs_g": 2.6, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "with dinner. Standard red wine reference (~85kcal/100ml, ~1 unit). Also logged to lifestyle.json (3rd drinking day in a row)."},
+    {"time": "20:00", "name": "Dinner (not itemized) — large, high protein/fat/kcal", "category": "food", "qty": "not tracked — user reports a large dinner, high in protein, calories, and fat", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "per the user's own report, this meal's protein/calorie/fat targets were already met/exceeded for the day; no item-level breakdown given, so zero kcal/macros logged here rather than guessing. Day flagged exclude_from_monthly_macros since dinner is untracked."},
+    {"time": "21:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — PM dose of the 2x/day spray, taken after dinner"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
     "folate_mcg_dfe": 747,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 329,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 20,
@@ -55,7 +59,10 @@
     "16:30 multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; the swap to Mayven gummies only takes effect once gummies are logged for the first time. Thorne provides the day's zinc (15mg), selenium (200mcg), most of the day's folate (+667mcg) and vitamin C (+250mg), all of the day's vitamin D (2000IU), and most of the vitamin E (+16.5mg).",
     "17:30 single espresso (40ml, 1 caffeine shot) — 5th shot today, on the higher end vs typical 2-4.",
     "18:30 ejaculation event (self, masturbation) — logged to ejaculation.json.",
-    "20:00 (time not given, approximated) some red wine, no dinner tonight — skipped deliberately since protein/fat/kcal were already high for the day. Standard small-serving red wine reference (~85kcal/100ml, ~1 unit). Backfilled to lifestyle.json as the 3rd consecutive drinking day (30 Jul, 31 Jul, 1 Aug) — flagging this as a real back-to-back streak worth breaking soon, not just a one-off."
+    "12:25 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
+    "Correction: dinner was NOT skipped — the user had a large dinner, high in protein, calories, and fat, but asked not to log it item-by-item (no fabricated macros). Per the exclude_from_monthly_macros precedent (used on 24/25/29 Jul for untracked meals), today is flagged exclude_from_monthly_macros: true. Per the user's own report, protein/calorie/fat targets were already met/exceeded once this dinner is factored in, even though it isn't reflected in the day's logged totals below.",
+    "20:00 (time not given, approximated) red wine with dinner (~85kcal/100ml, ~1 unit) — 3rd consecutive drinking day (30 Jul, 31 Jul, 1 Aug), a real back-to-back streak worth breaking soon.",
+    "21:00 (time not given, approximated) PM allergy spray (Rhinolast), taken after dinner per the standing reminder."
   ],
-  "status_note": "Slept ~7.33h (23:30-06:50) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:27, a double espresso at 08:00, one bowl of a cabbage/sprout salad with almonds, pine nuts, and yesterday's dressing at 08:10, a taste of homemade dark chocolate quinoa at 08:30, a Back + Arms workout at 09:00 (4 new PRs: Reverse Incline DB Row, Incline DB Curl, Half Curl, Dead Hang), a post-workout meal at 10:00 (chocolate cake bite, cottage cheese with honey, a honey-mustard salad), creatine at 10:05, a honeydew melon snack at 10:30, a second double espresso at 12:10, lunch at 13:00 (8 chicken meatballs, cabbage salad, grilled broccoli & cauliflower, eggplant in vinegar), one more chicken meatball at 13:10, green grapes at 15:30, the Thorne multivitamin at 16:30, a single espresso at 17:30, an ejaculation event (self) at 18:30, and some red wine with no dinner (caffeine_shots: 5)."
+  "status_note": "Slept ~7.33h (23:30-06:50) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:27, a double espresso at 08:00, one bowl of a cabbage/sprout salad with almonds, pine nuts, and yesterday's dressing at 08:10, a taste of homemade dark chocolate quinoa at 08:30, a Back + Arms workout at 09:00 (4 new PRs: Reverse Incline DB Row, Incline DB Curl, Half Curl, Dead Hang), a post-workout meal at 10:00 (chocolate cake bite, cottage cheese with honey, a honey-mustard salad), creatine at 10:05, a honeydew melon snack at 10:30, a second double espresso at 12:10, omega-3 at 12:25, lunch at 13:00 (8 chicken meatballs, cabbage salad, grilled broccoli & cauliflower, eggplant in vinegar), one more chicken meatball at 13:10, green grapes at 15:30, the Thorne multivitamin at 16:30, a single espresso at 17:30, an ejaculation event (self) at 18:30, a large untracked dinner + red wine at 20:00 (protein/cal/fat already met per the user, day excluded from monthly macro averages), and the PM allergy spray at 21:00 (caffeine_shots: 5)."
 }
