@@ -12,7 +12,8 @@
     {"time": "09:30", "name": "Legendary Foods Protein Donuts (Chocolate Dipped)", "category": "food", "qty": "1 pack (2 donuts, 61 g)", "kcal": 160, "protein_g": 20, "carbs_g": 11, "fat_g": 6, "fiber_g": 6, "note": "web-sourced label values (160kcal/20p/6fiber/6f per 61g 2-donut pack, <1g sugar); iHerb product page was bot-blocked (403), so used search-sourced label data instead. Assumed 1 pack (the linked SKU's per-unit size); first time logged."},
     {"time": "10:15", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "12:30", "name": "Legendary Foods Protein Donuts (Cinnamon Crumble)", "category": "food", "qty": "1 pack (2 donuts, 61 g)", "kcal": 160, "protein_g": 20, "carbs_g": 12, "fat_g": 5.5, "fiber_g": 8, "time_approx": true, "note": "corrected — a full pack (2 donuts), same unit size as the morning chocolate-dipped pack. Web-sourced label values (160kcal/20p/12c/8fiber/5.5f per 61g 2-donut pack, <1g sugar; fat estimated from calorie balance). Early lunch, first time logged (cinnamon flavor)."},
-    {"time": "13:45", "name": "Multivitamin (Thorne Basic Nutrients 2/Day)", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "still logging as Thorne per standing plan — Mayven gummies not yet logged for the first time"}
+    {"time": "13:45", "name": "Multivitamin (Thorne Basic Nutrients 2/Day)", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "still logging as Thorne per standing plan — Mayven gummies not yet logged for the first time"},
+    {"time": "15:30", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -24,7 +25,7 @@
     "vitamin_e_mg": 16.5,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 01:10-06:55, ~5.75h — below the 7-9h target band, late bedtime, one continuous stretch.",
     "07:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill) — zero kcal/macros.",
@@ -32,7 +33,8 @@
     "09:30 Legendary Foods Protein Donuts, Chocolate Dipped (1 pack, 2 donuts, 61g) — iHerb product page bot-blocked (403), used web-search-sourced label data instead (160kcal/20g protein/11g carb/6g fiber/6g fat per pack, <1g sugar). First time logged.",
     "10:15 single espresso (40ml, 1 caffeine shot) — 3 total today.",
     "12:30 (time not given, approximated as early lunch) 1 full pack (2 donuts, 61g) of Legendary Foods Protein Donuts, Cinnamon Crumble flavor — corrected from an initial half-pack assumption; same pack size as the morning chocolate-dipped entry, so combined the two donut occasions give ~40g protein for the day. Web-sourced label values, first time logged in this flavor.",
-    "13:45 multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; provides the day's zinc (15mg), selenium (200mcg), folate (667mcg DFE), vitamin C (250mg), vitamin D (2000IU), and vitamin E (16.5mg)."
+    "13:45 multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; provides the day's zinc (15mg), selenium (200mcg), folate (667mcg DFE), vitamin C (250mg), vitamin D (2000IU), and vitamin E (16.5mg).",
+    "15:30 single espresso (40ml, 1 caffeine shot) — 4 total today."
   ],
-  "status_note": "Slept ~5.75h (01:10-06:55) — a short night, below the 7-9h target band, late bedtime. Allergy spray + pill at 07:00, a double espresso at 07:10, a Legendary Foods protein donut pack at 09:30, a single espresso at 10:15, a cinnamon protein donut at early lunch (12:30), and the Thorne multivitamin at 13:45 (caffeine_shots: 3)."
+  "status_note": "Slept ~5.75h (01:10-06:55) — a short night, below the 7-9h target band, late bedtime. Allergy spray + pill at 07:00, a double espresso at 07:10, a Legendary Foods protein donut pack at 09:30, a single espresso at 10:15, a cinnamon protein donut at early lunch (12:30), the Thorne multivitamin at 13:45, and another espresso at 15:30 (caffeine_shots: 4)."
 }
