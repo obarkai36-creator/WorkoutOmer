@@ -13,17 +13,21 @@
     {"time": "10:15", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "12:30", "name": "Legendary Foods Protein Donuts (Cinnamon Crumble)", "category": "food", "qty": "1 pack (2 donuts, 61 g)", "kcal": 160, "protein_g": 20, "carbs_g": 12, "fat_g": 5.5, "fiber_g": 8, "time_approx": true, "note": "corrected — a full pack (2 donuts), same unit size as the morning chocolate-dipped pack. Web-sourced label values (160kcal/20p/12c/8fiber/5.5f per 61g 2-donut pack, <1g sugar; fat estimated from calorie balance). Early lunch, first time logged (cinnamon flavor)."},
     {"time": "13:45", "name": "Multivitamin (Thorne Basic Nutrients 2/Day)", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "still logging as Thorne per standing plan — Mayven gummies not yet logged for the first time"},
-    {"time": "15:30", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:30", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:15", "name": "Lunch — Agami Pita Pro (spelt, protein-enriched)", "category": "food", "qty": "2 units (~136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "note": "saved verified reference (140kcal/68g each)"},
+    {"time": "16:15", "name": "Lunch — white cabbage salad in lemon juice", "category": "food", "qty": "8 spoons (~280 g) — amounts not weighed", "kcal": 188, "protein_g": 3.3, "carbs_g": 16.5, "fat_g": 13.8, "fiber_g": 6.3, "note": "different dressing than usual — lemon juice + a light olive oil drizzle, not the usual soy/oil-forward sauce, so much lower kcal density than the recent soy-dressed cabbage salad entries; first time logged with this dressing, estimated from a standard cabbage + ~1 tbsp oil + lemon juice batch"},
+    {"time": "16:15", "name": "Lunch — homemade chicken meatballs (veg-loaded)", "category": "food", "qty": "300 g", "kcal": 528, "protein_g": 46.5, "carbs_g": 24, "fat_g": 26.1, "fiber_g": 3, "note": "using the saved recipe reference (176kcal/100g cooked)"},
+    {"time": "16:15", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "40 (~680 g)", "kcal": 122, "protein_g": 6.2, "carbs_g": 26.6, "fat_g": 1.4, "fiber_g": 8, "note": "standard tomato reference values; credited 95.2mg vitamin C, 17.6mg lycopene, 102.1mcg folate DFE — the day's first lycopene and biggest vitamin C/folate hit"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 200,
-    "folate_mcg_dfe": 667,
+    "folate_mcg_dfe": 769.1,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 250,
+    "vitamin_c_mg": 345.2,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 16.5,
-    "lycopene_mg": 0
+    "lycopene_mg": 17.6
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -34,7 +38,8 @@
     "10:15 single espresso (40ml, 1 caffeine shot) — 3 total today.",
     "12:30 (time not given, approximated as early lunch) 1 full pack (2 donuts, 61g) of Legendary Foods Protein Donuts, Cinnamon Crumble flavor — corrected from an initial half-pack assumption; same pack size as the morning chocolate-dipped entry, so combined the two donut occasions give ~40g protein for the day. Web-sourced label values, first time logged in this flavor.",
     "13:45 multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; provides the day's zinc (15mg), selenium (200mcg), folate (667mcg DFE), vitamin C (250mg), vitamin D (2000IU), and vitamin E (16.5mg).",
-    "15:30 single espresso (40ml, 1 caffeine shot) — 4 total today."
+    "15:30 single espresso (40ml, 1 caffeine shot) — 4 total today.",
+    "16:15 lunch: 2 Agami Pita Pro (saved verified reference) + a cabbage salad in lemon juice (8 spoons, ~280g, new lighter dressing — much lower kcal density than the usual soy/oil sauce) + 300g homemade chicken meatballs (saved recipe reference) + 40 cherry tomatoes (~680g, standard reference). None weighed except the tomato count and pita count; spoon size estimated. Tomatoes credited 95.2mg vitamin C, 17.6mg lycopene, 102.1mcg folate DFE."
   ],
-  "status_note": "Slept ~5.75h (01:10-06:55) — a short night, below the 7-9h target band, late bedtime. Allergy spray + pill at 07:00, a double espresso at 07:10, a Legendary Foods protein donut pack at 09:30, a single espresso at 10:15, a cinnamon protein donut at early lunch (12:30), the Thorne multivitamin at 13:45, and another espresso at 15:30 (caffeine_shots: 4)."
+  "status_note": "Slept ~5.75h (01:10-06:55) — a short night, below the 7-9h target band, late bedtime. Allergy spray + pill at 07:00, a double espresso at 07:10, a Legendary Foods protein donut pack at 09:30, a single espresso at 10:15, a cinnamon protein donut at early lunch (12:30), the Thorne multivitamin at 13:45, another espresso at 15:30, and a large lunch at 16:15 (2 pitas, cabbage salad in lemon juice, 300g chicken meatballs, 40 cherry tomatoes) (caffeine_shots: 4)."
 }
