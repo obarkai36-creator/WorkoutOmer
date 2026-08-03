@@ -121,8 +121,13 @@ function muscleFatigue(workouts, muscles, ref, now) {
   const decayed = {};
   for (const m of Object.keys(muscles)) decayed[m] = 0;
   for (const w of workouts) {
-    const hours = (now - w.t) / HOUR;
-    if (hours < 0) continue;
+    // A session logged with a same-day clock-time later than the moment this
+    // recomputes (e.g. an evening workout logged before the real-world clock
+    // reaches that hour) must still count at full freshness — clamping to 0
+    // instead of skipping it. Skipping made the just-trained muscle look fully
+    // recovered, so the dashboard immediately recommended the same section
+    // again right after training it.
+    const hours = Math.max(0, (now - w.t) / HOUR);
     for (const [m, load] of Object.entries(w.muscleLoad)) {
       const tau = muscles[m].recoveryHours / TAU_FACTOR;
       decayed[m] += load * Math.exp(-hours / tau);
@@ -229,7 +234,14 @@ function loadTrends(workouts, ref, now) {
   for (let i = 5; i >= 0; i--) {
     const end = now - i * 7 * DAY, start = end - 7 * DAY;
     const inWeek = workouts.filter((w) => w.t > start && w.t <= end);
-    weeks.push({ label: i === 0 ? "This wk" : `-${i}w`, stress: round(sum(inWeek.map((w) => sessionStress(w, ref)))), sessions: inWeek.length });
+    // ACWR as it stood at the end of this week — same acute:chronic formula as
+    // the live number below, just replayed at each past week's end date, so
+    // the trend shows how the ratio actually got here rather than a single point.
+    const acuteAtEnd = sum(workouts.filter((w) => end - w.t > 0 && end - w.t <= 7 * DAY).map((w) => sessionStress(w, ref)));
+    const last28AtEnd = workouts.filter((w) => end - w.t > 0 && end - w.t <= 28 * DAY);
+    const chronicAtEnd = last28AtEnd.length ? sum(last28AtEnd.map((w) => sessionStress(w, ref))) / 4 : 0;
+    const acwrAtEnd = (last28AtEnd.length >= MIN_SESSIONS_FOR_ACWR && chronicAtEnd > 0) ? round(acuteAtEnd / chronicAtEnd, 2) : null;
+    weeks.push({ label: i === 0 ? "This wk" : `-${i}w`, stress: round(sum(inWeek.map((w) => sessionStress(w, ref)))), sessions: inWeek.length, acwr: acwrAtEnd });
   }
   const acute = sum(workouts.filter((w) => now - w.t <= 7 * DAY).map((w) => sessionStress(w, ref)));
   const last28 = workouts.filter((w) => now - w.t <= 28 * DAY);
@@ -243,12 +255,153 @@ function loadTrends(workouts, ref, now) {
   return { weeks, acute: round(acute), chronic: round(chronic), acwr, acwrZone, sessions28: last28.length };
 }
 
+/* ---- next-session lift target ---------------------------------------------
+ * Turns "your best" into an actual next-session target using double
+ * progression: add reps each session until a rep ceiling, then step the
+ * weight up and drop back to a restart rep count. If the latest session came
+ * in below best (a bad day, travel gym, fatigue), the target is to rebuild to
+ * best first rather than pushing past it blindly. */
+const REP_CEILING = 12, REP_RESTART = 8;
+function weightIncrement(w) {
+  if (w >= 100) return 5;
+  if (w >= 40) return 2.5;
+  if (w >= 15) return 2;
+  return 1;
+}
+function nextLiftTarget(e, holdLoad) {
+  const best = e.best, latest = e.latest;
+  if (!best) return null;
+  const bestStats = recStats(best, e.iso);
+  const latestStats = recStats(latest, e.iso);
+  const atBest = e.iso
+    ? latestStats.volume >= bestStats.volume * 0.999
+    : latestStats.top1RM >= bestStats.top1RM * 0.999;
+
+  if (!atBest) {
+    return { status: "rebuild", text: `Rebuild to best (${best.text})`, note: `Last session came in under your best (${best.text}) — rebuild to that before pushing further.` };
+  }
+  if (holdLoad) {
+    return { status: "hold", text: `Hold at best (${best.text})`, note: `Load ratio is elevated — repeat your best (${best.text}) rather than pushing for a PR this session.` };
+  }
+  if (e.iso) {
+    const seconds = (best.seconds || 0) + 5;
+    return { status: "progress", text: `+5s (aim ${best.sets}×${seconds}s)`, note: `Add 5s per set from your best (${best.text}) — aim for ${best.sets}×${seconds}s.` };
+  }
+  if ((best.reps || 0) < REP_CEILING) {
+    const reps = best.reps + 1;
+    return { status: "progress", text: `+1 rep (aim ${best.sets}×${reps})`, note: `Add 1 rep per set at the same weight — aim for ${best.sets}×${reps} from ${best.text}.` };
+  }
+  const inc = weightIncrement(best.weight || 0);
+  return { status: "progress", text: `+${inc}kg (reset to ${best.sets}×${REP_RESTART})`, note: `You're at ${best.reps} reps on ${best.text} — step the weight up ~${inc}kg and reset to ${best.sets}×${REP_RESTART}.` };
+}
+
+/* Exercises to leave out of the Next Session suggestion list specifically
+ * (SNAPSHOT/Workload Progress/balance still track them in full) — either
+ * superseded by another exercise or deliberately deduped so only one variant
+ * of a redundant pair gets suggested. */
+const SUGGESTION_EXCLUDE = new Set([
+  "Leg Extensions",              // machine maxed out; superseded by Single-Leg Extensions
+  "Standing Calf Raises (Frame)", // keep only Calf Raises Machine in suggestions
+]);
+
+const EXTREME_ACWR = 2.0; // well past the danger-zone floor (>1.5) — high enough to justify a deload even right after another one
+
+/* ---- deload check ----------------------------------------------------------
+ * Whether the next session should be a light, full-body deload rather than
+ * the normal per-section progression pick. Primary driver is training load
+ * from the logged entries (ACWR danger zone); short-sleep and a notable
+ * bodyweight drop are lifestyle-fatigue signals that strengthen the call but
+ * aren't required on their own — they're reported either way so the reasoning
+ * is visible, not just the verdict. Deloads are never recommended back-to-back
+ * (the whole point is one lighter session to bring load back down) unless the
+ * ratio is still extreme afterward. */
+function deloadCheck(trends, sleep, bw, lastWasDeload) {
+  const reasons = [];
+  const loadSpike = !!(trends && trends.acwrZone === "danger");
+  const extreme = !!(trends && trends.acwr != null && trends.acwr >= EXTREME_ACWR);
+  const blockedByRecentDeload = loadSpike && lastWasDeload && !extreme;
+
+  if (loadSpike && !blockedByRecentDeload) reasons.push(`Load ratio (ACWR) ${trends.acwr} is in the danger zone (>1.5) from your recent logged sessions.`);
+  if (extreme && lastWasDeload) reasons.push(`Load ratio (ACWR) ${trends.acwr} is still extremely high (≥${EXTREME_ACWR}) even after your last session was a deload — another one is warranted despite training back-to-back.`);
+
+  const shortSleep = !!(sleep && sleep.any && sleep.avg7 != null && sleep.avg7 < 7);
+  if (shortSleep) reasons.push(`7-day average sleep is only ${sleep.avg7}h — under-recovered going into training.`);
+
+  const bwDrop = !!(bw && bw.any && bw.delta != null && bw.delta <= -0.5);
+  if (bwDrop) reasons.push(`Bodyweight dropped ${Math.abs(bw.delta)}kg since your last weigh-in — another sign of accumulated fatigue/under-recovery.`);
+
+  return { recommend: loadSpike && !blockedByRecentDeload, reasons };
+}
+
+/* Pick each section's highest-1RM non-iso lift as the one compound exercise
+ * to include in a deload session (skips bodyweight iso holds, which don't
+ * have a top1RM and would otherwise never win). */
+function primaryLiftForSection(data, section) {
+  let top = null, topRM = -1;
+  for (const e of data.SNAPSHOT) {
+    if (e.section !== section || e.iso) continue;
+    const B = recStats(e.best, false);
+    if (B.top1RM > topRM) { topRM = B.top1RM; top = e; }
+  }
+  return top;
+}
+
+function deloadRound(w) {
+  return Math.round(w / 2.5) * 2.5;
+}
+
+function deloadTarget(e) {
+  const best = e.best;
+  if (!best) return null;
+  const weight = deloadRound((best.weight || 0) * 0.87);
+  const reps = Math.max(5, (best.reps || 8) - 2);
+  return {
+    status: "deload",
+    text: `${weight}kg × ${best.sets}×${reps} (deload)`,
+    note: `~13% lighter than your best (${best.text}), reps capped well short of failure — recovery session, no PR attempt.`,
+  };
+}
+
 /* ---- next recommended session --------------------------------------------- */
-function recommendSession(data, workouts, sectionFat, now) {
+function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, bw) {
+  const lastWasDeload = !!(workouts[0] && /deload/i.test(workouts[0].note || ""));
+  const deload = deloadCheck(trends, sleep, bw, lastWasDeload);
+  if (deload.recommend) {
+    const sections = ["Chest", "Back", "Shoulders", "Legs", "Arms"];
+    const suggestedExercises = sections
+      .map((s) => primaryLiftForSection(data, s))
+      .filter(Boolean)
+      .map((e) => {
+        const B = recStats(e.best, false);
+        return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: false, target: deloadTarget(e) };
+      });
+    const aerobicLast7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
+    const lastAerobicDeload = workouts.find((w) => w.isAerobic);
+    return {
+      section: "Full Body",
+      deload: true,
+      deloadReasons: deload.reasons,
+      fatigue: null,
+      restHours: 0,
+      readyNow: true,
+      readyAt: new Date(now),
+      neverLogged: false,
+      daysSince: null,
+      suggestedExercises,
+      guidance: deload.reasons,
+      ranked: [],
+      aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
+      daysSinceAerobic: lastAerobicDeload ? round((now - lastAerobicDeload.t) / DAY, 1) : null,
+    };
+  }
+
   const muscles = data.MUSCLES;
   // Trainable sections = those with at least one strength exercise in the snapshot.
+  // Core isn't suggested as a standalone session — it still fully tracks
+  // fatigue/workload/balance and any Core exercises logged as part of a real
+  // workout still count normally; it just never wins the top-level pick.
   const trainable = [...new Set(data.SNAPSHOT.map((e) => e.section))]
-    .filter((s) => sectionFat[s] && s !== "Cardio");
+    .filter((s) => sectionFat[s] && s !== "Cardio" && s !== "Core");
 
   if (!trainable.length) return null;
 
@@ -263,8 +416,16 @@ function recommendSession(data, workouts, sectionFat, now) {
     }
   }
 
-  // Sensible tie-break priority when several sections are equally recovered.
+  // Sensible tie-break priority when several sections are equally recovered —
+  // nudged by the program-wide push/pull balance so a corrective section wins
+  // ties instead of the fixed default order. Physiological readiness (sorted
+  // first, below) always outranks this: balance never pulls in an unrecovered
+  // muscle, it only breaks ties among sections that are already comparably ready.
   const priority = { Legs: 0, Back: 1, Shoulders: 2, Chest: 3, Arms: 4 };
+  if (bal && bal.pushPull != null) {
+    if (bal.pushPull > 1.3) { priority.Back = -1; priority.Chest = 5; }
+    else if (bal.pushPull < 0.7) { priority.Chest = -1; priority.Back = 5; }
+  }
   const ranked = trainable
     .map((s) => ({
       section: s,
@@ -281,15 +442,77 @@ function recommendSession(data, workouts, sectionFat, now) {
 
   const pick = ranked[0];
   const restHours = pick.readyInHours;
-  // Recommended lifts for the picked section, each with your current best +
-  // est 1RM, so you have a target to hit/beat during the session.
-  const suggestedExercises = data.SNAPSHOT
-    .filter((e) => e.section === pick.section)
-    .slice(0, 7)
+
+  // Exercises for the picked section. "best" is kept as a reference point;
+  // "target" is the actual next-session ask, computed from latest-vs-best via
+  // double progression (see nextLiftTarget) — ordered and annotated below to
+  // reflect what actually keeps the program balanced this session.
+  // Danger-zone ACWR is the same signal that puts "no PR attempts" in the
+  // guidance text below — the per-exercise targets need to agree with that,
+  // not keep suggesting weight/rep PRs while the copy says to hold flat.
+  const holdLoad = !!(trends && trends.acwrZone === "danger");
+  let suggestedExercises = data.SNAPSHOT
+    .filter((e) => e.section === pick.section && !SUGGESTION_EXCLUDE.has(e.name))
     .map((e) => {
       const B = recStats(e.best, e.iso);
-      return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso };
+      const lib = data.EXERCISE_LIBRARY[e.name];
+      const target = nextLiftTarget(e, holdLoad);
+      return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso, target, lib };
     });
+
+  const guidance = [];
+  if (pick.section === "Legs" && bal && bal.quadHam != null && bal.quadHam > 2.5) {
+    const hamBias = (e) => (e.lib?.muscles?.hamstrings || 0) - (e.lib?.muscles?.quads || 0);
+    suggestedExercises.sort((a, b) => hamBias(b) - hamBias(a));
+    guidance.push(`Quads are outpacing hamstrings ${bal.quadHam}× across the program — lead with RDLs / leg curls / glute-hamstring work today rather than quad-dominant lifts.`);
+  } else if (pick.section === "Arms" && bal && bal.pushPull != null) {
+    const armBias = (e) => (e.lib?.muscles?.biceps || 0) - (e.lib?.muscles?.triceps || 0);
+    if (bal.pushPull > 1.3) {
+      suggestedExercises.sort((a, b) => armBias(b) - armBias(a));
+      guidance.push(`Push is ahead of pull ${bal.pushPull}× program-wide — favor biceps/curl work over triceps today.`);
+    } else if (bal.pushPull < 0.7) {
+      suggestedExercises.sort((a, b) => armBias(a) - armBias(b));
+      guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — favor triceps/press work over curls today.`);
+    }
+  } else if (pick.section === "Back" && bal && bal.pushPull != null && bal.pushPull > 1.3) {
+    guidance.push(`Push is ahead of pull ${bal.pushPull}× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short.`);
+  } else if (pick.section === "Chest" && bal && bal.pushPull != null && bal.pushPull < 0.7) {
+    guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — good timing for a push day.`);
+  }
+  // Show every trainable exercise for the picked section (some, like Legs or
+  // Arms, have a dozen+) rather than an arbitrary top-N cut — but a real
+  // session doesn't run all of them, so also estimate how many to actually
+  // do today from how many this section's own past sessions typically used.
+  suggestedExercises = suggestedExercises.map(({ lib, ...rest }) => rest);
+  const sectionExerciseNames = new Set(suggestedExercises.map((e) => e.name));
+  const pastSessionSizes = [];
+  for (const w of workouts) {
+    const total = sum(Object.values(w.muscleLoad)) || 1;
+    const secLoad = sum(Object.entries(w.muscleLoad).filter(([m]) => muscles[m].section === pick.section).map(([, v]) => v));
+    if (secLoad / total <= 0.4) continue;
+    const count = w.exercises.filter((ex) => sectionExerciseNames.has(ex.name)).length;
+    if (count > 0) pastSessionSizes.push(count);
+  }
+  const totalAvailable = suggestedExercises.length;
+  let typicalSessionSize = 4;
+  if (pastSessionSizes.length) {
+    pastSessionSizes.sort((a, b) => a - b);
+    const mid = Math.floor(pastSessionSizes.length / 2);
+    typicalSessionSize = pastSessionSizes.length % 2
+      ? pastSessionSizes[mid]
+      : Math.round((pastSessionSizes[mid - 1] + pastSessionSizes[mid]) / 2);
+  }
+  const minCount = Math.min(3, totalAvailable);
+  let suggestedCount = clamp(typicalSessionSize, minCount, totalAvailable);
+  if (trends && trends.acwrZone === "danger") suggestedCount = clamp(suggestedCount - 1, minCount, totalAvailable);
+
+  if (trends && trends.acwrZone === "danger")
+    guidance.push(`Load ratio ${trends.acwr} is in the danger zone — keep weight/sets flat this session, no PR attempts.`);
+  else if (trends && trends.acwrZone === "caution")
+    guidance.push(`Load ratio ${trends.acwr} is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR.`);
+  else if (trends && trends.acwrZone === "detraining")
+    guidance.push(`Load ratio ${trends.acwr} has dipped — a normal, or even a slightly harder, session is fine.`);
+
   const aerobicLast7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
   const lastAerobic = workouts.find((w) => w.isAerobic);
 
@@ -301,7 +524,8 @@ function recommendSession(data, workouts, sectionFat, now) {
     readyAt: new Date(now + restHours * HOUR),
     neverLogged: pick.daysSince == null,
     daysSince: pick.daysSince,
-    suggestedExercises, ranked,
+    suggestedExercises, guidance, ranked,
+    suggestedCount, totalAvailable, typicalSessionSize,
     aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
     daysSinceAerobic: lastAerobic ? round((now - lastAerobic.t) / DAY, 1) : null,
   };
@@ -391,10 +615,15 @@ function timingStats(workouts, now) {
   const longestGap = gaps.length ? round(Math.max(...gaps), 1) : null;
   const perWeek = round(workouts.filter((w) => now - w.t <= 28 * DAY).length / 4, 1);
 
-  const hours = workouts.map((w) => new Date(w.t).getHours());
-  const avgHour = round(sum(hours) / hours.length);
-  const morning = hours.filter((h) => h < 12).length;
-  const todPref = morning >= hours.length - morning ? "morning" : "evening";
+  // Sessions with timeUnknown (placeholder clock-times — e.g. full-day step
+  // totals with no real start time) are excluded here so they don't skew the
+  // typical-time stat, but still count everywhere else (gaps, frequency, dow).
+  const timedWorkouts = workouts.filter((w) => !w.timeUnknown);
+  const hours = timedWorkouts.map((w) => new Date(w.t).getHours());
+  const avgHour = hours.length ? round(sum(hours) / hours.length) : null;
+  // Derived from avgHour (not a separate morning-session count) so the label
+  // always matches the "~Xh:00" figure shown next to it.
+  const todPref = avgHour == null ? null : avgHour < 12 ? "morning" : avgHour < 17 ? "afternoon" : "evening";
 
   const dow = [0, 0, 0, 0, 0, 0, 0];
   for (const w of workouts) dow[new Date(w.t).getDay()]++;
@@ -416,6 +645,19 @@ function bodyweight(data) {
     min: Math.min(...log.map((e) => e.kg)), max: Math.max(...log.map((e) => e.kg)),
     history: log,
   };
+}
+
+/* ---- sleep log -------------------------------------------------------------
+ * Manual nightly entries (SLEEP in data.js). Feeds the Sleep panel and a
+ * short recovery caution on the Next Session recommendation. */
+function sleepSummary(data, now) {
+  const log = (data.SLEEP || []).slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+  if (!log.length) return { any: false, history: [] };
+  const current = log[0];
+  const last7 = log.filter((e) => (now - new Date(e.date).getTime()) / DAY <= 7);
+  const avg7 = last7.length ? round(sum(last7.map((e) => e.hours)) / last7.length, 1) : null;
+  const status = current.hours < 6 ? "low" : current.hours > 9.5 ? "long" : "good";
+  return { any: true, current, avg7, status, history: log };
 }
 
 /* ---- relative strength (lift ÷ bodyweight) -------------------------------- */
@@ -485,14 +727,15 @@ function analyze(data, now = Date.now()) {
   const progress = snapshotProgress(data, workouts);
   const bal = balance(data);
   const trends = loadTrends(workouts, ref, now);
-  const recommendation = recommendSession(data, workouts, sections, now);
+  const bw = bodyweight(data);
+  const sleep = sleepSummary(data, now);
+  const recommendation = recommendSession(data, workouts, sections, now, bal, trends, sleep, bw);
   const alerts = injuryAlerts(data, fatigue, trends, bal, recommendation, now);
   const changes = suggestedChanges(data, progress, bal, recommendation);
   const timing = timingStats(workouts, now);
-  const bw = bodyweight(data);
   const relstrength = relativeStrength(data, bw.current);
   const aerobic = aerobicSummary(workouts, data.ATHLETE, now);
-  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing, relstrength, aerobic, bodyweight: bw };
+  return { now, workouts, ref, fatigue, sections, progress, balance: bal, trends, recommendation, alerts, changes, timing, relstrength, aerobic, bodyweight: bw, sleep };
 }
 
 if (typeof window !== "undefined") window.GYM_ENGINE = { analyze, READY_THRESHOLD };

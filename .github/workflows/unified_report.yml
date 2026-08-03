@@ -1,0 +1,55 @@
+name: Unified daily dashboard
+
+# Fired manually (workflow_dispatch) as the last step of closing out a day's
+# log — not on every push, since "day closed" isn't something git history
+# alone can detect reliably. Pass the date to build; defaults to the most
+# recent intake file if omitted.
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date to build (YYYY-MM-DD). Leave blank for the most recent intake file."
+        required: false
+
+jobs:
+  build-and-send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate unified dashboard
+        id: gen
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            python3 intake/generate_dashboard.py "${{ inputs.date }}" --unified
+            echo "date=${{ inputs.date }}" >> "$GITHUB_OUTPUT"
+          else
+            python3 intake/generate_dashboard.py --unified
+            LATEST=$(ls intake/data/intake/*.json | sort | tail -1 | xargs -n1 basename | sed 's/\.json$//')
+            echo "date=$LATEST" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: unified-dashboard
+          path: intake/dashboards/unified_${{ steps.gen.outputs.date }}.html
+          if-no-files-found: error
+
+      - name: Email the dashboard
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY || secrets.RESEND || secrets.RESEND_KEY }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+          SMTP_USER: ${{ secrets.SMTP_USER || vars.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.GMAIL || secrets.SMTP_PASS || secrets.SMTP_PASSWORD || secrets.GMAIL_APP_PASSWORD || secrets.GMAIL_PASSWORD || secrets.EMAIL_PASSWORD || secrets.APP_PASSWORD }}
+          REPORT_TO: ${{ secrets.REPORT_TO || vars.REPORT_TO }}
+          REPORT_DATE: ${{ steps.gen.outputs.date }}
+        run: node report/send_unified.mjs "intake/dashboards/unified_${{ steps.gen.outputs.date }}.html"

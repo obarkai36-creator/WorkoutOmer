@@ -12,13 +12,20 @@ references/supplements.json  # current supplement stack (verified) + candidate a
 references/import_templates/ # example CSVs for exercise/scale exports
 data/intake/YYYY-MM-DD.json  # one file per day: timestamped items + macro analysis
 data/metrics/weight.json     # body-composition log (Eufy Smart Scale)
-data/metrics/sperm.json      # weekly sperm-optimization score (sub-factors + weights)
+data/metrics/sperm.json      # sperm-optimization score: trailing 7-day window, recomputed + persisted daily (sub-factors + weights)
+data/metrics/energy.json     # daily energy score (sleep/nutrition/movement/caffeine/alcohol), recomputed + persisted every render
 data/metrics/lifestyle.json  # travel / heat / sleep / stress events that affect scoring
-data/metrics/workouts.json   # training sessions (imported from exercise project)
+data/metrics/workouts.json   # training sessions + report_snapshot (kept in sync with ../data.js — see sync_training_snapshot.mjs)
+data/metrics/sleep.json      # nightly sleep log (manual entry — Health Connect is US-only, not accessible yet)
+data/metrics/ejaculation.json # ejaculatory frequency log (date, time, self/partnered) — feeds the sperm score
 data/imports/                # drop CSV/JSON exports here, then run import_data.py
 generate_dashboard.py        # renders dashboards/<date>.html from the JSON above
+generate_monthly_recap.py    # renders dashboards/monthly/<YYYY-MM>.html — accumulated stats vs the prior month
+monthly_training_stats.mjs   # training-side stats for the recap, replaying engine.js "as of" a month's last day
 import_data.py               # merges data/imports/ files into the metrics stores
-dashboards/YYYY-MM-DD.html   # daily export (also sent in chat)
+sync_training_snapshot.mjs   # refreshes workouts.json's report_snapshot by running ../data.js + ../engine.js live
+dashboards/YYYY-MM-DD.html   # daily export — sent as a file in chat at end-of-day close-out
+dashboards/monthly/YYYY-MM.html # monthly recap — sent as a file in chat on the last day of the month, once closed
 ```
 
 ## Daily flow
@@ -26,17 +33,50 @@ dashboards/YYYY-MM-DD.html   # daily export (also sent in chat)
 1. Log food/drink (text or photo) with the time — items are analyzed into macros + micros.
 2. Day's data is written to `data/intake/YYYY-MM-DD.json`.
 3. Run `python3 generate_dashboard.py [YYYY-MM-DD]` (defaults to latest day).
-4. Dashboard HTML lands in `dashboards/` and is shared in chat.
+4. Dashboard HTML lands in `dashboards/`. This dashboard is chat-only (no
+   auto-email, unlike the workout dashboard) — so at end-of-day close-out
+   (`in_progress` set to `false`), always send the rendered
+   `dashboards/YYYY-MM-DD.html` as a file in chat, not just a text summary of
+   the scores. That's the only place this dashboard ever gets delivered.
 
 Log lifestyle events as they happen (a flight, poor sleep, sauna, high-stress
 stretch) — they're recorded in `data/metrics/lifestyle.json` and feed the weekly
 sperm score; recent ones show in the dashboard's Lifestyle log.
+
+Whenever `../data.js` changes (new workout, new weigh-in), run
+`node intake/sync_training_snapshot.mjs` before regenerating the nutrition
+dashboard — it recomputes `workouts.json`'s `report_snapshot` from the same
+`data.js` + `engine.js` the workout dashboard uses, so the Training panel's
+"Latest" / "Recommended next" / alerts always match what the workout
+dashboard itself is showing (rather than drifting out of sync).
 
 ## Panels
 
 Status & progress · Weight & body composition · Sperm optimization (weekly) +
 Lifestyle log · Macros (today) · Sperm-priority micronutrients · Intake log ·
 Suggestions (unlocks after 14 logged days).
+
+## Monthly recap
+
+`generate_monthly_recap.py [YYYY-MM]` aggregates both dashboards' data across
+a full calendar month and compares it to the previous month: nutrition
+averages + protein-target adherence, weight trend, training (sessions, PRs,
+ACWR, push/pull balance — via `monthly_training_stats.mjs` replaying
+`../engine.js` as of that month's last day, same technique
+`sync_training_snapshot.mjs` uses for "now"), sperm/energy score averages +
+best/worst week, lifestyle (alcohol days, sleep, ejaculatory frequency), a
+month-vs-month table, and data-driven recommendations. Same visual system as
+the daily dashboard.
+
+**Only run this once the target month is actually over and its last day is
+closed out** (`in_progress: false`) — training-load stats are computed "as
+of" the month's last calendar day, so running it mid-month against a future
+date gives nonsense (e.g. ACWR crashing to 0 because no sessions exist yet
+between today and the fake future "now"). A Routine checks daily on the 28th
+through 31st of each month and, once the last day of the month is both
+(a) actually the last day and (b) closed out, runs this automatically and
+sends the result in chat — same chat-only delivery as the daily dashboard,
+never auto-emailed.
 
 ## Targets (editable in `profile.json`)
 

@@ -2,6 +2,42 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "fitness_chocolate_cereal",
+      "name": "Fitness Chocolate breakfast cereal (Osem-Nestlé, 375g box)",
+      "serving": "1 spoon (~8 g)",
+      "kcal": 32,
+      "protein_g": 0.7,
+      "carbs_g": 5.6,
+      "fat_g": 0.6,
+      "fiber_g": 0.5,
+      "verified": true,
+      "source": "Confirmed 2026-07-31 with a direct label photo, per 100g: 395kcal, 8.6g protein, 69.5g carb (17.5g sugar), 7.2g fat, 198mg sodium — very close to the earlier web-sourced estimate (396/8.6/71.3/7). Fiber still not shown on this label view — kept as an estimate (~6g/100g), flagged for correction if a fuller label panel is checked."
+    },
+    {
+      "id": "fitness_sweet_potato_cracker",
+      "name": "Fitness Thin Sweet Potato Cracker (Osem-Nestlé)",
+      "serving": "1 piece (~7 g)",
+      "kcal": 33,
+      "protein_g": 0.8,
+      "carbs_g": 4.7,
+      "fat_g": 1.1,
+      "fiber_g": 0.4,
+      "verified": true,
+      "source": "Corrected 2026-07-29 — user confirmed the actual pack states 3 pieces = 99kcal (33kcal/piece, ~7g each), not the ~30g/piece the web-sourced serving figure had implied. Per-100g values (459kcal, 11.5g protein, 65g carb, 15.5g fat, 5g fiber from foodsdictionary.co.il/foodiepedia.co.il) scaled to ~7g check out (459×0.072≈33kcal). Replaces the earlier ~30g/138kcal-per-piece estimate."
+    },
+    {
+      "id": "elal_gouda_omelette_pretzel_sandwich",
+      "name": "El Al pretzel sandwich with gouda & omelette",
+      "serving": "1 whole (165 g)",
+      "kcal": 505,
+      "protein_g": 15,
+      "carbs_g": 43,
+      "fat_g": 29,
+      "fiber_g": 2,
+      "verified": true,
+      "source": "Label ~308 kcal/100g, fat 17.4g/100g, protein 8.9g/100g × 165g; sodium ~760mg. Confirmed 2026-07-02, reused 2026-07-10. Recurring El Al in-flight meal."
+    },
+    {
       "id": "elal_coconut_snack",
       "name": "El Al coconut snack",
       "serving": "1 unit (20 g)",
@@ -12,6 +48,56 @@
       "fiber_g": 1,
       "verified": true,
       "source": "Label ~444 kcal/100 g, 21.2 g fat/100 g; 20 g unit confirmed by user 2026-07-02. Served on El Al flights."
+    },
+    {
+      "id": "maple_balsamic_mustard_vinaigrette",
+      "name": "Maple-Balsamic Mustard Vinaigrette (homemade)",
+      "serving": "~25 ml (typical salad-dressing pour)",
+      "kcal": 125,
+      "protein_g": 0.1,
+      "carbs_g": 4,
+      "fat_g": 12,
+      "fiber_g": 0,
+      "verified": false,
+      "recipe": "Olive oil, balsamic vinegar, mustard, maple syrup, lemon juice, whisked together.",
+      "source": "Estimated from a typical vinaigrette ratio (oil-dominant, ~3:1 oil:acid, plus a spoon each of mustard/maple). Recurring homemade salad dressing — refine per-ml if a batch is ever measured."
+    },
+    {
+      "id": "agami_pita_pro_spelt",
+      "name": "Agami Pita Pro (whole spelt, protein-enriched)",
+      "serving": "1 unit (68 g)",
+      "kcal": 140,
+      "protein_g": 15,
+      "carbs_g": 19,
+      "fat_g": 2.5,
+      "fiber_g": 9,
+      "verified": true,
+      "source": "Manufacturer/product data (agamibakery.co.il, cross-checked via foodsdictionary.co.il, product page itself bot-blocked): ~20g protein/100g, enriched with soy + pea protein, ~70% less carb than white pita, ~10g net/available carb per ~70g pita (implying high fiber). Confirmed 2026-07-11 correcting an earlier generic-pita estimate."
+    },
+    {
+      "id": "tnuva_emek_light_yellow_cheese_9pct",
+      "name": "Tnuva Emek Light yellow cheese, 9% fat",
+      "serving": "1 slice (25 g)",
+      "kcal": 50,
+      "protein_g": 7.5,
+      "carbs_g": 0,
+      "fat_g": 2.25,
+      "fiber_g": 0,
+      "verified": true,
+      "source": "Label data (per 100g: 201 kcal, 30g protein, 0g carb, 9g fat, 530mg sodium, 900mg calcium, 27mg cholesterol, 5.4g saturated fat), tnuva.co.il product page bot-blocked, cross-checked via medplus.co.il. Slice weight (25g) confirmed by user 2026-07-11, correcting an earlier generic yellow-cheese estimate."
+    },
+    {
+      "id": "migulgalot_shokolad_ferrero",
+      "name": "מגולגלות שוקולד (chocolate rolled cookies, homemade — similar to Keren Agam's Ferrero-filled recipe)",
+      "serving": "1 cookie (30 g)",
+      "kcal": 130,
+      "protein_g": 2,
+      "carbs_g": 15,
+      "fat_g": 7,
+      "fiber_g": 0.5,
+      "verified": false,
+      "recipe": "Rolled shortcrust-pastry cookie (butter/margarine, flour, sugar, egg dough) spread with chocolate-hazelnut spread, rolled into a log, sliced and baked — pinwheel/rugelach-style. User's homemade version is 'similar to' the linked recipe, not identical.",
+      "source": "Reference recipe: mako.co.il \"מגולגלות שוקולד פררו\" by Keren Agam (https://www.mako.co.il/food-weekend/keren_baking_for_sabbath/Recipe-afed6b4e15ade91026.htm) — page bot-blocked (403), so exact ingredient quantities weren't retrievable. Estimated from typical butter-shortcrust + chocolate-hazelnut-spread rolled cookie macros (~430 kcal/100g). Refine if the user's actual recipe/quantities are ever provided."
     },
     {
       "id": "homemade_chicken_meatballs_veg",
@@ -37,6 +123,79 @@
       "fiber_g": 1,
       "verified": false,
       "source": "Standard Arla Protein chocolate pudding values (product page bot-blocked). High-protein, low-fat go-to snack."
+    },
+    {
+      "id": "milk_protein_drink_vanilla_no_added_sugar",
+      "name": "Milk protein drink, vanilla, no added sugar (משקה חלבון חלב בטעם וניל עם ממתיק)",
+      "serving": "100 ml",
+      "kcal": 56,
+      "protein_g": 10,
+      "carbs_g": 3.7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "verified": true,
+      "source": "Read directly from the product's Hebrew nutrition label, per 100ml: 56 kcal, 0g fat, 44mg sodium, 3.7g carbs (3.7g sugar, 1 sugar-cube equivalent), 10g protein, 294mg calcium. Sweetened with sucralose, no added sugar; contains carotene coloring and an anti-foaming agent (E900). Confirmed 2026-07-14 (330ml serving logged as breakfast)."
+    },
+    {
+      "id": "danone_pro_strawberry_0pct",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat (20g protein cup)",
+      "serving": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Corrected 2026-07-19 — the initial 'YoPro' guess was wrong (different product/market). This is the actual Israeli Danone PRO line (דנונה פרו), 0% fat, branded '20g protein per cup'. Per-100g values from web search (foodsdictionary.co.il / foodiepedia.co.il): 56 kcal, 10g protein, 3.5g carbs, 0g fat; doubled for the 200g cup. Not a direct label screenshot — refine if the physical pack is checked."
+    },
+    {
+      "id": "tnuva_go_granola_20g_protein",
+      "name": "Tnuva GO high-protein yogurt with granola (20g protein)",
+      "serving": "1 cup (178 g)",
+      "kcal": 203,
+      "protein_g": 20.1,
+      "carbs_g": 20.3,
+      "fat_g": 4.3,
+      "fiber_g": 1.4,
+      "verified": true,
+      "source": "Read directly from the product's Hebrew nutrition label (user-provided screenshot), per 100g: 114 kcal, 11.3g protein, 11.4g carb (6.2g sugar), 2.4g fat (1.4g saturated, 0.5g trans), 0.8g fiber, 20mg cholesterol, 170mg sodium. Pack weight confirmed at 178g. Confirmed 2026-07-21, replacing an earlier bot-blocked-page estimate that had overstated fat/kcal."
+    },
+    {
+      "id": "whole_spelt_pita_500g_8pack",
+      "name": "Whole spelt pita (500g/8 pack)",
+      "serving": "1 unit (62.5 g)",
+      "kcal": 126,
+      "protein_g": 14.2,
+      "carbs_g": 17.4,
+      "fat_g": 2.3,
+      "fiber_g": 8.3,
+      "verified": false,
+      "source": "Energy (201 kcal/100g) and protein (22.7g/100g) read from the product's Hebrew label (user-provided photo, tivtaam.co.il product, exact catalog page bot-blocked). Reading the rotated/blurry/crumpled label was corrected twice before landing on 201 kcal/100g as the actual per-100g energy value. Carb/fat/fiber weren't confirmed from the remaining label rows — inferred from the very similar Agami Pita Pro reference (same protein-enriched whole-spelt pita category, comparable protein rate). Refine if the rest of the label is re-checked."
+    },
+    {
+      "id": "legendary_foods_protein_donut_cinnamon_crumble",
+      "name": "Legendary Foods Protein Donut, Cinnamon Crumble",
+      "serving": "1 donut (63 g)",
+      "kcal": 80,
+      "protein_g": 10,
+      "carbs_g": 13,
+      "fat_g": 3,
+      "fiber_g": 4,
+      "verified": false,
+      "source": "Web search (myfooddata) gave 160 kcal / 20g protein / 26g carb / 8g fiber / 6g fat per the product's own 2-donut serving; halved here to a per-donut basis. Not a direct label read. High-fiber, low-sugar keto-style protein donut (12-pack, 63g each, iHerb)."
+    },
+    {
+      "id": "chicken_spelt_pasta_batch_2026_07_24",
+      "name": "Homemade chicken & spelt pasta batch dish (meal prep, w/ tomato paste)",
+      "serving": "100 g of finished cooked dish",
+      "kcal": 214,
+      "protein_g": 16.3,
+      "carbs_g": 28.5,
+      "fat_g": 3.9,
+      "fiber_g": 3.8,
+      "verified": false,
+      "recipe": "950g raw chicken breast (stove-grilled) + 750g spelt pasta (dry weight incl. box, to be corrected) + 200g tomato paste + salt/sugar (unspecified qty, excluded) + 2 tbsp olive oil + 1 egg + 1 tbsp cornflour. 30 cherry tomatoes used in cooking but removed before the final dish weigh-in (excluded from macros). Final cooked dish weighed 2000g (3.8kg container+dish minus 1.8kg empty container) — close to the 1986g raw-ingredient sum, so cooking losses/gains roughly cancel.",
+      "source": "Calculated from user-provided ingredient list and container/dish weights 2026-07-24, for a week-ahead meal-prep batch. Pasta weight includes packaging per the user's own flag ('to be changed') — refine once the net dry-pasta weight is known, which would lower kcal/carb/fiber per 100g slightly."
     }
   ]
 }

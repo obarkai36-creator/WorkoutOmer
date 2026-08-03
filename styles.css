@@ -117,15 +117,15 @@ canvas { max-width: 100%; }
   background: var(--panel-2); border: 1px solid var(--line); border-radius: 999px;
 }
 
-/* recommended lifts with your best (target reference during the workout) */
+/* recommended lifts: next-session target, with your best as a reference line */
 .reco-lifts { margin-top: 2px; }
 .reco-lift {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
-  font-size: 12px; padding: 4px 0; border-bottom: 1px solid var(--line);
+  padding: 4px 0; border-bottom: 1px solid var(--line); font-size: 12px;
 }
 .reco-lift:last-child { border-bottom: 0; }
+.reco-lift .rl-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
 .reco-lift .rl-name { font-weight: 600; }
-.reco-lift .rl-best { color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.reco-lift .rl-best { color: var(--accent); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
 .reco-lift .rl-orm { color: var(--accent); margin-left: 6px; font-size: 11px; }
 
 /* alert / change list */
@@ -253,8 +253,8 @@ body.pdf.layout-mobile .mrow { margin: 4px 0; }
 body.pdf.layout-mobile .mrow .ml { width: 80px; font-size: 12px; }
 body.pdf.layout-mobile .mrow .mv { font-size: 12px; }
 body.pdf.layout-mobile .bar { height: 15px; }
-/* Workload Progress: two readable columns keep the long list from running too tall. */
-body.pdf.layout-mobile #panel-progress .body { column-count: 2; column-gap: 12px; }
+/* Workload Progress: single column — CSS multi-column layouts don't paginate
+   reliably across real PDF page breaks, so keep this a plain block flow. */
 body.pdf.layout-mobile #panel-progress .fatigue-section { break-inside: avoid; margin-bottom: 8px; }
 body.pdf.layout-mobile #panel-progress .prog { padding: 3px 0; border-bottom: 0; break-inside: avoid; }
 body.pdf.layout-mobile #panel-progress .prog .bar { height: 7px; margin: 2px 0 !important; }

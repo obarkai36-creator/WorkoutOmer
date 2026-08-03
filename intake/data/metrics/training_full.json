@@ -1,0 +1,5561 @@
+{
+  "now": 1785787126348,
+  "workouts": [
+    {
+      "datetime": "2026-08-03T21:05",
+      "note": "Chest",
+      "exercises": [
+        {
+          "name": "Plank",
+          "sets": [
+            {
+              "seconds": 35
+            },
+            {
+              "seconds": 35
+            },
+            {
+              "seconds": 35
+            }
+          ],
+          "load": 8505,
+          "top1RM": 0,
+          "topWeight": 81,
+          "muscles": {
+            "core": 8505
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Bench Press",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 72.5
+            },
+            {
+              "reps": 8,
+              "weight": 72.5
+            },
+            {
+              "reps": 8,
+              "weight": 72.5
+            },
+            {
+              "reps": 8,
+              "weight": 72.5
+            }
+          ],
+          "load": 2320,
+          "top1RM": 91.83333333333333,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 2320,
+            "triceps": 928,
+            "shoulders": 696
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Bench Press",
+          "sets": [
+            {
+              "reps": 7,
+              "weight": 72.5
+            },
+            {
+              "reps": 7,
+              "weight": 72.5
+            },
+            {
+              "reps": 7,
+              "weight": 72.5
+            },
+            {
+              "reps": 7,
+              "weight": 72.5
+            }
+          ],
+          "load": 2030,
+          "top1RM": 89.41666666666667,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 2030,
+            "shoulders": 812,
+            "triceps": 812
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Pec Fly",
+          "sets": [
+            {
+              "reps": 9,
+              "weight": 36
+            },
+            {
+              "reps": 9,
+              "weight": 36
+            },
+            {
+              "reps": 9,
+              "weight": 36
+            },
+            {
+              "reps": 9,
+              "weight": 36
+            }
+          ],
+          "load": 1296,
+          "top1RM": 46.800000000000004,
+          "topWeight": 36,
+          "muscles": {
+            "chest": 1296,
+            "shoulders": 259.2
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1785791100000,
+      "muscleLoad": {
+        "core": 8505,
+        "chest": 5646,
+        "triceps": 1740,
+        "shoulders": 1767.2
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-08-01T09:00",
+      "note": "Back + Arms",
+      "exercises": [
+        {
+          "name": "Dumbbell Pullover",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            }
+          ],
+          "load": 720,
+          "top1RM": 24,
+          "topWeight": 18,
+          "muscles": {
+            "back": 720,
+            "chest": 288
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Reverse Incline DB Row",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 52
+            },
+            {
+              "reps": 8,
+              "weight": 52
+            },
+            {
+              "reps": 8,
+              "weight": 52
+            },
+            {
+              "reps": 8,
+              "weight": 52
+            }
+          ],
+          "load": 1664,
+          "top1RM": 65.86666666666666,
+          "topWeight": 52,
+          "muscles": {
+            "back": 1664,
+            "shoulders": 499.2,
+            "biceps": 499.2
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline DB Curl",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 18
+            },
+            {
+              "reps": 6,
+              "weight": 18
+            },
+            {
+              "reps": 6,
+              "weight": 18
+            },
+            {
+              "reps": 6,
+              "weight": 18
+            }
+          ],
+          "load": 432,
+          "top1RM": 21.599999999999998,
+          "topWeight": 18,
+          "muscles": {
+            "biceps": 432
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Hammer Curl",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            }
+          ],
+          "load": 576,
+          "top1RM": 22.799999999999997,
+          "topWeight": 18,
+          "muscles": {
+            "biceps": 576,
+            "forearms": 230.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Half Curl",
+          "sets": [
+            {
+              "reps": 5,
+              "weight": 36
+            },
+            {
+              "reps": 5,
+              "weight": 36
+            },
+            {
+              "reps": 5,
+              "weight": 36
+            },
+            {
+              "reps": 5,
+              "weight": 36
+            }
+          ],
+          "load": 720,
+          "top1RM": 42,
+          "topWeight": 36,
+          "muscles": {
+            "biceps": 720
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dead Hang",
+          "sets": [
+            {
+              "seconds": 25
+            },
+            {
+              "seconds": 25
+            },
+            {
+              "seconds": 25
+            }
+          ],
+          "load": 6075,
+          "top1RM": 0,
+          "topWeight": 81,
+          "muscles": {
+            "forearms": 6075,
+            "back": 1822.5
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1785574800000,
+      "muscleLoad": {
+        "back": 4206.5,
+        "chest": 288,
+        "shoulders": 499.2,
+        "biceps": 2227.2,
+        "forearms": 6305.4
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-29T06:10",
+      "note": "Full Body (Deload)",
+      "exercises": [
+        {
+          "name": "Pec Fly Machine",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 73
+            },
+            {
+              "reps": 6,
+              "weight": 73
+            },
+            {
+              "reps": 6,
+              "weight": 73
+            }
+          ],
+          "load": 1314,
+          "top1RM": 87.6,
+          "topWeight": 73,
+          "muscles": {
+            "chest": 1314
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Diverging Seated Row",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 84
+            },
+            {
+              "reps": 6,
+              "weight": 84
+            },
+            {
+              "reps": 6,
+              "weight": 84
+            },
+            {
+              "reps": 6,
+              "weight": 84
+            }
+          ],
+          "load": 2016,
+          "top1RM": 100.8,
+          "topWeight": 84,
+          "muscles": {
+            "back": 2016,
+            "biceps": 806.4000000000001
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Converging Shoulder Press",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 68
+            },
+            {
+              "reps": 6,
+              "weight": 68
+            },
+            {
+              "reps": 6,
+              "weight": 68
+            },
+            {
+              "reps": 6,
+              "weight": 68
+            }
+          ],
+          "load": 1632,
+          "top1RM": 81.6,
+          "topWeight": 68,
+          "muscles": {
+            "shoulders": 1632,
+            "triceps": 652.8000000000001
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Angled Leg Press",
+          "sets": [
+            {
+              "reps": 5,
+              "weight": 172
+            },
+            {
+              "reps": 5,
+              "weight": 172
+            },
+            {
+              "reps": 5,
+              "weight": 172
+            },
+            {
+              "reps": 5,
+              "weight": 172
+            }
+          ],
+          "load": 3440,
+          "top1RM": 200.66666666666669,
+          "topWeight": 172,
+          "muscles": {
+            "quads": 3440,
+            "glutes": 1720
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Rope Cable Extension",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 64
+            },
+            {
+              "reps": 6,
+              "weight": 64
+            },
+            {
+              "reps": 6,
+              "weight": 64
+            },
+            {
+              "reps": 6,
+              "weight": 64
+            }
+          ],
+          "load": 1536,
+          "top1RM": 76.8,
+          "topWeight": 64,
+          "muscles": {
+            "triceps": 1536
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1785305400000,
+      "muscleLoad": {
+        "chest": 1314,
+        "back": 2016,
+        "biceps": 806.4000000000001,
+        "shoulders": 1632,
+        "triceps": 2188.8,
+        "quads": 3440,
+        "glutes": 1720
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-27T20:20",
+      "note": "Chest",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": [
+            {
+              "reps": 7,
+              "weight": 72.5
+            },
+            {
+              "reps": 7,
+              "weight": 72.5
+            },
+            {
+              "reps": 7,
+              "weight": 72.5
+            },
+            {
+              "reps": 7,
+              "weight": 72.5
+            }
+          ],
+          "load": 2030,
+          "top1RM": 89.41666666666667,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 2030,
+            "triceps": 812,
+            "shoulders": 609
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Bench Press",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            }
+          ],
+          "load": 1740,
+          "top1RM": 87,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 1740,
+            "shoulders": 696,
+            "triceps": 696
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Decline Bench Press",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            }
+          ],
+          "load": 1740,
+          "top1RM": 87,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 1740,
+            "triceps": 696
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "VKR",
+          "sets": [
+            {
+              "reps": 10
+            },
+            {
+              "reps": 10
+            },
+            {
+              "reps": 10
+            },
+            {
+              "reps": 10
+            }
+          ],
+          "load": 3240,
+          "top1RM": 108,
+          "topWeight": 81,
+          "muscles": {
+            "core": 3240
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "VKR to Sides",
+          "sets": [
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            }
+          ],
+          "load": 2592,
+          "top1RM": 102.6,
+          "topWeight": 81,
+          "muscles": {
+            "core": 2592
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1785183600000,
+      "muscleLoad": {
+        "chest": 5510,
+        "triceps": 2204,
+        "shoulders": 1305,
+        "core": 5832
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-25T10:20",
+      "note": "Legs",
+      "exercises": [
+        {
+          "name": "Calf Raises Machine",
+          "sets": [
+            {
+              "reps": 11,
+              "weight": 76
+            },
+            {
+              "reps": 11,
+              "weight": 76
+            },
+            {
+              "reps": 11,
+              "weight": 76
+            },
+            {
+              "reps": 11,
+              "weight": 76
+            }
+          ],
+          "load": 3344,
+          "top1RM": 103.86666666666667,
+          "topWeight": 76,
+          "muscles": {
+            "calves": 3344
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Leg Press",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 132
+            },
+            {
+              "reps": 10,
+              "weight": 132
+            },
+            {
+              "reps": 10,
+              "weight": 132
+            },
+            {
+              "reps": 10,
+              "weight": 132
+            }
+          ],
+          "load": 5280,
+          "top1RM": 176,
+          "topWeight": 132,
+          "muscles": {
+            "quads": 5280,
+            "glutes": 2640,
+            "hamstrings": 1584
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Angled Leg Press",
+          "sets": [
+            {
+              "reps": 7,
+              "weight": 202
+            },
+            {
+              "reps": 7,
+              "weight": 202
+            },
+            {
+              "reps": 7,
+              "weight": 202
+            },
+            {
+              "reps": 7,
+              "weight": 202
+            }
+          ],
+          "load": 5656,
+          "top1RM": 249.13333333333335,
+          "topWeight": 202,
+          "muscles": {
+            "quads": 5656,
+            "glutes": 2828
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Single-Leg Extensions",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 57
+            },
+            {
+              "reps": 6,
+              "weight": 57
+            },
+            {
+              "reps": 6,
+              "weight": 57
+            },
+            {
+              "reps": 6,
+              "weight": 57
+            }
+          ],
+          "load": 1368,
+          "top1RM": 68.39999999999999,
+          "topWeight": 57,
+          "muscles": {
+            "quads": 1368
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Outer Thigh",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 79
+            },
+            {
+              "reps": 10,
+              "weight": 79
+            },
+            {
+              "reps": 10,
+              "weight": 79
+            },
+            {
+              "reps": 10,
+              "weight": 79
+            }
+          ],
+          "load": 3160,
+          "top1RM": 105.33333333333333,
+          "topWeight": 79,
+          "muscles": {
+            "glutes": 2528,
+            "quads": 632
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Inner Thigh",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            }
+          ],
+          "load": 1896,
+          "top1RM": 100.06666666666666,
+          "topWeight": 79,
+          "muscles": {
+            "adductors": 1896
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1784974800000,
+      "muscleLoad": {
+        "calves": 3344,
+        "quads": 12936,
+        "glutes": 7996,
+        "hamstrings": 1584,
+        "adductors": 1896
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-24T10:20",
+      "note": "Shoulders",
+      "exercises": [
+        {
+          "name": "Front Raises",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            }
+          ],
+          "load": 576,
+          "top1RM": 22.799999999999997,
+          "topWeight": 18,
+          "muscles": {
+            "shoulders": 576
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "sets": [
+            {
+              "reps": 9,
+              "weight": 36
+            },
+            {
+              "reps": 9,
+              "weight": 36
+            },
+            {
+              "reps": 9,
+              "weight": 36
+            },
+            {
+              "reps": 9,
+              "weight": 36
+            }
+          ],
+          "load": 1296,
+          "top1RM": 46.800000000000004,
+          "topWeight": 36,
+          "muscles": {
+            "shoulders": 1296,
+            "triceps": 518.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Shoulder Shrugs",
+          "sets": [
+            {
+              "reps": 11,
+              "weight": 48
+            },
+            {
+              "reps": 11,
+              "weight": 48
+            },
+            {
+              "reps": 11,
+              "weight": 48
+            },
+            {
+              "reps": 11,
+              "weight": 48
+            }
+          ],
+          "load": 2112,
+          "top1RM": 65.6,
+          "topWeight": 48,
+          "muscles": {
+            "shoulders": 1478.3999999999999,
+            "back": 844.8000000000001
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 32
+            },
+            {
+              "reps": 8,
+              "weight": 32
+            },
+            {
+              "reps": 8,
+              "weight": 32
+            },
+            {
+              "reps": 8,
+              "weight": 32
+            }
+          ],
+          "load": 1024,
+          "top1RM": 40.53333333333333,
+          "topWeight": 32,
+          "muscles": {
+            "shoulders": 1024
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Rear Delt Machine",
+          "sets": [
+            {
+              "reps": 9,
+              "weight": 73
+            },
+            {
+              "reps": 9,
+              "weight": 73
+            },
+            {
+              "reps": 9,
+              "weight": 73
+            }
+          ],
+          "load": 1971,
+          "top1RM": 94.9,
+          "topWeight": 73,
+          "muscles": {
+            "shoulders": 1971,
+            "back": 591.3
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "VKR",
+          "sets": [
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            }
+          ],
+          "load": 2592,
+          "top1RM": 102.6,
+          "topWeight": 81,
+          "muscles": {
+            "core": 2592
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "VKR to Sides",
+          "sets": [
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            },
+            {
+              "reps": 8
+            }
+          ],
+          "load": 2592,
+          "top1RM": 102.6,
+          "topWeight": 81,
+          "muscles": {
+            "core": 2592
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1784888400000,
+      "muscleLoad": {
+        "shoulders": 6345.4,
+        "triceps": 518.4,
+        "back": 1436.1,
+        "core": 5184
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-21T15:30",
+      "note": "Back",
+      "exercises": [
+        {
+          "name": "Diverging Seated Row",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 97
+            },
+            {
+              "reps": 8,
+              "weight": 97
+            },
+            {
+              "reps": 8,
+              "weight": 97
+            },
+            {
+              "reps": 8,
+              "weight": 97
+            }
+          ],
+          "load": 3104,
+          "top1RM": 122.86666666666666,
+          "topWeight": 97,
+          "muscles": {
+            "back": 3104,
+            "biceps": 1241.6000000000001
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Low Row",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            }
+          ],
+          "load": 2528,
+          "top1RM": 100.06666666666666,
+          "topWeight": 79,
+          "muscles": {
+            "back": 2528,
+            "biceps": 1011.2
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Reverse Incline DB Row",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            }
+          ],
+          "load": 1920,
+          "top1RM": 64,
+          "topWeight": 48,
+          "muscles": {
+            "back": 1920,
+            "shoulders": 576,
+            "biceps": 576
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Pullover",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            }
+          ],
+          "load": 720,
+          "top1RM": 24,
+          "topWeight": 18,
+          "muscles": {
+            "back": 720,
+            "chest": 288
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dead Hang",
+          "sets": [
+            {
+              "seconds": 20
+            },
+            {
+              "seconds": 20
+            },
+            {
+              "seconds": 20
+            }
+          ],
+          "load": 4860,
+          "top1RM": 0,
+          "topWeight": 81,
+          "muscles": {
+            "forearms": 4860,
+            "back": 1458
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1784647800000,
+      "muscleLoad": {
+        "back": 9730,
+        "biceps": 2828.8,
+        "shoulders": 576,
+        "chest": 288,
+        "forearms": 4860
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-19T12:00",
+      "timeUnknown": true,
+      "note": "Outdoor Run",
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 3.7,
+          "durationMin": 25,
+          "load": 225,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 225,
+            "quads": 67.5,
+            "calves": 67.5
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1784462400000,
+      "muscleLoad": {
+        "cardio": 225,
+        "quads": 67.5,
+        "calves": 67.5
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-07-18T18:20",
+      "note": "Arms",
+      "exercises": [
+        {
+          "name": "Incline Hammer Curl",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            }
+          ],
+          "load": 576,
+          "top1RM": 22.799999999999997,
+          "topWeight": 18,
+          "muscles": {
+            "biceps": 576,
+            "forearms": 230.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline DB Curl",
+          "sets": [
+            {
+              "reps": 5,
+              "weight": 18
+            },
+            {
+              "reps": 5,
+              "weight": 18
+            },
+            {
+              "reps": 5,
+              "weight": 18
+            },
+            {
+              "reps": 5,
+              "weight": 18
+            }
+          ],
+          "load": 360,
+          "top1RM": 21,
+          "topWeight": 18,
+          "muscles": {
+            "biceps": 360
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Half Curl",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 32
+            },
+            {
+              "reps": 6,
+              "weight": 32
+            },
+            {
+              "reps": 6,
+              "weight": 32
+            },
+            {
+              "reps": 6,
+              "weight": 32
+            }
+          ],
+          "load": 768,
+          "top1RM": 38.4,
+          "topWeight": 32,
+          "muscles": {
+            "biceps": 768
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Forearm Twists",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 24
+            },
+            {
+              "reps": 10,
+              "weight": 24
+            },
+            {
+              "reps": 10,
+              "weight": 24
+            },
+            {
+              "reps": 10,
+              "weight": 24
+            }
+          ],
+          "load": 960,
+          "top1RM": 32,
+          "topWeight": 24,
+          "muscles": {
+            "forearms": 960
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dead Hang",
+          "sets": [
+            {
+              "seconds": 20
+            },
+            {
+              "seconds": 20
+            },
+            {
+              "seconds": 20
+            }
+          ],
+          "load": 4860,
+          "top1RM": 0,
+          "topWeight": 81,
+          "muscles": {
+            "forearms": 4860,
+            "back": 1458
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Biceps Curl Machine",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 45
+            },
+            {
+              "reps": 6,
+              "weight": 45
+            }
+          ],
+          "load": 540,
+          "top1RM": 54,
+          "topWeight": 45,
+          "muscles": {
+            "biceps": 540
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Plank",
+          "sets": [
+            {
+              "seconds": 45
+            }
+          ],
+          "load": 3645,
+          "top1RM": 0,
+          "topWeight": 81,
+          "muscles": {
+            "core": 3645
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1784398800000,
+      "muscleLoad": {
+        "biceps": 2244,
+        "forearms": 6050.4,
+        "back": 1458,
+        "core": 3645
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-15T07:35",
+      "note": "Chest",
+      "exercises": [
+        {
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "reps": 4,
+              "weight": 73
+            },
+            {
+              "reps": 4,
+              "weight": 73
+            },
+            {
+              "reps": 4,
+              "weight": 73
+            },
+            {
+              "reps": 4,
+              "weight": 73
+            }
+          ],
+          "load": 1168,
+          "top1RM": 82.73333333333333,
+          "topWeight": 73,
+          "muscles": {
+            "chest": 1168,
+            "triceps": 467.20000000000005,
+            "shoulders": 350.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Bench Press",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            },
+            {
+              "reps": 6,
+              "weight": 72.5
+            }
+          ],
+          "load": 1740,
+          "top1RM": 87,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 1740,
+            "triceps": 696,
+            "shoulders": 522
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Bench Press",
+          "sets": [
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            }
+          ],
+          "load": 1450,
+          "top1RM": 84.58333333333334,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 1450,
+            "shoulders": 580,
+            "triceps": 580
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Pec Fly",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            }
+          ],
+          "load": 1152,
+          "top1RM": 45.599999999999994,
+          "topWeight": 36,
+          "muscles": {
+            "chest": 1152,
+            "shoulders": 230.4
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1784100900000,
+      "muscleLoad": {
+        "chest": 5510,
+        "triceps": 1743.2,
+        "shoulders": 1682.8000000000002
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-13T21:05",
+      "note": "Stretching / rehab + planks",
+      "exercises": [
+        {
+          "name": "Stretching / Mobility (rehab)",
+          "sets": [
+            {
+              "seconds": 1200
+            }
+          ],
+          "load": 0,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {},
+          "kind": "mobility"
+        },
+        {
+          "name": "Plank",
+          "sets": [
+            {
+              "seconds": 30
+            },
+            {
+              "seconds": 30
+            },
+            {
+              "seconds": 30
+            }
+          ],
+          "load": 7290,
+          "top1RM": 0,
+          "topWeight": 81,
+          "muscles": {
+            "core": 7290
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1783976700000,
+      "muscleLoad": {
+        "core": 7290
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-11T21:00",
+      "note": "Legs",
+      "exercises": [
+        {
+          "name": "Calf Raises Machine",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 77
+            },
+            {
+              "reps": 10,
+              "weight": 77
+            },
+            {
+              "reps": 10,
+              "weight": 77
+            },
+            {
+              "reps": 10,
+              "weight": 77
+            }
+          ],
+          "load": 3080,
+          "top1RM": 102.66666666666666,
+          "topWeight": 77,
+          "muscles": {
+            "calves": 3080
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Angled Leg Press",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 202
+            },
+            {
+              "reps": 6,
+              "weight": 202
+            },
+            {
+              "reps": 6,
+              "weight": 202
+            },
+            {
+              "reps": 6,
+              "weight": 202
+            }
+          ],
+          "load": 4848,
+          "top1RM": 242.39999999999998,
+          "topWeight": 202,
+          "muscles": {
+            "quads": 4848,
+            "glutes": 2424
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Leg Extensions",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 111
+            },
+            {
+              "reps": 12,
+              "weight": 111
+            },
+            {
+              "reps": 12,
+              "weight": 111
+            },
+            {
+              "reps": 12,
+              "weight": 111
+            }
+          ],
+          "load": 5328,
+          "top1RM": 155.39999999999998,
+          "topWeight": 111,
+          "muscles": {
+            "quads": 5328
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Outer Thigh",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            }
+          ],
+          "load": 2528,
+          "top1RM": 100.06666666666666,
+          "topWeight": 79,
+          "muscles": {
+            "glutes": 2022.4,
+            "quads": 505.6
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Inner Thigh",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 75
+            },
+            {
+              "reps": 10,
+              "weight": 75
+            },
+            {
+              "reps": 10,
+              "weight": 75
+            }
+          ],
+          "load": 2250,
+          "top1RM": 100,
+          "topWeight": 75,
+          "muscles": {
+            "adductors": 2250
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Leg Press",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 132
+            },
+            {
+              "reps": 8,
+              "weight": 132
+            },
+            {
+              "reps": 8,
+              "weight": 132
+            },
+            {
+              "reps": 8,
+              "weight": 132
+            }
+          ],
+          "load": 4224,
+          "top1RM": 167.2,
+          "topWeight": 132,
+          "muscles": {
+            "quads": 4224,
+            "glutes": 2112,
+            "hamstrings": 1267.2
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1783803600000,
+      "muscleLoad": {
+        "calves": 3080,
+        "quads": 14905.6,
+        "glutes": 6558.4,
+        "adductors": 2250,
+        "hamstrings": 1267.2
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-09T06:45",
+      "note": "Morning run — Thames path, positive split, 22°C, ~159 kcal (Nike Run Club)",
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 2.01,
+          "durationMin": 11.6,
+          "cadence": 162,
+          "load": 104.39999999999999,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 104.39999999999999,
+            "quads": 31.319999999999997,
+            "calves": 31.319999999999997
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1783579500000,
+      "muscleLoad": {
+        "cardio": 104.39999999999999,
+        "quads": 31.319999999999997,
+        "calves": 31.319999999999997
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-07-06T17:00",
+      "note": "Push + arms (travel gym)",
+      "exercises": [
+        {
+          "name": "Chest Press Machine",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 73
+            },
+            {
+              "reps": 6,
+              "weight": 73
+            },
+            {
+              "reps": 6,
+              "weight": 73
+            },
+            {
+              "reps": 6,
+              "weight": 73
+            }
+          ],
+          "load": 1752,
+          "top1RM": 87.6,
+          "topWeight": 73,
+          "muscles": {
+            "chest": 1752,
+            "triceps": 700.8000000000001,
+            "shoulders": 525.6
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Bench Press",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 73
+            },
+            {
+              "reps": 6,
+              "weight": 73
+            },
+            {
+              "reps": 6,
+              "weight": 73
+            },
+            {
+              "reps": 6,
+              "weight": 73
+            }
+          ],
+          "load": 1752,
+          "top1RM": 87.6,
+          "topWeight": 73,
+          "muscles": {
+            "chest": 1752,
+            "shoulders": 700.8000000000001,
+            "triceps": 700.8000000000001
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Converging Shoulder Press",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 82
+            },
+            {
+              "reps": 6,
+              "weight": 82
+            },
+            {
+              "reps": 6,
+              "weight": 82
+            },
+            {
+              "reps": 6,
+              "weight": 82
+            }
+          ],
+          "load": 1968,
+          "top1RM": 98.39999999999999,
+          "topWeight": 82,
+          "muscles": {
+            "shoulders": 1968,
+            "triceps": 787.2
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Hammer Curl",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 16
+            },
+            {
+              "reps": 8,
+              "weight": 16
+            },
+            {
+              "reps": 8,
+              "weight": 16
+            },
+            {
+              "reps": 8,
+              "weight": 16
+            }
+          ],
+          "load": 512,
+          "top1RM": 20.266666666666666,
+          "topWeight": 16,
+          "muscles": {
+            "biceps": 512,
+            "forearms": 204.8
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline DB Curl",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 16
+            },
+            {
+              "reps": 6,
+              "weight": 16
+            },
+            {
+              "reps": 6,
+              "weight": 16
+            },
+            {
+              "reps": 6,
+              "weight": 16
+            }
+          ],
+          "load": 384,
+          "top1RM": 19.2,
+          "topWeight": 16,
+          "muscles": {
+            "biceps": 384
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1783357200000,
+      "muscleLoad": {
+        "chest": 3504,
+        "triceps": 2188.8,
+        "shoulders": 3194.4,
+        "biceps": 896,
+        "forearms": 204.8
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-07-05T12:00",
+      "timeUnknown": true,
+      "note": "Full-day walking — London",
+      "exercises": [
+        {
+          "name": "Outdoor Walk",
+          "distanceKm": 13.35,
+          "durationMin": 174,
+          "rpe": 3,
+          "load": 783,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 783,
+            "quads": 156.60000000000002,
+            "calves": 156.60000000000002
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1783252800000,
+      "muscleLoad": {
+        "cardio": 783,
+        "quads": 156.60000000000002,
+        "calves": 156.60000000000002
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-07-04T12:00",
+      "timeUnknown": true,
+      "note": "Long city walk — London (full-day)",
+      "exercises": [
+        {
+          "name": "Outdoor Walk",
+          "distanceKm": 10.43,
+          "durationMin": 130,
+          "rpe": 3,
+          "load": 585,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 585,
+            "quads": 117,
+            "calves": 117
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1783166400000,
+      "muscleLoad": {
+        "cardio": 585,
+        "quads": 117,
+        "calves": 117
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-07-03T12:00",
+      "timeUnknown": true,
+      "note": "Full-day city walking (travel day)",
+      "exercises": [
+        {
+          "name": "Outdoor Walk",
+          "distanceKm": 11.5,
+          "durationMin": 150,
+          "rpe": 3,
+          "load": 675,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 675,
+            "quads": 135,
+            "calves": 135
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1783080000000,
+      "muscleLoad": {
+        "cardio": 675,
+        "quads": 135,
+        "calves": 135
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-06-30T15:00",
+      "note": "Shoulders + Chest (light/high-rep)",
+      "exercises": [
+        {
+          "name": "Dumbbell Shoulder Press",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 28
+            },
+            {
+              "reps": 12,
+              "weight": 28
+            },
+            {
+              "reps": 12,
+              "weight": 28
+            },
+            {
+              "reps": 12,
+              "weight": 28
+            }
+          ],
+          "load": 1344,
+          "top1RM": 39.199999999999996,
+          "topWeight": 28,
+          "muscles": {
+            "shoulders": 1344,
+            "triceps": 537.6
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Seated Lateral Raises",
+          "sets": [
+            {
+              "reps": 7,
+              "weight": 28
+            },
+            {
+              "reps": 7,
+              "weight": 28
+            },
+            {
+              "reps": 7,
+              "weight": 28
+            },
+            {
+              "reps": 7,
+              "weight": 28
+            }
+          ],
+          "load": 784,
+          "top1RM": 34.53333333333333,
+          "topWeight": 28,
+          "muscles": {
+            "shoulders": 784
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Front Raises",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 16
+            },
+            {
+              "reps": 10,
+              "weight": 16
+            },
+            {
+              "reps": 10,
+              "weight": 16
+            }
+          ],
+          "load": 480,
+          "top1RM": 21.333333333333332,
+          "topWeight": 16,
+          "muscles": {
+            "shoulders": 480
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Pec Fly",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 28
+            },
+            {
+              "reps": 12,
+              "weight": 28
+            },
+            {
+              "reps": 12,
+              "weight": 28
+            },
+            {
+              "reps": 12,
+              "weight": 28
+            }
+          ],
+          "load": 1344,
+          "top1RM": 39.199999999999996,
+          "topWeight": 28,
+          "muscles": {
+            "chest": 1344,
+            "shoulders": 268.8
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Bench Press",
+          "sets": [
+            {
+              "reps": 15,
+              "weight": 28
+            },
+            {
+              "reps": 15,
+              "weight": 28
+            },
+            {
+              "reps": 15,
+              "weight": 28
+            },
+            {
+              "reps": 15,
+              "weight": 28
+            }
+          ],
+          "load": 1680,
+          "top1RM": 42,
+          "topWeight": 28,
+          "muscles": {
+            "chest": 1680,
+            "triceps": 672,
+            "shoulders": 504
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1782831600000,
+      "muscleLoad": {
+        "shoulders": 3380.8,
+        "triceps": 1209.6,
+        "chest": 3024
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-06-27T18:10",
+      "note": "Back (pull)",
+      "exercises": [
+        {
+          "name": "Diverging Seated Row",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 109
+            },
+            {
+              "reps": 6,
+              "weight": 109
+            },
+            {
+              "reps": 6,
+              "weight": 109
+            },
+            {
+              "reps": 6,
+              "weight": 109
+            }
+          ],
+          "load": 2616,
+          "top1RM": 130.79999999999998,
+          "topWeight": 109,
+          "muscles": {
+            "back": 2616,
+            "biceps": 1046.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Low Row",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 79
+            },
+            {
+              "reps": 6,
+              "weight": 79
+            },
+            {
+              "reps": 6,
+              "weight": 79
+            },
+            {
+              "reps": 6,
+              "weight": 79
+            }
+          ],
+          "load": 1896,
+          "top1RM": 94.8,
+          "topWeight": 79,
+          "muscles": {
+            "back": 1896,
+            "biceps": 758.4000000000001
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Reverse Incline DB Row",
+          "sets": [
+            {
+              "reps": 9,
+              "weight": 52
+            },
+            {
+              "reps": 9,
+              "weight": 52
+            },
+            {
+              "reps": 9,
+              "weight": 52
+            },
+            {
+              "reps": 9,
+              "weight": 52
+            }
+          ],
+          "load": 1872,
+          "top1RM": 67.60000000000001,
+          "topWeight": 52,
+          "muscles": {
+            "back": 1872,
+            "shoulders": 561.6,
+            "biceps": 561.6
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Pullover",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            }
+          ],
+          "load": 720,
+          "top1RM": 24,
+          "topWeight": 18,
+          "muscles": {
+            "back": 720,
+            "chest": 288
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dead Hang",
+          "sets": [
+            {
+              "seconds": 30
+            }
+          ],
+          "load": 2430,
+          "top1RM": 0,
+          "topWeight": 81,
+          "muscles": {
+            "forearms": 2430,
+            "back": 729
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1782583800000,
+      "muscleLoad": {
+        "back": 7833,
+        "biceps": 2366.4,
+        "shoulders": 561.6,
+        "chest": 288,
+        "forearms": 2430
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-06-27T08:15",
+      "note": "Beach walk — alternating sand",
+      "exercises": [
+        {
+          "name": "Outdoor Walk",
+          "distanceKm": 4.3,
+          "durationMin": 60,
+          "rpe": 6,
+          "load": 540,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 540,
+            "quads": 108,
+            "calves": 108
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1782548100000,
+      "muscleLoad": {
+        "cardio": 540,
+        "quads": 108,
+        "calves": 108
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-06-26T17:00",
+      "note": "Flat walk (road/sidewalk)",
+      "exercises": [
+        {
+          "name": "Outdoor Walk",
+          "distanceKm": 4.5,
+          "durationMin": 50,
+          "rpe": 3,
+          "load": 225,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 225,
+            "quads": 45,
+            "calves": 45
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1782493200000,
+      "muscleLoad": {
+        "cardio": 225,
+        "quads": 45,
+        "calves": 45
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-06-23T20:50",
+      "note": "Upper body (DB)",
+      "exercises": [
+        {
+          "name": "Dumbbell Pec Fly",
+          "sets": [
+            {
+              "reps": 7,
+              "weight": 36
+            },
+            {
+              "reps": 7,
+              "weight": 36
+            },
+            {
+              "reps": 7,
+              "weight": 36
+            },
+            {
+              "reps": 7,
+              "weight": 36
+            }
+          ],
+          "load": 1008,
+          "top1RM": 44.400000000000006,
+          "topWeight": 36,
+          "muscles": {
+            "chest": 1008
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Flat DB Triceps Extension",
+          "sets": [
+            {
+              "reps": 4,
+              "weight": 36
+            },
+            {
+              "reps": 4,
+              "weight": 36
+            },
+            {
+              "reps": 4,
+              "weight": 36
+            },
+            {
+              "reps": 4,
+              "weight": 36
+            }
+          ],
+          "load": 576,
+          "top1RM": 40.8,
+          "topWeight": 36,
+          "muscles": {
+            "triceps": 576
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Pullover",
+          "sets": [
+            {
+              "reps": 9,
+              "weight": 18
+            },
+            {
+              "reps": 9,
+              "weight": 18
+            },
+            {
+              "reps": 9,
+              "weight": 18
+            },
+            {
+              "reps": 9,
+              "weight": 18
+            }
+          ],
+          "load": 648,
+          "top1RM": 23.400000000000002,
+          "topWeight": 18,
+          "muscles": {
+            "back": 648,
+            "chest": 259.2
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Overhead DB Triceps Extension",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 18
+            },
+            {
+              "reps": 12,
+              "weight": 18
+            },
+            {
+              "reps": 12,
+              "weight": 18
+            },
+            {
+              "reps": 12,
+              "weight": 18
+            }
+          ],
+          "load": 864,
+          "top1RM": 25.2,
+          "topWeight": 18,
+          "muscles": {
+            "triceps": 864
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            }
+          ],
+          "load": 1152,
+          "top1RM": 45.599999999999994,
+          "topWeight": 36,
+          "muscles": {
+            "shoulders": 1152,
+            "triceps": 460.8
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Hammer Curl",
+          "sets": [
+            {
+              "reps": 4,
+              "weight": 20
+            },
+            {
+              "reps": 4,
+              "weight": 20
+            },
+            {
+              "reps": 4,
+              "weight": 20
+            },
+            {
+              "reps": 4,
+              "weight": 20
+            }
+          ],
+          "load": 320,
+          "top1RM": 22.666666666666664,
+          "topWeight": 20,
+          "muscles": {
+            "biceps": 320,
+            "forearms": 128
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline DB Curl",
+          "sets": [
+            {
+              "reps": 4,
+              "weight": 20
+            },
+            {
+              "reps": 4,
+              "weight": 20
+            },
+            {
+              "reps": 4,
+              "weight": 20
+            },
+            {
+              "reps": 4,
+              "weight": 20
+            }
+          ],
+          "load": 320,
+          "top1RM": 22.666666666666664,
+          "topWeight": 20,
+          "muscles": {
+            "biceps": 320
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1782247800000,
+      "muscleLoad": {
+        "chest": 1267.2,
+        "triceps": 1900.8,
+        "back": 648,
+        "shoulders": 1152,
+        "biceps": 640,
+        "forearms": 128
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-06-22T14:45",
+      "note": "Incline treadmill walk (4–8%, ~300 kcal)",
+      "exercises": [
+        {
+          "name": "Incline Walk",
+          "distanceKm": 3.5,
+          "durationMin": 40,
+          "rpe": 5,
+          "load": 300,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 300,
+            "quads": 60,
+            "calves": 60
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1782139500000,
+      "muscleLoad": {
+        "cardio": 300,
+        "quads": 60,
+        "calves": 60
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-06-20T08:10",
+      "note": "3 km guided run — Or Akiva (HR estimated)",
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 3.06,
+          "durationMin": 20.08,
+          "avgHr": 150,
+          "cadence": 158,
+          "elevationGainM": 15,
+          "load": 195.77999999999997,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 195.77999999999997,
+            "quads": 58.73399999999999,
+            "calves": 58.73399999999999
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1781943000000,
+      "muscleLoad": {
+        "cardio": 195.77999999999997,
+        "quads": 58.73399999999999,
+        "calves": 58.73399999999999
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-06-19T16:30",
+      "note": "Chest + Arms (DB)",
+      "exercises": [
+        {
+          "name": "Dumbbell Bench Press",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            }
+          ],
+          "load": 2304,
+          "top1RM": 67.19999999999999,
+          "topWeight": 48,
+          "muscles": {
+            "chest": 2304,
+            "triceps": 921.6,
+            "shoulders": 691.1999999999999
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Dumbbell Bench Press",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            }
+          ],
+          "load": 1920,
+          "top1RM": 64,
+          "topWeight": 48,
+          "muscles": {
+            "chest": 1920,
+            "shoulders": 768,
+            "triceps": 768
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Pec Fly",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            }
+          ],
+          "load": 1152,
+          "top1RM": 45.599999999999994,
+          "topWeight": 36,
+          "muscles": {
+            "chest": 1152,
+            "shoulders": 230.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Hammer Curl",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            }
+          ],
+          "load": 576,
+          "top1RM": 22.799999999999997,
+          "topWeight": 18,
+          "muscles": {
+            "biceps": 576,
+            "forearms": 230.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline DB Curl",
+          "sets": [
+            {
+              "reps": 5,
+              "weight": 18
+            },
+            {
+              "reps": 5,
+              "weight": 18
+            },
+            {
+              "reps": 5,
+              "weight": 18
+            },
+            {
+              "reps": 5,
+              "weight": 18
+            }
+          ],
+          "load": 360,
+          "top1RM": 21,
+          "topWeight": 18,
+          "muscles": {
+            "biceps": 360
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Flat DB Triceps Extension",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 32
+            },
+            {
+              "reps": 6,
+              "weight": 32
+            },
+            {
+              "reps": 6,
+              "weight": 32
+            },
+            {
+              "reps": 6,
+              "weight": 32
+            }
+          ],
+          "load": 768,
+          "top1RM": 38.4,
+          "topWeight": 32,
+          "muscles": {
+            "triceps": 768
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Overhead DB Triceps Extension",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 16
+            },
+            {
+              "reps": 12,
+              "weight": 16
+            },
+            {
+              "reps": 12,
+              "weight": 16
+            },
+            {
+              "reps": 12,
+              "weight": 16
+            }
+          ],
+          "load": 768,
+          "top1RM": 22.4,
+          "topWeight": 16,
+          "muscles": {
+            "triceps": 768
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1781886600000,
+      "muscleLoad": {
+        "chest": 5376,
+        "triceps": 3225.6,
+        "shoulders": 1689.6,
+        "biceps": 936,
+        "forearms": 230.4
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-06-16T13:30",
+      "note": "Back + Shoulders",
+      "exercises": [
+        {
+          "name": "Reverse Incline DB Row",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            }
+          ],
+          "load": 1920,
+          "top1RM": 64,
+          "topWeight": 48,
+          "muscles": {
+            "back": 1920,
+            "shoulders": 576,
+            "biceps": 576
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Pullover",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            }
+          ],
+          "load": 576,
+          "top1RM": 22.799999999999997,
+          "topWeight": 18,
+          "muscles": {
+            "back": 576,
+            "chest": 230.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            },
+            {
+              "reps": 8,
+              "weight": 36
+            }
+          ],
+          "load": 1152,
+          "top1RM": 45.599999999999994,
+          "topWeight": 36,
+          "muscles": {
+            "shoulders": 1152,
+            "triceps": 460.8
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Front Raises",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            },
+            {
+              "reps": 8,
+              "weight": 18
+            }
+          ],
+          "load": 576,
+          "top1RM": 22.799999999999997,
+          "topWeight": 18,
+          "muscles": {
+            "shoulders": 576
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Shoulder Shrugs",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            },
+            {
+              "reps": 10,
+              "weight": 48
+            }
+          ],
+          "load": 1920,
+          "top1RM": 64,
+          "topWeight": 48,
+          "muscles": {
+            "shoulders": 1344,
+            "back": 768
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Farmer's Hold",
+          "sets": [
+            {
+              "seconds": 30,
+              "weight": 48
+            },
+            {
+              "seconds": 30,
+              "weight": 48
+            },
+            {
+              "seconds": 30,
+              "weight": 48
+            },
+            {
+              "seconds": 30,
+              "weight": 48
+            }
+          ],
+          "load": 5760,
+          "top1RM": 0,
+          "topWeight": 48,
+          "muscles": {
+            "forearms": 5760,
+            "shoulders": 2304
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1781616600000,
+      "muscleLoad": {
+        "back": 3264,
+        "shoulders": 5952,
+        "biceps": 576,
+        "chest": 230.4,
+        "triceps": 460.8,
+        "forearms": 5760
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-06-14T23:28",
+      "note": "Legs / Glutes (home)",
+      "exercises": [
+        {
+          "name": "Dumbbell Sumo Squat",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 24
+            },
+            {
+              "reps": 12,
+              "weight": 24
+            },
+            {
+              "reps": 12,
+              "weight": 24
+            },
+            {
+              "reps": 12,
+              "weight": 24
+            }
+          ],
+          "load": 1152,
+          "top1RM": 33.599999999999994,
+          "topWeight": 24,
+          "muscles": {
+            "glutes": 1152,
+            "quads": 806.4,
+            "adductors": 576
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Calf Raise",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            }
+          ],
+          "load": 2304,
+          "top1RM": 67.19999999999999,
+          "topWeight": 48,
+          "muscles": {
+            "calves": 2304
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell RDL",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 24
+            },
+            {
+              "reps": 10,
+              "weight": 24
+            },
+            {
+              "reps": 10,
+              "weight": 24
+            },
+            {
+              "reps": 10,
+              "weight": 24
+            }
+          ],
+          "load": 960,
+          "top1RM": 32,
+          "topWeight": 24,
+          "muscles": {
+            "hamstrings": 960,
+            "glutes": 576,
+            "back": 288
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Hip Thrust",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 24
+            },
+            {
+              "reps": 12,
+              "weight": 24
+            },
+            {
+              "reps": 12,
+              "weight": 24
+            }
+          ],
+          "load": 864,
+          "top1RM": 33.599999999999994,
+          "topWeight": 24,
+          "muscles": {
+            "glutes": 864,
+            "hamstrings": 345.6
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1781479680000,
+      "muscleLoad": {
+        "glutes": 2592,
+        "quads": 806.4,
+        "adductors": 576,
+        "calves": 2304,
+        "hamstrings": 1305.6,
+        "back": 288
+      },
+      "isAerobic": false
+    },
+    {
+      "datetime": "2026-06-13T10:15",
+      "note": "Chest + Biceps + treadmill walk",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": [
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            }
+          ],
+          "load": 1450,
+          "top1RM": 84.58333333333334,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 1450,
+            "triceps": 580,
+            "shoulders": 435
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Bench Press",
+          "sets": [
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            }
+          ],
+          "load": 1450,
+          "top1RM": 84.58333333333334,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 1450,
+            "shoulders": 580,
+            "triceps": 580
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Decline Bench Press",
+          "sets": [
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            },
+            {
+              "reps": 5,
+              "weight": 72.5
+            }
+          ],
+          "load": 1450,
+          "top1RM": 84.58333333333334,
+          "topWeight": 72.5,
+          "muscles": {
+            "chest": 1450,
+            "triceps": 580
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Pec Fly",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 32
+            },
+            {
+              "reps": 8,
+              "weight": 32
+            },
+            {
+              "reps": 8,
+              "weight": 32
+            },
+            {
+              "reps": 8,
+              "weight": 32
+            }
+          ],
+          "load": 1024,
+          "top1RM": 40.53333333333333,
+          "topWeight": 32,
+          "muscles": {
+            "chest": 1024,
+            "shoulders": 204.8
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Hammer Curl",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 16
+            },
+            {
+              "reps": 8,
+              "weight": 16
+            },
+            {
+              "reps": 8,
+              "weight": 16
+            },
+            {
+              "reps": 8,
+              "weight": 16
+            }
+          ],
+          "load": 512,
+          "top1RM": 20.266666666666666,
+          "topWeight": 16,
+          "muscles": {
+            "biceps": 512,
+            "forearms": 204.8
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline DB Curl",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 16
+            },
+            {
+              "reps": 6,
+              "weight": 16
+            },
+            {
+              "reps": 6,
+              "weight": 16
+            },
+            {
+              "reps": 6,
+              "weight": 16
+            }
+          ],
+          "load": 384,
+          "top1RM": 19.2,
+          "topWeight": 16,
+          "muscles": {
+            "biceps": 384
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Walk",
+          "durationMin": 15,
+          "distanceKm": 1,
+          "rpe": 3,
+          "load": 67.5,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 67.5,
+            "quads": 13.5,
+            "calves": 13.5
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1781345700000,
+      "muscleLoad": {
+        "chest": 5374,
+        "triceps": 1740,
+        "shoulders": 1219.8,
+        "biceps": 896,
+        "forearms": 204.8,
+        "cardio": 67.5,
+        "quads": 13.5,
+        "calves": 13.5
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-05-08T18:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 2,
+          "durationMin": 13.2,
+          "avgHr": 148,
+          "load": 124.74,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 124.74,
+            "quads": 37.422,
+            "calves": 37.422
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1778263200000,
+      "muscleLoad": {
+        "cardio": 124.74,
+        "quads": 37.422,
+        "calves": 37.422
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-05-01T19:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "durationMin": 70,
+          "rpe": 5,
+          "load": 525,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 525,
+            "quads": 210
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1777662000000,
+      "muscleLoad": {
+        "cardio": 525,
+        "quads": 210
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-04-21T18:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 2.5,
+          "durationMin": 16.4,
+          "avgHr": 145,
+          "load": 150.06,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 150.06,
+            "quads": 45.018,
+            "calves": 45.018
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1776794400000,
+      "muscleLoad": {
+        "cardio": 150.06,
+        "quads": 45.018,
+        "calves": 45.018
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-04-05T08:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Incline Walk",
+          "distanceKm": 2.98,
+          "durationMin": 35.1,
+          "avgHr": 117,
+          "load": 189.54000000000002,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 189.54000000000002,
+            "quads": 37.90800000000001,
+            "calves": 37.90800000000001
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1775376000000,
+      "muscleLoad": {
+        "cardio": 189.54000000000002,
+        "quads": 37.90800000000001,
+        "calves": 37.90800000000001
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-04-02T08:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Incline Walk",
+          "distanceKm": 3.84,
+          "durationMin": 42,
+          "avgHr": 115,
+          "load": 214.2,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 214.2,
+            "quads": 42.84,
+            "calves": 42.84
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1775116800000,
+      "muscleLoad": {
+        "cardio": 214.2,
+        "quads": 42.84,
+        "calves": 42.84
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-03-30T08:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Incline Walk",
+          "distanceKm": 3.38,
+          "durationMin": 39.4,
+          "rpe": 4,
+          "load": 236.39999999999998,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 236.39999999999998,
+            "quads": 47.28,
+            "calves": 47.28
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1774857600000,
+      "muscleLoad": {
+        "cardio": 236.39999999999998,
+        "quads": 47.28,
+        "calves": 47.28
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-03-23T18:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 2,
+          "durationMin": 12.5,
+          "avgHr": 147,
+          "load": 116.25,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 116.25,
+            "quads": 34.875,
+            "calves": 34.875
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1774288800000,
+      "muscleLoad": {
+        "cardio": 116.25,
+        "quads": 34.875,
+        "calves": 34.875
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-03-16T18:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 2.5,
+          "durationMin": 16.1,
+          "avgHr": 147,
+          "load": 149.73000000000002,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 149.73000000000002,
+            "quads": 44.919000000000004,
+            "calves": 44.919000000000004
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1773684000000,
+      "muscleLoad": {
+        "cardio": 149.73000000000002,
+        "quads": 44.919000000000004,
+        "calves": 44.919000000000004
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-03-11T18:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 2.51,
+          "durationMin": 14.7,
+          "avgHr": 154,
+          "load": 149.94,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 149.94,
+            "quads": 44.982,
+            "calves": 44.982
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1773252000000,
+      "muscleLoad": {
+        "cardio": 149.94,
+        "quads": 44.982,
+        "calves": 44.982
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-03-02T18:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Rehabilitation Run",
+          "distanceKm": 3,
+          "durationMin": 22.1,
+          "avgHr": 145,
+          "load": 202.215,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 202.215,
+            "quads": 40.443000000000005,
+            "calves": 40.443000000000005
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1772474400000,
+      "muscleLoad": {
+        "cardio": 202.215,
+        "quads": 40.443000000000005,
+        "calves": 40.443000000000005
+      },
+      "isAerobic": true
+    },
+    {
+      "datetime": "2026-02-27T09:00",
+      "timeUnknown": true,
+      "exercises": [
+        {
+          "name": "Long Run",
+          "distanceKm": 10,
+          "durationMin": 66.25,
+          "avgHr": 156,
+          "load": 695.625,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 695.625,
+            "quads": 208.6875,
+            "calves": 208.6875
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1772182800000,
+      "muscleLoad": {
+        "cardio": 695.625,
+        "quads": 208.6875,
+        "calves": 208.6875
+      },
+      "isAerobic": true
+    }
+  ],
+  "ref": {
+    "chest": 6270,
+    "back": 9730,
+    "shoulders": 6345.4,
+    "biceps": 2828.8,
+    "triceps": 4504,
+    "forearms": 12795,
+    "quads": 14905.6,
+    "hamstrings": 7872,
+    "glutes": 7996,
+    "adductors": 2472,
+    "calves": 8882,
+    "core": 14351.4,
+    "cardio": 783
+  },
+  "fatigue": {
+    "chest": {
+      "key": "chest",
+      "label": "Chest",
+      "section": "Chest",
+      "pct": 99,
+      "readyInHours": 71.6,
+      "ready": false
+    },
+    "back": {
+      "key": "back",
+      "label": "Back",
+      "section": "Back",
+      "pct": 19,
+      "readyInHours": 0,
+      "ready": true
+    },
+    "shoulders": {
+      "key": "shoulders",
+      "label": "Shoulders",
+      "section": "Shoulders",
+      "pct": 31,
+      "readyInHours": 1.4,
+      "ready": false
+    },
+    "biceps": {
+      "key": "biceps",
+      "label": "Biceps",
+      "section": "Arms",
+      "pct": 19,
+      "readyInHours": 0,
+      "ready": true
+    },
+    "triceps": {
+      "key": "triceps",
+      "label": "Triceps",
+      "section": "Arms",
+      "pct": 41,
+      "readyInHours": 12.5,
+      "ready": false
+    },
+    "forearms": {
+      "key": "forearms",
+      "label": "Forearms",
+      "section": "Arms",
+      "pct": 7,
+      "readyInHours": 0,
+      "ready": true
+    },
+    "quads": {
+      "key": "quads",
+      "label": "Quads",
+      "section": "Legs",
+      "pct": 4,
+      "readyInHours": 0,
+      "ready": true
+    },
+    "hamstrings": {
+      "key": "hamstrings",
+      "label": "Hamstrings",
+      "section": "Legs",
+      "pct": 0,
+      "readyInHours": 0,
+      "ready": true
+    },
+    "glutes": {
+      "key": "glutes",
+      "label": "Glutes",
+      "section": "Legs",
+      "pct": 5,
+      "readyInHours": 0,
+      "ready": true
+    },
+    "adductors": {
+      "key": "adductors",
+      "label": "Adductors",
+      "section": "Legs",
+      "pct": 0,
+      "readyInHours": 0,
+      "ready": true
+    },
+    "calves": {
+      "key": "calves",
+      "label": "Calves",
+      "section": "Legs",
+      "pct": 0,
+      "readyInHours": 0,
+      "ready": true
+    },
+    "core": {
+      "key": "core",
+      "label": "Core",
+      "section": "Core",
+      "pct": 59,
+      "readyInHours": 20.4,
+      "ready": false
+    },
+    "cardio": {
+      "key": "cardio",
+      "label": "Cardio",
+      "section": "Cardio",
+      "pct": 0,
+      "readyInHours": 0,
+      "ready": true
+    }
+  },
+  "sections": {
+    "Chest": {
+      "section": "Chest",
+      "pct": 99,
+      "readyInHours": 71.6,
+      "muscles": [
+        {
+          "key": "chest",
+          "label": "Chest",
+          "section": "Chest",
+          "pct": 99,
+          "readyInHours": 71.6,
+          "ready": false
+        }
+      ]
+    },
+    "Back": {
+      "section": "Back",
+      "pct": 19,
+      "readyInHours": 0,
+      "muscles": [
+        {
+          "key": "back",
+          "label": "Back",
+          "section": "Back",
+          "pct": 19,
+          "readyInHours": 0,
+          "ready": true
+        }
+      ]
+    },
+    "Shoulders": {
+      "section": "Shoulders",
+      "pct": 31,
+      "readyInHours": 1.4,
+      "muscles": [
+        {
+          "key": "shoulders",
+          "label": "Shoulders",
+          "section": "Shoulders",
+          "pct": 31,
+          "readyInHours": 1.4,
+          "ready": false
+        }
+      ]
+    },
+    "Arms": {
+      "section": "Arms",
+      "pct": 22,
+      "readyInHours": 12.5,
+      "muscles": [
+        {
+          "key": "triceps",
+          "label": "Triceps",
+          "section": "Arms",
+          "pct": 41,
+          "readyInHours": 12.5,
+          "ready": false
+        },
+        {
+          "key": "biceps",
+          "label": "Biceps",
+          "section": "Arms",
+          "pct": 19,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "forearms",
+          "label": "Forearms",
+          "section": "Arms",
+          "pct": 7,
+          "readyInHours": 0,
+          "ready": true
+        }
+      ]
+    },
+    "Legs": {
+      "section": "Legs",
+      "pct": 2,
+      "readyInHours": 0,
+      "muscles": [
+        {
+          "key": "glutes",
+          "label": "Glutes",
+          "section": "Legs",
+          "pct": 5,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "quads",
+          "label": "Quads",
+          "section": "Legs",
+          "pct": 4,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "hamstrings",
+          "label": "Hamstrings",
+          "section": "Legs",
+          "pct": 0,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "adductors",
+          "label": "Adductors",
+          "section": "Legs",
+          "pct": 0,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "calves",
+          "label": "Calves",
+          "section": "Legs",
+          "pct": 0,
+          "readyInHours": 0,
+          "ready": true
+        }
+      ]
+    },
+    "Core": {
+      "section": "Core",
+      "pct": 59,
+      "readyInHours": 20.4,
+      "muscles": [
+        {
+          "key": "core",
+          "label": "Core",
+          "section": "Core",
+          "pct": 59,
+          "readyInHours": 20.4,
+          "ready": false
+        }
+      ]
+    },
+    "Cardio": {
+      "section": "Cardio",
+      "pct": 0,
+      "readyInHours": 0,
+      "muscles": [
+        {
+          "key": "cardio",
+          "label": "Cardio",
+          "section": "Cardio",
+          "pct": 0,
+          "readyInHours": 0,
+          "ready": true
+        }
+      ]
+    }
+  },
+  "progress": {
+    "Chest": [
+      {
+        "name": "Bench Press",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "72.5kg × 4×8",
+        "bestText": "72.5kg × 4×8",
+        "latestVol": 2320,
+        "bestVol": 2320,
+        "pct": 100,
+        "latest1RM": 91.8,
+        "best1RM": 91.8,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": true
+      },
+      {
+        "name": "Dumbbell Bench Press",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "14kg each × 4×15",
+        "bestText": "24kg each × 4×12",
+        "latestVol": 1680,
+        "bestVol": 2304,
+        "pct": 63,
+        "latest1RM": 42,
+        "best1RM": 67.2,
+        "metric": "1RM",
+        "isPR": false,
+        "belowPR": true,
+        "gap": 25,
+        "inToday": false
+      },
+      {
+        "name": "Incline Bench Press",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "72.5kg × 4×7",
+        "bestText": "72.5kg × 4×7",
+        "latestVol": 2030,
+        "bestVol": 2030,
+        "pct": 100,
+        "latest1RM": 89.4,
+        "best1RM": 89.4,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": true
+      },
+      {
+        "name": "Incline Dumbbell Bench Press",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "24kg each × 4×10",
+        "bestText": "24kg each × 4×10",
+        "latestVol": 1920,
+        "bestVol": 1920,
+        "pct": 100,
+        "latest1RM": 64,
+        "best1RM": 64,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Decline Bench Press",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "72.5kg × 4×6",
+        "bestText": "72.5kg × 4×6",
+        "latestVol": 1740,
+        "bestVol": 1740,
+        "pct": 100,
+        "latest1RM": 87,
+        "best1RM": 87,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Incline Pec Fly",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "18kg each × 4×9",
+        "bestText": "18kg each × 4×9",
+        "latestVol": 1296,
+        "bestVol": 1296,
+        "pct": 100,
+        "latest1RM": 46.8,
+        "best1RM": 46.8,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": true
+      },
+      {
+        "name": "Dumbbell Pec Fly",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "18kg each × 4×7",
+        "bestText": "16kg each × 4×8",
+        "latestVol": 1008,
+        "bestVol": 1024,
+        "pct": 100,
+        "latest1RM": 44.4,
+        "best1RM": 40.5,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Pec Fly Machine",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "73kg × 3×6 (deload)",
+        "bestText": "84kg × 3×8",
+        "latestVol": 1314,
+        "bestVol": 2016,
+        "pct": 82,
+        "latest1RM": 87.6,
+        "best1RM": 106.4,
+        "metric": "1RM",
+        "isPR": false,
+        "belowPR": true,
+        "gap": 19,
+        "inToday": false
+      },
+      {
+        "name": "Chest Press Machine",
+        "section": "Chest",
+        "iso": false,
+        "latestText": "73kg × 4×4",
+        "bestText": "73kg × 4×6",
+        "latestVol": 1168,
+        "bestVol": 1752,
+        "pct": 94,
+        "latest1RM": 82.7,
+        "best1RM": 87.6,
+        "metric": "1RM",
+        "isPR": false,
+        "belowPR": true,
+        "gap": 5,
+        "inToday": false
+      }
+    ],
+    "Back": [
+      {
+        "name": "Diverging Seated Row",
+        "section": "Back",
+        "iso": false,
+        "latestText": "84kg × 4×6 (deload)",
+        "bestText": "97kg × 4×8",
+        "latestVol": 2016,
+        "bestVol": 3104,
+        "pct": 82,
+        "latest1RM": 100.8,
+        "best1RM": 122.9,
+        "metric": "1RM",
+        "isPR": false,
+        "belowPR": true,
+        "gap": 22,
+        "inToday": false
+      },
+      {
+        "name": "Low Row",
+        "section": "Back",
+        "iso": false,
+        "latestText": "79kg × 4×8",
+        "bestText": "79kg × 4×8",
+        "latestVol": 2528,
+        "bestVol": 2528,
+        "pct": 100,
+        "latest1RM": 100.1,
+        "best1RM": 100.1,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Lat Pulldown (Triangle)",
+        "section": "Back",
+        "iso": false,
+        "latestText": "77kg × 3×8",
+        "bestText": "77kg × 3×8",
+        "latestVol": 1848,
+        "bestVol": 1848,
+        "pct": 100,
+        "latest1RM": 97.5,
+        "best1RM": 97.5,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Reverse Incline DB Row",
+        "section": "Back",
+        "iso": false,
+        "latestText": "26kg each × 4×8",
+        "bestText": "26kg each × 4×8",
+        "latestVol": 1664,
+        "bestVol": 1664,
+        "pct": 100,
+        "latest1RM": 65.9,
+        "best1RM": 65.9,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Dumbbell Pullover",
+        "section": "Back",
+        "iso": false,
+        "latestText": "18kg × 4×10",
+        "bestText": "18kg × 4×10",
+        "latestVol": 720,
+        "bestVol": 720,
+        "pct": 100,
+        "latest1RM": 24,
+        "best1RM": 24,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Dead Hang",
+        "section": "Back",
+        "iso": true,
+        "latestText": "25 sec × 3",
+        "bestText": "25 sec × 3",
+        "latestVol": 6075,
+        "bestVol": 6075,
+        "pct": 100,
+        "latest1RM": 0,
+        "best1RM": 0,
+        "metric": "load",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      }
+    ],
+    "Shoulders": [
+      {
+        "name": "Converging Shoulder Press",
+        "section": "Shoulders",
+        "iso": false,
+        "latestText": "68kg × 4×6 (deload)",
+        "bestText": "79kg × 4×8",
+        "latestVol": 1632,
+        "bestVol": 2528,
+        "pct": 82,
+        "latest1RM": 81.6,
+        "best1RM": 100.1,
+        "metric": "1RM",
+        "isPR": false,
+        "belowPR": true,
+        "gap": 18,
+        "inToday": false
+      },
+      {
+        "name": "Dumbbell Shoulder Press",
+        "section": "Shoulders",
+        "iso": false,
+        "latestText": "18kg each × 4×9",
+        "bestText": "18kg each × 4×9",
+        "latestVol": 1296,
+        "bestVol": 1296,
+        "pct": 100,
+        "latest1RM": 46.8,
+        "best1RM": 46.8,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Lateral Raises",
+        "section": "Shoulders",
+        "iso": false,
+        "latestText": "16kg each × 4×8",
+        "bestText": "16kg each × 4×8",
+        "latestVol": 1024,
+        "bestVol": 1024,
+        "pct": 100,
+        "latest1RM": 40.5,
+        "best1RM": 40.5,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Seated Lateral Raises",
+        "section": "Shoulders",
+        "iso": false,
+        "latestText": "14kg each × 4×7",
+        "bestText": "14kg each × 4×7",
+        "latestVol": 784,
+        "bestVol": 784,
+        "pct": 100,
+        "latest1RM": 34.5,
+        "best1RM": 34.5,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Front Raises",
+        "section": "Shoulders",
+        "iso": false,
+        "latestText": "18kg KB × 4×8",
+        "bestText": "18kg KB × 4×8",
+        "latestVol": 576,
+        "bestVol": 576,
+        "pct": 100,
+        "latest1RM": 22.8,
+        "best1RM": 22.8,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Rear Delt Machine",
+        "section": "Shoulders",
+        "iso": false,
+        "latestText": "73kg × 3×9",
+        "bestText": "73kg × 3×9",
+        "latestVol": 1971,
+        "bestVol": 1971,
+        "pct": 100,
+        "latest1RM": 94.9,
+        "best1RM": 94.9,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Shoulder Shrugs",
+        "section": "Shoulders",
+        "iso": false,
+        "latestText": "24kg each × 4×11",
+        "bestText": "24kg each × 4×11",
+        "latestVol": 2112,
+        "bestVol": 2112,
+        "pct": 100,
+        "latest1RM": 65.6,
+        "best1RM": 65.6,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Farmer's Hold",
+        "section": "Shoulders",
+        "iso": true,
+        "latestText": "24kg each × 4×30s",
+        "bestText": "24kg each × 4×30s",
+        "latestVol": 5760,
+        "bestVol": 5760,
+        "pct": 100,
+        "latest1RM": 0,
+        "best1RM": 0,
+        "metric": "load",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      }
+    ],
+    "Arms": [
+      {
+        "name": "Flat DB Triceps Extension",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "18kg each × 4×4",
+        "bestText": "16kg each × 4×6",
+        "latestVol": 576,
+        "bestVol": 768,
+        "pct": 100,
+        "latest1RM": 40.8,
+        "best1RM": 38.4,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Overhead DB Triceps Extension",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "18kg × 4×12",
+        "bestText": "18kg × 4×12",
+        "latestVol": 864,
+        "bestVol": 864,
+        "pct": 100,
+        "latest1RM": 25.2,
+        "best1RM": 25.2,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Seated Dips",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "62kg × 4×8",
+        "bestText": "62kg × 4×8",
+        "latestVol": 1984,
+        "bestVol": 1984,
+        "pct": 100,
+        "latest1RM": 78.5,
+        "best1RM": 78.5,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Triceps Extension Machine",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "41kg × 3×8",
+        "bestText": "41kg × 3×8",
+        "latestVol": 984,
+        "bestVol": 984,
+        "pct": 100,
+        "latest1RM": 51.9,
+        "best1RM": 51.9,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Rope Cable Extension",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "64kg × 4×6 (deload)",
+        "bestText": "75kg × 4×8",
+        "latestVol": 1536,
+        "bestVol": 2400,
+        "pct": 81,
+        "latest1RM": 76.8,
+        "best1RM": 95,
+        "metric": "1RM",
+        "isPR": false,
+        "belowPR": true,
+        "gap": 18,
+        "inToday": false
+      },
+      {
+        "name": "Single-Hand DB Triceps Extension",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "12kg each × 4×8",
+        "bestText": "12kg each × 4×8",
+        "latestVol": 384,
+        "bestVol": 384,
+        "pct": 100,
+        "latest1RM": 15.2,
+        "best1RM": 15.2,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Incline Hammer Curl",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "18kg each × 4×8",
+        "bestText": "18kg each × 4×8",
+        "latestVol": 576,
+        "bestVol": 576,
+        "pct": 100,
+        "latest1RM": 22.8,
+        "best1RM": 22.8,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Incline DB Curl",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "18kg each × 4×6",
+        "bestText": "18kg each × 4×6",
+        "latestVol": 432,
+        "bestVol": 432,
+        "pct": 100,
+        "latest1RM": 21.6,
+        "best1RM": 21.6,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Hammer Curl",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "20kg × 4×10",
+        "bestText": "20kg × 4×10",
+        "latestVol": 800,
+        "bestVol": 800,
+        "pct": 100,
+        "latest1RM": 26.7,
+        "best1RM": 26.7,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Preacher Curl",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "12.5kg each + bar × 3×7",
+        "bestText": "12.5kg each + bar × 3×7",
+        "latestVol": 735,
+        "bestVol": 735,
+        "pct": 100,
+        "latest1RM": 43.2,
+        "best1RM": 43.2,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Biceps Curl Machine",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "45kg × 2×6",
+        "bestText": "45kg × 3×6",
+        "latestVol": 540,
+        "bestVol": 810,
+        "pct": 100,
+        "latest1RM": 54,
+        "best1RM": 54,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Half Curl",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "18kg each × 4×5",
+        "bestText": "18kg each × 4×5",
+        "latestVol": 720,
+        "bestVol": 720,
+        "pct": 100,
+        "latest1RM": 42,
+        "best1RM": 42,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Forearm Twists",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "12kg each × 4×10",
+        "bestText": "12kg each × 4×10",
+        "latestVol": 960,
+        "bestVol": 960,
+        "pct": 100,
+        "latest1RM": 32,
+        "best1RM": 32,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      }
+    ],
+    "Legs": [
+      {
+        "name": "Calf Raises Machine",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "76kg × 4×11",
+        "bestText": "76kg × 4×11",
+        "latestVol": 3344,
+        "bestVol": 3344,
+        "pct": 100,
+        "latest1RM": 103.9,
+        "best1RM": 103.9,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Standing Calf Raises (Frame)",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "73.5kg × 4×11",
+        "bestText": "73.5kg × 4×11",
+        "latestVol": 3234,
+        "bestVol": 3234,
+        "pct": 100,
+        "latest1RM": 100.5,
+        "best1RM": 100.5,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Dumbbell Calf Raise",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "24kg each × 4×12",
+        "bestText": "24kg each × 4×12",
+        "latestVol": 2304,
+        "bestVol": 2304,
+        "pct": 100,
+        "latest1RM": 67.2,
+        "best1RM": 67.2,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Leg Press",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "132kg × 4×10",
+        "bestText": "132kg × 4×10",
+        "latestVol": 5280,
+        "bestVol": 5280,
+        "pct": 100,
+        "latest1RM": 176,
+        "best1RM": 176,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Angled Leg Press",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "172kg × 4×5 (deload)",
+        "bestText": "202kg setup (70kg each side + 62kg frame) × 4×7",
+        "latestVol": 3440,
+        "bestVol": 5656,
+        "pct": 81,
+        "latest1RM": 200.7,
+        "best1RM": 249.1,
+        "metric": "1RM",
+        "isPR": false,
+        "belowPR": true,
+        "gap": 48,
+        "inToday": false
+      },
+      {
+        "name": "Leg Extensions",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "111kg × 4×12",
+        "bestText": "111kg × 4×12",
+        "latestVol": 5328,
+        "bestVol": 5328,
+        "pct": 100,
+        "latest1RM": 155.4,
+        "best1RM": 155.4,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Single-Leg Extensions",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "57kg each × 4×6",
+        "bestText": "57kg each × 4×6",
+        "latestVol": 1368,
+        "bestVol": 1368,
+        "pct": 100,
+        "latest1RM": 68.4,
+        "best1RM": 68.4,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Leg Curls",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "111kg × 4×12",
+        "bestText": "111kg × 4×12",
+        "latestVol": 5328,
+        "bestVol": 5328,
+        "pct": 100,
+        "latest1RM": 155.4,
+        "best1RM": 155.4,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Outer Thigh",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "79kg × 4×10",
+        "bestText": "79kg × 5×10",
+        "latestVol": 3160,
+        "bestVol": 3950,
+        "pct": 100,
+        "latest1RM": 105.3,
+        "best1RM": 105.3,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Inner Thigh",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "79kg × 3×8",
+        "bestText": "79kg × 3×8",
+        "latestVol": 1896,
+        "bestVol": 1896,
+        "pct": 100,
+        "latest1RM": 100.1,
+        "best1RM": 100.1,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Glute Extension",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "59kg × 1×5 each",
+        "bestText": "59kg × 1×5 each",
+        "latestVol": 295,
+        "bestVol": 295,
+        "pct": 100,
+        "latest1RM": 68.8,
+        "best1RM": 68.8,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Dumbbell RDL",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "24kg × 4×10",
+        "bestText": "24kg × 6×8",
+        "latestVol": 960,
+        "bestVol": 1152,
+        "pct": 100,
+        "latest1RM": 32,
+        "best1RM": 30.4,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Dumbbell Sumo Squat",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "24kg × 4×12",
+        "bestText": "24kg × 6×8",
+        "latestVol": 1152,
+        "bestVol": 1152,
+        "pct": 100,
+        "latest1RM": 33.6,
+        "best1RM": 30.4,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Hip Thrust",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "24kg × 3×12",
+        "bestText": "24kg × 3×12",
+        "latestVol": 864,
+        "bestVol": 864,
+        "pct": 100,
+        "latest1RM": 33.6,
+        "best1RM": 33.6,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Glute Bridge",
+        "section": "Legs",
+        "iso": false,
+        "latestText": "BW × 2×12",
+        "bestText": "BW × 2×12",
+        "latestVol": 1872,
+        "bestVol": 1872,
+        "pct": 100,
+        "latest1RM": 109.2,
+        "best1RM": 109.2,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      }
+    ],
+    "Core": [
+      {
+        "name": "Plank",
+        "section": "Core",
+        "iso": true,
+        "latestText": "BW × 3×35s",
+        "bestText": "BW × 3×35s",
+        "latestVol": 8505,
+        "bestVol": 8505,
+        "pct": 100,
+        "latest1RM": 0,
+        "best1RM": 0,
+        "metric": "load",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": true
+      },
+      {
+        "name": "VKR",
+        "section": "Core",
+        "iso": false,
+        "latestText": "BW × 4×10",
+        "bestText": "BW × 4×10",
+        "latestVol": 3248,
+        "bestVol": 3248,
+        "pct": 100,
+        "latest1RM": 108.3,
+        "best1RM": 108.3,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "VKR to Sides",
+        "section": "Core",
+        "iso": false,
+        "latestText": "BW × 4×8",
+        "bestText": "BW × 4×8",
+        "latestVol": 2598,
+        "bestVol": 2598,
+        "pct": 100,
+        "latest1RM": 102.9,
+        "best1RM": 102.9,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      }
+    ]
+  },
+  "balance": {
+    "bySection": {
+      "Chest": 15557.6,
+      "Arms": 32046.800000000003,
+      "Shoulders": 15549.4,
+      "Back": 12322.599999999999,
+      "Legs": 48191,
+      "Core": 14351.4
+    },
+    "pushPull": 1.43,
+    "quadHam": 2.02,
+    "hasCore": true
+  },
+  "trends": {
+    "weeks": [
+      {
+        "label": "-5w",
+        "stress": 408,
+        "sessions": 4,
+        "acwr": 1.37
+      },
+      {
+        "label": "-4w",
+        "stress": 585,
+        "sessions": 5,
+        "acwr": 1.32
+      },
+      {
+        "label": "-3w",
+        "stress": 338,
+        "sessions": 2,
+        "acwr": 0.74
+      },
+      {
+        "label": "-2w",
+        "stress": 401,
+        "sessions": 4,
+        "acwr": 0.93
+      },
+      {
+        "label": "-1w",
+        "stress": 735,
+        "sessions": 3,
+        "acwr": 1.43
+      },
+      {
+        "label": "This wk",
+        "stress": 571,
+        "sessions": 3,
+        "acwr": 1.12
+      }
+    ],
+    "acute": 787,
+    "chronic": 565,
+    "acwr": 1.39,
+    "acwrZone": "caution",
+    "sessions28": 13
+  },
+  "recommendation": {
+    "section": "Back",
+    "fatigue": 19,
+    "restHours": 0,
+    "readyNow": true,
+    "readyAt": "2026-08-03T19:58:46.348Z",
+    "neverLogged": false,
+    "daysSince": 13.2,
+    "suggestedExercises": [
+      {
+        "name": "Diverging Seated Row",
+        "best": "97kg × 4×8",
+        "best1RM": 122.9,
+        "iso": false,
+        "target": {
+          "status": "rebuild",
+          "text": "Rebuild to best (97kg × 4×8)",
+          "note": "Last session came in under your best (97kg × 4×8) — rebuild to that before pushing further."
+        }
+      },
+      {
+        "name": "Low Row",
+        "best": "79kg × 4×8",
+        "best1RM": 100.1,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×9 from 79kg × 4×8."
+        }
+      },
+      {
+        "name": "Lat Pulldown (Triangle)",
+        "best": "77kg × 3×8",
+        "best1RM": 97.5,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 3×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×9 from 77kg × 3×8."
+        }
+      },
+      {
+        "name": "Reverse Incline DB Row",
+        "best": "26kg each × 4×8",
+        "best1RM": 65.9,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×9 from 26kg each × 4×8."
+        }
+      },
+      {
+        "name": "Dumbbell Pullover",
+        "best": "18kg × 4×10",
+        "best1RM": 24,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×11)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 18kg × 4×10."
+        }
+      },
+      {
+        "name": "Dead Hang",
+        "best": "25 sec × 3",
+        "best1RM": 0,
+        "iso": true,
+        "target": {
+          "status": "progress",
+          "text": "+5s (aim 3×30s)",
+          "note": "Add 5s per set from your best (25 sec × 3) — aim for 3×30s."
+        }
+      }
+    ],
+    "guidance": [
+      "Push is ahead of pull 1.43× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short.",
+      "Load ratio 1.39 is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR."
+    ],
+    "ranked": [
+      {
+        "section": "Back",
+        "fatigue": 19,
+        "readyInHours": 0,
+        "daysSince": 13.2
+      },
+      {
+        "section": "Legs",
+        "fatigue": 2,
+        "readyInHours": 0,
+        "daysSince": 9.4
+      },
+      {
+        "section": "Shoulders",
+        "fatigue": 31,
+        "readyInHours": 1.4,
+        "daysSince": 10.4
+      },
+      {
+        "section": "Arms",
+        "fatigue": 22,
+        "readyInHours": 12.5,
+        "daysSince": 2.5
+      },
+      {
+        "section": "Chest",
+        "fatigue": 99,
+        "readyInHours": 71.6,
+        "daysSince": 19.5
+      }
+    ],
+    "suggestedCount": 5,
+    "totalAvailable": 6,
+    "typicalSessionSize": 5,
+    "aerobicLast7": 0,
+    "aerobicTarget": 2,
+    "daysSinceAerobic": 15.3
+  },
+  "alerts": [
+    {
+      "level": "med",
+      "title": "Load climbing fast",
+      "detail": "Load ratio 1.39 (sweet spot 0.8–1.3). Keep added volume under ~10% next week."
+    },
+    {
+      "level": "med",
+      "title": "Push outpacing pull",
+      "detail": "Push volume is 1.43× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+    },
+    {
+      "level": "low",
+      "title": "Chest fatigued (99%)",
+      "detail": "Recovers in ~71.6h. Avoid loading it hard before then — you trained it most recently."
+    }
+  ],
+  "changes": [
+    "You're below your PR on 7 lifts — closest wins first: Dumbbell Bench Press (63% of best), Rope Cable Extension (81% of best), Angled Leg Press (81% of best). Add a rep or a set before adding weight.",
+    "Add pulling volume — push is 1.43× your pull. Aim toward ~1:1 to keep shoulders healthy.",
+    "Bring cardio back into the week (last logged 15.3 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
+  ],
+  "timing": {
+    "avgGap": 4.1,
+    "longestGap": 35.7,
+    "perWeek": 3.3,
+    "avgHour": 14,
+    "todPref": "afternoon",
+    "dow": [
+      4,
+      9,
+      5,
+      3,
+      2,
+      7,
+      9
+    ],
+    "daysSinceLast": 0,
+    "total": 39
+  },
+  "relstrength": {
+    "bodyweightKg": 81,
+    "items": [
+      {
+        "name": "Leg Press",
+        "oneRM": 176,
+        "ratio": 2.17
+      },
+      {
+        "name": "Diverging Seated Row",
+        "oneRM": 122.9,
+        "ratio": 1.52
+      },
+      {
+        "name": "Converging Shoulder Press",
+        "oneRM": 100.1,
+        "ratio": 1.24
+      },
+      {
+        "name": "Low Row",
+        "oneRM": 100.1,
+        "ratio": 1.24
+      },
+      {
+        "name": "Bench Press",
+        "oneRM": 91.8,
+        "ratio": 1.13
+      },
+      {
+        "name": "Incline Bench Press",
+        "oneRM": 89.4,
+        "ratio": 1.1
+      },
+      {
+        "name": "Decline Bench Press",
+        "oneRM": 87,
+        "ratio": 1.07
+      },
+      {
+        "name": "Seated Dips",
+        "oneRM": 78.5,
+        "ratio": 0.97
+      }
+    ]
+  },
+  "aerobic": {
+    "any": true,
+    "count": 21,
+    "km7": 0,
+    "km28": 5.7,
+    "totalKm": 92.1,
+    "longest": 13.35,
+    "avgHr": 142,
+    "bestPace": 5.7711442786069655,
+    "avgPace": 9.459773209652251,
+    "paceTrend": -4.63,
+    "zones": {
+      "Z1": 0,
+      "Z2": 2,
+      "Z3": 6,
+      "Z4": 2,
+      "Z5": 0
+    },
+    "maxHr": 190,
+    "daysSinceLast": 15.3,
+    "recent": [
+      {
+        "t": 1784462400000,
+        "name": "Outdoor Run",
+        "distanceKm": 3.7,
+        "durationMin": 25,
+        "avgHr": null,
+        "pace": 6.756756756756756
+      },
+      {
+        "t": 1783579500000,
+        "name": "Outdoor Run",
+        "distanceKm": 2.01,
+        "durationMin": 11.6,
+        "avgHr": null,
+        "pace": 5.7711442786069655
+      },
+      {
+        "t": 1783252800000,
+        "name": "Outdoor Walk",
+        "distanceKm": 13.35,
+        "durationMin": 174,
+        "avgHr": null,
+        "pace": 13.03370786516854
+      },
+      {
+        "t": 1783166400000,
+        "name": "Outdoor Walk",
+        "distanceKm": 10.43,
+        "durationMin": 130,
+        "avgHr": null,
+        "pace": 12.464046021093
+      },
+      {
+        "t": 1783080000000,
+        "name": "Outdoor Walk",
+        "distanceKm": 11.5,
+        "durationMin": 150,
+        "avgHr": null,
+        "pace": 13.043478260869565
+      }
+    ]
+  },
+  "bodyweight": {
+    "any": true,
+    "current": 81,
+    "prev": 81.2,
+    "delta": -0.2,
+    "totalChange": -0.75,
+    "latestDate": "2026-07-28T07:00",
+    "min": 80.7,
+    "max": 81.75,
+    "history": [
+      {
+        "datetime": "2026-07-28T07:00",
+        "kg": 81,
+        "bodyComposition": {
+          "bmi": 27.7,
+          "body_fat_pct": 27.1,
+          "muscle_mass_kg": 56.1,
+          "visceral_fat": 11,
+          "bmr_kcal": 1719,
+          "body_age": 29,
+          "resting_heart_rate": 79
+        }
+      },
+      {
+        "datetime": "2026-07-24T09:00",
+        "kg": 81.2,
+        "bodyComposition": {
+          "bmi": 27.7,
+          "body_fat_pct": 27.2,
+          "muscle_mass_kg": 56.2,
+          "visceral_fat": 11,
+          "bmr_kcal": 1722,
+          "body_age": 29,
+          "resting_heart_rate": 72
+        }
+      },
+      {
+        "datetime": "2026-07-18T10:00",
+        "kg": 81.25,
+        "bodyComposition": {
+          "bmi": 27.7,
+          "body_fat_pct": 27.2,
+          "muscle_mass_kg": 56.2,
+          "visceral_fat": 11,
+          "bmr_kcal": 1722,
+          "body_age": 29,
+          "resting_heart_rate": 62
+        }
+      },
+      {
+        "datetime": "2026-07-17T07:45",
+        "kg": 81.55,
+        "bodyComposition": {
+          "bmi": 27.8,
+          "body_fat_pct": 27.3,
+          "muscle_mass_kg": 56.3,
+          "visceral_fat": 11,
+          "bmr_kcal": 1726,
+          "body_age": 29,
+          "resting_heart_rate": 79
+        }
+      },
+      {
+        "datetime": "2026-07-13T00:00",
+        "kg": 81,
+        "bodyComposition": {
+          "bmi": 27.7,
+          "body_fat_pct": 27.1,
+          "muscle_mass_kg": 56.1,
+          "visceral_fat": 11,
+          "bmr_kcal": 1719,
+          "body_age": 29,
+          "resting_heart_rate": 60
+        }
+      },
+      {
+        "datetime": "2026-07-11T12:10",
+        "kg": 80.95,
+        "bodyComposition": {
+          "bmi": 27.6,
+          "body_fat_pct": 27,
+          "muscle_mass_kg": 56.1,
+          "visceral_fat": 11,
+          "bmr_kcal": 1718,
+          "body_age": 29,
+          "resting_heart_rate": 67
+        }
+      },
+      {
+        "datetime": "2026-06-27T00:00",
+        "kg": 81.4,
+        "bodyComposition": {
+          "bmi": null,
+          "body_fat_pct": 27.3,
+          "muscle_mass_kg": 56.2,
+          "visceral_fat": 11,
+          "bmr_kcal": 1725,
+          "body_age": null,
+          "resting_heart_rate": 65
+        }
+      },
+      {
+        "datetime": "2026-06-20T00:00",
+        "kg": 81.4,
+        "bodyComposition": {
+          "bmi": null,
+          "body_fat_pct": null,
+          "muscle_mass_kg": null,
+          "visceral_fat": null,
+          "bmr_kcal": null,
+          "body_age": null,
+          "resting_heart_rate": null
+        }
+      },
+      {
+        "datetime": "2026-06-19T00:00",
+        "kg": 81.65,
+        "bodyComposition": {
+          "bmi": null,
+          "body_fat_pct": null,
+          "muscle_mass_kg": null,
+          "visceral_fat": null,
+          "bmr_kcal": null,
+          "body_age": null,
+          "resting_heart_rate": null
+        }
+      },
+      {
+        "datetime": "2026-06-17T00:00",
+        "kg": 80.7,
+        "bodyComposition": {
+          "bmi": null,
+          "body_fat_pct": null,
+          "muscle_mass_kg": null,
+          "visceral_fat": null,
+          "bmr_kcal": null,
+          "body_age": null,
+          "resting_heart_rate": null
+        }
+      },
+      {
+        "datetime": "2026-06-16T00:00",
+        "kg": 81.75,
+        "bodyComposition": {
+          "bmi": null,
+          "body_fat_pct": null,
+          "muscle_mass_kg": null,
+          "visceral_fat": null,
+          "bmr_kcal": null,
+          "body_age": null,
+          "resting_heart_rate": null
+        }
+      }
+    ],
+    "composition": {
+      "bmi": 27.7,
+      "body_fat_pct": 27.1,
+      "muscle_mass_kg": 56.1,
+      "visceral_fat": 11,
+      "bmr_kcal": 1719,
+      "body_age": 29,
+      "resting_heart_rate": 79
+    }
+  },
+  "sleep": {
+    "any": true,
+    "current": {
+      "date": "2026-08-03",
+      "start": "23:30",
+      "end": "06:55",
+      "hours": 7.42,
+      "note": "Solid full night, ~7.42h — squarely in the 7-9h target band, one continuous stretch. A partnered ejaculation event at 23:00 preceded bedtime."
+    },
+    "avg7": 7.2,
+    "status": "good",
+    "history": [
+      {
+        "date": "2026-08-03",
+        "start": "23:30",
+        "end": "06:55",
+        "hours": 7.42,
+        "note": "Solid full night, ~7.42h — squarely in the 7-9h target band, one continuous stretch. A partnered ejaculation event at 23:00 preceded bedtime."
+      },
+      {
+        "date": "2026-08-02",
+        "start": "01:10",
+        "end": "06:55",
+        "hours": 5.75,
+        "note": "Short night, ~5.75h — below the 7-9h target band, late bedtime (01:10), one continuous stretch."
+      },
+      {
+        "date": "2026-08-01",
+        "start": "23:30",
+        "end": "06:50",
+        "hours": 7.33,
+        "note": "Solid full night, ~7.33h — squarely in the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-31",
+        "start": "23:15",
+        "end": "08:00",
+        "hours": 8.75,
+        "note": "Long solid night, ~8.75h — squarely in the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-30",
+        "start": "22:50",
+        "end": "06:45",
+        "hours": 7.92,
+        "note": "Solid full night, ~7.92h — squarely in the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-29",
+        "start": "23:15",
+        "end": "05:30",
+        "hours": 6.25,
+        "note": "Moderate night, ~6.25h — a bit short of the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-28",
+        "start": "23:45",
+        "end": "06:55",
+        "hours": 7.17,
+        "note": "Solid full night, ~7.17h — squarely in the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-27",
+        "start": "23:15",
+        "end": "06:30",
+        "hours": 7.25,
+        "note": "Solid full night, ~7.25h — squarely in the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-26",
+        "start": "23:45",
+        "end": "06:15",
+        "hours": 6.5,
+        "note": "Moderate night, ~6.5h — a bit short of the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-25",
+        "start": "23:45",
+        "end": "08:30",
+        "hours": 8.75,
+        "note": "Long solid night, 8.75h — squarely in the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-24",
+        "start": "23:00",
+        "end": "08:00",
+        "hours": 9,
+        "note": "Long solid night, 9h — just above the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-23",
+        "start": "22:50",
+        "end": "06:25",
+        "hours": 7.58,
+        "note": "Solid full night, ~7.58h — squarely in the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-22",
+        "start": "23:35",
+        "end": "05:40",
+        "hours": 6.08,
+        "note": "Moderate night, ~6.08h — a bit short of the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-07-21",
+        "start": "22:50",
+        "end": "06:30",
+        "hours": 7.67,
+        "note": "Solid full night, ~7.67h — squarely in the 7-9h target band, a strong bounce-back after two short nights in a row."
+      },
+      {
+        "date": "2026-07-20",
+        "start": "01:50",
+        "end": "06:30",
+        "hours": 4.67,
+        "note": "Short night, ~4.67h — well below the 7-9h target band, late bedtime, one continuous stretch."
+      },
+      {
+        "date": "2026-07-19",
+        "start": "01:50",
+        "end": "08:20",
+        "hours": 6.5,
+        "note": "Moderate night, ~6.5h — a bit short of the 7-9h target band, late bedtime, one continuous stretch."
+      },
+      {
+        "date": "2026-07-18",
+        "start": "23:15",
+        "end": "09:00",
+        "hours": 9.75,
+        "note": "Very long night, ~9.75h — just above the 7-9h target band, strong recovery."
+      },
+      {
+        "date": "2026-07-17",
+        "start": "22:30",
+        "end": "07:20",
+        "hours": 8.83,
+        "note": "Long solid night, ~8.83h — squarely in the 7-9h target band, a strong bounce-back after three short/late nights in a row."
+      },
+      {
+        "date": "2026-07-16",
+        "start": "01:00",
+        "end": "06:25",
+        "hours": 5.42,
+        "note": "Short night, ~5.42h — below the 7-9h target band; third late-bedtime night in a row, one continuous stretch."
+      },
+      {
+        "date": "2026-07-15",
+        "start": "01:10",
+        "end": "06:45",
+        "hours": 5.58,
+        "note": "Short night, ~5.58h — below the 7-9h target band; late bedtime (01:10) after the buffet day, one continuous stretch."
+      },
+      {
+        "date": "2026-07-14",
+        "start": "23:00",
+        "end": "05:20",
+        "hours": 6.33,
+        "note": "Moderate night, ~6.3h — a bit short of the 7-9h target band, but one continuous stretch (no fragmentation noted)."
+      },
+      {
+        "date": "2026-07-13",
+        "start": "22:35",
+        "end": "06:30",
+        "hours": 7.92,
+        "note": "Solid full night, squarely in the 7-9h range — good recovery after the fragmented ~1.47h night before."
+      },
+      {
+        "date": "2026-07-12",
+        "start": "02:45",
+        "end": "05:03",
+        "hours": 1.47,
+        "note": "Fragmented, very short night — two segments (1h15m + 13m) totaling ~1.47h. Significant sleep debt; a sharp swing from the 11.25h catch-up night before."
+      },
+      {
+        "date": "2026-07-11",
+        "start": "00:30",
+        "end": "11:45",
+        "hours": 11.25,
+        "note": "Long catch-up sleep — night after the 10 Jul travel day (4:50hr daytime flight, tz +2 shift). Well above typical baseline; likely recovery sleep rather than a new normal."
+      }
+    ]
+  }
+}

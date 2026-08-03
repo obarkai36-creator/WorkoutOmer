@@ -1,35 +1,399 @@
 {
-  "_note": "Weekly sperm-optimization score. Sub-factors are 0-100. Overall = weighted sum. Updated weekly, not daily. Demo week below is illustrative.",
+  "_note": "Sperm-optimization score. Sub-factors are 0-100. Overall = weighted sum. Computed fresh every dashboard render (i.e. daily) from a trailing 7-day window ending on the render date — the 7-day span itself is intentional (sperm parameters reflect ~weeks of buildup, not a single day), but the number now updates daily as that window rolls forward, not on a fixed weekly cadence.",
   "model": {
     "weights": {
-      "nutrition": 0.40,
-      "body_composition": 0.20,
-      "sleep": 0.15,
-      "alcohol": 0.10,
-      "heat_travel_exposure": 0.10,
-      "smoking": 0.05
+      "nutrition": 0.36,
+      "body_composition": 0.18,
+      "sleep": 0.135,
+      "alcohol": 0.09,
+      "heat_travel_exposure": 0.09,
+      "smoking": 0.045,
+      "ejaculatory_frequency": 0.1
     },
+    "_weights_note": "ejaculatory_frequency added 2026-07-11 at 10% weight; the other six factors were scaled down proportionally (x0.9) from their original values so all weights still sum to 1.0.",
     "bands": [
-      {"min": 0, "label": "Needs work", "color": "#ef4444"},
-      {"min": 50, "label": "Building", "color": "#f59e0b"},
-      {"min": 70, "label": "Good", "color": "#3b82f6"},
-      {"min": 85, "label": "Optimized", "color": "#22c55e"}
+      {
+        "min": 0,
+        "label": "Needs work",
+        "color": "#ef4444"
+      },
+      {
+        "min": 50,
+        "label": "Building",
+        "color": "#f59e0b"
+      },
+      {
+        "min": 70,
+        "label": "Good",
+        "color": "#3b82f6"
+      },
+      {
+        "min": 85,
+        "label": "Optimized",
+        "color": "#22c55e"
+      }
     ]
   },
   "weeks": [
     {
-      "week_start": "2026-06-22",
-      "week_end": "2026-06-28",
+      "week_start": "2026-07-05",
+      "week_end": "2026-07-11",
+      "factors": {
+        "nutrition": 75,
+        "body_composition": 56,
+        "sleep": 66,
+        "alcohol": 40,
+        "heat_travel_exposure": 82,
+        "smoking": 100,
+        "ejaculatory_frequency": 55
+      },
+      "notes": "Computed from real logged data for 2026-07-05 → 2026-07-11 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-06",
+      "week_end": "2026-07-12",
+      "factors": {
+        "nutrition": 79,
+        "body_composition": 56,
+        "sleep": 42,
+        "alcohol": 60,
+        "heat_travel_exposure": 82,
+        "smoking": 100,
+        "ejaculatory_frequency": 70
+      },
+      "notes": "Computed from real logged data for 2026-07-06 → 2026-07-12 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-07",
+      "week_end": "2026-07-13",
+      "factors": {
+        "nutrition": 82,
+        "body_composition": 44,
+        "sleep": 61,
+        "alcohol": 60,
+        "heat_travel_exposure": 82,
+        "smoking": 100,
+        "ejaculatory_frequency": 70
+      },
+      "notes": "Computed from real logged data for 2026-07-07 → 2026-07-13 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-08",
+      "week_end": "2026-07-14",
+      "factors": {
+        "nutrition": 84,
+        "body_composition": 44,
+        "sleep": 68,
+        "alcohol": 60,
+        "heat_travel_exposure": 82,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-08 → 2026-07-14 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-09",
+      "week_end": "2026-07-15",
+      "factors": {
+        "nutrition": 86,
+        "body_composition": 44,
+        "sleep": 70,
+        "alcohol": 80,
+        "heat_travel_exposure": 82,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-09 → 2026-07-15 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-10",
+      "week_end": "2026-07-16",
+      "factors": {
+        "nutrition": 89,
+        "body_composition": 44,
+        "sleep": 71,
+        "alcohol": 100,
+        "heat_travel_exposure": 82,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-10 → 2026-07-16 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-11",
+      "week_end": "2026-07-17",
+      "factors": {
+        "nutrition": 79,
+        "body_composition": 0,
+        "sleep": 75,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-11 → 2026-07-17 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-12",
+      "week_end": "2026-07-18",
+      "factors": {
+        "nutrition": 78,
+        "body_composition": 13,
+        "sleep": 79,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-12 → 2026-07-18 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-13",
+      "week_end": "2026-07-19",
+      "factors": {
+        "nutrition": 78,
+        "body_composition": 13,
+        "sleep": 89,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-13 → 2026-07-19 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-14",
+      "week_end": "2026-07-20",
+      "factors": {
+        "nutrition": 78,
+        "body_composition": 13,
+        "sleep": 84,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-14 → 2026-07-20 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-15",
+      "week_end": "2026-07-21",
+      "factors": {
+        "nutrition": 81,
+        "body_composition": 13,
+        "sleep": 86,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-15 → 2026-07-21 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-16",
+      "week_end": "2026-07-22",
+      "factors": {
+        "nutrition": 82,
+        "body_composition": 13,
+        "sleep": 87,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-16 → 2026-07-22 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-17",
+      "week_end": "2026-07-23",
+      "factors": {
+        "nutrition": 82,
+        "body_composition": 13,
+        "sleep": 90,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-17 → 2026-07-23 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-18",
+      "week_end": "2026-07-24",
+      "factors": {
+        "nutrition": 94,
+        "body_composition": 13,
+        "sleep": 90,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 70
+      },
+      "notes": "Computed from real logged data for 2026-07-18 → 2026-07-24 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-19",
+      "week_end": "2026-07-25",
+      "factors": {
+        "nutrition": 81,
+        "body_composition": 13,
+        "sleep": 92,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-19 → 2026-07-25 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-20",
+      "week_end": "2026-07-26",
+      "factors": {
+        "nutrition": 81,
+        "body_composition": 13,
+        "sleep": 92,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-07-20 → 2026-07-26 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-21",
+      "week_end": "2026-07-27",
+      "factors": {
+        "nutrition": 80,
+        "body_composition": 13,
+        "sleep": 97,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-21 → 2026-07-27 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-22",
+      "week_end": "2026-07-28",
+      "factors": {
+        "nutrition": 81,
+        "body_composition": 23,
+        "sleep": 97,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-22 → 2026-07-28 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-23",
+      "week_end": "2026-07-29",
+      "factors": {
+        "nutrition": 75,
+        "body_composition": 23,
+        "sleep": 97,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-23 → 2026-07-29 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-24",
+      "week_end": "2026-07-30",
+      "factors": {
+        "nutrition": 73,
+        "body_composition": 23,
+        "sleep": 97,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-24 → 2026-07-30 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-25",
+      "week_end": "2026-07-31",
       "factors": {
         "nutrition": 72,
-        "body_composition": 60,
-        "sleep": 82,
-        "alcohol": 95,
-        "heat_travel_exposure": 85,
-        "smoking": 100
+        "body_composition": 23,
+        "sleep": 97,
+        "alcohol": 80,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
       },
-      "notes": "Demo week, now using real lifestyle inputs: alcohol <=1/week, consistent sleep with 16:00 caffeine cutoff, minimal heat exposure. Main lever is body composition (BMI 27.8 -> target). Watch the 2026-07-03 night flight next week.",
-      "sample": true
+      "notes": "Computed from real logged data for 2026-07-25 → 2026-07-31 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-26",
+      "week_end": "2026-08-01",
+      "factors": {
+        "nutrition": 82,
+        "body_composition": 23,
+        "sleep": 97,
+        "alcohol": 60,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-26 → 2026-08-01 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-27",
+      "week_end": "2026-08-02",
+      "factors": {
+        "nutrition": 83,
+        "body_composition": 23,
+        "sleep": 96,
+        "alcohol": 60,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-27 → 2026-08-02 (7 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-28",
+      "week_end": "2026-08-03",
+      "factors": {
+        "nutrition": 83,
+        "body_composition": 23,
+        "sleep": 96,
+        "alcohol": 60,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-28 → 2026-08-03 (7 day(s) logged this window).",
+      "sample": false
     }
   ]
 }

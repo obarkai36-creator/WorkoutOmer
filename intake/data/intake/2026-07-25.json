@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-25",
+  "day_number": 28,
+  "in_progress": false,
+  "workout_today": true,
+  "workout_summary": "Legs (10:20): Calf raises machine 76kg×4×11 (new PR by est. 1RM); Leg press 132kg×4×10 (new PR, +2 reps); Angled leg press 202kg setup×4×7 (new PR, +1 rep); Single-leg extensions 57kg each×4×6 (new PR — large jump from prior 23.25kg-each reference, flagged); Outer thigh 79kg×4×10 (ties best by weight/reps, fewer total sets); Inner thigh 79kg×3×8 (new PR by est. 1RM, essentially equivalent). Followed the report's recommended Legs day. ACWR jumped to 1.62 (>1.5) — dashboard alert to hold volume flat or deload.",
+  "_status": "Day closed out. Sleep, workout, ejaculation event, and supplements logged. Food/nutrition tracking skipped today per user request.",
+  "items": [
+    {"time": "09:15", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "11:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:55", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "22:50", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
+  "macro_display_override": {
+    "kcal": "Not tracked",
+    "protein_g": "Not tracked",
+    "carbs_g": "Not tracked",
+    "fat_g": "Not tracked",
+    "fiber_g": "Not tracked"
+  },
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User opted out of food/nutrition tracking for the day (only caffeine and supplements logged) — excluded from monthly kcal/protein/carbs/fat/fiber averages and protein-adherence rate.",
+  "micros_sperm_priority": {
+    "zinc_mg": 15,
+    "selenium_mcg": 200,
+    "folate_mcg_dfe": 667,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 250,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 16.5,
+    "lycopene_mg": 0
+  },
+  "caffeine_shots": 2,
+  "assumptions": [
+    "Sleep logged: 23:45-08:30, 8.75h — squarely in the 7-9h target band, one continuous stretch.",
+    "Per the user's request (made the prior evening), today's food/nutrition is not being tracked — only caffeine and supplements will be logged. Macro panel shows 'Not tracked' and today is excluded from monthly macro averages.",
+    "09:15 double espresso (~60-80ml, counts as 2 caffeine shots).",
+    "10:20 Legs workout: Calf raises machine 76kg×4×11 (65kg add + 11kg frame; new PR by estimated 1RM vs the prior 77kg×4×10), Leg press 132kg×4×10 (new PR, +2 reps at the same weight vs 132kg×4×8), Angled leg press 202kg setup (70kg each side + 62kg frame)×4×7 (new PR, +1 rep vs the prior ×4×6), Single-leg extensions 57kg each×4×6 (new PR, but a large jump from the prior 23.25kg-each reference — flagging in case that reflects a different machine/setting rather than pure progress), Outer thigh 79kg×4×10 (ties best by weight/reps, but fewer total sets than the 5-set best), Inner thigh 79kg×3×8 (new PR by estimated 1RM vs 75kg×3×10, essentially equivalent load). Followed the report's recommended Legs day. Mirrored to data.js WORKOUTS/SNAPSHOT and workouts.json; report_snapshot resynced (35 sessions, next recommended Core day). ACWR jumped to 1.62 (>1.5) — the dashboard's own alert flags this as a sharp load jump / soft-tissue injury risk, recommending flat volume or a deload next.",
+    "11:25 ejaculation event (masturbation, self) — logged to ejaculation.json, not a nutrition item.",
+    "11:45 creatine monohydrate, 4.5g — zero kcal/macros.",
+    "16:55 multivitamin (Thorne Basic Nutrients 2/Day, 2 caps): micros_sperm_priority set to the verified supplement-fact values (zinc 15mg, selenium 200mcg, folate 667mcg DFE, vitamin C 250mg, vitamin D 2000IU, vitamin E 16.5mg) — zero kcal/macros.",
+    "22:50 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, brings the day's omega-3 micro to target. End of day."
+  ],
+  "status_note": "Day complete. Slept 8.75h (23:45-08:30) — a long, solid night, squarely in the 7-9h target band. Double espresso at 09:15, a Legs workout at 10:20 (4 PRs: Calf Raises Machine, Leg Press, Angled Leg Press, Single-Leg Extensions, plus Inner Thigh essentially tying/edging its best — ACWR now 1.62, flagged for a deload/flat-volume next session), an ejaculation event (masturbation) at 11:25, creatine at 11:45, a multivitamin at 16:55, and omega-3 at 22:50. Food/nutrition tracking skipped today per user request — only caffeine (2 shots) and supplements logged."
+}

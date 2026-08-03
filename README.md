@@ -33,7 +33,7 @@ so the nutrition dashboard's weight trend + Training panel stay current.
 |-------|---------------|
 | 🔥 **Muscle Fatigue** | Current fatigue % per body section (Push / Pull / Legs / Core / Aerobic) and per muscle, from recent volume decaying over each muscle's recovery window. |
 | 📈 **Workload Progress** | Every tracked lift, grouped by muscle group: latest vs. your personal best (as a % bar), PR stars, and which lifts you're currently below best on. Lifts in today's session are dotted (●). |
-| 🎯 **Next Session** | The most-recovered muscle group to train next, how long to rest first, the earliest sensible slot, and a suggested exercise list. |
+| 🎯 **Next Session** | The most-recovered muscle group to train next, how long to rest first, the earliest sensible slot, and a suggested exercise list ordered/annotated for program balance (push/pull, quad/ham) and current training load — not just "beat your best everywhere." |
 | ⚠️ **Injury Alerts** | Acute:chronic workload ratio (load spikes), under-recovered muscles trained too soon, big single-lift jumps, and push/pull imbalance. |
 | 🛠️ **Suggested Changes** | Programming tweaks — fix imbalances, address stalled lifts, hit neglected muscles, aerobic dose, load management. |
 | 🕒 **Workout Timing** | Sessions/week, average rest gap, typical time of day, day-of-week pattern, and a 6-week training-load trend. |
@@ -86,11 +86,18 @@ it happens; also bump the matching `SNAPSHOT` entry when you hit a new best.
 
 These are training-model estimates to guide planning — **not medical advice.**
 
-## 📧 Auto-emailed PDF report (after each log)
+## 📧 Auto-emailed PDF report (after each new workout)
 
-Every time `data.js` changes and is pushed, a GitHub Action renders the
-dashboard to a **landscape PDF** and emails it to you.
+Every push to `data.js` runs the workflow, but the email itself only fires
+when a **new session lands in `WORKOUTS`**. `data.js` also carries sleep and
+bodyweight logs, which are committed far more often than workouts — those
+build up in the background silently (no email) so your inbox only gets a
+report when there's an actual new workout's worth of information to show.
 
+- **Gate:** `report/check_new_workout.mjs` compares the latest `WORKOUTS`
+  timestamp in the current commit against the previous one; render/email
+  steps are skipped unless it advanced. A manual *Run workflow* dispatch
+  always sends, regardless of this check.
 - **Renderer:** `report/render.mjs` (headless Chromium via Playwright) → `report.pdf`,
   laid out for print via the `?pdf=1` mode. "Now" is anchored to your most
   recent logged session so the report reads correctly in CI.

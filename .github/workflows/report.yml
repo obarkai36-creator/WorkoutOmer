@@ -1,10 +1,10 @@
-name: Training report
+name: Training report (legacy, workout-only PDF)
 
-# Runs after each "log": whenever data.js changes on these branches.
+# Superseded by unified_report.yml, which emails one merged training+nutrition
+# dashboard instead of this workout-only PDF — kept manual-only (no more
+# auto-fire on push) so the two don't both email on the same day. Left in
+# place, not deleted, in case the unified rollout needs a rollback.
 on:
-  push:
-    branches: [main, "claude/epic-bardeen-4l8r4c"]
-    paths: ["data.js"]
   workflow_dispatch: {}
 
 jobs:
@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # need HEAD~1 to check whether WORKOUTS actually changed
 
       - uses: actions/setup-node@v4
         with:
@@ -23,13 +25,24 @@ jobs:
         env:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"   # don't pull all browsers here
 
+      # data.js also carries sleep/bodyweight logs, which should build quietly
+      # in the background — only a new WORKOUTS session should trigger the email.
+      - name: Check for a new workout
+        id: check_workout
+        run: node report/check_new_workout.mjs
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+
       - name: Install Chromium
+        if: steps.check_workout.outputs.new_workout == 'true'
         run: npx playwright install --with-deps chromium
 
       - name: Render dashboard to PDF
+        if: steps.check_workout.outputs.new_workout == 'true'
         run: npm run render
 
       - name: Upload PDF artifact
+        if: steps.check_workout.outputs.new_workout == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: training-report
@@ -37,6 +50,7 @@ jobs:
           if-no-files-found: error
 
       - name: Email the report
+        if: steps.check_workout.outputs.new_workout == 'true'
         env:
           # Preferred: Resend API key (any of these secret names).
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY || secrets.RESEND || secrets.RESEND_KEY }}

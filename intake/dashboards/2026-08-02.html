@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intake Dashboard · 2026-08-02</title>
+<style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+           --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+          font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:1100px; margin:0 auto; padding:24px 18px 60px; }
+  header.top { display:flex; justify-content:space-between; align-items:flex-end;
+                flex-wrap:wrap; gap:12px; margin-bottom:20px; }
+  .title { font-size:22px; font-weight:700; }
+  .subtitle { color:var(--muted); }
+  .daychip { background:linear-gradient(135deg,#1d4ed8,#0ea5e9); color:#fff;
+              padding:8px 14px; border-radius:12px; font-weight:700; }
+  .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:16px;
+            padding:18px; }
+  .panel.span { grid-column:1 / -1; }
+  .panel h2 { margin:0 0 14px; font-size:13px; letter-spacing:.08em;
+               text-transform:uppercase; color:var(--muted); }
+  .metric { margin:10px 0; }
+  .metric-top { display:flex; justify-content:space-between; font-size:13px; margin-bottom:5px; }
+  .vals { font-variant-numeric:tabular-nums; font-weight:600; }
+  .muted { color:var(--muted); font-weight:400; }
+  .track { height:8px; background:#0a1019; border-radius:6px; overflow:hidden; }
+  .fill { height:100%; border-radius:6px; transition:width .3s; }
+  .bignum { font-size:40px; font-weight:800; line-height:1; }
+  .bignum small { font-size:16px; color:var(--muted); font-weight:600; }
+  .goalline { color:var(--muted); margin-top:6px; }
+  .chips { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:14px; }
+  .chip { background:var(--panel2); border:1px solid var(--line); border-radius:10px;
+           padding:10px; text-align:center; }
+  .chip-v { font-size:18px; font-weight:700; }
+  .chip-k { font-size:11px; color:var(--muted); margin-top:2px; }
+  .spark { height:90px; margin-top:6px; }
+  table { width:100%; border-collapse:collapse; }
+  th,td { text-align:left; padding:7px 6px; border-bottom:1px solid var(--line); font-size:13px; }
+  th { color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.05em; }
+  .t-time { color:var(--muted); width:54px; font-variant-numeric:tabular-nums; }
+  .t-num { text-align:right; font-variant-numeric:tabular-nums; width:52px; }
+  .t-total td { font-weight:700; border-top:2px solid var(--line); border-bottom:none; color:var(--text); }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:8px; }
+  .ring-wrap { display:flex; flex-direction:column; align-items:center; }
+  .ring-num { fill:var(--text); font-size:30px; font-weight:800; }
+  .ring-sub { fill:var(--muted); font-size:11px; }
+  .ring-label { font-weight:700; margin-top:6px; }
+  .sperm-flex { display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
+  .sperm-flex .factors { flex:1; min-width:240px; }
+  .note { background:var(--panel2); border-left:3px solid var(--accent);
+           padding:10px 12px; border-radius:8px; color:var(--text); margin-top:4px; }
+  .chips.four { grid-template-columns:repeat(4,1fr); margin-top:0; }
+  .tr-line { margin:12px 0 14px; font-size:14px; }
+  .tr-cols { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .ev-ul { list-style:none; margin:0; padding:0; }
+  .ev-ul li { font-size:13px; padding:5px 0; border-bottom:1px solid var(--line); }
+  .alert { background:var(--panel2); border-left:3px solid #f59e0b; padding:8px 10px;
+            border-radius:8px; margin-bottom:8px; font-size:13px; }
+  .lifestyle { margin-top:14px; }
+  .ls-h { font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+  .lifestyle ul { list-style:none; margin:0; padding:0; }
+  .lifestyle li { font-size:13px; padding:5px 0; border-bottom:1px solid var(--line); }
+  .ev-dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:8px; }
+  .sugg-ul { list-style:none; margin:0; padding:0; }
+  .sugg-ul li { font-size:14px; padding:10px 0 10px 16px; border-bottom:1px solid var(--line);
+                 border-left:3px solid var(--accent); background:var(--panel2); border-radius:6px;
+                 margin-bottom:8px; }
+  .sugg-ul li:last-child { margin-bottom:0; }
+  .locked { display:flex; gap:14px; align-items:center; padding:8px 0; }
+  .lock-ico { font-size:30px; }
+  .footer { color:var(--muted); font-size:12px; text-align:center; margin-top:26px; }
+  @media(max-width:720px){ .grid{grid-template-columns:1fr;} .chips{grid-template-columns:repeat(3,1fr);}
+    .chips.four{grid-template-columns:repeat(2,1fr);} .tr-cols{grid-template-columns:1fr;} }
+</style></head>
+<body><div class="wrap">
+
+  <header class="top">
+    <div>
+      <div class="title">Nutrition &amp; Intake Dashboard</div>
+      <div class="subtitle">Sunday, 02 August 2026 · Goals: weight loss · muscle retention · sperm optimization</div>
+    </div>
+    <div class="daychip">Day 36</div>
+  </header>
+
+  <div class="grid">
+
+    <div class="panel span">
+      <h2>Status &amp; Progress</h2>
+      <div class="note">Day complete. Slept ~5.75h (01:10-06:55) — a short night, below the 7-9h target band, late bedtime. Allergy spray + pill at 07:00, a double espresso at 07:10, a Legendary Foods protein donut pack at 09:30, a single espresso at 10:15, a cinnamon protein donut at early lunch (12:30), the Thorne multivitamin at 13:45, another espresso at 15:30, a large lunch at 16:15 (2 pitas, cabbage salad in lemon juice, 300g chicken meatballs, 40 cherry tomatoes), a chocolate cube at 17:00, omega-3 at 17:45, the PM allergy spray at 18:30, a snack at 18:45 (grapes, yellow cheese), another round at 19:45 (more yellow cheese, more grapes), creatine at 20:00, and an ejaculation event (partnered) at 23:00 (caffeine_shots: 4).</div>
+    </div>
+
+    <div class="panel">
+      <h2>Energy Score · today</h2>
+      <div class="sperm-flex">
+        <div class="ring-wrap">
+      <svg viewBox="0 0 130 130" width="150" height="150">
+        <circle cx="65" cy="65" r="52" fill="none" stroke="#1f2937" stroke-width="12"/>
+        <circle cx="65" cy="65" r="52" fill="none" stroke="#22c55e" stroke-width="12"
+          stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="45.7"
+          transform="rotate(-90 65 65)"/>
+        <text x="65" y="60" text-anchor="middle" class="ring-num">86</text>
+        <text x="65" y="82" text-anchor="middle" class="ring-sub">/ 100</text>
+      </svg>
+      <div class="ring-label" style="color:#22c55e">High</div>
+    </div>
+        <div class="factors"><div class="metric">
+          <div class="metric-top"><span>sleep</span><span class="vals">81</span></div>
+          <div class="track"><div class="fill" style="width:81%;background:#22c55e"></div></div>
+          <div class="small muted" style="margin-top:2px">5.75h last night (target 7-9h)</div>
+        </div><div class="metric">
+          <div class="metric-top"><span>nutrition</span><span class="vals">96</span></div>
+          <div class="track"><div class="fill" style="width:96%;background:#22c55e"></div></div>
+          <div class="small muted" style="margin-top:2px">1882/2050 kcal · 166/165g protein · 51.4/32g fiber</div>
+        </div><div class="metric">
+          <div class="metric-top"><span>movement</span><span class="vals">80</span></div>
+          <div class="track"><div class="fill" style="width:80%;background:#22c55e"></div></div>
+          <div class="small muted" style="margin-top:2px">last workout 1d ago</div>
+        </div><div class="metric">
+          <div class="metric-top"><span>caffeine</span><span class="vals">100</span></div>
+          <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+          <div class="small muted" style="margin-top:2px">4 shot(s) today (soft cap ~5)</div>
+        </div><div class="metric">
+          <div class="metric-top"><span>alcohol</span><span class="vals">80</span></div>
+          <div class="track"><div class="fill" style="width:80%;background:#22c55e"></div></div>
+          <div class="small muted" style="margin-top:2px">logged yesterday</div>
+        </div></div>
+      </div>
+      <div class="note" style="margin-top:14px">Computed for 2026-08-02 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement.</div>
+    </div>
+    <div class="panel">
+      <h2>Weight &amp; Body Composition</h2>
+      <div class="bignum">81<small> kg</small></div>
+      <div class="goalline">Target 76–78 kg · <b>3 kg to go</b> · since start -0.8 kg</div>
+      <svg viewBox="0 0 560 90" width="100%" preserveAspectRatio="none" class="spark">
+      <polyline fill="none" stroke="#38bdf8" stroke-width="2" points="8.0,8.0 62.4,82.0 116.8,15.0 171.2,32.7 225.6,32.7 280.0,64.4 334.4,60.9 388.8,22.1 443.2,43.2 497.6,46.8 552.0,60.9"/>
+      <circle cx="8.0" cy="8.0" r="3" fill="#38bdf8"/><circle cx="62.4" cy="82.0" r="3" fill="#38bdf8"/><circle cx="116.8" cy="15.0" r="3" fill="#38bdf8"/><circle cx="171.2" cy="32.7" r="3" fill="#38bdf8"/><circle cx="225.6" cy="32.7" r="3" fill="#38bdf8"/><circle cx="280.0" cy="64.4" r="3" fill="#38bdf8"/><circle cx="334.4" cy="60.9" r="3" fill="#38bdf8"/><circle cx="388.8" cy="22.1" r="3" fill="#38bdf8"/><circle cx="443.2" cy="43.2" r="3" fill="#38bdf8"/><circle cx="497.6" cy="46.8" r="3" fill="#38bdf8"/><circle cx="552.0" cy="60.9" r="3" fill="#38bdf8"/>
+      <circle cx="552.0" cy="60.9" r="4.5" fill="#22c55e"/>
+    </svg>
+      <div class="chips"><div class='chip'><div class='chip-v'>27.7</div><div class='chip-k'>BMI</div></div><div class='chip'><div class='chip-v'>27.1</div><div class='chip-k'>Body fat %</div></div><div class='chip'><div class='chip-v'>21.9</div><div class='chip-k'>Body fat mass kg</div></div><div class='chip'><div class='chip-v'>23.8</div><div class='chip-k'>Subcutaneous fat %</div></div><div class='chip'><div class='chip-v'>11.0</div><div class='chip-k'>Visceral fat</div></div><div class='chip'><div class='chip-v'>30.8</div><div class='chip-k'>Skeletal muscle kg</div></div><div class='chip'><div class='chip-v'>56.1</div><div class='chip-k'>Muscle mass kg</div></div><div class='chip'><div class='chip-v'>59.1</div><div class='chip-k'>Lean body mass kg</div></div><div class='chip'><div class='chip-v'>15.3</div><div class='chip-k'>Protein %</div></div><div class='chip'><div class='chip-v'>49.9</div><div class='chip-k'>Water %</div></div><div class='chip'><div class='chip-v'>3.0</div><div class='chip-k'>Bone mass kg</div></div><div class='chip'><div class='chip-v'>1719</div><div class='chip-k'>BMR kcal</div></div><div class='chip'><div class='chip-v'>79</div><div class='chip-k'>Resting HR</div></div><div class='chip'><div class='chip-v'>29</div><div class='chip-k'>Body age</div></div><div class='chip'><div class='chip-v'>Muscular Overweight</div><div class='chip-k'>Body type</div></div></div>
+    </div>
+
+    <div class="panel">
+      <h2>Sperm Optimization · trailing 7 days, updated daily (2026-07-27 → 2026-08-02)</h2>
+      
+      <div class="sperm-flex">
+        <div class="ring-wrap">
+      <svg viewBox="0 0 130 130" width="150" height="150">
+        <circle cx="65" cy="65" r="52" fill="none" stroke="#1f2937" stroke-width="12"/>
+        <circle cx="65" cy="65" r="52" fill="none" stroke="#3b82f6" stroke-width="12"
+          stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="78.8"
+          transform="rotate(-90 65 65)"/>
+        <text x="65" y="60" text-anchor="middle" class="ring-num">76</text>
+        <text x="65" y="82" text-anchor="middle" class="ring-sub">/ 100</text>
+      </svg>
+      <div class="ring-label" style="color:#3b82f6">Good</div>
+    </div>
+        <div class="factors"><div class="metric">
+          <div class="metric-top"><span>nutrition</span><span class="vals">83</span></div>
+          <div class="track"><div class="fill" style="width:83%;background:#3b82f6"></div></div>
+        </div><div class="metric">
+          <div class="metric-top"><span>body composition</span><span class="vals">23</span></div>
+          <div class="track"><div class="fill" style="width:23%;background:#3b82f6"></div></div>
+        </div><div class="metric">
+          <div class="metric-top"><span>sleep</span><span class="vals">96</span></div>
+          <div class="track"><div class="fill" style="width:96%;background:#3b82f6"></div></div>
+        </div><div class="metric">
+          <div class="metric-top"><span>alcohol</span><span class="vals">60</span></div>
+          <div class="track"><div class="fill" style="width:60%;background:#3b82f6"></div></div>
+        </div><div class="metric">
+          <div class="metric-top"><span>heat travel exposure</span><span class="vals">100</span></div>
+          <div class="track"><div class="fill" style="width:100%;background:#3b82f6"></div></div>
+        </div><div class="metric">
+          <div class="metric-top"><span>smoking</span><span class="vals">100</span></div>
+          <div class="track"><div class="fill" style="width:100%;background:#3b82f6"></div></div>
+        </div><div class="metric">
+          <div class="metric-top"><span>ejaculatory frequency</span><span class="vals">100</span></div>
+          <div class="track"><div class="fill" style="width:100%;background:#3b82f6"></div></div>
+        </div></div>
+      </div>
+      <div class="note" style="margin-top:14px">Computed from real logged data for 2026-07-27 → 2026-08-02 (7 day(s) logged this window).</div>
+      <div class='small' style='margin-top:8px;color:#ef4444'>Sleep last night: <b>5.75h</b> (short)</div>
+      <div class='lifestyle'><div class='ls-h'>Lifestyle log · last 7 days</div><ul><li><span class='ev-dot' style='background:#f59e0b'></span><b>2026-08-01</b> · Some wine with a large dinner (dinner not itemized) <span class='muted'>· alcohol · mild</span></li><li><span class='ev-dot' style='background:#f59e0b'></span><b>2026-07-31</b> · Small (~100ml) red wine serving with dinner <span class='muted'>· alcohol · mild</span></li><li><span class='ev-dot' style='background:#f59e0b'></span><b>2026-07-30</b> · 1 shot (~30ml) Johnny Walker Black, at Patrick's Caesarea (date night) <span class='muted'>· alcohol · mild</span></li></ul></div>
+    </div>
+
+    <div class="panel">
+      <h2>Sleep</h2>
+      <div class="bignum" style="color:#ef4444">5.75<small> h</small></div>
+      <div class="goalline">01:10–06:55 · <b style="color:#ef4444">short</b> · 7.2h 7-day avg · 7.2h 14-day avg</div>
+      <svg viewBox="0 0 560 90" width="100%" preserveAspectRatio="none" class="spark">
+      <polyline fill="none" stroke="#38bdf8" stroke-width="2" points="8.0,82.0 49.8,30.7 91.7,57.9 133.5,32.3 175.4,8.0 217.2,12.3 259.1,50.7 300.9,37.9 342.8,39.3 384.6,55.0 426.5,26.5 468.3,12.3 510.2,36.5 552.0,63.5"/>
+      <circle cx="8.0" cy="82.0" r="3" fill="#38bdf8"/><circle cx="49.8" cy="30.7" r="3" fill="#38bdf8"/><circle cx="91.7" cy="57.9" r="3" fill="#38bdf8"/><circle cx="133.5" cy="32.3" r="3" fill="#38bdf8"/><circle cx="175.4" cy="8.0" r="3" fill="#38bdf8"/><circle cx="217.2" cy="12.3" r="3" fill="#38bdf8"/><circle cx="259.1" cy="50.7" r="3" fill="#38bdf8"/><circle cx="300.9" cy="37.9" r="3" fill="#38bdf8"/><circle cx="342.8" cy="39.3" r="3" fill="#38bdf8"/><circle cx="384.6" cy="55.0" r="3" fill="#38bdf8"/><circle cx="426.5" cy="26.5" r="3" fill="#38bdf8"/><circle cx="468.3" cy="12.3" r="3" fill="#38bdf8"/><circle cx="510.2" cy="36.5" r="3" fill="#38bdf8"/><circle cx="552.0" cy="63.5" r="3" fill="#38bdf8"/>
+      <circle cx="552.0" cy="63.5" r="4.5" fill="#22c55e"/>
+    </svg>
+      <div class="small muted" style="margin-top:6px">Last 7 nights: <b style="color:#ef4444">1 short</b> (&lt;6h) · <b style="color:var(--text)">0 long</b> (&gt;9.5h) of 7 logged</div>
+      <div class='note' style='margin-top:10px'>Short night, ~5.75h — below the 7-9h target band, late bedtime (01:10), one continuous stretch.</div>
+    </div>
+    <div class="panel">
+      <h2>Macros · today</h2>
+      
+      <div class="metric">
+        <div class="metric-top"><span>Calories (kcal)</span><span class="vals">1882 <span class="muted">/ 2050</span></span></div>
+        <div class="track"><div class="fill" style="width:92%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Protein (g)</span><span class="vals">166 <span class="muted">/ 165</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Carbs (g)</span><span class="vals">172.8 <span class="muted">/ 190</span></span></div>
+        <div class="track"><div class="fill" style="width:91%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Fat (g)</span><span class="vals">71.05 <span class="muted">/ 65</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#f59e0b"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>Fiber (g)</span><span class="vals">51.4 <span class="muted">/ 32</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      
+      <div class="small muted" style="margin-top:12px">7-day avg (5 day(s)): <b style="color:var(--text)">2308 kcal</b> &middot; <b style="color:var(--text)">191.1g protein</b> (2 day(s) excluded — not tracked/qualitative)</div>
+      <svg viewBox="0 0 560 90" width="100%" preserveAspectRatio="none" class="spark">
+      <polyline fill="none" stroke="#38bdf8" stroke-width="2" points="8.0,33.0 49.8,23.9 91.7,30.7 133.5,32.7 175.4,37.5 217.2,82.0 259.1,36.2 300.9,35.3 342.8,27.5 384.6,48.0 426.5,10.6 468.3,8.0 510.2,33.1 552.0,34.0"/>
+      <circle cx="8.0" cy="33.0" r="3" fill="#38bdf8"/><circle cx="49.8" cy="23.9" r="3" fill="#38bdf8"/><circle cx="91.7" cy="30.7" r="3" fill="#38bdf8"/><circle cx="133.5" cy="32.7" r="3" fill="#38bdf8"/><circle cx="175.4" cy="37.5" r="3" fill="#38bdf8"/><circle cx="217.2" cy="82.0" r="3" fill="#38bdf8"/><circle cx="259.1" cy="36.2" r="3" fill="#38bdf8"/><circle cx="300.9" cy="35.3" r="3" fill="#38bdf8"/><circle cx="342.8" cy="27.5" r="3" fill="#38bdf8"/><circle cx="384.6" cy="48.0" r="3" fill="#38bdf8"/><circle cx="426.5" cy="10.6" r="3" fill="#38bdf8"/><circle cx="468.3" cy="8.0" r="3" fill="#38bdf8"/><circle cx="510.2" cy="33.1" r="3" fill="#38bdf8"/><circle cx="552.0" cy="34.0" r="3" fill="#38bdf8"/>
+      <circle cx="552.0" cy="34.0" r="4.5" fill="#22c55e"/>
+    </svg>
+    </div>
+
+    <div class="panel">
+      <h2>Sperm-priority micronutrients · today</h2>
+      
+      <div class="metric">
+        <div class="metric-top"><span>zinc mg</span><span class="vals">15 <span class="muted">/ 11</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>selenium mcg</span><span class="vals">200 <span class="muted">/ 55</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>folate mcg dfe</span><span class="vals">769.1 <span class="muted">/ 400</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>omega3 epa dha mg</span><span class="vals">1000 <span class="muted">/ 1000</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>vitamin c mg</span><span class="vals">345.2 <span class="muted">/ 90</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>vitamin d iu</span><span class="vals">2000 <span class="muted">/ 2000</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>vitamin e mg</span><span class="vals">16.5 <span class="muted">/ 15</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+      <div class="metric">
+        <div class="metric-top"><span>lycopene mg</span><span class="vals">17.6 <span class="muted">/ 8</span></span></div>
+        <div class="track"><div class="fill" style="width:100%;background:#22c55e"></div></div>
+      </div>
+    </div>
+
+    <div class="panel span">
+      <h2>Training · from exercise dashboard (report 2026-08-03)</h2>
+      <div class="chips four"><div class='chip'><div class='chip-v' style=''>3.3/wk</div><div class='chip-k'>Sessions</div></div><div class='chip'><div class='chip-v' style=''>5.7 km</div><div class='chip-k'>Cardio 28d</div></div><div class='chip'><div class='chip-v' style=''>142 bpm</div><div class='chip-k'>Avg HR</div></div><div class='chip'><div class='chip-v' style='color:#22c55e'>1.03</div><div class='chip-k'>Load ratio</div></div></div>
+      <div class="tr-line">Latest: <b>Back + Arms</b> · Recommended next: <b>Chest day</b></div>
+      <div class="tr-cols">
+        <div><div class="ls-h">Recent sessions (14d)</div><ul class="ev-ul"><li><b>2026-08-01</b> · Strength — Back + Arms <span class='muted'>· Dumbbell pullover 18kg×4×10 (ties best); Reverse incline DB row 26kg each×4×8 (new PR, +2kg each side vs 24kg each×4×10); Incline DB curl 18kg each×4×6 (new PR, +1 rep at same weight); Incline hammer curl 18kg each×4×8 (ties best); Half curl 18kg each×4×5 (new PR by est. 1RM vs 16kg each×4×6); Dead hang 25s×3 (new PR, +5s vs 20s×3). 09:00.</span></li><li><b>2026-07-29</b> · Strength — Full Body (Deload) <span class='muted'>· Pec Fly Machine 73kg×3×6, Diverging Seated Row 84kg×4×6, Converging Shoulder Press 68kg×4×6, Angled Leg Press 172kg×4×5, Rope Cable Extension 64kg×4×6 — one lift per section, all ~85-87% of best with capped reps. Followed up on the ACWR-driven deload recommendation (1.66-1.67 in the danger zone). No PR attempts; all bests unchanged. 06:10.</span></li><li><b>2026-07-27</b> · Strength — Chest <span class='muted'>· Bench press 72.5kg [26.25kg each side + 20kg bar]×4×7 (new PR, +1 rep at same weight vs 72.5kg×4×6); Incline bench press 72.5kg×4×6 (user-corrected new best — disregards the earlier 73kg×4×6 entry); Decline bench press 72.5kg×4×6 (new PR, +1 rep at same weight vs 72.5kg×4×5); VKR 4×10 (new PR, +2 reps vs 4×8); VKR to sides 4×8 (ties best). Followed the report's recommended Chest day. 20:20.</span></li><li><b>2026-07-25</b> · Strength — Legs <span class='muted'>· Calf raises machine 76kg×4×11 (65kg add + 11kg frame; new PR by est. 1RM vs 77kg×4×10); Leg press 132kg×4×10 (new PR, +2 reps at same weight); Angled leg press 202kg setup [70kg each side + 62kg frame]×4×7 (new PR, +1 rep at same weight); Single-leg extensions 57kg each×4×6 (new PR — large jump from the prior 23.25kg-each reference, possibly a different machine setting; flagged); Outer thigh 79kg×4×10 (ties best by weight/reps, fewer total sets — 4 vs 5); Inner thigh 79kg×3×8 (new PR by est. 1RM vs 75kg×3×10, essentially equivalent). Followed the report's recommended Legs day. 10:20.</span></li><li><b>2026-07-24</b> · Strength — Shoulders <span class='muted'>· Front raises 18kg KB×4×8 (ties best); Dumbbell shoulder press 18kg each×4×9 (new PR, +1 rep at same weight); Shoulder shrugs 24kg each×4×11 (new PR, +1 rep at same weight); Lateral raises 16kg each×4×8 (ties best); Rear delt machine 73kg×3×9 (new PR, +1 rep at same weight); VKR 4×8 and VKR to sides 4×8 (new bodyweight core exercises, first log). Followed the report's recommended Shoulders day. 10:20.</span></li><li><b>2026-07-21</b> · Strength — Back <span class='muted'>· Diverging seated row 97kg×4×8 (ties best); Low row 79kg×4×8 (ties best); Reverse incline DB row 24kg each×4×10 (ties best); Dumbbell pullover 18kg×4×10 (ties best); Dead hang 20s×3 (ties yesterday's PR). Followed the report's recommended Back day. 15:30.</span></li></ul></div>
+        <div><div class="ls-h">Load &amp; balance alerts</div><div class='alert'>Nothing acutely concerning. The notes below are housekeeping, not warnings.</div></div>
+      </div>
+    </div>
+    <div class="panel span">
+      <h2>Intake Log · today</h2>
+      <table>
+        <thead><tr><th>Time</th><th>Item</th><th class="t-num">kcal</th><th class="t-num">prot</th><th class="t-num">carb</th><th class="t-num">fat</th><th class="t-num">fib</th></tr></thead>
+        <tbody><tr>
+          <td class="t-time">07:00</td>
+          <td><span class="dot" style="background:#888"></span>Rhinolast (azelastine nasal spray)<span class="muted"> · 1 dose (AM)</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">07:00</td>
+          <td><span class="dot" style="background:#888"></span>Bilaxten (bilastine)<span class="muted"> · 1 pill (morning)</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">07:10</td>
+          <td><span class="dot" style="background:#a78bfa"></span>Double espresso<span class="muted"> · 1 (double, ~60-80 ml)</span></td>
+          <td class="t-num">6</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">09:30</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Legendary Foods Protein Donuts (Chocolate Dipped)<span class="muted"> · 1 pack (2 donuts, 61 g)</span></td>
+          <td class="t-num">160</td>
+          <td class="t-num">20</td>
+          <td class="t-num">11</td>
+          <td class="t-num">6</td>
+          <td class="t-num">6</td>
+        </tr><tr>
+          <td class="t-time">10:15</td>
+          <td><span class="dot" style="background:#a78bfa"></span>Espresso<span class="muted"> · 1 shot (40 ml)</span></td>
+          <td class="t-num">3</td>
+          <td class="t-num">0.3</td>
+          <td class="t-num">0.5</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">12:30</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Legendary Foods Protein Donuts (Cinnamon Crumble)<span class="muted"> · 1 pack (2 donuts, 61 g)</span></td>
+          <td class="t-num">160</td>
+          <td class="t-num">20</td>
+          <td class="t-num">12</td>
+          <td class="t-num">5.5</td>
+          <td class="t-num">8</td>
+        </tr><tr>
+          <td class="t-time">13:45</td>
+          <td><span class="dot" style="background:#22c55e"></span>Multivitamin (Thorne Basic Nutrients 2/Day)<span class="muted"> · 2 capsules</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">15:30</td>
+          <td><span class="dot" style="background:#a78bfa"></span>Espresso<span class="muted"> · 1 shot (40 ml)</span></td>
+          <td class="t-num">3</td>
+          <td class="t-num">0.3</td>
+          <td class="t-num">0.5</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">16:15</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Lunch — Agami Pita Pro (spelt, protein-enriched)<span class="muted"> · 2 units (~136 g)</span></td>
+          <td class="t-num">280</td>
+          <td class="t-num">30</td>
+          <td class="t-num">38</td>
+          <td class="t-num">5</td>
+          <td class="t-num">18</td>
+        </tr><tr>
+          <td class="t-time">16:15</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Lunch — white cabbage salad in lemon juice<span class="muted"> · 8 spoons (~280 g) — amounts not weighed</span></td>
+          <td class="t-num">188</td>
+          <td class="t-num">3.3</td>
+          <td class="t-num">16.5</td>
+          <td class="t-num">13.8</td>
+          <td class="t-num">6.3</td>
+        </tr><tr>
+          <td class="t-time">16:15</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Lunch — homemade chicken meatballs (veg-loaded)<span class="muted"> · 300 g</span></td>
+          <td class="t-num">528</td>
+          <td class="t-num">46.5</td>
+          <td class="t-num">24</td>
+          <td class="t-num">26.1</td>
+          <td class="t-num">3</td>
+        </tr><tr>
+          <td class="t-time">16:15</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Lunch — cherry tomatoes<span class="muted"> · 40 (~680 g)</span></td>
+          <td class="t-num">122</td>
+          <td class="t-num">6.2</td>
+          <td class="t-num">26.6</td>
+          <td class="t-num">1.4</td>
+          <td class="t-num">8</td>
+        </tr><tr>
+          <td class="t-time">17:00</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Milk chocolate cube<span class="muted"> · 1 cube (~5 g)</span></td>
+          <td class="t-num">27</td>
+          <td class="t-num">0.3</td>
+          <td class="t-num">3</td>
+          <td class="t-num">1.5</td>
+          <td class="t-num">0.1</td>
+        </tr><tr>
+          <td class="t-time">17:45</td>
+          <td><span class="dot" style="background:#22c55e"></span>Omega-3 fish oil (EPA/DHA)<span class="muted"> · 2 softgels (~1000 mg EPA/DHA)</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">18:30</td>
+          <td><span class="dot" style="background:#888"></span>Rhinolast (azelastine nasal spray)<span class="muted"> · 1 dose (PM)</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">18:45</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Green grapes<span class="muted"> · 25 grapes (~125 g)</span></td>
+          <td class="t-num">86</td>
+          <td class="t-num">0.9</td>
+          <td class="t-num">22.6</td>
+          <td class="t-num">0.3</td>
+          <td class="t-num">1.1</td>
+        </tr><tr>
+          <td class="t-time">18:45</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Tnuva Emek Light yellow cheese, 9% fat<span class="muted"> · 2 slices (~50 g)</span></td>
+          <td class="t-num">100</td>
+          <td class="t-num">15</td>
+          <td class="t-num">0</td>
+          <td class="t-num">4.5</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">19:45</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Tnuva Emek Light yellow cheese, 9% fat<span class="muted"> · 3 slices (~75 g)</span></td>
+          <td class="t-num">150</td>
+          <td class="t-num">22.5</td>
+          <td class="t-num">0</td>
+          <td class="t-num">6.75</td>
+          <td class="t-num">0</td>
+        </tr><tr>
+          <td class="t-time">19:45</td>
+          <td><span class="dot" style="background:#38bdf8"></span>Green grapes<span class="muted"> · 20 grapes (~100 g)</span></td>
+          <td class="t-num">69</td>
+          <td class="t-num">0.7</td>
+          <td class="t-num">18.1</td>
+          <td class="t-num">0.2</td>
+          <td class="t-num">0.9</td>
+        </tr><tr>
+          <td class="t-time">20:00</td>
+          <td><span class="dot" style="background:#22c55e"></span>Creatine monohydrate<span class="muted"> · 5 g</span></td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+          <td class="t-num">0</td>
+        </tr><tr class="t-total">
+          <td></td><td>Total</td>
+          <td class="t-num">1882</td>
+          <td class="t-num">166</td>
+          <td class="t-num">172.8</td>
+          <td class="t-num">71.05</td>
+          <td class="t-num">51.4</td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel span">
+      <h2>Suggestions &amp; Recommendations</h2>
+      <ul class='sugg-ul'><li>Protein target hit on only 21/37 logged days — add a protein source to lighter meals to close the gap more consistently.</li><li>Fiber cleared target on 16/37 days — veg-forward meals (like the lettuce/tomato-heavy days) clear it easily; lean on those more often.</li><li>Calories ran 10%+ over target on 15/37 days, mostly around restaurant meals and desserts — no single day is a problem, but the pattern is worth watching against the weight-loss goal.</li><li>Average logged sleep is 7.1h across 24 night(s) tracked — keep logging nightly to get a reliable trend (still an early sample).</li><li>9 ejaculation event(s) logged in the last 14 days — aiming for roughly every 1-2 days (8-14 over a 14-day span) tracks best with the sperm-quality research.</li><li>Weight is -0.40 kg vs. the 2026-06-27 baseline, 3.0 kg from the 76-78 kg target range — pace is steady but slower than the 0.4 kg/week goal; tightening portions on non-restaurant days would help most.</li></ul>
+    </div>
+
+  </div>
+
+  <div class="footer">Generated 2026-08-03 03:57 · data in /data · edit profile.json to adjust targets</div>
+</div></body></html>

@@ -1,34 +1,215 @@
 {
-  "_note": "Training sessions + latest report snapshot from the exercise-log project (Omer's Training Dashboard). Keyed by date.",
+  "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-06-27",
-    "latest_session": "Back (pull)",
-    "sessions_logged": 21,
-    "sessions_per_week": 2.5,
-    "typical_time": "evening",
-    "aerobic_28d_km": 16.4,
-    "aerobic_sessions_28d": 16,
-    "avg_pace": "9:13/km",
+    "report_date": "2026-08-03",
+    "latest_session": "Chest",
+    "sessions_logged": 39,
+    "sessions_per_week": 3.3,
+    "typical_time": "afternoon",
+    "aerobic_28d_km": 5.7,
+    "aerobic_sessions_28d": 2,
+    "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 1.57,
-    "recommended_next": "Shoulders day",
+    "acwr": 1.39,
+    "recommended_next": "Back day",
     "alerts": [
-      "Training-load spike — ACWR 1.57 (>1.5); hold volume flat or deload to avoid soft-tissue injury.",
-      "Push volume 1.54× pull — add rows / rear-delt work to protect shoulders.",
-      "No direct core work tracked — add planks / hanging leg raises."
+      "Load ratio 1.39 (sweet spot 0.8–1.3). Keep added volume under ~10% next week.",
+      "Push volume is 1.43× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
+      "Recovers in ~71.6h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
-    {"date": "2026-06-13", "type": "Incline Walk", "duration_min": 15, "intensity": "easy", "notes": "1 km", "_source": "training report"},
-    {"date": "2026-06-20", "type": "Outdoor Run", "duration_min": 20, "intensity": "moderate", "notes": "3.06 km · 6:34/km · 150 bpm", "_source": "training report"},
-    {"date": "2026-06-22", "type": "Incline Walk", "duration_min": 40, "intensity": "easy", "notes": "3.5 km", "_source": "training report"},
-    {"date": "2026-06-26", "type": "Outdoor Walk", "duration_min": 50, "intensity": "easy", "notes": "4.5 km · 11:07/km", "_source": "training report"},
-    {"date": "2026-06-27", "type": "Strength — Back (pull)", "duration_min": null, "intensity": "moderate", "notes": "21st session logged; back fatigue 100% post-session", "_source": "training report"},
-    {"date": "2026-06-27", "type": "Outdoor Walk", "duration_min": 60, "intensity": "easy", "notes": "4.3 km · 13:57/km", "_source": "training report"},
-    {"date": "2026-06-30", "type": "Strength — Shoulders/Chest (push)", "duration_min": null, "intensity": "moderate", "notes": "DB shoulder press 14kg×4×12; seated lateral raises 14kg×4×7; front raises 16kg×3×10; incline pec fly 14kg×4×12; DB bench 14kg×4×15. (Followed report's recommended Shoulders day.)", "_source": "manual log"},
-    {"date": "2026-07-03", "type": "Walking / steps", "duration_min": null, "intensity": "easy-moderate", "notes": "~16K steps across multiple events despite a travel/red-eye day; ongoing back pain worked through", "_source": "manual log"},
-    {"date": "2026-07-04", "type": "Walking (long city walk)", "duration_min": null, "intensity": "moderate", "notes": "13,649 steps / 10.43 km / 418 active kcal (Samsung Health, up to 13:00)", "_source": "manual log"},
-    {"date": "2026-07-05", "type": "Walking (full day)", "duration_min": 174, "intensity": "moderate", "notes": "17,133 steps / 13.35 km / 529 active kcal / 174 min active (Samsung Health)", "_source": "manual log"},
-    {"date": "2026-07-06", "type": "Strength — Push + arms (travel gym)", "duration_min": null, "intensity": "moderate", "notes": "Chest press 73kg×4×6; incline chest press 73kg×4×6; shoulder press 82kg×4×6; incline hammer curls 16kg each×4×8; incline DB curls 16kg×4×6 (travel gym — machine weights not comparable, home PRs unchanged)", "_source": "manual log"}
+    {
+      "date": "2026-06-13",
+      "type": "Incline Walk",
+      "duration_min": 15,
+      "intensity": "easy",
+      "notes": "1 km",
+      "_source": "training report"
+    },
+    {
+      "date": "2026-06-20",
+      "type": "Outdoor Run",
+      "duration_min": 20,
+      "intensity": "moderate",
+      "notes": "3.06 km · 6:34/km · 150 bpm",
+      "_source": "training report"
+    },
+    {
+      "date": "2026-06-22",
+      "type": "Incline Walk",
+      "duration_min": 40,
+      "intensity": "easy",
+      "notes": "3.5 km",
+      "_source": "training report"
+    },
+    {
+      "date": "2026-06-26",
+      "type": "Outdoor Walk",
+      "duration_min": 50,
+      "intensity": "easy",
+      "notes": "4.5 km · 11:07/km",
+      "_source": "training report"
+    },
+    {
+      "date": "2026-06-27",
+      "type": "Strength — Back (pull)",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "21st session logged; back fatigue 100% post-session",
+      "_source": "training report"
+    },
+    {
+      "date": "2026-06-27",
+      "type": "Outdoor Walk",
+      "duration_min": 60,
+      "intensity": "easy",
+      "notes": "4.3 km · 13:57/km",
+      "_source": "training report"
+    },
+    {
+      "date": "2026-06-30",
+      "type": "Strength — Shoulders/Chest (push)",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "DB shoulder press 14kg×4×12; seated lateral raises 14kg×4×7; front raises 16kg×3×10; incline pec fly 14kg×4×12; DB bench 14kg×4×15. (Followed report's recommended Shoulders day.)",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-03",
+      "type": "Walking / steps",
+      "duration_min": null,
+      "intensity": "easy-moderate",
+      "notes": "~16K steps across multiple events despite a travel/red-eye day; ongoing back pain worked through",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-04",
+      "type": "Walking (long city walk)",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "13,649 steps / 10.43 km / 418 active kcal (Samsung Health, up to 13:00)",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-05",
+      "type": "Walking (full day)",
+      "duration_min": 174,
+      "intensity": "moderate",
+      "notes": "17,133 steps / 13.35 km / 529 active kcal / 174 min active (Samsung Health)",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-06",
+      "type": "Strength — Push + arms (travel gym)",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Chest press 73kg×4×6; incline chest press 73kg×4×6; shoulder press 82kg×4×6; incline hammer curls 16kg each×4×8; incline DB curls 16kg×4×6 (travel gym — machine weights not comparable, home PRs unchanged)",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-09",
+      "type": "Outdoor Run",
+      "duration_min": 12,
+      "intensity": "moderate",
+      "notes": "2.01 km · 5'46\"/km avg pace · 11:36 · cadence 162 · 159 kcal (Nike Run Club, 06:45, along the Thames, 22°C) — positive split, first km faster than second",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-11",
+      "type": "Strength — Legs",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Calf raises machine 77kg×4×10 (PR); Angled leg press 202kg setup [70kg each side + 62kg frame]×4×6 (PR); Leg extensions 111kg×4×12; Outer thigh 79kg×4×8; Inner thigh 75kg×3×10 (PR); Leg press 132kg×4×8. Followed the report's recommended Legs day.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-13",
+      "type": "Stretching / mobility (rehab) + Plank",
+      "duration_min": 20,
+      "intensity": "easy",
+      "notes": "20 min stretching/rehab session, then plank 3×30s (bodyweight, first time logged).",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-15",
+      "type": "Strength — Chest",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 (PR — more reps at the same weight than the prior 72.5kg×4×5 best); Incline bench press 72.5kg×4×5; Incline pec fly 18kg each×4×8 (ties existing best). 07:35.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-18",
+      "type": "Strength — Arms",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Incline hammer curl 18kg each×4×8 (ties best); Incline DB curl 18kg each×4×5 (ties best); Half curl 16kg each×4×6 (ties best); Forearm twists 12kg each×4×10 (ties best); Dead hang 20s×3 (PR — same duration as prior best but at a heavier bodyweight, 81.25kg); Biceps curl machine 45kg×2×6 (fewer sets than the 3×6 best, not a PR); Plank 45s×1 (single longer hold, but lower total volume than the 3×30s best). Followed the report's recommended Arms day. 18:20.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-19",
+      "type": "Outdoor Run",
+      "duration_min": 25,
+      "intensity": "moderate",
+      "notes": "3.7 km · 6:45/km avg pace (clock time not given).",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "Strength — Back",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Diverging seated row 97kg×4×8 (ties best); Low row 79kg×4×8 (ties best); Reverse incline DB row 24kg each×4×10 (ties best); Dumbbell pullover 18kg×4×10 (ties best); Dead hang 20s×3 (ties yesterday's PR). Followed the report's recommended Back day. 15:30.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "Strength — Shoulders",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Front raises 18kg KB×4×8 (ties best); Dumbbell shoulder press 18kg each×4×9 (new PR, +1 rep at same weight); Shoulder shrugs 24kg each×4×11 (new PR, +1 rep at same weight); Lateral raises 16kg each×4×8 (ties best); Rear delt machine 73kg×3×9 (new PR, +1 rep at same weight); VKR 4×8 and VKR to sides 4×8 (new bodyweight core exercises, first log). Followed the report's recommended Shoulders day. 10:20.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-25",
+      "type": "Strength — Legs",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Calf raises machine 76kg×4×11 (65kg add + 11kg frame; new PR by est. 1RM vs 77kg×4×10); Leg press 132kg×4×10 (new PR, +2 reps at same weight); Angled leg press 202kg setup [70kg each side + 62kg frame]×4×7 (new PR, +1 rep at same weight); Single-leg extensions 57kg each×4×6 (new PR — large jump from the prior 23.25kg-each reference, possibly a different machine setting; flagged); Outer thigh 79kg×4×10 (ties best by weight/reps, fewer total sets — 4 vs 5); Inner thigh 79kg×3×8 (new PR by est. 1RM vs 75kg×3×10, essentially equivalent). Followed the report's recommended Legs day. 10:20.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "Strength — Chest",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Bench press 72.5kg [26.25kg each side + 20kg bar]×4×7 (new PR, +1 rep at same weight vs 72.5kg×4×6); Incline bench press 72.5kg×4×6 (user-corrected new best — disregards the earlier 73kg×4×6 entry); Decline bench press 72.5kg×4×6 (new PR, +1 rep at same weight vs 72.5kg×4×5); VKR 4×10 (new PR, +2 reps vs 4×8); VKR to sides 4×8 (ties best). Followed the report's recommended Chest day. 20:20.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "Strength — Full Body (Deload)",
+      "duration_min": null,
+      "intensity": "light",
+      "notes": "Pec Fly Machine 73kg×3×6, Diverging Seated Row 84kg×4×6, Converging Shoulder Press 68kg×4×6, Angled Leg Press 172kg×4×5, Rope Cable Extension 64kg×4×6 — one lift per section, all ~85-87% of best with capped reps. Followed up on the ACWR-driven deload recommendation (1.66-1.67 in the danger zone). No PR attempts; all bests unchanged. 06:10.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "Strength — Back + Arms",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Dumbbell pullover 18kg×4×10 (ties best); Reverse incline DB row 26kg each×4×8 (new PR, +2kg each side vs 24kg each×4×10); Incline DB curl 18kg each×4×6 (new PR, +1 rep at same weight); Incline hammer curl 18kg each×4×8 (ties best); Half curl 18kg each×4×5 (new PR by est. 1RM vs 16kg each×4×6); Dead hang 25s×3 (new PR, +5s vs 20s×3). 09:00.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-03",
+      "type": "Strength — Chest",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Plank 35s×3 (new PR, +5s vs 30s×3); Bench press 72.5kg×4×8 (new PR, +1 rep at same weight vs 72.5kg×4×7); Incline bench press 72.5kg×4×7 (new PR, +1 rep at same weight vs 72.5kg×4×6); Incline pec fly 18kg each×4×9 (new PR, +1 rep at same weight vs 18kg each×4×8). 4 new PRs. 21:05.",
+      "_source": "manual log"
+    }
   ]
 }

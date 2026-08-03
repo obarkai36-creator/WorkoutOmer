@@ -106,38 +106,63 @@
       ? `<span style="color:var(--green)">Ready to train now</span>`
       : `Rest <b>${humanHours(r.restHours)}</b> before training`;
 
+    const whenLine = r.deload
+      ? "Lighter loads, capped reps, no PR attempts this session."
+      : (r.readyNow ? "Earliest sensible slot: now" : "Ready around " + fmtWhen(r.readyAt)) + " &middot; " +
+        (r.neverLogged ? "no " + r.section.toLowerCase() + " session logged yet" : "last " + r.section.toLowerCase() + " " + r.daysSince + "d ago");
+
     el.innerHTML = `
       <div class="reco">
         <div class="muted small">RECOMMENDED NEXT SESSION</div>
-        <div class="big">${r.section} day</div>
+        <div class="big">${r.deload ? "Full Body — Deload" : r.section + " day"}</div>
         <div class="rest">${restTxt}</div>
-        <div class="when">${r.readyNow ? "Earliest sensible slot: now" : "Ready around " + fmtWhen(r.readyAt)} &middot; ${r.neverLogged ? "no " + r.section.toLowerCase() + " session logged yet" : "last " + r.section.toLowerCase() + " " + r.daysSince + "d ago"}</div>
-        <div class="small muted" style="margin-top:12px;margin-bottom:2px">Suggested lifts &middot; your best (target to beat)</div>
+        <div class="when">${whenLine}</div>
+        ${r.guidance && r.guidance.length ? `
+        <div class="small muted" style="margin-top:12px;margin-bottom:2px">${r.deload ? "WHY A DELOAD" : "SESSION FOCUS"}</div>
+        ${r.guidance.map((g) => `<div class="small" style="margin-bottom:4px${r.deload ? ';color:var(--yellow)' : ''}">${g}</div>`).join("")}` : ""}
+        <div class="small muted" style="margin-top:12px;margin-bottom:2px">Suggested lifts &middot; next-session target</div>
         <div class="reco-lifts">
           ${r.suggestedExercises.map((e) => `
             <div class="reco-lift">
-              <span class="rl-name">${e.name}</span>
-              <span class="rl-best">${e.best || "—"}${e.best1RM && !e.iso ? ` <span class="rl-orm">1RM ${e.best1RM}kg</span>` : ""}</span>
+              <div class="rl-row">
+                <span class="rl-name">${e.name}</span>
+                <span class="rl-best" style="${e.target?.status === 'rebuild' || e.target?.status === 'hold' ? 'color:var(--yellow)' : ''}">${e.target ? e.target.text : (e.best || "—")}</span>
+              </div>
+              <div class="small muted" style="margin-top:2px">best ${e.best || "—"}${e.best1RM && !e.iso ? ` &middot; est 1RM ${e.best1RM}kg` : ""}</div>
             </div>`).join("")}
         </div>
       </div>
+      ${r.ranked.length ? `
       <div class="small muted" style="margin-bottom:8px">Recovery ranking</div>
       ${r.ranked.map((x) => `
         <div class="mrow">
           <span class="ml">${x.section}</span>
           <span class="bar"><span style="width:${x.fatigue}%;background:${fatigueColor(x.fatigue)}"></span></span>
           <span class="mv">${x.readyInHours < 1 ? "ready" : humanHours(x.readyInHours)}</span>
-        </div>`).join("")}
+        </div>`).join("")}` : ""}
       <div class="small muted" style="margin-top:12px">
         Aerobic this week: <b style="color:var(--text)">${r.aerobicLast7}/${r.aerobicTarget}</b>${r.aerobicLast7 < r.aerobicTarget ? " — fit in an easy session" : " — on track"}
-      </div>`;
+      </div>
+      ${a.sleep && a.sleep.any && a.sleep.status === "low" ? `
+      <div class="small" style="margin-top:8px;color:var(--yellow)">
+        ⚠ Only ${a.sleep.current.hours}h sleep last night — recovery runs slower on short sleep; consider an easier session or a shorter rest-ready window than shown above.
+      </div>` : ""}`;
   }
 
   /* ---- 4. Injury alerts --------------------------------------------------- */
+  function acwrZoneColor(v) {
+    if (v == null) return "#8b97a7";
+    if (v > 1.5) return "var(--red)";
+    if (v > 1.3) return "var(--orange)";
+    if (v < 0.8) return "var(--yellow)";
+    return "var(--green)";
+  }
+
   function renderAlerts(a) {
     const el = $("alerts-body");
     const z = a.trends.acwrZone;
     const zColor = { danger: "var(--red)", caution: "var(--orange)", detraining: "var(--yellow)", ok: "var(--green)", insufficient: "var(--muted)" }[z] || "var(--green)";
+    const acwrWeeks = a.trends.weeks.filter((w) => w.acwr != null);
     el.innerHTML = `
       <div class="kpi-row">
         <div class="kpi"><div class="v" style="color:${zColor}">${a.trends.acwr ?? "n/a"}</div><div class="l">Load ratio (ACWR)</div></div>
@@ -147,7 +172,38 @@
         <div class="alert">
           <div class="sev" style="background:${sevColor[al.level]}"></div>
           <div><div class="t">${al.title}</div><div class="d">${al.detail}</div></div>
-        </div>`).join("")}`;
+        </div>`).join("")}
+      ${acwrWeeks.length >= 2 ? `
+      <div class="small muted" style="margin:16px 0 6px">Load ratio trend (6 wks) &middot; danger &gt;1.5, sweet spot 0.8&ndash;1.3</div>` +
+      (IS_PDF
+        ? (() => {
+            const mx = Math.max(...acwrWeeks.map((w) => w.acwr), 1.5);
+            return `<div class="loadbars">${acwrWeeks.map((w) => `<div class="col"><div class="b" style="height:${(w.acwr / mx) * 46}px;background:${acwrZoneColor(w.acwr)}"></div><div class="lbl">${w.label}</div></div>`).join("")}</div>`;
+          })()
+        : `<canvas id="acwrChart" height="150"></canvas>`) : ""}`;
+
+    if (!IS_PDF && acwrWeeks.length >= 2) {
+      new Chart($("acwrChart"), {
+        type: "line",
+        data: {
+          labels: acwrWeeks.map((w) => w.label),
+          datasets: [{
+            label: "ACWR", data: acwrWeeks.map((w) => w.acwr),
+            borderColor: "#4ea1ff", backgroundColor: "rgba(78,161,255,.15)",
+            fill: true, tension: .35, pointRadius: 4,
+            pointBackgroundColor: acwrWeeks.map((w) => acwrZoneColor(w.acwr)),
+          }],
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { display: false } },
+            y: { ticks: { color: "#8b97a7", font: { size: 10 } }, grid: { color: "rgba(255,255,255,.06)" }, suggestedMin: 0 },
+          },
+        },
+      });
+    }
   }
 
   /* ---- 5. Suggested changes ---------------------------------------------- */
@@ -270,6 +326,28 @@
         <div class="meta" style="margin:-1px 0 6px 138px;color:var(--muted);font-size:11px">est 1RM ${it.oneRM} kg</div>`).join("");
   }
 
+  /* ---- 10. Sleep ----------------------------------------------------------- */
+  const sleepStatusColor = { low: "var(--red)", good: "var(--green)", long: "var(--yellow)" };
+  const sleepStatusLabel = { low: "short", good: "on target", long: "long (catch-up)" };
+  function renderSleep(a) {
+    const el = $("sleep-body"); const s = a.sleep;
+    if (!s || !s.any) { el.innerHTML = `<p class="muted">No sleep logged yet. Add nights to the SLEEP log in data.js.</p>`; return; }
+    const col = sleepStatusColor[s.status] || "var(--text)";
+    const hist = s.history.slice(0, 7);
+    const maxH = Math.max(...hist.map((h) => h.hours), 1);
+    el.innerHTML = `
+      <div class="kpi-row">
+        <div class="kpi"><div class="v" style="color:${col}">${s.current.hours}<span style="font-size:12px"> h</span></div><div class="l">last night</div></div>
+        <div class="kpi"><div class="v">${s.avg7 ?? "—"}<span style="font-size:12px"> h</span></div><div class="l">7-day avg</div></div>
+      </div>
+      <div class="small muted" style="margin:2px 0 6px">${s.current.start}–${s.current.end} &middot; <span style="color:${col}">${sleepStatusLabel[s.status]}</span>${s.current.note ? " &middot; " + s.current.note : ""}</div>
+      <div class="loadbars" style="height:54px">
+        ${hist.slice().reverse().map((h) => `<div class="col"><div class="b" style="height:${(h.hours / maxH) * 46}px;background:${sleepStatusColor[h.hours < 6 ? "low" : h.hours > 9.5 ? "long" : "good"]}" title="${h.hours}h"></div><div class="lbl">${new Date(h.date).toLocaleDateString(undefined, { month: "short", day: "numeric" })}</div></div>`).join("")}
+      </div>
+      <div class="small muted" style="margin:10px 0 4px">Nights</div>
+      ${hist.map((h) => `<div class="prog" style="padding:3px 0"><div class="top"><span class="name">${h.hours} h</span><span class="small muted">${new Date(h.date).toLocaleDateString(undefined, { month: "short", day: "numeric" })}</span></div><div class="meta">${h.start}–${h.end}${h.note ? " &middot; " + h.note : ""}</div></div>`).join("")}`;
+  }
+
   /* ---- 9. Bodyweight tracker ---------------------------------------------- */
   function renderBodyweight(a) {
     const el = $("bw-body"); const b = a.bodyweight;
@@ -329,6 +407,7 @@
     renderCardio(a);
     renderRelStr(a);
     renderBodyweight(a);
+    renderSleep(a);
 
     // Signal to the PDF renderer that the page is fully drawn.
     window.__READY = true;

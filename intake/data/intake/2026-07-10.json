@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-10",
+  "day_number": 13,
+  "in_progress": false,
+  "workout_today": false,
+  "workout_summary": null,
+  "_status": "Day complete.",
+  "items": [
+    {"time": "08:00", "name": "Breakfast — bite-sized croissant", "category": "food", "qty": "1, mini (~15 g)", "kcal": 65, "protein_g": 1.5, "carbs_g": 7, "fat_g": 3.5, "fiber_g": 0.5, "time_approx": true},
+    {"time": "08:00", "name": "Breakfast — strawberries", "category": "food", "qty": "4", "kcal": 20, "protein_g": 0.4, "carbs_g": 4.5, "fat_g": 0.2, "fiber_g": 1.5, "time_approx": true},
+    {"time": "08:00", "name": "Breakfast — hash brown", "category": "food", "qty": "1 (~50 g)", "kcal": 130, "protein_g": 1.5, "carbs_g": 14, "fat_g": 8, "fiber_g": 1, "time_approx": true},
+    {"time": "08:00", "name": "Single espresso", "category": "drink", "qty": "1 (40 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
+    {"time": "10:30", "name": "In-flight meal — pretzel sandwich with gouda & omelette (El Al)", "category": "food", "qty": "1 whole (165 g)", "kcal": 505, "protein_g": 15, "carbs_g": 43, "fat_g": 29, "fiber_g": 2, "time_approx": true, "note": "reused from verified label values logged 2 Jul (~308 kcal/100g, fat 17.4g/100g, protein 8.9g/100g × 165g; sodium ~760mg)"},
+    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "local time zone +2 (post-flight landing zone)"},
+    {"time": "14:20", "name": "Snack — chocolate coconut snack (El Al)", "category": "food", "qty": "1 unit (20 g)", "kcal": 89, "protein_g": 1, "carbs_g": 11, "fat_g": 4.2, "fiber_g": 1, "note": "reused verified reference (elal_coconut_snack, ~444 kcal/100g, 21.2g fat/100g); local time zone +2"},
+    {"time": "19:30", "name": "Dinner — chicken schnitzel", "category": "food", "qty": "200 g", "kcal": 470, "protein_g": 40, "carbs_g": 24, "fat_g": 24, "fiber_g": 1, "time_approx": true, "note": "breaded, fried"},
+    {"time": "19:30", "name": "Dinner — sirloin steak (fat trimmed)", "category": "food", "qty": "200 g", "kcal": 360, "protein_g": 62, "carbs_g": 0, "fat_g": 12, "fiber_g": 0, "time_approx": true, "note": "lean, visible fat removed"},
+    {"time": "19:30", "name": "Dinner — baked potato", "category": "food", "qty": "1 medium", "kcal": 160, "protein_g": 4, "carbs_g": 37, "fat_g": 0.2, "fiber_g": 4, "time_approx": true},
+    {"time": "20:00", "name": "Thorne Basic Nutrients 2/Day", "category": "supplement", "qty": "2 caps", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "21:15", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 pot (~150 g)", "kcal": 120, "protein_g": 20, "carbs_g": 9, "fat_g": 1, "fiber_g": 0, "note": "generic high-protein yogurt estimate — brand not specified"},
+    {"time": "21:25", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "22:30", "name": "Late snack — green grapes", "category": "food", "qty": "30", "kcal": 104, "protein_g": 0.9, "carbs_g": 27, "fat_g": 0.3, "fiber_g": 1.4, "time_approx": true}
+  ],
+  "micros_sperm_priority": {
+    "zinc_mg": 27.3,
+    "selenium_mcg": 288,
+    "folate_mcg_dfe": 727,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 300,
+    "vitamin_d_iu": 2040,
+    "vitamin_e_mg": 17.3,
+    "lycopene_mg": 0
+  },
+  "caffeine_shots": 1,
+  "assumptions": [
+    "Breakfast logged from description (no photo): 1 bite-sized croissant, 4 strawberries, 1 hash brown + single espresso. Light breakfast — portion sizes estimated, not weighed.",
+    "In-flight meal (El Al pretzel sandwich, gouda & omelette) reused verified values from the 2 Jul entry (same recurring item) rather than re-estimating — now also saved to references/foods.json for future reuse. Time approximated at 10:30 (exact serving time not given) on the 4:50hr daytime flight.",
+    "Time zone shifted +2 after landing — 13:00 omega-3 and 14:20 snack logged in local (new) time; all times from this point on are in the new zone.",
+    "14:20 chocolate coconut snack reused the verified elal_coconut_snack reference (references/foods.json) — same recurring El Al item as 2 Jul.",
+    "Dinner logged from description (no photo): 200 g chicken schnitzel, 200 g sirloin steak (fat trimmed), 1 baked potato. No time given — approximated at 19:30. Portion sizes as stated; per-100g macros estimated, not weighed.",
+    "Multivitamin micros use the verified Thorne label values from references/supplements.json.",
+    "21:15 vanilla protein yogurt — brand not specified, used a generic high-protein yogurt estimate (~150 g pot, 20 g protein).",
+    "Late snack: 30 green grapes, estimated ~5 g each (~150 g total)."
+  ],
+  "status_note": "Day complete. Light breakfast (mini croissant, strawberries, hash brown) + single espresso, El Al gouda & omelette sandwich in-flight, omega-3 + chocolate coconut snack post-landing (tz +2), a big double-protein dinner (200 g chicken schnitzel, 200 g lean sirloin, baked potato), multivitamin at 20:00, protein yogurt at 21:15, creatine 5 g at 21:25, and a late grape snack. Total ~2,026 kcal, ~146 g protein, ~177 g carb, ~82 g fat, ~12 g fiber, 1 caffeine shot — protein cleared the 165 g target, calories landed close to target despite a travel day, fiber came in low (12 g vs 32 g) with the day's food skewing toward protein/starch over veg/fruit."
+}
