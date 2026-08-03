@@ -202,6 +202,37 @@ def build_quickview(chips):
     </div>"""
 
 
+# (label, name-substring to match, optional qty-substring e.g. "am"/"pm" dose)
+EXPECTED_SUPPLEMENTS = [
+    ("Allergy spray · AM", "rhinolast", "am"),
+    ("Allergy spray · PM", "rhinolast", "pm"),
+    ("Allergy pill (Bilaxten)", "bilaxten", None),
+    ("Multivitamin", "multivit", None),
+    ("Omega-3", "omega-3", None),
+    ("Creatine", "creatine", None),
+]
+
+
+def build_supplement_check(items):
+    """Replaces the full item-by-item Intake Log table with just a compliance
+    check against the standing daily supplement/medication routine — the
+    macro/micro panels already cover what was eaten in aggregate, so the raw
+    log was mostly useful for catching a missed dose, which this does more
+    directly."""
+    rows = []
+    for label, name_sub, qty_sub in EXPECTED_SUPPLEMENTS:
+        taken = any(
+            name_sub in i.get("name", "").lower()
+            and (qty_sub is None or qty_sub in i.get("qty", "").lower())
+            for i in items
+        )
+        icon = "✅" if taken else "⚠️"
+        color = "#22c55e" if taken else "#f59e0b"
+        status = "taken" if taken else "not logged today"
+        rows.append(f"<li><span style='color:{color}'>{icon}</span> {label} <span class='muted'>· {status}</span></li>")
+    return "".join(rows)
+
+
 def build_training_panels(train):
     """Render the FULL training-dashboard content (fatigue, recommendation,
     PRs, balance, relative strength, aerobic, ACWR trend) from
@@ -226,14 +257,17 @@ def build_training_panels(train):
             for e in rec.get("suggestedExercises", [])) or "<li class='muted'>—</li>"
     else:
         rest_txt = "ready now" if rec.get("readyNow") else f"~{rec.get('restHours','?')}h to go"
-        rec_line = f"<div class='tr-line'>Recommended next: <b>{rec.get('section','–')} day</b> <span class='muted'>({rest_txt})</span></div>"
+        count_txt = ""
+        if rec.get("suggestedCount") and rec.get("totalAvailable"):
+            count_txt = f" <span class='muted'>· go for <b style=\"color:var(--text)\">{rec['suggestedCount']} of {rec['totalAvailable']}</b> below</span>"
+        rec_line = f"<div class='tr-line'>Recommended next: <b>{rec.get('section','–')} day</b> <span class='muted'>({rest_txt})</span>{count_txt}</div>"
         guidance_html = "".join(f"<div class='alert'>{g}</div>" for g in rec.get("guidance", [])) or "<div class='muted'>No special guidance.</div>"
         status_color = {"progress": "#22c55e", "rebuild": "#f59e0b", "hold": "#f59e0b", "hold_iso": "#f59e0b"}
         lifts_html = "".join(
             f"<li><b>{e['name']}</b> <span class='muted'>· best {e['best']}</span>"
             + (f"<br><span style='color:{status_color.get(e['target']['status'],'var(--text)')}'>{e['target']['text']}</span>" if e.get("target") else "")
             + "</li>"
-            for e in rec.get("suggestedExercises", [])[:6]) or "<li class='muted'>—</li>"
+            for e in rec.get("suggestedExercises", [])) or "<li class='muted'>—</li>"
 
     trends = train.get("trends", {}) or {}
     weeks = [w for w in trends.get("weeks", []) if w.get("acwr") is not None]
@@ -769,11 +803,6 @@ def build(target_date, unified=False):
             + _stat(f"{snap.get('aerobic_28d_km','–')} km", "Cardio 28d")
             + _stat(f"{snap.get('avg_hr','–')} bpm", "Avg HR")
             + _stat(acwr if acwr else "–", "Load ratio", acwr_color))
-        sess_rows = "".join(
-            f"<li><b>{w['date']}</b> · {w['type']}"
-            + (f" <span class='muted'>· {w['duration_min']} min</span>" if w.get('duration_min') else "")
-            + (f" <span class='muted'>· {w['notes']}</span>" if w.get('notes') else "")
-            + "</li>" for w in recent_workouts) or "<li class='muted'>No sessions in range.</li>"
         alerts_html = "".join(f"<div class='alert'>{a}</div>" for a in snap.get("alerts", [])) \
             or "<div class='muted'>No alerts.</div>"
         training_panel = f"""
@@ -781,20 +810,21 @@ def build(target_date, unified=False):
       <h2>Training · from exercise dashboard (report {snap.get('report_date','–')})</h2>
       <div class="chips four">{tr_stats}</div>
       <div class="tr-line">Latest: <b>{snap.get('latest_session','–')}</b> · Recommended next: <b>{snap.get('recommended_next','–')}</b></div>
-      <div class="tr-cols">
-        <div><div class="ls-h">Recent sessions (14d)</div><ul class="ev-ul">{sess_rows}</ul></div>
-        <div><div class="ls-h">Load &amp; balance alerts</div>{alerts_html}</div>
-      </div>
+      <div class="ls-h">Load &amp; balance alerts</div>{alerts_html}
     </div>"""
     else:
         training_panel = ""
 
     train_full = None
     if unified:
+        # The richer panels below (fatigue, recommendation, PRs, balance,
+        # aerobic, load-ratio trend) fully supersede this compact mirror —
+        # showing both would just be the same numbers twice.
+        training_panel = ""
         refresh_training_full()
         try:
             train_full = load("data/metrics/training_full.json")
-            training_panel = training_panel + build_training_panels(train_full)
+            training_panel = build_training_panels(train_full)
         except FileNotFoundError:
             pass
 
@@ -838,28 +868,7 @@ def build(target_date, unified=False):
         bar(micros.get(k, 0), mtarg[k], k.replace("_", " ")) for k in mtarg
     )
 
-    cat_color = {"food": "#38bdf8", "drink": "#a78bfa", "supplement": "#22c55e"}
-    log_rows = "".join(
-        f"""<tr>
-          <td class="t-time">{i['time']}</td>
-          <td><span class="dot" style="background:{cat_color.get(i['category'],'#888')}"></span>{i['name']}<span class="muted"> · {i.get('qty','')}</span></td>
-          <td class="t-num">{i['kcal']:g}</td>
-          <td class="t-num">{i['protein_g']:g}</td>
-          <td class="t-num">{i['carbs_g']:g}</td>
-          <td class="t-num">{i['fat_g']:g}</td>
-          <td class="t-num">{i['fiber_g']:g}</td>
-        </tr>""" for i in items
-    )
-    log_total = (
-        f"""<tr class="t-total">
-          <td></td><td>Total</td>
-          <td class="t-num">{tot['kcal']:g}</td>
-          <td class="t-num">{tot['protein_g']:g}</td>
-          <td class="t-num">{tot['carbs_g']:g}</td>
-          <td class="t-num">{tot['fat_g']:g}</td>
-          <td class="t-num">{tot['fiber_g']:g}</td>
-        </tr>"""
-    )
+    supplement_check_html = build_supplement_check(items)
 
     bc = profile["baseline_body_composition"]
     comp_cards = "".join(
@@ -1081,11 +1090,8 @@ def build(target_date, unified=False):
     </div>
 {training_panel}
     <div class="panel span">
-      <h2>Intake Log · today</h2>
-      <table>
-        <thead><tr><th>Time</th><th>Item</th><th class="t-num">kcal</th><th class="t-num">prot</th><th class="t-num">carb</th><th class="t-num">fat</th><th class="t-num">fib</th></tr></thead>
-        <tbody>{log_rows}{log_total}</tbody>
-      </table>
+      <h2>Supplements &amp; Medication Check</h2>
+      <ul class="ev-ul">{supplement_check_html}</ul>
     </div>
 
     <div class="panel span">

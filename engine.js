@@ -479,7 +479,32 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
   } else if (pick.section === "Chest" && bal && bal.pushPull != null && bal.pushPull < 0.7) {
     guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — good timing for a push day.`);
   }
-  suggestedExercises = suggestedExercises.slice(0, 7).map(({ lib, ...rest }) => rest);
+  // Show every trainable exercise for the picked section (some, like Legs or
+  // Arms, have a dozen+) rather than an arbitrary top-N cut — but a real
+  // session doesn't run all of them, so also estimate how many to actually
+  // do today from how many this section's own past sessions typically used.
+  suggestedExercises = suggestedExercises.map(({ lib, ...rest }) => rest);
+  const sectionExerciseNames = new Set(suggestedExercises.map((e) => e.name));
+  const pastSessionSizes = [];
+  for (const w of workouts) {
+    const total = sum(Object.values(w.muscleLoad)) || 1;
+    const secLoad = sum(Object.entries(w.muscleLoad).filter(([m]) => muscles[m].section === pick.section).map(([, v]) => v));
+    if (secLoad / total <= 0.4) continue;
+    const count = w.exercises.filter((ex) => sectionExerciseNames.has(ex.name)).length;
+    if (count > 0) pastSessionSizes.push(count);
+  }
+  const totalAvailable = suggestedExercises.length;
+  let typicalSessionSize = 4;
+  if (pastSessionSizes.length) {
+    pastSessionSizes.sort((a, b) => a - b);
+    const mid = Math.floor(pastSessionSizes.length / 2);
+    typicalSessionSize = pastSessionSizes.length % 2
+      ? pastSessionSizes[mid]
+      : Math.round((pastSessionSizes[mid - 1] + pastSessionSizes[mid]) / 2);
+  }
+  const minCount = Math.min(3, totalAvailable);
+  let suggestedCount = clamp(typicalSessionSize, minCount, totalAvailable);
+  if (trends && trends.acwrZone === "danger") suggestedCount = clamp(suggestedCount - 1, minCount, totalAvailable);
 
   if (trends && trends.acwrZone === "danger")
     guidance.push(`Load ratio ${trends.acwr} is in the danger zone — keep weight/sets flat this session, no PR attempts.`);
@@ -500,6 +525,7 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
     neverLogged: pick.daysSince == null,
     daysSince: pick.daysSince,
     suggestedExercises, guidance, ranked,
+    suggestedCount, totalAvailable, typicalSessionSize,
     aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
     daysSinceAerobic: lastAerobic ? round((now - lastAerobic.t) / DAY, 1) : null,
   };

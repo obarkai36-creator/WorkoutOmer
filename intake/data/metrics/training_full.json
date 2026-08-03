@@ -1,5 +1,5 @@
 {
-  "now": 1785786332209,
+  "now": 1785786866745,
   "workouts": [
     {
       "datetime": "2026-08-03T21:05",
@@ -3700,7 +3700,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 99,
-      "readyInHours": 71.7,
+      "readyInHours": 71.6,
       "ready": false
     },
     "back": {
@@ -3804,14 +3804,14 @@
     "Chest": {
       "section": "Chest",
       "pct": 99,
-      "readyInHours": 71.7,
+      "readyInHours": 71.6,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 99,
-          "readyInHours": 71.7,
+          "readyInHours": 71.6,
           "ready": false
         }
       ]
@@ -4950,7 +4950,7 @@
     "fatigue": 19,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-03T19:45:32.209Z",
+    "readyAt": "2026-08-03T19:54:26.745Z",
     "neverLogged": false,
     "daysSince": 13.2,
     "suggestedExercises": [
@@ -5048,15 +5048,18 @@
         "section": "Arms",
         "fatigue": 22,
         "readyInHours": 12.5,
-        "daysSince": 2.4
+        "daysSince": 2.5
       },
       {
         "section": "Chest",
         "fatigue": 99,
-        "readyInHours": 71.7,
+        "readyInHours": 71.6,
         "daysSince": 19.5
       }
     ],
+    "suggestedCount": 5,
+    "totalAvailable": 6,
+    "typicalSessionSize": 5,
     "aerobicLast7": 0,
     "aerobicTarget": 2,
     "daysSinceAerobic": 15.3
@@ -5075,7 +5078,7 @@
     {
       "level": "low",
       "title": "Chest fatigued (99%)",
-      "detail": "Recovers in ~71.7h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~71.6h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
@@ -5098,7 +5101,7 @@
       7,
       9
     ],
-    "daysSinceLast": -0.1,
+    "daysSinceLast": 0,
     "total": 39
   },
   "relstrength": {
