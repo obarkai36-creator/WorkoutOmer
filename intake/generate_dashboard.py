@@ -15,6 +15,7 @@ current 7-day window's computed factors, daily), data/metrics/energy.json
 (appends/updates today's computed energy score, daily)
 """
 import json
+import re
 import sys
 import glob
 import os
@@ -180,6 +181,25 @@ def _acwr_color(v):
 
 def _fatigue_color(pct):
     return "#22c55e" if pct < 30 else "#3b82f6" if pct < 60 else "#f59e0b" if pct < 90 else "#ef4444"
+
+
+def _qv_chip(value, label, color=None):
+    style = f" style='color:{color}'" if color else ""
+    return f"<div class='chip'><div class='chip-v'{style}>{value}</div><div class='chip-k'>{label}</div></div>"
+
+
+def build_quickview(chips):
+    """A compact 'at a glance' row of the most relevant numbers across every
+    dataset (scores, intake totals, sleep, workout, load ratio, bodyweight),
+    replacing the old prose status_note — the log table and the panels below
+    already carry the detail, so a paragraph re-narrating the day was pure
+    redundancy."""
+    cells = "".join(_qv_chip(c["v"], c["k"], c.get("color")) for c in chips)
+    return f"""
+    <div class="panel span">
+      <h2>Quick View</h2>
+      <div class="chips qv">{cells}</div>
+    </div>"""
 
 
 def build_training_panels(train):
@@ -769,6 +789,7 @@ def build(target_date, unified=False):
     else:
         training_panel = ""
 
+    train_full = None
     if unified:
         refresh_training_full()
         try:
@@ -902,6 +923,37 @@ def build(target_date, unified=False):
           <div class="muted">{days_logged} / {UNLOCK_DAYS} logged · {remaining} day(s) to go. Logging the inputs (nutrition, sleep, alcohol, heat/travel) now; the weighted estimate switches on at day {UNLOCK_DAYS}.</div></div>
         </div>"""
 
+    # Quick View — the compact "all datasets, most relevant numbers" strip
+    # that replaces the old prose status_note panel.
+    qv_chips = [{"v": f"{energy['overall']}", "k": "Energy score", "color": eband["color"]}]
+    if score_unlocked:
+        qv_chips.append({"v": f"{overall:.0f}", "k": "Sperm score", "color": sband["color"]})
+    else:
+        qv_chips.append({"v": "🔒", "k": "Sperm score"})
+    qv_chips.append({"v": f"{tot['kcal']:g}", "k": f"kcal (of {t['calories_kcal']:g})"})
+    qv_chips.append({"v": f"{tot['protein_g']:g}g", "k": f"protein (of {t['protein_g']:g}g)"})
+    if sleep_upto:
+        qv_chips.append({"v": f"{h:g}h", "k": f"Sleep ({sleep_label})", "color": sleep_color})
+    if intake.get("workout_today"):
+        wsum = intake.get("workout_summary") or ""
+        pr_m = re.search(r"(\d+) new PRs?", wsum)
+        sess_name = wsum.split(" (")[0] if " (" in wsum else wsum.split(":")[0]
+        wv = f"{sess_name}" + (f" · {pr_m.group(1)} PR{'s' if pr_m.group(1) != '1' else ''}" if pr_m else "")
+        qv_chips.append({"v": wv, "k": "Workout", "color": "#22c55e" if pr_m else None})
+    else:
+        qv_chips.append({"v": "Rest day", "k": "Workout"})
+    if train_full:
+        acwr = train_full.get("trends", {}).get("acwr")
+        zone = train_full.get("trends", {}).get("acwrZone", "–")
+        qv_chips.append({"v": f"{acwr if acwr is not None else '–'}", "k": f"Load ratio ({zone})", "color": _acwr_color(acwr)})
+        rec_section = train_full.get("recommendation", {})
+        rec_label = "Deload" if rec_section.get("deload") else rec_section.get("section", "–")
+        qv_chips.append({"v": rec_label, "k": "Recommended next"})
+    qv_chips.append({"v": f"{latest['weight_kg']:g}kg", "k": "Bodyweight"})
+    if intake.get("caffeine_shots") is not None:
+        qv_chips.append({"v": f"{intake['caffeine_shots']}", "k": "Caffeine shots"})
+    quickview_panel = build_quickview(qv_chips)
+
     sample_flag = " · <span style='color:#f59e0b'>DEMO sample data</span>" if intake.get("_note") else ""
 
     dt = datetime.strptime(target_date, "%Y-%m-%d")
@@ -961,6 +1013,7 @@ def build(target_date, unified=False):
   .note {{ background:var(--panel2); border-left:3px solid var(--accent);
            padding:10px 12px; border-radius:8px; color:var(--text); margin-top:4px; }}
   .chips.four {{ grid-template-columns:repeat(4,1fr); margin-top:0; }}
+  .chips.qv {{ grid-template-columns:repeat(auto-fit,minmax(104px,1fr)); margin-top:0; }}
   .tr-line {{ margin:12px 0 14px; font-size:14px; }}
   .tr-cols {{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }}
   .ev-ul {{ list-style:none; margin:0; padding:0; }}
@@ -999,10 +1052,7 @@ def build(target_date, unified=False):
 
   <div class="grid">
 
-    <div class="panel span">
-      <h2>Status &amp; Progress</h2>
-      <div class="note">{intake.get('status_note','')}</div>
-    </div>
+{quickview_panel}
 {energy_panel}
     <div class="panel">
       <h2>Weight &amp; Body Composition</h2>
