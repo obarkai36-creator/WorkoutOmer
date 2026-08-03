@@ -24,13 +24,14 @@
     {"time": "14:40", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.4, "note": "standard Brazil nut reference (~95mcg selenium/nut) — first time logged. Brazil nuts are the day's selenium surplus risk per the daily-tracking flag; brings today's total to ~295mcg, still under the 400mcg UL but worth watching if more are eaten today."},
     {"time": "15:00", "name": "Danone PRO Strawberry Yogurt, 0% fat", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "saved reference (20g protein cup)"},
-    {"time": "15:00", "name": "Granola", "category": "food", "qty": "1 tsp (~5 g)", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g), first time logged plain (not the Tnuva GO combo product)"}
+    {"time": "15:00", "name": "Granola", "category": "food", "qty": "1 tsp (~5 g)", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g), first time logged plain (not the Tnuva GO combo product)"},
+    {"time": "15:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
     "selenium_mcg": 295,
     "folate_mcg_dfe": 783.1,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 334.2,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 18.7,
@@ -49,7 +50,8 @@
     "13:05 single espresso (40ml, 1 caffeine shot) — 3 total today.",
     "13:50 personal size Bounty bar (68kcal per user-provided packet label) — macros scaled from the standard Bounty bar reference, first time logged.",
     "14:40 single espresso (40ml, 1 caffeine shot) — 4 total today.",
-    "15:00 1 Brazil nut (~5g, ~95mcg selenium — brings today's total to ~295mcg, under the 400mcg UL) + 1 Danone PRO Strawberry Yogurt (200g cup, saved reference) + 1 tsp plain granola (~5g, generic reference, first time logged)."
+    "15:00 1 Brazil nut (~5g, ~95mcg selenium — brings today's total to ~295mcg, under the 400mcg UL) + 1 Danone PRO Strawberry Yogurt (200g cup, saved reference) + 1 tsp plain granola (~5g, generic reference, first time logged).",
+    "15:45 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target."
   ],
-  "status_note": "Slept ~7.42h (23:30-06:55) — a solid full night, squarely in the 7-9h target band. Preceded by a partnered ejaculation event at 23:00 the night before. Allergy spray + pill at 07:00, an espresso at 08:35, breakfast at 09:00 (yellow cheese, cherry tomatoes), another espresso with a nut taste (1 almond, 1 pecan) at 10:40, 2 more cherry tomatoes + the Thorne multivitamin at 11:50, lunch at 13:00 (mixed veg salad with chicken, olive oil/pesto/lemon dressing), another espresso at 13:05, a personal size Bounty bar at 13:50, another espresso at 14:40, and a snack at 15:00 (Brazil nut, strawberry protein yogurt, granola) (caffeine_shots: 4)."
+  "status_note": "Slept ~7.42h (23:30-06:55) — a solid full night, squarely in the 7-9h target band. Preceded by a partnered ejaculation event at 23:00 the night before. Allergy spray + pill at 07:00, an espresso at 08:35, breakfast at 09:00 (yellow cheese, cherry tomatoes), another espresso with a nut taste (1 almond, 1 pecan) at 10:40, 2 more cherry tomatoes + the Thorne multivitamin at 11:50, lunch at 13:00 (mixed veg salad with chicken, olive oil/pesto/lemon dressing), another espresso at 13:05, a personal size Bounty bar at 13:50, another espresso at 14:40, a snack at 15:00 (Brazil nut, strawberry protein yogurt, granola), and omega-3 at 15:45 (caffeine_shots: 4)."
 }
