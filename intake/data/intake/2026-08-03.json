@@ -8,24 +8,27 @@
   "items": [
     {"time": "07:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "08:35", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:35", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (~75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "time_approx": true, "note": "verified reference (50kcal/25g slice)"},
+    {"time": "09:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4, "time_approx": true, "note": "standard tomato reference values; credited 8.8mg lycopene, 47.6mg vitamin C, 51.0mcg folate DFE"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 51,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 47.6,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 8.8
   },
   "caffeine_shots": 1,
   "assumptions": [
     "Sleep logged: 23:30-06:55, ~7.42h — squarely in the 7-9h target band, one continuous stretch.",
     "A partnered ejaculation event at 23:00 the prior night (2026-08-02) preceded bedtime — logged to ejaculation.json under 2026-08-02, since that's when it occurred.",
     "07:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill) — zero kcal/macros.",
-    "08:35 single espresso (40ml, 1 caffeine shot)."
+    "08:35 single espresso (40ml, 1 caffeine shot).",
+    "09:00 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51.0mcg DFE."
   ],
-  "status_note": "Slept ~7.42h (23:30-06:55) — a solid full night, squarely in the 7-9h target band. Preceded by a partnered ejaculation event at 23:00 the night before. Allergy spray + pill at 07:00, an espresso at 08:35 (caffeine_shots: 1)."
+  "status_note": "Slept ~7.42h (23:30-06:55) — a solid full night, squarely in the 7-9h target band. Preceded by a partnered ejaculation event at 23:00 the night before. Allergy spray + pill at 07:00, an espresso at 08:35, and breakfast at 09:00 (yellow cheese, cherry tomatoes) (caffeine_shots: 1)."
 }
