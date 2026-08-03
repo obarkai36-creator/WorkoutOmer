@@ -4,8 +4,11 @@
   "in_progress": true,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
-  "items": [],
+  "_status": "Day just opened — sleep and AM meds logged.",
+  "items": [
+    {"time": "07:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "07:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -19,7 +22,8 @@
   "caffeine_shots": 0,
   "assumptions": [
     "Sleep logged: 23:30-06:55, ~7.42h — squarely in the 7-9h target band, one continuous stretch.",
-    "A partnered ejaculation event at 23:00 the prior night (2026-08-02) preceded bedtime — logged to ejaculation.json under 2026-08-02, since that's when it occurred."
+    "A partnered ejaculation event at 23:00 the prior night (2026-08-02) preceded bedtime — logged to ejaculation.json under 2026-08-02, since that's when it occurred.",
+    "07:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill) — zero kcal/macros."
   ],
-  "status_note": "Slept ~7.42h (23:30-06:55) — a solid full night, squarely in the 7-9h target band. Preceded by a partnered ejaculation event at 23:00 the night before."
+  "status_note": "Slept ~7.42h (23:30-06:55) — a solid full night, squarely in the 7-9h target band. Preceded by a partnered ejaculation event at 23:00 the night before. Allergy spray + pill at 07:00."
 }
