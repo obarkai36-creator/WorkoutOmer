@@ -121,8 +121,13 @@ function muscleFatigue(workouts, muscles, ref, now) {
   const decayed = {};
   for (const m of Object.keys(muscles)) decayed[m] = 0;
   for (const w of workouts) {
-    const hours = (now - w.t) / HOUR;
-    if (hours < 0) continue;
+    // A session logged with a same-day clock-time later than the moment this
+    // recomputes (e.g. an evening workout logged before the real-world clock
+    // reaches that hour) must still count at full freshness — clamping to 0
+    // instead of skipping it. Skipping made the just-trained muscle look fully
+    // recovered, so the dashboard immediately recommended the same section
+    // again right after training it.
+    const hours = Math.max(0, (now - w.t) / HOUR);
     for (const [m, load] of Object.entries(w.muscleLoad)) {
       const tau = muscles[m].recoveryHours / TAU_FACTOR;
       decayed[m] += load * Math.exp(-hours / tau);
