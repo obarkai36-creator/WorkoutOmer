@@ -157,6 +157,139 @@ def pdate(s):
     return datetime.strptime(s, "%Y-%m-%d")
 
 
+def refresh_training_full():
+    """Run export_training_state.mjs to recompute the FULL live training
+    analysis (fatigue, recommendation, PRs, balance, relative strength,
+    aerobic, ACWR trend) — used only by the unified-dashboard prototype.
+    Unlike sync_training_snapshot.mjs, this also substitutes sleep.json and
+    weight.json as the single source for sleep/bodyweight instead of data.js's
+    own SLEEP/BODYWEIGHT arrays, so the two stop drifting apart."""
+    script = os.path.join(ROOT, "export_training_state.mjs")
+    try:
+        subprocess.run(["node", script], cwd=ROOT, capture_output=True,
+                        timeout=15, check=True)
+    except Exception as e:
+        print(f"Warning: could not refresh full training export ({e})", file=sys.stderr)
+
+
+def _acwr_color(v):
+    if v is None:
+        return "#8b9bb0"
+    return "#ef4444" if v > 1.5 else "#f59e0b" if v > 1.3 else "#3b82f6" if v < 0.8 else "#22c55e"
+
+
+def _fatigue_color(pct):
+    return "#22c55e" if pct < 30 else "#3b82f6" if pct < 60 else "#f59e0b" if pct < 90 else "#ef4444"
+
+
+def build_training_panels(train):
+    """Render the FULL training-dashboard content (fatigue, recommendation,
+    PRs, balance, relative strength, aerobic, ACWR trend) from
+    data/metrics/training_full.json, for the unified-dashboard prototype.
+    This supersedes the compact `training_panel` mirror built from
+    workouts.json's report_snapshot."""
+    sections = train.get("sections", {})
+    fat_rows = "".join(
+        f"""<div class="metric">
+          <div class="metric-top"><span>{name}</span><span class="vals">{s['pct']}%
+            {f'<span class="muted"> · ready in {s["readyInHours"]}h</span>' if s['readyInHours'] else ' <span class="muted">· ready now</span>'}</span></div>
+          <div class="track"><div class="fill" style="width:{s['pct']}%;background:{_fatigue_color(s['pct'])}"></div></div>
+        </div>""" for name, s in sections.items() if name not in ("Cardio",)
+    )
+
+    rec = train.get("recommendation", {}) or {}
+    if rec.get("deload"):
+        rec_line = "<div class='tr-line'>Recommended: <b style=\"color:#f59e0b\">Full-body deload</b></div>"
+        guidance_html = "".join(f"<div class='alert'>{g}</div>" for g in rec.get("deloadReasons", []))
+        lifts_html = "".join(
+            f"<li><b>{e['name']}</b> <span class='muted'>· best {e['best']}</span></li>"
+            for e in rec.get("suggestedExercises", [])) or "<li class='muted'>—</li>"
+    else:
+        rest_txt = "ready now" if rec.get("readyNow") else f"~{rec.get('restHours','?')}h to go"
+        rec_line = f"<div class='tr-line'>Recommended next: <b>{rec.get('section','–')} day</b> <span class='muted'>({rest_txt})</span></div>"
+        guidance_html = "".join(f"<div class='alert'>{g}</div>" for g in rec.get("guidance", [])) or "<div class='muted'>No special guidance.</div>"
+        status_color = {"progress": "#22c55e", "rebuild": "#f59e0b", "hold": "#f59e0b", "hold_iso": "#f59e0b"}
+        lifts_html = "".join(
+            f"<li><b>{e['name']}</b> <span class='muted'>· best {e['best']}</span>"
+            + (f"<br><span style='color:{status_color.get(e['target']['status'],'var(--text)')}'>{e['target']['text']}</span>" if e.get("target") else "")
+            + "</li>"
+            for e in rec.get("suggestedExercises", [])[:6]) or "<li class='muted'>—</li>"
+
+    trends = train.get("trends", {}) or {}
+    weeks = [w for w in trends.get("weeks", []) if w.get("acwr") is not None]
+    if weeks:
+        mx = max([w["acwr"] for w in weeks] + [1.5])
+        bars = "".join(
+            f"<div class='col'><div class='b' style='height:{(w['acwr']/mx)*46:.0f}px;background:{_acwr_color(w['acwr'])}'></div><div class='lbl'>{w['label']}</div></div>"
+            for w in weeks)
+        trend_html = f"<div class='loadbars'>{bars}</div>"
+    else:
+        trend_html = "<div class='muted'>Not enough sessions yet for a trend.</div>"
+    acwr = trends.get("acwr")
+    acwr_html = f"""
+      <div class="bignum" style="color:{_acwr_color(acwr)}">{acwr if acwr is not None else '–'}<small> load ratio</small></div>
+      <div class="goalline">Sweet spot 0.8–1.3 · danger &gt;1.5 · zone: <b>{trends.get('acwrZone','–')}</b></div>
+      {trend_html}"""
+
+    bal = train.get("balance", {}) or {}
+    rel = train.get("relstrength", {}) or {}
+    rel_rows = "".join(
+        f"<li><b>{i['name']}</b> <span class='muted'>· {i['oneRM']}kg 1RM</span> <span style='float:right'>{i['ratio']}×BW</span></li>"
+        for i in rel.get("items", [])[:8]) or "<li class='muted'>—</li>"
+    bal_chips = "".join([
+        f"<div class='chip'><div class='chip-v'>{bal.get('pushPull','–')}×</div><div class='chip-k'>Push : Pull</div></div>",
+        f"<div class='chip'><div class='chip-v'>{bal.get('quadHam','–')}×</div><div class='chip-k'>Quad : Ham</div></div>",
+    ])
+
+    aer = train.get("aerobic", {}) or {}
+    aer_chips = "".join([
+        f"<div class='chip'><div class='chip-v'>{aer.get('km28','–')} km</div><div class='chip-k'>28-day distance</div></div>",
+        f"<div class='chip'><div class='chip-v'>{aer.get('avgHr','–')}</div><div class='chip-k'>Avg HR</div></div>",
+        f"<div class='chip'><div class='chip-v'>{round(aer['avgPace'],1) if aer.get('avgPace') else '–'}</div><div class='chip-k'>Avg pace min/km</div></div>",
+        f"<div class='chip'><div class='chip-v'>{aer.get('daysSinceLast','–')}d</div><div class='chip-k'>Since last cardio</div></div>",
+    ])
+
+    changes = train.get("changes", []) or []
+    changes_html = "".join(f"<li>{c}</li>" for c in changes) if changes else "<li class='muted'>Nothing flagged.</li>"
+
+    return f"""
+    <div class="panel span">
+      <h2>Muscle Fatigue &amp; Recovery</h2>
+      {fat_rows}
+    </div>
+
+    <div class="panel">
+      <h2>Recommended Next Session</h2>
+      {rec_line}
+      <div class="tr-cols">
+        <div><div class="ls-h">Suggested lifts</div><ul class="ev-ul">{lifts_html}</ul></div>
+        <div><div class="ls-h">Guidance</div>{guidance_html}</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Load Ratio Trend (6wk)</h2>
+      {acwr_html}
+    </div>
+
+    <div class="panel">
+      <h2>Program Balance &amp; Relative Strength</h2>
+      <div class="chips">{bal_chips}</div>
+      <div class="ls-h" style="margin-top:14px">1RM ÷ bodyweight ({rel.get('bodyweightKg','–')}kg)</div>
+      <ul class="ev-ul">{rel_rows}</ul>
+    </div>
+
+    <div class="panel">
+      <h2>Aerobic / Cardio</h2>
+      <div class="chips four">{aer_chips}</div>
+    </div>
+
+    <div class="panel">
+      <h2>PRs &amp; Below-Best Lifts</h2>
+      <ul class="ev-ul">{changes_html}</ul>
+    </div>"""
+
+
 def load_all_intake_days():
     """All logged daily intake files, sorted oldest -> newest."""
     days = []
@@ -454,7 +587,7 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
 
 # ---------- main build ----------
 
-def build(target_date):
+def build(target_date, unified=False):
     profile = load("profile.json")
     supps = load("references/supplements.json")
     weight = load("data/metrics/weight.json")
@@ -636,6 +769,14 @@ def build(target_date):
     else:
         training_panel = ""
 
+    if unified:
+        refresh_training_full()
+        try:
+            train_full = load("data/metrics/training_full.json")
+            training_panel = training_panel + build_training_panels(train_full)
+        except FileNotFoundError:
+            pass
+
     # suggestions gate (same 14-day baseline as the sperm score)
     suggestions_unlocked = days_logged >= UNLOCK_DAYS
 
@@ -769,7 +910,7 @@ def build(target_date):
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Intake Dashboard · {target_date}</title>
+<title>{'Unified' if unified else 'Intake'} Dashboard · {target_date}</title>
 <style>
   :root {{ --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
            --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8; }}
@@ -838,6 +979,10 @@ def build(target_date):
   .sugg-ul li:last-child {{ margin-bottom:0; }}
   .locked {{ display:flex; gap:14px; align-items:center; padding:8px 0; }}
   .lock-ico {{ font-size:30px; }}
+  .loadbars {{ display:flex; align-items:flex-end; gap:6px; height:56px; margin-top:6px; }}
+  .loadbars .col {{ flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; justify-content:flex-end; }}
+  .loadbars .col .b {{ width:100%; background:var(--accent); border-radius:4px 4px 0 0; min-height:2px; }}
+  .loadbars .col .lbl {{ font-size:9px; color:var(--muted); }}
   .footer {{ color:var(--muted); font-size:12px; text-align:center; margin-top:26px; }}
   @media(max-width:720px){{ .grid{{grid-template-columns:1fr;}} .chips{{grid-template-columns:repeat(3,1fr);}}
     .chips.four{{grid-template-columns:repeat(2,1fr);}} .tr-cols{{grid-template-columns:1fr;}} }}
@@ -846,7 +991,7 @@ def build(target_date):
 
   <header class="top">
     <div>
-      <div class="title">Nutrition &amp; Intake Dashboard</div>
+      <div class="title">{'Training &amp; Nutrition Dashboard' if unified else 'Nutrition &amp; Intake Dashboard'}</div>
       <div class="subtitle">{nice_date} · Goals: weight loss · muscle retention · sperm optimization{sample_flag}</div>
     </div>
     <div class="daychip">Day {intake.get('day_number','?')}</div>
@@ -905,7 +1050,7 @@ def build(target_date):
 
     out_dir = os.path.join(ROOT, "dashboards")
     os.makedirs(out_dir, exist_ok=True)
-    out = os.path.join(out_dir, f"{target_date}.html")
+    out = os.path.join(out_dir, f"{'unified_' if unified else ''}{target_date}.html")
     with open(out, "w", encoding="utf-8") as f:
         f.write(html)
     score_str = f"{overall:.0f}" if score_unlocked else f"locked ({days_logged}/{UNLOCK_DAYS}d)"
@@ -914,4 +1059,6 @@ def build(target_date):
 
 
 if __name__ == "__main__":
-    build(pick_date(sys.argv[1] if len(sys.argv) > 1 else None))
+    args = [a for a in sys.argv[1:] if a != "--unified"]
+    unified_flag = "--unified" in sys.argv[1:]
+    build(pick_date(args[0] if args else None), unified=unified_flag)
