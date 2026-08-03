@@ -1,10 +1,10 @@
-name: Training report
+name: Training report (legacy, workout-only PDF)
 
-# Runs after each "log": whenever data.js changes on these branches.
+# Superseded by unified_report.yml, which emails one merged training+nutrition
+# dashboard instead of this workout-only PDF — kept manual-only (no more
+# auto-fire on push) so the two don't both email on the same day. Left in
+# place, not deleted, in case the unified rollout needs a rollback.
 on:
-  push:
-    branches: [main, "claude/epic-bardeen-4l8r4c", "claude/session-continuity-test-nez2sf"]
-    paths: ["data.js"]
   workflow_dispatch: {}
 
 jobs:

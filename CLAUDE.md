@@ -11,15 +11,23 @@
   sending/processing rather than waiting for the real 32MB error, so the user
   never has to abandon a session over it. Suggest splitting into multiple
   smaller messages as the workaround.
-- Workout dashboard auto-email gate: the report.yml GitHub Action only sends
-  the emailed report when it detects a genuinely new WORKOUTS entry in
-  data.js (check_new_workout.mjs). If an exercise is added to a workout
-  *after* that workout's session was already logged and pushed (same date,
-  editing the existing entry rather than adding a new one), the auto-email
-  gate will skip it — so the emailed report will silently miss the addition.
-  In that situation, manually trigger the report.yml workflow via
-  workflow_dispatch right after pushing, without waiting to be asked —
-  don't make the user discover the gap by asking "did you send it?".
+- Unified dashboard delivery (decided 2026-08-03, superseding the old
+  workout-only PDF pipeline below): the training and nutrition dashboards
+  are merged into one page. `intake/generate_dashboard.py <date> --unified`
+  builds it (Quick View chip strip instead of prose status, full training
+  panels — fatigue, recommendation w/ full exercise list + "go for N of M"
+  count, load-ratio trend, balance/relative strength, aerobic, PRs —
+  supplement/medication compliance check instead of a raw item log).
+  At EOD, after closing out the day (regenerate, commit, push) trigger
+  `.github/workflows/unified_report.yml` via workflow_dispatch (pass the
+  date, or omit to use the most recent intake file) — this builds the page
+  fresh in CI and emails it via `report/send_unified.mjs` (HTML attachment,
+  same Resend/SMTP secrets as before). Do this automatically as part of the
+  normal EOD routine, without being asked, and do **not** also send it via
+  chat/SendUserFile — email is now the only delivery channel for the daily
+  dashboard. The old `report.yml` (workout-only PDF, auto-fired on a
+  data.js push with a new WORKOUTS entry) is now workflow_dispatch-only —
+  kept as a manual fallback, not something to trigger routinely anymore.
 - Monthly recap (automated 2026-07-31): a Routine ("Monthly recap generator",
   trigger trig_01Gxt8g3RG6GfePJ2ZbTTCMr) fires on the 1st of every month,
   generates the previous month's intake/dashboards/monthly/<YYYY-MM>.html via
