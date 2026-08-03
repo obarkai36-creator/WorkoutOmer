@@ -18,7 +18,8 @@
     {"time": "11:50", "name": "Multivitamin (Thorne Basic Nutrients 2/Day)", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "still logging as Thorne per standing plan — Mayven gummies not yet logged for the first time"},
     {"time": "13:00", "name": "Lunch — salad (cherry tomatoes, cucumber, red onion, cauliflower, sweet potato)", "category": "food", "qty": "1 bowl — amounts not weighed (estimated ~8 tomatoes, ~100g cucumber, ~20g red onion, ~80g roasted cauliflower, ~80g roasted sweet potato)", "kcal": 151, "protein_g": 5, "carbs_g": 32.4, "fat_g": 1.7, "fiber_g": 6.6, "time_approx": true, "note": "no exact weights given — reasonable mixed-salad portions assumed for each component. Credits ~3.5mg lycopene, ~21.8mg vitamin C, ~60mcg folate DFE (tomatoes + cauliflower + sweet potato)."},
     {"time": "13:00", "name": "Lunch — grilled chicken (added to salad)", "category": "food", "qty": "~120 g", "kcal": 198, "protein_g": 37.2, "carbs_g": 0, "fat_g": 4.3, "fiber_g": 0, "time_approx": true, "note": "standard grilled chicken breast reference (165.3kcal/100g); amount not given, estimated as a typical added-protein portion"},
-    {"time": "13:00", "name": "Lunch — dressing (olive oil drizzle, pesto, lemon juice)", "category": "food", "qty": "1 tbsp olive oil (~13.5g) + 1 tsp pesto (~5g) + a squeeze of lemon juice", "kcal": 148, "protein_g": 0.2, "carbs_g": 0.8, "fat_g": 16.2, "fiber_g": 0, "time_approx": true, "note": "generic basil pesto reference (~530kcal/100g); olive oil credits ~1.9mg vitamin E, lemon juice credits ~5mg vitamin C"}
+    {"time": "13:00", "name": "Lunch — dressing (olive oil drizzle, pesto, lemon juice)", "category": "food", "qty": "1 tbsp olive oil (~13.5g) + 1 tsp pesto (~5g) + a squeeze of lemon juice", "kcal": 148, "protein_g": 0.2, "carbs_g": 0.8, "fat_g": 16.2, "fiber_g": 0, "time_approx": true, "note": "generic basil pesto reference (~530kcal/100g); olive oil credits ~1.9mg vitamin E, lemon juice credits ~5mg vitamin C"},
+    {"time": "13:05", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -30,7 +31,7 @@
     "vitamin_e_mg": 18.7,
     "lycopene_mg": 13.2
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 23:30-06:55, ~7.42h — squarely in the 7-9h target band, one continuous stretch.",
     "A partnered ejaculation event at 23:00 the prior night (2026-08-02) preceded bedtime — logged to ejaculation.json under 2026-08-02, since that's when it occurred.",
@@ -39,7 +40,8 @@
     "09:00 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51.0mcg DFE.",
     "10:40 single espresso (40ml, 1 caffeine shot — 2 total today) + 1 almond (~1.2g) + 1 pecan half (~1g, first time logged). Tiny amounts, mostly negligible macros, but the almond adds a touch more vitamin E (0.3mg).",
     "11:50 2 cherry tomatoes (~34g, standard reference) + multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; provides the day's zinc (15mg), selenium (200mcg), most of the folate (+667mcg) and vitamin C (+250mg), all of the vitamin D (2000IU), and most of the vitamin E (+16.5mg).",
-    "13:00 lunch (time not given, approximated): a salad (cherry tomatoes, cucumber, red onion, roasted cauliflower, roasted sweet potato) with added grilled chicken (~120g), dressed with olive oil, 1 tsp pesto, and lemon juice. No weights given for the salad components or chicken — reasonable mixed-salad portions assumed. Salad veg credited ~3.5mg lycopene, ~21.8mg vitamin C, ~60mcg folate DFE; dressing credited ~1.9mg vitamin E (olive oil) and ~5mg vitamin C (lemon juice)."
+    "13:00 lunch (time not given, approximated): a salad (cherry tomatoes, cucumber, red onion, roasted cauliflower, roasted sweet potato) with added grilled chicken (~120g), dressed with olive oil, 1 tsp pesto, and lemon juice. No weights given for the salad components or chicken — reasonable mixed-salad portions assumed. Salad veg credited ~3.5mg lycopene, ~21.8mg vitamin C, ~60mcg folate DFE; dressing credited ~1.9mg vitamin E (olive oil) and ~5mg vitamin C (lemon juice).",
+    "13:05 single espresso (40ml, 1 caffeine shot) — 3 total today."
   ],
-  "status_note": "Slept ~7.42h (23:30-06:55) — a solid full night, squarely in the 7-9h target band. Preceded by a partnered ejaculation event at 23:00 the night before. Allergy spray + pill at 07:00, an espresso at 08:35, breakfast at 09:00 (yellow cheese, cherry tomatoes), another espresso with a nut taste (1 almond, 1 pecan) at 10:40, 2 more cherry tomatoes + the Thorne multivitamin at 11:50, and lunch at 13:00 (mixed veg salad with chicken, olive oil/pesto/lemon dressing) (caffeine_shots: 2)."
+  "status_note": "Slept ~7.42h (23:30-06:55) — a solid full night, squarely in the 7-9h target band. Preceded by a partnered ejaculation event at 23:00 the night before. Allergy spray + pill at 07:00, an espresso at 08:35, breakfast at 09:00 (yellow cheese, cherry tomatoes), another espresso with a nut taste (1 almond, 1 pecan) at 10:40, 2 more cherry tomatoes + the Thorne multivitamin at 11:50, lunch at 13:00 (mixed veg salad with chicken, olive oil/pesto/lemon dressing), and another espresso at 13:05 (caffeine_shots: 3)."
 }
