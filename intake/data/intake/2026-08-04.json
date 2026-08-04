@@ -2,9 +2,9 @@
   "date": "2026-08-04",
   "day_number": 38,
   "in_progress": true,
-  "workout_today": false,
-  "workout_summary": null,
-  "_status": "Day just opened — sleep and AM meds logged.",
+  "workout_today": true,
+  "workout_summary": "Back (14:30): Diverging Seated Row 97kg×4×8 (ties best); Low Row 79kg×4×9 (new PR); Reverse Incline DB Row 26kg each×4×9 (new PR); Dumbbell Pullover 18kg×4×11 (new PR); Dead Hang 35s×2 (not a PR — lower volume than 25s×3 best). 3 new PRs.",
+  "_status": "Day just opened — sleep, AM meds, and a Back workout logged.",
   "items": [
     {"time": "08:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -37,7 +37,8 @@
     "10:35 multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; provides the day's zinc (15mg), selenium (200mcg), folate (667mcg DFE), vitamin C (250mg), vitamin D (2000IU), and vitamin E (16.5mg).",
     "13:00 lunch: 100g kebab (generic reference) + 170g chicken thighs (standard grilled reference) + ~200g baked potatoes (qty given as \"20pg\", read as a likely typo for 200g) + 0.5 of a tomato/cucumber/red-onion salad in olive oil and lemon juice (new dressing, not the usual soy/balsamic). Salad credited ~4.8mg lycopene, ~39.4mg vitamin C, ~27.7mcg folate DFE, ~1.0mg vitamin E.",
     "13:10 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
-    "13:15 second double espresso (~60-80ml, counts as 2 more caffeine shots — 4 total today)."
+    "13:15 second double espresso (~60-80ml, counts as 2 more caffeine shots — 4 total today).",
+    "14:30 Back workout: Diverging Seated Row 97kg×4×8 (ties best), Low Row 79kg×4×9 (new PR, +1 rep at same weight vs 79kg×4×8), Reverse Incline DB Row 26kg each×4×9 (new PR, +1 rep at same weight vs 26kg each×4×8), Dumbbell Pullover 18kg×4×11 (new PR, +1 rep at same weight vs 18kg×4×10), Dead Hang 35s×2 (not a PR — 5670 load-seconds vs the 25s×3 best's 6075; fewer sets outweighed the longer hold, at 81.00kg bodyweight). 3 new PRs. Mirrored to data.js WORKOUTS/SNAPSHOT and workouts.json."
   ],
-  "status_note": "Slept 8h (23:30-07:30) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:00, a double espresso at 08:10, a Tnuva GO protein drink at 09:30, the Thorne multivitamin at 10:35, lunch at 13:00 (kebab, chicken thighs, baked potatoes, tomato/cucumber/onion salad), omega-3 at 13:10, and another double espresso at 13:15 (caffeine_shots: 4)."
+  "status_note": "Slept 8h (23:30-07:30) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:00, a double espresso at 08:10, a Tnuva GO protein drink at 09:30, the Thorne multivitamin at 10:35, lunch at 13:00 (kebab, chicken thighs, baked potatoes, tomato/cucumber/onion salad), omega-3 at 13:10, another double espresso at 13:15, and a Back workout at 14:30 (3 new PRs: Low Row, Reverse Incline DB Row, Dumbbell Pullover) (caffeine_shots: 4)."
 }

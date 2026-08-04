@@ -212,12 +212,12 @@ const SNAPSHOT = [
   { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 4, weight: 73, text: "73kg × 4×4" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
-  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 6, weight: 84, text: "84kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
-  { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
+  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
+  { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 9, weight: 79, text: "79kg × 4×9" }, best: { sets: 4, reps: 9, weight: 79, text: "79kg × 4×9" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
-  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 8, weight: 52, text: "26kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 52, text: "26kg each × 4×8" } },
-  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" }, best: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" } },
-  { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 3, seconds: 25, weight: 81.00, text: "25 sec × 3" }, best: { sets: 3, seconds: 25, weight: 81.00, text: "25 sec × 3" } },
+  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 9, weight: 52, text: "26kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 52, text: "26kg each × 4×9" } },
+  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 11, weight: 18, text: "18kg × 4×11" }, best: { sets: 4, reps: 11, weight: 18, text: "18kg × 4×11" } },
+  { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 2, seconds: 35, weight: 81.00, text: "35 sec × 2" }, best: { sets: 3, seconds: 25, weight: 81.00, text: "25 sec × 3" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
@@ -283,6 +283,18 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 4 Aug — Back (14:30)
+  {
+    datetime: "2026-08-04T14:30", note: "Back",
+    exercises: [
+      { name: "Diverging Seated Row",   sets: [ { reps: 8, weight: 97 }, { reps: 8, weight: 97 }, { reps: 8, weight: 97 }, { reps: 8, weight: 97 } ] },
+      { name: "Low Row",                sets: [ { reps: 9, weight: 79 }, { reps: 9, weight: 79 }, { reps: 9, weight: 79 }, { reps: 9, weight: 79 } ] },
+      { name: "Reverse Incline DB Row", sets: [ { reps: 9, weight: 52 }, { reps: 9, weight: 52 }, { reps: 9, weight: 52 }, { reps: 9, weight: 52 } ] },
+      { name: "Dumbbell Pullover",      sets: [ { reps: 11, weight: 18 }, { reps: 11, weight: 18 }, { reps: 11, weight: 18 }, { reps: 11, weight: 18 } ] },
+      { name: "Dead Hang",              sets: [ { seconds: 35 }, { seconds: 35 } ] },
+    ],
+  },
+
   // 3 Aug — Chest (21:05)
   {
     datetime: "2026-08-03T21:05", note: "Chest",
