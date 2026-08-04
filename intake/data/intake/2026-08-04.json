@@ -1,10 +1,10 @@
 {
   "date": "2026-08-04",
   "day_number": 38,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Back (14:30): Diverging Seated Row 97kg×4×8 (ties best); Low Row 79kg×4×9 (new PR); Reverse Incline DB Row 26kg each×4×9 (new PR); Dumbbell Pullover 18kg×4×11 (new PR); Dead Hang 35s×2 (not a PR — lower volume than 25s×3 best). 3 new PRs.",
-  "_status": "Day just opened — sleep, AM meds, and a Back workout logged.",
+  "_status": "Day closed out. Back workout (3 new PRs) plus a full day of food/drink/supplements/sleep logged.",
   "items": [
     {"time": "08:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -24,7 +24,8 @@
     {"time": "18:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 tsp (~13 g)", "kcal": 40, "protein_g": 2.3, "carbs_g": 0.7, "fat_g": 3.3, "fiber_g": 0, "note": "same as yesterday's dinner (recurring estimate)"},
     {"time": "18:30", "name": "Dinner — salad (lettuce, cherry tomatoes, red onion, baby mozzarella)", "category": "food", "qty": "0.7 of a large salad (whole recipe: 1 lettuce, 30 cherry tomatoes, 0.5 red onion ~85g, 75 g baby mozzarella)", "kcal": 267, "protein_g": 16.5, "carbs_g": 28, "fat_g": 12.5, "fiber_g": 10.1, "note": "same as yesterday's dinner. Credits ~9.2mg lycopene, ~52.9mg vitamin C, ~88.6mcg folate DFE, ~1.5mg zinc (mozzarella)."},
     {"time": "18:30", "name": "Dinner — dressing (olive oil, balsamic glaze, maple syrup, mustard, lemon juice)", "category": "food", "qty": "0.7 of the recipe (1 tbsp olive oil, 1 tbsp balsamic glaze, 2 tbsp maple syrup, 2 tsp mustard, lemon juice)", "kcal": 197, "protein_g": 0.3, "carbs_g": 27.6, "fat_g": 9.7, "fiber_g": 0, "note": "same as yesterday's dinner. Credits ~1.3mg vitamin E (olive oil), ~3.5mg vitamin C (lemon juice)."},
-    {"time": "19:53", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
+    {"time": "19:53", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "20:00", "name": "Green grapes", "category": "food", "qty": "20 grapes (~100 g)", "kcal": 69, "protein_g": 0.7, "carbs_g": 18.1, "fat_g": 0.2, "fiber_g": 0.9, "note": "standard green seedless grape reference (~69kcal/100g, ~5g/grape)"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 16.5,
@@ -49,7 +50,8 @@
     "14:30 Back workout: Diverging Seated Row 97kg×4×8 (ties best), Low Row 79kg×4×9 (new PR, +1 rep at same weight vs 79kg×4×8), Reverse Incline DB Row 26kg each×4×9 (new PR, +1 rep at same weight vs 26kg each×4×8), Dumbbell Pullover 18kg×4×11 (new PR, +1 rep at same weight vs 18kg×4×10), Dead Hang 35s×2 (not a PR — 5670 load-seconds vs the 25s×3 best's 6075; fewer sets outweighed the longer hold, at 81.00kg bodyweight). 3 new PRs. Mirrored to data.js WORKOUTS/SNAPSHOT and workouts.json.",
     "16:50 creatine monohydrate, 5g (zero kcal/macros) + 10 green grapes (~50g, standard reference).",
     "18:30 dinner — exact same as yesterday (3 Aug): 2 Angel Pita Pro + 4 Tnuva Emek Light yellow cheese slices + 2 tsp Simfonia cheese spread + 0.7 of the lettuce/tomato/onion/mozzarella salad + the olive oil-balsamic glaze-maple-mustard dressing. Reused all of yesterday's values exactly. Salad+dressing credited ~9.2mg lycopene, ~56.4mg vitamin C, ~88.6mcg folate DFE, ~1.5mg zinc, ~1.3mg vitamin E.",
-    "19:53 Rhinolast (azelastine nasal spray, PM dose) — zero kcal/macros. Both allergy spray doses done today."
+    "19:53 Rhinolast (azelastine nasal spray, PM dose) — zero kcal/macros. Both allergy spray doses done today.",
+    "20:00 20 green grapes (~100g), standard reference. End of day."
   ],
-  "status_note": "Slept 8h (23:30-07:30) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:00, a double espresso at 08:10, a Tnuva GO protein drink at 09:30, the Thorne multivitamin at 10:35, lunch at 13:00 (kebab, chicken thighs, baked potatoes, tomato/cucumber/onion salad), omega-3 at 13:10, another double espresso at 13:15, a Back workout at 14:30 (3 new PRs: Low Row, Reverse Incline DB Row, Dumbbell Pullover), creatine + a grape snack at 16:50, dinner at 18:30 (same as yesterday: Angel Pita Pro, yellow cheese, Simfonia, salad with dressing), and the PM allergy spray at 19:53 (caffeine_shots: 4)."
+  "status_note": "Day complete. Slept 8h (23:30-07:30) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:00, a double espresso at 08:10, a Tnuva GO protein drink at 09:30, the Thorne multivitamin at 10:35, lunch at 13:00 (kebab, chicken thighs, baked potatoes, tomato/cucumber/onion salad), omega-3 at 13:10, another double espresso at 13:15, a Back workout at 14:30 (3 new PRs: Low Row, Reverse Incline DB Row, Dumbbell Pullover), creatine + a grape snack at 16:50, dinner at 18:30 (same as yesterday: Angel Pita Pro, yellow cheese, Simfonia, salad with dressing), the PM allergy spray at 19:53, and a grape snack at 20:00 (caffeine_shots: 4)."
 }
