@@ -15,7 +15,8 @@
     {"time": "13:00", "name": "Lunch — chicken thighs", "category": "food", "qty": "170 g", "kcal": 355, "protein_g": 44.2, "carbs_g": 0, "fat_g": 18.5, "fiber_g": 0, "note": "standard grilled boneless/skinless chicken thigh reference (~209kcal/100g)"},
     {"time": "13:00", "name": "Lunch — baked potatoes", "category": "food", "qty": "~200 g (assumed — \"20pg\" read as 200g)", "kcal": 186, "protein_g": 4.2, "carbs_g": 42, "fat_g": 0.2, "fiber_g": 4.4, "note": "standard baked potato w/ skin reference (~93kcal/100g); flagged the qty as a likely typo, interpreted as 200g"},
     {"time": "13:00", "name": "Lunch — salad (tomatoes, cucumber, red onion, olive oil & lemon)", "category": "food", "qty": "0.5 of a salad (whole recipe: 3 tomatoes ~369g, 2 cucumbers ~600g, 0.5 red onion ~85g, 1 tbsp olive oil, lemon juice)", "kcal": 156, "protein_g": 4.1, "carbs_g": 22.3, "fat_g": 7.5, "fiber_g": 4.4, "note": "per-ingredient estimate, first time logged with this dressing (olive oil + lemon, no soy/balsamic this time). Credits ~4.8mg lycopene, ~39.4mg vitamin C, ~27.7mcg folate DFE, ~1.0mg vitamin E (olive oil)."},
-    {"time": "13:10", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:10", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:15", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -27,7 +28,7 @@
     "vitamin_e_mg": 17.5,
     "lycopene_mg": 4.8
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:30-07:30, 8h — squarely in the 7-9h target band, one continuous stretch.",
     "08:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill) — zero kcal/macros.",
@@ -35,7 +36,8 @@
     "09:30 breakfast: Tnuva GO protein yogurt drink, melon-strawberry, 42g protein/500ml bottle — product page was bot-blocked (403), used web-search-sourced label data instead (106kcal/200ml, 0.5% fat). First time logged.",
     "10:35 multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; provides the day's zinc (15mg), selenium (200mcg), folate (667mcg DFE), vitamin C (250mg), vitamin D (2000IU), and vitamin E (16.5mg).",
     "13:00 lunch: 100g kebab (generic reference) + 170g chicken thighs (standard grilled reference) + ~200g baked potatoes (qty given as \"20pg\", read as a likely typo for 200g) + 0.5 of a tomato/cucumber/red-onion salad in olive oil and lemon juice (new dressing, not the usual soy/balsamic). Salad credited ~4.8mg lycopene, ~39.4mg vitamin C, ~27.7mcg folate DFE, ~1.0mg vitamin E.",
-    "13:10 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target."
+    "13:10 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
+    "13:15 second double espresso (~60-80ml, counts as 2 more caffeine shots — 4 total today)."
   ],
-  "status_note": "Slept 8h (23:30-07:30) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:00, a double espresso at 08:10, a Tnuva GO protein drink at 09:30, the Thorne multivitamin at 10:35, lunch at 13:00 (kebab, chicken thighs, baked potatoes, tomato/cucumber/onion salad), and omega-3 at 13:10 (caffeine_shots: 2)."
+  "status_note": "Slept 8h (23:30-07:30) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:00, a double espresso at 08:10, a Tnuva GO protein drink at 09:30, the Thorne multivitamin at 10:35, lunch at 13:00 (kebab, chicken thighs, baked potatoes, tomato/cucumber/onion salad), omega-3 at 13:10, and another double espresso at 13:15 (caffeine_shots: 4)."
 }
