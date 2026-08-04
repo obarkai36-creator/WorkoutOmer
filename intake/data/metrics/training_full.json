@@ -1,5 +1,5 @@
 {
-  "now": 1785819721535,
+  "now": 1785820410660,
   "workouts": [
     {
       "datetime": "2026-08-03T21:05",
@@ -3700,7 +3700,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 87,
-      "readyInHours": 63.6,
+      "readyInHours": 63.4,
       "ready": false
     },
     "back": {
@@ -3731,8 +3731,8 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 34,
-      "readyInHours": 4.5,
+      "pct": 33,
+      "readyInHours": 4.3,
       "ready": false
     },
     "forearms": {
@@ -3787,8 +3787,8 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 46,
-      "readyInHours": 12.5,
+      "pct": 45,
+      "readyInHours": 12.3,
       "ready": false
     },
     "cardio": {
@@ -3804,14 +3804,14 @@
     "Chest": {
       "section": "Chest",
       "pct": 87,
-      "readyInHours": 63.6,
+      "readyInHours": 63.4,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 87,
-          "readyInHours": 63.6,
+          "readyInHours": 63.4,
           "ready": false
         }
       ]
@@ -3849,14 +3849,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 18,
-      "readyInHours": 4.5,
+      "readyInHours": 4.3,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 34,
-          "readyInHours": 4.5,
+          "pct": 33,
+          "readyInHours": 4.3,
           "ready": false
         },
         {
@@ -3926,15 +3926,15 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 46,
-      "readyInHours": 12.5,
+      "pct": 45,
+      "readyInHours": 12.3,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 46,
-          "readyInHours": 12.5,
+          "pct": 45,
+          "readyInHours": 12.3,
           "ready": false
         }
       ]
@@ -4950,7 +4950,7 @@
     "fatigue": 16,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-04T05:02:01.535Z",
+    "readyAt": "2026-08-04T05:13:30.660Z",
     "neverLogged": false,
     "daysSince": 13.6,
     "suggestedExercises": [
@@ -5046,13 +5046,13 @@
       {
         "section": "Arms",
         "fatigue": 18,
-        "readyInHours": 4.5,
+        "readyInHours": 4.3,
         "daysSince": 2.8
       },
       {
         "section": "Chest",
         "fatigue": 87,
-        "readyInHours": 63.6,
+        "readyInHours": 63.4,
         "daysSince": 19.9
       }
     ],
@@ -5072,7 +5072,7 @@
     {
       "level": "low",
       "title": "Chest fatigued (87%)",
-      "detail": "Recovers in ~63.6h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~63.4h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
