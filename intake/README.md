@@ -9,7 +9,10 @@ dark-mode HTML dashboard generated once per day.
 ```
 profile.json                 # baseline: personal details, goals, lifestyle, diet, targets
 references/supplements.json  # current supplement stack (verified) + candidate additions
+references/nutrition_lenses.json # dual-lens recipe scoring rubric (him + her preconception)
 references/import_templates/ # example CSVs for exercise/scale exports
+recipes/<id>.json            # recipe library — one analyzed recipe per file (see recipes/SCHEMA.md)
+recipes/library.html         # rendered dark-mode card view of the whole library
 data/intake/YYYY-MM-DD.json  # one file per day: timestamped items + macro analysis
 data/metrics/weight.json     # body-composition log (Eufy Smart Scale)
 data/metrics/sperm.json      # sperm-optimization score: trailing 7-day window, recomputed + persisted daily (sub-factors + weights)
@@ -77,6 +80,32 @@ through 31st of each month and, once the last day of the month is both
 (a) actually the last day and (b) closed out, runs this automatically and
 sends the result in chat — same chat-only delivery as the daily dashboard,
 never auto-emailed.
+
+## Recipe analyzer
+
+Drop a recipe — a link, an Instagram Reel / Facebook video caption or
+screenshot, an online recipe, or a family recipe — and it gets analyzed into a
+library entry under `recipes/<id>.json` (schema in `recipes/SCHEMA.md`). Every
+recipe is scored through **two lenses** defined in
+`references/nutrition_lenses.json`:
+
+- **him** — weight loss / muscle retention / sperm optimization (this project's
+  tracked eater; same targets as `profile.json`).
+- **her_preconception** — a self-contained prenatal block (folate, iron,
+  choline, DHA, iodine, calcium…) with **advisory** pregnancy food-safety flags.
+  Her actual calorie/macro tracking lives in the separate **lihitrack** project,
+  so this block is written to be **copy-pasted straight into her session**.
+
+Render the library: `python3 generate_recipe_card.py` → `recipes/library.html`
+(dark-mode cards matching the dashboards). Single card:
+`python3 generate_recipe_card.py <recipe_id>`.
+
+**Note on video links:** Instagram Reels and Facebook videos are almost always
+bot-blocked (same 403 wall as recipe sites). Auto-fetch is attempted, but for
+those you'll usually need to paste the caption/recipe text or a screenshot.
+
+Once a recipe is marked `adopted`, it becomes a fast-to-log meal in the daily
+intake flow, the same way a `foods.json` item is reused.
 
 ## Targets (editable in `profile.json`)
 

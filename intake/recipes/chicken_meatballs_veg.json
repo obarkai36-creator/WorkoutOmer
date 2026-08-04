@@ -1,0 +1,74 @@
+{
+  "id": "chicken_meatballs_veg",
+  "name": "Homemade chicken meatballs (veg-loaded)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Family recipe",
+    "captured": "2026-08-04",
+    "notes": "Migrated from the existing foods.json item 'homemade_chicken_meatballs_veg' as the first worked example for the recipe library."
+  },
+  "servings": 8,
+  "serving_desc": "≈160 g cooked (batch yields ~1,275 g)",
+  "ingredients": [
+    {"item": "ground chicken", "qty": "1 kg", "note": "lean"},
+    {"item": "onion", "qty": "1 large, chopped & fried"},
+    {"item": "sweet potato", "qty": "grated"},
+    {"item": "zucchini / courgette", "qty": "grated"},
+    {"item": "egg", "qty": "2"},
+    {"item": "breadcrumbs", "qty": "~½ cup"},
+    {"item": "ketchup", "qty": "a little"},
+    {"item": "salt, pepper", "qty": "to taste"}
+  ],
+  "steps": [
+    "Fry the chopped onion until soft.",
+    "Mix chicken, fried onion, grated sweet potato and zucchini, eggs, breadcrumbs, ketchup, salt and pepper.",
+    "Rest ~1 h in the fridge.",
+    "Spoon onto a pan and fry on medium heat until cooked through."
+  ],
+  "per_serving": {
+    "kcal": 282,
+    "protein_g": 24.8,
+    "carbs_g": 12.8,
+    "fat_g": 13.9,
+    "fiber_g": 1.6,
+    "micros": {
+      "zinc_mg": 1.6,
+      "selenium_mcg": 20,
+      "folate_mcg_dfe": 28,
+      "iron_mg": 1.3,
+      "choline_mg": 40,
+      "vitamin_c_mg": 5
+    }
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "High protein density (~8.8 g protein / 100 kcal), low sugar, veg baked in — a strong cutting/muscle-retention dinner. Fat is a touch high from the frying, and fiber is low.",
+      "flags": ["high protein density", "hidden vegetables", "moderate zinc + selenium (sperm micros)"],
+      "suggested_mods": [
+        "Swap ½ cup breadcrumbs for oat bran or ground oats to lift fiber toward the 32 g/day target",
+        "Bake or air-fry instead of pan-frying to cut the added fat",
+        "Serve over a big tomato/leafy salad — adds lycopene, vitamin C and fiber the dish itself is short on"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Good lean protein plus iron and choline (from the eggs) — both preconception priorities. Folate is low as-is; easy to fix with greens. Fully cooked, no safety flags.",
+      "prenatal_highlights": [
+        "iron from the chicken (pair with a vitamin-C side for absorption)",
+        "choline from the 2 eggs — commonly under-consumed preconception"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Fold a couple of handfuls of chopped spinach into the mix — adds folate and more iron",
+        "Serve with a citrus or tomato side to boost non-heme iron absorption"
+      ]
+    }
+  },
+  "tags": ["dinner", "high-protein", "meal-prep", "batch"],
+  "adopted": false,
+  "created": "2026-08-04",
+  "updated": "2026-08-04"
+}
