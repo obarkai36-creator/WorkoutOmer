@@ -8,7 +8,8 @@
   "items": [
     {"time": "08:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "08:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:10", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:30", "name": "Breakfast — Tnuva GO protein yogurt drink (melon-strawberry, 42g protein)", "category": "food", "qty": "1 bottle (500 ml)", "kcal": 265, "protein_g": 42, "carbs_g": 18, "fat_g": 2.6, "fiber_g": 0, "note": "web-sourced label data (product page bot-blocked, 403) — 106kcal/200ml, 0.5% fat, 42g protein/bottle confirmed from product name; carbs/fat estimated from calorie balance. First time logged."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -24,7 +25,8 @@
   "assumptions": [
     "Sleep logged: 23:30-07:30, 8h — squarely in the 7-9h target band, one continuous stretch.",
     "08:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill) — zero kcal/macros.",
-    "08:10 double espresso (~60-80ml, counts as 2 caffeine shots)."
+    "08:10 double espresso (~60-80ml, counts as 2 caffeine shots).",
+    "09:30 breakfast: Tnuva GO protein yogurt drink, melon-strawberry, 42g protein/500ml bottle — product page was bot-blocked (403), used web-search-sourced label data instead (106kcal/200ml, 0.5% fat). First time logged."
   ],
-  "status_note": "Slept 8h (23:30-07:30) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:00, a double espresso at 08:10 (caffeine_shots: 2)."
+  "status_note": "Slept 8h (23:30-07:30) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:00, a double espresso at 08:10, and a Tnuva GO protein drink at 09:30 (caffeine_shots: 2)."
 }
