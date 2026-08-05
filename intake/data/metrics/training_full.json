@@ -1,5 +1,5 @@
 {
-  "now": 1785898110194,
+  "now": 1785904538210,
   "workouts": [
     {
       "datetime": "2026-08-04T14:30",
@@ -3850,23 +3850,23 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 64,
-      "readyInHours": 45.7,
+      "pct": 63,
+      "readyInHours": 44,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 92,
-      "readyInHours": 67.1,
+      "pct": 89,
+      "readyInHours": 65.3,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 21,
+      "pct": 20,
       "readyInHours": 0,
       "ready": true
     },
@@ -3874,8 +3874,8 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 76,
-      "readyInHours": 36.9,
+      "pct": 72,
+      "readyInHours": 35.1,
       "ready": false
     },
     "triceps": {
@@ -3890,8 +3890,8 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 33,
-      "readyInHours": 2.7,
+      "pct": 31,
+      "readyInHours": 0.9,
       "ready": false
     },
     "quads": {
@@ -3938,7 +3938,7 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 22,
+      "pct": 21,
       "readyInHours": 0,
       "ready": true
     },
@@ -3954,44 +3954,44 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 64,
-      "readyInHours": 45.7,
+      "pct": 63,
+      "readyInHours": 44,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 64,
-          "readyInHours": 45.7,
+          "pct": 63,
+          "readyInHours": 44,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 92,
-      "readyInHours": 67.1,
+      "pct": 89,
+      "readyInHours": 65.3,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 92,
-          "readyInHours": 67.1,
+          "pct": 89,
+          "readyInHours": 65.3,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 21,
+      "pct": 20,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 21,
+          "pct": 20,
           "readyInHours": 0,
           "ready": true
         }
@@ -3999,23 +3999,23 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 43,
-      "readyInHours": 36.9,
+      "pct": 41,
+      "readyInHours": 35.1,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 76,
-          "readyInHours": 36.9,
+          "pct": 72,
+          "readyInHours": 35.1,
           "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 33,
-          "readyInHours": 2.7,
+          "pct": 31,
+          "readyInHours": 0.9,
           "ready": false
         },
         {
@@ -4077,14 +4077,14 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 22,
+      "pct": 21,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 22,
+          "pct": 21,
           "readyInHours": 0,
           "ready": true
         }
@@ -5098,12 +5098,12 @@
   },
   "recommendation": {
     "section": "Shoulders",
-    "fatigue": 21,
+    "fatigue": 20,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-05T02:48:30.194Z",
+    "readyAt": "2026-08-05T04:35:38.210Z",
     "neverLogged": false,
-    "daysSince": 11.7,
+    "daysSince": 11.8,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -5200,33 +5200,33 @@
     "ranked": [
       {
         "section": "Shoulders",
-        "fatigue": 21,
+        "fatigue": 20,
         "readyInHours": 0,
-        "daysSince": 11.7
+        "daysSince": 11.8
       },
       {
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 10.7
+        "daysSince": 10.8
       },
       {
         "section": "Arms",
-        "fatigue": 43,
-        "readyInHours": 36.9,
-        "daysSince": 0.5
+        "fatigue": 41,
+        "readyInHours": 35.1,
+        "daysSince": 0.6
       },
       {
         "section": "Chest",
-        "fatigue": 64,
-        "readyInHours": 45.7,
-        "daysSince": 20.8
+        "fatigue": 63,
+        "readyInHours": 44,
+        "daysSince": 20.9
       },
       {
         "section": "Back",
-        "fatigue": 92,
-        "readyInHours": 67.1,
-        "daysSince": 0.5
+        "fatigue": 89,
+        "readyInHours": 65.3,
+        "daysSince": 0.6
       }
     ],
     "suggestedCount": 4,
@@ -5234,7 +5234,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 0,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 16.6
+    "daysSinceAerobic": 16.7
   },
   "alerts": [
     {
@@ -5244,13 +5244,13 @@
     },
     {
       "level": "low",
-      "title": "Back fatigued (92%)",
-      "detail": "Recovers in ~67.1h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Back fatigued (89%)",
+      "detail": "Recovers in ~65.3h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
     "You're below your PR on 7 lifts — closest wins first: Dumbbell Bench Press (63% of best), Rope Cable Extension (81% of best), Angled Leg Press (81% of best). Add a rep or a set before adding weight.",
-    "Bring cardio back into the week (last logged 16.6 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
+    "Bring cardio back into the week (last logged 16.7 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
   ],
   "timing": {
     "avgGap": 4.1,
@@ -5267,7 +5267,7 @@
       7,
       9
     ],
-    "daysSinceLast": 0.5,
+    "daysSinceLast": 0.6,
     "total": 40
   },
   "relstrength": {
@@ -5334,7 +5334,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 16.6,
+    "daysSinceLast": 16.7,
     "recent": [
       {
         "t": 1784462400000,
