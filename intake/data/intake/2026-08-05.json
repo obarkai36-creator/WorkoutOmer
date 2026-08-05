@@ -19,7 +19,8 @@
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:45", "name": "Loacker wafer (single piece)", "category": "food", "qty": "1 piece (~11 g)", "kcal": 58, "protein_g": 0.7, "carbs_g": 6.3, "fat_g": 3.5, "fiber_g": 0.2, "note": "assumed classic Napolitaner-style mini wafer bar reference (~527kcal/100g); flagged, exact variant not specified"},
-    {"time": "15:00", "name": "Multivitamin (Thorne Basic Nutrients 2/Day)", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "still logging as Thorne per standing plan — Mayven gummies not yet logged for the first time"}
+    {"time": "15:00", "name": "Multivitamin (Thorne Basic Nutrients 2/Day)", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "still logging as Thorne per standing plan — Mayven gummies not yet logged for the first time"},
+    {"time": "15:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -31,7 +32,7 @@
     "vitamin_e_mg": 16.5,
     "lycopene_mg": 19.8
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "assumptions": [
     "Pre-logged ahead of time (evening of 4 Aug): lunch will be 70g kebab (generic reference) + 200g chicken thighs (standard grilled reference). User said vegetables will probably be added — not included yet since not specified.",
     "Sleep logged: 23:45-05:35, ~5.83h — below the 7-9h target band, one continuous stretch.",
@@ -43,7 +44,8 @@
     "13:00 single espresso (~45ml, 1 caffeine shot) — 3 total today.",
     "13:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
     "13:45 1 piece Loacker wafer (~11g) — assumed classic Napolitaner-style mini bar reference (~527kcal/100g); exact variant not specified, flagged.",
-    "15:00 multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; provides the day's zinc (15mg), selenium (200mcg), folate (667mcg DFE), vitamin C (250mg), vitamin D (2000IU), and vitamin E (16.5mg)."
+    "15:00 multivitamin — still logged as Thorne Basic Nutrients 2/Day (2 capsules) per the standing plan; provides the day's zinc (15mg), selenium (200mcg), folate (667mcg DFE), vitamin C (250mg), vitamin D (2000IU), and vitamin E (16.5mg).",
+    "15:45 single espresso (~45ml, 1 caffeine shot) — 4 total today."
   ],
-  "status_note": "Slept ~5.83h (23:45-05:35) — a short night, below the 7-9h target band. Allergy spray at 05:45, pill at 05:50, an espresso at 07:35, breakfast at 08:00 (yellow cheese, cherry tomatoes), another espresso at 10:00, lunch at 13:00 (kebab, chicken thighs, cherry tomatoes, red onion), a third espresso at 13:00, omega-3 at 13:00, a Loacker wafer piece at 13:45, and the Thorne multivitamin at 15:00 (caffeine_shots: 3)."
+  "status_note": "Slept ~5.83h (23:45-05:35) — a short night, below the 7-9h target band. Allergy spray at 05:45, pill at 05:50, an espresso at 07:35, breakfast at 08:00 (yellow cheese, cherry tomatoes), another espresso at 10:00, lunch at 13:00 (kebab, chicken thighs, cherry tomatoes, red onion), a third espresso at 13:00, omega-3 at 13:00, a Loacker wafer piece at 13:45, the Thorne multivitamin at 15:00, and a fourth espresso at 15:45 (caffeine_shots: 4)."
 }
