@@ -11,6 +11,7 @@
     {"time": "07:35", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "08:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (~75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "time_approx": true, "note": "verified reference (50kcal/25g slice)"},
     {"time": "08:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "25 (~425 g)", "kcal": 76, "protein_g": 3.9, "carbs_g": 16.6, "fat_g": 0.9, "fiber_g": 5, "time_approx": true, "note": "standard tomato reference values; credited 11.0mg lycopene, 59.5mg vitamin C, 63.8mcg folate DFE"},
+    {"time": "10:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Lunch — kebab", "category": "food", "qty": "70 g", "kcal": 175, "protein_g": 8.4, "carbs_g": 14, "fat_g": 9.1, "fiber_g": 1.1, "time_approx": true, "note": "pre-logged the day before; generic kebab-wrap composite reference (~250kcal/100g), reused from prior entries. Exact time not yet known, placeholder 13:00."},
     {"time": "13:00", "name": "Lunch — chicken thighs", "category": "food", "qty": "200 g", "kcal": 418, "protein_g": 52, "carbs_g": 0, "fat_g": 21.8, "fiber_g": 0, "time_approx": true, "note": "pre-logged the day before; standard grilled boneless/skinless chicken thigh reference (~209kcal/100g). Exact time not yet known, placeholder 13:00."}
   ],
@@ -24,13 +25,14 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 11
   },
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "assumptions": [
     "Pre-logged ahead of time (evening of 4 Aug): lunch will be 70g kebab (generic reference) + 200g chicken thighs (standard grilled reference). User said vegetables will probably be added — not included yet since not specified.",
     "Sleep logged: 23:45-05:35, ~5.83h — below the 7-9h target band, one continuous stretch.",
     "05:45 Rhinolast (azelastine nasal spray, AM dose); 05:50 Bilaxten (bilastine pill) — zero kcal/macros.",
     "07:35 single espresso (40ml, 1 caffeine shot).",
-    "08:00 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 25 cherry tomatoes (~425g, standard reference). Tomatoes gave the day's first micros — lycopene 11.0mg, vitamin C 59.5mg, folate 63.8mcg DFE."
+    "08:00 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 25 cherry tomatoes (~425g, standard reference). Tomatoes gave the day's first micros — lycopene 11.0mg, vitamin C 59.5mg, folate 63.8mcg DFE.",
+    "10:00 single espresso (~45ml, 1 caffeine shot) — 2 total today."
   ],
-  "status_note": "Slept ~5.83h (23:45-05:35) — a short night, below the 7-9h target band. Allergy spray at 05:45, pill at 05:50, an espresso at 07:35, and breakfast at 08:00 (yellow cheese, cherry tomatoes) (caffeine_shots: 1). Lunch already pre-logged (70g kebab + 200g chicken thighs) — vegetables likely to be added later."
+  "status_note": "Slept ~5.83h (23:45-05:35) — a short night, below the 7-9h target band. Allergy spray at 05:45, pill at 05:50, an espresso at 07:35, breakfast at 08:00 (yellow cheese, cherry tomatoes), and another espresso at 10:00 (caffeine_shots: 2). Lunch already pre-logged (70g kebab + 200g chicken thighs) — vegetables likely to be added later."
 }
