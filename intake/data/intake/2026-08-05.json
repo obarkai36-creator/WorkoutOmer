@@ -1,10 +1,10 @@
 {
   "date": "2026-08-05",
   "day_number": 39,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep, AM meds, breakfast, and lunch (with vegetables) logged.",
+  "_status": "Day complete. No workout today; a full day of food/drink/supplements/sleep logged.",
   "items": [
     {"time": "05:45", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "05:50", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -30,7 +30,8 @@
     {"time": "19:00", "name": "Dinner — personal salad (cherry tomatoes, cucumber, red onion)", "category": "food", "qty": "26 cherry tomatoes (~442 g) + 1 cucumber (~300 g) + 0.5 red onion (~85 g)", "kcal": 158, "protein_g": 7, "carbs_g": 36.1, "fat_g": 1.3, "fiber_g": 8.1, "time_approx": true, "note": "standard reference values; credits ~11.4mg lycopene, ~70mg vitamin C, ~70mcg folate DFE"},
     {"time": "19:00", "name": "Dinner — dressing (olive oil, balsamic glaze, maple syrup, mustard, lemon juice)", "category": "food", "qty": "0.7 of the recipe (1 tbsp olive oil, 1 tbsp balsamic glaze, 2 tbsp maple syrup, 2 tsp mustard, lemon juice)", "kcal": 197, "protein_g": 0.3, "carbs_g": 27.6, "fat_g": 9.7, "fiber_g": 0, "time_approx": true, "note": "same sauce recipe as this week's earlier dinners (3-4 Aug), reused at the same 0.7 proportion for this personal salad. Credits ~1.3mg vitamin E, ~3.5mg vitamin C."},
     {"time": "20:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "20:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
+    {"time": "20:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "20:45", "name": "Green grapes", "category": "food", "qty": "20 grapes (~100 g)", "kcal": 69, "protein_g": 0.7, "carbs_g": 18.1, "fat_g": 0.2, "fiber_g": 0.9, "note": "standard green seedless grape reference (~69kcal/100g, ~5g/grape)"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 15,
@@ -59,7 +60,8 @@
     "16:10 1 Danone PRO Strawberry Yogurt (200g cup, 0% fat, saved reference) + 1 tsp plain granola (~5g, generic reference).",
     "16:45 mini ice cream, pistachio & white chocolate — user said same as last week, but no matching prior entry was found to reuse. Estimated from a standard rich pistachio/white-chocolate gelato-style mini cup (~60g, ~250kcal/100g); flagged as an assumption.",
     "Dinner (no exact time given, placeholder 19:00): 2 Angel Pita Pro + 4 Tnuva Emek Light yellow cheese slices + 2 tsp Simfonia cheese spread + a personal salad (26 cherry tomatoes, 1 cucumber, 0.5 red onion) with the same balsamic-maple dressing recipe used earlier this week (3-4 Aug), reused at the same 0.7 proportion. Salad+dressing credited ~11.4mg lycopene, ~73.5mg vitamin C, ~70mcg folate DFE, ~1.3mg vitamin E.",
-    "20:00 creatine monohydrate, 5g (zero kcal/macros) + Rhinolast (azelastine nasal spray, PM dose) — zero kcal/macros. Both allergy spray doses done today."
+    "20:00 creatine monohydrate, 5g (zero kcal/macros) + Rhinolast (azelastine nasal spray, PM dose) — zero kcal/macros. Both allergy spray doses done today.",
+    "20:45 20 green grapes (~100g), standard reference. End of day."
   ],
-  "status_note": "Slept ~5.83h (23:45-05:35) — a short night, below the 7-9h target band. Allergy spray at 05:45, pill at 05:50, an espresso at 07:35, breakfast at 08:00 (yellow cheese, cherry tomatoes), another espresso at 10:00, lunch at 13:00 (kebab, chicken thighs, cherry tomatoes, red onion), a third espresso at 13:00, omega-3 at 13:00, a Loacker wafer piece at 13:45, the Thorne multivitamin at 15:00, a fourth espresso at 15:45, a protein yogurt + granola snack at 16:10, a mini pistachio/white chocolate ice cream at 16:45, dinner (Angel Pita Pro, yellow cheese, Simfonia, tomato/cucumber/onion salad with balsamic-maple dressing), and creatine + the PM allergy spray at 20:00 (caffeine_shots: 4)."
+  "status_note": "Day complete. Slept ~5.83h (23:45-05:35) — a short night, below the 7-9h target band. Allergy spray at 05:45, pill at 05:50, an espresso at 07:35, breakfast at 08:00 (yellow cheese, cherry tomatoes), another espresso at 10:00, lunch at 13:00 (kebab, chicken thighs, cherry tomatoes, red onion), a third espresso at 13:00, omega-3 at 13:00, a Loacker wafer piece at 13:45, the Thorne multivitamin at 15:00, a fourth espresso at 15:45, a protein yogurt + granola snack at 16:10, a mini pistachio/white chocolate ice cream at 16:45, dinner (Angel Pita Pro, yellow cheese, Simfonia, tomato/cucumber/onion salad with balsamic-maple dressing), creatine + the PM allergy spray at 20:00, and a grape snack at 20:45 (caffeine_shots: 4)."
 }
