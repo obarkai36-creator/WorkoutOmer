@@ -17,7 +17,8 @@
     {"time": "13:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4, "time_approx": true, "note": "standard tomato reference values; credits 8.8mg lycopene, 47.6mg vitamin C, 51.0mcg folate DFE. Added to the pre-logged lunch."},
     {"time": "13:00", "name": "Lunch — red onion", "category": "food", "qty": "0.25 onion (~42.5 g)", "kcal": 17, "protein_g": 0.5, "carbs_g": 4, "fat_g": 0.04, "fiber_g": 0.7, "time_approx": true, "note": "standard red onion reference; credits ~3.1mg vitamin C. Added to the pre-logged lunch."},
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:45", "name": "Loacker wafer (single piece)", "category": "food", "qty": "1 piece (~11 g)", "kcal": 58, "protein_g": 0.7, "carbs_g": 6.3, "fat_g": 3.5, "fiber_g": 0.2, "note": "assumed classic Napolitaner-style mini wafer bar reference (~527kcal/100g); flagged, exact variant not specified"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -39,7 +40,8 @@
     "10:00 single espresso (~45ml, 1 caffeine shot) — 2 total today.",
     "13:00 added vegetables to the pre-logged lunch: 20 cherry tomatoes (~340g, standard reference) + 0.25 red onion (~42.5g). Credited an additional 8.8mg lycopene, ~50.7mg vitamin C, 51.0mcg folate DFE on top of breakfast's tomatoes.",
     "13:00 single espresso (~45ml, 1 caffeine shot) — 3 total today.",
-    "13:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target."
+    "13:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
+    "13:45 1 piece Loacker wafer (~11g) — assumed classic Napolitaner-style mini bar reference (~527kcal/100g); exact variant not specified, flagged."
   ],
-  "status_note": "Slept ~5.83h (23:45-05:35) — a short night, below the 7-9h target band. Allergy spray at 05:45, pill at 05:50, an espresso at 07:35, breakfast at 08:00 (yellow cheese, cherry tomatoes), another espresso at 10:00, lunch at 13:00 (kebab, chicken thighs, cherry tomatoes, red onion), a third espresso at 13:00, and omega-3 at 13:00 (caffeine_shots: 3)."
+  "status_note": "Slept ~5.83h (23:45-05:35) — a short night, below the 7-9h target band. Allergy spray at 05:45, pill at 05:50, an espresso at 07:35, breakfast at 08:00 (yellow cheese, cherry tomatoes), another espresso at 10:00, lunch at 13:00 (kebab, chicken thighs, cherry tomatoes, red onion), a third espresso at 13:00, omega-3 at 13:00, and a Loacker wafer piece at 13:45 (caffeine_shots: 3)."
 }

@@ -1,5 +1,5 @@
 {
-  "now": 1785924317791,
+  "now": 1785927197509,
   "workouts": [
     {
       "datetime": "2026-08-04T14:30",
@@ -3850,23 +3850,23 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 57,
-      "readyInHours": 38.5,
+      "pct": 56,
+      "readyInHours": 37.7,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 82,
-      "readyInHours": 59.8,
+      "pct": 81,
+      "readyInHours": 59,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "ready": true
     },
@@ -3874,8 +3874,8 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 63,
-      "readyInHours": 29.6,
+      "pct": 62,
+      "readyInHours": 28.8,
       "ready": false
     },
     "triceps": {
@@ -3890,7 +3890,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 26,
+      "pct": 25,
       "readyInHours": 0,
       "ready": true
     },
@@ -3954,44 +3954,44 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 57,
-      "readyInHours": 38.5,
+      "pct": 56,
+      "readyInHours": 37.7,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 57,
-          "readyInHours": 38.5,
+          "pct": 56,
+          "readyInHours": 37.7,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 82,
-      "readyInHours": 59.8,
+      "pct": 81,
+      "readyInHours": 59,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 82,
-          "readyInHours": 59.8,
+          "pct": 81,
+          "readyInHours": 59,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 18,
+          "pct": 17,
           "readyInHours": 0,
           "ready": true
         }
@@ -3999,22 +3999,22 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 35,
-      "readyInHours": 29.6,
+      "pct": 34,
+      "readyInHours": 28.8,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 63,
-          "readyInHours": 29.6,
+          "pct": 62,
+          "readyInHours": 28.8,
           "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 26,
+          "pct": 25,
           "readyInHours": 0,
           "ready": true
         },
@@ -5098,10 +5098,10 @@
   },
   "recommendation": {
     "section": "Shoulders",
-    "fatigue": 18,
+    "fatigue": 17,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-05T10:05:17.791Z",
+    "readyAt": "2026-08-05T10:53:17.509Z",
     "neverLogged": false,
     "daysSince": 12,
     "suggestedExercises": [
@@ -5198,7 +5198,7 @@
     "ranked": [
       {
         "section": "Shoulders",
-        "fatigue": 18,
+        "fatigue": 17,
         "readyInHours": 0,
         "daysSince": 12
       },
@@ -5210,20 +5210,20 @@
       },
       {
         "section": "Arms",
-        "fatigue": 35,
-        "readyInHours": 29.6,
+        "fatigue": 34,
+        "readyInHours": 28.8,
         "daysSince": 0.8
       },
       {
         "section": "Chest",
-        "fatigue": 57,
-        "readyInHours": 38.5,
+        "fatigue": 56,
+        "readyInHours": 37.7,
         "daysSince": 21.1
       },
       {
         "section": "Back",
-        "fatigue": 82,
-        "readyInHours": 59.8,
+        "fatigue": 81,
+        "readyInHours": 59,
         "daysSince": 0.8
       }
     ],
@@ -5232,13 +5232,13 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 0,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 16.9
+    "daysSinceAerobic": 17
   },
   "alerts": [
     {
       "level": "low",
-      "title": "Back fatigued (82%)",
-      "detail": "Recovers in ~59.8h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Back fatigued (81%)",
+      "detail": "Recovers in ~59h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
@@ -5248,7 +5248,7 @@
   ],
   "changes": [
     "You're below your PR on 7 lifts — closest wins first: Dumbbell Bench Press (63% of best), Rope Cable Extension (81% of best), Angled Leg Press (81% of best). Add a rep or a set before adding weight.",
-    "Bring cardio back into the week (last logged 16.9 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
+    "Bring cardio back into the week (last logged 17 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
   ],
   "timing": {
     "avgGap": 4.1,
@@ -5332,7 +5332,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 16.9,
+    "daysSinceLast": 17,
     "recent": [
       {
         "t": 1784462400000,
