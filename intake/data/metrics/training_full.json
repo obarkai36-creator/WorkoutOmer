@@ -1,5 +1,5 @@
 {
-  "now": 1786015395826,
+  "now": 1786020961368,
   "workouts": [
     {
       "datetime": "2026-08-04T14:30",
@@ -3850,16 +3850,16 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 37,
-      "readyInHours": 13.2,
+      "pct": 36,
+      "readyInHours": 11.6,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 53,
-      "readyInHours": 34.5,
+      "pct": 52,
+      "readyInHours": 33,
       "ready": false
     },
     "shoulders": {
@@ -3874,15 +3874,15 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 33,
-      "readyInHours": 4.3,
+      "pct": 32,
+      "readyInHours": 2.8,
       "ready": false
     },
     "triceps": {
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "ready": true
     },
@@ -3890,7 +3890,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "ready": true
     },
@@ -3954,30 +3954,30 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 37,
-      "readyInHours": 13.2,
+      "pct": 36,
+      "readyInHours": 11.6,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 37,
-          "readyInHours": 13.2,
+          "pct": 36,
+          "readyInHours": 11.6,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 53,
-      "readyInHours": 34.5,
+      "pct": 52,
+      "readyInHours": 33,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 53,
-          "readyInHours": 34.5,
+          "pct": 52,
+          "readyInHours": 33,
           "ready": false
         }
       ]
@@ -3999,22 +3999,22 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 18,
-      "readyInHours": 4.3,
+      "pct": 17,
+      "readyInHours": 2.8,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 33,
-          "readyInHours": 4.3,
+          "pct": 32,
+          "readyInHours": 2.8,
           "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 11,
+          "pct": 10,
           "readyInHours": 0,
           "ready": true
         },
@@ -4022,7 +4022,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 9,
+          "pct": 8,
           "readyInHours": 0,
           "ready": true
         }
@@ -5101,9 +5101,9 @@
     "fatigue": 9,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-06T11:23:15.826Z",
+    "readyAt": "2026-08-06T12:56:01.368Z",
     "neverLogged": false,
-    "daysSince": 13,
+    "daysSince": 13.1,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -5200,30 +5200,30 @@
         "section": "Shoulders",
         "fatigue": 9,
         "readyInHours": 0,
-        "daysSince": 13
+        "daysSince": 13.1
       },
       {
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 12
+        "daysSince": 12.1
       },
       {
         "section": "Arms",
-        "fatigue": 18,
-        "readyInHours": 4.3,
+        "fatigue": 17,
+        "readyInHours": 2.8,
         "daysSince": 1.9
       },
       {
         "section": "Chest",
-        "fatigue": 37,
-        "readyInHours": 13.2,
+        "fatigue": 36,
+        "readyInHours": 11.6,
         "daysSince": 22.2
       },
       {
         "section": "Back",
-        "fatigue": 53,
-        "readyInHours": 34.5,
+        "fatigue": 52,
+        "readyInHours": 33,
         "daysSince": 1.9
       }
     ],
