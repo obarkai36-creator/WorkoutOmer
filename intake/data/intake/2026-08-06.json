@@ -15,7 +15,9 @@
     {"time": "10:45", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "note": "standard reference, ~95mcg selenium/nut"},
     {"time": "10:45", "name": "Cherry tomatoes", "category": "food", "qty": "2 (~34 g)", "kcal": 6, "protein_g": 0.3, "carbs_g": 1.3, "fat_g": 0.07, "fiber_g": 0.4, "note": "standard tomato reference values; credits 0.9mg lycopene, 4.8mg vitamin C, 5.1mcg folate DFE"},
     {"time": "13:00", "name": "Lunch — grilled chicken breast", "category": "food", "qty": "250 g", "kcal": 413, "protein_g": 77.5, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "standard grilled chicken breast reference (~165.3kcal/100g). No exact time given, placeholder 13:00."},
-    {"time": "13:00", "name": "Lunch — black lentil salad with sweet potato, red onion, walnuts", "category": "food", "qty": "350 g", "kcal": 556, "protein_g": 22.6, "carbs_g": 64.7, "fat_g": 26.1, "fiber_g": 19.2, "time_approx": true, "note": "first time logged — per-ingredient estimate (black lentils, roasted sweet potato, red onion, walnuts, lemon juice + salt dressing, no oil per user correction); flagged. Credits ~7.5mg vitamin C (onion + lemon), ~0.3mg vitamin E (walnuts)."}
+    {"time": "13:00", "name": "Lunch — black lentil salad with sweet potato, red onion, walnuts", "category": "food", "qty": "350 g", "kcal": 556, "protein_g": 22.6, "carbs_g": 64.7, "fat_g": 26.1, "fiber_g": 19.2, "time_approx": true, "note": "first time logged — per-ingredient estimate (black lentils, roasted sweet potato, red onion, walnuts, lemon juice + salt dressing, no oil per user correction); flagged. Credits ~7.5mg vitamin C (onion + lemon), ~0.3mg vitamin E (walnuts)."},
+    {"time": "13:45", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:45", "name": "Dark chocolate chips", "category": "food", "qty": "10 chips (~5 g)", "kcal": 28, "protein_g": 0.35, "carbs_g": 2.25, "fat_g": 1.9, "fiber_g": 0.5, "note": "estimated from standard ~70% dark chocolate baking chip reference (~550kcal/100g, ~0.5g/chip); flagged"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -27,7 +29,7 @@
     "vitamin_e_mg": 0.3,
     "lycopene_mg": 9.7
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 22:45-06:00, 7.25h — squarely in the 7-9h target band, one continuous stretch.",
     "06:10 Rhinolast (azelastine nasal spray, AM dose) — zero kcal/macros.",
@@ -36,7 +38,8 @@
     "08:30 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51.0mcg DFE.",
     "09:00 single espresso (40ml, 1 caffeine shot) — 3 total today.",
     "10:45 1 Brazil nut (~5g, ~95mcg selenium) + 2 cherry tomatoes (~34g, standard reference; credits 0.9mg lycopene, 4.8mg vitamin C, 5.1mcg folate DFE).",
-    "Lunch (no exact time given, placeholder 13:00): 250g grilled chicken breast (standard reference, ~165.3kcal/100g) + 350g black lentil salad with sweet potato, red onion, and walnuts — first time logged, estimated per-ingredient (lentils, roasted sweet potato, red onion, walnuts, lemon juice + salt only, no oil per user correction). Credits ~7.5mg vitamin C, ~0.3mg vitamin E; flagged as an estimate."
+    "Lunch (no exact time given, placeholder 13:00): 250g grilled chicken breast (standard reference, ~165.3kcal/100g) + 350g black lentil salad with sweet potato, red onion, and walnuts — first time logged, estimated per-ingredient (lentils, roasted sweet potato, red onion, walnuts, lemon juice + salt only, no oil per user correction). Credits ~7.5mg vitamin C, ~0.3mg vitamin E; flagged as an estimate.",
+    "13:45 single espresso (40ml, 1 caffeine shot) — 4 total today. + 10 dark chocolate chips (~5g), estimated from a standard ~70% dark chocolate baking chip reference; flagged."
   ],
-  "status_note": "Slept 7.25h (22:45-06:00) — a solid full night, squarely in the 7-9h target band. Allergy spray at 06:10, pill at 06:25, a double espresso at 06:30, breakfast at 08:30 (yellow cheese, cherry tomatoes), another espresso at 09:00, a Brazil nut + cherry tomatoes snack at 10:45, and lunch at 13:00 (grilled chicken breast, black lentil salad) (caffeine_shots: 3)."
+  "status_note": "Slept 7.25h (22:45-06:00) — a solid full night, squarely in the 7-9h target band. Allergy spray at 06:10, pill at 06:25, a double espresso at 06:30, breakfast at 08:30 (yellow cheese, cherry tomatoes), another espresso at 09:00, a Brazil nut + cherry tomatoes snack at 10:45, lunch at 13:00 (grilled chicken breast, black lentil salad), and another espresso + dark chocolate chips at 13:45 (caffeine_shots: 4)."
 }
