@@ -1,5 +1,5 @@
 {
-  "now": 1786020961368,
+  "now": 1786022502626,
   "workouts": [
     {
       "datetime": "2026-08-04T14:30",
@@ -3851,7 +3851,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 36,
-      "readyInHours": 11.6,
+      "readyInHours": 11.2,
       "ready": false
     },
     "back": {
@@ -3859,7 +3859,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 52,
-      "readyInHours": 33,
+      "readyInHours": 32.6,
       "ready": false
     },
     "shoulders": {
@@ -3875,7 +3875,7 @@
       "label": "Biceps",
       "section": "Arms",
       "pct": 32,
-      "readyInHours": 2.8,
+      "readyInHours": 2.4,
       "ready": false
     },
     "triceps": {
@@ -3898,7 +3898,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 2,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -3955,14 +3955,14 @@
     "Chest": {
       "section": "Chest",
       "pct": 36,
-      "readyInHours": 11.6,
+      "readyInHours": 11.2,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 36,
-          "readyInHours": 11.6,
+          "readyInHours": 11.2,
           "ready": false
         }
       ]
@@ -3970,14 +3970,14 @@
     "Back": {
       "section": "Back",
       "pct": 52,
-      "readyInHours": 33,
+      "readyInHours": 32.6,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 52,
-          "readyInHours": 33,
+          "readyInHours": 32.6,
           "ready": false
         }
       ]
@@ -4000,14 +4000,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 17,
-      "readyInHours": 2.8,
+      "readyInHours": 2.4,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
           "pct": 32,
-          "readyInHours": 2.8,
+          "readyInHours": 2.4,
           "ready": false
         },
         {
@@ -4034,18 +4034,18 @@
       "readyInHours": 0,
       "muscles": [
         {
-          "key": "quads",
-          "label": "Quads",
+          "key": "glutes",
+          "label": "Glutes",
           "section": "Legs",
           "pct": 2,
           "readyInHours": 0,
           "ready": true
         },
         {
-          "key": "glutes",
-          "label": "Glutes",
+          "key": "quads",
+          "label": "Quads",
           "section": "Legs",
-          "pct": 2,
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         },
@@ -5101,7 +5101,7 @@
     "fatigue": 9,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-06T12:56:01.368Z",
+    "readyAt": "2026-08-06T13:21:42.626Z",
     "neverLogged": false,
     "daysSince": 13.1,
     "suggestedExercises": [
@@ -5211,20 +5211,20 @@
       {
         "section": "Arms",
         "fatigue": 17,
-        "readyInHours": 2.8,
-        "daysSince": 1.9
+        "readyInHours": 2.4,
+        "daysSince": 2
       },
       {
         "section": "Chest",
         "fatigue": 36,
-        "readyInHours": 11.6,
+        "readyInHours": 11.2,
         "daysSince": 22.2
       },
       {
         "section": "Back",
         "fatigue": 52,
-        "readyInHours": 33,
-        "daysSince": 1.9
+        "readyInHours": 32.6,
+        "daysSince": 2
       }
     ],
     "suggestedCount": 4,
@@ -5232,7 +5232,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 0,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 18
+    "daysSinceAerobic": 18.1
   },
   "alerts": [
     {
@@ -5243,7 +5243,7 @@
   ],
   "changes": [
     "You're below your PR on 7 lifts — closest wins first: Dumbbell Bench Press (63% of best), Rope Cable Extension (81% of best), Angled Leg Press (81% of best). Add a rep or a set before adding weight.",
-    "Bring cardio back into the week (last logged 18 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
+    "Bring cardio back into the week (last logged 18.1 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
   ],
   "timing": {
     "avgGap": 4.1,
@@ -5260,7 +5260,7 @@
       7,
       9
     ],
-    "daysSinceLast": 1.9,
+    "daysSinceLast": 2,
     "total": 40
   },
   "relstrength": {
@@ -5327,7 +5327,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 18,
+    "daysSinceLast": 18.1,
     "recent": [
       {
         "t": 1784462400000,
