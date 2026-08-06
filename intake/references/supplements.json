@@ -1,5 +1,5 @@
 {
-  "_note": "Current supplement stack. Micronutrient amounts for the multivitamin are best-known estimates flagged for verification against the physical bottle (iHerb/Thorne block automated label fetch). Planned swap (2026-07-31, trial for a few weeks): Thorne Basic Nutrients 2/Day -> Mayven Full Volume Gummies + resumed Thorne Zinc Picolinate 15mg, once current Thorne stock runs out. See CLAUDE.md for the exact trigger condition.",
+  "_note": "Current supplement stack. Micronutrient amounts for the multivitamin are best-known estimates flagged for verification against the physical bottle (iHerb/Thorne block automated label fetch). Multivitamin swap ACTIVE as of 2026-08-06 (first Mayven gummies log, day 40): Thorne Basic Nutrients 2/Day -> Mayven Full Volume Gummies is now the standing default; Thorne Zinc Picolinate 15mg resumes once the user logs taking it separately. See CLAUDE.md for details.",
   "stack": [
     {
       "id": "thorne_basic_nutrients_2day",
@@ -7,7 +7,7 @@
       "type": "multivitamin",
       "serving": "2 capsules",
       "servings_per_container": 60,
-      "timing": "post-breakfast (or afternoon if forgotten)",
+      "timing": "discontinued as of 2026-08-06 — replaced by Mayven Full Volume Gummies as the standing default (see multivitamin swap note above); any remaining stock is a fallback only",
       "verified": true,
       "_verify_note": "Full formula confirmed from both label panels (photos 2026-06-27).",
       "provides": {
@@ -61,7 +61,7 @@
       "type": "multivitamin",
       "serving": "3 gummies",
       "servings_per_container": 20,
-      "timing": "not yet started — planned replacement for Thorne Basic Nutrients 2/Day once current Thorne stock runs out",
+      "timing": "post-breakfast (or afternoon if forgotten) — now the standing default multivitamin as of 2026-08-06",
       "verified": true,
       "_verify_note": "Read from a physical label photo (2026-07-31). A hair-volume-focused gummy, not a general/fertility multi — heavy on biotin/B-vitamins/vitamin A, but the label shows NO selenium, vitamin C, vitamin D, or vitamin E. Zinc figure is approximate (label was hard to fully resolve); refine if checked again.",
       "provides": {
