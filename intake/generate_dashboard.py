@@ -202,14 +202,19 @@ def build_quickview(chips):
     </div>"""
 
 
-# (label, name-substring to match, optional qty-substring e.g. "am"/"pm" dose)
+# (label, name-substring to match, optional qty-substring e.g. "am"/"pm" dose,
+#  show_product) — show_product surfaces which specific product was actually
+# logged (vs. a static label), so a swap like Thorne -> Mayven is visible on
+# the day it happens instead of being hidden behind a generic "Multivitamin"
+# row.
 EXPECTED_SUPPLEMENTS = [
-    ("Allergy spray · AM", "rhinolast", "am"),
-    ("Allergy spray · PM", "rhinolast", "pm"),
-    ("Allergy pill (Bilaxten)", "bilaxten", None),
-    ("Multivitamin", "multivit", None),
-    ("Omega-3", "omega-3", None),
-    ("Creatine", "creatine", None),
+    ("Allergy spray · AM", "rhinolast", "am", False),
+    ("Allergy spray · PM", "rhinolast", "pm", False),
+    ("Allergy pill (Bilaxten)", "bilaxten", None, False),
+    ("Multivitamin", "multivit", None, True),
+    ("Zinc (Thorne Picolinate)", "zinc picolinate", None, False),
+    ("Omega-3", "omega-3", None, False),
+    ("Creatine", "creatine", None, False),
 ]
 
 
@@ -218,17 +223,24 @@ def build_supplement_check(items):
     check against the standing daily supplement/medication routine — the
     macro/micro panels already cover what was eaten in aggregate, so the raw
     log was mostly useful for catching a missed dose, which this does more
-    directly."""
+    directly. For rows flagged show_product, the matched item's own name is
+    shown instead of a static label, so a product swap (e.g. the multivitamin
+    default changing) reads directly off that day's log."""
     rows = []
-    for label, name_sub, qty_sub in EXPECTED_SUPPLEMENTS:
-        taken = any(
-            name_sub in i.get("name", "").lower()
-            and (qty_sub is None or qty_sub in i.get("qty", "").lower())
-            for i in items
+    for label, name_sub, qty_sub, show_product in EXPECTED_SUPPLEMENTS:
+        match = next(
+            (i for i in items
+             if name_sub in i.get("name", "").lower()
+             and (qty_sub is None or qty_sub in i.get("qty", "").lower())),
+            None,
         )
+        taken = match is not None
         icon = "✅" if taken else "⚠️"
         color = "#22c55e" if taken else "#f59e0b"
-        status = "taken" if taken else "not logged today"
+        if taken and show_product:
+            status = match["name"]
+        else:
+            status = "taken" if taken else "not logged today"
         rows.append(f"<li><span style='color:{color}'>{icon}</span> {label} <span class='muted'>· {status}</span></li>")
     return "".join(rows)
 
