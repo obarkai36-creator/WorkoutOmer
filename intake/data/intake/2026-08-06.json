@@ -11,17 +11,19 @@
     {"time": "06:30", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "08:30", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (~75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "note": "verified reference (50kcal/25g slice)"},
     {"time": "08:30", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4, "note": "standard tomato reference values; credits 8.8mg lycopene, 47.6mg vitamin C, 51.0mcg folate DFE"},
-    {"time": "09:00", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "09:00", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:45", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "note": "standard reference, ~95mcg selenium/nut"},
+    {"time": "10:45", "name": "Cherry tomatoes", "category": "food", "qty": "2 (~34 g)", "kcal": 6, "protein_g": 0.3, "carbs_g": 1.3, "fat_g": 0.07, "fiber_g": 0.4, "note": "standard tomato reference values; credits 0.9mg lycopene, 4.8mg vitamin C, 5.1mcg folate DFE"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 51,
+    "selenium_mcg": 95,
+    "folate_mcg_dfe": 56.1,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 47.6,
+    "vitamin_c_mg": 52.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 9.7
   },
   "caffeine_shots": 3,
   "assumptions": [
@@ -30,7 +32,8 @@
     "06:25 Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "06:30 double espresso (~60-80ml, counts as 2 caffeine shots).",
     "08:30 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51.0mcg DFE.",
-    "09:00 single espresso (40ml, 1 caffeine shot) — 3 total today."
+    "09:00 single espresso (40ml, 1 caffeine shot) — 3 total today.",
+    "10:45 1 Brazil nut (~5g, ~95mcg selenium) + 2 cherry tomatoes (~34g, standard reference; credits 0.9mg lycopene, 4.8mg vitamin C, 5.1mcg folate DFE)."
   ],
-  "status_note": "Slept 7.25h (22:45-06:00) — a solid full night, squarely in the 7-9h target band. Allergy spray at 06:10, pill at 06:25, a double espresso at 06:30, breakfast at 08:30 (yellow cheese, cherry tomatoes), and another espresso at 09:00 (caffeine_shots: 3)."
+  "status_note": "Slept 7.25h (22:45-06:00) — a solid full night, squarely in the 7-9h target band. Allergy spray at 06:10, pill at 06:25, a double espresso at 06:30, breakfast at 08:30 (yellow cheese, cherry tomatoes), another espresso at 09:00, and a Brazil nut + cherry tomatoes snack at 10:45 (caffeine_shots: 3)."
 }
