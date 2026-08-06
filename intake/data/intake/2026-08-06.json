@@ -1,10 +1,10 @@
 {
   "date": "2026-08-06",
   "day_number": 40,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep and AM allergy spray logged.",
+  "_status": "Day complete. No workout today; a full day of food/drink/supplements/sleep logged.",
   "items": [
     {"time": "06:10", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:25", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -28,10 +28,11 @@
     {"time": "19:00", "name": "Dinner — salad (lettuce, cherry tomatoes, baby mozzarella, olive oil spray, maple, dijon, lemon, balsamic)", "category": "food", "qty": "0.6 of a large salad (whole recipe: 1 head lettuce, 30 cherry tomatoes, 50g baby mozzarella, 6 single sprays olive oil, 1 tbsp maple syrup, 2 tsp dijon mustard, lemon juice, salt, balsamic drizzle)", "kcal": 274, "protein_g": 11.5, "carbs_g": 35.9, "fat_g": 11.7, "fiber_g": 8, "time_approx": true, "note": "no red onion this time, much less oil than the usual dressing (sprayed vs. tablespoon) and less mozzarella (50g vs 75g); per-ingredient estimate. Credits ~7.9mg lycopene, ~45.6mg vitamin C, ~45.9mcg folate DFE, ~0.6mg zinc, ~0.5mg vitamin E."},
     {"time": "20:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "20:00", "name": "Dark chocolate chips", "category": "food", "qty": "15 chips (~7.5 g)", "kcal": 41, "protein_g": 0.53, "carbs_g": 3.4, "fat_g": 2.85, "fiber_g": 0.75, "note": "estimated from standard ~70% dark chocolate baking chip reference (~550kcal/100g, ~0.5g/chip); flagged"},
-    {"time": "20:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "20:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "22:30", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, taken alongside the Mayven gummies (verified reference, supplements.json). Pre-logged ahead of the actual bedtime dose."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 3.4,
+    "zinc_mg": 18.4,
     "selenium_mcg": 95,
     "folate_mcg_dfe": 202,
     "omega3_epa_dha_mg": 1000,
@@ -56,7 +57,8 @@
     "18:15 Mayven Full Volume Gummies (3 gummies) — first time logged. Per the standing plan, this switches the default multivitamin-type entry going forward from Thorne Basic Nutrients 2/Day to the gummies (+ resumed Thorne Zinc Picolinate 15mg, once the user logs taking it). Gummies provide 100mcg DFE folate, 2.8mg zinc — notably no selenium, vitamin C, D, or E, a real gap versus Thorne that will need food-based coverage (citrus/peppers for C, fatty fish/eggs/sun for D, nuts/seeds/oils for E, Brazil nuts/fish/eggs for selenium) per the standing suggestion permission.",
     "Dinner (no exact time given, placeholder 19:00): 2 Angel Pita Pro + 4 slices yellow cheese 5% fat (different/lower-fat variant than the usual 9%, no verified label — flagged) + 1 tsp Simfonia cheese spread + 0.6 of a salad (lettuce, 30 cherry tomatoes, 50g baby mozzarella, 6 sprays olive oil, 1 tbsp maple syrup, 2 tsp dijon mustard, lemon juice, salt, balsamic drizzle — no red onion, much less oil than the usual dressing). Salad credited ~7.9mg lycopene, ~45.6mg vitamin C, ~45.9mcg folate DFE, ~0.6mg zinc, ~0.5mg vitamin E — nice boost against the gummies' vitamin C gap.",
     "20:00 Rhinolast (azelastine nasal spray, PM dose) — zero kcal/macros. Both allergy spray doses done today. + 15 dark chocolate chips (~7.5g), same estimated reference.",
-    "20:15 creatine monohydrate, 5g (zero kcal/macros)."
+    "20:15 creatine monohydrate, 5g (zero kcal/macros).",
+    "22:30 Thorne Zinc Picolinate 15mg (1 capsule) — resumed per the multivitamin swap plan, alongside the Mayven gummies. End of day."
   ],
-  "status_note": "Slept 7.25h (22:45-06:00) — a solid full night, squarely in the 7-9h target band. Allergy spray at 06:10, pill at 06:25, a double espresso at 06:30, breakfast at 08:30 (yellow cheese, cherry tomatoes), another espresso at 09:00, a Brazil nut + cherry tomatoes snack at 10:45, lunch at 13:00 (grilled chicken breast, black lentil salad), another espresso + dark chocolate chips at 13:45, a green apple + more chocolate chips at 15:45, omega-3 at 16:20, the Mayven multivitamin gummies at 18:15 (first time logged, switching the standing multivitamin default), dinner at 19:00 (Angel Pita Pro, yellow cheese 5%, Simfonia, lettuce/tomato/mozzarella salad), the PM allergy spray + more chocolate chips at 20:00, and creatine at 20:15 (caffeine_shots: 4)."
+  "status_note": "Day complete. Slept 7.25h (22:45-06:00) — a solid full night, squarely in the 7-9h target band. Allergy spray at 06:10, pill at 06:25, a double espresso at 06:30, breakfast at 08:30 (yellow cheese, cherry tomatoes), another espresso at 09:00, a Brazil nut + cherry tomatoes snack at 10:45, lunch at 13:00 (grilled chicken breast, black lentil salad), another espresso + dark chocolate chips at 13:45, a green apple + more chocolate chips at 15:45, omega-3 at 16:20, the Mayven multivitamin gummies at 18:15 (first time logged, switching the standing multivitamin default), dinner at 19:00 (Angel Pita Pro, yellow cheese 5%, Simfonia, lettuce/tomato/mozzarella salad), the PM allergy spray + more chocolate chips at 20:00, creatine at 20:15, and the resumed Zinc Picolinate at 22:30 (caffeine_shots: 4)."
 }
