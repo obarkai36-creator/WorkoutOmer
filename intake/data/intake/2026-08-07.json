@@ -32,17 +32,19 @@
     {"time": "19:30", "name": "Dinner — egg salad (2 spoons)", "category": "food", "qty": "2 spoons (~60 g)", "kcal": 138, "protein_g": 4.8, "carbs_g": 0.6, "fat_g": 12.6, "fiber_g": 0, "time_approx": true, "note": "standard mashed-egg-and-mayo salad reference (~230kcal/100g); flagged"},
     {"time": "19:30", "name": "Dinner — challah (1 bite)", "category": "food", "qty": "1 bite (~20 g)", "kcal": 56, "protein_g": 1.8, "carbs_g": 10, "fat_g": 1.2, "fiber_g": 0.4, "time_approx": true, "note": "standard challah bread reference (~280kcal/100g), small taste portion"},
     {"time": "19:30", "name": "Dinner — mayo salad (1 bite)", "category": "food", "qty": "1 bite (~20 g)", "kcal": 40, "protein_g": 0.4, "carbs_g": 3, "fat_g": 3, "fiber_g": 0.2, "time_approx": true, "note": "generic mayo-dressed salad reference (~200kcal/100g); flagged, exact ingredients not specified"},
-    {"time": "21:45", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, taken alongside the Mayven gummies (verified reference, supplements.json)"}
+    {"time": "21:45", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, taken alongside the Mayven gummies (verified reference, supplements.json)"},
+    {"time": "22:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray. Logged post-closure."},
+    {"time": "22:00", "name": "Watermelon", "category": "food", "qty": "~100 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 7.6, "fat_g": 0.2, "fiber_g": 0.4, "note": "standard watermelon reference (~30kcal/100g); credits ~4.2mg lycopene, ~8.1mg vitamin C. Logged post-closure."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 17.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 138.3,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 35.7,
+    "vitamin_c_mg": 43.8,
     "vitamin_d_iu": 1000,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 6.6
+    "lycopene_mg": 10.8
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -60,7 +62,8 @@
     "Restaurant lunch (no exact time given, placeholder 14:00): 300g ribeye steak (standard grilled reference, ~291kcal/100g) + small taste portions of sausage (2 bites), mashed potatoes (1 bite), a single french fry, hummus (3 bites), and beef carpaccio with parmesan (3 bites) — all bite/piece-sized estimates, flagged.",
     "17:50 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target. + a personal-serving chocolate mousse dessert (~100g, standard rich mousse reference, ~280kcal/100g); flagged.",
     "Dinner (no exact time given, placeholder 19:30): 1 piece chicken thigh (~90g, standard grilled reference) + 2 spoons cabbage salad in a thin peanut butter sauce (first time logged, flagged) + 2 spoons egg salad + 1 bite challah + 1 bite mayo salad (generic reference, exact ingredients not specified). All new/small-portion items estimated.",
-    "21:45 Thorne Zinc Picolinate 15mg (1 capsule) — resumed per the multivitamin swap plan, alongside the Mayven gummies. End of day."
+    "21:45 Thorne Zinc Picolinate 15mg (1 capsule) — resumed per the multivitamin swap plan, alongside the Mayven gummies.",
+    "22:00 (logged post-closure) Rhinolast PM dose (zero kcal/macros) — both allergy spray doses done today. + 100g watermelon (standard reference; credits ~4.2mg lycopene, ~8.1mg vitamin C). End of day."
   ],
-  "status_note": "Day complete. Slept 8.5h (22:45-07:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:20, a double espresso at 08:40, an ejaculation event (self) at 09:05, a vanilla protein yogurt + chocolate chips at 09:10, a Shoulders workout at 10:30 (4 new PRs: Dumbbell Shoulder Press, Shoulder Shrugs, Farmer's Hold, Lateral Raises), a post-workout meal at 11:30 (Swedish crispbread, Simfonia, sunny side up eggs, cucumber, cherry tomatoes), the Mayven multivitamin gummies at 11:35, creatine at 11:45, another double espresso at 13:15, 15 min shirtless sun exposure at Or Akiva, a restaurant lunch at 14:00 (ribeye steak plus tastes of sausage, mashed potatoes, fries, hummus, and beef carpaccio), omega-3 + a chocolate mousse dessert at 17:50, dinner at 19:30 (chicken thigh, cabbage salad in peanut sauce, egg salad, challah, mayo salad), and the resumed Zinc Picolinate at 21:45 (caffeine_shots: 4)."
+  "status_note": "Day complete. Slept 8.5h (22:45-07:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:20, a double espresso at 08:40, an ejaculation event (self) at 09:05, a vanilla protein yogurt + chocolate chips at 09:10, a Shoulders workout at 10:30 (4 new PRs: Dumbbell Shoulder Press, Shoulder Shrugs, Farmer's Hold, Lateral Raises), a post-workout meal at 11:30 (Swedish crispbread, Simfonia, sunny side up eggs, cucumber, cherry tomatoes), the Mayven multivitamin gummies at 11:35, creatine at 11:45, another double espresso at 13:15, 15 min shirtless sun exposure at Or Akiva, a restaurant lunch at 14:00 (ribeye steak plus tastes of sausage, mashed potatoes, fries, hummus, and beef carpaccio), omega-3 + a chocolate mousse dessert at 17:50, dinner at 19:30 (chicken thigh, cabbage salad in peanut sauce, egg salad, challah, mayo salad), the resumed Zinc Picolinate at 21:45, and the PM allergy spray + watermelon at 22:00 (caffeine_shots: 4)."
 }

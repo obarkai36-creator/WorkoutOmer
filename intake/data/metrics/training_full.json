@@ -1,5 +1,5 @@
 {
-  "now": 1786128123450,
+  "now": 1786132652763,
   "workouts": [
     {
       "datetime": "2026-08-07T10:30",
@@ -3988,15 +3988,15 @@
       "label": "Back",
       "section": "Back",
       "pct": 39,
-      "readyInHours": 16.4,
+      "readyInHours": 15.1,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 85,
-      "readyInHours": 41.7,
+      "pct": 83,
+      "readyInHours": 40.4,
       "ready": false
     },
     "biceps": {
@@ -4019,8 +4019,8 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 42,
-      "readyInHours": 10,
+      "pct": 40,
+      "readyInHours": 8.7,
       "ready": false
     },
     "quads": {
@@ -4067,7 +4067,7 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -4099,44 +4099,44 @@
     "Back": {
       "section": "Back",
       "pct": 39,
-      "readyInHours": 16.4,
+      "readyInHours": 15.1,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 39,
-          "readyInHours": 16.4,
+          "readyInHours": 15.1,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 85,
-      "readyInHours": 41.7,
+      "pct": 83,
+      "readyInHours": 40.4,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 85,
-          "readyInHours": 41.7,
+          "pct": 83,
+          "readyInHours": 40.4,
           "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 24,
-      "readyInHours": 10,
+      "pct": 23,
+      "readyInHours": 8.7,
       "muscles": [
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 42,
-          "readyInHours": 10,
+          "pct": 40,
+          "readyInHours": 8.7,
           "ready": false
         },
         {
@@ -4206,14 +4206,14 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         }
@@ -5230,7 +5230,7 @@
     "fatigue": 22,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-07T18:42:03.450Z",
+    "readyAt": "2026-08-07T19:57:32.763Z",
     "neverLogged": false,
     "daysSince": 23.5,
     "suggestedExercises": [
@@ -5346,25 +5346,25 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 13.3
+        "daysSince": 13.4
       },
       {
         "section": "Arms",
-        "fatigue": 24,
-        "readyInHours": 10,
-        "daysSince": 0.3
+        "fatigue": 23,
+        "readyInHours": 8.7,
+        "daysSince": 0.4
       },
       {
         "section": "Back",
         "fatigue": 39,
-        "readyInHours": 16.4,
+        "readyInHours": 15.1,
         "daysSince": 3.2
       },
       {
         "section": "Shoulders",
-        "fatigue": 85,
-        "readyInHours": 41.7,
-        "daysSince": 0.3
+        "fatigue": 83,
+        "readyInHours": 40.4,
+        "daysSince": 0.4
       }
     ],
     "suggestedCount": 4,
@@ -5377,8 +5377,8 @@
   "alerts": [
     {
       "level": "low",
-      "title": "Shoulders fatigued (85%)",
-      "detail": "Recovers in ~41.7h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Shoulders fatigued (83%)",
+      "detail": "Recovers in ~40.4h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
@@ -5405,7 +5405,7 @@
       8,
       9
     ],
-    "daysSinceLast": 0.3,
+    "daysSinceLast": 0.4,
     "total": 41
   },
   "relstrength": {
