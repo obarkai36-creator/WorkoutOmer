@@ -1,6 +1,135 @@
 {
-  "now": 1786083139995,
+  "now": 1786090053885,
   "workouts": [
+    {
+      "datetime": "2026-08-07T10:30",
+      "note": "Shoulders",
+      "exercises": [
+        {
+          "name": "Dumbbell Shoulder Press",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 36
+            },
+            {
+              "reps": 10,
+              "weight": 36
+            },
+            {
+              "reps": 10,
+              "weight": 36
+            },
+            {
+              "reps": 10,
+              "weight": 36
+            }
+          ],
+          "load": 1440,
+          "top1RM": 48,
+          "topWeight": 36,
+          "muscles": {
+            "shoulders": 1440,
+            "triceps": 576
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Shoulder Shrugs",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            }
+          ],
+          "load": 2304,
+          "top1RM": 67.19999999999999,
+          "topWeight": 48,
+          "muscles": {
+            "shoulders": 1612.8,
+            "back": 921.6
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Farmer's Hold",
+          "sets": [
+            {
+              "seconds": 35,
+              "weight": 48
+            },
+            {
+              "seconds": 35,
+              "weight": 48
+            },
+            {
+              "seconds": 35,
+              "weight": 48
+            },
+            {
+              "seconds": 35,
+              "weight": 48
+            }
+          ],
+          "load": 6720,
+          "top1RM": 0,
+          "topWeight": 48,
+          "muscles": {
+            "forearms": 6720,
+            "shoulders": 2688
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "reps": 9,
+              "weight": 32
+            },
+            {
+              "reps": 9,
+              "weight": 32
+            },
+            {
+              "reps": 9,
+              "weight": 32
+            },
+            {
+              "reps": 9,
+              "weight": 32
+            }
+          ],
+          "load": 1152,
+          "top1RM": 41.6,
+          "topWeight": 32,
+          "muscles": {
+            "shoulders": 1152
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1786098600000,
+      "muscleLoad": {
+        "shoulders": 6892.8,
+        "triceps": 576,
+        "back": 921.6,
+        "forearms": 6720
+      },
+      "isAerobic": false
+    },
     {
       "datetime": "2026-08-04T14:30",
       "note": "Back",
@@ -3833,10 +3962,10 @@
   "ref": {
     "chest": 6270,
     "back": 10313,
-    "shoulders": 6345.4,
+    "shoulders": 6892.8,
     "biceps": 3179.2000000000003,
     "triceps": 4504,
-    "forearms": 12390,
+    "forearms": 13350,
     "quads": 14905.6,
     "hamstrings": 7872,
     "glutes": 7996,
@@ -3850,7 +3979,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 27,
+      "pct": 26,
       "readyInHours": 0,
       "ready": true
     },
@@ -3858,23 +3987,23 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 39,
-      "readyInHours": 15.7,
+      "pct": 47,
+      "readyInHours": 26.5,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 6,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 100,
+      "readyInHours": 50,
+      "ready": false
     },
     "biceps": {
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 21,
+      "pct": 20,
       "readyInHours": 0,
       "ready": true
     },
@@ -3882,7 +4011,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 5,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -3890,9 +4019,9 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 6,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 55,
+      "readyInHours": 18.4,
+      "ready": false
     },
     "quads": {
       "key": "quads",
@@ -3954,14 +4083,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 27,
+      "pct": 26,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 27,
+          "pct": 26,
           "readyInHours": 0,
           "ready": true
         }
@@ -3969,52 +4098,52 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 39,
-      "readyInHours": 15.7,
+      "pct": 47,
+      "readyInHours": 26.5,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 39,
-          "readyInHours": 15.7,
+          "pct": 47,
+          "readyInHours": 26.5,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 6,
-      "readyInHours": 0,
+      "pct": 100,
+      "readyInHours": 50,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 6,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 100,
+          "readyInHours": 50,
+          "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 11,
-      "readyInHours": 0,
+      "pct": 31,
+      "readyInHours": 18.4,
       "muscles": [
-        {
-          "key": "biceps",
-          "label": "Biceps",
-          "section": "Arms",
-          "pct": 21,
-          "readyInHours": 0,
-          "ready": true
-        },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 6,
+          "pct": 55,
+          "readyInHours": 18.4,
+          "ready": false
+        },
+        {
+          "key": "biceps",
+          "label": "Biceps",
+          "section": "Arms",
+          "pct": 20,
           "readyInHours": 0,
           "ready": true
         },
@@ -4022,7 +4151,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 5,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         }
@@ -4278,7 +4407,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Low Row",
@@ -4295,7 +4424,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Lat Pulldown (Triangle)",
@@ -4329,7 +4458,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell Pullover",
@@ -4346,7 +4475,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dead Hang",
@@ -4363,7 +4492,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 405,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Shoulders": [
@@ -4388,35 +4517,35 @@
         "name": "Dumbbell Shoulder Press",
         "section": "Shoulders",
         "iso": false,
-        "latestText": "18kg each × 4×9",
-        "bestText": "18kg each × 4×9",
-        "latestVol": 1296,
-        "bestVol": 1296,
+        "latestText": "18kg each × 4×10",
+        "bestText": "18kg each × 4×10",
+        "latestVol": 1440,
+        "bestVol": 1440,
         "pct": 100,
-        "latest1RM": 46.8,
-        "best1RM": 46.8,
+        "latest1RM": 48,
+        "best1RM": 48,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Lateral Raises",
         "section": "Shoulders",
         "iso": false,
-        "latestText": "16kg each × 4×8",
-        "bestText": "16kg each × 4×8",
-        "latestVol": 1024,
-        "bestVol": 1024,
+        "latestText": "16kg each × 4×9",
+        "bestText": "16kg each × 4×9",
+        "latestVol": 1152,
+        "bestVol": 1152,
         "pct": 100,
-        "latest1RM": 40.5,
-        "best1RM": 40.5,
+        "latest1RM": 41.6,
+        "best1RM": 41.6,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Seated Lateral Raises",
@@ -4473,27 +4602,27 @@
         "name": "Shoulder Shrugs",
         "section": "Shoulders",
         "iso": false,
-        "latestText": "24kg each × 4×11",
-        "bestText": "24kg each × 4×11",
-        "latestVol": 2112,
-        "bestVol": 2112,
+        "latestText": "24kg each × 4×12",
+        "bestText": "24kg each × 4×12",
+        "latestVol": 2304,
+        "bestVol": 2304,
         "pct": 100,
-        "latest1RM": 65.6,
-        "best1RM": 65.6,
+        "latest1RM": 67.2,
+        "best1RM": 67.2,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Farmer's Hold",
         "section": "Shoulders",
         "iso": true,
-        "latestText": "24kg each × 4×30s",
-        "bestText": "24kg each × 4×30s",
-        "latestVol": 5760,
-        "bestVol": 5760,
+        "latestText": "24kg each × 4×35s",
+        "bestText": "24kg each × 4×35s",
+        "latestVol": 6720,
+        "bestVol": 6720,
         "pct": 100,
         "latest1RM": 0,
         "best1RM": 0,
@@ -4501,7 +4630,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       }
     ],
     "Arms": [
@@ -5041,9 +5170,9 @@
   "balance": {
     "bySection": {
       "Chest": 15586.4,
-      "Arms": 32265.800000000003,
-      "Shoulders": 15611.800000000001,
-      "Back": 13885.099999999999,
+      "Arms": 33283.4,
+      "Shoulders": 16402.2,
+      "Back": 13961.9,
       "Legs": 48191,
       "Core": 14351.4
     },
@@ -5055,55 +5184,55 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 412,
+        "stress": 406,
         "sessions": 4,
-        "acwr": 1.27
+        "acwr": 1.28
       },
       {
         "label": "-4w",
-        "stress": 467,
+        "stress": 463,
         "sessions": 5,
-        "acwr": 1.06
+        "acwr": 1.07
       },
       {
         "label": "-3w",
-        "stress": 528,
+        "stress": 526,
         "sessions": 3,
         "acwr": 1.18
       },
       {
         "label": "-2w",
-        "stress": 425,
+        "stress": 418,
         "sessions": 3,
-        "acwr": 0.93
+        "acwr": 0.92
       },
       {
         "label": "-1w",
-        "stress": 866,
+        "stress": 854,
         "sessions": 4,
-        "acwr": 1.52
+        "acwr": 1.51
       },
       {
         "label": "This wk",
-        "stress": 642,
+        "stress": 632,
         "sessions": 3,
         "acwr": 1.04
       }
     ],
-    "acute": 642,
-    "chronic": 615,
-    "acwr": 1.04,
+    "acute": 804,
+    "chronic": 650,
+    "acwr": 1.24,
     "acwrZone": "ok",
-    "sessions28": 13
+    "sessions28": 14
   },
   "recommendation": {
     "section": "Chest",
-    "fatigue": 27,
+    "fatigue": 26,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-07T06:12:19.995Z",
+    "readyAt": "2026-08-07T08:07:33.885Z",
     "neverLogged": false,
-    "daysSince": 22.9,
+    "daysSince": 23,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -5209,33 +5338,33 @@
     "ranked": [
       {
         "section": "Chest",
-        "fatigue": 27,
+        "fatigue": 26,
         "readyInHours": 0,
-        "daysSince": 22.9
-      },
-      {
-        "section": "Shoulders",
-        "fatigue": 6,
-        "readyInHours": 0,
-        "daysSince": 13.8
+        "daysSince": 23
       },
       {
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 12.8
+        "daysSince": 12.9
       },
       {
         "section": "Arms",
-        "fatigue": 11,
-        "readyInHours": 0,
-        "daysSince": 2.7
+        "fatigue": 31,
+        "readyInHours": 18.4,
+        "daysSince": -0.1
       },
       {
         "section": "Back",
-        "fatigue": 39,
-        "readyInHours": 15.7,
+        "fatigue": 47,
+        "readyInHours": 26.5,
         "daysSince": 2.7
+      },
+      {
+        "section": "Shoulders",
+        "fatigue": 100,
+        "readyInHours": 50,
+        "daysSince": -0.1
       }
     ],
     "suggestedCount": 4,
@@ -5247,6 +5376,11 @@
   },
   "alerts": [
     {
+      "level": "low",
+      "title": "Shoulders fatigued (100%)",
+      "detail": "Recovers in ~50h. Avoid loading it hard before then — you trained it most recently."
+    },
+    {
       "level": "ok",
       "title": "No major red flags",
       "detail": "Nothing acutely concerning. The notes below are housekeeping, not warnings."
@@ -5257,9 +5391,9 @@
     "Bring cardio back into the week (last logged 18.8 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
   ],
   "timing": {
-    "avgGap": 4.1,
+    "avgGap": 4,
     "longestGap": 35.7,
-    "perWeek": 3.3,
+    "perWeek": 3.5,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -5268,11 +5402,11 @@
       6,
       3,
       2,
-      7,
+      8,
       9
     ],
-    "daysSinceLast": 2.7,
-    "total": 40
+    "daysSinceLast": -0.1,
+    "total": 41
   },
   "relstrength": {
     "bodyweightKg": 81,
