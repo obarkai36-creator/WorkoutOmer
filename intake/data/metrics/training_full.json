@@ -1,5 +1,5 @@
 {
-  "now": 1786077066396,
+  "now": 1786080074848,
   "workouts": [
     {
       "datetime": "2026-08-04T14:30",
@@ -3859,7 +3859,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 40,
-      "readyInHours": 17.4,
+      "readyInHours": 16.6,
       "ready": false
     },
     "shoulders": {
@@ -3874,7 +3874,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 22,
+      "pct": 21,
       "readyInHours": 0,
       "ready": true
     },
@@ -3882,7 +3882,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 6,
+      "pct": 5,
       "readyInHours": 0,
       "ready": true
     },
@@ -3970,14 +3970,14 @@
     "Back": {
       "section": "Back",
       "pct": 40,
-      "readyInHours": 17.4,
+      "readyInHours": 16.6,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 40,
-          "readyInHours": 17.4,
+          "readyInHours": 16.6,
           "ready": false
         }
       ]
@@ -4006,15 +4006,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 22,
-          "readyInHours": 0,
-          "ready": true
-        },
-        {
-          "key": "triceps",
-          "label": "Triceps",
-          "section": "Arms",
-          "pct": 6,
+          "pct": 21,
           "readyInHours": 0,
           "ready": true
         },
@@ -4023,6 +4015,14 @@
           "label": "Forearms",
           "section": "Arms",
           "pct": 6,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "triceps",
+          "label": "Triceps",
+          "section": "Arms",
+          "pct": 5,
           "readyInHours": 0,
           "ready": true
         }
@@ -5101,7 +5101,7 @@
     "fatigue": 28,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-07T04:31:06.396Z",
+    "readyAt": "2026-08-07T05:21:14.848Z",
     "neverLogged": false,
     "daysSince": 22.9,
     "suggestedExercises": [
@@ -5234,7 +5234,7 @@
       {
         "section": "Back",
         "fatigue": 40,
-        "readyInHours": 17.4,
+        "readyInHours": 16.6,
         "daysSince": 2.6
       }
     ],
