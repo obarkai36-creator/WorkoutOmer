@@ -8,7 +8,9 @@
   "items": [
     {"time": "08:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "08:40", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:40", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:10", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
+    {"time": "09:10", "name": "Dark chocolate chips", "category": "food", "qty": "5 chips (~2.5 g)", "kcal": 14, "protein_g": 0.18, "carbs_g": 1.13, "fat_g": 0.95, "fiber_g": 0.25, "note": "estimated from standard ~70% dark chocolate baking chip reference (~550kcal/100g, ~0.5g/chip); flagged"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -24,7 +26,9 @@
   "assumptions": [
     "Sleep logged: 22:45-07:15, 8.5h — squarely in the 7-9h target band, one continuous stretch.",
     "08:20 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "08:40 double espresso (~60-80ml, counts as 2 caffeine shots)."
+    "08:40 double espresso (~60-80ml, counts as 2 caffeine shots).",
+    "09:05 ejaculation event (self, masturbation) — logged to ejaculation.json.",
+    "09:10 vanilla protein yogurt (1 cup, 200g, 20g protein, no brand specified — assumed same Danone PRO 0% line as prior entries) + 5 dark chocolate chips (~2.5g, same estimated reference)."
   ],
-  "status_note": "Slept 8.5h (22:45-07:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:20, a double espresso at 08:40 (caffeine_shots: 2)."
+  "status_note": "Slept 8.5h (22:45-07:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 08:20, a double espresso at 08:40, an ejaculation event (self) at 09:05, and a vanilla protein yogurt + chocolate chips at 09:10 (caffeine_shots: 2)."
 }
