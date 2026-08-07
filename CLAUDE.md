@@ -57,7 +57,7 @@
   when the user first logged the Mayven gummies at 18:15 on day 40;
   reassess with the user after "at least a few weeks" on the new stack,
   so around/after 2026-08-20+): the standing default for multivitamin-type
-  log entries is now Mayven Full Volume Gummies (3 gummies/serving) instead
+  log entries is now Mayven Full Volume Gummies (2 gummies/serving) instead
   of Thorne Basic Nutrients 2/Day. Per the gummies' label (photographed
   2026-07-31, verified reference in intake/references/supplements.json):
   100mcg DFE folate (well under Thorne's 667mcg) and 2.8mg zinc, but NO
