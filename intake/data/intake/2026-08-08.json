@@ -18,7 +18,8 @@
     {"time": "13:00", "name": "Lunch — cabbage salad in peanut butter sauce (5 spoons)", "category": "food", "qty": "5 spoons (~150 g)", "kcal": 113, "protein_g": 5, "carbs_g": 12.5, "fat_g": 6.25, "fiber_g": 2.5, "note": "same reference as yesterday's entry, scaled to 5 spoons"},
     {"time": "13:00", "name": "Lunch — egg salad in mayo (2 spoons)", "category": "food", "qty": "2 spoons (~60 g)", "kcal": 138, "protein_g": 4.8, "carbs_g": 0.6, "fat_g": 12.6, "fiber_g": 0, "note": "same reference as yesterday's entry"},
     {"time": "13:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:15", "name": "Watermelon", "category": "food", "qty": "~100 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 7.6, "fat_g": 0.2, "fiber_g": 0.4, "note": "standard watermelon reference (~30kcal/100g); credits ~4.2mg lycopene, ~8.1mg vitamin C"}
+    {"time": "14:15", "name": "Watermelon", "category": "food", "qty": "~100 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 7.6, "fat_g": 0.2, "fiber_g": 0.4, "note": "standard watermelon reference (~30kcal/100g); credits ~4.2mg lycopene, ~8.1mg vitamin C"},
+    {"time": "15:45", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -30,7 +31,7 @@
     "vitamin_e_mg": 1.4,
     "lycopene_mg": 10.9
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:30-08:55, 9.42h — just above the 7-9h target band, one continuous stretch.",
     "09:25 Rhinolast (azelastine nasal spray, AM dose) — zero kcal/macros.",
@@ -40,7 +41,8 @@
     "13:00 lunch: 0.7 of a salad (3 tomatoes, 1 cucumber, 1 red onion, 1 head lettuce, olive oil, lemon, salt — credits ~6.7mg lycopene, ~47.5mg vitamin C, ~38.8mcg folate DFE, ~1.4mg vitamin E) + 15g homemade spelt garlic bread (first time logged, flagged) + 5 slices Tnuva Emek Light yellow cheese + 3 hard-boiled egg whites + 1 yolk + 5 spoons cabbage salad in peanut sauce + 2 spoons egg salad in mayo (both same references as yesterday).",
     "13:30 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
     "14:15 100g watermelon (standard reference; credits ~4.2mg lycopene, ~8.1mg vitamin C).",
-    "15:00 20 minutes direct sun exposure, shoulder and back of neck only (Hadera, Israel) — credited ~300IU vitamin D as a rough estimate; much smaller exposed skin area than yesterday's shirtless torso session despite the longer duration, so scaled down accordingly."
+    "15:00 20 minutes direct sun exposure, shoulder and back of neck only (Hadera, Israel) — credited ~300IU vitamin D as a rough estimate; much smaller exposed skin area than yesterday's shirtless torso session despite the longer duration, so scaled down accordingly.",
+    "15:45 double espresso (~60-80ml, counts as 2 caffeine shots) — 4 total today."
   ],
-  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, a biscuit cake bite + a piece of chocolate birthday cake at 09:50, the Mayven multivitamin gummies at 11:30, lunch at 13:00 (salad, spelt garlic bread, yellow cheese, hard-boiled eggs, cabbage salad in peanut sauce, egg salad), omega-3 at 13:30, watermelon at 14:15, and 20 min sun exposure (shoulder/neck) at 15:00 (caffeine_shots: 2)."
+  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, a biscuit cake bite + a piece of chocolate birthday cake at 09:50, the Mayven multivitamin gummies at 11:30, lunch at 13:00 (salad, spelt garlic bread, yellow cheese, hard-boiled eggs, cabbage salad in peanut sauce, egg salad), omega-3 at 13:30, watermelon at 14:15, 20 min sun exposure (shoulder/neck) at 15:00, and a double espresso at 15:45 (caffeine_shots: 4)."
 }
