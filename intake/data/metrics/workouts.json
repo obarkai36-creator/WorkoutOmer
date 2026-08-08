@@ -2,18 +2,19 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-08-08",
-    "latest_session": "Shoulders",
-    "sessions_logged": 41,
-    "sessions_per_week": 3.5,
+    "latest_session": "Chest",
+    "sessions_logged": 42,
+    "sessions_per_week": 3.8,
     "typical_time": "afternoon",
     "aerobic_28d_km": 3.7,
     "aerobic_sessions_28d": 1,
     "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 0.97,
-    "recommended_next": "Chest day",
+    "acwr": 1.19,
+    "recommended_next": "Legs day",
     "alerts": [
-      "Nothing acutely concerning. The notes below are housekeeping, not warnings."
+      "Push volume is 1.55× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
+      "Recovers in ~79.2h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -223,6 +224,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Dumbbell Shoulder Press 18kg each×4×10 (new PR, +1 rep at same weight vs 18kg each×4×9); Shoulder Shrugs 24kg each×4×12 (new PR, +1 rep at same weight vs 24kg each×4×11); Farmer's Hold 24kg each×4×35s (new PR, +5s at same weight vs 4×30s); Lateral Raises 16kg each×4×9 (new PR, +1 rep at same weight vs 16kg each×4×8). 4 new PRs. 10:30.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-08",
+      "type": "Strength — Chest",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Dumbbell Bench Press 24kg each×4×12 (ties best); Incline Pec Fly 18kg each×4×9 (ties best); Incline Dumbbell Bench Press 24kg each×4×11 (new PR, +1 rep at same weight vs 24kg each×4×10); Narrow Push-Ups BW×4×10 (new bodyweight exercise, first log). 1 new PR. 15:55.",
       "_source": "manual log"
     }
   ]
