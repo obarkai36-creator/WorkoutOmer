@@ -22,7 +22,9 @@
     {"time": "15:45", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "16:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "17:10", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
-    {"time": "17:35", "name": "Almonds", "category": "food", "qty": "2 almonds (~2.4 g)", "kcal": 14, "protein_g": 0.5, "carbs_g": 0.5, "fat_g": 1.2, "fiber_g": 0.3, "note": "standard almond reference (~579kcal/100g, ~25.6mg vitE/100g); credits ~0.6mg vitamin E"}
+    {"time": "17:35", "name": "Almonds", "category": "food", "qty": "2 almonds (~2.4 g)", "kcal": 14, "protein_g": 0.5, "carbs_g": 0.5, "fat_g": 1.2, "fiber_g": 0.3, "note": "standard almond reference (~579kcal/100g, ~25.6mg vitE/100g); credits ~0.6mg vitamin E"},
+    {"time": "18:30", "name": "Goldstar beer", "category": "drink", "qty": "1 bottle (~330 ml, ~4.9% ABV)", "kcal": 145, "protein_g": 1.3, "carbs_g": 11.9, "fat_g": 0, "fiber_g": 0, "note": "standard Israeli lager reference; ~1.6 standard alcohol units"},
+    {"time": "18:30", "name": "Limonarak", "category": "drink", "qty": "1 glass (~30ml arak + lemonade/soda, ~180ml total)", "kcal": 128, "protein_g": 0, "carbs_g": 15, "fat_g": 0, "fiber_g": 0, "note": "first time logged — arak diluted with lemonade, estimated from the arak-shot + lemonade references; ~1.2 standard alcohol units (from the arak component)"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -50,7 +52,8 @@
     "16:30 creatine monohydrate, 5g (zero kcal/macros).",
     "16:45 (time not given, approximated) 10 more minutes of direct sun exposure — torso and legs, only the crotch area covered. Much larger exposed skin area than the earlier 20-min shoulder/neck session, so credited a bigger vitamin D estimate (~900IU) despite the shorter duration. Crotch was deliberately covered, so no genital-heat-exposure concern per the standing heat-exposure tracking.",
     "17:10 vanilla protein yogurt (1 cup, 200g, 20g protein, no brand specified — assumed same Danone PRO 0% line as prior entries).",
-    "17:35 2 almonds (~2.4g, standard reference; credits ~0.6mg vitamin E)."
+    "17:35 2 almonds (~2.4g, standard reference; credits ~0.6mg vitamin E).",
+    "18:30 alcohol event: 1 Goldstar beer (~330ml, ~1.6 units) + 1 limonarak (arak + lemonade, first time logged, ~1.2 units) — ~2.8 standard alcohol units total, above the profile's usual ≤1/week pattern; flagged per the standing intake-pattern suggestion permission."
   ],
-  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, a biscuit cake bite + a piece of chocolate birthday cake at 09:50, the Mayven multivitamin gummies at 11:30, lunch at 13:00 (salad, spelt garlic bread, yellow cheese, hard-boiled eggs, cabbage salad in peanut sauce, egg salad), omega-3 at 13:30, watermelon at 14:15, 20 min sun exposure (shoulder/neck) at 15:00, a double espresso at 15:45, a Chest workout at 15:55 (1 new PR: Incline Dumbbell Bench Press), creatine at 16:30, 10 more minutes of sun exposure (torso/legs, crotch covered) at 16:45, a vanilla protein yogurt at 17:10, and 2 almonds at 17:35 (caffeine_shots: 4)."
+  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, a biscuit cake bite + a piece of chocolate birthday cake at 09:50, the Mayven multivitamin gummies at 11:30, lunch at 13:00 (salad, spelt garlic bread, yellow cheese, hard-boiled eggs, cabbage salad in peanut sauce, egg salad), omega-3 at 13:30, watermelon at 14:15, 20 min sun exposure (shoulder/neck) at 15:00, a double espresso at 15:45, a Chest workout at 15:55 (1 new PR: Incline Dumbbell Bench Press), creatine at 16:30, 10 more minutes of sun exposure (torso/legs, crotch covered) at 16:45, a vanilla protein yogurt at 17:10, 2 almonds at 17:35, and a beer + limonarak at 18:30 (~2.8 alcohol units) (caffeine_shots: 4)."
 }
