@@ -17,17 +17,18 @@
     {"time": "13:00", "name": "Lunch — hard boiled eggs (3 whites, 1 yolk)", "category": "food", "qty": "3 egg whites + 1 yolk", "kcal": 106, "protein_g": 13.5, "carbs_g": 1.33, "fat_g": 4.68, "fiber_g": 0, "note": "standard hard-boiled egg component reference (whites ~17kcal each, yolk ~55kcal)"},
     {"time": "13:00", "name": "Lunch — cabbage salad in peanut butter sauce (5 spoons)", "category": "food", "qty": "5 spoons (~150 g)", "kcal": 113, "protein_g": 5, "carbs_g": 12.5, "fat_g": 6.25, "fiber_g": 2.5, "note": "same reference as yesterday's entry, scaled to 5 spoons"},
     {"time": "13:00", "name": "Lunch — egg salad in mayo (2 spoons)", "category": "food", "qty": "2 spoons (~60 g)", "kcal": 138, "protein_g": 4.8, "carbs_g": 0.6, "fat_g": 12.6, "fiber_g": 0, "note": "same reference as yesterday's entry"},
-    {"time": "13:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:15", "name": "Watermelon", "category": "food", "qty": "~100 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 7.6, "fat_g": 0.2, "fiber_g": 0.4, "note": "standard watermelon reference (~30kcal/100g); credits ~4.2mg lycopene, ~8.1mg vitamin C"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 138.8,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 47.5,
+    "vitamin_c_mg": 55.6,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 1.4,
-    "lycopene_mg": 6.7
+    "lycopene_mg": 10.9
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -37,7 +38,8 @@
     "09:50 1 bite classic biscuit cake (~20g, first time logged, standard no-bake biscuit/chocolate log reference ~480kcal/100g) + 1 piece chocolate birthday cake (~100g, first time logged, standard frosted chocolate cake reference ~370kcal/100g). Both flagged as estimates.",
     "11:30 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "13:00 lunch: 0.7 of a salad (3 tomatoes, 1 cucumber, 1 red onion, 1 head lettuce, olive oil, lemon, salt — credits ~6.7mg lycopene, ~47.5mg vitamin C, ~38.8mcg folate DFE, ~1.4mg vitamin E) + 15g homemade spelt garlic bread (first time logged, flagged) + 5 slices Tnuva Emek Light yellow cheese + 3 hard-boiled egg whites + 1 yolk + 5 spoons cabbage salad in peanut sauce + 2 spoons egg salad in mayo (both same references as yesterday).",
-    "13:30 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target."
+    "13:30 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — zero kcal/macros, hits the day's omega-3 target.",
+    "14:15 100g watermelon (standard reference; credits ~4.2mg lycopene, ~8.1mg vitamin C)."
   ],
-  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, a biscuit cake bite + a piece of chocolate birthday cake at 09:50, the Mayven multivitamin gummies at 11:30, lunch at 13:00 (salad, spelt garlic bread, yellow cheese, hard-boiled eggs, cabbage salad in peanut sauce, egg salad), and omega-3 at 13:30 (caffeine_shots: 2)."
+  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, a biscuit cake bite + a piece of chocolate birthday cake at 09:50, the Mayven multivitamin gummies at 11:30, lunch at 13:00 (salad, spelt garlic bread, yellow cheese, hard-boiled eggs, cabbage salad in peanut sauce, egg salad), omega-3 at 13:30, and watermelon at 14:15 (caffeine_shots: 2)."
 }
