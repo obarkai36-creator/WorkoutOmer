@@ -7,7 +7,9 @@
   "_status": "Day just opened — sleep logged.",
   "items": [
     {"time": "09:25", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
-    {"time": "09:30", "name": "Black coffee (instant, 2 tsp)", "category": "drink", "qty": "2 tsp instant coffee, black, small glass", "kcal": 5, "protein_g": 0.3, "carbs_g": 0.8, "fat_g": 0, "fiber_g": 0, "note": "strong instant black coffee, no milk/sugar — counted as 2 caffeine shots given the double spoon strength (same reference as prior entries)"}
+    {"time": "09:30", "name": "Black coffee (instant, 2 tsp)", "category": "drink", "qty": "2 tsp instant coffee, black, small glass", "kcal": 5, "protein_g": 0.3, "carbs_g": 0.8, "fat_g": 0, "fiber_g": 0, "note": "strong instant black coffee, no milk/sugar — counted as 2 caffeine shots given the double spoon strength (same reference as prior entries)"},
+    {"time": "09:50", "name": "Classic biscuit cake (bite)", "category": "food", "qty": "1 bite (~20 g)", "kcal": 96, "protein_g": 1.2, "carbs_g": 11, "fat_g": 5.2, "fiber_g": 0.4, "note": "first time logged — estimated from a standard no-bake biscuit/chocolate log cake reference (~480kcal/100g); flagged"},
+    {"time": "09:50", "name": "Chocolate birthday cake (1 piece)", "category": "food", "qty": "1 piece (~100 g)", "kcal": 370, "protein_g": 4, "carbs_g": 50, "fat_g": 17, "fiber_g": 2, "note": "first time logged — estimated from a standard frosted chocolate cake reference (~370kcal/100g); flagged, slice size assumed"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -23,7 +25,8 @@
   "assumptions": [
     "Sleep logged: 23:30-08:55, 9.42h — just above the 7-9h target band, one continuous stretch.",
     "09:25 Rhinolast (azelastine nasal spray, AM dose) — zero kcal/macros.",
-    "09:30 black coffee (2 tsp instant, small glass, no milk/sugar) — counted as 2 caffeine shots given the double-strength preparation, same reference as prior entries."
+    "09:30 black coffee (2 tsp instant, small glass, no milk/sugar) — counted as 2 caffeine shots given the double-strength preparation, same reference as prior entries.",
+    "09:50 1 bite classic biscuit cake (~20g, first time logged, standard no-bake biscuit/chocolate log reference ~480kcal/100g) + 1 piece chocolate birthday cake (~100g, first time logged, standard frosted chocolate cake reference ~370kcal/100g). Both flagged as estimates."
   ],
-  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30 (caffeine_shots: 2)."
+  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, and a biscuit cake bite + a piece of chocolate birthday cake at 09:50 (caffeine_shots: 2)."
 }
