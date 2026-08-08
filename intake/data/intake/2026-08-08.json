@@ -5,7 +5,10 @@
   "workout_today": false,
   "workout_summary": null,
   "_status": "Day just opened — sleep logged.",
-  "items": [],
+  "items": [
+    {"time": "09:25", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "09:30", "name": "Black coffee (instant, 2 tsp)", "category": "drink", "qty": "2 tsp instant coffee, black, small glass", "kcal": 5, "protein_g": 0.3, "carbs_g": 0.8, "fat_g": 0, "fiber_g": 0, "note": "strong instant black coffee, no milk/sugar — counted as 2 caffeine shots given the double spoon strength (same reference as prior entries)"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,9 +19,11 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "assumptions": [
-    "Sleep logged: 23:30-08:55, 9.42h — just above the 7-9h target band, one continuous stretch."
+    "Sleep logged: 23:30-08:55, 9.42h — just above the 7-9h target band, one continuous stretch.",
+    "09:25 Rhinolast (azelastine nasal spray, AM dose) — zero kcal/macros.",
+    "09:30 black coffee (2 tsp instant, small glass, no milk/sugar) — counted as 2 caffeine shots given the double-strength preparation, same reference as prior entries."
   ],
-  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band (caffeine_shots: 0)."
+  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30 (caffeine_shots: 2)."
 }
