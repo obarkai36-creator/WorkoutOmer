@@ -1,5 +1,5 @@
 {
-  "now": 1786132652763,
+  "now": 1786168742386,
   "workouts": [
     {
       "datetime": "2026-08-07T10:30",
@@ -3979,7 +3979,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 22,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -3987,23 +3987,23 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 39,
-      "readyInHours": 15.1,
+      "pct": 33,
+      "readyInHours": 5.1,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 83,
-      "readyInHours": 40.4,
+      "pct": 64,
+      "readyInHours": 30.4,
       "ready": false
     },
     "biceps": {
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 15,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     },
@@ -4011,7 +4011,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 14,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     },
@@ -4019,9 +4019,9 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 40,
-      "readyInHours": 8.7,
-      "ready": false
+      "pct": 29,
+      "readyInHours": 0,
+      "ready": true
     },
     "quads": {
       "key": "quads",
@@ -4083,14 +4083,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 22,
+      "pct": 18,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 22,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         }
@@ -4098,52 +4098,52 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 39,
-      "readyInHours": 15.1,
+      "pct": 33,
+      "readyInHours": 5.1,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 39,
-          "readyInHours": 15.1,
+          "pct": 33,
+          "readyInHours": 5.1,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 83,
-      "readyInHours": 40.4,
+      "pct": 64,
+      "readyInHours": 30.4,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 83,
-          "readyInHours": 40.4,
+          "pct": 64,
+          "readyInHours": 30.4,
           "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 23,
-      "readyInHours": 8.7,
+      "pct": 17,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 40,
-          "readyInHours": 8.7,
-          "ready": false
+          "pct": 29,
+          "readyInHours": 0,
+          "ready": true
         },
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 15,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         },
@@ -4151,7 +4151,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 14,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         }
@@ -5227,12 +5227,12 @@
   },
   "recommendation": {
     "section": "Chest",
-    "fatigue": 22,
+    "fatigue": 18,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-07T19:57:32.763Z",
+    "readyAt": "2026-08-08T05:59:02.386Z",
     "neverLogged": false,
-    "daysSince": 23.5,
+    "daysSince": 23.9,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -5338,33 +5338,33 @@
     "ranked": [
       {
         "section": "Chest",
-        "fatigue": 22,
+        "fatigue": 18,
         "readyInHours": 0,
-        "daysSince": 23.5
+        "daysSince": 23.9
       },
       {
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 13.4
+        "daysSince": 13.8
       },
       {
         "section": "Arms",
-        "fatigue": 23,
-        "readyInHours": 8.7,
-        "daysSince": 0.4
+        "fatigue": 17,
+        "readyInHours": 0,
+        "daysSince": 0.8
       },
       {
         "section": "Back",
-        "fatigue": 39,
-        "readyInHours": 15.1,
-        "daysSince": 3.2
+        "fatigue": 33,
+        "readyInHours": 5.1,
+        "daysSince": 3.6
       },
       {
         "section": "Shoulders",
-        "fatigue": 83,
-        "readyInHours": 40.4,
-        "daysSince": 0.4
+        "fatigue": 64,
+        "readyInHours": 30.4,
+        "daysSince": 0.8
       }
     ],
     "suggestedCount": 4,
@@ -5372,14 +5372,9 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 0,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 19.3
+    "daysSinceAerobic": 19.7
   },
   "alerts": [
-    {
-      "level": "low",
-      "title": "Shoulders fatigued (83%)",
-      "detail": "Recovers in ~40.4h. Avoid loading it hard before then — you trained it most recently."
-    },
     {
       "level": "ok",
       "title": "No major red flags",
@@ -5388,7 +5383,7 @@
   ],
   "changes": [
     "You're below your PR on 7 lifts — closest wins first: Dumbbell Bench Press (63% of best), Rope Cable Extension (81% of best), Angled Leg Press (81% of best). Add a rep or a set before adding weight.",
-    "Bring cardio back into the week (last logged 19.3 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
+    "Bring cardio back into the week (last logged 19.7 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
   ],
   "timing": {
     "avgGap": 4,
@@ -5405,7 +5400,7 @@
       8,
       9
     ],
-    "daysSinceLast": 0.4,
+    "daysSinceLast": 0.8,
     "total": 41
   },
   "relstrength": {
@@ -5472,7 +5467,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 19.3,
+    "daysSinceLast": 19.7,
     "recent": [
       {
         "t": 1784462400000,
@@ -5683,15 +5678,22 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-08-07",
-      "start": "22:45",
-      "end": "07:15",
-      "hours": 8.5,
-      "note": "Long solid night, 8.5h — squarely in the 7-9h target band, one continuous stretch."
+      "date": "2026-08-08",
+      "start": "23:30",
+      "end": "08:55",
+      "hours": 9.42,
+      "note": "Very long night, ~9.42h — just above the 7-9h target band, one continuous stretch."
     },
-    "avg7": 7.2,
+    "avg7": 7.5,
     "status": "good",
     "history": [
+      {
+        "date": "2026-08-08",
+        "start": "23:30",
+        "end": "08:55",
+        "hours": 9.42,
+        "note": "Very long night, ~9.42h — just above the 7-9h target band, one continuous stretch."
+      },
       {
         "date": "2026-08-07",
         "start": "22:45",
