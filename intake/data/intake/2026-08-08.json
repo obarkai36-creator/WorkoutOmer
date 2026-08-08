@@ -1,10 +1,10 @@
 {
   "date": "2026-08-08",
   "day_number": 42,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Chest (15:55): Dumbbell Bench Press 24kg each×4×12 (ties best); Incline Pec Fly 18kg each×4×9 (ties best); Incline Dumbbell Bench Press 24kg each×4×11 (new PR); Narrow Push-Ups BW×4×10 (new exercise, first log). 1 new PR.",
-  "_status": "Day just opened — sleep logged.",
+  "_status": "Day complete. Chest workout (1 new PR) plus a full day of food/drink/supplements/sleep logged. Notably heavier alcohol day than usual (~5.3 units).",
   "items": [
     {"time": "09:25", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "09:30", "name": "Black coffee (instant, 2 tsp)", "category": "drink", "qty": "2 tsp instant coffee, black, small glass", "kcal": 5, "protein_g": 0.3, "carbs_g": 0.8, "fat_g": 0, "fiber_g": 0, "note": "strong instant black coffee, no milk/sugar — counted as 2 caffeine shots given the double spoon strength (same reference as prior entries)"},
@@ -26,10 +26,12 @@
     {"time": "18:30", "name": "Goldstar beer", "category": "drink", "qty": "1 bottle (~330 ml, ~4.9% ABV)", "kcal": 145, "protein_g": 1.3, "carbs_g": 11.9, "fat_g": 0, "fiber_g": 0, "note": "standard Israeli lager reference; ~1.6 standard alcohol units"},
     {"time": "18:30", "name": "Limonarak", "category": "drink", "qty": "1 glass (~30ml arak + lemonade/soda, ~180ml total)", "kcal": 128, "protein_g": 0, "carbs_g": 15, "fat_g": 0, "fiber_g": 0, "note": "first time logged — arak diluted with lemonade, estimated from the arak-shot + lemonade references; ~1.2 standard alcohol units (from the arak component)"},
     {"time": "19:00", "name": "Heineken beer", "category": "drink", "qty": "500 ml, ~5% ABV", "kcal": 210, "protein_g": 2, "carbs_g": 17, "fat_g": 0, "fiber_g": 0, "note": "standard Heineken reference (~42kcal/100ml); ~2.5 standard alcohol units"},
-    {"time": "19:30", "name": "Dinner — chicken thighs with onions and mushrooms", "category": "food", "qty": "320 g (cooked weight, includes vegetables)", "kcal": 572, "protein_g": 63.9, "carbs_g": 5.5, "fat_g": 31.3, "fiber_g": 1.1, "time_approx": true, "note": "first time logged — per-ingredient estimate (~75% chicken thigh, ~15% onion, ~10% mushroom, plus a light sauté oil); flagged, exact proportions not specified. No exact time given, placeholder 19:30."}
+    {"time": "19:30", "name": "Dinner — chicken thighs with onions and mushrooms", "category": "food", "qty": "320 g (cooked weight, includes vegetables)", "kcal": 572, "protein_g": 63.9, "carbs_g": 5.5, "fat_g": 31.3, "fiber_g": 1.1, "time_approx": true, "note": "first time logged — per-ingredient estimate (~75% chicken thigh, ~15% onion, ~10% mushroom, plus a light sauté oil); flagged, exact proportions not specified. No exact time given, placeholder 19:30."},
+    {"time": "22:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "22:30", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, taken alongside the Mayven gummies (verified reference, supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 17.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 138.8,
     "omega3_epa_dha_mg": 1000,
@@ -57,7 +59,8 @@
     "17:35 2 almonds (~2.4g, standard reference; credits ~0.6mg vitamin E).",
     "18:30 alcohol event: 1 Goldstar beer (~330ml, ~1.6 units) + 1 limonarak (arak + lemonade, first time logged, ~1.2 units) — ~2.8 standard alcohol units total, above the profile's usual ≤1/week pattern; flagged per the standing intake-pattern suggestion permission.",
     "19:00 1 Heineken beer (500ml, ~5% ABV, ~2.5 more units) — ~5.3 alcohol units so far today, a notably heavier drinking day than the usual pattern.",
-    "Dinner (no exact time given, placeholder 19:30): 320g chicken thighs with onions and mushrooms, cooked weight — first time logged, estimated per-ingredient (~75% chicken thigh, ~15% onion, ~10% mushroom, plus a light sauté oil); flagged as an estimate."
+    "Dinner (no exact time given, placeholder 19:30): 320g chicken thighs with onions and mushrooms, cooked weight — first time logged, estimated per-ingredient (~75% chicken thigh, ~15% onion, ~10% mushroom, plus a light sauté oil); flagged as an estimate.",
+    "22:30 Rhinolast (azelastine nasal spray, PM dose) — zero kcal/macros. + Thorne Zinc Picolinate 15mg (1 capsule) — resumed per the multivitamin swap plan, alongside the Mayven gummies. End of day."
   ],
-  "status_note": "Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, a biscuit cake bite + a piece of chocolate birthday cake at 09:50, the Mayven multivitamin gummies at 11:30, lunch at 13:00 (salad, spelt garlic bread, yellow cheese, hard-boiled eggs, cabbage salad in peanut sauce, egg salad), omega-3 at 13:30, watermelon at 14:15, 20 min sun exposure (shoulder/neck) at 15:00, a double espresso at 15:45, a Chest workout at 15:55 (1 new PR: Incline Dumbbell Bench Press), creatine at 16:30, 10 more minutes of sun exposure (torso/legs, crotch covered) at 16:45, a vanilla protein yogurt at 17:10, 2 almonds at 17:35, a beer + limonarak at 18:30, another beer at 19:00 (~5.3 alcohol units total), and dinner at 19:30 (chicken thighs with onions and mushrooms) (caffeine_shots: 4)."
+  "status_note": "Day complete. Slept 9.42h (23:30-08:55) — a very long night, just above the 7-9h target band. Allergy spray at 09:25, black coffee at 09:30, a biscuit cake bite + a piece of chocolate birthday cake at 09:50, the Mayven multivitamin gummies at 11:30, lunch at 13:00 (salad, spelt garlic bread, yellow cheese, hard-boiled eggs, cabbage salad in peanut sauce, egg salad), omega-3 at 13:30, watermelon at 14:15, 20 min sun exposure (shoulder/neck) at 15:00, a double espresso at 15:45, a Chest workout at 15:55 (1 new PR: Incline Dumbbell Bench Press), creatine at 16:30, 10 more minutes of sun exposure (torso/legs, crotch covered) at 16:45, a vanilla protein yogurt at 17:10, 2 almonds at 17:35, a beer + limonarak at 18:30, another beer at 19:00 (~5.3 alcohol units total), dinner at 19:30 (chicken thighs with onions and mushrooms), and the PM allergy spray + resumed Zinc Picolinate at 22:30 (caffeine_shots: 4)."
 }
