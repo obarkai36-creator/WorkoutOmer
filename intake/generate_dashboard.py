@@ -640,7 +640,12 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
 
     if sleep_entries:
         avg_sleep = sum(e["duration_hours"] for e in sleep_entries) / len(sleep_entries)
-        sugg.append(f"Average logged sleep is {avg_sleep:.1f}h across {len(sleep_entries)} night(s) tracked — keep logging nightly to get a reliable trend (still an early sample).")
+        if len(sleep_entries) < 14:
+            sugg.append(f"Average logged sleep is {avg_sleep:.1f}h across {len(sleep_entries)} night(s) tracked — keep logging nightly to get a reliable trend (still an early sample).")
+        else:
+            in_band = sum(1 for e in sleep_entries if 7 <= e["duration_hours"] <= 9)
+            pct_in_band = round(in_band / len(sleep_entries) * 100)
+            sugg.append(f"Average logged sleep is {avg_sleep:.1f}h across {len(sleep_entries)} nights tracked — an established trend at this point, not a sample. {in_band}/{len(sleep_entries)} nights ({pct_in_band}%) landed in the 7-9h target band.")
 
     if not ejac_entries:
         sugg.append("Ejaculatory frequency tracking just started with no events logged yet — research favors short, regular intervals (~every 1-2 days) over long abstinence for sperm motility and DNA integrity, so log each event to get a real read on this factor.")
