@@ -1,10 +1,10 @@
 {
   "date": "2026-08-09",
   "day_number": 43,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Alternating run/walk (18:15, Or Akiva): 5.01km in 46:02 (9'11\"/km avg pace), 314 kcal, 35m elevation gain, cadence 127, sun exposure through about half the run.",
-  "_status": "Alternating run/walk logged (5.01km).",
+  "_status": "Day complete. Alternating run/walk (5.01km) plus a full day of food/drink/supplements/sleep logged.",
   "items": [
     {"time": "07:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -33,10 +33,11 @@
     {"time": "19:30", "name": "Dinner — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true, "note": "saved reference"},
     {"time": "20:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "20:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "20:35", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "second serving today — same reference as the 15:00 entry"}
+    {"time": "20:35", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "second serving today — same reference as the 15:00 entry"},
+    {"time": "21:50", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, taken alongside the Mayven gummies (verified reference, supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 17.8,
     "selenium_mcg": 95,
     "folate_mcg_dfe": 218.6,
     "omega3_epa_dha_mg": 1000,
@@ -61,7 +62,8 @@
     "19:30 dinner (no exact time given, placeholder): 2 Angel Pita Pro + 4 yellow cheese slices 5% fat + 2 tsp Simfonia cheese spread + a light olive oil spray + a salad (25 cherry tomatoes, 1 cucumber) with an olive oil/balsamic/lemon juice dressing. All saved/standard references except the dressing, which is a per-tbsp estimate. Tomatoes + dressing lemon juice credited ~65mg vitamin C, ~11mg lycopene, ~65mcg folate DFE; olive oil credited ~1.9mg vitamin E.",
     "PM allergy spray confirmed taken (post-dinner) — not a logged intake item per the standing medication-reminder rule.",
     "20:30 creatine monohydrate (5g, zero kcal/macros) + omega-3 fish oil (2 softgels, ~1000mg EPA/DHA).",
-    "20:35 vanilla protein yogurt (1 cup, 200g) — second serving today, same reference as the 15:00 entry."
+    "20:35 vanilla protein yogurt (1 cup, 200g) — second serving today, same reference as the 15:00 entry.",
+    "21:50 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, a green apple + cookie snack at 15:45, an 18:15 alternating run/walk (5.01km, Or Akiva, ~400IU vitamin D credited for sun exposure through about half the run), dinner at 19:30 (Angel Pita Pro, yellow cheese, Simfonia, olive oil, cherry tomato + cucumber salad), the PM allergy spray, creatine + omega-3 at 20:30, and a second vanilla protein yogurt at 20:35 (caffeine_shots: 2)."
+  "status_note": "Day complete. Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, a green apple + cookie snack at 15:45, an 18:15 alternating run/walk (5.01km, Or Akiva, ~400IU vitamin D credited for sun exposure through about half the run), dinner at 19:30 (Angel Pita Pro, yellow cheese, Simfonia, olive oil, cherry tomato + cucumber salad), the PM allergy spray, creatine + omega-3 at 20:30, a second vanilla protein yogurt at 20:35, and Zinc Picolinate at 21:50 (caffeine_shots: 2)."
 }
