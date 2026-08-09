@@ -61,6 +61,10 @@ CSS = """
   .flag { font-size:12px; color:var(--warn); }
   .copyhint { font-size:11px; color:var(--muted); font-style:italic; margin-top:10px; }
   .ingredients { font-size:12.5px; color:var(--muted); }
+  .tmpl { background:var(--panel2); border-left:3px solid var(--accent); border-radius:8px;
+          padding:10px 12px; margin:10px 0 4px; font-size:12.5px; }
+  .tmpl b { color:var(--text); }
+  .tmpl .rule { color:var(--muted); margin-top:4px; }
 """
 
 
@@ -166,6 +170,19 @@ def render_card(r):
     if src.get("url"):
         meta.append(f"<a href='{escape(src['url'])}' style='color:var(--accent)'>source</a>")
     html.append("<div class='meta'>" + " · ".join(meta) + "</div>")
+
+    if r.get("template"):
+        li = r.get("logged_instance", {})
+        inst = ", ".join(f"{k.replace('_', ' ')} <b>{v}</b>"
+                         for k, v in li.items() if k not in ("date", "note"))
+        html.append("<div class='tmpl'>")
+        html.append("<b>Template</b> — chicken &amp; pasta are input per batch.")
+        if inst:
+            html.append(f"<br>This logged batch: {inst}"
+                        + (f" <span style='color:var(--muted)'>({li['date']})</span>" if li.get("date") else ""))
+        if r.get("balance_rule"):
+            html.append(f"<div class='rule'>⚖ {escape(r['balance_rule'])}</div>")
+        html.append("</div>")
 
     ps = r.get("per_serving", {})
     html.append(macro_tiles(ps))
