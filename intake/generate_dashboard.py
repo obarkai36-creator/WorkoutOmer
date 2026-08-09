@@ -417,9 +417,15 @@ def compute_current_week(profile, target_date, all_days, weight_entries, sleep_e
     else:
         sleep_factor = 70  # neutral default — no nights logged in this window yet
 
-    # alcohol: distinct drinking days in-window vs the <=1/week baseline
-    alcohol_days = {e["date"] for e in lifestyle_events if e.get("type") == "alcohol" and in_week(e["date"])}
-    alcohol = round(clamp(100 - max(0, len(alcohol_days) - 1) * 20))
+    # alcohol: severity-weighted events in-window (so a single heavy session
+    # doesn't score identically to a single light one), plus an extra penalty
+    # for drinking on more than one day vs the <=1/week baseline
+    alcohol_sev_penalty = {"mild": 5, "moderate": 15, "high": 30}
+    week_alcohol_events = [e for e in lifestyle_events if e.get("type") == "alcohol" and in_week(e["date"])]
+    alcohol_days = {e["date"] for e in week_alcohol_events}
+    alcohol_severity_penalty = sum(alcohol_sev_penalty.get(e.get("severity"), 10) for e in week_alcohol_events)
+    alcohol_frequency_penalty = max(0, len(alcohol_days) - 1) * 20
+    alcohol = round(clamp(100 - alcohol_severity_penalty - alcohol_frequency_penalty))
 
     # heat/travel exposure: severity-weighted events in-window
     sev_penalty = {"mild": 8, "moderate": 18, "high": 35}
