@@ -23,17 +23,24 @@
     {"time": "13:40", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "15:45", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "time_approx": true, "note": "saved reference"},
-    {"time": "15:45", "name": "Cookie (0.4 of a cookie)", "category": "food", "qty": "0.4 cookie", "kcal": 48, "protein_g": 1.08, "carbs_g": 6, "fat_g": 2.4, "fiber_g": 0.48, "time_approx": true, "note": "user-provided per-cookie nutrition label (120kcal, 2.7p, 15c [~12.4g added sugar], 6f, 1.2fiber, ~2.9mg vitE per cookie), scaled to 0.4. Credits ~1.16mg vitamin E."}
+    {"time": "15:45", "name": "Cookie (0.4 of a cookie)", "category": "food", "qty": "0.4 cookie", "kcal": 48, "protein_g": 1.08, "carbs_g": 6, "fat_g": 2.4, "fiber_g": 0.48, "time_approx": true, "note": "user-provided per-cookie nutrition label (120kcal, 2.7p, 15c [~12.4g added sugar], 6f, 1.2fiber, ~2.9mg vitE per cookie), scaled to 0.4. Credits ~1.16mg vitamin E."},
+    {"time": "19:30", "name": "Dinner — Angel Pita Pro (protein-enriched)", "category": "food", "qty": "2 units (~136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "time_approx": true, "note": "saved reference (140kcal/68g each). No exact time given, placeholder 19:30."},
+    {"time": "19:30", "name": "Dinner — yellow cheese, 5% fat", "category": "food", "qty": "4 slices (~100 g)", "kcal": 140, "protein_g": 28, "carbs_g": 0, "fat_g": 5, "fiber_g": 0, "time_approx": true, "note": "saved reference, lower-fat variant than the usual 9%"},
+    {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "2 tsp (~13 g)", "kcal": 40, "protein_g": 2.3, "carbs_g": 0.7, "fat_g": 3.3, "fiber_g": 0, "time_approx": true, "note": "saved reference"},
+    {"time": "19:30", "name": "Dinner — olive oil spray", "category": "food", "qty": "a few sprays (~2 g)", "kcal": 18, "protein_g": 0, "carbs_g": 0, "fat_g": 2, "fiber_g": 0, "time_approx": true, "note": "light coating, separate from the salad drizzle below — rough estimate"},
+    {"time": "19:30", "name": "Dinner — salad dressing (olive oil drizzle, balsamic drizzle, lemon juice)", "category": "food", "qty": "~1 tbsp olive oil + ~1 tbsp balsamic + a squeeze of lemon juice", "kcal": 136, "protein_g": 0.1, "carbs_g": 3.7, "fat_g": 13.5, "fiber_g": 0, "time_approx": true, "note": "standard per-tbsp references; credits ~1.9mg vitamin E (olive oil), ~5mg vitamin C (lemon juice)"},
+    {"time": "19:30", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "25 (~425 g)", "kcal": 75, "protein_g": 4, "carbs_g": 16.75, "fat_g": 1, "fiber_g": 5, "time_approx": true, "note": "standard tomato reference values; credits 11mg lycopene, 60mg vitamin C, 65mcg folate DFE"},
+    {"time": "19:30", "name": "Dinner — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true, "note": "saved reference"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 95,
-    "folate_mcg_dfe": 153.6,
+    "folate_mcg_dfe": 218.6,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 55,
+    "vitamin_c_mg": 120,
     "vitamin_d_iu": 400,
-    "vitamin_e_mg": 1.7,
-    "lycopene_mg": 10.2
+    "vitamin_e_mg": 3.6,
+    "lycopene_mg": 21.2
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -47,7 +54,8 @@
     "15:00 vanilla protein yogurt (1 cup, 200g, 20g protein, no brand specified — assumed same Danone PRO 0% line as prior entries).",
     "15:45 (time not given, approximated) 1 medium green apple (~180g, saved reference) + 0.4 of a cookie, using the user-provided per-cookie nutrition label (120kcal, 2.7p, 15c [~12.4g added sugar], 6f, 1.2fiber, ~2.9mg vitE per cookie). Credits ~1.16mg vitamin E.",
     "18:15 alternating run/walk, Or Akiva — 5.01km in 46:02 (avg pace 9'11\"/km), 314 kcal, 35m elevation gain, avg cadence 127, no HR data. Sun exposure through about half the run. Mirrored to data.js WORKOUTS and workouts.json; ends the 21-day cardio staleness gap flagged in prior dashboards.",
-    "Vitamin D credit for the run's sun exposure: ~23 min (half of the 46:02 duration) at moderate exposed-skin area (running attire — forearms, lower legs, face/neck; torso assumed covered) in early-evening sun (18:15, ~1h15m before sunset). Estimated ~400IU using the new per-minute methodology (moderate area ≈30IU/min at solar-noon-equivalent strength, reduced to account for lower evening sun angle). Rough estimate — flagged low-confidence given moving/mixed sun-shade conditions vs. the stationary sessions the anchor rates were built from; correct me if attire or exposure fraction was different."
+    "Vitamin D credit for the run's sun exposure: ~23 min (half of the 46:02 duration) at moderate exposed-skin area (running attire — forearms, lower legs, face/neck; torso assumed covered) in early-evening sun (18:15, ~1h15m before sunset). Estimated ~400IU using the new per-minute methodology (moderate area ≈30IU/min at solar-noon-equivalent strength, reduced to account for lower evening sun angle). Rough estimate — flagged low-confidence given moving/mixed sun-shade conditions vs. the stationary sessions the anchor rates were built from; correct me if attire or exposure fraction was different.",
+    "19:30 dinner (no exact time given, placeholder): 2 Angel Pita Pro + 4 yellow cheese slices 5% fat + 2 tsp Simfonia cheese spread + a light olive oil spray + a salad (25 cherry tomatoes, 1 cucumber) with an olive oil/balsamic/lemon juice dressing. All saved/standard references except the dressing, which is a per-tbsp estimate. Tomatoes + dressing lemon juice credited ~65mg vitamin C, ~11mg lycopene, ~65mcg folate DFE; olive oil credited ~1.9mg vitamin E."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, a green apple + cookie snack at 15:45, and an 18:15 alternating run/walk (5.01km, Or Akiva, ~400IU vitamin D credited for sun exposure through about half the run) (caffeine_shots: 2)."
+  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, a green apple + cookie snack at 15:45, an 18:15 alternating run/walk (5.01km, Or Akiva, ~400IU vitamin D credited for sun exposure through about half the run), and dinner at 19:30 (Angel Pita Pro, yellow cheese, Simfonia, olive oil, cherry tomato + cucumber salad) (caffeine_shots: 2)."
 }
