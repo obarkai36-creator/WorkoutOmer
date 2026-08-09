@@ -285,6 +285,14 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 9 Aug — Alternating run/walk, Or Akiva (18:15)
+  {
+    datetime: "2026-08-09T18:15", note: "Alternating run/walk — Or Akiva (sun exposure ~half the run)",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 5.01, durationMin: 46.03, cadence: 127, elevationGainM: 35 },
+    ],
+  },
+
   // 8 Aug — Chest (15:55)
   {
     datetime: "2026-08-08T15:55", note: "Chest",

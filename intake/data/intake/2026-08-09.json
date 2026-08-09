@@ -2,9 +2,9 @@
   "date": "2026-08-09",
   "day_number": 43,
   "in_progress": true,
-  "workout_today": false,
-  "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "workout_today": true,
+  "workout_summary": "Alternating run/walk (18:15, Or Akiva): 5.01km in 46:02 (9'11\"/km avg pace), 314 kcal, 35m elevation gain, cadence 127, sun exposure through about half the run.",
+  "_status": "Alternating run/walk logged (5.01km).",
   "items": [
     {"time": "07:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -45,7 +45,8 @@
     "13:00 Yassas business lunch: raw fish salad (דניס/sea bream, confirmed not tuna) with tomato vinaigrette and garlic crumble + 2 mini meze (tzatziki, egg salad) + a few bites of pita and skordalia. All restaurant-dish estimates, first time logged, flagged.",
     "13:40 single espresso (40ml, 1 caffeine shot) — 2 total today.",
     "15:00 vanilla protein yogurt (1 cup, 200g, 20g protein, no brand specified — assumed same Danone PRO 0% line as prior entries).",
-    "15:45 (time not given, approximated) 1 medium green apple (~180g, saved reference) + 0.4 of a cookie, using the user-provided per-cookie nutrition label (120kcal, 2.7p, 15c [~12.4g added sugar], 6f, 1.2fiber, ~2.9mg vitE per cookie). Credits ~1.16mg vitamin E."
+    "15:45 (time not given, approximated) 1 medium green apple (~180g, saved reference) + 0.4 of a cookie, using the user-provided per-cookie nutrition label (120kcal, 2.7p, 15c [~12.4g added sugar], 6f, 1.2fiber, ~2.9mg vitE per cookie). Credits ~1.16mg vitamin E.",
+    "18:15 alternating run/walk, Or Akiva — 5.01km in 46:02 (avg pace 9'11\"/km), 314 kcal, 35m elevation gain, avg cadence 127, no HR data. Sun exposure through about half the run. Mirrored to data.js WORKOUTS and workouts.json; ends the 21-day cardio staleness gap flagged in prior dashboards."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, and a green apple + cookie snack at 15:45 (caffeine_shots: 2)."
+  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, a green apple + cookie snack at 15:45, and an 18:15 alternating run/walk (5.01km, Or Akiva) (caffeine_shots: 2)."
 }
