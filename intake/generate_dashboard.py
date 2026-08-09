@@ -607,6 +607,32 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
     if kcal_over / n >= 0.3:
         sugg.append(f"Calories ran 10%+ over target on {kcal_over}/{n} days, mostly around restaurant meals and desserts — no single day is a problem, but the pattern is worth watching against the weight-loss goal.")
 
+    fat_avg = sum(sum(i.get("fat_g", 0) for i in d.get("items", [])) for d in all_days) / n
+    fat_pct = round(fat_avg / t["fat_g"] * 100) if t["fat_g"] else 100
+    if fat_pct > 120:
+        sugg.append(f"Fat has averaged {fat_avg:.0f}g/day vs the {t['fat_g']}g target ({fat_pct}%) across all {n} logged days — it runs about equally high on restaurant and home-cooked days (olive oil, cheese, nuts show up everywhere), so it's a portion-size habit rather than something restaurants specifically drive.")
+
+    am_protein_frac = []
+    for d in all_days:
+        items = d.get("items", [])
+        total_p = sum(i.get("protein_g", 0) for i in items)
+        if total_p > 0:
+            am_p = sum(i.get("protein_g", 0) for i in items if i.get("time", "99:99") < "12:00")
+            am_protein_frac.append(am_p / total_p)
+    if am_protein_frac:
+        avg_am_pct = round(sum(am_protein_frac) / len(am_protein_frac) * 100)
+        if avg_am_pct < 25:
+            sugg.append(f"Only ~{avg_am_pct}% of daily protein is eaten before noon on average — it's heavily back-loaded into lunch/dinner. Adding 20-30g to breakfast (eggs, yogurt, cheese) would spread muscle-protein-synthesis stimulus more evenly across the day and help with morning satiety.")
+
+    caf_cutoff = profile["lifestyle"].get("caffeine", {}).get("cutoff", "16:00")
+    late_caf_count = sum(
+        1 for d in all_days for i in d.get("items", [])
+        if ("espresso" in i.get("name", "").lower() or "coffee" in i.get("name", "").lower())
+        and i.get("time", "") >= caf_cutoff
+    )
+    if late_caf_count >= 5:
+        sugg.append(f"Caffeine has been logged at/after the {caf_cutoff} cutoff {late_caf_count} time(s) across the tracked period — your own baseline flags that cutoff as the sleep-friendly line, worth tightening even without a clean sleep-quality signal yet tying the two together.")
+
     # Selenium: tracked daily, not weekly — see SELENIUM_UL_MCG comment above.
     mtarg = t["micros_sperm_priority"]
     today_data = next((d for d in all_days if d["date"] == target_date), None)
@@ -659,7 +685,7 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
         lo_t, hi_t = profile["goals"]["target_weight_kg"]
         sugg.append(f"Weight is {last_w - baseline_w:+.2f} kg vs. the {profile['personal']['baseline_date']} baseline, {round(max(0, last_w - hi_t), 1)} kg from the {lo_t}-{hi_t} kg target range — pace is steady but slower than the 0.4 kg/week goal; tightening portions on non-restaurant days would help most.")
 
-    return sugg[:10]
+    return sugg[:12]
 
 
 # ---------- main build ----------
