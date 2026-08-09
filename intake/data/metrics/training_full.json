@@ -1,5 +1,5 @@
 {
-  "now": 1786248367326,
+  "now": 1786255874731,
   "workouts": [
     {
       "datetime": "2026-08-08T15:55",
@@ -4106,15 +4106,15 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 92,
-      "readyInHours": 66.7,
+      "pct": 88,
+      "readyInHours": 64.6,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 23,
+      "pct": 22,
       "readyInHours": 0,
       "ready": true
     },
@@ -4122,15 +4122,15 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 56,
-      "readyInHours": 25,
+      "pct": 53,
+      "readyInHours": 22.9,
       "ready": false
     },
     "biceps": {
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     },
@@ -4138,15 +4138,15 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 56,
-      "readyInHours": 25,
+      "pct": 53,
+      "readyInHours": 22.9,
       "ready": false
     },
     "forearms": {
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -4210,29 +4210,29 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 92,
-      "readyInHours": 66.7,
+      "pct": 88,
+      "readyInHours": 64.6,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 92,
-          "readyInHours": 66.7,
+          "pct": 88,
+          "readyInHours": 64.6,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 23,
+      "pct": 22,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 23,
+          "pct": 22,
           "readyInHours": 0,
           "ready": true
         }
@@ -4240,37 +4240,37 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 56,
-      "readyInHours": 25,
+      "pct": 53,
+      "readyInHours": 22.9,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 56,
-          "readyInHours": 25,
+          "pct": 53,
+          "readyInHours": 22.9,
           "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 26,
-      "readyInHours": 25,
+      "pct": 24,
+      "readyInHours": 22.9,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 56,
-          "readyInHours": 25,
+          "pct": 53,
+          "readyInHours": 22.9,
           "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -4278,7 +4278,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         }
@@ -5374,9 +5374,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-09T04:06:07.326Z",
+    "readyAt": "2026-08-09T06:11:14.731Z",
     "neverLogged": false,
-    "daysSince": 14.7,
+    "daysSince": 14.8,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -5530,31 +5530,31 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 14.7
+        "daysSince": 14.8
       },
       {
         "section": "Back",
-        "fatigue": 23,
+        "fatigue": 22,
         "readyInHours": 0,
-        "daysSince": 4.6
+        "daysSince": 4.7
       },
       {
         "section": "Arms",
-        "fatigue": 26,
-        "readyInHours": 25,
-        "daysSince": 1.7
+        "fatigue": 24,
+        "readyInHours": 22.9,
+        "daysSince": 1.8
       },
       {
         "section": "Shoulders",
-        "fatigue": 56,
-        "readyInHours": 25,
-        "daysSince": 1.7
+        "fatigue": 53,
+        "readyInHours": 22.9,
+        "daysSince": 1.8
       },
       {
         "section": "Chest",
-        "fatigue": 92,
-        "readyInHours": 66.7,
-        "daysSince": 0.5
+        "fatigue": 88,
+        "readyInHours": 64.6,
+        "daysSince": 0.6
       }
     ],
     "suggestedCount": 5,
@@ -5562,7 +5562,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 0,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 20.7
+    "daysSinceAerobic": 20.8
   },
   "alerts": [
     {
@@ -5577,14 +5577,14 @@
     },
     {
       "level": "low",
-      "title": "Chest fatigued (92%)",
-      "detail": "Recovers in ~66.7h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Chest fatigued (88%)",
+      "detail": "Recovers in ~64.6h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
     "You're below your PR on 6 lifts — closest wins first: Rope Cable Extension (81% of best), Angled Leg Press (81% of best), Pec Fly Machine (82% of best). Add a rep or a set before adding weight.",
     "Add pulling volume — push is 1.55× your pull. Aim toward ~1:1 to keep shoulders healthy.",
-    "Bring cardio back into the week (last logged 20.7 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
+    "Bring cardio back into the week (last logged 20.8 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
   ],
   "timing": {
     "avgGap": 4,
@@ -5601,7 +5601,7 @@
       8,
       10
     ],
-    "daysSinceLast": 0.5,
+    "daysSinceLast": 0.6,
     "total": 42
   },
   "relstrength": {
@@ -5668,7 +5668,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 20.7,
+    "daysSinceLast": 20.8,
     "recent": [
       {
         "t": 1784462400000,
