@@ -38,7 +38,9 @@ CSS = """
   .badge.adopted { color:var(--good); border-color:var(--good); }
   .badge.tag { color:var(--muted); }
   .meta { color:var(--muted); font-size:12px; margin:4px 0 12px; }
-  .macros { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 14px; }
+  .basis { font-size:12px; color:var(--text); margin:12px 0 6px; }
+  .basis b { color:var(--accent); }
+  .macros { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 14px; }
   .m { flex:1 1 90px; background:var(--panel2); border:1px solid var(--line);
        border-radius:10px; padding:8px 10px; text-align:center; }
   .m .v { font-size:17px; font-weight:800; }
@@ -78,7 +80,13 @@ def score_color(s):
     return "var(--bad)"
 
 
-def macro_tiles(ps):
+def _n(v, factor):
+    """Scale a value by factor and round for display."""
+    x = v * factor
+    return round(x) if abs(x) >= 10 else round(x, 1)
+
+
+def macro_tiles(ps, factor):
     tiles = [
         ("kcal", ps.get("kcal")),
         ("protein", ps.get("protein_g"), "g"),
@@ -93,15 +101,15 @@ def macro_tiles(ps):
         unit = t[2] if len(t) > 2 else ""
         if val is None:
             continue
-        out.append(f"<div class='m'><div class='v'>{val:g}{unit}</div><div class='l'>{escape(label)}</div></div>")
+        out.append(f"<div class='m'><div class='v'>{_n(val, factor):g}{unit}</div><div class='l'>{escape(label)}</div></div>")
     return "<div class='macros'>" + "".join(out) + "</div>"
 
 
-def micro_line(micros):
+def micro_line(micros, factor):
     if not micros:
         return ""
-    parts = [f"<b>{v:g}</b> {escape(k.replace('_', ' '))}" for k, v in micros.items()]
-    return "<div class='micros'>Per serving: " + " · ".join(parts) + "</div>"
+    parts = [f"<b>{_n(v, factor):g}</b> {escape(k.replace('_', ' '))}" for k, v in micros.items()]
+    return "<div class='micros'>Per 100 g: " + " · ".join(parts) + "</div>"
 
 
 def lens_pane(kind, data, who, copyable=False):
@@ -185,8 +193,17 @@ def render_card(r):
         html.append("</div>")
 
     ps = r.get("per_serving", {})
-    html.append(macro_tiles(ps))
-    html.append(micro_line(ps.get("micros")))
+    serving_g = r.get("serving_g")
+    if serving_g:
+        factor = 100.0 / serving_g
+        basis = (f"Values per <b>100 g</b> — you decide the portion "
+                 f"<span class='muted'>· one typical serving ≈ {serving_g:g} g</span>")
+    else:
+        factor = 1.0
+        basis = "Values <b>per serving</b> <span class='muted'>· serving weight not set</span>"
+    html.append(f"<div class='basis'>{basis}</div>")
+    html.append(macro_tiles(ps, factor))
+    html.append(micro_line(ps.get("micros"), factor))
 
     ing = r.get("ingredients")
     if ing:

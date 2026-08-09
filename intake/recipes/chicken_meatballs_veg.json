@@ -11,14 +11,39 @@
   "servings": 8,
   "serving_desc": "≈160 g cooked (batch yields ~1,275 g)",
   "ingredients": [
-    {"item": "ground chicken", "qty": "1 kg", "note": "lean"},
-    {"item": "onion", "qty": "1 large, chopped & fried"},
-    {"item": "sweet potato", "qty": "grated"},
-    {"item": "zucchini / courgette", "qty": "grated"},
-    {"item": "egg", "qty": "2"},
-    {"item": "breadcrumbs", "qty": "~½ cup"},
-    {"item": "ketchup", "qty": "a little"},
-    {"item": "salt, pepper", "qty": "to taste"}
+    {
+      "item": "ground chicken",
+      "qty": "1 kg",
+      "note": "lean"
+    },
+    {
+      "item": "onion",
+      "qty": "1 large, chopped & fried"
+    },
+    {
+      "item": "sweet potato",
+      "qty": "grated"
+    },
+    {
+      "item": "zucchini / courgette",
+      "qty": "grated"
+    },
+    {
+      "item": "egg",
+      "qty": "2"
+    },
+    {
+      "item": "breadcrumbs",
+      "qty": "~½ cup"
+    },
+    {
+      "item": "ketchup",
+      "qty": "a little"
+    },
+    {
+      "item": "salt, pepper",
+      "qty": "to taste"
+    }
   ],
   "steps": [
     "Fry the chopped onion until soft.",
@@ -46,7 +71,11 @@
     "him": {
       "fit_score": 8,
       "verdict": "High protein density (~8.8 g protein / 100 kcal), low sugar, veg baked in — a strong cutting/muscle-retention dinner. Fat is a touch high from the frying, and fiber is low.",
-      "flags": ["high protein density", "hidden vegetables", "moderate zinc + selenium (sperm micros)"],
+      "flags": [
+        "high protein density",
+        "hidden vegetables",
+        "moderate zinc + selenium (sperm micros)"
+      ],
       "suggested_mods": [
         "Swap ½ cup breadcrumbs for oat bran or ground oats to lift fiber toward the 32 g/day target",
         "Bake or air-fry instead of pan-frying to cut the added fat",
@@ -67,8 +96,14 @@
       ]
     }
   },
-  "tags": ["dinner", "high-protein", "meal-prep", "batch"],
+  "tags": [
+    "dinner",
+    "high-protein",
+    "meal-prep",
+    "batch"
+  ],
   "adopted": false,
   "created": "2026-08-04",
-  "updated": "2026-08-04"
+  "updated": "2026-08-04",
+  "serving_g": 160
 }

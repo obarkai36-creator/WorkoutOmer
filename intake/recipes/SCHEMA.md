@@ -23,6 +23,7 @@ Render the library with `python3 intake/generate_recipe_card.py` → writes
   },
   "servings": 8,
   "serving_desc": "≈160 g cooked (one scoop of the batch)",
+  "serving_g": 160,                     // grams in one serving — REQUIRED for the per-100g card
   "ingredients": [
     {"item": "ground chicken", "qty": "1 kg", "note": "lean"},
     {"item": "sweet potato", "qty": "1 medium, grated"}
@@ -63,6 +64,11 @@ Render the library with `python3 intake/generate_recipe_card.py` → writes
 ```
 
 ## Notes on values
+- Values are **stored per serving** but the rendered card **always displays them
+  per 100 g** (with a "one typical serving ≈ Xg" reference), so the user decides
+  their own portion. This requires `serving_g` on every recipe — the generator
+  converts with `factor = 100 / serving_g`. If `serving_g` is missing it falls
+  back to per-serving display.
 - `per_serving` macros are best estimates unless a label or a weighed batch is
   available — set `confidence` accordingly, same discipline as `foods.json`.
 - Only list micros that are actually meaningful in the dish; omit unknowns

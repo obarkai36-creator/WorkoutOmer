@@ -11,16 +11,46 @@
   "servings": 25,
   "serving_desc": "1 cookie",
   "ingredients": [
-    {"item": "raw egg white", "qty": "2 (60 g)"},
-    {"item": "lemon zest", "qty": "0.5 lemon (3 g)"},
-    {"item": "almond flour", "qty": "250 g"},
-    {"item": "sugar", "qty": "250 g"},
-    {"item": "salt", "qty": "1 pinch (1 g)"},
-    {"item": "vanilla extract", "qty": "0.5 tsp (2.17 g)"},
-    {"item": "lemon juice, fresh", "qty": "2 tbsp (30.5 g)"},
-    {"item": "almonds, raw", "qty": "30 (35 g)"},
-    {"item": "powdered sugar", "qty": "3 tbsp (22.5 g)"},
-    {"item": "sugar (additional)", "qty": "3 tbsp (37.5 g)"}
+    {
+      "item": "raw egg white",
+      "qty": "2 (60 g)"
+    },
+    {
+      "item": "lemon zest",
+      "qty": "0.5 lemon (3 g)"
+    },
+    {
+      "item": "almond flour",
+      "qty": "250 g"
+    },
+    {
+      "item": "sugar",
+      "qty": "250 g"
+    },
+    {
+      "item": "salt",
+      "qty": "1 pinch (1 g)"
+    },
+    {
+      "item": "vanilla extract",
+      "qty": "0.5 tsp (2.17 g)"
+    },
+    {
+      "item": "lemon juice, fresh",
+      "qty": "2 tbsp (30.5 g)"
+    },
+    {
+      "item": "almonds, raw",
+      "qty": "30 (35 g)"
+    },
+    {
+      "item": "powdered sugar",
+      "qty": "3 tbsp (22.5 g)"
+    },
+    {
+      "item": "sugar (additional)",
+      "qty": "3 tbsp (37.5 g)"
+    }
   ],
   "steps": [
     "Combine egg whites, sugar, ground almonds, lemon zest, salt, vanilla, and lemon juice in a bowl.",
@@ -43,7 +73,12 @@
     "him": {
       "fit_score": 3,
       "verdict": "A treat, not a goal food. ~120 kcal/cookie but ~12 g of that is added sugar with only 2.7 g protein — a sugar cookie carried by almonds. The one upside is the almond vitamin E (~2.9 mg/cookie, a sperm micro) and healthy fat. On a cut the risk is volume: three cookies is ~360 kcal of mostly sugar. Fine occasionally; keep it to 1–2 and log them.",
-      "flags": ["high added sugar (~12 g/cookie)", "low protein", "gluten-free", "almond vitamin E (~2.9 mg/cookie)"],
+      "flags": [
+        "high added sugar (~12 g/cookie)",
+        "low protein",
+        "gluten-free",
+        "almond vitamin E (~2.9 mg/cookie)"
+      ],
       "suggested_mods": [
         "Cut the granulated sugar by ~⅓ — amaretti hold together fine with less; drops each cookie toward ~90 kcal / ~8 g sugar",
         "Portion-cap at 1–2 with coffee rather than grazing the batch",
@@ -53,17 +88,28 @@
     "her_preconception": {
       "fit_score": 3,
       "verdict": "A dessert with little prenatal value — high sugar, low nutrient density. Small positives: gluten-free, a little almond vitamin E and magnesium, some folate. Fine as an occasional treat, not a nutrient contributor.",
-      "prenatal_highlights": ["small amounts of vitamin E, magnesium and folate from the almonds"],
+      "prenatal_highlights": [
+        "small amounts of vitamin E, magnesium and folate from the almonds"
+      ],
       "safety_advisories": [
-        {"note": "Contains raw egg white — SAFE if fully baked (standard amaretti are). If any are under-baked/chewy-raw in the center, or if dough is tasted, use pasteurized egg whites.", "swap": "pasteurized egg whites, or bake fully"}
+        {
+          "note": "Contains raw egg white — SAFE if fully baked (standard amaretti are). If any are under-baked/chewy-raw in the center, or if dough is tasted, use pasteurized egg whites.",
+          "swap": "pasteurized egg whites, or bake fully"
+        }
       ],
       "suggested_mods": [
         "Same sugar cut as above; treat as an occasional indulgence, not a daily item"
       ]
     }
   },
-  "tags": ["dessert", "treat", "gluten-free", "baking"],
+  "tags": [
+    "dessert",
+    "treat",
+    "gluten-free",
+    "baking"
+  ],
   "adopted": false,
   "created": "2026-08-04",
-  "updated": "2026-08-04"
+  "updated": "2026-08-04",
+  "serving_g": 26
 }

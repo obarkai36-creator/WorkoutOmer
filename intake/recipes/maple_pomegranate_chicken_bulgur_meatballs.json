@@ -11,23 +11,75 @@
   "servings": 8,
   "serving_desc": "≈4 flat patties (~200 g) — batch is large (1 kg meat); scale if you portion differently",
   "ingredients": [
-    {"item": "ground poultry", "qty": "1 kg", "note": "500 g ground chicken + 500 g ground pargit (thigh)"},
-    {"item": "parsley", "qty": "1 bunch, chopped (~30 g)"},
-    {"item": "cilantro / coriander", "qty": "1 bunch, chopped (~30 g)"},
-    {"item": "garlic", "qty": "5 cloves, crushed"},
-    {"item": "onion", "qty": "1 large, finely chopped (~150 g)"},
-    {"item": "bulgur", "qty": "1 cup dry (~140 g), soaked 30 min & drained"},
-    {"item": "olive oil", "qty": "⅓ cup (~72 g)"},
-    {"item": "honey", "qty": "1 tbsp"},
-    {"item": "silan (date syrup)", "qty": "1 tbsp"},
-    {"item": "maple syrup", "qty": "1 tbsp (in the mix)"},
-    {"item": "sweet paprika", "qty": "1 tbsp"},
-    {"item": "turmeric", "qty": "1 tsp"},
-    {"item": "salt", "qty": "1 tbsp"},
-    {"item": "black pepper", "qty": "½ tsp"},
-    {"item": "maple syrup (sauce)", "qty": "⅓ cup"},
-    {"item": "pomegranate molasses (sauce)", "qty": "⅓ cup"},
-    {"item": "water (sauce)", "qty": "⅓ cup"}
+    {
+      "item": "ground poultry",
+      "qty": "1 kg",
+      "note": "500 g ground chicken + 500 g ground pargit (thigh)"
+    },
+    {
+      "item": "parsley",
+      "qty": "1 bunch, chopped (~30 g)"
+    },
+    {
+      "item": "cilantro / coriander",
+      "qty": "1 bunch, chopped (~30 g)"
+    },
+    {
+      "item": "garlic",
+      "qty": "5 cloves, crushed"
+    },
+    {
+      "item": "onion",
+      "qty": "1 large, finely chopped (~150 g)"
+    },
+    {
+      "item": "bulgur",
+      "qty": "1 cup dry (~140 g), soaked 30 min & drained"
+    },
+    {
+      "item": "olive oil",
+      "qty": "⅓ cup (~72 g)"
+    },
+    {
+      "item": "honey",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "silan (date syrup)",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "maple syrup",
+      "qty": "1 tbsp (in the mix)"
+    },
+    {
+      "item": "sweet paprika",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "turmeric",
+      "qty": "1 tsp"
+    },
+    {
+      "item": "salt",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "black pepper",
+      "qty": "½ tsp"
+    },
+    {
+      "item": "maple syrup (sauce)",
+      "qty": "⅓ cup"
+    },
+    {
+      "item": "pomegranate molasses (sauce)",
+      "qty": "⅓ cup"
+    },
+    {
+      "item": "water (sauce)",
+      "qty": "⅓ cup"
+    }
   ],
   "steps": [
     "Mix all meatball ingredients until uniform; cover and chill 20–30 min.",
@@ -58,7 +110,13 @@
     "him": {
       "fit_score": 6,
       "verdict": "Excellent protein density (~5.6 g protein per 100 kcal) from the lean poultry + bulgur, and real whole-grain fiber. But the ⅓ cup olive oil, THREE in-mix sweeteners (honey + silan + maple) plus a maple/pomegranate sauce push it to a calorie-dense, sugar-heavy (~19 g added sugar/serving) meal — the weak spot on a cut. Sodium is very high (~900 mg/serving from 1 tbsp salt). A 6 as written; an easy 8 with the trims below.",
-      "flags": ["very high protein density", "whole-grain fiber (bulgur)", "high added sugar (~19 g/serving)", "high sodium (~900 mg/serving)", "calorie-dense from ⅓ cup oil"],
+      "flags": [
+        "very high protein density",
+        "whole-grain fiber (bulgur)",
+        "high added sugar (~19 g/serving)",
+        "high sodium (~900 mg/serving)",
+        "calorie-dense from ⅓ cup oil"
+      ],
       "suggested_mods": [
         "Cut olive oil from ⅓ cup to ~2 tbsp — lean poultry doesn't need it (saves ~350 kcal / ~40 g fat across the batch)",
         "Drop the three in-mix sweeteners (honey/silan/maple); keep only the sauce for the caramel effect — halves the added sugar",
@@ -77,8 +135,14 @@
         "parsley/cilantro add folate — stir some in fresh at the end, not only cooked"
       ],
       "safety_advisories": [
-        {"note": "Ground poultry must be cooked fully through (no pink, ~74°C internal) — standard for meatballs, just don't undercook the centers.", "swap": "cook to firm/steaming"},
-        {"note": "High sodium (~900 mg/serving) — worth easing during pregnancy (BP/edema).", "swap": "cut added salt to ~1.5 tsp"}
+        {
+          "note": "Ground poultry must be cooked fully through (no pink, ~74°C internal) — standard for meatballs, just don't undercook the centers.",
+          "swap": "cook to firm/steaming"
+        },
+        {
+          "note": "High sodium (~900 mg/serving) — worth easing during pregnancy (BP/edema).",
+          "swap": "cut added salt to ~1.5 tsp"
+        }
       ],
       "suggested_mods": [
         "Double the fresh herbs and fold half in raw at the end for more folate",
@@ -86,8 +150,16 @@
       ]
     }
   },
-  "tags": ["dinner", "high-protein", "batch", "meal-prep", "family", "poultry"],
+  "tags": [
+    "dinner",
+    "high-protein",
+    "batch",
+    "meal-prep",
+    "family",
+    "poultry"
+  ],
   "adopted": false,
   "created": "2026-08-04",
-  "updated": "2026-08-04"
+  "updated": "2026-08-04",
+  "serving_g": 200
 }
