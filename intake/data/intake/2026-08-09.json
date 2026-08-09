@@ -31,7 +31,7 @@
     "folate_mcg_dfe": 153.6,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 55,
-    "vitamin_d_iu": 0,
+    "vitamin_d_iu": 400,
     "vitamin_e_mg": 1.7,
     "lycopene_mg": 10.2
   },
@@ -46,7 +46,8 @@
     "13:40 single espresso (40ml, 1 caffeine shot) — 2 total today.",
     "15:00 vanilla protein yogurt (1 cup, 200g, 20g protein, no brand specified — assumed same Danone PRO 0% line as prior entries).",
     "15:45 (time not given, approximated) 1 medium green apple (~180g, saved reference) + 0.4 of a cookie, using the user-provided per-cookie nutrition label (120kcal, 2.7p, 15c [~12.4g added sugar], 6f, 1.2fiber, ~2.9mg vitE per cookie). Credits ~1.16mg vitamin E.",
-    "18:15 alternating run/walk, Or Akiva — 5.01km in 46:02 (avg pace 9'11\"/km), 314 kcal, 35m elevation gain, avg cadence 127, no HR data. Sun exposure through about half the run. Mirrored to data.js WORKOUTS and workouts.json; ends the 21-day cardio staleness gap flagged in prior dashboards."
+    "18:15 alternating run/walk, Or Akiva — 5.01km in 46:02 (avg pace 9'11\"/km), 314 kcal, 35m elevation gain, avg cadence 127, no HR data. Sun exposure through about half the run. Mirrored to data.js WORKOUTS and workouts.json; ends the 21-day cardio staleness gap flagged in prior dashboards.",
+    "Vitamin D credit for the run's sun exposure: ~23 min (half of the 46:02 duration) at moderate exposed-skin area (running attire — forearms, lower legs, face/neck; torso assumed covered) in early-evening sun (18:15, ~1h15m before sunset). Estimated ~400IU using the new per-minute methodology (moderate area ≈30IU/min at solar-noon-equivalent strength, reduced to account for lower evening sun angle). Rough estimate — flagged low-confidence given moving/mixed sun-shade conditions vs. the stationary sessions the anchor rates were built from; correct me if attire or exposure fraction was different."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, a green apple + cookie snack at 15:45, and an 18:15 alternating run/walk (5.01km, Or Akiva) (caffeine_shots: 2)."
+  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, a green apple + cookie snack at 15:45, and an 18:15 alternating run/walk (5.01km, Or Akiva, ~400IU vitamin D credited for sun exposure through about half the run) (caffeine_shots: 2)."
 }

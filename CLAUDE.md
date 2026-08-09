@@ -86,3 +86,27 @@
   can't fire automatically — surface that limitation rather than silently
   skipping it, and in the meantime give the update proactively whenever a live
   session happens to be active around 16:00 and a day file is open.
+- Sun-exposure vitamin D estimation for long/moving stints (added 2026-08-09,
+  requested after the day-43 run): the existing pattern (stationary sessions
+  with exact area+duration, e.g. "20 min shoulder/neck only" or "10 min
+  torso+legs") gave two anchor rates — small area (shoulder/neck) ≈15 IU/min,
+  large area (torso+legs, mostly bare) ≈90 IU/min, both at
+  midday/early-afternoon sun strength. For longer, non-stationary stints
+  (runs, walks, hikes) where exposure is partial/mixed rather than a clean
+  block, estimate rather than asking for a precise log:
+    - Exposed duration: use whatever fraction the user gives (e.g. "sun
+      exposure through half the run") × total activity duration.
+    - Exposed area: infer from typical attire for the activity if not
+      stated (e.g. running gear ≈ forearms + lower legs + face/neck, a
+      "moderate" area ≈30 IU/min — between the two anchors) — state the
+      assumption so the user can correct it.
+    - Time-of-day discount: scale down from the midday anchor rate for
+      early-morning/evening sun (lower UV angle); no discount needed
+      within a couple hours of solar noon.
+    - Always flag these as rough/low-confidence estimates (both in the
+      item note/assumptions and verbally), since they're built on
+      stationary-session anchor rates applied to messier real conditions.
+    - Sun exposure isn't logged as a separate `items` entry — fold the
+      estimated IU straight into `micros_sperm_priority.vitamin_d_iu` and
+      describe it in `assumptions`/`status_note`, matching existing
+      practice.
