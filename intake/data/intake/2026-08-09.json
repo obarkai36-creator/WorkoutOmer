@@ -21,7 +21,9 @@
     {"time": "13:00", "name": "Lunch — Greek pita (a few bites)", "category": "food", "qty": "~30 g", "kcal": 75, "protein_g": 2.5, "carbs_g": 15, "fat_g": 0.5, "fiber_g": 0.6, "time_approx": true, "note": "standard pita reference, partial portion"},
     {"time": "13:00", "name": "Lunch — Skordalia (garlic mash, a few bites)", "category": "food", "qty": "~30 g", "kcal": 110, "protein_g": 1, "carbs_g": 6, "fat_g": 9, "fiber_g": 0.3, "time_approx": true, "note": "garlic, roasted almonds, olive oil; first time logged, estimated. Credits ~0.5mg vitamin E."},
     {"time": "13:40", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"}
+    {"time": "15:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
+    {"time": "15:45", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "time_approx": true, "note": "saved reference"},
+    {"time": "15:45", "name": "Cookie (0.4 of a cookie)", "category": "food", "qty": "0.4 cookie", "kcal": 48, "protein_g": 1.08, "carbs_g": 6, "fat_g": 2.4, "fiber_g": 0.48, "time_approx": true, "note": "user-provided per-cookie nutrition label (120kcal, 2.7p, 15c [~12.4g added sugar], 6f, 1.2fiber, ~2.9mg vitE per cookie), scaled to 0.4. Credits ~1.16mg vitamin E."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -30,7 +32,7 @@
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 55,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0.5,
+    "vitamin_e_mg": 1.7,
     "lycopene_mg": 10.2
   },
   "caffeine_shots": 2,
@@ -42,7 +44,8 @@
     "12:25 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "13:00 Yassas business lunch: raw fish salad (דניס/sea bream, confirmed not tuna) with tomato vinaigrette and garlic crumble + 2 mini meze (tzatziki, egg salad) + a few bites of pita and skordalia. All restaurant-dish estimates, first time logged, flagged.",
     "13:40 single espresso (40ml, 1 caffeine shot) — 2 total today.",
-    "15:00 vanilla protein yogurt (1 cup, 200g, 20g protein, no brand specified — assumed same Danone PRO 0% line as prior entries)."
+    "15:00 vanilla protein yogurt (1 cup, 200g, 20g protein, no brand specified — assumed same Danone PRO 0% line as prior entries).",
+    "15:45 (time not given, approximated) 1 medium green apple (~180g, saved reference) + 0.4 of a cookie, using the user-provided per-cookie nutrition label (120kcal, 2.7p, 15c [~12.4g added sugar], 6f, 1.2fiber, ~2.9mg vitE per cookie). Credits ~1.16mg vitamin E."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, and a vanilla protein yogurt at 15:00 (caffeine_shots: 2)."
+  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), a Brazil nut + walnut + cherry tomato snack at 10:40, the Mayven multivitamin gummies at 12:25, a Yassas business lunch at 13:00 (sea bream salad, tzatziki, egg salad, pita, skordalia), another espresso at 13:40, a vanilla protein yogurt at 15:00, and a green apple + cookie snack at 15:45 (caffeine_shots: 2)."
 }
