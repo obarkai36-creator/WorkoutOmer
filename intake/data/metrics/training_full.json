@@ -1,5 +1,5 @@
 {
-  "now": 1786267589167,
+  "now": 1786269410440,
   "workouts": [
     {
       "datetime": "2026-08-08T15:55",
@@ -4106,15 +4106,15 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 84,
-      "readyInHours": 61.4,
+      "pct": 83,
+      "readyInHours": 60.9,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 21,
+      "pct": 20,
       "readyInHours": 0,
       "ready": true
     },
@@ -4122,8 +4122,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 49,
-      "readyInHours": 19.6,
+      "pct": 48,
+      "readyInHours": 19.1,
       "ready": false
     },
     "biceps": {
@@ -4139,7 +4139,7 @@
       "label": "Triceps",
       "section": "Arms",
       "pct": 49,
-      "readyInHours": 19.7,
+      "readyInHours": 19.2,
       "ready": false
     },
     "forearms": {
@@ -4210,29 +4210,29 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 84,
-      "readyInHours": 61.4,
+      "pct": 83,
+      "readyInHours": 60.9,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 84,
-          "readyInHours": 61.4,
+          "pct": 83,
+          "readyInHours": 60.9,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 21,
+      "pct": 20,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 21,
+          "pct": 20,
           "readyInHours": 0,
           "ready": true
         }
@@ -4240,15 +4240,15 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 49,
-      "readyInHours": 19.6,
+      "pct": 48,
+      "readyInHours": 19.1,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 49,
-          "readyInHours": 19.6,
+          "pct": 48,
+          "readyInHours": 19.1,
           "ready": false
         }
       ]
@@ -4256,14 +4256,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 22,
-      "readyInHours": 19.7,
+      "readyInHours": 19.2,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
           "pct": 49,
-          "readyInHours": 19.7,
+          "readyInHours": 19.2,
           "ready": false
         },
         {
@@ -5374,7 +5374,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-09T09:26:29.167Z",
+    "readyAt": "2026-08-09T09:56:50.440Z",
     "neverLogged": false,
     "daysSince": 15,
     "suggestedExercises": [
@@ -5534,27 +5534,27 @@
       },
       {
         "section": "Back",
-        "fatigue": 21,
+        "fatigue": 20,
         "readyInHours": 0,
         "daysSince": 4.8
       },
       {
         "section": "Shoulders",
-        "fatigue": 49,
-        "readyInHours": 19.6,
+        "fatigue": 48,
+        "readyInHours": 19.1,
         "daysSince": 2
       },
       {
         "section": "Arms",
         "fatigue": 22,
-        "readyInHours": 19.7,
+        "readyInHours": 19.2,
         "daysSince": 2
       },
       {
         "section": "Chest",
-        "fatigue": 84,
-        "readyInHours": 61.4,
-        "daysSince": 0.7
+        "fatigue": 83,
+        "readyInHours": 60.9,
+        "daysSince": 0.8
       }
     ],
     "suggestedCount": 5,
@@ -5577,8 +5577,8 @@
     },
     {
       "level": "low",
-      "title": "Chest fatigued (84%)",
-      "detail": "Recovers in ~61.4h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Chest fatigued (83%)",
+      "detail": "Recovers in ~60.9h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
@@ -5601,7 +5601,7 @@
       8,
       10
     ],
-    "daysSinceLast": 0.7,
+    "daysSinceLast": 0.8,
     "total": 42
   },
   "relstrength": {
