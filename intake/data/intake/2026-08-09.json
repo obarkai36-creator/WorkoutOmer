@@ -10,23 +10,27 @@
     {"time": "07:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "09:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "09:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (~75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "note": "verified reference (50kcal/25g slice)"},
-    {"time": "09:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4, "note": "standard tomato reference values; credits 8.8mg lycopene, 47.6mg vitamin C, 51.0mcg folate DFE"}
+    {"time": "09:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4, "note": "standard tomato reference values; credits 8.8mg lycopene, 47.6mg vitamin C, 51.0mcg folate DFE"},
+    {"time": "10:40", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "note": "standard reference, ~95mcg selenium/nut"},
+    {"time": "10:40", "name": "Walnut", "category": "food", "qty": "1 walnut (~4 g)", "kcal": 26, "protein_g": 0.6, "carbs_g": 0.6, "fat_g": 2.6, "fiber_g": 0.3, "note": "standard walnut reference (~654kcal/100g)"},
+    {"time": "10:40", "name": "Cherry tomato", "category": "food", "qty": "1 (~17 g)", "kcal": 3, "protein_g": 0.16, "carbs_g": 0.67, "fat_g": 0.04, "fiber_g": 0.2, "note": "standard tomato reference values; credits 0.44mg lycopene, 2.4mg vitamin C, 2.6mcg folate DFE"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 51,
+    "selenium_mcg": 95,
+    "folate_mcg_dfe": 53.6,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 47.6,
+    "vitamin_c_mg": 50,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 9.2
   },
   "caffeine_shots": 1,
   "assumptions": [
     "Sleep logged: 00:00-06:45, 6.75h — below the 7-9h target band, slightly intoxicated (following yesterday's ~5.3 alcohol units) and interrupted/fragmented.",
     "07:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "09:00 breakfast: 1 espresso (45ml, 1 caffeine shot) + 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51.0mcg DFE."
+    "09:00 breakfast: 1 espresso (45ml, 1 caffeine shot) + 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51.0mcg DFE.",
+    "10:40 1 Brazil nut (~5g, ~95mcg selenium) + 1 walnut (~4g, standard reference) + 1 cherry tomato (~17g; credits 0.44mg lycopene, 2.4mg vitamin C, 2.6mcg folate DFE)."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes) (caffeine_shots: 1)."
+  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, slightly intoxicated and interrupted. Allergy spray + pill at 07:00, breakfast at 09:00 (espresso, yellow cheese, cherry tomatoes), and a Brazil nut + walnut + cherry tomato snack at 10:40 (caffeine_shots: 1)."
 }
