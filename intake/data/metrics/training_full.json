@@ -1,5 +1,5 @@
 {
-  "now": 1786222573066,
+  "now": 1786247298656,
   "workouts": [
     {
       "datetime": "2026-08-08T15:55",
@@ -4106,15 +4106,15 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 100,
-      "readyInHours": 73.9,
+      "pct": 92,
+      "readyInHours": 67,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 25,
+      "pct": 23,
       "readyInHours": 0,
       "ready": true
     },
@@ -4122,15 +4122,15 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 67,
-      "readyInHours": 32.1,
+      "pct": 57,
+      "readyInHours": 25.3,
       "ready": false
     },
     "biceps": {
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -4138,15 +4138,15 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 67,
-      "readyInHours": 32.2,
+      "pct": 57,
+      "readyInHours": 25.3,
       "ready": false
     },
     "forearms": {
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 17,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -4210,29 +4210,29 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 100,
-      "readyInHours": 73.9,
+      "pct": 92,
+      "readyInHours": 67,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 100,
-          "readyInHours": 73.9,
+          "pct": 92,
+          "readyInHours": 67,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 25,
+      "pct": 23,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 25,
+          "pct": 23,
           "readyInHours": 0,
           "ready": true
         }
@@ -4240,37 +4240,37 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 67,
-      "readyInHours": 32.1,
+      "pct": 57,
+      "readyInHours": 25.3,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 67,
-          "readyInHours": 32.1,
+          "pct": 57,
+          "readyInHours": 25.3,
           "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 31,
-      "readyInHours": 32.2,
+      "pct": 26,
+      "readyInHours": 25.3,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 67,
-          "readyInHours": 32.2,
+          "pct": 57,
+          "readyInHours": 25.3,
           "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 17,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         },
@@ -4278,7 +4278,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         }
@@ -5334,15 +5334,15 @@
       },
       {
         "label": "-4w",
-        "stress": 274,
-        "sessions": 3,
-        "acwr": 0.75
+        "stress": 598,
+        "sessions": 4,
+        "acwr": 1.34
       },
       {
         "label": "-3w",
-        "stress": 654,
-        "sessions": 4,
-        "acwr": 1.62
+        "stress": 330,
+        "sessions": 3,
+        "acwr": 0.82
       },
       {
         "label": "-2w",
@@ -5360,23 +5360,23 @@
         "label": "This wk",
         "stress": 798,
         "sessions": 4,
-        "acwr": 1.19
+        "acwr": 1.35
       }
     ],
     "acute": 798,
-    "chronic": 672,
-    "acwr": 1.19,
-    "acwrZone": "ok",
-    "sessions28": 15
+    "chronic": 591,
+    "acwr": 1.35,
+    "acwrZone": "caution",
+    "sessions28": 14
   },
   "recommendation": {
     "section": "Legs",
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-08T20:56:13.066Z",
+    "readyAt": "2026-08-09T03:48:18.656Z",
     "neverLogged": false,
-    "daysSince": 14.4,
+    "daysSince": 14.7,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -5522,37 +5522,39 @@
         }
       }
     ],
-    "guidance": [],
+    "guidance": [
+      "Load ratio 1.35 is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR."
+    ],
     "ranked": [
       {
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 14.4
+        "daysSince": 14.7
       },
       {
         "section": "Back",
-        "fatigue": 25,
+        "fatigue": 23,
         "readyInHours": 0,
-        "daysSince": 4.3
-      },
-      {
-        "section": "Shoulders",
-        "fatigue": 67,
-        "readyInHours": 32.1,
-        "daysSince": 1.4
+        "daysSince": 4.6
       },
       {
         "section": "Arms",
-        "fatigue": 31,
-        "readyInHours": 32.2,
-        "daysSince": 1.4
+        "fatigue": 26,
+        "readyInHours": 25.3,
+        "daysSince": 1.7
+      },
+      {
+        "section": "Shoulders",
+        "fatigue": 57,
+        "readyInHours": 25.3,
+        "daysSince": 1.7
       },
       {
         "section": "Chest",
-        "fatigue": 100,
-        "readyInHours": 73.9,
-        "daysSince": 0.2
+        "fatigue": 92,
+        "readyInHours": 67,
+        "daysSince": 0.5
       }
     ],
     "suggestedCount": 5,
@@ -5560,9 +5562,14 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 0,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 20.4
+    "daysSinceAerobic": 20.7
   },
   "alerts": [
+    {
+      "level": "med",
+      "title": "Load climbing fast",
+      "detail": "Load ratio 1.35 (sweet spot 0.8–1.3). Keep added volume under ~10% next week."
+    },
     {
       "level": "med",
       "title": "Push outpacing pull",
@@ -5570,19 +5577,19 @@
     },
     {
       "level": "low",
-      "title": "Chest fatigued (100%)",
-      "detail": "Recovers in ~73.9h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Chest fatigued (92%)",
+      "detail": "Recovers in ~67h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
     "You're below your PR on 6 lifts — closest wins first: Rope Cable Extension (81% of best), Angled Leg Press (81% of best), Pec Fly Machine (82% of best). Add a rep or a set before adding weight.",
     "Add pulling volume — push is 1.55× your pull. Aim toward ~1:1 to keep shoulders healthy.",
-    "Bring cardio back into the week (last logged 20.4 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
+    "Bring cardio back into the week (last logged 20.7 days ago). 1–2 easy zone-2 sessions speeds recovery between lifting days."
   ],
   "timing": {
     "avgGap": 4,
     "longestGap": 35.7,
-    "perWeek": 3.8,
+    "perWeek": 3.5,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -5594,7 +5601,7 @@
       8,
       10
     ],
-    "daysSinceLast": 0.2,
+    "daysSinceLast": 0.5,
     "total": 42
   },
   "relstrength": {
@@ -5661,7 +5668,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 20.4,
+    "daysSinceLast": 20.7,
     "recent": [
       {
         "t": 1784462400000,
@@ -5872,15 +5879,22 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-08-08",
-      "start": "23:30",
-      "end": "08:55",
-      "hours": 9.42,
-      "note": "Very long night, ~9.42h — just above the 7-9h target band, one continuous stretch."
+      "date": "2026-08-09",
+      "start": "00:00",
+      "end": "06:45",
+      "hours": 6.75,
+      "note": "Short night, ~6.75h — below the 7-9h target band, slightly intoxicated (following the day's ~5.3 alcohol units) and interrupted/fragmented sleep."
     },
-    "avg7": 7.5,
+    "avg7": 7.6,
     "status": "good",
     "history": [
+      {
+        "date": "2026-08-09",
+        "start": "00:00",
+        "end": "06:45",
+        "hours": 6.75,
+        "note": "Short night, ~6.75h — below the 7-9h target band, slightly intoxicated (following the day's ~5.3 alcohol units) and interrupted/fragmented sleep."
+      },
       {
         "date": "2026-08-08",
         "start": "23:30",
