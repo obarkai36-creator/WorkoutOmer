@@ -71,3 +71,18 @@
   (nuts, seeds, oils), selenium (Brazil nuts, fish, eggs), and extra folate
   (leafy greens, legumes). Frame as suggestions per the existing standing
   permission for intake-based suggestions, not mandates.
+- Daily 16:00 macro/micro update (requested 2026-08-09, **not yet automated**):
+  new standing rule — around 16:00 Israel time each day, proactively present a
+  macro status update (calories/protein/carbs/fat/fiber vs. targets in
+  intake/profile.json, consumed/remaining/%) plus the micro values from
+  micros_sperm_priority (zinc, selenium, folate, omega-3, vitamin C, vitamin D,
+  vitamin E, lycopene) vs. their targets, in the same format as prior ad-hoc
+  macro updates. Attempted to set this up as a Routine
+  (`mcp__Claude_Code_Remote__create_trigger`, cron `0 13 * * *` = 16:00 IDT)
+  twice on 2026-08-09; both attempts failed with "MCP error -32003: MCP tool
+  call requires approval" — this session can't grant that approval
+  non-interactively. Until the user creates/approves the Routine themselves
+  (via `claude mcp`/`/mcp` or the Routines UI in an interactive session), this
+  can't fire automatically — surface that limitation rather than silently
+  skipping it, and in the meantime give the update proactively whenever a live
+  session happens to be active around 16:00 and a day file is open.
