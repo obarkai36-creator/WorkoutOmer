@@ -416,11 +416,18 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
     }
   }
 
-  // Sensible tie-break priority when several sections are equally recovered —
+  // Sensible tie-break priority when several sections are comparably recovered —
   // nudged by the program-wide push/pull balance so a corrective section wins
-  // ties instead of the fixed default order. Physiological readiness (sorted
-  // first, below) always outranks this: balance never pulls in an unrecovered
-  // muscle, it only breaks ties among sections that are already comparably ready.
+  // instead of the fixed default order. Physiological readiness always outranks
+  // this: balance never pulls in a section that's meaningfully less recovered
+  // than the alternatives — it only decides among sections within
+  // READY_TOLERANCE_HOURS of each other. That window used to be exact-equality
+  // only, which almost never fired (readyInHours is a float that's rarely
+  // identical across sections), so the push/pull alert kept re-appearing
+  // without ever actually changing what got recommended. Widening it to a
+  // real tolerance (vs. 36-72h section recovery windows) lets the correction
+  // actually win recommendations, not just get logged as an alert.
+  const READY_TOLERANCE_HOURS = 24;
   const priority = { Legs: 0, Back: 1, Shoulders: 2, Chest: 3, Arms: 4 };
   if (bal && bal.pushPull != null) {
     if (bal.pushPull > 1.3) { priority.Back = -1; priority.Chest = 5; }
@@ -433,12 +440,16 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
       readyInHours: sectionFat[s].readyInHours,
       daysSince: lastTrained[s] != null ? round((now - lastTrained[s]) / DAY, 1) : null,
     }))
-    .sort((a, b) =>
-      a.readyInHours - b.readyInHours ||
-      (b.daysSince == null ? 99 : b.daysSince) - (a.daysSince == null ? 99 : a.daysSince) ||
-      a.fatigue - b.fatigue ||
-      (priority[a.section] ?? 9) - (priority[b.section] ?? 9)
-    );
+    .sort((a, b) => {
+      if (Math.abs(a.readyInHours - b.readyInHours) > READY_TOLERANCE_HOURS) {
+        return a.readyInHours - b.readyInHours;
+      }
+      return (
+        (priority[a.section] ?? 9) - (priority[b.section] ?? 9) ||
+        (b.daysSince == null ? 99 : b.daysSince) - (a.daysSince == null ? 99 : a.daysSince) ||
+        a.fatigue - b.fatigue
+      );
+    });
 
   const pick = ranked[0];
   const restHours = pick.readyInHours;
