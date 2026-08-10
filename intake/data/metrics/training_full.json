@@ -1,5 +1,5 @@
 {
-  "now": 1786356060806,
+  "now": 1786357345243,
   "workouts": [
     {
       "datetime": "2026-08-10T07:00",
@@ -4161,7 +4161,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 55,
-      "readyInHours": 36.8,
+      "readyInHours": 36.4,
       "ready": false
     },
     "back": {
@@ -4192,7 +4192,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 27,
+      "pct": 26,
       "readyInHours": 0,
       "ready": true
     },
@@ -4257,7 +4257,7 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 57,
-      "readyInHours": 19.3,
+      "readyInHours": 18.9,
       "ready": false
     }
   },
@@ -4265,14 +4265,14 @@
     "Chest": {
       "section": "Chest",
       "pct": 55,
-      "readyInHours": 36.8,
+      "readyInHours": 36.4,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 55,
-          "readyInHours": 36.8,
+          "readyInHours": 36.4,
           "ready": false
         }
       ]
@@ -4309,14 +4309,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 27,
+          "pct": 26,
           "readyInHours": 0,
           "ready": true
         },
@@ -4403,14 +4403,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 57,
-      "readyInHours": 19.3,
+      "readyInHours": 18.9,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 57,
-          "readyInHours": 19.3,
+          "readyInHours": 18.9,
           "ready": false
         }
       ]
@@ -5428,7 +5428,7 @@
     "fatigue": 14,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-10T10:01:00.806Z",
+    "readyAt": "2026-08-10T10:22:25.243Z",
     "neverLogged": false,
     "daysSince": 5.8,
     "suggestedExercises": [
@@ -5524,14 +5524,14 @@
       },
       {
         "section": "Arms",
-        "fatigue": 12,
+        "fatigue": 11,
         "readyInHours": 0,
         "daysSince": 3
       },
       {
         "section": "Chest",
         "fatigue": 55,
-        "readyInHours": 36.8,
+        "readyInHours": 36.4,
         "daysSince": 1.8
       }
     ],
