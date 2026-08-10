@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "chicken_stirfry_glass_noodles",
+      "name": "Chicken stir fry with glass noodles & vegetables (homemade batch)",
+      "serving": "100 g (whole batch ~1kg chicken + veg + noodles, 5 servings, ~380g/serving)",
+      "kcal": 107,
+      "protein_g": 13,
+      "carbs_g": 8.7,
+      "fat_g": 2.2,
+      "fiber_g": 0.7,
+      "verified": false,
+      "source": "Dual-lens recipe analysis (intake/references/nutrition_lenses.json scoring) from a separate session on this branch, 2026-08-10 — not yet pushed/available in this checkout, values taken from the screenshot the user shared. Ingredients: chicken breast, glass/mung bean noodles, sweet soy (kecap manis), pad thai sauce, soy sauce (Mizrach Maarav stir-fry), champignon mushrooms, cabbage, bean sprouts, white onion, green onions, garlic, cooking oil. Macros are an estimate, not from a verified label. Also credits per 100g: 13mcg selenium, 0.6mg zinc, 8.4mcg folate DFE, 0.5mg iron, 3.2mg vitamin C, 34mg choline, 163mg sodium. 'For him' (weight loss/muscle retention/sperm) score: 8/10 — extremely lean and protein-dense; sodium (three salty sauces) is the main knock."
+    },
+    {
       "id": "fitness_chocolate_cereal",
       "name": "Fitness Chocolate breakfast cereal (Osem-Nestlé, 375g box)",
       "serving": "1 spoon (~8 g)",
