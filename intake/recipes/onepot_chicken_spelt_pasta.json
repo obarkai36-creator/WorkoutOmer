@@ -1,0 +1,142 @@
+{
+  "id": "onepot_chicken_spelt_pasta",
+  "name": "One-pot chicken breast & spelt pasta (tomato)",
+  "template": true,
+  "variable_inputs": [
+    "chicken_raw_g",
+    "spelt_pasta_dry_g"
+  ],
+  "balance_rule": "~37 g dry spelt pasta per 100 g raw chicken → ~1:1 protein:carb (optimal balance). Use ~31 g/100 g for a protein-forward cut. This logged batch used 200 g pasta / 640 g chicken (~31 g/100 g, protein-forward).",
+  "logged_instance": {
+    "date": "2026-08-09",
+    "chicken_raw_g": 640,
+    "spelt_pasta_dry_g": 200,
+    "note": "User's chosen ratio — protein-forward (1.13:1 protein:carb)."
+  },
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "User's recurring one-pot dish",
+    "captured": "2026-08-09",
+    "notes": "Parametric template. Fixed base is constant; chicken and spelt pasta are input per batch. Same dish family as the foods.json 'chicken-pasta bake'. 'Spoon' read as tablespoon; 'generous' olive oil ~2.5 tbsp (~35 g). Per-serving values assume the batch splits into 4."
+  },
+  "servings": 4,
+  "serving_desc": "≈320 g (batch ÷4). This batch: 640 g raw chicken + 200 g dry spelt pasta",
+  "ingredients": [
+    {
+      "item": "chicken breast",
+      "qty": "640 g raw",
+      "note": "VARIABLE input"
+    },
+    {
+      "item": "spelt pasta",
+      "qty": "200 g dry",
+      "note": "VARIABLE input"
+    },
+    {
+      "item": "olive oil",
+      "qty": "generous (~2.5 tbsp / ~35 g)"
+    },
+    {
+      "item": "cherry tomatoes",
+      "qty": "20 (~340 g)"
+    },
+    {
+      "item": "Mutti tomato paste",
+      "qty": "2 tbsp (~32 g)"
+    },
+    {
+      "item": "egg",
+      "qty": "1 (coats the chicken)"
+    },
+    {
+      "item": "cornflour",
+      "qty": "1 tbsp (coats the chicken)"
+    },
+    {
+      "item": "salt",
+      "qty": "to taste"
+    },
+    {
+      "item": "sugar",
+      "qty": "0.5 tsp"
+    }
+  ],
+  "steps": [
+    "Coat the chicken breast in beaten egg + cornflour.",
+    "Sear the chicken in generous olive oil.",
+    "Add cherry tomatoes, Mutti tomato paste, salt and 0.5 tsp sugar; cook down to a sauce.",
+    "Add the cooked/cooking spelt pasta and combine in the one pot."
+  ],
+  "per_serving": {
+    "kcal": 495,
+    "protein_g": 45.5,
+    "carbs_g": 40,
+    "fat_g": 15.3,
+    "fiber_g": 4.9,
+    "micros": {
+      "lycopene_mg": 5.7,
+      "selenium_mcg": 44,
+      "zinc_mg": 2.4,
+      "iron_mg": 2.5,
+      "folate_mcg_dfe": 22,
+      "vitamin_c_mg": 10,
+      "vitamin_e_mg": 1.4,
+      "choline_mg": 139
+    }
+  },
+  "batch_totals": {
+    "kcal": 1980,
+    "protein_g": 182,
+    "carbs_g": 161,
+    "fat_g": 61,
+    "fiber_g": 19.4,
+    "protein_to_carb": "1.13 : 1"
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 9,
+      "verdict": "A near-ideal cutting + muscle-retention meal. ~37% of calories from protein (45 g/serving), protein-forward 1.13:1 protein:carb, lean chicken, whole-grain spelt fiber, and a real sperm-micro hit — lycopene from the tomatoes + Mutti paste, plus selenium and zinc from the chicken/spelt. The only calorie lever worth watching is the 'generous' olive oil.",
+      "flags": [
+        "high protein density (~37% kcal)",
+        "protein-forward 1.13:1",
+        "good fiber from spelt (~5 g/serving)",
+        "lycopene + selenium + zinc (sperm micros)"
+      ],
+      "suggested_mods": [
+        "Measure the olive oil (~1.5–2 tbsp is plenty) — it's the main swing factor in the calorie count",
+        "Toss in spinach or serve over greens to add folate the dish is a little short on",
+        "Bump to ~240 g pasta if you want a clean 1:1 balance / a more filling day"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 8,
+      "verdict": "Strong preconception dish. Lean protein + choline (~139 mg/serving from chicken + egg), iron naturally paired with the tomatoes' vitamin C for better absorption, plus lycopene and selenium. Everything is fully cooked (egg coating and chicken), so no safety flags. Folate is the one gap — easily closed with greens.",
+      "prenatal_highlights": [
+        "choline from chicken + egg (~139 mg/serving)",
+        "iron paired with tomato vitamin C (better non-heme absorption)",
+        "lycopene + selenium from tomatoes/paste and chicken",
+        "whole-grain fiber from spelt"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Add a couple of handfuls of spinach for folate + extra iron",
+        "Spelt contains gluten — fine unless she's avoiding it"
+      ]
+    }
+  },
+  "tags": [
+    "dinner",
+    "high-protein",
+    "one-pot",
+    "batch",
+    "meal-prep",
+    "template",
+    "poultry"
+  ],
+  "adopted": false,
+  "created": "2026-08-09",
+  "updated": "2026-08-09",
+  "serving_g": 320
+}

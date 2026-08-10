@@ -1,5 +1,22 @@
 # Session notes
 
+- Recipe analyzer (started 2026-08-04): when the user drops a recipe — a link,
+  an Instagram Reel / Facebook video caption or screenshot, an online recipe, or
+  a family recipe — analyze it into `intake/recipes/<id>.json` (schema:
+  `intake/recipes/SCHEMA.md`). Score every recipe through BOTH lenses in
+  `intake/references/nutrition_lenses.json`: **him** (weight loss / muscle
+  retention / sperm optimization, same targets as profile.json) and
+  **her_preconception** (prenatal nutrients + ADVISORY pregnancy food-safety
+  flags — trying within ~6 months, not yet, so flag+swap, don't hard-exclude).
+  Her real calorie/macro tracking lives in a SEPARATE project ("lihitrack"), so
+  the `her_preconception` block is written self-contained to be copy-pasted into
+  her session — the user does that copy, not us. Render with
+  `python3 intake/generate_recipe_card.py` → `intake/recipes/library.html`.
+  IG Reels / FB videos are usually bot-blocked (403) — try to fetch, but expect
+  to work from a pasted caption/screenshot. Proactively suggest recipe
+  modifications and which recipes to adopt into the daily rotation (per the
+  standing permission to make intake-based suggestions).
+
 - If an upcoming action risks hitting a platform/tool limit (e.g. request size
   caps like the ~32MB upload limit, rate limits, context limits), flag it to
   the user *before* it causes a failure — don't let them discover it via an
