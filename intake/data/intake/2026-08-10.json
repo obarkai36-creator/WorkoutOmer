@@ -17,15 +17,17 @@
     {"time": "11:45", "name": "Cashew", "category": "food", "qty": "1 cashew (~1.7 g)", "kcal": 9, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0.7, "fiber_g": 0.1, "note": "standard cashew reference (~553kcal/100g), first time logged"},
     {"time": "11:45", "name": "Walnut", "category": "food", "qty": "1 walnut (~4 g)", "kcal": 26, "protein_g": 0.6, "carbs_g": 0.6, "fat_g": 2.6, "fiber_g": 0.3, "note": "standard walnut reference"},
     {"time": "11:45", "name": "Cherry tomato", "category": "food", "qty": "1 (~17 g)", "kcal": 3, "protein_g": 0.16, "carbs_g": 0.67, "fat_g": 0.04, "fiber_g": 0.2, "note": "standard tomato reference values; credits 0.44mg lycopene, 2.4mg vitamin C, 2.6mcg folate DFE"},
-    {"time": "11:45", "name": "Cottage cheese, 5% fat", "category": "food", "qty": "1 tsp (~15 g)", "kcal": 15, "protein_g": 1.7, "carbs_g": 0.5, "fat_g": 0.75, "fiber_g": 0, "note": "standard 5%-fat cottage cheese reference (~103kcal/100g), small taste-size portion"}
+    {"time": "11:45", "name": "Cottage cheese, 5% fat", "category": "food", "qty": "1 tsp (~15 g)", "kcal": 15, "protein_g": 1.7, "carbs_g": 0.5, "fat_g": 0.75, "fiber_g": 0, "note": "standard 5%-fat cottage cheese reference (~103kcal/100g), small taste-size portion"},
+    {"time": "13:00", "name": "Lunch — Japanika business menu, chicken cucumber salad (starter)", "category": "food", "qty": "1 starter portion (~150 g: ~70g chicken, ~80g cucumber, light dressing)", "kcal": 167, "protein_g": 22.7, "carbs_g": 4.9, "fat_g": 6, "fiber_g": 0.4, "time_approx": true, "note": "first time logged, per-ingredient estimate — starter-size portion assumed (smaller than a full salad); chicken breast + cucumber + light sesame/soy-style dressing"},
+    {"time": "13:00", "name": "Lunch — Japanika business menu, grilled salmon fillet (main)", "category": "food", "qty": "1 fillet (~150 g)", "kcal": 309, "protein_g": 33, "carbs_g": 0, "fat_g": 19.5, "fiber_g": 0, "time_approx": true, "note": "standard grilled salmon reference (~206kcal/100g), typical restaurant fillet portion assumed, not weighed — no rice/side mentioned so none logged. Credits ~2700mg omega-3 EPA/DHA and ~525IU vitamin D, both strong single-meal sources."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 102.6,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 2700,
     "vitamin_c_mg": 77.4,
-    "vitamin_d_iu": 0,
+    "vitamin_d_iu": 525,
     "vitamin_e_mg": 0.3,
     "lycopene_mg": 0.44
   },
@@ -38,7 +40,8 @@
     "08:00 vanilla protein yogurt (1 cup, 200g, 20g protein) — same reference as prior entries.",
     "08:40 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "09:30 single espresso (45ml, 1 caffeine shot) + 150ml natural squeezed orange juice (standard reference, credits ~75mg vitamin C — closes most of today's vitamin C gap from the multi).",
-    "11:45 taste-size snack: 1 almond + 1 cashew (first time logged) + 1 walnut + 1 cherry tomato + 1 tsp cottage cheese 5% fat. All standard per-unit references."
+    "11:45 taste-size snack: 1 almond + 1 cashew (first time logged) + 1 walnut + 1 cherry tomato + 1 tsp cottage cheese 5% fat. All standard per-unit references.",
+    "13:00 Japanika business lunch: chicken cucumber salad starter + grilled salmon fillet main. Both first time logged, per-ingredient/portion estimates, flagged. Salmon is a strong single-meal omega-3 (~2700mg) and vitamin D (~525IU) source — clears today's omega-3 target and makes real progress on vitamin D. Salmon is not tuna, no conflict with the tuna-avoidance restriction."
   ],
-  "status_note": "Slept 7.92h (22:30-06:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:40, a double espresso at 06:45, a stationary bike session at 07:00 (6.8km, 25min), a vanilla protein yogurt at 08:00, the Mayven multivitamin gummies at 08:40, an espresso + orange juice at 09:30, and a nut/tomato/cottage cheese taste-size snack at 11:45 (caffeine_shots: 3)."
+  "status_note": "Slept 7.92h (22:30-06:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:40, a double espresso at 06:45, a stationary bike session at 07:00 (6.8km, 25min), a vanilla protein yogurt at 08:00, the Mayven multivitamin gummies at 08:40, an espresso + orange juice at 09:30, a nut/tomato/cottage cheese taste-size snack at 11:45, and a Japanika business lunch at 13:00 (chicken cucumber salad, grilled salmon fillet) (caffeine_shots: 3)."
 }
