@@ -1,4 +1,6 @@
 {
   "_note": "Dental retainer usage, logged manually. Goal is 2x/week, not nightly. One entry per night worn (or explicitly skipped). At EOD close-out: flag if <2 worn:true in the trailing 7 days (behind weekly pace), or if >5 nights since the last worn:true (overdue backstop). See CLAUDE.md for the standing rule (added 2026-08-10).",
-  "entries": []
+  "entries": [
+    {"date": "2026-08-10", "worn": false, "note": "Skipped — first tracked night."}
+  ]
 }
