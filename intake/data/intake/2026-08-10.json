@@ -29,17 +29,19 @@
     {"time": "19:10", "name": "Dinner — fresh salmon", "category": "food", "qty": "140 g", "kcal": 288, "protein_g": 30.8, "carbs_g": 0, "fat_g": 18.2, "fiber_g": 0, "note": "standard salmon reference, same rate as lunch's grilled fillet. Credits ~2520mg omega-3 EPA/DHA and ~490IU vitamin D — a second strong fish serving today."},
     {"time": "19:10", "name": "Dinner — balsamic glaze", "category": "food", "qty": "~1 tbsp (15 g)", "kcal": 44, "protein_g": 0.1, "carbs_g": 9.8, "fat_g": 0, "fiber_g": 0, "note": "standard balsamic glaze reference (~290kcal/100g, sugar-reduced, denser than plain vinegar)"},
     {"time": "19:10", "name": "Dinner — lemon juice", "category": "food", "qty": "~1 tbsp (15 ml)", "kcal": 3, "protein_g": 0.1, "carbs_g": 1, "fat_g": 0, "fiber_g": 0, "note": "credits ~5mg vitamin C"},
-    {"time": "19:10", "name": "Dinner — Chicken stir fry with glass noodles & vegetables", "category": "food", "qty": "450 g", "kcal": 482, "protein_g": 58.5, "carbs_g": 39.2, "fat_g": 9.9, "fiber_g": 3.2, "time_approx": true, "note": "homemade batch recipe (chicken breast, glass/mung bean noodles, champignon mushrooms, cabbage, bean sprouts, onion, garlic, sweet soy/pad thai/soy sauces, cooking oil) — per-100g macros from a dual-lens recipe analysis run in a separate session on this branch (107kcal/13p/8.7c/2.2f/0.7fiber per 100g), scaled to the 450g eaten. Credits ~58.5mcg selenium, 2.7mg zinc, ~37.8mcg folate DFE, ~14.4mg vitamin C. High-sodium (three salty sauces) but very lean/protein-dense."}
+    {"time": "19:10", "name": "Dinner — Chicken stir fry with glass noodles & vegetables", "category": "food", "qty": "450 g", "kcal": 482, "protein_g": 58.5, "carbs_g": 39.2, "fat_g": 9.9, "fiber_g": 3.2, "time_approx": true, "note": "homemade batch recipe (chicken breast, glass/mung bean noodles, champignon mushrooms, cabbage, bean sprouts, onion, garlic, sweet soy/pad thai/soy sauces, cooking oil) — per-100g macros from a dual-lens recipe analysis run in a separate session on this branch (107kcal/13p/8.7c/2.2f/0.7fiber per 100g), scaled to the 450g eaten. Credits ~58.5mcg selenium, 2.7mg zinc, ~37.8mcg folate DFE, ~14.4mg vitamin C. High-sodium (three salty sauces) but very lean/protein-dense."},
+    {"time": "20:00", "name": "Watermelon", "category": "food", "qty": "200 g", "kcal": 60, "protein_g": 1.2, "carbs_g": 15.2, "fat_g": 0.3, "fiber_g": 0.8, "note": "standard reference values; credits ~8.4mg lycopene, ~16.2mg vitamin C"},
+    {"time": "20:00", "name": "Greek cheese, 5% fat", "category": "food", "qty": "5 g", "kcal": 6, "protein_g": 0.7, "carbs_g": 0.1, "fat_g": 0.25, "fiber_g": 0, "note": "same per-100g rate as the Bulgarian cheese reference (both white brined 5%-fat cheese), taste-size portion"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.5,
     "selenium_mcg": 58.5,
     "folate_mcg_dfe": 140.4,
     "omega3_epa_dha_mg": 5220,
-    "vitamin_c_mg": 96.8,
+    "vitamin_c_mg": 113,
     "vitamin_d_iu": 1015,
     "vitamin_e_mg": 0.3,
-    "lycopene_mg": 0.44
+    "lycopene_mg": 8.84
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -58,7 +60,8 @@
     "16:45 creatine monohydrate (4.5g, zero kcal/macros).",
     "17:25 1 medium green apple (~180g, saved reference).",
     "19:10 dinner: 140g fresh salmon (same reference as lunch's salmon) with a balsamic glaze and lemon juice. Second strong omega-3/vitamin D fish serving today — omega-3 now well past target.",
-    "19:10 also 450g chicken stir fry with glass noodles & vegetables (homemade batch recipe) — per-100g macros from a dual-lens recipe analysis run in a separate session on this branch, saved to references/foods.json for reuse. Credits ~58.5mcg selenium, 2.7mg zinc, ~37.8mcg folate DFE, ~14.4mg vitamin C."
+    "19:10 also 450g chicken stir fry with glass noodles & vegetables (homemade batch recipe) — per-100g macros from a dual-lens recipe analysis run in a separate session on this branch, saved to references/foods.json for reuse. Credits ~58.5mcg selenium, 2.7mg zinc, ~37.8mcg folate DFE, ~14.4mg vitamin C.",
+    "20:00 200g watermelon (standard reference; credits ~8.4mg lycopene, ~16.2mg vitamin C) + 5g Greek cheese 5% fat (taste-size, same rate as the Bulgarian cheese reference)."
   ],
-  "status_note": "Slept 7.92h (22:30-06:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:40, a double espresso at 06:45, a stationary bike session at 07:00 (6.8km, 25min), a vanilla protein yogurt at 08:00, the Mayven multivitamin gummies at 08:40, an espresso + orange juice at 09:30, a nut/tomato/cottage cheese taste-size snack at 11:45, a Japanika business lunch at 13:00 (chicken cucumber salad, grilled salmon fillet, a few bites of fried rice), 175g cottage cheese at 15:20, a Pesek Zman bar + espresso at 15:30, creatine at 16:45, a green apple at 17:25, and dinner at 19:10 (140g fresh salmon with balsamic glaze and lemon juice, plus 450g chicken stir fry with glass noodles) (caffeine_shots: 4)."
+  "status_note": "Slept 7.92h (22:30-06:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:40, a double espresso at 06:45, a stationary bike session at 07:00 (6.8km, 25min), a vanilla protein yogurt at 08:00, the Mayven multivitamin gummies at 08:40, an espresso + orange juice at 09:30, a nut/tomato/cottage cheese taste-size snack at 11:45, a Japanika business lunch at 13:00 (chicken cucumber salad, grilled salmon fillet, a few bites of fried rice), 175g cottage cheese at 15:20, a Pesek Zman bar + espresso at 15:30, creatine at 16:45, a green apple at 17:25, dinner at 19:10 (140g fresh salmon with balsamic glaze and lemon juice, plus 450g chicken stir fry with glass noodles), and a watermelon + Greek cheese snack at 20:00 (caffeine_shots: 4)."
 }

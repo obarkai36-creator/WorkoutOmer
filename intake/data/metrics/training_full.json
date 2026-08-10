@@ -1,5 +1,5 @@
 {
-  "now": 1786380669932,
+  "now": 1786381605318,
   "workouts": [
     {
       "datetime": "2026-08-10T07:00",
@@ -4160,8 +4160,8 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 50,
-      "readyInHours": 30,
+      "pct": 49,
+      "readyInHours": 29.7,
       "ready": false
     },
     "back": {
@@ -4256,23 +4256,23 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 46,
-      "readyInHours": 12.5,
+      "pct": 45,
+      "readyInHours": 12.2,
       "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 50,
-      "readyInHours": 30,
+      "pct": 49,
+      "readyInHours": 29.7,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 50,
-          "readyInHours": 30,
+          "pct": 49,
+          "readyInHours": 29.7,
           "ready": false
         }
       ]
@@ -4402,15 +4402,15 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 46,
-      "readyInHours": 12.5,
+      "pct": 45,
+      "readyInHours": 12.2,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 46,
-          "readyInHours": 12.5,
+          "pct": 45,
+          "readyInHours": 12.2,
           "ready": false
         }
       ]
@@ -5382,15 +5382,15 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 376,
-        "sessions": 4,
-        "acwr": 1.04
+        "stress": 534,
+        "sessions": 5,
+        "acwr": 1.33
       },
       {
         "label": "-4w",
-        "stress": 495,
-        "sessions": 3,
-        "acwr": 1.18
+        "stress": 338,
+        "sessions": 2,
+        "acwr": 0.8
       },
       {
         "label": "-3w",
@@ -5408,7 +5408,7 @@
         "label": "-1w",
         "stress": 503,
         "sessions": 3,
-        "acwr": 0.98
+        "acwr": 1.06
       },
       {
         "label": "This wk",
@@ -5428,7 +5428,7 @@
     "fatigue": 12,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-10T16:51:09.932Z",
+    "readyAt": "2026-08-10T17:06:45.318Z",
     "neverLogged": false,
     "daysSince": 6.1,
     "suggestedExercises": [
@@ -5530,8 +5530,8 @@
       },
       {
         "section": "Chest",
-        "fatigue": 50,
-        "readyInHours": 30,
+        "fatigue": 49,
+        "readyInHours": 29.7,
         "daysSince": 2
       }
     ],
