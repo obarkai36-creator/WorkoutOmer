@@ -1,5 +1,5 @@
 {
-  "now": 1786381605318,
+  "now": 1786385170862,
   "workouts": [
     {
       "datetime": "2026-08-10T07:00",
@@ -4160,8 +4160,8 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 49,
-      "readyInHours": 29.7,
+      "pct": 48,
+      "readyInHours": 28.7,
       "ready": false
     },
     "back": {
@@ -4256,23 +4256,23 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 45,
-      "readyInHours": 12.2,
+      "pct": 44,
+      "readyInHours": 11.2,
       "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 49,
-      "readyInHours": 29.7,
+      "pct": 48,
+      "readyInHours": 28.7,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 49,
-          "readyInHours": 29.7,
+          "pct": 48,
+          "readyInHours": 28.7,
           "ready": false
         }
       ]
@@ -4402,15 +4402,15 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 45,
-      "readyInHours": 12.2,
+      "pct": 44,
+      "readyInHours": 11.2,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 45,
-          "readyInHours": 12.2,
+          "pct": 44,
+          "readyInHours": 11.2,
           "ready": false
         }
       ]
@@ -5428,9 +5428,9 @@
     "fatigue": 12,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-10T17:06:45.318Z",
+    "readyAt": "2026-08-10T18:06:10.862Z",
     "neverLogged": false,
-    "daysSince": 6.1,
+    "daysSince": 6.2,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -5508,7 +5508,7 @@
         "section": "Back",
         "fatigue": 12,
         "readyInHours": 0,
-        "daysSince": 6.1
+        "daysSince": 6.2
       },
       {
         "section": "Legs",
@@ -5530,9 +5530,9 @@
       },
       {
         "section": "Chest",
-        "fatigue": 49,
-        "readyInHours": 29.7,
-        "daysSince": 2
+        "fatigue": 48,
+        "readyInHours": 28.7,
+        "daysSince": 2.1
       }
     ],
     "suggestedCount": 5,
@@ -5540,7 +5540,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 0.4
+    "daysSinceAerobic": 0.5
   },
   "alerts": [
     {
@@ -5573,7 +5573,7 @@
       8,
       10
     ],
-    "daysSinceLast": 0.4,
+    "daysSinceLast": 0.5,
     "total": 44
   },
   "relstrength": {
@@ -5640,7 +5640,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.4,
+    "daysSinceLast": 0.5,
     "recent": [
       {
         "t": 1786345200000,
