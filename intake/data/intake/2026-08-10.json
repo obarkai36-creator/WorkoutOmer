@@ -2,9 +2,9 @@
   "date": "2026-08-10",
   "day_number": 44,
   "in_progress": true,
-  "workout_today": false,
-  "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "workout_today": true,
+  "workout_summary": "Stationary bike, \"lazy bike\" level 3 (07:00): 6.8km in 25min, avg speed 16.7km/h, 115 kcal per machine.",
+  "_status": "Stationary bike logged (6.8km, 25min).",
   "items": [
     {"time": "06:40", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:40", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -24,7 +24,8 @@
   "assumptions": [
     "Sleep logged: 22:30-06:25, 7.92h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
     "06:40 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "06:45 double espresso (~60-80ml, 2 caffeine shots) — saved reference."
+    "06:45 double espresso (~60-80ml, 2 caffeine shots) — saved reference.",
+    "07:00 stationary bike (\"lazy bike\", level 3) — 6.8km in 25min, avg speed 16.7km/h, 115 kcal per machine, no HR data. Mirrored to data.js WORKOUTS and workouts.json."
   ],
-  "status_note": "Slept 7.92h (22:30-06:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:40, a double espresso at 06:45 (caffeine_shots: 2)."
+  "status_note": "Slept 7.92h (22:30-06:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:40, a double espresso at 06:45, and a stationary bike session at 07:00 (6.8km, 25min) (caffeine_shots: 2)."
 }

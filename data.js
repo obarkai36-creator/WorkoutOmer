@@ -285,6 +285,14 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 10 Aug — Stationary bike, "lazy bike" level 3 (07:00)
+  {
+    datetime: "2026-08-10T07:00", note: "Stationary bike (\"lazy bike\", level 3) — 115 kcal per machine, avg speed 16.7km/h",
+    exercises: [
+      { name: "Stationary Bike", distanceKm: 6.8, durationMin: 25 },
+    ],
+  },
+
   // 9 Aug — Alternating run/walk, Or Akiva (18:15)
   {
     datetime: "2026-08-09T18:15", note: "Alternating run/walk — Or Akiva (sun exposure ~half the run)",
