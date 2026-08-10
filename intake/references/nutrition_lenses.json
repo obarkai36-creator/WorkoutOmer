@@ -1,0 +1,92 @@
+{
+  "_note": "Scoring rubric for the recipe analyzer. Every recipe is scored through TWO independent lenses: 'him' (this project's tracked eater) and 'her_preconception' (portable block copied into the separate 'lihitrack' project). Keep this file as the single source of truth for how recipes are judged so scoring stays consistent across sessions. Edit the weights/thresholds here rather than hard-coding judgement in prose.",
+  "updated": "2026-08-04",
+
+  "him": {
+    "_basis": "Mirrors intake/profile.json goals + targets. Cutting on ~2050 kcal with high protein to retain muscle, plus sperm optimization. Recipes are scored per SERVING against how well one serving advances these goals as part of a day.",
+    "goals": ["weight_loss", "muscle_retention", "sperm_optimization"],
+    "day_targets_ref": "intake/profile.json -> targets",
+    "priority_micros": [
+      "zinc_mg", "selenium_mcg", "folate_mcg_dfe", "omega3_epa_dha_mg",
+      "vitamin_c_mg", "vitamin_d_iu", "vitamin_e_mg", "lycopene_mg"
+    ],
+    "score_drivers": {
+      "protein_density": {
+        "weight": 3,
+        "good": ">= 2.5 g protein per 100 kcal",
+        "note": "Highest-value trait while cutting + retaining muscle."
+      },
+      "calorie_fit": {
+        "weight": 2,
+        "good": "a serving fits inside a ~2050 kcal day without blowing a meal's share",
+        "note": "Penalize calorie-dense servings low in protein/fiber."
+      },
+      "fiber": {
+        "weight": 1,
+        "good": ">= 5 g fiber per serving",
+        "note": "Satiety on a deficit; supports the 32 g/day target."
+      },
+      "sperm_micros": {
+        "weight": 2,
+        "good": "meaningfully contributes zinc, selenium, folate, omega-3 EPA/DHA, vit C/D/E, or lycopene",
+        "note": "Bonus for oily fish (salmon/sardines), shellfish/lean red meat (zinc), Brazil nuts/eggs (selenium), leafy greens/legumes (folate), tomatoes (lycopene), citrus/peppers (vit C)."
+      }
+    },
+    "penalize": [
+      "high-mercury fish (tuna, swordfish, king mackerel) — also on his avoid list in profile.json",
+      "high added sugar with low protein/fiber",
+      "trans fats / heavily processed",
+      "alcohol-heavy preparations (fertility + calories)"
+    ]
+  },
+
+  "her_preconception": {
+    "_basis": "Preconception / early-pregnancy nutrition lens. This project does NOT track her calories/macros (that lives in the separate 'lihitrack' project). Here we assess a recipe's PRENATAL nutrient value + food-safety, producing a self-contained block to paste into her session. Safety mode is ADVISORY (decided 2026-08-04): trying within ~6 months, not yet — so flag pregnancy-unsafe items with a note + swap, don't hard-exclude.",
+    "safety_mode": "advisory",
+    "priority_micros": [
+      "folate_mcg_dfe", "iron_mg", "choline_mg", "omega3_epa_dha_mg",
+      "iodine_mcg", "calcium_mg", "vitamin_d_iu", "vitamin_b12_mcg",
+      "protein_g", "fiber_g"
+    ],
+    "score_drivers": {
+      "folate": {
+        "weight": 3,
+        "good": "leafy greens, legumes, citrus, fortified grains — the single most important preconception nutrient (neural tube)",
+        "note": "Recipe-level folate is a big positive; ~600 mcg DFE/day target once trying."
+      },
+      "iron": {
+        "weight": 2,
+        "good": "lean red meat, poultry, legumes, spinach; pair with vitamin C for absorption",
+        "note": "Bonus when the same dish also brings vitamin C (better non-heme absorption)."
+      },
+      "choline_and_dha": {
+        "weight": 2,
+        "good": "eggs (choline), salmon/sardines (DHA) — both key for fetal brain development",
+        "note": "Often under-consumed; reward recipes that supply them."
+      },
+      "calcium_iodine_protein": {
+        "weight": 1,
+        "good": "dairy, fortified alternatives, fish, eggs, legumes",
+        "note": "Steady contributors to a prenatal-ready diet."
+      }
+    },
+    "advisory_flags": [
+      {"trigger": "high-mercury fish (tuna, swordfish, king mackerel, shark, marlin)", "note": "Fine occasionally now; swap to salmon/sardines/trout once actively trying or pregnant.", "swap": "salmon, sardines, trout, or cooked shrimp"},
+      {"trigger": "unpasteurized / soft cheeses (brie, feta, blue, queso fresco)", "note": "Listeria risk in pregnancy; fine now if pasteurized. Verify pasteurization.", "swap": "pasteurized hard cheeses, or cook the cheese in"},
+      {"trigger": "deli / cured meats (prosciutto, salami, cold cuts)", "note": "Listeria risk; safe if heated until steaming.", "swap": "freshly cooked chicken/turkey, or heat the cured meat through"},
+      {"trigger": "raw or undercooked egg (homemade mayo, mousse, runny yolk, raw dough)", "note": "Salmonella risk in pregnancy; use pasteurized egg or cook fully.", "swap": "pasteurized eggs, or cook to firm"},
+      {"trigger": "raw / undercooked meat, fish, shellfish (sushi, tartare, ceviche, rare steak)", "note": "Cook thoroughly once trying/pregnant.", "swap": "fully cooked version"},
+      {"trigger": "liver / very high preformed vitamin A", "note": "Excess retinol is teratogenic; limit liver and high-dose vit A once trying.", "swap": "beta-carotene sources (sweet potato, carrot, squash)"},
+      {"trigger": "high caffeine (strong coffee, espresso-heavy, energy drinks)", "note": "Keep under ~200 mg/day once trying/pregnant.", "swap": "decaf or half-caf, smaller portion"},
+      {"trigger": "alcohol in the dish (wine/beer/spirits, incl. as an ingredient)", "note": "No safe amount once pregnant; most cooks off but flag it.", "swap": "stock, juice, or omit"},
+      {"trigger": "raw sprouts (alfalfa, mung, clover)", "note": "Bacterial risk; cook them once trying/pregnant.", "swap": "cooked sprouts or omit"}
+    ]
+  },
+
+  "fit_score_scale": {
+    "0-3": "poor fit — works against the goals as-is",
+    "4-6": "okay with modifications — see suggested_mods",
+    "7-8": "good fit — a solid addition to the rotation",
+    "9-10": "excellent fit — a staple candidate"
+  }
+}
