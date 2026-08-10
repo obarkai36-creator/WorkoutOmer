@@ -110,3 +110,11 @@
       estimated IU straight into `micros_sperm_priority.vitamin_d_iu` and
       describe it in `assumptions`/`status_note`, matching existing
       practice.
+- Nightly dental retainers (added 2026-08-10, starting that night): log
+  usage in `intake/data/metrics/retainers.json` (`entries`: date/worn/note)
+  whenever the user reports wearing (or skipping) them — same pattern as
+  `sleep.json`, not logged as an intake item. At EOD close-out (when the
+  user signals EOD), check the trailing 3 nights before today's date; if
+  none show `worn: true`, flag it as a reminder in the EOD response. This
+  check is tied to the user-initiated EOD signal, not a wall-clock Routine
+  (no separate automation needed, unlike the 16:00 macro-update rule above).
