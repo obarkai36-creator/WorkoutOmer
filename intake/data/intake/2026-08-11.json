@@ -12,7 +12,8 @@
     {"time": "08:45", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "10 (~170 g)", "kcal": 30, "protein_g": 1.6, "carbs_g": 6.7, "fat_g": 0.4, "fiber_g": 2, "note": "standard tomato reference values; credits 4.4mg lycopene, 24mg vitamin C, 26mcg folate DFE"},
     {"time": "08:45", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified reference (50kcal/25g slice)"},
     {"time": "10:15", "name": "Strawberry protein yogurt", "category": "food", "qty": "1 pot (~150 g)", "kcal": 120, "protein_g": 20, "carbs_g": 9, "fat_g": 1, "fiber_g": 0, "note": "generic high-protein yogurt estimate, brand not specified — same reference as prior entries"},
-    {"time": "10:15", "name": "Granola", "category": "food", "qty": "1 tsp (~5 g)", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g)"}
+    {"time": "10:15", "name": "Granola", "category": "food", "qty": "1 tsp (~5 g)", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g)"},
+    {"time": "11:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -24,13 +25,14 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 4.4
   },
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:15-06:45, 7.5h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
     "07:10 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:00 single espresso (45ml, 1 caffeine shot).",
     "08:45 breakfast: 10 cherry tomatoes (~170g, standard reference) + 2 Tnuva Emek Light yellow cheese slices (verified reference).",
-    "10:15 strawberry protein yogurt (1 pot, 150g, 20g protein) + 1 tsp granola (~5g, generic reference)."
+    "10:15 strawberry protein yogurt (1 pot, 150g, 20g protein) + 1 tsp granola (~5g, generic reference).",
+    "11:00 single espresso (45ml, 1 caffeine shot) — 2 total today."
   ],
-  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00, breakfast at 08:45 (cherry tomatoes, yellow cheese), and a strawberry protein yogurt + granola snack at 10:15 (caffeine_shots: 1)."
+  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00, breakfast at 08:45 (cherry tomatoes, yellow cheese), a strawberry protein yogurt + granola snack at 10:15, and another espresso at 11:00 (caffeine_shots: 2)."
 }
