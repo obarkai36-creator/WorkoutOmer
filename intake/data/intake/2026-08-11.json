@@ -19,17 +19,20 @@
     {"time": "12:20", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "saved reference"},
     {"time": "12:20", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 60, "protein_g": 3.2, "carbs_g": 13.4, "fat_g": 0.8, "fiber_g": 4, "note": "standard tomato reference values; credits 8.8mg lycopene, 48mg vitamin C, 52mcg folate DFE"},
     {"time": "13:15", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:15", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "note": "standard reference, ~95mcg selenium/nut"},
+    {"time": "15:15", "name": "Cherry tomato", "category": "food", "qty": "2 (~34 g)", "kcal": 6, "protein_g": 0.32, "carbs_g": 1.34, "fat_g": 0.08, "fiber_g": 0.4, "note": "standard tomato reference values; credits 0.88mg lycopene, 4.8mg vitamin C, 5.2mcg folate DFE"},
+    {"time": "15:15", "name": "Yellow cheese, 9% fat", "category": "food", "qty": "1 slice (~25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified reference (Tnuva Emek Light, 50kcal/25g slice)"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.8,
-    "selenium_mcg": 55,
-    "folate_mcg_dfe": 205.5,
+    "selenium_mcg": 150,
+    "folate_mcg_dfe": 210.7,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 84.5,
+    "vitamin_c_mg": 89.3,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 1.75,
-    "lycopene_mg": 20.33
+    "lycopene_mg": 21.21
   },
   "caffeine_shots": 3,
   "assumptions": [
@@ -42,7 +45,8 @@
     "11:18 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "12:20 lunch: 400g of the adopted One-pot chicken breast & spelt pasta recipe (reusing the logged 640g chicken/200g pasta batch ratio) + 1 cucumber (~300g) + 20 cherry tomatoes (~340g). This lunch was a big single-meal hit on selenium, lycopene, folate, vitamin C, and vitamin E — meaningfully closing today's gaps from the multivitamin swap.",
     "13:15 single espresso (40ml, 1 caffeine shot) — 3 total today.",
-    "14:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits today's omega-3 target."
+    "14:00 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits today's omega-3 target.",
+    "15:15 1 Brazil nut (~95mcg selenium) + 2 cherry tomatoes (~34g) + 1 yellow cheese slice (9%, verified reference)."
   ],
-  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00, breakfast at 08:45 (cherry tomatoes, yellow cheese), a strawberry protein yogurt + granola snack at 10:15, another espresso at 11:00, the Mayven multivitamin gummies at 11:18, lunch at 12:20 (chicken spelt pasta, cucumber, cherry tomatoes), another espresso at 13:15, and omega-3 at 14:00 (caffeine_shots: 3)."
+  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00, breakfast at 08:45 (cherry tomatoes, yellow cheese), a strawberry protein yogurt + granola snack at 10:15, another espresso at 11:00, the Mayven multivitamin gummies at 11:18, lunch at 12:20 (chicken spelt pasta, cucumber, cherry tomatoes), another espresso at 13:15, omega-3 at 14:00, and a Brazil nut/tomato/cheese snack at 15:15 (caffeine_shots: 3)."
 }
