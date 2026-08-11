@@ -1,5 +1,5 @@
 {
-  "now": 1786467539362,
+  "now": 1786473667794,
   "workouts": [
     {
       "datetime": "2026-08-10T07:00",
@@ -4160,8 +4160,8 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 33,
-      "readyInHours": 5.8,
+      "pct": 32,
+      "readyInHours": 4.1,
       "ready": false
     },
     "back": {
@@ -4256,7 +4256,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "ready": true
     }
@@ -4264,15 +4264,15 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 33,
-      "readyInHours": 5.8,
+      "pct": 32,
+      "readyInHours": 4.1,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 33,
-          "readyInHours": 5.8,
+          "pct": 32,
+          "readyInHours": 4.1,
           "ready": false
         }
       ]
@@ -4402,14 +4402,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 20,
+          "pct": 19,
           "readyInHours": 0,
           "ready": true
         }
@@ -5428,9 +5428,9 @@
     "fatigue": 8,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-11T16:58:59.362Z",
+    "readyAt": "2026-08-11T18:41:07.794Z",
     "neverLogged": false,
-    "daysSince": 7.1,
+    "daysSince": 7.2,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -5508,7 +5508,7 @@
         "section": "Back",
         "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 7.1
+        "daysSince": 7.2
       },
       {
         "section": "Legs",
@@ -5530,9 +5530,9 @@
       },
       {
         "section": "Chest",
-        "fatigue": 33,
-        "readyInHours": 5.8,
-        "daysSince": 3
+        "fatigue": 32,
+        "readyInHours": 4.1,
+        "daysSince": 3.1
       }
     ],
     "suggestedCount": 5,
@@ -5540,7 +5540,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1.4
+    "daysSinceAerobic": 1.5
   },
   "alerts": [
     {
@@ -5573,7 +5573,7 @@
       8,
       10
     ],
-    "daysSinceLast": 1.4,
+    "daysSinceLast": 1.5,
     "total": 44
   },
   "relstrength": {
@@ -5640,7 +5640,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.4,
+    "daysSinceLast": 1.5,
     "recent": [
       {
         "t": 1786345200000,
