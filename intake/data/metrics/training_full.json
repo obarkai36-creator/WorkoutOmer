@@ -1,5 +1,5 @@
 {
-  "now": 1786450815741,
+  "now": 1786467288665,
   "workouts": [
     {
       "datetime": "2026-08-10T07:00",
@@ -4160,15 +4160,15 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 36,
-      "readyInHours": 10.5,
+      "pct": 33,
+      "readyInHours": 5.9,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "ready": true
     },
@@ -4176,7 +4176,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 14,
+      "pct": 12,
       "readyInHours": 0,
       "ready": true
     },
@@ -4184,7 +4184,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 2,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -4192,7 +4192,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 14,
+      "pct": 12,
       "readyInHours": 0,
       "ready": true
     },
@@ -4256,7 +4256,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 24,
+      "pct": 20,
       "readyInHours": 0,
       "ready": true
     }
@@ -4264,29 +4264,29 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 36,
-      "readyInHours": 10.5,
+      "pct": 33,
+      "readyInHours": 5.9,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 36,
-          "readyInHours": 10.5,
+          "pct": 33,
+          "readyInHours": 5.9,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 9,
+          "pct": 8,
           "readyInHours": 0,
           "ready": true
         }
@@ -4294,14 +4294,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 14,
+      "pct": 12,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 14,
+          "pct": 12,
           "readyInHours": 0,
           "ready": true
         }
@@ -4309,22 +4309,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 6,
+      "pct": 5,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 14,
-          "readyInHours": 0,
-          "ready": true
-        },
-        {
-          "key": "biceps",
-          "label": "Biceps",
-          "section": "Arms",
-          "pct": 2,
+          "pct": 12,
           "readyInHours": 0,
           "ready": true
         },
@@ -4333,6 +4325,14 @@
           "label": "Forearms",
           "section": "Arms",
           "pct": 2,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "biceps",
+          "label": "Biceps",
+          "section": "Arms",
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         }
@@ -4402,14 +4402,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 24,
+      "pct": 20,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 24,
+          "pct": 20,
           "readyInHours": 0,
           "ready": true
         }
@@ -5382,55 +5382,55 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 534,
-        "sessions": 5,
-        "acwr": 1.33
+        "stress": 426,
+        "sessions": 4,
+        "acwr": 1.06
       },
       {
         "label": "-4w",
         "stress": 389,
         "sessions": 3,
-        "acwr": 0.9
+        "acwr": 1.01
       },
       {
         "label": "-3w",
-        "stress": 309,
-        "sessions": 3,
-        "acwr": 0.77
+        "stress": 541,
+        "sessions": 4,
+        "acwr": 1.18
       },
       {
         "label": "-2w",
-        "stress": 871,
-        "sessions": 4,
-        "acwr": 1.66
+        "stress": 639,
+        "sessions": 3,
+        "acwr": 1.28
       },
       {
         "label": "-1w",
-        "stress": 522,
-        "sessions": 3,
-        "acwr": 1
+        "stress": 769,
+        "sessions": 4,
+        "acwr": 1.32
       },
       {
         "label": "This wk",
-        "stress": 697,
-        "sessions": 5,
-        "acwr": 1.16
+        "stress": 449,
+        "sessions": 4,
+        "acwr": 0.75
       }
     ],
-    "acute": 697,
+    "acute": 449,
     "chronic": 600,
-    "acwr": 1.16,
-    "acwrZone": "ok",
+    "acwr": 0.75,
+    "acwrZone": "detraining",
     "sessions28": 15
   },
   "recommendation": {
     "section": "Back",
-    "fatigue": 9,
+    "fatigue": 8,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-11T12:20:15.741Z",
+    "readyAt": "2026-08-11T16:54:48.665Z",
     "neverLogged": false,
-    "daysSince": 6.9,
+    "daysSince": 7.1,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -5500,38 +5500,39 @@
       }
     ],
     "guidance": [
-      "Push is ahead of pull 1.55× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short."
+      "Push is ahead of pull 1.55× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short.",
+      "Load ratio 0.75 has dipped — a normal, or even a slightly harder, session is fine."
     ],
     "ranked": [
       {
         "section": "Back",
-        "fatigue": 9,
+        "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 6.9
+        "daysSince": 7.1
       },
       {
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 17.1
+        "daysSince": 17.3
       },
       {
         "section": "Shoulders",
-        "fatigue": 14,
+        "fatigue": 12,
         "readyInHours": 0,
-        "daysSince": 4.1
+        "daysSince": 4.3
       },
       {
         "section": "Arms",
-        "fatigue": 6,
+        "fatigue": 5,
         "readyInHours": 0,
-        "daysSince": 4.1
+        "daysSince": 4.3
       },
       {
         "section": "Chest",
-        "fatigue": 36,
-        "readyInHours": 10.5,
-        "daysSince": 2.9
+        "fatigue": 33,
+        "readyInHours": 5.9,
+        "daysSince": 3
       }
     ],
     "suggestedCount": 5,
@@ -5539,13 +5540,18 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1.2
+    "daysSinceAerobic": 1.4
   },
   "alerts": [
     {
       "level": "med",
       "title": "Push outpacing pull",
       "detail": "Push volume is 1.55× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+    },
+    {
+      "level": "low",
+      "title": "Load dropped off",
+      "detail": "Load ratio 0.75 (<0.8). A normal training week will bring this back up."
     }
   ],
   "changes": [
@@ -5567,7 +5573,7 @@
       8,
       10
     ],
-    "daysSinceLast": 1.2,
+    "daysSinceLast": 1.4,
     "total": 44
   },
   "relstrength": {
@@ -5634,7 +5640,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.2,
+    "daysSinceLast": 1.4,
     "recent": [
       {
         "t": 1786345200000,
