@@ -8,23 +8,26 @@
   "items": [
     {"time": "07:10", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:10", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "08:45", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "10 (~170 g)", "kcal": 30, "protein_g": 1.6, "carbs_g": 6.7, "fat_g": 0.4, "fiber_g": 2, "note": "standard tomato reference values; credits 4.4mg lycopene, 24mg vitamin C, 26mcg folate DFE"},
+    {"time": "08:45", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified reference (50kcal/25g slice)"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 26,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 24,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 4.4
   },
   "caffeine_shots": 1,
   "assumptions": [
     "Sleep logged: 23:15-06:45, 7.5h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
     "07:10 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "08:00 single espresso (45ml, 1 caffeine shot)."
+    "08:00 single espresso (45ml, 1 caffeine shot).",
+    "08:45 breakfast: 10 cherry tomatoes (~170g, standard reference) + 2 Tnuva Emek Light yellow cheese slices (verified reference)."
   ],
-  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00 (caffeine_shots: 1)."
+  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00, and breakfast at 08:45 (cherry tomatoes, yellow cheese) (caffeine_shots: 1)."
 }
