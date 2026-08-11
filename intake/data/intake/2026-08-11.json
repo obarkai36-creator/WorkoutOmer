@@ -7,7 +7,8 @@
   "_status": "Day just opened — sleep logged.",
   "items": [
     {"time": "07:10", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
-    {"time": "07:10", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+    {"time": "07:10", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -19,10 +20,11 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "assumptions": [
     "Sleep logged: 23:15-06:45, 7.5h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
-    "07:10 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done."
+    "07:10 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "08:00 single espresso (45ml, 1 caffeine shot)."
   ],
-  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10."
+  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00 (caffeine_shots: 1)."
 }
