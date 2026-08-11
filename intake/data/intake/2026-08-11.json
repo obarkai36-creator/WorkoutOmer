@@ -14,17 +14,20 @@
     {"time": "10:15", "name": "Strawberry protein yogurt", "category": "food", "qty": "1 pot (~150 g)", "kcal": 120, "protein_g": 20, "carbs_g": 9, "fat_g": 1, "fiber_g": 0, "note": "generic high-protein yogurt estimate, brand not specified — same reference as prior entries"},
     {"time": "10:15", "name": "Granola", "category": "food", "qty": "1 tsp (~5 g)", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g)"},
     {"time": "11:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "11:18", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
+    {"time": "11:18", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
+    {"time": "12:20", "name": "Lunch — One-pot chicken breast & spelt pasta (tomato)", "category": "food", "qty": "400 g", "kcal": 619, "protein_g": 56.9, "carbs_g": 50, "fat_g": 19.1, "fiber_g": 6.1, "note": "adopted recipe (intake/recipes/onepot_chicken_spelt_pasta.json), per-100g rate from the logged 640g chicken/200g pasta batch (the 'recent batch' — reusing that ratio). Credits ~7.13mg lycopene, ~55mcg selenium, ~3mg zinc, ~27.5mcg folate DFE, ~12.5mg vitamin C, ~1.75mg vitamin E."},
+    {"time": "12:20", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "saved reference"},
+    {"time": "12:20", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 60, "protein_g": 3.2, "carbs_g": 13.4, "fat_g": 0.8, "fiber_g": 4, "note": "standard tomato reference values; credits 8.8mg lycopene, 48mg vitamin C, 52mcg folate DFE"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 126,
+    "zinc_mg": 5.8,
+    "selenium_mcg": 55,
+    "folate_mcg_dfe": 205.5,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 24,
+    "vitamin_c_mg": 84.5,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 4.4
+    "vitamin_e_mg": 1.75,
+    "lycopene_mg": 20.33
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -34,7 +37,8 @@
     "08:45 breakfast: 10 cherry tomatoes (~170g, standard reference) + 2 Tnuva Emek Light yellow cheese slices (verified reference).",
     "10:15 strawberry protein yogurt (1 pot, 150g, 20g protein) + 1 tsp granola (~5g, generic reference).",
     "11:00 single espresso (45ml, 1 caffeine shot) — 2 total today.",
-    "11:18 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
+    "11:18 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
+    "12:20 lunch: 400g of the adopted One-pot chicken breast & spelt pasta recipe (reusing the logged 640g chicken/200g pasta batch ratio) + 1 cucumber (~300g) + 20 cherry tomatoes (~340g). This lunch was a big single-meal hit on selenium, lycopene, folate, vitamin C, and vitamin E — meaningfully closing today's gaps from the multivitamin swap."
   ],
-  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00, breakfast at 08:45 (cherry tomatoes, yellow cheese), a strawberry protein yogurt + granola snack at 10:15, another espresso at 11:00, and the Mayven multivitamin gummies at 11:18 (caffeine_shots: 2)."
+  "status_note": "Slept 7.5h (23:15-06:45) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:10, an espresso at 08:00, breakfast at 08:45 (cherry tomatoes, yellow cheese), a strawberry protein yogurt + granola snack at 10:15, another espresso at 11:00, the Mayven multivitamin gummies at 11:18, and lunch at 12:20 (chicken spelt pasta, cucumber, cherry tomatoes) (caffeine_shots: 2)."
 }
