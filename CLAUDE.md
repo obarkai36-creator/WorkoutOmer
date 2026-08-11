@@ -145,3 +145,11 @@
   This check is tied to the user-initiated EOD signal, not a wall-clock
   Routine (no separate automation needed, unlike the 16:00 macro-update
   rule above).
+- Omega-3 supplement compliance (added 2026-08-11): the unified dashboard's
+  supplement-compliance check (`build_supplement_check` in
+  generate_dashboard.py) no longer flags the Omega-3 fish-oil softgel as a
+  missed dose on a day where food (fish) alone already cleared the
+  omega3_epa_dha_mg target — the point of the supplement is to hit that
+  target, not to take the softgel for its own sake. Those days show ✅
+  "target met via food (Xmg) — supplement skipped" instead of a ⚠️ warning.
+  All other supplement/medication rows are unaffected.

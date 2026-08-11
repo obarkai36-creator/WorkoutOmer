@@ -218,14 +218,19 @@ EXPECTED_SUPPLEMENTS = [
 ]
 
 
-def build_supplement_check(items):
+def build_supplement_check(items, omega3_total=None, omega3_target=None):
     """Replaces the full item-by-item Intake Log table with just a compliance
     check against the standing daily supplement/medication routine — the
     macro/micro panels already cover what was eaten in aggregate, so the raw
     log was mostly useful for catching a missed dose, which this does more
     directly. For rows flagged show_product, the matched item's own name is
     shown instead of a static label, so a product swap (e.g. the multivitamin
-    default changing) reads directly off that day's log."""
+    default changing) reads directly off that day's log.
+
+    Omega-3 is a special case: the point of the supplement is to hit the
+    omega3_epa_dha_mg target, not to take the softgel for its own sake. If
+    food (fish) already cleared the target, skipping the supplement that day
+    isn't a missed dose — don't flag it."""
     rows = []
     for label, name_sub, qty_sub, show_product in EXPECTED_SUPPLEMENTS:
         match = next(
@@ -235,10 +240,16 @@ def build_supplement_check(items):
             None,
         )
         taken = match is not None
-        icon = "✅" if taken else "⚠️"
-        color = "#22c55e" if taken else "#f59e0b"
+        met_via_food = (
+            not taken and label == "Omega-3"
+            and omega3_target and (omega3_total or 0) >= omega3_target
+        )
+        icon = "✅" if (taken or met_via_food) else "⚠️"
+        color = "#22c55e" if (taken or met_via_food) else "#f59e0b"
         if taken and show_product:
             status = match["name"]
+        elif met_via_food:
+            status = f"target met via food ({omega3_total:g}mg) — supplement skipped"
         else:
             status = "taken" if taken else "not logged today"
         rows.append(f"<li><span style='color:{color}'>{icon}</span> {label} <span class='muted'>· {status}</span></li>")
@@ -917,7 +928,11 @@ def build(target_date, unified=False):
         bar(micros.get(k, 0), mtarg[k], k.replace("_", " ")) for k in mtarg
     )
 
-    supplement_check_html = build_supplement_check(items)
+    supplement_check_html = build_supplement_check(
+        items,
+        omega3_total=micros.get("omega3_epa_dha_mg", 0),
+        omega3_target=mtarg.get("omega3_epa_dha_mg"),
+    )
 
     bc = profile["baseline_body_composition"]
     comp_cards = "".join(
