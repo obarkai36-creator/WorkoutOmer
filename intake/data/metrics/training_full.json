@@ -1,5 +1,5 @@
 {
-  "now": 1786515201500,
+  "now": 1786517430296,
   "workouts": [
     {
       "datetime": "2026-08-12T07:15",
@@ -4285,8 +4285,8 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 31,
-      "readyInHours": 1,
+      "pct": 30,
+      "readyInHours": 0.5,
       "ready": false
     },
     "back": {
@@ -4294,7 +4294,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 79,
-      "readyInHours": 57.9,
+      "readyInHours": 57.8,
       "ready": false
     },
     "shoulders": {
@@ -4389,15 +4389,15 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 31,
-      "readyInHours": 1,
+      "pct": 30,
+      "readyInHours": 0.5,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 31,
-          "readyInHours": 1,
+          "pct": 30,
+          "readyInHours": 0.5,
           "ready": false
         }
       ]
@@ -4405,14 +4405,14 @@
     "Back": {
       "section": "Back",
       "pct": 79,
-      "readyInHours": 57.9,
+      "readyInHours": 57.8,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 79,
-          "readyInHours": 57.9,
+          "readyInHours": 57.8,
           "ready": false
         }
       ]
@@ -5553,9 +5553,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-12T06:13:21.500Z",
+    "readyAt": "2026-08-12T06:50:30.296Z",
     "neverLogged": false,
-    "daysSince": 17.8,
+    "daysSince": 17.9,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -5707,7 +5707,7 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 17.8
+        "daysSince": 17.9
       },
       {
         "section": "Shoulders",
@@ -5723,14 +5723,14 @@
       },
       {
         "section": "Chest",
-        "fatigue": 31,
-        "readyInHours": 1,
+        "fatigue": 30,
+        "readyInHours": 0.5,
         "daysSince": 3.6
       },
       {
         "section": "Back",
         "fatigue": 79,
-        "readyInHours": 57.9,
+        "readyInHours": 57.8,
         "daysSince": 0
       }
     ],

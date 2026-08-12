@@ -11,12 +11,13 @@
     {"time": "06:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:15", "name": "Pre-workout snack — Protein Captain Crunch cereal (iHerb)", "category": "food", "qty": "0.5 serving (1/4 cup, ~18g)", "kcal": 70, "protein_g": 5.5, "carbs_g": 7.5, "fat_g": 2.5, "fiber_g": 3, "time_approx": true, "note": "user-provided nutrition label (140kcal/36g serving, 11g protein, 15g carb, 6g fiber, 5g fat, 0g sugar per full 1/2 cup serving), scaled to 0.5 serving. First time logged. Also has 1.65mg iron, 70mg calcium (not tracked in sperm-priority micros)."},
     {"time": "08:15", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
-    {"time": "09:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "09:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:40", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
@@ -32,7 +33,8 @@
     "~07:15 (time not given, approximated) pre-workout snack: 0.5 serving Protein Captain Crunch cereal (iHerb) — user-provided label, first time logged.",
     "07:15 Back workout: Diverging Seated Row 100kg×4×6 (new max weight, but lower total volume than the 97kg×4×8 best — not a volume PR); Dumbbell Pullover 20kg×4×10 (new PR); Reverse Incline DB Row 26kg each×4×10 (new PR, +1 rep); Dead Hang 35s+30s+25s (new PR, 90s total vs 75s best). 3 new PRs. Mirrored to data.js WORKOUTS/SNAPSHOT and workouts.json.",
     "08:15 vanilla protein yogurt (1 cup, 200g, 20g protein) — same reference as prior entries.",
-    "09:00 single espresso (45ml, 1 caffeine shot) — 3 total today."
+    "09:00 single espresso (45ml, 1 caffeine shot) — 3 total today.",
+    "09:40 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
   ],
-  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55, a pre-workout snack (Protein Captain Crunch), a Back workout at 07:15 (3 new PRs: Dumbbell Pullover, Reverse Incline DB Row, Dead Hang), a vanilla protein yogurt at 08:15, and another espresso at 09:00 (caffeine_shots: 3)."
+  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55, a pre-workout snack (Protein Captain Crunch), a Back workout at 07:15 (3 new PRs: Dumbbell Pullover, Reverse Incline DB Row, Dead Hang), a vanilla protein yogurt at 08:15, another espresso at 09:00, and the Mayven multivitamin gummies at 09:40 (caffeine_shots: 3)."
 }
