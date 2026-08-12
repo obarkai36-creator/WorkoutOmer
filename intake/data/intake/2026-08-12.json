@@ -31,17 +31,19 @@
     {"time": "19:30", "name": "Dinner — salad (lettuce, red onion, cherry tomatoes, baby mozzarella), 65% eaten", "category": "food", "qty": "0.65 of the recipe (1 lettuce head, 1 small red onion, 30 cherry tomatoes, 90g baby mozzarella)", "kcal": 265, "protein_g": 16.43, "carbs_g": 21.13, "fat_g": 13.33, "fiber_g": 6.62, "time_approx": true, "note": "per-ingredient estimate scaled to the 65% portion actually eaten. Credits ~8.58mg lycopene, ~46.8mg vitamin C, ~50.7mcg folate DFE."},
     {"time": "19:30", "name": "Dinner — maple-balsamic-mustard vinaigrette (weighed), 65% eaten", "category": "food", "qty": "0.65 of 20g olive oil + 15g maple syrup + 15g dijon mustard + 13g balsamic glaze + 35g lemon juice + salt", "kcal": 176, "protein_g": 0.43, "carbs_g": 14.15, "fat_g": 13.33, "fiber_g": 0, "time_approx": true, "note": "precisely-weighed version of the saved Maple-Balsamic Mustard Vinaigrette reference — computed directly from standard per-ingredient rates rather than the rough ~25ml estimate. Credits ~1.87mg vitamin E (olive oil), ~8.65mg vitamin C (lemon juice)."},
     {"time": "20:00", "name": "Dark chocolate chips", "category": "food", "qty": "5 chips (~2.5 g)", "kcal": 14, "protein_g": 0.18, "carbs_g": 1.13, "fat_g": 0.95, "fiber_g": 0.25, "time_approx": true, "note": "saved reference (~70% dark chocolate baking chip, ~550kcal/100g)"},
-    {"time": "20:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true}
+    {"time": "20:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
+    {"time": "21:20", "name": "Watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.6, "fiber_g": 1.2, "note": "standard reference values; credits ~12.6mg lycopene, ~24.3mg vitamin C"},
+    {"time": "21:20", "name": "Nacho Cheese Protein Puffs (TPI Foods)", "category": "food", "qty": "a handful (~15g, 0.5 serving)", "kcal": 65, "protein_g": 10.5, "carbs_g": 1, "fat_g": 2, "fiber_g": 0, "note": "adopted recipe (intake/recipes/tpi_nacho_cheese_protein_puffs.json), label-verified (130kcal/21p/2c/4f per 30g serving). 'Handful' assumed as half a serving (~15g) — flag if that's off. Credits ~28IU vitamin D."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.2,
     "selenium_mcg": 51.8,
     "folate_mcg_dfe": 189.3,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 72.85,
-    "vitamin_d_iu": 0,
+    "vitamin_c_mg": 97.15,
+    "vitamin_d_iu": 28,
     "vitamin_e_mg": 1.98,
-    "lycopene_mg": 9.82
+    "lycopene_mg": 22.42
   },
   "caffeine_shots": 5,
   "assumptions": [
@@ -61,7 +63,9 @@
     "16:08 3 red grapes (same per-grape reference as prior entries).",
     "16:12 0.5 Quest Nutrition Oatmeal Chocolate Chip protein bar (~30g, web-verified label). First time logged.",
     "15:30 ejaculation event (partnered, full intercourse) — logged to ejaculation.json, not an intake item. Backfilled after the fact.",
-    "19:30 (no exact time given, placeholder) dinner: 2 Angel Pita Pro + 4 yellow cheese slices 5% fat + 1 tsp Simfonia cheese spread + an olive oil spray on the pitas + a salad (1 lettuce head, 1 small red onion, 30 cherry tomatoes, 90g baby mozzarella, 65% eaten) with a precisely-weighed maple-balsamic-mustard vinaigrette (20g olive oil, 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt), also scaled to 65%. This is a more precise version of the saved Maple-Balsamic Mustard Vinaigrette reference (foods.json), computed directly from the given gram weights this time."
+    "19:30 (no exact time given, placeholder) dinner: 2 Angel Pita Pro + 4 yellow cheese slices 5% fat + 1 tsp Simfonia cheese spread + an olive oil spray on the pitas + a salad (1 lettuce head, 1 small red onion, 30 cherry tomatoes, 90g baby mozzarella, 65% eaten) with a precisely-weighed maple-balsamic-mustard vinaigrette (20g olive oil, 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt), also scaled to 65%. This is a more precise version of the saved Maple-Balsamic Mustard Vinaigrette reference (foods.json), computed directly from the given gram weights this time.",
+    "20:00 5 dark chocolate chips (~2.5g, saved reference) + 5g creatine monohydrate (zero kcal/macros).",
+    "21:20 300g watermelon (standard reference; credits ~12.6mg lycopene, ~24.3mg vitamin C) + a handful (~15g, assumed 0.5 serving) of Nacho Cheese Protein Puffs (TPI Foods) — adopted recipe, label-verified. Credits ~28IU vitamin D."
   ],
-  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55, a pre-workout snack (Protein Captain Crunch), a Back workout at 07:15 (3 new PRs: Dumbbell Pullover, Reverse Incline DB Row, Dead Hang), a vanilla protein yogurt at 08:15, another espresso at 09:00, the Mayven multivitamin gummies at 09:40, a pecan/tomato/cheese snack at 11:10, lunch at 13:00 (chicken stir fry, BBQ meatballs, a bite of spelt pasta, dark chocolate chips), omega-3 at 13:45, another double espresso at 15:25, an ejaculation event (partnered) at 15:30, 3 red grapes at 16:08, half a Quest protein bar at 16:12, and dinner at 19:30 (Angel Pita Pro, yellow cheese, Simfonia, olive oil, salad with weighed vinaigrette), and dark chocolate chips + creatine at 20:00 (caffeine_shots: 5)."
+  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55, a pre-workout snack (Protein Captain Crunch), a Back workout at 07:15 (3 new PRs: Dumbbell Pullover, Reverse Incline DB Row, Dead Hang), a vanilla protein yogurt at 08:15, another espresso at 09:00, the Mayven multivitamin gummies at 09:40, a pecan/tomato/cheese snack at 11:10, lunch at 13:00 (chicken stir fry, BBQ meatballs, a bite of spelt pasta, dark chocolate chips), omega-3 at 13:45, another double espresso at 15:25, an ejaculation event (partnered) at 15:30, 3 red grapes at 16:08, half a Quest protein bar at 16:12, and dinner at 19:30 (Angel Pita Pro, yellow cheese, Simfonia, olive oil, salad with weighed vinaigrette), dark chocolate chips + creatine at 20:00, and watermelon + Nacho Cheese Protein Puffs at 21:20 (caffeine_shots: 5)."
 }
