@@ -5,7 +5,11 @@
   "workout_today": false,
   "workout_summary": null,
   "_status": "Day just opened — sleep logged.",
-  "items": [],
+  "items": [
+    {"time": "06:50", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "06:50", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "06:55", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,10 +20,12 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:50-06:30, 6.67h — below the 7-9h target band, one continuous stretch.",
-    "Dental retainers worn last night (2026-08-11) — logged to retainers.json."
+    "Dental retainers worn last night (2026-08-11) — logged to retainers.json.",
+    "06:50 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "06:55 double espresso (2 caffeine shots)."
   ],
-  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn."
+  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55 (caffeine_shots: 2)."
 }
