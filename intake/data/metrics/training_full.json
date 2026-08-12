@@ -1,5 +1,5 @@
 {
-  "now": 1786531399633,
+  "now": 1786537536918,
   "workouts": [
     {
       "datetime": "2026-08-12T07:15",
@@ -4293,15 +4293,15 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 74,
-      "readyInHours": 54.3,
+      "pct": 72,
+      "readyInHours": 52.6,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 16,
+      "pct": 15,
       "readyInHours": 0,
       "ready": true
     },
@@ -4309,15 +4309,15 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 50,
-      "readyInHours": 20.7,
+      "pct": 48,
+      "readyInHours": 18.9,
       "ready": false
     },
     "triceps": {
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -4325,8 +4325,8 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 44,
-      "readyInHours": 11.6,
+      "pct": 42,
+      "readyInHours": 9.9,
       "ready": false
     },
     "quads": {
@@ -4404,29 +4404,29 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 74,
-      "readyInHours": 54.3,
+      "pct": 72,
+      "readyInHours": 52.6,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 74,
-          "readyInHours": 54.3,
+          "pct": 72,
+          "readyInHours": 52.6,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 16,
+      "pct": 15,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 16,
+          "pct": 15,
           "readyInHours": 0,
           "ready": true
         }
@@ -4434,30 +4434,30 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 34,
-      "readyInHours": 20.7,
+      "pct": 32,
+      "readyInHours": 18.9,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 50,
-          "readyInHours": 20.7,
+          "pct": 48,
+          "readyInHours": 18.9,
           "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 44,
-          "readyInHours": 11.6,
+          "pct": 42,
+          "readyInHours": 9.9,
           "ready": false
         },
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         }
@@ -5553,9 +5553,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-12T10:43:19.633Z",
+    "readyAt": "2026-08-12T12:25:36.918Z",
     "neverLogged": false,
-    "daysSince": 18,
+    "daysSince": 18.1,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -5707,31 +5707,31 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 18
+        "daysSince": 18.1
       },
       {
         "section": "Shoulders",
-        "fatigue": 16,
+        "fatigue": 15,
         "readyInHours": 0,
-        "daysSince": 5
+        "daysSince": 5.1
       },
       {
         "section": "Arms",
-        "fatigue": 34,
-        "readyInHours": 20.7,
-        "daysSince": 0.1
+        "fatigue": 32,
+        "readyInHours": 18.9,
+        "daysSince": 0.2
       },
       {
         "section": "Chest",
         "fatigue": 28,
         "readyInHours": 0,
-        "daysSince": 3.8
+        "daysSince": 3.9
       },
       {
         "section": "Back",
-        "fatigue": 74,
-        "readyInHours": 54.3,
-        "daysSince": 0.1
+        "fatigue": 72,
+        "readyInHours": 52.6,
+        "daysSince": 0.2
       }
     ],
     "suggestedCount": 5,
@@ -5767,7 +5767,7 @@
       8,
       10
     ],
-    "daysSinceLast": 0.1,
+    "daysSinceLast": 0.2,
     "total": 45
   },
   "relstrength": {
