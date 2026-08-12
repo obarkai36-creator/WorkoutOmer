@@ -1,10 +1,10 @@
 {
   "date": "2026-08-12",
   "day_number": 46,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Back (07:15): Diverging Seated Row 100kg×4×6 (new max weight, +3kg vs 97kg, though lower total volume than the 97kg×4×8 best); Dumbbell Pullover 20kg×4×10 (new PR, +2kg vs 18kg×4×11); Reverse Incline DB Row 26kg each×4×10 (new PR, +1 rep at same weight); Dead Hang 35s+30s+25s (new PR, 90s total vs 75s best). 3 new PRs.",
-  "_status": "Back workout logged (3 new PRs).",
+  "_status": "Day complete. Back workout (3 new PRs) plus a full day of food/drink/supplements/sleep logged.",
   "items": [
     {"time": "06:50", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:50", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -33,10 +33,11 @@
     {"time": "20:00", "name": "Dark chocolate chips", "category": "food", "qty": "5 chips (~2.5 g)", "kcal": 14, "protein_g": 0.18, "carbs_g": 1.13, "fat_g": 0.95, "fiber_g": 0.25, "time_approx": true, "note": "saved reference (~70% dark chocolate baking chip, ~550kcal/100g)"},
     {"time": "20:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
     {"time": "21:20", "name": "Watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.6, "fiber_g": 1.2, "note": "standard reference values; credits ~12.6mg lycopene, ~24.3mg vitamin C"},
-    {"time": "21:20", "name": "Nacho Cheese Protein Puffs (TPI Foods)", "category": "food", "qty": "a handful (~15g, 0.5 serving)", "kcal": 65, "protein_g": 10.5, "carbs_g": 1, "fat_g": 2, "fiber_g": 0, "note": "adopted recipe (intake/recipes/tpi_nacho_cheese_protein_puffs.json), label-verified (130kcal/21p/2c/4f per 30g serving). 'Handful' assumed as half a serving (~15g) — flag if that's off. Credits ~28IU vitamin D."}
+    {"time": "21:20", "name": "Nacho Cheese Protein Puffs (TPI Foods)", "category": "food", "qty": "a handful (~15g, 0.5 serving)", "kcal": 65, "protein_g": 10.5, "carbs_g": 1, "fat_g": 2, "fiber_g": 0, "note": "adopted recipe (intake/recipes/tpi_nacho_cheese_protein_puffs.json), label-verified (130kcal/21p/2c/4f per 30g serving). 'Handful' assumed as half a serving (~15g) — flag if that's off. Credits ~28IU vitamin D."},
+    {"time": "23:45", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, taken alongside the Mayven gummies (verified reference, supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 5.2,
+    "zinc_mg": 20.2,
     "selenium_mcg": 51.8,
     "folate_mcg_dfe": 189.3,
     "omega3_epa_dha_mg": 1000,
@@ -65,7 +66,8 @@
     "15:30 ejaculation event (partnered, full intercourse) — logged to ejaculation.json, not an intake item. Backfilled after the fact.",
     "19:30 (no exact time given, placeholder) dinner: 2 Angel Pita Pro + 4 yellow cheese slices 5% fat + 1 tsp Simfonia cheese spread + an olive oil spray on the pitas + a salad (1 lettuce head, 1 small red onion, 30 cherry tomatoes, 90g baby mozzarella, 65% eaten) with a precisely-weighed maple-balsamic-mustard vinaigrette (20g olive oil, 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt), also scaled to 65%. This is a more precise version of the saved Maple-Balsamic Mustard Vinaigrette reference (foods.json), computed directly from the given gram weights this time.",
     "20:00 5 dark chocolate chips (~2.5g, saved reference) + 5g creatine monohydrate (zero kcal/macros).",
-    "21:20 300g watermelon (standard reference; credits ~12.6mg lycopene, ~24.3mg vitamin C) + a handful (~15g, assumed 0.5 serving) of Nacho Cheese Protein Puffs (TPI Foods) — adopted recipe, label-verified. Credits ~28IU vitamin D."
+    "21:20 300g watermelon (standard reference; credits ~12.6mg lycopene, ~24.3mg vitamin C) + a handful (~15g, assumed 0.5 serving) of Nacho Cheese Protein Puffs (TPI Foods) — adopted recipe, label-verified. Credits ~28IU vitamin D.",
+    "23:45 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55, a pre-workout snack (Protein Captain Crunch), a Back workout at 07:15 (3 new PRs: Dumbbell Pullover, Reverse Incline DB Row, Dead Hang), a vanilla protein yogurt at 08:15, another espresso at 09:00, the Mayven multivitamin gummies at 09:40, a pecan/tomato/cheese snack at 11:10, lunch at 13:00 (chicken stir fry, BBQ meatballs, a bite of spelt pasta, dark chocolate chips), omega-3 at 13:45, another double espresso at 15:25, an ejaculation event (partnered) at 15:30, 3 red grapes at 16:08, half a Quest protein bar at 16:12, and dinner at 19:30 (Angel Pita Pro, yellow cheese, Simfonia, olive oil, salad with weighed vinaigrette), dark chocolate chips + creatine at 20:00, and watermelon + Nacho Cheese Protein Puffs at 21:20 (caffeine_shots: 5)."
+  "status_note": "Day complete. Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55, a pre-workout snack (Protein Captain Crunch), a Back workout at 07:15 (3 new PRs: Dumbbell Pullover, Reverse Incline DB Row, Dead Hang), a vanilla protein yogurt at 08:15, another espresso at 09:00, the Mayven multivitamin gummies at 09:40, a pecan/tomato/cheese snack at 11:10, lunch at 13:00 (chicken stir fry, BBQ meatballs, a bite of spelt pasta, dark chocolate chips), omega-3 at 13:45, another double espresso at 15:25, an ejaculation event (partnered) at 15:30, 3 red grapes at 16:08, half a Quest protein bar at 16:12, dinner at 19:30 (Angel Pita Pro, yellow cheese, Simfonia, olive oil, salad with weighed vinaigrette), dark chocolate chips + creatine at 20:00, watermelon + Nacho Cheese Protein Puffs at 21:20, and Zinc Picolinate at 23:45 (caffeine_shots: 5)."
 }
