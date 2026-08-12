@@ -214,12 +214,12 @@ const SNAPSHOT = [
   { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 4, weight: 73, text: "73kg × 4×4" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
-  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
+  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 6, weight: 100, text: "100kg × 4×6" }, best: { sets: 4, reps: 8, weight: 97, text: "97kg × 4×8" } },
   { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 9, weight: 79, text: "79kg × 4×9" }, best: { sets: 4, reps: 9, weight: 79, text: "79kg × 4×9" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
-  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 9, weight: 52, text: "26kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 52, text: "26kg each × 4×9" } },
-  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 11, weight: 18, text: "18kg × 4×11" }, best: { sets: 4, reps: 11, weight: 18, text: "18kg × 4×11" } },
-  { name: "Dead Hang",               section: "Back", iso: true, latest: { sets: 2, seconds: 35, weight: 81.00, text: "35 sec × 2" }, best: { sets: 3, seconds: 25, weight: 81.00, text: "25 sec × 3" } },
+  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 10, weight: 52, text: "26kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 52, text: "26kg each × 4×10" } },
+  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
+  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
@@ -285,6 +285,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 12 Aug — Back (07:15)
+  {
+    datetime: "2026-08-12T07:15", note: "Back",
+    exercises: [
+      { name: "Diverging Seated Row",   sets: [ { reps: 6, weight: 100 }, { reps: 6, weight: 100 }, { reps: 6, weight: 100 }, { reps: 6, weight: 100 } ] },
+      { name: "Dumbbell Pullover",      sets: [ { reps: 10, weight: 20 }, { reps: 10, weight: 20 }, { reps: 10, weight: 20 }, { reps: 10, weight: 20 } ] },
+      { name: "Reverse Incline DB Row", sets: [ { reps: 10, weight: 52 }, { reps: 10, weight: 52 }, { reps: 10, weight: 52 }, { reps: 10, weight: 52 } ] },
+      { name: "Dead Hang",              sets: [ { seconds: 35 }, { seconds: 30 }, { seconds: 25 } ] },
+    ],
+  },
+
   // 10 Aug — Stationary bike, "lazy bike" level 3 (07:00)
   {
     datetime: "2026-08-10T07:00", note: "Stationary bike (\"lazy bike\", level 3) — 115 kcal per machine, avg speed 16.7km/h",
