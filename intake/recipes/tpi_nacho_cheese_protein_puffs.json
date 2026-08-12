@@ -1,0 +1,81 @@
+{
+  "id": "tpi_nacho_cheese_protein_puffs",
+  "name": "Nacho Cheese Protein Puffs (TPI Foods)",
+  "source": {
+    "type": "product",
+    "url": "https://www.tpifoods.com",
+    "author": "TPI Marketing / TPI Foods (code TNC 16126)",
+    "captured": "2026-08-09",
+    "notes": "Store-bought packaged snack. Values transcribed directly from the Nutrition Facts + amino-acid panels (photos 2026-08-09) — LABEL-VERIFIED, not estimated. Best before 06/10/2027. Contains milk (allergen)."
+  },
+  "servings": 10,
+  "serving_desc": "1 cup (30 g) — 10 servings per container",
+  "ingredients": [
+    {"item": "milk protein isolate", "qty": "—"},
+    {"item": "sunflower oil", "qty": "—"},
+    {"item": "salt", "qty": "—"},
+    {"item": "nonfat dry milk, whey protein solids, buttermilk powder/solids", "qty": "—"},
+    {"item": "cheddar cheese (pasteurized), sour cream solids", "qty": "—"},
+    {"item": "onion powder, garlic powder, chili, spices, paprika, cayenne", "qty": "—"},
+    {"item": "maltodextrin, citric acid, silicon dioxide, tricalcium phosphate, caseinate, annatto", "qty": "—"}
+  ],
+  "steps": ["Packaged snack — eat straight from the jar, or use as a salad/soup crouton-style topper."],
+  "per_serving": {
+    "kcal": 130,
+    "protein_g": 21,
+    "carbs_g": 2,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "micros": {
+      "saturated_fat_g": 1,
+      "cholesterol_mg": 10,
+      "sodium_mg": 390,
+      "added_sugar_g": 0,
+      "calcium_mg": 280,
+      "vitamin_d_mcg": 1.4,
+      "iron_mg": 0,
+      "potassium_mg": 60
+    }
+  },
+  "amino_acids_mg_per_serving": {
+    "alanine": 578, "arginine": 733, "aspartic_acid": 1441, "cysteine": 63,
+    "glutamic_acid": 4536, "glycine": 351, "histidine": 563, "isoleucine": 1002,
+    "leucine": 1821, "lysine": 1600, "methionine": 559, "phenylalanine": 998,
+    "proline": 2167, "serine": 1138, "threonine": 842, "tryptophan": 239,
+    "tyrosine": 1029, "valine": 1338
+  },
+  "confidence": "label-verified",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "An elite snack on macros: 21 g protein for 130 kcal is ~16 g protein per 100 kcal — about as protein-dense as food gets — with near-zero carb, no sugar, low fat, and a complete milk-protein amino profile (~1.8 g leucine/serving, right at the muscle-protein-synthesis threshold). Ideal for hitting protein on a cut. Two knocks keep it off a 9: ~390 mg sodium/serving (17% DV — watch multi-cup grazing) and it's ultra-processed with 0 fiber and no sperm-priority micros.",
+      "flags": ["extreme protein density (~16 g/100 kcal)", "complete protein, ~1.8 g leucine/serving", "near-zero carb / no sugar", "high sodium (390 mg/serving)", "ultra-processed, 0 fiber"],
+      "suggested_mods": [
+        "Great as a 1-cup protein-topper on a salad (adds crunch + protein without carbs) — the label's own suggestion, and it fixes the 0-fiber issue by pairing with greens",
+        "Cap at ~1–2 cups so sodium stays reasonable",
+        "Strong candidate to adopt as a go-to high-protein snack — say the word and I'll flag it"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 6,
+      "verdict": "A fine high-protein, high-calcium snack for her — 21 g complete protein plus 280 mg calcium (20% DV) and a little vitamin D, all genuine preconception positives. But it's ultra-processed, high-sodium, and brings no folate or iron, so it's a protein/calcium top-up rather than a nutrient-dense choice. No pregnancy safety flags (dairy is pasteurized). Note: contains milk.",
+      "prenatal_highlights": [
+        "21 g complete protein per 30 g serving",
+        "calcium 280 mg (20% DV) + vitamin D 1.4 mcg — bone/prenatal support"
+      ],
+      "safety_advisories": [
+        {"note": "Ultra-processed, high sodium (390 mg/serving) — fine in moderation; keep portions modest during pregnancy.", "swap": "pair with fresh veg; limit to 1 cup"}
+      ],
+      "suggested_mods": [
+        "Use as an occasional protein/calcium top-up, not a staple",
+        "Pair with fruit or veg to add the fiber/folate it lacks"
+      ]
+    }
+  },
+  "tags": ["snack", "product", "high-protein", "low-carb", "label-verified", "store-bought"],
+  "adopted": true,
+  "adopted_note": "Promoted to the rotation 2026-08-09 as a fixed go-to high-protein snack. Label-verified, so reuse the per-serving values directly (1 cup / 30 g = 130 kcal, 21 g protein). Standing guidance: cap at ~1–2 cups (sodium), ideally as a salad topper to add the fiber/veg it lacks.",
+  "created": "2026-08-09",
+  "updated": "2026-08-09",
+  "serving_g": 30
+}
