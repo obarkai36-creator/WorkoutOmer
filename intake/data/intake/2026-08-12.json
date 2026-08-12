@@ -15,14 +15,16 @@
     {"time": "09:40", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
     {"time": "11:10", "name": "Pecan", "category": "food", "qty": "1 pecan (~2 g, 2 halves)", "kcal": 14, "protein_g": 0.2, "carbs_g": 0.2, "fat_g": 1.4, "fiber_g": 0.2, "note": "standard pecan reference (~691kcal/100g), scaled from the saved 1-half rate; credits ~0.02mg vitamin E"},
     {"time": "11:10", "name": "Cherry tomato", "category": "food", "qty": "2 (~34 g)", "kcal": 6, "protein_g": 0.32, "carbs_g": 1.34, "fat_g": 0.08, "fiber_g": 0.4, "note": "standard tomato reference values; credits 0.88mg lycopene, 4.8mg vitamin C, 5.2mcg folate DFE"},
-    {"time": "11:10", "name": "Simfonia cheese with caramelized onion, 5% fat", "category": "food", "qty": "0.5 tsp (~3.25 g)", "kcal": 4, "protein_g": 0.3, "carbs_g": 0.2, "fat_g": 0.2, "fiber_g": 0, "note": "web-verified label values (foodsdictionary.co.il): 109kcal/100g, 8.7g protein/100g, 5.6g carb/100g, 5g fat/100g. First time logged, this flavor."}
+    {"time": "11:10", "name": "Simfonia cheese with caramelized onion, 5% fat", "category": "food", "qty": "0.5 tsp (~3.25 g)", "kcal": 4, "protein_g": 0.3, "carbs_g": 0.2, "fat_g": 0.2, "fiber_g": 0, "note": "web-verified label values (foodsdictionary.co.il): 109kcal/100g, 8.7g protein/100g, 5.6g carb/100g, 5g fat/100g. First time logged, this flavor."},
+    {"time": "13:00", "name": "Lunch — Chicken stir fry with glass noodles & vegetables", "category": "food", "qty": "380 g (1 serving)", "kcal": 408, "protein_g": 49.2, "carbs_g": 33, "fat_g": 8.5, "fiber_g": 2.8, "note": "recipe library entry (intake/recipes/chicken_stir_fry.json), same dish as the batch logged earlier this week — exact 1-serving portion. Credits ~49mcg selenium, ~2.4mg zinc, ~32mcg folate DFE, ~12mg vitamin C."},
+    {"time": "13:00", "name": "Lunch — chicken meatballs in barbecue sauce with caramelized onions", "category": "food", "qty": "60 g", "kcal": 126, "protein_g": 7.8, "carbs_g": 6, "fat_g": 7.2, "fiber_g": 0.3, "note": "first time logged — no saved recipe, estimated by combining a caramelized-onion chicken meatball reference (Aidells, ~188kcal/100g per web lookup) with a barbecue sauce glaze (extra carbs/sugar); flagged as a rough estimate"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 105.2,
+    "zinc_mg": 5.2,
+    "selenium_mcg": 49,
+    "folate_mcg_dfe": 137.2,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 4.8,
+    "vitamin_c_mg": 16.8,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0.02,
     "lycopene_mg": 0.88
@@ -38,7 +40,8 @@
     "08:15 vanilla protein yogurt (1 cup, 200g, 20g protein) — same reference as prior entries.",
     "09:00 single espresso (45ml, 1 caffeine shot) — 3 total today.",
     "09:40 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
-    "11:10 taste-size snack: 1 pecan + 2 cherry tomatoes + 0.5 tsp Simfonia cheese with caramelized onion (5% fat, web-verified label — foodsdictionary.co.il)."
+    "11:10 taste-size snack: 1 pecan + 2 cherry tomatoes + 0.5 tsp Simfonia cheese with caramelized onion (5% fat, web-verified label — foodsdictionary.co.il).",
+    "13:00 lunch: 380g (1 full serving) of the Chicken stir fry with glass noodles recipe (intake/recipes/chicken_stir_fry.json — same dish logged earlier this week) + 60g chicken meatballs in barbecue sauce with caramelized onions (no saved recipe, first time logged, estimated from a caramelized-onion chicken meatball reference plus a BBQ glaze; flagged)."
   ],
-  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55, a pre-workout snack (Protein Captain Crunch), a Back workout at 07:15 (3 new PRs: Dumbbell Pullover, Reverse Incline DB Row, Dead Hang), a vanilla protein yogurt at 08:15, another espresso at 09:00, the Mayven multivitamin gummies at 09:40, and a pecan/tomato/cheese snack at 11:10 (caffeine_shots: 3)."
+  "status_note": "Slept 6.67h (23:50-06:30) — below the 7-9h target band. Retainers worn. Allergy spray + pill at 06:50, a double espresso at 06:55, a pre-workout snack (Protein Captain Crunch), a Back workout at 07:15 (3 new PRs: Dumbbell Pullover, Reverse Incline DB Row, Dead Hang), a vanilla protein yogurt at 08:15, another espresso at 09:00, the Mayven multivitamin gummies at 09:40, a pecan/tomato/cheese snack at 11:10, and lunch at 13:00 (chicken stir fry, BBQ meatballs) (caffeine_shots: 3)."
 }
