@@ -1,10 +1,10 @@
 {
   "date": "2026-08-13",
   "day_number": 47,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "_status": "Day complete. Full day of food/drink/supplements/sleep logged, no workout today.",
   "items": [
     {"time": "07:05", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:05", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -26,10 +26,11 @@
     {"time": "19:30", "name": "Dinner — eggs, sunny side up", "category": "food", "qty": "2", "kcal": 180, "protein_g": 12, "carbs_g": 1, "fat_g": 14, "fiber_g": 0, "time_approx": true, "note": "saved reference"},
     {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "30 g", "kcal": 92, "protein_g": 5.3, "carbs_g": 1.6, "fat_g": 7.6, "fiber_g": 0, "time_approx": true, "note": "same per-gram rate as prior Simfonia entries, larger-than-usual portion"},
     {"time": "19:30", "name": "Dinner — watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.6, "fiber_g": 1.2, "time_approx": true, "note": "standard reference values; credits ~12.6mg lycopene, ~24.3mg vitamin C"},
-    {"time": "19:35", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — PM dose of the 2x/day spray, confirmed taken right after dinner"}
+    {"time": "19:35", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — PM dose of the 2x/day spray, confirmed taken right after dinner"},
+    {"time": "23:23", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, taken alongside the Mayven gummies (verified reference, supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 17.8,
     "selenium_mcg": 95,
     "folate_mcg_dfe": 206,
     "omega3_epa_dha_mg": 1000,
@@ -52,7 +53,8 @@
     "15:15 1 yellow cheese slice 5% fat (~25g, same per-100g rate as prior entries) + single espresso (40ml, 1 caffeine shot) — 3 total today.",
     "16:00 1 medium green apple (~180g, saved reference).",
     "19:30 dinner: 2 Angel Pita Pro + 2 yellow cheese slices 5% fat + 2 sunny side up eggs + 30g Simfonia cheese spread + 300g watermelon. All saved/standard references.",
-    "19:35 PM allergy spray (Rhinolast) confirmed taken, right after dinner — zero kcal/macros. Both allergy doses done today."
+    "19:35 PM allergy spray (Rhinolast) confirmed taken, right after dinner — zero kcal/macros. Both allergy doses done today.",
+    "23:23 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Slept 6.33h (00:15-06:35) — below the 7-9h target band. Allergy spray + pill at 07:05, an espresso at 08:25, breakfast at 09:00 (yellow cheese, cherry tomatoes), the Mayven multivitamin gummies at 09:35, a vanilla protein yogurt + Brazil nut snack at 10:30, lunch at 12:15 (900g build-your-own salad plus yellow cheese), another espresso at 12:55, omega-3 at 13:45, a yellow cheese + espresso snack at 15:15, a green apple at 16:00, dinner at 19:30 (Angel Pita Pro, yellow cheese, sunny side up eggs, Simfonia, watermelon), and the PM allergy spray at 19:35 (caffeine_shots: 3)."
+  "status_note": "Day complete. Slept 6.33h (00:15-06:35) — below the 7-9h target band. Allergy spray + pill at 07:05, an espresso at 08:25, breakfast at 09:00 (yellow cheese, cherry tomatoes), the Mayven multivitamin gummies at 09:35, a vanilla protein yogurt + Brazil nut snack at 10:30, lunch at 12:15 (900g build-your-own salad plus yellow cheese), another espresso at 12:55, omega-3 at 13:45, a yellow cheese + espresso snack at 15:15, a green apple at 16:00, dinner at 19:30 (Angel Pita Pro, yellow cheese, sunny side up eggs, Simfonia, watermelon), the PM allergy spray at 19:35, and Zinc Picolinate at 23:23 (caffeine_shots: 3)."
 }
