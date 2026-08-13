@@ -16,19 +16,22 @@
     {"time": "10:30", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "time_approx": true, "note": "standard reference, ~95mcg selenium/nut"},
     {"time": "12:15", "name": "Lunch — build-your-own salad (Ta'am HaPri VeHayerek, Wolt receipt)", "category": "food", "qty": "900 g total (cherry tomatoes, cucumber, red onion, white/purple cabbage, cauliflower antipasti, sweet potato antipasti, hard-boiled egg, baby mozzarella, avocado, an unidentified topping \"ג'עלה\", yogurt-herb dressing, 2x lemon)", "kcal": 693, "protein_g": 28.5, "carbs_g": 68.3, "fat_g": 35.7, "fiber_g": 15.1, "time_approx": true, "note": "receipt gives ingredients but no per-item weights — distributed the stated 900g total across all named components using standard per-100g references, first time logged, flagged as a rough composite estimate. The \"ג'עלה\" topping (~4 ILS tier, same as the egg) is unidentified — estimated generically as a small granola/seed-type topping; please clarify what it actually is for a more accurate log next time. Credits ~3.9mg lycopene, ~28.8mg vitamin C, ~55mcg folate DFE, ~1.5mg vitamin E (avocado + egg)."},
     {"time": "12:15", "name": "Lunch — Tnuva Emek Light yellow cheese, 9% fat (side)", "category": "food", "qty": "3 slices (~75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "time_approx": true, "note": "verified reference (50kcal/25g slice), home side alongside the delivered salad"},
-    {"time": "12:55", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "12:55", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:15", "name": "Yellow cheese, 5% fat", "category": "food", "qty": "1 slice (~25 g)", "kcal": 35, "protein_g": 7, "carbs_g": 0, "fat_g": 1.25, "fiber_g": 0, "note": "same per-100g rate as prior 5% yellow cheese entries"},
+    {"time": "15:15", "name": "Espresso", "category": "drink", "qty": "1 shot (40 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 95,
     "folate_mcg_dfe": 206,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 76.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 1.5,
     "lycopene_mg": 12.7
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 00:15-06:35, 6.33h — below the 7-9h target band, one continuous stretch.",
     "07:05 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
@@ -37,7 +40,9 @@
     "09:35 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "~10:30 (time not given, approximated) vanilla protein yogurt (1 cup, 200g, 20g protein) + 1 Brazil nut (~95mcg selenium).",
     "~12:15 lunch from a Wolt receipt (Ta'am HaPri VeHayerek salad bar): a 900g build-your-own salad (cherry tomatoes, cucumber, red onion, cabbage, cauliflower + sweet potato antipasti, hard-boiled egg, baby mozzarella, avocado, an unidentified \"ג'עלה\" topping, yogurt-herb dressing, lemon) + 3 yellow cheese slices 9% as a home side. Ingredient weights within the 900g total are estimated, not itemized on the receipt — flagged, especially the unidentified topping.",
-    "12:55 single espresso (45ml, 1 caffeine shot) — 2 total today."
+    "12:55 single espresso (45ml, 1 caffeine shot) — 2 total today.",
+    "13:45 omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits today's omega-3 target.",
+    "15:15 1 yellow cheese slice 5% fat (~25g, same per-100g rate as prior entries) + single espresso (40ml, 1 caffeine shot) — 3 total today."
   ],
-  "status_note": "Slept 6.33h (00:15-06:35) — below the 7-9h target band. Allergy spray + pill at 07:05, an espresso at 08:25, breakfast at 09:00 (yellow cheese, cherry tomatoes), the Mayven multivitamin gummies at 09:35, a vanilla protein yogurt + Brazil nut snack at 10:30, lunch at 12:15 (900g build-your-own salad plus yellow cheese), and another espresso at 12:55 (caffeine_shots: 2)."
+  "status_note": "Slept 6.33h (00:15-06:35) — below the 7-9h target band. Allergy spray + pill at 07:05, an espresso at 08:25, breakfast at 09:00 (yellow cheese, cherry tomatoes), the Mayven multivitamin gummies at 09:35, a vanilla protein yogurt + Brazil nut snack at 10:30, lunch at 12:15 (900g build-your-own salad plus yellow cheese), another espresso at 12:55, omega-3 at 13:45, and a yellow cheese + espresso snack at 15:15 (caffeine_shots: 3)."
 }
