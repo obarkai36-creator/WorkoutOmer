@@ -931,7 +931,9 @@ def build(target_date, unified=False):
         excl_note = f" ({excluded7} day(s) excluded — not tracked/qualitative)" if excluded7 else ""
         rolling_html = f"""
       <div class="small muted" style="margin-top:12px">7-day avg ({len(days7_for_avg)} day(s)): <b style="color:var(--text)">{avg7_kcal:g} kcal</b> &middot; <b style="color:var(--text)">{avg7_protein:g}g protein</b>{excl_note}</div>
-      {sparkline(sorted([{"date": d["date"], "kcal": day_tot(d, "kcal")} for d in days14], key=lambda e: e["date"]), "kcal", baseline=t["calories_kcal"], baseline_label=f"target {t['calories_kcal']:g}")}"""
+      {sparkline(sorted([{"date": d["date"], "kcal": day_tot(d, "kcal")} for d in days14], key=lambda e: e["date"]), "kcal", baseline=t["calories_kcal"], baseline_label=f"target {t['calories_kcal']:g}")}
+      <div class="small muted" style="margin-top:10px">Protein (g), 14-day trend</div>
+      {sparkline(sorted([{"date": d["date"], "protein_g": day_tot(d, "protein_g")} for d in days14], key=lambda e: e["date"]), "protein_g", baseline=t["protein_g"], baseline_label=f"target {t['protein_g']:g}")}"""
     else:
         rolling_html = ""
 

@@ -128,23 +128,17 @@
       describe it in `assumptions`/`status_note`, matching existing
       practice.
 - Dental retainers (added 2026-08-10, starting that night; goal is **2x/week**,
-  not nightly): log usage in `intake/data/metrics/retainers.json`
-  (`entries`: date/worn/note) whenever the user reports wearing (or
-  skipping) them — same pattern as `sleep.json`, not logged as an intake
-  item. At EOD close-out (when the user signals EOD), run two checks
-  against the trailing days before today's date (the original "3
-  consecutive nights" framing didn't fit a 2x/week goal — at 2x/week the
-  *expected* healthy gap between uses is already ~3-4 nights, so a flat
-  3-night trigger would false-positive on a normal, on-pace week):
-    - Weekly pace: trailing 7 days — if fewer than 2 `worn: true` entries,
-      flag as behind pace on the 2x/week goal.
-    - Overdue backstop: if it's been more than 5 nights since the last
-      `worn: true` entry (or no entry ever exists), flag as overdue
-      regardless of the weekly count — catches both uses clustering early
-      in a week followed by a long gap.
-  This check is tied to the user-initiated EOD signal, not a wall-clock
-  Routine (no separate automation needed, unlike the 16:00 macro-update
-  rule above).
+  not nightly; reverted 2026-08-13 to the original flat trigger after
+  briefly trying a weekly-pace/overdue-backstop version — see below): log
+  usage in `intake/data/metrics/retainers.json` (`entries`: date/worn/note)
+  whenever the user reports wearing (or skipping) them — same pattern as
+  `sleep.json`, not logged as an intake item. **Don't proactively ask
+  whether they were worn each EOD** — only log when the user actually
+  volunteers it. At EOD close-out (when the user signals EOD, i.e. "before
+  bed"), check the trailing nights: if the last 3 consecutive tracked
+  nights all show `worn: false` (or are missing), note it once. Otherwise
+  say nothing — no daily status chatter either way. This check is tied to
+  the user-initiated EOD signal, not a wall-clock Routine.
 - Omega-3 supplement compliance (added 2026-08-11): the unified dashboard's
   supplement-compliance check (`build_supplement_check` in
   generate_dashboard.py) no longer flags the Omega-3 fish-oil softgel as a
