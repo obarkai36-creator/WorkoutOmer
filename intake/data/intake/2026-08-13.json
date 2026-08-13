@@ -11,11 +11,13 @@
     {"time": "08:25", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "09:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (~75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "note": "verified reference (50kcal/25g slice)"},
     {"time": "09:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20 (~340 g)", "kcal": 61, "protein_g": 3.1, "carbs_g": 13.3, "fat_g": 0.7, "fiber_g": 4, "note": "standard tomato reference values; credits 8.8mg lycopene, 47.6mg vitamin C, 51.0mcg folate DFE"},
-    {"time": "09:35", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
+    {"time": "09:35", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
+    {"time": "10:30", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
+    {"time": "10:30", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "time_approx": true, "note": "standard reference, ~95mcg selenium/nut"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "selenium_mcg": 95,
     "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 47.6,
@@ -29,7 +31,8 @@
     "07:05 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:25 single espresso (45ml, 1 caffeine shot).",
     "09:00 breakfast: 3 Tnuva Emek Light yellow cheese slices (verified reference) + 20 cherry tomatoes (~340g, standard reference). Tomatoes gave the day's first micros — lycopene 8.8mg, vitamin C 47.6mg, folate 51.0mcg DFE.",
-    "09:35 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
+    "09:35 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
+    "~10:30 (time not given, approximated) vanilla protein yogurt (1 cup, 200g, 20g protein) + 1 Brazil nut (~95mcg selenium)."
   ],
-  "status_note": "Slept 6.33h (00:15-06:35) — below the 7-9h target band. Allergy spray + pill at 07:05, an espresso at 08:25, breakfast at 09:00 (yellow cheese, cherry tomatoes), and the Mayven multivitamin gummies at 09:35 (caffeine_shots: 1)."
+  "status_note": "Slept 6.33h (00:15-06:35) — below the 7-9h target band. Allergy spray + pill at 07:05, an espresso at 08:25, breakfast at 09:00 (yellow cheese, cherry tomatoes), the Mayven multivitamin gummies at 09:35, and a vanilla protein yogurt + Brazil nut snack at 10:30 (caffeine_shots: 1)."
 }
