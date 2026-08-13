@@ -424,10 +424,15 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
   // READY_TOLERANCE_HOURS of each other. That window used to be exact-equality
   // only, which almost never fired (readyInHours is a float that's rarely
   // identical across sections), so the push/pull alert kept re-appearing
-  // without ever actually changing what got recommended. Widening it to a
-  // real tolerance (vs. 36-72h section recovery windows) lets the correction
-  // actually win recommendations, not just get logged as an alert.
-  const READY_TOLERANCE_HOURS = 24;
+  // without ever actually changing what got recommended. A first widening to
+  // 24h overshot badly, though: it let a section still 20+ hours from ready
+  // (e.g. trained yesterday, still fatigued) outrank one already at 0h/fully
+  // recovered, since both fell inside the same 24h band — exactly the
+  // "meaningfully less recovered" case this is supposed to never do. 6h (vs
+  // 36-72h section recovery windows) still lets the correction win between
+  // options that are genuinely close to ready, without overriding a fully
+  // recovered section in favor of one that plainly isn't.
+  const READY_TOLERANCE_HOURS = 6;
   const priority = { Legs: 0, Back: 1, Shoulders: 2, Chest: 3, Arms: 4 };
   if (bal && bal.pushPull != null) {
     if (bal.pushPull > 1.3) { priority.Back = -1; priority.Chest = 5; }
