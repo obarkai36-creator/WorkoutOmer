@@ -100,12 +100,17 @@ def bar(value, target, unit="", reverse_over=False, label=None):
       </div>"""
 
 
-def sparkline(entries, key, w=560, h=90, pad=8):
+def sparkline(entries, key, w=560, h=90, pad=8, baseline=None, baseline_label=None):
     pts = [(e["date"], e.get(key)) for e in entries if e.get(key) is not None]
     if len(pts) < 2:
         return "<div class='muted'>Not enough data yet.</div>"
     ys = [v for _, v in pts]
-    lo, hi = min(ys), max(ys)
+    # Baseline (e.g. a target/suggested value) is folded into the y-range so
+    # it always renders on-chart, even on a day where actual intake is far
+    # above or below it — otherwise the reference line could clip off the
+    # top/bottom and silently disappear.
+    range_vals = ys + ([baseline] if baseline is not None else [])
+    lo, hi = min(range_vals), max(range_vals)
     rng = (hi - lo) or 1
     n = len(pts)
     coords = []
@@ -118,7 +123,13 @@ def sparkline(entries, key, w=560, h=90, pad=8):
         f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="#38bdf8"/>' for x, y in coords
     )
     last = coords[-1]
+    baseline_svg = ""
+    if baseline is not None:
+        by = pad + (1 - (baseline - lo) / rng) * (h - 2 * pad)
+        label = f'<text x="{w - pad}" y="{by - 4:.1f}" text-anchor="end" font-size="11" fill="#f59e0b">{baseline_label or f"{baseline:g}"}</text>' if baseline_label else ""
+        baseline_svg = f"""<line x1="{pad}" y1="{by:.1f}" x2="{w - pad}" y2="{by:.1f}" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,4"/>{label}"""
     return f"""<svg viewBox="0 0 {w} {h}" width="100%" preserveAspectRatio="none" class="spark">
+      {baseline_svg}
       <polyline fill="none" stroke="#38bdf8" stroke-width="2" points="{poly}"/>
       {dots}
       <circle cx="{last[0]:.1f}" cy="{last[1]:.1f}" r="4.5" fill="#22c55e"/>
@@ -920,7 +931,7 @@ def build(target_date, unified=False):
         excl_note = f" ({excluded7} day(s) excluded — not tracked/qualitative)" if excluded7 else ""
         rolling_html = f"""
       <div class="small muted" style="margin-top:12px">7-day avg ({len(days7_for_avg)} day(s)): <b style="color:var(--text)">{avg7_kcal:g} kcal</b> &middot; <b style="color:var(--text)">{avg7_protein:g}g protein</b>{excl_note}</div>
-      {sparkline(sorted([{"date": d["date"], "kcal": day_tot(d, "kcal")} for d in days14], key=lambda e: e["date"]), "kcal")}"""
+      {sparkline(sorted([{"date": d["date"], "kcal": day_tot(d, "kcal")} for d in days14], key=lambda e: e["date"]), "kcal", baseline=t["calories_kcal"], baseline_label=f"target {t['calories_kcal']:g}")}"""
     else:
         rolling_html = ""
 
