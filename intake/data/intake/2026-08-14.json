@@ -18,7 +18,8 @@
     {"time": "13:00", "name": "Lunch — maple-balsamic-mustard vinaigrette (weighed), 65% eaten", "category": "food", "qty": "0.65 of 25g olive oil + 20g balsamic glaze + 15g maple syrup + 40g lemon juice + 10g dijon mustard + salt", "kcal": 217, "protein_g": 0.29, "carbs_g": 17.15, "fat_g": 16.46, "fiber_g": 0, "time_approx": true, "note": "same weighed-vinaigrette method as yesterday's dinner. Credits ~2.33mg vitamin E (olive oil), ~9.88mg vitamin C (lemon juice)."},
     {"time": "13:00", "name": "Lunch — arugula, added to the salad", "category": "food", "qty": "a handful (~20 g)", "kcal": 5, "protein_g": 0.52, "carbs_g": 0.74, "fat_g": 0.1, "fiber_g": 0.32, "time_approx": true, "note": "standard arugula reference (~25kcal/100g), first time logged, full handful assumed eaten (not scaled to the 65% salad portion). Credits ~19.4mcg folate DFE, ~3mg vitamin C."},
     {"time": "14:00", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
-    {"time": "17:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "post-workout, ~1h after the Legs session"}
+    {"time": "17:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "post-workout, ~1h after the Legs session"},
+    {"time": "15:30", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -30,7 +31,7 @@
     "vitamin_e_mg": 2.33,
     "lycopene_mg": 5.72
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:35-07:25, 7.83h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
     "07:58 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
@@ -38,7 +39,8 @@
     "08:45 Legendary Foods Protein Donuts, Chocolate Dipped (1 pack, 2 mini donuts, 61g) — saved recipe reference, label-verified.",
     "~13:00 lunch (time not given, approximated): 2 small pieces short rib (~30g, corrected down from an initial 120g overestimate; first time logged, estimated) + 2 Agami Pita Pro spelt + 4 yellow cheese slices 5% fat + 30g Simfonia + a salad (lettuce, red onion, cherry tomatoes, baby mozzarella, 65% eaten, plus a handful of arugula added) with a precisely-weighed maple-balsamic-mustard vinaigrette (25g olive oil, 20g balsamic glaze, 15g maple syrup, 40g lemon juice, 10g dijon mustard, salt), also scaled to 65% — same method as yesterday's dinner.",
     "14:00 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
-    "17:45 creatine monohydrate, 5g — zero kcal/macros, post-workout dose ~1h after the 16:45 Legs session."
+    "17:45 creatine monohydrate, 5g — zero kcal/macros, post-workout dose ~1h after the 16:45 Legs session.",
+    "15:30 double espresso (2 more caffeine shots, 4 total for the day) — well before the 16:00 caffeine cutoff."
   ],
-  "status_note": "Slept 7.83h (23:35-07:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:58, a double espresso at 08:00, chocolate protein donuts at 08:45, lunch at 13:00 (short rib, spelt pita, yellow cheese, Simfonia, salad with arugula and weighed vinaigrette), a Legs session at 16:45 (1 new PR — Inner Thigh), Mayven multivitamin gummies at 14:00, and 5g creatine at 17:45 (caffeine_shots: 2)."
+  "status_note": "Slept 7.83h (23:35-07:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:58, a double espresso at 08:00, chocolate protein donuts at 08:45, lunch at 13:00 (short rib, spelt pita, yellow cheese, Simfonia, salad with arugula and weighed vinaigrette), a Legs session at 16:45 (1 new PR — Inner Thigh), Mayven multivitamin gummies at 14:00, 5g creatine at 17:45, and a second double espresso at 15:30 (caffeine_shots: 4)."
 }
