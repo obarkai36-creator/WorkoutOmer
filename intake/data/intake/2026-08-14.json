@@ -16,12 +16,13 @@
     {"time": "13:00", "name": "Lunch — Simfonia cheese spread, 5% fat", "category": "food", "qty": "30 g", "kcal": 92, "protein_g": 5.3, "carbs_g": 1.6, "fat_g": 7.6, "fiber_g": 0, "time_approx": true, "note": "same per-gram rate as prior Simfonia entries"},
     {"time": "13:00", "name": "Lunch — salad (lettuce, red onion, cherry tomatoes, baby mozzarella), 65% eaten", "category": "food", "qty": "0.65 of the recipe (1 lettuce head, 1 small red onion, 20 cherry tomatoes, 75g baby mozzarella)", "kcal": 217, "protein_g": 13.46, "carbs_g": 15.94, "fat_g": 10.89, "fiber_g": 5.21, "time_approx": true, "note": "per-ingredient estimate scaled to the 65% portion eaten. Credits ~5.72mg lycopene, ~30.94mg vitamin C, ~33.15mcg folate DFE."},
     {"time": "13:00", "name": "Lunch — maple-balsamic-mustard vinaigrette (weighed), 65% eaten", "category": "food", "qty": "0.65 of 25g olive oil + 20g balsamic glaze + 15g maple syrup + 40g lemon juice + 10g dijon mustard + salt", "kcal": 217, "protein_g": 0.29, "carbs_g": 17.15, "fat_g": 16.46, "fiber_g": 0, "time_approx": true, "note": "same weighed-vinaigrette method as yesterday's dinner. Credits ~2.33mg vitamin E (olive oil), ~9.88mg vitamin C (lemon juice)."},
-    {"time": "13:00", "name": "Lunch — arugula, added to the salad", "category": "food", "qty": "a handful (~20 g)", "kcal": 5, "protein_g": 0.52, "carbs_g": 0.74, "fat_g": 0.1, "fiber_g": 0.32, "time_approx": true, "note": "standard arugula reference (~25kcal/100g), first time logged, full handful assumed eaten (not scaled to the 65% salad portion). Credits ~19.4mcg folate DFE, ~3mg vitamin C."}
+    {"time": "13:00", "name": "Lunch — arugula, added to the salad", "category": "food", "qty": "a handful (~20 g)", "kcal": 5, "protein_g": 0.52, "carbs_g": 0.74, "fat_g": 0.1, "fiber_g": 0.32, "time_approx": true, "note": "standard arugula reference (~25kcal/100g), first time logged, full handful assumed eaten (not scaled to the 65% salad portion). Credits ~19.4mcg folate DFE, ~3mg vitamin C."},
+    {"time": "14:00", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 52.55,
+    "folate_mcg_dfe": 152.55,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 43.82,
     "vitamin_d_iu": 0,
@@ -34,7 +35,8 @@
     "07:58 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:00 double espresso (2 caffeine shots).",
     "08:45 Legendary Foods Protein Donuts, Chocolate Dipped (1 pack, 2 mini donuts, 61g) — saved recipe reference, label-verified.",
-    "~13:00 lunch (time not given, approximated): 2 small pieces short rib (~30g, corrected down from an initial 120g overestimate; first time logged, estimated) + 2 Agami Pita Pro spelt + 4 yellow cheese slices 5% fat + 30g Simfonia + a salad (lettuce, red onion, cherry tomatoes, baby mozzarella, 65% eaten, plus a handful of arugula added) with a precisely-weighed maple-balsamic-mustard vinaigrette (25g olive oil, 20g balsamic glaze, 15g maple syrup, 40g lemon juice, 10g dijon mustard, salt), also scaled to 65% — same method as yesterday's dinner."
+    "~13:00 lunch (time not given, approximated): 2 small pieces short rib (~30g, corrected down from an initial 120g overestimate; first time logged, estimated) + 2 Agami Pita Pro spelt + 4 yellow cheese slices 5% fat + 30g Simfonia + a salad (lettuce, red onion, cherry tomatoes, baby mozzarella, 65% eaten, plus a handful of arugula added) with a precisely-weighed maple-balsamic-mustard vinaigrette (25g olive oil, 20g balsamic glaze, 15g maple syrup, 40g lemon juice, 10g dijon mustard, salt), also scaled to 65% — same method as yesterday's dinner.",
+    "14:00 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
   ],
-  "status_note": "Slept 7.83h (23:35-07:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:58, a double espresso at 08:00, chocolate protein donuts at 08:45, and lunch at 13:00 (short rib, spelt pita, yellow cheese, Simfonia, salad with arugula and weighed vinaigrette) (caffeine_shots: 2)."
+  "status_note": "Slept 7.83h (23:35-07:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:58, a double espresso at 08:00, chocolate protein donuts at 08:45, lunch at 13:00 (short rib, spelt pita, yellow cheese, Simfonia, salad with arugula and weighed vinaigrette), and the Mayven multivitamin gummies at 14:00 (caffeine_shots: 2)."
 }
