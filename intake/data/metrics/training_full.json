@@ -1,6 +1,158 @@
 {
-  "now": 1786706087355,
+  "now": 1786718292124,
   "workouts": [
+    {
+      "datetime": "2026-08-14T16:45",
+      "note": "Legs",
+      "exercises": [
+        {
+          "name": "Calf Raises Machine",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 81
+            },
+            {
+              "reps": 8,
+              "weight": 81
+            },
+            {
+              "reps": 8,
+              "weight": 81
+            },
+            {
+              "reps": 8,
+              "weight": 81
+            }
+          ],
+          "load": 2592,
+          "top1RM": 102.6,
+          "topWeight": 81,
+          "muscles": {
+            "calves": 2592
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Angled Leg Press",
+          "sets": [
+            {
+              "reps": 7,
+              "weight": 202
+            },
+            {
+              "reps": 7,
+              "weight": 202
+            },
+            {
+              "reps": 7,
+              "weight": 202
+            },
+            {
+              "reps": 7,
+              "weight": 202
+            }
+          ],
+          "load": 5656,
+          "top1RM": 249.13333333333335,
+          "topWeight": 202,
+          "muscles": {
+            "quads": 5656,
+            "glutes": 2828
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Single-Leg Extensions",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 57
+            },
+            {
+              "reps": 6,
+              "weight": 57
+            },
+            {
+              "reps": 6,
+              "weight": 57
+            },
+            {
+              "reps": 6,
+              "weight": 57
+            }
+          ],
+          "load": 1368,
+          "top1RM": 68.39999999999999,
+          "topWeight": 57,
+          "muscles": {
+            "quads": 1368
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Inner Thigh",
+          "sets": [
+            {
+              "reps": 9,
+              "weight": 79
+            },
+            {
+              "reps": 9,
+              "weight": 79
+            },
+            {
+              "reps": 9,
+              "weight": 79
+            }
+          ],
+          "load": 2133,
+          "top1RM": 102.7,
+          "topWeight": 79,
+          "muscles": {
+            "adductors": 2133
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Outer Thigh",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 79
+            },
+            {
+              "reps": 10,
+              "weight": 79
+            },
+            {
+              "reps": 10,
+              "weight": 79
+            },
+            {
+              "reps": 10,
+              "weight": 79
+            }
+          ],
+          "load": 3160,
+          "top1RM": 105.33333333333333,
+          "topWeight": 79,
+          "muscles": {
+            "glutes": 2528,
+            "quads": 632
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1786725900000,
+      "muscleLoad": {
+        "calves": 2592,
+        "quads": 7656,
+        "glutes": 5356,
+        "adductors": 2133
+      },
+      "isAerobic": false
+    },
     {
       "datetime": "2026-08-12T07:15",
       "note": "Back",
@@ -4272,11 +4424,11 @@
     "biceps": 2940.8,
     "triceps": 5788,
     "forearms": 14970,
-    "quads": 14905.6,
+    "quads": 16264,
     "hamstrings": 7872,
     "glutes": 7996,
-    "adductors": 2472,
-    "calves": 8882,
+    "adductors": 2709,
+    "calves": 8130,
     "core": 14351.4,
     "cardio": 783
   },
@@ -4285,7 +4437,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 13,
+      "pct": 12,
       "readyInHours": 0,
       "ready": true
     },
@@ -4293,15 +4445,15 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 33,
-      "readyInHours": 5.8,
+      "pct": 31,
+      "readyInHours": 2.4,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -4309,7 +4461,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 15,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -4325,7 +4477,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "ready": true
     },
@@ -4333,9 +4485,9 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 47,
+      "readyInHours": 27.3,
+      "ready": false
     },
     "hamstrings": {
       "key": "hamstrings",
@@ -4349,25 +4501,25 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 67,
+      "readyInHours": 48.1,
+      "ready": false
     },
     "adductors": {
       "key": "adductors",
       "label": "Adductors",
       "section": "Legs",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 79,
+      "readyInHours": 38.5,
+      "ready": false
     },
     "calves": {
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 32,
+      "readyInHours": 2.5,
+      "ready": false
     },
     "core": {
       "key": "core",
@@ -4389,14 +4541,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 13,
+      "pct": 12,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 13,
+          "pct": 12,
           "readyInHours": 0,
           "ready": true
         }
@@ -4404,29 +4556,29 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 33,
-      "readyInHours": 5.8,
+      "pct": 31,
+      "readyInHours": 2.4,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 33,
-          "readyInHours": 5.8,
+          "pct": 31,
+          "readyInHours": 2.4,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 5,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         }
@@ -4434,14 +4586,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 15,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         },
@@ -4449,7 +4601,7 @@
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 9,
+          "pct": 8,
           "readyInHours": 0,
           "ready": true
         },
@@ -4465,44 +4617,44 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 45,
+      "readyInHours": 48.1,
       "muscles": [
         {
-          "key": "quads",
-          "label": "Quads",
+          "key": "adductors",
+          "label": "Adductors",
           "section": "Legs",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
-        },
-        {
-          "key": "hamstrings",
-          "label": "Hamstrings",
-          "section": "Legs",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 79,
+          "readyInHours": 38.5,
+          "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 67,
+          "readyInHours": 48.1,
+          "ready": false
         },
         {
-          "key": "adductors",
-          "label": "Adductors",
+          "key": "quads",
+          "label": "Quads",
           "section": "Legs",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 47,
+          "readyInHours": 27.3,
+          "ready": false
         },
         {
           "key": "calves",
           "label": "Calves",
+          "section": "Legs",
+          "pct": 32,
+          "readyInHours": 2.5,
+          "ready": false
+        },
+        {
+          "key": "hamstrings",
+          "label": "Hamstrings",
           "section": "Legs",
           "pct": 0,
           "readyInHours": 0,
@@ -4730,7 +4882,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 3,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Low Row",
@@ -4781,7 +4933,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell Pullover",
@@ -4798,7 +4950,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dead Hang",
@@ -4815,7 +4967,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Shoulders": [
@@ -5184,18 +5336,18 @@
         "name": "Calf Raises Machine",
         "section": "Legs",
         "iso": false,
-        "latestText": "76kg × 4×11",
+        "latestText": "81kg (70kg + 11kg frame) × 4×8",
         "bestText": "76kg × 4×11",
-        "latestVol": 3344,
+        "latestVol": 2592,
         "bestVol": 3344,
-        "pct": 100,
-        "latest1RM": 103.9,
+        "pct": 99,
+        "latest1RM": 102.6,
         "best1RM": 103.9,
         "metric": "1RM",
-        "isPR": true,
+        "isPR": false,
         "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "gap": 1,
+        "inToday": true
       },
       {
         "name": "Standing Calf Raises (Frame)",
@@ -5252,18 +5404,18 @@
         "name": "Angled Leg Press",
         "section": "Legs",
         "iso": false,
-        "latestText": "172kg × 4×5 (deload)",
+        "latestText": "202kg setup (70kg each side + 62kg frame) × 4×7",
         "bestText": "202kg setup (70kg each side + 62kg frame) × 4×7",
-        "latestVol": 3440,
+        "latestVol": 5656,
         "bestVol": 5656,
-        "pct": 81,
-        "latest1RM": 200.7,
+        "pct": 100,
+        "latest1RM": 249.1,
         "best1RM": 249.1,
         "metric": "1RM",
-        "isPR": false,
-        "belowPR": true,
-        "gap": 48,
-        "inToday": false
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": true
       },
       {
         "name": "Leg Extensions",
@@ -5297,7 +5449,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Leg Curls",
@@ -5331,24 +5483,24 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Inner Thigh",
         "section": "Legs",
         "iso": false,
-        "latestText": "79kg × 3×8",
-        "bestText": "79kg × 3×8",
-        "latestVol": 1896,
-        "bestVol": 1896,
+        "latestText": "79kg × 3×9",
+        "bestText": "79kg × 3×9",
+        "latestVol": 2133,
+        "bestVol": 2133,
         "pct": 100,
-        "latest1RM": 100.1,
-        "best1RM": 100.1,
+        "latest1RM": 102.7,
+        "best1RM": 102.7,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Glute Extension",
@@ -5496,44 +5648,44 @@
       "Arms": 37278.6,
       "Shoulders": 16728.6,
       "Back": 13959.9,
-      "Legs": 48191,
+      "Legs": 51000,
       "Core": 14351.4
     },
     "pushPull": 1.56,
-    "quadHam": 2.02,
+    "quadHam": 2.29,
     "hasCore": true
   },
   "trends": {
     "weeks": [
       {
         "label": "-5w",
-        "stress": 442,
-        "sessions": 5,
-        "acwr": 1.09
+        "stress": 354,
+        "sessions": 4,
+        "acwr": 0.87
       },
       {
         "label": "-4w",
-        "stress": 498,
+        "stress": 485,
         "sessions": 3,
-        "acwr": 1.19
+        "acwr": 1.17
       },
       {
         "label": "-3w",
         "stress": 572,
         "sessions": 4,
-        "acwr": 1.2
+        "acwr": 1.21
       },
       {
         "label": "-2w",
-        "stress": 657,
+        "stress": 645,
         "sessions": 3,
-        "acwr": 1.21
+        "acwr": 1.25
       },
       {
         "label": "-1w",
         "stress": 769,
         "sessions": 4,
-        "acwr": 1.23
+        "acwr": 1.24
       },
       {
         "label": "This wk",
@@ -5542,20 +5694,20 @@
         "acwr": 0.76
       }
     ],
-    "acute": 468,
-    "chronic": 617,
-    "acwr": 0.76,
-    "acwrZone": "detraining",
-    "sessions28": 15
+    "acute": 693,
+    "chronic": 670,
+    "acwr": 1.03,
+    "acwrZone": "ok",
+    "sessions28": 16
   },
   "recommendation": {
     "section": "Back",
-    "fatigue": 33,
-    "restHours": 5.8,
+    "fatigue": 31,
+    "restHours": 2.4,
     "readyNow": false,
-    "readyAt": "2026-08-14T17:02:47.355Z",
+    "readyAt": "2026-08-14T17:02:12.124Z",
     "neverLogged": false,
-    "daysSince": 2.2,
+    "daysSince": 2.3,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -5625,39 +5777,38 @@
       }
     ],
     "guidance": [
-      "Push is ahead of pull 1.56× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short.",
-      "Load ratio 0.76 has dipped — a normal, or even a slightly harder, session is fine."
+      "Push is ahead of pull 1.56× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short."
     ],
     "ranked": [
       {
         "section": "Back",
-        "fatigue": 33,
-        "readyInHours": 5.8,
-        "daysSince": 2.2
-      },
-      {
-        "section": "Legs",
-        "fatigue": 0,
-        "readyInHours": 0,
-        "daysSince": 20
+        "fatigue": 31,
+        "readyInHours": 2.4,
+        "daysSince": 2.3
       },
       {
         "section": "Shoulders",
-        "fatigue": 5,
+        "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 7
+        "daysSince": 7.2
       },
       {
         "section": "Arms",
-        "fatigue": 9,
+        "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 2.2
+        "daysSince": 2.3
       },
       {
         "section": "Chest",
-        "fatigue": 13,
+        "fatigue": 12,
         "readyInHours": 0,
-        "daysSince": 5.8
+        "daysSince": 5.9
+      },
+      {
+        "section": "Legs",
+        "fatigue": 45,
+        "readyInHours": 48.1,
+        "daysSince": -0.1
       }
     ],
     "suggestedCount": 5,
@@ -5665,28 +5816,23 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 4.2
+    "daysSinceAerobic": 4.3
   },
   "alerts": [
     {
       "level": "med",
       "title": "Push outpacing pull",
       "detail": "Push volume is 1.56× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
-    },
-    {
-      "level": "low",
-      "title": "Load dropped off",
-      "detail": "Load ratio 0.76 (<0.8). A normal training week will bring this back up."
     }
   ],
   "changes": [
-    "You're below your PR on 6 lifts — closest wins first: Rope Cable Extension (81% of best), Angled Leg Press (81% of best), Pec Fly Machine (82% of best). Add a rep or a set before adding weight.",
+    "You're below your PR on 5 lifts — closest wins first: Rope Cable Extension (81% of best), Pec Fly Machine (82% of best), Converging Shoulder Press (82% of best). Add a rep or a set before adding weight.",
     "Add pulling volume — push is 1.56× your pull. Aim toward ~1:1 to keep shoulders healthy."
   ],
   "timing": {
-    "avgGap": 3.8,
+    "avgGap": 3.7,
     "longestGap": 35.7,
-    "perWeek": 3.8,
+    "perWeek": 4,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -5695,11 +5841,11 @@
       6,
       4,
       2,
-      8,
+      9,
       10
     ],
-    "daysSinceLast": 2.2,
-    "total": 45
+    "daysSinceLast": -0.1,
+    "total": 46
   },
   "relstrength": {
     "bodyweightKg": 81,
@@ -5765,7 +5911,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 4.2,
+    "daysSinceLast": 4.3,
     "recent": [
       {
         "t": 1786345200000,
