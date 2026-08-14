@@ -1,0 +1,63 @@
+{
+  "id": "frozen_fried_chicken_meatballs",
+  "name": "Fried chicken meatballs, frozen (קציצות עוף מטוגנות קפואות)",
+  "source": {
+    "type": "product",
+    "url": null,
+    "author": "Israeli frozen store product (label photo)",
+    "captured": "2026-08-09",
+    "notes": "Values transcribed directly from the Hebrew label — LABEL-VERIFIED, per 100 g (the label's own basis). Chicken meat 75%. Fried (refined soybean oil). Iron not on the label; estimated ~1 mg/100 g in the analysis only. Bone-fragment warning on pack (deboned but minimal presence possible)."
+  },
+  "servings": 1,
+  "serving_desc": "per 100 g (label basis)",
+  "ingredients": [
+    {"item": "chicken meat", "qty": "75%"},
+    {"item": "water, onion, garlic", "qty": "—"},
+    {"item": "soy protein + hydrolyzed vegetable (soy) protein", "qty": "—"},
+    {"item": "breadcrumbs (wheat flour, gluten, pea starch, yeast)", "qty": "—"},
+    {"item": "refined soybean oil", "qty": "—"},
+    {"item": "spices (contains celery), dietary fiber, salt, sugars, natural flavors", "qty": "—"}
+  ],
+  "steps": ["Frozen pre-fried meatball — heat through before eating."],
+  "per_serving": {
+    "kcal": 204,
+    "protein_g": 16,
+    "carbs_g": 8,
+    "fat_g": 12,
+    "fiber_g": 0.2,
+    "micros": {
+      "saturated_fat_g": 3.5,
+      "trans_fat_g": 0.5,
+      "cholesterol_mg": 45,
+      "sodium_mg": 440,
+      "total_sugars_g": 0.5
+    }
+  },
+  "confidence": "label-verified",
+  "analysis": {
+    "him": {
+      "fit_score": 6,
+      "verdict": "A convenience protein, not a standout. 16 g protein / 204 kcal (~7.8 g protein per 100 kcal) is only okay — dragged down by frying (12 g fat) and ~8 g of filler carb (soy protein + breadcrumbs). On the plus side for your sperm goal, it's poultry (not processed red meat) and trans fat is ≤0.5 g. Sodium 440 mg/100 g is moderate. Beats the Swedish beef version on the fertility lens, loses on raw protein density.",
+      "flags": ["poultry base (better fertility profile than processed red meat)", "trans fat ≤0.5 g/100 g", "fried — 12 g fat/100 g", "filler carbs (soy + breadcrumbs)", "moderate sodium (440 mg)"],
+      "suggested_mods": [
+        "Occasional convenience only — your homemade veg chicken meatballs (176 kcal, 15.5 g protein, no frying, no trans fat) beat it outright",
+        "Air-fry from frozen rather than pan-frying to avoid adding more oil",
+        "Serve over a big salad to offset the sodium/filler with fiber + micros"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 5,
+      "verdict": "An okay protein top-up but not nutrient-dense: fried, ~440 mg sodium, only trace fiber, and less iron than the beef version (~1 mg/100 g est.). Fully cooked/frozen, so safe when reheated through. Contains gluten, soy, celery; may contain sesame, mustard, egg. The beef version gives her more iron + protein — better for the preconception iron priority.",
+      "prenatal_highlights": ["16 g protein per 100 g", "poultry, leaner saturated fat than the beef version"],
+      "safety_advisories": [
+        {"note": "Fully cooked then frozen — reheat until steaming hot before eating (standard for cooked frozen meat).", "swap": "heat through"}
+      ],
+      "suggested_mods": ["Occasional; pair with iron/folate sides (greens, legumes)", "Allergens: gluten, soy, celery; may contain sesame, mustard, egg"]
+    }
+  },
+  "tags": ["product", "frozen", "meatballs", "poultry", "convenience", "fried", "label-verified"],
+  "adopted": false,
+  "created": "2026-08-09",
+  "updated": "2026-08-09",
+  "serving_g": 100
+}
