@@ -284,6 +284,14 @@ function nextLiftTarget(e, holdLoad) {
     return { status: "hold", text: `Hold at best (${best.text})`, note: `Load ratio is elevated — repeat your best (${best.text}) rather than pushing for a PR this session.` };
   }
   if (e.iso) {
+    // best can be a flat {sets, seconds} (uniform sets) or a {scheme: [...]}
+    // record for mixed-duration holds (e.g. "35s + 30s + 25s") — the two
+    // shapes need different "+5s" phrasing since scheme has no single
+    // .sets/.seconds to read.
+    if (best.scheme) {
+      const aimText = best.scheme.map((p) => `${(p.seconds || 0) + 5}s`).join(" + ");
+      return { status: "progress", text: `+5s each (aim ${aimText})`, note: `Add 5s to each set from your best (${best.text}) — aim for ${aimText}.` };
+    }
     const seconds = (best.seconds || 0) + 5;
     return { status: "progress", text: `+5s (aim ${best.sets}×${seconds}s)`, note: `Add 5s per set from your best (${best.text}) — aim for ${best.sets}×${seconds}s.` };
   }

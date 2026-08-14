@@ -1,5 +1,5 @@
 {
-  "now": 1786705406771,
+  "now": 1786706087355,
   "workouts": [
     {
       "datetime": "2026-08-12T07:15",
@@ -4294,7 +4294,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 33,
-      "readyInHours": 6,
+      "readyInHours": 5.8,
       "ready": false
     },
     "shoulders": {
@@ -4405,14 +4405,14 @@
     "Back": {
       "section": "Back",
       "pct": 33,
-      "readyInHours": 6,
+      "readyInHours": 5.8,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 33,
-          "readyInHours": 6,
+          "readyInHours": 5.8,
           "ready": false
         }
       ]
@@ -5551,9 +5551,9 @@
   "recommendation": {
     "section": "Back",
     "fatigue": 33,
-    "restHours": 6,
+    "restHours": 5.8,
     "readyNow": false,
-    "readyAt": "2026-08-14T17:03:26.771Z",
+    "readyAt": "2026-08-14T17:02:47.355Z",
     "neverLogged": false,
     "daysSince": 2.2,
     "suggestedExercises": [
@@ -5619,8 +5619,8 @@
         "iso": true,
         "target": {
           "status": "progress",
-          "text": "+5s (aim undefined×5s)",
-          "note": "Add 5s per set from your best (35s + 30s + 25s) — aim for undefined×5s."
+          "text": "+5s each (aim 40s + 35s + 30s)",
+          "note": "Add 5s to each set from your best (35s + 30s + 25s) — aim for 40s + 35s + 30s."
         }
       }
     ],
@@ -5632,7 +5632,7 @@
       {
         "section": "Back",
         "fatigue": 33,
-        "readyInHours": 6,
+        "readyInHours": 5.8,
         "daysSince": 2.2
       },
       {
