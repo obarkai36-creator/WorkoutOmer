@@ -8,7 +8,8 @@
   "items": [
     {"time": "07:58", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:58", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "08:00", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:00", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "08:45", "name": "Legendary Foods Protein Donuts — Chocolate Dipped", "category": "food", "qty": "1 pack (2 mini donuts, 61 g)", "kcal": 160, "protein_g": 20, "carbs_g": 23, "fat_g": 6, "fiber_g": 6, "note": "saved recipe reference (intake/recipes/legendary_donut_chocolate_dipped.json), label-verified, standard 1-pack serving assumed"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -24,7 +25,8 @@
   "assumptions": [
     "Sleep logged: 23:35-07:25, 7.83h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
     "07:58 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "08:00 double espresso (2 caffeine shots)."
+    "08:00 double espresso (2 caffeine shots).",
+    "08:45 Legendary Foods Protein Donuts, Chocolate Dipped (1 pack, 2 mini donuts, 61g) — saved recipe reference, label-verified."
   ],
-  "status_note": "Slept 7.83h (23:35-07:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:58, a double espresso at 08:00 (caffeine_shots: 2)."
+  "status_note": "Slept 7.83h (23:35-07:25) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 07:58, a double espresso at 08:00, and chocolate protein donuts at 08:45 (caffeine_shots: 2)."
 }
