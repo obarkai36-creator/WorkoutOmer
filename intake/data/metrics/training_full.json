@@ -1,5 +1,5 @@
 {
-  "now": 1786735946229,
+  "now": 1786737762600,
   "workouts": [
     {
       "datetime": "2026-08-14T16:45",
@@ -4486,7 +4486,7 @@
       "label": "Quads",
       "section": "Legs",
       "pct": 45,
-      "readyInHours": 24.5,
+      "readyInHours": 24,
       "ready": false
     },
     "hamstrings": {
@@ -4501,23 +4501,23 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 64,
-      "readyInHours": 45.3,
+      "pct": 63,
+      "readyInHours": 44.8,
       "ready": false
     },
     "adductors": {
       "key": "adductors",
       "label": "Adductors",
       "section": "Legs",
-      "pct": 73,
-      "readyInHours": 35.7,
+      "pct": 72,
+      "readyInHours": 35.2,
       "ready": false
     },
     "calves": {
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 30,
+      "pct": 29,
       "readyInHours": 0,
       "ready": true
     },
@@ -4618,22 +4618,22 @@
     "Legs": {
       "section": "Legs",
       "pct": 42,
-      "readyInHours": 45.3,
+      "readyInHours": 44.8,
       "muscles": [
         {
           "key": "adductors",
           "label": "Adductors",
           "section": "Legs",
-          "pct": 73,
-          "readyInHours": 35.7,
+          "pct": 72,
+          "readyInHours": 35.2,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 64,
-          "readyInHours": 45.3,
+          "pct": 63,
+          "readyInHours": 44.8,
           "ready": false
         },
         {
@@ -4641,14 +4641,14 @@
           "label": "Quads",
           "section": "Legs",
           "pct": 45,
-          "readyInHours": 24.5,
+          "readyInHours": 24,
           "ready": false
         },
         {
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 30,
+          "pct": 29,
           "readyInHours": 0,
           "ready": true
         },
@@ -5705,7 +5705,7 @@
     "fatigue": 29,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-14T19:32:26.229Z",
+    "readyAt": "2026-08-14T20:02:42.600Z",
     "neverLogged": false,
     "daysSince": 2.5,
     "suggestedExercises": [
@@ -5807,7 +5807,7 @@
       {
         "section": "Legs",
         "fatigue": 42,
-        "readyInHours": 45.3,
+        "readyInHours": 44.8,
         "daysSince": 0.1
       }
     ],
