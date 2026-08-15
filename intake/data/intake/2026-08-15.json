@@ -16,12 +16,13 @@
     {"time": "13:00", "name": "Lunch — maple-balsamic-mustard vinaigrette (weighed), 65% eaten", "category": "food", "qty": "0.65 of 15g olive oil + 15g maple syrup + 15g dijon mustard + 40g lemon juice + 15g balsamic glaze + salt", "kcal": 148, "protein_g": 0.48, "carbs_g": 14.18, "fat_g": 10.17, "fiber_g": 0, "time_approx": true, "note": "different ratio than the saved foods.json reference batch (less olive oil, more balsamic/lemon this time), computed fresh from per-ingredient rates rather than reusing the saved 100g rate. Credits ~1.37mg vitamin E (olive oil), ~9.88mg vitamin C (lemon juice)."},
     {"time": "13:00", "name": "Lunch — roasted potatoes in olive oil", "category": "food", "qty": "125 g eaten out of a 330 g baked block (from 650g raw potato + 20g olive oil pre-bake)", "kcal": 257, "protein_g": 4.92, "carbs_g": 43.09, "fat_g": 7.82, "fiber_g": 5.42, "time_approx": true, "note": "same whole-block-nutrition-from-raw-inputs method as yesterday, scaled to the 125g/330g fraction eaten. Credits ~1.06mg vitamin E (olive oil)."},
     {"time": "13:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:30", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 99,
-    "folate_mcg_dfe": 94.35,
+    "folate_mcg_dfe": 194.35,
     "omega3_epa_dha_mg": 1410,
     "vitamin_c_mg": 53.76,
     "vitamin_d_iu": 164,
@@ -36,7 +37,8 @@
     "09:35 vanilla protein yogurt (1 cup, 200g) — same Danone PRO 0% reference as prior entries.",
     "13:00 lunch (time not given, approximated): 205g baked דניס (sea bream) with ~10g butter (plain-fish + separate butter computation, since exact butter grams were given this time) + 6 baked cherry tomatoes + a salad (arugula, lettuce, red onion, cherry tomatoes, baby mozzarella, 65% eaten, arugula folded into the recipe this time) with a precisely-weighed vinaigrette (different ratio than the saved reference, computed fresh) + roasted potatoes (650g raw + 20g olive oil pre-bake, baked down to 330g, 125g eaten). Fish credited ~410mg omega-3, ~99mcg selenium, ~164IU vitamin D (same per-100g rate as the 18 Jul denis-fish day).",
     "13:30 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — on top of the ~410mg already from lunch's fish, bringing the day's omega-3 total to ~1410mg.",
-    "14:15 creatine monohydrate, 5g — zero kcal/macros."
+    "14:15 creatine monohydrate, 5g — zero kcal/macros.",
+    "15:30 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
   ],
-  "status_note": "Slept 8.5h (23:45-08:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 09:20, a double espresso at 09:22, a vanilla protein yogurt at 09:35, lunch at 13:00 (baked sea bream, baked cherry tomatoes, salad with vinaigrette, roasted potatoes), omega-3 at 13:30, and creatine at 14:15 (caffeine_shots: 2)."
+  "status_note": "Slept 8.5h (23:45-08:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 09:20, a double espresso at 09:22, a vanilla protein yogurt at 09:35, lunch at 13:00 (baked sea bream, baked cherry tomatoes, salad with vinaigrette, roasted potatoes), omega-3 at 13:30, creatine at 14:15, and the Mayven multivitamin gummies at 15:30 (caffeine_shots: 2)."
 }
