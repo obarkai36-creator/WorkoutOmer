@@ -9,24 +9,30 @@
     {"time": "09:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "09:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "09:22", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "09:35", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"}
+    {"time": "09:35", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
+    {"time": "13:00", "name": "Lunch — דניס (sea bream) fish, baked, with butter", "category": "food", "qty": "2 pieces, ~205 g post-bake + ~10g butter (of 15g added to a shared pan)", "kcal": 324, "protein_g": 42.1, "carbs_g": 0, "fat_g": 15.9, "fiber_g": 0, "time_approx": true, "note": "computed as plain baked sea bream (205g, ~123kcal/100g) plus ~10g butter separately, since this time an exact butter weight was given rather than the usual rolled-in 'baked with butter' estimate (160kcal/100g) used in prior denis-fish entries — flag if the butter split (10g to your fish vs the other fish) should be different."},
+    {"time": "13:00", "name": "Lunch — baked cherry tomatoes", "category": "food", "qty": "6", "kcal": 35, "protein_g": 1, "carbs_g": 5, "fat_g": 1.5, "fiber_g": 1.5, "time_approx": true, "note": "same reference as prior baked-cherry-tomato side dishes"},
+    {"time": "13:00", "name": "Lunch — salad (arugula, lettuce, red onion, cherry tomatoes, baby mozzarella), 65% eaten", "category": "food", "qty": "0.65 of the recipe (handful arugula, 1 lettuce head, 1 red onion, 25 cherry tomatoes, 75g baby mozzarella)", "kcal": 220, "protein_g": 14.3, "carbs_g": 17.98, "fat_g": 11.08, "fiber_g": 5.34, "time_approx": true, "note": "per-ingredient estimate scaled to the 65% portion eaten — arugula folded into the base recipe this time (unlike yesterday, where it was added un-scaled). Credits ~7.15mg lycopene, ~43.88mg vitamin C, ~94.35mcg folate DFE."},
+    {"time": "13:00", "name": "Lunch — maple-balsamic-mustard vinaigrette (weighed), 65% eaten", "category": "food", "qty": "0.65 of 15g olive oil + 15g maple syrup + 15g dijon mustard + 40g lemon juice + 15g balsamic glaze + salt", "kcal": 148, "protein_g": 0.48, "carbs_g": 14.18, "fat_g": 10.17, "fiber_g": 0, "time_approx": true, "note": "different ratio than the saved foods.json reference batch (less olive oil, more balsamic/lemon this time), computed fresh from per-ingredient rates rather than reusing the saved 100g rate. Credits ~1.37mg vitamin E (olive oil), ~9.88mg vitamin C (lemon juice)."},
+    {"time": "13:00", "name": "Lunch — roasted potatoes in olive oil", "category": "food", "qty": "125 g eaten out of a 330 g baked block (from 650g raw potato + 20g olive oil pre-bake)", "kcal": 257, "protein_g": 4.92, "carbs_g": 43.09, "fat_g": 7.82, "fiber_g": 5.42, "time_approx": true, "note": "same whole-block-nutrition-from-raw-inputs method as yesterday, scaled to the 125g/330g fraction eaten. Credits ~1.06mg vitamin E (olive oil)."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 94.35,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 53.76,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "vitamin_e_mg": 2.43,
+    "lycopene_mg": 7.15
   },
   "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:45-08:15, 8.5h — a long, solid night, squarely in the 7-9h target band, one continuous stretch. A partnered ejaculation event at 22:45 preceded bedtime.",
     "09:20 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "09:22 double espresso (2 caffeine shots).",
-    "09:35 vanilla protein yogurt (1 cup, 200g) — same Danone PRO 0% reference as prior entries."
+    "09:35 vanilla protein yogurt (1 cup, 200g) — same Danone PRO 0% reference as prior entries.",
+    "13:00 lunch (time not given, approximated): 205g baked דניס (sea bream) with ~10g butter (plain-fish + separate butter computation, since exact butter grams were given this time) + 6 baked cherry tomatoes + a salad (arugula, lettuce, red onion, cherry tomatoes, baby mozzarella, 65% eaten, arugula folded into the recipe this time) with a precisely-weighed vinaigrette (different ratio than the saved reference, computed fresh) + roasted potatoes (650g raw + 20g olive oil pre-bake, baked down to 330g, 125g eaten)."
   ],
-  "status_note": "Slept 8.5h (23:45-08:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 09:20, a double espresso at 09:22, a vanilla protein yogurt at 09:35 (caffeine_shots: 2)."
+  "status_note": "Slept 8.5h (23:45-08:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 09:20, a double espresso at 09:22, a vanilla protein yogurt at 09:35, and lunch at 13:00 (baked sea bream, baked cherry tomatoes, salad with vinaigrette, roasted potatoes) (caffeine_shots: 2)."
 }
