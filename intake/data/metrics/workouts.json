@@ -2,20 +2,20 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-08-15",
-    "latest_session": "Back",
+    "latest_session": "Back + Stationary Bike (rehab, low intensity, after weights)",
     "sessions_logged": 47,
     "sessions_per_week": 4.3,
     "typical_time": "afternoon",
     "aerobic_28d_km": 15.5,
-    "aerobic_sessions_28d": 3,
+    "aerobic_sessions_28d": 4,
     "avg_pace": "9:11/km",
     "avg_hr": 142,
-    "acwr": 1.32,
+    "acwr": 1.33,
     "recommended_next": "Shoulders day",
     "alerts": [
-      "Load ratio 1.32 (sweet spot 0.8–1.3). Keep added volume under ~10% next week.",
+      "Load ratio 1.33 (sweet spot 0.8–1.3). Keep added volume under ~10% next week.",
       "Push volume is 1.44× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Recovers in ~83.2h. Avoid loading it hard before then — you trained it most recently.",
+      "Recovers in ~83.1h. Avoid loading it hard before then — you trained it most recently.",
       "Recovers in ~49.7h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
@@ -273,7 +273,7 @@
       "type": "Strength — Back",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Diverging Seated Row 97kg×4×8 (ties best — rebuilt to it); Low Row 79kg×4×10 (new PR, +1 rep at same weight vs 79kg×4×9); Reverse Incline DB Row 26kg each×4×11 (new PR, +1 rep at same weight vs 26kg each×4×10); Dumbbell Pullover 20kg×4×11 (new PR, +1 rep at same weight vs 20kg×4×10); Dead Hang 35s+30s+25s (ties best, held rather than pushed for +5s). 3 new PRs. 11:00.",
+      "notes": "Diverging Seated Row 97kg×4×8 (ties best — rebuilt to it); Low Row 79kg×4×10 (new PR, +1 rep at same weight vs 79kg×4×9); Reverse Incline DB Row 26kg each×4×11 (new PR, +1 rep at same weight vs 26kg each×4×10); Dumbbell Pullover 20kg×4×11 (new PR, +1 rep at same weight vs 20kg×4×10); Dead Hang 35s+30s+25s (ties best, held rather than pushed for +5s). 3 new PRs. Followed by 16 min low-intensity Stationary Bike for rehab. 11:00.",
       "_source": "manual log"
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "now": 1786783217021,
+  "now": 1786784270028,
   "workouts": [
     {
       "datetime": "2026-08-15T11:00",
-      "note": "Back",
+      "note": "Back + Stationary Bike (rehab, low intensity, after weights)",
       "exercises": [
         {
           "name": "Diverging Seated Row",
@@ -143,6 +143,19 @@
             "back": 2187
           },
           "kind": "strength"
+        },
+        {
+          "name": "Stationary Bike",
+          "durationMin": 16,
+          "rpe": 3,
+          "load": 72,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 72,
+            "quads": 28.8
+          },
+          "kind": "aerobic"
         }
       ],
       "t": 1786791600000,
@@ -151,9 +164,11 @@
         "biceps": 3192.0000000000005,
         "shoulders": 686.4,
         "chest": 352,
-        "forearms": 7290
+        "forearms": 7290,
+        "cardio": 72,
+        "quads": 28.8
       },
-      "isAerobic": false
+      "isAerobic": true
     },
     {
       "datetime": "2026-08-14T16:45",
@@ -4600,7 +4615,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 100,
-      "readyInHours": 83.2,
+      "readyInHours": 83.1,
       "ready": false
     },
     "shoulders": {
@@ -4656,15 +4671,15 @@
       "label": "Glutes",
       "section": "Legs",
       "pct": 51,
-      "readyInHours": 32.2,
+      "readyInHours": 31.9,
       "ready": false
     },
     "adductors": {
       "key": "adductors",
       "label": "Adductors",
       "section": "Legs",
-      "pct": 53,
-      "readyInHours": 22.5,
+      "pct": 52,
+      "readyInHours": 22.3,
       "ready": false
     },
     "calves": {
@@ -4687,7 +4702,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 1,
+      "pct": 10,
       "readyInHours": 0,
       "ready": true
     }
@@ -4711,14 +4726,14 @@
     "Back": {
       "section": "Back",
       "pct": 100,
-      "readyInHours": 83.2,
+      "readyInHours": 83.1,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 100,
-          "readyInHours": 83.2,
+          "readyInHours": 83.1,
           "ready": false
         }
       ]
@@ -4772,14 +4787,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 32,
-      "readyInHours": 32.2,
+      "readyInHours": 31.9,
       "muscles": [
         {
           "key": "adductors",
           "label": "Adductors",
           "section": "Legs",
-          "pct": 53,
-          "readyInHours": 22.5,
+          "pct": 52,
+          "readyInHours": 22.3,
           "ready": false
         },
         {
@@ -4787,7 +4802,7 @@
           "label": "Glutes",
           "section": "Legs",
           "pct": 51,
-          "readyInHours": 32.2,
+          "readyInHours": 31.9,
           "ready": false
         },
         {
@@ -4833,14 +4848,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 1,
+      "pct": 10,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 1,
+          "pct": 10,
           "readyInHours": 0,
           "ready": true
         }
@@ -5848,9 +5863,9 @@
         "acwr": 1.05
       }
     ],
-    "acute": 938,
-    "chronic": 713,
-    "acwr": 1.32,
+    "acute": 948,
+    "chronic": 715,
+    "acwr": 1.33,
     "acwrZone": "caution",
     "sessions28": 17
   },
@@ -5859,7 +5874,7 @@
     "fatigue": 13,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-15T08:40:17.021Z",
+    "readyAt": "2026-08-15T08:57:50.028Z",
     "neverLogged": false,
     "daysSince": 7.9,
     "suggestedExercises": [
@@ -5953,7 +5968,7 @@
       }
     ],
     "guidance": [
-      "Load ratio 1.32 is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR."
+      "Load ratio 1.33 is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR."
     ],
     "ranked": [
       {
@@ -5971,7 +5986,7 @@
       {
         "section": "Legs",
         "fatigue": 32,
-        "readyInHours": 32.2,
+        "readyInHours": 31.9,
         "daysSince": 0.7
       },
       {
@@ -5983,22 +5998,22 @@
       {
         "section": "Back",
         "fatigue": 100,
-        "readyInHours": 83.2,
+        "readyInHours": 83.1,
         "daysSince": -0.1
       }
     ],
     "suggestedCount": 4,
     "totalAvailable": 8,
     "typicalSessionSize": 4,
-    "aerobicLast7": 2,
+    "aerobicLast7": 3,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 5.1
+    "daysSinceAerobic": -0.1
   },
   "alerts": [
     {
       "level": "med",
       "title": "Load climbing fast",
-      "detail": "Load ratio 1.32 (sweet spot 0.8–1.3). Keep added volume under ~10% next week."
+      "detail": "Load ratio 1.33 (sweet spot 0.8–1.3). Keep added volume under ~10% next week."
     },
     {
       "level": "med",
@@ -6008,7 +6023,7 @@
     {
       "level": "low",
       "title": "Back fatigued (100%)",
-      "detail": "Recovers in ~83.2h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~83.1h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "low",
@@ -6085,7 +6100,7 @@
   },
   "aerobic": {
     "any": true,
-    "count": 23,
+    "count": 24,
     "km7": 11.8,
     "km28": 15.5,
     "totalKm": 103.9,
@@ -6102,8 +6117,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 5.1,
+    "daysSinceLast": -0.1,
     "recent": [
+      {
+        "t": 1786791600000,
+        "name": "Stationary Bike",
+        "distanceKm": 0,
+        "durationMin": 16,
+        "avgHr": null,
+        "pace": null
+      },
       {
         "t": 1786345200000,
         "name": "Stationary Bike",
@@ -6135,14 +6158,6 @@
         "durationMin": 11.6,
         "avgHr": null,
         "pace": 5.7711442786069655
-      },
-      {
-        "t": 1783252800000,
-        "name": "Outdoor Walk",
-        "distanceKm": 13.35,
-        "durationMin": 174,
-        "avgHr": null,
-        "pace": 13.03370786516854
       }
     ]
   },

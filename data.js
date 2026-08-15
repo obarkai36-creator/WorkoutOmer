@@ -285,15 +285,16 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
-  // 15 Aug — Back (11:00)
+  // 15 Aug — Back + Stationary Bike (rehab) (11:00)
   {
-    datetime: "2026-08-15T11:00", note: "Back",
+    datetime: "2026-08-15T11:00", note: "Back + Stationary Bike (rehab, low intensity, after weights)",
     exercises: [
       { name: "Diverging Seated Row",   sets: [ { reps: 8, weight: 97 }, { reps: 8, weight: 97 }, { reps: 8, weight: 97 }, { reps: 8, weight: 97 } ] },
       { name: "Low Row",                sets: [ { reps: 10, weight: 79 }, { reps: 10, weight: 79 }, { reps: 10, weight: 79 }, { reps: 10, weight: 79 } ] },
       { name: "Reverse Incline DB Row", sets: [ { reps: 11, weight: 52 }, { reps: 11, weight: 52 }, { reps: 11, weight: 52 }, { reps: 11, weight: 52 } ] },
       { name: "Dumbbell Pullover",      sets: [ { reps: 11, weight: 20 }, { reps: 11, weight: 20 }, { reps: 11, weight: 20 }, { reps: 11, weight: 20 } ] },
       { name: "Dead Hang",              sets: [ { seconds: 35 }, { seconds: 30 }, { seconds: 25 } ] },
+      { name: "Stationary Bike",        durationMin: 16, rpe: 3 },
     ],
   },
 
