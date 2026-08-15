@@ -1,5 +1,5 @@
 {
-  "now": 1786789750906,
+  "now": 1786789944726,
   "workouts": [
     {
       "datetime": "2026-08-15T11:00",
@@ -4631,7 +4631,7 @@
       "label": "Biceps",
       "section": "Arms",
       "pct": 100,
-      "readyInHours": 49.6,
+      "readyInHours": 49.5,
       "ready": false
     },
     "triceps": {
@@ -4647,7 +4647,7 @@
       "label": "Forearms",
       "section": "Arms",
       "pct": 53,
-      "readyInHours": 16.9,
+      "readyInHours": 16.8,
       "ready": false
     },
     "quads": {
@@ -4671,7 +4671,7 @@
       "label": "Glutes",
       "section": "Legs",
       "pct": 50,
-      "readyInHours": 30.4,
+      "readyInHours": 30.3,
       "ready": false
     },
     "adductors": {
@@ -4756,14 +4756,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 51,
-      "readyInHours": 49.6,
+      "readyInHours": 49.5,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
           "pct": 100,
-          "readyInHours": 49.6,
+          "readyInHours": 49.5,
           "ready": false
         },
         {
@@ -4771,7 +4771,7 @@
           "label": "Forearms",
           "section": "Arms",
           "pct": 53,
-          "readyInHours": 16.9,
+          "readyInHours": 16.8,
           "ready": false
         },
         {
@@ -4787,14 +4787,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 31,
-      "readyInHours": 30.4,
+      "readyInHours": 30.3,
       "muscles": [
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
           "pct": 50,
-          "readyInHours": 30.4,
+          "readyInHours": 30.3,
           "ready": false
         },
         {
@@ -5874,7 +5874,7 @@
     "fatigue": 13,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-15T10:29:10.906Z",
+    "readyAt": "2026-08-15T10:32:24.726Z",
     "neverLogged": false,
     "daysSince": 8,
     "suggestedExercises": [
@@ -5986,13 +5986,13 @@
       {
         "section": "Legs",
         "fatigue": 31,
-        "readyInHours": 30.4,
+        "readyInHours": 30.3,
         "daysSince": 0.7
       },
       {
         "section": "Arms",
         "fatigue": 51,
-        "readyInHours": 49.6,
+        "readyInHours": 49.5,
         "daysSince": 0
       },
       {
@@ -6028,7 +6028,7 @@
     {
       "level": "low",
       "title": "Biceps fatigued (100%)",
-      "detail": "Recovers in ~49.6h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~49.5h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
