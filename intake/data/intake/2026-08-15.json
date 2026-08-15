@@ -8,7 +8,8 @@
   "items": [
     {"time": "09:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "09:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "09:22", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "09:22", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:35", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -24,7 +25,8 @@
   "assumptions": [
     "Sleep logged: 23:45-08:15, 8.5h — a long, solid night, squarely in the 7-9h target band, one continuous stretch. A partnered ejaculation event at 22:45 preceded bedtime.",
     "09:20 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "09:22 double espresso (2 caffeine shots)."
+    "09:22 double espresso (2 caffeine shots).",
+    "09:35 vanilla protein yogurt (1 cup, 200g) — same Danone PRO 0% reference as prior entries."
   ],
-  "status_note": "Slept 8.5h (23:45-08:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 09:20, a double espresso at 09:22 (caffeine_shots: 2)."
+  "status_note": "Slept 8.5h (23:45-08:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 09:20, a double espresso at 09:22, a vanilla protein yogurt at 09:35 (caffeine_shots: 2)."
 }
