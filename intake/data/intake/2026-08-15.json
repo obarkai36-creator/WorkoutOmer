@@ -1,10 +1,10 @@
 {
   "date": "2026-08-15",
   "day_number": 49,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Back, 11:00. Diverging Seated Row 97kg×4×8 (ties best); Low Row 79kg×4×10 (new PR); Reverse Incline DB Row 26kg each×4×11 (new PR); Dumbbell Pullover 20kg×4×11 (new PR); Dead Hang 35s+30s+25s (ties best). 3 new PRs. Followed by 16 min low-intensity Stationary Bike for rehab.",
-  "_status": "In progress.",
+  "_status": "Day complete.",
   "items": [
     {"time": "09:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "09:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -25,10 +25,13 @@
     {"time": "19:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "20:00", "name": "Dinner — various salads and starters (רפאלו חיפה)", "category": "food", "qty": "1 shared portion, unknown amounts", "kcal": 350, "protein_g": 10, "carbs_g": 20, "fat_g": 24, "fiber_g": 5, "time_approx": true, "note": "restaurant meal, no items/weights given — directional estimate for a typical shared Mediterranean/Italian starter-salad spread (bread, olive oil, veg, some cheese). First time logged, flagged."},
     {"time": "20:00", "name": "Dinner — chicken breast dish with green vegetables (רפאלו חיפה)", "category": "food", "qty": "1 main course, unknown amounts", "kcal": 450, "protein_g": 45, "carbs_g": 12, "fat_g": 20, "fiber_g": 5, "time_approx": true, "note": "restaurant meal, no exact weight given — directional estimate for a lean chicken-breast + green-vegetable main (~200g chicken breast). First time logged, flagged."},
-    {"time": "20:00", "name": "Red wine (glass)", "category": "drink", "qty": "1 glass (~150 ml)", "kcal": 128, "protein_g": 0, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "standard red wine reference (~85kcal/100ml), ~1.5 units — a full glass this time rather than the usual small serving. Also logged to lifestyle.json (first drinking day since 8 Aug, a week-long gap)."}
+    {"time": "20:00", "name": "Red wine (glass)", "category": "drink", "qty": "1 glass (~150 ml)", "kcal": 128, "protein_g": 0, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "standard red wine reference (~85kcal/100ml), ~1.5 units — a full glass this time rather than the usual small serving. Also logged to lifestyle.json (first drinking day since 8 Aug, a week-long gap)."},
+    {"time": "20:00", "name": "Dinner — macaron (1)", "category": "food", "qty": "1 (~10 g)", "kcal": 90, "protein_g": 1, "carbs_g": 10, "fat_g": 4.5, "fiber_g": 0.3, "time_approx": true, "note": "no flavor/recipe given — standard French macaron reference (~450kcal/100g, buttercream/ganache filling, ~10g each), first time logged, flagged"},
+    {"time": "20:00", "name": "Dinner — chocolate cake (3 bites)", "category": "food", "qty": "3 bites (~45 g)", "kcal": 167, "protein_g": 1.8, "carbs_g": 22.5, "fat_g": 7.65, "fiber_g": 0.9, "time_approx": true, "note": "same standard frosted chocolate cake reference as prior entries (~370kcal/100g)"},
+    {"time": "23:30", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, verified reference (supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 17.8,
     "selenium_mcg": 99,
     "folate_mcg_dfe": 194.35,
     "omega3_epa_dha_mg": 1410,
@@ -52,7 +55,9 @@
     "18:30 a handful of Protein Captain Crunch cereal (~30g, same per-gram rate as the 12 Aug entry) + 1 vanilla protein yogurt (Danone PRO 0%).",
     "19:30 Rhinolast PM dose — both allergy spray doses done today.",
     "~20:00 dinner (time not given, approximated) at רפאלו חיפה: various salads and starters (shared, unknown amounts) + a chicken breast dish with green vegetables + a glass of red wine (~150ml, ~1.5 units). No exact items/weights given — all directional estimates, first time logged, flagged. Alcohol also logged to lifestyle.json (first drinking day since 8 Aug).",
-    "User flagged the whole day (high calorie, high fat, high protein, high fiber) as approximate/non-exact rather than precisely tracked — the dinner's directional restaurant estimate (salads/starters + chicken dish, no weights) is the main driver, on top of several other estimated items earlier in the day (fish+butter split, weighed vinaigrette with a new ratio, roasted-potato whole-block method). Totals below should be read as a rough day, not a precisely logged one."
+    "User flagged the whole day (high calorie, high fat, high protein, high fiber) as approximate/non-exact rather than precisely tracked — the dinner's directional restaurant estimate (salads/starters + chicken dish, no weights) is the main driver, on top of several other estimated items earlier in the day (fish+butter split, weighed vinaigrette with a new ratio, roasted-potato whole-block method). Totals below should be read as a rough day, not a precisely logged one.",
+    "Also at dinner: 1 macaron (~10g, standard reference, first time logged) + 3 bites chocolate cake (~45g, same reference as prior entries).",
+    "23:30 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Slept 8.5h (23:45-08:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 09:20, a double espresso at 09:22, a vanilla protein yogurt at 09:35, lunch at 13:00 (baked sea bream, baked cherry tomatoes, salad with vinaigrette, roasted potatoes), omega-3 at 13:30, creatine at 14:15, the Mayven multivitamin gummies at 15:30, a yellow cheese + grape snack at 16:10, a partnered ejaculation event at 18:00, a protein cereal + yogurt snack at 18:30, the PM allergy spray at 19:30, and dinner at 20:00 at רפאלו חיפה (salads/starters, chicken breast with green vegetables, a glass of red wine) (caffeine_shots: 2). High-calorie, high-fat, high-protein, high-fiber day overall — per the user's own flag, treat today's totals as approximate/non-exact rather than precisely tracked."
+  "status_note": "Day complete. Slept 8.5h (23:45-08:15) — a long, solid night, squarely in the 7-9h target band. Allergy spray + pill at 09:20, a double espresso at 09:22, a vanilla protein yogurt at 09:35, lunch at 13:00 (baked sea bream, baked cherry tomatoes, salad with vinaigrette, roasted potatoes), omega-3 at 13:30, creatine at 14:15, the Mayven multivitamin gummies at 15:30, a yellow cheese + grape snack at 16:10, a partnered ejaculation event at 18:00, a protein cereal + yogurt snack at 18:30, the PM allergy spray at 19:30, dinner at 20:00 at רפאלו חיפה (salads/starters, chicken breast with green vegetables, a glass of red wine, a macaron, chocolate cake bites), and Zinc Picolinate at 23:30 (caffeine_shots: 2). High-calorie, high-fat, high-protein, high-fiber day overall — per the user's own flag, treat today's totals as approximate/non-exact rather than precisely tracked."
 }
