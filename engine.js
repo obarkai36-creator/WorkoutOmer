@@ -441,10 +441,21 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
   // options that are genuinely close to ready, without overriding a fully
   // recovered section in favor of one that plainly isn't.
   const READY_TOLERANCE_HOURS = 6;
-  const priority = { Legs: 0, Back: 1, Shoulders: 2, Chest: 3, Arms: 4 };
+  // Base priority is neutral (0) for every section — when readiness is tied,
+  // the section that's gone longest without training should win the tie, not
+  // a fixed rotation order. The old fixed table (Legs:0, Back:1, Shoulders:2,
+  // Chest:3, Arms:4) put daysSince behind it as only a tertiary tiebreak, so
+  // a section pinned at the front (Legs) could beat one untrained for over a
+  // week (Shoulders) whenever both simply happened to be fully recovered —
+  // exactly the "meaningfully less recovered" case this logic is supposed to
+  // never do, just expressed through the tiebreak order instead of the
+  // readiness window. Push/pull correction still gets a real, deliberate
+  // nudge when the program is meaningfully imbalanced, since that's an
+  // intentional signal rather than an arbitrary default.
+  const priority = { Legs: 0, Back: 0, Shoulders: 0, Chest: 0, Arms: 0 };
   if (bal && bal.pushPull != null) {
-    if (bal.pushPull > 1.3) { priority.Back = -1; priority.Chest = 5; }
-    else if (bal.pushPull < 0.7) { priority.Chest = -1; priority.Back = 5; }
+    if (bal.pushPull > 1.3) { priority.Back = -1; priority.Chest = 1; }
+    else if (bal.pushPull < 0.7) { priority.Chest = -1; priority.Back = 1; }
   }
   const ranked = trainable
     .map((s) => ({
