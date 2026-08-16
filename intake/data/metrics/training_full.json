@@ -1,5 +1,5 @@
 {
-  "now": 1786873607281,
+  "now": 1786873837342,
   "workouts": [
     {
       "datetime": "2026-08-15T11:00",
@@ -4615,7 +4615,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 82,
-      "readyInHours": 60,
+      "readyInHours": 59.9,
       "ready": false
     },
     "shoulders": {
@@ -4671,7 +4671,7 @@
       "label": "Glutes",
       "section": "Legs",
       "pct": 34,
-      "readyInHours": 7.1,
+      "readyInHours": 7,
       "ready": false
     },
     "adductors": {
@@ -4726,14 +4726,14 @@
     "Back": {
       "section": "Back",
       "pct": 82,
-      "readyInHours": 60,
+      "readyInHours": 59.9,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 82,
-          "readyInHours": 60,
+          "readyInHours": 59.9,
           "ready": false
         }
       ]
@@ -4787,14 +4787,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 19,
-      "readyInHours": 7.1,
+      "readyInHours": 7,
       "muscles": [
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
           "pct": 34,
-          "readyInHours": 7.1,
+          "readyInHours": 7,
           "ready": false
         },
         {
@@ -5874,7 +5874,7 @@
     "fatigue": 7,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-16T09:46:47.281Z",
+    "readyAt": "2026-08-16T09:50:37.342Z",
     "neverLogged": false,
     "daysSince": 9,
     "suggestedExercises": [
@@ -5984,20 +5984,20 @@
       {
         "section": "Legs",
         "fatigue": 19,
-        "readyInHours": 7.1,
+        "readyInHours": 7,
         "daysSince": 1.7
       },
       {
         "section": "Arms",
         "fatigue": 28,
         "readyInHours": 26.7,
-        "daysSince": 0.9
+        "daysSince": 1
       },
       {
         "section": "Back",
         "fatigue": 82,
-        "readyInHours": 60,
-        "daysSince": 0.9
+        "readyInHours": 59.9,
+        "daysSince": 1
       }
     ],
     "suggestedCount": 4,
@@ -6005,7 +6005,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 3,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 0.9
+    "daysSinceAerobic": 1
   },
   "alerts": [
     {
@@ -6016,7 +6016,7 @@
     {
       "level": "low",
       "title": "Back fatigued (82%)",
-      "detail": "Recovers in ~60h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~59.9h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
@@ -6038,7 +6038,7 @@
       9,
       11
     ],
-    "daysSinceLast": 0.9,
+    "daysSinceLast": 1,
     "total": 47
   },
   "relstrength": {
@@ -6105,7 +6105,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.9,
+    "daysSinceLast": 1,
     "recent": [
       {
         "t": 1786791600000,
