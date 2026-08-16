@@ -19,7 +19,8 @@
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "13:35", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:20", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "note": "saved reference"},
-    {"time": "15:30", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
+    {"time": "15:30", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
+    {"time": "15:58", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -31,7 +32,7 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 10.88
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 00:00-06:45, 6.75h — a short night, below the 7-9h target band, late bedtime, one continuous stretch.",
     "~07:00 (time not given, approximated) Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
@@ -41,7 +42,8 @@
     "13:00 espresso (1 more caffeine shot, 3 total for the day).",
     "13:35 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits the day's omega-3 target.",
     "15:20 1 green apple (~180g), saved reference.",
-    "15:30 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
+    "15:30 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
+    "15:58 espresso (1 more caffeine shot, 4 total for the day) — just under the 16:00 caffeine cutoff."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, late bedtime. Allergy spray + pill at ~07:00, a double espresso at 08:35, breakfast at 09:00 (Brazil nut, cherry tomatoes, yellow cheese 9%), lunch at 13:00 (grilled chicken breast, lemon juice, citrus vinaigrette, a 500g mixed salad, an espresso), omega-3 at 13:35, a green apple at 15:20, and the Mayven multivitamin gummies at 15:30 (caffeine_shots: 3)."
+  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, late bedtime. Allergy spray + pill at ~07:00, a double espresso at 08:35, breakfast at 09:00 (Brazil nut, cherry tomatoes, yellow cheese 9%), lunch at 13:00 (grilled chicken breast, lemon juice, citrus vinaigrette, a 500g mixed salad, an espresso), omega-3 at 13:35, a green apple at 15:20, the Mayven multivitamin gummies at 15:30, and another espresso at 15:58 (caffeine_shots: 4)."
 }
