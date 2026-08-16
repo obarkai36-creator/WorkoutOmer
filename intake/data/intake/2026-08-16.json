@@ -8,23 +8,27 @@
   "items": [
     {"time": "07:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — 1x/day pill"},
-    {"time": "08:35", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:35", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:00", "name": "Breakfast — Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "time_approx": true, "note": "standard reference, ~95mcg selenium/nut"},
+    {"time": "09:00", "name": "Breakfast — cherry tomatoes", "category": "food", "qty": "20", "kcal": 54, "protein_g": 2.7, "carbs_g": 11.7, "fat_g": 0.6, "fiber_g": 3.6, "time_approx": true, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "09:00", "name": "Breakfast — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (~75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "time_approx": true, "note": "verified reference (50kcal/25g slice)"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "selenium_mcg": 95,
+    "folate_mcg_dfe": 51,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 44,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 8.8
   },
   "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 00:00-06:45, 6.75h — a short night, below the 7-9h target band, late bedtime, one continuous stretch.",
     "~07:00 (time not given, approximated) Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "08:35 double espresso (2 caffeine shots)."
+    "08:35 double espresso (2 caffeine shots).",
+    "09:00 (time not given, approximated) breakfast: 1 Brazil nut (~95mcg selenium) + 20 cherry tomatoes + 3 slices Tnuva Emek Light yellow cheese 9% fat (~75g) — all same standard/verified references as prior entries."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, late bedtime. Allergy spray + pill at ~07:00, a double espresso at 08:35 (caffeine_shots: 2)."
+  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, late bedtime. Allergy spray + pill at ~07:00, a double espresso at 08:35, and breakfast at 09:00 (Brazil nut, cherry tomatoes, yellow cheese 9%) (caffeine_shots: 2)."
 }
