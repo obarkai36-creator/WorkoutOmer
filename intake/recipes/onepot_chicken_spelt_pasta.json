@@ -6,36 +6,37 @@
     "chicken_raw_g",
     "spelt_pasta_dry_g"
   ],
-  "balance_rule": "~37 g dry spelt pasta per 100 g raw chicken → ~1:1 protein:carb (optimal balance). Use ~31 g/100 g for a protein-forward cut. This logged batch used 200 g pasta / 640 g chicken (~31 g/100 g, protein-forward).",
+  "balance_rule": "~37 g dry spelt pasta per 100 g raw chicken → ~1:1 protein:carb (optimal balance); at higher chicken weights it drifts up slightly (~39 g/100 g) because the fixed base is constant. Use ~31 g/100 g for a protein-forward cut. This logged batch used 295 g pasta / 870 g chicken (~34 g/100 g, protein-forward at 1.11:1).",
   "logged_instance": {
-    "date": "2026-08-09",
-    "chicken_raw_g": 640,
-    "spelt_pasta_dry_g": 200,
-    "note": "User's chosen ratio — protein-forward (1.13:1 protein:carb)."
+    "date": "2026-08-16",
+    "chicken_raw_g": 870,
+    "spelt_pasta_dry_g": 295,
+    "olive_oil_g": 20,
+    "note": "User's chosen ratio — protein-forward (1.11:1 protein:carb). Oil measured at 20 g this batch (leaner than the ~35 g template default), which drops per-serving fat. Prior batch was 640 g chicken / 200 g pasta."
   },
   "source": {
     "type": "family",
     "url": null,
     "author": "User's recurring one-pot dish",
     "captured": "2026-08-09",
-    "notes": "Parametric template. Fixed base is constant; chicken and spelt pasta are input per batch. Same dish family as the foods.json 'chicken-pasta bake'. 'Spoon' read as tablespoon; 'generous' olive oil ~2.5 tbsp (~35 g). Per-serving values assume the batch splits into 4."
+    "notes": "Parametric template. Fixed base is constant; chicken and spelt pasta are input per batch. Same dish family as the foods.json 'chicken-pasta bake'. 'Spoon' read as tablespoon. Olive oil template default ~2.5 tbsp (~35 g), but the user has since measured it at 20 g — use 20 g going forward. Per-serving values below reflect the current logged batch split into 5."
   },
-  "servings": 4,
-  "serving_desc": "≈320 g (batch ÷4). This batch: 640 g raw chicken + 200 g dry spelt pasta",
+  "servings": 5,
+  "serving_desc": "≈310 g (batch ÷5). This batch: 870 g raw chicken + 295 g dry spelt pasta + 20 g olive oil",
   "ingredients": [
     {
       "item": "chicken breast",
-      "qty": "640 g raw",
+      "qty": "870 g raw",
       "note": "VARIABLE input"
     },
     {
       "item": "spelt pasta",
-      "qty": "200 g dry",
+      "qty": "295 g dry",
       "note": "VARIABLE input"
     },
     {
       "item": "olive oil",
-      "qty": "generous (~2.5 tbsp / ~35 g)"
+      "qty": "20 g (measured; template default was ~35 g)"
     },
     {
       "item": "cherry tomatoes",
@@ -69,29 +70,29 @@
     "Add the cooked/cooking spelt pasta and combine in the one pot."
   ],
   "per_serving": {
-    "kcal": 495,
-    "protein_g": 45.5,
-    "carbs_g": 40,
-    "fat_g": 15.3,
-    "fiber_g": 4.9,
+    "kcal": 491,
+    "protein_g": 49.5,
+    "carbs_g": 45,
+    "fat_g": 10.8,
+    "fiber_g": 5.2,
     "micros": {
-      "lycopene_mg": 5.7,
-      "selenium_mcg": 44,
-      "zinc_mg": 2.4,
-      "iron_mg": 2.5,
-      "folate_mcg_dfe": 22,
-      "vitamin_c_mg": 10,
-      "vitamin_e_mg": 1.4,
-      "choline_mg": 139
+      "lycopene_mg": 4.6,
+      "selenium_mcg": 48,
+      "zinc_mg": 2.7,
+      "iron_mg": 2.8,
+      "folate_mcg_dfe": 33,
+      "vitamin_c_mg": 8,
+      "vitamin_e_mg": 0.6,
+      "choline_mg": 140
     }
   },
   "batch_totals": {
-    "kcal": 1980,
-    "protein_g": 182,
-    "carbs_g": 161,
-    "fat_g": 61,
-    "fiber_g": 19.4,
-    "protein_to_carb": "1.13 : 1"
+    "kcal": 2455,
+    "protein_g": 248,
+    "carbs_g": 224,
+    "fat_g": 54,
+    "fiber_g": 26,
+    "protein_to_carb": "1.11 : 1"
   },
   "confidence": "estimate",
   "analysis": {
@@ -138,6 +139,6 @@
   "adopted": true,
   "adopted_note": "Promoted to the daily rotation 2026-08-09. Template: macros change with the chicken & pasta weights input each batch — use the balance_rule (~37 g dry spelt per 100 g raw chicken for 1:1; ~31 g/100 g protein-forward). Per-100g values are what to reuse when logging a day.",
   "created": "2026-08-09",
-  "updated": "2026-08-09",
-  "serving_g": 320
+  "updated": "2026-08-16",
+  "serving_g": 310
 }
