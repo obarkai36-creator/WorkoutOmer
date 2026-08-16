@@ -15,7 +15,8 @@
     {"time": "13:00", "name": "Lunch — grilled chicken breast", "category": "food", "qty": "250 g", "kcal": 413, "protein_g": 77.5, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "standard grilled chicken breast reference (~165.3kcal/100g), same as prior entries"},
     {"time": "13:00", "name": "Lunch — lemon juice", "category": "food", "qty": "10 g", "kcal": 2, "protein_g": 0.07, "carbs_g": 0.7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "same standard reference as prior lemon-juice entries. Credits ~3.3mg vitamin C."},
     {"time": "13:00", "name": "Lunch — citrus vinaigrette", "category": "food", "qty": "20 g", "kcal": 44, "protein_g": 0.1, "carbs_g": 1.6, "fat_g": 4, "fiber_g": 0, "time_approx": true, "note": "first time logged — generic bottled citrus vinaigrette reference (~220kcal/100g), not label-verified, flagged"},
-    {"time": "13:00", "name": "Lunch — salad (cucumber, red onion, cherry tomatoes, white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower)", "category": "food", "qty": "500 g total, 7 named ingredients (no per-item weights given), proportionally distributed", "kcal": 188, "protein_g": 6.83, "carbs_g": 40.73, "fat_g": 1.36, "fiber_g": 9.62, "time_approx": true, "note": "screenshot showed ingredient names only (no quantities), same distribution-across-standard-references method as prior Wolt-receipt salads. Screenshot showed '1/2' — possibly a 2nd screen of ingredients not shared; flag if any were missed. Credits ~2.08mg lycopene (tomatoes), ~109mg vitamin C (mostly the cabbages)."}
+    {"time": "13:00", "name": "Lunch — salad (cucumber, red onion, cherry tomatoes, white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower)", "category": "food", "qty": "500 g total, 7 named ingredients (no per-item weights given), proportionally distributed", "kcal": 188, "protein_g": 6.83, "carbs_g": 40.73, "fat_g": 1.36, "fiber_g": 9.62, "time_approx": true, "note": "screenshot showed ingredient names only (no quantities), same distribution-across-standard-references method as prior Wolt-receipt salads. Screenshot showed '1/2' — possibly a 2nd screen of ingredients not shared; flag if any were missed. Credits ~2.08mg lycopene (tomatoes), ~109mg vitamin C (mostly the cabbages)."},
+    {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -27,13 +28,14 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 10.88
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 00:00-06:45, 6.75h — a short night, below the 7-9h target band, late bedtime, one continuous stretch.",
     "~07:00 (time not given, approximated) Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:35 double espresso (2 caffeine shots).",
     "09:00 (time not given, approximated) breakfast: 1 Brazil nut (~95mcg selenium) + 20 cherry tomatoes + 3 slices Tnuva Emek Light yellow cheese 9% fat (~75g) — all same standard/verified references as prior entries.",
-    "13:00 lunch: 250g grilled chicken breast + 10g lemon juice + 20g citrus vinaigrette + a 500g salad (cucumber, red onion, cherry tomatoes, white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower — names only, no weights, distributed proportionally across standard per-100g references, same method as prior Wolt-receipt salads). The salad-builder screenshot showed a '1/2' page indicator — only one screen of ingredients was shared, so there may be more not captured; flagged."
+    "13:00 lunch: 250g grilled chicken breast + 10g lemon juice + 20g citrus vinaigrette + a 500g salad (cucumber, red onion, cherry tomatoes, white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower — names only, no weights, distributed proportionally across standard per-100g references, same method as prior Wolt-receipt salads). The salad-builder screenshot showed a '1/2' page indicator — only one screen of ingredients was shared, so there may be more not captured; flagged.",
+    "13:00 espresso (1 more caffeine shot, 3 total for the day)."
   ],
-  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, late bedtime. Allergy spray + pill at ~07:00, a double espresso at 08:35, breakfast at 09:00 (Brazil nut, cherry tomatoes, yellow cheese 9%), and lunch at 13:00 (grilled chicken breast, lemon juice, citrus vinaigrette, a 500g mixed salad) (caffeine_shots: 2)."
+  "status_note": "Slept 6.75h (00:00-06:45) — below the 7-9h target band, late bedtime. Allergy spray + pill at ~07:00, a double espresso at 08:35, breakfast at 09:00 (Brazil nut, cherry tomatoes, yellow cheese 9%), and lunch at 13:00 (grilled chicken breast, lemon juice, citrus vinaigrette, a 500g mixed salad, an espresso) (caffeine_shots: 3)."
 }
