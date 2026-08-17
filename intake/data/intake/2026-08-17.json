@@ -1,10 +1,10 @@
 {
   "date": "2026-08-17",
   "day_number": 51,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "workout_summary": null,
-  "_status": "Day just opened — sleep logged.",
+  "_status": "Day complete.",
   "items": [
     {"time": "06:35", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -36,10 +36,11 @@
     {"time": "18:50", "name": "Dinner — balsamic glaze", "category": "food", "qty": "~1 tbsp (15 g)", "kcal": 44, "protein_g": 0.1, "carbs_g": 9.8, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "standard balsamic glaze reference (~290kcal/100g), amount not weighed, typical drizzle assumed"},
     {"time": "18:50", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "19:10", "name": "Dark chocolate chips", "category": "food", "qty": "10 chips (~5 g)", "kcal": 28, "protein_g": 0.35, "carbs_g": 2.25, "fat_g": 1.9, "fiber_g": 0.5, "note": "saved reference (~70% dark chocolate baking chip, ~550kcal/100g)"},
-    {"time": "19:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
+    {"time": "19:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "22:45", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, verified reference (supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 17.8,
     "selenium_mcg": 167,
     "folate_mcg_dfe": 133.15,
     "omega3_epa_dha_mg": 300,
@@ -63,7 +64,8 @@
     "18:50 dinner: 2 Angel Pita Pro + 4 yellow cheese slices 9% + 45g Simfonia + an olive oil spray + 1 cucumber + 10 cherry tomatoes + 0.5 red onion + lemon juice + balsamic glaze (amounts for the last two not weighed, typical drizzle assumed) — all same standard/saved references as prior entries.",
     "18:50 creatine monohydrate, 5g — zero kcal/macros.",
     "19:10 10 dark chocolate chips (~5g), saved reference.",
-    "19:20 Rhinolast PM dose — both allergy spray doses done today."
+    "19:20 Rhinolast PM dose — both allergy spray doses done today.",
+    "22:45 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Slept 7.08h (23:15-06:20) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:35, breakfast at 08:00 (vanilla protein yogurt, granola), the Mayven multivitamin gummies at 08:10, espressos at 08:00/09:30/13:25/15:20, a snack at 10:20 (yellow cheese, Brazil nut, cherry tomatoes), lunch at 12:53 at גרקו הרצליה (tzatziki, egg salad, raw sea bream fish salad), another vanilla protein yogurt + granola at 15:20, a green apple at 16:20, dinner at 18:50 (Angel Pita Pro, yellow cheese, Simfonia, cucumber, cherry tomatoes, red onion, lemon juice, balsamic glaze), creatine at 18:50, dark chocolate chips at 19:10, and the PM allergy spray at 19:20 (caffeine_shots: 4)."
+  "status_note": "Day complete. Slept 7.08h (23:15-06:20) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:35, breakfast at 08:00 (vanilla protein yogurt, granola), the Mayven multivitamin gummies at 08:10, espressos at 08:00/09:30/13:25/15:20, a snack at 10:20 (yellow cheese, Brazil nut, cherry tomatoes), lunch at 12:53 at גרקו הרצליה (tzatziki, egg salad, raw sea bream fish salad), another vanilla protein yogurt + granola at 15:20, a green apple at 16:20, dinner at 18:50 (Angel Pita Pro, yellow cheese, Simfonia, cucumber, cherry tomatoes, red onion, lemon juice, balsamic glaze), creatine at 18:50, dark chocolate chips at 19:10, the PM allergy spray at 19:20, and Zinc Picolinate at 22:45 (caffeine_shots: 4)."
 }
