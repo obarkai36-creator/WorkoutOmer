@@ -1,5 +1,5 @@
 {
-  "now": 1786945166982,
+  "now": 1786946135675,
   "workouts": [
     {
       "datetime": "2026-08-15T11:00",
@@ -4614,8 +4614,8 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 59,
-      "readyInHours": 40.1,
+      "pct": 58,
+      "readyInHours": 39.8,
       "ready": false
     },
     "shoulders": {
@@ -4630,8 +4630,8 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 36,
-      "readyInHours": 6.9,
+      "pct": 35,
+      "readyInHours": 6.6,
       "ready": false
     },
     "triceps": {
@@ -4725,15 +4725,15 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 59,
-      "readyInHours": 40.1,
+      "pct": 58,
+      "readyInHours": 39.8,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 59,
-          "readyInHours": 40.1,
+          "pct": 58,
+          "readyInHours": 39.8,
           "ready": false
         }
       ]
@@ -4756,14 +4756,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 16,
-      "readyInHours": 6.9,
+      "readyInHours": 6.6,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 36,
-          "readyInHours": 6.9,
+          "pct": 35,
+          "readyInHours": 6.6,
           "ready": false
         },
         {
@@ -5874,7 +5874,7 @@
     "fatigue": 4,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-17T05:39:26.982Z",
+    "readyAt": "2026-08-17T05:55:35.675Z",
     "neverLogged": false,
     "daysSince": 9.8,
     "suggestedExercises": [
@@ -5990,13 +5990,13 @@
       {
         "section": "Arms",
         "fatigue": 16,
-        "readyInHours": 6.9,
+        "readyInHours": 6.6,
         "daysSince": 1.8
       },
       {
         "section": "Back",
-        "fatigue": 59,
-        "readyInHours": 40.1,
+        "fatigue": 58,
+        "readyInHours": 39.8,
         "daysSince": 1.8
       }
     ],
