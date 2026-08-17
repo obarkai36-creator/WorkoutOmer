@@ -1,5 +1,5 @@
 {
-  "now": 1786948194168,
+  "now": 1786985009881,
   "workouts": [
     {
       "datetime": "2026-08-15T11:00",
@@ -4606,7 +4606,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 6,
+      "pct": 5,
       "readyInHours": 0,
       "ready": true
     },
@@ -4614,15 +4614,15 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 58,
-      "readyInHours": 39.3,
+      "pct": 49,
+      "readyInHours": 29,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "ready": true
     },
@@ -4630,9 +4630,9 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 35,
-      "readyInHours": 6,
-      "ready": false
+      "pct": 27,
+      "readyInHours": 0,
+      "ready": true
     },
     "triceps": {
       "key": "triceps",
@@ -4646,7 +4646,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 12,
+      "pct": 9,
       "readyInHours": 0,
       "ready": true
     },
@@ -4654,7 +4654,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 17,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -4670,7 +4670,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 24,
+      "pct": 20,
       "readyInHours": 0,
       "ready": true
     },
@@ -4678,7 +4678,7 @@
       "key": "adductors",
       "label": "Adductors",
       "section": "Legs",
-      "pct": 17,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -4686,7 +4686,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 7,
+      "pct": 5,
       "readyInHours": 0,
       "ready": true
     },
@@ -4710,14 +4710,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 6,
+      "pct": 5,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 6,
+          "pct": 5,
           "readyInHours": 0,
           "ready": true
         }
@@ -4725,29 +4725,29 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 58,
-      "readyInHours": 39.3,
+      "pct": 49,
+      "readyInHours": 29,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 58,
-          "readyInHours": 39.3,
+          "pct": 49,
+          "readyInHours": 29,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 4,
+          "pct": 3,
           "readyInHours": 0,
           "ready": true
         }
@@ -4755,22 +4755,22 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 16,
-      "readyInHours": 6,
+      "pct": 12,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 35,
-          "readyInHours": 6,
-          "ready": false
+          "pct": 27,
+          "readyInHours": 0,
+          "ready": true
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 12,
+          "pct": 9,
           "readyInHours": 0,
           "ready": true
         },
@@ -4786,14 +4786,14 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 13,
+      "pct": 10,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 24,
+          "pct": 20,
           "readyInHours": 0,
           "ready": true
         },
@@ -4801,7 +4801,7 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 17,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         },
@@ -4809,7 +4809,7 @@
           "key": "adductors",
           "label": "Adductors",
           "section": "Legs",
-          "pct": 17,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -4817,7 +4817,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 7,
+          "pct": 5,
           "readyInHours": 0,
           "ready": true
         },
@@ -5836,7 +5836,7 @@
         "label": "-4w",
         "stress": 351,
         "sessions": 4,
-        "acwr": 0.87
+        "acwr": 0.9
       },
       {
         "label": "-3w",
@@ -5852,31 +5852,31 @@
       },
       {
         "label": "-1w",
-        "stress": 827,
-        "sessions": 5,
-        "acwr": 1.42
+        "stress": 856,
+        "sessions": 6,
+        "acwr": 1.45
       },
       {
         "label": "This wk",
-        "stress": 697,
-        "sessions": 4,
-        "acwr": 1.04
+        "stress": 668,
+        "sessions": 3,
+        "acwr": 1
       }
     ],
-    "acute": 697,
+    "acute": 668,
     "chronic": 671,
-    "acwr": 1.04,
+    "acwr": 1,
     "acwrZone": "ok",
     "sessions28": 15
   },
   "recommendation": {
     "section": "Shoulders",
-    "fatigue": 4,
+    "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-17T06:29:54.168Z",
+    "readyAt": "2026-08-17T16:43:29.881Z",
     "neverLogged": false,
-    "daysSince": 9.8,
+    "daysSince": 10.3,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -5971,41 +5971,41 @@
     "ranked": [
       {
         "section": "Shoulders",
-        "fatigue": 4,
+        "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 9.8
+        "daysSince": 10.3
       },
       {
         "section": "Legs",
-        "fatigue": 13,
+        "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 2.6
+        "daysSince": 3
       },
       {
         "section": "Arms",
-        "fatigue": 16,
-        "readyInHours": 6,
-        "daysSince": 1.8
+        "fatigue": 12,
+        "readyInHours": 0,
+        "daysSince": 2.2
       },
       {
         "section": "Chest",
-        "fatigue": 6,
+        "fatigue": 5,
         "readyInHours": 0,
-        "daysSince": 8.6
+        "daysSince": 9
       },
       {
         "section": "Back",
-        "fatigue": 58,
-        "readyInHours": 39.3,
-        "daysSince": 1.8
+        "fatigue": 49,
+        "readyInHours": 29,
+        "daysSince": 2.2
       }
     ],
     "suggestedCount": 4,
     "totalAvailable": 8,
     "typicalSessionSize": 4,
-    "aerobicLast7": 2,
+    "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1.8
+    "daysSinceAerobic": 2.2
   },
   "alerts": [
     {
@@ -6016,7 +6016,8 @@
   ],
   "changes": [
     "You're below your PR on 4 lifts — closest wins first: Rope Cable Extension (81% of best), Pec Fly Machine (82% of best), Converging Shoulder Press (82% of best). Add a rep or a set before adding weight.",
-    "Add pulling volume — push is 1.44× your pull. Aim toward ~1:1 to keep shoulders healthy."
+    "Add pulling volume — push is 1.44× your pull. Aim toward ~1:1 to keep shoulders healthy.",
+    "Only 1/2 aerobic sessions this week — add an easy run or row."
   ],
   "timing": {
     "avgGap": 3.7,
@@ -6033,7 +6034,7 @@
       9,
       11
     ],
-    "daysSinceLast": 1.8,
+    "daysSinceLast": 2.2,
     "total": 47
   },
   "relstrength": {
@@ -6084,7 +6085,7 @@
   "aerobic": {
     "any": true,
     "count": 24,
-    "km7": 6.8,
+    "km7": 0,
     "km28": 11.8,
     "totalKm": 103.9,
     "longest": 13.35,
@@ -6100,7 +6101,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.8,
+    "daysSinceLast": 2.2,
     "recent": [
       {
         "t": 1786791600000,
