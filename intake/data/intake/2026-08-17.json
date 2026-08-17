@@ -7,7 +7,9 @@
   "_status": "Day just opened — sleep logged.",
   "items": [
     {"time": "06:35", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
-    {"time": "06:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+    {"time": "06:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "08:00", "name": "Breakfast — Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
+    {"time": "08:00", "name": "Breakfast — Granola", "category": "food", "qty": "0.5 tsp (~2.5 g)", "kcal": 12, "protein_g": 0.25, "carbs_g": 1.6, "fat_g": 0.5, "fiber_g": 0.18, "time_approx": true, "note": "generic granola reference (~471kcal/100g), same as prior entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -22,7 +24,8 @@
   "caffeine_shots": 0,
   "assumptions": [
     "Sleep logged: 23:15-06:20, 7.08h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
-    "06:35 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done."
+    "06:35 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "08:00 (time not given, approximated) breakfast: 1 vanilla protein yogurt + 0.5 tsp granola — same standard references as prior entries."
   ],
-  "status_note": "Slept 7.08h (23:15-06:20) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:35."
+  "status_note": "Slept 7.08h (23:15-06:20) — a solid full night, squarely in the 7-9h target band. Allergy spray + pill at 06:35, breakfast at 08:00 (vanilla protein yogurt, granola)."
 }
