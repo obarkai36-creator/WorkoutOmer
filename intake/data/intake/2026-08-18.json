@@ -1,10 +1,10 @@
 {
   "date": "2026-08-18",
   "day_number": 52,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Shoulders, 20:00. Dumbbell Shoulder Press 18kg each×4×10 (ties best); Seated Lateral Raises 12kg each×4×10 (below best); Shoulder Shrugs 26kg each×4×8 (heavier weight, but below best by est. 1RM); Farmer's Hold 26kg each×4×30s (heavier weight, but below best by volume). 0 new PRs.",
-  "_status": "In progress.",
+  "_status": "Day complete.",
   "items": [
     {"time": "06:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -28,10 +28,12 @@
     {"time": "18:00", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "30 g", "kcal": 92, "protein_g": 5.3, "carbs_g": 1.6, "fat_g": 7.6, "fiber_g": 0, "note": "same per-gram rate as prior Simfonia entries"},
     {"time": "18:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "21:00", "name": "Post-workout — red grapes", "category": "food", "qty": "10 grapes (~50 g)", "kcal": 35, "protein_g": 0.4, "carbs_g": 9.1, "fat_g": 0.1, "fiber_g": 0.45, "time_approx": true, "note": "same standard grape reference as prior entries (~69kcal/100g, ~5g/grape)"},
-    {"time": "21:00", "name": "Post-workout — Protein Captain Crunch cereal (iHerb)", "category": "food", "qty": "a few handfuls (~30 g)", "kcal": 117, "protein_g": 9.17, "carbs_g": 12.5, "fat_g": 4.17, "fiber_g": 5, "time_approx": true, "note": "same per-gram rate as the 12 Aug / 17 Aug entries (label: 140kcal/36g serving, 11g protein, 15g carb, 6g fiber, 5g fat) — reused the same ~30g handful amount as previously logged"}
+    {"time": "21:00", "name": "Post-workout — Protein Captain Crunch cereal (iHerb)", "category": "food", "qty": "a few handfuls (~30 g)", "kcal": 117, "protein_g": 9.17, "carbs_g": 12.5, "fat_g": 4.17, "fiber_g": 5, "time_approx": true, "note": "same per-gram rate as the 12 Aug / 17 Aug entries (label: 140kcal/36g serving, 11g protein, 15g carb, 6g fiber, 5g fat) — reused the same ~30g handful amount as previously logged"},
+    {"time": "21:20", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "22:30", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, verified reference (supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 5.95,
+    "zinc_mg": 20.95,
     "selenium_mcg": 57.75,
     "folate_mcg_dfe": 205.38,
     "omega3_epa_dha_mg": 1000,
@@ -55,7 +57,10 @@
     "16:00 (time not given, approximated) 15 dark chocolate chips (~7.5g), same saved reference.",
     "18:00 dinner: 30g baby mozzarella + 2 Angel Pita Pro + 4 yellow cheese slices 9% + an olive oil spray + 5 lettuce (lalik) pieces (~50g, estimated) + 30 cherry tomatoes + 30g Simfonia — all same standard/saved references as prior entries.",
     "~18:30 Rhinolast PM dose — both allergy spray doses done today.",
-    "~21:00 post-workout snack (time not given, approximated): 10 red grapes (~50g) + a few handfuls of Protein Captain Crunch cereal (~30g, same reference as prior entries)."
+    "~21:00 post-workout snack (time not given, approximated): 10 red grapes (~50g) + a few handfuls of Protein Captain Crunch cereal (~30g, same reference as prior entries).",
+    "21:10 self ejaculation event (masturbation) — logged to ejaculation.json.",
+    "21:20 creatine monohydrate, 4.5g — zero kcal/macros.",
+    "22:30 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Slept 6.75h (23:15-06:00) — below the 7-9h target band. Weigh-in: 81.15kg (-0.40kg vs 17 Aug), body fat 27.0%. Allergy spray + pill at 06:20, the Mayven multivitamin gummies at 06:25, espressos at 07:25 and 09:25, Yoplait GO + granola at 08:35, lunch at 12:40 (one-pot chicken & spelt pasta), omega-3 at 13:15, dark chocolate chips at 13:40 and 16:00, a grape + protein puffs snack at 15:40, dinner at 18:00 (baby mozzarella, Angel Pita Pro, yellow cheese, olive oil spray, lettuce, cherry tomatoes, Simfonia), the PM allergy spray at ~18:30, a Shoulders workout at 20:00 (0 new PRs), and a post-workout grape + protein cereal snack at ~21:00 (caffeine_shots: 4)."
+  "status_note": "Day complete. Slept 6.75h (23:15-06:00) — below the 7-9h target band. Weigh-in: 81.15kg (-0.40kg vs 17 Aug), body fat 27.0%. Allergy spray + pill at 06:20, the Mayven multivitamin gummies at 06:25, espressos at 07:25 and 09:25, Yoplait GO + granola at 08:35, lunch at 12:40 (one-pot chicken & spelt pasta), omega-3 at 13:15, dark chocolate chips at 13:40 and 16:00, a grape + protein puffs snack at 15:40, dinner at 18:00 (baby mozzarella, Angel Pita Pro, yellow cheese, olive oil spray, lettuce, cherry tomatoes, Simfonia), the PM allergy spray at ~18:30, a Shoulders workout at 20:00 (0 new PRs), a post-workout grape + protein cereal snack at ~21:00, a self ejaculation event at 21:10, creatine at 21:20, and Zinc Picolinate at 22:30 (caffeine_shots: 4)."
 }

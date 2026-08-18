@@ -1,5 +1,5 @@
 {
-  "now": 1787075817677,
+  "now": 1787077331010,
   "workouts": [
     {
       "datetime": "2026-08-18T20:00",
@@ -4743,8 +4743,8 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 38,
-      "readyInHours": 13.7,
+      "pct": 37,
+      "readyInHours": 13.3,
       "ready": false
     },
     "shoulders": {
@@ -4752,7 +4752,7 @@
       "label": "Shoulders",
       "section": "Shoulders",
       "pct": 90,
-      "readyInHours": 43.7,
+      "readyInHours": 43.6,
       "ready": false
     },
     "biceps": {
@@ -4854,15 +4854,15 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 38,
-      "readyInHours": 13.7,
+      "pct": 37,
+      "readyInHours": 13.3,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 38,
-          "readyInHours": 13.7,
+          "pct": 37,
+          "readyInHours": 13.3,
           "ready": false
         }
       ]
@@ -4870,14 +4870,14 @@
     "Shoulders": {
       "section": "Shoulders",
       "pct": 90,
-      "readyInHours": 43.7,
+      "readyInHours": 43.6,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
           "pct": 90,
-          "readyInHours": 43.7,
+          "readyInHours": 43.6,
           "ready": false
         }
       ]
@@ -6003,9 +6003,9 @@
     "fatigue": 6,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-18T17:56:57.677Z",
+    "readyAt": "2026-08-18T18:22:11.010Z",
     "neverLogged": false,
-    "daysSince": 4,
+    "daysSince": 4.1,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -6157,7 +6157,7 @@
         "section": "Legs",
         "fatigue": 6,
         "readyInHours": 0,
-        "daysSince": 4
+        "daysSince": 4.1
       },
       {
         "section": "Chest",
@@ -6167,8 +6167,8 @@
       },
       {
         "section": "Back",
-        "fatigue": 38,
-        "readyInHours": 13.7,
+        "fatigue": 37,
+        "readyInHours": 13.3,
         "daysSince": 3.3
       },
       {
@@ -6180,7 +6180,7 @@
       {
         "section": "Shoulders",
         "fatigue": 90,
-        "readyInHours": 43.7,
+        "readyInHours": 43.6,
         "daysSince": -0.1
       }
     ],
@@ -6200,7 +6200,7 @@
     {
       "level": "low",
       "title": "Shoulders fatigued (90%)",
-      "detail": "Recovers in ~43.7h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~43.6h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
