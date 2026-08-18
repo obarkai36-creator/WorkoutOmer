@@ -225,11 +225,11 @@ const SNAPSHOT = [
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 4, reps: 10, weight: 36, text: "18kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 36, text: "18kg each × 4×10" } },
   { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" } },
-  { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
+  { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
   { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" } },
   { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 9, weight: 73, text: "73kg × 3×9" }, best: { sets: 3, reps: 9, weight: 73, text: "73kg × 3×9" } },
-  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" }, best: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" } },
+  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 8, weight: 52, text: "26kg each × 4×8" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
+  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 30, weight: 52, text: "26kg each × 4×30s" }, best: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" } },
 
   // ---- Arms: Triceps ----
   { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 4, weight: 36, text: "18kg each × 4×4" }, best: { sets: 4, reps: 6, weight: 32, text: "16kg each × 4×6" } },
@@ -285,6 +285,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 18 Aug — Shoulders (20:00)
+  {
+    datetime: "2026-08-18T20:00", note: "Shoulders",
+    exercises: [
+      { name: "Dumbbell Shoulder Press", sets: [ { reps: 10, weight: 36 }, { reps: 10, weight: 36 }, { reps: 10, weight: 36 }, { reps: 10, weight: 36 } ] },
+      { name: "Seated Lateral Raises",   sets: [ { reps: 10, weight: 24 }, { reps: 10, weight: 24 }, { reps: 10, weight: 24 }, { reps: 10, weight: 24 } ] },
+      { name: "Shoulder Shrugs",         sets: [ { reps: 8, weight: 52 }, { reps: 8, weight: 52 }, { reps: 8, weight: 52 }, { reps: 8, weight: 52 } ] },
+      { name: "Farmer's Hold",           sets: [ { seconds: 30, weight: 52 }, { seconds: 30, weight: 52 }, { seconds: 30, weight: 52 }, { seconds: 30, weight: 52 } ] },
+    ],
+  },
+
   // 15 Aug — Back + Stationary Bike (rehab) (11:00)
   {
     datetime: "2026-08-15T11:00", note: "Back + Stationary Bike (rehab, low intensity, after weights)",
