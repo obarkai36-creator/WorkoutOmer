@@ -1,5 +1,5 @@
 {
-  "now": 1787056908905,
+  "now": 1787066722933,
   "workouts": [
     {
       "datetime": "2026-08-15T11:00",
@@ -4614,8 +4614,8 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 35,
-      "readyInHours": 9.1,
+      "pct": 33,
+      "readyInHours": 6.3,
       "ready": false
     },
     "shoulders": {
@@ -4630,7 +4630,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 16,
+      "pct": 15,
       "readyInHours": 0,
       "ready": true
     },
@@ -4678,7 +4678,7 @@
       "key": "adductors",
       "label": "Adductors",
       "section": "Legs",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -4725,15 +4725,15 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 35,
-      "readyInHours": 9.1,
+      "pct": 33,
+      "readyInHours": 6.3,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 35,
-          "readyInHours": 9.1,
+          "pct": 33,
+          "readyInHours": 6.3,
           "ready": false
         }
       ]
@@ -4755,14 +4755,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 16,
+          "pct": 15,
           "readyInHours": 0,
           "ready": true
         },
@@ -4809,7 +4809,7 @@
           "key": "adductors",
           "label": "Adductors",
           "section": "Legs",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         },
@@ -5830,7 +5830,7 @@
         "label": "-5w",
         "stress": 376,
         "sessions": 3,
-        "acwr": 0.89
+        "acwr": 0.99
       },
       {
         "label": "-4w",
@@ -5842,19 +5842,19 @@
         "label": "-3w",
         "stress": 841,
         "sessions": 4,
-        "acwr": 1.64
+        "acwr": 1.73
       },
       {
         "label": "-2w",
-        "stress": 505,
-        "sessions": 3,
-        "acwr": 1
+        "stress": 733,
+        "sessions": 4,
+        "acwr": 1.3
       },
       {
         "label": "-1w",
-        "stress": 671,
-        "sessions": 5,
-        "acwr": 1.16
+        "stress": 443,
+        "sessions": 4,
+        "acwr": 0.77
       },
       {
         "label": "This wk",
@@ -5874,9 +5874,9 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-18T12:41:48.905Z",
+    "readyAt": "2026-08-18T15:25:22.933Z",
     "neverLogged": false,
-    "daysSince": 11.1,
+    "daysSince": 11.2,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -5973,31 +5973,31 @@
         "section": "Shoulders",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 11.1
+        "daysSince": 11.2
       },
       {
         "section": "Legs",
         "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 3.8
+        "daysSince": 3.9
       },
       {
         "section": "Arms",
-        "fatigue": 7,
+        "fatigue": 6,
         "readyInHours": 0,
-        "daysSince": 3.1
+        "daysSince": 3.2
       },
       {
         "section": "Chest",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 9.9
+        "daysSince": 10
       },
       {
         "section": "Back",
-        "fatigue": 35,
-        "readyInHours": 9.1,
-        "daysSince": 3.1
+        "fatigue": 33,
+        "readyInHours": 6.3,
+        "daysSince": 3.2
       }
     ],
     "suggestedCount": 4,
@@ -6005,7 +6005,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 3.1
+    "daysSinceAerobic": 3.2
   },
   "alerts": [
     {
@@ -6034,7 +6034,7 @@
       9,
       11
     ],
-    "daysSinceLast": 3.1,
+    "daysSinceLast": 3.2,
     "total": 47
   },
   "relstrength": {
@@ -6101,7 +6101,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 3.1,
+    "daysSinceLast": 3.2,
     "recent": [
       {
         "t": 1786791600000,
