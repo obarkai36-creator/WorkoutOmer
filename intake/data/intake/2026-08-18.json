@@ -15,7 +15,9 @@
     {"time": "09:25", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "12:40", "name": "Lunch — One-pot chicken breast & spelt pasta (tomato)", "category": "food", "qty": "420 g", "kcal": 650, "protein_g": 59.75, "carbs_g": 52.5, "fat_g": 20.06, "fiber_g": 6.41, "time_approx": true, "note": "adopted recipe (intake/recipes/onepot_chicken_spelt_pasta.json), same per-100g rate as prior entries, from Sunday's batch. Credits ~7.49mg lycopene, ~57.75mcg selenium, ~3.15mg zinc, ~28.88mcg folate DFE, ~13.13mg vitamin C, ~1.84mg vitamin E."},
     {"time": "13:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "13:40", "name": "Dark chocolate chips", "category": "food", "qty": "10 chips (~5 g)", "kcal": 28, "protein_g": 0.35, "carbs_g": 2.25, "fat_g": 1.9, "fiber_g": 0.5, "note": "saved reference (~70% dark chocolate baking chip, ~550kcal/100g)"}
+    {"time": "13:40", "name": "Dark chocolate chips", "category": "food", "qty": "10 chips (~5 g)", "kcal": 28, "protein_g": 0.35, "carbs_g": 2.25, "fat_g": 1.9, "fiber_g": 0.5, "note": "saved reference (~70% dark chocolate baking chip, ~550kcal/100g)"},
+    {"time": "15:40", "name": "Red grapes", "category": "food", "qty": "25 grapes (~125 g)", "kcal": 86, "protein_g": 0.88, "carbs_g": 22.63, "fat_g": 0.25, "fiber_g": 1.13, "note": "same standard grape reference as prior entries (~69kcal/100g, ~5g/grape)"},
+    {"time": "15:40", "name": "Nacho Cheese Protein Puffs (TPI Foods)", "category": "food", "qty": "2 handfuls (~30g, 1 full serving)", "kcal": 130, "protein_g": 21, "carbs_g": 2, "fat_g": 4, "fiber_g": 0, "note": "adopted recipe (intake/recipes/tpi_nacho_cheese_protein_puffs.json), label-verified (130kcal/21p/2c/4f per 30g serving). Credits ~56IU vitamin D."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.95,
@@ -23,7 +25,7 @@
     "folate_mcg_dfe": 128.88,
     "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 13.13,
-    "vitamin_d_iu": 0,
+    "vitamin_d_iu": 56,
     "vitamin_e_mg": 1.84,
     "lycopene_mg": 7.49
   },
@@ -37,7 +39,8 @@
     "12:40 lunch: 420g One-pot chicken breast & spelt pasta from Sunday's batch — same adopted-recipe per-100g rate as prior entries.",
     "13:15 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits the day's omega-3 target.",
     "13:40 10 dark chocolate chips (~5g), saved reference.",
-    "Morning weigh-in: 81.15kg (-0.40kg vs 17 Aug), BMI 27.7, body fat 27.0%, composition steady (muscle mass 56.30kg, water 50.0%). Logged to weight.json."
+    "Morning weigh-in: 81.15kg (-0.40kg vs 17 Aug), BMI 27.7, body fat 27.0%, composition steady (muscle mass 56.30kg, water 50.0%). Logged to weight.json.",
+    "15:40 snack: 25 red grapes (~125g) + 2 handfuls Nacho Cheese Protein Puffs (~30g, 1 full serving) — both same standard/saved references as prior entries."
   ],
-  "status_note": "Slept 6.75h (23:15-06:00) — below the 7-9h target band. Weigh-in: 81.15kg (-0.40kg vs 17 Aug), body fat 27.0%. Allergy spray + pill at 06:20, the Mayven multivitamin gummies at 06:25, espressos at 07:25 and 09:25, Yoplait GO + granola at 08:35, lunch at 12:40 (one-pot chicken & spelt pasta), omega-3 at 13:15, and dark chocolate chips at 13:40 (caffeine_shots: 4)."
+  "status_note": "Slept 6.75h (23:15-06:00) — below the 7-9h target band. Weigh-in: 81.15kg (-0.40kg vs 17 Aug), body fat 27.0%. Allergy spray + pill at 06:20, the Mayven multivitamin gummies at 06:25, espressos at 07:25 and 09:25, Yoplait GO + granola at 08:35, lunch at 12:40 (one-pot chicken & spelt pasta), omega-3 at 13:15, dark chocolate chips at 13:40, and a grape + protein puffs snack at 15:40 (caffeine_shots: 4)."
 }
