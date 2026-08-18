@@ -1,5 +1,5 @@
 {
-  "now": 1787066722933,
+  "now": 1787069306904,
   "workouts": [
     {
       "datetime": "2026-08-15T11:00",
@@ -4615,7 +4615,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 33,
-      "readyInHours": 6.3,
+      "readyInHours": 5.6,
       "ready": false
     },
     "shoulders": {
@@ -4726,14 +4726,14 @@
     "Back": {
       "section": "Back",
       "pct": 33,
-      "readyInHours": 6.3,
+      "readyInHours": 5.6,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 33,
-          "readyInHours": 6.3,
+          "readyInHours": 5.6,
           "ready": false
         }
       ]
@@ -5834,15 +5834,15 @@
       },
       {
         "label": "-4w",
-        "stress": 300,
-        "sessions": 3,
-        "acwr": 0.77
+        "stress": 514,
+        "sessions": 4,
+        "acwr": 1.15
       },
       {
         "label": "-3w",
-        "stress": 841,
-        "sessions": 4,
-        "acwr": 1.73
+        "stress": 627,
+        "sessions": 3,
+        "acwr": 1.29
       },
       {
         "label": "-2w",
@@ -5860,115 +5860,101 @@
         "label": "This wk",
         "stress": 668,
         "sessions": 3,
-        "acwr": 1
+        "acwr": 1.08
       }
     ],
     "acute": 668,
-    "chronic": 671,
-    "acwr": 1,
+    "chronic": 618,
+    "acwr": 1.08,
     "acwrZone": "ok",
-    "sessions28": 15
+    "sessions28": 14
   },
   "recommendation": {
-    "section": "Shoulders",
-    "fatigue": 2,
-    "restHours": 0,
-    "readyNow": true,
-    "readyAt": "2026-08-18T15:25:22.933Z",
+    "section": "Back",
+    "fatigue": 33,
+    "restHours": 5.6,
+    "readyNow": false,
+    "readyAt": "2026-08-18T21:44:26.904Z",
     "neverLogged": false,
-    "daysSince": 11.2,
+    "daysSince": 3.2,
     "suggestedExercises": [
       {
-        "name": "Converging Shoulder Press",
-        "best": "79kg × 4×8",
-        "best1RM": 100.1,
-        "iso": false,
-        "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (79kg × 4×8)",
-          "note": "Last session came in under your best (79kg × 4×8) — rebuild to that before pushing further."
-        }
-      },
-      {
-        "name": "Dumbbell Shoulder Press",
-        "best": "18kg each × 4×10",
-        "best1RM": 48,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×11)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 18kg each × 4×10."
-        }
-      },
-      {
-        "name": "Lateral Raises",
-        "best": "16kg each × 4×9",
-        "best1RM": 41.6,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×10)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×10 from 16kg each × 4×9."
-        }
-      },
-      {
-        "name": "Seated Lateral Raises",
-        "best": "14kg each × 4×7",
-        "best1RM": 34.5,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×8)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×8 from 14kg each × 4×7."
-        }
-      },
-      {
-        "name": "Front Raises",
-        "best": "18kg KB × 4×8",
-        "best1RM": 22.8,
+        "name": "Diverging Seated Row",
+        "best": "97kg × 4×8",
+        "best1RM": 122.9,
         "iso": false,
         "target": {
           "status": "progress",
           "text": "+1 rep (aim 4×9)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×9 from 18kg KB × 4×8."
+          "note": "Add 1 rep per set at the same weight — aim for 4×9 from 97kg × 4×8."
         }
       },
       {
-        "name": "Rear Delt Machine",
-        "best": "73kg × 3×9",
-        "best1RM": 94.9,
+        "name": "Low Row",
+        "best": "79kg × 4×10",
+        "best1RM": 105.3,
         "iso": false,
         "target": {
           "status": "progress",
-          "text": "+1 rep (aim 3×10)",
-          "note": "Add 1 rep per set at the same weight — aim for 3×10 from 73kg × 3×9."
+          "text": "+1 rep (aim 4×11)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 79kg × 4×10."
         }
       },
       {
-        "name": "Shoulder Shrugs",
-        "best": "24kg each × 4×12",
-        "best1RM": 67.2,
+        "name": "Lat Pulldown (Triangle)",
+        "best": "77kg × 3×8",
+        "best1RM": 97.5,
         "iso": false,
         "target": {
           "status": "progress",
-          "text": "+2.5kg (reset to 4×8)",
-          "note": "You're at 12 reps on 24kg each × 4×12 — step the weight up ~2.5kg and reset to 4×8."
+          "text": "+1 rep (aim 3×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×9 from 77kg × 3×8."
         }
       },
       {
-        "name": "Farmer's Hold",
-        "best": "24kg each × 4×35s",
+        "name": "Reverse Incline DB Row",
+        "best": "26kg each × 4×11",
+        "best1RM": 71.1,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×12)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×12 from 26kg each × 4×11."
+        }
+      },
+      {
+        "name": "Dumbbell Pullover",
+        "best": "20kg × 4×11",
+        "best1RM": 27.3,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×12)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×12 from 20kg × 4×11."
+        }
+      },
+      {
+        "name": "Dead Hang",
+        "best": "35s + 30s + 25s",
         "best1RM": 0,
         "iso": true,
         "target": {
           "status": "progress",
-          "text": "+5s (aim 4×40s)",
-          "note": "Add 5s per set from your best (24kg each × 4×35s) — aim for 4×40s."
+          "text": "+5s each (aim 40s + 35s + 30s)",
+          "note": "Add 5s to each set from your best (35s + 30s + 25s) — aim for 40s + 35s + 30s."
         }
       }
     ],
-    "guidance": [],
+    "guidance": [
+      "Push is ahead of pull 1.44× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short."
+    ],
     "ranked": [
+      {
+        "section": "Back",
+        "fatigue": 33,
+        "readyInHours": 5.6,
+        "daysSince": 3.2
+      },
       {
         "section": "Shoulders",
         "fatigue": 2,
@@ -5979,7 +5965,7 @@
         "section": "Legs",
         "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 3.9
+        "daysSince": 4
       },
       {
         "section": "Arms",
@@ -5992,17 +5978,11 @@
         "fatigue": 4,
         "readyInHours": 0,
         "daysSince": 10
-      },
-      {
-        "section": "Back",
-        "fatigue": 33,
-        "readyInHours": 6.3,
-        "daysSince": 3.2
       }
     ],
-    "suggestedCount": 4,
-    "totalAvailable": 8,
-    "typicalSessionSize": 4,
+    "suggestedCount": 5,
+    "totalAvailable": 6,
+    "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
     "daysSinceAerobic": 3.2
@@ -6022,7 +6002,7 @@
   "timing": {
     "avgGap": 3.7,
     "longestGap": 35.7,
-    "perWeek": 3.8,
+    "perWeek": 3.5,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
