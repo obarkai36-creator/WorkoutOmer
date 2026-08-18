@@ -45,6 +45,49 @@
   dashboard. The old `report.yml` (workout-only PDF, auto-fired on a
   data.js push with a new WORKOUTS entry) is now workflow_dispatch-only —
   kept as a manual fallback, not something to trigger routinely anymore.
+- Interactive dashboard site (built 2026-08-18, per explicit user request —
+  decisions confirmed via AskUserQuestion: public/unlisted GitHub Pages URL,
+  single-page app with a date picker over per-day static JSON (not one page
+  per day), default tab set, keep the EOD email unchanged/in addition to the
+  site): `docs/` is a static, no-build-step site (`index.html` + `app.js` +
+  `style.css`, Chart.js vendored locally at `docs/vendor/chart.umd.js` —
+  **not** a CDN `<script src>`, since this sandbox's network policy blocks
+  `cdn.jsdelivr.net`; if that ever needs re-vendoring, `npm install chart.js`
+  from `package.json` then copy `node_modules/chart.js/dist/chart.umd.js` →
+  `docs/vendor/`, npm's registry isn't blocked). Tabs: Overview, Nutrition,
+  Training, Body Composition, Sperm Optimization, Supplements & Lifestyle —
+  each pairs charts/bars with inline recommendations (micro-deficit food
+  tips, training guidance, supplement-compliance checklist) rather than
+  dumping all commentary in one place. `intake/export_site_data.py` is the
+  data pipeline: it **imports `generate_dashboard.py` as a module** and
+  reuses its compute functions (`compute_current_week`, `compute_energy_score`,
+  `generate_suggestions`, `EXPECTED_SUPPLEMENTS`, `load_all_intake_days`,
+  etc.) plus the already-persisted `sperm.json`/`energy.json` history, so the
+  site's numbers and the emailed HTML dashboard can never drift apart — one
+  source of truth. It writes `docs/data/<date>.json` (one bundle per
+  exported day) and rebuilds `docs/data/index.json` (lightweight rollup of
+  every day, powers the history browser + trend charts without per-day
+  fetches). Usage: `python3 export_site_data.py` (latest day only — this is
+  the normal EOD case), `--all` (full historical backfill, rarely needed
+  again), or a specific date. **Run this as a new, permanent step in the EOD
+  close-out routine**, right alongside regenerating the unified HTML
+  dashboard: after closing out the day's JSON, run
+  `python3 export_site_data.py` from `intake/`, then commit+push `docs/`
+  together with the rest of the day's close-out commit — GitHub Pages
+  (serving from this branch's `/docs` folder, classic "deploy from branch"
+  mode, no separate Actions workflow needed) picks up the new commit
+  automatically, no extra trigger step required. The email pipeline
+  (`unified_report.yml`) is unchanged and untouched by this.
+  **Outstanding one-time manual step (can't be done via the GitHub MCP
+  tools available in this session — no Pages-config API exposed): the user
+  needs to enable GitHub Pages once, in repo Settings → Pages → Source:
+  "Deploy from a branch" → Branch: this session's branch → Folder: `/docs`
+  → Save.** Until that's done the site has no live URL yet, even though all
+  the data/code is already committed and correct. Once enabled, the URL is
+  `https://obarkai36-creator.github.io/WorkoutOmer/` (repo is public, so
+  this URL is unauthenticated/unlisted — anyone with the link can view it,
+  per the user's explicit choice). Remind the user to do this if they ask
+  why the link doesn't work yet.
 - Monthly recap (automated 2026-07-31): a Routine ("Monthly recap generator",
   trigger trig_01Gxt8g3RG6GfePJ2ZbTTCMr) fires on the 1st of every month,
   generates the previous month's intake/dashboards/monthly/<YYYY-MM>.html via

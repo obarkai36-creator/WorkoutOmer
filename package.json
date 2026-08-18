@@ -10,6 +10,7 @@
     "report": "node report/render.mjs && node report/send.mjs"
   },
   "dependencies": {
+    "chart.js": "^4.4.4",
     "nodemailer": "^6.9.16",
     "playwright": "^1.49.1"
   }

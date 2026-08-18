@@ -1,0 +1,148 @@
+:root {
+  --bg: #0b0f17;
+  --panel: #131a26;
+  --panel2: #0f1622;
+  --line: #1f2a3a;
+  --text: #e6edf3;
+  --muted: #8b9bb0;
+  --accent: #38bdf8;
+  --green: #22c55e;
+  --amber: #f59e0b;
+  --red: #ef4444;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); }
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
+
+/* ---- header ---- */
+header.top {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 18px;
+}
+header.top h1 { font-size: 22px; margin: 0; }
+header.top .subtitle { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+.datenav {
+  display: flex; align-items: center; gap: 8px; background: var(--panel);
+  border: 1px solid var(--line); border-radius: 12px; padding: 6px 8px;
+}
+.datenav button {
+  background: var(--panel2); border: 1px solid var(--line); color: var(--text);
+  border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 14px;
+}
+.datenav button:hover { border-color: var(--accent); }
+.datenav button:disabled { opacity: .35; cursor: default; }
+.datenav input[type="date"] {
+  background: var(--panel2); border: 1px solid var(--line); color: var(--text);
+  border-radius: 8px; padding: 6px 8px; font-size: 13px; color-scheme: dark;
+}
+.datenav .today-btn { font-size: 12px; color: var(--accent); background: none; border: none; cursor: pointer; }
+
+/* ---- tabs ---- */
+nav.tabs {
+  display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--line);
+  margin-bottom: 18px; padding-bottom: 0;
+}
+nav.tabs button {
+  background: none; border: none; color: var(--muted); padding: 10px 14px;
+  font-size: 14px; font-weight: 600; cursor: pointer; border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+nav.tabs button.active { color: var(--text); border-bottom-color: var(--accent); }
+nav.tabs button:hover { color: var(--text); }
+
+/* ---- layout ---- */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.panel {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+  padding: 16px 18px;
+}
+.panel.span { grid-column: 1 / -1; }
+.panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 0 0 12px; }
+.panel h3 { font-size: 14px; margin: 14px 0 8px; color: var(--text); }
+.panel h3:first-child { margin-top: 0; }
+
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+
+.bignum { font-size: 34px; font-weight: 800; line-height: 1; }
+.bignum small { font-size: 14px; color: var(--muted); font-weight: 600; margin-left: 2px; }
+
+/* ---- chip strip ---- */
+.chipstrip { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.chip {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+  padding: 8px 12px; min-width: 92px;
+}
+.chip .chip-v { font-size: 18px; font-weight: 800; }
+.chip .chip-k { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-top: 2px; }
+
+/* ---- bars ---- */
+.metric { margin-bottom: 12px; }
+.metric:last-child { margin-bottom: 0; }
+.metric-top { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
+.metric-top .vals { color: var(--muted); font-variant-numeric: tabular-nums; }
+.track { background: var(--panel2); border-radius: 8px; height: 8px; overflow: hidden; }
+.fill { height: 100%; border-radius: 8px; }
+.metric-note { font-size: 11.5px; color: var(--muted); margin-top: 3px; }
+.metric-tip {
+  font-size: 11.5px; margin-top: 4px; padding: 6px 8px; border-radius: 8px;
+  background: var(--panel2); border-left: 3px solid var(--amber); color: var(--text);
+}
+
+/* ---- rings ---- */
+.ring-wrap { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.ring-num { fill: var(--text); font-size: 28px; font-weight: 800; }
+.ring-sub { fill: var(--muted); font-size: 10.5px; }
+
+/* ---- tables ---- */
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr:last-child td { border-bottom: none; }
+
+/* ---- lists ---- */
+ul.plain { list-style: none; margin: 0; padding: 0; }
+ul.plain li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 13.5px; }
+ul.plain li:last-child { border-bottom: none; }
+ul.tips li { padding: 8px 0; }
+
+/* ---- badges ---- */
+.badge {
+  display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px;
+  border-radius: 999px; text-transform: uppercase; letter-spacing: .03em;
+}
+.badge.green { background: rgba(34,197,94,.15); color: var(--green); }
+.badge.amber { background: rgba(245,158,11,.15); color: var(--amber); }
+.badge.red { background: rgba(239,68,68,.15); color: var(--red); }
+.badge.blue { background: rgba(56,189,248,.15); color: var(--accent); }
+
+/* ---- charts ---- */
+.chart-box { position: relative; height: 220px; }
+.chart-box.small { height: 140px; }
+
+/* ---- misc ---- */
+.status-note { font-size: 13px; color: var(--text); line-height: 1.5; padding: 12px; background: var(--panel2); border-radius: 10px; }
+.empty-state { color: var(--muted); font-size: 13px; padding: 30px 10px; text-align: center; }
+.footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 30px; }
+.loading { color: var(--muted); text-align: center; padding: 60px 0; }
+
+::-webkit-scrollbar { height: 6px; width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+
+@media (max-width: 640px) {
+  header.top { flex-direction: column; align-items: flex-start; }
+  .bignum { font-size: 28px; }
+}
