@@ -7,7 +7,7 @@
     {"time": "06:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "09:00", "name": "Yoplait Protein Strawberry yogurt", "category": "food", "qty": "1 cup (5.6 oz, ~160 g)", "kcal": 108, "protein_g": 16.2, "carbs_g": 8.6, "fat_g": 0, "fiber_g": 0, "note": "user-reported 108kcal for the label; couldn't reach yoplait.com or the nutrition-database sites directly (network egress blocked), so protein/carbs/fat scaled from the closest confirmed public reference for this product line (Yoplait Protein Single Serve Strawberry 5.6oz: 100kcal/15g protein/3g sugar/low fat) at the same ratio scaled to 108kcal — flag if the actual label differs, especially fat/fiber which weren't confirmed"},
+    {"time": "09:00", "name": "Yoplait Protein Strawberry yogurt", "category": "food", "qty": "1 cup (5.6 oz, ~160 g)", "kcal": 108, "protein_g": 20, "carbs_g": 8.6, "fat_g": 0, "fiber_g": 0, "note": "kcal (108) and protein (20g) per user's label reading; carbs/fat scaled from the closest confirmed public reference for this product line (Yoplait Protein Single Serve Strawberry 5.6oz, ~100kcal/3g sugar/low fat) since yoplait.com and nutrition-database sites were unreachable (network egress blocked) — flag if carbs/fat differ from the actual label"},
     {"time": "09:00", "name": "Granola (topping)", "category": "food", "qty": "~5 g", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "same standard generic granola reference as prior entries (~471kcal/100g), scaled to 5g"}
   ],
   "micros_sperm_priority": {
@@ -26,7 +26,7 @@
     "Morning weigh-in: 80.85kg (-0.30kg vs 18 Aug), BMI 27.6, body fat 26.8%, composition steady (muscle mass 56.20kg, water 50.1%). Resting heart rate 92bpm (+4 vs yesterday). Logged to weight.json.",
     "06:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:00 espresso (1 caffeine shot).",
-    "09:00 Yoplait Protein Strawberry yogurt (108kcal per user, macros scaled from the closest confirmed public reference — Yoplait.com and nutrition-database sites were unreachable due to network egress blocking) + ~5g granola topping (same standard reference as prior entries)."
+    "09:00 Yoplait Protein Strawberry yogurt (108kcal/20g protein per user's label reading; carbs/fat scaled from the closest confirmed public reference — Yoplait.com and nutrition-database sites were unreachable due to network egress blocking) + ~5g granola topping (same standard reference as prior entries)."
   ],
   "status_note": "Day in progress. Slept 7.75h (22:30-06:15) — squarely in the 7-9h target band. Weigh-in: 80.85kg (-0.30kg vs 18 Aug), body fat 26.8%."
 }
