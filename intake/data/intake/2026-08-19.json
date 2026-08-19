@@ -11,7 +11,8 @@
     {"time": "09:00", "name": "Granola (topping)", "category": "food", "qty": "~5 g", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "same standard generic granola reference as prior entries (~471kcal/100g), scaled to 5g"},
     {"time": "10:25", "name": "Snack — Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "note": "standard reference, ~95mcg selenium/nut"},
     {"time": "10:25", "name": "Snack — cherry tomatoes", "category": "food", "qty": "2", "kcal": 5, "protein_g": 0.27, "carbs_g": 1.17, "fat_g": 0.06, "fiber_g": 0.36, "note": "same standard reference as prior entries. Credits ~0.88mg lycopene, ~4.4mg vitamin C, ~5.1mcg folate DFE."},
-    {"time": "10:25", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice)"}
+    {"time": "10:25", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice)"},
+    {"time": "11:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -23,14 +24,15 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0.88
   },
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 22:30-06:15, 7.75h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
     "Morning weigh-in: 80.85kg (-0.30kg vs 18 Aug), BMI 27.6, body fat 26.8%, composition steady (muscle mass 56.20kg, water 50.1%). Resting heart rate 92bpm (+4 vs yesterday). Logged to weight.json.",
     "06:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:00 espresso (1 caffeine shot).",
     "09:00 Yoplait Protein Strawberry yogurt (108kcal/20g protein per user's label reading; carbs/fat scaled from the closest confirmed public reference — Yoplait.com and nutrition-database sites were unreachable due to network egress blocking) + ~5g granola topping (same standard reference as prior entries).",
-    "10:25 snack: 1 Brazil nut (~95mcg selenium) + 2 cherry tomatoes + 1 yellow cheese slice 9% fat — all same standard/verified references as prior entries."
+    "10:25 snack: 1 Brazil nut (~95mcg selenium) + 2 cherry tomatoes + 1 yellow cheese slice 9% fat — all same standard/verified references as prior entries.",
+    "11:00 espresso (2nd caffeine shot)."
   ],
   "status_note": "Day in progress. Slept 7.75h (22:30-06:15) — squarely in the 7-9h target band. Weigh-in: 80.85kg (-0.30kg vs 18 Aug), body fat 26.8%."
 }
