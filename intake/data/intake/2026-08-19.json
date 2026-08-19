@@ -22,13 +22,14 @@
     {"time": "13:00", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
     {"time": "15:00", "name": "Yoplait Protein Strawberry yogurt", "category": "food", "qty": "1 cup (5.6 oz, ~160 g)", "kcal": 108, "protein_g": 20, "carbs_g": 8.6, "fat_g": 0, "fiber_g": 0, "note": "same reference as the 09:00 entry today"},
     {"time": "15:00", "name": "Granola (topping)", "category": "food", "qty": "~10 g", "kcal": 47, "protein_g": 1, "carbs_g": 6.4, "fat_g": 2, "fiber_g": 0.7, "note": "same standard generic granola reference as prior entries (~471kcal/100g), scaled to 10g"},
-    {"time": "15:00", "name": "Banana", "category": "food", "qty": "1 medium (~118 g)", "kcal": 105, "protein_g": 1.3, "carbs_g": 27, "fat_g": 0.4, "fiber_g": 3.1, "note": "standard medium banana reference"}
+    {"time": "15:00", "name": "Banana", "category": "food", "qty": "1 medium (~118 g)", "kcal": 105, "protein_g": 1.3, "carbs_g": 27, "fat_g": 0.4, "fiber_g": 3.1, "note": "standard medium banana reference"},
+    {"time": "15:52", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 95,
     "folate_mcg_dfe": 143.35,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 37.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -46,7 +47,8 @@
     "12:00 lunch: 2 Agami Pita Pro spelt pitas + 4 yellow cheese slices 9% + 50g Simfonia cheese spread + 15 cherry tomatoes + 1 whole cucumber — all same standard/verified references as prior entries.",
     "12:45 espresso (3rd caffeine shot).",
     "13:00 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
-    "15:00 a second Yoplait Protein Strawberry yogurt (same as this morning's) + 10g granola + 1 medium banana — all same standard/verified references as prior entries today."
+    "15:00 a second Yoplait Protein Strawberry yogurt (same as this morning's) + 10g granola + 1 medium banana — all same standard/verified references as prior entries today.",
+    "15:52 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits the day's omega-3 target."
   ],
   "status_note": "Day in progress. Slept 7.75h (22:30-06:15) — squarely in the 7-9h target band. Weigh-in: 80.85kg (-0.30kg vs 18 Aug), body fat 26.8%."
 }
