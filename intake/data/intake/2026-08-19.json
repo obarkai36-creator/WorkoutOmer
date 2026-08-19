@@ -1,7 +1,7 @@
 {
   "date": "2026-08-19",
   "day_number": 53,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "items": [
     {"time": "06:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
@@ -29,10 +29,13 @@
     {"time": "20:00", "name": "Dinner — chicken breast", "category": "food", "qty": "100 g", "kcal": 165, "protein_g": 31, "carbs_g": 0, "fat_g": 3.6, "fiber_g": 0, "time_approx": true, "note": "same standard grilled/boiled chicken breast reference as prior entries (165kcal/100g)"},
     {"time": "20:00", "name": "Dinner — mini baked potatoes", "category": "food", "qty": "2 mini (~70 g each, ~140 g)", "kcal": 130, "protein_g": 2.9, "carbs_g": 29.4, "fat_g": 0.14, "fiber_g": 3.1, "time_approx": true, "note": "no exact weight given — assumed ~70g/mini potato, same standard baked-potato-w/-skin reference as the 4 Aug entry (~93kcal/100g). Flag if larger."},
     {"time": "20:00", "name": "Dinner — salad (greens, cherry tomatoes, red onion)", "category": "food", "qty": "1 side portion, unweighed (assumed ~40g greens, 8 cherry tomatoes, ~15g red onion)", "kcal": 34, "protein_g": 1.82, "carbs_g": 7.25, "fat_g": 0.33, "fiber_g": 2.21, "time_approx": true, "note": "no weights given — typical light side-salad portion assumed from per-ingredient standard references. Credits ~3.52mg lycopene, ~18.7mg vitamin C, ~20.4mcg folate DFE."},
-    {"time": "20:00", "name": "Watermelon", "category": "food", "qty": "~200 g (assumed, not weighed)", "kcal": 60, "protein_g": 1.2, "carbs_g": 15.2, "fat_g": 0.3, "fiber_g": 0.8, "time_approx": true, "note": "standard watermelon reference (~30kcal/100g), typical dessert-portion size assumed. Credits ~8.4mg lycopene, ~16.2mg vitamin C."}
+    {"time": "20:00", "name": "Watermelon", "category": "food", "qty": "~200 g (assumed, not weighed)", "kcal": 60, "protein_g": 1.2, "carbs_g": 15.2, "fat_g": 0.3, "fiber_g": 0.8, "time_approx": true, "note": "standard watermelon reference (~30kcal/100g), typical dessert-portion size assumed. Credits ~8.4mg lycopene, ~16.2mg vitamin C."},
+    {"time": "23:40", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "23:40", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "23:40", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, verified reference (supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 17.8,
     "selenium_mcg": 95,
     "folate_mcg_dfe": 163.75,
     "omega3_epa_dha_mg": 1000,
@@ -55,7 +58,9 @@
     "13:00 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "15:00 a second Yoplait Protein Strawberry yogurt (same as this morning's) + 10g granola + 1 medium banana — all same standard/verified references as prior entries today.",
     "15:52 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits the day's omega-3 target.",
-    "~20:00 dinner (time not given, approximated) — a mixed-grill-style meal, user-flagged as high fat/protein/calories/fiber (confirmed by the math below): ~80g kebab (skewer meat, generic reference) + 250g ribeye steak (pre-cook weight, standard reference) + 100g chicken breast + 2 mini baked potatoes (~140g, weight assumed) + an unweighed side salad (greens, cherry tomatoes, red onion — quantities assumed) + ~200g watermelon (weight assumed). Several quantities are estimates, not weighed — flagged per item."
+    "~20:00 dinner (time not given, approximated) — a mixed-grill-style meal, user-flagged as high fat/protein/calories/fiber (confirmed by the math below): ~80g kebab (skewer meat, generic reference) + 250g ribeye steak (pre-cook weight, standard reference) + 100g chicken breast + 2 mini baked potatoes (~140g, weight assumed) + an unweighed side salad (greens, cherry tomatoes, red onion — quantities assumed) + ~200g watermelon (weight assumed). Several quantities are estimates, not weighed — flagged per item.",
+    "23:40 Rhinolast PM dose — both allergy spray doses done today. + 4.5g creatine monohydrate + Thorne Zinc Picolinate 15mg (resumed per the multivitamin swap plan). Day complete.",
+    "Retainers: no nights logged since 16 Aug (17th-19th all untracked) — 3+ consecutive nights with no entry, per the standing EOD check."
   ],
-  "status_note": "Day in progress. Slept 7.75h (22:30-06:15) — squarely in the 7-9h target band. Weigh-in: 80.85kg (-0.30kg vs 18 Aug), body fat 26.8%."
+  "status_note": "Day complete. Slept 7.75h (22:30-06:15) — squarely in the 7-9h target band. Weigh-in: 80.85kg (-0.30kg vs 18 Aug), body fat 26.8%. Very high-calorie/high-fat/high-protein day driven by a large mixed-grill dinner (kebab, ribeye, chicken, potatoes, salad, watermelon) — per the user's own flag, all four macros ran well over target."
 }
