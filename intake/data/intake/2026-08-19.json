@@ -17,7 +17,8 @@
     {"time": "12:00", "name": "Lunch — yellow cheese, 9% fat", "category": "food", "qty": "4 slices (~100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice)"},
     {"time": "12:00", "name": "Lunch — Simfonia cheese spread, 5% fat", "category": "food", "qty": "50 g", "kcal": 153, "protein_g": 8.83, "carbs_g": 2.67, "fat_g": 12.67, "fiber_g": 0, "note": "same per-gram rate as prior Simfonia entries"},
     {"time": "12:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "15", "kcal": 41, "protein_g": 2.03, "carbs_g": 8.78, "fat_g": 0.45, "fiber_g": 2.7, "note": "same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
-    {"time": "12:00", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "same standard reference as prior entries"}
+    {"time": "12:00", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "same standard reference as prior entries"},
+    {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -29,7 +30,7 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 7.48
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 22:30-06:15, 7.75h — a solid full night, squarely in the 7-9h target band, one continuous stretch.",
     "Morning weigh-in: 80.85kg (-0.30kg vs 18 Aug), BMI 27.6, body fat 26.8%, composition steady (muscle mass 56.20kg, water 50.1%). Resting heart rate 92bpm (+4 vs yesterday). Logged to weight.json.",
@@ -38,7 +39,8 @@
     "09:00 Yoplait Protein Strawberry yogurt (108kcal/20g protein per user's label reading; carbs/fat scaled from the closest confirmed public reference — Yoplait.com and nutrition-database sites were unreachable due to network egress blocking) + ~5g granola topping (same standard reference as prior entries).",
     "10:25 snack: 1 Brazil nut (~95mcg selenium) + 2 cherry tomatoes + 1 yellow cheese slice 9% fat — all same standard/verified references as prior entries.",
     "11:00 espresso (2nd caffeine shot).",
-    "12:00 lunch: 2 Agami Pita Pro spelt pitas + 4 yellow cheese slices 9% + 50g Simfonia cheese spread + 15 cherry tomatoes + 1 whole cucumber — all same standard/verified references as prior entries."
+    "12:00 lunch: 2 Agami Pita Pro spelt pitas + 4 yellow cheese slices 9% + 50g Simfonia cheese spread + 15 cherry tomatoes + 1 whole cucumber — all same standard/verified references as prior entries.",
+    "12:45 espresso (3rd caffeine shot)."
   ],
   "status_note": "Day in progress. Slept 7.75h (22:30-06:15) — squarely in the 7-9h target band. Weigh-in: 80.85kg (-0.30kg vs 18 Aug), body fat 26.8%."
 }
