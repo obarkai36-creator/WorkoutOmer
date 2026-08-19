@@ -18,12 +18,13 @@
     {"time": "12:00", "name": "Lunch — Simfonia cheese spread, 5% fat", "category": "food", "qty": "50 g", "kcal": 153, "protein_g": 8.83, "carbs_g": 2.67, "fat_g": 12.67, "fiber_g": 0, "note": "same per-gram rate as prior Simfonia entries"},
     {"time": "12:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "15", "kcal": 41, "protein_g": 2.03, "carbs_g": 8.78, "fat_g": 0.45, "fiber_g": 2.7, "note": "same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
     {"time": "12:00", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "same standard reference as prior entries"},
-    {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:00", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 95,
-    "folate_mcg_dfe": 43.35,
+    "folate_mcg_dfe": 143.35,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 37.4,
     "vitamin_d_iu": 0,
@@ -40,7 +41,8 @@
     "10:25 snack: 1 Brazil nut (~95mcg selenium) + 2 cherry tomatoes + 1 yellow cheese slice 9% fat — all same standard/verified references as prior entries.",
     "11:00 espresso (2nd caffeine shot).",
     "12:00 lunch: 2 Agami Pita Pro spelt pitas + 4 yellow cheese slices 9% + 50g Simfonia cheese spread + 15 cherry tomatoes + 1 whole cucumber — all same standard/verified references as prior entries.",
-    "12:45 espresso (3rd caffeine shot)."
+    "12:45 espresso (3rd caffeine shot).",
+    "13:00 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
   ],
   "status_note": "Day in progress. Slept 7.75h (22:30-06:15) — squarely in the 7-9h target band. Weigh-in: 80.85kg (-0.30kg vs 18 Aug), body fat 26.8%."
 }
