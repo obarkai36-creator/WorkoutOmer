@@ -1,7 +1,7 @@
 {
   "date": "2026-08-20",
   "day_number": 54,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "items": [
     {"time": "06:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
@@ -27,10 +27,11 @@
     {"time": "19:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "20:00", "name": "Dinner — Chicken Caesar salad (Gusto TLV)", "category": "food", "qty": "1 salad, no exact weight given", "kcal": 620, "protein_g": 56, "carbs_g": 18, "fat_g": 36, "fiber_g": 3, "time_approx": true, "note": "user confirmed chicken — corrected from the initial plain-Caesar assumption. Same standard chicken Caesar reference as prior entries (romaine, parmesan, croutons, Caesar dressing, grilled chicken breast). Restaurant meal, no weight given, flagged."},
     {"time": "20:00", "name": "Dinner — Braciola Siciliana (Gusto TLV)", "category": "food", "qty": "1 order, no exact weight/recipe given", "kcal": 550, "protein_g": 35, "carbs_g": 20, "fat_g": 35, "fiber_g": 2, "time_approx": true, "note": "read \"Brazuela Siciliana\" as Braciola Siciliana — a Sicilian stuffed meat roll (veal/pork, breadcrumb-pine nut-raisin-cheese filling) braised in tomato sauce, per general recipe knowledge, not this restaurant's specific menu listing (couldn't reach the menu directly — network egress blocked to delivery-platform sites). Directional restaurant-entree estimate, no weight given. First time logged, heavily flagged — correct if the actual dish/portion differs."},
-    {"time": "22:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "22:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "22:50", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, verified reference (supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 5.8,
+    "zinc_mg": 20.8,
     "selenium_mcg": 150,
     "folate_mcg_dfe": 183.6,
     "omega3_epa_dha_mg": 1000,
@@ -56,7 +57,9 @@
     "17:30 watermelon-lemon slushie (corrected from an ice-pop assumption; ~200ml confirmed, smaller than the initial 300ml guess) — generic slushie reference, first time logged, flagged.",
     "19:15 Rhinolast PM dose — both allergy spray doses done today.",
     "~20:00 dinner from Gusto TLV (time not given, approximated): 1 Chicken Caesar salad (chicken confirmed by user, corrected from an initial plain-Caesar assumption) + 1 Braciola Siciliana (read from \"Brazuela Siciliana\" — a Sicilian stuffed meat roll in tomato sauce). Couldn't reach the restaurant's actual menu (delivery-platform sites blocked in this sandbox), so both are directional generic-dish estimates, not weighed or menu-verified — flagged, correct if the Braciola is different from assumed.",
-    "22:00 creatine monohydrate, 4.5g — zero kcal/macros."
+    "22:00 creatine monohydrate, 4.5g — zero kcal/macros.",
+    "22:50 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete.",
+    "Retainers: still no nights logged since 16 Aug (17th-20th all untracked) — 4+ consecutive nights with no entry."
   ],
-  "status_note": "Day in progress. Slept 5.75h (00:15-06:00) — below the 7-9h target band."
+  "status_note": "Day complete. Slept 5.75h (00:15-06:00) — below the 7-9h target band. Dinner was Gusto TLV takeout (chicken Caesar salad + Braciola Siciliana, restaurant estimates, no exact weights). 3 caffeine shots today (caffeine_shots: 3)."
 }
