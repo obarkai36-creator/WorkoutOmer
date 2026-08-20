@@ -18,13 +18,14 @@
     {"time": "12:10", "name": "Lunch — red onion", "category": "food", "qty": "0.2 onion (~34 g)", "kcal": 14, "protein_g": 0.4, "carbs_g": 3.2, "fat_g": 0.03, "fiber_g": 0.56, "note": "same standard reference as prior entries. Credits ~2.5mg vitamin C."},
     {"time": "12:10", "name": "Lunch — lemon juice", "category": "food", "qty": "~1 tbsp (15 g)", "kcal": 3, "protein_g": 0.1, "carbs_g": 1, "fat_g": 0, "fiber_g": 0, "note": "same standard reference as prior lemon-juice entries. Credits ~5mg vitamin C."},
     {"time": "12:10", "name": "Lunch — Tabasco (hot sauce)", "category": "food", "qty": "a few dashes", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "negligible calories/macros at typical dash quantities, first time logged"},
-    {"time": "13:10", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:10", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.8,
     "selenium_mcg": 150,
     "folate_mcg_dfe": 183.6,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 68.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 1.75,
@@ -39,7 +40,8 @@
     "09:00 vanilla protein yogurt (1 cup, 200g) — same Danone PRO 0% reference as prior entries.",
     "10:15 snack: 1 Brazil nut (~95mcg selenium) + 1 yellow cheese slice 9% fat + 2 cherry tomatoes — all same standard/verified references as prior entries.",
     "12:10 lunch: 400g One-pot chicken breast & spelt pasta (adopted recipe, same per-100g rate as prior entries) + 20 cherry tomatoes + 2 whole cucumbers (corrected from 1) + 0.2 red onion + ~1 tbsp lemon juice + a few dashes Tabasco (negligible, first time logged) — all same standard/saved references as prior entries.",
-    "13:10 espresso (2nd caffeine shot)."
+    "13:10 espresso (2nd caffeine shot).",
+    "13:15 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits the day's omega-3 target."
   ],
   "status_note": "Day in progress. Slept 5.75h (00:15-06:00) — below the 7-9h target band."
 }
