@@ -23,7 +23,8 @@
     {"time": "14:15", "name": "Milk chocolate cube", "category": "food", "qty": "1 cube (~5 g)", "kcal": 27, "protein_g": 0.4, "carbs_g": 3, "fat_g": 1.5, "fiber_g": 0.1, "note": "standard milk chocolate reference, single square/cube"},
     {"time": "15:15", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "17:08", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "17:30", "name": "Watermelon-lemon slushie", "category": "drink", "qty": "1 small cup (assumed ~300 ml, no exact size given)", "kcal": 140, "protein_g": 0, "carbs_g": 35, "fat_g": 0, "fiber_g": 0, "note": "corrected from an ice-pop assumption — it's a slushie. No brand/size given — generic slushie reference (mostly sugar water/fruit flavoring, no real fruit content credited), first time logged, flagged"}
+    {"time": "17:30", "name": "Watermelon-lemon slushie", "category": "drink", "qty": "~200 ml", "kcal": 93, "protein_g": 0, "carbs_g": 23.3, "fat_g": 0, "fiber_g": 0, "note": "corrected from an ice-pop assumption — it's a slushie, ~200ml (confirmed size, smaller than the initial 300ml guess). No brand given — generic slushie reference (mostly sugar water/fruit flavoring, no real fruit content credited), first time logged, flagged"},
+    {"time": "19:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.8,
@@ -49,7 +50,8 @@
     "14:15 milk chocolate cube (~5g), standard reference — no meaningful micros in the tracked priority list.",
     "15:15 a second vanilla protein yogurt (same reference as this morning's).",
     "17:08 espresso (3rd caffeine shot).",
-    "17:30 watermelon-lemon slushie (corrected from an ice-pop assumption; ~300ml assumed, no exact size given) — generic slushie reference, first time logged, flagged."
+    "17:30 watermelon-lemon slushie (corrected from an ice-pop assumption; ~200ml confirmed, smaller than the initial 300ml guess) — generic slushie reference, first time logged, flagged.",
+    "19:15 Rhinolast PM dose — both allergy spray doses done today."
   ],
   "status_note": "Day in progress. Slept 5.75h (00:15-06:00) — below the 7-9h target band."
 }
