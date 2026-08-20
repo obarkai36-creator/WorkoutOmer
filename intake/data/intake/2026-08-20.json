@@ -21,7 +21,8 @@
     {"time": "13:10", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "13:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:15", "name": "Milk chocolate cube", "category": "food", "qty": "1 cube (~5 g)", "kcal": 27, "protein_g": 0.4, "carbs_g": 3, "fat_g": 1.5, "fiber_g": 0.1, "note": "standard milk chocolate reference, single square/cube"},
-    {"time": "15:15", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"}
+    {"time": "15:15", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
+    {"time": "17:08", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.8,
@@ -33,7 +34,7 @@
     "vitamin_e_mg": 1.75,
     "lycopene_mg": 16.81
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 00:15-06:00, 5.75h — a short night, below the 7-9h target band, one continuous stretch.",
     "06:15 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
@@ -45,7 +46,8 @@
     "13:10 espresso (2nd caffeine shot).",
     "13:15 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits the day's omega-3 target.",
     "14:15 milk chocolate cube (~5g), standard reference — no meaningful micros in the tracked priority list.",
-    "15:15 a second vanilla protein yogurt (same reference as this morning's)."
+    "15:15 a second vanilla protein yogurt (same reference as this morning's).",
+    "17:08 espresso (3rd caffeine shot)."
   ],
   "status_note": "Day in progress. Slept 5.75h (00:15-06:00) — below the 7-9h target band."
 }
