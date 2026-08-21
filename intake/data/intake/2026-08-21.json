@@ -7,7 +7,8 @@
   "items": [
     {"time": "07:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "07:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "07:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -25,7 +26,8 @@
     "07:20 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "07:45 espresso (1 caffeine shot).",
     "Morning run, Tel Aviv-Yafo beach promenade (exact clock time not given): Nike Run Club tracked 4.18km/38:12/276kcal/cadence 129/1m elevation gain; user reported an additional untracked ~6min/0.5km warm-up before the tracker started, folded in for a combined 4.68km/44:12/~9'27\"/km avg pace/~321kcal (the extra ~45kcal is an estimate, not app-measured — flagged). Logged to workouts.json.",
-    "Sun-exposure vitamin D estimate for the run (rough/low-confidence, per the standing estimation method): first ~3.18km/~30.7min was shirted with sunscreen on (small exposed area — face/hands — further blocked by sunscreen), estimated ~2 IU/min after a morning low-UV-angle discount ≈ 61 IU. Last 1.5km/~13.5min was shirtless, no sunscreen mentioned for the newly-exposed torso (moderate-large area, between the 'running gear' and 'torso+legs bare' anchors), estimated ~25 IU/min after the same morning discount ≈ 338 IU. Total ≈ 400 IU, folded into vitamin_d_iu — flag if the run's actual clock time, sunscreen coverage, or exposed area differs from these assumptions."
+    "Sun-exposure vitamin D estimate for the run (rough/low-confidence, per the standing estimation method): first ~3.18km/~30.7min was shirted with sunscreen on (small exposed area — face/hands — further blocked by sunscreen), estimated ~2 IU/min after a morning low-UV-angle discount ≈ 61 IU. Last 1.5km/~13.5min was shirtless, no sunscreen mentioned for the newly-exposed torso (moderate-large area, between the 'running gear' and 'torso+legs bare' anchors), estimated ~25 IU/min after the same morning discount ≈ 338 IU. Total ≈ 400 IU, folded into vitamin_d_iu — flag if the run's actual clock time, sunscreen coverage, or exposed area differs from these assumptions.",
+    "09:00 creatine monohydrate, 4.5g — zero kcal/macros."
   ],
   "status_note": "Day in progress. Slept 7.75h (23:00-06:45) — squarely in the 7-9h target band."
 }
