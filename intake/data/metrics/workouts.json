@@ -1,7 +1,7 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-08-20",
+    "report_date": "2026-08-21",
     "latest_session": "Shoulders",
     "sessions_logged": 48,
     "sessions_per_week": 3.8,
@@ -279,6 +279,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Dumbbell Shoulder Press 18kg each×4×10 (ties best exactly); Seated Lateral Raises 12kg each×4×10 (below best — est. 1RM 32.0 vs 34.5 for the 14kg each×4×7 best, since Epley's formula weights reps heavily; best unchanged); Shoulder Shrugs 26kg each×4×8 (heavier weight than the 24kg each×4×12 best, but est. 1RM 65.9 vs 67.2 — below best, not a PR; best unchanged); Farmer's Hold 26kg each×4×30s (heavier weight than the 24kg each×4×35s best, but volume 6240 vs 6720 load·seconds — below best, not a PR; best unchanged). 0 new PRs — 3 of 4 lifts used heavier weight but at reduced reps/duration, which the app's Epley-1RM/volume comparison doesn't credit as beating the best. 20:00.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-21",
+      "type": "Outdoor Run",
+      "duration_min": 44.2,
+      "intensity": "easy",
+      "notes": "4.68 km · 9'27\"/km avg pace (44:12 total) · ~321 kcal · cadence 129 · no HR data. Tel Aviv-Yafo beach promenade. Nike Run Club tracked 4.18km/38:12/276kcal/129 cadence/1m elevation gain; user added an untracked ~6 min/0.5km warm-up before the tracker started — extra distance/time folded in, extra ~45kcal estimated (flagged, not app-measured). Morning, exact clock time not given.",
       "_source": "manual log"
     }
   ]
