@@ -8,12 +8,13 @@
     {"time": "07:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "07:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "09:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "09:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "11:00", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 400,
@@ -27,7 +28,8 @@
     "07:45 espresso (1 caffeine shot).",
     "Morning run, Tel Aviv-Yafo beach promenade (exact clock time not given): Nike Run Club tracked 4.18km/38:12/276kcal/cadence 129/1m elevation gain; user reported an additional untracked ~6min/0.5km warm-up before the tracker started, folded in for a combined 4.68km/44:12/~9'27\"/km avg pace/~321kcal (the extra ~45kcal is an estimate, not app-measured — flagged). Logged to workouts.json.",
     "Sun-exposure vitamin D estimate for the run (rough/low-confidence, per the standing estimation method): first ~3.18km/~30.7min was shirted with sunscreen on (small exposed area — face/hands — further blocked by sunscreen), estimated ~2 IU/min after a morning low-UV-angle discount ≈ 61 IU. Last 1.5km/~13.5min was shirtless, no sunscreen mentioned for the newly-exposed torso (moderate-large area, between the 'running gear' and 'torso+legs bare' anchors), estimated ~25 IU/min after the same morning discount ≈ 338 IU. Total ≈ 400 IU, folded into vitamin_d_iu — flag if the run's actual clock time, sunscreen coverage, or exposed area differs from these assumptions.",
-    "09:00 creatine monohydrate, 4.5g — zero kcal/macros."
+    "09:00 creatine monohydrate, 4.5g — zero kcal/macros.",
+    "11:00 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself. Travel/lighter-logging mode in effect (through Sat 22 Aug) — supplements and workouts still logged, detailed food macros/micros paused."
   ],
   "status_note": "Day in progress. Slept 7.75h (23:00-06:45) — squarely in the 7-9h target band."
 }
