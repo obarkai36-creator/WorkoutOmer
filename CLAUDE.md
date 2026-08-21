@@ -1,5 +1,15 @@
 # Session notes
 
+- Travel/lighter-logging mode (2026-08-21 through Sunday 2026-08-23,
+  inclusive — user is away/traveling): user explicitly asked to skip exact
+  food macro/micro logging for this window. Only log supplements (with their
+  usual zero-kcal item entries) and workouts (data.js/workouts.json as
+  normal) during this period — do NOT create detailed `items` food entries
+  or estimate macros/micros for meals. Sleep/weigh-ins/lifestyle events still
+  get logged as usual (unaffected by this — only food macro/micro detail is
+  paused). Resume full detailed food logging from Monday 2026-08-24 onward
+  without being asked.
+
 - Recipe analyzer (started 2026-08-04): when the user drops a recipe — a link,
   an Instagram Reel / Facebook video caption or screenshot, an online recipe, or
   a family recipe — analyze it into `intake/recipes/<id>.json` (schema:
