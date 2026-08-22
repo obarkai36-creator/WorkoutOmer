@@ -9,7 +9,8 @@
     {"time": "09:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "09:35", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
     {"time": "10:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "17:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -30,7 +31,8 @@
     "Sun-exposure vitamin D estimate for sunbathing (rough/low-confidence, stationary-session anchor method): 'hours' with sunscreen, no exact duration/area given — assumed ~2 hours (120 min) at midday strength, large area exposed (torso+legs, typical sunbathing posture, ~90 IU/min unprotected anchor), sunscreen applied throughout discounted to ~30% effective throughput (real-world application/reapplication gaps rather than lab SPF efficacy) ≈ 27 IU/min. Total ≈ 3240 IU, folded into vitamin_d_iu — this is a large, high-uncertainty estimate; flag/correct if actual duration, time of day, or exposed area differs.",
     "10:30 espresso (1 caffeine shot).",
     "14:15 espresso (2nd caffeine shot) — a second cup, superseding the earlier \"only coffee today\" note.",
-    "15:45 Arms workout at the hotel gym, single fixed 17.5kg dumbbell pair: Incline Hammer Curl 17.5kg each×4×9, Incline DB Curl 17.5kg each×4×7, Flat DB Triceps Extension 17.5kg each×4×6 (PR), Overhead DB Triceps Extension 17.5kg×4×13, Forearm Twists 17.5kg each×4×8 (PR, swapped in for Single-Hand DB Triceps Extension). 3 of 5 lifts came out essentially tied with the home best (within a hair by est. 1RM) despite the slightly lighter 17.5kg vs 18kg dumbbells, thanks to extra reps. Logged to data.js/workouts.json."
+    "15:45 Arms workout at the hotel gym, single fixed 17.5kg dumbbell pair: Incline Hammer Curl 17.5kg each×4×9, Incline DB Curl 17.5kg each×4×7, Flat DB Triceps Extension 17.5kg each×4×6 (PR), Overhead DB Triceps Extension 17.5kg×4×13, Forearm Twists 17.5kg each×4×8 (PR, swapped in for Single-Hand DB Triceps Extension). 3 of 5 lifts came out essentially tied with the home best (within a hair by est. 1RM) despite the slightly lighter 17.5kg vs 18kg dumbbells, thanks to extra reps. Logged to data.js/workouts.json.",
+    "17:45 creatine monohydrate, 4.5g — zero kcal/macros."
   ],
   "status_note": "Day in progress. Slept 9.5h (23:00-08:30) — just above the 7-9h target band."
 }
