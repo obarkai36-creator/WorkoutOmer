@@ -7,7 +7,8 @@
     {"time": "09:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "09:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "09:35", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
-    {"time": "10:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0, "note": "user confirmed this is the only coffee today"}
+    {"time": "10:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -19,14 +20,15 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:00-08:30, 9.5h — a long night, just above the 7-9h target band, one continuous stretch.",
     "Travel/lighter-logging mode in effect (last day, through today 22 Aug per the standing instruction) — only supplements and workouts tracked in detail; no exact food macros/micros. Full food logging resumes tomorrow, Sunday 23 Aug.",
     "09:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "09:35 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "Sun-exposure vitamin D estimate for sunbathing (rough/low-confidence, stationary-session anchor method): 'hours' with sunscreen, no exact duration/area given — assumed ~2 hours (120 min) at midday strength, large area exposed (torso+legs, typical sunbathing posture, ~90 IU/min unprotected anchor), sunscreen applied throughout discounted to ~30% effective throughput (real-world application/reapplication gaps rather than lab SPF efficacy) ≈ 27 IU/min. Total ≈ 3240 IU, folded into vitamin_d_iu — this is a large, high-uncertainty estimate; flag/correct if actual duration, time of day, or exposed area differs.",
-    "10:30 espresso — user confirmed this is the only coffee today (1 caffeine shot)."
+    "10:30 espresso (1 caffeine shot).",
+    "14:15 espresso (2nd caffeine shot) — a second cup, superseding the earlier \"only coffee today\" note."
   ],
   "status_note": "Day in progress. Slept 9.5h (23:00-08:30) — just above the 7-9h target band."
 }
