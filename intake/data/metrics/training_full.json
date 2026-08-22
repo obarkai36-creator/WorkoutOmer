@@ -1,5 +1,5 @@
 {
-  "now": 1787380407520,
+  "now": 1787434508963,
   "workouts": [
     {
       "datetime": "2026-08-18T20:00",
@@ -4721,7 +4721,7 @@
     "shoulders": 6892.8,
     "biceps": 3305.6000000000004,
     "triceps": 5788,
-    "forearms": 14490,
+    "forearms": 14650,
     "quads": 16264,
     "hamstrings": 7872,
     "glutes": 7996,
@@ -4743,7 +4743,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 9,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -4751,7 +4751,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 11,
+      "pct": 8,
       "readyInHours": 0,
       "ready": true
     },
@@ -4759,7 +4759,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 2,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -4775,7 +4775,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -4799,7 +4799,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -4854,14 +4854,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 9,
+      "pct": 7,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 9,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         }
@@ -4869,14 +4869,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 11,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 11,
+          "pct": 8,
           "readyInHours": 0,
           "ready": true
         }
@@ -4884,14 +4884,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 2,
+      "pct": 1,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         },
@@ -4899,7 +4899,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 2,
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         },
@@ -4919,16 +4919,16 @@
       "readyInHours": 0,
       "muscles": [
         {
-          "key": "glutes",
-          "label": "Glutes",
+          "key": "quads",
+          "label": "Quads",
           "section": "Legs",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         },
         {
-          "key": "quads",
-          "label": "Quads",
+          "key": "glutes",
+          "label": "Glutes",
           "section": "Legs",
           "pct": 2,
           "readyInHours": 0,
@@ -5411,13 +5411,13 @@
         "name": "Flat DB Triceps Extension",
         "section": "Arms",
         "iso": false,
-        "latestText": "18kg each × 4×4",
-        "bestText": "16kg each × 4×6",
-        "latestVol": 576,
-        "bestVol": 768,
+        "latestText": "17.5kg each × 4×6",
+        "bestText": "17.5kg each × 4×6",
+        "latestVol": 840,
+        "bestVol": 840,
         "pct": 100,
-        "latest1RM": 40.8,
-        "best1RM": 38.4,
+        "latest1RM": 42,
+        "best1RM": 42,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
@@ -5428,15 +5428,15 @@
         "name": "Overhead DB Triceps Extension",
         "section": "Arms",
         "iso": false,
-        "latestText": "18kg × 4×12",
+        "latestText": "17.5kg × 4×13",
         "bestText": "18kg × 4×12",
-        "latestVol": 864,
+        "latestVol": 910,
         "bestVol": 864,
         "pct": 100,
-        "latest1RM": 25.2,
+        "latest1RM": 25.1,
         "best1RM": 25.2,
         "metric": "1RM",
-        "isPR": true,
+        "isPR": false,
         "belowPR": false,
         "gap": 0,
         "inToday": false
@@ -5513,15 +5513,15 @@
         "name": "Incline Hammer Curl",
         "section": "Arms",
         "iso": false,
-        "latestText": "18kg each × 4×8",
+        "latestText": "17.5kg each × 4×9",
         "bestText": "18kg each × 4×8",
-        "latestVol": 576,
+        "latestVol": 630,
         "bestVol": 576,
         "pct": 100,
         "latest1RM": 22.8,
         "best1RM": 22.8,
         "metric": "1RM",
-        "isPR": true,
+        "isPR": false,
         "belowPR": false,
         "gap": 0,
         "inToday": false
@@ -5530,15 +5530,15 @@
         "name": "Incline DB Curl",
         "section": "Arms",
         "iso": false,
-        "latestText": "18kg each × 4×6",
+        "latestText": "17.5kg each × 4×7",
         "bestText": "18kg each × 4×6",
-        "latestVol": 432,
+        "latestVol": 490,
         "bestVol": 432,
         "pct": 100,
         "latest1RM": 21.6,
         "best1RM": 21.6,
         "metric": "1RM",
-        "isPR": true,
+        "isPR": false,
         "belowPR": false,
         "gap": 0,
         "inToday": false
@@ -5615,13 +5615,13 @@
         "name": "Forearm Twists",
         "section": "Arms",
         "iso": false,
-        "latestText": "12kg each × 4×10",
-        "bestText": "12kg each × 4×10",
-        "latestVol": 960,
-        "bestVol": 960,
+        "latestText": "17.5kg each × 4×8",
+        "bestText": "17.5kg each × 4×8",
+        "latestVol": 1120,
+        "bestVol": 1120,
         "pct": 100,
-        "latest1RM": 32,
-        "best1RM": 32,
+        "latest1RM": 44.3,
+        "best1RM": 44.3,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
@@ -5943,13 +5943,13 @@
   "balance": {
     "bySection": {
       "Chest": 18705.6,
-      "Arms": 37269,
+      "Arms": 37872.600000000006,
       "Shoulders": 16327,
       "Back": 15011.9,
       "Legs": 51000,
       "Core": 14351.4
     },
-    "pushPull": 1.46,
+    "pushPull": 1.47,
     "quadHam": 2.29,
     "hasCore": true
   },
@@ -5957,55 +5957,55 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 485,
+        "stress": 321,
         "sessions": 3,
-        "acwr": 1.33
+        "acwr": 0.81
       },
       {
         "label": "-4w",
-        "stress": 542,
+        "stress": 705,
         "sessions": 4,
-        "acwr": 1.2
+        "acwr": 1.5
       },
       {
         "label": "-3w",
-        "stress": 640,
+        "stress": 486,
         "sessions": 3,
-        "acwr": 1.27
+        "acwr": 0.93
       },
       {
         "label": "-2w",
-        "stress": 737,
+        "stress": 774,
         "sessions": 4,
-        "acwr": 1.23
+        "acwr": 1.35
       },
       {
         "label": "-1w",
-        "stress": 680,
+        "stress": 754,
         "sessions": 5,
-        "acwr": 1.05
+        "acwr": 1.11
       },
       {
         "label": "This wk",
-        "stress": 417,
-        "sessions": 2,
-        "acwr": 0.67
+        "stress": 146,
+        "sessions": 1,
+        "acwr": 0.27
       }
     ],
-    "acute": 417,
-    "chronic": 618,
-    "acwr": 0.67,
+    "acute": 146,
+    "chronic": 540,
+    "acwr": 0.27,
     "acwrZone": "detraining",
-    "sessions28": 14
+    "sessions28": 13
   },
   "recommendation": {
     "section": "Back",
-    "fatigue": 9,
+    "fatigue": 7,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-22T06:33:27.520Z",
+    "readyAt": "2026-08-22T21:35:08.963Z",
     "neverLogged": false,
-    "daysSince": 6.8,
+    "daysSince": 7.4,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -6075,69 +6075,69 @@
       }
     ],
     "guidance": [
-      "Push is ahead of pull 1.46× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short.",
-      "Load ratio 0.67 has dipped — a normal, or even a slightly harder, session is fine."
+      "Push is ahead of pull 1.47× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short.",
+      "Load ratio 0.27 has dipped — a normal, or even a slightly harder, session is fine."
     ],
     "ranked": [
       {
         "section": "Back",
-        "fatigue": 9,
+        "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 6.8
+        "daysSince": 7.4
       },
       {
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 7.6
+        "daysSince": 8.2
       },
       {
         "section": "Arms",
-        "fatigue": 2,
+        "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 3.4
+        "daysSince": 4.1
       },
       {
         "section": "Shoulders",
-        "fatigue": 11,
+        "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 3.4
+        "daysSince": 4.1
       },
       {
         "section": "Chest",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 13.6
+        "daysSince": 14.2
       }
     ],
     "suggestedCount": 5,
     "totalAvailable": 6,
     "typicalSessionSize": 5,
-    "aerobicLast7": 1,
+    "aerobicLast7": 0,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 6.8
+    "daysSinceAerobic": 7.4
   },
   "alerts": [
     {
       "level": "med",
       "title": "Push outpacing pull",
-      "detail": "Push volume is 1.46× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "detail": "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     },
     {
       "level": "low",
       "title": "Load dropped off",
-      "detail": "Load ratio 0.67 (<0.8). A normal training week will bring this back up."
+      "detail": "Load ratio 0.27 (<0.8). A normal training week will bring this back up."
     }
   ],
   "changes": [
     "You're below your PR on 7 lifts — closest wins first: Rope Cable Extension (81% of best), Pec Fly Machine (82% of best), Converging Shoulder Press (82% of best). Add a rep or a set before adding weight.",
-    "Add pulling volume — push is 1.46× your pull. Aim toward ~1:1 to keep shoulders healthy.",
-    "Only 1/2 aerobic sessions this week — add an easy run or row."
+    "Add pulling volume — push is 1.47× your pull. Aim toward ~1:1 to keep shoulders healthy.",
+    "Only 0/2 aerobic sessions this week — add an easy run or row."
   ],
   "timing": {
     "avgGap": 3.7,
     "longestGap": 35.7,
-    "perWeek": 3.5,
+    "perWeek": 3.3,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -6149,7 +6149,7 @@
       9,
       11
     ],
-    "daysSinceLast": 3.4,
+    "daysSinceLast": 4.1,
     "total": 48
   },
   "relstrength": {
@@ -6216,7 +6216,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 6.8,
+    "daysSinceLast": 7.4,
     "recent": [
       {
         "t": 1786791600000,
