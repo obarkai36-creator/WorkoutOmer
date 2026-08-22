@@ -232,21 +232,21 @@ const SNAPSHOT = [
   { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 30, weight: 52, text: "26kg each × 4×30s" }, best: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" } },
 
   // ---- Arms: Triceps ----
-  { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 4, weight: 36, text: "18kg each × 4×4" }, best: { sets: 4, reps: 6, weight: 32, text: "16kg each × 4×6" } },
-  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 12, weight: 18, text: "18kg × 4×12" }, best: { sets: 4, reps: 12, weight: 18, text: "18kg × 4×12" } },
+  { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" } },
+  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 13, weight: 17.5, text: "17.5kg × 4×13" }, best: { sets: 4, reps: 12, weight: 18, text: "18kg × 4×12" } },
   { name: "Seated Dips",                      section: "Arms", latest: { sets: 4, reps: 8, weight: 62, text: "62kg × 4×8" }, best: { sets: 4, reps: 8, weight: 62, text: "62kg × 4×8" } },
   { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
   { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 6, weight: 64, text: "64kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" } },
 
   // ---- Arms: Biceps / Forearms ----
-  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" } },
-  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 6, weight: 18, text: "18kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 18, text: "18kg each × 4×6" } },
+  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 9, weight: 17.5, text: "17.5kg each × 4×9" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg each × 4×8" } },
+  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 7, weight: 17.5, text: "17.5kg each × 4×7" }, best: { sets: 4, reps: 6, weight: 18, text: "18kg each × 4×6" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 2, reps: 6, weight: 45, text: "45kg × 2×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
   { name: "Half Curl",            section: "Arms", latest: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" } },
-  { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" } },
+  { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" } },
 
   // ---- Legs (incl. calves) ----
   { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 8, weight: 81, text: "81kg (70kg + 11kg frame) × 4×8" }, best: { sets: 4, reps: 11, weight: 76, text: "76kg × 4×11" } },
