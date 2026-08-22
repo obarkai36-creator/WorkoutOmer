@@ -14,7 +14,7 @@
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
+    "vitamin_d_iu": 3240,
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
@@ -23,7 +23,8 @@
     "Sleep logged: 23:00-08:30, 9.5h — a long night, just above the 7-9h target band, one continuous stretch.",
     "Travel/lighter-logging mode in effect (last day, through today 22 Aug per the standing instruction) — only supplements and workouts tracked in detail; no exact food macros/micros. Full food logging resumes tomorrow, Sunday 23 Aug.",
     "09:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "09:35 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
+    "09:35 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
+    "Sun-exposure vitamin D estimate for sunbathing (rough/low-confidence, stationary-session anchor method): 'hours' with sunscreen, no exact duration/area given — assumed ~2 hours (120 min) at midday strength, large area exposed (torso+legs, typical sunbathing posture, ~90 IU/min unprotected anchor), sunscreen applied throughout discounted to ~30% effective throughput (real-world application/reapplication gaps rather than lab SPF efficacy) ≈ 27 IU/min. Total ≈ 3240 IU, folded into vitamin_d_iu — this is a large, high-uncertainty estimate; flag/correct if actual duration, time of day, or exposed area differs."
   ],
   "status_note": "Day in progress. Slept 9.5h (23:00-08:30) — just above the 7-9h target band."
 }
