@@ -1,0 +1,85 @@
+{
+  "id": "soy_glaze_chicken_breast_strips",
+  "name": "Juicy soy-glaze chicken breast strips (חזה עוף עסיסי וטעים)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram — @lichtenstadt (Hebrew caption screenshot)",
+    "captured": "2026-08-22",
+    "notes": "Analyzed from the pasted Hebrew caption (full marinade list + method; method text cut off at 'don't leave the pan' = stir/fry a few min per side). Chicken exact at 1 kg; frying oil (~1 tbsp) assumed since 'a little olive oil' isn't quantified. Per-serving assumes most of the marinade glazes onto the chicken — if you drain the bowl before frying, subtract ~2–3 g fat and ~150 mg sodium/serving. Cornflour is the 'magic' moisture-lock coating."
+  },
+  "servings": 5,
+  "serving_desc": "≈160 g cooked (1 kg raw chicken batch ÷5)",
+  "ingredients": [
+    {"item": "chicken breast", "qty": "1 kg raw", "note": "cut into uniform plump strips — VARIABLE input; scale marinade with it"},
+    {"item": "soy sauce", "qty": "3 tbsp"},
+    {"item": "olive oil (marinade)", "qty": "3 tbsp"},
+    {"item": "maple syrup / silan", "qty": "1 tbsp"},
+    {"item": "water", "qty": "1 tbsp"},
+    {"item": "sesame oil", "qty": "1 tsp"},
+    {"item": "sweet chili sauce", "qty": "1 tbsp"},
+    {"item": "paprika", "qty": "1 tbsp"},
+    {"item": "garlic powder", "qty": "1 tsp"},
+    {"item": "black pepper", "qty": "½ tsp"},
+    {"item": "ginger", "qty": "½ tsp"},
+    {"item": "salt", "qty": "½ tsp"},
+    {"item": "cornflour", "qty": "1 heaping tbsp (moisture-lock coating)"},
+    {"item": "olive oil (for frying)", "qty": "~1 tbsp (assumed)"}
+  ],
+  "steps": [
+    "Cut chicken breast into uniform plump strips.",
+    "Mix all marinade ingredients until smooth; coat the chicken and mix well.",
+    "Heat a pan with a little olive oil; fry the strips a few minutes per side until done, stirring/attending constantly (don't leave the pan)."
+  ],
+  "per_serving": {
+    "kcal": 380,
+    "protein_g": 46,
+    "carbs_g": 8.4,
+    "fat_g": 16.9,
+    "fiber_g": 0.4,
+    "micros": {
+      "selenium_mcg": 44,
+      "zinc_mg": 2.1,
+      "iron_mg": 1.5,
+      "choline_mg": 128,
+      "vitamin_e_mg": 1.6,
+      "sodium_mg": 830,
+      "added_sugar_g": 5
+    }
+  },
+  "batch_totals": {
+    "kcal": 1900,
+    "protein_g": 230,
+    "carbs_g": 42,
+    "fat_g": 84,
+    "fiber_g": 2.2,
+    "sodium_mg": 4150
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "A genuinely strong high-protein main — 46 g protein for ~380 kcal (~12 g protein per 100 kcal), lean chicken kept juicy by the cornflour trick (smart: moisture without much cost). Two levers to watch, both easy: SODIUM is high (~830 mg/serving from 3 tbsp soy + ½ tsp salt + sweet chili), and fat is moderate (~17 g) because the marinade carries 3 tbsp olive oil + sesame oil on top of the frying oil. Added sugar is modest (~5 g/serving from maple + sweet chili).",
+      "flags": ["very high protein (46 g/serving)", "lean chicken, cornflour moisture-lock", "high sodium (~830 mg/serving)", "fat driven by marinade oils (~17 g)", "modest added sugar (~5 g)"],
+      "suggested_mods": [
+        "Use low-sodium soy or cut it to 2 tbsp — biggest sodium lever",
+        "Halve the marinade olive oil (1.5 tbsp) — it's mostly flavor/coating; saves ~5 g fat/serving with little loss",
+        "Serve over a big salad or veg to add the fiber/micros the dish itself lacks"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Good lean protein + choline (~128 mg) and selenium for her, fully cooked so no safety flags. The main caution is sodium (~830 mg/serving) — worth easing in pregnancy. Ginger in culinary amounts is fine (even mildly helpful for nausea). Not a big micronutrient contributor otherwise — pair with veg/greens.",
+      "prenatal_highlights": ["46 g lean protein", "choline (~128 mg) + selenium from the chicken"],
+      "safety_advisories": [
+        {"note": "High sodium (~830 mg/serving) — ease it in pregnancy (low-sodium soy, less salt).", "swap": "low-sodium soy / cut salt"}
+      ],
+      "suggested_mods": ["Serve with greens/legumes for folate + iron", "Ginger is fine in these culinary amounts"]
+    }
+  },
+  "tags": ["dinner", "high-protein", "chicken", "poultry", "asian", "marinade", "batch"],
+  "adopted": false,
+  "created": "2026-08-22",
+  "updated": "2026-08-22",
+  "serving_g": 160
+}
