@@ -3,7 +3,10 @@
   "day_number": 56,
   "in_progress": true,
   "workout_today": false,
-  "items": [],
+  "items": [
+    {"time": "09:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "09:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -17,7 +20,8 @@
   "caffeine_shots": 0,
   "assumptions": [
     "Sleep logged: 23:00-08:30, 9.5h — a long night, just above the 7-9h target band, one continuous stretch.",
-    "Travel/lighter-logging mode in effect (last day, through today 22 Aug per the standing instruction) — only supplements and workouts tracked in detail; no exact food macros/micros. Full food logging resumes tomorrow, Sunday 23 Aug."
+    "Travel/lighter-logging mode in effect (last day, through today 22 Aug per the standing instruction) — only supplements and workouts tracked in detail; no exact food macros/micros. Full food logging resumes tomorrow, Sunday 23 Aug.",
+    "09:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done."
   ],
   "status_note": "Day in progress. Slept 9.5h (23:00-08:30) — just above the 7-9h target band."
 }

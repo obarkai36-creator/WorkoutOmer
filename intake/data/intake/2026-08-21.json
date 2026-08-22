@@ -10,6 +10,7 @@
     {"time": "07:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "09:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "11:00", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
+    {"time": "19:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — PM dose of the 2x/day spray. Back-logged the next morning (22 Aug); exact time not given, placeholder."},
     {"time": "21:55", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "22:50", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, verified reference (supplements.json)"}
   ],
@@ -35,7 +36,8 @@
     "18:00 partnered ejaculation event (full penetration) — logged to ejaculation.json.",
     "21:55 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — hits the day's omega-3 target.",
     "22:50 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete.",
-    "Travel/lighter-logging mode day (through Sat 22 Aug): only supplements and the morning run were logged in detail; no exact food macros/micros tracked today per the user's standing instruction. Totals below reflect supplements only, not a full nutrition picture."
+    "Travel/lighter-logging mode day (through Sat 22 Aug): only supplements and the morning run were logged in detail; no exact food macros/micros tracked today per the user's standing instruction. Totals below reflect supplements only, not a full nutrition picture.",
+    "Back-logged the next morning (22 Aug): Rhinolast PM dose was missed at close-out — now added (placeholder 19:30, exact time not given). Both allergy spray doses done for the day after all."
   ],
   "status_note": "Day complete. Slept 7.75h (23:00-06:45) — squarely in the 7-9h target band. Morning run (4.68km, Tel Aviv beach promenade). Travel/lighter-logging mode in effect through Sat 22 Aug — only supplements and workouts tracked in detail today, no exact food macros/micros."
 }
