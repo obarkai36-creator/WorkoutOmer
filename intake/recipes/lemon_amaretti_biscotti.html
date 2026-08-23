@@ -1,0 +1,73 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Lemon Amaretti Biscotti (gluten-free almond cookies)</title><style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+          --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8;
+          --him:#38bdf8; --her:#f472b6; --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.45; padding:24px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+         padding:16px 20px; margin:0 0 22px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:4px; }
+  .chip { cursor:pointer; font-size:13px; padding:6px 14px; border-radius:999px;
+          background:var(--panel2); border:1px solid var(--line); color:var(--muted); user-select:none; }
+  .chip.active { color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:700; }
+  .chip:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .toc-group { margin-top:14px; }
+  .toc-group h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+                  color:var(--accent); margin:0 0 6px; }
+  .toc-list { list-style:none; padding:0; margin:0; }
+  .toc-list li { margin:4px 0; font-size:13px; display:flex; gap:8px; align-items:baseline; }
+  .toc-list a { color:var(--text); text-decoration:none; }
+  .toc-list a:hover { text-decoration:underline; }
+  .toc-dot { color:var(--good); font-size:11px; }
+  .toc-score { color:var(--muted); font-size:11px; font-variant-numeric:tabular-nums; margin-left:auto; white-space:nowrap; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+          padding:18px 20px; margin:0 0 22px; scroll-margin-top:16px; }
+  .rtitle { font-size:18px; font-weight:700; margin:0; }
+  .badges { margin:8px 0 2px; }
+  .badge { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px;
+           background:var(--panel2); border:1px solid var(--line); color:var(--muted); margin:0 6px 6px 0; }
+  .badge.src { color:var(--accent); border-color:var(--accent); }
+  .badge.adopted { color:var(--good); border-color:var(--good); }
+  .badge.meal { color:var(--text); border-color:var(--muted); font-weight:700; }
+  .badge.tag { color:var(--muted); }
+  .meta { color:var(--muted); font-size:12px; margin:4px 0 12px; }
+  .basis { font-size:12px; color:var(--text); margin:12px 0 6px; }
+  .basis b { color:var(--accent); }
+  .macros { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 14px; }
+  .m { flex:1 1 90px; background:var(--panel2); border:1px solid var(--line);
+       border-radius:10px; padding:8px 10px; text-align:center; }
+  .m .v { font-size:17px; font-weight:800; }
+  .m .l { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .micros { font-size:12px; color:var(--muted); margin:0 0 14px; }
+  .micros b { color:var(--text); }
+  .ingredients { font-size:12.5px; color:var(--muted); }
+  .cook { background:var(--panel2); border:1px solid var(--line); border-radius:12px;
+          padding:12px 16px 14px; margin:14px 0 2px; }
+  .cook h4 { margin:0 0 6px; font-size:13px; color:var(--text); }
+  .cook ol { margin:2px 0 0; padding-left:20px; }
+  .cook ol li { font-size:12.5px; margin:4px 0; }
+  .lens { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:680px){ .lens { grid-template-columns:1fr; } }
+  .pane { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .pane.him { border-top:3px solid var(--him); }
+  .pane.her { border-top:3px solid var(--her); }
+  .pane h3 { margin:0 0 2px; font-size:13px; }
+  .pane .who { font-size:11px; color:var(--muted); margin-bottom:8px; }
+  .score { display:inline-block; font-weight:800; font-size:15px; padding:2px 10px;
+           border-radius:8px; background:var(--bg); }
+  .verdict { font-size:13px; margin:8px 0; }
+  .lbl { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:10px 0 3px; }
+  ul { margin:2px 0 0; padding-left:18px; }
+  li { font-size:12.5px; margin:2px 0; }
+  .flag { font-size:12px; color:var(--warn); }
+  .copyhint { font-size:11px; color:var(--muted); font-style:italic; margin-top:10px; }
+  .tmpl { background:var(--panel2); border-left:3px solid var(--accent); border-radius:8px;
+          padding:10px 12px; margin:10px 0 4px; font-size:12.5px; }
+  .tmpl b { color:var(--text); }
+  .tmpl .rule { color:var(--muted); margin-top:4px; }
+</style></head><body><div class='wrap'><h1>Lemon Amaretti Biscotti (gluten-free almond cookies)</h1><div class='sub'>Dual-lens recipe analysis · scored per intake/references/nutrition_lenses.json</div><div class='card'><div class='rtitle'>Lemon Amaretti Biscotti (gluten-free almond cookies)</div><div class='badges'><span class='badge meal'>Dessert</span><span class='badge src'>web</span><span class='badge tag'>dessert</span><span class='badge tag'>treat</span><span class='badge tag'>gluten-free</span><span class='badge tag'>baking</span></div><div class='meta'>25 servings · 1 cookie · macros: estimate</div><div class='basis'>Values per <b>100 g</b> — you decide the portion <span class='muted'>· one typical serving ≈ 26 g</span></div><div class='macros'><div class='m'><div class='v'>462</div><div class='l'>kcal</div></div><div class='m'><div class='v'>10g</div><div class='l'>protein</div></div><div class='m'><div class='v'>58g</div><div class='l'>carbs</div></div><div class='m'><div class='v'>23g</div><div class='l'>fat</div></div><div class='m'><div class='v'>4.6g</div><div class='l'>fiber</div></div></div><div class='micros'>Per 100 g: <b>11</b> vitamin e mg · <b>48</b> added sugar g</div><div class='ingredients'><b style='color:var(--text)'>Ingredients:</b> raw egg white, lemon zest, almond flour, sugar, salt, vanilla extract, lemon juice, fresh, almonds, raw, powdered sugar, sugar (additional)</div><div class='cook'><h4>🍳 Cooking guide — for best taste &amp; texture</h4><ol><li>Whip the egg whites to soft, glossy, cloud-like peaks — not stiff and dry (overwhipping makes the cookies dry).</li><li>Gently fold the whites into the almond flour, sugar, lemon zest, juice and vanilla until you get a sticky dough that clings to the spoon — sticky means chewy.</li><li>Chill the dough 20-30 min so it&#x27;s easy to roll.</li><li>Roll into small balls, then roll each generously in granulated sugar (regular sugar gives a crisper, more crackled shell than powdered).</li><li>Set them on a lined tray and leave out ~30 min before baking — drying the surface gives the signature big cracks.</li><li>Bake at 160 C (325 F) for ~12-15 min: lower and shorter keeps a soft, marzipan-like centre with a light crust. Pull them when the cracks show and edges are just set — they firm as they cool.</li><li>Cool on the tray a few minutes before moving; they&#x27;re fragile while warm.</li><li>Tip: a few drops of almond extract deepen the classic amaretti flavor.</li></ol></div><div class='lens' style='margin-top:14px'><div class='pane him'><h3>For him &nbsp;<span class='score' style='color:var(--bad)'>3/10</span></h3><div class='who'>weight loss · muscle retention · sperm</div><div class='verdict'>A treat, not a goal food. ~120 kcal/cookie but ~12 g of that is added sugar with only 2.7 g protein — a sugar cookie carried by almonds. The one upside is the almond vitamin E (~2.9 mg/cookie, a sperm micro) and healthy fat. On a cut the risk is volume: three cookies is ~360 kcal of mostly sugar. Fine occasionally; keep it to 1–2 and log them.</div><div class='lbl'>Highlights</div><ul><li>high added sugar (~12 g/cookie)</li><li>low protein</li><li>gluten-free</li><li>almond vitamin E (~2.9 mg/cookie)</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Cut the granulated sugar by ~⅓ — amaretti hold together fine with less; drops each cookie toward ~90 kcal / ~8 g sugar</li><li>Portion-cap at 1–2 with coffee rather than grazing the batch</li><li>Skip the powdered-sugar roll to shave a little more sugar</li></ul></div><div class='pane her'><h3>For her &nbsp;<span class='score' style='color:var(--bad)'>3/10</span></h3><div class='who'>preconception / prenatal (advisory)</div><div class='verdict'>A dessert with little prenatal value — high sugar, low nutrient density. Small positives: gluten-free, a little almond vitamin E and magnesium, some folate. Fine as an occasional treat, not a nutrient contributor.</div><div class='lbl'>Highlights</div><ul><li>small amounts of vitamin E, magnesium and folate from the almonds</li></ul><div class='lbl'>Safety advisories</div><ul><li class='flag'>⚠ Contains raw egg white — SAFE if fully baked (standard amaretti are). If any are under-baked/chewy-raw in the center, or if dough is tasted, use pasteurized egg whites. — swap: pasteurized egg whites, or bake fully</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Same sugar cut as above; treat as an occasional indulgence, not a daily item</li></ul><div class='copyhint'>↑ Copy this block into the lihitrack session.</div></div></div></div></div></body></html>

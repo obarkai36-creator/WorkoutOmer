@@ -11,21 +11,67 @@
   "servings": 6,
   "serving_desc": "≈400 g cooked (large batch ÷6)",
   "ingredients": [
-    {"item": "chicken breast", "qty": "1 kg raw, thin strips", "note": "VARIABLE input"},
-    {"item": "glass (mung bean) noodles", "qty": "200 g dry"},
-    {"item": "green beans", "qty": "400 g (fresh or frozen)"},
-    {"item": "zucchini", "qty": "2 medium (~400 g)"},
-    {"item": "broccoli", "qty": "1 small head (~300 g), florets"},
-    {"item": "fresh spinach", "qty": "200 g"},
-    {"item": "green onion", "qty": "3 stalks"},
-    {"item": "fresh red chili", "qty": "1 (½ mild / whole hotter)"},
-    {"item": "garlic", "qty": "4 cloves, crushed"},
-    {"item": "salt", "qty": "1 level tsp (or to taste)"},
-    {"item": "black pepper", "qty": "½ tsp ground"},
-    {"item": "fresh lemon (or lime) juice", "qty": "½ lemon"},
-    {"item": "water", "qty": "¼ cup (keeps noodles juicy)"},
-    {"item": "sesame oil", "qty": "1 tbsp (Asian aroma)"},
-    {"item": "mild olive oil (for frying)", "qty": "3–4 tbsp"}
+    {
+      "item": "chicken breast",
+      "qty": "1 kg raw, thin strips",
+      "note": "VARIABLE input"
+    },
+    {
+      "item": "glass (mung bean) noodles",
+      "qty": "200 g dry"
+    },
+    {
+      "item": "green beans",
+      "qty": "400 g (fresh or frozen)"
+    },
+    {
+      "item": "zucchini",
+      "qty": "2 medium (~400 g)"
+    },
+    {
+      "item": "broccoli",
+      "qty": "1 small head (~300 g), florets"
+    },
+    {
+      "item": "fresh spinach",
+      "qty": "200 g"
+    },
+    {
+      "item": "green onion",
+      "qty": "3 stalks"
+    },
+    {
+      "item": "fresh red chili",
+      "qty": "1 (½ mild / whole hotter)"
+    },
+    {
+      "item": "garlic",
+      "qty": "4 cloves, crushed"
+    },
+    {
+      "item": "salt",
+      "qty": "1 level tsp (or to taste)"
+    },
+    {
+      "item": "black pepper",
+      "qty": "½ tsp ground"
+    },
+    {
+      "item": "fresh lemon (or lime) juice",
+      "qty": "½ lemon"
+    },
+    {
+      "item": "water",
+      "qty": "¼ cup (keeps noodles juicy)"
+    },
+    {
+      "item": "sesame oil",
+      "qty": "1 tbsp (Asian aroma)"
+    },
+    {
+      "item": "mild olive oil (for frying)",
+      "qty": "3–4 tbsp"
+    }
   ],
   "steps": [
     "Sear the chicken strips until cooked; set aside.",
@@ -62,7 +108,13 @@
     "him": {
       "fit_score": 9,
       "verdict": "The better version of the two — everything great about the soy stir-fry (44→42 g protein, ~5 g fiber/serving, big green-veg load, folate/iron/vitamin C) but the sodium problem is SOLVED: ~417 mg/serving vs ~1,133 mg in the soy version, because 8 tbsp soy became 1 tsp salt + lemon + water. You give up only ~2 g protein/serving for a ~700 mg sodium cut — a clear win. The lemon also brightens it and adds vitamin C. Only remaining lever is the frying oil (~14 g fat).",
-      "flags": ["42 g protein/serving", "~5 g fiber, very veg-dense", "sodium fixed (~417 mg vs 1,133 in the soy version)", "folate + iron + vitamin C", "lemon adds brightness + vitamin C"],
+      "flags": [
+        "42 g protein/serving",
+        "~5 g fiber, very veg-dense",
+        "sodium fixed (~417 mg vs 1,133 in the soy version)",
+        "folate + iron + vitamin C",
+        "lemon adds brightness + vitamin C"
+      ],
       "suggested_mods": [
         "Adopt THIS over the soy version — strictly better on sodium for ~2 g less protein",
         "Trim frying oil toward 2 tbsp if you want it leaner",
@@ -85,10 +137,31 @@
       ]
     }
   },
-  "tags": ["dinner", "high-protein", "stir-fry", "high-veg", "high-folate", "low-sodium", "soy-free", "batch", "poultry"],
+  "tags": [
+    "dinner",
+    "high-protein",
+    "stir-fry",
+    "high-veg",
+    "high-folate",
+    "low-sodium",
+    "soy-free",
+    "batch",
+    "poultry"
+  ],
   "adopted": true,
   "adopted_note": "Adopted into the rotation 2026-08-22 (user plans to try it this week) as the best-scoring main + best preconception dish in the library. Scales with chicken weight (veg + sauce scale alongside). Prefer this over the soy version (green_veg_chicken_glass_noodle_stirfry), which stays reference-only. Per-serving reference: ~467 kcal, 42 g protein, ~5 g fiber, ~417 mg sodium per ~400 g (1 kg raw chicken ÷6).",
   "created": "2026-08-22",
   "updated": "2026-08-22",
-  "serving_g": 400
+  "serving_g": 400,
+  "meal_type": "Chicken",
+  "cooking_guide": [
+    "Prep everything first. Soak the glass noodles in warm water until pliable, drain, and snip shorter.",
+    "Blanch or steam the broccoli and green beans ~2 min, then shock in cold water to keep them bright green and crisp.",
+    "Pat the chicken dry and sear in a hot wok in a single layer until just cooked; remove and set aside.",
+    "Stir-fry the garlic and chili briefly, then the zucchini and blanched greens over high heat 2-3 min.",
+    "Add the noodles with the 1/4 cup water, salt, pepper and sesame oil, and toss — the water keeps the noodles from drying out.",
+    "Return the chicken, then fold in the spinach and green onion until just wilted.",
+    "Finish off the heat with the fresh lemon/lime juice — it brightens everything and boosts iron absorption. Serve promptly.",
+    "Tip: salt to taste — you can go light and lean on the lemon, chili and garlic for flavor."
+  ]
 }

@@ -11,14 +11,34 @@
   "servings": 1,
   "serving_desc": "1 pack (2 mini donuts, 63 g)",
   "ingredients": [
-    {"item": "protein blend (milk protein isolate, dried egg whites, whey protein isolate, sodium caseinate)", "qty": "—"},
-    {"item": "erythritol, polydextrose, palm glycerin", "qty": "—"},
-    {"item": "collagen peptides", "qty": "—"},
-    {"item": "high-oleic sunflower oil, butter", "qty": "—"},
-    {"item": "modified resistant tapioca starch, natural flavors, cinnamon", "qty": "—"},
-    {"item": "sunflower lecithin, xanthan/guar/cellulose gum, sucralose", "qty": "<2%"}
+    {
+      "item": "protein blend (milk protein isolate, dried egg whites, whey protein isolate, sodium caseinate)",
+      "qty": "—"
+    },
+    {
+      "item": "erythritol, polydextrose, palm glycerin",
+      "qty": "—"
+    },
+    {
+      "item": "collagen peptides",
+      "qty": "—"
+    },
+    {
+      "item": "high-oleic sunflower oil, butter",
+      "qty": "—"
+    },
+    {
+      "item": "modified resistant tapioca starch, natural flavors, cinnamon",
+      "qty": "—"
+    },
+    {
+      "item": "sunflower lecithin, xanthan/guar/cellulose gum, sucralose",
+      "qty": "<2%"
+    }
   ],
-  "steps": ["Packaged protein donut — eat as-is. A sweet-craving / dessert swap that fits macros."],
+  "steps": [
+    "Packaged protein donut — eat as-is. A sweet-craving / dessert swap that fits macros."
+  ],
   "per_serving": {
     "kcal": 160,
     "protein_g": 20,
@@ -39,7 +59,13 @@
     "him": {
       "fit_score": 9,
       "verdict": "A dessert that behaves like a protein snack. 20 g protein for just 160 kcal (~12.5 g protein per 100 kcal), 8 g fiber, 0 g sugar, ~4 g net carb — even leaner than the Quest bar for the same protein, and it scratches a sweet/pastry craving. Standout craving-killer on a cut. Same caveats as the other engineered snacks: ultra-processed, leans on erythritol (~8 g) + sucralose; collagen is an incomplete protein but it's blended with complete dairy protein so the amino profile is fine.",
-      "flags": ["20 g protein / 160 kcal (best protein-per-calorie of the snacks)", "8 g fiber", "0 g sugar, ~4 g net carb", "sugar alcohols + sucralose", "ultra-processed"],
+      "flags": [
+        "20 g protein / 160 kcal (best protein-per-calorie of the snacks)",
+        "8 g fiber",
+        "0 g sugar, ~4 g net carb",
+        "sugar alcohols + sucralose",
+        "ultra-processed"
+      ],
       "suggested_mods": [
         "Ideal swap for when you want something sweet/dessert-like without the sugar hit",
         "1 pack at a time — erythritol can bloat if stacked",
@@ -49,17 +75,36 @@
     "her_preconception": {
       "fit_score": 7,
       "verdict": "Good high-protein, fiber-containing sweet option for her — 20 g protein, 8 g fiber, no sugar. Not a prenatal micronutrient contributor. Sweeteners (erythritol, sucralose) are generally regarded safe in pregnancy in normal amounts; moderate if she prefers to limit them. Contains milk and egg.",
-      "prenatal_highlights": ["20 g complete (dairy+egg) protein", "8 g fiber"],
-      "safety_advisories": [
-        {"note": "Erythritol + sucralose; considered safe in pregnancy in normal amounts. Moderate if limiting non-nutritive sweeteners.", "swap": "whole-food snack if avoiding sweeteners"}
+      "prenatal_highlights": [
+        "20 g complete (dairy+egg) protein",
+        "8 g fiber"
       ],
-      "suggested_mods": ["Occasional sweet/protein top-up; pair with fruit for prenatal micros", "Allergens: milk, egg"]
+      "safety_advisories": [
+        {
+          "note": "Erythritol + sucralose; considered safe in pregnancy in normal amounts. Moderate if limiting non-nutritive sweeteners.",
+          "swap": "whole-food snack if avoiding sweeteners"
+        }
+      ],
+      "suggested_mods": [
+        "Occasional sweet/protein top-up; pair with fruit for prenatal micros",
+        "Allergens: milk, egg"
+      ]
     }
   },
-  "tags": ["snack", "dessert", "product", "high-protein", "low-sugar", "label-verified", "store-bought", "gluten-free"],
+  "tags": [
+    "snack",
+    "dessert",
+    "product",
+    "high-protein",
+    "low-sugar",
+    "label-verified",
+    "store-bought",
+    "gluten-free"
+  ],
   "adopted": true,
   "adopted_note": "Adopted into the rotation 2026-08-09 as a regular sweet/protein snack. Label values, reuse directly: 1 pack (2 donuts, 63 g) = 160 kcal, 20 g protein, 8 g fiber, ~4 g net carb, 0 g sugar. Standing guidance: ~1 pack at a time (erythritol can bloat if stacked). Best protein-per-calorie snack in the rotation.",
   "created": "2026-08-09",
   "updated": "2026-08-09",
-  "serving_g": 63
+  "serving_g": 63,
+  "meal_type": "Snack"
 }

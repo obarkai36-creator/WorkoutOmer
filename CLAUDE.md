@@ -16,6 +16,20 @@
   to work from a pasted caption/screenshot. Proactively suggest recipe
   modifications and which recipes to adopt into the daily rotation (per the
   standing permission to make intake-based suggestions).
+  - **Cooking guide (standing skill, added 2026-08-22):** for every NEW
+    cook-yourself recipe, also write a `cooking_guide` field — easy-to-follow
+    numbered steps grounded in best-practice technique from online sources,
+    including seasoning and the preferable steps for optimal taste + texture
+    (e.g. pat chicken dry, don't crowd the pan, rest before slicing; whip whites
+    to soft peaks, dry the surface for cracks). Keep steps short and plain.
+    Eat-as-is packaged snacks don't need one; frozen products get a short
+    heating guide. The generator renders `cooking_guide` (falls back to `steps`).
+  - **Meal type:** every recipe carries a `meal_type` (Chicken / Fish / Beef /
+    Snack / Dessert) used by the library's filter/sort table of contents.
+  - **Library website:** `intake/recipes/library.html` is the browsable index
+    (filter chips + grouped TOC by meal type, ● = in rotation). Published as a
+    private claude.ai Artifact so the user can open it anytime without asking for
+    a card. Re-publish (same Artifact URL) after adding/adopting recipes.
 
 - If an upcoming action risks hitting a platform/tool limit (e.g. request size
   caps like the ~32MB upload limit, rate limits, context limits), flag it to

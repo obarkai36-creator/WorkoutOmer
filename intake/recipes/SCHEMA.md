@@ -28,7 +28,12 @@ Render the library with `python3 intake/generate_recipe_card.py` → writes
     {"item": "ground chicken", "qty": "1 kg", "note": "lean"},
     {"item": "sweet potato", "qty": "1 medium, grated"}
   ],
-  "steps": ["Fry onion...", "Mix, rest 1h...", "Pan-fry medium heat..."],
+  "steps": ["Fry onion...", "Mix, rest 1h...", "Pan-fry medium heat..."],  // source method (as given)
+  "meal_type": "Chicken",               // Chicken | Fish | Beef | Snack | Dessert — drives the library filter/TOC
+  "cooking_guide": [                    // best-practice easy steps (seasoning + texture); for cook-yourself recipes
+    "Pat the chicken dry and season boldly...",
+    "Sear undisturbed until it releases; rest 5 min before slicing..."
+  ],
 
   "per_serving": {                      // best estimate unless label-verified
     "kcal": 210, "protein_g": 24, "carbs_g": 9, "fat_g": 9, "fiber_g": 1.5,

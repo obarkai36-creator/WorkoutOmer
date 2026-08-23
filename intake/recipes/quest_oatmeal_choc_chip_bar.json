@@ -11,15 +11,38 @@
   "servings": 1,
   "serving_desc": "1 bar (60 g)",
   "ingredients": [
-    {"item": "protein blend (milk protein isolate, whey protein isolate)", "qty": "—"},
-    {"item": "polydextrose (prebiotic fiber)", "qty": "—"},
-    {"item": "almonds", "qty": "—"},
-    {"item": "water, oats, unsweetened chocolate", "qty": "—"},
-    {"item": "erythritol, glycerin", "qty": "—"},
-    {"item": "cocoa butter, sea salt, natural flavors, cinnamon, lecithin (sunflower/soy)", "qty": "<2%"},
-    {"item": "stevia, sucralose", "qty": "sweeteners"}
+    {
+      "item": "protein blend (milk protein isolate, whey protein isolate)",
+      "qty": "—"
+    },
+    {
+      "item": "polydextrose (prebiotic fiber)",
+      "qty": "—"
+    },
+    {
+      "item": "almonds",
+      "qty": "—"
+    },
+    {
+      "item": "water, oats, unsweetened chocolate",
+      "qty": "—"
+    },
+    {
+      "item": "erythritol, glycerin",
+      "qty": "—"
+    },
+    {
+      "item": "cocoa butter, sea salt, natural flavors, cinnamon, lecithin (sunflower/soy)",
+      "qty": "<2%"
+    },
+    {
+      "item": "stevia, sucralose",
+      "qty": "sweeteners"
+    }
   ],
-  "steps": ["Packaged protein bar — eat as-is. Portable snack / on-the-go protein + fiber."],
+  "steps": [
+    "Packaged protein bar — eat as-is. Portable snack / on-the-go protein + fiber."
+  ],
   "per_serving": {
     "kcal": 180,
     "protein_g": 20,
@@ -42,7 +65,13 @@
     "him": {
       "fit_score": 9,
       "verdict": "Just about the ideal cut snack. 20 g protein for 180 kcal (~11 g protein per 100 kcal) AND 14 g fiber — nearly half your 32 g/day target in one bar — with just 1 g sugar and ~5 g net carb. High protein + high fiber = strong satiety on a deficit, and it's portable. This is the fiber the protein puffs lacked, so the two complement each other well. Minor notes only: it's ultra-processed and leans on sugar alcohols (erythritol/glycerin) + sucralose/stevia — fine for most, but the sugar alcohols can cause bloating/GI if you eat more than one.",
-      "flags": ["20 g protein / 180 kcal", "14 g fiber (huge — ~44% of daily target)", "1 g sugar, ~5 g net carb", "modest sodium (210 mg)", "sugar alcohols + sucralose (GI/sweetener note)"],
+      "flags": [
+        "20 g protein / 180 kcal",
+        "14 g fiber (huge — ~44% of daily target)",
+        "1 g sugar, ~5 g net carb",
+        "modest sodium (210 mg)",
+        "sugar alcohols + sucralose (GI/sweetener note)"
+      ],
       "suggested_mods": [
         "Best used to rescue a low-protein OR low-fiber day — it fixes both at once",
         "Cap at 1 bar most days; sugar alcohols (5 g) can bloat if you stack them",
@@ -57,7 +86,10 @@
         "14 g fiber — helpful for pregnancy constipation"
       ],
       "safety_advisories": [
-        {"note": "Contains sucralose + stevia + erythritol. Considered safe in pregnancy in normal amounts per FDA; moderate if she prefers to limit non-nutritive sweeteners.", "swap": "whole-food protein/fiber snack if she'd rather avoid sweeteners"}
+        {
+          "note": "Contains sucralose + stevia + erythritol. Considered safe in pregnancy in normal amounts per FDA; moderate if she prefers to limit non-nutritive sweeteners.",
+          "swap": "whole-food protein/fiber snack if she'd rather avoid sweeteners"
+        }
       ],
       "suggested_mods": [
         "Fine as an occasional protein/fiber top-up; pair with fruit for prenatal micros",
@@ -65,10 +97,20 @@
       ]
     }
   },
-  "tags": ["snack", "product", "high-protein", "high-fiber", "low-sugar", "label-verified", "store-bought", "portable"],
+  "tags": [
+    "snack",
+    "product",
+    "high-protein",
+    "high-fiber",
+    "low-sugar",
+    "label-verified",
+    "store-bought",
+    "portable"
+  ],
   "adopted": true,
   "adopted_note": "Adopted into the rotation 2026-08-09 as a fixed portable protein+fiber snack (per user request). Label values, so reuse directly: 1 bar (60 g) = 180 kcal, 20 g protein, 14 g fiber, ~5 g net carb. Standing guidance: ~1 bar/day (sugar alcohols can bloat if stacked); use it on days that are short on protein OR fiber.",
   "created": "2026-08-09",
   "updated": "2026-08-09",
-  "serving_g": 60
+  "serving_g": 60,
+  "meal_type": "Snack"
 }
