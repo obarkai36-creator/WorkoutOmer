@@ -1,20 +1,20 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-08-22",
-    "latest_session": "Shoulders",
-    "sessions_logged": 48,
-    "sessions_per_week": 3.3,
+    "report_date": "2026-08-23",
+    "latest_session": "Arms (hotel gym, 17.5kg dumbbells)",
+    "sessions_logged": 50,
+    "sessions_per_week": 3.8,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 11.8,
-    "aerobic_sessions_28d": 3,
-    "avg_pace": "9:11/km",
+    "aerobic_28d_km": 16.5,
+    "aerobic_sessions_28d": 4,
+    "avg_pace": "9:12/km",
     "avg_hr": 142,
-    "acwr": 0.27,
+    "acwr": 0.48,
     "recommended_next": "Back day",
     "alerts": [
       "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Load ratio 0.27 (<0.8). A normal training week will bring this back up."
+      "Load ratio 0.48 (<0.8). A normal training week will bring this back up."
     ]
   },
   "entries": [

@@ -285,6 +285,26 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 22 Aug — Arms, hotel gym, 17.5kg dumbbells (15:45)
+  {
+    datetime: "2026-08-22T15:45", note: "Arms (hotel gym, 17.5kg dumbbells)",
+    exercises: [
+      { name: "Incline Hammer Curl",           sets: [ { reps: 9, weight: 17.5 }, { reps: 9, weight: 17.5 }, { reps: 9, weight: 17.5 }, { reps: 9, weight: 17.5 } ] },
+      { name: "Incline DB Curl",               sets: [ { reps: 7, weight: 17.5 }, { reps: 7, weight: 17.5 }, { reps: 7, weight: 17.5 }, { reps: 7, weight: 17.5 } ] },
+      { name: "Flat DB Triceps Extension",     sets: [ { reps: 6, weight: 35 }, { reps: 6, weight: 35 }, { reps: 6, weight: 35 }, { reps: 6, weight: 35 } ] },
+      { name: "Overhead DB Triceps Extension", sets: [ { reps: 13, weight: 17.5 }, { reps: 13, weight: 17.5 }, { reps: 13, weight: 17.5 }, { reps: 13, weight: 17.5 } ] },
+      { name: "Forearm Twists",                sets: [ { reps: 8, weight: 35 }, { reps: 8, weight: 35 }, { reps: 8, weight: 35 }, { reps: 8, weight: 35 } ] },
+    ],
+  },
+
+  // 21 Aug — Outdoor Run, Tel Aviv-Yafo beach promenade (clock time not given)
+  {
+    datetime: "2026-08-21T07:00", timeUnknown: true, note: "Outdoor Run — Tel Aviv-Yafo beach promenade (incl. untracked ~6min/0.5km warm-up)",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 4.68, durationMin: 44.2, cadence: 129, elevationGainM: 1 },
+    ],
+  },
+
   // 18 Aug — Shoulders (20:00)
   {
     datetime: "2026-08-18T20:00", note: "Shoulders",
