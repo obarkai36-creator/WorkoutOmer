@@ -11,14 +11,39 @@
   "servings": 6,
   "serving_desc": "≈190 g (batch ÷6, ~3 patties)",
   "ingredients": [
-    {"item": "canned salmon (ideally bone-in)", "qty": "~280 g drained (replaces the 2 tuna cans)", "note": "bone-in adds calcium + vitamin D"},
-    {"item": "cottage cheese", "qty": "1 tub (250 g)"},
-    {"item": "Shkedi soft white cheese", "qty": "1 tub (250 g)"},
-    {"item": "eggs", "qty": "3, beaten"},
-    {"item": "breadcrumbs", "qty": "½ cup (~54 g)"},
-    {"item": "onion", "qty": "2 medium (~300 g)"},
-    {"item": "yellow cheese", "qty": "100 g"},
-    {"item": "salt, pepper", "qty": "to taste"}
+    {
+      "item": "canned salmon (ideally bone-in)",
+      "qty": "~280 g drained (replaces the 2 tuna cans)",
+      "note": "bone-in adds calcium + vitamin D"
+    },
+    {
+      "item": "cottage cheese",
+      "qty": "1 tub (250 g)"
+    },
+    {
+      "item": "Shkedi soft white cheese",
+      "qty": "1 tub (250 g)"
+    },
+    {
+      "item": "eggs",
+      "qty": "3, beaten"
+    },
+    {
+      "item": "breadcrumbs",
+      "qty": "½ cup (~54 g)"
+    },
+    {
+      "item": "onion",
+      "qty": "2 medium (~300 g)"
+    },
+    {
+      "item": "yellow cheese",
+      "qty": "100 g"
+    },
+    {
+      "item": "salt, pepper",
+      "qty": "to taste"
+    }
   ],
   "steps": [
     "Mix drained (flaked) salmon, cottage cheese, Shkedi cheese, beaten eggs, breadcrumbs, chopped onion, grated yellow cheese, salt and pepper.",
@@ -53,7 +78,13 @@
     "him": {
       "fit_score": 8,
       "verdict": "The better version for your sperm goal. You give up a little protein vs the tuna (26 vs 29 g/serving, still ~9 g protein per 100 kcal) and gain ~14 g of mostly-healthy fat — but that fat brings ~650 mg omega-3 EPA/DHA AND ~230 IU vitamin D per serving, TWO of your sperm-priority micros the tuna version barely had. Plus more calcium. Same cheese-driven sodium; yellow cheese is still the lever.",
-      "flags": ["omega-3 EPA/DHA ~650 mg/serving (sperm micro)", "vitamin D ~230 IU (sperm micro)", "still high protein (~9 g/100 kcal)", "more calcium (bone-in salmon)", "cheese-driven sodium (~400 mg)"],
+      "flags": [
+        "omega-3 EPA/DHA ~650 mg/serving (sperm micro)",
+        "vitamin D ~230 IU (sperm micro)",
+        "still high protein (~9 g/100 kcal)",
+        "more calcium (bone-in salmon)",
+        "cheese-driven sodium (~400 mg)"
+      ],
       "suggested_mods": [
         "Use bone-in canned salmon — the soft bones add calcium + vitamin D at no effort",
         "Bake, not fry; drop/halve the yellow cheese to trim sodium/fat",
@@ -76,9 +107,27 @@
       ]
     }
   },
-  "tags": ["dinner", "high-protein", "fish", "salmon", "omega-3", "cheese", "batch", "preconception-friendly"],
+  "tags": [
+    "dinner",
+    "high-protein",
+    "fish",
+    "salmon",
+    "omega-3",
+    "cheese",
+    "batch",
+    "preconception-friendly"
+  ],
   "adopted": false,
   "created": "2026-08-22",
   "updated": "2026-08-22",
-  "serving_g": 190
+  "serving_g": 190,
+  "meal_type": "Fish",
+  "cooking_guide": [
+    "Drain the canned salmon well; if it's bone-in, mash the soft bones right into the mix (extra calcium — you won't feel them).",
+    "Flake the salmon and mix with the cheeses, eggs, breadcrumbs and grated onion; season with salt, pepper, a squeeze of lemon and fresh dill (dill loves salmon).",
+    "If the mix is wet, add breadcrumbs until it holds; chill 15-20 min.",
+    "Form patties and bake at 200 C (400 F) ~20 min, flipping once, until golden — or pan-fry for a crisper crust.",
+    "Rest a few minutes before serving.",
+    "Tip: a little lemon zest in the mix makes the salmon taste fresh instead of 'canned'."
+  ]
 }

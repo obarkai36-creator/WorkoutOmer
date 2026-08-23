@@ -1,0 +1,73 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Maple &amp; pomegranate caramelized chicken-bulgur meatballs (קציצות עוף ובורגול מקורמלות במייפל ורימונים)</title><style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+          --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8;
+          --him:#38bdf8; --her:#f472b6; --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.45; padding:24px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+         padding:16px 20px; margin:0 0 22px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:4px; }
+  .chip { cursor:pointer; font-size:13px; padding:6px 14px; border-radius:999px;
+          background:var(--panel2); border:1px solid var(--line); color:var(--muted); user-select:none; }
+  .chip.active { color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:700; }
+  .chip:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .toc-group { margin-top:14px; }
+  .toc-group h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+                  color:var(--accent); margin:0 0 6px; }
+  .toc-list { list-style:none; padding:0; margin:0; }
+  .toc-list li { margin:4px 0; font-size:13px; display:flex; gap:8px; align-items:baseline; }
+  .toc-list a { color:var(--text); text-decoration:none; }
+  .toc-list a:hover { text-decoration:underline; }
+  .toc-dot { color:var(--good); font-size:11px; }
+  .toc-score { color:var(--muted); font-size:11px; font-variant-numeric:tabular-nums; margin-left:auto; white-space:nowrap; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+          padding:18px 20px; margin:0 0 22px; scroll-margin-top:16px; }
+  .rtitle { font-size:18px; font-weight:700; margin:0; }
+  .badges { margin:8px 0 2px; }
+  .badge { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px;
+           background:var(--panel2); border:1px solid var(--line); color:var(--muted); margin:0 6px 6px 0; }
+  .badge.src { color:var(--accent); border-color:var(--accent); }
+  .badge.adopted { color:var(--good); border-color:var(--good); }
+  .badge.meal { color:var(--text); border-color:var(--muted); font-weight:700; }
+  .badge.tag { color:var(--muted); }
+  .meta { color:var(--muted); font-size:12px; margin:4px 0 12px; }
+  .basis { font-size:12px; color:var(--text); margin:12px 0 6px; }
+  .basis b { color:var(--accent); }
+  .macros { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 14px; }
+  .m { flex:1 1 90px; background:var(--panel2); border:1px solid var(--line);
+       border-radius:10px; padding:8px 10px; text-align:center; }
+  .m .v { font-size:17px; font-weight:800; }
+  .m .l { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .micros { font-size:12px; color:var(--muted); margin:0 0 14px; }
+  .micros b { color:var(--text); }
+  .ingredients { font-size:12.5px; color:var(--muted); }
+  .cook { background:var(--panel2); border:1px solid var(--line); border-radius:12px;
+          padding:12px 16px 14px; margin:14px 0 2px; }
+  .cook h4 { margin:0 0 6px; font-size:13px; color:var(--text); }
+  .cook ol { margin:2px 0 0; padding-left:20px; }
+  .cook ol li { font-size:12.5px; margin:4px 0; }
+  .lens { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:680px){ .lens { grid-template-columns:1fr; } }
+  .pane { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .pane.him { border-top:3px solid var(--him); }
+  .pane.her { border-top:3px solid var(--her); }
+  .pane h3 { margin:0 0 2px; font-size:13px; }
+  .pane .who { font-size:11px; color:var(--muted); margin-bottom:8px; }
+  .score { display:inline-block; font-weight:800; font-size:15px; padding:2px 10px;
+           border-radius:8px; background:var(--bg); }
+  .verdict { font-size:13px; margin:8px 0; }
+  .lbl { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:10px 0 3px; }
+  ul { margin:2px 0 0; padding-left:18px; }
+  li { font-size:12.5px; margin:2px 0; }
+  .flag { font-size:12px; color:var(--warn); }
+  .copyhint { font-size:11px; color:var(--muted); font-style:italic; margin-top:10px; }
+  .tmpl { background:var(--panel2); border-left:3px solid var(--accent); border-radius:8px;
+          padding:10px 12px; margin:10px 0 4px; font-size:12.5px; }
+  .tmpl b { color:var(--text); }
+  .tmpl .rule { color:var(--muted); margin-top:4px; }
+</style></head><body><div class='wrap'><h1>Maple &amp; pomegranate caramelized chicken-bulgur meatballs (קציצות עוף ובורגול מקורמלות במייפל ורימונים)</h1><div class='sub'>Dual-lens recipe analysis · scored per intake/references/nutrition_lenses.json</div><div class='card'><div class='rtitle'>Maple &amp; pomegranate caramelized chicken-bulgur meatballs (קציצות עוף ובורגול מקורמלות במייפל ורימונים)</div><div class='badges'><span class='badge meal'>Chicken</span><span class='badge src'>instagram</span><span class='badge tag'>dinner</span><span class='badge tag'>high-protein</span><span class='badge tag'>batch</span><span class='badge tag'>meal-prep</span><span class='badge tag'>family</span><span class='badge tag'>poultry</span></div><div class='meta'>8 servings · ≈4 flat patties (~200 g) — batch is large (1 kg meat); scale if you portion differently · macros: estimate · <a href='https://www.instagram.com/reels/DbnWF31ojXa/' style='color:var(--accent)'>source</a></div><div class='basis'>Values per <b>100 g</b> — you decide the portion <span class='muted'>· one typical serving ≈ 200 g</span></div><div class='macros'><div class='m'><div class='v'>218</div><div class='l'>kcal</div></div><div class='m'><div class='v'>12g</div><div class='l'>protein</div></div><div class='m'><div class='v'>18g</div><div class='l'>carbs</div></div><div class='m'><div class='v'>11g</div><div class='l'>fat</div></div><div class='m'><div class='v'>2g</div><div class='l'>fiber</div></div></div><div class='micros'>Per 100 g: <b>0.8</b> zinc mg · <b>10</b> selenium mcg · <b>8</b> folate mcg dfe · <b>0.8</b> iron mg · <b>28</b> choline mg · <b>0.7</b> vitamin e mg · <b>450</b> sodium mg</div><div class='ingredients'><b style='color:var(--text)'>Ingredients:</b> ground poultry, parsley, cilantro / coriander, garlic, onion, bulgur, olive oil, honey, silan (date syrup), maple syrup, sweet paprika, turmeric, salt, black pepper, maple syrup (sauce), pomegranate molasses (sauce), water (sauce)</div><div class='cook'><h4>🍳 Cooking guide — for best taste &amp; texture</h4><ol><li>Soak the bulgur in warm water 30 min, then drain and squeeze out the water well — soggy bulgur makes loose meatballs.</li><li>Fry the onion until soft and golden; cool it before mixing in.</li><li>Combine the meatball ingredients and mix just until uniform — overmixing makes them dense and tough.</li><li>Chill 20-30 min so the mix firms and holds shape; form even, flat patties (flat = more caramelized surface).</li><li>Sear in a lightly oiled hot pan over medium, undisturbed 3-4 min per side, until a deep brown crust forms — don&#x27;t move them early or they stick and tear.</li><li>In a wide pan, simmer the maple + pomegranate molasses + water to a gentle bubble, then add the meatballs and roll to coat.</li><li>Cook a few more minutes, spooning sauce over, until it reduces to a glossy glaze that clings — stop before it turns hard and sticky.</li><li>Finish off the heat with fresh herbs and pomegranate seeds for brightness and crunch.</li><li>Tip: to cut sugar, keep only the pan glaze and skip the honey/silan/maple in the mix.</li></ol></div><div class='lens' style='margin-top:14px'><div class='pane him'><h3>For him &nbsp;<span class='score' style='color:var(--warn)'>6/10</span></h3><div class='who'>weight loss · muscle retention · sperm</div><div class='verdict'>Excellent protein density (~5.6 g protein per 100 kcal) from the lean poultry + bulgur, and real whole-grain fiber. But the ⅓ cup olive oil, THREE in-mix sweeteners (honey + silan + maple) plus a maple/pomegranate sauce push it to a calorie-dense, sugar-heavy (~19 g added sugar/serving) meal — the weak spot on a cut. Sodium is very high (~900 mg/serving from 1 tbsp salt). A 6 as written; an easy 8 with the trims below.</div><div class='lbl'>Highlights</div><ul><li>very high protein density</li><li>whole-grain fiber (bulgur)</li><li>high added sugar (~19 g/serving)</li><li>high sodium (~900 mg/serving)</li><li>calorie-dense from ⅓ cup oil</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Cut olive oil from ⅓ cup to ~2 tbsp — lean poultry doesn&#x27;t need it (saves ~350 kcal / ~40 g fat across the batch)</li><li>Drop the three in-mix sweeteners (honey/silan/maple); keep only the sauce for the caramel effect — halves the added sugar</li><li>Cut salt from 1 tbsp to ~1.5 tsp — 900 mg sodium/serving is a lot for one dish</li><li>Serve over cauliflower rice or a big salad instead of white rice to hold the deficit and add fiber/lycopene/vitamin C</li><li>Finish with pomegranate seeds (the garnish) — genuine vitamin C + polyphenols, sperm-friendly</li></ul></div><div class='pane her'><h3>For her &nbsp;<span class='score' style='color:var(--good)'>7/10</span></h3><div class='who'>preconception / prenatal (advisory)</div><div class='verdict'>Solid preconception base — lean poultry protein plus iron (~1.7 mg), choline (~55 mg), zinc, and bulgur&#x27;s whole-grain folate/fiber. Folate is only modest as-is but trivially boosted with more herbs / a legume side. Naturally pairs iron with the pomegranate&#x27;s vitamin C (better non-heme absorption). No unsafe ingredients — just cook the ground poultry through.</div><div class='lbl'>Highlights</div><ul><li>iron from the poultry + bulgur, paired with pomegranate vitamin C for absorption</li><li>choline from the poultry</li><li>whole-grain folate + fiber from the bulgur</li><li>parsley/cilantro add folate — stir some in fresh at the end, not only cooked</li></ul><div class='lbl'>Safety advisories</div><ul><li class='flag'>⚠ Ground poultry must be cooked fully through (no pink, ~74°C internal) — standard for meatballs, just don&#x27;t undercook the centers. — swap: cook to firm/steaming</li><li class='flag'>⚠ High sodium (~900 mg/serving) — worth easing during pregnancy (BP/edema). — swap: cut added salt to ~1.5 tsp</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Double the fresh herbs and fold half in raw at the end for more folate</li><li>Serve with a lentil or leafy-green side — adds folate + iron, and the pomegranate&#x27;s vitamin C boosts absorption</li></ul><div class='copyhint'>↑ Copy this block into the lihitrack session.</div></div></div></div></div></body></html>

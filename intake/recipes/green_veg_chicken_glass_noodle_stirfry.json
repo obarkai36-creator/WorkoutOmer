@@ -11,19 +11,59 @@
   "servings": 6,
   "serving_desc": "≈400 g cooked (large batch ÷6)",
   "ingredients": [
-    {"item": "chicken breast", "qty": "1 kg raw, thin strips", "note": "VARIABLE input"},
-    {"item": "glass (mung bean) noodles", "qty": "200 g dry"},
-    {"item": "green beans", "qty": "400 g (fresh or frozen)"},
-    {"item": "zucchini", "qty": "2 medium (~400 g)"},
-    {"item": "broccoli", "qty": "1 small head (~300 g), florets"},
-    {"item": "fresh spinach", "qty": "200 g"},
-    {"item": "green onion", "qty": "3 stalks"},
-    {"item": "fresh red chili", "qty": "1 (½ mild / whole hotter)"},
-    {"item": "garlic", "qty": "4 cloves, crushed"},
-    {"item": "soy sauce (light/quality)", "qty": "6 tbsp"},
-    {"item": "dark soy sauce", "qty": "2 tbsp (for color)"},
-    {"item": "sesame oil", "qty": "1 tbsp"},
-    {"item": "mild olive oil (for frying)", "qty": "3–4 tbsp"}
+    {
+      "item": "chicken breast",
+      "qty": "1 kg raw, thin strips",
+      "note": "VARIABLE input"
+    },
+    {
+      "item": "glass (mung bean) noodles",
+      "qty": "200 g dry"
+    },
+    {
+      "item": "green beans",
+      "qty": "400 g (fresh or frozen)"
+    },
+    {
+      "item": "zucchini",
+      "qty": "2 medium (~400 g)"
+    },
+    {
+      "item": "broccoli",
+      "qty": "1 small head (~300 g), florets"
+    },
+    {
+      "item": "fresh spinach",
+      "qty": "200 g"
+    },
+    {
+      "item": "green onion",
+      "qty": "3 stalks"
+    },
+    {
+      "item": "fresh red chili",
+      "qty": "1 (½ mild / whole hotter)"
+    },
+    {
+      "item": "garlic",
+      "qty": "4 cloves, crushed"
+    },
+    {
+      "item": "soy sauce (light/quality)",
+      "qty": "6 tbsp"
+    },
+    {
+      "item": "dark soy sauce",
+      "qty": "2 tbsp (for color)"
+    },
+    {
+      "item": "sesame oil",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "mild olive oil (for frying)",
+      "qty": "3–4 tbsp"
+    }
   ],
   "steps": [
     "Sear the chicken strips until cooked; set aside.",
@@ -60,7 +100,13 @@
     "him": {
       "fit_score": 7,
       "verdict": "Nutritionally one of the best mains here — 44 g protein/serving (~9.2 g protein per 100 kcal), a huge load of green veg, ~5 g fiber/serving (32 g across the batch), plus real folate/iron/vitamin C. The single thing dragging it from a 9 to a 7 is SODIUM: 8 tbsp of soy total (~1,133 mg/serving — roughly half a day's limit in one plate). Fat is moderate (~14 g from 3–4 tbsp olive + sesame oil); glass noodles are refined but well-balanced by all the veg.",
-      "flags": ["44 g protein/serving", "very veg-dense, ~5 g fiber/serving", "folate + iron + vitamin C from spinach/broccoli", "VERY high sodium (~1,133 mg/serving, 8 tbsp soy)", "refined glass noodles"],
+      "flags": [
+        "44 g protein/serving",
+        "very veg-dense, ~5 g fiber/serving",
+        "folate + iron + vitamin C from spinach/broccoli",
+        "VERY high sodium (~1,133 mg/serving, 8 tbsp soy)",
+        "refined glass noodles"
+      ],
       "suggested_mods": [
         "Use low-sodium soy and cut the total soy to ~4–5 tbsp — this is the one real fix; it nearly halves the sodium",
         "Trim frying oil toward 2 tbsp to shave fat",
@@ -76,7 +122,10 @@
         "lean protein + choline; broad green-veg micros"
       ],
       "safety_advisories": [
-        {"note": "High sodium (~1,133 mg/serving from 8 tbsp soy) — worth easing in pregnancy.", "swap": "low-sodium soy, cut total soy to 4–5 tbsp"}
+        {
+          "note": "High sodium (~1,133 mg/serving from 8 tbsp soy) — worth easing in pregnancy.",
+          "swap": "low-sodium soy, cut total soy to 4–5 tbsp"
+        }
       ],
       "suggested_mods": [
         "This is a keeper for her preconception nutrients — just dial down the soy",
@@ -84,9 +133,28 @@
       ]
     }
   },
-  "tags": ["dinner", "high-protein", "stir-fry", "high-veg", "high-folate", "batch", "asian", "poultry"],
+  "tags": [
+    "dinner",
+    "high-protein",
+    "stir-fry",
+    "high-veg",
+    "high-folate",
+    "batch",
+    "asian",
+    "poultry"
+  ],
   "adopted": false,
   "created": "2026-08-22",
   "updated": "2026-08-22",
-  "serving_g": 400
+  "serving_g": 400,
+  "meal_type": "Chicken",
+  "cooking_guide": [
+    "Prep everything before you start. Soak the glass noodles in warm water until pliable, drain, and snip shorter.",
+    "Blanch or steam the broccoli and green beans ~2 min (they're denser than the rest), then shock in cold water to keep them bright green and crisp.",
+    "Pat the chicken dry and sear in a hot wok in a single layer until just cooked; remove and set aside.",
+    "Stir-fry the garlic and chili briefly, then the zucchini and the blanched greens over high heat 2-3 min — crisp-tender, not soft.",
+    "Add the noodles with both soy sauces and the sesame oil and toss to coat.",
+    "Return the chicken, then fold in the spinach and green onion at the very end — spinach wilts in seconds, and overcooking dulls it and loses folate.",
+    "Serve promptly. Tip: use low-sodium soy and taste before adding more — 8 tbsp of soy is very salty."
+  ]
 }

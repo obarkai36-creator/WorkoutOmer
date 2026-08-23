@@ -11,14 +11,34 @@
   "servings": 1,
   "serving_desc": "1 pack (2 mini donuts, 61 g)",
   "ingredients": [
-    {"item": "protein blend (milk protein isolate, dried egg whites, whey protein isolate, sodium caseinate)", "qty": "—"},
-    {"item": "erythritol, polydextrose, palm glycerin", "qty": "—"},
-    {"item": "collagen peptides", "qty": "—"},
-    {"item": "high-oleic sunflower oil, unsweetened chocolate / cocoa (chocolate dip)", "qty": "—"},
-    {"item": "modified resistant tapioca starch, natural flavors", "qty": "—"},
-    {"item": "sunflower lecithin, xanthan/guar/cellulose gum, sucralose", "qty": "<2%"}
+    {
+      "item": "protein blend (milk protein isolate, dried egg whites, whey protein isolate, sodium caseinate)",
+      "qty": "—"
+    },
+    {
+      "item": "erythritol, polydextrose, palm glycerin",
+      "qty": "—"
+    },
+    {
+      "item": "collagen peptides",
+      "qty": "—"
+    },
+    {
+      "item": "high-oleic sunflower oil, unsweetened chocolate / cocoa (chocolate dip)",
+      "qty": "—"
+    },
+    {
+      "item": "modified resistant tapioca starch, natural flavors",
+      "qty": "—"
+    },
+    {
+      "item": "sunflower lecithin, xanthan/guar/cellulose gum, sucralose",
+      "qty": "<2%"
+    }
   ],
-  "steps": ["Packaged protein donut (vanilla cake, half-dipped in chocolate) — eat as-is."],
+  "steps": [
+    "Packaged protein donut (vanilla cake, half-dipped in chocolate) — eat as-is."
+  ],
   "per_serving": {
     "kcal": 160,
     "protein_g": 20,
@@ -39,7 +59,13 @@
     "him": {
       "fit_score": 8,
       "verdict": "Nearly identical to the cinnamon version and just as good on the headline macros: 20 g protein for 160 kcal, 0 g sugar, ~5 g net carb — a chocolate-dessert craving that fits a cut. One notch lower than the cinnamon only because it has less fiber (6 g vs 8 g) and MORE sugar alcohol (12 g erythritol vs 8 g), so it's the more likely of the two to cause bloating/GI if you eat more than one.",
-      "flags": ["20 g protein / 160 kcal", "0 g sugar, ~5 g net carb", "12 g erythritol (higher GI/bloat risk)", "6 g fiber", "ultra-processed"],
+      "flags": [
+        "20 g protein / 160 kcal",
+        "0 g sugar, ~5 g net carb",
+        "12 g erythritol (higher GI/bloat risk)",
+        "6 g fiber",
+        "ultra-processed"
+      ],
       "suggested_mods": [
         "Great chocolate-craving swap; keep to 1 pack (12 g erythritol is a lot to double up on)",
         "If choosing between the two Legendary donuts, the cinnamon crumble edges it (more fiber, less sugar alcohol)"
@@ -48,17 +74,35 @@
     "her_preconception": {
       "fit_score": 6,
       "verdict": "Same good protein (20 g) and low sugar as the cinnamon, but the 12 g erythritol is a notable sugar-alcohol load — more likely to have a laxative/GI effect, which is worth being mindful of in pregnancy. No prenatal micros. Contains milk and egg.",
-      "prenatal_highlights": ["20 g complete protein"],
-      "safety_advisories": [
-        {"note": "High sugar-alcohol load (12 g erythritol) — can have a laxative/GI effect; sweeteners considered pregnancy-safe in moderation but this one is worth limiting.", "swap": "the cinnamon crumble version (less erythritol), or a whole-food snack"}
+      "prenatal_highlights": [
+        "20 g complete protein"
       ],
-      "suggested_mods": ["Occasional only; the cinnamon version is the gentler pick for her", "Allergens: milk, egg"]
+      "safety_advisories": [
+        {
+          "note": "High sugar-alcohol load (12 g erythritol) — can have a laxative/GI effect; sweeteners considered pregnancy-safe in moderation but this one is worth limiting.",
+          "swap": "the cinnamon crumble version (less erythritol), or a whole-food snack"
+        }
+      ],
+      "suggested_mods": [
+        "Occasional only; the cinnamon version is the gentler pick for her",
+        "Allergens: milk, egg"
+      ]
     }
   },
-  "tags": ["snack", "dessert", "product", "high-protein", "low-sugar", "label-verified", "store-bought", "gluten-free"],
+  "tags": [
+    "snack",
+    "dessert",
+    "product",
+    "high-protein",
+    "low-sugar",
+    "label-verified",
+    "store-bought",
+    "gluten-free"
+  ],
   "adopted": true,
   "adopted_note": "Adopted into the rotation 2026-08-09 as a regular sweet/protein snack. Label values, reuse directly: 1 pack (2 donuts, 61 g) = 160 kcal, 20 g protein, 6 g fiber, ~5 g net carb, 0 g sugar. Standing guidance: keep to ~1 pack — 12 g erythritol is a notable sugar-alcohol load (GI/bloat if stacked); the cinnamon version is the gentler of the two.",
   "created": "2026-08-09",
   "updated": "2026-08-09",
-  "serving_g": 61
+  "serving_g": 61,
+  "meal_type": "Snack"
 }

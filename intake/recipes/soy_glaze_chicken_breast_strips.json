@@ -11,20 +11,63 @@
   "servings": 5,
   "serving_desc": "≈160 g cooked (1 kg raw chicken batch ÷5)",
   "ingredients": [
-    {"item": "chicken breast", "qty": "1 kg raw", "note": "cut into uniform plump strips — VARIABLE input; scale marinade with it"},
-    {"item": "soy sauce", "qty": "3 tbsp"},
-    {"item": "olive oil (marinade)", "qty": "3 tbsp"},
-    {"item": "maple syrup / silan", "qty": "1 tbsp"},
-    {"item": "water", "qty": "1 tbsp"},
-    {"item": "sesame oil", "qty": "1 tsp"},
-    {"item": "sweet chili sauce", "qty": "1 tbsp"},
-    {"item": "paprika", "qty": "1 tbsp"},
-    {"item": "garlic powder", "qty": "1 tsp"},
-    {"item": "black pepper", "qty": "½ tsp"},
-    {"item": "ginger", "qty": "½ tsp"},
-    {"item": "salt", "qty": "½ tsp"},
-    {"item": "cornflour", "qty": "1 heaping tbsp (moisture-lock coating)"},
-    {"item": "olive oil (for frying)", "qty": "~1 tbsp (assumed)"}
+    {
+      "item": "chicken breast",
+      "qty": "1 kg raw",
+      "note": "cut into uniform plump strips — VARIABLE input; scale marinade with it"
+    },
+    {
+      "item": "soy sauce",
+      "qty": "3 tbsp"
+    },
+    {
+      "item": "olive oil (marinade)",
+      "qty": "3 tbsp"
+    },
+    {
+      "item": "maple syrup / silan",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "water",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "sesame oil",
+      "qty": "1 tsp"
+    },
+    {
+      "item": "sweet chili sauce",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "paprika",
+      "qty": "1 tbsp"
+    },
+    {
+      "item": "garlic powder",
+      "qty": "1 tsp"
+    },
+    {
+      "item": "black pepper",
+      "qty": "½ tsp"
+    },
+    {
+      "item": "ginger",
+      "qty": "½ tsp"
+    },
+    {
+      "item": "salt",
+      "qty": "½ tsp"
+    },
+    {
+      "item": "cornflour",
+      "qty": "1 heaping tbsp (moisture-lock coating)"
+    },
+    {
+      "item": "olive oil (for frying)",
+      "qty": "~1 tbsp (assumed)"
+    }
   ],
   "steps": [
     "Cut chicken breast into uniform plump strips.",
@@ -60,7 +103,13 @@
     "him": {
       "fit_score": 8,
       "verdict": "A genuinely strong high-protein main — 46 g protein for ~380 kcal (~12 g protein per 100 kcal), lean chicken kept juicy by the cornflour trick (smart: moisture without much cost). Two levers to watch, both easy: SODIUM is high (~830 mg/serving from 3 tbsp soy + ½ tsp salt + sweet chili), and fat is moderate (~17 g) because the marinade carries 3 tbsp olive oil + sesame oil on top of the frying oil. Added sugar is modest (~5 g/serving from maple + sweet chili).",
-      "flags": ["very high protein (46 g/serving)", "lean chicken, cornflour moisture-lock", "high sodium (~830 mg/serving)", "fat driven by marinade oils (~17 g)", "modest added sugar (~5 g)"],
+      "flags": [
+        "very high protein (46 g/serving)",
+        "lean chicken, cornflour moisture-lock",
+        "high sodium (~830 mg/serving)",
+        "fat driven by marinade oils (~17 g)",
+        "modest added sugar (~5 g)"
+      ],
       "suggested_mods": [
         "Use low-sodium soy or cut it to 2 tbsp — biggest sodium lever",
         "Halve the marinade olive oil (1.5 tbsp) — it's mostly flavor/coating; saves ~5 g fat/serving with little loss",
@@ -70,17 +119,44 @@
     "her_preconception": {
       "fit_score": 7,
       "verdict": "Good lean protein + choline (~128 mg) and selenium for her, fully cooked so no safety flags. The main caution is sodium (~830 mg/serving) — worth easing in pregnancy. Ginger in culinary amounts is fine (even mildly helpful for nausea). Not a big micronutrient contributor otherwise — pair with veg/greens.",
-      "prenatal_highlights": ["46 g lean protein", "choline (~128 mg) + selenium from the chicken"],
-      "safety_advisories": [
-        {"note": "High sodium (~830 mg/serving) — ease it in pregnancy (low-sodium soy, less salt).", "swap": "low-sodium soy / cut salt"}
+      "prenatal_highlights": [
+        "46 g lean protein",
+        "choline (~128 mg) + selenium from the chicken"
       ],
-      "suggested_mods": ["Serve with greens/legumes for folate + iron", "Ginger is fine in these culinary amounts"]
+      "safety_advisories": [
+        {
+          "note": "High sodium (~830 mg/serving) — ease it in pregnancy (low-sodium soy, less salt).",
+          "swap": "low-sodium soy / cut salt"
+        }
+      ],
+      "suggested_mods": [
+        "Serve with greens/legumes for folate + iron",
+        "Ginger is fine in these culinary amounts"
+      ]
     }
   },
-  "tags": ["dinner", "high-protein", "chicken", "poultry", "asian", "marinade", "batch"],
+  "tags": [
+    "dinner",
+    "high-protein",
+    "chicken",
+    "poultry",
+    "asian",
+    "marinade",
+    "batch"
+  ],
   "adopted": true,
   "adopted_note": "Adopted into the rotation 2026-08-22 as a high-protein chicken main. Scales with chicken weight (marinade scales alongside). Standing guidance: use low-sodium soy / cut salt (base recipe is ~830 mg sodium/serving), and consider halving the marinade olive oil to trim fat. Per-serving reference: ~380 kcal, 46 g protein per ~160 g (1 kg raw chicken ÷5).",
   "created": "2026-08-22",
   "updated": "2026-08-22",
-  "serving_g": 160
+  "serving_g": 160,
+  "meal_type": "Chicken",
+  "cooking_guide": [
+    "Cut the breast into even, plump strips — uniform thickness is the #1 factor for juicy chicken — and pat them dry.",
+    "Mix the marinade until smooth and coat the chicken; the cornflour is the magic ingredient — it locks in moisture and forms a light glaze. Marinate 20-30 min if you have time.",
+    "Heat a little olive oil in a pan over medium (not high — high heat dries chicken out).",
+    "Lay the strips in a single layer and leave undisturbed ~4 min — they release on their own when a golden crust forms; if they stick, they're not ready to flip.",
+    "Flip and cook 3-4 min more to 74 C internal, then pull them just as they're done.",
+    "Rest 5 minutes before serving — the fibers relax and reabsorb the juices (skipping this is why chicken goes dry).",
+    "Tip: don't crowd the pan; cook in two batches so the strips sear instead of steam."
+  ]
 }
