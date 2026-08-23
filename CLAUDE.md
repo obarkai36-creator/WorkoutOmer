@@ -28,8 +28,13 @@
     Snack / Dessert) used by the library's filter/sort table of contents.
   - **Library website:** `intake/recipes/library.html` is the browsable index
     (filter chips + grouped TOC by meal type, ● = in rotation). Published as a
-    private claude.ai Artifact so the user can open it anytime without asking for
-    a card. Re-publish (same Artifact URL) after adding/adopting recipes.
+    private claude.ai Artifact the user can open anytime without asking for a
+    card: https://claude.ai/code/artifact/f7578491-c080-44eb-b485-5ce2b62a432e
+    After adding/adopting recipes, regenerate then RE-PUBLISH TO THAT SAME URL
+    (Artifact tool, pass `url=`) — build the artifact fragment WITHOUT the
+    doctype/html/head/body wrapper (host adds it): `<style>{CSS}</style>` +
+    `<div class='wrap'>…</div>` + the filter `<script>`, from generate_recipe_card
+    (see the one-off python that built it). Don't create a new artifact each time.
 
 - If an upcoming action risks hitting a platform/tool limit (e.g. request size
   caps like the ~32MB upload limit, rate limits, context limits), flag it to
