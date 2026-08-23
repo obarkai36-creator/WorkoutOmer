@@ -13,17 +13,24 @@
     {"time": "13:00", "name": "Lunch — One-pot chicken breast & spelt pasta (tomato)", "category": "food", "qty": "500 g", "kcal": 774, "protein_g": 71.13, "carbs_g": 62.5, "fat_g": 23.88, "fiber_g": 7.63, "note": "adopted recipe (intake/recipes/onepot_chicken_spelt_pasta.json), same per-100g rate as prior entries, from last week's batch. Credits ~8.92mg lycopene, ~68.75mcg selenium, ~3.75mg zinc, ~34.38mcg folate DFE, ~15.63mg vitamin C, ~2.19mg vitamin E."},
     {"time": "12:37", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:45", "name": "Tnuva high-protein dairy product (Victory order)", "category": "food", "qty": "200 g (label values per 100g: 1g fat, 3.3g carb/3g sugar, 10g protein, 105mg calcium, 30mg sodium)", "kcal": 124, "protein_g": 20, "carbs_g": 6.6, "fat_g": 2, "fiber_g": 0, "note": "product name not specified — logged from the Tnuva label's per-100g values (photographed), scaled to 200g. Calories derived from the label's fat/carb/protein (no kcal figure shown on label itself)."}
+    {"time": "14:45", "name": "Tnuva high-protein dairy product (Victory order)", "category": "food", "qty": "200 g (label values per 100g: 1g fat, 3.3g carb/3g sugar, 10g protein, 105mg calcium, 30mg sodium)", "kcal": 124, "protein_g": 20, "carbs_g": 6.6, "fat_g": 2, "fiber_g": 0, "note": "product name not specified — logged from the Tnuva label's per-100g values (photographed), scaled to 200g. Calories derived from the label's fat/carb/protein (no kcal figure shown on label itself)."},
+    {"time": "17:00", "name": "Dark chocolate praline (small)", "category": "food", "qty": "1 small piece (~15 g)", "kcal": 83, "protein_g": 1, "carbs_g": 8, "fat_g": 5.5, "fiber_g": 1, "time_approx": true, "note": "same standard small dark-chocolate praline reference as prior entries — user described it as 'a small chocolate ball', same 15g size, exact time not given"},
+    {"time": "19:00", "name": "Dinner — Agami Pita Pro spelt pitas", "category": "food", "qty": "2 (68 g each, 136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "time_approx": true, "note": "verified reference, reused"},
+    {"time": "19:00", "name": "Dinner — yellow cheese, 15% fat", "category": "food", "qty": "3 slices (~75 g)", "kcal": 225, "protein_g": 16.5, "carbs_g": 0.9, "fat_g": 15.9, "fiber_g": 0, "time_approx": true, "note": "no prior 15%-fat reference logged — generic higher-fat yellow cheese slice estimate (~75kcal/25g slice), first time logged, flagged"},
+    {"time": "19:00", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "25", "kcal": 68, "protein_g": 3.38, "carbs_g": 14.63, "fat_g": 0.75, "fiber_g": 4.5, "time_approx": true, "note": "same standard reference as prior entries. Credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE."},
+    {"time": "19:00", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "60 g", "kcal": 184, "protein_g": 10.6, "carbs_g": 3.2, "fat_g": 15.2, "fiber_g": 0, "time_approx": true, "note": "same per-gram rate as prior Simfonia entries"},
+    {"time": "19:00", "name": "Dinner — baby mozzarella (1 bite)", "category": "food", "qty": "~10 g", "kcal": 29, "protein_g": 2, "carbs_g": 0.2, "fat_g": 2.1, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~285kcal/100g), small taste-size bite assumed"},
+    {"time": "19:00", "name": "Dinner — balsamic drizzle", "category": "food", "qty": "~1 tbsp (15 ml)", "kcal": 14, "protein_g": 0, "carbs_g": 2.7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "plain balsamic vinegar drizzle, same reference as prior entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 6.55,
     "selenium_mcg": 68.75,
-    "folate_mcg_dfe": 134.38,
+    "folate_mcg_dfe": 198.13,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 15.63,
+    "vitamin_c_mg": 70.63,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 2.19,
-    "lycopene_mg": 8.92
+    "lycopene_mg": 19.92
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -39,7 +46,9 @@
     "12:35 self ejaculation event (masturbation) — logged to ejaculation.json.",
     "12:37 creatine monohydrate, 5g — zero kcal/macros.",
     "14:30 espresso (2nd caffeine shot, counting the Vertuo capsule as the 1st).",
-    "14:45 Tnuva high-protein dairy product from the Victory order — logged from the photographed label's per-100g values (1g fat, 3.3g carb, 10g protein, 105mg calcium, 30mg sodium per 100g), scaled to a 200g product. No kcal figure on the label itself, so calories were derived from the macros."
+    "14:45 Tnuva high-protein dairy product from the Victory order — logged from the photographed label's per-100g values (1g fat, 3.3g carb, 10g protein, 105mg calcium, 30mg sodium per 100g), scaled to a 200g product. No kcal figure on the label itself, so calories were derived from the macros.",
+    "~17:00 (time not given, approximated) a small dark chocolate praline/ball (~15g), same standard reference as prior entries.",
+    "~19:00 dinner (time not given, approximated): 2 Agami Pita Pro spelt pitas + 3 yellow cheese slices 15% fat (no prior reference, generic estimate, first time logged, flagged) + 25 cherry tomatoes + 60g Simfonia cheese spread + 1 bite baby mozzarella + a balsamic drizzle — all same standard/saved references as prior entries except the 15% cheese."
   ],
   "status_note": "Day in progress. Slept 7.75h (00:45-08:30) — squarely in the 7-9h target band. Weigh-in: 81.10kg (+0.25kg vs 19 Aug), body fat 26.8%."
 }
