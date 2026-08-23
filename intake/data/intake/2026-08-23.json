@@ -12,7 +12,8 @@
     {"time": "10:35", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
     {"time": "13:00", "name": "Lunch — One-pot chicken breast & spelt pasta (tomato)", "category": "food", "qty": "500 g", "kcal": 774, "protein_g": 71.13, "carbs_g": 62.5, "fat_g": 23.88, "fiber_g": 7.63, "note": "adopted recipe (intake/recipes/onepot_chicken_spelt_pasta.json), same per-100g rate as prior entries, from last week's batch. Credits ~8.92mg lycopene, ~68.75mcg selenium, ~3.75mg zinc, ~34.38mcg folate DFE, ~15.63mg vitamin C, ~2.19mg vitamin E."},
     {"time": "12:37", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:45", "name": "Tnuva high-protein dairy product (Victory order)", "category": "food", "qty": "200 g (label values per 100g: 1g fat, 3.3g carb/3g sugar, 10g protein, 105mg calcium, 30mg sodium)", "kcal": 124, "protein_g": 20, "carbs_g": 6.6, "fat_g": 2, "fiber_g": 0, "note": "product name not specified — logged from the Tnuva label's per-100g values (photographed), scaled to 200g. Calories derived from the label's fat/carb/protein (no kcal figure shown on label itself)."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 6.55,
@@ -37,7 +38,8 @@
     "13:00 lunch: 500g One-pot chicken breast & spelt pasta from last week's batch — same adopted-recipe per-100g rate as prior entries.",
     "12:35 self ejaculation event (masturbation) — logged to ejaculation.json.",
     "12:37 creatine monohydrate, 5g — zero kcal/macros.",
-    "14:30 espresso (2nd caffeine shot, counting the Vertuo capsule as the 1st)."
+    "14:30 espresso (2nd caffeine shot, counting the Vertuo capsule as the 1st).",
+    "14:45 Tnuva high-protein dairy product from the Victory order — logged from the photographed label's per-100g values (1g fat, 3.3g carb, 10g protein, 105mg calcium, 30mg sodium per 100g), scaled to a 200g product. No kcal figure on the label itself, so calories were derived from the macros."
   ],
   "status_note": "Day in progress. Slept 7.75h (00:45-08:30) — squarely in the 7-9h target band. Weigh-in: 81.10kg (+0.25kg vs 19 Aug), body fat 26.8%."
 }
