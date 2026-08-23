@@ -10,7 +10,8 @@
     {"time": "10:25", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "10:25", "name": "Dark chocolate chips", "category": "food", "qty": "8 chips (~4 g)", "kcal": 22, "protein_g": 0.28, "carbs_g": 1.8, "fat_g": 1.52, "fiber_g": 0.4, "note": "same saved reference as prior entries (~70% dark chocolate baking chip, ~550kcal/100g), scaled to 8 chips"},
     {"time": "10:35", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
-    {"time": "13:00", "name": "Lunch — One-pot chicken breast & spelt pasta (tomato)", "category": "food", "qty": "500 g", "kcal": 774, "protein_g": 71.13, "carbs_g": 62.5, "fat_g": 23.88, "fiber_g": 7.63, "note": "adopted recipe (intake/recipes/onepot_chicken_spelt_pasta.json), same per-100g rate as prior entries, from last week's batch. Credits ~8.92mg lycopene, ~68.75mcg selenium, ~3.75mg zinc, ~34.38mcg folate DFE, ~15.63mg vitamin C, ~2.19mg vitamin E."}
+    {"time": "13:00", "name": "Lunch — One-pot chicken breast & spelt pasta (tomato)", "category": "food", "qty": "500 g", "kcal": 774, "protein_g": 71.13, "carbs_g": 62.5, "fat_g": 23.88, "fiber_g": 7.63, "note": "adopted recipe (intake/recipes/onepot_chicken_spelt_pasta.json), same per-100g rate as prior entries, from last week's batch. Credits ~8.92mg lycopene, ~68.75mcg selenium, ~3.75mg zinc, ~34.38mcg folate DFE, ~15.63mg vitamin C, ~2.19mg vitamin E."},
+    {"time": "12:37", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 6.55,
@@ -33,7 +34,8 @@
     "10:25 vanilla protein yogurt (1 cup, 200g, Danone PRO 0% reference) + 8 dark chocolate chips (~4g, same saved reference as prior entries).",
     "10:35 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "13:00 lunch: 500g One-pot chicken breast & spelt pasta from last week's batch — same adopted-recipe per-100g rate as prior entries.",
-    "12:35 self ejaculation event (masturbation) — logged to ejaculation.json."
+    "12:35 self ejaculation event (masturbation) — logged to ejaculation.json.",
+    "12:37 creatine monohydrate, 5g — zero kcal/macros."
   ],
   "status_note": "Day in progress. Slept 7.75h (00:45-08:30) — squarely in the 7-9h target band. Weigh-in: 81.10kg (+0.25kg vs 19 Aug), body fat 26.8%."
 }
