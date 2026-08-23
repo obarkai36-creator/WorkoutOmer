@@ -8,12 +8,13 @@
     {"time": "08:45", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "08:50", "name": "Nespresso Vertuo — Coconut Vanilla, over ice", "category": "drink", "qty": "1 capsule (~230ml mug), no milk/sugar added", "kcal": 5, "protein_g": 0, "carbs_g": 1, "fat_g": 0, "fiber_g": 0, "note": "number of capsules not given — assumed 1 standard Vertuo mug pod. Nespresso's own listed calories (~5kcal/capsule) for this Barista Creations flavor, first time logged, flagged. Counted as 1 caffeine shot equivalent (exact caffeine mg not confirmed)."},
     {"time": "10:25", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
-    {"time": "10:25", "name": "Dark chocolate chips", "category": "food", "qty": "8 chips (~4 g)", "kcal": 22, "protein_g": 0.28, "carbs_g": 1.8, "fat_g": 1.52, "fiber_g": 0.4, "note": "same saved reference as prior entries (~70% dark chocolate baking chip, ~550kcal/100g), scaled to 8 chips"}
+    {"time": "10:25", "name": "Dark chocolate chips", "category": "food", "qty": "8 chips (~4 g)", "kcal": 22, "protein_g": 0.28, "carbs_g": 1.8, "fat_g": 1.52, "fiber_g": 0.4, "note": "same saved reference as prior entries (~70% dark chocolate baking chip, ~550kcal/100g), scaled to 8 chips"},
+    {"time": "10:35", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
@@ -27,7 +28,8 @@
     "Full detailed food macro/micro logging resumes today, per the standing travel-mode instruction (light-logging window was 21-22 Aug only).",
     "08:45 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:50 Nespresso Vertuo Coconut Vanilla over ice (1 capsule assumed, count not given) — near-zero calories per Nespresso's own listing, first time logged, flagged. Counted as 1 caffeine shot.",
-    "10:25 vanilla protein yogurt (1 cup, 200g, Danone PRO 0% reference) + 8 dark chocolate chips (~4g, same saved reference as prior entries)."
+    "10:25 vanilla protein yogurt (1 cup, 200g, Danone PRO 0% reference) + 8 dark chocolate chips (~4g, same saved reference as prior entries).",
+    "10:35 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
   ],
   "status_note": "Day in progress. Slept 7.75h (00:45-08:30) — squarely in the 7-9h target band."
 }
