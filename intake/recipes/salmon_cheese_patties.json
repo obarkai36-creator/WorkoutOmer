@@ -1,0 +1,84 @@
+{
+  "id": "salmon_cheese_patties",
+  "name": "Salmon & cheese patties (salmon-swap of the tuna version)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Hebrew recipe (screenshot), adapted",
+    "captured": "2026-08-22",
+    "notes": "Salmon swap of tuna_cheese_patties — canned salmon replaces the 2 cans of tuna; everything else identical. Removes the mercury flag and adds omega-3 + vitamin D. Best with bone-in canned salmon (soft edible bones add calcium + vitamin D). Values assume ~280 g drained canned salmon. Method not shown (baked assumed)."
+  },
+  "servings": 6,
+  "serving_desc": "≈190 g (batch ÷6, ~3 patties)",
+  "ingredients": [
+    {"item": "canned salmon (ideally bone-in)", "qty": "~280 g drained (replaces the 2 tuna cans)", "note": "bone-in adds calcium + vitamin D"},
+    {"item": "cottage cheese", "qty": "1 tub (250 g)"},
+    {"item": "Shkedi soft white cheese", "qty": "1 tub (250 g)"},
+    {"item": "eggs", "qty": "3, beaten"},
+    {"item": "breadcrumbs", "qty": "½ cup (~54 g)"},
+    {"item": "onion", "qty": "2 medium (~300 g)"},
+    {"item": "yellow cheese", "qty": "100 g"},
+    {"item": "salt, pepper", "qty": "to taste"}
+  ],
+  "steps": [
+    "Mix drained (flaked) salmon, cottage cheese, Shkedi cheese, beaten eggs, breadcrumbs, chopped onion, grated yellow cheese, salt and pepper.",
+    "Form patties and bake (or pan-fry) until set and golden. (Method not shown — baked assumed.)"
+  ],
+  "per_serving": {
+    "kcal": 294,
+    "protein_g": 26.3,
+    "carbs_g": 14.6,
+    "fat_g": 14.2,
+    "fiber_g": 1.3,
+    "micros": {
+      "omega3_epa_dha_mg": 650,
+      "vitamin_d_iu": 230,
+      "calcium_mg": 270,
+      "selenium_mcg": 21,
+      "choline_mg": 83,
+      "iron_mg": 1.1,
+      "zinc_mg": 1.5,
+      "sodium_mg": 400
+    }
+  },
+  "batch_totals": {
+    "kcal": 1762,
+    "protein_g": 158,
+    "carbs_g": 88,
+    "fat_g": 85,
+    "fiber_g": 7.5
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "The better version for your sperm goal. You give up a little protein vs the tuna (26 vs 29 g/serving, still ~9 g protein per 100 kcal) and gain ~14 g of mostly-healthy fat — but that fat brings ~650 mg omega-3 EPA/DHA AND ~230 IU vitamin D per serving, TWO of your sperm-priority micros the tuna version barely had. Plus more calcium. Same cheese-driven sodium; yellow cheese is still the lever.",
+      "flags": ["omega-3 EPA/DHA ~650 mg/serving (sperm micro)", "vitamin D ~230 IU (sperm micro)", "still high protein (~9 g/100 kcal)", "more calcium (bone-in salmon)", "cheese-driven sodium (~400 mg)"],
+      "suggested_mods": [
+        "Use bone-in canned salmon — the soft bones add calcium + vitamin D at no effort",
+        "Bake, not fry; drop/halve the yellow cheese to trim sodium/fat",
+        "Serve over greens for fiber + folate"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 8,
+      "verdict": "This swap turns the tuna patties from a flagged 'sometimes' dish into a clean preconception winner. NO mercury flag — canned salmon is a low-mercury fish — and it adds DHA (~650 mg omega-3, key for fetal brain development), vitamin D, and calcium on top of the protein + choline + selenium. Fully cooked, pasteurized cheeses, no safety flags left. This is the version to make for her.",
+      "prenatal_highlights": [
+        "DHA/omega-3 (~650 mg/serving) — fetal brain development",
+        "vitamin D (~230 IU) + calcium (~270 mg, more with bone-in salmon)",
+        "protein + choline (eggs) + selenium",
+        "low-mercury fish — mercury flag removed vs the tuna version"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Prefer bone-in canned salmon for the calcium/vitamin-D bump",
+        "This is the strictly-better preconception version — make this instead of the tuna one"
+      ]
+    }
+  },
+  "tags": ["dinner", "high-protein", "fish", "salmon", "omega-3", "cheese", "batch", "preconception-friendly"],
+  "adopted": false,
+  "created": "2026-08-22",
+  "updated": "2026-08-22",
+  "serving_g": 190
+}
