@@ -20,6 +20,8 @@
     {"time": "12:30", "name": "Lunch — potato purée (1 bite)", "category": "food", "qty": "~20 g", "kcal": 23, "protein_g": 0.4, "carbs_g": 3.4, "fat_g": 0.8, "fiber_g": 0.3, "time_approx": true, "note": "standard creamy mashed-potato reference (~113kcal/100g, butter/cream), taste-size bite, first time logged"},
     {"time": "13:30", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
     {"time": "14:45", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "note": "same reference as prior green-apple entries"},
+    {"time": "16:00", "name": "Snack — Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "note": "standard reference, ~95mcg selenium/nut. Back-logged after day close-out."},
+    {"time": "16:00", "name": "Snack — cherry tomatoes", "category": "food", "qty": "3", "kcal": 8, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE. Back-logged after day close-out."},
     {"time": "19:00", "name": "Dinner — Agami Pita Pro spelt pita", "category": "food", "qty": "1 (68 g)", "kcal": 140, "protein_g": 15, "carbs_g": 19, "fat_g": 2.5, "fiber_g": 9, "time_approx": true, "note": "verified reference, reused (half of the usual 2-unit serving)"},
     {"time": "19:00", "name": "Dinner — yellow cheese, 15% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 150, "protein_g": 11, "carbs_g": 0.6, "fat_g": 10.6, "fiber_g": 0, "time_approx": true, "note": "same generic 15%-fat estimate established earlier today (~75kcal/25g slice)"},
     {"time": "19:00", "name": "Dinner — salad (lettuce, cherry tomatoes, red onion, baby mozzarella) with classic vinaigrette, 60% eaten", "category": "food", "qty": "0.6 of the recipe (1 lettuce head ~300g, 30 cherry tomatoes, 0.5 red onion, 50g baby mozzarella) + 0.6 of the standard Maple-Balsamic Mustard Vinaigrette batch (foods.json reference)", "kcal": 347, "protein_g": 11.95, "carbs_g": 34.2, "fat_g": 19.5, "fiber_g": 6.4, "time_approx": true, "note": "same recipe structure and 'classic' vinaigrette reference as prior salad entries, scaled to the 60% portion eaten. Credits ~7.9mg lycopene, ~51.3mg vitamin C, ~45.9mcg folate DFE, ~1.7mg vitamin E (olive oil in the vinaigrette)."},
@@ -30,13 +32,13 @@
   ],
   "micros_sperm_priority": {
     "zinc_mg": 17.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 205.9,
+    "selenium_mcg": 95,
+    "folate_mcg_dfe": 213.55,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 109.72,
+    "vitamin_c_mg": 116.32,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 1.7,
-    "lycopene_mg": 18.24
+    "lycopene_mg": 19.56
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -49,11 +51,12 @@
     "12:30 lunch (restaurant, no exact recipe/weights given): ~500g mixed red meat (sirloin, fillet, carpaccio combined — blended lean-steak estimate, first time logged) + 2 dashes shaved parmesan + 0.5 tomato + 0.5 red onion + a bite of bread + a bite of potato purée. Several first-time/taste-size items, all flagged as directional estimates.",
     "13:30 double espresso (2 caffeine shots).",
     "14:45 green apple (1 medium, 180g), same standard reference as prior entries.",
+    "Back-logged after day close-out: 16:00 snack of 1 Brazil nut (~95mcg selenium) + 3 cherry tomatoes — both same standard/verified references as prior entries.",
     "~19:00 dinner (time not given, approximated): 1 Agami Pita Pro + 2 yellow cheese slices 15% fat + a salad (lettuce, cherry tomatoes, red onion, baby mozzarella, 60% eaten) dressed with the classic Maple-Balsamic Mustard Vinaigrette + 25g Simfonia cheese spread — salad and vinaigrette per the saved recipe/reference structure, scaled to today's quantities and 60% portion.",
     "19:55 Rhinolast PM dose — both allergy spray doses done today.",
     "21:05 Legs & Glutes workout (אימון A), a one-off 3-sets-each scheme done with wife across 10 exercises: Leg Extensions, Leg Curls, Inner Thigh, Outer Thigh, Glute Extension, Leg Press, Calf Raises Machine, Angled Leg Press, Hip Thrust (bodyweight-only variant, not compared to the barbell-loaded best), and Hack Squat (first time logged). 0 new PRs — a deliberately lighter session spread across more exercises rather than a max-effort day; Leg Press and Inner Thigh tied their existing bests. Logged to data.js/workouts.json.",
     "22:30 creatine monohydrate, 5g — zero kcal/macros.",
     "22:45 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Day complete. Slept 6.5h (00:25-06:55) — below the 7-9h target band. Legs & Glutes workout with wife (0 new PRs, deliberately lighter one-off scheme). Protein (208g) and fat (114g) both ran well over target, driven by a large steak lunch and a fat-heavier dinner."
+  "status_note": "Day complete. Slept 6.5h (00:25-06:55) — below the 7-9h target band. Legs & Glutes workout with wife (0 new PRs, deliberately lighter one-off scheme). Protein (209g) and fat (117g) both ran well over target, driven by a large steak lunch and a fat-heavier dinner."
 }
