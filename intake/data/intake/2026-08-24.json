@@ -18,17 +18,21 @@
     {"time": "12:30", "name": "Lunch — bread (1 bite)", "category": "food", "qty": "~15 g", "kcal": 40, "protein_g": 1.35, "carbs_g": 7.35, "fat_g": 0.48, "fiber_g": 0.41, "time_approx": true, "note": "standard white/artisan bread reference (~265kcal/100g), taste-size bite, first time logged"},
     {"time": "12:30", "name": "Lunch — potato purée (1 bite)", "category": "food", "qty": "~20 g", "kcal": 23, "protein_g": 0.4, "carbs_g": 3.4, "fat_g": 0.8, "fiber_g": 0.3, "time_approx": true, "note": "standard creamy mashed-potato reference (~113kcal/100g, butter/cream), taste-size bite, first time logged"},
     {"time": "13:30", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:45", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "note": "same reference as prior green-apple entries"}
+    {"time": "14:45", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 94, "protein_g": 0.5, "carbs_g": 24.8, "fat_g": 0.4, "fiber_g": 4.3, "note": "same reference as prior green-apple entries"},
+    {"time": "19:00", "name": "Dinner — Agami Pita Pro spelt pita", "category": "food", "qty": "1 (68 g)", "kcal": 140, "protein_g": 15, "carbs_g": 19, "fat_g": 2.5, "fiber_g": 9, "time_approx": true, "note": "verified reference, reused (half of the usual 2-unit serving)"},
+    {"time": "19:00", "name": "Dinner — yellow cheese, 15% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 150, "protein_g": 11, "carbs_g": 0.6, "fat_g": 10.6, "fiber_g": 0, "time_approx": true, "note": "same generic 15%-fat estimate established earlier today (~75kcal/25g slice)"},
+    {"time": "19:00", "name": "Dinner — salad (lettuce, cherry tomatoes, red onion, baby mozzarella) with classic vinaigrette, 60% eaten", "category": "food", "qty": "0.6 of the recipe (1 lettuce head ~300g, 30 cherry tomatoes, 0.5 red onion, 50g baby mozzarella) + 0.6 of the standard Maple-Balsamic Mustard Vinaigrette batch (foods.json reference)", "kcal": 347, "protein_g": 11.95, "carbs_g": 34.2, "fat_g": 19.5, "fiber_g": 6.4, "time_approx": true, "note": "same recipe structure and 'classic' vinaigrette reference as prior salad entries, scaled to the 60% portion eaten. Credits ~7.9mg lycopene, ~51.3mg vitamin C, ~45.9mcg folate DFE, ~1.7mg vitamin E (olive oil in the vinaigrette)."},
+    {"time": "19:00", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "25 g", "kcal": 77, "protein_g": 4.42, "carbs_g": 1.33, "fat_g": 6.33, "fiber_g": 0, "time_approx": true, "note": "same per-gram rate as prior Simfonia entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 160,
+    "folate_mcg_dfe": 205.9,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 58.42,
+    "vitamin_c_mg": 109.72,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 10.34
+    "vitamin_e_mg": 1.7,
+    "lycopene_mg": 18.24
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -40,7 +44,8 @@
     "10:25 espresso (2nd caffeine shot).",
     "12:30 lunch (restaurant, no exact recipe/weights given): ~500g mixed red meat (sirloin, fillet, carpaccio combined — blended lean-steak estimate, first time logged) + 2 dashes shaved parmesan + 0.5 tomato + 0.5 red onion + a bite of bread + a bite of potato purée. Several first-time/taste-size items, all flagged as directional estimates.",
     "13:30 double espresso (2 caffeine shots).",
-    "14:45 green apple (1 medium, 180g), same standard reference as prior entries."
+    "14:45 green apple (1 medium, 180g), same standard reference as prior entries.",
+    "~19:00 dinner (time not given, approximated): 1 Agami Pita Pro + 2 yellow cheese slices 15% fat + a salad (lettuce, cherry tomatoes, red onion, baby mozzarella, 60% eaten) dressed with the classic Maple-Balsamic Mustard Vinaigrette + 25g Simfonia cheese spread — salad and vinaigrette per the saved recipe/reference structure, scaled to today's quantities and 60% portion."
   ],
   "status_note": "Day in progress. Slept 6.5h (00:25-06:55) — below the 7-9h target band."
 }
