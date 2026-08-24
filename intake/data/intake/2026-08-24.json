@@ -10,17 +10,23 @@
     {"time": "09:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "09:20", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "3 slices (~75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice)"},
     {"time": "09:20", "name": "Snack — cherry tomatoes", "category": "food", "qty": "20", "kcal": 54, "protein_g": 2.7, "carbs_g": 11.7, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
-    {"time": "10:25", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "10:25", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "12:30", "name": "Lunch — mixed red meat (sirloin, fillet, carpaccio)", "category": "food", "qty": "~500 g combined", "kcal": 1150, "protein_g": 135, "carbs_g": 0, "fat_g": 65, "fiber_g": 0, "time_approx": true, "note": "restaurant meal, no exact split given between the 3 cuts — blended lean-beef-steak reference (~230kcal/100g, 27g protein, 13g fat, no carbs). First time logged, flagged as a directional estimate."},
+    {"time": "12:30", "name": "Lunch — parmesan (2 dashes)", "category": "food", "qty": "~2 g shaved", "kcal": 8, "protein_g": 0.7, "carbs_g": 0.06, "fat_g": 0.52, "fiber_g": 0, "time_approx": true, "note": "standard parmesan reference (~392kcal/100g), small garnish amount, first time logged"},
+    {"time": "12:30", "name": "Lunch — tomato (0.5)", "category": "food", "qty": "0.5 medium tomato (~60 g)", "kcal": 11, "protein_g": 0.54, "carbs_g": 2.34, "fat_g": 0.12, "fiber_g": 0.72, "time_approx": true, "note": "standard whole-tomato reference (~18kcal/100g), first time logged. Credits ~1.54mg lycopene, ~8.22mg vitamin C, ~9mcg folate DFE."},
+    {"time": "12:30", "name": "Lunch — red onion (0.5)", "category": "food", "qty": "0.5 onion (~85 g)", "kcal": 34, "protein_g": 1, "carbs_g": 8, "fat_g": 0.08, "fiber_g": 1.4, "time_approx": true, "note": "same standard reference as prior entries. Credits ~6.2mg vitamin C."},
+    {"time": "12:30", "name": "Lunch — bread (1 bite)", "category": "food", "qty": "~15 g", "kcal": 40, "protein_g": 1.35, "carbs_g": 7.35, "fat_g": 0.48, "fiber_g": 0.41, "time_approx": true, "note": "standard white/artisan bread reference (~265kcal/100g), taste-size bite, first time logged"},
+    {"time": "12:30", "name": "Lunch — potato purée (1 bite)", "category": "food", "qty": "~20 g", "kcal": 23, "protein_g": 0.4, "carbs_g": 3.4, "fat_g": 0.8, "fiber_g": 0.3, "time_approx": true, "note": "standard creamy mashed-potato reference (~113kcal/100g, butter/cream), taste-size bite, first time logged"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 151,
+    "folate_mcg_dfe": 160,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 44,
+    "vitamin_c_mg": 58.42,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 10.34
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -29,7 +35,8 @@
     "07:15 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "09:00 espresso (1 caffeine shot).",
     "09:20 snack: 3 yellow cheese slices 9% fat + 20 cherry tomatoes — both same standard/verified references as prior entries.",
-    "10:25 espresso (2nd caffeine shot)."
+    "10:25 espresso (2nd caffeine shot).",
+    "12:30 lunch (restaurant, no exact recipe/weights given): ~500g mixed red meat (sirloin, fillet, carpaccio combined — blended lean-steak estimate, first time logged) + 2 dashes shaved parmesan + 0.5 tomato + 0.5 red onion + a bite of bread + a bite of potato purée. Several first-time/taste-size items, all flagged as directional estimates."
   ],
   "status_note": "Day in progress. Slept 6.5h (00:25-06:55) — below the 7-9h target band."
 }
