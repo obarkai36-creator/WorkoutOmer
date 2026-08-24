@@ -1,0 +1,62 @@
+{
+  "id": "soy_glaze_chicken_breast",
+  "name": "Juicy soy-glaze chicken breast strips (חזה עוף עסיסי וטעים)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": null,
+    "captured": "2026-08-23",
+    "notes": "Reconstructed 2026-08-25 from a screenshot of this recipe's card in the Recipe Library artifact — the original analysis session/JSON for this recipe was not found in this repo, so this file recreates it from the visible per-100g values, ingredients, and tags on the card. If the original had different `analysis` scoring text, that couldn't be recovered from the screenshot."
+  },
+  "servings": 5,
+  "serving_desc": "≈160 g cooked (1 kg raw chicken batch ÷ 5)",
+  "serving_g": 160,
+  "ingredients": [
+    {"item": "chicken breast", "qty": "1 kg", "note": "cut into even strips"},
+    {"item": "soy sauce", "qty": "marinade"},
+    {"item": "olive oil", "qty": "marinade"},
+    {"item": "maple syrup / silan", "qty": "marinade"},
+    {"item": "water", "qty": "marinade"},
+    {"item": "sesame oil", "qty": "marinade"},
+    {"item": "sweet chili sauce", "qty": "marinade"},
+    {"item": "paprika", "qty": "to taste"},
+    {"item": "garlic powder", "qty": "to taste"},
+    {"item": "black pepper", "qty": "to taste"},
+    {"item": "ginger", "qty": "to taste"},
+    {"item": "salt", "qty": "to taste"},
+    {"item": "cornflour", "qty": "for glaze thickening"},
+    {"item": "olive oil", "qty": "for frying"}
+  ],
+  "steps": [
+    "Cut the breast into even, plump strips of uniform thickness and pat dry.",
+    "Marinate in soy sauce, olive oil, maple syrup/silan, water, sesame oil, sweet chili sauce, paprika, garlic powder, black pepper, ginger, and salt.",
+    "Pan-fry in olive oil; thicken the glaze with cornflour."
+  ],
+  "per_serving": {
+    "kcal": 381, "protein_g": 46.4, "carbs_g": 8.32, "fat_g": 17.6, "fiber_g": 0.32,
+    "micros": {
+      "selenium_mcg": 44.8, "zinc_mg": 2.08, "iron_mg": 1.44, "choline_mg": 128,
+      "vitamin_e_mg": 1.6, "sodium_mg": 830.4, "added_sugar_g": 4.96
+    }
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 7,
+      "verdict": "High-protein, moderate-fat chicken batch — good for muscle retention and cutting; the soy/sweet-chili glaze adds sodium and added sugar worth watching if eating multiple servings.",
+      "flags": ["moderate sodium (~830mg/serving)", "added sugar from glaze (~5g/serving)", "decent selenium/zinc from chicken"],
+      "suggested_mods": ["Pair with a big salad for fiber/lycopene, as already planned", "Go easy on extra soy sauce at the table given the glaze's own sodium"]
+    },
+    "her_preconception": {
+      "fit_score": 6,
+      "verdict": "Solid lean protein, iron, and choline. Sodium and added sugar are the only things to moderate; no raw/high-risk ingredients.",
+      "prenatal_highlights": ["iron from chicken (~1.4mg/serving)", "choline (~128mg/serving)"],
+      "safety_advisories": [],
+      "suggested_mods": ["Add a side of leafy greens for folate, which this dish doesn't provide"]
+    }
+  },
+  "tags": ["dinner", "high-protein", "chicken", "poultry", "asian", "marinade", "batch", "instagram"],
+  "adopted": true,
+  "created": "2026-08-25",
+  "updated": "2026-08-25"
+}

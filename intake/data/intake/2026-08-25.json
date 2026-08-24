@@ -4,21 +4,21 @@
   "in_progress": true,
   "workout_today": false,
   "items": [
-    {"time": "13:00", "name": "Lunch — chicken breast, soy glaze", "category": "food", "qty": "210 g", "kcal": 378, "protein_g": 63, "carbs_g": 16.8, "fat_g": 8.4, "fiber_g": 0, "time_approx": true, "note": "pre-logged the day before, from Sunday's soy-glaze batch. No recipe/label given — generic soy-glazed chicken breast estimate (~180kcal/100g, 30g protein, 8g carb from the glaze, 4g fat), first time logged, flagged. Exact time not yet known, placeholder 13:00. User expects to pair this with a salad — not logged yet, will add once specified."}
+    {"time": "13:00", "name": "Lunch — Juicy soy-glaze chicken breast strips", "category": "food", "qty": "210 g (from the adopted recipe, intake/recipes/soy_glaze_chicken_breast.json)", "kcal": 500, "protein_g": 60.9, "carbs_g": 10.92, "fat_g": 23.1, "fiber_g": 0.42, "time_approx": true, "note": "corrected to the actual recipe-card values (238kcal/29g protein/5.2g carb/11g fat/0.2g fiber per 100g) after the initial generic estimate was found to not match the analyzed recipe. From Sunday's batch. Credits ~58.8mcg selenium, ~2.73mg zinc, ~2.1mg vitamin E. Exact time not yet known, placeholder 13:00. User expects to pair this with a salad — not logged yet, will add once specified."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
+    "zinc_mg": 2.73,
+    "selenium_mcg": 58.8,
     "folate_mcg_dfe": 0,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_e_mg": 2.1,
     "lycopene_mg": 0
   },
   "caffeine_shots": 0,
   "assumptions": [
-    "13:00 lunch pre-logged the evening before (24 Aug): 210g chicken breast from Sunday's soy-glaze batch — generic soy-glazed chicken estimate (no recipe/label given), first time logged, flagged. Likely paired with a salad, not yet specified — will add when known."
+    "13:00 lunch pre-logged the evening before (24 Aug): 210g chicken breast from Sunday's soy-glaze batch. Initially logged with a generic soy-glazed-chicken estimate (~180kcal/100g); user flagged this didn't match the actual analyzed recipe card ('Juicy soy-glaze chicken breast strips'). That recipe's file was found to be missing from this repo — reconstructed from a screenshot of the Recipe Library artifact into intake/recipes/soy_glaze_chicken_breast.json (per-100g: 238kcal/29g protein/5.2g carb/11g fat/0.2g fiber, plus selenium/zinc/vitE). Lunch entry corrected to match: 210g scales to 500kcal/60.9g protein/10.92g carb/23.1g fat/0.42g fiber. Likely paired with a salad, not yet specified — will add when known."
   ],
-  "status_note": "Day not yet started. Lunch pre-logged the evening before (24 Aug)."
+  "status_note": "Day not yet started. Lunch pre-logged the evening before (24 Aug), corrected to match the actual soy-glaze chicken recipe card."
 }
