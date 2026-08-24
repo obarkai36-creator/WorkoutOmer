@@ -1,7 +1,7 @@
 {
   "date": "2026-08-24",
   "day_number": 58,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Legs & Glutes (אימון A, one-off 3-sets-each scheme with wife), 21:05. Leg Extensions 111kg×3×8; Leg Curls 111kg×3×8; Inner Thigh 79kg×3×9 (ties best); Outer Thigh 79kg×3×9; Glute Extension 32kg×3×6 each; Leg Press 132kg×3×10 (ties best); Calf Raises Machine 83.5kg×3×6; Angled Leg Press 152kg setup×3×8; Hip Thrust bodyweight×3×8 (unweighted variant); Hack Squat bodyweight+42.6kg frame×3×6 (first log). 0 new PRs — deliberately lighter, higher-exercise-count session by design.",
   "items": [
@@ -24,10 +24,12 @@
     {"time": "19:00", "name": "Dinner — yellow cheese, 15% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 150, "protein_g": 11, "carbs_g": 0.6, "fat_g": 10.6, "fiber_g": 0, "time_approx": true, "note": "same generic 15%-fat estimate established earlier today (~75kcal/25g slice)"},
     {"time": "19:00", "name": "Dinner — salad (lettuce, cherry tomatoes, red onion, baby mozzarella) with classic vinaigrette, 60% eaten", "category": "food", "qty": "0.6 of the recipe (1 lettuce head ~300g, 30 cherry tomatoes, 0.5 red onion, 50g baby mozzarella) + 0.6 of the standard Maple-Balsamic Mustard Vinaigrette batch (foods.json reference)", "kcal": 347, "protein_g": 11.95, "carbs_g": 34.2, "fat_g": 19.5, "fiber_g": 6.4, "time_approx": true, "note": "same recipe structure and 'classic' vinaigrette reference as prior salad entries, scaled to the 60% portion eaten. Credits ~7.9mg lycopene, ~51.3mg vitamin C, ~45.9mcg folate DFE, ~1.7mg vitamin E (olive oil in the vinaigrette)."},
     {"time": "19:00", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "25 g", "kcal": 77, "protein_g": 4.42, "carbs_g": 1.33, "fat_g": 6.33, "fiber_g": 0, "time_approx": true, "note": "same per-gram rate as prior Simfonia entries"},
-    {"time": "19:55", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
+    {"time": "19:55", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "22:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "22:45", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, verified reference (supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 17.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 205.9,
     "omega3_epa_dha_mg": 0,
@@ -49,7 +51,9 @@
     "14:45 green apple (1 medium, 180g), same standard reference as prior entries.",
     "~19:00 dinner (time not given, approximated): 1 Agami Pita Pro + 2 yellow cheese slices 15% fat + a salad (lettuce, cherry tomatoes, red onion, baby mozzarella, 60% eaten) dressed with the classic Maple-Balsamic Mustard Vinaigrette + 25g Simfonia cheese spread — salad and vinaigrette per the saved recipe/reference structure, scaled to today's quantities and 60% portion.",
     "19:55 Rhinolast PM dose — both allergy spray doses done today.",
-    "21:05 Legs & Glutes workout (אימון A), a one-off 3-sets-each scheme done with wife across 10 exercises: Leg Extensions, Leg Curls, Inner Thigh, Outer Thigh, Glute Extension, Leg Press, Calf Raises Machine, Angled Leg Press, Hip Thrust (bodyweight-only variant, not compared to the barbell-loaded best), and Hack Squat (first time logged). 0 new PRs — a deliberately lighter session spread across more exercises rather than a max-effort day; Leg Press and Inner Thigh tied their existing bests. Logged to data.js/workouts.json."
+    "21:05 Legs & Glutes workout (אימון A), a one-off 3-sets-each scheme done with wife across 10 exercises: Leg Extensions, Leg Curls, Inner Thigh, Outer Thigh, Glute Extension, Leg Press, Calf Raises Machine, Angled Leg Press, Hip Thrust (bodyweight-only variant, not compared to the barbell-loaded best), and Hack Squat (first time logged). 0 new PRs — a deliberately lighter session spread across more exercises rather than a max-effort day; Leg Press and Inner Thigh tied their existing bests. Logged to data.js/workouts.json.",
+    "22:30 creatine monohydrate, 5g — zero kcal/macros.",
+    "22:45 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Day in progress. Slept 6.5h (00:25-06:55) — below the 7-9h target band."
+  "status_note": "Day complete. Slept 6.5h (00:25-06:55) — below the 7-9h target band. Legs & Glutes workout with wife (0 new PRs, deliberately lighter one-off scheme). Protein (208g) and fat (114g) both ran well over target, driven by a large steak lunch and a fat-heavier dinner."
 }
