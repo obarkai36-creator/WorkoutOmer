@@ -1,20 +1,22 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-08-23",
-    "latest_session": "Arms (hotel gym, 17.5kg dumbbells)",
-    "sessions_logged": 50,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-08-24",
+    "latest_session": "Legs & Glutes (אימון A, one-off 3-sets-each scheme with wife)",
+    "sessions_logged": 51,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 16.5,
     "aerobic_sessions_28d": 4,
     "avg_pace": "9:12/km",
     "avg_hr": 142,
-    "acwr": 0.48,
+    "acwr": 0.99,
     "recommended_next": "Back day",
     "alerts": [
       "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Load ratio 0.48 (<0.8). A normal training week will bring this back up."
+      "Recovers in ~64.2h. Avoid loading it hard before then — you trained it most recently.",
+      "Recovers in ~72h. Avoid loading it hard before then — you trained it most recently.",
+      "Recovers in ~72.6h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -296,6 +298,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Hotel gym, single fixed 17.5kg dumbbell pair. Incline Hammer Curl 17.5kg each×4×9 (est. 1RM 22.75 vs 22.8 for the 18kg each×4×8 best — essentially tied, not a PR by a hair); Incline DB Curl 17.5kg each×4×7 (est. 1RM 21.58 vs 21.6 for the 18kg each×4×6 best — same, essentially tied); Flat DB Triceps Extension 17.5kg each×4×6 (new PR — heavier than the 16kg each×4×6 best at the same reps); Overhead DB Triceps Extension 17.5kg×4×13 (est. 1RM 25.08 vs 25.2 for the 18kg×4×12 best — essentially tied, not a PR by a hair); Forearm Twists 17.5kg each×4×8 (new PR — big jump from the 12kg each×4×10 best, swapped in for Single-Hand DB Triceps Extension). 2 new PRs. 15:45.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-24",
+      "type": "Strength — Legs & Glutes (אימון A, one-off scheme with wife)",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "One-off 3-sets-each scheme across 10 exercises. Leg Extensions 111kg×3×8 (below the 111kg×4×12 best, not a PR); Leg Curls 111kg×3×8 (same, not a PR); Inner Thigh 79kg×3×9 (ties best exactly); Outer Thigh 79kg×3×9 (below the 79kg×5×10 best, not a PR); Glute Extension 32kg×3×6 each (well below the 59kg×1×5 each best, not a PR — much lighter load this session); Leg Press 132kg×3×10 (ties best by weight/reps, fewer sets); Calf Raises Machine 83.5kg×3×6 (heavier than both prior figures but est. 1RM 100.2 vs 103.9 for the 76kg×4×11 best — not a PR); Angled Leg Press 152kg setup (45kg each side + 62kg frame)×3×8 (well below the 202kg×4×7 best, not a PR); Hip Thrust bodyweight×3×8 (unweighted variant, not compared to the 24kg barbell-loaded best — different loading scheme); Hack Squat bodyweight+42.6kg frame×3×6 (first time logged, no comparison). 0 new PRs — a deliberately lighter, higher-exercise-count session by design, not a max-effort day. 21:05.",
       "_source": "manual log"
     }
   ]
