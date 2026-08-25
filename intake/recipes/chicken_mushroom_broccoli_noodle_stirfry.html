@@ -1,0 +1,84 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Chicken, mushroom &amp; broccoli glass-noodle stir-fry (logged batch)</title><style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+          --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8;
+          --him:#38bdf8; --her:#f472b6; --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.45; padding:24px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+         padding:16px 20px; margin:0 0 22px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:4px; }
+  .chip { cursor:pointer; font-size:13px; padding:6px 14px; border-radius:999px;
+          background:var(--panel2); border:1px solid var(--line); color:var(--muted); user-select:none; }
+  .chip.active { color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:700; }
+  .chip:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .toc-group { margin-top:14px; }
+  .toc-group h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+                  color:var(--accent); margin:0 0 6px; }
+  .toc-list { list-style:none; padding:0; margin:0; }
+  .toc-list li { margin:4px 0; font-size:13px; display:flex; gap:8px; align-items:baseline; }
+  .toc-list a { color:var(--text); text-decoration:none; }
+  .toc-list a:hover { text-decoration:underline; }
+  .toc-dot { color:var(--good); font-size:11px; }
+  .toc-score { color:var(--muted); font-size:11px; font-variant-numeric:tabular-nums; margin-left:auto; white-space:nowrap; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+          padding:18px 20px; margin:0 0 22px; scroll-margin-top:16px; }
+  .rtitle { font-size:18px; font-weight:700; margin:0; }
+  .badges { margin:8px 0 2px; }
+  .badge { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px;
+           background:var(--panel2); border:1px solid var(--line); color:var(--muted); margin:0 6px 6px 0; }
+  .badge.src { color:var(--accent); border-color:var(--accent); }
+  .badge.adopted { color:var(--good); border-color:var(--good); }
+  .badge.meal { color:var(--text); border-color:var(--muted); font-weight:700; }
+  .badge.tag { color:var(--muted); }
+  .meta { color:var(--muted); font-size:12px; margin:4px 0 12px; }
+  .basis { font-size:12px; color:var(--text); margin:12px 0 6px; }
+  .basis b { color:var(--accent); }
+  .macros { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 14px; }
+  .m { flex:1 1 90px; background:var(--panel2); border:1px solid var(--line);
+       border-radius:10px; padding:8px 10px; text-align:center; }
+  .m .v { font-size:17px; font-weight:800; }
+  .m .l { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .micros { font-size:12px; color:var(--muted); margin:0 0 14px; }
+  .micros b { color:var(--text); }
+  .ingredients { font-size:12.5px; color:var(--muted); }
+  .cookwrap { display:grid; grid-template-columns:minmax(190px,1fr) 1.5fr; gap:14px;
+              margin:14px 0 2px; align-items:start; }
+  @media (max-width:680px){ .cookwrap { grid-template-columns:1fr; } }
+  .ingr, .cook { background:var(--panel2); border:1px solid var(--line); border-radius:12px;
+                 padding:12px 16px 14px; margin:0; }
+  .ingr h4, .cook h4 { margin:0 0 8px; font-size:13px; color:var(--text); }
+  .ingr ul { list-style:none; margin:0; padding:0; }
+  .ingr li { font-size:12.5px; margin:0; padding:6px 0; border-bottom:1px solid var(--line);
+             display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+  .ingr li:last-child { border-bottom:none; }
+  .ingr .name { color:var(--muted); flex:1 1 auto; }
+  .ingr .qty { color:var(--accent); font-weight:700; text-align:right; flex:0 1 45%;
+               font-variant-numeric:tabular-nums; }
+  .ingr .inote { display:block; color:var(--muted); font-size:11px; font-style:italic; margin-top:2px; }
+  .cook ol { margin:0; padding-left:20px; }
+  .cook ol li { font-size:12.5px; margin:5px 0; }
+  .lens { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:680px){ .lens { grid-template-columns:1fr; } }
+  .pane { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .pane.him { border-top:3px solid var(--him); }
+  .pane.her { border-top:3px solid var(--her); }
+  .pane h3 { margin:0 0 2px; font-size:13px; }
+  .pane .who { font-size:11px; color:var(--muted); margin-bottom:8px; }
+  .score { display:inline-block; font-weight:800; font-size:15px; padding:2px 10px;
+           border-radius:8px; background:var(--bg); }
+  .verdict { font-size:13px; margin:8px 0; }
+  .lbl { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:10px 0 3px; }
+  ul { margin:2px 0 0; padding-left:18px; }
+  li { font-size:12.5px; margin:2px 0; }
+  .flag { font-size:12px; color:var(--warn); }
+  .copyhint { font-size:11px; color:var(--muted); font-style:italic; margin-top:10px; }
+  .tmpl { background:var(--panel2); border-left:3px solid var(--accent); border-radius:8px;
+          padding:10px 12px; margin:10px 0 4px; font-size:12.5px; }
+  .tmpl b { color:var(--text); }
+  .tmpl .rule { color:var(--muted); margin-top:4px; }
+</style></head><body><div class='wrap'><h1>Chicken, mushroom &amp; broccoli glass-noodle stir-fry (logged batch)</h1><div class='sub'>Dual-lens recipe analysis · scored per intake/references/nutrition_lenses.json</div><div class='card'><div class='rtitle'>Chicken, mushroom &amp; broccoli glass-noodle stir-fry (logged batch)</div><div class='badges'><span class='badge meal'>Chicken</span><span class='badge src'>family</span><span class='badge tag'>dinner</span><span class='badge tag'>high-protein</span><span class='badge tag'>stir-fry</span><span class='badge tag'>high-veg</span><span class='badge tag'>logged-batch</span><span class='badge tag'>low-sodium</span><span class='badge tag'>poultry</span></div><div class='meta'>4 servings · ≈400 g cooked (batch ÷4) · macros: estimate</div><div class='basis'>Values per <b>100 g</b> — you decide the portion <span class='muted'>· one typical serving ≈ 400 g</span></div><div class='macros'><div class='m'><div class='v'>102</div><div class='l'>kcal</div></div><div class='m'><div class='v'>10g</div><div class='l'>protein</div></div><div class='m'><div class='v'>11g</div><div class='l'>carbs</div></div><div class='m'><div class='v'>1.9g</div><div class='l'>fat</div></div><div class='m'><div class='v'>0.8g</div><div class='l'>fiber</div></div></div><div class='micros'>Per 100 g: <b>9.5</b> selenium mcg · <b>9</b> folate mcg dfe · <b>7</b> vitamin c mg · <b>0.5</b> iron mg · <b>0.5</b> zinc mg · <b>25</b> choline mg · <b>38</b> sodium mg</div><div class='cookwrap'><div class='ingr'><h4>Ingredients</h4><ul><li><span class='name'>chicken breast<span class='inote'>VARIABLE input</span></span><span class='qty'>630 g raw</span></li><li><span class='name'>glass (mung bean) noodles</span><span class='qty'>150 g dry</span></li><li><span class='name'>broccoli</span><span class='qty'>200 g, florets</span></li><li><span class='name'>zucchini</span><span class='qty'>2 (~400 g)</span></li><li><span class='name'>mushrooms</span><span class='qty'>8 (~150 g)</span></li><li><span class='name'>onion</span><span class='qty'>½ (~75 g)</span></li><li><span class='name'>garlic</span><span class='qty'>8 cloves</span></li><li><span class='name'>cooking oil</span><span class='qty'>~1 tbsp (assumed — none specified)</span></li><li><span class='name'>salt, pepper / soy</span><span class='qty'>to taste (not specified)</span></li></ul></div><div class='cook'><h4>🍳 Cooking guide — for best taste &amp; texture</h4><ol><li>Prep everything first — stir-fry moves fast. Soak the glass noodles in warm water until pliable (5-10 min), drain, and snip shorter with scissors.</li><li>Steam or blanch the broccoli ~2 min (it&#x27;s the densest veg), then drain — this way it cooks evenly and stays bright and crisp-tender.</li><li>Pat the chicken strips dry and season lightly. Heat the pan/wok hot before the oil goes in — high heat sears, low heat steams.</li><li>Stir-fry the chicken in a single layer until just cooked, then remove (crowding makes it grey and watery).</li><li>Stir-fry the garlic and onion briefly, then the mushrooms — leave the mushrooms undisturbed a minute to brown (moving them too soon makes them release water and steam).</li><li>Add the zucchini and blanched broccoli and toss 2-3 min to keep them crisp-tender.</li><li>Return the chicken, add the noodles, and season to taste (salt/pepper, or a splash of low-sodium soy); toss 1-2 min to combine and heat through.</li><li>Serve promptly. Tip: a squeeze of lemon or lime at the end lifts the whole dish.</li></ol></div></div><div class='lens' style='margin-top:14px'><div class='pane him'><h3>For him &nbsp;<span class='score' style='color:var(--good)'>8/10</span></h3><div class='who'>weight loss · muscle retention · sperm</div><div class='verdict'>A lean, high-protein cutting plate — 40 g protein for ~408 kcal (~9.8 g protein per 100 kcal) and only ~8 g fat/serving, with a big volume of veg and ~3 g fiber. Broccoli brings vitamin C + folate, mushrooms add selenium (a sperm micro). Low sodium AS COOKED here (no heavy sauce) — a plus versus the soy-loaded stir-fries. Glass noodles are the one refined carb, but they&#x27;re well balanced by the protein and veg.</div><div class='lbl'>Highlights</div><ul><li>40 g protein/serving, very lean (~8 g fat)</li><li>high veg volume + ~3 g fiber</li><li>selenium (mushrooms) + vitamin C/folate (broccoli)</li><li>low sodium as cooked</li><li>refined glass noodles</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Add a handful of spinach for more folate + iron at almost no calories</li><li>If you season with soy, use low-sodium and go light — that&#x27;s the only thing that would push sodium up</li><li>Great as-is for a cut</li></ul></div><div class='pane her'><h3>For her &nbsp;<span class='score' style='color:var(--good)'>8/10</span></h3><div class='who'>preconception / prenatal (advisory)</div><div class='verdict'>Strong for her too — broccoli folate + vitamin C, iron paired with that vitamin C for absorption, choline and selenium, all on lean protein with no safety flags (everything fully cooked, no sprouts, no high-mercury fish). Add greens to push the folate even higher.</div><div class='lbl'>Highlights</div><ul><li>folate + vitamin C from broccoli (vitamin C also aids iron absorption)</li><li>choline + selenium; lean protein</li><li>low sodium as cooked</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Toss in spinach for extra folate + iron</li><li>Keep it lightly seasoned to hold the sodium down</li></ul><div class='copyhint'>↑ Copy this block into the lihitrack session.</div></div></div></div></div></body></html>

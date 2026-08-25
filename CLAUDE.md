@@ -26,6 +26,13 @@
     heating guide. The generator renders `cooking_guide` (falls back to `steps`).
   - **Meal type:** every recipe carries a `meal_type` (Chicken / Fish / Beef /
     Snack / Dessert) used by the library's filter/sort table of contents.
+  - **Logged batches (standing skill, added 2026-08-22):** when the user reports
+    a batch they ACTUALLY COOKED (ingredient list + amounts), automatically log
+    it as a reference recipe (`adopted:false`, tag `logged-batch`) with correct
+    macros for those exact amounts + a `cooking_guide`, then regenerate and
+    re-publish — without being asked. Flag any assumptions (oil/sauce/seasoning
+    not given) and offer to adjust. Don't create near-duplicates gratuitously,
+    but a distinct ingredient set is its own entry.
   - **Library website:** `intake/recipes/library.html` is the browsable index
     (filter chips + grouped TOC by meal type, ● = in rotation). Published as a
     private claude.ai Artifact the user can open anytime without asking for a
