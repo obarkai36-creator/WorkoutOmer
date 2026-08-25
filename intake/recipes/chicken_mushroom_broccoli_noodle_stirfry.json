@@ -1,20 +1,21 @@
 {
   "id": "chicken_mushroom_broccoli_noodle_stirfry",
-  "name": "Chicken, mushroom & broccoli glass-noodle stir-fry (logged batch)",
+  "name": "Chicken, mushroom, broccoli & spinach glass-noodle stir-fry (logged batch)",
   "source": {
     "type": "family",
     "url": null,
     "author": "User's logged batch — cooked 2026-08-22",
     "captured": "2026-08-22",
-    "notes": "Reference log of a batch the user actually cooked (exact amounts below). No oil or sauce was specified — assumed ~1 tbsp oil for stir-frying and light salt/pepper seasoning; sodium is low as-computed and rises if soy/salt is added. Tell me the oil/soy used and I'll adjust. Mushrooms ~150 g (8), onion ~75 g (½), zucchini ~400 g (2)."
+    "notes": "Reference log of a batch the user actually cooked (exact amounts below; 100 g spinach added after the initial log). No oil or sauce was specified — assumed ~1 tbsp oil for stir-frying and light salt/pepper seasoning; sodium is low as-computed and rises if soy/salt is added. Tell me the oil/soy used and I'll adjust. Mushrooms ~150 g (8), onion ~75 g (½), zucchini ~400 g (2)."
   },
   "servings": 4,
-  "serving_desc": "≈400 g cooked (batch ÷4)",
+  "serving_desc": "≈410 g cooked (batch ÷4)",
   "ingredients": [
     {"item": "chicken breast", "qty": "630 g raw", "note": "VARIABLE input"},
     {"item": "glass (mung bean) noodles", "qty": "150 g dry"},
     {"item": "broccoli", "qty": "200 g, florets"},
     {"item": "zucchini", "qty": "2 (~400 g)"},
+    {"item": "spinach", "qty": "100 g fresh"},
     {"item": "mushrooms", "qty": "8 (~150 g)"},
     {"item": "onion", "qty": "½ (~75 g)"},
     {"item": "garlic", "qty": "8 cloves"},
@@ -22,64 +23,64 @@
     {"item": "salt, pepper / soy", "qty": "to taste (not specified)"}
   ],
   "steps": [
-    "Sear chicken strips, then stir-fry the veg and noodles together."
+    "Sear chicken strips, then stir-fry the veg and noodles together, folding spinach in at the end."
   ],
   "per_serving": {
-    "kcal": 408,
-    "protein_g": 40,
-    "carbs_g": 44,
+    "kcal": 414,
+    "protein_g": 40.5,
+    "carbs_g": 45,
     "fat_g": 7.8,
-    "fiber_g": 3.3,
+    "fiber_g": 3.8,
     "micros": {
       "selenium_mcg": 38,
-      "folate_mcg_dfe": 36,
-      "vitamin_c_mg": 28,
-      "iron_mg": 2,
+      "folate_mcg_dfe": 65,
+      "vitamin_c_mg": 31,
+      "iron_mg": 2.7,
       "zinc_mg": 2,
-      "choline_mg": 100,
-      "sodium_mg": 150
+      "choline_mg": 102,
+      "sodium_mg": 160
     }
   },
   "batch_totals": {
-    "kcal": 1630,
-    "protein_g": 159,
-    "carbs_g": 175,
+    "kcal": 1655,
+    "protein_g": 162,
+    "carbs_g": 179,
     "fat_g": 31,
-    "fiber_g": 13,
-    "note": "Sodium low as-computed (~600 mg batch) — rises with any added soy/salt."
+    "fiber_g": 15,
+    "note": "Sodium low as-computed (~640 mg batch) — rises with any added soy/salt."
   },
   "confidence": "estimate",
   "analysis": {
     "him": {
       "fit_score": 8,
-      "verdict": "A lean, high-protein cutting plate — 40 g protein for ~408 kcal (~9.8 g protein per 100 kcal) and only ~8 g fat/serving, with a big volume of veg and ~3 g fiber. Broccoli brings vitamin C + folate, mushrooms add selenium (a sperm micro). Low sodium AS COOKED here (no heavy sauce) — a plus versus the soy-loaded stir-fries. Glass noodles are the one refined carb, but they're well balanced by the protein and veg.",
-      "flags": ["40 g protein/serving, very lean (~8 g fat)", "high veg volume + ~3 g fiber", "selenium (mushrooms) + vitamin C/folate (broccoli)", "low sodium as cooked", "refined glass noodles"],
+      "verdict": "A lean, high-protein cutting plate — 40 g protein for ~414 kcal (~9.8 g protein per 100 kcal) and only ~8 g fat/serving, with a big volume of veg and ~4 g fiber. The spinach + broccoli bring folate, vitamin C and iron; mushrooms add selenium (a sperm micro). Low sodium AS COOKED here (no heavy sauce) — a plus versus the soy-loaded stir-fries. Glass noodles are the one refined carb, well balanced by the protein and veg.",
+      "flags": ["40 g protein/serving, very lean (~8 g fat)", "high veg volume + ~4 g fiber", "spinach + broccoli folate/iron; mushroom selenium", "low sodium as cooked", "refined glass noodles"],
       "suggested_mods": [
-        "Add a handful of spinach for more folate + iron at almost no calories",
         "If you season with soy, use low-sodium and go light — that's the only thing that would push sodium up",
+        "Finish with a squeeze of lemon/lime to lift it",
         "Great as-is for a cut"
       ]
     },
     "her_preconception": {
       "fit_score": 8,
-      "verdict": "Strong for her too — broccoli folate + vitamin C, iron paired with that vitamin C for absorption, choline and selenium, all on lean protein with no safety flags (everything fully cooked, no sprouts, no high-mercury fish). Add greens to push the folate even higher.",
+      "verdict": "Strong for her — the 100 g spinach plus broccoli make this a real FOLATE dish (~65 mcg DFE/serving, the top preconception nutrient), with iron (~2.7 mg) paired with the veg's vitamin C for absorption, plus choline and selenium on lean protein. Fully cooked, no sprouts, no high-mercury fish — no safety flags. Low sodium as cooked. One of the better everyday preconception mains.",
       "prenatal_highlights": [
-        "folate + vitamin C from broccoli (vitamin C also aids iron absorption)",
-        "choline + selenium; lean protein",
-        "low sodium as cooked"
+        "folate from spinach + broccoli (~65 mcg DFE/serving) — top preconception nutrient",
+        "iron (~2.7 mg) paired with vitamin C (broccoli/spinach) for absorption",
+        "choline + selenium; lean protein; low sodium as cooked"
       ],
       "safety_advisories": [],
       "suggested_mods": [
-        "Toss in spinach for extra folate + iron",
-        "Keep it lightly seasoned to hold the sodium down"
+        "Keep it lightly seasoned to hold the sodium down",
+        "Already folate-strong; a lemon squeeze adds a little more vitamin C"
       ]
     }
   },
-  "tags": ["dinner", "high-protein", "stir-fry", "high-veg", "logged-batch", "low-sodium", "poultry"],
+  "tags": ["dinner", "high-protein", "stir-fry", "high-veg", "high-folate", "logged-batch", "low-sodium", "poultry"],
   "adopted": false,
   "created": "2026-08-22",
   "updated": "2026-08-22",
-  "serving_g": 400,
+  "serving_g": 410,
   "meal_type": "Chicken",
   "cooking_guide": [
     "Prep everything first — stir-fry moves fast. Soak the glass noodles in warm water until pliable (5-10 min), drain, and snip shorter with scissors.",
@@ -89,6 +90,7 @@
     "Stir-fry the garlic and onion briefly, then the mushrooms — leave the mushrooms undisturbed a minute to brown (moving them too soon makes them release water and steam).",
     "Add the zucchini and blanched broccoli and toss 2-3 min to keep them crisp-tender.",
     "Return the chicken, add the noodles, and season to taste (salt/pepper, or a splash of low-sodium soy); toss 1-2 min to combine and heat through.",
+    "Fold in the spinach at the very end and toss just until wilted — seconds only; overcooking dulls it and loses folate.",
     "Serve promptly. Tip: a squeeze of lemon or lime at the end lifts the whole dish."
   ]
 }
