@@ -10,17 +10,20 @@
     {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "09:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "09:00", "name": "Granola", "category": "food", "qty": "1 tsp (~5 g)", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g), same as prior entries"},
+    {"time": "10:10", "name": "Snack — Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.1, "note": "standard reference, ~95mcg selenium/nut"},
+    {"time": "10:10", "name": "Snack — cherry tomatoes", "category": "food", "qty": "3", "kcal": 8, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."},
+    {"time": "10:10", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (~25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"},
     {"time": "13:00", "name": "Lunch — Juicy soy-glaze chicken breast strips", "category": "food", "qty": "210 g (from the adopted recipe, intake/recipes/soy_glaze_chicken_breast.json)", "kcal": 500, "protein_g": 60.9, "carbs_g": 10.92, "fat_g": 23.1, "fiber_g": 0.42, "time_approx": true, "note": "corrected to the actual recipe-card values (238kcal/29g protein/5.2g carb/11g fat/0.2g fiber per 100g) after the initial generic estimate was found to not match the analyzed recipe. From Sunday's batch. Credits ~58.8mcg selenium, ~2.73mg zinc, ~2.1mg vitamin E. Exact time not yet known, placeholder 13:00. User expects to pair this with a salad — not logged yet, will add once specified."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.53,
-    "selenium_mcg": 58.8,
-    "folate_mcg_dfe": 100,
+    "selenium_mcg": 153.8,
+    "folate_mcg_dfe": 107.65,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 6.6,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 2.1,
-    "lycopene_mg": 0
+    "lycopene_mg": 1.32
   },
   "caffeine_shots": 1,
   "assumptions": [
@@ -29,6 +32,7 @@
     "07:10 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "08:30 espresso (1 caffeine shot).",
     "09:00 breakfast: 1 vanilla protein yogurt (Danone PRO 0% reference) + 1 tsp granola — both same standard references as prior entries.",
+    "10:10 snack: 1 Brazil nut (~95mcg selenium) + 3 cherry tomatoes (~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE) + 1 yellow cheese slice 9% fat (Tnuva Emek Light reference) — all same standard/verified references as prior entries.",
     "13:00 lunch pre-logged the evening before (24 Aug): 210g chicken breast from Sunday's soy-glaze batch. Initially logged with a generic soy-glazed-chicken estimate (~180kcal/100g); user flagged this didn't match the actual analyzed recipe card ('Juicy soy-glaze chicken breast strips'). That recipe's file was found to be missing from this repo — reconstructed from a screenshot of the Recipe Library artifact into intake/recipes/soy_glaze_chicken_breast.json (per-100g: 238kcal/29g protein/5.2g carb/11g fat/0.2g fiber, plus selenium/zinc/vitE). Lunch entry corrected to match: 210g scales to 500kcal/60.9g protein/10.92g carb/23.1g fat/0.42g fiber. Likely paired with a salad, not yet specified — will add when known."
   ],
   "status_note": "Slept 7.17h (23:45-06:55) — within target band. AM allergy meds + multivitamin done. Lunch pre-logged the evening before (24 Aug), corrected to match the actual soy-glaze chicken recipe card."
