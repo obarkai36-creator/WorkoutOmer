@@ -580,6 +580,10 @@ function renderLifestyle(day, row, el) {
       <div class="chart-box small"><canvas id="li-supp"></canvas></div>
     </div>
     <div class="panel span">
+      <h2>Sleep trend <span class="small muted">(last 30 days)</span></h2>
+      <div class="chart-box small"><canvas id="li-sleep"></canvas></div>
+    </div>
+    <div class="panel span">
       <h2>Retainer usage <span class="small muted">(last 30 tracked nights)</span></h2>
       ${renderRetainerStrip()}
     </div>
@@ -589,6 +593,11 @@ function renderLifestyle(day, row, el) {
   lineChart("li-supp", rows.map((r) => r.date.slice(5)), [
     { label: "Supplements taken", data: rows.map((r) => r.supplements_taken), borderColor: COLORS.green, backgroundColor: "transparent", stepped: true },
     { label: "Expected", data: rows.map((r) => r.supplements_total), borderColor: COLORS.muted, borderDash: [4, 4], pointRadius: 0, backgroundColor: "transparent", stepped: true },
+  ]);
+  lineChart("li-sleep", rows.map((r) => r.date.slice(5)), [
+    { label: "Sleep (h)", data: rows.map((r) => r.sleep_hours), borderColor: COLORS.blue, backgroundColor: "transparent" },
+    { label: "7h target", data: rows.map(() => 7), borderColor: COLORS.muted, borderDash: [4, 4], pointRadius: 0, backgroundColor: "transparent" },
+    { label: "9h target", data: rows.map(() => 9), borderColor: COLORS.muted, borderDash: [4, 4], pointRadius: 0, backgroundColor: "transparent" },
   ]);
 }
 
