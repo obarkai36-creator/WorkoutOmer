@@ -14,17 +14,18 @@
     {"time": "10:10", "name": "Snack — cherry tomatoes", "category": "food", "qty": "3", "kcal": 8, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."},
     {"time": "10:10", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (~25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"},
     {"time": "10:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "13:00", "name": "Lunch — Juicy soy-glaze chicken breast strips", "category": "food", "qty": "210 g (from the adopted recipe, intake/recipes/soy_glaze_chicken_breast.json)", "kcal": 500, "protein_g": 60.9, "carbs_g": 10.92, "fat_g": 23.1, "fiber_g": 0.42, "time_approx": true, "note": "corrected to the actual recipe-card values (238kcal/29g protein/5.2g carb/11g fat/0.2g fiber per 100g) after the initial generic estimate was found to not match the analyzed recipe. From Sunday's batch. Credits ~58.8mcg selenium, ~2.73mg zinc, ~2.1mg vitamin E. Exact time not yet known, placeholder 13:00. User expects to pair this with a salad — not logged yet, will add once specified."}
+    {"time": "13:00", "name": "Lunch — Juicy soy-glaze chicken breast strips", "category": "food", "qty": "210 g (from the adopted recipe, intake/recipes/soy_glaze_chicken_breast.json)", "kcal": 500, "protein_g": 60.9, "carbs_g": 10.92, "fat_g": 23.1, "fiber_g": 0.42, "time_approx": true, "note": "corrected to the actual recipe-card values (238kcal/29g protein/5.2g carb/11g fat/0.2g fiber per 100g) after the initial generic estimate was found to not match the analyzed recipe. From Sunday's batch. Credits ~58.8mcg selenium, ~2.73mg zinc, ~2.1mg vitamin E. Exact time not yet known, placeholder 13:00."},
+    {"time": "13:00", "name": "Lunch — salad (green apple, cherry tomatoes, cucumber, red onion) with olive oil & lemon dressing", "category": "food", "qty": "1 green apple (~180g) + 25 cherry tomatoes + 2 cucumbers (~600g) + 0.5 red onion (~85g), dressed with ~1 tbsp olive oil + juice of 2 small lemons (~60ml)", "kcal": 417, "protein_g": 9.3, "carbs_g": 73, "fat_g": 15.3, "fiber_g": 13.2, "time_approx": true, "note": "each component at its standard saved reference (apple 94kcal/180g, tomatoes 2.7kcal each, cucumber 45kcal/300g, red onion 34kcal/85g). Olive oil assumed a typical 1 tbsp drizzle (not weighed, ~119kcal/13.5g fat, ~1.9mg vitamin E). Lemon juice estimated at ~30ml per small lemon (not weighed, flagged) — 2 lemons ≈ 60ml, ~4x the standard 1 tbsp/15ml lemon-juice reference (~12kcal, ~20mg vitamin C total). Credits ~11mg lycopene, ~81.2mg vitamin C, ~63.75mcg folate DFE, ~1.9mg vitamin E."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.53,
     "selenium_mcg": 153.8,
-    "folate_mcg_dfe": 107.65,
+    "folate_mcg_dfe": 171.4,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 6.6,
+    "vitamin_c_mg": 87.8,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 2.1,
-    "lycopene_mg": 1.32
+    "vitamin_e_mg": 4.0,
+    "lycopene_mg": 12.32
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -35,7 +36,8 @@
     "09:00 breakfast: 1 vanilla protein yogurt (Danone PRO 0% reference) + 1 tsp granola — both same standard references as prior entries.",
     "10:10 snack: 1 Brazil nut (~95mcg selenium) + 3 cherry tomatoes (~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE) + 1 yellow cheese slice 9% fat (Tnuva Emek Light reference) — all same standard/verified references as prior entries.",
     "10:30 espresso (2nd caffeine shot).",
-    "13:00 lunch pre-logged the evening before (24 Aug): 210g chicken breast from Sunday's soy-glaze batch. Initially logged with a generic soy-glazed-chicken estimate (~180kcal/100g); user flagged this didn't match the actual analyzed recipe card ('Juicy soy-glaze chicken breast strips'). That recipe's file was found to be missing from this repo — reconstructed from a screenshot of the Recipe Library artifact into intake/recipes/soy_glaze_chicken_breast.json (per-100g: 238kcal/29g protein/5.2g carb/11g fat/0.2g fiber, plus selenium/zinc/vitE). Lunch entry corrected to match: 210g scales to 500kcal/60.9g protein/10.92g carb/23.1g fat/0.42g fiber. Likely paired with a salad, not yet specified — will add when known."
+    "13:00 lunch pre-logged the evening before (24 Aug): 210g chicken breast from Sunday's soy-glaze batch. Initially logged with a generic soy-glazed-chicken estimate (~180kcal/100g); user flagged this didn't match the actual analyzed recipe card ('Juicy soy-glaze chicken breast strips'). That recipe's file was found to be missing from this repo — reconstructed from a screenshot of the Recipe Library artifact into intake/recipes/soy_glaze_chicken_breast.json (per-100g: 238kcal/29g protein/5.2g carb/11g fat/0.2g fiber, plus selenium/zinc/vitE). Lunch entry corrected to match: 210g scales to 500kcal/60.9g protein/10.92g carb/23.1g fat/0.42g fiber.",
+    "13:00 lunch salad, now specified: 1 green apple + 25 cherry tomatoes + 2 cucumbers + 0.5 red onion, dressed with an olive oil drizzle (assumed ~1 tbsp, not weighed) + juice of 2 small lemons (assumed ~30ml/lemon, not weighed — flagged as an estimate). Each veg/fruit component at its standard saved reference. Credits ~11mg lycopene, ~81.2mg vitamin C, ~63.75mcg folate DFE, ~1.9mg vitamin E."
   ],
-  "status_note": "Slept 7.17h (23:45-06:55) — within target band. AM allergy meds + multivitamin done. Lunch pre-logged the evening before (24 Aug), corrected to match the actual soy-glaze chicken recipe card."
+  "status_note": "Slept 7.17h (23:45-06:55) — within target band. AM allergy meds + multivitamin done. Lunch (soy-glaze chicken + salad) now fully logged."
 }
