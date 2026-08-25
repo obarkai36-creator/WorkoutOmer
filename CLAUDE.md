@@ -1,5 +1,29 @@
 # Session notes
 
+- New supplement rotation candidate — Advance Physician Formulas Vitamin
+  C+D3+E+Zinc+Selenium (added 2026-08-25, label photographed, not yet
+  started as of that date): per-2-capsule-serving provides 1000mg vitamin
+  C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc (as citrate), 100mcg
+  selenium (as L-selenomethionine) — saved to
+  intake/references/supplements.json. This is a near-perfect fit for the
+  gap the 2026-08-06 Mayven gummies swap left open: Mayven provides zero
+  selenium/vitamin C/D/E, and this new capsule covers all four (plus more
+  zinc). Recommend timing: post-breakfast alongside the Mayven gummies.
+  **Zinc-stacking flag**: if the user continues taking the standalone
+  Thorne Zinc Picolinate 15mg on top of this new supplement's 20mg + the
+  Mayven gummies' 2.8mg, that's 37.8mg/day zinc — close to the 40mg adult
+  UL. Suggest the user drop the standalone Thorne Zinc Picolinate once
+  this new supplement is in regular rotation (22.8mg/day from
+  Mayven+this alone is already well above the 11mg target with headroom
+  to spare). **Selenium note**: 100mcg/day from this supplement alone,
+  before any dietary selenium (e.g. Brazil nuts, ~95mcg each) — the daily
+  target is 55mcg and the UL is 400mcg, so a Brazil nut on a day this is
+  taken pushes to ~195mcg, still well under the UL, but flag if the user
+  starts stacking multiple Brazil nuts on top of a taken dose. Log intake
+  as a normal supplement item once the user confirms they've started
+  taking it (not yet logged as of 2026-08-25 — added to the reference
+  stack only).
+
 - Travel/lighter-logging mode (2026-08-21 through Saturday 2026-08-22,
   inclusive — user is away/traveling): user explicitly asked to skip exact
   food macro/micro logging for this window. Only log supplements (with their

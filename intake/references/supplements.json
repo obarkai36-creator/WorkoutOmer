@@ -1,5 +1,5 @@
 {
-  "_note": "Current supplement stack. Micronutrient amounts for the multivitamin are best-known estimates flagged for verification against the physical bottle (iHerb/Thorne block automated label fetch). Multivitamin swap ACTIVE as of 2026-08-06 (first Mayven gummies log, day 40): Thorne Basic Nutrients 2/Day -> Mayven Full Volume Gummies is now the standing default; Thorne Zinc Picolinate 15mg resumes once the user logs taking it separately. See CLAUDE.md for details.",
+  "_note": "Current supplement stack. Micronutrient amounts for the multivitamin are best-known estimates flagged for verification against the physical bottle (iHerb/Thorne block automated label fetch). Multivitamin swap ACTIVE as of 2026-08-06 (first Mayven gummies log, day 40): Thorne Basic Nutrients 2/Day -> Mayven Full Volume Gummies is now the standing default; Thorne Zinc Picolinate 15mg resumes once the user logs taking it separately. 2026-08-25: added Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium (label photographed) as a new rotation candidate — its 5 nutrients are exactly the 4 the Mayven gummies don't cover (selenium/C/D/E) plus zinc; see CLAUDE.md for the full gap-closing analysis and the zinc-stacking flag against Thorne Zinc Picolinate. See CLAUDE.md for details.",
   "stack": [
     {
       "id": "thorne_basic_nutrients_2day",
@@ -84,6 +84,23 @@
       "timing": "before bed",
       "verified": true,
       "provides_estimate": { "zinc_mg": 15 }
+    },
+    {
+      "id": "advance_physician_formulas_c_d_e_zinc_selenium",
+      "name": "Advance Physician Formulas Vitamin C + D3 + E + Zinc + Selenium",
+      "type": "micronutrient_blend",
+      "serving": "2 capsules",
+      "servings_per_container": 30,
+      "timing": "new addition (2026-08-25) — not yet started; recommend post-breakfast alongside the Mayven gummies",
+      "verified": true,
+      "_verify_note": "Full label photographed 2026-08-25. Exact product line name not visible on this label panel — only the manufacturer (Advance Physician Formulas Inc., Irvine CA) and the Supplement Facts panel were shown.",
+      "provides": {
+        "vitamin_c_mg": 1000,
+        "vitamin_d_iu": 2000,
+        "vitamin_e_mg": 134,
+        "zinc_mg": 20,
+        "selenium_mcg": 100
+      }
     }
   ],
   "candidate_additions_for_review": [
