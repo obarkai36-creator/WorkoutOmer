@@ -1,22 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-08-24",
+    "report_date": "2026-08-25",
     "latest_session": "Legs & Glutes (אימון A, one-off 3-sets-each scheme with wife)",
     "sessions_logged": 51,
-    "sessions_per_week": 4,
+    "sessions_per_week": 3.8,
     "typical_time": "afternoon",
     "aerobic_28d_km": 16.5,
     "aerobic_sessions_28d": 4,
     "avg_pace": "9:12/km",
     "avg_hr": 142,
-    "acwr": 0.99,
+    "acwr": 1.05,
     "recommended_next": "Back day",
     "alerts": [
-      "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Recovers in ~64.2h. Avoid loading it hard before then — you trained it most recently.",
-      "Recovers in ~72h. Avoid loading it hard before then — you trained it most recently.",
-      "Recovers in ~72.6h. Avoid loading it hard before then — you trained it most recently."
+      "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
   },
   "entries": [

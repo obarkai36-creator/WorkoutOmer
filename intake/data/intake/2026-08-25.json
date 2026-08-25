@@ -1,7 +1,7 @@
 {
   "date": "2026-08-25",
   "day_number": 59,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "items": [
     {"time": "07:05", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
@@ -27,10 +27,11 @@
     {"time": "19:30", "name": "Dinner — smashed eggplant with pomegranate", "category": "food", "qty": "2 spoons (~70g eggplant + ~15g pomegranate arils)", "kcal": 117, "protein_g": 1.25, "carbs_g": 10, "fat_g": 7.7, "fiber_g": 3.4, "time_approx": true, "note": "smashed/baba-ghanoush-style eggplant (olive oil/tahini-based, richer than the plain vinegar-marinated version used before, ~150kcal/100g estimate) + a pomegranate arils garnish. First time logged, flagged as directional. Credits ~1.5mg vitamin C (pomegranate)."},
     {"time": "20:25", "name": "Watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.6, "fiber_g": 1.2, "note": "standard reference values; credits ~12.6mg lycopene, ~24.3mg vitamin C"},
     {"time": "21:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
-    {"time": "22:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "22:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "22:45", "name": "Thorne Zinc Picolinate 15 mg", "category": "supplement", "qty": "1 capsule", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "resumed per the multivitamin swap plan, verified reference (supplements.json)"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 6.44,
+    "zinc_mg": 21.44,
     "selenium_mcg": 188.0,
     "folate_mcg_dfe": 186.7,
     "omega3_epa_dha_mg": 720,
@@ -55,7 +56,9 @@
     "~19:30 dinner (time not given, approximated), a large multi-component meal: 70g soy-glaze chicken breast (same recipe as lunch) + 40g raw salmon in soy glaze with 1 tsp aioli (today's only fish serving — big omega-3/vitamin D/selenium driver) + 2 spoons white cabbage salad (soy sauce, standard reference) + 2 spoons lettuce/cherry-tomato/red-onion salad with classic vinaigrette (small side portion, estimated) + 1 medium baked sweet potato + 4 spoons labaneh-yogurt sauce with lemon and garlic (first time logged in this diluted form, estimated lighter than pure labaneh) + 2 spoons smashed eggplant with pomegranate (first time logged, richer olive-oil/tahini-style estimate vs. the plain vinegar-marinated version used before). Several first-time/estimated items, all flagged as directional.",
     "20:25 watermelon, 300g — standard reference, same as prior entries. Credits ~12.6mg lycopene, ~24.3mg vitamin C.",
     "21:00 Rhinolast PM dose — both allergy spray doses done today.",
-    "22:00 creatine monohydrate, 5g — zero kcal/macros."
+    "22:00 creatine monohydrate, 5g — zero kcal/macros.",
+    "22:40 masturbation (self) — logged to ejaculation.json.",
+    "22:45 Thorne Zinc Picolinate 15mg — resumed per the multivitamin swap plan, verified reference. Day complete."
   ],
-  "status_note": "Slept 7.17h (23:45-06:55) — within target band. Dinner logged — today's fish serving (salmon) cleared omega-3 and made real progress on vitamin D, both at zero until now. Day still open."
+  "status_note": "Day complete. Slept 7.17h (23:45-06:55) — within target band. Dinner's salmon serving cleared omega-3 (720mg) and made real progress on vitamin D (140IU), both at zero earlier in the day. Zinc ran high today (21.44mg from food+supplements) — well under the 40mg UL but a reminder of the stacking flag once the new C+D+E+Zinc+Selenium supplement joins the rotation."
 }
