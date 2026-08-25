@@ -74,11 +74,22 @@ CSS = """
   .micros { font-size:12px; color:var(--muted); margin:0 0 14px; }
   .micros b { color:var(--text); }
   .ingredients { font-size:12.5px; color:var(--muted); }
-  .cook { background:var(--panel2); border:1px solid var(--line); border-radius:12px;
-          padding:12px 16px 14px; margin:14px 0 2px; }
-  .cook h4 { margin:0 0 6px; font-size:13px; color:var(--text); }
-  .cook ol { margin:2px 0 0; padding-left:20px; }
-  .cook ol li { font-size:12.5px; margin:4px 0; }
+  .cookwrap { display:grid; grid-template-columns:minmax(190px,1fr) 1.5fr; gap:14px;
+              margin:14px 0 2px; align-items:start; }
+  @media (max-width:680px){ .cookwrap { grid-template-columns:1fr; } }
+  .ingr, .cook { background:var(--panel2); border:1px solid var(--line); border-radius:12px;
+                 padding:12px 16px 14px; margin:0; }
+  .ingr h4, .cook h4 { margin:0 0 8px; font-size:13px; color:var(--text); }
+  .ingr ul { list-style:none; margin:0; padding:0; }
+  .ingr li { font-size:12.5px; margin:0; padding:6px 0; border-bottom:1px solid var(--line);
+             display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+  .ingr li:last-child { border-bottom:none; }
+  .ingr .name { color:var(--muted); flex:1 1 auto; }
+  .ingr .qty { color:var(--accent); font-weight:700; text-align:right; flex:0 1 45%;
+               font-variant-numeric:tabular-nums; }
+  .ingr .inote { display:block; color:var(--muted); font-size:11px; font-style:italic; margin-top:2px; }
+  .cook ol { margin:0; padding-left:20px; }
+  .cook ol li { font-size:12.5px; margin:5px 0; }
   .lens { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
   @media (max-width:680px){ .lens { grid-template-columns:1fr; } }
   .pane { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:14px; }
@@ -140,6 +151,25 @@ def micro_line(micros, factor):
         return ""
     parts = [f"<b>{_n(v, factor):g}</b> {escape(k.replace('_', ' '))}" for k, v in micros.items()]
     return "<div class='micros'>Per 100 g: " + " · ".join(parts) + "</div>"
+
+
+def ingredients_block(r):
+    ing = r.get("ingredients")
+    if not ing:
+        return ""
+    rows = []
+    for i in ing:
+        if not isinstance(i, dict) or not i.get("item"):
+            continue
+        name = escape(i["item"])
+        note = i.get("note")
+        note_html = f"<span class='inote'>{escape(note)}</span>" if note else ""
+        qty = i.get("qty")
+        qty_html = f"<span class='qty'>{escape(qty)}</span>" if qty and qty != "—" else ""
+        rows.append(f"<li><span class='name'>{name}{note_html}</span>{qty_html}</li>")
+    if not rows:
+        return ""
+    return f"<div class='ingr'><h4>Ingredients</h4><ul>{''.join(rows)}</ul></div>"
 
 
 def cooking_section(r):
@@ -254,12 +284,13 @@ def render_card(r, anchor=False):
     html.append(macro_tiles(ps, factor))
     html.append(micro_line(ps.get("micros"), factor))
 
-    ing = r.get("ingredients")
-    if ing:
-        names = ", ".join(escape(i["item"]) for i in ing if isinstance(i, dict) and i.get("item"))
-        html.append(f"<div class='ingredients'><b style='color:var(--text)'>Ingredients:</b> {names}</div>")
-
-    html.append(cooking_section(r))
+    ing_html = ingredients_block(r)
+    cook_html = cooking_section(r)
+    if ing_html and cook_html:
+        # Cooking mode: quantities beside the steps (stacks on narrow screens).
+        html.append(f"<div class='cookwrap'>{ing_html}{cook_html}</div>")
+    else:
+        html.append(ing_html + cook_html)
 
     a = r.get("analysis", {})
     html.append("<div class='lens' style='margin-top:14px'>")
