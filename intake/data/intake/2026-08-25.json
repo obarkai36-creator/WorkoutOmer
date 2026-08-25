@@ -17,17 +17,24 @@
     {"time": "13:00", "name": "Lunch — Juicy soy-glaze chicken breast strips", "category": "food", "qty": "210 g (from the adopted recipe, intake/recipes/soy_glaze_chicken_breast.json)", "kcal": 500, "protein_g": 60.9, "carbs_g": 10.92, "fat_g": 23.1, "fiber_g": 0.42, "time_approx": true, "note": "corrected to the actual recipe-card values (238kcal/29g protein/5.2g carb/11g fat/0.2g fiber per 100g) after the initial generic estimate was found to not match the analyzed recipe. From Sunday's batch. Credits ~58.8mcg selenium, ~2.73mg zinc, ~2.1mg vitamin E. Exact time not yet known, placeholder 13:00."},
     {"time": "13:00", "name": "Lunch — salad (green apple, cherry tomatoes, cucumber, red onion) with olive oil & lemon dressing", "category": "food", "qty": "1 green apple (~180g) + 25 cherry tomatoes + 2 cucumbers (~600g) + 0.5 red onion (~85g), dressed with ~1 tbsp olive oil + juice of 2 small lemons (~60ml)", "kcal": 417, "protein_g": 9.3, "carbs_g": 73, "fat_g": 15.3, "fiber_g": 13.2, "time_approx": true, "note": "each component at its standard saved reference (apple 94kcal/180g, tomatoes 2.7kcal each, cucumber 45kcal/300g, red onion 34kcal/85g). Olive oil assumed a typical 1 tbsp drizzle (not weighed, ~119kcal/13.5g fat, ~1.9mg vitamin E). Lemon juice estimated at ~30ml per small lemon (not weighed, flagged) — 2 lemons ≈ 60ml, ~4x the standard 1 tbsp/15ml lemon-juice reference (~12kcal, ~20mg vitamin C total). Credits ~11mg lycopene, ~81.2mg vitamin C, ~63.75mcg folate DFE, ~1.9mg vitamin E."},
     {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "second serving today — same Danone PRO 0% reference as the 09:00 entry"}
+    {"time": "16:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "second serving today — same Danone PRO 0% reference as the 09:00 entry"},
+    {"time": "19:30", "name": "Dinner — chicken breast, soy glaze", "category": "food", "qty": "70 g (same recipe as lunch, intake/recipes/soy_glaze_chicken_breast.json)", "kcal": 167, "protein_g": 20.3, "carbs_g": 3.64, "fat_g": 7.7, "fiber_g": 0.14, "time_approx": true, "note": "same per-100g recipe rate as lunch (238kcal/29g protein/5.2g carb/11g fat/0.2g fiber per 100g). Credits ~19.6mcg selenium, ~0.91mg zinc, ~0.7mg vitamin E. Time not given, placeholder 19:30."},
+    {"time": "19:30", "name": "Dinner — raw salmon in soy glaze with aioli", "category": "food", "qty": "40 g raw salmon + soy glaze + 1 tsp aioli (~5 g)", "kcal": 132, "protein_g": 9.3, "carbs_g": 2.5, "fat_g": 9.4, "fiber_g": 0, "time_approx": true, "note": "salmon at the standard raw/fresh-salmon reference (~206kcal/100g, 22g protein/100g, 13g fat/100g, ~18mg omega-3/g, ~3.5IU vitD/g, ~36.5mcg selenium/100g); soy glaze estimated as a light coating (~15kcal, mostly carb from sugar); aioli estimated at a standard garlic-mayo reference (~700kcal/100g) for 1 tsp. First time logged in this combination, flagged as directional. Credits ~720mg omega-3 EPA/DHA, ~140IU vitamin D, ~14.6mcg selenium — today's first fish-based omega-3/vitamin D."},
+    {"time": "19:30", "name": "Dinner — white cabbage salad, soy-based sauce", "category": "food", "qty": "2 spoons (~73 g)", "kcal": 90, "protein_g": 1.27, "carbs_g": 5.2, "fat_g": 7.4, "fiber_g": 1.87, "time_approx": true, "note": "same per-spoon reference as prior cabbage salad entries (~45kcal/spoon)"},
+    {"time": "19:30", "name": "Dinner — salad (lettuce, cherry tomatoes, red onion) with classic vinaigrette", "category": "food", "qty": "2 spoons (~85 g: ~40g lettuce, ~6 cherry tomatoes, ~15g red onion, ~15g classic Maple-Balsamic Mustard Vinaigrette)", "kcal": 70, "protein_g": 1.57, "carbs_g": 9.41, "fat_g": 3.41, "fiber_g": 1.85, "time_approx": true, "note": "small side-salad portion (not the usual large-batch scaling) — component amounts estimated since no weights given, flagged. Credits ~2.64mg lycopene, ~16.34mg vitamin C, ~15.3mcg folate DFE, ~0.44mg vitamin E."},
+    {"time": "19:30", "name": "Dinner — sweet potato", "category": "food", "qty": "1 medium (~150 g, baked)", "kcal": 135, "protein_g": 3, "carbs_g": 31.5, "fat_g": 0.15, "fiber_g": 4.95, "time_approx": true, "note": "standard baked sweet potato reference (~90kcal/100g), weight not given, typical medium size assumed"},
+    {"time": "19:30", "name": "Dinner — labaneh-yogurt sauce with lemon and garlic", "category": "food", "qty": "4 spoons (~60 g)", "kcal": 70, "protein_g": 3.5, "carbs_g": 3, "fat_g": 4.5, "fiber_g": 0, "time_approx": true, "note": "first time logged in this yogurt-diluted form — estimated lighter than the usual pure homemade labaneh reference (39kcal/2 spoons) since cut with yogurt; lemon/garlic are flavoring, negligible calories. Directional estimate, flagged."},
+    {"time": "19:30", "name": "Dinner — smashed eggplant with pomegranate", "category": "food", "qty": "2 spoons (~70g eggplant + ~15g pomegranate arils)", "kcal": 117, "protein_g": 1.25, "carbs_g": 10, "fat_g": 7.7, "fiber_g": 3.4, "time_approx": true, "note": "smashed/baba-ghanoush-style eggplant (olive oil/tahini-based, richer than the plain vinegar-marinated version used before, ~150kcal/100g estimate) + a pomegranate arils garnish. First time logged, flagged as directional. Credits ~1.5mg vitamin C (pomegranate)."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 5.53,
-    "selenium_mcg": 153.8,
-    "folate_mcg_dfe": 171.4,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 87.8,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 4.0,
-    "lycopene_mg": 12.32
+    "zinc_mg": 6.44,
+    "selenium_mcg": 188.0,
+    "folate_mcg_dfe": 186.7,
+    "omega3_epa_dha_mg": 720,
+    "vitamin_c_mg": 105.64,
+    "vitamin_d_iu": 140,
+    "vitamin_e_mg": 5.14,
+    "lycopene_mg": 14.96
   },
   "caffeine_shots": 3,
   "assumptions": [
@@ -41,7 +48,8 @@
     "13:00 lunch pre-logged the evening before (24 Aug): 210g chicken breast from Sunday's soy-glaze batch. Initially logged with a generic soy-glazed-chicken estimate (~180kcal/100g); user flagged this didn't match the actual analyzed recipe card ('Juicy soy-glaze chicken breast strips'). That recipe's file was found to be missing from this repo — reconstructed from a screenshot of the Recipe Library artifact into intake/recipes/soy_glaze_chicken_breast.json (per-100g: 238kcal/29g protein/5.2g carb/11g fat/0.2g fiber, plus selenium/zinc/vitE). Lunch entry corrected to match: 210g scales to 500kcal/60.9g protein/10.92g carb/23.1g fat/0.42g fiber.",
     "13:00 lunch salad, now specified: 1 green apple + 25 cherry tomatoes + 2 cucumbers + 0.5 red onion, dressed with an olive oil drizzle (assumed ~1 tbsp, not weighed) + juice of 2 small lemons (assumed ~30ml/lemon, not weighed — flagged as an estimate). Each veg/fruit component at its standard saved reference. Credits ~11mg lycopene, ~81.2mg vitamin C, ~63.75mcg folate DFE, ~1.9mg vitamin E.",
     "15:00 espresso (3rd caffeine shot).",
-    "16:00 second vanilla protein yogurt (same reference as this morning's)."
+    "16:00 second vanilla protein yogurt (same reference as this morning's).",
+    "~19:30 dinner (time not given, approximated), a large multi-component meal: 70g soy-glaze chicken breast (same recipe as lunch) + 40g raw salmon in soy glaze with 1 tsp aioli (today's only fish serving — big omega-3/vitamin D/selenium driver) + 2 spoons white cabbage salad (soy sauce, standard reference) + 2 spoons lettuce/cherry-tomato/red-onion salad with classic vinaigrette (small side portion, estimated) + 1 medium baked sweet potato + 4 spoons labaneh-yogurt sauce with lemon and garlic (first time logged in this diluted form, estimated lighter than pure labaneh) + 2 spoons smashed eggplant with pomegranate (first time logged, richer olive-oil/tahini-style estimate vs. the plain vinegar-marinated version used before). Several first-time/estimated items, all flagged as directional."
   ],
-  "status_note": "Slept 7.17h (23:45-06:55) — within target band. AM allergy meds + multivitamin done. Lunch (soy-glaze chicken + salad) now fully logged."
+  "status_note": "Slept 7.17h (23:45-06:55) — within target band. Dinner logged — today's fish serving (salmon) cleared omega-3 and made real progress on vitamin D, both at zero until now. Day still open."
 }
