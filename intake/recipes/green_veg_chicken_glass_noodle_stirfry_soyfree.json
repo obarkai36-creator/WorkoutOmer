@@ -4,164 +4,103 @@
   "source": {
     "type": "instagram",
     "url": null,
-    "author": "Hebrew recipe (screenshot)",
+    "author": "Hebrew recipe (screenshot), adapted to the user's real batches",
     "captured": "2026-08-22",
-    "notes": "Soy-FREE ('clean sauce') variant of green_veg_chicken_glass_noodle_stirfry — identical chicken + green veg, but the 8 tbsp soy is replaced with 1 level tsp salt + juice of ½ lemon + ¼ cup water. This is the direct fix to that recipe's sodium problem. Method not shown; standard stir-fry assumed. Servings/oil retention estimated."
+    "notes": "Soy-FREE ('clean sauce') green stir-fry — the user's adopted rotation main. Veg is flexible (whatever's on hand). Updated 2026-08-22 to the user's actual logged batch: 630 g chicken, 150 g dry glass noodles, 200 g broccoli, 2 zucchini, 100 g spinach, 8 mushrooms, ½ onion, 8 garlic. No oil/sauce amounts were given for this batch — assumed ~1 tbsp sesame + ~1 tbsp frying oil and light salt/pepper + lemon. Each extra tbsp of oil ≈ +120 kcal / +14 g fat; tell me the real oil and I'll adjust."
   },
-  "servings": 6,
-  "serving_desc": "≈400 g cooked (large batch ÷6)",
+  "servings": 4,
+  "serving_desc": "≈410 g cooked (batch ÷4). Logged batch: 630 g raw chicken + 150 g dry glass noodles",
+  "logged_instance": {
+    "date": "2026-08-22",
+    "chicken_raw_g": 630,
+    "glass_noodles_dry_g": 150,
+    "veg": "200 g broccoli, 2 zucchini, 100 g spinach, 8 mushrooms, ½ onion, 8 garlic",
+    "note": "Made with mushrooms + onion in place of the original green beans / green onion / chili."
+  },
   "ingredients": [
-    {
-      "item": "chicken breast",
-      "qty": "1 kg raw, thin strips",
-      "note": "VARIABLE input"
-    },
-    {
-      "item": "glass (mung bean) noodles",
-      "qty": "200 g dry"
-    },
-    {
-      "item": "green beans",
-      "qty": "400 g (fresh or frozen)"
-    },
-    {
-      "item": "zucchini",
-      "qty": "2 medium (~400 g)"
-    },
-    {
-      "item": "broccoli",
-      "qty": "1 small head (~300 g), florets"
-    },
-    {
-      "item": "fresh spinach",
-      "qty": "200 g"
-    },
-    {
-      "item": "green onion",
-      "qty": "3 stalks"
-    },
-    {
-      "item": "fresh red chili",
-      "qty": "1 (½ mild / whole hotter)"
-    },
-    {
-      "item": "garlic",
-      "qty": "4 cloves, crushed"
-    },
-    {
-      "item": "salt",
-      "qty": "1 level tsp (or to taste)"
-    },
-    {
-      "item": "black pepper",
-      "qty": "½ tsp ground"
-    },
-    {
-      "item": "fresh lemon (or lime) juice",
-      "qty": "½ lemon"
-    },
-    {
-      "item": "water",
-      "qty": "¼ cup (keeps noodles juicy)"
-    },
-    {
-      "item": "sesame oil",
-      "qty": "1 tbsp (Asian aroma)"
-    },
-    {
-      "item": "mild olive oil (for frying)",
-      "qty": "3–4 tbsp"
-    }
+    {"item": "chicken breast", "qty": "630 g raw, thin strips", "note": "VARIABLE input"},
+    {"item": "glass (mung bean) noodles", "qty": "150 g dry"},
+    {"item": "broccoli", "qty": "200 g, florets"},
+    {"item": "zucchini", "qty": "2 (~400 g)"},
+    {"item": "spinach", "qty": "100 g fresh"},
+    {"item": "mushrooms", "qty": "8 (~150 g)"},
+    {"item": "onion", "qty": "½ (~75 g)"},
+    {"item": "garlic", "qty": "8 cloves, crushed"},
+    {"item": "sesame oil", "qty": "~1 tbsp (aroma)"},
+    {"item": "frying oil", "qty": "~1 tbsp (assumed — not specified)"},
+    {"item": "lemon / lime juice", "qty": "to finish"},
+    {"item": "salt, pepper, splash of water", "qty": "to taste"}
   ],
   "steps": [
-    "Sear the chicken strips until cooked; set aside.",
-    "Stir-fry garlic + chili, then green beans, zucchini, broccoli until crisp-tender.",
-    "Add the soaked glass noodles with the ¼ cup water, salt, pepper and sesame oil; toss.",
-    "Fold in spinach + green onion until wilted; return chicken, finish with the lemon juice."
+    "Sear chicken; stir-fry veg + noodles; fold spinach in at the end; finish with lemon."
   ],
   "per_serving": {
-    "kcal": 467,
-    "protein_g": 42,
-    "carbs_g": 41,
-    "fat_g": 14.4,
-    "fiber_g": 5.3,
+    "kcal": 443,
+    "protein_g": 40.5,
+    "carbs_g": 45,
+    "fat_g": 11,
+    "fiber_g": 3.8,
     "micros": {
-      "folate_mcg_dfe": 80,
-      "iron_mg": 3.2,
-      "vitamin_c_mg": 45,
-      "selenium_mcg": 37,
-      "zinc_mg": 2.1,
-      "choline_mg": 117,
-      "sodium_mg": 417
+      "folate_mcg_dfe": 65,
+      "iron_mg": 2.7,
+      "vitamin_c_mg": 35,
+      "selenium_mcg": 38,
+      "zinc_mg": 2,
+      "choline_mg": 102,
+      "sodium_mg": 160
     }
   },
   "batch_totals": {
-    "kcal": 2800,
-    "protein_g": 253,
-    "carbs_g": 246,
-    "fat_g": 86,
-    "fiber_g": 32,
-    "sodium_mg": 2500
+    "kcal": 1770,
+    "protein_g": 162,
+    "carbs_g": 179,
+    "fat_g": 44,
+    "fiber_g": 15,
+    "note": "Sodium low as cooked (no soy) — rises with any added salt/soy."
   },
   "confidence": "estimate",
   "analysis": {
     "him": {
       "fit_score": 9,
-      "verdict": "The better version of the two — everything great about the soy stir-fry (44→42 g protein, ~5 g fiber/serving, big green-veg load, folate/iron/vitamin C) but the sodium problem is SOLVED: ~417 mg/serving vs ~1,133 mg in the soy version, because 8 tbsp soy became 1 tsp salt + lemon + water. You give up only ~2 g protein/serving for a ~700 mg sodium cut — a clear win. The lemon also brightens it and adds vitamin C. Only remaining lever is the frying oil (~14 g fat).",
-      "flags": [
-        "42 g protein/serving",
-        "~5 g fiber, very veg-dense",
-        "sodium fixed (~417 mg vs 1,133 in the soy version)",
-        "folate + iron + vitamin C",
-        "lemon adds brightness + vitamin C"
-      ],
+      "verdict": "Your best everyday cutting main. 40.5 g protein for ~443 kcal (~9 g protein per 100 kcal), lean, big green-veg volume, ~4 g fiber, and low sodium because there's no soy. Broccoli + spinach bring folate/vitamin C, mushrooms add selenium (a sperm micro). The only fat lever is the oil (~11 g/serving from sesame + frying oil) — trim it if you want it leaner. Glass noodles are the one refined carb, well balanced.",
+      "flags": ["40.5 g protein/serving, lean", "big green-veg volume + ~4 g fiber", "folate/vitamin C (broccoli+spinach) + selenium (mushrooms)", "low sodium (no soy)", "fat driven by oil — the only lever"],
       "suggested_mods": [
-        "Adopt THIS over the soy version — strictly better on sodium for ~2 g less protein",
-        "Trim frying oil toward 2 tbsp if you want it leaner",
-        "Salt to taste — you can go under 1 tsp and lean on the lemon/chili/garlic"
+        "Measure/limit the oil — each tbsp is ~120 kcal; ~1 tbsp total is plenty in a nonstick",
+        "Season with lemon, chili, garlic instead of soy to keep sodium low",
+        "Excellent as-is for a cut"
       ]
     },
     "her_preconception": {
       "fit_score": 9,
-      "verdict": "Now the best preconception main in the library, full stop. Same folate powerhouse (spinach + broccoli + green beans, ~80 mcg DFE/serving), iron (~3.2 mg) paired with vitamin C (~45 mg, now boosted by the lemon) for absorption, lean protein + choline — but WITHOUT the sodium that held the soy version back. Fully cooked, no safety flags. This is the one to make for her.",
+      "verdict": "The best preconception main in the rotation. Spinach + broccoli make it a real FOLATE dish (~65 mcg DFE/serving, the #1 preconception nutrient), with iron (~2.7 mg) paired with the veg's vitamin C for absorption, plus choline and selenium on lean protein. Fully cooked, no sprouts, no high-mercury fish, low sodium — no safety flags. This is the one to make for her.",
       "prenatal_highlights": [
-        "high folate (spinach + broccoli + green beans) — top preconception nutrient",
-        "iron paired with vitamin C (veg + lemon) for absorption",
-        "reasonable sodium (~417 mg) — the key improvement over the soy version",
-        "lean protein + choline"
+        "folate from spinach + broccoli (~65 mcg DFE/serving) — top preconception nutrient",
+        "iron (~2.7 mg) paired with vitamin C for absorption",
+        "choline + selenium; lean protein; low sodium"
       ],
       "safety_advisories": [],
       "suggested_mods": [
-        "Best-for-her main — make this instead of the soy version",
-        "Serve promptly so the folate-rich greens aren't overcooked"
+        "Fold the spinach in at the very end so the folate isn't cooked out",
+        "Keep it lightly seasoned to hold the sodium down"
       ]
     }
   },
-  "tags": [
-    "dinner",
-    "high-protein",
-    "stir-fry",
-    "high-veg",
-    "high-folate",
-    "low-sodium",
-    "soy-free",
-    "batch",
-    "poultry"
-  ],
+  "tags": ["dinner", "high-protein", "stir-fry", "high-veg", "high-folate", "low-sodium", "soy-free", "batch", "poultry"],
   "adopted": true,
-  "adopted_note": "Adopted into the rotation 2026-08-22 (user plans to try it this week) as the best-scoring main + best preconception dish in the library. Scales with chicken weight (veg + sauce scale alongside). Prefer this over the soy version (green_veg_chicken_glass_noodle_stirfry), which stays reference-only. Per-serving reference: ~467 kcal, 42 g protein, ~5 g fiber, ~417 mg sodium per ~400 g (1 kg raw chicken ÷6).",
+  "adopted_note": "Adopted rotation main (best-scoring + best preconception dish). Veg-flexible — make it with whatever green veg is on hand. Current logged batch (2026-08-22): 630 g chicken / 150 g dry glass noodles / broccoli + zucchini + spinach + mushroom + onion → ~443 kcal, 40.5 g protein per ~410 g serving (batch ÷4). Scales with chicken weight.",
   "created": "2026-08-22",
   "updated": "2026-08-22",
-  "serving_g": 400,
+  "serving_g": 410,
   "meal_type": "Chicken",
   "cooking_guide": [
-    "Prep everything first. Soak the glass noodles in warm water until pliable, drain, and snip shorter.",
-    "Blanch or steam the broccoli and green beans ~2 min, then shock in cold water to keep them bright green and crisp.",
-    "Pat the chicken dry and sear in a hot wok in a single layer until just cooked; remove and set aside.",
-    "Stir-fry the garlic and chili briefly, then the zucchini and blanched greens over high heat 2-3 min.",
-    "Add the noodles with the 1/4 cup water, salt, pepper and sesame oil, and toss — the water keeps the noodles from drying out.",
-    "Return the chicken, then fold in the spinach and green onion until just wilted.",
-    "Finish off the heat with the fresh lemon/lime juice — it brightens everything and boosts iron absorption. Serve promptly.",
-    "Tip: salt to taste — you can go light and lean on the lemon, chili and garlic for flavor."
+    "Prep everything first — stir-fry moves fast. Soak the glass noodles in warm water until pliable (5-10 min), drain, and snip shorter with scissors.",
+    "Steam or blanch the broccoli ~2 min (it's the densest veg), then drain — this cooks it evenly and keeps it bright and crisp-tender.",
+    "Pat the chicken strips dry and season lightly. Heat the pan/wok hot before the oil goes in — high heat sears, low heat steams.",
+    "Stir-fry the chicken in a single layer until just cooked, then remove (crowding makes it grey and watery).",
+    "Stir-fry the garlic and onion briefly, then the mushrooms — leave the mushrooms undisturbed ~1 min to brown (moving them too soon makes them release water and steam).",
+    "Add the zucchini and blanched broccoli and toss 2-3 min to keep them crisp-tender.",
+    "Return the chicken, add the noodles with a splash of water and the sesame oil; season to taste (salt, pepper) and toss 1-2 min to combine and heat through.",
+    "Fold in the spinach at the very end and toss just until wilted — seconds only; overcooking dulls it and loses folate.",
+    "Finish off the heat with a squeeze of lemon or lime — it brightens everything and boosts iron absorption. Serve promptly."
   ]
 }
