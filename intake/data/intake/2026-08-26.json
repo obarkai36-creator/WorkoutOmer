@@ -9,7 +9,8 @@
     {"time": "06:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "06:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0, "note": "logged as \"coffee\" — assumed espresso, same as prior daily entries"},
     {"time": "06:55", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
-    {"time": "07:50", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"}
+    {"time": "07:50", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
+    {"time": "09:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -28,7 +29,8 @@
     "06:45 coffee (logged as espresso, 1 caffeine shot).",
     "06:55 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "07:00 Back day workout, +1 rep across the board vs. established working weights (except Dead Hang, per user correction): Diverging Seated Row 97kg×4×9, Reverse Incline DB Row 52kg×4×12, Dumbbell Pullover 20kg×4×12, Low Row 79kg×4×11 — all 4 new PRs by Epley 1RM (each beats the prior best by 1 rep at the same weight). Dead Hang 35s×1 set (below best, excluded from the +1 rep pattern). 4 new PRs. Logged to data.js/workouts.json.",
-    "07:50 vanilla protein yogurt (Danone PRO 0% reference) — same as prior entries."
+    "07:50 vanilla protein yogurt (Danone PRO 0% reference) — same as prior entries.",
+    "09:45 creatine monohydrate, 4.5g — zero kcal/macros."
   ],
   "status_note": "Day started. Slept 7.08h (23:15-06:20). AM allergy meds done."
 }
