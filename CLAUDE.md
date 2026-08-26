@@ -23,6 +23,12 @@
   as a normal supplement item once the user confirms they've started
   taking it (not yet logged as of 2026-08-25 — added to the reference
   stack only).
+  **UPDATE 2026-08-26**: user started taking this supplement (first dose
+  11:18, day 60) and, per the zinc-stacking flag above, confirmed they
+  will skip the standalone Thorne Zinc Picolinate 15mg going forward.
+  Thorne Zinc Picolinate is now marked discontinued in
+  intake/references/supplements.json — don't log it as taken unless the
+  user explicitly says they took it again.
 
 - Travel/lighter-logging mode (2026-08-21 through Saturday 2026-08-22,
   inclusive — user is away/traveling): user explicitly asked to skip exact
