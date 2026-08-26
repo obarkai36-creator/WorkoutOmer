@@ -1,19 +1,21 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-08-25",
-    "latest_session": "Legs & Glutes (אימון A, one-off 3-sets-each scheme with wife)",
-    "sessions_logged": 51,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-08-26",
+    "latest_session": "Back day, as suggested",
+    "sessions_logged": 52,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 16.5,
     "aerobic_sessions_28d": 4,
     "avg_pace": "9:12/km",
     "avg_hr": 142,
-    "acwr": 1.05,
-    "recommended_next": "Back day",
+    "acwr": 1.04,
+    "recommended_next": "Shoulders day",
     "alerts": [
-      "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "Push volume is 1.56× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
+      "Recovers in ~66h. Avoid loading it hard before then — you trained it most recently.",
+      "Recovers in ~48.3h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -303,6 +305,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "One-off 3-sets-each scheme across 10 exercises. Leg Extensions 111kg×3×8 (below the 111kg×4×12 best, not a PR); Leg Curls 111kg×3×8 (same, not a PR); Inner Thigh 79kg×3×9 (ties best exactly); Outer Thigh 79kg×3×9 (below the 79kg×5×10 best, not a PR); Glute Extension 32kg×3×6 each (well below the 59kg×1×5 each best, not a PR — much lighter load this session); Leg Press 132kg×3×10 (ties best by weight/reps, fewer sets); Calf Raises Machine 83.5kg×3×6 (heavier than both prior figures but est. 1RM 100.2 vs 103.9 for the 76kg×4×11 best — not a PR); Angled Leg Press 152kg setup (45kg each side + 62kg frame)×3×8 (well below the 202kg×4×7 best, not a PR); Hip Thrust bodyweight×3×8 (unweighted variant, not compared to the 24kg barbell-loaded best — different loading scheme); Hack Squat bodyweight+42.6kg frame×3×6 (first time logged, no comparison). 0 new PRs — a deliberately lighter, higher-exercise-count session by design, not a max-effort day. 21:05.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "Strength — Back day",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Standard back day, all working weights reused as suggested. Diverging Seated Row 97kg×4×8 (ties best exactly); Reverse Incline DB Row 52kg (26kg each)×4×11 (ties best exactly); Dumbbell Pullover 20kg×4×11 (ties best exactly); Low Row 79kg×4×10 (ties best exactly); Dead Hang 35s×1 set (well below the 35s+30s+25s/90s-total best — only 1 set this time, not a PR). 0 new PRs — a maintenance session at established working weights. 07:00.",
       "_source": "manual log"
     }
   ]

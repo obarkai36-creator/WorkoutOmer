@@ -220,7 +220,7 @@ const SNAPSHOT = [
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
   { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 11, weight: 52, text: "26kg each × 4×11" }, best: { sets: 4, reps: 11, weight: 52, text: "26kg each × 4×11" } },
   { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 11, weight: 20, text: "20kg × 4×11" }, best: { sets: 4, reps: 11, weight: 20, text: "20kg × 4×11" } },
-  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
+  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 35, weight: 81.10 } ], text: "35s (1 set only)" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
@@ -287,6 +287,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 26 Aug — Back day, as suggested (07:00)
+  {
+    datetime: "2026-08-26T07:00", note: "Back day, as suggested",
+    exercises: [
+      { name: "Diverging Seated Row",   sets: [ { reps: 8, weight: 97 }, { reps: 8, weight: 97 }, { reps: 8, weight: 97 }, { reps: 8, weight: 97 } ] },
+      { name: "Reverse Incline DB Row", sets: [ { reps: 11, weight: 52 }, { reps: 11, weight: 52 }, { reps: 11, weight: 52 }, { reps: 11, weight: 52 } ] },
+      { name: "Dumbbell Pullover",      sets: [ { reps: 11, weight: 20 }, { reps: 11, weight: 20 }, { reps: 11, weight: 20 }, { reps: 11, weight: 20 } ] },
+      { name: "Low Row",                sets: [ { reps: 10, weight: 79 }, { reps: 10, weight: 79 }, { reps: 10, weight: 79 }, { reps: 10, weight: 79 } ] },
+      { name: "Dead Hang",              sets: [ { seconds: 35 } ] },
+    ],
+  },
   // 24 Aug — Legs & Glutes, one-off scheme with wife (21:05)
   {
     datetime: "2026-08-24T21:05", note: "Legs & Glutes (אימון A, one-off 3-sets-each scheme with wife)",
