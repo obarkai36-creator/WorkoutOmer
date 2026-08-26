@@ -1,0 +1,67 @@
+{
+  "id": "green_veg_chicken_stirfry",
+  "name": "Green-veg & chicken glass-noodle stir-fry — soy-free (clean sauce)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": null,
+    "captured": "2026-08-25",
+    "notes": "Reconstructed 2026-08-26 from a screenshot of this recipe's card in the Recipe Library artifact — the original analysis session/JSON for this recipe was not found in this repo, so this file recreates it from the visible per-100g values, ingredients, and tags on the card. Analysis text (him/her_preconception) is my own re-derivation since the original wasn't visible in the screenshot."
+  },
+  "servings": 4,
+  "serving_desc": "≈410 g cooked (batch ÷4). Logged batch: 630g raw chicken + 150g dry glass noodles",
+  "serving_g": 410,
+  "ingredients": [
+    {"item": "chicken breast", "qty": "630 g raw, thin strips", "note": "variable input"},
+    {"item": "glass (mung bean) noodles", "qty": "150 g dry"},
+    {"item": "broccoli", "qty": "200 g, florets"},
+    {"item": "zucchini", "qty": "2 (~400 g)"},
+    {"item": "spinach", "qty": "100 g fresh"},
+    {"item": "mushrooms", "qty": "8 (~150 g)"},
+    {"item": "onion", "qty": "½ (~75 g)"},
+    {"item": "garlic", "qty": "8 cloves, crushed"},
+    {"item": "soy sauce", "qty": "1 tbsp (whole batch)"},
+    {"item": "sesame oil", "qty": "~1 tbsp (aroma)"},
+    {"item": "frying oil", "qty": "~1 tbsp (assumed — not specified)"},
+    {"item": "lemon / lime juice", "qty": "to finish"},
+    {"item": "pepper, splash of water", "qty": "to taste"}
+  ],
+  "steps": [
+    "Prep everything first — stir-fry moves fast. Soak the glass noodles in warm water until pliable (5-10 min), drain, and snip shorter with scissors.",
+    "Steam or blanch the broccoli ~2 min (it's the densest veg), then drain — this cooks it evenly and keeps it bright and crisp-tender.",
+    "Pat the chicken strips dry and season lightly. Heat the pan/wok hot before the oil goes in — high heat sears, low heat steams.",
+    "Stir-fry the chicken in a single layer until just cooked, then remove (crowding makes it grey and watery).",
+    "Stir-fry the garlic and onion briefly, then the mushrooms — leave the mushrooms undisturbed ~1 min to brown (moving them too soon makes them release water and steam).",
+    "Add the zucchini and blanched broccoli and toss 2-3 min to keep them crisp-tender.",
+    "Return the chicken, add the noodles with a splash of water, the sesame oil and 1 tbsp soy sauce; toss 1-2 min to combine and heat through (taste before adding any more salt).",
+    "Fold in the spinach at the very end and toss just until wilted — seconds only; overcooking dulls it and loses folate.",
+    "Finish off the heat with a squeeze of lemon or lime — it brightens everything and boosts iron absorption. Serve promptly."
+  ],
+  "per_serving": {
+    "kcal": 447, "protein_g": 41, "carbs_g": 45.1, "fat_g": 11.07, "fiber_g": 3.69,
+    "micros": {
+      "folate_mcg_dfe": 65.6, "iron_mg": 2.87, "vitamin_c_mg": 34.85,
+      "selenium_mcg": 38.13, "zinc_mg": 2.05, "choline_mg": 102.5, "sodium_mg": 385.4
+    }
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "High-protein, high-veg, low-sodium stir-fry — a clean cutting/muscle meal with a big folate hit from the spinach/broccoli/zucchini and decent selenium/zinc from the chicken. The single-tablespoon soy sauce (across the whole batch) keeps sodium unusually low for an Asian-style stir-fry.",
+      "flags": ["high protein density", "high folate (spinach/broccoli)", "low sodium for the style", "selenium + zinc from chicken"],
+      "suggested_mods": ["Already well-balanced — the portion is flexible per the card's per-100g design, so scale to fit remaining daily calories/protein"]
+    },
+    "her_preconception": {
+      "fit_score": 8,
+      "verdict": "Strong preconception profile — high folate (spinach + broccoli + zucchini), choline and iron from the chicken, vitamin C from the veg to aid iron absorption, and no raw/high-risk ingredients since everything is cooked through.",
+      "prenatal_highlights": ["high folate from spinach/broccoli/zucchini", "choline + iron from chicken", "vitamin C pairs with the iron for absorption"],
+      "safety_advisories": [],
+      "suggested_mods": ["Keep the spinach addition brief (as instructed) to preserve its folate"]
+    }
+  },
+  "tags": ["dinner", "high-protein", "stir-fry", "high-veg", "high-folate", "low-sodium", "batch", "poultry", "instagram"],
+  "adopted": true,
+  "created": "2026-08-26",
+  "updated": "2026-08-26"
+}
