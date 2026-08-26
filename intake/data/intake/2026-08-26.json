@@ -19,17 +19,20 @@
     {"time": "13:00", "name": "Lunch — Green-veg & chicken glass-noodle stir-fry", "category": "food", "qty": "500 g (from the adopted recipe, intake/recipes/green_veg_chicken_stirfry.json)", "kcal": 545, "protein_g": 50, "carbs_g": 55, "fat_g": 13.5, "fiber_g": 4.5, "time_approx": true, "note": "made yesterday (25 Aug), recipe reconstructed from a Recipe Library artifact screenshot (per-100g: 109kcal/10g protein/11g carb/2.7g fat/0.9g fiber). Recipe's own soy sauce (1 tbsp across the whole batch) already accounted for in these per-100g values — no separate addition needed. Credits ~46.5mcg selenium, ~2.5mg zinc, ~80mcg folate DFE, ~42.5mg vitamin C. Exact time not given, placeholder 13:00."},
     {"time": "13:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "15", "kcal": 41, "protein_g": 2.03, "carbs_g": 8.78, "fat_g": 0.45, "fiber_g": 2.7, "time_approx": true, "note": "same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:20", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (~25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"},
+    {"time": "15:20", "name": "Snack — cherry tomatoes", "category": "food", "qty": "3", "kcal": 8, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."},
+    {"time": "15:20", "name": "Snack — granola", "category": "food", "qty": "15 g", "kcal": 72, "protein_g": 1.5, "carbs_g": 9.6, "fat_g": 3, "fiber_g": 1.05, "note": "generic granola reference (~471kcal/100g), same as prior entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 25.3,
     "selenium_mcg": 146.5,
-    "folate_mcg_dfe": 243.75,
+    "folate_mcg_dfe": 251.4,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1097.5,
+    "vitamin_c_mg": 1104.1,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134.6,
-    "lycopene_mg": 11
+    "lycopene_mg": 12.32
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -46,7 +49,8 @@
     "13:00 lunch (time not given, approximated): 500g of the green-veg & chicken glass-noodle stir-fry made yesterday (25 Aug). Recipe file was missing from this repo — reconstructed from a Recipe Library artifact screenshot into intake/recipes/green_veg_chicken_stirfry.json (per-100g: 109kcal/10g protein/11g carb/2.7g fat/0.9g fiber, plus folate/selenium/zinc/vitC). The recipe's own soy sauce (1 tbsp across the whole batch) is already baked into these per-100g values, matching what the user described using — no double-counting. Credits ~46.5mcg selenium, ~2.5mg zinc, ~80mcg folate DFE, ~42.5mg vitamin C.",
     "13:00 lunch, also 15 cherry tomatoes — same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE.",
     "13:00 espresso (3rd caffeine shot).",
-    "15:00 espresso (4th caffeine shot)."
+    "15:00 espresso (4th caffeine shot).",
+    "15:20 snack: 1 yellow cheese slice 9% fat + 3 cherry tomatoes (~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE) + 15g granola — all same standard/verified references as prior entries."
   ],
   "status_note": "Day started. Slept 7.08h (23:15-06:20). AM allergy meds done. Started the new C+D+E+Zinc+Selenium supplement today — recommend skipping the standalone zinc capsule tonight (see zinc-stacking note)."
 }
