@@ -6,7 +6,7 @@
     "url": null,
     "author": "Hebrew recipe (screenshot), adapted to the user's real batches",
     "captured": "2026-08-22",
-    "notes": "Soy-FREE ('clean sauce') green stir-fry — the user's adopted rotation main. Veg is flexible (whatever's on hand). Updated 2026-08-22 to the user's actual logged batch: 630 g chicken, 150 g dry glass noodles, 200 g broccoli, 2 zucchini, 100 g spinach, 8 mushrooms, ½ onion, 8 garlic. No oil/sauce amounts were given for this batch — assumed ~1 tbsp sesame + ~1 tbsp frying oil and light salt/pepper + lemon. Each extra tbsp of oil ≈ +120 kcal / +14 g fat; tell me the real oil and I'll adjust."
+    "notes": "Soy-FREE ('clean sauce') green stir-fry — the user's adopted rotation main. Veg is flexible (whatever's on hand). Updated 2026-08-22 to the user's actual logged batch: 630 g chicken, 150 g dry glass noodles, 200 g broccoli, 2 zucchini, 100 g spinach, 8 mushrooms, ½ onion, 8 garlic, plus 1 tbsp soy sauce across the whole batch (so lightly seasoned, not strictly soy-free). No oil amounts were given — assumed ~1 tbsp sesame + ~1 tbsp frying oil. Each extra tbsp of oil ≈ +120 kcal / +14 g fat; tell me the real oil and I'll adjust."
   },
   "servings": 4,
   "serving_desc": "≈410 g cooked (batch ÷4). Logged batch: 630 g raw chicken + 150 g dry glass noodles",
@@ -15,7 +15,8 @@
     "chicken_raw_g": 630,
     "glass_noodles_dry_g": 150,
     "veg": "200 g broccoli, 2 zucchini, 100 g spinach, 8 mushrooms, ½ onion, 8 garlic",
-    "note": "Made with mushrooms + onion in place of the original green beans / green onion / chili."
+    "soy_sauce": "1 tbsp across the whole batch (~225 mg sodium/serving)",
+    "note": "Made with mushrooms + onion in place of the original green beans / green onion / chili; a single tbsp of soy added for the batch."
   },
   "ingredients": [
     {"item": "chicken breast", "qty": "630 g raw, thin strips", "note": "VARIABLE input"},
@@ -26,17 +27,18 @@
     {"item": "mushrooms", "qty": "8 (~150 g)"},
     {"item": "onion", "qty": "½ (~75 g)"},
     {"item": "garlic", "qty": "8 cloves, crushed"},
+    {"item": "soy sauce", "qty": "1 tbsp (whole batch)"},
     {"item": "sesame oil", "qty": "~1 tbsp (aroma)"},
     {"item": "frying oil", "qty": "~1 tbsp (assumed — not specified)"},
     {"item": "lemon / lime juice", "qty": "to finish"},
-    {"item": "salt, pepper, splash of water", "qty": "to taste"}
+    {"item": "pepper, splash of water", "qty": "to taste"}
   ],
   "steps": [
     "Sear chicken; stir-fry veg + noodles; fold spinach in at the end; finish with lemon."
   ],
   "per_serving": {
-    "kcal": 443,
-    "protein_g": 40.5,
+    "kcal": 445,
+    "protein_g": 40.8,
     "carbs_g": 45,
     "fat_g": 11,
     "fiber_g": 3.8,
@@ -47,47 +49,47 @@
       "selenium_mcg": 38,
       "zinc_mg": 2,
       "choline_mg": 102,
-      "sodium_mg": 160
+      "sodium_mg": 385
     }
   },
   "batch_totals": {
-    "kcal": 1770,
-    "protein_g": 162,
-    "carbs_g": 179,
+    "kcal": 1780,
+    "protein_g": 163,
+    "carbs_g": 180,
     "fat_g": 44,
     "fiber_g": 15,
-    "note": "Sodium low as cooked (no soy) — rises with any added salt/soy."
+    "note": "Sodium ~1,540 mg batch (~385 mg/serving) — from the 1 tbsp soy added; far below the old 8-tbsp soy version."
   },
   "confidence": "estimate",
   "analysis": {
     "him": {
       "fit_score": 9,
-      "verdict": "Your best everyday cutting main. 40.5 g protein for ~443 kcal (~9 g protein per 100 kcal), lean, big green-veg volume, ~4 g fiber, and low sodium because there's no soy. Broccoli + spinach bring folate/vitamin C, mushrooms add selenium (a sperm micro). The only fat lever is the oil (~11 g/serving from sesame + frying oil) — trim it if you want it leaner. Glass noodles are the one refined carb, well balanced.",
-      "flags": ["40.5 g protein/serving, lean", "big green-veg volume + ~4 g fiber", "folate/vitamin C (broccoli+spinach) + selenium (mushrooms)", "low sodium (no soy)", "fat driven by oil — the only lever"],
+      "verdict": "Your best everyday cutting main. 40.8 g protein for ~445 kcal (~9 g protein per 100 kcal), lean, big green-veg volume, ~4 g fiber. The single tbsp of soy across the whole batch keeps sodium modest (~385 mg/serving) — a fraction of a fully soy-sauced stir-fry. Broccoli + spinach bring folate/vitamin C, mushrooms add selenium (a sperm micro). Only fat lever is the oil (~11 g/serving from sesame + frying oil). Glass noodles are the one refined carb, well balanced.",
+      "flags": ["40.8 g protein/serving, lean", "big green-veg volume + ~4 g fiber", "folate/vitamin C (broccoli+spinach) + selenium (mushrooms)", "modest sodium (~385 mg — just 1 tbsp soy in the batch)", "fat driven by oil — the only lever"],
       "suggested_mods": [
+        "1 tbsp soy for the whole batch is a smart amount — keeps flavor without the sodium hit of a full-soy stir-fry",
         "Measure/limit the oil — each tbsp is ~120 kcal; ~1 tbsp total is plenty in a nonstick",
-        "Season with lemon, chili, garlic instead of soy to keep sodium low",
         "Excellent as-is for a cut"
       ]
     },
     "her_preconception": {
       "fit_score": 9,
-      "verdict": "The best preconception main in the rotation. Spinach + broccoli make it a real FOLATE dish (~65 mcg DFE/serving, the #1 preconception nutrient), with iron (~2.7 mg) paired with the veg's vitamin C for absorption, plus choline and selenium on lean protein. Fully cooked, no sprouts, no high-mercury fish, low sodium — no safety flags. This is the one to make for her.",
+      "verdict": "The best preconception main in the rotation. Spinach + broccoli make it a real FOLATE dish (~65 mcg DFE/serving, the #1 preconception nutrient), with iron (~2.7 mg) paired with the veg's vitamin C for absorption, plus choline and selenium on lean protein. Fully cooked, no sprouts, no high-mercury fish — no safety flags. Sodium is modest (~385 mg) with just the 1 tbsp soy; easy to keep there.",
       "prenatal_highlights": [
         "folate from spinach + broccoli (~65 mcg DFE/serving) — top preconception nutrient",
         "iron (~2.7 mg) paired with vitamin C for absorption",
-        "choline + selenium; lean protein; low sodium"
+        "choline + selenium; lean protein; modest sodium (~385 mg)"
       ],
       "safety_advisories": [],
       "suggested_mods": [
         "Fold the spinach in at the very end so the folate isn't cooked out",
-        "Keep it lightly seasoned to hold the sodium down"
+        "1 tbsp soy across the batch keeps sodium in a good place — use low-sodium soy if you want it even lower"
       ]
     }
   },
-  "tags": ["dinner", "high-protein", "stir-fry", "high-veg", "high-folate", "low-sodium", "soy-free", "batch", "poultry"],
+  "tags": ["dinner", "high-protein", "stir-fry", "high-veg", "high-folate", "low-sodium", "batch", "poultry"],
   "adopted": true,
-  "adopted_note": "Adopted rotation main (best-scoring + best preconception dish). Veg-flexible — make it with whatever green veg is on hand. Current logged batch (2026-08-22): 630 g chicken / 150 g dry glass noodles / broccoli + zucchini + spinach + mushroom + onion → ~443 kcal, 40.5 g protein per ~410 g serving (batch ÷4). Scales with chicken weight.",
+  "adopted_note": "Adopted rotation main (best-scoring + best preconception dish). Veg-flexible — make it with whatever green veg is on hand. Current logged batch (2026-08-22): 630 g chicken / 150 g dry glass noodles / broccoli + zucchini + spinach + mushroom + onion + 1 tbsp soy across the batch → ~445 kcal, 40.8 g protein, ~385 mg sodium per ~410 g serving (batch ÷4). Scales with chicken weight.",
   "created": "2026-08-22",
   "updated": "2026-08-22",
   "serving_g": 410,
@@ -99,7 +101,7 @@
     "Stir-fry the chicken in a single layer until just cooked, then remove (crowding makes it grey and watery).",
     "Stir-fry the garlic and onion briefly, then the mushrooms — leave the mushrooms undisturbed ~1 min to brown (moving them too soon makes them release water and steam).",
     "Add the zucchini and blanched broccoli and toss 2-3 min to keep them crisp-tender.",
-    "Return the chicken, add the noodles with a splash of water and the sesame oil; season to taste (salt, pepper) and toss 1-2 min to combine and heat through.",
+    "Return the chicken, add the noodles with a splash of water, the sesame oil and 1 tbsp soy sauce; toss 1-2 min to combine and heat through (taste before adding any more salt).",
     "Fold in the spinach at the very end and toss just until wilted — seconds only; overcooking dulls it and loses folate.",
     "Finish off the heat with a squeeze of lemon or lime — it brightens everything and boosts iron absorption. Serve promptly."
   ]
