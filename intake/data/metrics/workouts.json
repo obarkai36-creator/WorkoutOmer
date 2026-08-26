@@ -2,7 +2,7 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-08-26",
-    "latest_session": "Back day, as suggested",
+    "latest_session": "Back day, +1 rep across the board except Dead Hang",
     "sessions_logged": 52,
     "sessions_per_week": 4,
     "typical_time": "afternoon",
@@ -10,12 +10,12 @@
     "aerobic_sessions_28d": 4,
     "avg_pace": "9:12/km",
     "avg_hr": 142,
-    "acwr": 1.04,
+    "acwr": 1.06,
     "recommended_next": "Shoulders day",
     "alerts": [
-      "Push volume is 1.56× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Recovers in ~66h. Avoid loading it hard before then — you trained it most recently.",
-      "Recovers in ~48.3h. Avoid loading it hard before then — you trained it most recently."
+      "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
+      "Recovers in ~71.4h. Avoid loading it hard before then — you trained it most recently.",
+      "Recovers in ~49h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -312,7 +312,7 @@
       "type": "Strength — Back day",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Standard back day, all working weights reused as suggested. Diverging Seated Row 97kg×4×8 (ties best exactly); Reverse Incline DB Row 52kg (26kg each)×4×11 (ties best exactly); Dumbbell Pullover 20kg×4×11 (ties best exactly); Low Row 79kg×4×10 (ties best exactly); Dead Hang 35s×1 set (well below the 35s+30s+25s/90s-total best — only 1 set this time, not a PR). 0 new PRs — a maintenance session at established working weights. 07:00.",
+      "notes": "Back day, +1 rep across the board vs. established working weights (except Dead Hang). Diverging Seated Row 97kg×4×9 (new PR — est. 1RM 126.1 vs 122.9 for the 97kg×4×8 best); Reverse Incline DB Row 52kg (26kg each)×4×12 (new PR — est. 1RM 72.8 vs 71.1 for the ×4×11 best); Dumbbell Pullover 20kg×4×12 (new PR — est. 1RM 28.0 vs 27.3 for the ×4×11 best); Low Row 79kg×4×11 (new PR — est. 1RM 108.0 vs 105.3 for the ×4×10 best); Dead Hang 35s×1 set (well below the 35s+30s+25s/90s-total best — only 1 set this time, not a PR, excluded from the +1 rep pattern). 4 new PRs.",
       "_source": "manual log"
     }
   ]
