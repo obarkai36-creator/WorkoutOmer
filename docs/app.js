@@ -604,8 +604,8 @@ function renderLifestyle(day, row, el) {
 function renderRetainerStrip() {
   const rows = trailingRows(state.current, 30);
   if (!rows.length) return `<div class="empty-state">No retainer nights tracked yet.</div>`;
-  const colorFor = (r) => r.retainers_worn === true ? COLORS.green : r.retainers_worn === false ? COLORS.red : COLORS.muted;
-  const labelFor = (r) => r.retainers_worn === true ? "worn" : r.retainers_worn === false ? "skipped" : "not logged";
+  const colorFor = (r) => r.retainers_worn === true ? COLORS.green : COLORS.red;
+  const labelFor = (r) => r.retainers_worn === true ? "worn" : r.retainers_worn === false ? "skipped" : "not logged (assumed not worn)";
   return `<div style="display:flex;gap:4px;flex-wrap:wrap">${rows.map((r) =>
     `<div title="${r.date}: ${labelFor(r)}" style="width:18px;height:18px;border-radius:4px;background:${colorFor(r)}"></div>`
   ).join("")}</div>`;
