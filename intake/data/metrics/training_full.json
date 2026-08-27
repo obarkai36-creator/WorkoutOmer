@@ -1,5 +1,5 @@
 {
-  "now": 1787809469659,
+  "now": 1787809846744,
   "workouts": [
     {
       "datetime": "2026-08-26T07:00",
@@ -5337,8 +5337,8 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 68,
-      "readyInHours": 48.6,
+      "pct": 67,
+      "readyInHours": 48.5,
       "ready": false
     },
     "shoulders": {
@@ -5354,7 +5354,7 @@
       "label": "Biceps",
       "section": "Arms",
       "pct": 58,
-      "readyInHours": 26.1,
+      "readyInHours": 26,
       "ready": false
     },
     "triceps": {
@@ -5378,7 +5378,7 @@
       "label": "Quads",
       "section": "Legs",
       "pct": 34,
-      "readyInHours": 7.5,
+      "readyInHours": 7.4,
       "ready": false
     },
     "hamstrings": {
@@ -5386,7 +5386,7 @@
       "label": "Hamstrings",
       "section": "Legs",
       "pct": 39,
-      "readyInHours": 15.3,
+      "readyInHours": 15.2,
       "ready": false
     },
     "glutes": {
@@ -5394,7 +5394,7 @@
       "label": "Glutes",
       "section": "Legs",
       "pct": 39,
-      "readyInHours": 15.9,
+      "readyInHours": 15.8,
       "ready": false
     },
     "adductors": {
@@ -5448,15 +5448,15 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 68,
-      "readyInHours": 48.6,
+      "pct": 67,
+      "readyInHours": 48.5,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 68,
-          "readyInHours": 48.6,
+          "pct": 67,
+          "readyInHours": 48.5,
           "ready": false
         }
       ]
@@ -5479,14 +5479,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 24,
-      "readyInHours": 26.1,
+      "readyInHours": 26,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
           "pct": 58,
-          "readyInHours": 26.1,
+          "readyInHours": 26,
           "ready": false
         },
         {
@@ -5510,14 +5510,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 27,
-      "readyInHours": 15.9,
+      "readyInHours": 15.8,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
           "pct": 39,
-          "readyInHours": 15.3,
+          "readyInHours": 15.2,
           "ready": false
         },
         {
@@ -5525,7 +5525,7 @@
           "label": "Glutes",
           "section": "Legs",
           "pct": 39,
-          "readyInHours": 15.9,
+          "readyInHours": 15.8,
           "ready": false
         },
         {
@@ -5533,7 +5533,7 @@
           "label": "Quads",
           "section": "Legs",
           "pct": 34,
-          "readyInHours": 7.5,
+          "readyInHours": 7.4,
           "ready": false
         },
         {
@@ -6614,31 +6614,33 @@
     "fatigue": 7,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-27T05:44:29.659Z",
+    "readyAt": "2026-08-27T05:50:46.744Z",
     "neverLogged": false,
     "daysSince": 8.4,
     "suggestedExercises": [
       {
-        "name": "Converging Shoulder Press",
-        "best": "79kg × 4×8",
-        "best1RM": 100.1,
+        "name": "Shoulder Shrugs",
+        "best": "24kg each × 4×12",
+        "best1RM": 67.2,
         "iso": false,
         "target": {
           "status": "rebuild",
-          "text": "Rebuild to best (79kg × 4×8)",
-          "note": "Last session came in under your best (79kg × 4×8) — rebuild to that before pushing further."
-        }
+          "text": "Rebuild to best (24kg each × 4×12)",
+          "note": "Last session came in under your best (24kg each × 4×12) — rebuild to that before pushing further."
+        },
+        "preferred": true
       },
       {
-        "name": "Dumbbell Shoulder Press",
-        "best": "18kg each × 4×10",
-        "best1RM": 48,
+        "name": "Rear Delt Machine",
+        "best": "73kg × 3×9",
+        "best1RM": 94.9,
         "iso": false,
         "target": {
           "status": "progress",
-          "text": "+1 rep (aim 4×11)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 18kg each × 4×10."
-        }
+          "text": "+1 rep (aim 3×10)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×10 from 73kg × 3×9."
+        },
+        "preferred": true
       },
       {
         "name": "Lateral Raises",
@@ -6674,28 +6676,6 @@
         }
       },
       {
-        "name": "Rear Delt Machine",
-        "best": "73kg × 3×9",
-        "best1RM": 94.9,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 3×10)",
-          "note": "Add 1 rep per set at the same weight — aim for 3×10 from 73kg × 3×9."
-        }
-      },
-      {
-        "name": "Shoulder Shrugs",
-        "best": "24kg each × 4×12",
-        "best1RM": 67.2,
-        "iso": false,
-        "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (24kg each × 4×12)",
-          "note": "Last session came in under your best (24kg each × 4×12) — rebuild to that before pushing further."
-        }
-      },
-      {
         "name": "Farmer's Hold",
         "best": "24kg each × 4×35s",
         "best1RM": 0,
@@ -6705,9 +6685,33 @@
           "text": "Rebuild to best (24kg each × 4×35s)",
           "note": "Last session came in under your best (24kg each × 4×35s) — rebuild to that before pushing further."
         }
+      },
+      {
+        "name": "Converging Shoulder Press",
+        "best": "79kg × 4×8",
+        "best1RM": 100.1,
+        "iso": false,
+        "target": {
+          "status": "rebuild",
+          "text": "Rebuild to best (79kg × 4×8)",
+          "note": "Last session came in under your best (79kg × 4×8) — rebuild to that before pushing further."
+        }
+      },
+      {
+        "name": "Dumbbell Shoulder Press",
+        "best": "18kg each × 4×10",
+        "best1RM": 48,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×11)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 18kg each × 4×10."
+        }
       }
     ],
-    "guidance": [],
+    "guidance": [
+      "Push is ahead of pull 1.47× program-wide — favor Rear Delt Machine / Shoulder Shrugs over the shoulder presses today."
+    ],
     "ranked": [
       {
         "section": "Shoulders",
@@ -6724,20 +6728,20 @@
       {
         "section": "Legs",
         "fatigue": 27,
-        "readyInHours": 15.9,
+        "readyInHours": 15.8,
         "daysSince": 2.4
       },
       {
         "section": "Arms",
         "fatigue": 24,
-        "readyInHours": 26.1,
+        "readyInHours": 26,
         "daysSince": 4.6
       },
       {
         "section": "Back",
-        "fatigue": 68,
-        "readyInHours": 48.6,
-        "daysSince": 0.9
+        "fatigue": 67,
+        "readyInHours": 48.5,
+        "daysSince": 1
       }
     ],
     "suggestedCount": 4,
@@ -6745,7 +6749,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 5.9
+    "daysSinceAerobic": 6
   },
   "alerts": [
     {
@@ -6775,7 +6779,7 @@
       10,
       12
     ],
-    "daysSinceLast": 0.9,
+    "daysSinceLast": 1,
     "total": 52
   },
   "relstrength": {
@@ -6842,7 +6846,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 5.9,
+    "daysSinceLast": 6,
     "recent": [
       {
         "t": 1787295600000,

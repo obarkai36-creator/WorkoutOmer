@@ -363,7 +363,7 @@ function renderTraining(day, row, el) {
     const rec = day.training;
     const exRows = (rec.suggestedExercises || []).map((e) => `
       <tr>
-        <td>${e.name}</td>
+        <td>${e.name}${e.preferred ? ` <span class="badge blue" title="Corrects the current imbalance — prioritize this one">★ preferred</span>` : ""}</td>
         <td>${e.best || ""}</td>
         <td>${e.target ? e.target.text : ""}</td>
       </tr>`).join("");
@@ -379,6 +379,7 @@ function renderTraining(day, row, el) {
       <h2>Recommended next session <span class="small muted">(live, computed now)</span></h2>
       <div class="bignum" style="color:${COLORS.blue}">${rec.deload ? "Full Body (Deload)" : rec.section}</div>
       <div class="metric-note">Fatigue ${fmt(rec.fatigue, 0)}% · ${rec.readyNow ? "ready now" : "rest " + fmt(rec.restHours, 1) + "h"} · last trained ${rec.daysSince === null ? "never" : fmt(rec.daysSince, 1) + "d ago"}</div>
+      ${rec.suggestedCount != null ? `<div class="metric-note" style="margin-top:4px">Go for <b>${rec.suggestedCount} of ${rec.totalAvailable}</b> exercises this session (typical session size: ${rec.typicalSessionSize}) — stopping there keeps this section's fatigue in check and this muscle group ready for its next session on schedule.</div>` : ""}
       ${(rec.guidance || []).length ? `<ul class="plain tips" style="margin-top:10px">${rec.guidance.map((g) => `<li>💡 ${g}</li>`).join("")}</ul>` : ""}
       ${(day.training_alerts || []).length ? `<ul class="plain tips" style="margin-top:6px">${day.training_alerts.map((a) => `<li>⚠️ <b>${a.title || ""}</b>${a.title ? " — " : ""}${a.detail || a}</li>`).join("")}</ul>` : ""}
     </div>

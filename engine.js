@@ -496,23 +496,61 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
     });
 
   const guidance = [];
+  // "preferred" flags the exercises that actively correct whatever imbalance
+  // is driving the guidance text — the sort order alone isn't visible once
+  // the site just renders a table, so this gives the UI something explicit
+  // to badge rather than making the user infer it from row order.
   if (pick.section === "Legs" && bal && bal.quadHam != null && bal.quadHam > 2.5) {
     const hamBias = (e) => (e.lib?.muscles?.hamstrings || 0) - (e.lib?.muscles?.quads || 0);
     suggestedExercises.sort((a, b) => hamBias(b) - hamBias(a));
+    suggestedExercises.forEach((e) => { if (hamBias(e) > 0) e.preferred = true; });
     guidance.push(`Quads are outpacing hamstrings ${bal.quadHam}× across the program — lead with RDLs / leg curls / glute-hamstring work today rather than quad-dominant lifts.`);
   } else if (pick.section === "Arms" && bal && bal.pushPull != null) {
     const armBias = (e) => (e.lib?.muscles?.biceps || 0) - (e.lib?.muscles?.triceps || 0);
     if (bal.pushPull > 1.3) {
       suggestedExercises.sort((a, b) => armBias(b) - armBias(a));
+      suggestedExercises.forEach((e) => { if (armBias(e) > 0) e.preferred = true; });
       guidance.push(`Push is ahead of pull ${bal.pushPull}× program-wide — favor biceps/curl work over triceps today.`);
     } else if (bal.pushPull < 0.7) {
       suggestedExercises.sort((a, b) => armBias(a) - armBias(b));
+      suggestedExercises.forEach((e) => { if (armBias(e) < 0) e.preferred = true; });
       guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — favor triceps/press work over curls today.`);
     }
+  } else if (pick.section === "Shoulders" && bal && bal.pushPull != null) {
+    // Shoulders itself carries no push/pull role — only each exercise's
+    // secondary muscle (back=pull vs triceps=push) moves the ratio.
+    const shoulderBias = (e) => (e.lib?.muscles?.back || 0) - (e.lib?.muscles?.triceps || 0);
+    if (bal.pushPull > 1.3) {
+      suggestedExercises.sort((a, b) => shoulderBias(b) - shoulderBias(a));
+      suggestedExercises.forEach((e) => { if (shoulderBias(e) > 0) e.preferred = true; });
+      guidance.push(`Push is ahead of pull ${bal.pushPull}× program-wide — favor Rear Delt Machine / Shoulder Shrugs over the shoulder presses today.`);
+    } else if (bal.pushPull < 0.7) {
+      suggestedExercises.sort((a, b) => shoulderBias(a) - shoulderBias(b));
+      suggestedExercises.forEach((e) => { if (shoulderBias(e) < 0) e.preferred = true; });
+      guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — favor the shoulder presses over Rear Delt Machine / Shrugs today.`);
+    }
   } else if (pick.section === "Back" && bal && bal.pushPull != null && bal.pushPull > 1.3) {
-    guidance.push(`Push is ahead of pull ${bal.pushPull}× program-wide — good timing for a pull day; keep rowing/rear-delt volume generous rather than trimming it short.`);
-  } else if (pick.section === "Chest" && bal && bal.pushPull != null && bal.pushPull < 0.7) {
-    guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — good timing for a push day.`);
+    // Back is pull-only, but not evenly — rows with a biceps secondary
+    // correct harder than Pullover (diluted by a chest secondary) or Dead
+    // Hang (weak 0.3 back share, forearms-dominant).
+    const backBias = (e) => (e.lib?.muscles?.back || 0) + (e.lib?.muscles?.biceps || 0) - (e.lib?.muscles?.chest || 0);
+    suggestedExercises.sort((a, b) => backBias(b) - backBias(a));
+    suggestedExercises.forEach((e) => { if (backBias(e) >= 1.3) e.preferred = true; });
+    guidance.push(`Push is ahead of pull ${bal.pushPull}× program-wide — good timing for a pull day; lead with the rows (Diverging Seated Row / Low Row / Lat Pulldown / Reverse Incline DB Row) over Pullover or Dead Hang for the strongest correction.`);
+  } else if (pick.section === "Chest" && bal && bal.pushPull != null) {
+    // Chest is push-only either way — the lever here is fly variants
+    // (chest-only, "single push") vs. press variants (chest+triceps,
+    // "double push"), not whether to train chest at all.
+    const chestBias = (e) => -(e.lib?.muscles?.triceps || 0);
+    if (bal.pushPull > 1.3) {
+      suggestedExercises.sort((a, b) => chestBias(b) - chestBias(a));
+      suggestedExercises.forEach((e) => { if (chestBias(e) === 0) e.preferred = true; });
+      guidance.push(`Push is already ahead of pull ${bal.pushPull}× program-wide, but Chest is what's recovered today — favor fly variants (single push credit) over presses (double push credit) to avoid widening the gap further.`);
+    } else if (bal.pushPull < 0.7) {
+      suggestedExercises.sort((a, b) => chestBias(a) - chestBias(b));
+      suggestedExercises.forEach((e) => { if (chestBias(e) < 0) e.preferred = true; });
+      guidance.push(`Pull is ahead of push ${round(1 / bal.pushPull, 2)}× program-wide — good timing for a push day; favor press variants (double push credit) over flys for the strongest correction.`);
+    }
   }
   // Show every trainable exercise for the picked section (some, like Legs or
   // Arms, have a dozen+) rather than an arbitrary top-N cut — but a real
