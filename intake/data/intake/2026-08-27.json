@@ -3,11 +3,15 @@
   "day_number": 61,
   "in_progress": true,
   "workout_today": false,
-  "items": [],
+  "items": [
+    {"time": "06:35", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "06:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "06:35", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."}
+  ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
@@ -17,7 +21,8 @@
   "caffeine_shots": 0,
   "assumptions": [
     "Sleep logged: 23:45-06:20, 6.58h — a bit short of the 7-9h target band.",
-    "Weigh-in (Eufy): 80.80kg, BMI 27.6, body fat 26.8%, resting HR 73bpm, muscle mass 56.20kg, BMR 1716kcal — down 0.30kg vs the 23 Aug weigh-in (81.10kg)."
+    "Weigh-in (Eufy): 80.80kg, BMI 27.6, body fat 26.8%, resting HR 73bpm, muscle mass 56.20kg, BMR 1716kcal — down 0.30kg vs the 23 Aug weigh-in (81.10kg).",
+    "06:35 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done. Also 2 Mayven Full Volume Gummies — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself."
   ],
-  "status_note": "Day started. Slept 6.58h (23:45-06:20). Weigh-in: 80.80kg (-0.30kg vs 23 Aug)."
+  "status_note": "Day started. Slept 6.58h (23:45-06:20). Weigh-in: 80.80kg (-0.30kg vs 23 Aug). AM allergy meds + multivitamin done."
 }
