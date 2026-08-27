@@ -4,6 +4,8 @@
   "in_progress": false,
   "workout_today": true,
   "workout_summary": "Morning run, Tel Aviv-Yafo beach promenade: 4.68km in 44:12 (9'27\"/km avg pace, incl. an untracked ~6min/0.5km warm-up before the tracker started), ~321 kcal, cadence 129 (Nike Run Club).",
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "Travel/lighter-logging mode (2026-08-21 through 08-22) — only supplements and workouts tracked in detail, zero food items logged. Excluded from monthly kcal/protein/carbs/fat/fiber averages and protein-adherence rate; other stats (sleep, workout, sperm/energy score) still count normally.",
   "items": [
     {"time": "07:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},

@@ -93,6 +93,7 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         "date": target_date,
         "day_number": intake.get("day_number"),
         "in_progress": intake.get("in_progress"),
+        "exclude_from_monthly_macros": intake.get("exclude_from_monthly_macros", False),
         "workout_today": intake.get("workout_today"),
         "workout_summary": intake.get("workout_summary"),
         "status_note": intake.get("status_note"),
@@ -209,6 +210,7 @@ def main():
             "alcohol_event": any(e.get("type") == "alcohol" for e in bundle["lifestyle_events"]),
             "ejaculation_count": len(bundle["ejaculation_events"]),
             "in_progress": bundle["in_progress"],
+            "exclude_from_monthly_macros": bundle["exclude_from_monthly_macros"],
             "supplements_taken": sum(1 for s in bundle["supplement_compliance"] if s["taken"] or s["met_via_food"]),
             "supplements_total": len(bundle["supplement_compliance"]),
         })

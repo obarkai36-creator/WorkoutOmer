@@ -5,6 +5,8 @@
   "workout_today": false,
   "workout_summary": null,
   "_status": "Day closed out. Nutrition/calorie tracking skipped for the day (too many variables); sleep, weigh-in, caffeine, and supplements logged.",
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User called off calorie/nutrition tracking for the day (too many variables) — zero food items logged. Excluded from monthly kcal/protein/carbs/fat/fiber averages and protein-adherence rate; other stats (sleep, weigh-in, supplements) still count normally.",
   "items": [],
   "micros_sperm_priority": {
     "zinc_mg": 15,

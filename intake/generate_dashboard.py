@@ -620,7 +620,7 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
     t = profile["targets"]
     sugg = []
 
-    closed_days = [d for d in all_days if not d.get("in_progress")]
+    closed_days = [d for d in all_days if not d.get("in_progress") and not d.get("exclude_from_monthly_macros")]
     n = len(closed_days)
     protein_hit = sum(1 for d in closed_days if sum(i.get("protein_g", 0) for i in d.get("items", [])) >= t["protein_g"])
     fiber_hit = sum(1 for d in closed_days if sum(i.get("fiber_g", 0) for i in d.get("items", [])) >= t["fiber_g"])

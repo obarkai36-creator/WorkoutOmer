@@ -1,5 +1,5 @@
 {
-  "now": 1787812456010,
+  "now": 1787812928004,
   "workouts": [
     {
       "datetime": "2026-08-26T07:00",
@@ -5338,7 +5338,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 67,
-      "readyInHours": 47.8,
+      "readyInHours": 47.6,
       "ready": false
     },
     "shoulders": {
@@ -5353,8 +5353,8 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 57,
-      "readyInHours": 25.3,
+      "pct": 56,
+      "readyInHours": 25.2,
       "ready": false
     },
     "triceps": {
@@ -5377,8 +5377,8 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 34,
-      "readyInHours": 6.7,
+      "pct": 33,
+      "readyInHours": 6.6,
       "ready": false
     },
     "hamstrings": {
@@ -5386,7 +5386,7 @@
       "label": "Hamstrings",
       "section": "Legs",
       "pct": 38,
-      "readyInHours": 14.5,
+      "readyInHours": 14.4,
       "ready": false
     },
     "glutes": {
@@ -5394,7 +5394,7 @@
       "label": "Glutes",
       "section": "Legs",
       "pct": 39,
-      "readyInHours": 15.1,
+      "readyInHours": 15,
       "ready": false
     },
     "adductors": {
@@ -5449,14 +5449,14 @@
     "Back": {
       "section": "Back",
       "pct": 67,
-      "readyInHours": 47.8,
+      "readyInHours": 47.6,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 67,
-          "readyInHours": 47.8,
+          "readyInHours": 47.6,
           "ready": false
         }
       ]
@@ -5479,14 +5479,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 24,
-      "readyInHours": 25.3,
+      "readyInHours": 25.2,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 57,
-          "readyInHours": 25.3,
+          "pct": 56,
+          "readyInHours": 25.2,
           "ready": false
         },
         {
@@ -5510,14 +5510,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 27,
-      "readyInHours": 15.1,
+      "readyInHours": 15,
       "muscles": [
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
           "pct": 39,
-          "readyInHours": 15.1,
+          "readyInHours": 15,
           "ready": false
         },
         {
@@ -5525,15 +5525,15 @@
           "label": "Hamstrings",
           "section": "Legs",
           "pct": 38,
-          "readyInHours": 14.5,
+          "readyInHours": 14.4,
           "ready": false
         },
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 34,
-          "readyInHours": 6.7,
+          "pct": 33,
+          "readyInHours": 6.6,
           "ready": false
         },
         {
@@ -6614,7 +6614,7 @@
     "fatigue": 7,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-08-27T06:34:16.010Z",
+    "readyAt": "2026-08-27T06:42:08.004Z",
     "neverLogged": false,
     "daysSince": 8.4,
     "suggestedExercises": [
@@ -6728,19 +6728,19 @@
       {
         "section": "Legs",
         "fatigue": 27,
-        "readyInHours": 15.1,
+        "readyInHours": 15,
         "daysSince": 2.4
       },
       {
         "section": "Arms",
         "fatigue": 24,
-        "readyInHours": 25.3,
+        "readyInHours": 25.2,
         "daysSince": 4.6
       },
       {
         "section": "Back",
         "fatigue": 67,
-        "readyInHours": 47.8,
+        "readyInHours": 47.6,
         "daysSince": 1
       }
     ],
