@@ -11,7 +11,8 @@
     {"time": "08:25", "name": "Snack — cherry tomatoes", "category": "food", "qty": "10", "kcal": 27, "protein_g": 1.35, "carbs_g": 5.85, "fat_g": 0.3, "fiber_g": 1.8, "note": "same standard reference as prior entries. Credits ~4.4mg lycopene, ~22mg vitamin C, ~25.5mcg folate DFE."},
     {"time": "08:25", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "1 slice (~25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"},
     {"time": "08:25", "name": "Snack — almond", "category": "food", "qty": "1 (~1.2 g)", "kcal": 7, "protein_g": 0.3, "carbs_g": 0.3, "fat_g": 0.6, "fiber_g": 0.15, "note": "standard almond reference (~579kcal/100g); credits 0.3mg vitamin E"},
-    {"time": "09:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "second daily dose (\"essential 5\") of the supplement started 2026-08-26. Verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "09:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "second daily dose (\"essential 5\") of the supplement started 2026-08-26. Verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "09:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
@@ -23,14 +24,15 @@
     "vitamin_e_mg": 134.3,
     "lycopene_mg": 4.4
   },
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:45-06:20, 6.58h — a bit short of the 7-9h target band.",
     "Weigh-in (Eufy): 80.80kg, BMI 27.6, body fat 26.8%, resting HR 73bpm, muscle mass 56.20kg, BMR 1716kcal — down 0.30kg vs the 23 Aug weigh-in (81.10kg).",
     "06:35 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done. Also 2 Mayven Full Volume Gummies — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself.",
     "08:00 espresso (1 caffeine shot).",
     "08:25 snack: 10 cherry tomatoes (~4.4mg lycopene, ~22mg vitamin C, ~25.5mcg folate DFE) + 1 yellow cheese slice 9% fat + 1 almond (~0.3mg vitamin E) — all same standard/verified references as prior entries.",
-    "09:00 second daily dose of the Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium supplement (2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium."
+    "09:00 second daily dose of the Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium supplement (2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium.",
+    "09:30 espresso (2nd caffeine shot)."
   ],
   "status_note": "Day started. Slept 6.58h (23:45-06:20). Weigh-in: 80.80kg (-0.30kg vs 23 Aug). AM allergy meds + multivitamin + new C+D+E+Zinc+Selenium supplement done."
 }
