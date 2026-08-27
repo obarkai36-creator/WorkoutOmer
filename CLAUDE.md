@@ -1,5 +1,43 @@
 # Session notes
 
+- Push/pull-corrective exercise selection (added 2026-08-27, standing until
+  the ratio normalizes): `engine.js`'s push/pull balance metric only credits
+  muscles that carry a role — chest & triceps = push, back & biceps = pull;
+  shoulders, forearms, legs, core are neutral (role: null) and never move the
+  ratio. Current program ratio is push 1.47× pull (`training_full.json`
+  `bal.pushPull`), matching the recurring "push outpacing pull" alert.
+  Whenever suggesting/planning a workout (ad hoc or via engine.js's
+  `recommended_next`), apply this exercise-priority within whichever section
+  is being trained, until `bal.pushPull` settles back into ~0.8-1.3×:
+    - **Chest day** (100% push, no pull option exists here): fly variants
+      (Incline Pec Fly, Dumbbell Pec Fly, Pec Fly Machine) are "single push"
+      (chest only); press variants (Bench/Incline/Decline Press, DB Bench,
+      Chest Press Machine, Narrow Push-Ups) are "double push" (chest+
+      triceps). Favor flys over presses while correcting — don't cut chest
+      volume/frequency itself.
+    - **Back day**: strongest correctors are Diverging Seated Row, Low Row,
+      Lat Pulldown (Triangle), Reverse Incline DB Row — all double-pull
+      (back+biceps). Dumbbell Pullover is net-pull-positive but weaker
+      (dilutes with a chest/push secondary). Dead Hang gives ~zero ratio
+      benefit (forearms-dominant, do it for grip/hang strength only).
+      Prioritize the 4 rows over Pullover/Dead Hang when correcting.
+    - **Shoulders day**: shoulders itself is neutral. Rear Delt Machine and
+      Shoulder Shrugs both credit back (pull) as a secondary — correctors.
+      Dumbbell Shoulder Press and Converging Shoulder Press both credit
+      triceps (push) as a secondary — worsen it. Lateral Raises, Seated
+      Lateral Raises, Front Raises, Farmer's Hold are neutral (shoulders/
+      forearms only). Favor Rear Delt + Shrugs, go light on/skip the presses.
+    - **Arms day**: pure biceps work (Incline Hammer Curl, Incline DB Curl,
+      Hammer Curl, Preacher Curl, Biceps Curl Machine, Half Curl) is
+      pull-only; pure triceps work is push-only. Seated Dips is the single
+      biggest push-offender (double credit: triceps+chest) — first to trim/
+      skip. Forearm Twists is neutral. Favor curls over extensions.
+    - **Legs / Core / Cardio**: no muscle in these sections carries a push/
+      pull role — program purely on their own merits (quad/ham balance,
+      aerobic base), unrelated to this correction.
+  Once `bal.pushPull` is back in the healthy 0.8-1.3× range, exercise
+  selection can return to normal/preference-driven rather than corrective.
+
 - New supplement rotation candidate — Advance Physician Formulas Vitamin
   C+D3+E+Zinc+Selenium (added 2026-08-25, label photographed, not yet
   started as of that date): per-2-capsule-serving provides 1000mg vitamin
