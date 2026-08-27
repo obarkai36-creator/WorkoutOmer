@@ -166,6 +166,14 @@ function trailingRows(date, n) {
   return state.index.days.slice(start, idx + 1);
 }
 
+// A day still being logged (typically "today") reads as a false low-calorie/
+// low-protein dip on a macro trend chart purely because it isn't over yet —
+// filter those out of macro-tracking charts specifically (not sleep/weight/
+// retainer charts, which aren't affected by food-logging completeness).
+function excludeInProgress(rows) {
+  return rows.filter((r) => !r.in_progress);
+}
+
 /* ---------------- navigation ---------------- */
 
 function setDate(date, pushToPicker = true) {
@@ -279,7 +287,7 @@ function renderOverview(day, row, el) {
     </div>` : ""}
   </div>`;
 
-  const rows = trailingRows(state.current, 14);
+  const rows = excludeInProgress(trailingRows(state.current, 14));
   lineChart("ov-kcal",
     rows.map((r) => r.date.slice(5)),
     [
@@ -343,7 +351,7 @@ function renderNutrition(day, row, el) {
     </div>
   </div>`;
 
-  const rows = state.index.days;
+  const rows = excludeInProgress(state.index.days);
   lineChart("nu-all",
     rows.map((r) => r.date.slice(5)),
     [

@@ -609,33 +609,42 @@ def persist_computed_energy(day):
 
 def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifestyle_events, target_date, ejac_entries):
     """Concrete, data-driven suggestions from the full logged history so far
-    — replaces the placeholder 'engine active' message."""
+    — replaces the placeholder 'engine active' message.
+
+    Macro-based aggregates below use `closed_days` (in_progress != True) so a
+    day that's still being logged mid-day doesn't read as a low-protein/
+    low-fiber miss purely because it isn't over yet. `all_days` (unfiltered)
+    is still used for the single explicit today-only lookup (`today_data`)
+    further down, since that live selenium check is meant to apply while the
+    day is still open, not just after it closes."""
     t = profile["targets"]
     sugg = []
 
-    n = len(all_days)
-    protein_hit = sum(1 for d in all_days if sum(i.get("protein_g", 0) for i in d.get("items", [])) >= t["protein_g"])
-    fiber_hit = sum(1 for d in all_days if sum(i.get("fiber_g", 0) for i in d.get("items", [])) >= t["fiber_g"])
-    kcal_over = sum(1 for d in all_days if sum(i.get("kcal", 0) for i in d.get("items", [])) > t["calories_kcal"] * 1.1)
+    closed_days = [d for d in all_days if not d.get("in_progress")]
+    n = len(closed_days)
+    protein_hit = sum(1 for d in closed_days if sum(i.get("protein_g", 0) for i in d.get("items", [])) >= t["protein_g"])
+    fiber_hit = sum(1 for d in closed_days if sum(i.get("fiber_g", 0) for i in d.get("items", [])) >= t["fiber_g"])
+    kcal_over = sum(1 for d in closed_days if sum(i.get("kcal", 0) for i in d.get("items", [])) > t["calories_kcal"] * 1.1)
 
-    if protein_hit / n >= 0.7:
-        sugg.append(f"Protein target hit on {protein_hit}/{n} logged days — strong, consistent muscle-retention support. Keep it up.")
-    else:
-        sugg.append(f"Protein target hit on only {protein_hit}/{n} logged days — add a protein source to lighter meals to close the gap more consistently.")
+    if n:
+        if protein_hit / n >= 0.7:
+            sugg.append(f"Protein target hit on {protein_hit}/{n} logged days — strong, consistent muscle-retention support. Keep it up.")
+        else:
+            sugg.append(f"Protein target hit on only {protein_hit}/{n} logged days — add a protein source to lighter meals to close the gap more consistently.")
 
-    if fiber_hit / n < 0.5:
-        sugg.append(f"Fiber cleared target on {fiber_hit}/{n} days — veg-forward meals (like the lettuce/tomato-heavy days) clear it easily; lean on those more often.")
+        if fiber_hit / n < 0.5:
+            sugg.append(f"Fiber cleared target on {fiber_hit}/{n} days — veg-forward meals (like the lettuce/tomato-heavy days) clear it easily; lean on those more often.")
 
-    if kcal_over / n >= 0.3:
-        sugg.append(f"Calories ran 10%+ over target on {kcal_over}/{n} days, mostly around restaurant meals and desserts — no single day is a problem, but the pattern is worth watching against the weight-loss goal.")
+        if kcal_over / n >= 0.3:
+            sugg.append(f"Calories ran 10%+ over target on {kcal_over}/{n} days, mostly around restaurant meals and desserts — no single day is a problem, but the pattern is worth watching against the weight-loss goal.")
 
-    fat_avg = sum(sum(i.get("fat_g", 0) for i in d.get("items", [])) for d in all_days) / n
-    fat_pct = round(fat_avg / t["fat_g"] * 100) if t["fat_g"] else 100
-    if fat_pct > 120:
-        sugg.append(f"Fat has averaged {fat_avg:.0f}g/day vs the {t['fat_g']}g target ({fat_pct}%) across all {n} logged days — it runs about equally high on restaurant and home-cooked days (olive oil, cheese, nuts show up everywhere), so it's a portion-size habit rather than something restaurants specifically drive.")
+        fat_avg = sum(sum(i.get("fat_g", 0) for i in d.get("items", [])) for d in closed_days) / n
+        fat_pct = round(fat_avg / t["fat_g"] * 100) if t["fat_g"] else 100
+        if fat_pct > 120:
+            sugg.append(f"Fat has averaged {fat_avg:.0f}g/day vs the {t['fat_g']}g target ({fat_pct}%) across all {n} logged days — it runs about equally high on restaurant and home-cooked days (olive oil, cheese, nuts show up everywhere), so it's a portion-size habit rather than something restaurants specifically drive.")
 
     am_protein_frac = []
-    for d in all_days:
+    for d in closed_days:
         items = d.get("items", [])
         total_p = sum(i.get("protein_g", 0) for i in items)
         if total_p > 0:
@@ -669,7 +678,7 @@ def generate_suggestions(profile, all_days, weight_entries, sleep_entries, lifes
 
     # Vitamin C/E/D and folate: tracked as a 7-day rolling average — see
     # WEEKLY_TRACKED_MICROS comment above.
-    last7 = [d for d in all_days if 0 <= (pdate(target_date) - pdate(d["date"])).days < 7]
+    last7 = [d for d in closed_days if 0 <= (pdate(target_date) - pdate(d["date"])).days < 7]
     if last7:
         for key, label, foods in WEEKLY_TRACKED_MICROS:
             target = mtarg.get(key)
