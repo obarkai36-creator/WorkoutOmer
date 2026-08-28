@@ -1,19 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-08-27",
-    "latest_session": "Back day, +1 rep across the board except Dead Hang",
-    "sessions_logged": 52,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-08-28",
+    "latest_session": "Shoulders/Arms (אימון B, one-off scheme with wife, Back skipped for fatigue)",
+    "sessions_logged": 53,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 16.5,
     "aerobic_sessions_28d": 4,
     "avg_pace": "9:12/km",
     "avg_hr": 142,
-    "acwr": 1.12,
-    "recommended_next": "Shoulders day",
+    "acwr": 1.3,
+    "recommended_next": "Legs day",
     "alerts": [
-      "Push volume is 1.47× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "Push volume is 1.49× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
   },
   "entries": [
@@ -311,6 +311,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Back day, +1 rep across the board vs. established working weights (except Dead Hang). Diverging Seated Row 97kg×4×9 (new PR — est. 1RM 126.1 vs 122.9 for the 97kg×4×8 best); Reverse Incline DB Row 52kg (26kg each)×4×12 (new PR — est. 1RM 72.8 vs 71.1 for the ×4×11 best); Dumbbell Pullover 20kg×4×12 (new PR — est. 1RM 28.0 vs 27.3 for the ×4×11 best); Low Row 79kg×4×11 (new PR — est. 1RM 108.0 vs 105.3 for the ×4×10 best); Dead Hang 35s×1 set (well below the 35s+30s+25s/90s-total best — only 1 set this time, not a PR, excluded from the +1 rep pattern). 4 new PRs.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-28",
+      "type": "Strength — Shoulders/Arms (אימון B, one-off scheme with wife)",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Second one-off session with wife, 3 sets each; Back (Diverging Seated Row, Low Row) skipped for fatigue, extra shoulders added instead. Single-Hand DB Triceps Extension 12kg each×3×8 (ties best exactly, fewer sets than the ×4×8 best — not a PR); Dumbbell Shoulder Press 20kg each (40kg)×2×9+1×8 (new PR — est. 1RM 52.0 vs 48.0 for the 18kg each×4×10 best); Shoulder Shrugs 26kg each (52kg)×3×10 (new PR — est. 1RM 69.3 vs 67.2 for the 24kg each×4×12 best); Seated Dips 94kg×3×8 (new PR — est. 1RM 119.1 vs 78.5 for the 62kg×4×8 best, big jump); Front Raises 18kg KB×3×8 (ties best exactly, fewer sets than the ×4×8 best — not a PR); Rear Delt Machine 73kg×3×9 (ties best exactly — not a PR); Incline Hammer Curl 20kg each×3×8 (new PR — est. 1RM 25.3 vs 22.8 for the 18kg each×4×8 best); Incline DB Curl 20kg each×3×6 (new PR — est. 1RM 24.0 vs 21.6 for the 18kg each×4×6 best). 5 new PRs.",
       "_source": "manual log"
     }
   ]
