@@ -4,6 +4,8 @@
   "in_progress": true,
   "workout_today": true,
   "workout_summary": "Shoulders/Arms (אימון B, second one-off scheme with wife), 07:45, 3 sets each — Back (Diverging Seated Row, Low Row) skipped for fatigue, extra shoulders added instead. Single-Hand DB Triceps Extension 12kg each×3×8; Dumbbell Shoulder Press 20kg each×2×9+1×8 (new PR); Shoulder Shrugs 26kg each×3×10 (new PR); Seated Dips 94kg×3×8 (new PR); Front Raises 18kg KB×3×8; Rear Delt Machine 73kg×3×9; Incline Hammer Curl 20kg each×3×8 (new PR); Incline DB Curl 20kg each×3×6 (new PR). 5 new PRs.",
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User opted out of exact macro/nutrition tracking for the rest of the day — only supplements, caffeine, and the workout are being logged in detail going forward. Excluded from monthly kcal/protein/carbs/fat/fiber averages and protein-adherence rate; other stats (sleep, weigh-in, workout, sperm/energy score) still count normally.",
   "items": [
     {"time": "07:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -32,7 +34,8 @@
     "07:15 coffee (logged as espresso, 1 caffeine shot).",
     "07:45 Shoulders/Arms workout (אימון B), second one-off session with wife, 3 sets each. Back (Diverging Seated Row, Low Row) skipped for fatigue — extra shoulders added instead. Single-Hand DB Triceps Extension 12kg each×3×8 (ties best, fewer sets, not a PR); Dumbbell Shoulder Press 20kg each×2×9+1×8 (new PR — est. 1RM 52.0 vs 48.0 best); Shoulder Shrugs 26kg each×3×10 (new PR — est. 1RM 69.3 vs 67.2 best); Seated Dips 94kg×3×8 (new PR — est. 1RM 119.1 vs 78.5 best, big jump); Front Raises 18kg KB×3×8 (ties best, fewer sets, not a PR); Rear Delt Machine 73kg×3×9 (ties best exactly, not a PR); Incline Hammer Curl 20kg each×3×8 (new PR — est. 1RM 25.3 vs 22.8 best); Incline DB Curl 20kg each×3×6 (new PR — est. 1RM 24.0 vs 21.6 best). 5 new PRs. Logged to data.js/workouts.json.",
     "Post-workout: Allin vending-machine \"Super Effect\" protein shake, label photographed — 135kcal/25g protein/3.6g carbs, 5.5g BCAA within the protein (not additional), plus 3g creatine monohydrate also included per the label (logged separately as a supplement, zero kcal/macros). Fat not listed, assumed near-zero. First time logged, flagged.",
-    "10:30 double espresso (2 caffeine shots, bringing today's total to 3)."
+    "10:30 double espresso (2 caffeine shots, bringing today's total to 3).",
+    "User called off exact macro/nutrition tracking for the rest of today, per the standing travel/lighter-logging guideline — only supplements, caffeine, and the workout will be logged in detail from here on. Items already logged this morning (multivitamin, coffee, protein shake, creatine, double espresso) keep their real values; no further food items will be itemized/estimated today."
   ],
-  "status_note": "Day started. Slept 6.58h (00:10-06:45). Weigh-in: 80.50kg (-0.30kg vs 27 Aug). AM allergy meds done."
+  "status_note": "Day started. Slept 6.58h (00:10-06:45). Weigh-in: 80.50kg (-0.30kg vs 27 Aug). AM allergy meds done. Exact food tracking called off for the rest of the day — only supplements/caffeine/workout logged in detail."
 }
