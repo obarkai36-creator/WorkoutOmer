@@ -13,13 +13,14 @@
     {"time": "07:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0, "note": "logged as \"coffee\" — assumed espresso, same as prior daily entries"},
     {"time": "08:15", "name": "Post-workout protein shake (Allin Super Effect vending machine)", "category": "food", "qty": "1 shake (label photographed)", "kcal": 135, "protein_g": 25, "carbs_g": 3.6, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "vending-machine whey shake, label read from photo: 135kcal, 25g protein, 3.6g carbs, 5.5g BCAA (within the protein, not additional). Fat not listed on the label — assumed near-zero (isolate-style shake); the small calorie/macro gap is likely just label rounding. First time logged, flagged. Exact time not given, placed shortly after the 07:45 workout."},
     {"time": "08:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "included in the Allin Super Effect vending-machine shake, per its label"},
-    {"time": "10:30", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0}
+    {"time": "10:30", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
+    {"time": "11:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -35,7 +36,8 @@
     "07:45 Shoulders/Arms workout (אימון B), second one-off session with wife, 3 sets each. Back (Diverging Seated Row, Low Row) skipped for fatigue — extra shoulders added instead. Single-Hand DB Triceps Extension 12kg each×3×8 (ties best, fewer sets, not a PR); Dumbbell Shoulder Press 20kg each×2×9+1×8 (new PR — est. 1RM 52.0 vs 48.0 best); Shoulder Shrugs 26kg each×3×10 (new PR — est. 1RM 69.3 vs 67.2 best); Seated Dips 94kg×3×8 (new PR — est. 1RM 119.1 vs 78.5 best, big jump); Front Raises 18kg KB×3×8 (ties best, fewer sets, not a PR); Rear Delt Machine 73kg×3×9 (ties best exactly, not a PR); Incline Hammer Curl 20kg each×3×8 (new PR — est. 1RM 25.3 vs 22.8 best); Incline DB Curl 20kg each×3×6 (new PR — est. 1RM 24.0 vs 21.6 best). 5 new PRs. Logged to data.js/workouts.json.",
     "Post-workout: Allin vending-machine \"Super Effect\" protein shake, label photographed — 135kcal/25g protein/3.6g carbs, 5.5g BCAA within the protein (not additional), plus 3g creatine monohydrate also included per the label (logged separately as a supplement, zero kcal/macros). Fat not listed, assumed near-zero. First time logged, flagged.",
     "10:30 double espresso (2 caffeine shots, bringing today's total to 3).",
-    "User called off exact macro/nutrition tracking for the rest of today, per the standing travel/lighter-logging guideline — only supplements, caffeine, and the workout will be logged in detail from here on. Items already logged this morning (multivitamin, coffee, protein shake, creatine, double espresso) keep their real values; no further food items will be itemized/estimated today."
+    "User called off exact macro/nutrition tracking for the rest of today, per the standing travel/lighter-logging guideline — only supplements, caffeine, and the workout will be logged in detail from here on. Items already logged this morning (multivitamin, coffee, protein shake, creatine, double espresso) keep their real values; no further food items will be itemized/estimated today.",
+    "11:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target."
   ],
   "status_note": "Day started. Slept 6.58h (00:10-06:45). Weigh-in: 80.50kg (-0.30kg vs 27 Aug). AM allergy meds done. Exact food tracking called off for the rest of the day — only supplements/caffeine/workout logged in detail."
 }
