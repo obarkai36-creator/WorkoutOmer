@@ -8,7 +8,9 @@
     {"time": "08:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — 1x/day pill"},
     {"time": "09:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "10:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "10:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:45", "name": "Homemade chocolate cake with ganache (0.5 piece)", "category": "food", "qty": "0.5 piece (~50 g)", "kcal": 215, "protein_g": 2.5, "carbs_g": 25, "fat_g": 11.65, "fiber_g": 0.8, "note": "same standard rich chocolate-cake-with-ganache reference as prior entries (~430kcal/100g), slice size assumed (~100g whole piece)"},
+    {"time": "10:45", "name": "Homemade cremeschnit (0.5 piece)", "category": "food", "qty": "0.5 piece (~65 g)", "kcal": 208, "protein_g": 2.6, "carbs_g": 22.8, "fat_g": 11.1, "fiber_g": 0.3, "note": "no recipe given — generic cremeschnit reference (custard-cream + puff pastry slice, ~320kcal/100g), first time logged, flagged. Whole-piece size assumed (~130g)."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -27,7 +29,8 @@
     "09:00 espresso (1 caffeine shot).",
     "10:00 concluded Outdoor Walk, 6km / 1:20hr (80 min), started ~08:40. Logged to data.js/workouts.json.",
     "Sun-exposure vitamin D estimate for the walk (rough/low-confidence, per the standing sun-exposure method): arms + legs exposed \"through most\" of the walk — assumed 90% of the 80min duration (~72 min exposed) at a 'moderate' area rate (~30 IU/min, between the small shoulder/neck and large torso+legs anchors). Discounted ~55% for morning sun (08:40-10:00, well before solar noon) and ~50% for the 34 SPF sunscreen applied (partial block, not a lab-perfect 95%+ block given real-world application). Net estimate: 30 × 72 × 0.55 × 0.5 ≈ 594 IU, rounded to 600 IU. Folded directly into vitamin_d_iu rather than logged as a separate item — flag if any of these assumptions (exposed fraction, area, discounts) should be adjusted.",
-    "10:45 creatine monohydrate, 5g — zero kcal/macros."
+    "10:45 creatine monohydrate, 5g — zero kcal/macros.",
+    "10:45 snack: 0.5 piece homemade chocolate cake with ganache (~50g, same standard reference as prior entries) + 0.5 piece homemade cremeschnit (~65g, no recipe given, first time logged — generic custard-cream/puff-pastry reference, flagged)."
   ],
   "status_note": "Day started. Slept 7.5h (00:30-08:00). AM allergy meds done. Outdoor walk with sun exposure (~600 IU vitamin D estimated)."
 }
