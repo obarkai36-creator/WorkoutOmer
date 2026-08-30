@@ -22,16 +22,17 @@
     {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "14:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
-    {"time": "15:00", "name": "Granola", "category": "food", "qty": "5 g", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g), same as prior entries"}
+    {"time": "15:00", "name": "Granola", "category": "food", "qty": "5 g", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g), same as prior entries"},
+    {"time": "15:15", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 227.5,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 129.4,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 5.7,
+    "vitamin_c_mg": 1129.4,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 139.7,
     "lycopene_mg": 22.0
   },
   "caffeine_shots": 4,
@@ -46,7 +47,8 @@
     "12:30 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "12:45 espresso (1 caffeine shot).",
     "14:45 espresso (1 caffeine shot).",
-    "15:00 snack: 1 vanilla protein yogurt (Danone PRO 0% reference) + 5g granola — both same standard references as prior entries."
+    "15:00 snack: 1 vanilla protein yogurt (Danone PRO 0% reference) + 5g granola — both same standard references as prior entries.",
+    "15:15 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets."
   ],
   "status_note": "Day started. Slept 6.67h (23:45-06:25) — a bit short. AM allergy meds + Mayven multivitamin done."
 }
