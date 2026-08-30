@@ -1,7 +1,7 @@
 {
   "date": "2026-08-30",
   "day_number": 64,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "User opted out of exact food/macro tracking for dinner — dinner not itemized, only noted as pushing every macro (calories, protein, carbs, fat) over target. Today's totals only reflect breakfast through the 16:45 snack, not the full day, so excluded from monthly kcal/protein/carbs/fat/fiber averages and protein-adherence rate. Other stats (sleep, supplements, caffeine, lifestyle events) still count normally.",
@@ -58,7 +58,9 @@
     "1 glass red wine (~150ml) with dinner — logged to lifestyle.json as an alcohol event, ~1.5 units. Only a 2-day gap since 28 Aug, more frequent than the <=1 glass/week baseline, flagged.",
     "Dinner itself not itemized — user called off exact macro tracking for it, reporting only that it ran over target on every macro (calories, protein, carbs, fat). Day excluded from monthly macro averages/suggestions as a result; supplements, caffeine, and lifestyle events already logged today keep their real values.",
     "22:25 Rhinolast PM dose — both allergy spray doses done today.",
-    "22:25 creatine monohydrate, 4.5g — zero kcal/macros."
+    "22:25 creatine monohydrate, 4.5g — zero kcal/macros.",
+    "Retainers worn tonight (night of 30-31 Aug) — logged to retainers.json.",
+    "Day complete."
   ],
-  "status_note": "Slept 6.67h (23:45-06:25) — a bit short. AM allergy meds + Mayven multivitamin + essential-5 done, zinc/selenium/vitamin D all cleared. Dinner not itemized (over target on every macro) — day excluded from monthly macro tracking."
+  "status_note": "Day complete. Slept 6.67h (23:45-06:25) — a bit short. AM allergy meds + Mayven multivitamin + essential-5 done, zinc/selenium/vitamin D all cleared via the essential-5. Dinner not itemized (over target on every macro, 1 glass red wine with it) — day excluded from monthly macro tracking. Retainers worn tonight."
 }
