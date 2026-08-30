@@ -26,7 +26,9 @@
     {"time": "15:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "15:00", "name": "Granola", "category": "food", "qty": "5 g", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g), same as prior entries"},
     {"time": "15:15", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "16:45", "name": "Snack — cottage cheese, 5% fat", "category": "food", "qty": "25 g", "kcal": 26, "protein_g": 2.87, "carbs_g": 0.87, "fat_g": 1.26, "fiber_g": 0, "note": "same standard 5%-fat cottage cheese reference as prior entries (~103kcal/100g)"}
+    {"time": "16:45", "name": "Snack — cottage cheese, 5% fat", "category": "food", "qty": "25 g", "kcal": 26, "protein_g": 2.87, "carbs_g": 0.87, "fat_g": 1.26, "fiber_g": 0, "note": "same standard 5%-fat cottage cheese reference as prior entries (~103kcal/100g)"},
+    {"time": "22:25", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "22:25", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
@@ -54,7 +56,9 @@
     "15:15 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets.",
     "16:45 25g cottage cheese, 5% fat — same standard reference as prior entries.",
     "1 glass red wine (~150ml) with dinner — logged to lifestyle.json as an alcohol event, ~1.5 units. Only a 2-day gap since 28 Aug, more frequent than the <=1 glass/week baseline, flagged.",
-    "Dinner itself not itemized — user called off exact macro tracking for it, reporting only that it ran over target on every macro (calories, protein, carbs, fat). Day excluded from monthly macro averages/suggestions as a result; supplements, caffeine, and lifestyle events already logged today keep their real values."
+    "Dinner itself not itemized — user called off exact macro tracking for it, reporting only that it ran over target on every macro (calories, protein, carbs, fat). Day excluded from monthly macro averages/suggestions as a result; supplements, caffeine, and lifestyle events already logged today keep their real values.",
+    "22:25 Rhinolast PM dose — both allergy spray doses done today.",
+    "22:25 creatine monohydrate, 4.5g — zero kcal/macros."
   ],
   "status_note": "Slept 6.67h (23:45-06:25) — a bit short. AM allergy meds + Mayven multivitamin + essential-5 done, zinc/selenium/vitamin D all cleared. Dinner not itemized (over target on every macro) — day excluded from monthly macro tracking."
 }
