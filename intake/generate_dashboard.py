@@ -223,13 +223,26 @@ EXPECTED_SUPPLEMENTS = [
     ("Allergy spray · PM", "rhinolast", "pm", False),
     ("Allergy pill (Bilaxten)", "bilaxten", None, False),
     ("Multivitamin", "multivit", None, True),
-    ("Zinc (Thorne Picolinate)", "zinc picolinate", None, False),
     ("Omega-3", "omega-3", None, False),
     ("Creatine", "creatine", None, False),
 ]
 
+# Standalone zinc (Thorne Picolinate) was discontinued 2026-08-26 once the
+# essential-5 capsule (20mg zinc/dose) made it redundant on top of the Mayven
+# multivitamin's 2.8mg — 22.8mg/day from those two alone already clears the
+# 11mg target. Only expect it as a compliance item on days before that swap;
+# from 08-26 onward it's covered by other sources and dropped from the check.
+ZINC_ROW = ("Zinc (Thorne Picolinate)", "zinc picolinate", None, False)
+ZINC_DISCONTINUED_DATE = "2026-08-26"
 
-def build_supplement_check(items, omega3_total=None, omega3_target=None):
+
+def expected_supplements_for(date=None):
+    if date and date < ZINC_DISCONTINUED_DATE:
+        return EXPECTED_SUPPLEMENTS[:4] + [ZINC_ROW] + EXPECTED_SUPPLEMENTS[4:]
+    return EXPECTED_SUPPLEMENTS
+
+
+def build_supplement_check(items, date=None, omega3_total=None, omega3_target=None):
     """Replaces the full item-by-item Intake Log table with just a compliance
     check against the standing daily supplement/medication routine — the
     macro/micro panels already cover what was eaten in aggregate, so the raw
@@ -243,7 +256,7 @@ def build_supplement_check(items, omega3_total=None, omega3_target=None):
     food (fish) already cleared the target, skipping the supplement that day
     isn't a missed dose — don't flag it."""
     rows = []
-    for label, name_sub, qty_sub, show_product in EXPECTED_SUPPLEMENTS:
+    for label, name_sub, qty_sub, show_product in expected_supplements_for(date):
         match = next(
             (i for i in items
              if name_sub in i.get("name", "").lower()
@@ -952,6 +965,7 @@ def build(target_date, unified=False):
 
     supplement_check_html = build_supplement_check(
         items,
+        date=target_date,
         omega3_total=micros.get("omega3_epa_dha_mg", 0),
         omega3_target=mtarg.get("omega3_epa_dha_mg"),
     )

@@ -136,7 +136,7 @@ function lineChart(canvasId, labels, datasets, opts = {}) {
       interaction: { mode: "index", intersect: false },
       scales: {
         x: { ticks: { color: COLORS.muted, maxRotation: 0, autoSkip: true, maxTicksLimit: 8 }, grid: { color: "#1f2a3a" } },
-        y: { ticks: { color: COLORS.muted }, grid: { color: "#1f2a3a" }, ...(opts.yMin !== undefined ? { min: opts.yMin } : {}) },
+        y: { ticks: { color: COLORS.muted }, grid: { color: "#1f2a3a" }, ...(opts.yMin !== undefined ? { min: opts.yMin } : {}), ...(opts.yMax !== undefined ? { max: opts.yMax } : {}) },
       },
       plugins: { legend: { labels: { color: COLORS.muted, boxWidth: 12, font: { size: 11 } } } },
       ...opts.extra,
@@ -603,9 +603,9 @@ function renderLifestyle(day, row, el) {
 
   const rows = trailingRows(state.current, 30);
   lineChart("li-supp", rows.map((r) => r.date.slice(5)), [
-    { label: "Supplements taken", data: rows.map((r) => r.supplements_taken), borderColor: COLORS.green, backgroundColor: "transparent", stepped: true },
-    { label: "Expected", data: rows.map((r) => r.supplements_total), borderColor: COLORS.muted, borderDash: [4, 4], pointRadius: 0, backgroundColor: "transparent", stepped: true },
-  ]);
+    { label: "Compliance %", data: rows.map((r) => r.supplements_total ? Math.round((r.supplements_taken / r.supplements_total) * 100) : null), borderColor: COLORS.green, backgroundColor: "transparent" },
+    { label: "Target", data: rows.map(() => 100), borderColor: COLORS.muted, borderDash: [4, 4], pointRadius: 0, backgroundColor: "transparent" },
+  ], { yMin: 0, yMax: 100 });
   lineChart("li-sleep", rows.map((r) => r.date.slice(5)), [
     { label: "Sleep (h)", data: rows.map((r) => r.sleep_hours), borderColor: COLORS.blue, backgroundColor: "transparent" },
     { label: "7h target", data: rows.map(() => 7), borderColor: COLORS.muted, borderDash: [4, 4], pointRadius: 0, backgroundColor: "transparent" },

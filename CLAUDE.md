@@ -67,6 +67,20 @@
   Thorne Zinc Picolinate is now marked discontinued in
   intake/references/supplements.json — don't log it as taken unless the
   user explicitly says they took it again.
+  **UPDATE 2026-08-30**: removed zinc from the supplement-compliance check
+  itself (`EXPECTED_SUPPLEMENTS`/`expected_supplements_for()` in
+  generate_dashboard.py, reused by export_site_data.py) as a standing rule
+  — Mayven (2.8mg) + essential-5 (20mg) already give 22.8mg/day, well past
+  the 11mg target, so a dedicated zinc dose is no longer part of the
+  routine. The check is date-gated on `ZINC_DISCONTINUED_DATE =
+  "2026-08-26"`: days from 08-26 onward drop the Zinc row entirely (it was
+  never a real gap, just noise); days before that date still show it, since
+  Thorne Zinc genuinely was the routine then. Backfilled retroactively via
+  `python3 export_site_data.py --all` so `docs/data/*.json`/`index.json`
+  and the site's Supplement compliance trend reflect this from 08-26
+  onward. The trend chart itself (`docs/app.js`, Supplements & Lifestyle
+  tab) was also switched from raw taken/expected-count lines to a single
+  compliance-% line (0-100%, target line at 100%) per explicit request.
 
 - Travel/lighter-logging mode (2026-08-21 through Saturday 2026-08-22,
   inclusive — user is away/traveling): user explicitly asked to skip exact

@@ -54,7 +54,7 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
     omega3_total = micros.get("omega3_epa_dha_mg", 0)
     omega3_target = mtarg.get("omega3_epa_dha_mg")
     supp_rows = []
-    for label, name_sub, qty_sub, show_product in gd.EXPECTED_SUPPLEMENTS:
+    for label, name_sub, qty_sub, show_product in gd.expected_supplements_for(target_date):
         match = next(
             (i for i in items if name_sub in i.get("name", "").lower()
              and (qty_sub is None or qty_sub in i.get("qty", "").lower())),
