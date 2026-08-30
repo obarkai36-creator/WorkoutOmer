@@ -19,7 +19,8 @@
     {"time": "12:00", "name": "Lunch — red onion", "category": "food", "qty": "0.35 onion (~59.5 g)", "kcal": 24, "protein_g": 0.7, "carbs_g": 5.6, "fat_g": 0.05, "fiber_g": 1.0, "note": "same standard reference as prior entries. Credits ~4.4mg vitamin C."},
     {"time": "12:00", "name": "Lunch — dressing (olive oil & lemon juice)", "category": "food", "qty": "6 spoons total, assumed 3 tbsp olive oil + 3 tbsp lemon juice", "kcal": 369, "protein_g": 0.3, "carbs_g": 3, "fat_g": 40.5, "fiber_g": 0, "note": "even 3/3 split assumed since not specified — standard per-tbsp references. Credits ~5.7mg vitamin E (olive oil), ~15mg vitamin C (lemon juice)."},
     {"time": "12:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -31,7 +32,7 @@
     "vitamin_e_mg": 5.7,
     "lycopene_mg": 22.0
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:45-06:25, 6.67h — a bit short of the 7-9h target band.",
     "06:25 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done right after waking.",
@@ -41,7 +42,8 @@
     "10:15 espresso (1 caffeine shot).",
     "12:00 lunch, a large meal: 2 Agami Pita Pro spelt pitas + 4 yellow cheese slices 9% fat + 2 tsp cream cheese 16% fat (no brand given — generic reference, first time logged, flagged) + 30 cherry tomatoes + 4 whole cucumbers + 0.35 of a red onion, dressed with 6 spoons of olive oil & lemon juice (assumed an even 3 tbsp/3 tbsp split since not specified — flagged). Salad + dressing credits ~13.2mg lycopene, ~85.4mg vitamin C, ~76.5mcg folate DFE, ~5.7mg vitamin E.",
     "12:30 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
-    "12:45 espresso (1 caffeine shot)."
+    "12:45 espresso (1 caffeine shot).",
+    "14:45 espresso (1 caffeine shot)."
   ],
   "status_note": "Day started. Slept 6.67h (23:45-06:25) — a bit short. AM allergy meds + Mayven multivitamin done."
 }
