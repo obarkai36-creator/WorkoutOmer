@@ -17,13 +17,14 @@
     {"time": "12:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "30", "kcal": 81, "protein_g": 4.05, "carbs_g": 17.55, "fat_g": 0.9, "fiber_g": 5.4, "note": "same standard reference as prior entries. Credits ~13.2mg lycopene, ~66mg vitamin C, ~76.5mcg folate DFE."},
     {"time": "12:00", "name": "Lunch — cucumber", "category": "food", "qty": "4 whole (~1200 g)", "kcal": 180, "protein_g": 8, "carbs_g": 43.2, "fat_g": 1.2, "fiber_g": 6, "note": "same standard reference as prior entries"},
     {"time": "12:00", "name": "Lunch — red onion", "category": "food", "qty": "0.35 onion (~59.5 g)", "kcal": 24, "protein_g": 0.7, "carbs_g": 5.6, "fat_g": 0.05, "fiber_g": 1.0, "note": "same standard reference as prior entries. Credits ~4.4mg vitamin C."},
-    {"time": "12:00", "name": "Lunch — dressing (olive oil & lemon juice)", "category": "food", "qty": "6 spoons total, assumed 3 tbsp olive oil + 3 tbsp lemon juice", "kcal": 369, "protein_g": 0.3, "carbs_g": 3, "fat_g": 40.5, "fiber_g": 0, "note": "even 3/3 split assumed since not specified — standard per-tbsp references. Credits ~5.7mg vitamin E (olive oil), ~15mg vitamin C (lemon juice)."}
+    {"time": "12:00", "name": "Lunch — dressing (olive oil & lemon juice)", "category": "food", "qty": "6 spoons total, assumed 3 tbsp olive oil + 3 tbsp lemon juice", "kcal": 369, "protein_g": 0.3, "carbs_g": 3, "fat_g": 40.5, "fiber_g": 0, "note": "even 3/3 split assumed since not specified — standard per-tbsp references. Credits ~5.7mg vitamin E (olive oil), ~15mg vitamin C (lemon juice)."},
+    {"time": "12:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 227.5,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 129.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 5.7,
@@ -37,7 +38,8 @@
     "07:35 espresso (1 caffeine shot).",
     "08:35 snack: 2 yellow cheese slices (9% fat) + 20 cherry tomatoes (~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) — both same standard/verified references as prior entries.",
     "10:15 espresso (1 caffeine shot).",
-    "12:00 lunch, a large meal: 2 Agami Pita Pro spelt pitas + 4 yellow cheese slices 9% fat + 2 tsp cream cheese 16% fat (no brand given — generic reference, first time logged, flagged) + 30 cherry tomatoes + 4 whole cucumbers + 0.35 of a red onion, dressed with 6 spoons of olive oil & lemon juice (assumed an even 3 tbsp/3 tbsp split since not specified — flagged). Salad + dressing credits ~13.2mg lycopene, ~85.4mg vitamin C, ~76.5mcg folate DFE, ~5.7mg vitamin E."
+    "12:00 lunch, a large meal: 2 Agami Pita Pro spelt pitas + 4 yellow cheese slices 9% fat + 2 tsp cream cheese 16% fat (no brand given — generic reference, first time logged, flagged) + 30 cherry tomatoes + 4 whole cucumbers + 0.35 of a red onion, dressed with 6 spoons of olive oil & lemon juice (assumed an even 3 tbsp/3 tbsp split since not specified — flagged). Salad + dressing credits ~13.2mg lycopene, ~85.4mg vitamin C, ~76.5mcg folate DFE, ~5.7mg vitamin E.",
+    "12:30 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target."
   ],
   "status_note": "Day started. Slept 6.67h (23:45-06:25) — a bit short. AM allergy meds + Mayven multivitamin done."
 }
