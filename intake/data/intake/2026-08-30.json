@@ -20,7 +20,9 @@
     {"time": "12:00", "name": "Lunch — dressing (olive oil & lemon juice)", "category": "food", "qty": "6 spoons total, assumed 3 tbsp olive oil + 3 tbsp lemon juice", "kcal": 369, "protein_g": 0.3, "carbs_g": 3, "fat_g": 40.5, "fiber_g": 0, "note": "even 3/3 split assumed since not specified — standard per-tbsp references. Credits ~5.7mg vitamin E (olive oil), ~15mg vitamin C (lemon juice)."},
     {"time": "12:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "12:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
+    {"time": "15:00", "name": "Granola", "category": "food", "qty": "5 g", "kcal": 24, "protein_g": 0.5, "carbs_g": 3.2, "fat_g": 1, "fiber_g": 0.35, "note": "generic granola reference (~471kcal/100g), same as prior entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -43,7 +45,8 @@
     "12:00 lunch, a large meal: 2 Agami Pita Pro spelt pitas + 4 yellow cheese slices 9% fat + 2 tsp cream cheese 16% fat (no brand given — generic reference, first time logged, flagged) + 30 cherry tomatoes + 4 whole cucumbers + 0.35 of a red onion, dressed with 6 spoons of olive oil & lemon juice (assumed an even 3 tbsp/3 tbsp split since not specified — flagged). Salad + dressing credits ~13.2mg lycopene, ~85.4mg vitamin C, ~76.5mcg folate DFE, ~5.7mg vitamin E.",
     "12:30 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "12:45 espresso (1 caffeine shot).",
-    "14:45 espresso (1 caffeine shot)."
+    "14:45 espresso (1 caffeine shot).",
+    "15:00 snack: 1 vanilla protein yogurt (Danone PRO 0% reference) + 5g granola — both same standard references as prior entries."
   ],
   "status_note": "Day started. Slept 6.67h (23:45-06:25) — a bit short. AM allergy meds + Mayven multivitamin done."
 }
