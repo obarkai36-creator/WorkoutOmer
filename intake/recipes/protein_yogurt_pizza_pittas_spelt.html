@@ -1,0 +1,84 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Protein-yogurt pizza pittas — spelt, no-yeast (base pitta, pre-filling)</title><style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+          --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8;
+          --him:#38bdf8; --her:#f472b6; --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.45; padding:24px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+         padding:16px 20px; margin:0 0 22px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:4px; }
+  .chip { cursor:pointer; font-size:13px; padding:6px 14px; border-radius:999px;
+          background:var(--panel2); border:1px solid var(--line); color:var(--muted); user-select:none; }
+  .chip.active { color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:700; }
+  .chip:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .toc-group { margin-top:14px; }
+  .toc-group h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+                  color:var(--accent); margin:0 0 6px; }
+  .toc-list { list-style:none; padding:0; margin:0; }
+  .toc-list li { margin:4px 0; font-size:13px; display:flex; gap:8px; align-items:baseline; }
+  .toc-list a { color:var(--text); text-decoration:none; }
+  .toc-list a:hover { text-decoration:underline; }
+  .toc-dot { color:var(--good); font-size:11px; }
+  .toc-score { color:var(--muted); font-size:11px; font-variant-numeric:tabular-nums; margin-left:auto; white-space:nowrap; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+          padding:18px 20px; margin:0 0 22px; scroll-margin-top:16px; }
+  .rtitle { font-size:18px; font-weight:700; margin:0; }
+  .badges { margin:8px 0 2px; }
+  .badge { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px;
+           background:var(--panel2); border:1px solid var(--line); color:var(--muted); margin:0 6px 6px 0; }
+  .badge.src { color:var(--accent); border-color:var(--accent); }
+  .badge.adopted { color:var(--good); border-color:var(--good); }
+  .badge.meal { color:var(--text); border-color:var(--muted); font-weight:700; }
+  .badge.tag { color:var(--muted); }
+  .meta { color:var(--muted); font-size:12px; margin:4px 0 12px; }
+  .basis { font-size:12px; color:var(--text); margin:12px 0 6px; }
+  .basis b { color:var(--accent); }
+  .macros { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 14px; }
+  .m { flex:1 1 90px; background:var(--panel2); border:1px solid var(--line);
+       border-radius:10px; padding:8px 10px; text-align:center; }
+  .m .v { font-size:17px; font-weight:800; }
+  .m .l { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .micros { font-size:12px; color:var(--muted); margin:0 0 14px; }
+  .micros b { color:var(--text); }
+  .ingredients { font-size:12.5px; color:var(--muted); }
+  .cookwrap { display:grid; grid-template-columns:minmax(190px,1fr) 1.5fr; gap:14px;
+              margin:14px 0 2px; align-items:start; }
+  @media (max-width:680px){ .cookwrap { grid-template-columns:1fr; } }
+  .ingr, .cook { background:var(--panel2); border:1px solid var(--line); border-radius:12px;
+                 padding:12px 16px 14px; margin:0; }
+  .ingr h4, .cook h4 { margin:0 0 8px; font-size:13px; color:var(--text); }
+  .ingr ul { list-style:none; margin:0; padding:0; }
+  .ingr li { font-size:12.5px; margin:0; padding:6px 0; border-bottom:1px solid var(--line);
+             display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+  .ingr li:last-child { border-bottom:none; }
+  .ingr .name { color:var(--muted); flex:1 1 auto; }
+  .ingr .qty { color:var(--accent); font-weight:700; text-align:right; flex:0 1 45%;
+               font-variant-numeric:tabular-nums; }
+  .ingr .inote { display:block; color:var(--muted); font-size:11px; font-style:italic; margin-top:2px; }
+  .cook ol { margin:0; padding-left:20px; }
+  .cook ol li { font-size:12.5px; margin:5px 0; }
+  .lens { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:680px){ .lens { grid-template-columns:1fr; } }
+  .pane { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .pane.him { border-top:3px solid var(--him); }
+  .pane.her { border-top:3px solid var(--her); }
+  .pane h3 { margin:0 0 2px; font-size:13px; }
+  .pane .who { font-size:11px; color:var(--muted); margin-bottom:8px; }
+  .score { display:inline-block; font-weight:800; font-size:15px; padding:2px 10px;
+           border-radius:8px; background:var(--bg); }
+  .verdict { font-size:13px; margin:8px 0; }
+  .lbl { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:10px 0 3px; }
+  ul { margin:2px 0 0; padding-left:18px; }
+  li { font-size:12.5px; margin:2px 0; }
+  .flag { font-size:12px; color:var(--warn); }
+  .copyhint { font-size:11px; color:var(--muted); font-style:italic; margin-top:10px; }
+  .tmpl { background:var(--panel2); border-left:3px solid var(--accent); border-radius:8px;
+          padding:10px 12px; margin:10px 0 4px; font-size:12.5px; }
+  .tmpl b { color:var(--text); }
+  .tmpl .rule { color:var(--muted); margin-top:4px; }
+</style></head><body><div class='wrap'><h1>Protein-yogurt pizza pittas — spelt, no-yeast (base pitta, pre-filling)</h1><div class='sub'>Dual-lens recipe analysis · scored per intake/references/nutrition_lenses.json</div><div class='card'><div class='rtitle'>Protein-yogurt pizza pittas — spelt, no-yeast (base pitta, pre-filling)</div><div class='badges'><span class='badge meal'>Bread</span><span class='badge src'>instagram</span><span class='badge tag'>bread</span><span class='badge tag'>pitta</span><span class='badge tag'>no-yeast</span><span class='badge tag'>quick</span><span class='badge tag'>base</span><span class='badge tag'>pizza</span><span class='badge tag'>spelt</span><span class='badge tag'>whole-grain</span></div><div class='meta'>8 servings · 1 pitta (~62 g cooked) — recipe makes 8-9; base only, no filling · macros: estimate</div><div class='basis'>Values per <b>100 g</b> — you decide the portion <span class='muted'>· one typical serving ≈ 62 g</span></div><div class='macros'><div class='m'><div class='v'>240</div><div class='l'>kcal</div></div><div class='m'><div class='v'>11g</div><div class='l'>protein</div></div><div class='m'><div class='v'>37g</div><div class='l'>carbs</div></div><div class='m'><div class='v'>6.8g</div><div class='l'>fat</div></div><div class='m'><div class='v'>5.3g</div><div class='l'>fiber</div></div></div><div class='micros'>Per 100 g: <b>48</b> calcium mg · <b>2.1</b> iron mg · <b>19</b> folate mcg dfe · <b>331</b> sodium mg</div><div class='cookwrap'><div class='ingr'><h4>Ingredients</h4><ul><li><span class='name'>whole spelt flour<span class='inote'>the swap vs the white version</span></span><span class='qty'>2 cups (~250 g)</span></li><li><span class='name'>PRO natural protein yogurt</span><span class='qty'>1 tub (200 g)</span></li><li><span class='name'>olive oil</span><span class='qty'>2 tbsp</span></li><li><span class='name'>cold water<span class='inote'>spelt hydrates fast — less water than the white version</span></span><span class='qty'>start with ¼ cup, add as needed</span></li><li><span class='name'>salt</span><span class='qty'>½ tsp</span></li><li><span class='name'>baking powder</span><span class='qty'>1 packet (~10 g)</span></li><li><span class='name'>FILLING (not in macros): pizza sauce<span class='inote'>adds lycopene + a little sodium</span></span><span class='qty'>to taste</span></li><li><span class='name'>FILLING (not in macros): grated yellow cheese / mozzarella<span class='inote'>adds calcium + sat fat + sodium — the main add-on cost</span></span><span class='qty'>to taste</span></li><li><span class='name'>FILLING (not in macros): toppings you like</span><span class='qty'>to taste</span></li></ul></div><div class='cook'><h4>🍳 Cooking guide — for best taste &amp; texture</h4><ol><li>In a bowl, mix the spelt flour, baking powder and salt. Add the yogurt, olive oil and just ¼ cup cold water to start — spelt absorbs water fast, so add more only if the dough is too dry.</li><li>Stir to a shaggy dough, then knead GENTLY for ~1 min — spelt has weaker gluten than wheat, so it&#x27;s softer and tears more easily; over-kneading makes it gummy. Stop as soon as it comes together.</li><li>Cover and rest 10-15 min so the flour fully hydrates — this makes the soft dough much easier to roll.</li><li>Divide into 8-9 balls. On a lightly floured surface (don&#x27;t over-flour), roll each ~½ cm thick.</li><li>For the pizza version: spread a little pizza sauce and cheese on one half, fold over (or top a second round) and press the edges to seal.</li><li>Heat a pan over medium with a thin film of olive oil. Cook each pitta ~2-3 min per side until deep golden with brown spots and the cheese is melted — medium heat so the inside cooks before the outside burns.</li><li>Keep the finished pittas under a clean towel so they stay soft.</li><li>Tip: spelt browns a touch faster than white flour — watch the heat and pull them at deep golden, not dark.</li></ol></div></div><div class='lens' style='margin-top:14px'><div class='pane him'><h3>For him &nbsp;<span class='score' style='color:var(--good)'>8/10</span></h3><div class='who'>weight loss · muscle retention · sperm</div><div class='verdict'>The spelt swap turns the pitta base from an okay bread into a genuinely good one: ~7.1 g protein per 149 kcal pitta (spelt + the PRO yogurt) and ~3.3 g fiber — about 4x the white version&#x27;s fiber — for slightly fewer calories. Whole-grain, higher protein, more filling. It&#x27;s still a bread vehicle, but a strong one; the filling (cheese) remains the main calorie/sodium lever.</div><div class='lbl'>Highlights</div><ul><li>~7.1 g protein/pitta (spelt + yogurt)</li><li>~3.3 g fiber (~4x the white version), whole-grain</li><li>slightly fewer calories/carbs than white</li><li>moderate sodium (~205 mg/pitta before filling)</li><li>cheese filling is the calorie/sodium lever</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Go light on the yellow cheese in the filling — biggest calorie/sat-fat/sodium add</li><li>Load veg toppings + the tomato pizza sauce (lycopene) to make it a fuller meal</li></ul></div><div class='pane her'><h3>For her &nbsp;<span class='score' style='color:var(--good)'>7/10</span></h3><div class='who'>preconception / prenatal (advisory)</div><div class='verdict'>Whole spelt makes this meaningfully better for her than the white base — it adds fiber, folate and a little iron on top of the yogurt&#x27;s protein and calcium. Fully cooked, pasteurized yogurt, no safety flags. Contains gluten (spelt) — fine unless she&#x27;s avoiding it. When filled, keep cheese pasteurized (standard) and toppings cooked.</div><div class='lbl'>Highlights</div><ul><li>whole-grain fiber + a little folate &amp; iron from the spelt</li><li>protein + calcium from the PRO yogurt</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Pair with a protein + veg filling to make it prenatally useful</li><li>Spelt contains gluten — fine unless she avoids it</li></ul><div class='copyhint'>↑ Copy this block into the lihitrack session.</div></div></div></div></div></body></html>
