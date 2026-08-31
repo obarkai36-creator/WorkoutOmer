@@ -16,7 +16,8 @@
     {"time": "12:40", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Snack — unsalted cashews", "category": "food", "qty": "2 cashews (~3.4 g)", "kcal": 18, "protein_g": 0.6, "carbs_g": 1.0, "fat_g": 1.4, "fiber_g": 0.2, "time_approx": true, "note": "same standard cashew reference as prior entries (~553kcal/100g)"},
     {"time": "14:50", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
-    {"time": "14:50", "name": "Granola", "category": "food", "qty": "10 g", "kcal": 47, "protein_g": 1, "carbs_g": 6.4, "fat_g": 2, "fiber_g": 0.7, "note": "generic granola reference (~471kcal/100g), same as prior entries"}
+    {"time": "14:50", "name": "Granola", "category": "food", "qty": "10 g", "kcal": 47, "protein_g": 1, "carbs_g": 6.4, "fat_g": 2, "fiber_g": 0.7, "note": "generic granola reference (~471kcal/100g), same as prior entries"},
+    {"time": "16:00", "name": "Snack — ice cream", "category": "food", "qty": "~3 small serving cups (~210 g, assumed ~70g/cup)", "kcal": 450, "protein_g": 9, "carbs_g": 54, "fat_g": 24, "fiber_g": 1.5, "note": "unknown brand/quantity/macros per user — flagged directional estimate, using the standard generic vanilla-style ice cream reference (~214kcal/100g, same rate as the 70g/150kcal scoop entries) scaled to an assumed 3x70g serving size"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 25.2,
@@ -40,7 +41,8 @@
     "12:00 lunch (planned, placeholder time): 480g of the green-veg & chicken glass-noodle stir-fry batch — pulled the exact per-100g rate from the adopted recipe (intake/recipes/green_veg_chicken_stirfry.json), same as prior servings of this batch. Credits ~44.6mcg selenium, ~2.4mg zinc, ~76.8mcg folate DFE, ~40.8mg vitamin C.",
     "12:40 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "13:00 (time not given, placeholder) snack: 2 unsalted cashews — same standard reference as prior entries.",
-    "14:50 snack: 1 vanilla protein yogurt (Danone PRO 0% reference) + 10g granola — both same standard references as prior entries."
+    "14:50 snack: 1 vanilla protein yogurt (Danone PRO 0% reference) + 10g granola — both same standard references as prior entries.",
+    "16:00 snack: ~3 small ice cream serving cups, brand/exact quantity/macros unknown — assumed ~70g/cup (~210g total) at the standard generic vanilla-style ice cream reference (~214kcal/100g). Flagged as a directional estimate given the unknown quantity."
   ],
   "status_note": "Day started. Slept 6.5h (23:45-06:15) — a bit short. AM allergy meds + Mayven multivitamin done."
 }
