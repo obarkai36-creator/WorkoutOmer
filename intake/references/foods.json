@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "simfonia_cheese_spread_generic",
+      "name": "Simfonia cheese spread, 5% fat (generic)",
+      "serving": "100 g",
+      "kcal": 108,
+      "protein_g": 9.8,
+      "carbs_g": 4.6,
+      "fat_g": 5,
+      "fiber_g": 0,
+      "verified": true,
+      "source": "Photographed nutrition label, 2026-08-31: 108kcal, 9.8g protein, 4.6g carbs (4.5g sugars), 5g fat (3g saturated, <0.5g trans), 24mg cholesterol, 376mg sodium, 129mg calcium per 100g. Replaces an unverified ~308kcal/100g estimate that had been reused since 29 Jun (17.7g protein/5.4g carb/25.4g fat per 100g) — that rate over-counted fat by ~5x and calories by ~2.9x. Retroactively corrected in all 31 affected day files on 2026-08-31 (recomputed each Simfonia item's grams from its old kcal figure, then reapplied at this verified rate)."
+    },
+    {
       "id": "chicken_stirfry_glass_noodles",
       "name": "Chicken stir fry with glass noodles & vegetables (homemade batch)",
       "serving": "100 g (whole batch ~1kg chicken + veg + noodles, 5 servings, ~380g/serving)",

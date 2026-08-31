@@ -93,6 +93,21 @@
   logging — user confirmed Sunday will already be logged as usual, so resume
   from Sunday onward without being asked (not Monday).
 
+- Simfonia cheese spread — verified label correction (2026-08-31): a photographed
+  nutrition label gave the real per-100g values (108kcal, 9.8g protein, 4.6g
+  carb, 5g fat, 24mg cholesterol, 376mg sodium, 129mg calcium), replacing an
+  unverified ~308kcal/100g estimate that had been reused since the first
+  Simfonia entry on 2026-06-29 — that old rate over-counted fat by ~5x and
+  calories by ~2.9x whenever Simfonia was logged. Saved as
+  `simfonia_cheese_spread_generic` in `intake/references/foods.json`
+  (`verified: true`) — use this rate for all future Simfonia entries.
+  Retroactively corrected all 31 affected historical day files (recomputed
+  each Simfonia item's actual grams from its old kcal figure, then reapplied
+  at the verified rate; added a one-line correction note to each file's
+  `assumptions`). Reran `python3 export_site_data.py --all` so
+  `docs/data/*.json`/`index.json` reflect the corrected macros across the
+  full history.
+
 - Recipe analyzer (started 2026-08-04): when the user drops a recipe — a link,
   an Instagram Reel / Facebook video caption or screenshot, an online recipe, or
   a family recipe — analyze it into `intake/recipes/<id>.json` (schema:
