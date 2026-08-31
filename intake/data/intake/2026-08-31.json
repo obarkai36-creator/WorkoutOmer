@@ -26,17 +26,19 @@
     {"time": "19:30", "name": "Dinner — baby mozzarella, 0.65 eaten", "category": "food", "qty": "50 g portioned out with the salad, 0.65 eaten (~32.5 g)", "kcal": 93, "protein_g": 6.5, "carbs_g": 0.7, "fat_g": 6.83, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~286.7kcal/100g), scaled to the 0.65 portion actually eaten out of the 50g portioned. Credits ~0.65mg zinc."},
     {"time": "19:30", "name": "Dinner — Maple-Balsamic Mustard Vinaigrette (homemade), lower oil", "category": "food", "qty": "~88 g batch (10g olive oil — half the usual ~20g — + the usual 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt)", "kcal": 183, "protein_g": 0.66, "carbs_g": 21.8, "fat_g": 10.5, "fiber_g": 0, "time_approx": true, "note": "same saved vinaigrette recipe (references/foods.json) as prior entries, with only the olive oil halved — all other components at their usual amount. Credits ~1.43mg vitamin E, ~13.3mg vitamin C (olive oil + lemon juice)."},
     {"time": "19:00", "name": "Snack — watermelon", "category": "food", "qty": "100 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 7.6, "fat_g": 0.2, "fiber_g": 0.4, "note": "same standard reference as prior entries. Credits ~4.2mg lycopene, ~8.1mg vitamin C."},
-    {"time": "19:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
+    {"time": "19:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "22:00", "name": "Snack — watermelon", "category": "food", "qty": "100 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 7.6, "fat_g": 0.2, "fiber_g": 0.4, "note": "same standard reference as prior entries. Credits ~4.2mg lycopene, ~8.1mg vitamin C."},
+    {"time": "22:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 25.85,
     "selenium_mcg": 144.6,
     "folate_mcg_dfe": 253.0,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1131.0,
+    "vitamin_c_mg": 1139.1,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 135.43,
-    "lycopene_mg": 17.18
+    "lycopene_mg": 21.38
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -58,7 +60,8 @@
     "19:00 100g watermelon (~4.2mg lycopene, ~8.1mg vitamin C) — same standard reference as prior entries.",
     "19:00 Rhinolast PM dose — both allergy spray doses done today.",
     "20:30 Back day workout, as suggested (Lat Pulldown skipped). Diverging Seated Row 97kg×4×10 (new PR — est. 1RM 129.3 vs 126.1 for the 97kg×4×9 best); Low Row 79kg×4×11 confirmed unchanged (ties best exactly — not a PR); Reverse Incline DB Row confirmed at 28kg each (56kg combined, not 28.5kg due to available dumbbell increments)×4×8 (est. 1RM 70.9 vs 72.8 for the 26kg each×4×12 best — a planned weight-step/rep-reset, not a PR); Dumbbell Pullover 22kg×4×8 (est. 1RM 27.9 vs 28.0 for the 20kg×4×12 best — a planned weight-step/rep-reset, not a PR); Dead Hang 35s+30s+25s confirmed (ties best exactly, at a slightly lower bodyweight — not a PR). 1 new PR. Logged to data.js/workouts.json; ACWR now 1.56 (danger zone) — recommended next session is a Full Body deload.",
-    "21:45 additional Stationary Bike session, \"lazy bike\" at a tight recumbent angle (light ab engagement) — 4.83km, ~60 kcal per machine. Logged as a separate session to data.js/workouts.json."
+    "21:45 additional Stationary Bike session, \"lazy bike\" at a tight recumbent angle (light ab engagement) — 4.83km, ~60 kcal per machine. Logged as a separate session to data.js/workouts.json.",
+    "22:00 100g watermelon (~4.2mg lycopene, ~8.1mg vitamin C) + 5g creatine monohydrate (zero kcal/macros) — post-bike."
   ],
   "status_note": "Day started. Slept 6.5h (23:45-06:15) — a bit short. AM allergy meds + Mayven multivitamin done."
 }
