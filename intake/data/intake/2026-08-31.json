@@ -17,17 +17,23 @@
     {"time": "13:00", "name": "Snack — unsalted cashews", "category": "food", "qty": "2 cashews (~3.4 g)", "kcal": 18, "protein_g": 0.6, "carbs_g": 1.0, "fat_g": 1.4, "fiber_g": 0.2, "time_approx": true, "note": "same standard cashew reference as prior entries (~553kcal/100g)"},
     {"time": "14:50", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "14:50", "name": "Granola", "category": "food", "qty": "10 g", "kcal": 47, "protein_g": 1, "carbs_g": 6.4, "fat_g": 2, "fiber_g": 0.7, "note": "generic granola reference (~471kcal/100g), same as prior entries"},
-    {"time": "16:00", "name": "Snack — ice cream", "category": "food", "qty": "~3 small serving cups (~210 g, assumed ~70g/cup)", "kcal": 450, "protein_g": 9, "carbs_g": 54, "fat_g": 24, "fiber_g": 1.5, "note": "unknown brand/quantity/macros per user — flagged directional estimate, using the standard generic vanilla-style ice cream reference (~214kcal/100g, same rate as the 70g/150kcal scoop entries) scaled to an assumed 3x70g serving size"}
+    {"time": "16:00", "name": "Snack — ice cream", "category": "food", "qty": "~3 small serving cups (~210 g, assumed ~70g/cup)", "kcal": 450, "protein_g": 9, "carbs_g": 54, "fat_g": 24, "fiber_g": 1.5, "note": "unknown brand/quantity/macros per user — flagged directional estimate, using the standard generic vanilla-style ice cream reference (~214kcal/100g, same rate as the 70g/150kcal scoop entries) scaled to an assumed 3x70g serving size"},
+    {"time": "19:30", "name": "Dinner — Agami Pita Pro spelt pita", "category": "food", "qty": "2 (68 g each, 136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "time_approx": true, "note": "verified reference, reused"},
+    {"time": "19:30", "name": "Dinner — yellow cheese, 9% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "time_approx": true, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"},
+    {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "50 g", "kcal": 154, "protein_g": 8.9, "carbs_g": 2.7, "fat_g": 12.7, "fiber_g": 0, "time_approx": true, "note": "same standard per-100g rate as prior entries (~307.7kcal/100g)"},
+    {"time": "19:30", "name": "Dinner — recurring salad (lettuce, cherry tomatoes, red onion), 0.65 of the recipe", "category": "food", "qty": "0.65 of the recipe (1 lettuce head, 30 cherry tomatoes, 0.5 red onion)", "kcal": 109, "protein_g": 4.3, "carbs_g": 25.4, "fat_g": 2.0, "fiber_g": 9.8, "time_approx": true, "note": "same recurring-salad recipe structure as prior entries, scaled to 0.65 (mozzarella logged separately today at a flat 50g rather than scaled). Credits ~8.58mg lycopene, ~46.8mg vitamin C, ~50.7mcg folate DFE."},
+    {"time": "19:30", "name": "Dinner — baby mozzarella", "category": "food", "qty": "50 g (flat amount, not scaled with the salad portion)", "kcal": 143, "protein_g": 10, "carbs_g": 1, "fat_g": 10.5, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~286.7kcal/100g). Credits ~1.0mg zinc."},
+    {"time": "19:30", "name": "Dinner — dressing (olive oil only, half the usual amount)", "category": "food", "qty": "~10 g olive oil (half the usual ~20g in the saved vinaigrette recipe; balsamic/mustard/maple/lemon skipped today)", "kcal": 89, "protein_g": 0, "carbs_g": 0, "fat_g": 10, "fiber_g": 0, "time_approx": true, "note": "standard per-gram olive oil reference. Credits ~1.4mg vitamin E."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 25.2,
+    "zinc_mg": 26.2,
     "selenium_mcg": 144.6,
-    "folate_mcg_dfe": 202.3,
+    "folate_mcg_dfe": 253.0,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1062.8,
+    "vitamin_c_mg": 1109.6,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 134,
-    "lycopene_mg": 4.4
+    "vitamin_e_mg": 135.4,
+    "lycopene_mg": 12.98
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -42,7 +48,8 @@
     "12:40 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "13:00 (time not given, placeholder) snack: 2 unsalted cashews — same standard reference as prior entries.",
     "14:50 snack: 1 vanilla protein yogurt (Danone PRO 0% reference) + 10g granola — both same standard references as prior entries.",
-    "16:00 snack: ~3 small ice cream serving cups, brand/exact quantity/macros unknown — assumed ~70g/cup (~210g total) at the standard generic vanilla-style ice cream reference (~214kcal/100g). Flagged as a directional estimate given the unknown quantity."
+    "16:00 snack: ~3 small ice cream serving cups, brand/exact quantity/macros unknown — assumed ~70g/cup (~210g total) at the standard generic vanilla-style ice cream reference (~214kcal/100g). Flagged as a directional estimate given the unknown quantity.",
+    "19:30 dinner (time not given, placeholder): 2 Agami Pita Pro spelt pitas + 2 yellow cheese slices 9% fat + 50g Simfonia cheese spread + 0.65 of the recurring salad recipe (lettuce, 30 cherry tomatoes, 0.5 red onion — credits ~8.58mg lycopene, ~46.8mg vitamin C, ~50.7mcg folate DFE) + 50g baby mozzarella logged as a flat amount rather than scaled to the 0.65 portion (credits ~1.0mg zinc) + a lighter dressing today: ~10g olive oil only, half the usual ~20g and skipping the balsamic/mustard/maple/lemon components of the usual vinaigrette (credits ~1.4mg vitamin E). All base rates same as prior recurring-salad entries."
   ],
   "status_note": "Day started. Slept 6.5h (23:45-06:15) — a bit short. AM allergy meds + Mayven multivitamin done."
 }
