@@ -3,7 +3,10 @@
   "day_number": 65,
   "in_progress": true,
   "workout_today": false,
-  "items": [],
+  "items": [
+    {"time": "06:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "06:15", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — 1x/day pill"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -16,7 +19,8 @@
   },
   "caffeine_shots": 0,
   "assumptions": [
-    "Sleep logged: 23:45-06:15, 6.5h — below the 7-9h target band."
+    "Sleep logged: 23:45-06:15, 6.5h — below the 7-9h target band.",
+    "06:15 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done right after waking."
   ],
-  "status_note": "Day started. Slept 6.5h (23:45-06:15) — a bit short."
+  "status_note": "Day started. Slept 6.5h (23:45-06:15) — a bit short. AM allergy meds done."
 }
