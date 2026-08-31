@@ -22,7 +22,7 @@ HERE = Path(__file__).resolve().parent
 RECIPES_DIR = HERE / "recipes"
 
 # Order meal types appear in the TOC / filter chips
-MEAL_ORDER = ["Chicken", "Fish", "Beef", "Snack", "Dessert", "Other"]
+MEAL_ORDER = ["Chicken", "Fish", "Beef", "Bread", "Snack", "Dessert", "Other"]
 
 # House style tokens (match generate_dashboard.py) — deliberately single-theme dark,
 # consistent with the project's other dashboards.

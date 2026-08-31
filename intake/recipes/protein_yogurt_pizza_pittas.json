@@ -1,0 +1,85 @@
+{
+  "id": "protein_yogurt_pizza_pittas",
+  "name": "Protein-yogurt pizza pittas — no-yeast (base pitta, pre-filling)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram — shirel_blank / foodsdictionary_recipes (Hebrew caption)",
+    "captured": "2026-08-22",
+    "notes": "Quick no-yeast / no-rise pittas from a protein-yogurt dough, pan-fried and stuffed pizza-style. Analyzed PER PITTA for the DOUGH BASE ONLY (pre-filling) — makes 8-9 pittas; per-unit values use 8. The filling (pizza sauce, grated yellow/mozzarella cheese, 'toppings you like') is unquantified in the caption and is NOT included in these macros — see the filling note. PRO yogurt taken as a ~20 g-protein/200 g protein yogurt."
+  },
+  "servings": 8,
+  "serving_desc": "1 pitta (~62 g cooked) — recipe makes 8-9; base only, no filling",
+  "ingredients": [
+    {"item": "white flour", "qty": "2 cups (~250 g)"},
+    {"item": "PRO natural protein yogurt", "qty": "1 tub (200 g)"},
+    {"item": "olive oil", "qty": "2 tbsp"},
+    {"item": "cold water", "qty": "⅓ cup"},
+    {"item": "salt", "qty": "½ tsp"},
+    {"item": "baking powder", "qty": "1 packet (~10 g)"},
+    {"item": "FILLING (not in macros): pizza sauce", "qty": "to taste", "note": "adds lycopene + a little sodium"},
+    {"item": "FILLING (not in macros): grated yellow cheese / mozzarella", "qty": "to taste", "note": "adds calcium + sat fat + sodium — the main add-on cost"},
+    {"item": "FILLING (not in macros): toppings you like", "qty": "to taste"}
+  ],
+  "steps": [
+    "Mix all dough ingredients to a uniform dough; rest, roll, stuff with sauce + cheese, pan-fry both sides."
+  ],
+  "per_serving": {
+    "kcal": 157,
+    "protein_g": 5.6,
+    "carbs_g": 24.8,
+    "fat_g": 3.8,
+    "fiber_g": 0.8,
+    "micros": {
+      "calcium_mg": 30,
+      "sodium_mg": 205
+    }
+  },
+  "batch_totals": {
+    "kcal": 1260,
+    "protein_g": 45,
+    "carbs_g": 198,
+    "fat_g": 30,
+    "fiber_g": 6.8,
+    "sodium_mg": 1640,
+    "note": "Base dough only (8 pittas). Filling adds calories/fat/sodium on top depending on how much sauce + cheese you use."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 6,
+      "verdict": "A better-than-average bread base: the protein yogurt lifts each pitta to ~5.6 g protein for 157 kcal — more than a plain pitta (~3-4 g) — with a bit of olive-oil fat. But it's refined white flour, so low fiber (~0.8 g) and mostly fast carbs. As a controlled higher-protein carb/bread swap it's fine; it's a vehicle, not a protein source. Watch the FILLING — that's where the cheese piles on calories, saturated fat and sodium (unquantified here).",
+      "flags": ["higher protein than normal bread (~5.6 g/pitta from the yogurt)", "refined white flour, low fiber (~0.8 g)", "moderate sodium (~205 mg/pitta before filling)", "filling (cheese/sauce) is the real calorie/sodium lever"],
+      "suggested_mods": [
+        "Swap half the white flour for whole-wheat to add fiber + folate",
+        "Go light on the yellow cheese in the filling — biggest calorie/sat-fat/sodium add",
+        "Load veg toppings and use the tomato pizza sauce (lycopene) to make it more of a meal"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 5,
+      "verdict": "The base is a refined-flour bread — not a nutrient contributor, though the protein yogurt adds a little protein and calcium. Fully cooked, pasteurized yogurt, no safety flags. Whole-wheat flour would add the folate/fiber it's missing. When filled, keep cheese pasteurized (standard) and toppings cooked.",
+      "prenatal_highlights": ["a little protein + calcium from the yogurt"],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Use whole-wheat or half-whole-wheat flour to add folate + fiber",
+        "Pair with a protein + veg filling to make it prenatally useful"
+      ]
+    }
+  },
+  "tags": ["bread", "pitta", "no-yeast", "quick", "base", "pizza"],
+  "adopted": false,
+  "created": "2026-08-22",
+  "updated": "2026-08-22",
+  "serving_g": 62,
+  "meal_type": "Bread",
+  "cooking_guide": [
+    "In a bowl, mix the flour, baking powder and salt, then add the yogurt, olive oil and cold water. Stir to a shaggy dough, then knead ~1-2 min just until smooth — don't overwork it (over-kneading makes tough pittas).",
+    "Cover and rest the dough 10-15 min — this lets the flour hydrate and the gluten relax, so it rolls out easily and cooks up soft.",
+    "Divide into 8-9 balls. On a floured surface, roll each ~½ cm thick (thin enough to cook through, thick enough to stay fluffy).",
+    "For the pizza version: spread a little pizza sauce and cheese on one half, fold over (or top a second round) and press the edges to seal.",
+    "Heat a pan over medium with a thin film of olive oil. Cook each pitta ~2-3 min per side until deep golden with brown spots and the cheese is melted — medium heat, not high, so the inside cooks before the outside burns.",
+    "Keep the finished pittas under a clean towel so they stay soft.",
+    "Tip: no yeast means no rise time, but the 10-15 min rest is what keeps them tender — don't skip it."
+  ]
+}
