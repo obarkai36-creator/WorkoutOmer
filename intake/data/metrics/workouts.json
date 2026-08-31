@@ -1,19 +1,22 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-08-30",
-    "latest_session": "Outdoor Walk — arms/legs sun exposure with 34 SPF sunscreen",
-    "sessions_logged": 54,
-    "sessions_per_week": 4,
+    "report_date": "2026-08-31",
+    "latest_session": "Back day, as suggested (Lat Pulldown skipped)",
+    "sessions_logged": 55,
+    "sessions_per_week": 4.3,
     "typical_time": "afternoon",
     "aerobic_28d_km": 22.5,
     "aerobic_sessions_28d": 5,
     "avg_pace": "9:22/km",
     "avg_hr": 142,
-    "acwr": 1.29,
-    "recommended_next": "Back day",
+    "acwr": 1.56,
+    "recommended_next": "Full Body (Deload) day",
     "alerts": [
-      "Push volume is 1.49× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "Load ratio 1.56 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload.",
+      "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
+      "Recovers in ~79.4h. Avoid loading it hard before then — you trained it most recently.",
+      "Recovers in ~47.8h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -327,6 +330,14 @@
       "duration_min": 80,
       "intensity": "easy",
       "notes": "6km / 1:20hr, concluded 10:00 (started ~08:40). Arms/legs sun exposure through most of the walk, 34 SPF sunscreen applied — vitamin D estimated ~600IU per the standing sun-exposure method, folded into the day's micros rather than logged as a separate item.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Strength — Back day",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Back day, as suggested by the report (Lat Pulldown skipped). Diverging Seated Row 97kg×4×10 (new PR — est. 1RM 129.3 vs 126.1 for the 97kg×4×9 best); Low Row 79kg×4×11 (ties best exactly — not a PR); Reverse Incline DB Row 28kg each (56kg)×4×8 (fewer reps than the 26kg each×4×12 best, est. 1RM 70.9 vs 72.8 — not a PR, a planned weight-step/rep-reset); Dumbbell Pullover 22kg×4×8 (fewer reps than the 20kg×4×12 best, est. 1RM 27.9 vs 28.0 — not a PR, a planned weight-step/rep-reset); Dead Hang 35s+30s+25s (ties best exactly, at a slightly lower bodyweight — not a PR). 1 new PR.",
       "_source": "manual log"
     }
   ]
