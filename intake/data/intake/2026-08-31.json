@@ -23,17 +23,19 @@
     {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "50 g", "kcal": 154, "protein_g": 8.9, "carbs_g": 2.7, "fat_g": 12.7, "fiber_g": 0, "time_approx": true, "note": "same standard per-100g rate as prior entries (~307.7kcal/100g)"},
     {"time": "19:30", "name": "Dinner — recurring salad (lettuce, cherry tomatoes, red onion), 0.65 of the recipe", "category": "food", "qty": "0.65 of the recipe (1 lettuce head, 30 cherry tomatoes, 0.5 red onion)", "kcal": 109, "protein_g": 4.3, "carbs_g": 25.4, "fat_g": 2.0, "fiber_g": 9.8, "time_approx": true, "note": "same recurring-salad recipe structure as prior entries, scaled to 0.65 (mozzarella logged separately today at a flat 50g rather than scaled). Credits ~8.58mg lycopene, ~46.8mg vitamin C, ~50.7mcg folate DFE."},
     {"time": "19:30", "name": "Dinner — baby mozzarella, 0.65 eaten", "category": "food", "qty": "50 g portioned out with the salad, 0.65 eaten (~32.5 g)", "kcal": 93, "protein_g": 6.5, "carbs_g": 0.7, "fat_g": 6.83, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~286.7kcal/100g), scaled to the 0.65 portion actually eaten out of the 50g portioned. Credits ~0.65mg zinc."},
-    {"time": "19:30", "name": "Dinner — Maple-Balsamic Mustard Vinaigrette (homemade), lower oil", "category": "food", "qty": "~88 g batch (10g olive oil — half the usual ~20g — + the usual 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt)", "kcal": 183, "protein_g": 0.66, "carbs_g": 21.8, "fat_g": 10.5, "fiber_g": 0, "time_approx": true, "note": "same saved vinaigrette recipe (references/foods.json) as prior entries, with only the olive oil halved — all other components at their usual amount. Credits ~1.43mg vitamin E, ~13.3mg vitamin C (olive oil + lemon juice)."}
+    {"time": "19:30", "name": "Dinner — Maple-Balsamic Mustard Vinaigrette (homemade), lower oil", "category": "food", "qty": "~88 g batch (10g olive oil — half the usual ~20g — + the usual 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt)", "kcal": 183, "protein_g": 0.66, "carbs_g": 21.8, "fat_g": 10.5, "fiber_g": 0, "time_approx": true, "note": "same saved vinaigrette recipe (references/foods.json) as prior entries, with only the olive oil halved — all other components at their usual amount. Credits ~1.43mg vitamin E, ~13.3mg vitamin C (olive oil + lemon juice)."},
+    {"time": "19:00", "name": "Snack — watermelon", "category": "food", "qty": "100 g", "kcal": 30, "protein_g": 0.6, "carbs_g": 7.6, "fat_g": 0.2, "fiber_g": 0.4, "note": "same standard reference as prior entries. Credits ~4.2mg lycopene, ~8.1mg vitamin C."},
+    {"time": "19:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 25.85,
     "selenium_mcg": 144.6,
     "folate_mcg_dfe": 253.0,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1122.9,
+    "vitamin_c_mg": 1131.0,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 135.43,
-    "lycopene_mg": 12.98
+    "lycopene_mg": 17.18
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -51,7 +53,9 @@
     "16:00 snack: ~3 small ice cream serving cups, brand/exact quantity/macros unknown — assumed ~70g/cup (~210g total) at the standard generic vanilla-style ice cream reference (~214kcal/100g). Flagged as a directional estimate given the unknown quantity.",
     "19:30 dinner (time not given, placeholder): 2 Agami Pita Pro spelt pitas + 2 yellow cheese slices 9% fat + 50g Simfonia cheese spread + 0.65 of the recurring salad recipe (lettuce, 30 cherry tomatoes, 0.5 red onion — credits ~8.58mg lycopene, ~46.8mg vitamin C, ~50.7mcg folate DFE) + 50g baby mozzarella portioned out, 0.65 eaten (~32.5g — credits ~0.65mg zinc) + the usual Maple-Balsamic Mustard Vinaigrette recipe with only the olive oil reduced to half its usual amount (~10g vs ~20g) — all other components (maple syrup, mustard, balsamic glaze, lemon juice) at their normal quantity (credits ~1.43mg vitamin E, ~13.3mg vitamin C). All base rates same as prior recurring-salad/vinaigrette entries.",
     "Correction: dressing is the same full vinaigrette recipe as always, just with a lower quantity of olive oil — not olive-oil-only as first logged. Updated the item and day totals accordingly.",
-    "Correction: the 50g of baby mozzarella was portioned out to match the salad, but only 0.65 of it was actually eaten (~32.5g) — same 0.65 fraction as the salad portion. Updated the item and day totals accordingly."
+    "Correction: the 50g of baby mozzarella was portioned out to match the salad, but only 0.65 of it was actually eaten (~32.5g) — same 0.65 fraction as the salad portion. Updated the item and day totals accordingly.",
+    "19:00 100g watermelon (~4.2mg lycopene, ~8.1mg vitamin C) — same standard reference as prior entries.",
+    "19:00 Rhinolast PM dose — both allergy spray doses done today."
   ],
   "status_note": "Day started. Slept 6.5h (23:45-06:15) — a bit short. AM allergy meds + Mayven multivitamin done."
 }
