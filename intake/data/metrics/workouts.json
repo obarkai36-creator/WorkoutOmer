@@ -2,13 +2,13 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-08-31",
-    "latest_session": "Back day, as suggested (Lat Pulldown skipped)",
-    "sessions_logged": 55,
-    "sessions_per_week": 4.3,
+    "latest_session": "Stationary Bike, \"lazy bike\" at a tight recumbent angle (light ab engagement) — 60 kcal per machine",
+    "sessions_logged": 56,
+    "sessions_per_week": 4.5,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 22.5,
-    "aerobic_sessions_28d": 5,
-    "avg_pace": "9:22/km",
+    "aerobic_28d_km": 27.3,
+    "aerobic_sessions_28d": 6,
+    "avg_pace": "8:60/km",
     "avg_hr": 142,
     "acwr": 1.56,
     "recommended_next": "Full Body (Deload) day",
@@ -338,6 +338,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Back day, as suggested by the report (Lat Pulldown skipped). Diverging Seated Row 97kg×4×10 (new PR — est. 1RM 129.3 vs 126.1 for the 97kg×4×9 best); Low Row 79kg×4×11 (ties best exactly — not a PR); Reverse Incline DB Row 28kg each (56kg)×4×8 (fewer reps than the 26kg each×4×12 best, est. 1RM 70.9 vs 72.8 — not a PR, a planned weight-step/rep-reset); Dumbbell Pullover 22kg×4×8 (fewer reps than the 20kg×4×12 best, est. 1RM 27.9 vs 28.0 — not a PR, a planned weight-step/rep-reset); Dead Hang 35s+30s+25s (ties best exactly, at a slightly lower bodyweight — not a PR). 1 new PR.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-08-31",
+      "type": "Stationary Bike",
+      "duration_min": null,
+      "intensity": "easy",
+      "notes": "Additional \"lazy bike\" session at a tight recumbent angle (light ab engagement), 21:45. 4.83km, ~60 kcal per machine.",
       "_source": "manual log"
     }
   ]
