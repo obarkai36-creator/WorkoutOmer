@@ -11,19 +11,19 @@
     {"time": "09:10", "name": "Snack — cherry tomatoes", "category": "food", "qty": "20", "kcal": 54, "protein_g": 2.7, "carbs_g": 11.7, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
     {"time": "09:10", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"},
     {"time": "10:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "13:00", "name": "Lunch — build-your-own salad (cucumber, red onion, cherry tomatoes, arugula, white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower)", "category": "food", "qty": "650 ml total (~357.5 g, assumed ~0.55g/ml — no scale available), 8 named ingredients no weights given, equal split", "kcal": 129, "protein_g": 5.4, "carbs_g": 27.1, "fat_g": 1.2, "fiber_g": 6.7, "time_approx": true, "note": "Wolt-receipt build-your-own salad, same distribution-across-standard-references method as prior similar entries (e.g. 16 Aug), extended with arugula/rocket (new ingredient, generic reference). Volume-to-weight conversion is a rough estimate, flagged. Credits ~1.3mg lycopene, ~81mg vitamin C, ~50mcg folate DFE."},
-    {"time": "13:00", "name": "Lunch — chicken breast (paid add-on, 2 scoops)", "category": "food", "qty": "2 scoops, ~60g each (~120 g total, assumed)", "kcal": 198, "protein_g": 37.2, "carbs_g": 0, "fat_g": 4.32, "fiber_g": 0, "time_approx": true, "note": "standard grilled chicken breast reference (~165.3kcal/100g), scoop size assumed since receipt gave qty/price only, not weight."},
+    {"time": "13:00", "name": "Lunch — build-your-own salad (cucumber, red onion, cherry tomatoes, arugula, white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower)", "category": "food", "qty": "750 g veg (of a 950g total salad incl. chicken — user-corrected from the 650ml/no-scale guess), 8 named ingredients no weights given, equal split", "kcal": 270, "protein_g": 11.4, "carbs_g": 56.9, "fat_g": 2.44, "fiber_g": 14.13, "time_approx": true, "note": "Wolt-receipt build-your-own salad, same distribution-across-standard-references method as prior similar entries (e.g. 16 Aug), extended with arugula/rocket (new ingredient, generic reference). User corrected the total weight to 950g (was estimated at 357.5g from a volume guess) — veg portion is 950g minus the 200g chicken breast. Credits ~2.7mg lycopene, ~169mg vitamin C, ~105mcg folate DFE."},
+    {"time": "13:00", "name": "Lunch — chicken breast (paid add-on)", "category": "food", "qty": "200 g (part of the 950g total salad, user-corrected from the 120g assumed scoop estimate)", "kcal": 331, "protein_g": 62, "carbs_g": 0, "fat_g": 7.2, "fiber_g": 0, "time_approx": true, "note": "standard grilled chicken breast reference (~165.3kcal/100g)."},
     {"time": "13:00", "name": "Lunch — pesto", "category": "food", "qty": "20 ml (~19 g, assumed ~0.95g/ml)", "kcal": 101, "protein_g": 0.95, "carbs_g": 1.14, "fat_g": 9.69, "fiber_g": 0, "time_approx": true, "note": "generic basil pesto reference (~530kcal/100g), first time logged standalone, flagged."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 201,
+    "folate_mcg_dfe": 256,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 125,
+    "vitamin_c_mg": 213,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 10.1
+    "lycopene_mg": 11.5
   },
   "caffeine_shots": 2,
   "assumptions": [
@@ -34,7 +34,8 @@
     "08:30 espresso (1 caffeine shot).",
     "09:10 snack: 20 cherry tomatoes (~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 2 yellow cheese slices (9% fat) — both same standard/verified references as prior entries.",
     "10:45 espresso (1 caffeine shot).",
-    "13:00 lunch (time not given, placeholder): a Wolt build-your-own salad (650ml total, no scale available — converted using an assumed ~0.55g/ml density, then split equally across 8 named ingredients: cucumber, red onion, cherry tomatoes, arugula/rocket [new], white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower) + 2 scoops chicken breast added as a paid topping (~60g/scoop assumed) + 20ml pesto (~19g, generic reference, first time logged standalone). Multiple estimation layers stacked here (volume conversion + equal-split + generic references) — flagged as a rougher-than-usual estimate. Credits ~1.3mg lycopene, ~81mg vitamin C, ~50mcg folate DFE from the salad."
+    "13:00 lunch (time not given, placeholder): a Wolt build-your-own salad (650ml total, no scale available — converted using an assumed ~0.55g/ml density, then split equally across 8 named ingredients: cucumber, red onion, cherry tomatoes, arugula/rocket [new], white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower) + 2 scoops chicken breast added as a paid topping (~60g/scoop assumed) + 20ml pesto (~19g, generic reference, first time logged standalone). Multiple estimation layers stacked here (volume conversion + equal-split + generic references) — flagged as a rougher-than-usual estimate. Credits ~1.3mg lycopene, ~81mg vitamin C, ~50mcg folate DFE from the salad.",
+    "Correction: user said the salad was way heavier than the 650ml/no-scale guess — corrected to 950g total, of which 200g is chicken breast (vs the initially assumed 120g). Veg portion recalculated as 750g (950g minus the 200g chicken) across the same 8 ingredients. Salad now credits ~2.7mg lycopene, ~169mg vitamin C, ~105mcg folate DFE; chicken breast recalculated at 200g (331kcal, 62g protein). Day totals updated accordingly."
   ],
   "status_note": "Day started. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg. AM allergy meds + Mayven multivitamin done."
 }
