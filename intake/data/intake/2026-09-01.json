@@ -1,7 +1,7 @@
 {
   "date": "2026-09-01",
   "day_number": 66,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Outdoor Walk, suburban, 2.2km / 30min, concluded 21:20 (started ~20:50).",
   "items": [
@@ -28,7 +28,8 @@
     {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "50 g", "kcal": 54, "protein_g": 4.9, "carbs_g": 2.3, "fat_g": 2.5, "fiber_g": 0, "time_approx": true, "note": "verified label reference (intake/references/foods.json, corrected 2026-08-31): 108kcal/9.8g protein/4.6g carb/5g fat per 100g."},
     {"time": "19:10", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "19:10", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "19:30", "name": "Snack — watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.6, "fiber_g": 1.2, "note": "same standard reference as prior entries. Credits ~12.6mg lycopene, ~24.3mg vitamin C."}
+    {"time": "19:30", "name": "Snack — watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.6, "fiber_g": 1.2, "note": "same standard reference as prior entries. Credits ~12.6mg lycopene, ~24.3mg vitamin C."},
+    {"time": "21:35", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 23.45,
@@ -60,7 +61,9 @@
     "19:10 Rhinolast PM dose — both allergy spray doses done today.",
     "19:10 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets.",
     "19:30 300g watermelon (~12.6mg lycopene, ~24.3mg vitamin C) — same standard reference as prior entries.",
-    "20:50 Outdoor Walk, suburban, 2.2km/30min, concluded 21:20. Logged to data.js/workouts.json — ACWR now 1.23 (back in the healthy range), recommended next session is Legs day."
+    "20:50 Outdoor Walk, suburban, 2.2km/30min, concluded 21:20. Logged to data.js/workouts.json — ACWR now 1.23 (back in the healthy range), recommended next session is Legs day.",
+    "21:35 creatine monohydrate, 5g — zero kcal/macros.",
+    "Day complete."
   ],
-  "status_note": "Day started. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg. AM allergy meds + Mayven multivitamin done."
+  "status_note": "Day complete. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg (-0.20kg vs 28 Aug), resting HR 91bpm notably elevated — worth watching. Outdoor Walk (2.2km/30min) brought ACWR back to a healthy 1.23; recommended next session is Legs day. Essential-5 + omega-3 cleared zinc/selenium/vitamin D/E/omega-3. 4 caffeine shots."
 }
