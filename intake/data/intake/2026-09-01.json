@@ -14,7 +14,8 @@
     {"time": "12:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Lunch — build-your-own salad (cucumber, red onion, cherry tomatoes, arugula, white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower)", "category": "food", "qty": "750 g veg (of a 950g total salad incl. chicken — user-corrected from the 650ml/no-scale guess), 8 named ingredients no weights given, equal split", "kcal": 270, "protein_g": 11.4, "carbs_g": 56.9, "fat_g": 2.44, "fiber_g": 14.13, "time_approx": true, "note": "Wolt-receipt build-your-own salad, same distribution-across-standard-references method as prior similar entries (e.g. 16 Aug), extended with arugula/rocket (new ingredient, generic reference). User corrected the total weight to 950g (was estimated at 357.5g from a volume guess) — veg portion is 950g minus the 200g chicken breast. Credits ~2.7mg lycopene, ~169mg vitamin C, ~105mcg folate DFE."},
     {"time": "13:00", "name": "Lunch — chicken breast (paid add-on)", "category": "food", "qty": "200 g (part of the 950g total salad, user-corrected from the 120g assumed scoop estimate)", "kcal": 331, "protein_g": 62, "carbs_g": 0, "fat_g": 7.2, "fiber_g": 0, "time_approx": true, "note": "standard grilled chicken breast reference (~165.3kcal/100g)."},
-    {"time": "13:00", "name": "Lunch — pesto", "category": "food", "qty": "20 ml (~19 g, assumed ~0.95g/ml)", "kcal": 101, "protein_g": 0.95, "carbs_g": 1.14, "fat_g": 9.69, "fiber_g": 0, "time_approx": true, "note": "generic basil pesto reference (~530kcal/100g), first time logged standalone, flagged."}
+    {"time": "13:00", "name": "Lunch — pesto", "category": "food", "qty": "20 ml (~19 g, assumed ~0.95g/ml)", "kcal": 101, "protein_g": 0.95, "carbs_g": 1.14, "fat_g": 9.69, "fiber_g": 0, "time_approx": true, "note": "generic basil pesto reference (~530kcal/100g), first time logged standalone, flagged."},
+    {"time": "12:30", "name": "Pesek Zman", "category": "food", "qty": "20 g", "kcal": 108, "protein_g": 1.6, "carbs_g": 11.4, "fat_g": 6, "fiber_g": 0.4, "note": "standard Pesek Zman reference (~530kcal/100g, wafer/peanut/chocolate bar), same as prior entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -37,7 +38,8 @@
     "10:45 espresso (1 caffeine shot).",
     "13:00 lunch (time not given, placeholder): a Wolt build-your-own salad (650ml total, no scale available — converted using an assumed ~0.55g/ml density, then split equally across 8 named ingredients: cucumber, red onion, cherry tomatoes, arugula/rocket [new], white cabbage, purple cabbage, roasted sweet potato, roasted cauliflower) + 2 scoops chicken breast added as a paid topping (~60g/scoop assumed) + 20ml pesto (~19g, generic reference, first time logged standalone). Multiple estimation layers stacked here (volume conversion + equal-split + generic references) — flagged as a rougher-than-usual estimate. Credits ~1.3mg lycopene, ~81mg vitamin C, ~50mcg folate DFE from the salad.",
     "Correction: user said the salad was way heavier than the 650ml/no-scale guess — corrected to 950g total, of which 200g is chicken breast (vs the initially assumed 120g). Veg portion recalculated as 750g (950g minus the 200g chicken) across the same 8 ingredients. Salad now credits ~2.7mg lycopene, ~169mg vitamin C, ~105mcg folate DFE; chicken breast recalculated at 200g (331kcal, 62g protein). Day totals updated accordingly.",
-    "12:30 espresso (1 caffeine shot)."
+    "12:30 espresso (1 caffeine shot).",
+    "12:30 20g Pesek Zman (wafer/peanut/chocolate bar) — same standard reference as prior entries."
   ],
   "status_note": "Day started. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg. AM allergy meds + Mayven multivitamin done."
 }
