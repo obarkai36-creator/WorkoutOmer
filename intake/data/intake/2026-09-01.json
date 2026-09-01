@@ -7,17 +7,19 @@
     {"time": "06:55", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:55", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — 1x/day pill"},
     {"time": "06:55", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
-    {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:10", "name": "Snack — cherry tomatoes", "category": "food", "qty": "20", "kcal": 54, "protein_g": 2.7, "carbs_g": 11.7, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "09:10", "name": "Snack — yellow cheese, 9% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 44,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 8.8
   },
   "caffeine_shots": 1,
   "assumptions": [
@@ -25,7 +27,8 @@
     "Weigh-in (Eufy): 80.30kg, BMI 27.4, body fat 26.7%, body fat mass 21.40kg, skeletal muscle mass 30.70kg, muscle mass 56.00kg, lean body mass 58.90kg, bone mass 2.90kg, visceral fat 11.0, protein 15.4%, subcutaneous fat 23.5%, water 50.2%, BMR 1709kcal, resting heart rate 91bpm (app-flagged high), body age 29, body type Average — -0.20kg vs the 2026-08-28 reading (80.50kg, the most recent prior weigh-in). Resting HR at 91bpm is notably elevated vs recent readings (73-88bpm range) — worth watching, though no obvious cause flagged yet.",
     "06:55 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done right after waking.",
     "06:55 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself — those still need the essential-5 or food sources today.",
-    "08:30 espresso (1 caffeine shot)."
+    "08:30 espresso (1 caffeine shot).",
+    "09:10 snack: 20 cherry tomatoes (~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 2 yellow cheese slices (9% fat) — both same standard/verified references as prior entries."
   ],
   "status_note": "Day started. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg. AM allergy meds + Mayven multivitamin done."
 }
