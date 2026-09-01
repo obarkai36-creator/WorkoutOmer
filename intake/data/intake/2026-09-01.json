@@ -18,17 +18,23 @@
     {"time": "12:30", "name": "Pesek Zman", "category": "food", "qty": "20 g", "kcal": 108, "protein_g": 1.6, "carbs_g": 11.4, "fat_g": 6, "fiber_g": 0.4, "note": "standard Pesek Zman reference (~530kcal/100g, wafer/peanut/chocolate bar), same as prior entries"},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:15", "name": "Snack — ice cream", "category": "food", "qty": "60 ml (~33 g, assumed ~0.55g/ml)", "kcal": 71, "protein_g": 1.42, "carbs_g": 8.48, "fat_g": 3.76, "fiber_g": 0.23, "note": "generic vanilla-style ice cream reference (~214kcal/100g, same rate as the 70g/150kcal scoop entries), converted from a volume measure using an assumed density. Directional estimate, flagged."}
+    {"time": "15:15", "name": "Snack — ice cream", "category": "food", "qty": "60 ml (~33 g, assumed ~0.55g/ml)", "kcal": 71, "protein_g": 1.42, "carbs_g": 8.48, "fat_g": 3.76, "fiber_g": 0.23, "note": "generic vanilla-style ice cream reference (~214kcal/100g, same rate as the 70g/150kcal scoop entries), converted from a volume measure using an assumed density. Directional estimate, flagged."},
+    {"time": "19:30", "name": "Dinner — recurring salad (lettuce, cherry tomatoes, red onion, arugula), 0.65 of the recipe", "category": "food", "qty": "0.65 of the recipe (1 lettuce head, 30 cherry tomatoes, 0.5 red onion) + arugula added (~50g full-recipe amount assumed, same 0.65 scale, ~32.5g)", "kcal": 117, "protein_g": 5.15, "carbs_g": 26.6, "fat_g": 2.23, "fiber_g": 10.32, "time_approx": true, "note": "same recurring-salad recipe as prior entries (e.g. 31 Aug), with arugula/rocket added tonight as a new component at an assumed quantity (generic reference). Credits ~8.58mg lycopene, ~51.7mg vitamin C, ~82.2mcg folate DFE."},
+    {"time": "19:30", "name": "Dinner — baby mozzarella, 0.65 eaten", "category": "food", "qty": "50 g portioned out with the salad, 0.65 eaten (~32.5 g)", "kcal": 93, "protein_g": 6.5, "carbs_g": 0.7, "fat_g": 6.83, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~286.7kcal/100g), same portioning as yesterday's dinner. Credits ~0.65mg zinc."},
+    {"time": "19:30", "name": "Dinner — Maple-Balsamic Mustard Vinaigrette (homemade), lower oil", "category": "food", "qty": "~88 g batch (10g olive oil — half the usual ~20g — + the usual 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt)", "kcal": 183, "protein_g": 0.66, "carbs_g": 21.8, "fat_g": 10.5, "fiber_g": 0, "time_approx": true, "note": "same dressing proportions as yesterday's dinner (references/foods.json vinaigrette recipe, olive oil halved). Credits ~1.43mg vitamin E, ~13.3mg vitamin C (olive oil + lemon juice)."},
+    {"time": "19:30", "name": "Dinner — Angel Pita Pro spelt pita", "category": "food", "qty": "2 (68 g each, 136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "time_approx": true, "note": "verified reference, reused (same as Agami Pita Pro)"},
+    {"time": "19:30", "name": "Dinner — yellow cheese, 9% fat", "category": "food", "qty": "4 slices (~100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"},
+    {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "50 g", "kcal": 54, "protein_g": 4.9, "carbs_g": 2.3, "fat_g": 2.5, "fiber_g": 0, "time_approx": true, "note": "verified label reference (intake/references/foods.json, corrected 2026-08-31): 108kcal/9.8g protein/4.6g carb/5g fat per 100g."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 3.45,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 256,
+    "folate_mcg_dfe": 338.2,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 213,
+    "vitamin_c_mg": 278,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 11.5
+    "vitamin_e_mg": 1.43,
+    "lycopene_mg": 20.08
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -45,7 +51,8 @@
     "12:30 20g Pesek Zman (wafer/peanut/chocolate bar) — same standard reference as prior entries.",
     "13:00 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "14:45 espresso (1 caffeine shot).",
-    "15:15 snack: 60ml ice cream (~33g, volume-to-weight estimate, flagged) — same standard reference as prior entries."
+    "15:15 snack: 60ml ice cream (~33g, volume-to-weight estimate, flagged) — same standard reference as prior entries.",
+    "19:30 dinner (time not given, placeholder): 2 Angel Pita Pro spelt pitas + 4 yellow cheese slices 9% fat + 50g Simfonia (verified rate) + 0.65 of the recurring salad recipe (lettuce, 30 cherry tomatoes, 0.5 red onion), with arugula added tonight as a new component (~50g full-recipe amount assumed, same 0.65 scale) + 50g baby mozzarella portioned out, 0.65 eaten (~32.5g) + the same lower-oil Maple-Balsamic Mustard Vinaigrette as yesterday. Salad+dressing credits ~8.58mg lycopene, ~65mg vitamin C, ~82.2mcg folate DFE, ~1.43mg vitamin E; mozzarella credits ~0.65mg zinc."
   ],
   "status_note": "Day started. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg. AM allergy meds + Mayven multivitamin done."
 }
