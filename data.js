@@ -287,6 +287,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 1 Sep — Outdoor Walk, suburban (20:50, concluded 21:20)
+  {
+    datetime: "2026-09-01T20:50", note: "Outdoor Walk — suburban, concluded 21:20",
+    exercises: [
+      { name: "Outdoor Walk", distanceKm: 2.2, durationMin: 30 },
+    ],
+  },
   // 31 Aug — Stationary Bike, "lazy bike" tight recumbent angle (21:45)
   {
     datetime: "2026-08-31T21:45", note: "Stationary Bike, \"lazy bike\" at a tight recumbent angle (light ab engagement) — 60 kcal per machine",

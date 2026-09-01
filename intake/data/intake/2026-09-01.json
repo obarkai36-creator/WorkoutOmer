@@ -2,7 +2,8 @@
   "date": "2026-09-01",
   "day_number": 66,
   "in_progress": true,
-  "workout_today": false,
+  "workout_today": true,
+  "workout_summary": "Outdoor Walk, suburban, 2.2km / 30min, concluded 21:20 (started ~20:50).",
   "items": [
     {"time": "06:55", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:55", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — 1x/day pill"},
@@ -58,7 +59,8 @@
     "19:30 dinner (time not given, placeholder): 2 Angel Pita Pro spelt pitas + 4 yellow cheese slices 9% fat + 50g Simfonia (verified rate) + 0.65 of the recurring salad recipe (lettuce, 30 cherry tomatoes, 0.5 red onion), with arugula added tonight as a new component (~50g full-recipe amount assumed, same 0.65 scale) + 50g baby mozzarella portioned out, 0.65 eaten (~32.5g) + the same lower-oil Maple-Balsamic Mustard Vinaigrette as yesterday. Salad+dressing credits ~8.58mg lycopene, ~65mg vitamin C, ~82.2mcg folate DFE, ~1.43mg vitamin E; mozzarella credits ~0.65mg zinc.",
     "19:10 Rhinolast PM dose — both allergy spray doses done today.",
     "19:10 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets.",
-    "19:30 300g watermelon (~12.6mg lycopene, ~24.3mg vitamin C) — same standard reference as prior entries."
+    "19:30 300g watermelon (~12.6mg lycopene, ~24.3mg vitamin C) — same standard reference as prior entries.",
+    "20:50 Outdoor Walk, suburban, 2.2km/30min, concluded 21:20. Logged to data.js/workouts.json — ACWR now 1.23 (back in the healthy range), recommended next session is Legs day."
   ],
   "status_note": "Day started. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg. AM allergy meds + Mayven multivitamin done."
 }

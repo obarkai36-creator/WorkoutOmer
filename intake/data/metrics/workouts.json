@@ -1,22 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-08-31",
-    "latest_session": "Stationary Bike, \"lazy bike\" at a tight recumbent angle (light ab engagement) — 60 kcal per machine",
-    "sessions_logged": 56,
-    "sessions_per_week": 4.5,
+    "report_date": "2026-09-01",
+    "latest_session": "Outdoor Walk — suburban, concluded 21:20",
+    "sessions_logged": 57,
+    "sessions_per_week": 4.3,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 27.3,
-    "aerobic_sessions_28d": 6,
-    "avg_pace": "8:60/km",
+    "aerobic_28d_km": 29.5,
+    "aerobic_sessions_28d": 7,
+    "avg_pace": "9:10/km",
     "avg_hr": 142,
-    "acwr": 1.56,
-    "recommended_next": "Full Body (Deload) day",
+    "acwr": 1.23,
+    "recommended_next": "Legs day",
     "alerts": [
-      "Load ratio 1.56 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload.",
-      "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Recovers in ~79.2h. Avoid loading it hard before then — you trained it most recently.",
-      "Recovers in ~47.7h. Avoid loading it hard before then — you trained it most recently."
+      "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
   },
   "entries": [
@@ -346,6 +343,14 @@
       "duration_min": null,
       "intensity": "easy",
       "notes": "Additional \"lazy bike\" session at a tight recumbent angle (light ab engagement), 21:45. 4.83km, ~60 kcal per machine.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-01",
+      "type": "Outdoor Walk",
+      "duration_min": 30,
+      "intensity": "easy",
+      "notes": "Suburban walk, 2.2km / 30min, concluded 21:20 (started ~20:50).",
       "_source": "manual log"
     }
   ]
