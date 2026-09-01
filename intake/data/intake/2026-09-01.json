@@ -17,7 +17,8 @@
     {"time": "13:00", "name": "Lunch — pesto", "category": "food", "qty": "20 ml (~19 g, assumed ~0.95g/ml)", "kcal": 101, "protein_g": 0.95, "carbs_g": 1.14, "fat_g": 9.69, "fiber_g": 0, "time_approx": true, "note": "generic basil pesto reference (~530kcal/100g), first time logged standalone, flagged."},
     {"time": "12:30", "name": "Pesek Zman", "category": "food", "qty": "20 g", "kcal": 108, "protein_g": 1.6, "carbs_g": 11.4, "fat_g": 6, "fiber_g": 0.4, "note": "standard Pesek Zman reference (~530kcal/100g, wafer/peanut/chocolate bar), same as prior entries"},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:15", "name": "Snack — ice cream", "category": "food", "qty": "60 ml (~33 g, assumed ~0.55g/ml)", "kcal": 71, "protein_g": 1.42, "carbs_g": 8.48, "fat_g": 3.76, "fiber_g": 0.23, "note": "generic vanilla-style ice cream reference (~214kcal/100g, same rate as the 70g/150kcal scoop entries), converted from a volume measure using an assumed density. Directional estimate, flagged."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -43,7 +44,8 @@
     "12:30 espresso (1 caffeine shot).",
     "12:30 20g Pesek Zman (wafer/peanut/chocolate bar) — same standard reference as prior entries.",
     "13:00 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
-    "14:45 espresso (1 caffeine shot)."
+    "14:45 espresso (1 caffeine shot).",
+    "15:15 snack: 60ml ice cream (~33g, volume-to-weight estimate, flagged) — same standard reference as prior entries."
   ],
   "status_note": "Day started. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg. AM allergy meds + Mayven multivitamin done."
 }
