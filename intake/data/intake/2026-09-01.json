@@ -26,17 +26,18 @@
     {"time": "19:30", "name": "Dinner — yellow cheese, 9% fat", "category": "food", "qty": "4 slices (~100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries"},
     {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "50 g", "kcal": 54, "protein_g": 4.9, "carbs_g": 2.3, "fat_g": 2.5, "fiber_g": 0, "time_approx": true, "note": "verified label reference (intake/references/foods.json, corrected 2026-08-31): 108kcal/9.8g protein/4.6g carb/5g fat per 100g."},
     {"time": "19:10", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
-    {"time": "19:10", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "19:10", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "19:30", "name": "Snack — watermelon", "category": "food", "qty": "300 g", "kcal": 90, "protein_g": 1.8, "carbs_g": 22.8, "fat_g": 0.6, "fiber_g": 1.2, "note": "same standard reference as prior entries. Credits ~12.6mg lycopene, ~24.3mg vitamin C."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 23.45,
     "selenium_mcg": 100,
     "folate_mcg_dfe": 338.2,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1278,
+    "vitamin_c_mg": 1302.3,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 135.43,
-    "lycopene_mg": 20.08
+    "lycopene_mg": 32.68
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -56,7 +57,8 @@
     "15:15 snack: 60ml ice cream (~33g, volume-to-weight estimate, flagged) — same standard reference as prior entries.",
     "19:30 dinner (time not given, placeholder): 2 Angel Pita Pro spelt pitas + 4 yellow cheese slices 9% fat + 50g Simfonia (verified rate) + 0.65 of the recurring salad recipe (lettuce, 30 cherry tomatoes, 0.5 red onion), with arugula added tonight as a new component (~50g full-recipe amount assumed, same 0.65 scale) + 50g baby mozzarella portioned out, 0.65 eaten (~32.5g) + the same lower-oil Maple-Balsamic Mustard Vinaigrette as yesterday. Salad+dressing credits ~8.58mg lycopene, ~65mg vitamin C, ~82.2mcg folate DFE, ~1.43mg vitamin E; mozzarella credits ~0.65mg zinc.",
     "19:10 Rhinolast PM dose — both allergy spray doses done today.",
-    "19:10 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets."
+    "19:10 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets.",
+    "19:30 300g watermelon (~12.6mg lycopene, ~24.3mg vitamin C) — same standard reference as prior entries."
   ],
   "status_note": "Day started. Slept 6.33h (00:35-06:55) — a bit short. Weigh-in: 80.30kg. AM allergy meds + Mayven multivitamin done."
 }
