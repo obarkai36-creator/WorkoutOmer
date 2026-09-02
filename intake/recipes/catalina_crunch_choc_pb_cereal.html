@@ -1,0 +1,84 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Catalina Crunch Protein Cereal — Chocolate Peanut Butter</title><style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+          --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8;
+          --him:#38bdf8; --her:#f472b6; --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.45; padding:24px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+         padding:16px 20px; margin:0 0 22px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:4px; }
+  .chip { cursor:pointer; font-size:13px; padding:6px 14px; border-radius:999px;
+          background:var(--panel2); border:1px solid var(--line); color:var(--muted); user-select:none; }
+  .chip.active { color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:700; }
+  .chip:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .toc-group { margin-top:14px; }
+  .toc-group h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+                  color:var(--accent); margin:0 0 6px; }
+  .toc-list { list-style:none; padding:0; margin:0; }
+  .toc-list li { margin:4px 0; font-size:13px; display:flex; gap:8px; align-items:baseline; }
+  .toc-list a { color:var(--text); text-decoration:none; }
+  .toc-list a:hover { text-decoration:underline; }
+  .toc-dot { color:var(--good); font-size:11px; }
+  .toc-score { color:var(--muted); font-size:11px; font-variant-numeric:tabular-nums; margin-left:auto; white-space:nowrap; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+          padding:18px 20px; margin:0 0 22px; scroll-margin-top:16px; }
+  .rtitle { font-size:18px; font-weight:700; margin:0; }
+  .badges { margin:8px 0 2px; }
+  .badge { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px;
+           background:var(--panel2); border:1px solid var(--line); color:var(--muted); margin:0 6px 6px 0; }
+  .badge.src { color:var(--accent); border-color:var(--accent); }
+  .badge.adopted { color:var(--good); border-color:var(--good); }
+  .badge.meal { color:var(--text); border-color:var(--muted); font-weight:700; }
+  .badge.tag { color:var(--muted); }
+  .meta { color:var(--muted); font-size:12px; margin:4px 0 12px; }
+  .basis { font-size:12px; color:var(--text); margin:12px 0 6px; }
+  .basis b { color:var(--accent); }
+  .macros { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 14px; }
+  .m { flex:1 1 90px; background:var(--panel2); border:1px solid var(--line);
+       border-radius:10px; padding:8px 10px; text-align:center; }
+  .m .v { font-size:17px; font-weight:800; }
+  .m .l { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .micros { font-size:12px; color:var(--muted); margin:0 0 14px; }
+  .micros b { color:var(--text); }
+  .ingredients { font-size:12.5px; color:var(--muted); }
+  .cookwrap { display:grid; grid-template-columns:minmax(190px,1fr) 1.5fr; gap:14px;
+              margin:14px 0 2px; align-items:start; }
+  @media (max-width:680px){ .cookwrap { grid-template-columns:1fr; } }
+  .ingr, .cook { background:var(--panel2); border:1px solid var(--line); border-radius:12px;
+                 padding:12px 16px 14px; margin:0; }
+  .ingr h4, .cook h4 { margin:0 0 8px; font-size:13px; color:var(--text); }
+  .ingr ul { list-style:none; margin:0; padding:0; }
+  .ingr li { font-size:12.5px; margin:0; padding:6px 0; border-bottom:1px solid var(--line);
+             display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+  .ingr li:last-child { border-bottom:none; }
+  .ingr .name { color:var(--muted); flex:1 1 auto; }
+  .ingr .qty { color:var(--accent); font-weight:700; text-align:right; flex:0 1 45%;
+               font-variant-numeric:tabular-nums; }
+  .ingr .inote { display:block; color:var(--muted); font-size:11px; font-style:italic; margin-top:2px; }
+  .cook ol { margin:0; padding-left:20px; }
+  .cook ol li { font-size:12.5px; margin:5px 0; }
+  .lens { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:680px){ .lens { grid-template-columns:1fr; } }
+  .pane { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .pane.him { border-top:3px solid var(--him); }
+  .pane.her { border-top:3px solid var(--her); }
+  .pane h3 { margin:0 0 2px; font-size:13px; }
+  .pane .who { font-size:11px; color:var(--muted); margin-bottom:8px; }
+  .score { display:inline-block; font-weight:800; font-size:15px; padding:2px 10px;
+           border-radius:8px; background:var(--bg); }
+  .verdict { font-size:13px; margin:8px 0; }
+  .lbl { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:10px 0 3px; }
+  ul { margin:2px 0 0; padding-left:18px; }
+  li { font-size:12.5px; margin:2px 0; }
+  .flag { font-size:12px; color:var(--warn); }
+  .copyhint { font-size:11px; color:var(--muted); font-style:italic; margin-top:10px; }
+  .tmpl { background:var(--panel2); border-left:3px solid var(--accent); border-radius:8px;
+          padding:10px 12px; margin:10px 0 4px; font-size:12.5px; }
+  .tmpl b { color:var(--text); }
+  .tmpl .rule { color:var(--muted); margin-top:4px; }
+</style></head><body><div class='wrap'><h1>Catalina Crunch Protein Cereal — Chocolate Peanut Butter</h1><div class='sub'>Dual-lens recipe analysis · scored per intake/references/nutrition_lenses.json</div><div class='card'><div class='rtitle'>Catalina Crunch Protein Cereal — Chocolate Peanut Butter</div><div class='badges'><span class='badge meal'>Snack</span><span class='badge src'>product</span><span class='badge tag'>snack</span><span class='badge tag'>cereal</span><span class='badge tag'>breakfast</span><span class='badge tag'>product</span><span class='badge tag'>high-protein</span><span class='badge tag'>high-fiber</span><span class='badge tag'>low-sugar</span><span class='badge tag'>plant-based</span><span class='badge tag'>label-verified</span><span class='badge tag'>store-bought</span></div><div class='meta'>7 servings · 1 serving (½ cup, ~36 g) — 9 oz (255 g) bag ≈ 7 servings · macros: label-verified · <a href='https://us.catalinacrunch.com/products/chocolate-peanut-butter-cereal' style='color:var(--accent)'>source</a></div><div class='basis'>Values per <b>100 g</b> — you decide the portion <span class='muted'>· one typical serving ≈ 36 g</span></div><div class='macros'><div class='m'><div class='v'>306</div><div class='l'>kcal</div></div><div class='m'><div class='v'>31g</div><div class='l'>protein</div></div><div class='m'><div class='v'>44g</div><div class='l'>carbs</div></div><div class='m'><div class='v'>14g</div><div class='l'>fat</div></div><div class='m'><div class='v'>25g</div><div class='l'>fiber</div></div></div><div class='micros'>Per 100 g: <b>528</b> sodium mg · <b>0</b> total sugars g · <b>0</b> added sugar g · <b>19</b> net carb g · <b>111</b> calcium mg · <b>5</b> iron mg</div><div class='cookwrap'><div class='ingr'><h4>Ingredients</h4><ul><li><span class='name'>Catalina flour (pea protein, corn flour, tapioca starch, corn/pea/chicory/potato fiber, guar gum)</span></li><li><span class='name'>high-oleic sunflower oil, peanut oil, peanuts</span></li><li><span class='name'>cocoa powder (alkalized)</span></li><li><span class='name'>leavening (monocalcium phosphate, baking soda, calcium carbonate)</span></li><li><span class='name'>natural flavors, stevia extract, monk fruit extract</span></li></ul></div><div class='cook'><h4>Method</h4><ol><li>Eat as-is: with milk or Greek/PRO yogurt (adds protein and completes the pea protein), or dry as a snack / yogurt topping.</li></ol></div></div><div class='lens' style='margin-top:14px'><div class='pane him'><h3>For him &nbsp;<span class='score' style='color:var(--good)'>8/10</span></h3><div class='who'>weight loss · muscle retention · sperm</div><div class='verdict'>An excellent macro cereal — 11 g protein AND 9 g fiber for just 110 kcal, with 0 g sugar and ~7 g net carb. Same protein+fiber role as the Quest bar, but as a cereal: pour milk or Greek/PRO yogurt over it and you push protein higher AND complete the amino profile (the base is plant pea protein, slightly lower in methionine on its own). Great low-cal, high-satiety breakfast/snack. Knocks: ultra-processed, moderate sodium (~190 mg), pea protein less complete than dairy solo.</div><div class='lbl'>Highlights</div><ul><li>11 g protein + 9 g fiber for 110 kcal</li><li>0 g sugar, ~7 g net carb</li><li>plant (pea) protein — pair with dairy to complete it</li><li>moderate sodium (~190 mg)</li><li>ultra-processed</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Eat with PRO yogurt or milk — adds protein and completes the amino profile</li><li>Great as a low-cal high-fiber breakfast on a cut, or a crunchy yogurt topping</li><li>Watch total servings — it&#x27;s easy to pour more than one ½-cup serving</li></ul></div><div class='pane her'><h3>For her &nbsp;<span class='score' style='color:var(--good)'>7/10</span></h3><div class='who'>preconception / prenatal (advisory)</div><div class='verdict'>A good high-protein, high-fiber option for her — 11 g protein and 9 g fiber (fiber helps pregnancy constipation), 0 sugar, plus a little plant iron. Stevia and monk fruit are non-nutritive sweeteners generally regarded as safe in pregnancy. Not a big prenatal micronutrient source. Contains peanuts (and made in a facility with milk/tree nuts) — note if relevant.</div><div class='lbl'>Highlights</div><ul><li>11 g protein + 9 g fiber per serving</li><li>a little plant iron (pair with a vitamin-C fruit to absorb it)</li></ul><div class='lbl'>Safety advisories</div><ul><li class='flag'>⚠ Sweetened with stevia + monk fruit — non-nutritive sweeteners, considered safe in pregnancy in normal amounts; moderate if she prefers to limit them. — swap: plain oats/whole-grain cereal if avoiding sweeteners</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Have it with PRO yogurt + berries for a balanced, prenatally-useful breakfast (protein + fiber + vitamin C)</li><li>Allergen: peanuts (facility also handles milk + tree nuts)</li></ul><div class='copyhint'>↑ Copy this block into the lihitrack session.</div></div></div></div></div></body></html>
