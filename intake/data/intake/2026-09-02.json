@@ -16,17 +16,23 @@
     {"time": "13:00", "name": "Lunch — baked potatoes in olive oil", "category": "food", "qty": "150 g eaten out of a 320g baked batch (raw weight not known), 20g olive oil added prebake over the whole batch", "kcal": 223, "protein_g": 3.15, "carbs_g": 31.5, "fat_g": 9.53, "fiber_g": 3.3, "time_approx": true, "note": "standard baked-potato-w/-skin reference (~93kcal/100g) for the 150/320 potato fraction, plus the same fraction (150/320) of the 20g olive oil added prebake. Credits ~0.51mg vitamin E (olive oil)."},
     {"time": "13:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "16:30", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:30", "name": "Double espresso", "category": "drink", "qty": "1 (double, ~60-80 ml)", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "19:30", "name": "Dinner — Angel Pita Pro spelt pita", "category": "food", "qty": "2 (68 g each, 136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "time_approx": true, "note": "verified reference, reused (same as yesterday)"},
+    {"time": "19:30", "name": "Dinner — yellow cheese, 9% fat", "category": "food", "qty": "4 slices (~100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as yesterday"},
+    {"time": "19:30", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "50 g", "kcal": 54, "protein_g": 4.9, "carbs_g": 2.3, "fat_g": 2.5, "fiber_g": 0, "time_approx": true, "note": "verified label reference (intake/references/foods.json), same as yesterday: 108kcal/9.8g protein/4.6g carb/5g fat per 100g."},
+    {"time": "19:30", "name": "Dinner — salad (cherry tomatoes, red onion)", "category": "food", "qty": "20 cherry tomatoes + 0.5 red onion", "kcal": 88.5, "protein_g": 3.7, "carbs_g": 19.7, "fat_g": 0.68, "fiber_g": 5.0, "time_approx": true, "note": "same standard references as prior entries. Credits ~8.8mg lycopene, ~50.23mg vitamin C, ~51mcg folate DFE."},
+    {"time": "19:30", "name": "Dinner — baby mozzarella", "category": "food", "qty": "20 g", "kcal": 57.3, "protein_g": 4, "carbs_g": 0.4, "fat_g": 4.2, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~286.7kcal/100g). Credits ~0.4mg zinc."},
+    {"time": "19:30", "name": "Dinner — dressing (olive oil, balsamic glaze, lemon, salt)", "category": "food", "qty": "5g olive oil + 15g balsamic glaze + lemon juice (~15g assumed, qty not given) + salt", "kcal": 91.5, "protein_g": 0.2, "carbs_g": 10.8, "fat_g": 5, "fiber_g": 0, "time_approx": true, "note": "olive oil + balsamic glaze at standard per-gram references, lemon juice quantity assumed (typical squeeze). Credits ~0.27mg vitamin E, ~5mg vitamin C."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 22.8,
+    "zinc_mg": 23.2,
     "selenium_mcg": 100,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1000,
+    "vitamin_c_mg": 1055.23,
     "vitamin_d_iu": 2180,
-    "vitamin_e_mg": 134.51,
-    "lycopene_mg": 0
+    "vitamin_e_mg": 134.78,
+    "lycopene_mg": 8.8
   },
   "caffeine_shots": 3,
   "assumptions": [
@@ -42,7 +48,8 @@
     "14:00 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets.",
     "16:30 double espresso (2 caffeine shots, bringing today's total to 3).",
     "17:15 Outdoor Walk, Or Akiva, 2.2km/30min, concluded 17:45. Logged to data.js/workouts.json — ACWR now 0.92 (comfortably in range), recommended next session still Legs day.",
-    "Sun-exposure vitamin D estimate for the walk (rough/low-confidence, per the standing sun-exposure method): full 30min duration assumed exposed (no partial-exposure fraction given), moderate area (~30 IU/min, typical walking attire — arms/legs/face). Discounted ~60% for late-afternoon sun (17:15-17:45, well past solar noon, closer to dusk) and ~50% for the 30 SPF sunscreen applied to exposed skin (partial real-world block, not lab-perfect). Net estimate: 30 × 30 × 0.40 × 0.50 = 180 IU, folded directly into vitamin_d_iu rather than logged as a separate item — flag if any of these assumptions should be adjusted."
+    "Sun-exposure vitamin D estimate for the walk (rough/low-confidence, per the standing sun-exposure method): full 30min duration assumed exposed (no partial-exposure fraction given), moderate area (~30 IU/min, typical walking attire — arms/legs/face). Discounted ~60% for late-afternoon sun (17:15-17:45, well past solar noon, closer to dusk) and ~50% for the 30 SPF sunscreen applied to exposed skin (partial real-world block, not lab-perfect). Net estimate: 30 × 30 × 0.40 × 0.50 = 180 IU, folded directly into vitamin_d_iu rather than logged as a separate item — flag if any of these assumptions should be adjusted.",
+    "19:30 dinner: same pitas + cheeses as yesterday (2 Angel Pita Pro + 4 yellow cheese slices 9% + 50g Simfonia) + a new ad-hoc salad: 20 cherry tomatoes + 0.5 red onion (credits ~8.8mg lycopene, ~50.23mg vitamin C, ~51mcg folate DFE) + 20g baby mozzarella (credits ~0.4mg zinc) + a 5g olive oil / 15g balsamic glaze / lemon juice (qty assumed) / salt dressing (credits ~0.27mg vitamin E, ~5mg vitamin C). All standard/verified references."
   ],
   "status_note": "Day started. Slept 8.5h (23:15-07:45) — a solid full night. AM allergy meds done."
 }
