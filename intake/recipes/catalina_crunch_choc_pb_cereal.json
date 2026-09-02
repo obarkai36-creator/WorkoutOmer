@@ -1,0 +1,72 @@
+{
+  "id": "catalina_crunch_choc_pb_cereal",
+  "name": "Catalina Crunch Protein Cereal — Chocolate Peanut Butter",
+  "source": {
+    "type": "product",
+    "url": "https://us.catalinacrunch.com/products/chocolate-peanut-butter-cereal",
+    "author": "Catalina Crunch",
+    "captured": "2026-09-02",
+    "notes": "Requested via iHerb (il.iherb.com), egress-blocked by the proxy — values from Catalina Crunch's published label via web (manufacturer/retailer). 9 oz (255 g) bag ≈ 7 servings. Total-carb / net-carb split is approximate (sweetened with stevia + monk fruit, no sugar alcohols). Plant-based (pea-protein) cereal. Contains peanuts; processed with milk + tree nuts."
+  },
+  "servings": 7,
+  "serving_desc": "1 serving (½ cup, ~36 g) — 9 oz (255 g) bag ≈ 7 servings",
+  "ingredients": [
+    {"item": "Catalina flour (pea protein, corn flour, tapioca starch, corn/pea/chicory/potato fiber, guar gum)", "qty": "—"},
+    {"item": "high-oleic sunflower oil, peanut oil, peanuts", "qty": "—"},
+    {"item": "cocoa powder (alkalized)", "qty": "—"},
+    {"item": "leavening (monocalcium phosphate, baking soda, calcium carbonate)", "qty": "—"},
+    {"item": "natural flavors, stevia extract, monk fruit extract", "qty": "—"}
+  ],
+  "steps": [
+    "Eat as-is: with milk or Greek/PRO yogurt (adds protein and completes the pea protein), or dry as a snack / yogurt topping."
+  ],
+  "per_serving": {
+    "kcal": 110,
+    "protein_g": 11,
+    "carbs_g": 16,
+    "fat_g": 5,
+    "fiber_g": 9,
+    "micros": {
+      "sodium_mg": 190,
+      "total_sugars_g": 0,
+      "added_sugar_g": 0,
+      "net_carb_g": 7,
+      "calcium_mg": 40,
+      "iron_mg": 1.8
+    }
+  },
+  "confidence": "label-verified",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "An excellent macro cereal — 11 g protein AND 9 g fiber for just 110 kcal, with 0 g sugar and ~7 g net carb. Same protein+fiber role as the Quest bar, but as a cereal: pour milk or Greek/PRO yogurt over it and you push protein higher AND complete the amino profile (the base is plant pea protein, slightly lower in methionine on its own). Great low-cal, high-satiety breakfast/snack. Knocks: ultra-processed, moderate sodium (~190 mg), pea protein less complete than dairy solo.",
+      "flags": ["11 g protein + 9 g fiber for 110 kcal", "0 g sugar, ~7 g net carb", "plant (pea) protein — pair with dairy to complete it", "moderate sodium (~190 mg)", "ultra-processed"],
+      "suggested_mods": [
+        "Eat with PRO yogurt or milk — adds protein and completes the amino profile",
+        "Great as a low-cal high-fiber breakfast on a cut, or a crunchy yogurt topping",
+        "Watch total servings — it's easy to pour more than one ½-cup serving"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "A good high-protein, high-fiber option for her — 11 g protein and 9 g fiber (fiber helps pregnancy constipation), 0 sugar, plus a little plant iron. Stevia and monk fruit are non-nutritive sweeteners generally regarded as safe in pregnancy. Not a big prenatal micronutrient source. Contains peanuts (and made in a facility with milk/tree nuts) — note if relevant.",
+      "prenatal_highlights": [
+        "11 g protein + 9 g fiber per serving",
+        "a little plant iron (pair with a vitamin-C fruit to absorb it)"
+      ],
+      "safety_advisories": [
+        {"note": "Sweetened with stevia + monk fruit — non-nutritive sweeteners, considered safe in pregnancy in normal amounts; moderate if she prefers to limit them.", "swap": "plain oats/whole-grain cereal if avoiding sweeteners"}
+      ],
+      "suggested_mods": [
+        "Have it with PRO yogurt + berries for a balanced, prenatally-useful breakfast (protein + fiber + vitamin C)",
+        "Allergen: peanuts (facility also handles milk + tree nuts)"
+      ]
+    }
+  },
+  "tags": ["snack", "cereal", "breakfast", "product", "high-protein", "high-fiber", "low-sugar", "plant-based", "label-verified", "store-bought"],
+  "adopted": false,
+  "created": "2026-09-02",
+  "updated": "2026-09-02",
+  "serving_g": 36,
+  "meal_type": "Snack"
+}

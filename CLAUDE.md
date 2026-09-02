@@ -42,6 +42,16 @@
     doctype/html/head/body wrapper (host adds it): `<style>{CSS}</style>` +
     `<div class='wrap'>…</div>` + the filter `<script>`, from generate_recipe_card
     (see the one-off python that built it). Don't create a new artifact each time.
+  - **Notify the daily-tracking session (standing rule, added 2026-09-02):**
+    whenever a recipe is ADDED or UPDATED and merged to trunk, push a note to the
+    daily-tracking session ("Exercise & Lifestyle Tracking",
+    session_01VMFqiW7kqpzCsd8qLjr4KR) by firing trigger
+    trig_01RVx35MLg4aStEyXbjwxbGW (`fire_trigger`), passing `text` = the recipe
+    name, meal_type, key per-unit macros, adopted state, and the new library
+    count. The trigger's base prompt already tells that session to pull trunk and
+    where the recipes live. This is how the main session references new recipes
+    "for easy reference." (Do this every recipe add, right after the trunk merge
+    + artifact republish.)
 
 - If an upcoming action risks hitting a platform/tool limit (e.g. request size
   caps like the ~32MB upload limit, rate limits, context limits), flag it to
