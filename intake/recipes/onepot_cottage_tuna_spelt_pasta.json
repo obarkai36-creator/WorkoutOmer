@@ -1,0 +1,93 @@
+{
+  "id": "onepot_cottage_tuna_spelt_pasta",
+  "name": "One-pot cottage-cheese TUNA pasta (spelt) — protein-packed",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram — raz_yahav (Hebrew caption)",
+    "captured": "2026-09-02",
+    "notes": "One-pot creamy high-protein pasta. Original uses regular pasta — swapped to SPELT (user's usual). This is the TUNA version; a canned-salmon version (onepot_cottage_salmon_spelt_pasta) removes the mercury flag and adds omega-3/vitamin D. Cottage 5%, yellow cheese 9%; values from references. Big batch; servings assumed 6."
+  },
+  "servings": 6,
+  "serving_desc": "≈455 g cooked (big batch ÷6)",
+  "ingredients": [
+    {"item": "spelt pasta", "qty": "500 g dry", "note": "swapped from regular pasta"},
+    {"item": "cottage cheese (5%)", "qty": "1 kg (4 tubs)", "note": "makes the creamy sauce"},
+    {"item": "yellow cheese (9%), grated", "qty": "150 g"},
+    {"item": "canned tuna in water, drained", "qty": "3 cans (~330 g)", "note": "use LIGHT/skipjack — see her safety note"},
+    {"item": "red onion", "qty": "1, thin slices"},
+    {"item": "garlic", "qty": "4 cloves, crushed"},
+    {"item": "salt", "qty": "1.5 tsp", "note": "TASTE FIRST — cottage/cheese/tuna are already very salty; likely needs much less"},
+    {"item": "black pepper", "qty": "½ tsp"},
+    {"item": "ground chili", "qty": "½ tsp"},
+    {"item": "water", "qty": "2–2.5 cups"}
+  ],
+  "steps": [
+    "Simmer spelt pasta + tuna + aromatics in the water in one wide pot until pasta is al dente and water absorbed; stir in cottage + yellow cheese off high heat until creamy."
+  ],
+  "per_serving": {
+    "kcal": 582,
+    "protein_g": 52.3,
+    "carbs_g": 64,
+    "fat_g": 11.6,
+    "fiber_g": 6.3,
+    "micros": {
+      "selenium_mcg": 44,
+      "calcium_mg": 326,
+      "iron_mg": 1.9,
+      "sodium_mg": 1500
+    }
+  },
+  "batch_totals": {
+    "kcal": 3491,
+    "protein_g": 313,
+    "carbs_g": 382,
+    "fat_g": 70,
+    "fiber_g": 37.5,
+    "note": "Sodium ~9,000 mg batch (~1,500 mg/serving) — mostly the 1.5 tsp added salt on top of salty cottage/cheese/tuna. Cutting the added salt is the biggest lever."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 7,
+      "verdict": "A seriously protein-packed comfort pasta — ~52 g protein for ~582 kcal (~9 g protein per 100 kcal) from cottage + tuna + yellow cheese, with spelt's whole-grain fiber (~6 g/serving) and big calcium. The spelt swap already improved it (more protein/fiber, fewer refined carbs). The one thing dragging it down hard is SODIUM: ~1,500 mg/serving (≈65% of a day's limit) from 1.5 tsp added salt stacked on already-salty cottage, cheese and canned tuna.",
+      "flags": ["~52 g protein/serving (~9 g/100 kcal)", "whole-grain spelt fiber (~6 g)", "high calcium (~326 mg)", "VERY high sodium (~1,500 mg/serving)", "selenium from tuna"],
+      "suggested_mods": [
+        "Skip or halve the added salt — the cottage/cheese/tuna already bring plenty; taste first. Biggest lever by far",
+        "Stir in spinach or peas at the end for folate/fiber and to lighten the carb share",
+        "The salmon version adds omega-3 + vitamin D (sperm micros) — see onepot_cottage_salmon_spelt_pasta"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 6,
+      "verdict": "Nutrient-rich for her — high protein + calcium (cottage + cheese) + selenium — but it carries the tuna mercury flag AND very high sodium, so it's a 'fine occasionally, mind the details' rather than a staple. Per-serving tuna is ~½ can, which helps.",
+      "prenatal_highlights": [
+        "high protein + calcium (cottage + yellow cheese)",
+        "selenium from tuna; whole-grain spelt fiber"
+      ],
+      "safety_advisories": [
+        {"note": "TUNA = mercury. Use LIGHT/skipjack canned tuna (not albacore); once actively trying/pregnant keep total tuna to ~2 servings/week. The canned-salmon version removes this flag entirely and adds omega-3 + vitamin D.", "swap": "canned salmon (see onepot_cottage_salmon_spelt_pasta)"},
+        {"note": "Very high sodium (~1,500 mg/serving) — ease it in pregnancy.", "swap": "skip/halve the added salt"}
+      ],
+      "suggested_mods": [
+        "Prefer the salmon version for the preconception lens",
+        "Cut the added salt; add spinach for folate"
+      ]
+    }
+  },
+  "tags": ["dinner", "pasta", "one-pot", "high-protein", "fish", "tuna", "cheese", "spelt", "batch", "mercury-flag"],
+  "adopted": false,
+  "created": "2026-09-02",
+  "updated": "2026-09-02",
+  "serving_g": 455,
+  "meal_type": "Fish",
+  "cooking_guide": [
+    "For more depth, soften the sliced red onion + garlic in a little oil in the wide pot first (optional but worth it).",
+    "Add the dry spelt pasta, drained tuna, pepper, chili and 2–2.5 cups water to the pot; bring to a simmer.",
+    "Cook uncovered, stirring often so the pasta doesn't stick, until the pasta is al dente and most of the water is absorbed (~10–12 min). Spelt can go from firm to soft quickly, so check early; add a splash more water if it dries before the pasta is done.",
+    "Lower the heat, then stir in the cottage cheese and grated yellow cheese until melted and creamy — keep it gentle (hard-boiling cottage can turn it grainy).",
+    "TASTE before adding the 1.5 tsp salt — the cottage, cheese and tuna are already very salty, so you'll likely need much less or none. This is the single biggest lever on the dish.",
+    "Rest 2–3 min off the heat to thicken; finish with fresh herbs and chili.",
+    "Tip: stir a couple of handfuls of spinach or some peas in at the end for folate + fiber."
+  ]
+}
