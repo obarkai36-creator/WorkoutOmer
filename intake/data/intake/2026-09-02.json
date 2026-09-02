@@ -1,7 +1,7 @@
 {
   "date": "2026-09-02",
   "day_number": 67,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Outdoor Walk, Or Akiva, 2.2km / 30min, concluded 17:45 (started ~17:15). Sun exposure with 30 SPF sunscreen applied to exposed skin.",
   "items": [
@@ -24,7 +24,8 @@
     {"time": "19:30", "name": "Dinner — baby mozzarella", "category": "food", "qty": "20 g", "kcal": 57.3, "protein_g": 4, "carbs_g": 0.4, "fat_g": 4.2, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~286.7kcal/100g). Credits ~0.4mg zinc."},
     {"time": "19:30", "name": "Dinner — dressing (olive oil, balsamic glaze, lemon, salt)", "category": "food", "qty": "5g olive oil + 15g balsamic glaze + lemon juice (~15g assumed, qty not given) + salt", "kcal": 91.5, "protein_g": 0.2, "carbs_g": 10.8, "fat_g": 5, "fiber_g": 0, "time_approx": true, "note": "olive oil + balsamic glaze at standard per-gram references, lemon juice quantity assumed (typical squeeze). Credits ~0.27mg vitamin E, ~5mg vitamin C."},
     {"time": "19:45", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "20 g", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (intake/recipes/catalina_crunch_choc_pb_cereal.json): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g."},
-    {"time": "19:45", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
+    {"time": "19:45", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "20:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 23.2,
@@ -53,7 +54,10 @@
     "Sun-exposure vitamin D estimate for the walk (rough/low-confidence, per the standing sun-exposure method): full 30min duration assumed exposed (no partial-exposure fraction given), moderate area (~30 IU/min, typical walking attire — arms/legs/face). Discounted ~60% for late-afternoon sun (17:15-17:45, well past solar noon, closer to dusk) and ~50% for the 30 SPF sunscreen applied to exposed skin (partial real-world block, not lab-perfect). Net estimate: 30 × 30 × 0.40 × 0.50 = 180 IU, folded directly into vitamin_d_iu rather than logged as a separate item — flag if any of these assumptions should be adjusted.",
     "19:30 dinner: same pitas + cheeses as yesterday (2 Angel Pita Pro + 4 yellow cheese slices 9% + 50g Simfonia) + a new ad-hoc salad: 20 cherry tomatoes + 0.5 red onion (credits ~8.8mg lycopene, ~50.23mg vitamin C, ~51mcg folate DFE) + 20g baby mozzarella (credits ~0.4mg zinc) + a 5g olive oil / 15g balsamic glaze / lemon juice (qty assumed) / salt dressing (credits ~0.27mg vitamin E, ~5mg vitamin C). All standard/verified references.",
     "Added 10 more cherry tomatoes to the salad (30 total now), no additional dressing — updated the salad item and day totals (now credits ~13.2mg lycopene, ~72.23mg vitamin C, ~76.5mcg folate DFE).",
-    "19:45 20g Catalina Crunch Protein Cereal, Chocolate Peanut Butter (verified label rate) + Rhinolast PM dose — both allergy spray doses done today."
+    "19:45 20g Catalina Crunch Protein Cereal, Chocolate Peanut Butter (verified label rate) + Rhinolast PM dose — both allergy spray doses done today.",
+    "20:30 creatine monohydrate, 5g — zero kcal/macros.",
+    "Retainers worn tonight (night of 2-3 Sep) — logged to retainers.json. Prior 2 nights (31 Aug-1 Sep, 1-2 Sep) had no entry.",
+    "Day complete."
   ],
-  "status_note": "Day started. Slept 8.5h (23:15-07:45) — a solid full night. AM allergy meds done."
+  "status_note": "Day complete. Slept 8.5h (23:15-07:45) — a solid full night. Outdoor Walk in Or Akiva (2.2km/30min) with sun exposure; ACWR now 0.92, recommended next session Legs day. Essential-5 + omega-3 cleared zinc/selenium/vitamin D/E/omega-3 for the day. Pulled the verified Catalina Crunch recipe from the sibling recipe-analyzer session. Retainers worn tonight. 3 caffeine shots."
 }
