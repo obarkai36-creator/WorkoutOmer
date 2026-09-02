@@ -13,16 +13,17 @@
     {"time": "11:15", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter, 5-6 pieces", "category": "food", "qty": "5-6 pieces (~6.5 g)", "kcal": 20, "protein_g": 2.02, "carbs_g": 2.86, "fat_g": 0.91, "fiber_g": 1.62, "note": "corrected to the verified label rate (intake/recipes/catalina_crunch_choc_pb_cereal.json): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. Piece size still assumed (~1.2g/piece, no scale)."},
     {"time": "13:00", "name": "Lunch — sirloin steak, fat trimmed", "category": "food", "qty": "280 g", "kcal": 504, "protein_g": 86.8, "carbs_g": 0, "fat_g": 16.8, "fiber_g": 0, "time_approx": true, "note": "standard fat-trimmed sirloin reference (180kcal/100g, 31g protein/100g, 6g fat/100g), same as prior entries."},
     {"time": "13:00", "name": "Lunch — baked potatoes in olive oil", "category": "food", "qty": "150 g eaten out of a 320g baked batch (raw weight not known), 20g olive oil added prebake over the whole batch", "kcal": 223, "protein_g": 3.15, "carbs_g": 31.5, "fat_g": 9.53, "fiber_g": 3.3, "time_approx": true, "note": "standard baked-potato-w/-skin reference (~93kcal/100g) for the 150/320 potato fraction, plus the same fraction (150/320) of the 20g olive oil added prebake. Credits ~0.51mg vitamin E (olive oil)."},
-    {"time": "13:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0.51,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134.51,
     "lycopene_mg": 0
   },
   "caffeine_shots": 1,
@@ -35,7 +36,8 @@
     "Correction: pulled the verified Catalina Crunch Protein Cereal (Chocolate Peanut Butter) reference from the recipe library (intake/recipes/catalina_crunch_choc_pb_cereal.json, added by the recipe-analyzer session) — 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g, label-verified. Replaces the earlier generic estimate; day totals updated accordingly.",
     "13:00 lunch: 280g fat-trimmed sirloin steak (standard reference) + 150g baked potatoes in olive oil (whole batch: 320g raw potato + 20g olive oil added prebake, fully eaten — same whole-batch-from-raw-inputs method as the 14 Aug roasted-potato entry, since baking only loses water weight, not calories). Credits ~1.08mg vitamin E.",
     "Correction: 320g was the potato's BAKED weight (raw weight not known), not raw — and 150g was only a portion eaten out of that 320g batch, not the whole thing. Recomputed using the standard baked-potato-w/-skin reference (~93kcal/100g) for the 150/320 potato fraction, plus the same 150/320 fraction of the 20g olive oil (added prebake over the whole batch). Day totals updated accordingly.",
-    "13:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target."
+    "13:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
+    "14:00 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets."
   ],
   "status_note": "Day started. Slept 8.5h (23:15-07:45) — a solid full night. AM allergy meds done."
 }
