@@ -2,7 +2,8 @@
   "date": "2026-09-02",
   "day_number": 67,
   "in_progress": true,
-  "workout_today": false,
+  "workout_today": true,
+  "workout_summary": "Outdoor Walk, Or Akiva, 2.2km / 30min, concluded 17:45 (started ~17:15). Sun exposure with 30 SPF sunscreen applied to exposed skin.",
   "items": [
     {"time": "07:45", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:45", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — 1x/day pill"},
@@ -23,7 +24,7 @@
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1000,
-    "vitamin_d_iu": 2000,
+    "vitamin_d_iu": 2180,
     "vitamin_e_mg": 134.51,
     "lycopene_mg": 0
   },
@@ -39,7 +40,9 @@
     "Correction: 320g was the potato's BAKED weight (raw weight not known), not raw — and 150g was only a portion eaten out of that 320g batch, not the whole thing. Recomputed using the standard baked-potato-w/-skin reference (~93kcal/100g) for the 150/320 potato fraction, plus the same 150/320 fraction of the 20g olive oil (added prebake over the whole batch). Day totals updated accordingly.",
     "13:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "14:00 \"essential 5\" (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium. Clears today's zinc, selenium, and vitamin D targets.",
-    "16:30 double espresso (2 caffeine shots, bringing today's total to 3)."
+    "16:30 double espresso (2 caffeine shots, bringing today's total to 3).",
+    "17:15 Outdoor Walk, Or Akiva, 2.2km/30min, concluded 17:45. Logged to data.js/workouts.json — ACWR now 0.92 (comfortably in range), recommended next session still Legs day.",
+    "Sun-exposure vitamin D estimate for the walk (rough/low-confidence, per the standing sun-exposure method): full 30min duration assumed exposed (no partial-exposure fraction given), moderate area (~30 IU/min, typical walking attire — arms/legs/face). Discounted ~60% for late-afternoon sun (17:15-17:45, well past solar noon, closer to dusk) and ~50% for the 30 SPF sunscreen applied to exposed skin (partial real-world block, not lab-perfect). Net estimate: 30 × 30 × 0.40 × 0.50 = 180 IU, folded directly into vitamin_d_iu rather than logged as a separate item — flag if any of these assumptions should be adjusted."
   ],
   "status_note": "Day started. Slept 8.5h (23:15-07:45) — a solid full night. AM allergy meds done."
 }

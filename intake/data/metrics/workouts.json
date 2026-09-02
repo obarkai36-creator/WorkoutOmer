@@ -1,16 +1,16 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-01",
-    "latest_session": "Outdoor Walk — suburban, concluded 21:20",
-    "sessions_logged": 57,
-    "sessions_per_week": 4.3,
+    "report_date": "2026-09-02",
+    "latest_session": "Outdoor Walk — Or Akiva, sun exposure with 30 SPF applied to exposed skin, concluded 17:45",
+    "sessions_logged": 58,
+    "sessions_per_week": 4.5,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 29.5,
-    "aerobic_sessions_28d": 7,
-    "avg_pace": "9:10/km",
+    "aerobic_28d_km": 31.7,
+    "aerobic_sessions_28d": 8,
+    "avg_pace": "9:20/km",
     "avg_hr": 142,
-    "acwr": 1.23,
+    "acwr": 0.92,
     "recommended_next": "Legs day",
     "alerts": [
       "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
@@ -351,6 +351,14 @@
       "duration_min": 30,
       "intensity": "easy",
       "notes": "Suburban walk, 2.2km / 30min, concluded 21:20 (started ~20:50).",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "Outdoor Walk",
+      "duration_min": 30,
+      "intensity": "easy",
+      "notes": "Or Akiva walk, 2.2km / 30min, concluded 17:45 (started ~17:15). Sun exposure with 30 SPF sunscreen applied to exposed skin — vitamin D estimated per the standing sun-exposure method, folded into the day's micros.",
       "_source": "manual log"
     }
   ]

@@ -287,6 +287,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 2 Sep — Outdoor Walk, Or Akiva (17:15, concluded 17:45)
+  {
+    datetime: "2026-09-02T17:15", note: "Outdoor Walk — Or Akiva, sun exposure with 30 SPF applied to exposed skin, concluded 17:45",
+    exercises: [
+      { name: "Outdoor Walk", distanceKm: 2.2, durationMin: 30 },
+    ],
+  },
   // 1 Sep — Outdoor Walk, suburban (20:50, concluded 21:20)
   {
     datetime: "2026-09-01T20:50", note: "Outdoor Walk — suburban, concluded 21:20",
