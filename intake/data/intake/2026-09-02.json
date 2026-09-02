@@ -10,7 +10,7 @@
     {"time": "09:00", "name": "Multivitamin (Mayven Full Volume Gummies)", "category": "supplement", "qty": "2 gummies", "kcal": 15, "protein_g": 0, "carbs_g": 4, "fat_g": 0, "fiber_g": 0, "note": "standing default since the 2026-08-06 swap. Verified label reference (supplements.json): 100mcg DFE folate, 2.8mg zinc, 500mcg biotin, 5mcg B12, 1mg B6 — no selenium, vitamin C, D, or E."},
     {"time": "09:00", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "09:00", "name": "Milk chocolate chips", "category": "food", "qty": "5 chips (~2.5 g)", "kcal": 14, "protein_g": 0.2, "carbs_g": 1.5, "fat_g": 0.75, "fiber_g": 0.05, "note": "standard milk chocolate reference (~540kcal/100g), same ~0.5g/chip size convention as the dark chocolate chip entries"},
-    {"time": "11:15", "name": "Catalina Crunch cereal, 5-6 pieces", "category": "food", "qty": "5-6 pieces (~6.5 g)", "kcal": 25, "protein_g": 2.2, "carbs_g": 3.9, "fat_g": 0.9, "fiber_g": 1.8, "note": "no flavor specified — generic Catalina Crunch keto cereal reference (~390kcal/100g, ~34g protein/100g, ~60g carb/100g incl. ~28g fiber/100g, ~14g fat/100g), piece size assumed (~1.2g/piece). First time logged, flagged."}
+    {"time": "11:15", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter, 5-6 pieces", "category": "food", "qty": "5-6 pieces (~6.5 g)", "kcal": 20, "protein_g": 2.02, "carbs_g": 2.86, "fat_g": 0.91, "fiber_g": 1.62, "note": "corrected to the verified label rate (intake/recipes/catalina_crunch_choc_pb_cereal.json): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. Piece size still assumed (~1.2g/piece, no scale)."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -29,7 +29,7 @@
     "08:35 coffee (logged as espresso, 1 caffeine shot).",
     "09:00 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself — those still need the essential-5 or food sources today.",
     "09:00 breakfast: 1 vanilla protein yogurt (Danone PRO 0% reference) + 5 milk chocolate chips (~2.5g, standard reference) — both same standard references as prior entries.",
-    "11:15 5-6 pieces Catalina Crunch keto cereal (~6.5g, no flavor specified) — first time logged, generic per-100g reference estimated (no product label seen), piece size assumed. Flagged."
+    "Correction: pulled the verified Catalina Crunch Protein Cereal (Chocolate Peanut Butter) reference from the recipe library (intake/recipes/catalina_crunch_choc_pb_cereal.json, added by the recipe-analyzer session) — 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g, label-verified. Replaces the earlier generic estimate; day totals updated accordingly."
   ],
   "status_note": "Day started. Slept 8.5h (23:15-07:45) — a solid full night. AM allergy meds done."
 }
