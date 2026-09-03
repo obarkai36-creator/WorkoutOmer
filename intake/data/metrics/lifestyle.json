@@ -160,6 +160,14 @@
       "affects": ["alcohol"],
       "severity": "mild",
       "notes": "~1.5 units. Only a 2-day gap since 28 Aug — more frequent than the <=1 glass/week baseline, flagged per the standing intake-pattern suggestion permission (though still a single mild pour, not a spike)."
+    },
+    {
+      "date": "2026-09-03",
+      "type": "alcohol",
+      "description": "~3 wine tastings (~40ml each, ~120ml total) + ~2 whiskey tastings (~20ml each, ~40ml total) throughout the evening",
+      "affects": ["alcohol"],
+      "severity": "moderate",
+      "notes": "~2.8 alcohol units combined (~1.2 wine + ~1.6 whiskey) — small tasting-size pours but a notably higher single-day total than the usual single glass/shot. Only a 3-day gap since the 30 Aug red wine, within the <=1 glass/week baseline by frequency, but flagged for total volume this session."
     }
   ]
 }
