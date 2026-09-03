@@ -16,13 +16,14 @@
     {"time": "13:45", "name": "Lunch — baby mozzarella, ~15 pieces", "category": "food", "qty": "~15 pieces (~8.75g each, ~131 g total)", "kcal": 376.3, "protein_g": 26.25, "carbs_g": 2.63, "fat_g": 27.56, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~286.7kcal/100g), per-piece weight assumed from the 8-ball/70g reference. Credits ~2.6mg zinc."},
     {"time": "13:45", "name": "Lunch — dressing (lemon, yogurt sauce)", "category": "food", "qty": "mostly lemon juice (~30g assumed) + a little yogurt sauce (~20g assumed, tzatziki-style)", "kcal": 29.3, "protein_g": 1.2, "carbs_g": 3, "fat_g": 1.67, "fiber_g": 0, "time_approx": true, "note": "both quantities assumed since not weighed — flagged. Credits ~10mg vitamin C (lemon)."},
     {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:30", "name": "Bounty chocolate (personal size)", "category": "food", "qty": "20 g", "kcal": 96.4, "protein_g": 0.7, "carbs_g": 11.2, "fat_g": 5.2, "fiber_g": 0.4, "note": "standard Bounty (coconut candy bar) reference (~482kcal/100g), first time logged, flagged."}
+    {"time": "14:30", "name": "Bounty chocolate (personal size)", "category": "food", "qty": "20 g", "kcal": 96.4, "protein_g": 0.7, "carbs_g": 11.2, "fat_g": 5.2, "fiber_g": 0.4, "note": "standard Bounty (coconut candy bar) reference (~482kcal/100g), first time logged, flagged."},
+    {"time": "14:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.4,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 112.86,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 68.47,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -38,7 +39,8 @@
     "09:35 espresso (1 caffeine shot).",
     "13:00 250g cottage cheese, 5% fat — same standard reference as prior entries.",
     "13:45 lunch: a large salad — cucumber, cherry tomatoes, red onion, cabbage, cauliflower, baked sweet potato, quinoa (7 named ingredients, no weights, ~600g total assumed and equally split — credits ~2.22mg lycopene, ~58.47mg vitamin C, ~12.86mcg folate DFE) + ~15 baby mozzarella pieces (~131g, credits ~2.6mg zinc) + a dressing that was mostly lemon juice with a little yogurt sauce (both quantities assumed, credits ~10mg vitamin C).",
-    "14:30 espresso (1 caffeine shot) + 20g personal Bounty chocolate bar (standard coconut-candy-bar reference, first time logged, flagged)."
+    "14:30 espresso (1 caffeine shot) + 20g personal Bounty chocolate bar (standard coconut-candy-bar reference, first time logged, flagged).",
+    "14:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target."
   ],
   "status_note": "Day started. Slept 7.42h (22:50-06:15) — a solid full night. AM allergy meds + Mayven multivitamin done."
 }
