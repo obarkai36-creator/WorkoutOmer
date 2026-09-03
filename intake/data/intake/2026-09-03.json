@@ -26,17 +26,19 @@
     {"time": "18:30", "name": "Snack — watermelon", "category": "food", "qty": "200 g", "kcal": 60, "protein_g": 1.2, "carbs_g": 15.2, "fat_g": 0.4, "fiber_g": 0.8, "note": "same standard reference as prior entries. Credits ~8.4mg lycopene, ~16.2mg vitamin C."},
     {"time": "21:00", "name": "Chocolate pralines, small and flat (3 pieces)", "category": "food", "qty": "3 pieces (~8g each, ~24g total)", "kcal": 133, "protein_g": 1.6, "carbs_g": 12.8, "fat_g": 8.8, "fiber_g": 1.6, "note": "first time logged in this flatter/thinner shape (vs. the established ~15g 'small ball' praline reference) — per-piece weight assumed at ~8g, using the same calibrated per-100g rate (~553kcal, 6.67g protein, 53.3g carb, 36.7g fat, 6.67g fiber per 100g) as prior dark chocolate praline entries. Flagged as a piece-weight assumption."},
     {"time": "21:50", "name": "Dinner — baked salmon", "category": "food", "qty": "170 g", "kcal": 350, "protein_g": 37.4, "carbs_g": 0, "fat_g": 22.1, "fiber_g": 0, "note": "same standard baked/grilled salmon reference as prior entries (~206kcal/100g). Credits ~3060mg omega-3 EPA/DHA and ~595IU vitamin D — a strong single-meal source of both."},
-    {"time": "21:50", "name": "Dinner — pasta with light sauce", "category": "food", "qty": "60 g pasta + light sauce (assumed ~30g, sauce type/quantity not specified)", "kcal": 88, "protein_g": 3.4, "carbs_g": 16.8, "fat_g": 0.76, "fiber_g": 1.38, "note": "pasta at the generic cooked-pasta reference (~131kcal/100g, not specified as spelt); sauce assumed to be a light tomato-style sauce at a modest quantity since neither type nor amount was given — flagged as an assumption. Credits ~3mg lycopene, ~2mg vitamin C from the sauce."}
+    {"time": "21:50", "name": "Dinner — pasta with light sauce", "category": "food", "qty": "60 g pasta + light sauce (assumed ~30g, sauce type/quantity not specified)", "kcal": 88, "protein_g": 3.4, "carbs_g": 16.8, "fat_g": 0.76, "fiber_g": 1.38, "note": "pasta at the generic cooked-pasta reference (~131kcal/100g, not specified as spelt); sauce assumed to be a light tomato-style sauce at a modest quantity since neither type nor amount was given — flagged as an assumption. Credits ~3mg lycopene, ~2mg vitamin C from the sauce."},
+    {"time": "21:50", "name": "Dinner — pesto", "category": "food", "qty": "1 tsp (~5 g)", "kcal": 27, "protein_g": 0.25, "carbs_g": 0.3, "fat_g": 2.55, "fiber_g": 0, "note": "same generic basil pesto reference as prior entries (~530kcal/100g)."},
+    {"time": "21:50", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "20", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.4,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 120.51,
+    "folate_mcg_dfe": 171.51,
     "omega3_epa_dha_mg": 4060,
-    "vitamin_c_mg": 93.27,
+    "vitamin_c_mg": 137.27,
     "vitamin_d_iu": 595,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 14.94
+    "lycopene_mg": 23.74
   },
   "caffeine_shots": 3,
   "assumptions": [
@@ -55,7 +57,7 @@
     "17:40 Rhinolast PM dose — both allergy spray doses done today.",
     "18:30 200g watermelon (~8.4mg lycopene, ~16.2mg vitamin C) — same standard reference as prior entries.",
     "21:00 3 chocolate pralines, small and flat (~24g total) — first time in this flatter shape, per-piece weight (~8g) assumed using the same calibrated per-100g rate as the established ~15g praline reference. No tracked micro credit.",
-    "21:50 dinner: 170g baked salmon (same standard reference as prior salmon entries, ~3060mg omega-3, ~595IU vitamin D — a strong single-meal hit on both) + 60g pasta with a light sauce (generic cooked-pasta reference, sauce type/quantity assumed since unspecified — flagged, ~3mg lycopene/~2mg vitamin C from the sauce)."
+    "21:50 dinner: 170g baked salmon (same standard reference as prior salmon entries, ~3060mg omega-3, ~595IU vitamin D — a strong single-meal hit on both) + 60g pasta with a light sauce (generic cooked-pasta reference, sauce type/quantity assumed since unspecified — flagged, ~3mg lycopene/~2mg vitamin C from the sauce) + 1 tsp pesto (~5g, same generic reference as prior entries) + 20 cherry tomatoes (same standard reference, ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE)."
   ],
   "status_note": "Day started. Slept 7.42h (22:50-06:15) — a solid full night. AM allergy meds + Mayven multivitamin done."
 }
