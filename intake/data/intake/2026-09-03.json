@@ -1,7 +1,7 @@
 {
   "date": "2026-09-03",
   "day_number": 68,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "items": [
     {"time": "06:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
@@ -30,16 +30,18 @@
     {"time": "21:50", "name": "Dinner — pesto", "category": "food", "qty": "1 tsp (~5 g)", "kcal": 27, "protein_g": 0.25, "carbs_g": 0.3, "fat_g": 2.55, "fiber_g": 0, "note": "same generic basil pesto reference as prior entries (~530kcal/100g)."},
     {"time": "21:50", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "20", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
     {"time": "21:30", "name": "Evening — wine tastings (~3 small pours)", "category": "drink", "qty": "~40ml each, ~120ml total", "kcal": 102, "protein_g": 0, "carbs_g": 3.12, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "type not specified — assumed standard red wine reference (~85kcal/100ml, ~13% ABV) as with prior wine entries. ~1.2 alcohol units. Also logged to lifestyle.json."},
-    {"time": "21:30", "name": "Evening — whiskey tastings (~2 small pours)", "category": "drink", "qty": "~20ml each, ~40ml total", "kcal": 93, "protein_g": 0, "carbs_g": 0.13, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "same Johnny Walker Black-style reference as the prior whiskey entry (~40% ABV). ~1.6 alcohol units. Also logged to lifestyle.json."}
+    {"time": "21:30", "name": "Evening — whiskey tastings (~2 small pours)", "category": "drink", "qty": "~20ml each, ~40ml total", "kcal": 93, "protein_g": 0, "carbs_g": 0.13, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "same Johnny Walker Black-style reference as the prior whiskey entry (~40% ABV). ~1.6 alcohol units. Also logged to lifestyle.json."},
+    {"time": "22:40", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "22:40", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 5.4,
-    "selenium_mcg": 0,
+    "zinc_mg": 25.4,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 171.51,
     "omega3_epa_dha_mg": 4060,
-    "vitamin_c_mg": 137.27,
-    "vitamin_d_iu": 595,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1137.27,
+    "vitamin_d_iu": 2595,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 23.74
   },
   "caffeine_shots": 3,
@@ -60,7 +62,9 @@
     "18:30 200g watermelon (~8.4mg lycopene, ~16.2mg vitamin C) — same standard reference as prior entries.",
     "21:00 3 chocolate pralines, small and flat (~24g total) — first time in this flatter shape, per-piece weight (~8g) assumed using the same calibrated per-100g rate as the established ~15g praline reference. No tracked micro credit.",
     "21:50 dinner: 170g baked salmon (same standard reference as prior salmon entries, ~3060mg omega-3, ~595IU vitamin D — a strong single-meal hit on both) + 60g pasta with a light sauce (generic cooked-pasta reference, sauce type/quantity assumed since unspecified — flagged, ~3mg lycopene/~2mg vitamin C from the sauce) + 1 tsp pesto (~5g, same generic reference as prior entries) + 20 cherry tomatoes (same standard reference, ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE).",
-    "Multiple wine and whiskey tastings throughout the evening (~21:30, time approximated): ~3 small wine pours (~40ml each, ~120ml total, assumed standard red wine reference, ~1.2 units) + ~2 small whiskey pours (~20ml each, ~40ml total, same Johnny Walker Black-style reference, ~1.6 units) — ~2.8 alcohol units combined, a notably higher single-day total than the usual single glass/shot, though spread across small tasting-size pours rather than full servings. Only a 3-day gap since 30 Aug (within the <=1 glass/week baseline in isolation, but this session itself is well above a typical single serving). Also logged to lifestyle.json."
+    "Multiple wine and whiskey tastings throughout the evening (~21:30, time approximated): ~3 small wine pours (~40ml each, ~120ml total, assumed standard red wine reference, ~1.2 units) + ~2 small whiskey pours (~20ml each, ~40ml total, same Johnny Walker Black-style reference, ~1.6 units) — ~2.8 alcohol units combined, a notably higher single-day total than the usual single glass/shot, though spread across small tasting-size pours rather than full servings. Only a 3-day gap since 30 Aug (within the <=1 glass/week baseline in isolation, but this session itself is well above a typical single serving). Also logged to lifestyle.json.",
+    "22:40 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium, clearing today's zinc/selenium/vitamin D/E targets — plus 5g creatine monohydrate.",
+    "Day complete."
   ],
-  "status_note": "Day started. Slept 7.42h (22:50-06:15) — a solid full night. AM allergy meds + Mayven multivitamin done."
+  "status_note": "Day complete. Slept 7.42h (22:50-06:15) — a solid full night. No workout today. Meals fully itemized including a large 7-ingredient salad, baked salmon + pasta dinner, and a first-time Bounty chocolate/flat-praline entry. Essential-5 + omega-3 cleared zinc/selenium/vitamin D/E/omega-3 targets. Evening wine + whiskey tastings (~2.8 units combined) flagged as a notably higher single-day alcohol total than usual, though small tasting pours. 3 caffeine shots."
 }
