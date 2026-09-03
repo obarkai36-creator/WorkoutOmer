@@ -11,19 +11,24 @@
     {"time": "08:40", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "08:40", "name": "Granola", "category": "food", "qty": "10 g", "kcal": 47, "protein_g": 1, "carbs_g": 6.4, "fat_g": 2, "fiber_g": 0.7, "note": "generic granola reference (~471kcal/100g), same as prior entries"},
     {"time": "09:35", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "13:00", "name": "Cottage cheese, 5% fat", "category": "food", "qty": "250 g", "kcal": 257.5, "protein_g": 28.71, "carbs_g": 8.71, "fat_g": 12.58, "fiber_g": 0, "note": "same standard 5%-fat cottage cheese reference as prior entries (~103kcal/100g)"}
+    {"time": "13:00", "name": "Cottage cheese, 5% fat", "category": "food", "qty": "250 g", "kcal": 257.5, "protein_g": 28.71, "carbs_g": 8.71, "fat_g": 12.58, "fiber_g": 0, "note": "same standard 5%-fat cottage cheese reference as prior entries (~103kcal/100g)"},
+    {"time": "13:45", "name": "Lunch — large salad (cucumber, cherry tomatoes, red onion, cabbage, cauliflower, baked sweet potato, quinoa)", "category": "food", "qty": "~600 g total (no scale, 7 named ingredients equally split, ~86g each)", "kcal": 286.7, "protein_g": 10.63, "carbs_g": 59.87, "fat_g": 2.42, "fiber_g": 11.49, "time_approx": true, "note": "no weights given — distributed equally across the 7 named ingredients at standard per-100g references (cucumber, cherry tomatoes, red onion, cabbage, roasted cauliflower, roasted sweet potato, cooked quinoa). Quinoa is a first-time-logged ingredient here, generic reference. Credits ~2.22mg lycopene, ~58.47mg vitamin C, ~12.86mcg folate DFE."},
+    {"time": "13:45", "name": "Lunch — baby mozzarella, ~15 pieces", "category": "food", "qty": "~15 pieces (~8.75g each, ~131 g total)", "kcal": 376.3, "protein_g": 26.25, "carbs_g": 2.63, "fat_g": 27.56, "fiber_g": 0, "time_approx": true, "note": "same calibrated per-100g rate as prior baby mozzarella entries (~286.7kcal/100g), per-piece weight assumed from the 8-ball/70g reference. Credits ~2.6mg zinc."},
+    {"time": "13:45", "name": "Lunch — dressing (lemon, yogurt sauce)", "category": "food", "qty": "mostly lemon juice (~30g assumed) + a little yogurt sauce (~20g assumed, tzatziki-style)", "kcal": 29.3, "protein_g": 1.2, "carbs_g": 3, "fat_g": 1.67, "fiber_g": 0, "time_approx": true, "note": "both quantities assumed since not weighed — flagged. Credits ~10mg vitamin C (lemon)."},
+    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:30", "name": "Bounty chocolate (personal size)", "category": "food", "qty": "20 g", "kcal": 96.4, "protein_g": 0.7, "carbs_g": 11.2, "fat_g": 5.2, "fiber_g": 0.4, "note": "standard Bounty (coconut candy bar) reference (~482kcal/100g), first time logged, flagged."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 5.4,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 112.86,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 68.47,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 2.22
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "assumptions": [
     "Sleep logged: 22:50-06:15, 7.42h — squarely in the 7-9h target band, a solid night.",
     "06:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done right after waking.",
@@ -31,7 +36,9 @@
     "08:00 espresso (1 caffeine shot).",
     "08:40 breakfast: 1 vanilla protein yogurt (Danone PRO 0% reference) + 10g granola — both same standard references as prior entries.",
     "09:35 espresso (1 caffeine shot).",
-    "13:00 250g cottage cheese, 5% fat — same standard reference as prior entries."
+    "13:00 250g cottage cheese, 5% fat — same standard reference as prior entries.",
+    "13:45 lunch: a large salad — cucumber, cherry tomatoes, red onion, cabbage, cauliflower, baked sweet potato, quinoa (7 named ingredients, no weights, ~600g total assumed and equally split — credits ~2.22mg lycopene, ~58.47mg vitamin C, ~12.86mcg folate DFE) + ~15 baby mozzarella pieces (~131g, credits ~2.6mg zinc) + a dressing that was mostly lemon juice with a little yogurt sauce (both quantities assumed, credits ~10mg vitamin C).",
+    "14:30 espresso (1 caffeine shot) + 20g personal Bounty chocolate bar (standard coconut-candy-bar reference, first time logged, flagged)."
   ],
   "status_note": "Day started. Slept 7.42h (22:50-06:15) — a solid full night. AM allergy meds + Mayven multivitamin done."
 }
