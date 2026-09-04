@@ -12,13 +12,14 @@
     {"time": "10:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "18:45", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "19:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
+    {"time": "19:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "20:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 250,
     "vitamin_e_mg": 0,
@@ -38,6 +39,7 @@
     "14:30 double espresso (2 caffeine shots).",
     "18:45 double espresso (2 caffeine shots) — 5 caffeine shots total today.",
     "19:00 Rhinolast PM dose — both allergy spray doses done today.",
+    "20:00 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "No food tracking today, per user's explicit request — day excluded from monthly macro tracking. Supplements/medication, caffeine, workouts, and lifestyle events still logged in full detail."
   ],
   "status_note": "Day started. Slept 8.92h (23:05-08:00) — a long solid night, just above the target band."
