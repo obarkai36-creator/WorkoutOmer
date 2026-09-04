@@ -1,19 +1,20 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-03",
-    "latest_session": "Outdoor Walk — Or Akiva, sun exposure with 30 SPF applied to exposed skin, concluded 17:45",
-    "sessions_logged": 58,
-    "sessions_per_week": 4.5,
+    "report_date": "2026-09-04",
+    "latest_session": "Outdoor Walk — arms/legs sun exposure with 35 SPF sunscreen, concluded 10:00",
+    "sessions_logged": 59,
+    "sessions_per_week": 4.8,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 31.7,
-    "aerobic_sessions_28d": 8,
-    "avg_pace": "9:20/km",
+    "aerobic_28d_km": 35.9,
+    "aerobic_sessions_28d": 9,
+    "avg_pace": "9:31/km",
     "avg_hr": 142,
-    "acwr": 0.92,
-    "recommended_next": "Legs day",
+    "acwr": 1.01,
+    "recommended_next": "Back day",
     "alerts": [
-      "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
+      "Recovers in ~31h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -359,6 +360,14 @@
       "duration_min": 30,
       "intensity": "easy",
       "notes": "Or Akiva walk, 2.2km / 30min, concluded 17:45 (started ~17:15). Sun exposure with 30 SPF sunscreen applied to exposed skin — vitamin D estimated per the standing sun-exposure method, folded into the day's micros.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-04",
+      "type": "Outdoor Walk",
+      "duration_min": 60,
+      "intensity": "easy",
+      "notes": "4.2km / 60min, concluded 10:00 (started ~09:00). Some arms/legs sun exposure with 35 SPF sunscreen applied — vitamin D estimated per the standing sun-exposure method, folded into the day's micros.",
       "_source": "manual log"
     }
   ]

@@ -2,7 +2,8 @@
   "date": "2026-09-04",
   "day_number": 69,
   "in_progress": true,
-  "workout_today": false,
+  "workout_today": true,
+  "workout_summary": "Outdoor Walk, 4.2km / 60min, concluded 10:00 (started ~09:00).",
   "items": [
     {"time": "08:45", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:45", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -14,7 +15,7 @@
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
+    "vitamin_d_iu": 250,
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
@@ -22,7 +23,9 @@
   "assumptions": [
     "Sleep logged: 23:05-08:00, 8.92h — a long solid night, just above the 7-9h target band.",
     "08:45 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "08:45 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself — those still need the essential-5 or food sources today."
+    "08:45 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself — those still need the essential-5 or food sources today.",
+    "10:00 concluded Outdoor Walk, 4.2km / 60min, started ~09:00. Logged to data.js/workouts.json.",
+    "Sun-exposure vitamin D estimate for the walk (rough/low-confidence, per the standing sun-exposure method): 'some sun exposure' on arms/legs — assumed a lower exposed fraction than a full-walk exposure, ~50% of the 60min duration (~30 min exposed) at a 'moderate' area rate (~30 IU/min). Discounted ~55% for morning sun (09:00-10:00, well before solar noon) and ~50% for the 35 SPF sunscreen applied (partial block, real-world application). Net estimate: 30 × 30 × 0.55 × 0.5 ≈ 248 IU, rounded to 250 IU. Folded directly into vitamin_d_iu — flag if the exposed-duration assumption should be adjusted."
   ],
   "status_note": "Day started. Slept 8.92h (23:05-08:00) — a long solid night, just above the target band."
 }
