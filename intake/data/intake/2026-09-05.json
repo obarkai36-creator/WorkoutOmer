@@ -10,17 +10,22 @@
     {"time": "10:15", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "10:15", "name": "Catalina Crunch protein cereal", "category": "food", "qty": "30 g", "kcal": 92, "protein_g": 9.3, "carbs_g": 13.2, "fat_g": 4.2, "fiber_g": 7.5, "note": "verified recipe reference (intake/recipes/catalina_crunch_choc_pb_cereal.json), ~306kcal/100g."},
     {"time": "10:15", "name": "Rye bread with butter, 1 bite", "category": "food", "qty": "~20g bread + ~5g butter (assumed)", "kcal": 86, "protein_g": 1.6, "carbs_g": 9.6, "fat_g": 4.65, "fiber_g": 1.2, "note": "first time logged — generic dark rye bread reference (~250kcal/100g) + standard butter reference (~717kcal/100g), both weights assumed for a single bite, flagged."},
-    {"time": "10:15", "name": "Chicken balls, lightly fried (2 pieces)", "category": "food", "qty": "2 balls (~35g each, ~70g total)", "kcal": 123, "protein_g": 10.85, "carbs_g": 5.6, "fat_g": 6.09, "fiber_g": 0.7, "note": "no specific recipe given — estimated from the closest saved reference, homemade chicken meatballs veg-loaded (~176kcal/100g cooked), same ~35g/ball convention as prior entries. Flagged as an approximation, not necessarily the same recipe."}
+    {"time": "10:15", "name": "Chicken balls, lightly fried (2 pieces)", "category": "food", "qty": "2 balls (~35g each, ~70g total)", "kcal": 123, "protein_g": 10.85, "carbs_g": 5.6, "fat_g": 6.09, "fiber_g": 0.7, "note": "no specific recipe given — estimated from the closest saved reference, homemade chicken meatballs veg-loaded (~176kcal/100g cooked), same ~35g/ball convention as prior entries. Flagged as an approximation, not necessarily the same recipe."},
+    {"time": "13:00", "name": "Lunch — chicken breast", "category": "food", "qty": "270 g", "kcal": 446, "protein_g": 83.7, "carbs_g": 0, "fat_g": 9.9, "fiber_g": 0, "time_approx": true, "note": "standard grilled chicken breast reference (~165.3kcal/100g), same rate as prior entries."},
+    {"time": "13:00", "name": "Lunch — Agami Pita Pro (whole spelt, protein-enriched)", "category": "food", "qty": "1 (68 g)", "kcal": 140, "protein_g": 15, "carbs_g": 19, "fat_g": 2.5, "fiber_g": 9, "time_approx": true, "note": "verified reference, reused."},
+    {"time": "13:00", "name": "Lunch — avocado, 0.25 small", "category": "food", "qty": "~30 g (assumed ~120g whole small avocado)", "kcal": 48, "protein_g": 0.6, "carbs_g": 2.55, "fat_g": 4.4, "fiber_g": 2, "time_approx": true, "note": "standard avocado reference (~160kcal/100g), whole-fruit weight assumed smaller than the usual ~150g avocado since described as 'small' — flagged."},
+    {"time": "13:00", "name": "Lunch — light mayo, 1 spoon", "category": "food", "qty": "1 spoon (~15g, 35kcal per label)", "kcal": 35, "protein_g": 0, "carbs_g": 1, "fat_g": 3.5, "fiber_g": 0, "time_approx": true, "note": "kcal from the user-given label value; protein/carb/fat split estimated from a typical light-mayo macro profile (label didn't include the full breakdown), flagged."},
+    {"time": "13:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "20", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "time_approx": true, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 44,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 8.8
   },
   "caffeine_shots": 0,
   "assumptions": [
@@ -28,7 +33,8 @@
     "08:40 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "09:40 Mayven Full Volume Gummies (2 gummies) — standing multivitamin default since the 2026-08-06 swap. Provides 100mcg DFE folate, 2.8mg zinc; no selenium/vitamin C/D/E from the multi itself — those still need the essential-5 or food sources today.",
     "10:15 breakfast: 1 vanilla protein yogurt (Danone PRO 0% reference) + 30g Catalina Crunch protein cereal (verified recipe rate, ~306kcal/100g) — both standard/saved references.",
-    "10:15 also 1 bite rye bread with butter (first time logged, weights assumed for a single bite, flagged) + 2 lightly fried chicken balls (~70g, estimated from the closest saved chicken-meatball reference since no specific recipe was given, flagged)."
+    "10:15 also 1 bite rye bread with butter (first time logged, weights assumed for a single bite, flagged) + 2 lightly fried chicken balls (~70g, estimated from the closest saved chicken-meatball reference since no specific recipe was given, flagged).",
+    "13:00 main lunch: 270g grilled chicken breast (standard reference) + 1 Agami Pita Pro spelt pita (verified reference) + 0.25 small avocado (~30g, weight assumed and flagged) + 1 spoon light mayo (35kcal per user-given label, macro split estimated) + 20 cherry tomatoes (same standard reference, ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE)."
   ],
   "status_note": "Day started. Slept 9.5h (22:45-08:15) — a long night, just above the target band. AM allergy meds done."
 }
