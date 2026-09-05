@@ -1,19 +1,20 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-04",
+    "report_date": "2026-09-05",
     "latest_session": "Outdoor Walk — arms/legs sun exposure with 35 SPF sunscreen, concluded 10:00",
     "sessions_logged": 59,
-    "sessions_per_week": 4.5,
+    "sessions_per_week": 4.3,
     "typical_time": "afternoon",
     "aerobic_28d_km": 35.9,
     "aerobic_sessions_28d": 9,
     "avg_pace": "9:31/km",
     "avg_hr": 142,
-    "acwr": 0.8,
+    "acwr": 0.7,
     "recommended_next": "Back day",
     "alerts": [
-      "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
+      "Load ratio 0.7 (<0.8). A normal training week will bring this back up."
     ]
   },
   "entries": [
