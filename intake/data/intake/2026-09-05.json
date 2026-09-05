@@ -25,7 +25,8 @@
     {"time": "19:00", "name": "Dinner — Agami Pita Pro (whole spelt, protein-enriched)", "category": "food", "qty": "2 (68 g each)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "note": "verified reference, reused."},
     {"time": "19:00", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "60 g", "kcal": 65, "protein_g": 5.88, "carbs_g": 2.76, "fat_g": 3, "fiber_g": 0, "note": "verified label reference (references/foods.json, corrected 2026-08-31), 108kcal/100g."},
     {"time": "19:00", "name": "Dinner — chicken ball, lightly fried", "category": "food", "qty": "1 ball (~35 g)", "kcal": 62, "protein_g": 5.43, "carbs_g": 2.8, "fat_g": 3.05, "fiber_g": 0.35, "note": "same estimated reference as this morning's chicken balls (homemade chicken meatballs veg-loaded, ~176kcal/100g), flagged as an approximation."},
-    {"time": "19:00", "name": "Dinner — avocado, 1 small", "category": "food", "qty": "~120 g (whole small avocado, assumed)", "kcal": 192, "protein_g": 2.4, "carbs_g": 10.2, "fat_g": 17.6, "fiber_g": 8, "note": "standard avocado reference (~160kcal/100g), whole-fruit weight assumed same as this lunch's 'small' avocado sizing, flagged."}
+    {"time": "19:00", "name": "Dinner — avocado, 1 small", "category": "food", "qty": "~120 g (whole small avocado, assumed)", "kcal": 192, "protein_g": 2.4, "carbs_g": 10.2, "fat_g": 17.6, "fiber_g": 8, "note": "standard avocado reference (~160kcal/100g), whole-fruit weight assumed same as this lunch's 'small' avocado sizing, flagged."},
+    {"time": "19:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
@@ -51,7 +52,8 @@
     "14:30 1 piece yeast cake (עוגת שמרים) — first time logged, generic sweet yeast-cake reference, slice weight assumed since no quantity given, flagged.",
     "17:30 4 teaspoons pomegranate seeds (~20g, standard reference, ~5g/tsp assumed) — credits ~2mg vitamin C.",
     "18:45 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium, clearing today's zinc/selenium/vitamin D/E targets.",
-    "19:00 dinner: 2 Agami Pita Pro spelt pitas (verified reference) + 60g Simfonia cheese spread (verified label reference) + 1 lightly fried chicken ball (~35g, same estimated reference as this morning's, flagged) + 1 small avocado (~120g, weight assumed, flagged)."
+    "19:00 dinner: 2 Agami Pita Pro spelt pitas (verified reference) + 60g Simfonia cheese spread (verified label reference) + 1 lightly fried chicken ball (~35g, same estimated reference as this morning's, flagged) + 1 small avocado (~120g, weight assumed, flagged).",
+    "19:15 Rhinolast PM dose — both allergy spray doses done today."
   ],
   "status_note": "Day started. Slept 9.5h (22:45-08:15) — a long night, just above the target band. AM allergy meds done."
 }
