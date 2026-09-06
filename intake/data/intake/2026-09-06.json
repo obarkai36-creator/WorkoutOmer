@@ -1,7 +1,7 @@
 {
   "date": "2026-09-06",
   "day_number": 71,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "items": [
     {"time": "07:45", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
@@ -13,7 +13,8 @@
     {"time": "15:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "21:40", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "21:40", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "21:40", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
+    {"time": "21:40", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "21:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 20,
@@ -38,7 +39,9 @@
     "15:30 double espresso (2 caffeine shots) — 4 caffeine shots total today.",
     "21:40 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "21:40 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium, clearing today's zinc/selenium/vitamin D/E targets.",
-    "21:40 Rhinolast PM dose — both allergy spray doses done today."
+    "21:40 Rhinolast PM dose — both allergy spray doses done today.",
+    "21:45 creatine monohydrate, 4.5g — zero kcal/macros.",
+    "Day complete."
   ],
-  "status_note": "Day started. Slept 6.5h (00:30-07:00) — a bit short of the target band. AM allergy meds done."
+  "status_note": "Day complete. Slept 6.5h (00:30-07:00) — a bit short of the target band. No workout today. Macro tracking break started today per user's request (resuming 2026-09-18) — supplements/medication, caffeine (4 shots), and lifestyle events logged in full detail, meals not itemized. Essential-5 + omega-3 cleared zinc/selenium/vitamin D/E/omega-3 targets."
 }
