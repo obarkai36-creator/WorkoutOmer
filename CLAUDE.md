@@ -93,6 +93,18 @@
   logging — user confirmed Sunday will already be logged as usual, so resume
   from Sunday onward without being asked (not Monday).
 
+- Macro tracking break (2026-09-06 from this point onward, through
+  2026-09-17, inclusive; resume 2026-09-18): user explicitly asked to skip
+  exact food macro/micro logging for this window. Only log supplements/
+  medication (with their usual zero-kcal item entries), caffeine, workouts
+  (data.js/workouts.json as normal), sleep, weigh-ins, and lifestyle events
+  (alcohol, ejaculation, retainers, etc.) as usual — do NOT create detailed
+  `items` food entries or estimate macros/micros for meals during this
+  window. Mark each affected day file `exclude_from_monthly_macros: true`
+  with an `exclude_reason` noting this break, same pattern as prior
+  lighter-logging days (e.g. 2026-08-30, 2026-08-21/22). Resume full
+  detailed food logging on 2026-09-18 without being asked.
+
 - Simfonia cheese spread — verified label correction (2026-08-31): a photographed
   nutrition label gave the real per-100g values (108kcal, 9.8g protein, 4.6g
   carb, 5g fat, 24mg cholesterol, 376mg sodium, 129mg calcium), replacing an
