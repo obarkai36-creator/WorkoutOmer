@@ -6,7 +6,8 @@
   "items": [
     {"time": "06:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "06:40", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "06:40", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:00", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -18,13 +19,14 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break (2026-09-06 through 2026-09-17, per user's explicit request) — only supplements/medication, caffeine, workouts, and lifestyle events logged in detail; meal macros/micros not itemized or estimated.",
   "assumptions": [
     "06:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "Day 2 of the macro tracking break (resuming 2026-09-18) — meals not itemized, everything else logged as usual.",
-    "06:40 double espresso (2 caffeine shots)."
+    "06:40 double espresso (2 caffeine shots).",
+    "14:00 double espresso (2 caffeine shots) — 4 caffeine shots total today."
   ],
   "status_note": "Day started. AM allergy meds done. Macro tracking break continues."
 }
