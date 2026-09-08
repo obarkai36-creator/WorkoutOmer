@@ -8,7 +8,8 @@
     {"time": "06:15", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "06:15", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -20,7 +21,7 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break (2026-09-06 through 2026-09-17, per user's explicit request) — only supplements/medication, caffeine, workouts, and lifestyle events logged in detail; meal macros/micros not itemized or estimated.",
   "assumptions": [
@@ -28,7 +29,8 @@
     "06:15 double espresso (2 caffeine shots).",
     "Day 3 of the macro tracking break (resuming 2026-09-18) — meals not itemized, everything else logged as usual.",
     "09:00 espresso (1 caffeine shot) — 3 caffeine shots total today.",
-    "14:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target."
+    "14:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
+    "15:30 espresso (1 caffeine shot) — 4 caffeine shots total today."
   ],
   "status_note": "Day started. AM allergy meds + double espresso done. Macro tracking break continues."
 }
