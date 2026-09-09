@@ -104,6 +104,13 @@
   with an `exclude_reason` noting this break, same pattern as prior
   lighter-logging days (e.g. 2026-08-30, 2026-08-21/22). Resume full
   detailed food logging on 2026-09-18 without being asked.
+  **UPDATE 2026-09-09**: user asked to temporarily return to full itemized
+  tracking for 2026-09-09, 2026-09-10, and 2026-09-11 (confirmed via
+  AskUserQuestion — these 3 days get real itemized food logging, then the
+  break resumes for 2026-09-12 through 2026-09-17 as originally planned,
+  still resuming for good on 2026-09-18). Remove `exclude_from_monthly_macros`
+  /`exclude_reason` from the 09-09/09-10/09-11 day files and itemize meals on
+  those days normally; re-add the exclusion flag starting 09-12.
 
 - Simfonia cheese spread — verified label correction (2026-08-31): a photographed
   nutrition label gave the real per-100g values (108kcal, 9.8g protein, 4.6g
