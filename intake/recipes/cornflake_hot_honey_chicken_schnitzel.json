@@ -1,0 +1,86 @@
+{
+  "id": "cornflake_hot_honey_chicken_schnitzel",
+  "name": "Baked cornflake hot-honey chicken schnitzel",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram — caliai.app (Hebrew caption)",
+    "captured": "2026-09-09",
+    "notes": "Oven-baked (no-fry) cornflake-crusted chicken strips with a honey-sriracha-soy glaze. The post PROVIDED whole-dish macros: 870 kcal | 80 g protein | 105 g carb | 13 g fat — verified as consistent with the ingredients (protein + fat match closely; carbs run a touch higher, likely more cornflakes/honey). Stored as the post's numbers. It's a big single dish (~350 g); easily split into 2 servings (~435 kcal each)."
+  },
+  "servings": 1,
+  "serving_desc": "1 whole dish (~350 g cooked) as the post lists it — a big meal; split into 2 for ~435 kcal each",
+  "ingredients": [
+    {"item": "chicken breast, cut in strips", "qty": "300 g"},
+    {"item": "crushed garlic", "qty": "1 tsp"},
+    {"item": "smoked paprika", "qty": "1 tsp"},
+    {"item": "salt, pepper", "qty": "to taste"},
+    {"item": "flour", "qty": "3 tbsp (dredge)"},
+    {"item": "egg", "qty": "1 (dredge)"},
+    {"item": "crushed cornflakes", "qty": "1.5 cups (~42 g, the crust)"},
+    {"item": "honey (sauce)", "qty": "2 tbsp"},
+    {"item": "sriracha (sauce)", "qty": "1 tbsp"},
+    {"item": "soy sauce (sauce)", "qty": "1 tsp"},
+    {"item": "garlic powder (sauce)", "qty": "1 tsp"}
+  ],
+  "steps": [
+    "Season chicken; dredge flour → egg → crushed cornflakes; bake 200 C 18–20 min flipping halfway; brush with the simmered honey-sriracha-soy glaze."
+  ],
+  "per_serving": {
+    "kcal": 870,
+    "protein_g": 80,
+    "carbs_g": 105,
+    "fat_g": 13,
+    "fiber_g": 2,
+    "micros": {
+      "selenium_mcg": 81,
+      "choline_mg": 342,
+      "iron_mg": 6,
+      "added_sugar_g": 34,
+      "sodium_mg": 1400
+    }
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "Impressively lean for a schnitzel — it's BAKED, not fried, so the whole dish has only 13 g fat while packing 80 g protein (~9.2 g protein per 100 kcal). The catch is carbs: ~105 g from the cornflake + flour crust and the honey glaze (~34 g of that is honey sugar). Split into 2 it's ~435 kcal / 40 g protein / 52 g carb each — a solid protein-forward meal. The honey glaze is the main sugar lever; the crust is refined carbs.",
+      "flags": ["80 g protein, only 13 g fat (baked not fried)", "~9.2 g protein per 100 kcal", "carb-heavy (~105 g) — cornflake/flour crust + honey", "~34 g added sugar (honey glaze)", "high sodium (~1,400 mg/dish; ~700 if split)"],
+      "suggested_mods": [
+        "Split the dish into 2 servings for logging — 870 kcal is a big single meal",
+        "Cut the honey to 1 tbsp (halves the added sugar) — the sriracha still carries it",
+        "Use low-sodium soy; serve over salad/greens for fiber the crust lacks"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Lean high-protein chicken with choline and selenium, baked and fully cooked — no safety flags. The honey and sriracha are fine for her. It's carb/sugar-heavy and not a big micronutrient source, so it's a good protein main rather than a nutrient star; pair with veg for folate/vitamin C.",
+      "prenatal_highlights": [
+        "lean protein + choline (chicken + egg)",
+        "selenium; some iron (fortified cornflakes)"
+      ],
+      "safety_advisories": [
+        {"note": "Cook the chicken fully through (74 C / no pink) — standard for schnitzel.", "swap": "bake until cooked through"}
+      ],
+      "suggested_mods": [
+        "Serve with a big leafy/veg side for folate + vitamin C",
+        "Use low-sodium soy to ease the salt"
+      ]
+    }
+  },
+  "tags": ["dinner", "high-protein", "chicken", "poultry", "baked", "schnitzel", "hot-honey", "low-fat"],
+  "adopted": false,
+  "created": "2026-09-09",
+  "updated": "2026-09-09",
+  "serving_g": 350,
+  "meal_type": "Chicken",
+  "cooking_guide": [
+    "Cut the chicken into even strips and toss with the crushed garlic, smoked paprika, salt and pepper.",
+    "Set up 3 bowls: flour / beaten egg / crushed cornflakes. Dredge each strip flour → egg → cornflakes, pressing the cornflakes on for a thick, even crust. (Crush the cornflakes coarse, not to powder — that's what makes the crunch.)",
+    "Lay the strips on a lined tray; for all-around crisp without frying, set them on a wire rack over the tray and lightly spray/brush with oil.",
+    "Bake at 200 C (400 F) for 18–20 min, flipping halfway, until golden and cooked through (74 C, no pink).",
+    "Meanwhile simmer the honey, sriracha, soy sauce and garlic powder 1–2 min on medium until glossy.",
+    "Brush the glaze on AFTER baking (or toss just before serving) — glazing before baking would burn the sugar and soften the crust.",
+    "Tip: cornflakes give a lighter, crunchier crust than breadcrumbs; add the sauce at the last moment to keep it crisp."
+  ]
+}
