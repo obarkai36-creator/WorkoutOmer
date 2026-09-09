@@ -17,17 +17,22 @@
     {"time": "16:30", "name": "Dark chocolate cube", "category": "food", "qty": "1 cube (~5 g)", "kcal": 28, "protein_g": 0.35, "carbs_g": 2.25, "fat_g": 1.9, "fiber_g": 0.5, "note": "same saved dark chocolate reference as prior entries (~70% dark, ~550kcal/100g)"},
     {"time": "16:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "18:00", "name": "Mozart chocolate (Mozartkugel)", "category": "food", "qty": "1 piece (~15 g, assumed)", "kcal": 78, "protein_g": 0.89, "carbs_g": 8.25, "fat_g": 4.2, "fiber_g": 0.3, "note": "first time logged — generic Mozartkugel reference (marzipan-pistachio nougat center, dark chocolate coating, ~520kcal/100g), piece weight assumed since not given, flagged."},
-    {"time": "20:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "20:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "20:50", "name": "Dinner — Agami Pita Pro (whole spelt, protein-enriched)", "category": "food", "qty": "1 (68 g)", "kcal": 140, "protein_g": 15, "carbs_g": 19, "fat_g": 2.5, "fiber_g": 9, "time_approx": true, "note": "verified reference, reused."},
+    {"time": "20:50", "name": "Dinner — yellow cheese, 9% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "time_approx": true, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries."},
+    {"time": "20:50", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "10 g", "kcal": 10.8, "protein_g": 0.98, "carbs_g": 0.46, "fat_g": 0.5, "fiber_g": 0, "time_approx": true, "note": "verified label reference (references/foods.json, corrected 2026-08-31), 108kcal/100g."},
+    {"time": "20:50", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "20", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "time_approx": true, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "20:50", "name": "Dinner — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true, "note": "same standard reference as prior entries."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 20,
     "selenium_mcg": 100,
-    "folate_mcg_dfe": 51,
+    "folate_mcg_dfe": 102,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1044,
+    "vitamin_c_mg": 1088,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 17.6
   },
   "caffeine_shots": 3,
   "assumptions": [
@@ -44,7 +49,8 @@
     "16:30 1 dark chocolate cube (~5g), same saved reference as prior entries.",
     "16:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "18:00 1 Mozart chocolate (Mozartkugel) — first time logged, generic reference, piece weight assumed (~15g), flagged.",
-    "20:45 creatine monohydrate, 4.5g — zero kcal/macros."
+    "20:45 creatine monohydrate, 4.5g — zero kcal/macros.",
+    "Dinner: 1 Agami Pita Pro spelt pita (verified reference) + 2 yellow cheese slices, 9% fat (verified Tnuva Emek Light reference) + 10g Simfonia cheese spread (verified label reference) + 20 cherry tomatoes (~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 1 whole cucumber (~300g) — all standard/saved references. Time not given, placeholder 20:50."
   ],
   "status_note": "Day started. Slept 6.17h (00:00-06:10) — a bit short of the target band. AM allergy meds done. Full itemized tracking resumed for 09-09/09-10/09-11 before the macro break continues 09-12-09-17. Tomorrow (Thursday) is the planned Back day resumption."
 }
