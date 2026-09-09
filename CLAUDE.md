@@ -315,10 +315,19 @@
   `sleep.json`, not logged as an intake item. **Don't proactively ask
   whether they were worn each EOD** — only log when the user actually
   volunteers it. At EOD close-out (when the user signals EOD, i.e. "before
-  bed"), check the trailing nights: if the last 3 consecutive tracked
-  nights all show `worn: false` (or are missing), note it once. Otherwise
-  say nothing — no daily status chatter either way. This check is tied to
-  the user-initiated EOD signal, not a wall-clock Routine.
+  bed"), check the trailing nights: if the last 3 consecutive **calendar**
+  nights up to and including tonight all show `worn: false` OR have no entry
+  at all, note it once. Otherwise say nothing — no daily status chatter
+  either way.
+  **CORRECTION (2026-09-09)**: the check was previously (wrongly) applied
+  as "the last 3 *logged* entries" rather than "the last 3 *calendar*
+  nights" — this let a run of unlogged/missing nights slide silently past
+  the trigger as long as the most recent *logged* entry happened to be
+  `worn: true`, even when several nights had passed since that entry with
+  no log at all. Concretely: walk backward from tonight night-by-night
+  (not entry-by-entry) and count any night with no matching `date` in
+  `entries` as equivalent to `worn: false` for this check. This check is
+  tied to the user-initiated EOD signal, not a wall-clock Routine.
 - Omega-3 supplement compliance (added 2026-08-11): the unified dashboard's
   supplement-compliance check (`build_supplement_check` in
   generate_dashboard.py) no longer flags the Omega-3 fish-oil softgel as a
