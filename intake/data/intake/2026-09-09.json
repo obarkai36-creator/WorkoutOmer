@@ -1,7 +1,7 @@
 {
   "date": "2026-09-09",
   "day_number": 74,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": false,
   "items": [
     {"time": "06:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
@@ -22,7 +22,9 @@
     {"time": "20:50", "name": "Dinner — yellow cheese, 9% fat", "category": "food", "qty": "2 slices (~50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "time_approx": true, "note": "verified Tnuva Emek Light reference (50kcal/25g slice), same as prior entries."},
     {"time": "20:50", "name": "Dinner — Simfonia cheese spread, 5% fat", "category": "food", "qty": "10 g", "kcal": 10.8, "protein_g": 0.98, "carbs_g": 0.46, "fat_g": 0.5, "fiber_g": 0, "time_approx": true, "note": "verified label reference (references/foods.json, corrected 2026-08-31), 108kcal/100g."},
     {"time": "20:50", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "20", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "time_approx": true, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
-    {"time": "20:50", "name": "Dinner — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true, "note": "same standard reference as prior entries."}
+    {"time": "20:50", "name": "Dinner — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 2, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true, "note": "same standard reference as prior entries."},
+    {"time": "21:40", "name": "M&M's (milk chocolate), 2 pieces", "category": "food", "qty": "2 pieces (~1.8 g)", "kcal": 9, "protein_g": 0.07, "carbs_g": 1.22, "fat_g": 0.36, "fiber_g": 0, "note": "first time logged — generic M&M's reference (~480kcal/100g), ~0.9g/piece assumed."},
+    {"time": "21:40", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 20,
@@ -50,7 +52,10 @@
     "16:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "18:00 1 Mozart chocolate (Mozartkugel) — first time logged, generic reference, piece weight assumed (~15g), flagged.",
     "20:45 creatine monohydrate, 4.5g — zero kcal/macros.",
-    "Dinner: 1 Agami Pita Pro spelt pita (verified reference) + 2 yellow cheese slices, 9% fat (verified Tnuva Emek Light reference) + 10g Simfonia cheese spread (verified label reference) + 20 cherry tomatoes (~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 1 whole cucumber (~300g) — all standard/saved references. Time not given, placeholder 20:50."
+    "Dinner: 1 Agami Pita Pro spelt pita (verified reference) + 2 yellow cheese slices, 9% fat (verified Tnuva Emek Light reference) + 10g Simfonia cheese spread (verified label reference) + 20 cherry tomatoes (~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 1 whole cucumber (~300g) — all standard/saved references. Time not given, placeholder 20:50.",
+    "21:40 2 M&M's (milk chocolate), first time logged, generic reference, ~0.9g/piece assumed.",
+    "21:40 Rhinolast PM dose — both allergy spray doses done today.",
+    "Day complete."
   ],
-  "status_note": "Day started. Slept 6.17h (00:00-06:10) — a bit short of the target band. AM allergy meds done. Full itemized tracking resumed for 09-09/09-10/09-11 before the macro break continues 09-12-09-17. Tomorrow (Thursday) is the planned Back day resumption."
+  "status_note": "Day complete. Slept 6.17h (00:00-06:10) — a bit short of the target band. No workout today. Full itemized tracking resumed for 09-09/09-10/09-11 (macro break continues 09-12-09-17). Essential-5 + omega-3 cleared zinc/selenium/vitamin D/E/omega-3 targets; folate and fiber ran low. 3 caffeine shots. Tomorrow (Thursday) is the planned Back day resumption."
 }
