@@ -13,13 +13,14 @@
     {"time": "10:45", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
     {"time": "13:00", "name": "Lunch — Mi Casa (Herzliya) large cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as prior entries)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "time_approx": true, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Reused the standing estimate. Eaten sometime between 12:45-15:35, exact time not given."},
     {"time": "16:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:20", "name": "Cottage cheese, 5% fat", "category": "food", "qty": "250 g", "kcal": 257.5, "protein_g": 28.71, "carbs_g": 8.71, "fat_g": 12.58, "fiber_g": 0, "note": "same standard 5%-fat cottage cheese reference as prior entries (~103kcal/100g)"}
+    {"time": "16:20", "name": "Cottage cheese, 5% fat", "category": "food", "qty": "250 g", "kcal": 257.5, "protein_g": 28.71, "carbs_g": 8.71, "fat_g": 12.58, "fiber_g": 0, "note": "same standard 5%-fat cottage cheese reference as prior entries (~103kcal/100g)"},
+    {"time": "16:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 20,
     "selenium_mcg": 100,
     "folate_mcg_dfe": 51,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1044,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
@@ -36,7 +37,8 @@
     "10:45 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium, clearing today's zinc/selenium/vitamin D/E targets.",
     "Lunch: Mi Casa (Herzliya) large cucumber salad with chicken, eaten sometime between 12:45-15:35 (exact time not given, placeholder 13:00) — same standing estimate reused from prior entries.",
     "16:15 espresso (1 caffeine shot) — 3 caffeine shots total today.",
-    "16:20 250g cottage cheese, 5% fat — same standard reference as prior entries."
+    "16:20 250g cottage cheese, 5% fat — same standard reference as prior entries.",
+    "16:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target."
   ],
   "status_note": "Day started. Slept 6.17h (00:00-06:10) — a bit short of the target band. AM allergy meds done. Full itemized tracking resumed for 09-09/09-10/09-11 before the macro break continues 09-12-09-17. Tomorrow (Thursday) is the planned Back day resumption."
 }
