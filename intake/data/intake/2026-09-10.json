@@ -20,7 +20,8 @@
     {"time": "18:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "18:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "18:30", "name": "Post-workout — rebar power[ful] cocoa", "category": "food", "qty": "1 smoothie", "kcal": 599, "protein_g": 33, "carbs_g": 72, "fat_g": 23, "fiber_g": 0, "time_approx": true, "note": "verified label from rebar.co.il menu (photographed nutrition facts, ±15% stated variance), first time logged. Fiber not given on the label."},
-    {"time": "20:00", "name": "Dinner (directional estimate, not itemized) — red meat-heavy", "category": "food", "qty": "not weighed — logged directionally per user's own guidance, red meat in high proportion", "kcal": 965, "protein_g": 75, "carbs_g": 20, "fat_g": 65, "fiber_g": 18, "time_approx": true, "note": "User described dinner as high calorie, high fat, high protein, low carb, high fiber (revised higher on all than the first pass) with red meat as the dominant component — logged as a single directional estimate, not an exact ingredient breakdown. Credits ~10mg zinc, ~30mcg selenium from the red meat portion (rough estimate). Flagged as approximate throughout."}
+    {"time": "20:00", "name": "Dinner (directional estimate, not itemized) — red meat-heavy", "category": "food", "qty": "not weighed — logged directionally per user's own guidance, red meat in high proportion", "kcal": 965, "protein_g": 75, "carbs_g": 20, "fat_g": 65, "fiber_g": 18, "time_approx": true, "note": "User described dinner as high calorie, high fat, high protein, low carb, high fiber (revised higher on all than the first pass) with red meat as the dominant component — logged as a single directional estimate, not an exact ingredient breakdown. Credits ~10mg zinc, ~30mcg selenium from the red meat portion (rough estimate). Flagged as approximate throughout."},
+    {"time": "20:00", "name": "Red wine (glass)", "category": "drink", "qty": "1 glass (~150 ml)", "kcal": 128, "protein_g": 0, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "standard red wine reference (~85kcal/100ml), quantity not given — assumed a standard glass. ~1.5 units. Also logged to lifestyle.json."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 30,
@@ -60,7 +61,8 @@
     "18:30 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
     "18:30 post-workout meal: rebar power[ful] cocoa smoothie, 1 whole — verified from a photographed menu nutrition label (599kcal/33g protein/72g carb/23g fat, ±15% stated variance), first time logged, time approximated.",
     "Dinner (time not given, placeholder 20:00): logged directionally per user's own guidance (high calorie, high fat, high protein, low carb, high fiber) rather than itemized weights — kcal 665, protein 50g, carb 15g, fat 45g, fiber 12g, flagged as a directional estimate.",
-    "Correction: dinner revised higher on all macros, with red meat noted as the dominant proportion — kcal 665→965, protein 50→75g, carb 15→20g, fat 45→65g, fiber 12→18g. Added ~10mg zinc, ~30mcg selenium as a rough estimate for the red meat portion."
+    "Correction: dinner revised higher on all macros, with red meat noted as the dominant proportion — kcal 665→965, protein 50→75g, carb 15→20g, fat 45→65g, fiber 12→18g. Added ~10mg zinc, ~30mcg selenium as a rough estimate for the red meat portion.",
+    "Also 1 glass red wine (~150ml) with dinner — quantity not given, standard glass assumed. ~1.5 units, logged to lifestyle.json."
   ],
   "status_note": "Day started. Slept 7.75h (23:45-07:30) — a solid full night. Planned Back day (adjusted weights) later today."
 }
