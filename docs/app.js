@@ -410,6 +410,28 @@ function renderTraining(day, row, el) {
     </div>`;
   }
 
+  let plannedHtml = "";
+  if (day.planned_workout) {
+    const pw = day.planned_workout;
+    const pwRows = (pw.exercises || []).map((e) => `
+      <tr>
+        <td>${e.name}</td>
+        <td>${e.last || ""}</td>
+        <td><b>${e.target || ""}</b></td>
+        <td class="muted">${e.reasoning || ""}</td>
+      </tr>`).join("");
+    plannedHtml = `
+    <div class="panel span">
+      <h2>Adjusted plan for next session <span class="small muted">(manually tuned)</span></h2>
+      <div class="bignum" style="font-size:20px;color:${COLORS.blue}">${pw.section || ""}</div>
+      ${pw.note ? `<div class="metric-note" style="margin-top:6px">${pw.note}</div>` : ""}
+      <div style="overflow-x:auto;margin-top:10px"><table>
+        <thead><tr><th>Exercise</th><th>Last session</th><th>Target</th><th>Why</th></tr></thead>
+        <tbody>${pwRows}</tbody>
+      </table></div>
+    </div>`;
+  }
+
   const wl = day.workout_log;
   const historyHtml = `
     <div class="panel span">
@@ -423,6 +445,7 @@ function renderTraining(day, row, el) {
   const rows = state.index.days.filter((r) => r.weight_kg !== null);
   el.innerHTML = `
   <div class="grid">
+    ${plannedHtml}
     ${liveHtml}
     ${historyHtml}
     <div class="panel span">

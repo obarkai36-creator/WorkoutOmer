@@ -1,5 +1,5 @@
 {
-  "now": 1788979179939,
+  "now": 1789021427513,
   "workouts": [
     {
       "datetime": "2026-09-04T09:00",
@@ -7114,9 +7114,9 @@
     "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-09T18:39:39.939Z",
+    "readyAt": "2026-09-10T06:23:47.513Z",
     "neverLogged": false,
-    "daysSince": 8.9,
+    "daysSince": 9.4,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -7198,31 +7198,31 @@
         "section": "Back",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 8.9
+        "daysSince": 9.4
       },
       {
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 15.9
+        "daysSince": 16.4
       },
       {
         "section": "Shoulders",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 12.5
+        "daysSince": 12.9
       },
       {
         "section": "Arms",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 8.9
+        "daysSince": 9.4
       },
       {
         "section": "Chest",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 32.1
+        "daysSince": 32.6
       }
     ],
     "suggestedCount": 5,
@@ -7230,7 +7230,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 5.4
+    "daysSinceAerobic": 5.9
   },
   "alerts": [
     {
@@ -7265,7 +7265,7 @@
       12,
       13
     ],
-    "daysSinceLast": 5.4,
+    "daysSinceLast": 5.9,
     "total": 59
   },
   "relstrength": {
@@ -7332,7 +7332,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 5.4,
+    "daysSinceLast": 5.9,
     "recent": [
       {
         "t": 1788512400000,
@@ -7634,15 +7634,50 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-09-03",
-      "start": "22:50",
-      "end": "06:15",
-      "hours": 7.42,
-      "note": "Solid full night, ~7.42h — squarely in the 7-9h target band, one continuous stretch."
+      "date": "2026-09-10",
+      "start": "23:45",
+      "end": "07:30",
+      "hours": 7.75,
+      "note": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."
     },
-    "avg7": 7.4,
+    "avg7": 7.8,
     "status": "good",
     "history": [
+      {
+        "date": "2026-09-10",
+        "start": "23:45",
+        "end": "07:30",
+        "hours": 7.75,
+        "note": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-09-09",
+        "start": "00:00",
+        "end": "06:10",
+        "hours": 6.17,
+        "note": "Short night, ~6.17h — a bit short of the 7-9h target band, late bedtime (00:00)."
+      },
+      {
+        "date": "2026-09-06",
+        "start": "00:30",
+        "end": "07:00",
+        "hours": 6.5,
+        "note": "Short night, ~6.5h — a bit short of the 7-9h target band, late bedtime (00:30) preceded by a partnered ejaculation event."
+      },
+      {
+        "date": "2026-09-05",
+        "start": "22:45",
+        "end": "08:15",
+        "hours": 9.5,
+        "note": "Long night, ~9.5h — just above the 7-9h target band, one continuous stretch."
+      },
+      {
+        "date": "2026-09-04",
+        "start": "23:05",
+        "end": "08:00",
+        "hours": 8.92,
+        "note": "Long solid night, ~8.92h — just above the 7-9h target band, one continuous stretch."
+      },
       {
         "date": "2026-09-03",
         "start": "22:50",

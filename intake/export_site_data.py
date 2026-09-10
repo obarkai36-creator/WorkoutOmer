@@ -110,6 +110,7 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         "sperm_score": sperm_score,
         "energy_score": energy_score,
         "workout_log": workout_entry,
+        "planned_workout": intake.get("planned_workout"),
     }
     if is_latest:
         bundle["training"] = training_full.get("recommendation") if training_full else None

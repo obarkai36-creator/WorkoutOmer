@@ -391,6 +391,34 @@ def build_training_panels(train):
     </div>"""
 
 
+def build_planned_workout_panel(planned):
+    """Render a manually-tuned upcoming-session plan (day's `planned_workout`
+    field), when one is set — distinct from engine.js's automatic
+    recommendation, since this reflects ad hoc adjustments (layoff, injury,
+    fatigue) made in conversation with the user."""
+    if not planned:
+        return ""
+    rows = "".join(
+        f"""<tr>
+          <td>{e.get('name','')}</td>
+          <td>{e.get('last','')}</td>
+          <td><b>{e.get('target','')}</b></td>
+          <td class="muted">{e.get('reasoning','')}</td>
+        </tr>""" for e in planned.get("exercises", [])
+    )
+    note_html = f"<div class='tr-line'>{planned['note']}</div>" if planned.get("note") else ""
+    return f"""
+    <div class="panel span">
+      <h2>Adjusted Plan for Next Session <span class="muted">(manually tuned)</span></h2>
+      <div class="tr-line"><b>{planned.get('section','')}</b></div>
+      {note_html}
+      <div style="overflow-x:auto"><table>
+        <thead><tr><th>Exercise</th><th>Last session</th><th>Target</th><th>Why</th></tr></thead>
+        <tbody>{rows}</tbody>
+      </table></div>
+    </div>"""
+
+
 def load_all_intake_days():
     """All logged daily intake files, sorted oldest -> newest."""
     days = []
@@ -812,7 +840,7 @@ def build(target_date, unified=False):
                        if 0 <= (td_ref - datetime.strptime(e["date"], "%Y-%m-%d")).days < 7]
         last14_sleep = [e for e in sleep_upto
                         if 0 <= (td_ref - datetime.strptime(e["date"], "%Y-%m-%d")).days < 14]
-        avg7_sleep = round(sum(e["duration_hours"] for e in last7_sleep) / len(last7_sleep), 1)
+        avg7_sleep = round(sum(e["duration_hours"] for e in last7_sleep) / len(last7_sleep), 1) if last7_sleep else None
         avg14_sleep = round(sum(e["duration_hours"] for e in last14_sleep) / len(last14_sleep), 1) if last14_sleep else None
         nights_short7 = sum(1 for e in last7_sleep if e["duration_hours"] < 6)
         nights_long7 = sum(1 for e in last7_sleep if e["duration_hours"] > 9.5)
@@ -821,12 +849,13 @@ def build(target_date, unified=False):
         sleep_color = {"low": "#ef4444", "good": "#22c55e", "long": "#f59e0b"}[sleep_status]
         sleep_label = {"low": "short", "good": "on target", "long": "long (catch-up)"}[sleep_status]
         note_html = f"<div class='note' style='margin-top:10px'>{latest_sleep['notes']}</div>" if latest_sleep.get("notes") else ""
+        avg7_html = f"{avg7_sleep:g}h 7-day avg" if avg7_sleep is not None else "no 7-day data"
         avg14_html = f" · {avg14_sleep:g}h 14-day avg" if avg14_sleep is not None else ""
         sleep_panel = f"""
     <div class="panel">
       <h2>Sleep</h2>
       <div class="bignum" style="color:{sleep_color}">{h:g}<small> h</small></div>
-      <div class="goalline">{latest_sleep['sleep_start']}–{latest_sleep['sleep_end']} · <b style="color:{sleep_color}">{sleep_label}</b> · {avg7_sleep:g}h 7-day avg{avg14_html}</div>
+      <div class="goalline">{latest_sleep['sleep_start']}–{latest_sleep['sleep_end']} · <b style="color:{sleep_color}">{sleep_label}</b> · {avg7_html}{avg14_html}</div>
       {sparkline(sleep_upto[-14:], 'duration_hours')}
       <div class="small muted" style="margin-top:6px">Last 7 nights: <b style="color:{'#ef4444' if nights_short7 else 'var(--text)'}">{nights_short7} short</b> (&lt;6h) · <b style="color:{'#f59e0b' if nights_long7 else 'var(--text)'}">{nights_long7} long</b> (&gt;9.5h) of {len(last7_sleep)} logged</div>
       {note_html}
@@ -920,6 +949,7 @@ def build(target_date, unified=False):
             training_panel = build_training_panels(train_full)
         except FileNotFoundError:
             pass
+        training_panel = build_planned_workout_panel(intake.get("planned_workout")) + training_panel
 
     # suggestions gate (same 14-day baseline as the sperm score)
     suggestions_unlocked = days_logged >= UNLOCK_DAYS

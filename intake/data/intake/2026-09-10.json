@@ -19,6 +19,17 @@
     "lycopene_mg": 0
   },
   "caffeine_shots": 2,
+  "planned_workout": {
+    "section": "Back day",
+    "note": "Adjusted for a ~10-day layoff since the last Back day (08-31) plus back/leg stress from moving this week. Rows prioritized per the standing push/pull-correction rule; Pullover/Dead Hang de-emphasized.",
+    "exercises": [
+      {"name": "Diverging Seated Row", "last": "97kg × 4×10 (PR)", "target": "85kg × 4×10", "reasoning": "~12% off the PR weight — same reps, lighter load to reassess after the layoff before pushing back toward 97kg"},
+      {"name": "Low Row", "last": "79kg × 4×11", "target": "70kg × 4×10", "reasoning": "~11% down, one fewer rep target — your biggest pull corrector, worth keeping in the session but not maxed"},
+      {"name": "Reverse Incline DB Row", "last": "28kg each × 4×8", "target": "24kg each × 4×10-12", "reasoning": "Back to your established comfortable range (24-26kg) rather than continuing the recent weight-step, given the extra back fatigue this week"},
+      {"name": "Dumbbell Pullover", "last": "22kg × 4×8", "target": "16kg × 4×10 or skip", "reasoning": "Weakest corrector anyway (net-pull-positive but diluted) — light or drop entirely if the back feels anything but fully warmed up"},
+      {"name": "Dead Hang", "last": "35s+30s+25s", "target": "20-25s × 3, easy effort", "reasoning": "Zero ratio benefit either way (forearm-dominant) — no reason to grind it under back fatigue, just maintain grip/hang pattern"}
+    ]
+  },
   "assumptions": [
     "Sleep logged: 23:45-07:30, 7.75h — squarely in the 7-9h target band, a solid night.",
     "Full itemized tracking day (09-09/09-10/09-11 window). Today is also the planned Back day resumption — retainers worn last night as agreed.",

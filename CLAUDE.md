@@ -1,5 +1,29 @@
 # Session notes
 
+- Manually-adjusted workout plans on the site/dashboard (added 2026-09-10):
+  when the user asks for an ad hoc/adjusted workout plan (e.g. scaling
+  weights down after a layoff or injury/fatigue, as opposed to just
+  engine.js's automatic `recommended_next`), save it to that day's intake
+  file as a `planned_workout` object: `{section, note, exercises: [{name,
+  last, target, reasoning}]}`. This flows through automatically: `intake/
+  export_site_data.py` passes it into the exported `docs/data/<date>.json`
+  bundle, `docs/app.js`'s `renderTraining()` shows it as an "Adjusted plan
+  for next session" panel on the Training tab, and `intake/
+  generate_dashboard.py`'s unified HTML (`build_planned_workout_panel`)
+  shows the same panel in the emailed report. Do this any time an adjusted
+  plan is given in chat, not just when explicitly asked to "show it on the
+  site" — the site should never lag behind what's discussed. Fixed
+  alongside this: `generate_dashboard.py`'s sleep panel used to divide by
+  zero (`ZeroDivisionError`) whenever `sleep.json` had no entries in the
+  trailing 7 days — now guarded to show "no 7-day data" instead of
+  crashing. Also discovered `sleep.json`/`weight.json` had silently fallen
+  behind by about a week (sleep is logged in each day's intake file but
+  wasn't being mirrored into `sleep.json` — unlike `workouts.json`, which
+  gets manually mirrored from `data.js` every time); backfilled the gap
+  from 2026-09-04 through 2026-09-10 from each day's logged sleep. Keep
+  `sleep.json` updated going forward whenever a day's sleep entry is
+  logged, the same way `workouts.json` is kept in sync with `data.js`.
+
 - Push/pull-corrective exercise selection (added 2026-08-27, standing until
   the ratio normalizes): `engine.js`'s push/pull balance metric only credits
   muscles that carry a role — chest & triceps = push, back & biceps = pull;
