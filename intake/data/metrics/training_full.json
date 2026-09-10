@@ -1,6 +1,160 @@
 {
-  "now": 1789021427513,
+  "now": 1789023042860,
   "workouts": [
+    {
+      "datetime": "2026-09-10T18:00",
+      "note": "Back day, return after a ~10-day layoff + back/leg stress from moving — adjusted plan (time approximated, not given)",
+      "exercises": [
+        {
+          "name": "Diverging Seated Row",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 85
+            },
+            {
+              "reps": 10,
+              "weight": 85
+            },
+            {
+              "reps": 10,
+              "weight": 85
+            },
+            {
+              "reps": 10,
+              "weight": 85
+            }
+          ],
+          "load": 3400,
+          "top1RM": 113.33333333333333,
+          "topWeight": 85,
+          "muscles": {
+            "back": 3400,
+            "biceps": 1360
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Low Row",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 72
+            },
+            {
+              "reps": 8,
+              "weight": 72
+            },
+            {
+              "reps": 8,
+              "weight": 72
+            },
+            {
+              "reps": 8,
+              "weight": 72
+            }
+          ],
+          "load": 2304,
+          "top1RM": 91.19999999999999,
+          "topWeight": 72,
+          "muscles": {
+            "back": 2304,
+            "biceps": 921.6
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Reverse Incline DB Row",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            },
+            {
+              "reps": 12,
+              "weight": 48
+            }
+          ],
+          "load": 2304,
+          "top1RM": 67.19999999999999,
+          "topWeight": 48,
+          "muscles": {
+            "back": 2304,
+            "shoulders": 691.1999999999999,
+            "biceps": 691.1999999999999
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Pullover",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            },
+            {
+              "reps": 10,
+              "weight": 18
+            }
+          ],
+          "load": 720,
+          "top1RM": 24,
+          "topWeight": 18,
+          "muscles": {
+            "back": 720,
+            "chest": 288
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dead Hang",
+          "sets": [
+            {
+              "seconds": 25
+            },
+            {
+              "seconds": 25
+            },
+            {
+              "seconds": 25
+            }
+          ],
+          "load": 6022.5,
+          "top1RM": 0,
+          "topWeight": 80.3,
+          "muscles": {
+            "forearms": 6022.5,
+            "back": 1806.75
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1789063200000,
+      "muscleLoad": {
+        "back": 10534.75,
+        "biceps": 2972.7999999999997,
+        "shoulders": 691.1999999999999,
+        "chest": 288,
+        "forearms": 6022.5
+      },
+      "isAerobic": false
+    },
     {
       "datetime": "2026-09-04T09:00",
       "note": "Outdoor Walk — arms/legs sun exposure with 35 SPF sunscreen, concluded 10:00",
@@ -5813,9 +5967,9 @@
     "chest": 7960.4,
     "back": 12020.1,
     "shoulders": 6892.8,
-    "biceps": 3742.4,
+    "biceps": 3536.0000000000005,
     "triceps": 6060,
-    "forearms": 14605,
+    "forearms": 13382.5,
     "quads": 14905.6,
     "hamstrings": 4860.96,
     "glutes": 8923.439999999999,
@@ -5829,7 +5983,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 0,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -5837,15 +5991,15 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 3,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 90,
+      "readyInHours": 65.8,
+      "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 0,
+      "pct": 10,
       "readyInHours": 0,
       "ready": true
     },
@@ -5853,9 +6007,9 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 84,
+      "readyInHours": 41.3,
+      "ready": false
     },
     "triceps": {
       "key": "triceps",
@@ -5869,9 +6023,9 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 45,
+      "readyInHours": 12.1,
+      "ready": false
     },
     "quads": {
       "key": "quads",
@@ -5933,14 +6087,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 0,
+      "pct": 4,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 0,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         }
@@ -5948,29 +6102,29 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 3,
-      "readyInHours": 0,
+      "pct": 90,
+      "readyInHours": 65.8,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 3,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 90,
+          "readyInHours": 65.8,
+          "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 0,
+      "pct": 10,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 0,
+          "pct": 10,
           "readyInHours": 0,
           "ready": true
         }
@@ -5978,28 +6132,28 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 43,
+      "readyInHours": 41.3,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
-        },
-        {
-          "key": "triceps",
-          "label": "Triceps",
-          "section": "Arms",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 84,
+          "readyInHours": 41.3,
+          "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
+          "section": "Arms",
+          "pct": 45,
+          "readyInHours": 12.1,
+          "ready": false
+        },
+        {
+          "key": "triceps",
+          "label": "Triceps",
           "section": "Arms",
           "pct": 0,
           "readyInHours": 0,
@@ -6263,35 +6417,35 @@
         "name": "Diverging Seated Row",
         "section": "Back",
         "iso": false,
-        "latestText": "97kg × 4×10",
+        "latestText": "85kg × 4×10",
         "bestText": "97kg × 4×10",
-        "latestVol": 3880,
+        "latestVol": 3400,
         "bestVol": 3880,
-        "pct": 100,
-        "latest1RM": 129.3,
+        "pct": 88,
+        "latest1RM": 113.3,
         "best1RM": 129.3,
         "metric": "1RM",
-        "isPR": true,
-        "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "isPR": false,
+        "belowPR": true,
+        "gap": 16,
+        "inToday": true
       },
       {
         "name": "Low Row",
         "section": "Back",
         "iso": false,
-        "latestText": "79kg × 4×11",
+        "latestText": "72kg × 4×8",
         "bestText": "79kg × 4×11",
-        "latestVol": 3476,
+        "latestVol": 2304,
         "bestVol": 3476,
-        "pct": 100,
-        "latest1RM": 108,
+        "pct": 84,
+        "latest1RM": 91.2,
         "best1RM": 108,
         "metric": "1RM",
-        "isPR": true,
-        "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "isPR": false,
+        "belowPR": true,
+        "gap": 17,
+        "inToday": true
       },
       {
         "name": "Lat Pulldown (Triangle)",
@@ -6314,52 +6468,52 @@
         "name": "Reverse Incline DB Row",
         "section": "Back",
         "iso": false,
-        "latestText": "28kg each × 4×8",
+        "latestText": "24kg each × 4×12",
         "bestText": "26kg each × 4×12",
-        "latestVol": 1792,
+        "latestVol": 2304,
         "bestVol": 2496,
-        "pct": 97,
-        "latest1RM": 70.9,
+        "pct": 92,
+        "latest1RM": 67.2,
         "best1RM": 72.8,
         "metric": "1RM",
         "isPR": false,
         "belowPR": true,
-        "gap": 2,
-        "inToday": false
+        "gap": 6,
+        "inToday": true
       },
       {
         "name": "Dumbbell Pullover",
         "section": "Back",
         "iso": false,
-        "latestText": "22kg × 4×8",
+        "latestText": "18kg × 4×10",
         "bestText": "20kg × 4×12",
-        "latestVol": 704,
+        "latestVol": 720,
         "bestVol": 960,
-        "pct": 100,
-        "latest1RM": 27.9,
+        "pct": 86,
+        "latest1RM": 24,
         "best1RM": 28,
         "metric": "1RM",
         "isPR": false,
-        "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "belowPR": true,
+        "gap": 4,
+        "inToday": true
       },
       {
         "name": "Dead Hang",
         "section": "Back",
         "iso": true,
-        "latestText": "35s + 30s + 25s",
+        "latestText": "25s × 3",
         "bestText": "35s + 30s + 25s",
-        "latestVol": 7245,
+        "latestVol": 6023,
         "bestVol": 7290,
-        "pct": 99,
+        "pct": 83,
         "latest1RM": 0,
         "best1RM": 0,
         "metric": "load",
         "isPR": false,
-        "belowPR": false,
-        "gap": 45,
-        "inToday": false
+        "belowPR": true,
+        "gap": 1268,
+        "inToday": true
       }
     ],
     "Shoulders": [
@@ -7053,14 +7207,14 @@
   },
   "balance": {
     "bySection": {
-      "Chest": 18744,
-      "Arms": 37807.6,
-      "Shoulders": 15683,
-      "Back": 15376.8,
+      "Chest": 18750.4,
+      "Arms": 36077.899999999994,
+      "Shoulders": 15836.599999999999,
+      "Back": 13886.05,
       "Legs": 43194,
       "Core": 14351.4
     },
-    "pushPull": 1.45,
+    "pushPull": 1.58,
     "quadHam": 2.59,
     "hasCore": true
   },
@@ -7068,31 +7222,31 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 547,
+        "stress": 562,
         "sessions": 3,
-        "acwr": 0.98
+        "acwr": 1
       },
       {
         "label": "-4w",
-        "stress": 607,
+        "stress": 618,
         "sessions": 5,
         "acwr": 1.05
       },
       {
         "label": "-3w",
-        "stress": 628,
+        "stress": 641,
         "sessions": 3,
-        "acwr": 0.97
+        "acwr": 0.98
       },
       {
         "label": "-2w",
-        "stress": 731,
+        "stress": 741,
         "sessions": 4,
         "acwr": 1.16
       },
       {
         "label": "-1w",
-        "stress": 590,
+        "stress": 601,
         "sessions": 6,
         "acwr": 0.92
       },
@@ -7103,103 +7257,185 @@
         "acwr": 0.14
       }
     ],
-    "acute": 71,
-    "chronic": 505,
-    "acwr": 0.14,
+    "acute": 302,
+    "chronic": 571,
+    "acwr": 0.53,
     "acwrZone": "detraining",
-    "sessions28": 14
+    "sessions28": 15
   },
   "recommendation": {
-    "section": "Back",
-    "fatigue": 3,
+    "section": "Legs",
+    "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-10T06:23:47.513Z",
+    "readyAt": "2026-09-10T06:50:42.860Z",
     "neverLogged": false,
-    "daysSince": 9.4,
+    "daysSince": 16.4,
     "suggestedExercises": [
       {
-        "name": "Diverging Seated Row",
-        "best": "97kg × 4×10",
-        "best1RM": 129.3,
+        "name": "Leg Curls",
+        "best": "111kg × 4×12",
+        "best1RM": 155.4,
+        "iso": false,
+        "target": {
+          "status": "rebuild",
+          "text": "Rebuild to best (111kg × 4×12)",
+          "note": "Last session came in under your best (111kg × 4×12) — rebuild to that before pushing further."
+        },
+        "preferred": true
+      },
+      {
+        "name": "Dumbbell RDL",
+        "best": "24kg × 6×8",
+        "best1RM": 30.4,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 6×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 6×9 from 24kg × 6×8."
+        },
+        "preferred": true
+      },
+      {
+        "name": "Glute Extension",
+        "best": "59kg × 1×5 each",
+        "best1RM": 68.8,
+        "iso": false,
+        "target": {
+          "status": "rebuild",
+          "text": "Rebuild to best (59kg × 1×5 each)",
+          "note": "Last session came in under your best (59kg × 1×5 each) — rebuild to that before pushing further."
+        },
+        "preferred": true
+      },
+      {
+        "name": "Hip Thrust",
+        "best": "24kg × 3×12",
+        "best1RM": 33.6,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+2kg (reset to 3×8)",
+          "note": "You're at 12 reps on 24kg × 3×12 — step the weight up ~2kg and reset to 3×8."
+        },
+        "preferred": true
+      },
+      {
+        "name": "Calf Raises Machine",
+        "best": "76kg × 4×11",
+        "best1RM": 103.9,
+        "iso": false,
+        "target": {
+          "status": "rebuild",
+          "text": "Rebuild to best (76kg × 4×11)",
+          "note": "Last session came in under your best (76kg × 4×11) — rebuild to that before pushing further."
+        }
+      },
+      {
+        "name": "Dumbbell Calf Raise",
+        "best": "24kg each × 4×12",
+        "best1RM": 67.2,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+2.5kg (reset to 4×8)",
+          "note": "You're at 12 reps on 24kg each × 4×12 — step the weight up ~2.5kg and reset to 4×8."
+        }
+      },
+      {
+        "name": "Inner Thigh",
+        "best": "79kg × 3×9",
+        "best1RM": 102.7,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 3×10)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×10 from 79kg × 3×9."
+        }
+      },
+      {
+        "name": "Glute Bridge",
+        "best": "BW × 2×12",
+        "best1RM": 109.2,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+2.5kg (reset to 2×8)",
+          "note": "You're at 12 reps on BW × 2×12 — step the weight up ~2.5kg and reset to 2×8."
+        }
+      },
+      {
+        "name": "Outer Thigh",
+        "best": "79kg × 5×10",
+        "best1RM": 105.3,
+        "iso": false,
+        "target": {
+          "status": "rebuild",
+          "text": "Rebuild to best (79kg × 5×10)",
+          "note": "Last session came in under your best (79kg × 5×10) — rebuild to that before pushing further."
+        }
+      },
+      {
+        "name": "Leg Press",
+        "best": "132kg × 4×10",
+        "best1RM": 176,
         "iso": false,
         "target": {
           "status": "progress",
           "text": "+1 rep (aim 4×11)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 97kg × 4×10."
-        },
-        "preferred": true
-      },
-      {
-        "name": "Low Row",
-        "best": "79kg × 4×11",
-        "best1RM": 108,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×12)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×12 from 79kg × 4×11."
-        },
-        "preferred": true
-      },
-      {
-        "name": "Lat Pulldown (Triangle)",
-        "best": "77kg × 3×8",
-        "best1RM": 97.5,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 3×9)",
-          "note": "Add 1 rep per set at the same weight — aim for 3×9 from 77kg × 3×8."
-        },
-        "preferred": true
-      },
-      {
-        "name": "Reverse Incline DB Row",
-        "best": "26kg each × 4×12",
-        "best1RM": 72.8,
-        "iso": false,
-        "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (26kg each × 4×12)",
-          "note": "Last session came in under your best (26kg each × 4×12) — rebuild to that before pushing further."
-        },
-        "preferred": true
-      },
-      {
-        "name": "Dumbbell Pullover",
-        "best": "20kg × 4×12",
-        "best1RM": 28,
-        "iso": false,
-        "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (20kg × 4×12)",
-          "note": "Last session came in under your best (20kg × 4×12) — rebuild to that before pushing further."
+          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 132kg × 4×10."
         }
       },
       {
-        "name": "Dead Hang",
-        "best": "35s + 30s + 25s",
-        "best1RM": 0,
-        "iso": true,
+        "name": "Dumbbell Sumo Squat",
+        "best": "24kg × 6×8",
+        "best1RM": 30.4,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 6×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 6×9 from 24kg × 6×8."
+        }
+      },
+      {
+        "name": "Angled Leg Press",
+        "best": "202kg setup (70kg each side + 62kg frame) × 4×7",
+        "best1RM": 249.1,
+        "iso": false,
         "target": {
           "status": "rebuild",
-          "text": "Rebuild to best (35s + 30s + 25s)",
-          "note": "Last session came in under your best (35s + 30s + 25s) — rebuild to that before pushing further."
+          "text": "Rebuild to best (202kg setup (70kg each side + 62kg frame) × 4×7)",
+          "note": "Last session came in under your best (202kg setup (70kg each side + 62kg frame) × 4×7) — rebuild to that before pushing further."
+        }
+      },
+      {
+        "name": "Single-Leg Extensions",
+        "best": "57kg each × 4×6",
+        "best1RM": 68.4,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×7)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×7 from 57kg each × 4×6."
+        }
+      },
+      {
+        "name": "Hack Squat",
+        "best": "Bodyweight + 42.6kg frame × 3×6",
+        "best1RM": 148.4,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 3×7)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×7 from Bodyweight + 42.6kg frame × 3×6."
         }
       }
     ],
     "guidance": [
-      "Push is ahead of pull 1.45× program-wide — good timing for a pull day; lead with the rows (Diverging Seated Row / Low Row / Lat Pulldown / Reverse Incline DB Row) over Pullover or Dead Hang for the strongest correction.",
-      "Load ratio 0.14 has dipped — a normal, or even a slightly harder, session is fine."
+      "Quads are outpacing hamstrings 2.59× across the program — lead with RDLs / leg curls / glute-hamstring work today rather than quad-dominant lifts.",
+      "Load ratio 0.53 has dipped — a normal, or even a slightly harder, session is fine."
     ],
     "ranked": [
-      {
-        "section": "Back",
-        "fatigue": 3,
-        "readyInHours": 0,
-        "daysSince": 9.4
-      },
       {
         "section": "Legs",
         "fatigue": 0,
@@ -7208,25 +7444,31 @@
       },
       {
         "section": "Shoulders",
-        "fatigue": 0,
+        "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 12.9
-      },
-      {
-        "section": "Arms",
-        "fatigue": 0,
-        "readyInHours": 0,
-        "daysSince": 9.4
+        "daysSince": 13
       },
       {
         "section": "Chest",
-        "fatigue": 0,
+        "fatigue": 4,
         "readyInHours": 0,
         "daysSince": 32.6
+      },
+      {
+        "section": "Arms",
+        "fatigue": 43,
+        "readyInHours": 41.3,
+        "daysSince": -0.5
+      },
+      {
+        "section": "Back",
+        "fatigue": 90,
+        "readyInHours": 65.8,
+        "daysSince": -0.5
       }
     ],
     "suggestedCount": 5,
-    "totalAvailable": 6,
+    "totalAvailable": 14,
     "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
@@ -7236,24 +7478,34 @@
     {
       "level": "med",
       "title": "Push outpacing pull",
-      "detail": "Push volume is 1.45× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "detail": "Push volume is 1.58× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     },
     {
       "level": "low",
       "title": "Load dropped off",
-      "detail": "Load ratio 0.14 (<0.8). A normal training week will bring this back up."
+      "detail": "Load ratio 0.53 (<0.8). A normal training week will bring this back up."
+    },
+    {
+      "level": "low",
+      "title": "Back fatigued (90%)",
+      "detail": "Recovers in ~65.8h. Avoid loading it hard before then — you trained it most recently."
+    },
+    {
+      "level": "low",
+      "title": "Biceps fatigued (84%)",
+      "detail": "Recovers in ~41.3h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
-    "You're below your PR on 13 lifts — closest wins first: Glute Extension (56% of best), Angled Leg Press (77% of best), Rope Cable Extension (81% of best). Add a rep or a set before adding weight.",
-    "Add pulling volume — push is 1.45× your pull. Aim toward ~1:1 to keep shoulders healthy.",
+    "You're below your PR on 17 lifts — closest wins first: Glute Extension (56% of best), Angled Leg Press (77% of best), Rope Cable Extension (81% of best). Add a rep or a set before adding weight.",
+    "Add pulling volume — push is 1.58× your pull. Aim toward ~1:1 to keep shoulders healthy.",
     "Hamstrings lag quads (2.59×). Keep RDLs/leg curls heavy and add a set.",
     "Only 1/2 aerobic sessions this week — add an easy run or row."
   ],
   "timing": {
     "avgGap": 3.3,
     "longestGap": 35.7,
-    "perWeek": 3.5,
+    "perWeek": 3.8,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -7261,12 +7513,12 @@
       13,
       8,
       6,
-      2,
+      3,
       12,
       13
     ],
-    "daysSinceLast": 5.9,
-    "total": 59
+    "daysSinceLast": -0.5,
+    "total": 60
   },
   "relstrength": {
     "bodyweightKg": 80.3,
