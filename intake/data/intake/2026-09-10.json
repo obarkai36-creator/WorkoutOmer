@@ -20,13 +20,15 @@
     {"time": "18:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "18:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "18:30", "name": "Post-workout — rebar power[ful] cocoa", "category": "food", "qty": "1 smoothie", "kcal": 599, "protein_g": 33, "carbs_g": 72, "fat_g": 23, "fiber_g": 0, "time_approx": true, "note": "verified label from rebar.co.il menu (photographed nutrition facts, ±15% stated variance), first time logged. Fiber not given on the label."},
-    {"time": "20:00", "name": "Dinner (directional estimate, not itemized) — red meat-heavy", "category": "food", "qty": "not weighed — logged directionally per user's own guidance, red meat in high proportion", "kcal": 965, "protein_g": 75, "carbs_g": 20, "fat_g": 65, "fiber_g": 18, "time_approx": true, "note": "User described dinner as high calorie, high fat, high protein, low carb, high fiber (revised higher on all than the first pass) with red meat as the dominant component — logged as a single directional estimate, not an exact ingredient breakdown. Credits ~10mg zinc, ~30mcg selenium from the red meat portion (rough estimate). Flagged as approximate throughout."},
+    {"time": "20:00", "name": "Dinner — red meat (steak/carpaccio)", "category": "food", "qty": "400 g", "kcal": 920, "protein_g": 108, "carbs_g": 0, "fat_g": 56, "fiber_g": 0, "time_approx": true, "note": "blended lean-beef reference (~230kcal/100g, ~27g protein/100g, ~14g fat/100g) — exact steak/carpaccio split and cut not given, flagged. Credits ~18mg zinc, ~60mcg selenium (rough estimate for red meat)."},
+    {"time": "20:00", "name": "Dinner — veal schnitzel", "category": "food", "qty": "50 g", "kcal": 125, "protein_g": 9, "carbs_g": 6, "fat_g": 7, "fiber_g": 0.3, "time_approx": true, "note": "standard breaded/fried veal schnitzel reference (~250kcal/100g). Credits ~1.5mg zinc, ~5mcg selenium (rough estimate)."},
+    {"time": "20:00", "name": "Dinner — sides (directional estimate)", "category": "food", "qty": "not weighed — residual estimate for the vegetable/side component", "kcal": 60, "protein_g": 2, "carbs_g": 8, "fat_g": 2, "fiber_g": 4, "time_approx": true, "note": "user's original description of the meal as high-fiber implied a side salad/vegetables alongside the meat — kept as a modest, clearly-directional residual estimate since no specifics were given. Flagged as a rough guess."},
     {"time": "20:00", "name": "Red wine (glass)", "category": "drink", "qty": "1 glass (~150 ml)", "kcal": 128, "protein_g": 0, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "standard red wine reference (~85kcal/100ml), quantity not given — assumed a standard glass. ~1.5 units. Also logged to lifestyle.json."},
     {"time": "22:00", "name": "Dessert, a few bites", "category": "food", "qty": "~30 g (assumed, type not specified)", "kcal": 105, "protein_g": 1.5, "carbs_g": 15, "fat_g": 5, "fiber_g": 0.5, "note": "no dessert type given — assumed a generic sweet cake/pastry reference (~350kcal/100g) at a 'few bites' portion (~30g). Flagged as a rough, low-confidence estimate on both type and quantity."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 30,
-    "selenium_mcg": 130,
+    "zinc_mg": 39.5,
+    "selenium_mcg": 165,
     "folate_mcg_dfe": 51,
     "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1044,
@@ -63,6 +65,7 @@
     "18:30 post-workout meal: rebar power[ful] cocoa smoothie, 1 whole — verified from a photographed menu nutrition label (599kcal/33g protein/72g carb/23g fat, ±15% stated variance), first time logged, time approximated.",
     "Dinner (time not given, placeholder 20:00): logged directionally per user's own guidance (high calorie, high fat, high protein, low carb, high fiber) rather than itemized weights — kcal 665, protein 50g, carb 15g, fat 45g, fiber 12g, flagged as a directional estimate.",
     "Correction: dinner revised higher on all macros, with red meat noted as the dominant proportion — kcal 665→965, protein 50→75g, carb 15→20g, fat 45→65g, fiber 12→18g. Added ~10mg zinc, ~30mcg selenium as a rough estimate for the red meat portion.",
+    "Second correction: user specified exact meat quantities — 400g red meat (steak/carpaccio) + 50g veal schnitzel. Replaced the single directional dinner item with 3 items: 400g red meat (920kcal/108p/0c/56f, ~18mg zinc/~60mcg selenium), 50g veal schnitzel (125kcal/9p/6c/7f, ~1.5mg zinc/~5mcg selenium), and a small residual sides estimate (60kcal/2p/8c/2f/4fiber, kept for the fiber/veg component implied by the original 'high fiber' description). New dinner total (excl. wine): 1105kcal/119p/14c/65f/4.3fiber, ~19.5mg zinc/~65mcg selenium — day total zinc 30→39.5mg, selenium 130→165mcg.",
     "Also 1 glass red wine (~150ml) with dinner — quantity not given, standard glass assumed. ~1.5 units, logged to lifestyle.json.",
     "22:00 a few bites of dessert — type not specified, assumed generic sweet cake/pastry at ~30g, flagged as a rough guess.",
     "Day complete."
