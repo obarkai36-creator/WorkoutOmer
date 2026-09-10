@@ -3,7 +3,11 @@
   "day_number": 75,
   "in_progress": true,
   "workout_today": false,
-  "items": [],
+  "items": [
+    {"time": "08:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "08:15", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "08:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -14,10 +18,12 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 23:45-07:30, 7.75h — squarely in the 7-9h target band, a solid night.",
-    "Full itemized tracking day (09-09/09-10/09-11 window). Today is also the planned Back day resumption — retainers worn last night as agreed."
+    "Full itemized tracking day (09-09/09-10/09-11 window). Today is also the planned Back day resumption — retainers worn last night as agreed.",
+    "08:15 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "08:30 double espresso (2 caffeine shots)."
   ],
   "status_note": "Day started. Slept 7.75h (23:45-07:30) — a solid full night. Planned Back day (adjusted weights) later today."
 }
