@@ -20,17 +20,23 @@
     {"time": "16:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "16:30", "name": "Vanilla protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "no brand given — assumed same Danone PRO 0% line as prior entries, vanilla flavor"},
     {"time": "16:30", "name": "M&M's (milk chocolate), 4 pieces", "category": "food", "qty": "4 pieces (~3.6 g)", "kcal": 18, "protein_g": 0.14, "carbs_g": 2.44, "fat_g": 0.72, "fiber_g": 0, "note": "same generic M&M's reference established 09-09 (~480kcal/100g, ~0.9g/piece)."},
-    {"time": "16:30", "name": "Green grapes", "category": "food", "qty": "200 g", "kcal": 140, "protein_g": 1.4, "carbs_g": 36.2, "fat_g": 0.4, "fiber_g": 1.8, "note": "same standard green seedless grape reference as prior entries (~69kcal/100g)"}
+    {"time": "16:30", "name": "Green grapes", "category": "food", "qty": "200 g", "kcal": 140, "protein_g": 1.4, "carbs_g": 36.2, "fat_g": 0.4, "fiber_g": 1.8, "note": "same standard green seedless grape reference as prior entries (~69kcal/100g)"},
+    {"time": "19:30", "name": "Dinner — mixed salad (lettuce, celery, mango, watermelon, cucumber, cherry tomatoes, pomegranate seeds, chicken breast)", "category": "food", "qty": "1 combined portion, no weights given — assumed lettuce ~50g, celery ~30g, mango ~80g, watermelon ~150g, cucumber ~100g, cherry tomatoes ~10 pcs (~150g), pomegranate seeds ~40g, chicken breast ~100g", "kcal": 345, "protein_g": 36.15, "carbs_g": 42.7, "fat_g": 5.19, "fiber_g": 6.91, "time_approx": true, "note": "no exact quantities given for this composed salad — all component weights assumed at standard portions per ingredient, flagged as approximate. Credits ~10.7mg lycopene (watermelon+tomato), ~67mg vitamin C, ~25.5mcg folate DFE (tomato) from produce, plus ~0.9mg zinc/~24mcg selenium from the chicken breast — all folded into today's micros."},
+    {"time": "19:30", "name": "Chicken drumstick, oven baked (1 piece)", "category": "food", "qty": "1 drumstick (~52g meat, w/ skin, generic reference)", "kcal": 112, "protein_g": 14.2, "carbs_g": 0, "fat_g": 5.9, "fiber_g": 0, "note": "generic baked drumstick reference (meat+skin). Credits ~0.7mg zinc / ~8mcg selenium."},
+    {"time": "19:30", "name": "Sirloin steak, oven baked (3 pieces)", "category": "food", "qty": "3 pieces (~120g assumed, ~40g/piece — not weighed)", "kcal": 276, "protein_g": 32.4, "carbs_g": 0, "fat_g": 16.8, "fiber_g": 0, "note": "same red-meat reference established 09-10 (~230kcal/27p/0c/14f per 100g; ~4.5mg zinc/~15mcg selenium per 100g). Credits ~5.4mg zinc / ~18mcg selenium. Piece size assumed, flagged as approximate."},
+    {"time": "19:30", "name": "Baked potato, medium (1)", "category": "food", "qty": "1 medium (~170g, with skin)", "kcal": 161, "protein_g": 4.3, "carbs_g": 36.6, "fat_g": 0.2, "fiber_g": 3.8, "note": "standard baked potato reference (flesh+skin). Credits ~16mg vitamin C."},
+    {"time": "19:30", "name": "Desserts (unspecified)", "category": "food", "qty": "unspecified type/quantity — rough generic placeholder", "kcal": 200, "protein_g": 2, "carbs_g": 28, "fat_g": 9, "fiber_g": 1, "note": "\"desserts\" mentioned with no type or quantity given — logged as a generic mixed-dessert placeholder (~200kcal). Heavily flagged as approximate; please correct with actual dessert(s)/quantity if this should be adjusted."},
+    {"time": "19:30", "name": "Red wine", "category": "drink", "qty": "1 glass (~150 ml)", "kcal": 128, "protein_g": 0.1, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "note": "standard glass reference, ~1.5 units."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 20,
-    "selenium_mcg": 100,
-    "folate_mcg_dfe": 0,
+    "zinc_mg": 27,
+    "selenium_mcg": 150,
+    "folate_mcg_dfe": 25.5,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1012.5,
+    "vitamin_c_mg": 1095.45,
     "vitamin_d_iu": 2750,
     "vitamin_e_mg": 134,
-    "lycopene_mg": 0
+    "lycopene_mg": 10.7
   },
   "caffeine_shots": 3,
   "assumptions": [
@@ -46,7 +52,9 @@
     "14:45 2 bites biscuit cake from Biscoti — first time logging this item, no brand recipe on file. Estimated as a generic chocolate biscuit log-style cake (~460kcal/100g), 2 bites assumed ~30g. Both the portion and the rate are flagged as approximate/generic.",
     "15:00 Outdoor Run — Or Akiva, 3.51km / 28:24 (8'05\"/km avg pace), cadence 138, 23m elevation gain, ~240kcal (Nike Run Club), 31°C sunny. Logged to data.js/workouts.json.",
     "Sun-exposure vitamin D estimate for the run (rough/low-confidence, per the standing estimation method): no clothing/sunscreen detail given, so assumed full 28.4min duration sun-exposed at typical running-gear coverage (forearms/lower legs/face/neck — 'moderate' area, ~30 IU/min midday anchor). 15:00 is only ~2h past solar noon, so only a light time-of-day discount applied (~90% of midday rate). Estimate: 28.4 × 30 × 0.9 ≈ 767 IU, rounded to 750 IU — folded into vitamin_d_iu. Flag if actual sun exposure, shade, or sunscreen use differed.",
-    "16:30 post-run: 4.5g creatine monohydrate (zero kcal/macros) + 1 vanilla protein yogurt (Danone PRO 0% reference) + 4 M&M's (milk chocolate, same ~0.9g/piece generic reference as 09-09) + 200g green grapes (standard reference, ~69kcal/100g)."
+    "16:30 post-run: 4.5g creatine monohydrate (zero kcal/macros) + 1 vanilla protein yogurt (Danone PRO 0% reference) + 4 M&M's (milk chocolate, same ~0.9g/piece generic reference as 09-09) + 200g green grapes (standard reference, ~69kcal/100g).",
+    "19:30 dinner (time approximated, not given): a composed salad (lettuce, celery, mango, watermelon, cucumber, cherry tomatoes, pomegranate seeds, chicken breast — no weights given, all component portions assumed at standard sizes and flagged) + 1 baked chicken drumstick + 3 pieces of oven-baked sirloin (~120g assumed, using the same red-meat reference established 09-10) + 1 medium baked potato + 1 glass red wine + unspecified desserts (generic ~200kcal placeholder — flag if this should be corrected with actual type/quantity). Meats + tomato/watermelon credited ~7mg zinc, ~50mcg selenium, ~10.7mg lycopene, ~83mg vitamin C, ~25.5mcg folate DFE — folded into today's micros.",
+    "19:30 red wine (1 glass, ~150ml, ~1.5 units) — logged to lifestyle.json. Second consecutive drinking day (also had wine 09-10), a bit more frequent than the <=1 glass/week baseline, though still small single-glass pours."
   ],
   "status_note": "Day started. Slept 7.5h (00:15-07:45) — a solid full night. AM allergy meds done."
 }
