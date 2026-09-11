@@ -1,6 +1,35 @@
 {
-  "now": 1789074249009,
+  "now": 1789150938658,
   "workouts": [
+    {
+      "datetime": "2026-09-11T15:00",
+      "note": "Outdoor Run — Or Akiva, 31°C sun, ~240 kcal (Nike Run Club)",
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 3.51,
+          "durationMin": 28.4,
+          "cadence": 138,
+          "elevationGainM": 23,
+          "load": 255.59999999999997,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 255.59999999999997,
+            "quads": 76.67999999999999,
+            "calves": 76.67999999999999
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1789138800000,
+      "muscleLoad": {
+        "cardio": 255.59999999999997,
+        "quads": 76.67999999999999,
+        "calves": 76.67999999999999
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-09-10T18:00",
       "note": "Back day, return after a ~10-day layoff + back/leg stress from moving — adjusted plan (time approximated, not given)",
@@ -135,23 +164,23 @@
               "seconds": 25
             }
           ],
-          "load": 6022.5,
+          "load": 6018.75,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 6022.5,
-            "back": 1806.75
+            "forearms": 6018.75,
+            "back": 1805.625
           },
           "kind": "strength"
         }
       ],
       "t": 1789063200000,
       "muscleLoad": {
-        "back": 10534.75,
+        "back": 10533.625,
         "biceps": 2972.7999999999997,
         "shoulders": 691.1999999999999,
         "chest": 288,
-        "forearms": 6022.5
+        "forearms": 6018.75
       },
       "isAerobic": false
     },
@@ -394,23 +423,23 @@
               "seconds": 25
             }
           ],
-          "load": 7227,
+          "load": 7222.5,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 7227,
-            "back": 2168.1
+            "forearms": 7222.5,
+            "back": 2166.75
           },
           "kind": "strength"
         }
       ],
       "t": 1788208200000,
       "muscleLoad": {
-        "back": 12020.1,
+        "back": 12018.75,
         "biceps": 3480,
         "shoulders": 537.6,
         "chest": 281.6,
-        "forearms": 7227
+        "forearms": 7222.5
       },
       "isAerobic": false
     },
@@ -783,23 +812,23 @@
               "seconds": 35
             }
           ],
-          "load": 2810.5,
+          "load": 2808.75,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 2810.5,
-            "back": 843.15
+            "forearms": 2808.75,
+            "back": 842.625
           },
           "kind": "strength"
         }
       ],
       "t": 1787727600000,
       "muscleLoad": {
-        "back": 11267.15,
+        "back": 11266.625,
         "biceps": 3536.0000000000005,
         "shoulders": 748.8,
         "chest": 384,
-        "forearms": 2810.5
+        "forearms": 2808.75
       },
       "isAerobic": false
     },
@@ -1512,12 +1541,12 @@
               "seconds": 25
             }
           ],
-          "load": 7227,
+          "load": 7222.5,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 7227,
-            "back": 2168.1
+            "forearms": 7222.5,
+            "back": 2166.75
           },
           "kind": "strength"
         },
@@ -1537,11 +1566,11 @@
       ],
       "t": 1786791600000,
       "muscleLoad": {
-        "back": 11600.1,
+        "back": 11598.75,
         "biceps": 3192.0000000000005,
         "shoulders": 686.4,
         "chest": 352,
-        "forearms": 7227,
+        "forearms": 7222.5,
         "cardio": 72,
         "quads": 28.8
       },
@@ -1804,23 +1833,23 @@
               "seconds": 25
             }
           ],
-          "load": 7227,
+          "load": 7222.5,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 7227,
-            "back": 2168.1
+            "forearms": 7222.5,
+            "back": 2166.75
           },
           "kind": "strength"
         }
       ],
       "t": 1786518900000,
       "muscleLoad": {
-        "back": 7448.1,
+        "back": 7446.75,
         "biceps": 1584,
         "chest": 320,
         "shoulders": 624,
-        "forearms": 7227
+        "forearms": 7222.5
       },
       "isAerobic": false
     },
@@ -1987,20 +2016,20 @@
               "reps": 10
             }
           ],
-          "load": 3212,
-          "top1RM": 107.06666666666666,
-          "topWeight": 80.3,
+          "load": 3210,
+          "top1RM": 107,
+          "topWeight": 80.25,
           "muscles": {
-            "chest": 2248.3999999999996,
-            "triceps": 2248.3999999999996
+            "chest": 2247,
+            "triceps": 2247
           },
           "kind": "strength"
         }
       ],
       "t": 1786204500000,
       "muscleLoad": {
-        "chest": 7960.4,
-        "triceps": 4014.7999999999997,
+        "chest": 7959,
+        "triceps": 4013.4,
         "shoulders": 1795.1999999999998
       },
       "isAerobic": false
@@ -2265,23 +2294,23 @@
               "seconds": 35
             }
           ],
-          "load": 5621,
+          "load": 5617.5,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 5621,
-            "back": 1686.3
+            "forearms": 5617.5,
+            "back": 1685.25
           },
           "kind": "strength"
         }
       ],
       "t": 1785853800000,
       "muscleLoad": {
-        "back": 10298.3,
+        "back": 10297.25,
         "biceps": 2940.8,
         "shoulders": 561.6,
         "chest": 316.8,
-        "forearms": 5621
+        "forearms": 5617.5
       },
       "isAerobic": false
     },
@@ -2302,11 +2331,11 @@
               "seconds": 35
             }
           ],
-          "load": 8431.5,
+          "load": 8426.25,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "core": 8431.5
+            "core": 8426.25
           },
           "kind": "strength"
         },
@@ -2402,7 +2431,7 @@
       ],
       "t": 1785791100000,
       "muscleLoad": {
-        "core": 8431.5,
+        "core": 8426.25,
         "chest": 5646,
         "triceps": 1740,
         "shoulders": 1767.2
@@ -2570,23 +2599,23 @@
               "seconds": 25
             }
           ],
-          "load": 6022.5,
+          "load": 6018.75,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 6022.5,
-            "back": 1806.75
+            "forearms": 6018.75,
+            "back": 1805.625
           },
           "kind": "strength"
         }
       ],
       "t": 1785574800000,
       "muscleLoad": {
-        "back": 4190.75,
+        "back": 4189.625,
         "chest": 288,
         "shoulders": 499.2,
         "biceps": 2227.2,
-        "forearms": 6252.9
+        "forearms": 6249.15
       },
       "isAerobic": false
     },
@@ -2855,11 +2884,11 @@
               "reps": 10
             }
           ],
-          "load": 3212,
-          "top1RM": 107.06666666666666,
-          "topWeight": 80.3,
+          "load": 3210,
+          "top1RM": 107,
+          "topWeight": 80.25,
           "muscles": {
-            "core": 3212
+            "core": 3210
           },
           "kind": "strength"
         },
@@ -2879,11 +2908,11 @@
               "reps": 8
             }
           ],
-          "load": 2569.6,
-          "top1RM": 101.71333333333332,
-          "topWeight": 80.3,
+          "load": 2568,
+          "top1RM": 101.64999999999999,
+          "topWeight": 80.25,
           "muscles": {
-            "core": 2569.6
+            "core": 2568
           },
           "kind": "strength"
         }
@@ -2893,7 +2922,7 @@
         "chest": 5510,
         "triceps": 2204,
         "shoulders": 1305,
-        "core": 5781.6
+        "core": 5778
       },
       "isAerobic": false
     },
@@ -3239,11 +3268,11 @@
               "reps": 8
             }
           ],
-          "load": 2569.6,
-          "top1RM": 101.71333333333332,
-          "topWeight": 80.3,
+          "load": 2568,
+          "top1RM": 101.64999999999999,
+          "topWeight": 80.25,
           "muscles": {
-            "core": 2569.6
+            "core": 2568
           },
           "kind": "strength"
         },
@@ -3263,11 +3292,11 @@
               "reps": 8
             }
           ],
-          "load": 2569.6,
-          "top1RM": 101.71333333333332,
-          "topWeight": 80.3,
+          "load": 2568,
+          "top1RM": 101.64999999999999,
+          "topWeight": 80.25,
           "muscles": {
-            "core": 2569.6
+            "core": 2568
           },
           "kind": "strength"
         }
@@ -3277,7 +3306,7 @@
         "shoulders": 6345.4,
         "triceps": 518.4,
         "back": 1436.1,
-        "core": 5139.2
+        "core": 5136
       },
       "isAerobic": false
     },
@@ -3415,23 +3444,23 @@
               "seconds": 20
             }
           ],
-          "load": 4818,
+          "load": 4815,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 4818,
-            "back": 1445.3999999999999
+            "forearms": 4815,
+            "back": 1444.5
           },
           "kind": "strength"
         }
       ],
       "t": 1784647800000,
       "muscleLoad": {
-        "back": 9717.4,
+        "back": 9716.5,
         "biceps": 2828.8,
         "shoulders": 576,
         "chest": 288,
-        "forearms": 4818
+        "forearms": 4815
       },
       "isAerobic": false
     },
@@ -3593,12 +3622,12 @@
               "seconds": 20
             }
           ],
-          "load": 4818,
+          "load": 4815,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 4818,
-            "back": 1445.3999999999999
+            "forearms": 4815,
+            "back": 1444.5
           },
           "kind": "strength"
         },
@@ -3629,11 +3658,11 @@
               "seconds": 45
             }
           ],
-          "load": 3613.5,
+          "load": 3611.25,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "core": 3613.5
+            "core": 3611.25
           },
           "kind": "strength"
         }
@@ -3641,9 +3670,9 @@
       "t": 1784398800000,
       "muscleLoad": {
         "biceps": 2244,
-        "forearms": 6008.4,
-        "back": 1445.3999999999999,
-        "core": 3613.5
+        "forearms": 6005.4,
+        "back": 1444.5,
+        "core": 3611.25
       },
       "isAerobic": false
     },
@@ -3809,18 +3838,18 @@
               "seconds": 30
             }
           ],
-          "load": 7227,
+          "load": 7222.5,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "core": 7227
+            "core": 7222.5
           },
           "kind": "strength"
         }
       ],
       "t": 1783976700000,
       "muscleLoad": {
-        "core": 7227
+        "core": 7222.5
       },
       "isAerobic": false
     },
@@ -4564,23 +4593,23 @@
               "seconds": 30
             }
           ],
-          "load": 2409,
+          "load": 2407.5,
           "top1RM": 0,
-          "topWeight": 80.3,
+          "topWeight": 80.25,
           "muscles": {
-            "forearms": 2409,
-            "back": 722.6999999999999
+            "forearms": 2407.5,
+            "back": 722.25
           },
           "kind": "strength"
         }
       ],
       "t": 1782583800000,
       "muscleLoad": {
-        "back": 7826.7,
+        "back": 7826.25,
         "biceps": 2366.4,
         "shoulders": 561.6,
         "chest": 288,
-        "forearms": 2409
+        "forearms": 2407.5
       },
       "isAerobic": false
     },
@@ -5964,8 +5993,8 @@
     }
   ],
   "ref": {
-    "chest": 7960.4,
-    "back": 12020.1,
+    "chest": 7959,
+    "back": 12018.75,
     "shoulders": 6892.8,
     "biceps": 3536.0000000000005,
     "triceps": 6060,
@@ -5983,7 +6012,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 4,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -5991,15 +6020,15 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 85,
-      "readyInHours": 62.5,
+      "pct": 60,
+      "readyInHours": 41.2,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 9,
+      "pct": 5,
       "readyInHours": 0,
       "ready": true
     },
@@ -6007,8 +6036,8 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 78,
-      "readyInHours": 38.1,
+      "pct": 46,
+      "readyInHours": 16.8,
       "ready": false
     },
     "triceps": {
@@ -6023,15 +6052,15 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 41,
-      "readyInHours": 9.1,
-      "ready": false
+      "pct": 20,
+      "readyInHours": 0,
+      "ready": true
     },
     "quads": {
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 0,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -6063,7 +6092,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 0,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -6079,7 +6108,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 0,
+      "pct": 29,
       "readyInHours": 0,
       "ready": true
     }
@@ -6087,14 +6116,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 4,
+      "pct": 2,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 4,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         }
@@ -6102,29 +6131,29 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 85,
-      "readyInHours": 62.5,
+      "pct": 60,
+      "readyInHours": 41.2,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 85,
-          "readyInHours": 62.5,
+          "pct": 60,
+          "readyInHours": 41.2,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 9,
+      "pct": 5,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 9,
+          "pct": 5,
           "readyInHours": 0,
           "ready": true
         }
@@ -6132,24 +6161,24 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 40,
-      "readyInHours": 38.1,
+      "pct": 22,
+      "readyInHours": 16.8,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 78,
-          "readyInHours": 38.1,
+          "pct": 46,
+          "readyInHours": 16.8,
           "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 41,
-          "readyInHours": 9.1,
-          "ready": false
+          "pct": 20,
+          "readyInHours": 0,
+          "ready": true
         },
         {
           "key": "triceps",
@@ -6170,7 +6199,15 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 0,
+          "pct": 1,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "calves",
+          "label": "Calves",
+          "section": "Legs",
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         },
@@ -6197,14 +6234,6 @@
           "pct": 0,
           "readyInHours": 0,
           "ready": true
-        },
-        {
-          "key": "calves",
-          "label": "Calves",
-          "section": "Legs",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
         }
       ]
     },
@@ -6225,14 +6254,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 0,
+      "pct": 29,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 0,
+          "pct": 29,
           "readyInHours": 0,
           "ready": true
         }
@@ -6428,7 +6457,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 16,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Low Row",
@@ -6445,7 +6474,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 17,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Lat Pulldown (Triangle)",
@@ -6479,7 +6508,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 6,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell Pullover",
@@ -6496,7 +6525,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 4,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dead Hang",
@@ -6513,7 +6542,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 1268,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Shoulders": [
@@ -7222,44 +7251,44 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 562,
-        "sessions": 3,
-        "acwr": 1
+        "stress": 730,
+        "sessions": 4,
+        "acwr": 1.21
       },
       {
         "label": "-4w",
-        "stress": 618,
+        "stress": 678,
         "sessions": 5,
         "acwr": 1.05
       },
       {
         "label": "-3w",
-        "stress": 641,
+        "stress": 467,
         "sessions": 3,
-        "acwr": 0.98
+        "acwr": 0.74
       },
       {
         "label": "-2w",
-        "stress": 741,
+        "stress": 859,
         "sessions": 4,
-        "acwr": 1.16
+        "acwr": 1.26
       },
       {
         "label": "-1w",
-        "stress": 601,
+        "stress": 501,
         "sessions": 6,
-        "acwr": 0.92
+        "acwr": 0.8
       },
       {
         "label": "This wk",
-        "stress": 302,
+        "stress": 265,
         "sessions": 2,
-        "acwr": 0.53
+        "acwr": 0.51
       }
     ],
-    "acute": 302,
-    "chronic": 571,
-    "acwr": 0.53,
+    "acute": 265,
+    "chronic": 523,
+    "acwr": 0.51,
     "acwrZone": "detraining",
     "sessions28": 15
   },
@@ -7268,9 +7297,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-10T21:04:09.009Z",
+    "readyAt": "2026-09-11T18:22:18.658Z",
     "neverLogged": false,
-    "daysSince": 17,
+    "daysSince": 17.9,
     "suggestedExercises": [
       {
         "name": "Leg Curls",
@@ -7433,38 +7462,38 @@
     ],
     "guidance": [
       "Quads are outpacing hamstrings 2.59× across the program — lead with RDLs / leg curls / glute-hamstring work today rather than quad-dominant lifts.",
-      "Load ratio 0.53 has dipped — a normal, or even a slightly harder, session is fine."
+      "Load ratio 0.51 has dipped — a normal, or even a slightly harder, session is fine."
     ],
     "ranked": [
       {
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 17
+        "daysSince": 17.9
       },
       {
         "section": "Shoulders",
-        "fatigue": 9,
+        "fatigue": 5,
         "readyInHours": 0,
-        "daysSince": 13.6
+        "daysSince": 14.4
       },
       {
         "section": "Chest",
-        "fatigue": 4,
+        "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 33.2
+        "daysSince": 34.1
       },
       {
         "section": "Arms",
-        "fatigue": 40,
-        "readyInHours": 38.1,
-        "daysSince": 0.1
+        "fatigue": 22,
+        "readyInHours": 16.8,
+        "daysSince": 1
       },
       {
         "section": "Back",
-        "fatigue": 85,
-        "readyInHours": 62.5,
-        "daysSince": 0.1
+        "fatigue": 60,
+        "readyInHours": 41.2,
+        "daysSince": 1
       }
     ],
     "suggestedCount": 5,
@@ -7472,7 +7501,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 6.5
+    "daysSinceAerobic": 0.1
   },
   "alerts": [
     {
@@ -7483,12 +7512,7 @@
     {
       "level": "low",
       "title": "Load dropped off",
-      "detail": "Load ratio 0.53 (<0.8). A normal training week will bring this back up."
-    },
-    {
-      "level": "low",
-      "title": "Back fatigued (85%)",
-      "detail": "Recovers in ~62.5h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Load ratio 0.51 (<0.8). A normal training week will bring this back up."
     }
   ],
   "changes": [
@@ -7509,14 +7533,14 @@
       8,
       6,
       3,
-      12,
+      13,
       13
     ],
     "daysSinceLast": 0.1,
-    "total": 60
+    "total": 61
   },
   "relstrength": {
-    "bodyweightKg": 80.3,
+    "bodyweightKg": 80.25,
     "items": [
       {
         "name": "Leg Press",
@@ -7536,7 +7560,7 @@
       {
         "name": "Low Row",
         "oneRM": 108,
-        "ratio": 1.34
+        "ratio": 1.35
       },
       {
         "name": "Converging Shoulder Press",
@@ -7562,15 +7586,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 30,
-    "km7": 4.2,
-    "km28": 24.1,
-    "totalKm": 128,
+    "count": 31,
+    "km7": 3.5,
+    "km28": 27.6,
+    "totalKm": 131.5,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 0,
-    "avgPace": 9.51413495957138,
-    "paceTrend": 6.26,
+    "avgPace": 9.465067136522991,
+    "paceTrend": 3.01,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -7579,8 +7603,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 6.5,
+    "daysSinceLast": 0.1,
     "recent": [
+      {
+        "t": 1789138800000,
+        "name": "Outdoor Run",
+        "distanceKm": 3.51,
+        "durationMin": 28.4,
+        "avgHr": null,
+        "pace": 8.091168091168091
+      },
       {
         "t": 1788512400000,
         "name": "Outdoor Walk",
@@ -7612,27 +7644,32 @@
         "durationMin": 0,
         "avgHr": null,
         "pace": 0
-      },
-      {
-        "t": 1787992800000,
-        "name": "Outdoor Walk",
-        "distanceKm": 6,
-        "durationMin": 80,
-        "avgHr": null,
-        "pace": 13.333333333333334
       }
     ]
   },
   "bodyweight": {
     "any": true,
-    "current": 80.3,
-    "prev": 80.5,
-    "delta": -0.2,
-    "totalChange": -1.45,
-    "latestDate": "2026-09-01T00:00",
-    "min": 80.3,
+    "current": 80.25,
+    "prev": 80.3,
+    "delta": -0.05,
+    "totalChange": -1.5,
+    "latestDate": "2026-09-11T08:30",
+    "min": 80.25,
     "max": 81.75,
     "history": [
+      {
+        "datetime": "2026-09-11T08:30",
+        "kg": 80.25,
+        "bodyComposition": {
+          "bmi": 27.4,
+          "body_fat_pct": 26.6,
+          "muscle_mass_kg": 56,
+          "visceral_fat": 11,
+          "bmr_kcal": 1707,
+          "body_age": 29,
+          "resting_heart_rate": 83
+        }
+      },
       {
         "datetime": "2026-09-01T00:00",
         "kg": 80.3,
@@ -7870,26 +7907,33 @@
     ],
     "composition": {
       "bmi": 27.4,
-      "body_fat_pct": 26.7,
+      "body_fat_pct": 26.6,
       "muscle_mass_kg": 56,
       "visceral_fat": 11,
-      "bmr_kcal": 1709,
+      "bmr_kcal": 1707,
       "body_age": 29,
-      "resting_heart_rate": 91
+      "resting_heart_rate": 83
     }
   },
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-09-10",
-      "start": "23:45",
-      "end": "07:30",
-      "hours": 7.75,
-      "note": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."
+      "date": "2026-09-11",
+      "start": "00:15",
+      "end": "07:45",
+      "hours": 7.5,
+      "note": "Solid full night, ~7.5h — squarely in the 7-9h target band, one continuous stretch."
     },
-    "avg7": 7.8,
+    "avg7": 7.5,
     "status": "good",
     "history": [
+      {
+        "date": "2026-09-11",
+        "start": "00:15",
+        "end": "07:45",
+        "hours": 7.5,
+        "note": "Solid full night, ~7.5h — squarely in the 7-9h target band, one continuous stretch."
+      },
       {
         "date": "2026-09-10",
         "start": "23:45",

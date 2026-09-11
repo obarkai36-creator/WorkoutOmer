@@ -1,7 +1,7 @@
 {
   "date": "2026-09-11",
   "day_number": 76,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Outdoor Run, Or Akiva — 3.51km / 28:24 (8'05\"/km), cadence 138, 23m elevation gain, ~240 kcal (Nike Run Club), 15:00, 31°C sun.",
   "items": [
@@ -26,13 +26,14 @@
     {"time": "19:30", "name": "Sirloin steak, oven baked (3 pieces)", "category": "food", "qty": "3 pieces (~120g assumed, ~40g/piece — not weighed)", "kcal": 276, "protein_g": 32.4, "carbs_g": 0, "fat_g": 16.8, "fiber_g": 0, "note": "same red-meat reference established 09-10 (~230kcal/27p/0c/14f per 100g; ~4.5mg zinc/~15mcg selenium per 100g). Credits ~5.4mg zinc / ~18mcg selenium. Piece size assumed, flagged as approximate."},
     {"time": "19:30", "name": "Baked potato, medium (1)", "category": "food", "qty": "1 medium (~170g, with skin)", "kcal": 161, "protein_g": 4.3, "carbs_g": 36.6, "fat_g": 0.2, "fiber_g": 3.8, "note": "standard baked potato reference (flesh+skin). Credits ~16mg vitamin C."},
     {"time": "19:30", "name": "Desserts (unspecified)", "category": "food", "qty": "unspecified type/quantity — rough generic placeholder", "kcal": 200, "protein_g": 2, "carbs_g": 28, "fat_g": 9, "fiber_g": 1, "note": "\"desserts\" mentioned with no type or quantity given — logged as a generic mixed-dessert placeholder (~200kcal). Heavily flagged as approximate; please correct with actual dessert(s)/quantity if this should be adjusted."},
-    {"time": "19:30", "name": "Red wine", "category": "drink", "qty": "1 glass (~150 ml)", "kcal": 128, "protein_g": 0.1, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "note": "standard glass reference, ~1.5 units."}
+    {"time": "19:30", "name": "Red wine", "category": "drink", "qty": "1 glass (~150 ml)", "kcal": 128, "protein_g": 0.1, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "note": "standard glass reference, ~1.5 units."},
+    {"time": "21:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 27,
     "selenium_mcg": 150,
     "folate_mcg_dfe": 25.5,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1095.45,
     "vitamin_d_iu": 2750,
     "vitamin_e_mg": 134,
@@ -54,7 +55,11 @@
     "Sun-exposure vitamin D estimate for the run (rough/low-confidence, per the standing estimation method): no clothing/sunscreen detail given, so assumed full 28.4min duration sun-exposed at typical running-gear coverage (forearms/lower legs/face/neck — 'moderate' area, ~30 IU/min midday anchor). 15:00 is only ~2h past solar noon, so only a light time-of-day discount applied (~90% of midday rate). Estimate: 28.4 × 30 × 0.9 ≈ 767 IU, rounded to 750 IU — folded into vitamin_d_iu. Flag if actual sun exposure, shade, or sunscreen use differed.",
     "16:30 post-run: 4.5g creatine monohydrate (zero kcal/macros) + 1 vanilla protein yogurt (Danone PRO 0% reference) + 4 M&M's (milk chocolate, same ~0.9g/piece generic reference as 09-09) + 200g green grapes (standard reference, ~69kcal/100g).",
     "19:30 dinner (time approximated, not given): a composed salad (lettuce, celery, mango, watermelon, cucumber, cherry tomatoes, pomegranate seeds, chicken breast — no weights given, all component portions assumed at standard sizes and flagged) + 1 baked chicken drumstick + 3 pieces of oven-baked sirloin (~120g assumed, using the same red-meat reference established 09-10) + 1 medium baked potato + 1 glass red wine + unspecified desserts (generic ~200kcal placeholder — flag if this should be corrected with actual type/quantity). Meats + tomato/watermelon credited ~7mg zinc, ~50mcg selenium, ~10.7mg lycopene, ~83mg vitamin C, ~25.5mcg folate DFE — folded into today's micros.",
-    "19:30 red wine (1 glass, ~150ml, ~1.5 units) — logged to lifestyle.json. Second consecutive drinking day (also had wine 09-10), a bit more frequent than the <=1 glass/week baseline, though still small single-glass pours."
+    "19:30 red wine (1 glass, ~150ml, ~1.5 units) — logged to lifestyle.json. Second consecutive drinking day (also had wine 09-10), a bit more frequent than the <=1 glass/week baseline, though still small single-glass pours.",
+    "21:30 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target, the last remaining micro gap after dinner.",
+    "Retainers: no entry logged for tonight (09-11) or last night (09-10) — only 2 consecutive nights without an entry so far (09-09 was worn:true), below the 3-night flag threshold. No flag needed.",
+    "Last full itemized tracking day before the macro tracking break resumes 09-12 through 09-17 (per CLAUDE.md).",
+    "Day complete."
   ],
-  "status_note": "Day started. Slept 7.5h (00:15-07:45) — a solid full night. AM allergy meds done."
+  "status_note": "Day complete. Slept 7.5h (00:15-07:45) — solid night. Outdoor Run (3.51km/28:24, Or Akiva) mid-afternoon. Full itemized food tracking today — the macro tracking break resumes tomorrow (09-12) through 09-17. Zinc/selenium/vitamin C/D/E/omega-3 all cleared target via essential-5 + dinner meats + omega-3 softgels; folate ran low again today (only ~25.5mcg vs 400mcg target)."
 }
