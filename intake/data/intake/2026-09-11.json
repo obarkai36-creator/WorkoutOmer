@@ -5,24 +5,30 @@
   "workout_today": false,
   "items": [
     {"time": "09:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
-    {"time": "09:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+    {"time": "09:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "10:30", "name": "Breakfast — shared green salad (portion)", "category": "food", "qty": "~150 g (portion of a shared bowl)", "kcal": 60, "protein_g": 3, "carbs_g": 6, "fat_g": 3, "fiber_g": 3, "time_approx": true, "note": "mixed leafy greens (lettuce, kale) with a light dressing, shared dish — portion eaten estimated from photo, not weighed. Flagged as approximate."},
+    {"time": "10:30", "name": "Breakfast — shared zucchini & soft cheese salad (portion)", "category": "food", "qty": "~150 g (portion of a shared bowl)", "kcal": 220, "protein_g": 10, "carbs_g": 8, "fat_g": 16, "fiber_g": 2, "time_approx": true, "note": "zucchini/cucumber chunks with a soft cheese (burrata/labneh-style) and crispy bacon or tapenade bits, shared dish — portion eaten estimated from photo, not weighed. Flagged as approximate."},
+    {"time": "10:30", "name": "Breakfast — toast (rye, soft cheese, peach, honey), 1 of 2 pieces", "category": "food", "qty": "1 piece (~85 g), shared", "kcal": 204, "protein_g": 7.85, "carbs_g": 25.65, "fat_g": 8, "fiber_g": 3.2, "time_approx": true, "note": "dark rye/sourdough toast with a soft blue-veined cheese, grilled peach slices, honey drizzle, microgreens — half of a shared 2-piece plate, estimated from photo. Flagged as approximate."},
+    {"time": "10:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:30", "name": "Orange juice, a few sips", "category": "drink", "qty": "~50 ml", "kcal": 22.5, "protein_g": 0.35, "carbs_g": 5.2, "fat_g": 0.1, "fiber_g": 0, "time_approx": true, "note": "standard OJ reference (~45kcal/100ml), a few sips assumed as ~50ml. Credits ~12.5mg vitamin C."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 0,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 12.5,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "assumptions": [
     "Sleep logged: 00:15-07:45, 7.5h — squarely in the 7-9h target band, a solid night.",
     "08:45 partnered ejaculation — logged to ejaculation.json.",
     "Last full itemized tracking day before the macro tracking break resumes 09-12.",
-    "09:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done."
+    "09:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "10:30 breakfast (time approximated), from shared photos: portion of a mixed green salad + portion of a zucchini/soft-cheese salad + 1 of 2 toast pieces (rye, soft cheese, peach, honey) — all shared dishes, portions estimated visually rather than weighed, flagged. Also 1 espresso (1 caffeine shot) + a few sips of orange juice (~50ml, ~12.5mg vitamin C)."
   ],
   "status_note": "Day started. Slept 7.5h (00:15-07:45) — a solid full night. AM allergy meds done."
 }
