@@ -1,21 +1,20 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-10",
-    "latest_session": "Back day, return after a ~10-day layoff + back/leg stress from moving — adjusted plan (time approximated, not given)",
-    "sessions_logged": 60,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-09-11",
+    "latest_session": "Outdoor Run — Or Akiva, 31°C sun, ~240 kcal (Nike Run Club)",
+    "sessions_logged": 61,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 24.1,
-    "aerobic_sessions_28d": 7,
-    "avg_pace": "9:31/km",
+    "aerobic_28d_km": 27.6,
+    "aerobic_sessions_28d": 8,
+    "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 0.53,
+    "acwr": 0.46,
     "recommended_next": "Legs day",
     "alerts": [
       "Push volume is 1.58× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Load ratio 0.53 (<0.8). A normal training week will bring this back up.",
-      "Recovers in ~62.5h. Avoid loading it hard before then — you trained it most recently."
+      "Load ratio 0.46 (<0.8). A normal training week will bring this back up."
     ]
   },
   "entries": [
@@ -377,6 +376,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Return after a ~10-day layoff since the last Back day (08-31) plus back/leg stress from moving — deliberately scaled-down plan, no PRs expected or attempted. Diverging Seated Row 85kg×4×10 (down from 97kg×4×10 best, est. 1RM 113.3 vs 129.3); Low Row 72kg×4×8 (down from 79kg×4×11 best, est. 1RM 91.2 vs 108.0); Reverse Incline DB Row 24kg each (48kg)×4×12, as suggested (down from 26kg each×4×12 best, est. 1RM 67.2 vs 72.8); Dumbbell Pullover 18kg×4×10 (down from 20kg×4×12 best, est. 1RM 24.0 vs 28.0); Dead Hang 25s×3, as suggested (down from 35s+30s+25s best, volume 6022.5 vs 7290.0). 0 PRs — as planned.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-11",
+      "type": "Outdoor Run",
+      "duration_min": 28.4,
+      "intensity": "moderate",
+      "notes": "Or Akiva, 3.51km · 8'05\"/km · cadence 138 · 23m elevation gain · ~240 kcal, 31°C sun (Nike Run Club).",
       "_source": "manual log"
     }
   ]

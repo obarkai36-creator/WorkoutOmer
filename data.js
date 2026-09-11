@@ -287,6 +287,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 11 Sep — Outdoor Run, Or Akiva (15:00, Nike Run Club)
+  {
+    datetime: "2026-09-11T15:00", note: "Outdoor Run — Or Akiva, 31°C sun, ~240 kcal (Nike Run Club)",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 3.51, durationMin: 28.4, cadence: 138, elevationGainM: 23 },
+    ],
+  },
   // 10 Sep — Back day, return after layoff (adjusted weights)
   {
     datetime: "2026-09-10T18:00", note: "Back day, return after a ~10-day layoff + back/leg stress from moving — adjusted plan (time approximated, not given)",
