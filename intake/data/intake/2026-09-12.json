@@ -30,17 +30,22 @@
     {"time": "15:30", "name": "Chocolate chip banana cake, 1 small square", "category": "food", "qty": "1 small square (~30 g assumed)", "kcal": 96, "protein_g": 1.35, "carbs_g": 14.4, "fat_g": 3.6, "fiber_g": 0.45, "note": "first time logging this item — no recipe on file, estimated as a generic chocolate-chip banana cake (~320kcal/100g, ~4.5p/48c/12f/1.5fiber per 100g). Both the portion and the rate are generic/assumed, flagged as approximate."},
     {"time": "14:30", "name": "Red wine", "category": "drink", "qty": "1 glass (~150 ml)", "kcal": 128, "protein_g": 0, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "standard glass reference, ~1.5 units. Time not given (\"earlier\") — assumed around lunch, flagged."},
     {"time": "14:30", "name": "Whiskey", "category": "drink", "qty": "1 shot (~30 ml, 40% ABV)", "kcal": 70, "protein_g": 0, "carbs_g": 0.1, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "same Johnny Walker Black-style reference as prior whiskey entries, ~1.2 units. Quantity not given, assumed 1 standard shot — flagged. Time not given (\"earlier\") — assumed around lunch."},
-    {"time": "18:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "18:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "20:30", "name": "Dinner — ribeye", "category": "food", "qty": "250 g", "kcal": 728, "protein_g": 60, "carbs_g": 0, "fat_g": 55, "fiber_g": 0, "note": "standard grilled ribeye reference (~291kcal/100g, fattier cut than the generic sirloin/carpaccio reference). Credits ~11.25mg zinc / ~37.5mcg selenium."},
+    {"time": "20:30", "name": "Dinner — sirloin", "category": "food", "qty": "50 g", "kcal": 115, "protein_g": 13.5, "carbs_g": 0, "fat_g": 7, "fiber_g": 0, "note": "same red-meat reference established 09-10/09-11 (~230kcal/27p/0c/14f per 100g). Credits ~2.25mg zinc / ~7.5mcg selenium."},
+    {"time": "20:30", "name": "Dinner — baked potato", "category": "food", "qty": "50 g", "kcal": 47, "protein_g": 1.26, "carbs_g": 10.76, "fat_g": 0.06, "fiber_g": 1.12, "note": "same standard baked potato reference as prior entries. Credits ~4.7mg vitamin C."},
+    {"time": "20:30", "name": "Dinner — chopped salad (tomato, cucumber, red onion, lettuce, olive oil & lemon)", "category": "food", "qty": "200 g", "kcal": 125, "protein_g": 1.6, "carbs_g": 7, "fat_g": 10.3, "fiber_g": 2.4, "note": "assumed ~80% mixed veg + ~1 tbsp olive oil + a splash of lemon juice, component amounts estimated since no weights given, flagged. Credits ~29mg vitamin C, ~4mg lycopene, ~1.9mg vitamin E (olive oil)."},
+    {"time": "20:30", "name": "Dinner — chicken thighs", "category": "food", "qty": "50 g", "kcal": 105, "protein_g": 13, "carbs_g": 0, "fat_g": 5.5, "fiber_g": 0, "note": "standard grilled boneless/skinless chicken thigh reference as prior entries (~209kcal/100g). Credits ~0.65mg zinc / ~7mcg selenium."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 5.47,
-    "selenium_mcg": 27.2,
+    "zinc_mg": 19.62,
+    "selenium_mcg": 79.2,
     "folate_mcg_dfe": 87,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 61.7,
+    "vitamin_c_mg": 95.4,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 9.8
+    "vitamin_e_mg": 1.9,
+    "lycopene_mg": 13.8
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -61,7 +66,8 @@
     "14:00 lunch — a large buffet-style meal, mostly in 'spoon' units (assumed ~30g/spoon per this project's established convention): vegetable chopped salad (2 spoons), tomato & red onion salad (1 spoon), a generic mayo salad of unspecified type (1 spoon), chopped zucchini (2 spoons), hummus (2 spoons), egg salad no mayo (1 spoon), 1 chicken drumstick, chicken breast in honey sauce (1 spoon), 4 small potato cutlets, 3 pieces sweet potato, 80g beef, and 0.5 spoon white rice. Several first-time/generic items (mayo salad, zucchini, egg salad no mayo, chicken in honey sauce, potato cutlets) flagged as directional estimates. Meats + hummus credited ~5.47mg zinc, ~27.2mcg selenium, ~42mcg folate DFE (hummus); veg/tomato items credited ~12mg vitamin C, ~2mg lycopene — all folded into today's micros.",
     "15:30 1 small square chocolate chip banana cake — first time logging this item, no recipe on file. Estimated as a generic banana cake with chocolate chips (~320kcal/100g), square assumed ~30g. Both the portion and the rate are flagged as approximate/generic.",
     "Red wine (1 glass, ~150ml, ~1.5 units) + whiskey (1 shot, ~30ml, ~1.2 units) — no time given (\"earlier\"), assumed ~14:30 around lunch, and whiskey quantity assumed at 1 standard shot since \"some\" wasn't quantified. Both flagged. Also logged to lifestyle.json. Third consecutive drinking day (also 09-10 and 09-11 wine) — running well above the <=1 glass/week baseline this week, though still modest single-serving pours each day.",
-    "18:00 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target."
+    "18:00 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
+    "20:30 dinner: 250g ribeye + 50g sirloin (same red-meat reference as 09-10/09-11) + 50g baked potato + 200g chopped salad (tomato, cucumber, red onion, lettuce, olive oil & lemon — component amounts assumed, flagged) + 50g chicken thighs (standard reference). A very high-protein/red-meat-heavy dinner on top of an already meat-heavy lunch — credited ~14.15mg zinc, ~52mcg selenium, ~29mg vitamin C, ~4mg lycopene, ~1.9mg vitamin E, all folded into today's micros."
   ],
-  "status_note": "Day in progress. Slept 8.17h (23:15-07:25) — a solid night. Legs day done at 09:00 (1 PR: Single-Leg Extensions, plus a confirmed Hip Thrust load PR). Attempting full itemized food tracking today (exception to the macro-break window) — a large buffet-style lunch, banana cake, red wine + whiskey, and omega-3 logged on top of the morning's items. Third consecutive drinking day this week, flagged."
+  "status_note": "Day in progress. Slept 8.17h (23:15-07:25) — a solid night. Legs day done at 09:00 (1 PR: Single-Leg Extensions, plus a confirmed Hip Thrust load PR). Full itemized food tracking today (exception to the macro-break window) — a very high-protein day overall (lunch + dinner both red-meat/chicken heavy), red wine + whiskey (third consecutive drinking day, flagged), and omega-3 all logged."
 }
