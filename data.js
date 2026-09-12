@@ -250,24 +250,24 @@ const SNAPSHOT = [
   { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" } },
 
   // ---- Legs (incl. calves) ----
-  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 3, reps: 6, weight: 83.5, text: "83.5kg × 3×6" }, best: { sets: 4, reps: 11, weight: 76, text: "76kg × 4×11" } },
+  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 8, weight: 81, text: "81kg × 4×8 (inc. frame)" }, best: { sets: 4, reps: 11, weight: 76, text: "76kg × 4×11" } },
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
   { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Leg Press",                    section: "Legs", latest: { sets: 3, reps: 10, weight: 132, text: "132kg × 3×10" }, best: { sets: 4, reps: 10, weight: 132, text: "132kg × 4×10" } },
+  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 10, weight: 132, text: "132kg × 4×10" }, best: { sets: 4, reps: 10, weight: 132, text: "132kg × 4×10" } },
   // NOTE: 11 Jul (202kg) is the first entry counting the full setup total
   // (plates each side x2 + sled/frame weight). Earlier entries (e.g. 131kg)
   // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
   // as not directly comparable; use the each-side+frame total from now on.
   { name: "Angled Leg Press",             section: "Legs", latest: { sets: 3, reps: 8, weight: 152, text: "152kg setup (45kg each side + 62kg frame) × 3×8" }, best: { sets: 4, reps: 7, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×7" } },
   { name: "Leg Extensions",               section: "Legs", latest: { sets: 3, reps: 8, weight: 111, text: "111kg × 3×8" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
-  { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 4, reps: 6, weight: 57, text: "57kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 57, text: "57kg each × 4×6" } },
-  { name: "Leg Curls",                    section: "Legs", latest: { sets: 3, reps: 8, weight: 111, text: "111kg × 3×8" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
+  { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" } },
+  { name: "Leg Curls",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Outer Thigh",                  section: "Legs", latest: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" }, best: { sets: 5, reps: 10, weight: 79, text: "79kg × 5×10" } },
   { name: "Inner Thigh",                  section: "Legs", latest: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" }, best: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" } },
-  { name: "Glute Extension",              section: "Legs", latest: { sets: 3, reps: 6, weight: 32, text: "32kg × 3×6 each" }, best: { sets: 1, reps: 5, weight: 59, text: "59kg × 1×5 each" } },
+  { name: "Glute Extension",              section: "Legs", latest: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" }, best: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" } },
   { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 10, weight: 24, text: "24kg × 4×10" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
   { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
-  { name: "Hip Thrust",                   section: "Legs", latest: { sets: 3, reps: 8, weight: 81.1, text: "Bodyweight × 3×8 (unweighted variant — not compared to the 24kg barbell-loaded best)" }, best: { sets: 3, reps: 12, weight: 24, text: "24kg × 3×12" } },
+  { name: "Hip Thrust",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total — note: prior best was logged as 24kg total, not per-side; flag if this convention changed rather than the load itself)" }, best: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total)" } },
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
   { name: "Hack Squat",                   section: "Legs", latest: { sets: 3, reps: 6, weight: 123.7, text: "Bodyweight + 42.6kg frame × 3×6" }, best: { sets: 3, reps: 6, weight: 123.7, text: "Bodyweight + 42.6kg frame × 3×6" } },
 
@@ -287,6 +287,18 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 12 Sep — Legs day (09:00)
+  {
+    datetime: "2026-09-12T09:00", note: "Legs day",
+    exercises: [
+      { name: "Leg Press",             sets: [ { reps: 10, weight: 132 }, { reps: 10, weight: 132 }, { reps: 10, weight: 132 }, { reps: 10, weight: 132 } ] },
+      { name: "Glute Extension",       sets: [ { reps: 5, weight: 59 }, { reps: 5, weight: 59 } ] },
+      { name: "Calf Raises Machine",   sets: [ { reps: 8, weight: 81 }, { reps: 8, weight: 81 }, { reps: 8, weight: 81 }, { reps: 8, weight: 81 } ] },
+      { name: "Leg Curls",             sets: [ { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 } ] },
+      { name: "Single-Leg Extensions", sets: [ { reps: 7, weight: 57 }, { reps: 7, weight: 57 }, { reps: 7, weight: 57 }, { reps: 7, weight: 57 } ] },
+      { name: "Hip Thrust",            sets: [ { reps: 8, weight: 48 }, { reps: 8, weight: 48 }, { reps: 8, weight: 48 }, { reps: 8, weight: 48 } ] },
+    ],
+  },
   // 11 Sep — Outdoor Run, Or Akiva (15:00, Nike Run Club)
   {
     datetime: "2026-09-11T15:00", note: "Outdoor Run — Or Akiva, 31°C sun, ~240 kcal (Nike Run Club)",

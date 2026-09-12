@@ -2,7 +2,8 @@
   "date": "2026-09-12",
   "day_number": 77,
   "in_progress": true,
-  "workout_today": false,
+  "workout_today": true,
+  "workout_summary": "Legs day, 09:00 — Leg Press 132kg×4×10, Glute Extension 59kg×2×5 each, Calf Raises Machine 81kg×4×8, Leg Curls 111kg×4×12, Single-Leg Extensions 57kg×4×7 each (new PR), Hip Thrust 24kg each side×4×8.",
   "items": [
     {"time": "08:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
@@ -29,7 +30,8 @@
     "08:00 double espresso (2 caffeine shots).",
     "User followed through with real itemized food logging today — treating 09-12 as an exception day (full detail, exclude_from_monthly_macros lifted), same pattern as the 09-09/09-10/09-11 carve-out. Break resumes 09-13 unless today continues.",
     "08:30 salad (lettuce, pomegranate seeds, honey mustard vinaigrette) — no weights given, component portions assumed standard and flagged as approximate.",
-    "08:45 1 spoon chocolate birthday cake — first time logging this item, no recipe on file. Estimated as a generic frosted chocolate layer cake (~400kcal/100g), spoon assumed ~25g. Both the portion and the rate are flagged as approximate/generic."
+    "08:45 1 spoon chocolate birthday cake — first time logging this item, no recipe on file. Estimated as a generic frosted chocolate layer cake (~400kcal/100g), spoon assumed ~25g. Both the portion and the rate are flagged as approximate/generic.",
+    "09:00 Legs day — Leg Press 132kg×4×10 (ties best); Glute Extension 59kg×2×5 each (ties best 1RM, more volume than the 1×5 best — logged as new best); Calf Raises Machine 81kg×4×8 inc. frame (not a PR, est. 1RM 102.6 vs 103.9 best); Leg Curls 111kg×4×12 (ties best); Single-Leg Extensions 57kg×4×7 each (new PR, +1 rep at same weight); Hip Thrust 24kg each side×4×8 (48kg total, logged as new best — flagged: prior 24kg best was a total load, not per-side, so please confirm this is a real load increase and not a labeling difference). Logged to data.js/workouts.json."
   ],
-  "status_note": "Day in progress. Slept 8.17h (23:15-07:25) — a solid night. Attempting full itemized food tracking today (exception to the macro-break window) — 2 caffeine shots, a lettuce/pomegranate salad, and a spoon of birthday cake logged so far."
+  "status_note": "Day in progress. Slept 8.17h (23:15-07:25) — a solid night. Legs day done at 09:00 (1 PR: Single-Leg Extensions). Attempting full itemized food tracking today (exception to the macro-break window) — 2 caffeine shots, a lettuce/pomegranate salad, and a spoon of birthday cake logged so far."
 }

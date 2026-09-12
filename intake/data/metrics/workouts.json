@@ -1,20 +1,20 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-11",
-    "latest_session": "Outdoor Run — Or Akiva, 31°C sun, ~240 kcal (Nike Run Club)",
-    "sessions_logged": 61,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-09-12",
+    "latest_session": "Legs day",
+    "sessions_logged": 62,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 27.6,
     "aerobic_sessions_28d": 8,
     "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 0.51,
-    "recommended_next": "Legs day",
+    "acwr": 0.87,
+    "recommended_next": "Shoulders day",
     "alerts": [
       "Push volume is 1.58× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Load ratio 0.51 (<0.8). A normal training week will bring this back up."
+      "Recovers in ~71.2h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -384,6 +384,14 @@
       "duration_min": 28.4,
       "intensity": "moderate",
       "notes": "Or Akiva, 3.51km · 8'05\"/km · cadence 138 · 23m elevation gain · ~240 kcal, 31°C sun (Nike Run Club).",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-12",
+      "type": "Strength — Legs",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "09:00. Leg Press 132kg×4×10 (ties best). Glute Extension 59kg×2×5 each (ties best 1RM ~68.4kg, but 2 sets vs the 1×5 best — more total volume, logged as a new best). Calf Raises Machine 81kg×4×8 inc. frame (est. 1RM 102.6 vs 103.9 best — not a PR). Leg Curls 111kg×4×12 (ties best). Single-Leg Extensions 57kg×4×7 each (new PR, +1 rep at same weight vs 4×6 best, est. 1RM 70.3 vs 68.4). Hip Thrust 24kg each side×4×8 (48kg total) — logged as a new best (est. 1RM 60.8 vs 33.6), but flagged: the prior 24kg best was logged as a TOTAL load, not per-side, so this may reflect a doubled load rather than a labeling change — please confirm.",
       "_source": "manual log"
     }
   ]
