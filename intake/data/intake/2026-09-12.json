@@ -1,7 +1,7 @@
 {
   "date": "2026-09-12",
   "day_number": 77,
-  "in_progress": true,
+  "in_progress": false,
   "workout_today": true,
   "workout_summary": "Legs day, 09:00 — Leg Press 132kg×4×10, Glute Extension 59kg×2×5 each, Calf Raises Machine 81kg×4×8, Leg Curls 111kg×4×12, Single-Leg Extensions 57kg×4×7 each (new PR), Hip Thrust 24kg each side×4×8.",
   "items": [
@@ -35,16 +35,18 @@
     {"time": "20:30", "name": "Dinner — sirloin", "category": "food", "qty": "50 g", "kcal": 115, "protein_g": 13.5, "carbs_g": 0, "fat_g": 7, "fiber_g": 0, "note": "same red-meat reference established 09-10/09-11 (~230kcal/27p/0c/14f per 100g). Credits ~2.25mg zinc / ~7.5mcg selenium."},
     {"time": "20:30", "name": "Dinner — baked potato", "category": "food", "qty": "50 g", "kcal": 47, "protein_g": 1.26, "carbs_g": 10.76, "fat_g": 0.06, "fiber_g": 1.12, "note": "same standard baked potato reference as prior entries. Credits ~4.7mg vitamin C."},
     {"time": "20:30", "name": "Dinner — chopped salad (tomato, cucumber, red onion, lettuce, olive oil & lemon)", "category": "food", "qty": "200 g", "kcal": 125, "protein_g": 1.6, "carbs_g": 7, "fat_g": 10.3, "fiber_g": 2.4, "note": "assumed ~80% mixed veg + ~1 tbsp olive oil + a splash of lemon juice, component amounts estimated since no weights given, flagged. Credits ~29mg vitamin C, ~4mg lycopene, ~1.9mg vitamin E (olive oil)."},
-    {"time": "20:30", "name": "Dinner — chicken thighs", "category": "food", "qty": "50 g", "kcal": 105, "protein_g": 13, "carbs_g": 0, "fat_g": 5.5, "fiber_g": 0, "note": "standard grilled boneless/skinless chicken thigh reference as prior entries (~209kcal/100g). Credits ~0.65mg zinc / ~7mcg selenium."}
+    {"time": "20:30", "name": "Dinner — chicken thighs", "category": "food", "qty": "50 g", "kcal": 105, "protein_g": 13, "carbs_g": 0, "fat_g": 5.5, "fiber_g": 0, "note": "standard grilled boneless/skinless chicken thigh reference as prior entries (~209kcal/100g). Credits ~0.65mg zinc / ~7mcg selenium."},
+    {"time": "22:55", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "22:55", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 19.62,
-    "selenium_mcg": 79.2,
+    "zinc_mg": 39.62,
+    "selenium_mcg": 179.2,
     "folate_mcg_dfe": 87,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 95.4,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 1.9,
+    "vitamin_c_mg": 1095.4,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 135.9,
     "lycopene_mg": 13.8
   },
   "caffeine_shots": 4,
@@ -67,7 +69,12 @@
     "15:30 1 small square chocolate chip banana cake — first time logging this item, no recipe on file. Estimated as a generic banana cake with chocolate chips (~320kcal/100g), square assumed ~30g. Both the portion and the rate are flagged as approximate/generic.",
     "Red wine (1 glass, ~150ml, ~1.5 units) + whiskey (1 shot, ~30ml, ~1.2 units) — no time given (\"earlier\"), assumed ~14:30 around lunch, and whiskey quantity assumed at 1 standard shot since \"some\" wasn't quantified. Both flagged. Also logged to lifestyle.json. Third consecutive drinking day (also 09-10 and 09-11 wine) — running well above the <=1 glass/week baseline this week, though still modest single-serving pours each day.",
     "18:00 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) — clears today's omega-3 target.",
-    "20:30 dinner: 250g ribeye + 50g sirloin (same red-meat reference as 09-10/09-11) + 50g baked potato + 200g chopped salad (tomato, cucumber, red onion, lettuce, olive oil & lemon — component amounts assumed, flagged) + 50g chicken thighs (standard reference). A very high-protein/red-meat-heavy dinner on top of an already meat-heavy lunch — credited ~14.15mg zinc, ~52mcg selenium, ~29mg vitamin C, ~4mg lycopene, ~1.9mg vitamin E, all folded into today's micros."
+    "20:30 dinner: 250g ribeye + 50g sirloin (same red-meat reference as 09-10/09-11) + 50g baked potato + 200g chopped salad (tomato, cucumber, red onion, lettuce, olive oil & lemon — component amounts assumed, flagged) + 50g chicken thighs (standard reference). A very high-protein/red-meat-heavy dinner on top of an already meat-heavy lunch — credited ~14.15mg zinc, ~52mcg selenium, ~29mg vitamin C, ~4mg lycopene, ~1.9mg vitamin E, all folded into today's micros.",
+    "22:55 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — 1000mg vitamin C, 2000IU vitamin D, 134mg vitamin E, 20mg zinc, 100mcg selenium, clearing today's zinc/selenium/vitamin C/D/E targets on top of an already high-zinc/selenium day from meat.",
+    "22:55 Rhinolast PM dose — both allergy spray doses done today.",
+    "Retainers: no entry logged for tonight (09-12), last night (09-11), or the night before (09-10) — last worn night on record was 09-09. That's 3 consecutive calendar nights with no entry (equivalent to worn:false for this check per the corrected rule) — flagging once per the standing EOD check.",
+    "Full day itemized as an exception to the macro tracking break — break resumes for real tomorrow (09-13) through 09-17, per CLAUDE.md.",
+    "Day complete."
   ],
-  "status_note": "Day in progress. Slept 8.17h (23:15-07:25) — a solid night. Legs day done at 09:00 (1 PR: Single-Leg Extensions, plus a confirmed Hip Thrust load PR). Full itemized food tracking today (exception to the macro-break window) — a very high-protein day overall (lunch + dinner both red-meat/chicken heavy), red wine + whiskey (third consecutive drinking day, flagged), and omega-3 all logged."
+  "status_note": "Day complete. Slept 8.17h (23:15-07:25) — a solid night. Legs day done at 09:00 (2 PRs: Single-Leg Extensions, Hip Thrust). Full itemized food tracking today (exception day) — a very high-protein/red-meat-heavy day overall, red wine + whiskey (3rd consecutive drinking day), and essential-5 + omega-3 clearing all micro targets except folate (87 vs 400mcg, ran low). Retainers: 3 consecutive nights with no entry (09-10 through tonight) — flagged. Macro tracking break resumes tomorrow through 09-17."
 }
