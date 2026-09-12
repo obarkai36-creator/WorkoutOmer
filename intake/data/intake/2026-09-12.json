@@ -3,7 +3,10 @@
   "day_number": 77,
   "in_progress": true,
   "workout_today": false,
-  "items": [],
+  "items": [
+    {"time": "08:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "08:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -19,7 +22,9 @@
   "exclude_reason": "Macro tracking break (2026-09-06 through 2026-09-17, per user's explicit request; itemized tracking briefly resumed 09-09/09-10/09-11) — only supplements/medication, caffeine, workouts, sleep, weigh-ins, and lifestyle events logged in detail; meal macros/micros not itemized or estimated.",
   "assumptions": [
     "Sleep logged: 23:15-07:25, 8.17h — within the 7-9h target band, a solid night.",
-    "Day 1 of the macro tracking break resuming (09-12 through 09-17, per CLAUDE.md) — meals not itemized, everything else logged as usual."
+    "Day 1 of the macro tracking break resuming (09-12 through 09-17, per CLAUDE.md) — meals not itemized, everything else logged as usual.",
+    "08:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "User mentioned might attempt itemized macro/micro tracking today despite the break — flagged as tentative, not yet confirmed. If real food logging comes in today, will itemize it normally and note the exception (same pattern as the 09-09/09-10/09-11 carve-out)."
   ],
   "status_note": "Day started. Slept 8.17h (23:15-07:25) — a solid night. Macro tracking break resumes today through 09-17."
 }
