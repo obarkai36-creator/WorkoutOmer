@@ -267,7 +267,7 @@ const SNAPSHOT = [
   { name: "Glute Extension",              section: "Legs", latest: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" }, best: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" } },
   { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 10, weight: 24, text: "24kg × 4×10" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
   { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
-  { name: "Hip Thrust",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total — note: prior best was logged as 24kg total, not per-side; flag if this convention changed rather than the load itself)" }, best: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total)" } },
+  { name: "Hip Thrust",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total — confirmed genuine progression: prior 24kg best was a single dumbbell, now loaded each side)" }, best: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total)" } },
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
   { name: "Hack Squat",                   section: "Legs", latest: { sets: 3, reps: 6, weight: 123.7, text: "Bodyweight + 42.6kg frame × 3×6" }, best: { sets: 3, reps: 6, weight: 123.7, text: "Bodyweight + 42.6kg frame × 3×6" } },
 
