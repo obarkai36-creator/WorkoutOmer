@@ -58,6 +58,21 @@ direction, not the chat history.
   sample content per pillar (not just a label), including all 6 features
   migrated from the email inside the Training detail view.
 
+- **Real-data proof mockup added**: `docs/design/mockup-final.html` — same
+  bento layout/tokens as `mockup-a-bento.html`, but every number, table row,
+  and chart is the actual logged day (2026-09-12, day 77), pulled from
+  `docs/data/2026-09-12.json`, `docs/data/index.json` (21-day history), and
+  `intake/data/metrics/training_full.json` (muscle sections, relative
+  strength, aerobic, changes — none of which are otherwise exposed via
+  `docs/data/*.json` yet, so the real export pipeline already has what the
+  redesign needs). Uses the real vendored `docs/vendor/chart.umd.js` for
+  actual line/bar charts (calories+protein 14/21-day trend, ACWR 6-week bar,
+  sperm-score trend, weight trend) instead of placeholder boxes. The
+  nutrition trend chart replicates the real site's `excludeUntracked`
+  filter (macro-break days read as a false near-zero dip otherwise). This
+  is the reference to build the real implementation from — nothing here is
+  invented data.
+
 ## Open
 
 **Still to decide:**

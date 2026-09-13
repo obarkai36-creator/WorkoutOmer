@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Mockup — Real Data</title>
+<link rel="stylesheet" href="tokens.css">
+<script src="chart.umd.js"></script>
+<style>
+  .hero {
+    background: linear-gradient(160deg, var(--surface-2) 0%, var(--surface-1) 100%);
+    border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow-card);
+    padding: 26px 30px; display: flex; align-items: center; gap: 30px; flex-wrap: wrap;
+  }
+  .hero .ring-col { flex: none; }
+  .hero .body { flex: 1 1 260px; min-width: 0; }
+  .hero .eyebrow-inline { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--text-3); margin-bottom: 6px; }
+  .hero .headline { font-size: 17px; font-weight: 500; line-height: 1.5; color: var(--text-1); max-width: 560px; }
+  .hero .headline b { font-weight: 700; }
+  .hero .trendrow { display: flex; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+  .trend-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: var(--r-pill); background: rgba(22,163,74,.1); color: var(--good); border: 1px solid rgba(22,163,74,.16); }
+  .trend-pill.down { background: rgba(220,38,38,.1); color: var(--bad); border-color: rgba(220,38,38,.16); }
+  .trend-pill.warn { background: rgba(217,119,6,.1); color: var(--warn); border-color: rgba(217,119,6,.16); }
+
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow-card); padding: 20px 22px; position: relative; transition: background .16s, border-color .16s, box-shadow .16s, transform .16s; }
+  .tile.tap:hover { background: var(--surface-2-hover); border-color: var(--border-hover); box-shadow: var(--shadow-card-hover); transform: translateY(-1px); cursor: pointer; }
+  .tile .go { position: absolute; top: 20px; right: 20px; color: var(--text-3); font-size: 15px; transition: color .16s, transform .16s; }
+  .tile.tap:hover .go { color: var(--text-2); transform: translateX(2px); }
+  .tile h3 { margin: 0 0 14px; font-size: 11px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: .09em; }
+  .tile .row { display: flex; align-items: center; gap: 16px; }
+  .tile .num { font-size: 25px; font-weight: 700; letter-spacing: -.02em; color: var(--text-1); }
+  .tile .num small { font-size: 12.5px; font-weight: 500; color: var(--text-3); letter-spacing: 0; margin-left: 2px; }
+  .tile .sub { font-size: 12.5px; color: var(--text-2); margin-top: 3px; }
+  .tile-divider { height: 1px; background: var(--border); margin: 16px 0; }
+
+  .bar-row { display: flex; flex-direction: column; gap: 9px; }
+  .bar { background: var(--surface-inset); border-radius: 8px; height: 6px; overflow: hidden; }
+  .bar > div { height: 100%; border-radius: 8px; }
+  .bar-label { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--text-2); margin-bottom: 4px; }
+
+  .strip { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; }
+  .strip .pill { flex: 0 0 auto; background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-pill); padding: 8px 16px; font-size: 12.5px; color: var(--text-2); display: flex; align-items: center; gap: 8px; box-shadow: var(--shadow-card); }
+  .strip .pill b { color: var(--text-1); font-weight: 600; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; flex: none; }
+
+  .note-panel { background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow-card); padding: 20px 24px; }
+  .note-panel h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .09em; font-weight: 700; color: var(--text-3); margin: 0 0 14px; }
+  .tips { list-style: none; margin: 0; padding: 0; }
+  .tips li { padding: 10px 0; font-size: 13.5px; line-height: 1.5; color: var(--text-2); border-bottom: 1px solid var(--border); }
+  .tips li:last-child { border-bottom: none; }
+  .tips li b { color: var(--text-1); }
+
+  .dgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .dpanel { background: var(--surface-2); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; }
+  .dpanel.span { grid-column: 1 / -1; }
+  .dpanel h4 { font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: var(--text-3); margin: 0 0 14px; }
+  .metric { margin-bottom: 14px; } .metric:last-child { margin-bottom: 0; }
+  .metric-top { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 5px; color: var(--text-1); }
+  .metric-top .vals { color: var(--text-3); }
+  .track { background: var(--surface-inset); border-radius: 8px; height: 6px; overflow: hidden; }
+  .fill { height: 100%; border-radius: 8px; }
+  .metric-note { font-size: 12px; color: var(--text-3); margin-top: 4px; }
+  .dbignum { font-size: 28px; font-weight: 700; line-height: 1; letter-spacing: -.02em; color: var(--text-1); }
+  .dbignum small { font-size: 13px; color: var(--text-3); font-weight: 500; margin-left: 3px; letter-spacing: 0; }
+  .dchips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .dchips.four { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+  .dchip { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 9px 14px; min-width: 96px; }
+  .dchip .v { font-size: 15px; font-weight: 700; color: var(--text-1); letter-spacing: -.01em; }
+  .dchip .k { font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; font-weight: 600; margin-top: 3px; }
+  .devul { list-style: none; margin: 0; padding: 0; }
+  .devul li { padding: 9px 0; font-size: 13px; color: var(--text-2); border-bottom: 1px solid var(--border); }
+  .devul li:last-child { border-bottom: none; }
+  .devul li b { color: var(--text-1); font-weight: 600; }
+  .goalline { font-size: 12.5px; color: var(--text-3); margin: 6px 0 14px; }
+  .dtable { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  .dtable th, .dtable td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .dtable th { color: var(--text-3); font-weight: 600; font-size: 10.5px; text-transform: uppercase; letter-spacing: .04em; position: sticky; top: 0; background: var(--surface-2); }
+  .dtable td.num { text-align: right; white-space: nowrap; }
+  .dtable tr:last-child td { border-bottom: none; }
+  .scrollbox { max-height: 340px; overflow-y: auto; border: 1px solid var(--border); border-radius: 12px; }
+  .chart-box { position: relative; height: 200px; }
+  .chart-box.small { height: 140px; }
+
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(10,14,26,.6); backdrop-filter: blur(3px); display: none; align-items: flex-start; justify-content: center; z-index: 50; padding: 4vh 16px; overflow-y: auto; }
+  .modal-backdrop.open { display: flex; }
+  .modal-panel { background: var(--surface-1); border: 1px solid var(--border-strong); border-radius: 22px; box-shadow: 0 30px 60px -20px rgba(15,23,60,.35), 0 1px 0 rgba(255,255,255,.8) inset; width: 100%; max-width: 980px; padding: 8px; animation: pop .16s ease-out; }
+  @keyframes pop { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+  .modal-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px 14px; }
+  .modal-head .title { display: flex; align-items: center; gap: 12px; }
+  .modal-head h2 { font-size: 17px; font-weight: 700; letter-spacing: -.01em; margin: 0; }
+  .modal-head .subtitle { font-size: 12.5px; color: var(--text-3); margin-top: 2px; }
+  .modal-close { background: var(--surface-2); border: 1px solid var(--border); color: var(--text-2); width: 32px; height: 32px; border-radius: 10px; cursor: pointer; font-size: 15px; }
+  .modal-close:hover { color: var(--text-1); border-color: var(--border-hover); }
+  .modal-body { padding: 6px 20px 22px; max-height: 76vh; overflow-y: auto; }
+  .detail-section { display: none; }
+  .detail-section.active { display: block; }
+
+  @media (max-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } .hero { padding: 22px; } }
+  @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } .hero { flex-direction: column; align-items: flex-start; text-align: left; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mock-banner">🎨 <b>Design Mockup — Real Data.</b> Every number, chart, and table below is the actual logged data for <b>2026-09-12 (day 77)</b>, pulled straight from <code>docs/data/</code> and <code>training_full.json</code> — not sample data. Concept only, nothing here touches the live site yet.</div>
+
+  <header class="top">
+    <div class="brand">
+      <div class="mark"></div>
+      <div><h1>WorkoutOmer</h1><div class="subtitle" id="subtitle">—</div></div>
+    </div>
+    <div class="datenav"><button>‹</button><input type="date" value="2026-09-12"><button>›</button><button class="today-btn">Today</button></div>
+  </header>
+
+  <div class="section-eyebrow">Today</div>
+  <div class="strip" id="strip"></div>
+
+  <div style="margin-top:16px" id="heroSlot"></div>
+
+  <div class="section-eyebrow">At a glance <span style="text-transform:none;font-weight:500;letter-spacing:0;color:var(--text-3)">— tap a tile for the full breakdown</span></div>
+  <div class="grid" id="tileGrid"></div>
+
+  <div class="section-eyebrow">Insights <span style="text-transform:none;font-weight:500;letter-spacing:0;color:var(--text-3)">— real suggestions generated from the logged history</span></div>
+  <div class="note-panel"><h2>Suggestions</h2><ul class="tips" id="suggestList"></ul></div>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop" onclick="if(event.target===this)closeDetail()">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <div class="title"><div id="modalRing"></div><div><h2 id="modalTitle">—</h2><div class="subtitle" id="modalSubtitle">—</div></div></div>
+      <button class="modal-close" onclick="closeDetail()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+/* ============ REAL DATA — pulled 2026-09-13 from docs/data/2026-09-12.json,
+   docs/data/index.json, and intake/data/metrics/training_full.json. This is
+   an actual logged day, not sample content. ============ */
+const REAL = {
+  date: "2026-09-12", dayNumber: 77, totalDays: 77,
+  workoutToday: true, workoutType: "Strength — Legs",
+  workoutNotes: "09:00. Leg Press 132kg×4×10 (ties best). Glute Extension 59kg×2×5 each (ties best 1RM ~68.4kg, but 2 sets vs the 1×5 best — more total volume, logged as a new best). Calf Raises Machine 81kg×4×8 inc. frame (est. 1RM 102.6 vs 103.9 best — not a PR). Leg Curls 111kg×4×12 (ties best). Single-Leg Extensions 57kg×4×7 each (new PR, +1 rep at same weight vs 4×6 best, est. 1RM 70.3 vs 68.4). Hip Thrust 24kg each side×4×8 (48kg total, new PR — confirmed genuine progression: prior 24kg best was a single dumbbell, now loaded each side, est. 1RM 60.8 vs 33.6).",
+  caffeineShots: 4,
+  energy: { overall: 84, prev: 86, band: "Good", details: {
+    sleep: "8.17h last night (target 7-9h)",
+    nutrition: "2818.5/2050 kcal · 178.36/165g protein · 22.945/32g fiber",
+    movement: "last workout 0d ago", caffeine: "4 shot(s) today (soft cap ~5)", alcohol: "logged today" } },
+  sperm: { overall: 60, band: "Building", weekStart: "2026-09-06", weekEnd: "2026-09-12",
+    factors: { nutrition: 45, body_composition: 26, sleep: 96, alcohol: 35, heat_travel_exposure: 100, smoking: 100, ejaculatory_frequency: 100 } },
+  macros: {
+    calories: { consumed: 2818.5, target: 2050, pct: 137 },
+    protein_g: { consumed: 178.36, target: 165, pct: 108 },
+    carbs_g: { consumed: 168.03, target: 190, pct: 88 },
+    fat_g: { consumed: 142.01, target: 65, pct: 218 },
+    fiber_g: { consumed: 22.95, target: 32, pct: 72 },
+  },
+  micros: {
+    zinc_mg: { consumed: 39.62, target: 11, pct: 360 },
+    selenium_mcg: { consumed: 179.2, target: 55, pct: 326 },
+    folate_mcg_dfe: { consumed: 87, target: 400, pct: 22 },
+    omega3_epa_dha_mg: { consumed: 1000, target: 1000, pct: 100 },
+    vitamin_c_mg: { consumed: 1095.4, target: 90, pct: 1217 },
+    vitamin_d_iu: { consumed: 2000, target: 2000, pct: 100 },
+    vitamin_e_mg: { consumed: 135.9, target: 15, pct: 906 },
+    lycopene_mg: { consumed: 13.8, target: 8, pct: 172 },
+  },
+  weight: { current: 80.25, prev: 80.3, delta: -0.05, date: "2026-09-11", totalChange: -1.5,
+    comp: { bmi: 27.4, body_fat_pct: 26.6, muscle_mass_kg: 56, visceral_fat: 11, bmr_kcal: 1707, body_age: 29, resting_heart_rate: 83 } },
+  training: {
+    acwr: 0.98, acwrZone: "ok", recommendedSection: "Shoulders", readyNow: true, daysSince: 15.5,
+    suggested: [
+      { name: "Shoulder Shrugs", best: "26kg each × 3×10", target: "+1 rep (aim 3×11)" },
+      { name: "Rear Delt Machine", best: "73kg × 3×9", target: "+1 rep (aim 3×10)" },
+      { name: "Lateral Raises", best: "16kg each × 4×9", target: "+1 rep (aim 4×10)" },
+      { name: "Seated Lateral Raises", best: "14kg each × 4×7", target: "Rebuild to best" },
+    ],
+    sections: { Chest: { pct: 2, ready: 0 }, Back: { pct: 39, ready: 15.6 }, Shoulders: { pct: 3, ready: 0 }, Arms: { pct: 11, ready: 0 }, Legs: { pct: 38, ready: 60.3 }, Core: { pct: 0, ready: 0 } },
+    trendWeeks: [
+      { label: "-5w", acwr: 1.19 }, { label: "-4w", acwr: 1.11 }, { label: "-3w", acwr: 0.48 },
+      { label: "-2w", acwr: 1.28 }, { label: "-1w", acwr: 0.72 }, { label: "This wk", acwr: 0.98 },
+    ],
+    balance: { pushPull: 1.58, quadHam: 1.91 },
+    relstrength: { bodyweightKg: 80.25, items: [
+      { name: "Leg Press", oneRM: 176, ratio: 2.19 }, { name: "Diverging Seated Row", oneRM: 129.3, ratio: 1.61 },
+      { name: "Seated Dips", oneRM: 119.1, ratio: 1.48 }, { name: "Low Row", oneRM: 108, ratio: 1.35 },
+      { name: "Converging Shoulder Press", oneRM: 100.1, ratio: 1.25 }, { name: "Bench Press", oneRM: 91.8, ratio: 1.14 },
+    ] },
+    aerobic: { km28: 27.6, avgHr: 142, avgPace: 9.47, daysSinceLast: 1.2 },
+    changes: [
+      "You're below your PR on 14 lifts — closest wins first: Angled Leg Press (77% of best), Rope Cable Extension (81% of best), Pec Fly Machine (82% of best). Add a rep or a set before adding weight.",
+      "Add pulling volume — push is 1.58× your pull. Aim toward ~1:1 to keep shoulders healthy.",
+      "Only 1/2 aerobic sessions this week — add an easy run or row.",
+    ],
+  },
+  sleep: { duration: 8.17, start: "23:15", end: "07:25", notes: "Long solid night, ~8.17h — squarely in the 7-9h target band, one continuous stretch." },
+  supplements: [
+    { label: "Allergy spray · AM", taken: true }, { label: "Allergy spray · PM", taken: true },
+    { label: "Allergy pill (Bilaxten)", taken: true }, { label: "Multivitamin", taken: false },
+    { label: "Omega-3", taken: true }, { label: "Creatine", taken: true },
+  ],
+  lifestyle: [ { type: "alcohol", severity: "moderate", description: "1 glass red wine (~150ml) + 1 shot whiskey (~30ml), time not given, assumed ~14:30",
+    notes: "~2.7 units combined (~1.5 wine + ~1.2 whiskey). Third consecutive drinking day (also 09-10 and 09-11) — running well above the ≤1/week baseline this week." } ],
+  retainers: null,
+  items: [
+    ["08:00","Rhinolast (azelastine nasal spray)","1 dose (AM)",0,0],
+    ["08:00","Bilaxten (bilastine)","1 pill (morning)",0,0],
+    ["08:00","Double espresso","1 double",6,0],
+    ["08:30","Salad — lettuce, pomegranate seeds, honey mustard vinaigrette","1 bowl (~145g assumed)",74.5,2.12],
+    ["08:45","Chocolate birthday cake, 1 spoon","~25g assumed",100,1.25],
+    ["10:50","Creatine monohydrate","4.5 g",0,0],
+    ["10:50","Lemon cream protein yogurt","200 g",112,20],
+    ["11:35","Cherry tomatoes","300 g",47,2.41],
+    ["11:50","Pistachio white chocolate, 2 cubes","~10 g",58,0.6],
+    ["12:15","Double espresso","1 double",6,0],
+    ["14:00","Lunch — vegetable chopped salad","2 spoons (~60g)",21,0.9],
+    ["14:00","Lunch — tomato and red onion salad","1 spoon (~30g)",15,0.3],
+    ["14:00","Lunch — mayo salad (unspecified)","1 spoon (~30g)",69,1],
+    ["14:00","Lunch — chopped zucchini","2 spoons (~60g)",21,0.6],
+    ["14:00","Lunch — hummus","2 spoons (~60g)",100,4.8],
+    ["14:00","Lunch — egg salad, no mayo","1 spoon (~30g)",54,3.6],
+    ["14:00","Lunch — chicken drumstick, oven baked","1 piece (~52g)",112,14.2],
+    ["14:00","Lunch — chicken breast in honey sauce","1 spoon (~30g)",54,7.8],
+    ["14:00","Lunch — potato cutlets","4 pieces (~120g)",240,3.6],
+    ["14:00","Lunch — sweet potato","3 pieces (~120g)",108,2.4],
+    ["14:00","Lunch — beef","80 g",184,21.6],
+    ["14:00","Lunch — white rice","0.5 spoon (~17.5g)",23,0.47],
+    ["14:30","Red wine","1 glass (~150ml)",128,0],
+    ["14:30","Whiskey","1 shot (~30ml)",70,0],
+    ["15:30","Chocolate chip banana cake, 1 square","~30g assumed",96,1.35],
+    ["18:00","Omega-3 fish oil (EPA/DHA)","2 softgels",0,0],
+    ["20:30","Dinner — ribeye","250 g",728,60],
+    ["20:30","Dinner — sirloin","50 g",115,13.5],
+    ["20:30","Dinner — baked potato","50 g",47,1.26],
+    ["20:30","Dinner — chopped salad (tomato, cucumber, onion, lettuce, olive oil & lemon)","200 g",125,1.6],
+    ["20:30","Dinner — chicken thighs","50 g",105,13],
+    ["22:55","Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium","2 capsules",0,0],
+    ["22:55","Rhinolast (azelastine nasal spray)","1 dose (PM)",0,0],
+  ],
+  suggestions: [
+    "Alcohol logged on 5 of the last 14 days — well above the ≤1/week baseline and the most consistent drag on the sperm-optimization score. A genuine dry stretch is the single highest-leverage change available right now.",
+    "Folate averaging 66 vs a ~400 target over the last 4 day(s) (17%) — tracked weekly, not daily (a slow-reserve nutrient) — add leafy greens, legumes on a lighter day to bring the average up.",
+    "Fat has averaged 92g/day vs the 65g target (142%) across all 64 logged days — olive oil, cheese, and nuts show up on both restaurant and home-cooked days, so it's a portion-size habit rather than a restaurant-specific one.",
+    "Only ~15% of daily protein is eaten before noon on average — adding 20-30g to breakfast (eggs, yogurt, cheese) would spread muscle-protein-synthesis stimulus more evenly across the day.",
+    "Weight is -1.15 kg vs. the 2026-06-27 baseline, 2.2 kg from the 76-78 kg target range — pace is steady but slower than the 0.4 kg/week goal.",
+  ],
+  // last 21 logged days, pulled directly from docs/data/index.json — real,
+  // including `exclude` (exclude_from_monthly_macros, the macro-tracking-break
+  // days) which the real site's charts filter out for the same reason:
+  // near-zero calories on those days means "not itemized," not "fasted."
+  history: [
+    { date:"2026-08-23", calories:1819,   protein_g:170.45, weight_kg:81.1,  sperm_score:70, energy_score:96, exclude:false },
+    { date:"2026-08-24", calories:2296,   protein_g:207.4,  weight_kg:null,  sperm_score:69, energy_score:95, exclude:false },
+    { date:"2026-08-25", calories:2151,   protein_g:162.2,  weight_kg:null,  sperm_score:69, energy_score:96, exclude:false },
+    { date:"2026-08-26", calories:1750,   protein_g:154.32, weight_kg:null,  sperm_score:70, energy_score:99, exclude:false },
+    { date:"2026-08-27", calories:1891,   protein_g:167.78, weight_kg:80.8,  sperm_score:73, energy_score:95, exclude:false },
+    { date:"2026-08-28", calories:159,    protein_g:25.9,   weight_kg:80.5,  sperm_score:74, energy_score:73, exclude:true  },
+    { date:"2026-08-29", calories:2584,   protein_g:158.41, weight_kg:null,  sperm_score:77, energy_score:89, exclude:false },
+    { date:"2026-08-30", calories:1500,   protein_g:115.97, weight_kg:null,  sperm_score:74, energy_score:85, exclude:true  },
+    { date:"2026-08-31", calories:2177,   protein_g:158.11, weight_kg:null,  sperm_score:74, energy_score:92, exclude:false },
+    { date:"2026-09-01", calories:2079,   protein_g:175.28, weight_kg:80.3,  sperm_score:75, energy_score:96, exclude:false },
+    { date:"2026-09-02", calories:1756.3, protein_g:192.82, weight_kg:null,  sperm_score:75, energy_score:96, exclude:false },
+    { date:"2026-09-03", calories:2319.2, protein_g:164.08, weight_kg:null,  sperm_score:71, energy_score:87, exclude:false },
+    { date:"2026-09-04", calories:30,     protein_g:0.3,    weight_kg:null,  sperm_score:73, energy_score:63, exclude:true  },
+    { date:"2026-09-05", calories:2094,   protein_g:193.83, weight_kg:null,  sperm_score:74, energy_score:86, exclude:false },
+    { date:"2026-09-06", calories:222.5,  protein_g:31.83,  weight_kg:null,  sperm_score:74, energy_score:66, exclude:true  },
+    { date:"2026-09-07", calories:12,     protein_g:0,      weight_kg:null,  sperm_score:69, energy_score:60, exclude:true  },
+    { date:"2026-09-08", calories:12,     protein_g:0.6,    weight_kg:null,  sperm_score:63, energy_score:58, exclude:true  },
+    { date:"2026-09-09", calories:1523.3, protein_g:150.86, weight_kg:null,  sperm_score:61, energy_score:67, exclude:false },
+    { date:"2026-09-10", calories:2357.6, protein_g:188.54, weight_kg:null,  sperm_score:62, energy_score:87, exclude:false },
+    { date:"2026-09-11", calories:2284.5, protein_g:154.09, weight_kg:80.25, sperm_score:65, energy_score:86, exclude:false },
+    { date:"2026-09-12", calories:2818.5, protein_g:178.36, weight_kg:null,  sperm_score:60, energy_score:84, exclude:false },
+  ],
+};
+
+const COLORS = { good: "#16a34a", warn: "#d97706", bad: "#dc2626", muted: "#93a1c2" };
+
+function fmt(n, d = 0) { if (n === null || n === undefined) return "—"; return Number(n).toLocaleString(undefined, { maximumFractionDigits: d, minimumFractionDigits: d }); }
+function pctColor(pct, mode) {
+  if (mode === "moreIsFine") return pct >= 100 ? COLORS.good : pct >= 70 ? COLORS.warn : COLORS.bad;
+  if (mode === "ceiling") return (pct >= 85 && pct <= 115) ? COLORS.good : (pct >= 60 && pct <= 140) ? COLORS.warn : COLORS.bad;
+  return pct >= 100 ? COLORS.good : pct >= 50 ? COLORS.warn : COLORS.bad;
+}
+function metricRow(label, consumed, target, pct, unit, mode) {
+  const color = pctColor(pct, mode);
+  const width = Math.max(2, Math.min(100, pct));
+  return `<div class="metric"><div class="metric-top"><span>${label}</span><span class="vals">${fmt(consumed, unit === "IU" || unit === "mcg" ? 0 : 1)}${unit ? " " + unit : ""} / ${fmt(target)}${unit ? " " + unit : ""} (${pct}%)</span></div><div class="track"><div class="fill" style="width:${width}%;background:${color}"></div></div></div>`;
+}
+function ringSvg(size, strokeW, pct, gradId, colorA, colorB, big, sub) {
+  const r = size / 2 - strokeW / 2 - 1, c = 2 * Math.PI * r, off = c * (1 - Math.max(0, Math.min(100, pct)) / 100);
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+    <defs><linearGradient id="${gradId}" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${colorA}"/><stop offset="100%" stop-color="${colorB}"/></linearGradient></defs>
+    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="var(--surface-inset)" stroke-width="${strokeW}"/>
+    <circle cx="${size/2}" cy="${size/2}" r="${r}" fill="none" stroke="url(#${gradId})" stroke-width="${strokeW}" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${off}" transform="rotate(-90 ${size/2} ${size/2})"/>
+    ${big !== undefined ? `<text x="50%" y="47%" text-anchor="middle" font-size="${size*0.24}" font-weight="700" fill="var(--text-1)">${big}</text>` : ""}
+    ${sub ? `<text x="50%" y="63%" text-anchor="middle" font-size="${size*0.082}" font-weight="600" fill="var(--text-3)">${sub}</text>` : ""}
+  </svg>`;
+}
+
+const HUES = {
+  nutrition:   { a: "#6ee7b7", b: "#0d9488" },
+  training:    { a: "#7dd3fc", b: "#2563eb" },
+  sperm:       { a: "#e0aaff", b: "#ec4899" },
+  sleep:       { a: "#a5b4fc", b: "#4f46e5" },
+  bodycomp:    { a: "#7dd3fc", b: "#0284c7" },
+  supplements: { a: "#93a1c2", b: "#66709a" },
+};
+
+/* ---------- header / strip / hero ---------- */
+document.getElementById("subtitle").textContent = `Day ${REAL.dayNumber} of ${REAL.totalDays} · ${REAL.date}`;
+document.getElementById("strip").innerHTML = `
+  <div class="pill"><span class="dot" style="background:${COLORS.good}"></span><b>${REAL.workoutType}</b> logged</div>
+  <div class="pill"><span class="dot" style="background:${HUES.training.b}"></span>Load ratio <b>${REAL.training.acwr}</b> · zone: ${REAL.training.acwrZone}</div>
+  <div class="pill"><span class="dot" style="background:${COLORS.warn}"></span>Latest weigh-in <b>${REAL.weight.current}kg</b> (${REAL.weight.date}) · ${REAL.weight.delta}kg</div>
+  <div class="pill"><span class="dot" style="background:${COLORS.muted}"></span><b>${REAL.caffeineShots}</b> caffeine shots</div>`;
+
+const energyDelta = REAL.energy.overall - REAL.energy.prev;
+document.getElementById("heroSlot").innerHTML = `
+  <div class="hero">
+    <div class="ring-col">${ringSvg(128, 11, REAL.energy.overall, "gEnergyHero", "#fcd34d", "#f59e0b", REAL.energy.overall, "ENERGY")}</div>
+    <div class="body">
+      <div class="eyebrow-inline">Today's read — real energy-score breakdown</div>
+      <div class="headline">Band: <b>${REAL.energy.band}</b>. Sleep and movement are maxed (100); the drag is <b>nutrition (72)</b> — a big-calorie day (137% of target) — and <b>alcohol (50, logged today)</b>.</div>
+      <div class="trendrow">
+        <span class="trend-pill ${energyDelta < 0 ? "down" : ""}">${energyDelta >= 0 ? "↑" : "↓"} ${Math.abs(energyDelta)} vs yesterday (${REAL.energy.prev})</span>
+        <span class="small" style="color:var(--text-3)">Sperm score this week: <b style="color:var(--text-1)">${REAL.sperm.overall}</b> (${REAL.sperm.band})</span>
+      </div>
+    </div>
+  </div>`;
+
+/* ---------- tiles ---------- */
+const worstMicroKey = Object.entries(REAL.micros).filter(([,v]) => v.pct < 100).sort((a,b) => a[1].pct - b[1].pct)[0];
+const microLabels = { zinc_mg:"Zinc", selenium_mcg:"Selenium", folate_mcg_dfe:"Folate", omega3_epa_dha_mg:"Omega-3", vitamin_c_mg:"Vitamin C", vitamin_d_iu:"Vitamin D", vitamin_e_mg:"Vitamin E", lycopene_mg:"Lycopene" };
+const bestMicro = Object.entries(REAL.micros).sort((a,b) => b[1].pct - a[1].pct)[0];
+const suppTaken = REAL.supplements.filter(s => s.taken).length;
+
+document.getElementById("tileGrid").innerHTML = `
+  <div class="tile tap" onclick="openDetail('nutrition')">
+    <div class="go">→</div><h3>Nutrition</h3>
+    <div class="row">${ringSvg(52, 6, Math.min(100, REAL.macros.calories.pct), "gNutr", HUES.nutrition.a, HUES.nutrition.b)}
+      <div><div class="num">${fmt(REAL.macros.calories.consumed)}<small>/${REAL.macros.calories.target} kcal</small></div><div class="sub">${fmt(REAL.macros.protein_g.consumed)}g protein · ${REAL.macros.protein_g.pct}%</div></div></div>
+    <div class="tile-divider"></div>
+    <div class="bar-row">
+      <div><div class="bar-label"><span>${microLabels[bestMicro[0]]}</span><span>${bestMicro[1].pct}%</span></div><div class="bar"><div style="width:100%;background:${COLORS.good}"></div></div></div>
+      <div><div class="bar-label"><span>${microLabels[worstMicroKey[0]]}</span><span>${worstMicroKey[1].pct}%</span></div><div class="bar"><div style="width:${worstMicroKey[1].pct}%;background:${COLORS.bad}"></div></div></div>
+    </div>
+  </div>
+
+  <div class="tile tap" onclick="openDetail('training')">
+    <div class="go">→</div><h3>Training load</h3>
+    <div class="row">${ringSvg(52, 6, REAL.training.acwr / 1.5 * 100, "gTrain", HUES.training.a, HUES.training.b)}
+      <div><div class="num">${REAL.training.acwr}<small>ACWR</small></div><div class="sub">Zone: ${REAL.training.acwrZone} (sweet spot 0.8–1.3)</div></div></div>
+    <div class="tile-divider"></div>
+    <div class="small" style="color:var(--text-2)">Recommended next: <b style="color:var(--text-1)">${REAL.training.recommendedSection} day</b> · ${REAL.training.readyNow ? "ready now" : "resting"}</div>
+  </div>
+
+  <div class="tile tap" onclick="openDetail('sperm')">
+    <div class="go">→</div><h3>Sperm score</h3>
+    <div class="row">${ringSvg(52, 6, REAL.sperm.overall, "gSperm", HUES.sperm.a, HUES.sperm.b)}
+      <div><div class="num">${REAL.sperm.overall}<small>/ 100</small></div><div class="sub">Weekly · ${REAL.sperm.band} band</div></div></div>
+    <div class="tile-divider"></div>
+    <div class="small" style="color:var(--text-2)">Weakest factor: <b style="color:var(--text-1)">body composition (26)</b></div>
+  </div>
+
+  <div class="tile tap" onclick="openDetail('sleep')">
+    <div class="go">→</div><h3>Sleep</h3>
+    <div class="num">${REAL.sleep.duration}<small>h</small></div>
+    <div class="sub" style="margin-top:2px">${REAL.sleep.start} – ${REAL.sleep.end}</div>
+    <div class="tile-divider"></div>
+    <div class="trendrow"><span class="trend-pill">Solid full night</span></div>
+  </div>
+
+  <div class="tile tap" onclick="openDetail('bodycomp')">
+    <div class="go">→</div><h3>Body composition</h3>
+    <div class="num">${REAL.weight.current}<small>kg</small></div>
+    <div class="sub" style="margin-top:2px">${REAL.weight.date} · ${REAL.weight.totalChange}kg since Jun 27 baseline</div>
+    <div class="tile-divider"></div>
+    <div class="trendrow"><span class="trend-pill down">↓ ${Math.abs(REAL.weight.delta)}kg vs prior weigh-in</span></div>
+  </div>
+
+  <div class="tile tap" onclick="openDetail('supplements')">
+    <div class="go">→</div><h3>Supplements</h3>
+    <div class="num">${suppTaken}<small>/ ${REAL.supplements.length}</small></div>
+    <div class="sub" style="margin-top:2px">${REAL.supplements.find(s=>!s.taken)?.label || "All"} not logged</div>
+    <div class="tile-divider"></div>
+    <div class="trendrow"><span class="trend-pill warn">1 alcohol event today</span></div>
+  </div>`;
+
+document.getElementById("suggestList").innerHTML = REAL.suggestions.map(s => `<li>${s}</li>`).join("");
+
+/* ---------- modal detail bodies ---------- */
+const BODIES = {
+  nutrition: () => `
+    <div class="dgrid">
+      <div class="dpanel"><h4>Macros — ${REAL.date}</h4>
+        ${metricRow("Calories", REAL.macros.calories.consumed, REAL.macros.calories.target, REAL.macros.calories.pct, "kcal", "ceiling")}
+        ${metricRow("Protein", REAL.macros.protein_g.consumed, REAL.macros.protein_g.target, REAL.macros.protein_g.pct, "g", "moreIsFine")}
+        ${metricRow("Carbs", REAL.macros.carbs_g.consumed, REAL.macros.carbs_g.target, REAL.macros.carbs_g.pct, "g", "ceiling")}
+        ${metricRow("Fat", REAL.macros.fat_g.consumed, REAL.macros.fat_g.target, REAL.macros.fat_g.pct, "g", "ceiling")}
+        ${metricRow("Fiber", REAL.macros.fiber_g.consumed, REAL.macros.fiber_g.target, REAL.macros.fiber_g.pct, "g", "moreIsFine")}
+      </div>
+      <div class="dpanel"><h4>Sperm-priority micros</h4>
+        ${Object.entries(REAL.micros).map(([k,v]) => metricRow(microLabels[k], v.consumed, v.target, v.pct, k.includes("mg") ? "mg" : k.includes("mcg") ? "mcg" : "IU", "moreIsFine")).join("")}
+      </div>
+      <div class="dpanel span"><h4>Calories &amp; protein — 21-day trend (real logged history)</h4><div class="chart-box"><canvas id="chNutr"></canvas></div></div>
+      <div class="dpanel span"><h4>Logged items — ${REAL.date} (${REAL.items.length} entries)</h4>
+        <div class="scrollbox"><table class="dtable">
+          <thead><tr><th>Time</th><th>Item</th><th>Qty</th><th class="num">Kcal</th><th class="num">P</th></tr></thead>
+          <tbody>${REAL.items.map(([t,n,q,k,p]) => `<tr><td>${t}</td><td>${n}</td><td>${q}</td><td class="num">${fmt(k)}</td><td class="num">${fmt(p,1)}</td></tr>`).join("")}</tbody>
+        </table></div>
+      </div>
+    </div>`,
+  training: () => `
+    <div class="dgrid">
+      <div class="dpanel span"><h4>Muscle fatigue &amp; recovery (real, from training_full.json)</h4>
+        ${Object.entries(REAL.training.sections).map(([name,s]) => `<div class="metric"><div class="metric-top"><span>${name}</span><span class="vals">${s.pct}% · ${s.ready ? "ready in " + s.ready + "h" : "ready now"}</span></div><div class="track"><div class="fill" style="width:${s.pct}%;background:${s.pct >= 50 ? COLORS.warn : COLORS.good}"></div></div></div>`).join("")}
+      </div>
+      <div class="dpanel"><h4>Recommended next session</h4>
+        <div class="dbignum" style="color:${HUES.training.b}">${REAL.training.recommendedSection}</div>
+        <div class="metric-note">Ready now · last trained ${REAL.training.daysSince}d ago</div>
+        <ul class="devul" style="margin-top:10px">${REAL.training.suggested.map(e => `<li><b>${e.name}</b> · best ${e.best}<br><span style="color:var(--good)">${e.target}</span></li>`).join("")}</ul>
+      </div>
+      <div class="dpanel"><h4>Load ratio trend (6wk, real weekly ACWR)</h4>
+        <div class="dbignum" style="color:${HUES.training.b}">${REAL.training.acwr}<small> load ratio</small></div>
+        <div class="goalline">Sweet spot 0.8–1.3 · danger &gt;1.5 · zone: <b style="color:var(--text-1)">${REAL.training.acwrZone}</b></div>
+        <div class="chart-box small"><canvas id="chAcwr"></canvas></div>
+      </div>
+      <div class="dpanel"><h4>Program balance &amp; relative strength</h4>
+        <div class="dchips"><div class="dchip"><div class="v">${REAL.training.balance.pushPull}×</div><div class="k">Push : Pull</div></div><div class="dchip"><div class="v">${REAL.training.balance.quadHam}×</div><div class="k">Quad : Ham</div></div></div>
+        <div class="small" style="margin:14px 0 8px;color:var(--text-3)">1RM ÷ bodyweight (${REAL.training.relstrength.bodyweightKg}kg)</div>
+        <ul class="devul">${REAL.training.relstrength.items.slice(0,6).map(i => `<li><b>${i.name}</b> · ${i.oneRM}kg 1RM <span style="float:right;color:var(--text-1)">${i.ratio}×BW</span></li>`).join("")}</ul>
+      </div>
+      <div class="dpanel"><h4>Aerobic / cardio (real, 28-day)</h4>
+        <div class="dchips four"><div class="dchip"><div class="v">${REAL.training.aerobic.km28} km</div><div class="k">28-day</div></div><div class="dchip"><div class="v">${REAL.training.aerobic.avgHr}</div><div class="k">Avg HR</div></div><div class="dchip"><div class="v">${fmt(REAL.training.aerobic.avgPace,2)}</div><div class="k">Pace min/km</div></div><div class="dchip"><div class="v">${REAL.training.aerobic.daysSinceLast}d</div><div class="k">Since cardio</div></div></div>
+      </div>
+      <div class="dpanel span"><h4>PRs, alerts &amp; below-best lifts (real)</h4>
+        <div class="metric-note" style="margin-bottom:10px">Today's session: ${REAL.workoutNotes}</div>
+        <ul class="devul">${REAL.training.changes.map(c => `<li>${c}</li>`).join("")}</ul>
+      </div>
+    </div>`,
+  sperm: () => `
+    <div class="dgrid">
+      <div class="dpanel">
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+          ${ringSvg(96, 9, REAL.sperm.overall, "gSpermD", HUES.sperm.a, HUES.sperm.b, REAL.sperm.overall)}
+          <div class="small" style="color:var(--text-3)">Window ${REAL.sperm.weekStart} → ${REAL.sperm.weekEnd}<br>Band: <b style="color:var(--text-1)">${REAL.sperm.band}</b></div>
+        </div>
+      </div>
+      <div class="dpanel"><h4>Factors this week</h4>
+        ${Object.entries(REAL.sperm.factors).map(([k,v]) => `<div class="metric"><div class="metric-top"><span>${k.replace(/_/g," ")}</span><span class="vals">${v}</span></div><div class="track"><div class="fill" style="width:${v}%;background:${v >= 70 ? COLORS.good : v >= 40 ? COLORS.warn : COLORS.bad}"></div></div></div>`).join("")}
+      </div>
+      <div class="dpanel span"><h4>Sperm score — trend (real, 21-day history)</h4><div class="chart-box small"><canvas id="chSperm"></canvas></div></div>
+    </div>`,
+  sleep: () => `
+    <div class="dgrid"><div class="dpanel span">
+      <div class="dbignum" style="color:${HUES.sleep.b}">${REAL.sleep.duration}<small> h</small></div>
+      <div class="goalline">${REAL.sleep.start} – ${REAL.sleep.end} · <b style="color:var(--good)">solid</b></div>
+      <div class="small" style="color:var(--text-2)">${REAL.sleep.notes}</div>
+    </div></div>`,
+  bodycomp: () => `
+    <div class="dgrid">
+      <div class="dpanel span"><h4>Latest weigh-in — ${REAL.weight.date}</h4>
+        <div class="dbignum" style="color:${HUES.bodycomp.b}">${REAL.weight.current}<small>kg</small></div>
+        <div class="goalline">Goal range 76–78kg · since 2026-06-27 baseline: ${REAL.weight.totalChange}kg</div>
+        <div class="dchips">
+          <div class="dchip"><div class="v">${REAL.weight.comp.body_fat_pct}%</div><div class="k">Body fat</div></div>
+          <div class="dchip"><div class="v">${REAL.weight.comp.muscle_mass_kg}kg</div><div class="k">Muscle mass</div></div>
+          <div class="dchip"><div class="v">${REAL.weight.comp.bmi}</div><div class="k">BMI</div></div>
+          <div class="dchip"><div class="v">${REAL.weight.comp.bmr_kcal}</div><div class="k">BMR kcal</div></div>
+          <div class="dchip"><div class="v">${REAL.weight.comp.resting_heart_rate} bpm</div><div class="k">Resting HR</div></div>
+          <div class="dchip"><div class="v">${REAL.weight.comp.visceral_fat}</div><div class="k">Visceral fat</div></div>
+        </div>
+      </div>
+      <div class="dpanel span"><h4>Weight — full logged history (real)</h4><div class="chart-box"><canvas id="chWeight"></canvas></div></div>
+    </div>`,
+  supplements: () => `
+    <div class="dgrid">
+      <div class="dpanel"><h4>Supplement &amp; medication check — ${REAL.date}</h4>
+        <ul class="devul">${REAL.supplements.map(s => `<li><span style="color:${s.taken ? COLORS.good : COLORS.warn}">${s.taken ? "✅" : "⚠️"}</span> ${s.label} <span style="color:var(--text-3)">· ${s.taken ? "taken" : "not logged today"}</span></li>`).join("")}</ul>
+      </div>
+      <div class="dpanel"><h4>Sleep</h4>
+        <div class="metric"><div class="metric-top"><span>Duration</span><span class="vals">${REAL.sleep.duration}h (${REAL.sleep.start}–${REAL.sleep.end})</span></div></div>
+        <div class="metric-note">Retainers: ${REAL.retainers === null ? "not logged" : REAL.retainers}</div>
+      </div>
+      <div class="dpanel span"><h4>Lifestyle events — ${REAL.date}</h4>
+        <ul class="devul">${REAL.lifestyle.map(e => `<li><b>${e.type}</b> (${e.severity}) — ${e.description}<br><span style="color:var(--text-3)">${e.notes}</span></li>`).join("")}</ul>
+      </div>
+    </div>`,
+};
+
+function openDetail(key) {
+  const h = HUES[key];
+  const titles = { nutrition: "Nutrition", training: "Training", sperm: "Sperm Optimization", sleep: "Sleep", bodycomp: "Body Composition", supplements: "Supplements & Lifestyle" };
+  const subs = { nutrition: "Macros, sperm-priority micros, and today's real logged items", training: "Fatigue, load ratio, balance, aerobic, PRs — all real",
+    sperm: "Weekly composite score and contributing factors", sleep: "Duration and consistency", bodycomp: "Latest real weigh-in and history", supplements: "Compliance check, retainers, lifestyle events" };
+  document.getElementById("modalTitle").textContent = titles[key];
+  document.getElementById("modalSubtitle").textContent = subs[key];
+  document.getElementById("modalRing").innerHTML = ringSvg(40, 5, 70, "gModal" + key, h.a, h.b);
+  document.getElementById("modalBody").innerHTML = BODIES[key]();
+  document.getElementById("modalBackdrop").classList.add("open");
+  requestAnimationFrame(() => drawCharts(key));
+}
+function closeDetail() { document.getElementById("modalBackdrop").classList.remove("open"); }
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDetail(); });
+
+/* ---------- real Chart.js charts ---------- */
+let charts = {};
+function destroy(id) { if (charts[id]) { charts[id].destroy(); delete charts[id]; } }
+function line(id, labels, datasets, opts = {}) {
+  destroy(id);
+  const ctx = document.getElementById(id); if (!ctx) return;
+  charts[id] = new Chart(ctx, { type: "line", data: { labels, datasets }, options: {
+    responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
+    scales: { x: { ticks: { color: COLORS.muted, maxRotation: 0, autoSkip: true, maxTicksLimit: 7 }, grid: { display: false } },
+      y: { ticks: { color: COLORS.muted }, grid: { color: "rgba(30,45,90,.08)" }, ...opts.y } },
+    plugins: { legend: { labels: { color: "#5b6b8c", boxWidth: 10, font: { size: 11 } } } },
+  } });
+}
+function bar(id, labels, data, colors) {
+  destroy(id);
+  const ctx = document.getElementById(id); if (!ctx) return;
+  charts[id] = new Chart(ctx, { type: "bar", data: { labels, datasets: [{ data, backgroundColor: colors, borderRadius: 5, maxBarThickness: 28 }] }, options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: { x: { ticks: { color: COLORS.muted }, grid: { display: false } }, y: { ticks: { color: COLORS.muted }, grid: { color: "rgba(30,45,90,.08)" }, beginAtZero: true } },
+    plugins: { legend: { display: false } },
+  } });
+}
+function drawCharts(key) {
+  const h = REAL.history;
+  if (key === "nutrition") {
+    // same filter the real site applies: exclude_from_monthly_macros days
+    // are "not itemized," not "fasted," so they'd read as a false dip
+    const tracked = h.filter(r => !r.exclude);
+    line("chNutr", tracked.map(r => r.date.slice(5)), [
+      { label: "Calories", data: tracked.map(r => r.calories), borderColor: HUES.nutrition.b, backgroundColor: "transparent", tension: .25 },
+      { label: "Target", data: tracked.map(() => REAL.macros.calories.target), borderColor: COLORS.warn, borderDash: [5,4], pointRadius: 0, backgroundColor: "transparent" },
+    ]);
+  }
+  if (key === "training") {
+    bar("chAcwr", REAL.training.trendWeeks.map(w => w.label), REAL.training.trendWeeks.map(w => w.acwr),
+      REAL.training.trendWeeks.map(w => w.acwr > 1.3 ? COLORS.bad : w.acwr > 1.05 || w.acwr < 0.8 ? COLORS.warn : COLORS.good));
+  }
+  if (key === "sperm") {
+    const rows = h.filter(r => r.sperm_score !== null);
+    line("chSperm", rows.map(r => r.date.slice(5)), [{ label: "Sperm score", data: rows.map(r => r.sperm_score), borderColor: HUES.sperm.b, backgroundColor: "transparent", tension: .25 }], { y: { min: 0, max: 100 } });
+  }
+  if (key === "bodycomp") {
+    const rows = h.filter(r => r.weight_kg !== null);
+    line("chWeight", rows.map(r => r.date.slice(5)), [{ label: "Weight (kg)", data: rows.map(r => r.weight_kg), borderColor: HUES.bodycomp.b, backgroundColor: "transparent", tension: .2 }]);
+  }
+}
+</script>
+</body>
+</html>
