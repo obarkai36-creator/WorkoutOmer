@@ -9,6 +9,7 @@
     {"time": "09:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:45", "name": "Lemon cream protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% reference as prior entries."},
     {"time": "09:45", "name": "Homemade granola", "category": "food", "qty": "10 g", "kcal": 45, "protein_g": 1, "carbs_g": 6, "fat_g": 1.8, "fiber_g": 0.7, "note": "first time logging this item — no recipe given, estimated as generic granola (~450kcal/100g, ~10p/60c/18f/7fiber per 100g). Flagged as approximate/generic since ingredients weren't specified."},
+    {"time": "10:00", "name": "Chocolate birthday cake, 1 piece", "category": "food", "qty": "1 piece (~80 g assumed)", "kcal": 320, "protein_g": 4, "carbs_g": 40, "fat_g": 16, "fiber_g": 1.2, "time_approx": true, "note": "logged late — user forgot to enter it at the time. Same birthday cake as 2026-09-12's 'Chocolate birthday cake, 1 spoon' entry (~400kcal/100g generic frosted chocolate layer cake), reused for consistency since it's the same ongoing occasion; piece size assumed (~80g), flagged as approximate."},
     {"time": "13:30", "name": "Lunch — chopped tomato & cucumber salad", "category": "food", "qty": "4 large spoons (~160 g)", "kcal": 56, "protein_g": 2.4, "carbs_g": 11.2, "fat_g": 0.48, "fiber_g": 3.2, "note": "same buffet-style chopped mixed vegetable salad reference as prior lunches (~0.35kcal/g), scaled up for 'large' spoons (~40g each). Credits ~24mg vitamin C."},
     {"time": "13:30", "name": "Lunch — egg salad, no mayo", "category": "food", "qty": "2 spoons (~60 g)", "kcal": 108, "protein_g": 7.2, "carbs_g": 1.2, "fat_g": 8.4, "fiber_g": 0.18, "note": "same reference as prior entries — chopped hard-boiled egg without mayo, generic estimate."},
     {"time": "13:30", "name": "Lunch — eggplant with tahini and silan", "category": "food", "qty": "1 spoon (~40 g)", "kcal": 90, "protein_g": 2.3, "carbs_g": 7, "fat_g": 6.4, "fiber_g": 1.8, "note": "first time logged — estimated as ~60% grilled eggplant + ~30% tahini sauce + ~10% silan (date syrup) by weight, no recipe/weights given, flagged as approximate. Credits ~1.2mg zinc (tahini/sesame)."},
@@ -22,7 +23,8 @@
     {"time": "13:30", "name": "Lunch — sweet potato", "category": "food", "qty": "20 g", "kcal": 18, "protein_g": 0.4, "carbs_g": 4.2, "fat_g": 0.02, "fiber_g": 0.6, "note": "same baked/roasted reference as prior entries, small portion."},
     {"time": "13:30", "name": "Popsicle — La Frutta apple-melon", "category": "food", "qty": "1 unit (~80 g)", "kcal": 75, "protein_g": 0, "carbs_g": 18, "fat_g": 0, "fiber_g": 0, "note": "first time logged, no label — estimated from a comparable fruit ice-pop reference (~94kcal/100g, mostly sugar), flagged as generic."},
     {"time": "15:50", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:00", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:00", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:30", "name": "Homemade malabi, small portion", "category": "food", "qty": "1 small portion (~115 g incl. syrup)", "kcal": 160, "protein_g": 3, "carbs_g": 29, "fat_g": 3.5, "fiber_g": 0, "note": "first time logged, no recipe on file — base pudding rate from an online muhallebi/malabi reference (~120kcal/100g, 3g protein/19g carb/3.5g fat per 100g; Middle Eastern milk pudding, mostly milk + sugar + cornstarch), 100g portion assumed for 'small', plus a light rose/fruit syrup topping (~15g, ~40kcal/10g carb) since malabi is rarely served without one. Both the portion size and syrup amount are assumed, flagged as approximate."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 5.3,
@@ -41,10 +43,12 @@
     "09:30 double espresso (2 caffeine shots).",
     "User ended the macro tracking break early: full itemized tracking resumes today (09-13) and continues through the rest of the previously-planned break window (09-14 through 09-17) and beyond — the break is cancelled, not just today's exception. Going forward Monday-Thursday, logging will lean more on images/links per the user's plan. Documented as a standing update in CLAUDE.md.",
     "09:45 snack: 1 lemon cream protein yogurt (Danone PRO 0% reference) + 10g homemade granola (first time logged, generic reference, no recipe given — flagged).",
+    "10:00 chocolate birthday cake, 1 piece — logged late (user forgot at the time), reused the 2026-09-12 birthday-cake rate since it's the same ongoing occasion, piece size assumed (~80g).",
     "13:30 buffet-style lunch bowl: chopped tomato & cucumber salad, egg salad (no mayo), eggplant with tahini & silan (first time logged, flagged as approximate), potato salad, homemade hummus, chopped zucchini, smashed potatoes, turkey, meatballs, baked chicken schnitzel, sweet potato — all estimated from prior-day per-spoon reference rates for this recurring lunch spread where available, generic estimates otherwise (all flagged in their own notes).",
     "13:30 La Frutta apple-melon popsicle — first time logged, no label, estimated from a comparable fruit ice-pop reference.",
     "15:50 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — same standard dose as prior entries.",
-    "16:00 double espresso (3rd caffeine shot today)."
+    "16:00 double espresso (3rd caffeine shot today).",
+    "16:30 homemade malabi, small portion — first time logged, no recipe on file, estimated from an online muhallebi/malabi nutrition reference (~120kcal/100g base pudding) plus an assumed light syrup topping, flagged as approximate."
   ],
   "status_note": "Day in progress. Slept 8.25h (23:45-08:00) — a solid night. AM allergy meds done. Macro tracking break ended early per user request — full itemized tracking resumes today and continues through the rest of what would have been the break window. Full itemized lunch logged at 13:30."
 }
