@@ -7,10 +7,14 @@ direction, not the chat history.
 
 ## Decided so far
 
-- **Visual direction: "soft navy"** (Oura-inspired) — soft dark navy
-  background (not pure black), gradient accent rings, warmer than a stark
-  Whoop/Linear treatment. Tokens live in `docs/design/tokens.css`.
-- **Dark only.** No light-mode variant — one design to perfect.
+- **Visual direction: "soft sky" (light theme)** — pivoted 2026-09-13 after
+  seeing the dark "soft navy" version actually rendered: white/pale
+  blue-grey page background, white cards, dark navy text, lighter
+  per-pillar ring hues than the original dark-mode palette. Gradient
+  rings, section-eyebrow labels, tile dividers, and the click-to-open
+  detail modal all carry over from the dark pass unchanged — this was a
+  token-level swap (`docs/design/tokens.css`), not a structural rebuild.
+- **Light only.** No dark-mode variant — one design to perfect.
 - **Per-pillar fixed ring color identity**, used identically everywhere a
   pillar shows up (Energy=gold, Sperm=violet→pink, Training=cyan,
   Nutrition=green→teal, Sleep=indigo, Body comp=blue). Builds instant
