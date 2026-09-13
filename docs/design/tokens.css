@@ -1,53 +1,54 @@
-/* Design tokens v2 — "soft navy" direction (Oura-inspired).
- * Rebuilt for actual visual polish after v1 read as amateurish:
- * translucent borders instead of flat lines, layered soft shadows,
- * a real ambient background glow, tighter type scale with negative
- * tracking on numerals, and glow filters behind the rings. */
+/* Design tokens v4 — "soft sky" light direction.
+ * Pivoted from dark "soft navy" after seeing it rendered: white page
+ * background, lighter blues throughout, cards separated from the page
+ * via a pale blue-grey page tint + white cards + soft grey shadows
+ * (not via a dark background anymore). Structural patterns (cards,
+ * dividers, modal, hierarchy) carry over unchanged from the dark pass —
+ * this file only. */
 
 :root {
-  /* base surfaces — bumped contrast so cards visibly separate from the
-     page instead of blending into the ambient glow */
-  --bg: #04050b;
-  --surface-1: #131b34;
-  --surface-2: #17203e;
-  --surface-2-hover: #1c2748;
-  --surface-inset: #0a0e1c;
+  /* base surfaces — pale sky-blue page, pure white cards for contrast */
+  --bg: #eef2f9;
+  --surface-1: #ffffff;
+  --surface-2: #ffffff;
+  --surface-2-hover: #f6f9fd;
+  --surface-inset: #eef2f9;
 
-  --border: rgba(165, 180, 235, .16);
-  --border-strong: rgba(165, 180, 235, .28);
-  --border-hover: rgba(165, 180, 235, .38);
+  --border: rgba(30, 45, 90, .09);
+  --border-strong: rgba(30, 45, 90, .16);
+  --border-hover: rgba(30, 45, 90, .24);
 
   /* text */
-  --text-1: #f3f5fc;
-  --text-2: #a3adcf;
-  --text-3: #66709a;
+  --text-1: #16213f;
+  --text-2: #5b6b8c;
+  --text-3: #93a1c2;
 
   /* status — used ONLY for state, never decoratively */
-  --good: #4ade80;
-  --warn: #fbbf24;
-  --bad: #fb7185;
+  --good: #16a34a;
+  --warn: #d97706;
+  --bad: #dc2626;
 
-  /* per-pillar fixed hue identity — same metric = same color everywhere.
-     paired stops used directly in SVG gradients (see each mockup). */
-  --energy-a: #fde68a;    --energy-b: #f59e0b;
-  --sperm-a:  #ddb6ff;    --sperm-b:  #f472b6;
-  --training-a:#67e8f9;   --training-b:#3b82f6;
-  --nutrition-a:#86efac;  --nutrition-b:#14b8a6;
-  --sleep-a:  #b4bcfb;    --sleep-b:  #6366f1;
-  --body-a:   #7dd3fc;    --body-b:   #0ea5e9;
+  /* per-pillar fixed hue identity — lightened to sit well on white,
+     same hue family/order as before so the mapping stays memorable */
+  --energy-a: #fcd34d;    --energy-b: #f59e0b;
+  --sperm-a:  #e0aaff;    --sperm-b:  #ec4899;
+  --training-a:#7dd3fc;   --training-b:#2563eb;
+  --nutrition-a:#6ee7b7;  --nutrition-b:#0d9488;
+  --sleep-a:  #a5b4fc;    --sleep-b:  #4f46e5;
+  --body-a:   #7dd3fc;    --body-b:   #0284c7;
 
   --r-pill: 999px;
   --r-chip: 12px;
   --r-card: 18px;
 
   --shadow-card:
-    0 1px 0 rgba(255,255,255,.06) inset,
-    0 0 0 1px rgba(255,255,255,.02) inset,
-    0 20px 40px -20px rgba(0,0,0,.85);
+    0 1px 0 rgba(255,255,255,.6) inset,
+    0 0 0 1px rgba(30,45,90,.02) inset,
+    0 10px 24px -12px rgba(30,45,90,.14);
   --shadow-card-hover:
-    0 1px 0 rgba(255,255,255,.08) inset,
-    0 0 0 1px rgba(255,255,255,.03) inset,
-    0 24px 48px -18px rgba(0,0,0,.9);
+    0 1px 0 rgba(255,255,255,.7) inset,
+    0 0 0 1px rgba(30,45,90,.03) inset,
+    0 16px 32px -14px rgba(30,45,90,.2);
 }
 
 .section-eyebrow {
@@ -58,13 +59,12 @@
 
 * { box-sizing: border-box; }
 
-html { color-scheme: dark; }
+html { color-scheme: light; }
 body {
   margin: 0;
   background:
-    radial-gradient(1100px 560px at 50% -180px, rgba(99,102,241,.14), transparent 62%),
-    radial-gradient(760px 480px at 105% -40px, rgba(34,211,238,.08), transparent 60%),
-    radial-gradient(700px 420px at -5% 40%, rgba(244,114,182,.05), transparent 60%),
+    radial-gradient(1100px 500px at 50% -220px, rgba(37,99,235,.06), transparent 62%),
+    radial-gradient(700px 420px at 105% 0%, rgba(236,72,153,.04), transparent 60%),
     var(--bg);
   background-attachment: fixed;
   color: var(--text-1);
@@ -74,12 +74,12 @@ body {
   letter-spacing: -0.006em;
 }
 
-a { color: var(--training-a); text-decoration: none; }
+a { color: var(--training-b); text-decoration: none; }
 
 .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 80px; }
 
 .mock-banner {
-  background: linear-gradient(90deg, rgba(221,182,255,.10), rgba(103,232,249,.06));
+  background: linear-gradient(90deg, rgba(236,72,153,.07), rgba(37,99,235,.06));
   border: 1px solid var(--border);
   border-radius: var(--r-chip);
   padding: 10px 16px;
@@ -97,25 +97,26 @@ header.top .brand { display: flex; align-items: center; gap: 10px; }
 header.top .mark {
   width: 34px; height: 34px; border-radius: 10px; flex: none;
   background: linear-gradient(135deg, var(--sperm-a), var(--training-b));
-  box-shadow: 0 0 0 1px rgba(255,255,255,.08) inset, 0 6px 16px -6px rgba(99,102,241,.5);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.5) inset, 0 6px 16px -6px rgba(37,99,235,.4);
 }
-header.top h1 { font-size: 19px; margin: 0; letter-spacing: -.02em; font-weight: 700; }
+header.top h1 { font-size: 19px; margin: 0; letter-spacing: -.02em; font-weight: 700; color: var(--text-1); }
 header.top .subtitle { color: var(--text-3); font-size: 12.5px; margin-top: 3px; letter-spacing: 0; }
 
 .datenav {
   display: flex; align-items: center; gap: 6px; background: var(--surface-1);
   border: 1px solid var(--border); border-radius: var(--r-chip); padding: 5px 6px;
+  box-shadow: var(--shadow-card);
 }
 .datenav button {
   background: transparent; border: none; color: var(--text-2);
   border-radius: 8px; width: 28px; height: 28px; cursor: pointer; font-size: 15px;
 }
-.datenav button:hover { background: var(--surface-2); color: var(--text-1); }
+.datenav button:hover { background: var(--surface-2-hover); color: var(--text-1); }
 .datenav input[type="date"] {
   background: transparent; border: none; color: var(--text-1);
-  border-radius: 8px; padding: 4px 6px; font-size: 12.5px; color-scheme: dark;
+  border-radius: 8px; padding: 4px 6px; font-size: 12.5px; color-scheme: light;
 }
-.datenav .today-btn { font-size: 11.5px; color: var(--training-a); background: none; border: none; cursor: pointer; padding: 0 8px; font-weight: 600; }
+.datenav .today-btn { font-size: 11.5px; color: var(--training-b); background: none; border: none; cursor: pointer; padding: 0 8px; font-weight: 600; }
 
 .muted { color: var(--text-2); }
 .small { font-size: 12px; }

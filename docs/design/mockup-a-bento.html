@@ -134,7 +134,7 @@
   .modal-backdrop.open { display: flex; }
   .modal-panel {
     background: var(--surface-1); border: 1px solid var(--border-strong); border-radius: 22px;
-    box-shadow: 0 40px 80px -20px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.03) inset;
+    box-shadow: 0 30px 60px -20px rgba(15,23,60,.35), 0 1px 0 rgba(255,255,255,.8) inset;
     width: 100%; max-width: 920px; padding: 8px;
     animation: pop .16s ease-out;
   }
@@ -199,7 +199,7 @@
       <div class="ring-col">
         <svg width="128" height="128" viewBox="0 0 128 128" style="filter:drop-shadow(0 0 18px rgba(245,158,11,.35))">
           <defs><linearGradient id="gEnergyHero" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#fde68a"/><stop offset="100%" stop-color="#f59e0b"/>
+            <stop offset="0%" stop-color="#fcd34d"/><stop offset="100%" stop-color="#f59e0b"/>
           </linearGradient></defs>
           <circle cx="64" cy="64" r="54" fill="none" stroke="var(--surface-inset)" stroke-width="11"/>
           <circle cx="64" cy="64" r="54" fill="none" stroke="url(#gEnergyHero)" stroke-width="11" stroke-linecap="round"
@@ -228,7 +228,7 @@
       <div class="row">
         <svg width="52" height="52" viewBox="0 0 52 52">
           <defs><linearGradient id="gNutr" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#86efac"/><stop offset="100%" stop-color="#14b8a6"/>
+            <stop offset="0%" stop-color="#6ee7b7"/><stop offset="100%" stop-color="#0d9488"/>
           </linearGradient></defs>
           <circle cx="26" cy="26" r="21" fill="none" stroke="var(--surface-inset)" stroke-width="6"/>
           <circle cx="26" cy="26" r="21" fill="none" stroke="url(#gNutr)" stroke-width="6" stroke-linecap="round"
@@ -250,7 +250,7 @@
       <div class="row">
         <svg width="52" height="52" viewBox="0 0 52 52">
           <defs><linearGradient id="gTrain" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#67e8f9"/><stop offset="100%" stop-color="#3b82f6"/>
+            <stop offset="0%" stop-color="#7dd3fc"/><stop offset="100%" stop-color="#2563eb"/>
           </linearGradient></defs>
           <circle cx="26" cy="26" r="21" fill="none" stroke="var(--surface-inset)" stroke-width="6"/>
           <circle cx="26" cy="26" r="21" fill="none" stroke="url(#gTrain)" stroke-width="6" stroke-linecap="round"
@@ -269,7 +269,7 @@
       <div class="row">
         <svg width="52" height="52" viewBox="0 0 52 52">
           <defs><linearGradient id="gSperm" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#ddb6ff"/><stop offset="100%" stop-color="#f472b6"/>
+            <stop offset="0%" stop-color="#e0aaff"/><stop offset="100%" stop-color="#ec4899"/>
           </linearGradient></defs>
           <circle cx="26" cy="26" r="21" fill="none" stroke="var(--surface-inset)" stroke-width="6"/>
           <circle cx="26" cy="26" r="21" fill="none" stroke="url(#gSperm)" stroke-width="6" stroke-linecap="round"
@@ -388,13 +388,13 @@
           </div>
           <div class="dpanel">
             <h4>Recommended next session</h4>
-            <div class="dbignum" style="color:#67e8f9">Shoulders</div>
+            <div class="dbignum" style="color:#2563eb">Shoulders</div>
             <div class="metric-note">Ready now · last trained 6.2d ago</div>
             <div class="metric-note" style="margin-top:8px">Go for <b style="color:var(--text-1)">4 of 6</b> exercises this session.</div>
           </div>
           <div class="dpanel">
             <h4>Load ratio trend (6wk)</h4>
-            <div class="dbignum" style="color:#67e8f9">0.87<small> load ratio</small></div>
+            <div class="dbignum" style="color:#2563eb">0.87<small> load ratio</small></div>
             <div class="goalline">Sweet spot 0.8–1.3 · danger &gt;1.5 · zone: <b style="color:var(--text-1)">healthy</b></div>
             <div class="loadbars">
               <div class="col"><div class="b" style="height:10px;background:var(--good)"></div><div class="lbl">W1</div></div>
@@ -444,7 +444,7 @@
             <h4>Weekly sperm-optimization score</h4>
             <div class="dring-row">
               <svg width="96" height="96" viewBox="0 0 96 96">
-                <defs><linearGradient id="gSpermD" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ddb6ff"/><stop offset="100%" stop-color="#f472b6"/></linearGradient></defs>
+                <defs><linearGradient id="gSpermD" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e0aaff"/><stop offset="100%" stop-color="#ec4899"/></linearGradient></defs>
                 <circle cx="48" cy="48" r="40" fill="none" stroke="var(--surface-inset)" stroke-width="9"/>
                 <circle cx="48" cy="48" r="40" fill="none" stroke="url(#gSpermD)" stroke-width="9" stroke-linecap="round" stroke-dasharray="251" stroke-dashoffset="100" transform="rotate(-90 48 48)"/>
                 <text x="50%" y="53%" text-anchor="middle" font-size="24" font-weight="700" fill="var(--text-1)">60</text>
@@ -473,7 +473,7 @@
       <div class="detail-section" data-detail="sleep">
         <div class="dgrid">
           <div class="dpanel span">
-            <div class="dbignum" style="color:#b4bcfb">8.3<small> h</small></div>
+            <div class="dbignum" style="color:#4f46e5">8.3<small> h</small></div>
             <div class="goalline">23:15 – 07:30 · <b style="color:var(--good)">solid</b> · 7d avg 7.4h · 14d avg 7.6h</div>
             <div class="placeholder">[ 14-night sparkline ]</div>
             <div class="small" style="margin-top:10px;color:var(--text-2)">Last 7 nights: <b style="color:var(--text-1)">0 short</b> (&lt;6h) · <b style="color:var(--text-1)">1 long</b> (&gt;9.5h) of 7 logged</div>
@@ -486,7 +486,7 @@
         <div class="dgrid">
           <div class="dpanel span">
             <h4>Latest weigh-in — 2026-09-13</h4>
-            <div class="dbignum" style="color:#7dd3fc">80.1<small>kg</small></div>
+            <div class="dbignum" style="color:#0284c7">80.1<small>kg</small></div>
             <div class="goalline">Goal range 76–78kg · 2.1kg to go · since start −1.3kg</div>
             <div class="dchips">
               <div class="dchip"><div class="v">26.4%</div><div class="k">Body fat</div></div>
@@ -537,11 +537,11 @@
 
 <script>
   const RINGS = {
-    nutrition:   { a:"#86efac", b:"#14b8a6", title:"Nutrition",             sub:"Macros, sperm-priority micros, and today's log" },
-    training:    { a:"#67e8f9", b:"#3b82f6", title:"Training",              sub:"Fatigue, load ratio, balance, aerobic, PRs" },
-    sperm:       { a:"#ddb6ff", b:"#f472b6", title:"Sperm Optimization",    sub:"Weekly composite score and contributing factors" },
-    sleep:       { a:"#b4bcfb", b:"#6366f1", title:"Sleep",                 sub:"Duration, trend, and consistency this week" },
-    bodycomp:    { a:"#7dd3fc", b:"#0ea5e9", title:"Body Composition",      sub:"Latest weigh-in and full history" },
+    nutrition:   { a:"#6ee7b7", b:"#0d9488", title:"Nutrition",             sub:"Macros, sperm-priority micros, and today's log" },
+    training:    { a:"#7dd3fc", b:"#2563eb", title:"Training",              sub:"Fatigue, load ratio, balance, aerobic, PRs" },
+    sperm:       { a:"#e0aaff", b:"#ec4899", title:"Sperm Optimization",    sub:"Weekly composite score and contributing factors" },
+    sleep:       { a:"#a5b4fc", b:"#4f46e5", title:"Sleep",                 sub:"Duration, trend, and consistency this week" },
+    bodycomp:    { a:"#7dd3fc", b:"#0284c7", title:"Body Composition",      sub:"Latest weigh-in and full history" },
     supplements: { a:"#8992b3", b:"#66709a", title:"Supplements & Lifestyle", sub:"Compliance check, retainers, lifestyle events" },
   };
 
