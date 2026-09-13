@@ -72,6 +72,22 @@ direction, not the chat history.
   filter (macro-break days read as a false near-zero dip otherwise). This
   is the reference to build the real implementation from — nothing here is
   invented data.
+- **Parity audit vs. `docs/app.js`** (2026-09-13): went panel-by-panel
+  through the real site's 6 tabs and found 23 real gaps in the first pass
+  of `mockup-final.html` — all now fixed in v2. Notably: a `status_note`
+  panel was missing entirely from the Overview page; the Nutrition item
+  table was missing 3 of its 5 macro columns; Training was missing
+  `training_alerts`, `guidance`, the `ranked` section-readiness table, 4 of
+  8 suggested exercises, the "go for N of M" framing, and its own dedicated
+  bodyweight-trend chart; Body Composition was missing 9 of 15 real
+  weigh-in fields, the goal-range reference lines, and both the body-fat-%
+  and muscle-mass trend charts; Sperm Optimization was missing the
+  duplicated micros panel and the ejaculation log; Supplements & Lifestyle
+  was missing all 3 of its trend visuals (compliance %, sleep, retainer
+  strip). `docs/data/*.json` already carried the underlying data for
+  nearly all of these (via fields like `training.ranked`/`guidance`/
+  `alerts` and the full weigh-in record) — confirms again that closing
+  these gaps in the real implementation is a frontend job.
 
 ## Open
 
