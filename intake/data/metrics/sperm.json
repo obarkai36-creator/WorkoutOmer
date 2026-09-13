@@ -995,6 +995,22 @@
       "notes": "Computed from real logged data for 2026-09-06 → 2026-09-12 (7 day(s) logged this window).",
       "sample": false,
       "window_days": 7
+    },
+    {
+      "week_start": "2026-09-07",
+      "week_end": "2026-09-13",
+      "window_days": 7,
+      "factors": {
+        "nutrition": 44,
+        "body_composition": 26,
+        "sleep": 98,
+        "alcohol": 35,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 85
+      },
+      "notes": "Computed from real logged data for 2026-09-07 → 2026-09-13 (7 day(s) logged this window).",
+      "sample": false
     }
   ],
   "trend": [
