@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WorkoutOmer Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="vendor/chart.umd.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div>
+      <h1>WorkoutOmer</h1>
+      <div class="subtitle" id="subtitle">Loading…</div>
+    </div>
+    <div class="datenav">
+      <button id="prevDay" title="Previous day">←</button>
+      <input type="date" id="datePick">
+      <button id="nextDay" title="Next day">→</button>
+      <button class="today-btn" id="jumpLatest">Latest</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="overview" class="active">Overview</button>
+    <button data-tab="nutrition">Nutrition</button>
+    <button data-tab="training">Training</button>
+    <button data-tab="bodycomp">Body Composition</button>
+    <button data-tab="sperm">Sperm Optimization</button>
+    <button data-tab="lifestyle">Supplements &amp; Lifestyle</button>
+  </nav>
+
+  <div id="content">
+    <div class="loading">Loading day data…</div>
+  </div>
+
+  <div class="footer" id="footer"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
