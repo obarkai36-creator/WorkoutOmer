@@ -504,11 +504,14 @@ const BODIES = {
       <div class="dpanel span"><h4>Sperm score trend — full history <span class="tag">(real, ${REAL.spermHistory.length} days)</span></h4><div class="chart-box"><canvas id="chSperm"></canvas></div></div>
     </div>`,
   sleep: () => `
-    <div class="dgrid"><div class="dpanel span">
-      <div class="dbignum" style="color:${HUES.sleep.b}">${REAL.sleep.duration}<small> h</small></div>
-      <div class="goalline">${REAL.sleep.start} – ${REAL.sleep.end} · <b style="color:var(--good)">solid</b></div>
-      <div class="small" style="color:var(--text-2)">${REAL.sleep.notes}</div>
-    </div></div>`,
+    <div class="dgrid">
+      <div class="dpanel span">
+        <div class="dbignum" style="color:${HUES.sleep.b}">${REAL.sleep.duration}<small> h</small></div>
+        <div class="goalline">${REAL.sleep.start} – ${REAL.sleep.end} · <b style="color:var(--good)">solid</b> · 7-9h target band</div>
+        <div class="small" style="color:var(--text-2)">${REAL.sleep.notes}</div>
+      </div>
+      <div class="dpanel span"><h4>Sleep trend <span class="tag">(real, last 30 nights)</span></h4><div class="chart-box"><canvas id="chSleepPillar"></canvas></div></div>
+    </div>`,
   bodycomp: () => `
     <div class="dgrid">
       <div class="dpanel span"><h4>Latest weigh-in — ${REAL.weight.date} <span class="tag">(all 15 real fields)</span></h4>
@@ -594,6 +597,13 @@ function drawCharts(key) {
   }
   if (key === "sperm") {
     line("chSperm", REAL.spermHistory.map(r => r.d.slice(5)), [{ label: "Sperm score", data: REAL.spermHistory.map(r => r.s), borderColor: HUES.sperm.b, backgroundColor: "transparent", tension: .2, pointRadius: 0 }], { y: { min: 0, max: 100 } });
+  }
+  if (key === "sleep") {
+    line("chSleepPillar", REAL.last30.map(r => r.d.slice(5)), [
+      { label: "Sleep (h)", data: REAL.last30.map(r => r.sh), borderColor: HUES.sleep.b, backgroundColor: "transparent", spanGaps: true, pointRadius: 0 },
+      { label: "7h target", data: REAL.last30.map(() => 7), borderColor: COLORS.muted, borderDash: [4,4], pointRadius: 0, backgroundColor: "transparent" },
+      { label: "9h target", data: REAL.last30.map(() => 9), borderColor: COLORS.muted, borderDash: [4,4], pointRadius: 0, backgroundColor: "transparent" },
+    ]);
   }
   if (key === "bodycomp") {
     line("chWeight", REAL.weightHistory.map(r => r.d), [
