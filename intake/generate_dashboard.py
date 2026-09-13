@@ -430,12 +430,17 @@ def load_all_intake_days():
 
 # ---------- real weekly sperm-optimization score (post 14-day unlock) -------
 
-def compute_current_week(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events, ejac_entries):
-    """Computes this week's sperm-optimization factors from real logged data
-    (trailing 7 days ending at target_date), replacing the illustrative demo
-    week that ships in sperm.json before enough real data exists."""
+def compute_window_factors(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events, ejac_entries, window_days=7):
+    """Computes sperm-optimization factors from real logged data over a
+    trailing window ending at target_date. Shared by the weekly "current
+    habits" score (window_days=7) and the longer trailing-trend score
+    (window_days=~90) — spermatogenesis + epididymal transit takes roughly
+    64-90 days, so a 7-day window reflects this week's habits, not sperm
+    quality "now"; the longer window is the biologically-relevant one, kept
+    alongside the weekly number rather than replacing it (the weekly number
+    is still useful as fast behavioral feedback)."""
     td = pdate(target_date)
-    week_start = td - timedelta(days=6)
+    week_start = td - timedelta(days=window_days - 1)
     t = profile["targets"]
 
     def in_week(d_str):
@@ -480,20 +485,29 @@ def compute_current_week(profile, target_date, all_days, weight_entries, sleep_e
     else:
         sleep_factor = 70  # neutral default — no nights logged in this window yet
 
+    # All frequency/count-based penalties below are normalized to a
+    # per-week-equivalent rate via `scale` before the (weekly-tuned)
+    # threshold formulas are applied — this keeps the math identical to the
+    # original at window_days=7 (scale=1) while staying meaningful at any
+    # longer window (otherwise e.g. a 90-day window would accumulate enough
+    # raw alcohol days/events to always clamp to 0, which is a normalization
+    # bug, not a real signal).
+    scale = 7 / window_days
+
     # alcohol: severity-weighted events in-window (so a single heavy session
     # doesn't score identically to a single light one), plus an extra penalty
     # for drinking on more than one day vs the <=1/week baseline
     alcohol_sev_penalty = {"mild": 5, "moderate": 15, "high": 30}
     week_alcohol_events = [e for e in lifestyle_events if e.get("type") == "alcohol" and in_week(e["date"])]
     alcohol_days = {e["date"] for e in week_alcohol_events}
-    alcohol_severity_penalty = sum(alcohol_sev_penalty.get(e.get("severity"), 10) for e in week_alcohol_events)
-    alcohol_frequency_penalty = max(0, len(alcohol_days) - 1) * 20
+    alcohol_severity_penalty = sum(alcohol_sev_penalty.get(e.get("severity"), 10) for e in week_alcohol_events) * scale
+    alcohol_frequency_penalty = max(0, len(alcohol_days) * scale - 1) * 20
     alcohol = round(clamp(100 - alcohol_severity_penalty - alcohol_frequency_penalty))
 
     # heat/travel exposure: severity-weighted events in-window
     sev_penalty = {"mild": 8, "moderate": 18, "high": 35}
     travel_events = [e for e in lifestyle_events if "heat_travel_exposure" in e.get("affects", []) and in_week(e["date"])]
-    penalty = sum(sev_penalty.get(e.get("severity"), 10) for e in travel_events)
+    penalty = sum(sev_penalty.get(e.get("severity"), 10) for e in travel_events) * scale
     heat_travel_exposure = round(clamp(100 - penalty))
 
     # smoking: static from profile (no daily tracking exists for this)
@@ -502,10 +516,11 @@ def compute_current_week(profile, target_date, all_days, weight_entries, sleep_e
 
     # ejaculatory frequency: research favors short, regular intervals (~every
     # 1-2 days / 4-7x per week) over long abstinence, which raises DNA
-    # fragmentation — count events in-window against that ideal frequency.
+    # fragmentation — count events in-window (normalized to a weekly-
+    # equivalent rate) against that ideal frequency.
     week_ejac = [e for e in ejac_entries if in_week(e["date"])]
     if ejac_entries:
-        ejaculatory_frequency = round(clamp(100 - max(0, 4 - len(week_ejac)) * 15))
+        ejaculatory_frequency = round(clamp(100 - max(0, 4 - len(week_ejac) * scale) * 15))
     else:
         ejaculatory_frequency = 70  # neutral default — tracking just started, no history yet
 
@@ -521,18 +536,39 @@ def compute_current_week(profile, target_date, all_days, weight_entries, sleep_e
     notes = (f"Computed from real logged data for {week_start.strftime('%Y-%m-%d')} → {target_date} "
              f"({len(week_days)} day(s) logged this window)." + (" " + " ".join(caveats) if caveats else ""))
     return {
-        "week_start": week_start.strftime("%Y-%m-%d"), "week_end": target_date,
+        "week_start": week_start.strftime("%Y-%m-%d"), "week_end": target_date, "window_days": window_days,
         "factors": factors, "notes": notes.strip(), "sample": False,
     }
 
 
-def persist_computed_week(week):
-    """Append/update this week's computed factors in sperm.json so there's a
-    real growing history, instead of discarding the computation each render."""
+def compute_current_week(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events, ejac_entries):
+    """The weekly "current habits" sperm-optimization factors (trailing 7
+    days) — fast behavioral feedback, not a claim about sperm quality itself
+    (see compute_trailing_trend for the biologically-relevant window)."""
+    return compute_window_factors(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events, ejac_entries, window_days=7)
+
+
+def compute_trailing_trend(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events, ejac_entries, window_days=90):
+    """The longer trailing-trend sperm-optimization score. Spermatogenesis +
+    epididymal transit takes roughly 64-90 days, so sperm quality "now" is
+    shaped by lifestyle ~2-3 months ago, not this week — this window is the
+    biologically-relevant complement to the weekly number, not a replacement
+    for it (added 2026-09-13, per research done alongside the dashboard
+    redesign)."""
+    return compute_window_factors(profile, target_date, all_days, weight_entries, sleep_entries, lifestyle_events, ejac_entries, window_days=window_days)
+
+
+def persist_computed_week(week, key="weeks"):
+    """Append/update this window's computed factors in sperm.json so there's
+    a real growing history, instead of discarding the computation each
+    render. `key` selects which list to persist into — "weeks" for the
+    7-day current-habits score (unchanged default), "trend" for the longer
+    trailing-trend score — both keyed/deduped by `week_start` within their
+    own list."""
     path = os.path.join(ROOT, "data/metrics/sperm.json")
     with open(path, encoding="utf-8") as f:
         sperm = json.load(f)
-    weeks = sperm["weeks"]
+    weeks = sperm.setdefault(key, [])
     weeks[:] = [w for w in weeks if not w.get("sample")]  # drop the illustrative demo week once real data exists
     existing = next((w for w in weeks if w["week_start"] == week["week_start"]), None)
     if existing:
@@ -822,11 +858,18 @@ def build(target_date, unified=False):
                                    sleep.get("entries", []), lifestyle.get("events", []),
                                    ejaculation.get("entries", []))
         persist_computed_week(wk)
+        trend = compute_trailing_trend(profile, target_date, all_days, entries,
+                                        sleep.get("entries", []), lifestyle.get("events", []),
+                                        ejaculation.get("entries", []))
+        persist_computed_week(trend, key="trend")
     else:
         wk = sperm["weeks"][-1]
+        trend = sperm.get("trend", [wk])[-1]
     weights = sperm["model"]["weights"]
     overall = sum(wk["factors"][k] * w for k, w in weights.items())
     sband = band_for(overall, sperm["model"]["bands"])
+    trend_overall = round(sum(trend["factors"][k] * w for k, w in weights.items()))
+    trend_band = band_for(trend_overall, sperm["model"]["bands"])
 
     td_ref = datetime.strptime(target_date, "%Y-%m-%d")
 
@@ -1052,7 +1095,8 @@ def build(target_date, unified=False):
         {ring(overall, sband['color'], sband['label'])}
         <div class="factors">{sfactors}</div>
       </div>
-      <div class="note" style="margin-top:14px">{wk.get('notes','')}</div>"""
+      <div class="note" style="margin-top:14px">{wk.get('notes','')}</div>
+      <div class="note" style="margin-top:8px">~90-day trailing trend (the biologically-relevant window — spermatogenesis takes ~64-90 days, so this reflects sperm quality itself better than the weekly "current habits" number above): <b style="color:{trend_band['color']}">{trend_overall} ({trend_band['label']})</b>, {trend['week_start']} → {trend['week_end']}.</div>"""
     else:
         sperm_title = "Sperm Optimization"
         remaining = UNLOCK_DAYS - days_logged

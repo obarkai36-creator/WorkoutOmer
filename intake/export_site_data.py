@@ -32,7 +32,7 @@ def macro_block(consumed, target):
 
 def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_entries,
                 lifestyle_events, ejac_entries, retainers_entries, workouts_entries,
-                sperm_weeks, sperm_weights, sperm_bands, energy_days, energy_bands,
+                sperm_weeks, sperm_trend_weeks, sperm_weights, sperm_bands, energy_days, energy_bands,
                 is_latest, training_full):
     intake = all_days_by_date[target_date]
     t = profile["targets"]
@@ -84,6 +84,15 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         overall = round(sum(sperm_week["factors"][k] * w for k, w in sperm_weights.items()))
         sperm_score = {**sperm_week, "overall": overall, "band": gd.band_for(overall, sperm_bands)}
 
+    # ~90-day trailing trend — the biologically-relevant window (spermatogenesis
+    # takes ~64-90 days), kept alongside the weekly "current habits" score above
+    # rather than replacing it. Same weights/bands, just a longer window.
+    sperm_trend_week = next((w for w in sperm_trend_weeks if w["week_end"] == target_date), None)
+    sperm_trend = None
+    if sperm_trend_week:
+        trend_overall = round(sum(sperm_trend_week["factors"][k] * w for k, w in sperm_weights.items()))
+        sperm_trend = {**sperm_trend_week, "overall": trend_overall, "band": gd.band_for(trend_overall, sperm_bands)}
+
     energy_day = next((e for e in energy_days if e["date"] == target_date), None)
     energy_score = None
     if energy_day:
@@ -98,6 +107,7 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         "workout_summary": intake.get("workout_summary"),
         "status_note": intake.get("status_note"),
         "caffeine_shots": intake.get("caffeine_shots"),
+        "steps": intake.get("steps"),
         "macros": macros,
         "micros": micro_block,
         "items": items,
@@ -108,6 +118,7 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         "retainers": retainer_entry,
         "supplement_compliance": supp_rows,
         "sperm_score": sperm_score,
+        "sperm_trend": sperm_trend,
         "energy_score": energy_score,
         "workout_log": workout_entry,
         "planned_workout": intake.get("planned_workout"),
@@ -153,6 +164,7 @@ def main():
 
     sperm_store = gd.load("data/metrics/sperm.json")
     sperm_weeks = sperm_store["weeks"]
+    sperm_trend_weeks = sperm_store.get("trend", [])
     sperm_weights = sperm_store["model"]["weights"]
     sperm_bands = sperm_store["model"]["bands"]
 
@@ -183,7 +195,7 @@ def main():
         bundle = export_day(
             d, all_days_by_date, profile, weight_entries, sleep_entries,
             lifestyle_events, ejac_entries, retainers_entries, workouts_entries,
-            sperm_weeks, sperm_weights, sperm_bands, energy_days, energy_bands,
+            sperm_weeks, sperm_trend_weeks, sperm_weights, sperm_bands, energy_days, energy_bands,
             is_latest=(d == latest_date), training_full=training_full,
         )
         if d in targets:
@@ -202,11 +214,13 @@ def main():
             "body_fat_pct": bundle["weight"].get("body_fat_pct") if bundle["weight"] else None,
             "muscle_mass_kg": bundle["weight"].get("muscle_mass_kg") if bundle["weight"] else None,
             "sperm_score": bundle["sperm_score"]["overall"] if bundle["sperm_score"] else None,
+            "sperm_trend": bundle["sperm_trend"]["overall"] if bundle["sperm_trend"] else None,
             "energy_score": bundle["energy_score"]["overall"] if bundle["energy_score"] else None,
             "sleep_hours": bundle["sleep"]["duration_hours"] if bundle["sleep"] else None,
             "workout_today": bundle["workout_today"],
             "workout_type": (bundle["workout_summary"] or "").split(",")[0].split(".")[0] if bundle["workout_today"] else None,
             "caffeine_shots": bundle["caffeine_shots"],
+            "steps": bundle["steps"],
             "retainers_worn": bundle["retainers"]["worn"] if bundle["retainers"] else None,
             "alcohol_event": any(e.get("type") == "alcohol" for e in bundle["lifestyle_events"]),
             "ejaculation_count": len(bundle["ejaculation_events"]),
