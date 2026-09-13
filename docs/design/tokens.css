@@ -5,16 +5,17 @@
  * tracking on numerals, and glow filters behind the rings. */
 
 :root {
-  /* base surfaces */
-  --bg: #05070f;
-  --surface-1: #0d1220;
-  --surface-2: #10182c;
-  --surface-2-hover: #141d34;
-  --surface-inset: #080b16;
+  /* base surfaces — bumped contrast so cards visibly separate from the
+     page instead of blending into the ambient glow */
+  --bg: #04050b;
+  --surface-1: #131b34;
+  --surface-2: #17203e;
+  --surface-2-hover: #1c2748;
+  --surface-inset: #0a0e1c;
 
-  --border: rgba(155, 170, 224, .10);
-  --border-strong: rgba(155, 170, 224, .20);
-  --border-hover: rgba(155, 170, 224, .28);
+  --border: rgba(165, 180, 235, .16);
+  --border-strong: rgba(165, 180, 235, .28);
+  --border-hover: rgba(165, 180, 235, .38);
 
   /* text */
   --text-1: #f3f5fc;
@@ -40,14 +41,20 @@
   --r-card: 18px;
 
   --shadow-card:
-    0 1px 0 rgba(255,255,255,.05) inset,
-    0 0 0 1px rgba(255,255,255,.015) inset,
-    0 24px 48px -28px rgba(0,0,0,.7);
-  --shadow-card-hover:
     0 1px 0 rgba(255,255,255,.06) inset,
     0 0 0 1px rgba(255,255,255,.02) inset,
-    0 28px 56px -24px rgba(0,0,0,.75);
+    0 20px 40px -20px rgba(0,0,0,.85);
+  --shadow-card-hover:
+    0 1px 0 rgba(255,255,255,.08) inset,
+    0 0 0 1px rgba(255,255,255,.03) inset,
+    0 24px 48px -18px rgba(0,0,0,.9);
 }
+
+.section-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--text-3); margin: 30px 0 12px;
+}
+.section-eyebrow:first-child { margin-top: 0; }
 
 * { box-sizing: border-box; }
 

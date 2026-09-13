@@ -36,31 +36,30 @@ direction, not the chat history.
   Once these are live on the site, `unified_report.yml` (and the whole
   `send_unified.mjs` email pipeline) can be retired from the EOD routine.
 
-## Open — being decided via the two mockups
+- **Layout paradigm: bento-grid Overview, LOCKED IN** (2026-09-13, after
+  comparing both mockups). `docs/design/mockup-b-tabs.html` is kept in the
+  repo as historical reference only — not being iterated on further.
+- **v1 mockups read as "raw and unfinished"** (2026-09-13 feedback) — the
+  problem was the shared visual system, not the layout choice. v3 (current)
+  fixes: bumped surface/border contrast so cards visibly separate from the
+  page instead of blending into the ambient glow; added `.section-eyebrow`
+  labels ("Today" / "At a glance" / "Insights") for page-level hierarchy;
+  added a hairline `.tile-divider` inside each tile between the headline
+  ring+number and the secondary bar/trend row, so tiles don't read as one
+  undifferentiated block; deepened shadows for more separation.
+- **Interaction model: tap-through opens a modal**, not real navigation —
+  each of the 6 tiles opens a full detail view (same modal, content
+  swapped) so the "inside" of each pillar can be inspected without leaving
+  Overview. This is now built out in `mockup-a-bento.html` with real
+  sample content per pillar (not just a label), including all 6 features
+  migrated from the email inside the Training detail view.
 
-**Layout paradigm for the Overview/landing view** — two real, static
-mockups built to compare side by side (same tokens.css, same sample data
-where applicable, so the comparison is layout-only):
+## Open
 
-- `docs/design/mockup-a-bento.html` — **Bento-grid hero view.** One hero
-  ring (Energy score) + a grid of smaller pillar tiles (Nutrition,
-  Training load, Sperm score, Sleep, Body comp, Supplements), each
-  tap-through to its full tab. Dominant 2025 dashboard pattern; leads with
-  "the one big thing" per Oura's own 2025 redesign philosophy.
-- `docs/design/mockup-b-tabs.html` — **Refined tabs, current structure
-  kept.** Same 6-tab nav as today, restyled with the new tokens; a couple
-  of chips upgraded to small rings. Also shows what the migrated Training
-  panel looks like in the new visual language (all 6 email-only features
-  mocked there). Lower risk/rebuild than the bento option.
-
-Both are static, non-functional mockups with sample data — not wired to
-real data yet. Open the two files locally or via GitHub Pages
-(`/design/mockup-a-bento.html`, `/design/mockup-b-tabs.html`) to compare.
-
-**Still to decide once a layout is picked:**
-- Where do the other 5 tabs (Nutrition, Body Comp, Sperm, Supplements) land
-  visually in the bento version — do they keep today's list/panel style
-  once you tap in, or also get a bento treatment?
+**Still to decide:**
+- Whether the modal-on-tap pattern is the final interaction, or tiles
+  should navigate to a full page/section instead once this leaves the
+  concept stage.
 - Chart library: keep Chart.js (already vendored at `docs/vendor/`) or
   consider a lighter/more-native sparkline approach for trend lines, given
   the "layer 1 = ring, layer 2 = sparkline, layer 3 = detail log" pattern
