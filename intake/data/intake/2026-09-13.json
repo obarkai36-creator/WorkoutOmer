@@ -24,16 +24,17 @@
     {"time": "13:30", "name": "Popsicle — La Frutta apple-melon", "category": "food", "qty": "1 unit (~80 g)", "kcal": 75, "protein_g": 0, "carbs_g": 18, "fat_g": 0, "fiber_g": 0, "note": "first time logged, no label — estimated from a comparable fruit ice-pop reference (~94kcal/100g, mostly sugar), flagged as generic."},
     {"time": "15:50", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "16:00", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:30", "name": "Homemade malabi, small portion", "category": "food", "qty": "1 small portion (~115 g incl. syrup)", "kcal": 160, "protein_g": 3, "carbs_g": 29, "fat_g": 3.5, "fiber_g": 0, "note": "first time logged, no recipe on file — base pudding rate from an online muhallebi/malabi reference (~120kcal/100g, 3g protein/19g carb/3.5g fat per 100g; Middle Eastern milk pudding, mostly milk + sugar + cornstarch), 100g portion assumed for 'small', plus a light rose/fruit syrup topping (~15g, ~40kcal/10g carb) since malabi is rarely served without one. Both the portion size and syrup amount are assumed, flagged as approximate."}
+    {"time": "16:30", "name": "Homemade malabi, small portion", "category": "food", "qty": "1 small portion (~115 g incl. syrup)", "kcal": 160, "protein_g": 3, "carbs_g": 29, "fat_g": 3.5, "fiber_g": 0, "note": "first time logged, no recipe on file — base pudding rate from an online muhallebi/malabi reference (~120kcal/100g, 3g protein/19g carb/3.5g fat per 100g; Middle Eastern milk pudding, mostly milk + sugar + cornstarch), 100g portion assumed for 'small', plus a light rose/fruit syrup topping (~15g, ~40kcal/10g carb) since malabi is rarely served without one. Both the portion size and syrup amount are assumed, flagged as approximate."},
+    {"time": "18:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 5.3,
-    "selenium_mcg": 78,
+    "zinc_mg": 25.3,
+    "selenium_mcg": 178,
     "folate_mcg_dfe": 42,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 24,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1024,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "caffeine_shots": 3,
@@ -48,7 +49,8 @@
     "13:30 La Frutta apple-melon popsicle — first time logged, no label, estimated from a comparable fruit ice-pop reference.",
     "15:50 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — same standard dose as prior entries.",
     "16:00 double espresso (3rd caffeine shot today).",
-    "16:30 homemade malabi, small portion — first time logged, no recipe on file, estimated from an online muhallebi/malabi nutrition reference (~120kcal/100g base pudding) plus an assumed light syrup topping, flagged as approximate."
+    "16:30 homemade malabi, small portion — first time logged, no recipe on file, estimated from an online muhallebi/malabi nutrition reference (~120kcal/100g base pudding) plus an assumed light syrup topping, flagged as approximate.",
+    "18:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, same reference as prior entries."
   ],
   "status_note": "Day in progress. Slept 8.25h (23:45-08:00) — a solid night. AM allergy meds done. Macro tracking break ended early per user request — full itemized tracking resumes today and continues through the rest of what would have been the break window. Full itemized lunch logged at 13:30."
 }
