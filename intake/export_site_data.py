@@ -129,6 +129,17 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         bundle["training_trends"] = training_full.get("trends") if training_full else None
         bundle["training_balance"] = training_full.get("balance") if training_full else None
         bundle["training_bodyweight"] = training_full.get("bodyweight") if training_full else None
+        # muscle-level fatigue (finer-grained than the section-level
+        # `training.sections`... actually this IS `sections` — see
+        # generate_dashboard.py's build_training_panels for the shape),
+        # relative strength, aerobic detail, and the PR/below-best "changes"
+        # list were only ever surfaced in the emailed dashboard — the
+        # redesign needs them on the site too, so expose them here the same
+        # way the fields above already are.
+        bundle["training_sections"] = training_full.get("sections") if training_full else None
+        bundle["training_relstrength"] = training_full.get("relstrength") if training_full else None
+        bundle["training_aerobic"] = training_full.get("aerobic") if training_full else None
+        bundle["training_changes"] = training_full.get("changes", []) if training_full else []
         bundle["suggestions"] = gd.generate_suggestions(
             profile, list(all_days_by_date.values()), weight_entries, sleep_entries,
             lifestyle_events, target_date, ejac_entries,
