@@ -135,6 +135,24 @@
   still resuming for good on 2026-09-18). Remove `exclude_from_monthly_macros`
   /`exclude_reason` from the 09-09/09-10/09-11 day files and itemize meals on
   those days normally; re-add the exclusion flag starting 09-12.
+  **UPDATE 2026-09-12**: user asked mid-day to itemize food for 09-12 too
+  (unprompted follow-through on an earlier "might attempt tracking today"
+  comment) — treated as another one-off exception day, same as 09-09/09-10/
+  09-11: `exclude_from_monthly_macros`/`exclude_reason` removed from the
+  09-12 day file, full itemized food logging for that day.
+  **UPDATE 2026-09-13 — BREAK CANCELLED**: user explicitly ended the break
+  early ("I'm trying to resume regular tracking through the holiday,
+  skipping the rule. Log as usual, including the rest of the so called
+  break."). Full itemized food/macro/micro tracking resumes 2026-09-13 and
+  continues through what would have been the rest of the break window
+  (09-14 through 09-17) and beyond — this is not another one-off exception,
+  it supersedes the break plan entirely. Do not re-apply
+  `exclude_from_monthly_macros` on 09-13 through 09-17 going forward; the
+  09-06 through 09-08 days already logged with the exclusion flag stay as
+  historical record, unaffected retroactively. User also flagged that
+  Monday-Thursday logging will lean
+  more on images/links rather than typed descriptions — no process change
+  needed on this end beyond normal photo/label handling already in place.
 
 - Simfonia cheese spread — verified label correction (2026-08-31): a photographed
   nutrition label gave the real per-100g values (108kcal, 9.8g protein, 4.6g
