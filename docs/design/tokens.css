@@ -1,0 +1,95 @@
+/* Design tokens — "soft navy" direction (Oura-inspired).
+ * Shared by both layout mockups so the visual comparison is
+ * layout-only, not confounded by different colors/type. */
+
+:root {
+  /* surfaces — soft dark navy, not pure black, with lightness steps for elevation */
+  --bg: #0a0e1c;
+  --bg-glow: radial-gradient(ellipse 900px 500px at 20% -10%, rgba(129, 140, 248, .10), transparent),
+             radial-gradient(ellipse 700px 500px at 100% 0%, rgba(34, 211, 238, .07), transparent);
+  --panel: #121a30;
+  --panel2: #0d1426;
+  --panel-hover: #16203c;
+  --line: #212c4a;
+  --line-soft: #1a2440;
+
+  /* text */
+  --text: #eef1fb;
+  --muted: #8992b3;
+  --muted2: #626c8c;
+
+  /* status — used ONLY for state, nowhere else (Whoop principle) */
+  --green: #34d399;
+  --amber: #fbbf24;
+  --red: #f87171;
+
+  /* per-pillar fixed hue identity — same metric = same color everywhere */
+  --c-energy-1: #fbbf24;   --c-energy-2: #f59e0b;   /* gold   */
+  --c-sperm-1:  #c084fc;   --c-sperm-2:  #f472b6;   /* violet -> pink */
+  --c-training-1:#22d3ee;  --c-training-2:#38bdf8;  /* cyan   */
+  --c-nutrition-1:#34d399; --c-nutrition-2:#2dd4bf; /* green -> teal */
+  --c-sleep-1:  #818cf8;   --c-sleep-2:  #6366f1;   /* indigo */
+  --c-body-1:   #38bdf8;   --c-body-2:   #0ea5e9;   /* blue   */
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 9px;
+
+  --shadow-tile: 0 1px 0 rgba(255,255,255,.03) inset, 0 12px 24px -12px rgba(0,0,0,.5);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+body {
+  background-image: var(--bg-glow);
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+
+a { color: var(--c-training-1); text-decoration: none; }
+
+.wrap { max-width: 1180px; margin: 0 auto; padding: 22px 18px 70px; }
+
+.mock-banner {
+  background: linear-gradient(90deg, rgba(192,132,252,.18), rgba(56,189,248,.12));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.mock-banner b { color: var(--text); }
+
+header.top {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 20px;
+}
+header.top h1 { font-size: 21px; margin: 0; letter-spacing: -.01em; }
+header.top .subtitle { color: var(--muted); font-size: 13px; margin-top: 3px; }
+
+.datenav {
+  display: flex; align-items: center; gap: 8px; background: var(--panel);
+  border: 1px solid var(--line); border-radius: 12px; padding: 6px 8px;
+}
+.datenav button {
+  background: var(--panel2); border: 1px solid var(--line); color: var(--text);
+  border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 14px;
+}
+.datenav input[type="date"] {
+  background: var(--panel2); border: 1px solid var(--line); color: var(--text);
+  border-radius: 8px; padding: 6px 8px; font-size: 13px; color-scheme: dark;
+}
+
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+
+::-webkit-scrollbar { height: 6px; width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
