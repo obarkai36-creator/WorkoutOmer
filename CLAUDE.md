@@ -1,5 +1,53 @@
 # Session notes
 
+- Dashboard redesign implementation (started 2026-09-13, concept approved in
+  `docs/design/` — see that folder's BRIEF.md for the full design history):
+  replacing the old tab-based `docs/index.html`/`docs/app.js`/`docs/style.css`
+  with the bento-grid "soft sky" (light) design proven out in
+  `docs/design/mockup-final.html`. A snapshot of the pre-redesign site is
+  archived at `docs/_archive/pre-redesign-2026-09-13/` in case anything needs
+  reverting or cross-checking (a git tag would normally serve this purpose
+  too, but this session's git credentials can't push tags — 403 on every
+  retry — so the in-repo copy is the durable fallback). Three tracking
+  additions are part of this same pass:
+  1. **90-day trailing sperm-score trend** (implemented 2026-09-13): added
+     `compute_trailing_trend()` in `generate_dashboard.py` alongside the
+     existing weekly `compute_current_week()` — both now share a generic
+     `compute_window_factors(..., window_days=N)`. Spermatogenesis +
+     epididymal transit takes ~64-90 days, so the original 7-day score
+     reflects "this week's habits," not sperm quality itself; the 90-day
+     window is the biologically-relevant complement, not a replacement —
+     keep showing both. Persisted in a new `trend` list in
+     `data/metrics/sperm.json` (parallel to `weeks`), exposed as
+     `sperm_trend` on both the per-day `docs/data/<date>.json` bundle and
+     the `docs/data/index.json` rollup, matched the same way as
+     `sperm_score` (by `week_end` == the target date). Backfilled for all
+     65 already-unlocked historical days via a one-off script — going
+     forward it's computed/persisted automatically every time
+     `generate_dashboard.py <date> --unified` runs (still run at EOD even
+     though the email is retired, see below — that's what keeps this and
+     the weekly score's history growing).
+  2. **Alcohol-free streak**: computed client-side in the new `app.js` from
+     `index.json`'s existing per-day `alcohol_event` boolean (no backend
+     change needed) — walk backward from the latest day until hitting a
+     `true`. Surfaced as a tile in the redesign.
+  3. **Steps tracking** (added 2026-09-13): a new optional `steps` field on
+     the day intake JSON (`{"steps": 8432}` at the top level, alongside
+     `caffeine_shots`), threaded through `export_site_data.py` to both the
+     per-day bundle and the `index.json` rollup. No automatic Samsung
+     Health pull is possible from this environment (no OAuth/device
+     integration point exists here) — instead, **at EOD, before finalizing
+     the day** (before setting `in_progress: false`), check whether `steps`
+     has been logged for the day; if not, ask the user for their step
+     count (Samsung Health or wherever they track it) before signing the
+     day off, same pattern as the existing retainers trailing-night check.
+     If they don't have it handy, log the day without steps rather than
+     blocking EOD — this is a reminder, not a hard requirement.
+  **Email retirement**: per explicit request, the emailed unified HTML
+  dashboard is being dropped from the EOD routine now that the site has
+  full (and better) parity — see the "Unified dashboard delivery" entry
+  below for what specifically changes in the EOD steps.
+
 - Manually-adjusted workout plans on the site/dashboard (added 2026-09-10):
   when the user asks for an ad hoc/adjusted workout plan (e.g. scaling
   weights down after a layoff or injury/fatigue, as opposed to just
@@ -224,6 +272,18 @@
   dashboard. The old `report.yml` (workout-only PDF, auto-fired on a
   data.js push with a new WORKOUTS entry) is now workflow_dispatch-only —
   kept as a manual fallback, not something to trigger routinely anymore.
+  **UPDATE 2026-09-13 — EMAIL RETIRED**: per explicit request, once the
+  site reached full (and better) feature parity via the redesign, the
+  `unified_report.yml` workflow-dispatch trigger is dropped from the
+  standing EOD routine — do not fire it automatically anymore (manual
+  fallback only, if ever asked for). **Still run
+  `python3 generate_dashboard.py <date> --unified` at EOD as before** —
+  despite the name, this step is what computes and persists the weekly
+  and 90-day-trend sperm-score factors into `sperm.json` (and the energy
+  score into `energy.json`) that `export_site_data.py` depends on; only
+  the email-send trigger is removed, not the computation step. The
+  generated `dashboards/unified_*.html` file itself is now a harmless
+  by-product, not a deliverable.
 - Interactive dashboard site (built 2026-08-18, per explicit user request —
   decisions confirmed via AskUserQuestion: public/unlisted GitHub Pages URL,
   single-page app with a date picker over per-day static JSON (not one page
@@ -256,7 +316,9 @@
   (serving from this branch's `/docs` folder, classic "deploy from branch"
   mode, no separate Actions workflow needed) picks up the new commit
   automatically, no extra trigger step required. The email pipeline
-  (`unified_report.yml`) is unchanged and untouched by this.
+  (`unified_report.yml`) used to run alongside this unchanged — as of the
+  2026-09-13 email retirement (see the "Unified dashboard delivery" entry
+  above) it's no longer triggered at EOD; this export step is unaffected.
   **Outstanding one-time manual step (can't be done via the GitHub MCP
   tools available in this session — no Pages-config API exposed): the user
   needs to enable GitHub Pages once, in repo Settings → Pages → Source:
