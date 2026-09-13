@@ -6,200 +6,238 @@
 <title>Design Mockup A — Bento Overview</title>
 <link rel="stylesheet" href="tokens.css">
 <style>
+  /* ---- hero banner (full width, not part of the tile grid) ---- */
+  .hero {
+    background: linear-gradient(160deg, var(--surface-2) 0%, var(--surface-1) 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--r-card);
+    box-shadow: var(--shadow-card);
+    padding: 26px 30px;
+    margin-bottom: 18px;
+    display: flex; align-items: center; gap: 30px; flex-wrap: wrap;
+  }
+  .hero .ring-col { flex: none; }
+  .hero .body { flex: 1 1 260px; min-width: 0; }
+  .hero .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--text-3); margin-bottom: 6px; }
+  .hero .headline { font-size: 17px; font-weight: 500; line-height: 1.5; color: var(--text-1); max-width: 520px; }
+  .hero .headline b { font-weight: 700; }
+  .hero .trendrow { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+  .trend-pill {
+    display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600;
+    padding: 4px 10px; border-radius: var(--r-pill); background: rgba(74,222,128,.12); color: var(--good);
+  }
+  .trend-pill.down { background: rgba(251,113,133,.12); color: var(--bad); }
+
+  /* ---- secondary tile grid: exactly 6, always 2 rows x 3 cols ---- */
   .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(120px, auto);
-    gap: 14px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
   }
   .tile {
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-radius: var(--radius-lg);
-    padding: 18px;
-    box-shadow: var(--shadow-tile);
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: var(--r-card);
+    box-shadow: var(--shadow-card);
+    padding: 20px 22px;
     position: relative;
-    display: flex; flex-direction: column;
-    transition: border-color .15s, background .15s;
+    transition: background .16s, border-color .16s, box-shadow .16s, transform .16s;
   }
-  .tile.tap:hover { border-color: var(--line-soft); background: var(--panel-hover); cursor: pointer; }
-  .tile .go { position: absolute; top: 16px; right: 16px; color: var(--muted2); font-size: 15px; }
-  .tile h3 { margin: 0 0 2px; font-size: 12.5px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
-  .tile .trend { font-size: 12px; margin-top: 6px; display: flex; align-items: center; gap: 4px; }
-  .trend.up { color: var(--green); } .trend.down { color: var(--red); } .trend.flat { color: var(--muted); }
+  .tile.tap:hover {
+    background: var(--surface-2-hover); border-color: var(--border-hover);
+    box-shadow: var(--shadow-card-hover); transform: translateY(-1px); cursor: pointer;
+  }
+  .tile .go {
+    position: absolute; top: 20px; right: 20px; color: var(--text-3); font-size: 15px;
+    transition: color .16s, transform .16s;
+  }
+  .tile.tap:hover .go { color: var(--text-2); transform: translateX(2px); }
+  .tile h3 {
+    margin: 0 0 14px; font-size: 11px; font-weight: 700; color: var(--text-3);
+    text-transform: uppercase; letter-spacing: .09em;
+  }
+  .tile .row { display: flex; align-items: center; gap: 16px; }
+  .tile .num { font-size: 27px; font-weight: 700; letter-spacing: -.02em; color: var(--text-1); }
+  .tile .num small { font-size: 13px; font-weight: 500; color: var(--text-3); letter-spacing: 0; margin-left: 2px; }
+  .tile .sub { font-size: 12.5px; color: var(--text-2); margin-top: 3px; }
 
-  /* hero tile — spans wider, one story per load */
-  .tile.hero { grid-column: span 3; grid-row: span 2; justify-content: center; align-items: center; text-align: center; gap: 10px; }
-  .tile.hero .ring-wrap { position: relative; width: 168px; height: 168px; }
-  .tile.hero .label { font-size: 13px; color: var(--muted); margin-top: 2px; }
-  .tile.hero .headline { font-size: 15px; margin-top: 8px; max-width: 300px; line-height: 1.4; }
-
-  .tile.med { grid-column: span 3; grid-row: span 1; }
-  .tile.sm  { grid-column: span 2; grid-row: span 1; }
-
-  .ring-inline { display: flex; align-items: center; gap: 14px; }
-  .ring-num-big { font-size: 30px; font-weight: 800; }
-  .ring-num-big small { font-size: 13px; font-weight: 600; color: var(--muted); }
-
-  .bar-row { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
-  .bar { background: var(--panel2); border-radius: 8px; height: 7px; overflow: hidden; }
+  .bar-row { display: flex; flex-direction: column; gap: 9px; margin-top: 16px; }
+  .bar { background: var(--surface-inset); border-radius: 8px; height: 6px; overflow: hidden; }
   .bar > div { height: 100%; border-radius: 8px; }
-  .bar-label { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted); margin-bottom: 3px; }
+  .bar-label { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--text-2); margin-bottom: 4px; }
 
-  .strip { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; }
+  .strip { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; margin-bottom: 18px; }
   .strip .pill {
-    flex: 0 0 auto; background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
-    padding: 9px 16px; font-size: 13px; display: flex; align-items: center; gap: 8px;
+    flex: 0 0 auto; background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-pill);
+    padding: 8px 16px; font-size: 12.5px; color: var(--text-2); display: flex; align-items: center; gap: 8px;
   }
-  .dot { width: 7px; height: 7px; border-radius: 50%; }
+  .strip .pill b { color: var(--text-1); font-weight: 600; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; flex: none; }
 
   .note-panel {
-    background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg);
-    padding: 18px 20px; margin-top: 16px;
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-card);
+    box-shadow: var(--shadow-card);
+    padding: 20px 24px; margin-top: 16px;
   }
-  .note-panel h2 { font-size: 12.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 10px; }
+  .note-panel h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .09em; font-weight: 700; color: var(--text-3); margin: 0 0 14px; }
   .tips { list-style: none; margin: 0; padding: 0; }
-  .tips li { padding: 7px 0; font-size: 13.5px; border-bottom: 1px solid var(--line-soft); }
+  .tips li { padding: 10px 0; font-size: 13.5px; line-height: 1.5; color: var(--text-2); border-bottom: 1px solid var(--border); }
   .tips li:last-child { border-bottom: none; }
+  .tips li b { color: var(--text-1); }
 
   @media (max-width: 860px) {
     .grid { grid-template-columns: repeat(2, 1fr); }
-    .tile.hero, .tile.med, .tile.sm { grid-column: span 2; }
+    .hero { padding: 22px; }
+  }
+  @media (max-width: 520px) {
+    .grid { grid-template-columns: 1fr; }
+    .hero { flex-direction: column; align-items: flex-start; text-align: left; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="mock-banner">🎨 <b>Design Mockup A — Bento Overview.</b> Static, non-functional — for visual/layout comparison against Mockup B only. Sample data.</div>
+  <div class="mock-banner">🎨 <b>Design Mockup A — Bento Overview (v2).</b> Static, non-functional — for visual/layout comparison against Mockup B only. Sample data.</div>
 
   <header class="top">
-    <div>
-      <h1>WorkoutOmer</h1>
-      <div class="subtitle">Day 78 of 78 · 2026-09-13</div>
+    <div class="brand">
+      <div class="mark"></div>
+      <div>
+        <h1>WorkoutOmer</h1>
+        <div class="subtitle">Day 78 of 78 · 2026-09-13</div>
+      </div>
     </div>
     <div class="datenav">
       <button>‹</button>
       <input type="date" value="2026-09-13">
       <button>›</button>
-      <button style="color:var(--c-training-1);background:none;border:none;font-size:12px">Today</button>
+      <button class="today-btn">Today</button>
     </div>
   </header>
 
-  <div class="strip" style="margin-bottom:16px">
-    <div class="pill"><span class="dot" style="background:var(--green)"></span>Workout today · Legs day</div>
-    <div class="pill"><span class="dot" style="background:var(--c-training-1)"></span>Load ratio 0.87 · sweet spot</div>
-    <div class="pill"><span class="dot" style="background:var(--amber)"></span>Weigh-in 80.1kg · −0.15kg</div>
-    <div class="pill"><span class="dot" style="background:var(--muted)"></span>4 caffeine shots</div>
+  <div class="strip">
+    <div class="pill"><span class="dot" style="background:var(--good)"></span><b>Legs day</b> logged</div>
+    <div class="pill"><span class="dot" style="background:var(--training-b)"></span>Load ratio <b>0.87</b> · sweet spot</div>
+    <div class="pill"><span class="dot" style="background:var(--warn)"></span>Weigh-in <b>80.1kg</b> · −0.15kg</div>
+    <div class="pill"><span class="dot" style="background:var(--text-3)"></span><b>4</b> caffeine shots</div>
+  </div>
+
+  <!-- hero: one story per load — today's Energy score -->
+  <div class="hero">
+    <div class="ring-col">
+      <svg width="128" height="128" viewBox="0 0 128 128" style="filter:drop-shadow(0 0 18px rgba(245,158,11,.35))">
+        <defs><linearGradient id="gEnergy" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fde68a"/><stop offset="100%" stop-color="#f59e0b"/>
+        </linearGradient></defs>
+        <circle cx="64" cy="64" r="54" fill="none" stroke="var(--surface-inset)" stroke-width="11"/>
+        <circle cx="64" cy="64" r="54" fill="none" stroke="url(#gEnergy)" stroke-width="11" stroke-linecap="round"
+          stroke-dasharray="339" stroke-dashoffset="63" transform="rotate(-90 64 64)"/>
+        <text x="50%" y="47%" text-anchor="middle" font-size="30" font-weight="700" letter-spacing="-1" fill="var(--text-1)">84</text>
+        <text x="50%" y="63%" text-anchor="middle" font-size="10.5" font-weight="600" letter-spacing=".5" fill="var(--text-3)">ENERGY</text>
+      </svg>
+    </div>
+    <div class="body">
+      <div class="eyebrow">Today's read</div>
+      <div class="headline">Solid recovery — <b>sleep and nutrition both on target.</b> Good day to push training; shoulders are fully recovered and due.</div>
+      <div class="trendrow">
+        <span class="trend-pill">↑ 3 vs yesterday</span>
+        <span class="small" style="color:var(--text-3)">7-day avg: 79</span>
+      </div>
+    </div>
   </div>
 
   <div class="grid">
-    <!-- hero: one story per load — today's Energy score -->
-    <div class="tile hero tap">
-      <div class="go">→</div>
-      <div class="ring-wrap"><svg width="168" height="168" viewBox="0 0 168 168">
-        <defs><linearGradient id="gEnergy" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="var(--c-energy-1)"/><stop offset="100%" stop-color="var(--c-energy-2)"/>
-        </linearGradient></defs>
-        <circle cx="84" cy="84" r="74" fill="none" stroke="var(--line-soft)" stroke-width="12"/>
-        <circle cx="84" cy="84" r="74" fill="none" stroke="url(#gEnergy)" stroke-width="12" stroke-linecap="round"
-          stroke-dasharray="465" stroke-dashoffset="86" transform="rotate(-90 84 84)"/>
-        <text x="50%" y="46%" text-anchor="middle" font-size="34" font-weight="800" fill="var(--text)">84</text>
-        <text x="50%" y="60%" text-anchor="middle" font-size="12" fill="var(--muted)">ENERGY SCORE</text>
-      </svg></div>
-      <div class="trend up">↑ 3 vs yesterday</div>
-      <div class="headline">Solid recovery day — sleep and nutrition both on target. Good day to push training.</div>
-    </div>
-
     <!-- nutrition -->
-    <div class="tile med tap">
+    <div class="tile tap">
       <div class="go">→</div>
       <h3>Nutrition</h3>
-      <div class="ring-inline">
-        <svg width="64" height="64" viewBox="0 0 64 64">
+      <div class="row">
+        <svg width="52" height="52" viewBox="0 0 52 52">
           <defs><linearGradient id="gNutr" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="var(--c-nutrition-1)"/><stop offset="100%" stop-color="var(--c-nutrition-2)"/>
+            <stop offset="0%" stop-color="#86efac"/><stop offset="100%" stop-color="#14b8a6"/>
           </linearGradient></defs>
-          <circle cx="32" cy="32" r="26" fill="none" stroke="var(--line-soft)" stroke-width="7"/>
-          <circle cx="32" cy="32" r="26" fill="none" stroke="url(#gNutr)" stroke-width="7" stroke-linecap="round"
-            stroke-dasharray="163" stroke-dashoffset="44" transform="rotate(-90 32 32)"/>
+          <circle cx="26" cy="26" r="21" fill="none" stroke="var(--surface-inset)" stroke-width="6"/>
+          <circle cx="26" cy="26" r="21" fill="none" stroke="url(#gNutr)" stroke-width="6" stroke-linecap="round"
+            stroke-dasharray="132" stroke-dashoffset="13" transform="rotate(-90 26 26)"/>
         </svg>
-        <div><div class="ring-num-big">1,847<small> / 2,050 kcal</small></div><div class="trend flat">143g protein · 90%</div></div>
+        <div><div class="num">1,847<small>/2,050 kcal</small></div><div class="sub">143g protein · 90%</div></div>
       </div>
       <div class="bar-row">
-        <div><div class="bar-label"><span>Zinc</span><span>182%</span></div><div class="bar"><div style="width:100%;background:var(--green)"></div></div></div>
-        <div><div class="bar-label"><span>Folate</span><span>22%</span></div><div class="bar"><div style="width:22%;background:var(--red)"></div></div></div>
+        <div><div class="bar-label"><span>Zinc</span><span>182%</span></div><div class="bar"><div style="width:100%;background:var(--good)"></div></div></div>
+        <div><div class="bar-label"><span>Folate</span><span>22%</span></div><div class="bar"><div style="width:22%;background:var(--bad)"></div></div></div>
       </div>
     </div>
 
     <!-- training / load -->
-    <div class="tile med tap">
+    <div class="tile tap">
       <div class="go">→</div>
       <h3>Training load</h3>
-      <div class="ring-inline">
-        <svg width="64" height="64" viewBox="0 0 64 64">
+      <div class="row">
+        <svg width="52" height="52" viewBox="0 0 52 52">
           <defs><linearGradient id="gTrain" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="var(--c-training-1)"/><stop offset="100%" stop-color="var(--c-training-2)"/>
+            <stop offset="0%" stop-color="#67e8f9"/><stop offset="100%" stop-color="#3b82f6"/>
           </linearGradient></defs>
-          <circle cx="32" cy="32" r="26" fill="none" stroke="var(--line-soft)" stroke-width="7"/>
-          <circle cx="32" cy="32" r="26" fill="none" stroke="url(#gTrain)" stroke-width="7" stroke-linecap="round"
-            stroke-dasharray="163" stroke-dashoffset="42" transform="rotate(-90 32 32)"/>
+          <circle cx="26" cy="26" r="21" fill="none" stroke="var(--surface-inset)" stroke-width="6"/>
+          <circle cx="26" cy="26" r="21" fill="none" stroke="url(#gTrain)" stroke-width="6" stroke-linecap="round"
+            stroke-dasharray="132" stroke-dashoffset="34" transform="rotate(-90 26 26)"/>
         </svg>
-        <div><div class="ring-num-big">0.87<small> ACWR</small></div><div class="trend flat">Sweet spot 0.8–1.3</div></div>
+        <div><div class="num">0.87<small>ACWR</small></div><div class="sub">Sweet spot 0.8–1.3</div></div>
       </div>
-      <div class="small muted" style="margin-top:10px">Recommended next: <b style="color:var(--text)">Shoulders day</b> · ready now</div>
+      <div class="small" style="margin-top:16px;color:var(--text-2)">Recommended next: <b style="color:var(--text-1)">Shoulders day</b> · ready now</div>
     </div>
 
     <!-- sperm score -->
-    <div class="tile sm tap">
+    <div class="tile tap">
       <div class="go">→</div>
       <h3>Sperm score</h3>
-      <div class="ring-inline">
-        <svg width="56" height="56" viewBox="0 0 56 56">
+      <div class="row">
+        <svg width="52" height="52" viewBox="0 0 52 52">
           <defs><linearGradient id="gSperm" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="var(--c-sperm-1)"/><stop offset="100%" stop-color="var(--c-sperm-2)"/>
+            <stop offset="0%" stop-color="#ddb6ff"/><stop offset="100%" stop-color="#f472b6"/>
           </linearGradient></defs>
-          <circle cx="28" cy="28" r="23" fill="none" stroke="var(--line-soft)" stroke-width="6"/>
-          <circle cx="28" cy="28" r="23" fill="none" stroke="url(#gSperm)" stroke-width="6" stroke-linecap="round"
-            stroke-dasharray="144" stroke-dashoffset="58" transform="rotate(-90 28 28)"/>
+          <circle cx="26" cy="26" r="21" fill="none" stroke="var(--surface-inset)" stroke-width="6"/>
+          <circle cx="26" cy="26" r="21" fill="none" stroke="url(#gSperm)" stroke-width="6" stroke-linecap="round"
+            stroke-dasharray="132" stroke-dashoffset="53" transform="rotate(-90 26 26)"/>
         </svg>
-        <div><div class="ring-num-big" style="font-size:24px">60</div><div class="trend flat">weekly · fair</div></div>
+        <div><div class="num">60<small>/ 100</small></div><div class="sub">Weekly · fair band</div></div>
       </div>
+      <div class="small" style="margin-top:16px;color:var(--text-2)">Biggest lever: <b style="color:var(--text-1)">folate</b> intake this week</div>
     </div>
 
     <!-- sleep -->
-    <div class="tile sm tap">
+    <div class="tile tap">
       <div class="go">→</div>
       <h3>Sleep</h3>
-      <div class="ring-num-big">8.3<small>h</small></div>
-      <div class="trend up">↑ vs 7d avg (7.4h)</div>
-      <div class="small muted" style="margin-top:6px">23:15 – 07:30 · 0 short nights this week</div>
+      <div class="num">8.3<small>h</small></div>
+      <div class="sub" style="margin-top:2px">23:15 – 07:30</div>
+      <div class="trendrow" style="margin-top:14px"><span class="trend-pill">↑ vs 7d avg (7.4h)</span></div>
     </div>
 
     <!-- body comp -->
-    <div class="tile sm tap">
+    <div class="tile tap">
       <div class="go">→</div>
       <h3>Body composition</h3>
-      <div class="ring-num-big">80.1<small>kg</small></div>
-      <div class="trend down">↓ 0.15kg vs last weigh-in</div>
-      <div class="small muted" style="margin-top:6px">Goal 76–78kg · 2.1kg to go</div>
+      <div class="num">80.1<small>kg</small></div>
+      <div class="sub" style="margin-top:2px">Goal 76–78kg · 2.1kg to go</div>
+      <div class="trendrow" style="margin-top:14px"><span class="trend-pill down">↓ 0.15kg vs last weigh-in</span></div>
     </div>
 
     <!-- supplements -->
-    <div class="tile sm tap">
+    <div class="tile tap">
       <div class="go">→</div>
       <h3>Supplements</h3>
-      <div class="ring-num-big">6<small> / 6</small></div>
-      <div class="trend up">Fully compliant today</div>
-      <div class="small muted" style="margin-top:6px">Essential-5, omega-3, creatine, allergy meds ✓</div>
+      <div class="num">6<small>/ 6</small></div>
+      <div class="sub" style="margin-top:2px">Fully compliant today</div>
+      <div class="trendrow" style="margin-top:14px"><span class="trend-pill">Essential-5 · omega-3 · creatine</span></div>
     </div>
   </div>
 
   <div class="note-panel">
     <h2>Suggestions</h2>
     <ul class="tips">
-      <li>💡 Folate is running low today (22% of target) — a serving of leafy greens or legumes at dinner would close most of the gap.</li>
-      <li>💡 3 consecutive drinking days this week — still small pours, but worth noting against the usual ≤1/week baseline.</li>
-      <li>💡 Push:pull ratio is 1.47× — favor rows/rear-delt work over presses on the next push-adjacent day.</li>
+      <li>Folate is running low today (<b>22%</b> of target) — a serving of leafy greens or legumes at dinner would close most of the gap.</li>
+      <li><b>3 consecutive drinking days</b> this week — still small pours, but worth noting against the usual ≤1/week baseline.</li>
+      <li>Push:pull ratio is <b>1.47×</b> — favor rows/rear-delt work over presses on the next push-adjacent day.</li>
     </ul>
   </div>
 </div>

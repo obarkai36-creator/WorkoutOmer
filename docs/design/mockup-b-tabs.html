@@ -7,84 +7,92 @@
 <link rel="stylesheet" href="tokens.css">
 <style>
   nav.tabs {
-    display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--line);
-    margin-bottom: 20px;
+    display: flex; gap: 2px; overflow-x: auto; border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
   }
   nav.tabs button {
-    background: none; border: none; color: var(--muted); padding: 10px 16px;
-    font-size: 14px; font-weight: 600; cursor: pointer; border-bottom: 2px solid transparent;
-    white-space: nowrap;
+    background: none; border: none; color: var(--text-3); padding: 11px 16px;
+    font-size: 13.5px; font-weight: 600; cursor: pointer; border-bottom: 2px solid transparent;
+    white-space: nowrap; transition: color .15s;
   }
-  nav.tabs button.active { color: var(--text); border-bottom-color: var(--c-training-1); }
-  nav.tabs button:hover { color: var(--text); }
+  nav.tabs button.active { color: var(--text-1); border-bottom-color: var(--training-b); }
+  nav.tabs button:hover { color: var(--text-1); }
 
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
   .panel {
-    background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg);
-    padding: 18px 20px; box-shadow: var(--shadow-tile);
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-card);
+    box-shadow: var(--shadow-card);
+    padding: 20px 24px;
   }
   .panel.span { grid-column: 1 / -1; }
-  .panel h2 { font-size: 12.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 14px; }
+  .panel h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .09em; font-weight: 700; color: var(--text-3); margin: 0 0 16px; }
 
-  .chipstrip { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+  .chipstrip { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
   .scorechip {
-    background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
-    padding: 8px 14px 8px 8px; display: flex; align-items: center; gap: 10px; min-width: 140px;
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-pill);
+    padding: 7px 16px 7px 7px; display: flex; align-items: center; gap: 10px; min-width: 140px;
+    box-shadow: var(--shadow-card);
   }
-  .scorechip .v { font-size: 18px; font-weight: 800; }
-  .scorechip .k { font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .scorechip .v { font-size: 17px; font-weight: 700; letter-spacing: -.01em; color: var(--text-1); }
+  .scorechip .k { font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; font-weight: 600; }
   .chip {
-    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
-    padding: 9px 13px; min-width: 96px;
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-chip);
+    padding: 9px 14px; min-width: 100px; box-shadow: var(--shadow-card);
   }
-  .chip .chip-v { font-size: 17px; font-weight: 800; }
-  .chip .chip-k { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-top: 2px; }
+  .chip .chip-v { font-size: 16px; font-weight: 700; color: var(--text-1); letter-spacing: -.01em; }
+  .chip .chip-k { font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; font-weight: 600; margin-top: 3px; }
 
-  .metric { margin-bottom: 13px; } .metric:last-child { margin-bottom: 0; }
-  .metric-top { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
-  .metric-top .vals { color: var(--muted); }
-  .track { background: var(--panel2); border-radius: 8px; height: 7px; overflow: hidden; }
+  .metric { margin-bottom: 15px; } .metric:last-child { margin-bottom: 0; }
+  .metric-top { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 5px; color: var(--text-1); }
+  .metric-top .vals { color: var(--text-3); }
+  .track { background: var(--surface-inset); border-radius: 8px; height: 6px; overflow: hidden; }
   .fill { height: 100%; border-radius: 8px; }
-  .metric-note { font-size: 11.5px; color: var(--muted); margin-top: 3px; }
+  .metric-note { font-size: 12px; color: var(--text-3); margin-top: 4px; }
 
-  .bignum { font-size: 32px; font-weight: 800; line-height: 1; }
-  .bignum small { font-size: 13px; color: var(--muted); font-weight: 600; margin-left: 2px; }
+  .bignum { font-size: 30px; font-weight: 700; line-height: 1; letter-spacing: -.02em; color: var(--text-1); }
+  .bignum small { font-size: 13px; color: var(--text-3); font-weight: 500; margin-left: 3px; letter-spacing: 0; }
 
   .tips { list-style: none; margin: 0; padding: 0; }
-  .tips li { padding: 8px 0; font-size: 13.5px; border-bottom: 1px solid var(--line-soft); }
+  .tips li { padding: 10px 0; font-size: 13.5px; color: var(--text-2); line-height: 1.5; border-bottom: 1px solid var(--border); }
   .tips li:last-child { border-bottom: none; }
+  .tips li b { color: var(--text-1); }
   .ev-ul { list-style: none; margin: 0; padding: 0; }
-  .ev-ul li { padding: 7px 0; font-size: 13px; border-bottom: 1px solid var(--line-soft); }
+  .ev-ul li { padding: 9px 0; font-size: 13px; color: var(--text-2); border-bottom: 1px solid var(--border); }
+  .ev-ul li:last-child { border-bottom: none; }
+  .ev-ul li b { color: var(--text-1); font-weight: 600; }
 
-  .goalline { font-size: 12.5px; color: var(--muted); margin: 4px 0 12px; }
+  .goalline { font-size: 12.5px; color: var(--text-3); margin: 6px 0 14px; }
 
-  .loadbars { display: flex; align-items: flex-end; gap: 10px; height: 60px; margin: 10px 0; }
-  .loadbars .col { display: flex; flex-direction: column; align-items: center; gap: 6px; }
-  .loadbars .b { width: 20px; border-radius: 4px 4px 0 0; }
-  .loadbars .lbl { font-size: 10px; color: var(--muted); }
+  .loadbars { display: flex; align-items: flex-end; gap: 12px; height: 60px; margin: 12px 0 4px; }
+  .loadbars .col { display: flex; flex-direction: column; align-items: center; gap: 7px; }
+  .loadbars .b { width: 20px; border-radius: 5px 5px 2px 2px; }
+  .loadbars .lbl { font-size: 10px; color: var(--text-3); font-weight: 600; }
 
   .chips { display: flex; flex-wrap: wrap; gap: 10px; }
   .chips.four { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
 
   .tabpanel { display: none; }
   .tabpanel.active { display: block; }
-  .placeholder { color: var(--muted); font-size: 13px; padding: 40px 10px; text-align: center; }
+  .placeholder { color: var(--text-3); font-size: 13px; padding: 46px 10px; text-align: center; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="mock-banner">🎨 <b>Design Mockup B — Refined Tabs.</b> Same visual language as Mockup A, current 6-tab structure kept. Overview + Training tabs fully mocked (Training shows the 6 features migrated from the email); other tabs are placeholders in this mockup. Sample data.</div>
+  <div class="mock-banner">🎨 <b>Design Mockup B — Refined Tabs (v2).</b> Same visual language as Mockup A, current 6-tab structure kept. Overview + Training tabs fully mocked (Training shows the 6 features migrated from the email); other tabs are placeholders. Sample data.</div>
 
   <header class="top">
-    <div>
-      <h1>WorkoutOmer</h1>
-      <div class="subtitle">Day 78 of 78 · 2026-09-13</div>
+    <div class="brand">
+      <div class="mark"></div>
+      <div>
+        <h1>WorkoutOmer</h1>
+        <div class="subtitle">Day 78 of 78 · 2026-09-13</div>
+      </div>
     </div>
     <div class="datenav">
       <button>‹</button>
       <input type="date" value="2026-09-13">
       <button>›</button>
-      <button style="color:var(--c-training-1);background:none;border:none;font-size:12px">Today</button>
+      <button class="today-btn">Today</button>
     </div>
   </header>
 
@@ -101,20 +109,20 @@
   <div class="tabpanel active" id="tab-overview">
     <div class="chipstrip">
       <div class="scorechip">
-        <svg width="34" height="34" viewBox="0 0 34 34"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="var(--c-energy-1)"/><stop offset="100%" stop-color="var(--c-energy-2)"/></linearGradient></defs>
-          <circle cx="17" cy="17" r="14" fill="none" stroke="var(--line-soft)" stroke-width="4"/>
-          <circle cx="17" cy="17" r="14" fill="none" stroke="url(#g1)" stroke-width="4" stroke-linecap="round" stroke-dasharray="88" stroke-dashoffset="16" transform="rotate(-90 17 17)"/></svg>
+        <svg width="32" height="32" viewBox="0 0 32 32"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fde68a"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient></defs>
+          <circle cx="16" cy="16" r="13" fill="none" stroke="var(--surface-inset)" stroke-width="4"/>
+          <circle cx="16" cy="16" r="13" fill="none" stroke="url(#g1)" stroke-width="4" stroke-linecap="round" stroke-dasharray="82" stroke-dashoffset="15" transform="rotate(-90 16 16)"/></svg>
         <div><div class="v">84</div><div class="k">Energy</div></div>
       </div>
       <div class="scorechip">
-        <svg width="34" height="34" viewBox="0 0 34 34"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="var(--c-sperm-1)"/><stop offset="100%" stop-color="var(--c-sperm-2)"/></linearGradient></defs>
-          <circle cx="17" cy="17" r="14" fill="none" stroke="var(--line-soft)" stroke-width="4"/>
-          <circle cx="17" cy="17" r="14" fill="none" stroke="url(#g2)" stroke-width="4" stroke-linecap="round" stroke-dasharray="88" stroke-dashoffset="35" transform="rotate(-90 17 17)"/></svg>
+        <svg width="32" height="32" viewBox="0 0 32 32"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#ddb6ff"/><stop offset="100%" stop-color="#f472b6"/></linearGradient></defs>
+          <circle cx="16" cy="16" r="13" fill="none" stroke="var(--surface-inset)" stroke-width="4"/>
+          <circle cx="16" cy="16" r="13" fill="none" stroke="url(#g2)" stroke-width="4" stroke-linecap="round" stroke-dasharray="82" stroke-dashoffset="33" transform="rotate(-90 16 16)"/></svg>
         <div><div class="v">60</div><div class="k">Sperm score</div></div>
       </div>
-      <div class="chip"><div class="chip-v" style="color:var(--green)">Legs</div><div class="chip-k">Workout today</div></div>
+      <div class="chip"><div class="chip-v" style="color:var(--good)">Legs</div><div class="chip-k">Workout today</div></div>
       <div class="chip"><div class="chip-v">80.1 kg</div><div class="chip-k">Weigh-in</div></div>
       <div class="chip"><div class="chip-v">4</div><div class="chip-k">Caffeine shots</div></div>
       <div class="chip"><div class="chip-v">6/6</div><div class="chip-k">Supplements</div></div>
@@ -122,19 +130,19 @@
     <div class="grid">
       <div class="panel">
         <h2>Macros</h2>
-        <div class="metric"><div class="metric-top"><span>Calories</span><span class="vals">1,847 / 2,050 kcal (90%)</span></div><div class="track"><div class="fill" style="width:90%;background:var(--green)"></div></div></div>
-        <div class="metric"><div class="metric-top"><span>Protein</span><span class="vals">143 / 165 g (87%)</span></div><div class="track"><div class="fill" style="width:87%;background:var(--amber)"></div></div></div>
-        <div class="metric"><div class="metric-top"><span>Fiber</span><span class="vals">18 / 32 g (56%)</span></div><div class="track"><div class="fill" style="width:56%;background:var(--red)"></div></div></div>
+        <div class="metric"><div class="metric-top"><span>Calories</span><span class="vals">1,847 / 2,050 kcal (90%)</span></div><div class="track"><div class="fill" style="width:90%;background:var(--good)"></div></div></div>
+        <div class="metric"><div class="metric-top"><span>Protein</span><span class="vals">143 / 165 g (87%)</span></div><div class="track"><div class="fill" style="width:87%;background:var(--warn)"></div></div></div>
+        <div class="metric"><div class="metric-top"><span>Fiber</span><span class="vals">18 / 32 g (56%)</span></div><div class="track"><div class="fill" style="width:56%;background:var(--bad)"></div></div></div>
       </div>
       <div class="panel">
         <h2>14-day trend</h2>
-        <div class="placeholder" style="padding:50px 0">[ calorie / protein trend chart ]</div>
+        <div class="placeholder" style="padding:52px 0">[ calorie / protein trend chart ]</div>
       </div>
       <div class="panel span">
         <h2>Suggestions</h2>
         <ul class="tips">
-          <li>💡 Folate is running low today (22% of target) — leafy greens or legumes at dinner would close most of the gap.</li>
-          <li>💡 3 consecutive drinking days this week — still small pours, but flagged against the ≤1/week baseline.</li>
+          <li>Folate is running low today (<b>22%</b> of target) — leafy greens or legumes at dinner would close most of the gap.</li>
+          <li><b>3 consecutive drinking days</b> this week — still small pours, but flagged against the ≤1/week baseline.</li>
         </ul>
       </div>
     </div>
@@ -147,46 +155,46 @@
   <div class="tabpanel" id="tab-training">
     <div class="grid">
       <div class="panel span">
-        <h2>Muscle Fatigue &amp; Recovery <span class="small muted">(migrated from email — was missing on the site)</span></h2>
-        <div class="metric"><div class="metric-top"><span>Legs</span><span class="vals">72% · ready in 18h</span></div><div class="track"><div class="fill" style="width:72%;background:var(--amber)"></div></div></div>
-        <div class="metric"><div class="metric-top"><span>Back</span><span class="vals">31% · ready now</span></div><div class="track"><div class="fill" style="width:31%;background:var(--green)"></div></div></div>
-        <div class="metric"><div class="metric-top"><span>Shoulders</span><span class="vals">14% · ready now</span></div><div class="track"><div class="fill" style="width:14%;background:var(--green)"></div></div></div>
-        <div class="metric"><div class="metric-top"><span>Chest</span><span class="vals">58% · ready now</span></div><div class="track"><div class="fill" style="width:58%;background:var(--amber)"></div></div></div>
-        <div class="metric"><div class="metric-top"><span>Arms</span><span class="vals">22% · ready now</span></div><div class="track"><div class="fill" style="width:22%;background:var(--green)"></div></div></div>
+        <h2>Muscle Fatigue &amp; Recovery <span class="small" style="color:var(--text-3)">migrated from email</span></h2>
+        <div class="metric"><div class="metric-top"><span>Legs</span><span class="vals">72% · ready in 18h</span></div><div class="track"><div class="fill" style="width:72%;background:var(--warn)"></div></div></div>
+        <div class="metric"><div class="metric-top"><span>Back</span><span class="vals">31% · ready now</span></div><div class="track"><div class="fill" style="width:31%;background:var(--good)"></div></div></div>
+        <div class="metric"><div class="metric-top"><span>Shoulders</span><span class="vals">14% · ready now</span></div><div class="track"><div class="fill" style="width:14%;background:var(--good)"></div></div></div>
+        <div class="metric"><div class="metric-top"><span>Chest</span><span class="vals">58% · ready now</span></div><div class="track"><div class="fill" style="width:58%;background:var(--warn)"></div></div></div>
+        <div class="metric"><div class="metric-top"><span>Arms</span><span class="vals">22% · ready now</span></div><div class="track"><div class="fill" style="width:22%;background:var(--good)"></div></div></div>
       </div>
       <div class="panel">
         <h2>Recommended Next Session</h2>
-        <div class="bignum" style="color:var(--c-training-1)">Shoulders</div>
+        <div class="bignum" style="color:#67e8f9">Shoulders</div>
         <div class="metric-note">Ready now · last trained 6.2d ago</div>
-        <div class="metric-note" style="margin-top:6px">Go for <b style="color:var(--text)">4 of 6</b> exercises this session.</div>
+        <div class="metric-note" style="margin-top:8px">Go for <b style="color:var(--text-1)">4 of 6</b> exercises this session.</div>
       </div>
       <div class="panel">
-        <h2>Load Ratio Trend (6wk) <span class="small muted">migrated</span></h2>
-        <div class="bignum" style="color:var(--c-training-1)">0.87<small> load ratio</small></div>
-        <div class="goalline">Sweet spot 0.8–1.3 · danger &gt;1.5 · zone: <b style="color:var(--text)">healthy</b></div>
+        <h2>Load Ratio Trend (6wk) <span class="small" style="color:var(--text-3)">migrated</span></h2>
+        <div class="bignum" style="color:#67e8f9">0.87<small> load ratio</small></div>
+        <div class="goalline">Sweet spot 0.8–1.3 · danger &gt;1.5 · zone: <b style="color:var(--text-1)">healthy</b></div>
         <div class="loadbars">
-          <div class="col"><div class="b" style="height:10px;background:var(--green)"></div><div class="lbl">W1</div></div>
-          <div class="col"><div class="b" style="height:16px;background:var(--green)"></div><div class="lbl">W2</div></div>
-          <div class="col"><div class="b" style="height:22px;background:var(--green)"></div><div class="lbl">W3</div></div>
-          <div class="col"><div class="b" style="height:34px;background:var(--amber)"></div><div class="lbl">W4</div></div>
-          <div class="col"><div class="b" style="height:38px;background:var(--amber)"></div><div class="lbl">W5</div></div>
-          <div class="col"><div class="b" style="height:40px;background:var(--green)"></div><div class="lbl">W6</div></div>
+          <div class="col"><div class="b" style="height:10px;background:var(--good)"></div><div class="lbl">W1</div></div>
+          <div class="col"><div class="b" style="height:16px;background:var(--good)"></div><div class="lbl">W2</div></div>
+          <div class="col"><div class="b" style="height:22px;background:var(--good)"></div><div class="lbl">W3</div></div>
+          <div class="col"><div class="b" style="height:34px;background:var(--warn)"></div><div class="lbl">W4</div></div>
+          <div class="col"><div class="b" style="height:38px;background:var(--warn)"></div><div class="lbl">W5</div></div>
+          <div class="col"><div class="b" style="height:40px;background:var(--good)"></div><div class="lbl">W6</div></div>
         </div>
       </div>
       <div class="panel">
-        <h2>Program Balance &amp; Relative Strength <span class="small muted">migrated</span></h2>
+        <h2>Program Balance &amp; Relative Strength <span class="small" style="color:var(--text-3)">migrated</span></h2>
         <div class="chips">
           <div class="chip"><div class="chip-v">1.47×</div><div class="chip-k">Push : Pull</div></div>
           <div class="chip"><div class="chip-v">1.12×</div><div class="chip-k">Quad : Ham</div></div>
         </div>
-        <div class="small muted" style="margin:14px 0 8px">1RM ÷ bodyweight (80.1kg)</div>
+        <div class="small" style="margin:16px 0 10px;color:var(--text-3)">1RM ÷ bodyweight (80.1kg)</div>
         <ul class="ev-ul">
-          <li><b>Bench Press</b> <span class="muted">· 87.5kg 1RM</span> <span style="float:right">1.09×BW</span></li>
-          <li><b>Diverging Seated Row</b> <span class="muted">· 113.3kg 1RM</span> <span style="float:right">1.41×BW</span></li>
+          <li><b>Bench Press</b> · 87.5kg 1RM <span style="float:right;color:var(--text-1)">1.09×BW</span></li>
+          <li><b>Diverging Seated Row</b> · 113.3kg 1RM <span style="float:right;color:var(--text-1)">1.41×BW</span></li>
         </ul>
       </div>
       <div class="panel">
-        <h2>Aerobic / Cardio <span class="small muted">migrated</span></h2>
+        <h2>Aerobic / Cardio <span class="small" style="color:var(--text-3)">migrated</span></h2>
         <div class="chips four">
           <div class="chip"><div class="chip-v">27.6 km</div><div class="chip-k">28-day distance</div></div>
           <div class="chip"><div class="chip-v">142</div><div class="chip-k">Avg HR</div></div>
@@ -195,11 +203,11 @@
         </div>
       </div>
       <div class="panel span">
-        <h2>PRs &amp; Below-Best Lifts <span class="small muted">migrated</span></h2>
+        <h2>PRs &amp; Below-Best Lifts <span class="small" style="color:var(--text-3)">migrated</span></h2>
         <ul class="ev-ul">
-          <li>✅ Single-Leg Extensions — new PR, 57kg × 4×7 (+1 rep at same weight)</li>
-          <li>✅ Hip Thrust — new PR, 48kg × 4×8 (load doubled)</li>
-          <li class="muted">Leg Press, Leg Curls — tied existing best</li>
+          <li><span style="color:var(--good)">●</span> <b>Single-Leg Extensions</b> — new PR, 57kg × 4×7 (+1 rep at same weight)</li>
+          <li><span style="color:var(--good)">●</span> <b>Hip Thrust</b> — new PR, 48kg × 4×8 (load doubled)</li>
+          <li style="color:var(--text-3)">Leg Press, Leg Curls — tied existing best</li>
         </ul>
       </div>
     </div>

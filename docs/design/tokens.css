@@ -1,95 +1,117 @@
-/* Design tokens — "soft navy" direction (Oura-inspired).
- * Shared by both layout mockups so the visual comparison is
- * layout-only, not confounded by different colors/type. */
+/* Design tokens v2 — "soft navy" direction (Oura-inspired).
+ * Rebuilt for actual visual polish after v1 read as amateurish:
+ * translucent borders instead of flat lines, layered soft shadows,
+ * a real ambient background glow, tighter type scale with negative
+ * tracking on numerals, and glow filters behind the rings. */
 
 :root {
-  /* surfaces — soft dark navy, not pure black, with lightness steps for elevation */
-  --bg: #0a0e1c;
-  --bg-glow: radial-gradient(ellipse 900px 500px at 20% -10%, rgba(129, 140, 248, .10), transparent),
-             radial-gradient(ellipse 700px 500px at 100% 0%, rgba(34, 211, 238, .07), transparent);
-  --panel: #121a30;
-  --panel2: #0d1426;
-  --panel-hover: #16203c;
-  --line: #212c4a;
-  --line-soft: #1a2440;
+  /* base surfaces */
+  --bg: #05070f;
+  --surface-1: #0d1220;
+  --surface-2: #10182c;
+  --surface-2-hover: #141d34;
+  --surface-inset: #080b16;
+
+  --border: rgba(155, 170, 224, .10);
+  --border-strong: rgba(155, 170, 224, .20);
+  --border-hover: rgba(155, 170, 224, .28);
 
   /* text */
-  --text: #eef1fb;
-  --muted: #8992b3;
-  --muted2: #626c8c;
+  --text-1: #f3f5fc;
+  --text-2: #a3adcf;
+  --text-3: #66709a;
 
-  /* status — used ONLY for state, nowhere else (Whoop principle) */
-  --green: #34d399;
-  --amber: #fbbf24;
-  --red: #f87171;
+  /* status — used ONLY for state, never decoratively */
+  --good: #4ade80;
+  --warn: #fbbf24;
+  --bad: #fb7185;
 
-  /* per-pillar fixed hue identity — same metric = same color everywhere */
-  --c-energy-1: #fbbf24;   --c-energy-2: #f59e0b;   /* gold   */
-  --c-sperm-1:  #c084fc;   --c-sperm-2:  #f472b6;   /* violet -> pink */
-  --c-training-1:#22d3ee;  --c-training-2:#38bdf8;  /* cyan   */
-  --c-nutrition-1:#34d399; --c-nutrition-2:#2dd4bf; /* green -> teal */
-  --c-sleep-1:  #818cf8;   --c-sleep-2:  #6366f1;   /* indigo */
-  --c-body-1:   #38bdf8;   --c-body-2:   #0ea5e9;   /* blue   */
+  /* per-pillar fixed hue identity — same metric = same color everywhere.
+     paired stops used directly in SVG gradients (see each mockup). */
+  --energy-a: #fde68a;    --energy-b: #f59e0b;
+  --sperm-a:  #ddb6ff;    --sperm-b:  #f472b6;
+  --training-a:#67e8f9;   --training-b:#3b82f6;
+  --nutrition-a:#86efac;  --nutrition-b:#14b8a6;
+  --sleep-a:  #b4bcfb;    --sleep-b:  #6366f1;
+  --body-a:   #7dd3fc;    --body-b:   #0ea5e9;
 
-  --radius-lg: 20px;
-  --radius-md: 14px;
-  --radius-sm: 9px;
+  --r-pill: 999px;
+  --r-chip: 12px;
+  --r-card: 18px;
 
-  --shadow-tile: 0 1px 0 rgba(255,255,255,.03) inset, 0 12px 24px -12px rgba(0,0,0,.5);
+  --shadow-card:
+    0 1px 0 rgba(255,255,255,.05) inset,
+    0 0 0 1px rgba(255,255,255,.015) inset,
+    0 24px 48px -28px rgba(0,0,0,.7);
+  --shadow-card-hover:
+    0 1px 0 rgba(255,255,255,.06) inset,
+    0 0 0 1px rgba(255,255,255,.02) inset,
+    0 28px 56px -24px rgba(0,0,0,.75);
 }
 
 * { box-sizing: border-box; }
 
-html, body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-}
+html { color-scheme: dark; }
 body {
-  background-image: var(--bg-glow);
+  margin: 0;
+  background:
+    radial-gradient(1100px 560px at 50% -180px, rgba(99,102,241,.14), transparent 62%),
+    radial-gradient(760px 480px at 105% -40px, rgba(34,211,238,.08), transparent 60%),
+    radial-gradient(700px 420px at -5% 40%, rgba(244,114,182,.05), transparent 60%),
+    var(--bg);
   background-attachment: fixed;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-1);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.006em;
 }
 
-a { color: var(--c-training-1); text-decoration: none; }
+a { color: var(--training-a); text-decoration: none; }
 
-.wrap { max-width: 1180px; margin: 0 auto; padding: 22px 18px 70px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 80px; }
 
 .mock-banner {
-  background: linear-gradient(90deg, rgba(192,132,252,.18), rgba(56,189,248,.12));
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  padding: 8px 14px;
+  background: linear-gradient(90deg, rgba(221,182,255,.10), rgba(103,232,249,.06));
+  border: 1px solid var(--border);
+  border-radius: var(--r-chip);
+  padding: 10px 16px;
   font-size: 12.5px;
-  color: var(--muted);
-  margin-bottom: 18px;
+  color: var(--text-2);
+  margin-bottom: 22px;
 }
-.mock-banner b { color: var(--text); }
+.mock-banner b { color: var(--text-1); }
 
 header.top {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-  gap: 12px; margin-bottom: 20px;
+  gap: 14px; margin-bottom: 24px;
 }
-header.top h1 { font-size: 21px; margin: 0; letter-spacing: -.01em; }
-header.top .subtitle { color: var(--muted); font-size: 13px; margin-top: 3px; }
+header.top .brand { display: flex; align-items: center; gap: 10px; }
+header.top .mark {
+  width: 34px; height: 34px; border-radius: 10px; flex: none;
+  background: linear-gradient(135deg, var(--sperm-a), var(--training-b));
+  box-shadow: 0 0 0 1px rgba(255,255,255,.08) inset, 0 6px 16px -6px rgba(99,102,241,.5);
+}
+header.top h1 { font-size: 19px; margin: 0; letter-spacing: -.02em; font-weight: 700; }
+header.top .subtitle { color: var(--text-3); font-size: 12.5px; margin-top: 3px; letter-spacing: 0; }
 
 .datenav {
-  display: flex; align-items: center; gap: 8px; background: var(--panel);
-  border: 1px solid var(--line); border-radius: 12px; padding: 6px 8px;
+  display: flex; align-items: center; gap: 6px; background: var(--surface-1);
+  border: 1px solid var(--border); border-radius: var(--r-chip); padding: 5px 6px;
 }
 .datenav button {
-  background: var(--panel2); border: 1px solid var(--line); color: var(--text);
-  border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 14px;
+  background: transparent; border: none; color: var(--text-2);
+  border-radius: 8px; width: 28px; height: 28px; cursor: pointer; font-size: 15px;
 }
+.datenav button:hover { background: var(--surface-2); color: var(--text-1); }
 .datenav input[type="date"] {
-  background: var(--panel2); border: 1px solid var(--line); color: var(--text);
-  border-radius: 8px; padding: 6px 8px; font-size: 13px; color-scheme: dark;
+  background: transparent; border: none; color: var(--text-1);
+  border-radius: 8px; padding: 4px 6px; font-size: 12.5px; color-scheme: dark;
 }
+.datenav .today-btn { font-size: 11.5px; color: var(--training-a); background: none; border: none; cursor: pointer; padding: 0 8px; font-weight: 600; }
 
-.muted { color: var(--muted); }
+.muted { color: var(--text-2); }
 .small { font-size: 12px; }
 
 ::-webkit-scrollbar { height: 6px; width: 6px; }
-::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
