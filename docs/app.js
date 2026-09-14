@@ -242,6 +242,13 @@ function renderHero(day, energy, sperm) {
         ${sperm ? `<span class="small muted">Sperm score this week: <b style="color:var(--text-1)">${sperm.overall}</b> (${sperm.band.label})</span>` : `<span class="small muted">Sperm score: locked until 14 days of logging</span>`}
       </div>
     </div>
+  </div>
+  <div class="panel" style="margin-top:12px">
+    <h2>Energy factors <span class="tag">— all 5 inputs, not just the biggest drag</span></h2>
+    ${Object.entries(energy.factors).map(([k, v]) => metricRow({
+      label: k.charAt(0).toUpperCase() + k.slice(1), consumed: v, target: null, pct: v,
+      note: energy.details ? energy.details[k] : "",
+    })).join("")}
   </div>`;
 }
 
@@ -427,10 +434,18 @@ function plannedWorkoutPanel(day) {
 
 function renderTrainingDetail(day, isLatest) {
   const plannedHtml = plannedWorkoutPanel(day);
+  const wl = day.workout_log;
+  const sessionLogHtml = `
+    <div class="dpanel span"><h4>${state.current} session log</h4>
+      ${day.workout_today && wl ? `
+        <div class="bignum" style="font-size:20px;color:${HUES.training.b}">${wl.type}</div>
+        <div class="metric-note" style="margin-top:8px">${wl.notes || ""}</div>
+      ` : `<div class="empty-state">No workout logged this day.</div>`}
+    </div>`;
+  const bwHtml = `<div class="dpanel span"><h4>Bodyweight trend <span class="tag">(full history)</span></h4><div class="chart-box small"><canvas id="chBw"></canvas></div></div>`;
+
   if (!isLatest || !day.training) {
-    return plannedHtml
-      ? `<div class="dgrid">${plannedHtml}</div>`
-      : `<div class="empty-state">Live training data (fatigue, load ratio, recommendations) is only computed for the most recently logged day — jump to Latest to see it.</div>`;
+    return `<div class="dgrid">${plannedHtml}${sessionLogHtml}${bwHtml}</div>`;
   }
   const rec = day.training;
   const exRows = (rec.suggestedExercises || []).map((e) => `
@@ -485,9 +500,9 @@ function renderTrainingDetail(day, isLatest) {
     <div class="dpanel span"><h4>Bodyweight trend <span class="tag">(training-load reference)</span></h4><div class="chart-box small"><canvas id="chBw"></canvas></div></div>
     ${alerts.length ? `<div class="dpanel span"><h4>Load &amp; balance alerts</h4>${alerts.map((a) => `<div class="alert-row ${a.level === "low" ? "low" : ""}"><b>${a.title}</b><br>${a.detail}</div>`).join("")}</div>` : ""}
     <div class="dpanel span"><h4>PRs &amp; below-best lifts</h4>
-      ${day.workout_log ? `<div class="metric-note" style="margin-bottom:10px">Today's session: ${day.workout_log.notes || ""}</div>` : ""}
       ${changes.length ? `<ul class="evul">${changes.map((c) => `<li>${c}</li>`).join("")}</ul>` : `<div class="small muted">Nothing flagged.</div>`}
     </div>
+    ${sessionLogHtml}
   </div>`;
 }
 
@@ -523,12 +538,19 @@ function renderSpermDetail(day) {
 
 function renderSleepDetail(day) {
   if (!day.sleep) return `<div class="empty-state">No sleep logged this day.</div>`;
+  const last7 = trailingRows(state.current, 7).filter((r) => r.sleep_hours !== null && r.sleep_hours !== undefined);
+  const last14 = trailingRows(state.current, 14).filter((r) => r.sleep_hours !== null && r.sleep_hours !== undefined);
+  const avg7 = last7.length ? fmt(last7.reduce((s, r) => s + r.sleep_hours, 0) / last7.length, 1) : null;
+  const avg14 = last14.length ? fmt(last14.reduce((s, r) => s + r.sleep_hours, 0) / last14.length, 1) : null;
+  const short7 = last7.filter((r) => r.sleep_hours < 6).length;
+  const long7 = last7.filter((r) => r.sleep_hours > 9.5).length;
   return `
   <div class="dgrid">
     <div class="dpanel span">
       <div class="bignum" style="color:${HUES.sleep.b}">${fmt(day.sleep.duration_hours,2)}<small> h</small></div>
-      <div class="goalline">${day.sleep.sleep_start} – ${day.sleep.sleep_end} · 7-9h target band</div>
+      <div class="goalline">${day.sleep.sleep_start} – ${day.sleep.sleep_end} · 7-9h target band${avg7 !== null ? ` · ${avg7}h 7-day avg` : ""}${avg14 !== null ? ` · ${avg14}h 14-day avg` : ""}</div>
       <div class="small muted">${day.sleep.notes || ""}</div>
+      <div class="small muted" style="margin-top:8px">Last 7 nights: <b style="color:${short7 ? COLORS.bad : "var(--text-1)"}">${short7} short</b> (&lt;6h) · <b style="color:${long7 ? COLORS.warn : "var(--text-1)"}">${long7} long</b> (&gt;9.5h) of ${last7.length} logged</div>
     </div>
     <div class="dpanel span"><h4>Sleep trend <span class="tag">(last 30 nights)</span></h4><div class="chart-box"><canvas id="chSleepPillar"></canvas></div></div>
   </div>`;
@@ -563,8 +585,9 @@ function renderSupplementsDetail(day) {
     const status = s.product_name || (s.met_via_food ? "target met via food — supplement skipped" : (s.taken ? "taken" : "not logged today"));
     return `<li><span style="color:${ok ? COLORS.good : COLORS.warn}">${ok ? "✅" : "⚠️"}</span> ${s.label} <span class="muted">· ${status}</span></li>`;
   }).join("");
+  const sevColor = (sev) => sev === "high" ? COLORS.bad : sev === "moderate" ? COLORS.warn : COLORS.good;
   const lifeRows = (day.lifestyle_events || []).map((e) => `
-    <li><b>${e.type}</b> <span class="small muted">(${e.severity})</span> — ${e.description || ""}${e.notes ? `<br><span class="small muted">${e.notes}</span>` : ""}</li>`).join("");
+    <li><b>${e.type}</b> <span class="small" style="color:${sevColor(e.severity)};font-weight:600"><span class="dot" style="background:${sevColor(e.severity)};display:inline-block;margin-inline-end:4px"></span>${e.severity}</span> — ${e.description || ""}${e.notes ? `<br><span class="small muted">${e.notes}</span>` : ""}</li>`).join("");
   return `
   <div class="dgrid">
     <div class="dpanel"><h4>Supplement &amp; medication check — ${state.current}</h4><ul class="evul">${suppRows}</ul></div>
@@ -608,17 +631,24 @@ function barChart(canvasId, labels, data, colors) {
 function drawCharts(key, day) {
   if (key === "nutrition") {
     const rows = excludeUntracked(state.index.days);
+    const t = state.index.profile_targets;
     lineChart("chNutr", rows.map((r) => r.date.slice(5)), [
       { label: "Calories", data: rows.map((r) => r.calories), borderColor: HUES.nutrition.b, backgroundColor: "transparent", tension: .2, pointRadius: 0 },
+      { label: "Calories target", data: rows.map(() => t.calories_kcal), borderColor: HUES.nutrition.b, borderDash: [4,4], pointRadius: 0, backgroundColor: "transparent" },
       { label: "Protein (g)", data: rows.map((r) => r.protein_g), borderColor: COLORS.good, backgroundColor: "transparent", tension: .2, pointRadius: 0 },
+      { label: "Protein target", data: rows.map(() => t.protein_g), borderColor: COLORS.good, borderDash: [4,4], pointRadius: 0, backgroundColor: "transparent" },
       { label: "Fat (g)", data: rows.map((r) => r.fat_g), borderColor: COLORS.warn, backgroundColor: "transparent", tension: .2, pointRadius: 0 },
       { label: "Fiber (g)", data: rows.map((r) => r.fiber_g), borderColor: "#a78bfa", backgroundColor: "transparent", tension: .2, pointRadius: 0 },
     ]);
   }
-  if (key === "training" && day.training_trends) {
-    const weeks = (day.training_trends.weeks || []).filter((w) => w.acwr !== null);
-    barChart("chAcwr", weeks.map((w) => w.label), weeks.map((w) => w.acwr),
-      weeks.map((w) => w.acwr > 1.3 ? COLORS.bad : (w.acwr > 1.05 || w.acwr < 0.8) ? COLORS.warn : COLORS.good));
+  if (key === "training") {
+    if (day.training_trends) {
+      const weeks = (day.training_trends.weeks || []).filter((w) => w.acwr !== null);
+      barChart("chAcwr", weeks.map((w) => w.label), weeks.map((w) => w.acwr),
+        weeks.map((w) => w.acwr > 1.3 ? COLORS.bad : (w.acwr > 1.05 || w.acwr < 0.8) ? COLORS.warn : COLORS.good));
+    }
+    // bodyweight trend is full-history and independent of "latest" — draw it
+    // whenever the Training modal is open, not just when live trend data exists
     const bwRows = state.index.days.filter((r) => r.weight_kg !== null);
     lineChart("chBw", bwRows.map((r) => r.date.slice(5)), [{ label: "Bodyweight (kg)", data: bwRows.map((r) => r.weight_kg), borderColor: HUES.training.b, backgroundColor: "transparent", tension: .2, spanGaps: true }]);
   }
