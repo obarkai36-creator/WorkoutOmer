@@ -3,6 +3,7 @@
   "day_number": 79,
   "in_progress": false,
   "workout_today": false,
+  "steps": 7500,
   "sleep": {
     "sleep_start": "00:15",
     "sleep_end": "05:40",
@@ -31,7 +32,9 @@
     {"time": "18:45", "name": "Dinner — garlic cloves in olive oil", "category": "food", "qty": "5 cloves (~25 g) + oil (~8 g)", "kcal": 108, "protein_g": 1.6, "carbs_g": 8.25, "fat_g": 8.13, "fiber_g": 0.5, "note": "first time logged — estimated as roasted/confit garlic cloves in a light olive oil coating, generic reference, flagged as approximate."},
     {"time": "18:45", "name": "Dinner — sirloin", "category": "food", "qty": "20 g", "kcal": 46, "protein_g": 5.4, "carbs_g": 0, "fat_g": 2.8, "fiber_g": 0, "note": "same standard sirloin reference as prior entries (~230kcal/100g)."},
     {"time": "18:45", "name": "Dinner — kebab", "category": "food", "qty": "50 g", "kcal": 125, "protein_g": 6, "carbs_g": 10, "fat_g": 6.5, "fiber_g": 0.75, "note": "same standard kebab reference as prior entries (~250kcal/100g). Credits ~1.5mg zinc (rough estimate)."},
-    {"time": "18:45", "name": "Dinner — corned beef", "category": "food", "qty": "5 pieces (~50 g)", "kcal": 125, "protein_g": 10.5, "carbs_g": 0.25, "fat_g": 9, "fiber_g": 0, "note": "first time logged — generic sliced/deli corned beef reference (~250kcal/100g), flagged as approximate. Credits ~2mg zinc (rough estimate)."}
+    {"time": "18:45", "name": "Dinner — corned beef", "category": "food", "qty": "5 pieces (~50 g)", "kcal": 125, "protein_g": 10.5, "carbs_g": 0.25, "fat_g": 9, "fiber_g": 0, "note": "first time logged — generic sliced/deli corned beef reference (~250kcal/100g), flagged as approximate. Credits ~2mg zinc (rough estimate)."},
+    {"time": "22:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — PM dose of the 2x/day spray. Reported after EOD close-out, exact time not given — placeholder time used."},
+    {"time": "22:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "4.5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "reported after EOD close-out, exact time not given — placeholder time used."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 24.4,
@@ -58,7 +61,8 @@
     "18:20 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, same reference as prior entries.",
     "18:45 dinner: 100g grilled chicken breast (standard reference), a photographed side dish (braised beef in jus, green peas, sweet potato mash — first time logged, component weights estimated from the photo), 3 spoons chopped salad (standard reference), 1 small rice-stuffed cabbage leaf in tomato sauce (first time logged, generic holishkes-style estimate), 5 garlic cloves in olive oil (first time logged, generic estimate), 20g sirloin 50g kebab (both standard references), and 5 pieces (~50g) corned beef (first time logged, generic deli reference). All new items flagged as approximate.",
     "20:00 1 portion whiskey (~30ml, standard pour assumed) — logged to lifestyle.json as an alcohol event, mild severity, 2-day gap since the last one (09-12).",
-    "EOD: steps not logged today — flagged to the user after close-out per the standing rule, not a blocker. Retainers: no entry tonight yet, but only 1 night missing (09-13 was worn:true) — no 3-night flag needed."
+    "EOD: steps not logged today — flagged to the user after close-out per the standing rule, not a blocker. Retainers: no entry tonight yet, but only 1 night missing (09-13 was worn:true) — no 3-night flag needed.",
+    "Post-EOD addendum: steps (~7,500, roughly reported) and the PM Rhinolast dose + 4.5g creatine (both reported without exact times, placeholder 22:00 used) added after the day was already closed out. Score pipeline re-run to reflect them."
   ],
-  "status_note": "Day complete. Slept only 5.42h (00:15-05:40) — a short night, well under the 7-9h target band. AM and PM allergy meds done. Full day logged: breakfast/snacks, a cumulative morning-to-noon report, a photographed protein cookie, a shared burrata salad, a full photographed dinner, and an evening whiskey. Calories, carbs, and especially fat all finished well over target — a heavy day driven by the smoothie+whey, burrata, and the rich multi-component dinner."
+  "status_note": "Day complete. Slept only 5.42h (00:15-05:40) — a short night, well under the 7-9h target band. AM and PM allergy meds done. ~7,500 steps. Full day logged: breakfast/snacks, a cumulative morning-to-noon report, a photographed protein cookie, a shared burrata salad, a full photographed dinner, and an evening whiskey. Calories, carbs, and especially fat all finished well over target — a heavy day driven by the smoothie+whey, burrata, and the rich multi-component dinner."
 }
