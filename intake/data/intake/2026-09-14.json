@@ -18,7 +18,8 @@
     {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "10:00", "name": "Green grapes", "category": "food", "qty": "15 more (~75 g)", "kcal": 53, "protein_g": 0.5, "carbs_g": 13.6, "fat_g": 0.15, "fiber_g": 0.7, "time_approx": true, "note": "user reported 30 green grapes total by 12:30 — 15 already logged at 07:30, this is the remaining 15 to reach that total. Exact time within the window assumed, same standard grape reference."},
     {"time": "12:00", "name": "Rebar Pro Cocoa smoothie", "category": "food", "qty": "1 smoothie", "kcal": 599, "protein_g": 33, "carbs_g": 72, "fat_g": 23, "fiber_g": 0, "time_approx": true, "note": "first time logged as 'Pro Cocoa' specifically — no label found for this exact item, reused the verified 'Rebar Powerful Cocoa' smoothie reference from rebar.co.il (same chain, same cocoa flavor) as the closest known analog. Flagged as approximate pending a label check. Exact time within the 'until 12:30' window assumed."},
-    {"time": "12:00", "name": "Whey protein powder, added", "category": "food", "qty": "20 g scoop", "kcal": 78, "protein_g": 18, "carbs_g": 2, "fat_g": 1, "fiber_g": 0, "time_approx": true, "note": "first time logged, no brand/label given — estimated as generic whey protein concentrate (~390kcal/100g, ~90p/10c/5f per 100g), mixed into/added alongside the smoothie above. Flagged as generic."}
+    {"time": "12:00", "name": "Whey protein powder, added", "category": "food", "qty": "20 g scoop", "kcal": 78, "protein_g": 18, "carbs_g": 2, "fat_g": 1, "fiber_g": 0, "time_approx": true, "note": "first time logged, no brand/label given — estimated as generic whey protein concentrate (~390kcal/100g, ~90p/10c/5f per 100g), mixed into/added alongside the smoothie above. Flagged as generic."},
+    {"time": "13:00", "name": "Protein cookie, double chocolate flavor, no added sugar", "category": "food", "qty": "1 cookie (60 g)", "kcal": 212, "protein_g": 15, "carbs_g": 23, "fat_g": 8.9, "fiber_g": 10, "note": "first time logged, verified from a photographed nutrition label (per-60g-cookie column used directly): 212kcal, 8.9g fat (4.2g saturated), 23g carbs (1.5g sugar), 10g fiber, 15g protein."}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -37,7 +38,8 @@
     "06:15 double espresso (2 caffeine shots).",
     "07:00-08:00 15 green grapes — time range given, midpoint (07:30) used, same standard grape reference as prior entries.",
     "08:30 espresso, single shot (3rd caffeine shot today).",
-    "User reported cumulative totals up to 12:30: coffee already covered by the two espressos above (no new coffee item), 30 green grapes total (15 already logged, 15 more added here), and a Rebar Pro Cocoa smoothie with 20g added whey protein (both first time logged — cocoa smoothie reuses the verified 'Powerful Cocoa' reference as closest analog, whey is a generic estimate; both flagged)."
+    "User reported cumulative totals up to 12:30: coffee already covered by the two espressos above (no new coffee item), 30 green grapes total (15 already logged, 15 more added here), and a Rebar Pro Cocoa smoothie with 20g added whey protein (both first time logged — cocoa smoothie reuses the verified 'Powerful Cocoa' reference as closest analog, whey is a generic estimate; both flagged).",
+    "13:00 single protein cookie (double chocolate, no added sugar), first time logged — verified directly from a photographed nutrition label, per-cookie (60g) column used."
   ],
   "status_note": "Day in progress. Slept only 5.42h (00:15-05:40) — a short night, well under the 7-9h target band. AM allergy meds done."
 }
