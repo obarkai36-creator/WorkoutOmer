@@ -98,6 +98,11 @@ function chip(value, label) { return `<div class="chip"><div class="chip-v">${va
 async function loadIndex() {
   state.index = await fetchJson("data/index.json");
   state.dates = state.index.days.map((d) => d.date);
+  // latest_date is the last REAL logged day — distinct from state.dates'
+  // last entry, which can be a pre-loaded planned-workout day for a date
+  // that hasn't happened yet (still reachable via manual date nav, just
+  // never the default/"Latest" view).
+  state.latestDate = state.index.latest_date || state.dates[state.dates.length - 1];
 }
 async function loadDay(date) {
   if (!state.cache[date]) state.cache[date] = await fetchJson(`data/${date}.json`);
@@ -153,7 +158,7 @@ function wireNav() {
     const idx = state.dates.indexOf(state.current);
     if (idx < state.dates.length - 1) setDate(state.dates[idx + 1]);
   });
-  document.getElementById("jumpLatest").addEventListener("click", () => setDate(state.dates[state.dates.length - 1]));
+  document.getElementById("jumpLatest").addEventListener("click", () => setDate(state.latestDate));
   document.getElementById("datePick").addEventListener("change", (e) => {
     let d = e.target.value;
     if (!state.dates.includes(d)) {
@@ -178,7 +183,7 @@ async function renderCurrent() {
     return;
   }
   const row = indexRow(state.current);
-  const isLatest = state.current === state.dates[state.dates.length - 1];
+  const isLatest = state.current === state.latestDate;
   document.getElementById("subtitle").textContent =
     `Day ${day.day_number ?? "?"} of ${state.index.days_logged} · ${state.current}` + (day.in_progress ? " · in progress" : "");
 
@@ -404,9 +409,28 @@ function renderNutritionDetail(day) {
   </div>`;
 }
 
+function plannedWorkoutPanel(day) {
+  const pw = day.planned_workout;
+  if (!pw) return "";
+  const rows = (pw.exercises || []).map((e) => `
+    <tr><td>${e.name}</td><td>${e.last || ""}</td><td><b>${e.target || ""}</b></td><td class="small muted">${e.reasoning || ""}</td></tr>`).join("");
+  return `
+    <div class="dpanel span"><h4>Adjusted plan for next session <span class="tag">(manually tuned)</span></h4>
+      <div class="bignum" style="color:${HUES.training.b}">${pw.section || ""}</div>
+      ${pw.note ? `<div class="metric-note" style="margin-top:6px">${pw.note}</div>` : ""}
+      <div class="scrollbox" style="margin-top:12px;max-height:none"><table class="datatable">
+        <thead><tr><th>Exercise</th><th>Last</th><th>Target</th><th>Why</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table></div>
+    </div>`;
+}
+
 function renderTrainingDetail(day, isLatest) {
+  const plannedHtml = plannedWorkoutPanel(day);
   if (!isLatest || !day.training) {
-    return `<div class="empty-state">Live training data (fatigue, load ratio, recommendations) is only computed for the most recently logged day — jump to Latest to see it.</div>`;
+    return plannedHtml
+      ? `<div class="dgrid">${plannedHtml}</div>`
+      : `<div class="empty-state">Live training data (fatigue, load ratio, recommendations) is only computed for the most recently logged day — jump to Latest to see it.</div>`;
   }
   const rec = day.training;
   const exRows = (rec.suggestedExercises || []).map((e) => `
@@ -423,6 +447,7 @@ function renderTrainingDetail(day, isLatest) {
 
   return `
   <div class="dgrid">
+    ${plannedHtml}
     <div class="dpanel span"><h4>Muscle fatigue &amp; recovery</h4>
       ${Object.entries(sections).filter(([name]) => name !== "Cardio").map(([name, s]) => `
       <div class="metric"><div class="metric-top"><span>${name}</span><span class="vals">${s.pct}% · ${s.readyInHours ? "ready in " + fmt(s.readyInHours,1) + "h" : "ready now"}</span></div>
@@ -644,7 +669,7 @@ async function boot() {
   const picker = document.getElementById("datePick");
   picker.min = min; picker.max = max;
   wireNav();
-  setDate(max);
+  setDate(state.latestDate);
 }
 boot().catch((err) => {
   document.getElementById("content").innerHTML = `<div class="empty-state">Failed to load dashboard data: ${err.message}</div>`;

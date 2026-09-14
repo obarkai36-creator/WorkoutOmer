@@ -186,7 +186,12 @@ def main():
     all_days = gd.load_all_intake_days()
     all_days_by_date = {d["date"]: d for d in all_days}
     dates = sorted(all_days_by_date.keys())
-    latest_date = dates[-1]
+    # "planned_only" days are pre-populated ahead of time purely to hold an
+    # adjusted workout plan for a day that hasn't happened yet (see the
+    # planned_workout feature) — they must stay reachable via manual date
+    # navigation but must never be treated as "today"/"latest".
+    real_dates = [d for d in dates if not all_days_by_date[d].get("planned_only")]
+    latest_date = real_dates[-1] if real_dates else dates[-1]
 
     gd.refresh_training_full()
     try:
@@ -243,7 +248,8 @@ def main():
 
     index = {
         "generated": datetime.now().isoformat(timespec="seconds"),
-        "days_logged": len(dates),
+        "days_logged": len(real_dates),
+        "latest_date": latest_date,
         "profile_targets": profile["targets"],
         "goals": profile["goals"],
         "sperm_bands": sperm_bands,
