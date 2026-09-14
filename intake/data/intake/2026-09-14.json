@@ -23,11 +23,18 @@
     {"time": "13:20", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Shared burrata salad (portion)", "category": "food", "qty": "~half of a shared small plate (1 burrata ball ~125g, cherry tomatoes, tomato sauce)", "kcal": 170, "protein_g": 9.5, "carbs_g": 4.7, "fat_g": 12.7, "fiber_g": 0.8, "time_approx": true, "note": "first time logging burrata on its own, unknown exact quantity — estimated the full shared dish (1 whole burrata ~125g at ~245kcal/100g, ~100g cherry tomatoes at the standard reference, ~50g light tomato sauce) then took half as the user's portion since it was shared and unweighed. Flagged as approximate on multiple levels (dish size, split, burrata rate)."},
-    {"time": "18:20", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "18:20", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "18:45", "name": "Dinner — grilled chicken breast", "category": "food", "qty": "100 g", "kcal": 165, "protein_g": 31, "carbs_g": 0, "fat_g": 3.6, "fiber_g": 0, "note": "same plain grilled chicken breast reference as prior entries. Credits ~0.9mg zinc, ~24mcg selenium."},
+    {"time": "18:45", "name": "Dinner — side dish (braised beef, green peas, sweet potato mash, as photographed)", "category": "food", "qty": "1 side portion (~90g braised beef + jus, ~35g peas, ~85g mash)", "kcal": 378, "protein_g": 27.8, "carbs_g": 25.9, "fat_g": 17.3, "fiber_g": 4.3, "note": "first time logged, from photo — estimated braised beef (short rib/cheek style, ~250kcal/100g) with a red-wine jus reduction, green peas, and buttered sweet potato mash. Component weights estimated from the plate photo, not weighed, flagged as approximate."},
+    {"time": "18:45", "name": "Dinner — chopped salad", "category": "food", "qty": "3 spoons (~90 g)", "kcal": 32, "protein_g": 1.35, "carbs_g": 6.3, "fat_g": 0.27, "fiber_g": 1.8, "note": "same buffet-style chopped mixed vegetable salad reference as prior entries (~0.35kcal/g)."},
+    {"time": "18:45", "name": "Dinner — rice-stuffed cabbage leaf in tomato sauce", "category": "food", "qty": "1 small piece (~90 g)", "kcal": 130, "protein_g": 6, "carbs_g": 14, "fat_g": 5, "fiber_g": 1.5, "note": "first time logged, no recipe given — estimated as a small holishkes-style cabbage roll (cabbage leaf, rice, ground meat filling, tomato sauce), generic reference, flagged as approximate."},
+    {"time": "18:45", "name": "Dinner — garlic cloves in olive oil", "category": "food", "qty": "5 cloves (~25 g) + oil (~8 g)", "kcal": 108, "protein_g": 1.6, "carbs_g": 8.25, "fat_g": 8.13, "fiber_g": 0.5, "note": "first time logged — estimated as roasted/confit garlic cloves in a light olive oil coating, generic reference, flagged as approximate."},
+    {"time": "18:45", "name": "Dinner — sirloin", "category": "food", "qty": "20 g", "kcal": 46, "protein_g": 5.4, "carbs_g": 0, "fat_g": 2.8, "fiber_g": 0, "note": "same standard sirloin reference as prior entries (~230kcal/100g)."},
+    {"time": "18:45", "name": "Dinner — kebab", "category": "food", "qty": "50 g", "kcal": 125, "protein_g": 6, "carbs_g": 10, "fat_g": 6.5, "fiber_g": 0.75, "note": "same standard kebab reference as prior entries (~250kcal/100g). Credits ~1.5mg zinc (rough estimate)."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 20,
-    "selenium_mcg": 100,
+    "zinc_mg": 22.4,
+    "selenium_mcg": 124,
     "folate_mcg_dfe": 0,
     "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1000,
@@ -47,7 +54,8 @@
     "13:20 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — same standard dose as prior entries.",
     "13:30 espresso, single shot (4th caffeine shot today).",
     "15:00 shared burrata salad (burrata + cherry tomatoes + tomato sauce), unknown quantity — estimated the full shared dish then took half as the user's portion, first time logging burrata as a standalone item, flagged as approximate.",
-    "18:20 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, same reference as prior entries."
+    "18:20 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, same reference as prior entries.",
+    "18:45 dinner: 100g grilled chicken breast (standard reference), a photographed side dish (braised beef in jus, green peas, sweet potato mash — first time logged, component weights estimated from the photo), 3 spoons chopped salad (standard reference), 1 small rice-stuffed cabbage leaf in tomato sauce (first time logged, generic holishkes-style estimate), 5 garlic cloves in olive oil (first time logged, generic estimate), 20g sirloin and 50g kebab (both standard references). All new items flagged as approximate."
   ],
-  "status_note": "Day in progress. Slept only 5.42h (00:15-05:40) — a short night, well under the 7-9h target band. AM allergy meds done."
+  "status_note": "Day in progress. Slept only 5.42h (00:15-05:40) — a short night, well under the 7-9h target band. AM allergy meds done. Full dinner logged."
 }
