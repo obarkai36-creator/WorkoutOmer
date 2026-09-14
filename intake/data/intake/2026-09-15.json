@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-15",
+  "day_number": 80,
+  "in_progress": true,
+  "workout_today": true,
+  "workout_summary": "Planned: Shoulders + Arms (hotel gym, away from home equipment)",
+  "items": [],
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "caffeine_shots": 0,
+  "planned_workout": {
+    "section": "Shoulders + Arms (hotel gym)",
+    "note": "Hotel equipment only: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station. Push/pull program ratio is still 1.58x push-heavy, so favor the pull-side shoulder/arm work (face pulls, shrugs, curls) and keep pressing/triceps volume light rather than chasing weight — this is a maintenance session while traveling, not a PR attempt.",
+    "exercises": [
+      {"name": "Cable Face Pull (rope, pulley station)", "last": "N/A at hotel — replaces Rear Delt Machine (home last: 73kg × 3×9)", "target": "Light-moderate cable × 4×15, slow squeeze at the back", "reasoning": "No rear delt machine here — this is the closest pull-corrector substitute and the single most important move today given the push-heavy ratio."},
+      {"name": "Dumbbell Shrugs", "last": "26kg each × 3×10 (home)", "target": "20kg each (hotel max) × 4×12, 1-2s hold at the top", "reasoning": "Direct pull-corrector carryover — capped by the hotel's 20kg dumbbells, so add a pause at the top to make up for the lighter load."},
+      {"name": "Lateral Raises (dumbbell or 12kg kettlebell)", "last": "16kg each × 4×9 (home)", "target": "12-14kg each × 4×12-15", "reasoning": "Neutral for push/pull (shoulders only) — just keep it moving for shoulder width/health."},
+      {"name": "Dumbbell Shoulder Press", "last": "20kg each × 3×9,9,8 (home)", "target": "16kg each × 3×10 (one set less than usual)", "reasoning": "A push-worsening movement per the standing correction — keep it in for shoulder strength but deliberately light and lower-volume today, not a max effort."},
+      {"name": "Farmer's Hold (kettlebell)", "last": "26kg each (DB) × 4×30s (home)", "target": "16kg kettlebell each × 4×30-35s", "reasoning": "Neutral (forearms/traps) — hotel kettlebells cap lower than home's dumbbells, so lean on time-under-tension instead of load."},
+      {"name": "Incline Hammer Curl", "last": "20kg each × 3×8 (home)", "target": "20kg each (hotel max) × 3×8-10", "reasoning": "Matches the hotel dumbbell cap exactly — pull-side (biceps), keep it a priority."},
+      {"name": "Cable Curl (straight bar or rope, pulley station)", "last": "N/A at hotel — replaces Biceps Curl Machine (home last: 45kg × 2×6)", "target": "Light-moderate cable × 3×12", "reasoning": "Another pull-side (biceps) substitute, prioritized alongside the curls above per the standing push/pull correction."},
+      {"name": "Overhead Dumbbell Triceps Extension", "last": "17.5kg × 4×13 (home)", "target": "17.5-20kg × 2-3×10-12 (reduced sets)", "reasoning": "Push-side (triceps) — kept for balance but deliberately fewer sets than usual while the ratio corrects."}
+    ]
+  },
+  "assumptions": [
+    "Pre-populated ahead of the day (given in chat on 2026-09-14 as a 2-day hotel-gym plan) — no actual logging has happened yet. This planned_workout will show on the site once the day starts, and gets logged over normally as the real session/day happens.",
+    "Equipment: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station (as photographed) — no barbell, no dip station, no preacher bench, so several home exercises were substituted with cable-station equivalents."
+  ],
+  "status_note": "Not yet started — this file currently holds only the adjusted hotel-gym plan for the day (Shoulders + Arms), given ahead of time. Actual food/workout logging to follow when the day happens."
+}

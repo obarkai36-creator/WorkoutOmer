@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-16",
+  "day_number": 81,
+  "in_progress": true,
+  "workout_today": true,
+  "workout_summary": "Planned: Lower Body + Back (hotel gym, away from home equipment)",
+  "items": [],
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "caffeine_shots": 0,
+  "planned_workout": {
+    "section": "Lower Body + Back (hotel gym)",
+    "note": "Same hotel equipment as Tuesday: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus the seated leg machine shown in the photo (extension/curl pad). Two corrections applied: (1) push/pull ratio is still 1.58x push-heavy, so back work leans on rows/pulldowns over pullover-type moves, per the standing rule; (2) your quad:hamstring relative-strength ratio is 1.91x quad-dominant, so today's leg work is deliberately hamstring/glute-biased rather than quad-dominant — not a standing rule, just sensible given the numbers.",
+    "exercises": [
+      {"name": "Dumbbell RDL", "last": "24kg × 4×10, best 24kg × 6×8 (home, single DB held with both hands)", "target": "20kg (hotel max) × 4×10-12", "reasoning": "Hamstring/glute — top priority today given the quad-dominant imbalance, and it's a direct dumbbell carryover from home."},
+      {"name": "Seated Leg Curl (machine, if available)", "last": "111kg × 4×12 (home stack — won't translate to hotel's stack)", "target": "Hard 4×12-15 by feel, whatever the hotel stack allows", "reasoning": "Hamstring-focused — the machine in the photo looks set up for this; prioritize it since hamstrings are the lagging side."},
+      {"name": "Dumbbell Hip Thrust", "last": "24kg each side (barbell) × 4×8 = 48kg total (home)", "target": "20kg (single DB across hips) × 4×12-15, higher reps since the load is much lighter than home's 48kg", "reasoning": "Glute-focused, no barbell here so this is a lighter stimulus session by necessity — fine for a maintenance day."},
+      {"name": "Kettlebell Goblet Squat or Bulgarian Split Squat", "last": "N/A at hotel (home leg work is quad-dominant machine-based)", "target": "16kg kettlebell × 3×10-12", "reasoning": "Quad work kept in but deliberately secondary/lighter today — quads are already the stronger side of the ratio."},
+      {"name": "Seated Cable Row (low pulley)", "last": "N/A at hotel — replaces Diverging Seated Row (home last: 97kg × 4×10, PR) and Low Row (home last: 79kg × 4×11)", "target": "Hard 4×10-12, whatever the cable station allows", "reasoning": "Your two strongest home pull-correctors don't exist here — this cable row is the closest substitute and today's top back priority."},
+      {"name": "Lat Pulldown (high pulley)", "last": "N/A at hotel — replaces Lat Pulldown (Triangle)", "target": "4×10-12", "reasoning": "Second row/pulldown priority alongside the seated row — both double-credit back+biceps like their home equivalents."},
+      {"name": "Single-Arm Dumbbell Row", "last": "Reverse Incline DB Row, 28kg each × 4×8 (home, established comfortable range 24-26kg)", "target": "20kg each (hotel max) × 4×10-12", "reasoning": "Direct dumbbell carryover, capped by the hotel's 20kg limit — still a solid pull corrector."},
+      {"name": "Straight-Arm Pulldown or Cable Pullover (pulley, optional/last)", "last": "Dumbbell Pullover, 22kg × 4×8 (home) — 'weakest corrector anyway, net-pull-positive but diluted'", "target": "Light × 3×12, or skip if time/energy is short", "reasoning": "Same as at home — lowest priority of the back moves, fine to drop first if the session runs long."}
+    ]
+  },
+  "assumptions": [
+    "Pre-populated ahead of the day (given in chat on 2026-09-14 as a 2-day hotel-gym plan) — no actual logging has happened yet. This planned_workout will show on the site once the day starts, and gets logged over normally as the real session/day happens.",
+    "Equipment: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, and the seated leg extension/curl machine — all as photographed. No barbell, so Hip Thrust load is necessarily much lighter than the home barbell version."
+  ],
+  "status_note": "Not yet started — this file currently holds only the adjusted hotel-gym plan for the day (Lower Body + Back), given ahead of time. Actual food/workout logging to follow when the day happens."
+}
