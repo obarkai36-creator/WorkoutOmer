@@ -1,5 +1,21 @@
 # Session notes
 
+- Standing rule (added 2026-09-14, after the planned-workout regression):
+  when rebuilding or restyling any part of the site (`docs/`), never let a
+  data set/panel/feature go missing just because it's *empty* or *not
+  logged* for the day being viewed. Every panel that has a real, current
+  data source (a field on the intake JSON, a metrics file, a computed
+  value) must keep rendering — with an explicit empty-state message if
+  there's genuinely nothing to show — never a silent `return` that skips
+  the panel entirely based on an unrelated gate (e.g. `isLatest`). This is
+  exactly what caused the 2026-09-14 bug: `renderTrainingDetail()` in
+  `docs/app.js` gated on `isLatest` and used that same gate to also skip
+  `day.planned_workout`, so a manually-adjusted plan set for a *future*
+  day (not yet "latest") silently failed to render even though the data
+  existed — until a live browser check against a real future date caught
+  it. When restyling/rewriting a page, explicitly re-check every existing
+  data-bound panel still has a code path to render, independent of
+  whatever new top-level view/tab/day gating the redesign introduces.
 - Dashboard redesign implementation (started 2026-09-13, concept approved in
   `docs/design/` — see that folder's BRIEF.md for the full design history):
   replacing the old tab-based `docs/index.html`/`docs/app.js`/`docs/style.css`
