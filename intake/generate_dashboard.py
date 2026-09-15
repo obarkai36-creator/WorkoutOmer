@@ -643,14 +643,28 @@ def compute_energy_score(profile, target_date, todays_intake, sleep_entries, lif
     weights = {"sleep": 0.35, "nutrition": 0.2, "movement": 0.15, "caffeine": 0.1, "alcohol": 0.2}
     factors = {"sleep": sleep_score, "nutrition": nutrition_score, "movement": movement_score,
                "caffeine": caffeine_score, "alcohol": alcohol_score}
+
+    # Days with a macro-tracking break logged (exclude_from_monthly_macros)
+    # have no real food data — 0/target kcal isn't a bad-nutrition day, it's
+    # an untracked one. Drop the factor entirely rather than let it read as
+    # a near-zero score, and renormalize the remaining weights to sum to 1.
+    food_untracked = bool(todays_intake.get("exclude_from_monthly_macros"))
+    if food_untracked:
+        del factors["nutrition"]
+        weights = {k: w for k, w in weights.items() if k != "nutrition"}
+        total_w = sum(weights.values())
+        weights = {k: w / total_w for k, w in weights.items()}
+
     overall = round(sum(factors[k] * w for k, w in weights.items()))
 
     caveats = [c for c in [
         "no sleep logged for last night" if not night else "",
         "no workout history yet" if not workout_dates else "",
+        "nutrition not tracked today (macro break) — excluded from the score" if food_untracked else "",
     ] if c]
-    notes = f"Computed for {target_date} from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement." \
-        + (" (" + "; ".join(caveats) + ")" if caveats else "")
+    factor_desc = "today's caffeine/alcohol" if food_untracked else "today's nutrition/caffeine/alcohol"
+    notes = f"Computed for {target_date} from last night's sleep, {factor_desc}, and recent movement." \
+        + (" (" + "; ".join(caveats) + ")." if caveats else "")
 
     # Raw numbers behind each factor score, for the "advanced stats" breakdown —
     # what actually drove the 0-100 sub-score, not just the sub-score itself.
@@ -662,6 +676,8 @@ def compute_energy_score(profile, target_date, todays_intake, sleep_entries, lif
         "alcohol": "logged today" if target_date in alcohol_dates
                    else ("logged yesterday" if yesterday in alcohol_dates else "none in the last 2 days"),
     }
+    if food_untracked:
+        del details["nutrition"]
 
     return {"date": target_date, "overall": overall, "factors": factors, "details": details, "notes": notes}
 

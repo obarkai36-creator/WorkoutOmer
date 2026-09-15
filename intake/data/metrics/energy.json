@@ -106,15 +106,20 @@
     },
     {
       "date": "2026-07-17",
-      "overall": 74,
+      "overall": 92,
       "factors": {
         "sleep": 100,
-        "nutrition": 0,
         "movement": 60,
         "caffeine": 100,
         "alcohol": 100
       },
-      "notes": "Computed for 2026-07-17 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+      "notes": "Computed for 2026-07-17 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score).",
+      "details": {
+        "sleep": "8.83h last night (target 7-9h)",
+        "movement": "last workout 2d ago",
+        "caffeine": "2 shot(s) today (soft cap ~5)",
+        "alcohol": "none in the last 2 days"
+      }
     },
     {
       "date": "2026-07-18",
@@ -204,18 +209,16 @@
     },
     {
       "date": "2026-07-24",
-      "overall": 97,
+      "overall": 100,
       "factors": {
         "sleep": 100,
-        "nutrition": 87,
         "movement": 100,
         "caffeine": 100,
         "alcohol": 100
       },
-      "notes": "Computed for 2026-07-24 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement.",
+      "notes": "Computed for 2026-07-24 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score).",
       "details": {
         "sleep": "9h last night (target 7-9h)",
-        "nutrition": "1744/2050 kcal · 159.6/165g protein · 27.5/32g fiber",
         "movement": "last workout 0d ago",
         "caffeine": "4 shot(s) today (soft cap ~5)",
         "alcohol": "none in the last 2 days"
@@ -223,18 +226,16 @@
     },
     {
       "date": "2026-07-25",
-      "overall": 80,
+      "overall": 100,
       "factors": {
         "sleep": 100,
-        "nutrition": 0,
         "movement": 100,
         "caffeine": 100,
         "alcohol": 100
       },
-      "notes": "Computed for 2026-07-25 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement.",
+      "notes": "Computed for 2026-07-25 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score).",
       "details": {
         "sleep": "8.75h last night (target 7-9h)",
-        "nutrition": "6/2050 kcal · 0/165g protein · 0/32g fiber",
         "movement": "last workout 0d ago",
         "caffeine": "2 shot(s) today (soft cap ~5)",
         "alcohol": "none in the last 2 days"
@@ -299,22 +300,20 @@
     },
     {
       "date": "2026-07-29",
-      "overall": 84,
+      "overall": 90,
       "factors": {
         "sleep": 89,
-        "nutrition": 60,
         "movement": 100,
         "caffeine": 60,
         "alcohol": 100
       },
       "details": {
         "sleep": "6.25h last night (target 7-9h)",
-        "nutrition": "1335/2050 kcal · 101.2/165g protein · 22.3/32g fiber",
         "movement": "last workout 0d ago",
         "caffeine": "6 shot(s) today (soft cap ~5), one after cutoff",
         "alcohol": "none in the last 2 days"
       },
-      "notes": "Computed for 2026-07-29 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+      "notes": "Computed for 2026-07-29 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-07-30",
@@ -356,22 +355,20 @@
     },
     {
       "date": "2026-08-01",
-      "overall": 82,
+      "overall": 84,
       "factors": {
         "sleep": 100,
-        "nutrition": 72,
         "movement": 100,
         "caffeine": 75,
         "alcohol": 50
       },
       "details": {
         "sleep": "7.33h last night (target 7-9h)",
-        "nutrition": "1915/2050 kcal · 84.7/165g protein · 23.55/32g fiber",
         "movement": "last workout 0d ago",
         "caffeine": "5 shot(s) today (soft cap ~5), one after cutoff",
         "alcohol": "logged today"
       },
-      "notes": "Computed for 2026-08-01 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+      "notes": "Computed for 2026-08-01 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-08-02",
@@ -736,41 +733,37 @@
     },
     {
       "date": "2026-08-21",
-      "overall": 80,
+      "overall": 100,
       "factors": {
         "sleep": 100,
-        "nutrition": 0,
         "movement": 100,
         "caffeine": 100,
         "alcohol": 100
       },
       "details": {
         "sleep": "7.75h last night (target 7-9h)",
-        "nutrition": "18/2050 kcal · 0.3/165g protein · 0/32g fiber",
         "movement": "last workout 0d ago",
         "caffeine": "1 shot(s) today (soft cap ~5)",
         "alcohol": "none in the last 2 days"
       },
-      "notes": "Computed for 2026-08-21 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+      "notes": "Computed for 2026-08-21 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-08-22",
-      "overall": 77,
+      "overall": 96,
       "factors": {
         "sleep": 92,
-        "nutrition": 0,
         "movement": 100,
         "caffeine": 100,
         "alcohol": 100
       },
       "details": {
         "sleep": "9.5h last night (target 7-9h)",
-        "nutrition": "21/2050 kcal · 0.6/165g protein · 0/32g fiber",
         "movement": "last workout 0d ago",
         "caffeine": "2 shot(s) today (soft cap ~5)",
         "alcohol": "none in the last 2 days"
       },
-      "notes": "Computed for 2026-08-22 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+      "notes": "Computed for 2026-08-22 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-08-23",
@@ -869,22 +862,20 @@
     },
     {
       "date": "2026-08-28",
-      "overall": 73,
+      "overall": 90,
       "factors": {
         "sleep": 94,
-        "nutrition": 5,
         "movement": 100,
         "caffeine": 100,
         "alcohol": 70
       },
       "details": {
         "sleep": "6.58h last night (target 7-9h)",
-        "nutrition": "159/2050 kcal · 25.9/165g protein · 0/32g fiber",
         "movement": "last workout 0d ago",
         "caffeine": "3 shot(s) today (soft cap ~5)",
         "alcohol": "logged today"
       },
-      "notes": "Computed for 2026-08-28 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+      "notes": "Computed for 2026-08-28 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-08-29",
@@ -907,22 +898,20 @@
     },
     {
       "date": "2026-08-30",
-      "overall": 85,
+      "overall": 87,
       "factors": {
         "sleep": 95,
-        "nutrition": 77,
         "movement": 80,
         "caffeine": 100,
         "alcohol": 70
       },
       "details": {
         "sleep": "6.67h last night (target 7-9h)",
-        "nutrition": "1500/2050 kcal · 115.97/165g protein · 34.35/32g fiber",
         "movement": "last workout 1d ago",
         "caffeine": "4 shot(s) today (soft cap ~5)",
         "alcohol": "logged today"
       },
-      "notes": "Computed for 2026-08-30 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+      "notes": "Computed for 2026-08-30 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-08-31",
@@ -1002,22 +991,20 @@
     },
     {
       "date": "2026-09-04",
-      "overall": 63,
+      "overall": 92,
       "factors": {
-        "sleep": 70,
-        "nutrition": 0,
+        "sleep": 100,
         "movement": 100,
         "caffeine": 75,
         "alcohol": 80
       },
       "details": {
-        "sleep": "no sleep logged for last night",
-        "nutrition": "30/2050 kcal · 0.3/165g protein · 0/32g fiber",
+        "sleep": "8.92h last night (target 7-9h)",
         "movement": "last workout 0d ago",
         "caffeine": "5 shot(s) today (soft cap ~5), one after cutoff",
         "alcohol": "logged yesterday"
       },
-      "notes": "Computed for 2026-09-04 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement. (no sleep logged for last night)"
+      "notes": "Computed for 2026-09-04 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-09-05",
@@ -1040,60 +1027,54 @@
     },
     {
       "date": "2026-09-06",
-      "overall": 66,
+      "overall": 89,
       "factors": {
-        "sleep": 70,
-        "nutrition": 12,
+        "sleep": 92,
         "movement": 60,
         "caffeine": 100,
         "alcohol": 100
       },
       "details": {
-        "sleep": "no sleep logged for last night",
-        "nutrition": "222.5/2050 kcal · 31.83/165g protein · 5/32g fiber",
+        "sleep": "6.5h last night (target 7-9h)",
         "movement": "last workout 2d ago",
         "caffeine": "4 shot(s) today (soft cap ~5)",
         "alcohol": "none in the last 2 days"
       },
-      "notes": "Computed for 2026-09-06 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement. (no sleep logged for last night)"
+      "notes": "Computed for 2026-09-06 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-09-07",
-      "overall": 60,
+      "overall": 76,
       "factors": {
         "sleep": 70,
-        "nutrition": 0,
         "movement": 40,
         "caffeine": 100,
         "alcohol": 100
       },
       "details": {
         "sleep": "no sleep logged for last night",
-        "nutrition": "12/2050 kcal · 0/165g protein · 0/32g fiber",
         "movement": "last workout 3d ago",
         "caffeine": "4 shot(s) today (soft cap ~5)",
         "alcohol": "none in the last 2 days"
       },
-      "notes": "Computed for 2026-09-07 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement. (no sleep logged for last night)"
+      "notes": "Computed for 2026-09-07 from last night's sleep, today's caffeine/alcohol, and recent movement. (no sleep logged for last night; nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-09-08",
-      "overall": 58,
+      "overall": 72,
       "factors": {
         "sleep": 70,
-        "nutrition": 0,
         "movement": 20,
         "caffeine": 100,
         "alcohol": 100
       },
       "details": {
         "sleep": "no sleep logged for last night",
-        "nutrition": "12/2050 kcal · 0.6/165g protein · 0/32g fiber",
         "movement": "last workout 4d ago",
         "caffeine": "4 shot(s) today (soft cap ~5)",
         "alcohol": "none in the last 2 days"
       },
-      "notes": "Computed for 2026-09-08 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement. (no sleep logged for last night)"
+      "notes": "Computed for 2026-09-08 from last night's sleep, today's caffeine/alcohol, and recent movement. (no sleep logged for last night; nutrition not tracked today (macro break) — excluded from the score)."
     },
     {
       "date": "2026-09-09",
@@ -1211,22 +1192,20 @@
     },
     {
       "date": "2026-09-15",
-      "overall": 67,
+      "overall": 95,
       "factors": {
         "sleep": 100,
-        "nutrition": 0,
-        "movement": 40,
+        "movement": 100,
         "caffeine": 100,
         "alcohol": 80
       },
       "details": {
         "sleep": "8.83h last night (target 7-9h)",
-        "nutrition": "6/2050 kcal · 0.6/165g protein · 0/32g fiber",
-        "movement": "last workout 3d ago",
+        "movement": "last workout 0d ago",
         "caffeine": "2 shot(s) today (soft cap ~5)",
         "alcohol": "logged yesterday"
       },
-      "notes": "Computed for 2026-09-15 from last night's sleep, today's nutrition/caffeine/alcohol, and recent movement."
+      "notes": "Computed for 2026-09-15 from last night's sleep, today's caffeine/alcohol, and recent movement. (nutrition not tracked today (macro break) — excluded from the score)."
     }
   ]
 }
