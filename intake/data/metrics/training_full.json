@@ -1,6 +1,238 @@
 {
-  "now": 1789407596937,
+  "now": 1789495945573,
   "workouts": [
+    {
+      "datetime": "2026-09-15T14:30",
+      "note": "Hotel-gym session — Shoulders/Arms (dumbbells to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station; no rear delt machine or biceps curl machine, substituted with cable work). Cable Face Pull 17.5kg×4×12 (new exercise, no home equivalent — replaces Rear Delt Machine); Shoulder Shrugs 20kg each (40kg)×4×12 (below the 52kg/26kg-each best — hotel dumbbells cap at 20kg vs home's 26kg, not a PR); Lateral Raises 15kg each (30kg)×4×8 (below the 32kg/16kg-each best, not a PR); Dumbbell Shoulder Press 17.5kg each (35kg)×3×10 (below the 40kg/20kg-each best, not a PR — kept deliberately light per the push-side correction plan); Farmer's Hold 20kg each (40kg)×4×35s (below the 48kg/24kg-each best at the same 35s duration, not a PR); Incline Hammer Curl 20kg each×3×8 (ties best exactly, not a new PR); Overhead DB Triceps Extension 20kg×4×10 (new PR — est. 1RM 26.7 vs 25.2 for the 18kg×4×12 best); Cable Curl 25kg×3×10 (new exercise, no home equivalent — replaces Biceps Curl Machine). 1 new PR.",
+      "exercises": [
+        {
+          "name": "Cable Face Pull",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 17.5
+            },
+            {
+              "reps": 12,
+              "weight": 17.5
+            },
+            {
+              "reps": 12,
+              "weight": 17.5
+            },
+            {
+              "reps": 12,
+              "weight": 17.5
+            }
+          ],
+          "load": 840,
+          "top1RM": 24.5,
+          "topWeight": 17.5,
+          "muscles": {
+            "shoulders": 840,
+            "back": 252
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Shoulder Shrugs",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 40
+            },
+            {
+              "reps": 12,
+              "weight": 40
+            },
+            {
+              "reps": 12,
+              "weight": 40
+            },
+            {
+              "reps": 12,
+              "weight": 40
+            }
+          ],
+          "load": 1920,
+          "top1RM": 56,
+          "topWeight": 40,
+          "muscles": {
+            "shoulders": 1344,
+            "back": 768
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 30
+            },
+            {
+              "reps": 8,
+              "weight": 30
+            },
+            {
+              "reps": 8,
+              "weight": 30
+            },
+            {
+              "reps": 8,
+              "weight": 30
+            }
+          ],
+          "load": 960,
+          "top1RM": 38,
+          "topWeight": 30,
+          "muscles": {
+            "shoulders": 960
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 35
+            },
+            {
+              "reps": 10,
+              "weight": 35
+            },
+            {
+              "reps": 10,
+              "weight": 35
+            }
+          ],
+          "load": 1050,
+          "top1RM": 46.666666666666664,
+          "topWeight": 35,
+          "muscles": {
+            "shoulders": 1050,
+            "triceps": 420
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Farmer's Hold",
+          "sets": [
+            {
+              "seconds": 35,
+              "weight": 40
+            },
+            {
+              "seconds": 35,
+              "weight": 40
+            },
+            {
+              "seconds": 35,
+              "weight": 40
+            },
+            {
+              "seconds": 35,
+              "weight": 40
+            }
+          ],
+          "load": 5600,
+          "top1RM": 0,
+          "topWeight": 40,
+          "muscles": {
+            "forearms": 5600,
+            "shoulders": 2240
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Hammer Curl",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 20
+            },
+            {
+              "reps": 8,
+              "weight": 20
+            },
+            {
+              "reps": 8,
+              "weight": 20
+            }
+          ],
+          "load": 480,
+          "top1RM": 25.333333333333332,
+          "topWeight": 20,
+          "muscles": {
+            "biceps": 480,
+            "forearms": 192
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Overhead DB Triceps Extension",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 20
+            },
+            {
+              "reps": 10,
+              "weight": 20
+            },
+            {
+              "reps": 10,
+              "weight": 20
+            },
+            {
+              "reps": 10,
+              "weight": 20
+            }
+          ],
+          "load": 800,
+          "top1RM": 26.666666666666664,
+          "topWeight": 20,
+          "muscles": {
+            "triceps": 800
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Cable Curl",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 25
+            },
+            {
+              "reps": 10,
+              "weight": 25
+            },
+            {
+              "reps": 10,
+              "weight": 25
+            }
+          ],
+          "load": 750,
+          "top1RM": 33.33333333333333,
+          "topWeight": 25,
+          "muscles": {
+            "biceps": 750
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1789482600000,
+      "muscleLoad": {
+        "shoulders": 6434,
+        "back": 1020,
+        "triceps": 1220,
+        "forearms": 5792,
+        "biceps": 1230
+      },
+      "isAerobic": false
+    },
     {
       "datetime": "2026-09-12T09:00",
       "note": "Legs day",
@@ -6176,7 +6408,7 @@
     "shoulders": 6892.8,
     "biceps": 3536.0000000000005,
     "triceps": 6060,
-    "forearms": 13382.5,
+    "forearms": 12742.5,
     "quads": 14905.6,
     "hamstrings": 7872,
     "glutes": 8923.439999999999,
@@ -6198,7 +6430,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 18,
+      "pct": 20,
       "readyInHours": 0,
       "ready": true
     },
@@ -6206,23 +6438,23 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 1,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 86,
+      "readyInHours": 41.8,
+      "ready": false
     },
     "biceps": {
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 8,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 36,
+      "readyInHours": 7.1,
+      "ready": false
     },
     "triceps": {
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 0,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -6230,15 +6462,15 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 2,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 41,
+      "readyInHours": 9.3,
+      "ready": false
     },
     "quads": {
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 18,
+      "pct": 12,
       "readyInHours": 0,
       "ready": true
     },
@@ -6246,15 +6478,15 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 38,
-      "readyInHours": 14.5,
-      "ready": false
+      "pct": 25,
+      "readyInHours": 0,
+      "ready": true
     },
     "glutes": {
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 21,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -6270,7 +6502,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 8,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -6286,7 +6518,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 3,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     }
@@ -6309,14 +6541,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 18,
+      "pct": 20,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 18,
+          "pct": 20,
           "readyInHours": 0,
           "ready": true
         }
@@ -6324,45 +6556,45 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 1,
-      "readyInHours": 0,
+      "pct": 86,
+      "readyInHours": 41.8,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 1,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 86,
+          "readyInHours": 41.8,
+          "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 3,
-      "readyInHours": 0,
+      "pct": 32,
+      "readyInHours": 9.3,
       "muscles": [
-        {
-          "key": "biceps",
-          "label": "Biceps",
-          "section": "Arms",
-          "pct": 8,
-          "readyInHours": 0,
-          "ready": true
-        },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 2,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 41,
+          "readyInHours": 9.3,
+          "ready": false
+        },
+        {
+          "key": "biceps",
+          "label": "Biceps",
+          "section": "Arms",
+          "pct": 36,
+          "readyInHours": 7.1,
+          "ready": false
         },
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 0,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         }
@@ -6370,22 +6602,22 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 17,
-      "readyInHours": 14.5,
+      "pct": 11,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 38,
-          "readyInHours": 14.5,
-          "ready": false
+          "pct": 25,
+          "readyInHours": 0,
+          "ready": true
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 21,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         },
@@ -6393,7 +6625,7 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 18,
+          "pct": 12,
           "readyInHours": 0,
           "ready": true
         },
@@ -6401,7 +6633,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 8,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         },
@@ -6432,14 +6664,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 3,
+      "pct": 1,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 3,
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         }
@@ -6745,35 +6977,35 @@
         "name": "Dumbbell Shoulder Press",
         "section": "Shoulders",
         "iso": false,
-        "latestText": "20kg each × 2×9, 1×8",
+        "latestText": "17.5kg each × 3×10 (hotel gym)",
         "bestText": "20kg each × 2×9, 1×8",
-        "latestVol": 1080,
+        "latestVol": 1050,
         "bestVol": 1080,
-        "pct": 100,
-        "latest1RM": 52,
+        "pct": 90,
+        "latest1RM": 46.7,
         "best1RM": 52,
         "metric": "1RM",
-        "isPR": true,
-        "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "isPR": false,
+        "belowPR": true,
+        "gap": 5,
+        "inToday": true
       },
       {
         "name": "Lateral Raises",
         "section": "Shoulders",
         "iso": false,
-        "latestText": "16kg each × 4×9",
+        "latestText": "15kg each × 4×8 (hotel gym)",
         "bestText": "16kg each × 4×9",
-        "latestVol": 1152,
+        "latestVol": 960,
         "bestVol": 1152,
-        "pct": 100,
-        "latest1RM": 41.6,
+        "pct": 91,
+        "latest1RM": 38,
         "best1RM": 41.6,
         "metric": "1RM",
-        "isPR": true,
-        "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "isPR": false,
+        "belowPR": true,
+        "gap": 4,
+        "inToday": true
       },
       {
         "name": "Seated Lateral Raises",
@@ -6830,35 +7062,52 @@
         "name": "Shoulder Shrugs",
         "section": "Shoulders",
         "iso": false,
-        "latestText": "26kg each × 3×10",
+        "latestText": "20kg each × 4×12 (hotel gym)",
         "bestText": "26kg each × 3×10",
-        "latestVol": 1560,
+        "latestVol": 1920,
         "bestVol": 1560,
-        "pct": 100,
-        "latest1RM": 69.3,
+        "pct": 81,
+        "latest1RM": 56,
         "best1RM": 69.3,
         "metric": "1RM",
-        "isPR": true,
-        "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "isPR": false,
+        "belowPR": true,
+        "gap": 13,
+        "inToday": true
       },
       {
         "name": "Farmer's Hold",
         "section": "Shoulders",
         "iso": true,
-        "latestText": "26kg each × 4×30s",
+        "latestText": "20kg each × 4×35s (hotel gym)",
         "bestText": "24kg each × 4×35s",
-        "latestVol": 6240,
+        "latestVol": 5600,
         "bestVol": 6720,
-        "pct": 93,
+        "pct": 83,
         "latest1RM": 0,
         "best1RM": 0,
         "metric": "load",
         "isPR": false,
         "belowPR": true,
-        "gap": 480,
-        "inToday": false
+        "gap": 1120,
+        "inToday": true
+      },
+      {
+        "name": "Cable Face Pull",
+        "section": "Shoulders",
+        "iso": false,
+        "latestText": "17.5kg × 4×12 (hotel gym, first logged)",
+        "bestText": "17.5kg × 4×12",
+        "latestVol": 840,
+        "bestVol": 840,
+        "pct": 100,
+        "latest1RM": 24.5,
+        "best1RM": 24.5,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": true
       }
     ],
     "Arms": [
@@ -6883,18 +7132,18 @@
         "name": "Overhead DB Triceps Extension",
         "section": "Arms",
         "iso": false,
-        "latestText": "17.5kg × 4×13",
-        "bestText": "18kg × 4×12",
-        "latestVol": 910,
-        "bestVol": 864,
+        "latestText": "20kg × 4×10 (hotel gym, new PR)",
+        "bestText": "20kg × 4×10",
+        "latestVol": 800,
+        "bestVol": 800,
         "pct": 100,
-        "latest1RM": 25.1,
-        "best1RM": 25.2,
+        "latest1RM": 26.7,
+        "best1RM": 26.7,
         "metric": "1RM",
-        "isPR": false,
+        "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Seated Dips",
@@ -6979,7 +7228,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Incline DB Curl",
@@ -7067,6 +7316,23 @@
         "inToday": false
       },
       {
+        "name": "Cable Curl",
+        "section": "Arms",
+        "iso": false,
+        "latestText": "25kg × 3×10 (hotel gym, first logged)",
+        "bestText": "25kg × 3×10",
+        "latestVol": 750,
+        "bestVol": 750,
+        "pct": 100,
+        "latest1RM": 33.3,
+        "best1RM": 33.3,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": true
+      },
+      {
         "name": "Forearm Twists",
         "section": "Arms",
         "iso": false,
@@ -7100,7 +7366,7 @@
         "isPR": false,
         "belowPR": false,
         "gap": 1,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Standing Calf Raises (Frame)",
@@ -7151,7 +7417,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Angled Leg Press",
@@ -7202,7 +7468,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Leg Curls",
@@ -7219,7 +7485,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Outer Thigh",
@@ -7270,7 +7536,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell RDL",
@@ -7321,7 +7587,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Glute Bridge",
@@ -7415,13 +7681,13 @@
   "balance": {
     "bySection": {
       "Chest": 18750.4,
-      "Arms": 36077.899999999994,
-      "Shoulders": 15836.599999999999,
-      "Back": 13886.05,
+      "Arms": 36065.899999999994,
+      "Shoulders": 16450.6,
+      "Back": 14282.05,
       "Legs": 48996.04,
       "Core": 14351.4
     },
-    "pushPull": 1.58,
+    "pushPull": 1.5,
     "quadHam": 1.91,
     "hasCore": true
   },
@@ -7429,55 +7695,55 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 851,
-        "sessions": 6,
-        "acwr": 1.45
+        "stress": 447,
+        "sessions": 4,
+        "acwr": 0.78
       },
       {
         "label": "-4w",
-        "stress": 660,
+        "stress": 666,
         "sessions": 3,
-        "acwr": 0.99
+        "acwr": 1.08
       },
       {
         "label": "-3w",
-        "stress": 273,
-        "sessions": 3,
-        "acwr": 0.48
+        "stress": 622,
+        "sessions": 4,
+        "acwr": 1.01
       },
       {
         "label": "-2w",
-        "stress": 842,
-        "sessions": 4,
-        "acwr": 1.28
+        "stress": 764,
+        "sessions": 5,
+        "acwr": 1.22
       },
       {
         "label": "-1w",
-        "stress": 406,
-        "sessions": 5,
-        "acwr": 0.74
+        "stress": 142,
+        "sessions": 3,
+        "acwr": 0.26
       },
       {
         "label": "This wk",
-        "stress": 494,
-        "sessions": 3,
-        "acwr": 0.98
+        "stress": 699,
+        "sessions": 4,
+        "acwr": 1.26
       }
     ],
-    "acute": 494,
-    "chronic": 504,
-    "acwr": 0.98,
+    "acute": 699,
+    "chronic": 557,
+    "acwr": 1.26,
     "acwrZone": "ok",
-    "sessions28": 15
+    "sessions28": 16
   },
   "recommendation": {
     "section": "Back",
-    "fatigue": 18,
+    "fatigue": 20,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-14T17:39:56.937Z",
+    "readyAt": "2026-09-15T18:12:25.573Z",
     "neverLogged": false,
-    "daysSince": 4,
+    "daysSince": 5,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -7551,38 +7817,38 @@
       }
     ],
     "guidance": [
-      "Push is ahead of pull 1.58× program-wide — good timing for a pull day; lead with the rows (Diverging Seated Row / Low Row / Lat Pulldown / Reverse Incline DB Row) over Pullover or Dead Hang for the strongest correction."
+      "Push is ahead of pull 1.5× program-wide — good timing for a pull day; lead with the rows (Diverging Seated Row / Low Row / Lat Pulldown / Reverse Incline DB Row) over Pullover or Dead Hang for the strongest correction."
     ],
     "ranked": [
       {
         "section": "Back",
-        "fatigue": 18,
+        "fatigue": 20,
         "readyInHours": 0,
-        "daysSince": 4
+        "daysSince": 5
       },
       {
-        "section": "Shoulders",
-        "fatigue": 1,
+        "section": "Legs",
+        "fatigue": 11,
         "readyInHours": 0,
-        "daysSince": 17.4
-      },
-      {
-        "section": "Arms",
-        "fatigue": 3,
-        "readyInHours": 0,
-        "daysSince": 4
+        "daysSince": 3.4
       },
       {
         "section": "Chest",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 37.1
+        "daysSince": 38.1
       },
       {
-        "section": "Legs",
-        "fatigue": 17,
-        "readyInHours": 14.5,
-        "daysSince": 2.4
+        "section": "Arms",
+        "fatigue": 32,
+        "readyInHours": 9.3,
+        "daysSince": 0.2
+      },
+      {
+        "section": "Shoulders",
+        "fatigue": 86,
+        "readyInHours": 41.8,
+        "daysSince": 0.2
       }
     ],
     "suggestedCount": 5,
@@ -7590,37 +7856,42 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 3.1
+    "daysSinceAerobic": 4.1
   },
   "alerts": [
     {
       "level": "med",
       "title": "Push outpacing pull",
-      "detail": "Push volume is 1.58× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "detail": "Push volume is 1.5× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+    },
+    {
+      "level": "low",
+      "title": "Shoulders fatigued (86%)",
+      "detail": "Recovers in ~41.8h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
-    "You're below your PR on 14 lifts — closest wins first: Angled Leg Press (77% of best), Rope Cable Extension (81% of best), Pec Fly Machine (82% of best). Add a rep or a set before adding weight.",
-    "Add pulling volume — push is 1.58× your pull. Aim toward ~1:1 to keep shoulders healthy.",
+    "You're below your PR on 17 lifts — closest wins first: Angled Leg Press (77% of best), Shoulder Shrugs (81% of best), Rope Cable Extension (81% of best). Add a rep or a set before adding weight.",
+    "Add pulling volume — push is 1.5× your pull. Aim toward ~1:1 to keep shoulders healthy.",
     "Only 1/2 aerobic sessions this week — add an easy run or row."
   ],
   "timing": {
     "avgGap": 3.2,
     "longestGap": 35.7,
-    "perWeek": 3.8,
+    "perWeek": 4,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
       5,
       13,
-      8,
+      9,
       6,
       3,
       13,
       14
     ],
-    "daysSinceLast": 2.4,
-    "total": 62
+    "daysSinceLast": 0.2,
+    "total": 63
   },
   "relstrength": {
     "bodyweightKg": 80.25,
@@ -7686,7 +7957,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 3.1,
+    "daysSinceLast": 4.1,
     "recent": [
       {
         "t": 1789138800000,
@@ -8001,15 +8272,22 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-09-14",
-      "start": "00:15",
-      "end": "05:40",
-      "hours": 5.42,
-      "note": "Short night, ~5.42h — well under the 7-9h target band."
+      "date": "2026-09-15",
+      "start": "23:00",
+      "end": "07:50",
+      "hours": 8.83,
+      "note": "Solid full night, ~8.83h — squarely in the 7-9h target band."
     },
-    "avg7": 7.2,
-    "status": "low",
+    "avg7": 7.4,
+    "status": "good",
     "history": [
+      {
+        "date": "2026-09-15",
+        "start": "23:00",
+        "end": "07:50",
+        "hours": 8.83,
+        "note": "Solid full night, ~8.83h — squarely in the 7-9h target band."
+      },
       {
         "date": "2026-09-14",
         "start": "00:15",

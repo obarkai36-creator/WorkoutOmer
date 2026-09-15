@@ -1,7 +1,8 @@
 {
   "date": "2026-09-15",
   "day_number": 80,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 8000,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break #2 (2026-09-15 through 2026-09-17) — user asked to skip exact food macro/micro logging while traveling for the hotel-gym stint. Resumes 2026-09-18.",
   "workout_today": true,
@@ -58,7 +59,8 @@
     "10:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — same standard dose as prior entries. Logged as usual during the macro break since it's a supplement, not a food item.",
     "14:30 Shoulders/Arms workout completed at the hotel gym, closely following the pre-set plan — logged to data.js/workouts.json. Two new exercises first-logged (Cable Face Pull, Cable Curl — no home equivalents, replacing Rear Delt Machine and Biceps Curl Machine respectively). 1 new PR: Overhead DB Triceps Extension (20kg × 4×10, est. 1RM 26.7 vs prior best 25.2). All other lifts came in below their home bests, expected given the lighter hotel dumbbell/kettlebell caps — not flagged as regressions.",
     "15:50 post-workout espresso, single shot (2nd caffeine shot today) + 3g creatine monohydrate (slightly below the usual 4.5g dose, logged as reported).",
-    "19:10 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose. Also 19:10 PM Rhinolast dose (2nd of the 2x/day spray)."
+    "19:10 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose. Also 19:10 PM Rhinolast dose (2nd of the 2x/day spray).",
+    "EOD: 8,000 steps reported (roughly, hotel-gym travel day). Retainers: no entry logged tonight or last night, but only 2 nights missing (09-13 was worn:true) — no 3-night flag needed."
   ],
-  "status_note": "Day in progress. Slept 8.83h (23:00-07:50) — a solid night. Completed the planned Shoulders + Arms session at the hotel gym (14:30) — 1 new PR. Macro tracking break in effect through 2026-09-17 — food items not itemized this window."
+  "status_note": "Day complete. Slept 8.83h (23:00-07:50) — a solid night. AM and PM allergy meds done. ~8,000 steps. Completed the planned Shoulders + Arms session at the hotel gym (14:30) — 1 new PR (Overhead DB Triceps Extension). Macro tracking break in effect through 2026-09-17 — food items not itemized this window; supplements, caffeine, workout, sleep, and lifestyle events all logged as usual."
 }
