@@ -1,5 +1,19 @@
 # Session notes
 
+- Macro tracking break #2 (2026-09-15 through 2026-09-17, inclusive; resume
+  Friday 2026-09-18): user explicitly asked to skip exact food macro/micro
+  logging for this window — a new, separate break from the one cancelled on
+  2026-09-13 (that one covered 09-06 through 09-17; this is a fresh request
+  covering only 09-15 through 09-17, three days, while traveling for the
+  hotel-gym stint). Only log supplements/medication (with their usual
+  zero-kcal item entries), caffeine, workouts (data.js/workouts.json as
+  normal), sleep, weigh-ins, and lifestyle events (alcohol, ejaculation,
+  retainers, etc.) as usual — do NOT create detailed `items` food entries
+  or estimate macros/micros for meals during this window. Mark each
+  affected day file `exclude_from_monthly_macros: true` with an
+  `exclude_reason` noting this break, same pattern as prior lighter-logging
+  windows. Resume full detailed food logging on 2026-09-18 without being
+  asked.
 - Standing rule (added 2026-09-14, after the planned-workout regression):
   when rebuilding or restyling any part of the site (`docs/`), never let a
   data set/panel/feature go missing just because it's *empty* or *not
