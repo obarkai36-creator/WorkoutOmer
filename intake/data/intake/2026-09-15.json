@@ -16,13 +16,14 @@
   "items": [
     {"time": "08:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 0,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -49,7 +50,8 @@
     "Sleep logged: 23:00-07:50, 8.83h — squarely in the 7-9h target band, a solid night.",
     "08:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:30 espresso, single shot (1st caffeine shot today).",
-    "User requested a new macro tracking break, 2026-09-15 through 2026-09-17 (resume 2026-09-18) — no detailed food items/macros this window, supplements/meds/caffeine/sleep/lifestyle logged as usual."
+    "User requested a new macro tracking break, 2026-09-15 through 2026-09-17 (resume 2026-09-18) — no detailed food items/macros this window, supplements/meds/caffeine/sleep/lifestyle logged as usual.",
+    "10:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — same standard dose as prior entries. Logged as usual during the macro break since it's a supplement, not a food item."
   ],
   "status_note": "Day in progress. Slept 8.83h (23:00-07:50) — a solid night, good recovery ahead of today's planned hotel-gym Shoulders + Arms session. Macro tracking break in effect through 2026-09-17 — food items not itemized this window."
 }
