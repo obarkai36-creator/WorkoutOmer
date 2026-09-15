@@ -19,16 +19,18 @@
     {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "10:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:50", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:50", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:50", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "19:10", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "19:10", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
+    "zinc_mg": 20,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 0,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "caffeine_shots": 2,
@@ -55,7 +57,8 @@
     "User requested a new macro tracking break, 2026-09-15 through 2026-09-17 (resume 2026-09-18) — no detailed food items/macros this window, supplements/meds/caffeine/sleep/lifestyle logged as usual.",
     "10:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — same standard dose as prior entries. Logged as usual during the macro break since it's a supplement, not a food item.",
     "14:30 Shoulders/Arms workout completed at the hotel gym, closely following the pre-set plan — logged to data.js/workouts.json. Two new exercises first-logged (Cable Face Pull, Cable Curl — no home equivalents, replacing Rear Delt Machine and Biceps Curl Machine respectively). 1 new PR: Overhead DB Triceps Extension (20kg × 4×10, est. 1RM 26.7 vs prior best 25.2). All other lifts came in below their home bests, expected given the lighter hotel dumbbell/kettlebell caps — not flagged as regressions.",
-    "15:50 post-workout espresso, single shot (2nd caffeine shot today) + 3g creatine monohydrate (slightly below the usual 4.5g dose, logged as reported)."
+    "15:50 post-workout espresso, single shot (2nd caffeine shot today) + 3g creatine monohydrate (slightly below the usual 4.5g dose, logged as reported).",
+    "19:10 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose. Also 19:10 PM Rhinolast dose (2nd of the 2x/day spray)."
   ],
   "status_note": "Day in progress. Slept 8.83h (23:00-07:50) — a solid night. Completed the planned Shoulders + Arms session at the hotel gym (14:30) — 1 new PR. Macro tracking break in effect through 2026-09-17 — food items not itemized this window."
 }
