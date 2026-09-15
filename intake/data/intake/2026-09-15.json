@@ -11,7 +11,11 @@
     "quality": null,
     "notes": "Solid full night, ~8.83h — squarely in the 7-9h target band, good recovery ahead of today's hotel-gym session."
   },
-  "items": [],
+  "items": [
+    {"time": "08:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "08:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -22,7 +26,7 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "planned_workout": {
     "section": "Shoulders + Arms (hotel gym)",
     "note": "Hotel equipment only: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station. Push/pull program ratio is still 1.58x push-heavy, so favor the pull-side shoulder/arm work (face pulls, shrugs, curls) and keep pressing/triceps volume light rather than chasing weight — this is a maintenance session while traveling, not a PR attempt.",
@@ -40,7 +44,9 @@
   "assumptions": [
     "Planned_workout for today (Shoulders + Arms, hotel gym) was pre-populated on 2026-09-14 — see plan notes for equipment/reasoning.",
     "Equipment: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station (as photographed) — no barbell, no dip station, no preacher bench, so several home exercises were substituted with cable-station equivalents.",
-    "Sleep logged: 23:00-07:50, 8.83h — squarely in the 7-9h target band, a solid night."
+    "Sleep logged: 23:00-07:50, 8.83h — squarely in the 7-9h target band, a solid night.",
+    "08:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "08:30 espresso, single shot (1st caffeine shot today)."
   ],
   "status_note": "Day in progress. Slept 8.83h (23:00-07:50) — a solid night, good recovery ahead of today's planned hotel-gym Shoulders + Arms session."
 }
