@@ -143,6 +143,7 @@ const EXERCISE_LIBRARY = {
   "Rear Delt Machine":      { kind: "strength", muscles: { shoulders: 1.0, back: 0.3 } },
   "Shoulder Shrugs":        { kind: "strength", muscles: { shoulders: 0.7, back: 0.4 } },
   "Farmer's Hold":          { kind: "strength", iso: true, muscles: { forearms: 1.0, shoulders: 0.4 } },
+  "Cable Face Pull":        { kind: "strength", muscles: { shoulders: 1.0, back: 0.3 } }, // hotel-gym substitute for Rear Delt Machine (same credit shape)
 
   // Triceps (Arms)
   "Flat DB Triceps Extension":        { kind: "strength", muscles: { triceps: 1.0 } },
@@ -159,6 +160,7 @@ const EXERCISE_LIBRARY = {
   "Preacher Curl":          { kind: "strength", muscles: { biceps: 1.0 } },
   "Biceps Curl Machine":    { kind: "strength", muscles: { biceps: 1.0 } },
   "Half Curl":              { kind: "strength", muscles: { biceps: 1.0 } },
+  "Cable Curl":             { kind: "strength", muscles: { biceps: 1.0 } }, // hotel-gym substitute for Biceps Curl Machine
   "Forearm Twists":         { kind: "strength", muscles: { forearms: 1.0 } },
 
   // Calves (Legs)
@@ -224,17 +226,18 @@ const SNAPSHOT = [
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
-  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 9, weight: 40, text: "20kg each × 2×9, 1×8" }, best: { sets: 3, reps: 9, weight: 40, text: "20kg each × 2×9, 1×8" } },
-  { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" } },
+  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 10, weight: 35, text: "17.5kg each × 3×10 (hotel gym)" }, best: { sets: 3, reps: 9, weight: 40, text: "20kg each × 2×9, 1×8" } },
+  { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 8, weight: 30, text: "15kg each × 4×8 (hotel gym)" }, best: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
   { name: "Front Raises",              section: "Shoulders", latest: { sets: 3, reps: 8, weight: 18, text: "18kg KB × 3×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" } },
   { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 9, weight: 73, text: "73kg × 3×9" }, best: { sets: 3, reps: 9, weight: 73, text: "73kg × 3×9" } },
-  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10" }, best: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10" } },
-  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 30, weight: 52, text: "26kg each × 4×30s" }, best: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" } },
+  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 12, weight: 40, text: "20kg each × 4×12 (hotel gym)" }, best: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10" } },
+  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 35, weight: 40, text: "20kg each × 4×35s (hotel gym)" }, best: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" } },
+  { name: "Cable Face Pull",           section: "Shoulders", latest: { sets: 4, reps: 12, weight: 17.5, text: "17.5kg × 4×12 (hotel gym, first logged)" }, best: { sets: 4, reps: 12, weight: 17.5, text: "17.5kg × 4×12" } },
 
   // ---- Arms: Triceps ----
   { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" } },
-  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 13, weight: 17.5, text: "17.5kg × 4×13" }, best: { sets: 4, reps: 12, weight: 18, text: "18kg × 4×12" } },
+  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10 (hotel gym, new PR)" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Seated Dips",                      section: "Arms", latest: { sets: 3, reps: 8, weight: 94, text: "94kg × 3×8" }, best: { sets: 3, reps: 8, weight: 94, text: "94kg × 3×8" } },
   { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
   { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 6, weight: 64, text: "64kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
@@ -247,6 +250,7 @@ const SNAPSHOT = [
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 2, reps: 6, weight: 45, text: "45kg × 2×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
   { name: "Half Curl",            section: "Arms", latest: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" } },
+  { name: "Cable Curl",           section: "Arms", latest: { sets: 3, reps: 10, weight: 25, text: "25kg × 3×10 (hotel gym, first logged)" }, best: { sets: 3, reps: 10, weight: 25, text: "25kg × 3×10" } },
   { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" } },
 
   // ---- Legs (incl. calves) ----
@@ -287,6 +291,20 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 15 Sep — Shoulders/Arms, hotel gym while traveling (14:30)
+  {
+    datetime: "2026-09-15T14:30", note: "Hotel-gym session — Shoulders/Arms (dumbbells to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station; no rear delt machine or biceps curl machine, substituted with cable work). Cable Face Pull 17.5kg×4×12 (new exercise, no home equivalent — replaces Rear Delt Machine); Shoulder Shrugs 20kg each (40kg)×4×12 (below the 52kg/26kg-each best — hotel dumbbells cap at 20kg vs home's 26kg, not a PR); Lateral Raises 15kg each (30kg)×4×8 (below the 32kg/16kg-each best, not a PR); Dumbbell Shoulder Press 17.5kg each (35kg)×3×10 (below the 40kg/20kg-each best, not a PR — kept deliberately light per the push-side correction plan); Farmer's Hold 20kg each (40kg)×4×35s (below the 48kg/24kg-each best at the same 35s duration, not a PR); Incline Hammer Curl 20kg each×3×8 (ties best exactly, not a new PR); Overhead DB Triceps Extension 20kg×4×10 (new PR — est. 1RM 26.7 vs 25.2 for the 18kg×4×12 best); Cable Curl 25kg×3×10 (new exercise, no home equivalent — replaces Biceps Curl Machine). 1 new PR.",
+    exercises: [
+      { name: "Cable Face Pull",                 sets: [ { reps: 12, weight: 17.5 }, { reps: 12, weight: 17.5 }, { reps: 12, weight: 17.5 }, { reps: 12, weight: 17.5 } ] },
+      { name: "Shoulder Shrugs",                 sets: [ { reps: 12, weight: 40 }, { reps: 12, weight: 40 }, { reps: 12, weight: 40 }, { reps: 12, weight: 40 } ] },
+      { name: "Lateral Raises",                  sets: [ { reps: 8, weight: 30 }, { reps: 8, weight: 30 }, { reps: 8, weight: 30 }, { reps: 8, weight: 30 } ] },
+      { name: "Dumbbell Shoulder Press",         sets: [ { reps: 10, weight: 35 }, { reps: 10, weight: 35 }, { reps: 10, weight: 35 } ] },
+      { name: "Farmer's Hold",                   sets: [ { seconds: 35, weight: 40 }, { seconds: 35, weight: 40 }, { seconds: 35, weight: 40 }, { seconds: 35, weight: 40 } ] },
+      { name: "Incline Hammer Curl",              sets: [ { reps: 8, weight: 20 }, { reps: 8, weight: 20 }, { reps: 8, weight: 20 } ] },
+      { name: "Overhead DB Triceps Extension",   sets: [ { reps: 10, weight: 20 }, { reps: 10, weight: 20 }, { reps: 10, weight: 20 }, { reps: 10, weight: 20 } ] },
+      { name: "Cable Curl",                      sets: [ { reps: 10, weight: 25 }, { reps: 10, weight: 25 }, { reps: 10, weight: 25 } ] },
+    ],
+  },
   // 12 Sep — Legs day (09:00)
   {
     datetime: "2026-09-12T09:00", note: "Legs day",

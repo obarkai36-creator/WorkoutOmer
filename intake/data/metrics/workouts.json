@@ -1,19 +1,20 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-14",
-    "latest_session": "Legs day",
-    "sessions_logged": 62,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-09-15",
+    "latest_session": "Hotel-gym session — Shoulders/Arms (dumbbells to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station; no rear delt machine or biceps curl machine, substituted with cable work). Cable Face Pull 17.5kg×4×12 (new exercise, no home equivalent — replaces Rear Delt Machine); Shoulder Shrugs 20kg each (40kg)×4×12 (below the 52kg/26kg-each best — hotel dumbbells cap at 20kg vs home's 26kg, not a PR); Lateral Raises 15kg each (30kg)×4×8 (below the 32kg/16kg-each best, not a PR); Dumbbell Shoulder Press 17.5kg each (35kg)×3×10 (below the 40kg/20kg-each best, not a PR — kept deliberately light per the push-side correction plan); Farmer's Hold 20kg each (40kg)×4×35s (below the 48kg/24kg-each best at the same 35s duration, not a PR); Incline Hammer Curl 20kg each×3×8 (ties best exactly, not a new PR); Overhead DB Triceps Extension 20kg×4×10 (new PR — est. 1RM 26.7 vs 25.2 for the 18kg×4×12 best); Cable Curl 25kg×3×10 (new exercise, no home equivalent — replaces Biceps Curl Machine). 1 new PR.",
+    "sessions_logged": 63,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 27.6,
     "aerobic_sessions_28d": 7,
     "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 0.98,
+    "acwr": 1.26,
     "recommended_next": "Back day",
     "alerts": [
-      "Push volume is 1.58× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "Push volume is 1.5× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
+      "Recovers in ~45.5h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
