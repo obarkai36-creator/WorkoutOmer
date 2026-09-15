@@ -2,9 +2,15 @@
   "date": "2026-09-15",
   "day_number": 80,
   "in_progress": true,
-  "planned_only": true,
   "workout_today": true,
   "workout_summary": "Planned: Shoulders + Arms (hotel gym, away from home equipment)",
+  "sleep": {
+    "sleep_start": "23:00",
+    "sleep_end": "07:50",
+    "duration_hours": 8.83,
+    "quality": null,
+    "notes": "Solid full night, ~8.83h — squarely in the 7-9h target band, good recovery ahead of today's hotel-gym session."
+  },
   "items": [],
   "micros_sperm_priority": {
     "zinc_mg": 0,
@@ -32,8 +38,9 @@
     ]
   },
   "assumptions": [
-    "Pre-populated ahead of the day (given in chat on 2026-09-14 as a 2-day hotel-gym plan) — no actual logging has happened yet. This planned_workout will show on the site once the day starts, and gets logged over normally as the real session/day happens.",
-    "Equipment: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station (as photographed) — no barbell, no dip station, no preacher bench, so several home exercises were substituted with cable-station equivalents."
+    "Planned_workout for today (Shoulders + Arms, hotel gym) was pre-populated on 2026-09-14 — see plan notes for equipment/reasoning.",
+    "Equipment: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station (as photographed) — no barbell, no dip station, no preacher bench, so several home exercises were substituted with cable-station equivalents.",
+    "Sleep logged: 23:00-07:50, 8.83h — squarely in the 7-9h target band, a solid night."
   ],
-  "status_note": "Not yet started — this file currently holds only the adjusted hotel-gym plan for the day (Shoulders + Arms), given ahead of time. Actual food/workout logging to follow when the day happens."
+  "status_note": "Day in progress. Slept 8.83h (23:00-07:50) — a solid night, good recovery ahead of today's planned hotel-gym Shoulders + Arms session."
 }
