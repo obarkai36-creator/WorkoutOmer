@@ -33,7 +33,7 @@ def macro_block(consumed, target):
 def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_entries,
                 lifestyle_events, ejac_entries, retainers_entries, workouts_entries,
                 sperm_weeks, sperm_trend_weeks, sperm_weights, sperm_bands, energy_days, energy_bands,
-                is_latest, training_full):
+                is_latest, training_full, training_load_entries):
     intake = all_days_by_date[target_date]
     t = profile["targets"]
     items = intake.get("items", [])
@@ -98,6 +98,13 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
     if energy_day:
         energy_score = {**energy_day, "band": gd.band_for(energy_day["overall"], energy_bands)}
 
+    # Per-day ACWR (EWMA acute:chronic load ratio) history — persisted by
+    # generate_dashboard.py's persist_training_load() pinned to that date's
+    # end-of-day, so past days show what the ratio actually was then instead
+    # of only ever "right now" (the `training_trends` field below is still
+    # is_latest-only live state for the Training tab's "what to do next").
+    training_load = next((e for e in training_load_entries if e["date"] == target_date), None)
+
     bundle = {
         "date": target_date,
         "day_number": intake.get("day_number"),
@@ -120,6 +127,7 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         "sperm_score": sperm_score,
         "sperm_trend": sperm_trend,
         "energy_score": energy_score,
+        "training_load": training_load,
         "workout_log": workout_entry,
         "planned_workout": intake.get("planned_workout"),
     }
@@ -183,6 +191,11 @@ def main():
     energy_days = energy_store["days"]
     energy_bands = energy_store["model"]["bands"]
 
+    try:
+        training_load_entries = gd.load("data/metrics/training_load.json").get("entries", [])
+    except FileNotFoundError:
+        training_load_entries = []
+
     all_days = gd.load_all_intake_days()
     all_days_by_date = {d["date"]: d for d in all_days}
     dates = sorted(all_days_by_date.keys())
@@ -213,6 +226,7 @@ def main():
             lifestyle_events, ejac_entries, retainers_entries, workouts_entries,
             sperm_weeks, sperm_trend_weeks, sperm_weights, sperm_bands, energy_days, energy_bands,
             is_latest=(d == latest_date), training_full=training_full,
+            training_load_entries=training_load_entries,
         )
         if d in targets:
             with open(os.path.join(DOCS_DATA, f"{d}.json"), "w", encoding="utf-8") as f:
@@ -232,6 +246,7 @@ def main():
             "sperm_score": bundle["sperm_score"]["overall"] if bundle["sperm_score"] else None,
             "sperm_trend": bundle["sperm_trend"]["overall"] if bundle["sperm_trend"] else None,
             "energy_score": bundle["energy_score"]["overall"] if bundle["energy_score"] else None,
+            "acwr": bundle["training_load"]["acwr"] if bundle["training_load"] else None,
             "sleep_hours": bundle["sleep"]["duration_hours"] if bundle["sleep"] else None,
             "workout_today": bundle["workout_today"],
             "workout_type": (bundle["workout_summary"] or "").split(",")[0].split(".")[0] if bundle["workout_today"] else None,

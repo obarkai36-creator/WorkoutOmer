@@ -1,5 +1,77 @@
 # Session notes
 
+- Energy score fixes + ACWR overhaul (2026-09-15, per explicit user request —
+  ACWR change was confirmed via AskUserQuestion, user chose "both: persist
+  history AND switch to EWMA"):
+  1. **Stale "last workout Nd ago" bug (fixed)**: `intake/data/metrics/
+     workouts.json` has two independent parts — `report_snapshot` (auto-
+     overwritten by `sync_training_snapshot.mjs`) and `entries` (a SEPARATE
+     manually-maintained mirror of data.js's WORKOUTS, which is what
+     `compute_energy_score()`'s movement factor actually reads). Logging a
+     workout only updates `report_snapshot` via the sync script — `entries`
+     must ALSO be manually appended every time, or the energy score's
+     movement factor goes stale even though a workout was logged. Watch for
+     this every time a workout is logged, not just when a bug surfaces.
+  2. **Nutrition penalty on untracked days (fixed)**: `compute_energy_score()`
+     in `generate_dashboard.py` now drops the nutrition factor entirely (and
+     renormalizes the remaining weights) whenever `todays_intake.
+     exclude_from_monthly_macros` is true, instead of scoring near-zero
+     consumed-vs-target as if it were a bad-nutrition day. This re-checks the
+     flag fresh per day, so it automatically stops applying the moment a
+     day's flag is absent (e.g. from 2026-09-18 once macro break #2 ends) —
+     no manual toggle needed. Backfilled retroactively for all 15 historical
+     days that carry the flag (07-17, 07-24, 07-25, 07-29, 08-01, 08-21,
+     08-22, 08-28, 08-30, 09-04, 09-06, 09-07, 09-08, 09-15, plus 09-16 once
+     it becomes a real day) via `generate_dashboard.py <date> --unified` +
+     `export_site_data.py --all`.
+  3. **ACWR switched from box-window to EWMA (fixed, after consultation)**:
+     the "rest day, load-ratio score didn't change" report was real —
+     `engine.js`'s old ACWR was a 7-day/28-day box-sum ratio, a step function
+     that only changes value when a workout's timestamp crosses one of those
+     two window edges. On a quiet rest day where nothing crosses an edge, the
+     ratio is bit-for-bit frozen. `loadTrends()`/`ewmaAcwrAt()` now use a
+     coupled EWMA of daily training stress instead (Williams et al. 2016 /
+     Murray et al. 2017's "EWMA-ACWR" method: lambda = 2/(N+1) applied once
+     per calendar day, N=7 for acute and N=28 for chronic, 0 stress on rest
+     days) — this drifts a little every day even without a session, since
+     the short span decays faster than the long one on a rest stretch. Kept
+     the same 0.8/1.3/1.5 injury-risk zone bands — the literature uses the
+     same bands for both ACWR methods. Verified against the actual
+     complained-about days: 2026-09-13 → 09-14 (both rest days) now reads
+     1.05 → 0.85 instead of frozen, and the 09-05 through 09-09 layoff shows
+     a smooth decline (0.80 → 0.64 → 0.52 → 0.42 → 0.34 → 0.27) instead of a
+     flat number between window-edge crossings.
+  4. **Training-load history now persisted per day (added)**: separately,
+     `export_training_state.mjs`'s `now` was always live `Date.now()` — it
+     never actually meant "as of this date," so regenerating a past day's
+     report (e.g. during a backfill) silently showed today's live training
+     state mislabeled as that day's. `export_training_state.mjs` now accepts
+     an optional `YYYY-MM-DD` arg to pin `now` to that day's end-of-day, and
+     `generate_dashboard.py`'s `persist_training_load()` saves each day's
+     ACWR/acute/chronic/zone snapshot into `data/metrics/training_load.json`
+     (same idempotent update-by-date pattern as `sperm.json`/`energy.json`),
+     called automatically every time `generate_dashboard.py <date> --unified`
+     runs. Backfilled for all 80 real historical days via a one-off script.
+     `export_site_data.py` exposes it as `training_load` on every day's
+     bundle (matched by date, same pattern as `sperm_trend`) and `acwr` in
+     `index.json`'s per-day rollup — unlike `training_trends`/`training`
+     (fatigue, recommendation, PRs — genuinely "right now" data, stays
+     is_latest-only by design), this is now available for ANY day, so
+     `docs/app.js`'s Training tab shows a real per-day ACWR chip + a full-
+     history EWMA-smoothed trend chart (`chAcwrHist`) regardless of which day
+     is being viewed, per the 2026-09-14 standing rule against letting a
+     panel with a real data source go missing due to unrelated gating.
+  **Known caveat, not yet addressed**: `ewmaAcwrAt()`'s stress-normalization
+  reference (`ref`, from `referenceLoads()`/SNAPSHOT) reflects the CURRENT
+  overall best-per-exercise, not what the bests were as of the historical
+  date being computed — SNAPSHOT is a single "latest state" object, not
+  versioned by date. This was already true of the old box-window ACWR too
+  (not a regression), and reference loads move slowly enough that it's a
+  reasonable approximation, but it means backfilled historical ACWR values
+  aren't perfectly period-accurate the way the *day-boundary* fix is. Flagged
+  here rather than silently accepted; revisit if it ever matters enough to
+  version SNAPSHOT by date.
+
 - Macro tracking break #2 (2026-09-15 through 2026-09-17, inclusive; resume
   Friday 2026-09-18): user explicitly asked to skip exact food macro/micro
   logging for this window — a new, separate break from the one cancelled on

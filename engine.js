@@ -225,34 +225,68 @@ function balance(data) {
   };
 }
 
-/* ---- weekly load + ACWR (guarded for sparse data) ------------------------- */
+/* ---- weekly load + ACWR (guarded for sparse data) -------------------------
+ * ACWR is a coupled EWMA of daily training stress (Williams et al. 2016 /
+ * Murray et al. 2017's "EWMA-ACWR" method: lambda = 2/(N+1) applied once per
+ * calendar day to that day's total session stress, 0 on rest days) — not a
+ * 7-day/28-day box-sum ratio. The box-sum version only changes value when a
+ * workout's timestamp crosses the 7-day or 28-day window edge, so on a quiet
+ * rest day where nothing crosses either edge the ratio is bit-for-bit frozen
+ * — it reads as "the score didn't update" even though nothing is wrong. The
+ * EWMA version recomputes both averages fresh every calendar day, so the
+ * ratio drifts a little daily even without a new session (chronic decays
+ * slower than acute, so real rest days correctly nudge it down). Same
+ * 0.8/1.3/1.5 injury-risk zone bands apply — they're the bands the sports-
+ * science literature uses for the EWMA method too, not carried over blindly. */
 function sessionStress(w, ref) {
   return sum(Object.entries(w.muscleLoad).map(([m, v]) => (v / ref[m]) * 100));
+}
+const LAMBDA_ACUTE = 2 / (7 + 1);      // 7-day EWMA span
+const LAMBDA_CHRONIC = 2 / (28 + 1);   // 28-day EWMA span
+const EWMA_LOOKBACK_DAYS = 84;         // lead-in so the running average isn't cold-starting at 0
+
+/* Coupled EWMA acute/chronic load as of `asOf` — walks day-by-day from
+ * `asOf - EWMA_LOOKBACK_DAYS` so both averages have settled past their
+ * startup transient by the time they reach the date being asked about. */
+function ewmaAcwrAt(workouts, ref, asOf) {
+  const endDay = Math.floor(asOf / DAY);
+  const startDay = endDay - EWMA_LOOKBACK_DAYS;
+  const byDay = new Map();
+  for (const w of workouts) {
+    const d = Math.floor(w.t / DAY);
+    if (d < startDay || d > endDay) continue;
+    byDay.set(d, (byDay.get(d) || 0) + sessionStress(w, ref));
+  }
+  let acute = 0, chronic = 0;
+  for (let d = startDay; d <= endDay; d++) {
+    const load = byDay.get(d) || 0;
+    acute = load * LAMBDA_ACUTE + acute * (1 - LAMBDA_ACUTE);
+    chronic = load * LAMBDA_CHRONIC + chronic * (1 - LAMBDA_CHRONIC);
+  }
+  return { acute, chronic };
 }
 function loadTrends(workouts, ref, now) {
   const weeks = [];
   for (let i = 5; i >= 0; i--) {
     const end = now - i * 7 * DAY, start = end - 7 * DAY;
     const inWeek = workouts.filter((w) => w.t > start && w.t <= end);
-    // ACWR as it stood at the end of this week — same acute:chronic formula as
-    // the live number below, just replayed at each past week's end date, so
-    // the trend shows how the ratio actually got here rather than a single point.
-    const acuteAtEnd = sum(workouts.filter((w) => end - w.t > 0 && end - w.t <= 7 * DAY).map((w) => sessionStress(w, ref)));
+    // ACWR as it stood at the end of this week — same EWMA formula as the
+    // live number below, just replayed at each past week's end date, so the
+    // trend shows how the ratio actually got here rather than a single point.
     const last28AtEnd = workouts.filter((w) => end - w.t > 0 && end - w.t <= 28 * DAY);
-    const chronicAtEnd = last28AtEnd.length ? sum(last28AtEnd.map((w) => sessionStress(w, ref))) / 4 : 0;
+    const { acute: acuteAtEnd, chronic: chronicAtEnd } = ewmaAcwrAt(workouts, ref, end);
     const acwrAtEnd = (last28AtEnd.length >= MIN_SESSIONS_FOR_ACWR && chronicAtEnd > 0) ? round(acuteAtEnd / chronicAtEnd, 2) : null;
     weeks.push({ label: i === 0 ? "This wk" : `-${i}w`, stress: round(sum(inWeek.map((w) => sessionStress(w, ref)))), sessions: inWeek.length, acwr: acwrAtEnd });
   }
-  const acute = sum(workouts.filter((w) => now - w.t <= 7 * DAY).map((w) => sessionStress(w, ref)));
   const last28 = workouts.filter((w) => now - w.t <= 28 * DAY);
-  const chronic = last28.length ? sum(last28.map((w) => sessionStress(w, ref))) / 4 : 0;
+  const { acute, chronic } = ewmaAcwrAt(workouts, ref, now);
 
   let acwr = null, acwrZone = "insufficient";
   if (last28.length >= MIN_SESSIONS_FOR_ACWR && chronic > 0) {
     acwr = round(acute / chronic, 2);
     acwrZone = acwr > 1.5 ? "danger" : acwr > 1.3 ? "caution" : acwr < 0.8 ? "detraining" : "ok";
   }
-  return { weeks, acute: round(acute), chronic: round(chronic), acwr, acwrZone, sessions28: last28.length };
+  return { weeks, acute: round(acute, 2), chronic: round(chronic, 2), acwr, acwrZone, sessions28: last28.length };
 }
 
 /* ---- next-session lift target ---------------------------------------------

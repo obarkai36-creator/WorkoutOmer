@@ -443,9 +443,21 @@ function renderTrainingDetail(day, isLatest) {
       ` : `<div class="empty-state">No workout logged this day.</div>`}
     </div>`;
   const bwHtml = `<div class="dpanel span"><h4>Bodyweight trend <span class="tag">(full history)</span></h4><div class="chart-box small"><canvas id="chBw"></canvas></div></div>`;
+  // Persisted per-date, so unlike the fatigue/recommendation/PR panels below
+  // (which only ever reflect "right now" and are gated on isLatest for that
+  // reason) this has a real value for every day, latest or not — keep it out
+  // of that gate rather than let it go missing on a past day just because
+  // the day being viewed isn't "latest" (see the 2026-09-14 planned_workout
+  // regression note in CLAUDE.md for why that gate must stay narrow).
+  const acwrHistHtml = day.training_load ? `
+    <div class="dpanel"><h4>Load ratio (ACWR) — ${state.current}</h4>
+      <div class="bignum" style="color:${HUES.training.b}">${fmt(day.training_load.acwr,2)}<small> load ratio</small></div>
+      <div class="goalline">Sweet spot 0.8–1.3 · danger &gt;1.5 · zone: <b style="color:var(--text-1)">${day.training_load.acwr_zone}</b></div>
+    </div>` : `<div class="dpanel"><h4>Load ratio (ACWR) — ${state.current}</h4><div class="empty-state">Not enough logged sessions yet for a reliable ratio.</div></div>`;
+  const acwrChartHtml = `<div class="dpanel span"><h4>Load ratio (ACWR) trend <span class="tag">(full history, EWMA-smoothed)</span></h4><div class="chart-box small"><canvas id="chAcwrHist"></canvas></div></div>`;
 
   if (!isLatest || !day.training) {
-    return `<div class="dgrid">${plannedHtml}${sessionLogHtml}${bwHtml}</div>`;
+    return `<div class="dgrid">${plannedHtml}${acwrHistHtml}${sessionLogHtml}${acwrChartHtml}${bwHtml}</div>`;
   }
   const rec = day.training;
   const exRows = (rec.suggestedExercises || []).map((e) => `
@@ -484,6 +496,7 @@ function renderTrainingDetail(day, isLatest) {
       <div class="goalline">Sweet spot 0.8–1.3 · danger &gt;1.5 · zone: <b style="color:var(--text-1)">${day.training_trends.acwrZone}</b></div>
       <div class="chart-box small"><canvas id="chAcwr"></canvas></div>
     </div>
+    ${acwrChartHtml}
     <div class="dpanel"><h4>Program balance &amp; relative strength</h4>
       <div class="chips"><div class="chip"><div class="chip-v">${bal.pushPull ?? "—"}×</div><div class="chip-k">Push : Pull</div></div><div class="chip"><div class="chip-v">${bal.quadHam ?? "—"}×</div><div class="chip-k">Quad : Ham</div></div></div>
       ${rel.items ? `<div class="small muted" style="margin:14px 0 8px">1RM ÷ bodyweight (${rel.bodyweightKg}kg)</div>
@@ -647,10 +660,13 @@ function drawCharts(key, day) {
       barChart("chAcwr", weeks.map((w) => w.label), weeks.map((w) => w.acwr),
         weeks.map((w) => w.acwr > 1.3 ? COLORS.bad : (w.acwr > 1.05 || w.acwr < 0.8) ? COLORS.warn : COLORS.good));
     }
-    // bodyweight trend is full-history and independent of "latest" — draw it
-    // whenever the Training modal is open, not just when live trend data exists
+    // bodyweight trend and the persisted ACWR history are both full-history
+    // and independent of "latest" — draw them whenever the Training modal is
+    // open, not just when live trend data exists
     const bwRows = state.index.days.filter((r) => r.weight_kg !== null);
     lineChart("chBw", bwRows.map((r) => r.date.slice(5)), [{ label: "Bodyweight (kg)", data: bwRows.map((r) => r.weight_kg), borderColor: HUES.training.b, backgroundColor: "transparent", tension: .2, spanGaps: true }]);
+    const acwrRows = state.index.days.filter((r) => r.acwr !== null);
+    if (acwrRows.length) lineChart("chAcwrHist", acwrRows.map((r) => r.date.slice(5)), [{ label: "ACWR", data: acwrRows.map((r) => r.acwr), borderColor: HUES.training.b, backgroundColor: "transparent", tension: .2, pointRadius: 0 }]);
   }
   if (key === "sperm") {
     const rows = state.index.days.filter((r) => r.sperm_score !== null);

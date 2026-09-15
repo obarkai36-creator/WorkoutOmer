@@ -11,7 +11,12 @@
  * EXERCISE_LIBRARY) still comes from data.js, since that data has no
  * nutrition-side equivalent.
  *
- * Run: node intake/export_training_state.mjs
+ * Run: node intake/export_training_state.mjs [YYYY-MM-DD]
+ * With a date argument, `now` is pinned to the end of that day instead of the
+ * real wall clock, so the analysis (in particular the ACWR EWMA, which is a
+ * function of calendar time as well as the fixed WORKOUTS history) reflects
+ * what it actually was on that date — used to backfill/persist per-day
+ * training-load history rather than only ever showing "right now."
  * Writes: intake/data/metrics/training_full.json
  */
 import fs from "node:fs";
@@ -71,7 +76,8 @@ const bw = bodyweightFromNutrition();
 data.BODYWEIGHT = bw.slice().sort((a, b) => new Date(b.datetime) - new Date(a.datetime));
 if (bw.length) data.ATHLETE.bodyweightKg = bw[bw.length - 1].kg;
 
-const now = Date.now();
+const targetDate = process.argv[2];
+const now = targetDate ? new Date(`${targetDate}T23:59:59`).getTime() : Date.now();
 const analysis = engine.analyze(data, now);
 
 // Attach the latest body-composition record (from weight.json) alongside

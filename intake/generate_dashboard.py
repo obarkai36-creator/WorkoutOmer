@@ -169,19 +169,69 @@ def pdate(s):
     return datetime.strptime(s, "%Y-%m-%d")
 
 
-def refresh_training_full():
-    """Run export_training_state.mjs to recompute the FULL live training
-    analysis (fatigue, recommendation, PRs, balance, relative strength,
-    aerobic, ACWR trend) — used only by the unified-dashboard prototype.
-    Unlike sync_training_snapshot.mjs, this also substitutes sleep.json and
+def refresh_training_full(target_date=None):
+    """Run export_training_state.mjs to recompute the FULL training analysis
+    (fatigue, recommendation, PRs, balance, relative strength, aerobic, ACWR
+    trend) — used by the unified-dashboard prototype and the site. Unlike
+    sync_training_snapshot.mjs, this also substitutes sleep.json and
     weight.json as the single source for sleep/bodyweight instead of data.js's
-    own SLEEP/BODYWEIGHT arrays, so the two stop drifting apart."""
+    own SLEEP/BODYWEIGHT arrays, so the two stop drifting apart.
+
+    With target_date, the analysis is pinned to the end of that day instead
+    of the live wall clock — used for backfilling/persisting historical
+    training-load (ACWR) snapshots via persist_training_load(). Leave it out
+    for the normal "right now" behavior (the only thing that matters for the
+    latest day's live fatigue/recommendation/PR panels)."""
     script = os.path.join(ROOT, "export_training_state.mjs")
+    args = ["node", script] + ([target_date] if target_date else [])
     try:
-        subprocess.run(["node", script], cwd=ROOT, capture_output=True,
+        subprocess.run(args, cwd=ROOT, capture_output=True,
                         timeout=15, check=True)
     except Exception as e:
         print(f"Warning: could not refresh full training export ({e})", file=sys.stderr)
+
+
+def persist_training_load(target_date):
+    """Persist that day's ACWR/acute/chronic EWMA snapshot (as it stood at
+    the end of target_date) into data/metrics/training_load.json, keyed by
+    date — the same idempotent update-by-date pattern as persist_computed_week
+    / persist_computed_energy, so historical days can show what the load
+    ratio actually was on that date instead of only ever the live "right now"
+    value. Call refresh_training_full(target_date) first so training_full.json
+    reflects that date before this reads it."""
+    try:
+        trends = load("data/metrics/training_full.json").get("trends")
+    except FileNotFoundError:
+        trends = None
+    if not trends or trends.get("acwr") is None:
+        return None
+    entry = {
+        "date": target_date,
+        "acute": trends["acute"],
+        "chronic": trends["chronic"],
+        "acwr": trends["acwr"],
+        "acwr_zone": trends["acwrZone"],
+        "sessions28": trends["sessions28"],
+    }
+    path = os.path.join(ROOT, "data/metrics/training_load.json")
+    try:
+        store = load("data/metrics/training_load.json")
+    except FileNotFoundError:
+        store = {
+            "_note": "Daily ACWR (acute:chronic training-load ratio) history, "
+                     "one entry per date. Computed via engine.js's coupled-EWMA "
+                     "loadTrends() pinned to that date's end-of-day, so past "
+                     "days reflect what the ratio actually was then rather than "
+                     "only ever 'right now'. See engine.js's loadTrends comment "
+                     "for the EWMA-ACWR methodology.",
+            "entries": [],
+        }
+    store["entries"] = [e for e in store["entries"] if e["date"] != target_date] + [entry]
+    store["entries"].sort(key=lambda e: e["date"])
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(store, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    return entry
 
 
 def _acwr_color(v):
@@ -1002,12 +1052,19 @@ def build(target_date, unified=False):
         # aerobic, load-ratio trend) fully supersede this compact mirror —
         # showing both would just be the same numbers twice.
         training_panel = ""
-        refresh_training_full()
+        # Pin the analysis to the end of target_date rather than the live
+        # wall clock — otherwise regenerating a past day's report (e.g. a
+        # historical backfill) would silently show today's live training
+        # state mislabeled as that day's, instead of what it actually was
+        # then. This also persists that date's ACWR snapshot to
+        # data/metrics/training_load.json for the site's historical trend.
+        refresh_training_full(target_date)
         try:
             train_full = load("data/metrics/training_full.json")
             training_panel = build_training_panels(train_full)
         except FileNotFoundError:
             pass
+        persist_training_load(target_date)
         training_panel = build_planned_workout_panel(intake.get("planned_workout")) + training_panel
 
     # suggestions gate (same 14-day baseline as the sperm score)
