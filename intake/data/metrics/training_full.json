@@ -1,5 +1,5 @@
 {
-  "now": 1789537165531,
+  "now": 1789537688409,
   "workouts": [
     {
       "datetime": "2026-09-15T14:30",
@@ -6430,7 +6430,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "ready": true
     },
@@ -6439,7 +6439,7 @@
       "label": "Shoulders",
       "section": "Shoulders",
       "pct": 64,
-      "readyInHours": 30.3,
+      "readyInHours": 30.2,
       "ready": false
     },
     "biceps": {
@@ -6541,14 +6541,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 17,
+          "pct": 16,
           "readyInHours": 0,
           "ready": true
         }
@@ -6557,14 +6557,14 @@
     "Shoulders": {
       "section": "Shoulders",
       "pct": 64,
-      "readyInHours": 30.3,
+      "readyInHours": 30.2,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
           "pct": 64,
-          "readyInHours": 30.3,
+          "readyInHours": 30.2,
           "ready": false
         }
       ]
@@ -7738,10 +7738,10 @@
   },
   "recommendation": {
     "section": "Back",
-    "fatigue": 17,
+    "fatigue": 16,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-16T05:39:25.531Z",
+    "readyAt": "2026-09-16T05:48:08.409Z",
     "neverLogged": false,
     "daysSince": 5.5,
     "suggestedExercises": [
@@ -7822,7 +7822,7 @@
     "ranked": [
       {
         "section": "Back",
-        "fatigue": 17,
+        "fatigue": 16,
         "readyInHours": 0,
         "daysSince": 5.5
       },
@@ -7847,7 +7847,7 @@
       {
         "section": "Shoulders",
         "fatigue": 64,
-        "readyInHours": 30.3,
+        "readyInHours": 30.2,
         "daysSince": 0.6
       }
     ],
