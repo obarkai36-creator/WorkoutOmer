@@ -455,9 +455,20 @@ function renderTrainingDetail(day, isLatest) {
       <div class="goalline">Sweet spot 0.8–1.3 · danger &gt;1.5 · zone: <b style="color:var(--text-1)">${day.training_load.acwr_zone}</b></div>
     </div>` : `<div class="dpanel"><h4>Load ratio (ACWR) — ${state.current}</h4><div class="empty-state">Not enough logged sessions yet for a reliable ratio.</div></div>`;
   const acwrChartHtml = `<div class="dpanel span"><h4>Load ratio (ACWR) trend <span class="tag">(full history, EWMA-smoothed)</span></h4><div class="chart-box small"><canvas id="chAcwrHist"></canvas></div></div>`;
+  // Look up ANY exercise's latest/best by name or muscle group, not just
+  // whatever happens to be in today's recommended section — sourced from
+  // engine.js's snapshotProgress(), which covers every exercise in every
+  // section. This is "current bests" data (same category as fatigue/
+  // recommendation/PRs below), so it's is_latest-gated the same way.
+  const exerciseSearchHtml = `
+    <div class="dpanel span"><h4>Exercise lookup <span class="tag">search by name or muscle group</span></h4>
+      ${day.training_progress ? `
+      <input type="text" id="exSearch" class="ex-search" placeholder="e.g. &quot;triceps&quot;, &quot;rope cable&quot;, &quot;back&quot;…">
+      <div id="exSearchResults"></div>` : `<div class="empty-state">Exercise lookup is only available while viewing the latest day.</div>`}
+    </div>`;
 
   if (!isLatest || !day.training) {
-    return `<div class="dgrid">${plannedHtml}${acwrHistHtml}${sessionLogHtml}${acwrChartHtml}${bwHtml}</div>`;
+    return `<div class="dgrid">${plannedHtml}${exerciseSearchHtml}${acwrHistHtml}${sessionLogHtml}${acwrChartHtml}${bwHtml}</div>`;
   }
   const rec = day.training;
   const exRows = (rec.suggestedExercises || []).map((e) => `
@@ -475,6 +486,7 @@ function renderTrainingDetail(day, isLatest) {
   return `
   <div class="dgrid">
     ${plannedHtml}
+    ${exerciseSearchHtml}
     <div class="dpanel span"><h4>Muscle fatigue &amp; recovery</h4>
       ${Object.entries(sections).filter(([name]) => name !== "Cardio").map(([name, s]) => `
       <div class="metric"><div class="metric-top"><span>${name}</span><span class="vals">${s.pct}% · ${s.readyInHours ? "ready in " + fmt(s.readyInHours,1) + "h" : "ready now"}</span></div>
@@ -517,6 +529,43 @@ function renderTrainingDetail(day, isLatest) {
     </div>
     ${sessionLogHtml}
   </div>`;
+}
+
+function flattenTrainingProgress(progress) {
+  if (!progress) return [];
+  return Object.entries(progress).flatMap(([section, list]) =>
+    (list || []).map((e) => ({ ...e, section })));
+}
+function exerciseLookupRow(e) {
+  const oneRm = e.metric === "1RM";
+  return `<tr>
+    <td>${e.name}${e.isPR ? ` <span class="star">★ PR</span>` : ""}${e.inToday ? ` <span class="tag">today</span>` : ""}
+      ${e.muscles?.length ? `<div class="small muted">${e.muscles.join(", ")}</div>` : ""}</td>
+    <td>${e.section}</td>
+    <td>${e.latestText || "—"}</td>
+    <td>${e.bestText || "—"}</td>
+    <td class="num">${oneRm && e.latest1RM ? fmt(e.latest1RM,1) : "—"}</td>
+    <td class="num">${oneRm && e.best1RM ? fmt(e.best1RM,1) : "—"}</td>
+  </tr>`;
+}
+function wireExerciseSearch(day) {
+  const input = document.getElementById("exSearch");
+  const results = document.getElementById("exSearchResults");
+  if (!input || !results) return;
+  const all = flattenTrainingProgress(day.training_progress).sort((a, b) => a.name.localeCompare(b.name));
+  const render = (query) => {
+    const q = query.trim().toLowerCase();
+    const matches = q ? all.filter((e) =>
+      e.name.toLowerCase().includes(q) || e.section.toLowerCase().includes(q) ||
+      (e.muscles || []).some((m) => m.toLowerCase().includes(q))) : all;
+    results.innerHTML = matches.length
+      ? `<div class="scrollbox"><table class="datatable">
+          <thead><tr><th>Exercise</th><th>Section</th><th>Latest</th><th>Best</th><th class="num">Latest 1RM</th><th class="num">Best 1RM</th></tr></thead>
+          <tbody>${matches.map(exerciseLookupRow).join("")}</tbody></table></div>`
+      : `<div class="small muted">No exercises match "${query}".</div>`;
+  };
+  input.addEventListener("input", () => render(input.value));
+  render("");
 }
 
 function renderSpermDetail(day) {
@@ -655,6 +704,7 @@ function drawCharts(key, day) {
     ]);
   }
   if (key === "training") {
+    wireExerciseSearch(day);
     if (day.training_trends) {
       const weeks = (day.training_trends.weeks || []).filter((w) => w.acwr !== null);
       barChart("chAcwr", weeks.map((w) => w.label), weeks.map((w) => w.acwr),

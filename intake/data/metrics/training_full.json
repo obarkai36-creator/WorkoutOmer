@@ -1,5 +1,5 @@
 {
-  "now": 1789543050120,
+  "now": 1789547835185,
   "workouts": [
     {
       "datetime": "2026-09-15T14:30",
@@ -6438,15 +6438,15 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 62,
-      "readyInHours": 28.7,
+      "pct": 60,
+      "readyInHours": 27.4,
       "ready": false
     },
     "biceps": {
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 26,
+      "pct": 25,
       "readyInHours": 0,
       "ready": true
     },
@@ -6462,7 +6462,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 26,
+      "pct": 25,
       "readyInHours": 0,
       "ready": true
     },
@@ -6470,7 +6470,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 10,
+      "pct": 9,
       "readyInHours": 0,
       "ready": true
     },
@@ -6556,29 +6556,29 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 62,
-      "readyInHours": 28.7,
+      "pct": 60,
+      "readyInHours": 27.4,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 62,
-          "readyInHours": 28.7,
+          "pct": 60,
+          "readyInHours": 27.4,
           "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 22,
+      "pct": 21,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 26,
+          "pct": 25,
           "readyInHours": 0,
           "ready": true
         },
@@ -6586,7 +6586,7 @@
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 26,
+          "pct": 25,
           "readyInHours": 0,
           "ready": true
         },
@@ -6625,7 +6625,7 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 10,
+          "pct": 9,
           "readyInHours": 0,
           "ready": true
         },
@@ -6684,6 +6684,11 @@
         "name": "Bench Press",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest",
+          "triceps",
+          "shoulders"
+        ],
         "latestText": "72.5kg × 4×8",
         "bestText": "72.5kg × 4×8",
         "latestVol": 2320,
@@ -6701,6 +6706,11 @@
         "name": "Dumbbell Bench Press",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest",
+          "triceps",
+          "shoulders"
+        ],
         "latestText": "24kg each × 4×12",
         "bestText": "24kg each × 4×12",
         "latestVol": 2304,
@@ -6718,6 +6728,11 @@
         "name": "Incline Bench Press",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest",
+          "shoulders",
+          "triceps"
+        ],
         "latestText": "72.5kg × 4×7",
         "bestText": "72.5kg × 4×7",
         "latestVol": 2030,
@@ -6735,6 +6750,11 @@
         "name": "Incline Dumbbell Bench Press",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest",
+          "shoulders",
+          "triceps"
+        ],
         "latestText": "24kg each × 4×11",
         "bestText": "24kg each × 4×11",
         "latestVol": 2112,
@@ -6752,6 +6772,10 @@
         "name": "Decline Bench Press",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest",
+          "triceps"
+        ],
         "latestText": "72.5kg × 4×6",
         "bestText": "72.5kg × 4×6",
         "latestVol": 1740,
@@ -6769,6 +6793,10 @@
         "name": "Incline Pec Fly",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest",
+          "shoulders"
+        ],
         "latestText": "18kg each × 4×9",
         "bestText": "18kg each × 4×9",
         "latestVol": 1296,
@@ -6786,6 +6814,10 @@
         "name": "Narrow Push-Ups",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest",
+          "triceps"
+        ],
         "latestText": "BW × 4×10",
         "bestText": "BW × 4×10",
         "latestVol": 3240,
@@ -6803,6 +6835,9 @@
         "name": "Dumbbell Pec Fly",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest"
+        ],
         "latestText": "18kg each × 4×7",
         "bestText": "16kg each × 4×8",
         "latestVol": 1008,
@@ -6820,6 +6855,9 @@
         "name": "Pec Fly Machine",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest"
+        ],
         "latestText": "73kg × 3×6 (deload)",
         "bestText": "84kg × 3×8",
         "latestVol": 1314,
@@ -6837,6 +6875,11 @@
         "name": "Chest Press Machine",
         "section": "Chest",
         "iso": false,
+        "muscles": [
+          "chest",
+          "triceps",
+          "shoulders"
+        ],
         "latestText": "73kg × 4×4",
         "bestText": "73kg × 4×6",
         "latestVol": 1168,
@@ -6856,6 +6899,10 @@
         "name": "Diverging Seated Row",
         "section": "Back",
         "iso": false,
+        "muscles": [
+          "back",
+          "biceps"
+        ],
         "latestText": "85kg × 4×10",
         "bestText": "97kg × 4×10",
         "latestVol": 3400,
@@ -6873,6 +6920,10 @@
         "name": "Low Row",
         "section": "Back",
         "iso": false,
+        "muscles": [
+          "back",
+          "biceps"
+        ],
         "latestText": "72kg × 4×8",
         "bestText": "79kg × 4×11",
         "latestVol": 2304,
@@ -6890,6 +6941,10 @@
         "name": "Lat Pulldown (Triangle)",
         "section": "Back",
         "iso": false,
+        "muscles": [
+          "back",
+          "biceps"
+        ],
         "latestText": "77kg × 3×8",
         "bestText": "77kg × 3×8",
         "latestVol": 1848,
@@ -6907,6 +6962,11 @@
         "name": "Reverse Incline DB Row",
         "section": "Back",
         "iso": false,
+        "muscles": [
+          "back",
+          "shoulders",
+          "biceps"
+        ],
         "latestText": "24kg each × 4×12",
         "bestText": "26kg each × 4×12",
         "latestVol": 2304,
@@ -6924,6 +6984,10 @@
         "name": "Dumbbell Pullover",
         "section": "Back",
         "iso": false,
+        "muscles": [
+          "back",
+          "chest"
+        ],
         "latestText": "18kg × 4×10",
         "bestText": "20kg × 4×12",
         "latestVol": 720,
@@ -6941,6 +7005,10 @@
         "name": "Dead Hang",
         "section": "Back",
         "iso": true,
+        "muscles": [
+          "forearms",
+          "back"
+        ],
         "latestText": "25s × 3",
         "bestText": "35s + 30s + 25s",
         "latestVol": 6023,
@@ -6960,6 +7028,10 @@
         "name": "Converging Shoulder Press",
         "section": "Shoulders",
         "iso": false,
+        "muscles": [
+          "shoulders",
+          "triceps"
+        ],
         "latestText": "68kg × 4×6 (deload)",
         "bestText": "79kg × 4×8",
         "latestVol": 1632,
@@ -6977,6 +7049,10 @@
         "name": "Dumbbell Shoulder Press",
         "section": "Shoulders",
         "iso": false,
+        "muscles": [
+          "shoulders",
+          "triceps"
+        ],
         "latestText": "17.5kg each × 3×10 (hotel gym)",
         "bestText": "20kg each × 2×9, 1×8",
         "latestVol": 1050,
@@ -6994,6 +7070,9 @@
         "name": "Lateral Raises",
         "section": "Shoulders",
         "iso": false,
+        "muscles": [
+          "shoulders"
+        ],
         "latestText": "15kg each × 4×8 (hotel gym)",
         "bestText": "16kg each × 4×9",
         "latestVol": 960,
@@ -7011,6 +7090,9 @@
         "name": "Seated Lateral Raises",
         "section": "Shoulders",
         "iso": false,
+        "muscles": [
+          "shoulders"
+        ],
         "latestText": "12kg each × 4×10",
         "bestText": "14kg each × 4×7",
         "latestVol": 960,
@@ -7028,6 +7110,9 @@
         "name": "Front Raises",
         "section": "Shoulders",
         "iso": false,
+        "muscles": [
+          "shoulders"
+        ],
         "latestText": "18kg KB × 3×8",
         "bestText": "18kg KB × 4×8",
         "latestVol": 432,
@@ -7045,6 +7130,10 @@
         "name": "Rear Delt Machine",
         "section": "Shoulders",
         "iso": false,
+        "muscles": [
+          "shoulders",
+          "back"
+        ],
         "latestText": "73kg × 3×9",
         "bestText": "73kg × 3×9",
         "latestVol": 1971,
@@ -7062,6 +7151,10 @@
         "name": "Shoulder Shrugs",
         "section": "Shoulders",
         "iso": false,
+        "muscles": [
+          "shoulders",
+          "back"
+        ],
         "latestText": "20kg each × 4×12 (hotel gym)",
         "bestText": "26kg each × 3×10",
         "latestVol": 1920,
@@ -7079,6 +7172,10 @@
         "name": "Farmer's Hold",
         "section": "Shoulders",
         "iso": true,
+        "muscles": [
+          "forearms",
+          "shoulders"
+        ],
         "latestText": "20kg each × 4×35s (hotel gym)",
         "bestText": "24kg each × 4×35s",
         "latestVol": 5600,
@@ -7096,6 +7193,10 @@
         "name": "Cable Face Pull",
         "section": "Shoulders",
         "iso": false,
+        "muscles": [
+          "shoulders",
+          "back"
+        ],
         "latestText": "17.5kg × 4×12 (hotel gym, first logged)",
         "bestText": "17.5kg × 4×12",
         "latestVol": 840,
@@ -7115,6 +7216,9 @@
         "name": "Flat DB Triceps Extension",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "triceps"
+        ],
         "latestText": "17.5kg each × 4×6",
         "bestText": "17.5kg each × 4×6",
         "latestVol": 840,
@@ -7132,6 +7236,9 @@
         "name": "Overhead DB Triceps Extension",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "triceps"
+        ],
         "latestText": "20kg × 4×10 (hotel gym, new PR)",
         "bestText": "20kg × 4×10",
         "latestVol": 800,
@@ -7149,6 +7256,11 @@
         "name": "Seated Dips",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "triceps",
+          "chest",
+          "shoulders"
+        ],
         "latestText": "94kg × 3×8",
         "bestText": "94kg × 3×8",
         "latestVol": 2256,
@@ -7166,6 +7278,9 @@
         "name": "Triceps Extension Machine",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "triceps"
+        ],
         "latestText": "41kg × 3×8",
         "bestText": "41kg × 3×8",
         "latestVol": 984,
@@ -7183,6 +7298,9 @@
         "name": "Rope Cable Extension",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "triceps"
+        ],
         "latestText": "64kg × 4×6 (deload)",
         "bestText": "75kg × 4×8",
         "latestVol": 1536,
@@ -7200,6 +7318,9 @@
         "name": "Single-Hand DB Triceps Extension",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "triceps"
+        ],
         "latestText": "12kg each × 3×8",
         "bestText": "12kg each × 4×8",
         "latestVol": 288,
@@ -7217,6 +7338,10 @@
         "name": "Incline Hammer Curl",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "biceps",
+          "forearms"
+        ],
         "latestText": "20kg each × 3×8",
         "bestText": "20kg each × 3×8",
         "latestVol": 480,
@@ -7234,6 +7359,9 @@
         "name": "Incline DB Curl",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "biceps"
+        ],
         "latestText": "20kg each × 3×6",
         "bestText": "20kg each × 3×6",
         "latestVol": 360,
@@ -7251,6 +7379,10 @@
         "name": "Hammer Curl",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "biceps",
+          "forearms"
+        ],
         "latestText": "20kg × 4×10",
         "bestText": "20kg × 4×10",
         "latestVol": 800,
@@ -7268,6 +7400,9 @@
         "name": "Preacher Curl",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "biceps"
+        ],
         "latestText": "12.5kg each + bar × 3×7",
         "bestText": "12.5kg each + bar × 3×7",
         "latestVol": 735,
@@ -7285,6 +7420,9 @@
         "name": "Biceps Curl Machine",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "biceps"
+        ],
         "latestText": "45kg × 2×6",
         "bestText": "45kg × 3×6",
         "latestVol": 540,
@@ -7302,6 +7440,9 @@
         "name": "Half Curl",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "biceps"
+        ],
         "latestText": "18kg each × 4×5",
         "bestText": "18kg each × 4×5",
         "latestVol": 720,
@@ -7319,6 +7460,9 @@
         "name": "Cable Curl",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "biceps"
+        ],
         "latestText": "25kg × 3×10 (hotel gym, first logged)",
         "bestText": "25kg × 3×10",
         "latestVol": 750,
@@ -7336,6 +7480,9 @@
         "name": "Forearm Twists",
         "section": "Arms",
         "iso": false,
+        "muscles": [
+          "forearms"
+        ],
         "latestText": "17.5kg each × 4×8",
         "bestText": "17.5kg each × 4×8",
         "latestVol": 1120,
@@ -7355,6 +7502,9 @@
         "name": "Calf Raises Machine",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "calves"
+        ],
         "latestText": "81kg × 4×8 (inc. frame)",
         "bestText": "76kg × 4×11",
         "latestVol": 2592,
@@ -7372,6 +7522,9 @@
         "name": "Standing Calf Raises (Frame)",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "calves"
+        ],
         "latestText": "73.5kg × 4×11",
         "bestText": "73.5kg × 4×11",
         "latestVol": 3234,
@@ -7389,6 +7542,9 @@
         "name": "Dumbbell Calf Raise",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "calves"
+        ],
         "latestText": "24kg each × 4×12",
         "bestText": "24kg each × 4×12",
         "latestVol": 2304,
@@ -7406,6 +7562,11 @@
         "name": "Leg Press",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "quads",
+          "glutes",
+          "hamstrings"
+        ],
         "latestText": "132kg × 4×10",
         "bestText": "132kg × 4×10",
         "latestVol": 5280,
@@ -7423,6 +7584,10 @@
         "name": "Angled Leg Press",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "quads",
+          "glutes"
+        ],
         "latestText": "152kg setup (45kg each side + 62kg frame) × 3×8",
         "bestText": "202kg setup (70kg each side + 62kg frame) × 4×7",
         "latestVol": 3648,
@@ -7440,6 +7605,9 @@
         "name": "Leg Extensions",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "quads"
+        ],
         "latestText": "111kg × 3×8",
         "bestText": "111kg × 4×12",
         "latestVol": 2664,
@@ -7457,6 +7625,9 @@
         "name": "Single-Leg Extensions",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "quads"
+        ],
         "latestText": "57kg each × 4×7",
         "bestText": "57kg each × 4×7",
         "latestVol": 1596,
@@ -7474,6 +7645,9 @@
         "name": "Leg Curls",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "hamstrings"
+        ],
         "latestText": "111kg × 4×12",
         "bestText": "111kg × 4×12",
         "latestVol": 5328,
@@ -7491,6 +7665,10 @@
         "name": "Outer Thigh",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "glutes",
+          "quads"
+        ],
         "latestText": "79kg × 3×9",
         "bestText": "79kg × 5×10",
         "latestVol": 2133,
@@ -7508,6 +7686,9 @@
         "name": "Inner Thigh",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "adductors"
+        ],
         "latestText": "79kg × 3×9",
         "bestText": "79kg × 3×9",
         "latestVol": 2133,
@@ -7525,6 +7706,10 @@
         "name": "Glute Extension",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "glutes",
+          "hamstrings"
+        ],
         "latestText": "59kg × 2×5 each",
         "bestText": "59kg × 2×5 each",
         "latestVol": 590,
@@ -7542,6 +7727,11 @@
         "name": "Dumbbell RDL",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "hamstrings",
+          "glutes",
+          "back"
+        ],
         "latestText": "24kg × 4×10",
         "bestText": "24kg × 6×8",
         "latestVol": 960,
@@ -7559,6 +7749,11 @@
         "name": "Dumbbell Sumo Squat",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "glutes",
+          "quads",
+          "adductors"
+        ],
         "latestText": "24kg × 4×12",
         "bestText": "24kg × 6×8",
         "latestVol": 1152,
@@ -7576,6 +7771,10 @@
         "name": "Hip Thrust",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "glutes",
+          "hamstrings"
+        ],
         "latestText": "24kg each side × 4×8 (48kg total — confirmed genuine progression: prior 24kg best was a single dumbbell, now loaded each side)",
         "bestText": "24kg each side × 4×8 (48kg total)",
         "latestVol": 1536,
@@ -7593,6 +7792,9 @@
         "name": "Glute Bridge",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "glutes"
+        ],
         "latestText": "BW × 2×12",
         "bestText": "BW × 2×12",
         "latestVol": 1872,
@@ -7610,6 +7812,10 @@
         "name": "Hack Squat",
         "section": "Legs",
         "iso": false,
+        "muscles": [
+          "quads",
+          "glutes"
+        ],
         "latestText": "Bodyweight + 42.6kg frame × 3×6",
         "bestText": "Bodyweight + 42.6kg frame × 3×6",
         "latestVol": 2227,
@@ -7629,6 +7835,9 @@
         "name": "Plank",
         "section": "Core",
         "iso": true,
+        "muscles": [
+          "core"
+        ],
         "latestText": "BW × 3×35s",
         "bestText": "BW × 3×35s",
         "latestVol": 8505,
@@ -7646,6 +7855,9 @@
         "name": "VKR",
         "section": "Core",
         "iso": false,
+        "muscles": [
+          "core"
+        ],
         "latestText": "BW × 4×10",
         "bestText": "BW × 4×10",
         "latestVol": 3248,
@@ -7663,6 +7875,9 @@
         "name": "VKR to Sides",
         "section": "Core",
         "iso": false,
+        "muscles": [
+          "core"
+        ],
         "latestText": "BW × 4×8",
         "bestText": "BW × 4×8",
         "latestVol": 2598,
@@ -7741,7 +7956,7 @@
     "fatigue": 16,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-16T07:17:30.120Z",
+    "readyAt": "2026-09-16T08:37:15.185Z",
     "neverLogged": false,
     "daysSince": 5.6,
     "suggestedExercises": [
@@ -7830,25 +8045,25 @@
         "section": "Legs",
         "fatigue": 9,
         "readyInHours": 0,
-        "daysSince": 3.9
+        "daysSince": 4
       },
       {
         "section": "Arms",
-        "fatigue": 22,
+        "fatigue": 21,
         "readyInHours": 0,
-        "daysSince": 0.7
+        "daysSince": 0.8
       },
       {
         "section": "Chest",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 38.6
+        "daysSince": 38.7
       },
       {
         "section": "Shoulders",
-        "fatigue": 62,
-        "readyInHours": 28.7,
-        "daysSince": 0.7
+        "fatigue": 60,
+        "readyInHours": 27.4,
+        "daysSince": 0.8
       }
     ],
     "suggestedCount": 5,
@@ -7885,7 +8100,7 @@
       13,
       14
     ],
-    "daysSinceLast": 0.7,
+    "daysSinceLast": 0.8,
     "total": 63
   },
   "relstrength": {

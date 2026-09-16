@@ -148,6 +148,11 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         bundle["training_relstrength"] = training_full.get("relstrength") if training_full else None
         bundle["training_aerobic"] = training_full.get("aerobic") if training_full else None
         bundle["training_changes"] = training_full.get("changes", []) if training_full else []
+        # Full latest-vs-best listing for EVERY exercise across every section
+        # (not just whatever's currently recommended) -- engine.js already
+        # computes this (snapshotProgress) but it had never been surfaced in
+        # any UI. Powers the Training tab's exercise/muscle-group search.
+        bundle["training_progress"] = training_full.get("progress") if training_full else None
         bundle["suggestions"] = gd.generate_suggestions(
             profile, list(all_days_by_date.values()), weight_entries, sleep_entries,
             lifestyle_events, target_date, ejac_entries,

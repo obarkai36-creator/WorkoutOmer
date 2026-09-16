@@ -171,6 +171,7 @@ function snapshotProgress(data, workouts) {
   for (const ex of data.SNAPSHOT) {
     const L = recStats(ex.latest, ex.iso);
     const B = recStats(ex.best, ex.iso);
+    const muscles = Object.keys(data.EXERCISE_LIBRARY[ex.name]?.muscles || {});
     // Strength metric: estimated 1RM for rep-based lifts (accounts for weight AND
     // reps, so a heavier set at fewer reps can still be a PR). Timed/iso holds
     // have no 1RM, so fall back to load (weight x seconds).
@@ -180,7 +181,7 @@ function snapshotProgress(data, workouts) {
     const peak = Math.max(Lm, Bm);
     const pct = peak > 0 ? round((Lm / peak) * 100) : 100;
     const item = {
-      name: ex.name, section: ex.section, iso: !!ex.iso,
+      name: ex.name, section: ex.section, iso: !!ex.iso, muscles,
       latestText: ex.latest?.text || "", bestText: ex.best?.text || "",
       latestVol: round(L.volume), bestVol: round(B.volume), pct,
       latest1RM: round(L.top1RM, 1), best1RM: round(B.top1RM, 1),
