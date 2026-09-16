@@ -19,13 +19,15 @@
     {"time": "08:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "10:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "12:10", "name": "Creatine monohydrate", "category": "supplement", "qty": "3 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "15:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "19:20", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "19:20", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 20,
     "selenium_mcg": 100,
     "folate_mcg_dfe": 0,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1000,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
@@ -55,6 +57,7 @@
     "10:15 espresso, single shot (2nd caffeine shot today).",
     "12:10 creatine monohydrate, 3g (post-workout, slightly below the usual 4.5g dose, logged as reported).",
     "15:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose.",
+    "19:20 PM Rhinolast dose (2nd of the 2x/day spray) + Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "10:45 Lower Body + Back workout completed at the hotel gym — logged to data.js/workouts.json. Departed from the pre-set plan's hamstring/glute-biased exercise selection given what equipment was actually on hand (leg extension machine + lat pulldown machine, in addition to dumbbells/kettlebells/cable station). Leg Extensions 50kg×4×10 (hotel machine's marker reading, flagged by the user as implausible/felt much harder than 50kg — treated as not comparable to home's 111kg machine, kept for session-load tracking only, not a PR read). Lat Pulldown (Triangle) 75kg×3×8 (just under the 77kg best, not a PR). Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 prior best). Dead Hang 35s+30s+25s (ties best exactly). Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells one per hand vs. the previous single-DB-both-hands style, so not a strictly equivalent progression). Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg best, not a PR). Also did Rope Cable Extension on an offset-weighted cable machine — described only as 'Heavy' with no numeric marker available, so not logged as a quantified set (would have corrupted the real calibrated home PR of 75kg×4×8 with an unverifiable number). 2 new PRs (1 execution-caveated).",
     "Still within macro tracking break #2 (2026-09-15 through 2026-09-17) — no detailed food items/macros today; supplements/meds/caffeine/sleep/lifestyle logged as usual."
   ],
