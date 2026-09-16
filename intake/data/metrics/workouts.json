@@ -1,20 +1,20 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-15",
-    "latest_session": "Hotel-gym session — Shoulders/Arms (dumbbells to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station; no rear delt machine or biceps curl machine, substituted with cable work). Cable Face Pull 17.5kg×4×12 (new exercise, no home equivalent — replaces Rear Delt Machine); Shoulder Shrugs 20kg each (40kg)×4×12 (below the 52kg/26kg-each best — hotel dumbbells cap at 20kg vs home's 26kg, not a PR); Lateral Raises 15kg each (30kg)×4×8 (below the 32kg/16kg-each best, not a PR); Dumbbell Shoulder Press 17.5kg each (35kg)×3×10 (below the 40kg/20kg-each best, not a PR — kept deliberately light per the push-side correction plan); Farmer's Hold 20kg each (40kg)×4×35s (below the 48kg/24kg-each best at the same 35s duration, not a PR); Incline Hammer Curl 20kg each×3×8 (ties best exactly, not a new PR); Overhead DB Triceps Extension 20kg×4×10 (new PR — est. 1RM 26.7 vs 25.2 for the 18kg×4×12 best); Cable Curl 25kg×3×10 (new exercise, no home equivalent — replaces Biceps Curl Machine). 1 new PR.",
-    "sessions_logged": 63,
+    "report_date": "2026-09-16",
+    "latest_session": "Hotel-gym session — Lower Body + Back (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set plan (which was hamstring/glute-biased with cable-station substitutes) in favor of whatever equipment was actually available. Leg Extensions 50kg×4×10 (hotel machine's marker reading — user flagged the number as implausible/felt much harder than 50kg, likely a differently-calibrated stack; not comparable to home's 111kg machine, logged for session-load tracking only, not a PR read); Lat Pulldown (Triangle) 75kg×3×8 (hotel gym, just under the 77kg best, not a PR); Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 for the 20kg×4×12 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells, one per hand, vs the previous single-DB-both-hands style, so not a strictly equivalent progression); Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg/18kg-each best, not a PR — hotel dumbbell selection). Also did Rope Cable Extension on an offset-weighted cable machine, described only as 'Heavy' with no numeric marker available — not logged as a quantified set to avoid corrupting the real calibrated home PR (75kg×4×8) with an unverifiable number. 2 new PRs (1 execution-caveated).",
+    "sessions_logged": 64,
     "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 27.6,
     "aerobic_sessions_28d": 7,
     "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 1.26,
-    "recommended_next": "Back day",
+    "acwr": 1.34,
+    "recommended_next": "Legs day",
     "alerts": [
-      "Push volume is 1.5× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work.",
-      "Recovers in ~41.5h. Avoid loading it hard before then — you trained it most recently."
+      "Load ratio 1.34 (sweet spot 0.8–1.3). Keep added volume under ~10% next week.",
+      "Push volume is 1.46× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
   },
   "entries": [
@@ -400,6 +400,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "14:30, hotel gym while traveling (dumbbells to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station). Cable Face Pull 17.5kg×4×12 (new exercise, no home equivalent — replaces Rear Delt Machine); Shoulder Shrugs 20kg each (40kg)×4×12 (below the 52kg/26kg-each best — hotel cap, not a PR); Lateral Raises 15kg each (30kg)×4×8 (below the 32kg/16kg-each best, not a PR); Dumbbell Shoulder Press 17.5kg each (35kg)×3×10 (below the 40kg/20kg-each best, not a PR — deliberately light per the push-side correction plan); Farmer's Hold 20kg each (40kg)×4×35s (below the 48kg/24kg-each best at the same duration, not a PR); Incline Hammer Curl 20kg each×3×8 (ties best exactly); Overhead DB Triceps Extension 20kg×4×10 (new PR — est. 1RM 26.7 vs 25.2 prior best); Cable Curl 25kg×3×10 (new exercise, no home equivalent — replaces Biceps Curl Machine). 1 new PR.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "Strength — Lower Body + Back (hotel gym)",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "10:45, hotel gym while traveling (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set hamstring/glute-biased plan given the equipment actually on hand. Leg Extensions 50kg×4×10 (hotel machine's marker reading, flagged by the user as implausible/felt much harder than 50kg — likely a differently-calibrated stack, not comparable to home's 111kg machine, logged for session-load tracking only); Lat Pulldown (Triangle) 75kg×3×8 (just under the 77kg best, not a PR); Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 for the 20kg×4×12 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells, one per hand, vs the previous single-DB-both-hands style); Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg/18kg-each best, not a PR). Also did Rope Cable Extension on an offset-weighted machine, described only as 'Heavy' with no numeric marker — not logged as a quantified set. 2 new PRs (1 execution-caveated).",
       "_source": "manual log"
     }
   ]

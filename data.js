@@ -210,7 +210,7 @@ const SNAPSHOT = [
   { name: "Incline Bench Press", section: "Chest", latest: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
   { name: "Incline Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" }, best: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" } },
   { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 6, weight: 72.5, text: "72.5kg × 4×6" }, best: { sets: 4, reps: 6, weight: 72.5, text: "72.5kg × 4×6" } },
-  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 9, weight: 36, text: "18kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 36, text: "18kg each × 4×9" } },
+  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 8, weight: 30, text: "15kg each × 4×8 (hotel gym)" }, best: { sets: 4, reps: 9, weight: 36, text: "18kg each × 4×9" } },
   { name: "Narrow Push-Ups",     section: "Chest", latest: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" }, best: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 6, weight: 73, text: "73kg × 3×6 (deload)" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
@@ -219,10 +219,10 @@ const SNAPSHOT = [
   // ---- Back ----
   { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 10, weight: 85, text: "85kg × 4×10" }, best: { sets: 4, reps: 10, weight: 97, text: "97kg × 4×10" } },
   { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 8, weight: 72, text: "72kg × 4×8" }, best: { sets: 4, reps: 11, weight: 79, text: "79kg × 4×11" } },
-  { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
+  { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 75, text: "75kg × 3×8 (hotel gym)" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
   { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 52, text: "26kg each × 4×12" } },
-  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 10, weight: 18, text: "18kg × 4×10" }, best: { sets: 4, reps: 12, weight: 20, text: "20kg × 4×12" } },
-  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 25, weight: 80.30 }, { sets: 1, seconds: 25, weight: 80.30 }, { sets: 1, seconds: 25, weight: 80.30 } ], text: "25s × 3" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
+  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 8, weight: 22.5, text: "22.5kg × 4×8 (hotel gym, new PR)" }, best: { sets: 4, reps: 8, weight: 22.5, text: "22.5kg × 4×8" } },
+  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
@@ -263,13 +263,13 @@ const SNAPSHOT = [
   // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
   // as not directly comparable; use the each-side+frame total from now on.
   { name: "Angled Leg Press",             section: "Legs", latest: { sets: 3, reps: 8, weight: 152, text: "152kg setup (45kg each side + 62kg frame) × 3×8" }, best: { sets: 4, reps: 7, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×7" } },
-  { name: "Leg Extensions",               section: "Legs", latest: { sets: 3, reps: 8, weight: 111, text: "111kg × 3×8" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
+  { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 10, weight: 50, text: "50kg × 4×10 (hotel gym — machine marker reading, felt much harder than the number suggests; likely a differently-calibrated stack, not directly comparable to home's)" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" } },
   { name: "Leg Curls",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Outer Thigh",                  section: "Legs", latest: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" }, best: { sets: 5, reps: 10, weight: 79, text: "79kg × 5×10" } },
   { name: "Inner Thigh",                  section: "Legs", latest: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" }, best: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" } },
   { name: "Glute Extension",              section: "Legs", latest: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" }, best: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" } },
-  { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 10, weight: 24, text: "24kg × 4×10" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
+  { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 6, weight: 45, text: "22.5kg each × 4×6 (45kg total, hotel gym — two dumbbells, one per hand; prior best was a single DB held with both hands, so this is a different execution rather than a directly equivalent progression)" }, best: { sets: 4, reps: 6, weight: 45, text: "22.5kg each × 4×6 (45kg total)" } },
   { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
   { name: "Hip Thrust",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total — confirmed genuine progression: prior 24kg best was a single dumbbell, now loaded each side)" }, best: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total)" } },
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
@@ -291,6 +291,18 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 16 Sep — Lower Body + Back, hotel gym while traveling (10:45)
+  {
+    datetime: "2026-09-16T10:45", note: "Hotel-gym session — Lower Body + Back (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set plan (which was hamstring/glute-biased with cable-station substitutes) in favor of whatever equipment was actually available. Leg Extensions 50kg×4×10 (hotel machine's marker reading — user flagged the number as implausible/felt much harder than 50kg, likely a differently-calibrated stack; not comparable to home's 111kg machine, logged for session-load tracking only, not a PR read); Lat Pulldown (Triangle) 75kg×3×8 (hotel gym, just under the 77kg best, not a PR); Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 for the 20kg×4×12 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells, one per hand, vs the previous single-DB-both-hands style, so not a strictly equivalent progression); Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg/18kg-each best, not a PR — hotel dumbbell selection). Also did Rope Cable Extension on an offset-weighted cable machine, described only as 'Heavy' with no numeric marker available — not logged as a quantified set to avoid corrupting the real calibrated home PR (75kg×4×8) with an unverifiable number. 2 new PRs (1 execution-caveated).",
+    exercises: [
+      { name: "Leg Extensions",          sets: [ { reps: 10, weight: 50 }, { reps: 10, weight: 50 }, { reps: 10, weight: 50 }, { reps: 10, weight: 50 } ] },
+      { name: "Lat Pulldown (Triangle)", sets: [ { reps: 8, weight: 75 }, { reps: 8, weight: 75 }, { reps: 8, weight: 75 } ] },
+      { name: "Dumbbell Pullover",       sets: [ { reps: 8, weight: 22.5 }, { reps: 8, weight: 22.5 }, { reps: 8, weight: 22.5 }, { reps: 8, weight: 22.5 } ] },
+      { name: "Dead Hang",               sets: [ { seconds: 35 }, { seconds: 30 }, { seconds: 25 } ] },
+      { name: "Dumbbell RDL",            sets: [ { reps: 6, weight: 45 }, { reps: 6, weight: 45 }, { reps: 6, weight: 45 }, { reps: 6, weight: 45 } ] },
+      { name: "Incline Pec Fly",         sets: [ { reps: 8, weight: 30 }, { reps: 8, weight: 30 }, { reps: 8, weight: 30 }, { reps: 8, weight: 30 } ] },
+    ],
+  },
   // 15 Sep — Shoulders/Arms, hotel gym while traveling (14:30)
   {
     datetime: "2026-09-15T14:30", note: "Hotel-gym session — Shoulders/Arms (dumbbells to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station; no rear delt machine or biceps curl machine, substituted with cable work). Cable Face Pull 17.5kg×4×12 (new exercise, no home equivalent — replaces Rear Delt Machine); Shoulder Shrugs 20kg each (40kg)×4×12 (below the 52kg/26kg-each best — hotel dumbbells cap at 20kg vs home's 26kg, not a PR); Lateral Raises 15kg each (30kg)×4×8 (below the 32kg/16kg-each best, not a PR); Dumbbell Shoulder Press 17.5kg each (35kg)×3×10 (below the 40kg/20kg-each best, not a PR — kept deliberately light per the push-side correction plan); Farmer's Hold 20kg each (40kg)×4×35s (below the 48kg/24kg-each best at the same 35s duration, not a PR); Incline Hammer Curl 20kg each×3×8 (ties best exactly, not a new PR); Overhead DB Triceps Extension 20kg×4×10 (new PR — est. 1RM 26.7 vs 25.2 for the 18kg×4×12 best); Cable Curl 25kg×3×10 (new exercise, no home equivalent — replaces Biceps Curl Machine). 1 new PR.",
