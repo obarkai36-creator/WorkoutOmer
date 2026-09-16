@@ -2,12 +2,21 @@
   "date": "2026-09-16",
   "day_number": 81,
   "in_progress": true,
-  "planned_only": true,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break #2 (2026-09-15 through 2026-09-17) — user asked to skip exact food macro/micro logging while traveling for the hotel-gym stint. Resumes 2026-09-18.",
   "workout_today": true,
   "workout_summary": "Planned: Lower Body + Back (hotel gym, away from home equipment)",
-  "items": [],
+  "sleep": {
+    "sleep_start": "00:30",
+    "sleep_end": "08:00",
+    "duration_hours": 7.5,
+    "quality": null,
+    "notes": "7.5h, within the 7-9h target band despite a late (past-midnight) start."
+  },
+  "items": [
+    {"time": "08:35", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "08:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -34,8 +43,11 @@
     ]
   },
   "assumptions": [
-    "Pre-populated ahead of the day (given in chat on 2026-09-14 as a 2-day hotel-gym plan) — no actual logging has happened yet. This planned_workout will show on the site once the day starts, and gets logged over normally as the real session/day happens.",
-    "Equipment: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, and the seated leg extension/curl machine — all as photographed. No barbell, so Hip Thrust load is necessarily much lighter than the home barbell version."
+    "Planned_workout for today (Lower Body + Back, hotel gym) was pre-populated on 2026-09-14 as part of a 2-day hotel-gym plan — see plan notes for equipment/reasoning.",
+    "Equipment: dumbbells up to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, and the seated leg extension/curl machine — all as photographed. No barbell, so Hip Thrust load is necessarily much lighter than the home barbell version.",
+    "Sleep logged: 00:30-08:00, 7.5h — a late (past-midnight) start but still within the 7-9h target band.",
+    "08:35 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "Still within macro tracking break #2 (2026-09-15 through 2026-09-17) — no detailed food items/macros today; supplements/meds/caffeine/sleep/lifestyle logged as usual."
   ],
-  "status_note": "Not yet started — this file currently holds only the adjusted hotel-gym plan for the day (Lower Body + Back), given ahead of time. Actual food/workout logging to follow when the day happens."
+  "status_note": "In progress. Slept 7.5h (00:30-08:00). AM allergy meds done. Macro tracking break in effect — food items not itemized today."
 }
