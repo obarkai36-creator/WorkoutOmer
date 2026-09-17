@@ -19,12 +19,13 @@
     {"time": "09:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
     {"time": "12:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "16:30", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
-    {"time": "20:40", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "20:40", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "21:10", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 20,
+    "zinc_mg": 22.8,
     "selenium_mcg": 100,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1000,
     "vitamin_d_iu": 2000,
@@ -41,6 +42,7 @@
     "16:30 double espresso, 2 shots (3rd+4th caffeine shots today, 4 total) — at/past the 16:00 sleep-friendly cutoff.",
     "18:00 masturbation, logged to ejaculation.json.",
     "20:40 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "21:10 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "Last day of macro tracking break #2 — no detailed food items/macros today; supplements/meds/caffeine/sleep/lifestyle logged as usual. Resumes full itemized food logging 2026-09-18."
   ],
   "status_note": "In progress. Slept 7.25h (00:30-07:45)."
