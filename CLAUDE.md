@@ -1,5 +1,33 @@
 # Session notes
 
+- Supplement-compliance "Multivitamin" row fixed + Essential-5 added as its
+  own row (2026-09-18, per explicit user direction: "for now, essential 5 +
+  mayven replace the expensive multivitamin"): the compliance check's
+  "Multivitamin" row (`EXPECTED_SUPPLEMENTS`/`expected_supplements_for` in
+  generate_dashboard.py) matched on the substring "multivit" — which only
+  ever matched Thorne Basic Nutrients 2/Day's literal product name. Every
+  Mayven-era day logged the item as the compound name "Multivitamin (Mayven
+  Full Volume Gummies)" (still contains "multivit", so it kept matching by
+  coincidence) — until 2026-09-17, logged as plain "Mayven Full Volume
+  Gummies" (no "multivit" substring), which is what surfaced the bug: the
+  row would have silently shown "not logged today" despite Mayven being
+  taken. Separately, Essential-5 (Advance Physician Formulas Vitamin
+  C+D3+E+Zinc+Selenium, active since 2026-08-26) had never had its own
+  compliance row at all. Fixed both: `expected_supplements_for(date)` now
+  switches the Multivitamin row's match to "mayven" from
+  `MAYVEN_SWAP_DATE = "2026-08-06"` onward (still matches "multivit" before
+  that, for Thorne-era days), and adds a separate "Essential-5
+  (C+D+E+Zinc+Selenium)" row (matching "advance physician formulas") from
+  `ESSENTIAL5_START_DATE = "2026-08-26"` onward. Backfilled retroactively via
+  `python3 export_site_data.py --all` so `docs/data/*.json`/`index.json` and
+  the site's Supplement compliance trend reflect both products correctly
+  across their whole active history — this also means historical compliance
+  % from 08-26 onward shifted slightly since Essential-5 now correctly counts
+  toward the denominator. Going forward, log Mayven under either name
+  ("Mayven Full Volume Gummies" or the older compound form) — both match —
+  and log Essential-5 under a name containing "Advance Physician Formulas"
+  (as already done) so both compliance rows keep matching correctly.
+
 - Energy score fixes + ACWR overhaul (2026-09-15, per explicit user request —
   ACWR change was confirmed via AskUserQuestion, user chose "both: persist
   history AND switch to EWMA"):

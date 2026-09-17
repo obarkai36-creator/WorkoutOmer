@@ -268,14 +268,25 @@ def build_quickview(chips):
 # logged (vs. a static label), so a swap like Thorne -> Mayven is visible on
 # the day it happens instead of being hidden behind a generic "Multivitamin"
 # row.
-EXPECTED_SUPPLEMENTS = [
+BASE_SUPPLEMENTS_PRE = [
     ("Allergy spray · AM", "rhinolast", "am", False),
     ("Allergy spray · PM", "rhinolast", "pm", False),
     ("Allergy pill (Bilaxten)", "bilaxten", None, False),
-    ("Multivitamin", "multivit", None, True),
+]
+BASE_SUPPLEMENTS_POST = [
     ("Omega-3", "omega-3", None, False),
     ("Creatine", "creatine", None, False),
 ]
+
+# Multivitamin swap 2026-08-06: Thorne Basic Nutrients 2/Day -> Mayven Full
+# Volume Gummies. The old row's "multivit" substring only ever matched
+# Thorne's literal product name — Mayven's logged item name ("Mayven Full
+# Volume Gummies") never contains "multivit", so this row silently
+# misreported "not logged today" on every real Mayven day since the swap
+# (discovered 2026-09-18). Match "mayven" from that date instead.
+MULTIVIT_ROW_THORNE = ("Multivitamin", "multivit", None, True)
+MULTIVIT_ROW_MAYVEN = ("Multivitamin", "mayven", None, True)
+MAYVEN_SWAP_DATE = "2026-08-06"
 
 # Standalone zinc (Thorne Picolinate) was discontinued 2026-08-26 once the
 # essential-5 capsule (20mg zinc/dose) made it redundant on top of the Mayven
@@ -285,11 +296,24 @@ EXPECTED_SUPPLEMENTS = [
 ZINC_ROW = ("Zinc (Thorne Picolinate)", "zinc picolinate", None, False)
 ZINC_DISCONTINUED_DATE = "2026-08-26"
 
+# Essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium),
+# active since 2026-08-26, was never added as its own compliance row even
+# though it's a standing daily supplement — per explicit user direction
+# (2026-09-18), it and Mayven together now replace what the single (pricier)
+# Thorne multivitamin used to cover, so both should show as expected daily
+# items from the date each started.
+ESSENTIAL5_ROW = ("Essential-5 (C+D+E+Zinc+Selenium)", "advance physician formulas", None, False)
+ESSENTIAL5_START_DATE = "2026-08-26"
+
 
 def expected_supplements_for(date=None):
+    multivit_row = MULTIVIT_ROW_THORNE if (date and date < MAYVEN_SWAP_DATE) else MULTIVIT_ROW_MAYVEN
+    rows = list(BASE_SUPPLEMENTS_PRE) + [multivit_row]
     if date and date < ZINC_DISCONTINUED_DATE:
-        return EXPECTED_SUPPLEMENTS[:4] + [ZINC_ROW] + EXPECTED_SUPPLEMENTS[4:]
-    return EXPECTED_SUPPLEMENTS
+        rows.append(ZINC_ROW)
+    if not date or date >= ESSENTIAL5_START_DATE:
+        rows.append(ESSENTIAL5_ROW)
+    return rows + list(BASE_SUPPLEMENTS_POST)
 
 
 def build_supplement_check(items, date=None, omega3_total=None, omega3_target=None):
