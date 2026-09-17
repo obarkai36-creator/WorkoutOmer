@@ -1,7 +1,7 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-16",
+    "report_date": "2026-09-17",
     "latest_session": "Hotel-gym session — Lower Body + Back (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set plan (which was hamstring/glute-biased with cable-station substitutes) in favor of whatever equipment was actually available. Leg Extensions 50kg×4×10 (hotel machine's marker reading — user flagged the number as implausible/felt much harder than 50kg, likely a differently-calibrated stack; not comparable to home's 111kg machine, logged for session-load tracking only, not a PR read); Lat Pulldown (Triangle) 75kg×3×8 (hotel gym, just under the 77kg best, not a PR); Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 for the 20kg×4×12 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells, one per hand, vs the previous single-DB-both-hands style, so not a strictly equivalent progression); Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg/18kg-each best, not a PR — hotel dumbbell selection). Also did Rope Cable Extension on an offset-weighted cable machine, described only as 'Heavy' with no numeric marker available — not logged as a quantified set to avoid corrupting the real calibrated home PR (75kg×4×8) with an unverifiable number. 2 new PRs (1 execution-caveated).",
     "sessions_logged": 64,
     "sessions_per_week": 4,
@@ -10,10 +10,9 @@
     "aerobic_sessions_28d": 7,
     "avg_pace": "9:28/km",
     "avg_hr": 142,
-    "acwr": 1.34,
+    "acwr": 1.08,
     "recommended_next": "Legs day",
     "alerts": [
-      "Load ratio 1.34 (sweet spot 0.8–1.3). Keep added volume under ~10% next week.",
       "Push volume is 1.46× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
     ]
   },
