@@ -16,7 +16,9 @@
     {"time": "08:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "09:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "09:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "12:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:30", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 20,
@@ -28,12 +30,14 @@
     "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
-  "caffeine_shots": 1,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 00:30-07:45, 7.25h — a late (past-midnight) start but still within the 7-9h target band.",
     "08:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:30 espresso, single shot (1st caffeine shot today).",
     "09:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose.",
+    "12:00 espresso, single shot (2nd caffeine shot today).",
+    "16:30 double espresso, 2 shots (3rd+4th caffeine shots today, 4 total) — at/past the 16:00 sleep-friendly cutoff.",
     "Last day of macro tracking break #2 — no detailed food items/macros today; supplements/meds/caffeine/sleep/lifestyle logged as usual. Resumes full itemized food logging 2026-09-18."
   ],
   "status_note": "In progress. Slept 7.25h (00:30-07:45)."
