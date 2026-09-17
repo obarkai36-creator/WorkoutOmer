@@ -12,7 +12,10 @@
     "quality": null,
     "notes": "7.25h, within the 7-9h target band despite a late (past-midnight) start."
   },
-  "items": [],
+  "items": [
+    {"time": "08:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "08:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+  ],
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -26,6 +29,7 @@
   "caffeine_shots": 0,
   "assumptions": [
     "Sleep logged: 00:30-07:45, 7.25h — a late (past-midnight) start but still within the 7-9h target band.",
+    "08:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "Last day of macro tracking break #2 — no detailed food items/macros today; supplements/meds/caffeine/sleep/lifestyle logged as usual. Resumes full itemized food logging 2026-09-18."
   ],
   "status_note": "In progress. Slept 7.25h (00:30-07:45)."
