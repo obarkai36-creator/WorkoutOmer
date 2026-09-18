@@ -291,6 +291,14 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 18 Sep — Incline Walk, gym treadmill, second segment (15:40)
+  {
+    datetime: "2026-09-18T15:40",
+    note: "Gym treadmill incline walk (Precor console), additional segment after the first — 0.85km in 13.5min, 115 kcal, ~100m elevation gain.",
+    exercises: [
+      { name: "Incline Walk", distanceKm: 0.85, durationMin: 13.5 },
+    ],
+  },
   // 18 Sep — Incline Walk, gym treadmill (14:55)
   {
     datetime: "2026-09-18T14:55",

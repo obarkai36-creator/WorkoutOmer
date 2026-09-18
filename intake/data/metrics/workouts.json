@@ -2,15 +2,15 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-09-18",
-    "latest_session": "Gym treadmill incline walk (Precor console) — 2.77km in 33:39 (12:08/km avg pace), 332 kcal, ~300m elevation gain over the segment (steep incline, accounting for the high calorie output relative to distance/time). No heart-rate monitor worn (console showed avg HR 0).",
-    "sessions_logged": 65,
-    "sessions_per_week": 4,
+    "latest_session": "Gym treadmill incline walk (Precor console), additional segment after the first — 0.85km in 13.5min, 115 kcal, ~100m elevation gain.",
+    "sessions_logged": 66,
+    "sessions_per_week": 4.3,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 25.7,
-    "aerobic_sessions_28d": 7,
-    "avg_pace": "9:33/km",
+    "aerobic_28d_km": 26.6,
+    "aerobic_sessions_28d": 8,
+    "avg_pace": "9:46/km",
     "avg_hr": 142,
-    "acwr": 0.97,
+    "acwr": 1.01,
     "recommended_next": "Back day",
     "alerts": [
       "Push volume is 1.46× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
@@ -415,6 +415,14 @@
       "duration_min": 33.65,
       "intensity": "moderate",
       "notes": "14:55, gym treadmill (Precor console) — 2.77km in 33:39 (12:08/km avg pace), 332 kcal, ~300m elevation gain over the segment (steep incline, accounting for the high calorie output relative to distance/time). No heart-rate monitor worn (console showed avg HR 0).",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-18",
+      "type": "Incline Walk",
+      "duration_min": 13.5,
+      "intensity": "moderate",
+      "notes": "15:40, gym treadmill (Precor console), additional segment after the first — 0.85km in 13.5min, 115 kcal, ~100m elevation gain.",
       "_source": "manual log"
     }
   ]

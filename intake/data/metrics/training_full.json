@@ -1,6 +1,33 @@
 {
-  "now": 1789734981813,
+  "now": 1789736265020,
   "workouts": [
+    {
+      "datetime": "2026-09-18T15:40",
+      "note": "Gym treadmill incline walk (Precor console), additional segment after the first — 0.85km in 13.5min, 115 kcal, ~100m elevation gain.",
+      "exercises": [
+        {
+          "name": "Incline Walk",
+          "distanceKm": 0.85,
+          "durationMin": 13.5,
+          "load": 121.5,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 121.5,
+            "quads": 24.3,
+            "calves": 24.3
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1789746000000,
+      "muscleLoad": {
+        "cardio": 121.5,
+        "quads": 24.3,
+        "calves": 24.3
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-09-18T14:55",
       "note": "Gym treadmill incline walk (Precor console) — 2.77km in 33:39 (12:08/km avg pace), 332 kcal, ~300m elevation gain over the segment (steep incline, accounting for the high calorie output relative to distance/time). No heart-rate monitor worn (console showed avg HR 0).",
@@ -6654,7 +6681,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 13,
+      "pct": 12,
       "readyInHours": 0,
       "ready": true
     },
@@ -6726,8 +6753,8 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 39,
-      "readyInHours": 7.7,
+      "pct": 54,
+      "readyInHours": 17.8,
       "ready": false
     }
   },
@@ -6794,7 +6821,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 13,
+          "pct": 12,
           "readyInHours": 0,
           "ready": true
         },
@@ -6872,15 +6899,15 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 39,
-      "readyInHours": 7.7,
+      "pct": 54,
+      "readyInHours": 17.8,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 39,
-          "readyInHours": 7.7,
+          "pct": 54,
+          "readyInHours": 17.8,
           "ready": false
         }
       ]
@@ -8150,21 +8177,21 @@
         "label": "This wk",
         "stress": 627,
         "sessions": 4,
-        "acwr": 0.97
+        "acwr": 1.01
       }
     ],
-    "acute": 72.44,
-    "chronic": 74.84,
-    "acwr": 0.97,
+    "acute": 76.43,
+    "chronic": 75.94,
+    "acwr": 1.01,
     "acwrZone": "ok",
-    "sessions28": 16
+    "sessions28": 17
   },
   "recommendation": {
     "section": "Back",
     "fatigue": 25,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-18T12:36:21.813Z",
+    "readyAt": "2026-09-18T12:57:45.020Z",
     "neverLogged": false,
     "daysSince": 7.8,
     "suggestedExercises": [
@@ -8277,7 +8304,7 @@
     "suggestedCount": 5,
     "totalAvailable": 6,
     "typicalSessionSize": 5,
-    "aerobicLast7": 2,
+    "aerobicLast7": 3,
     "aerobicTarget": 2,
     "daysSinceAerobic": -0.1
   },
@@ -8293,9 +8320,9 @@
     "Add pulling volume — push is 1.46× your pull. Aim toward ~1:1 to keep shoulders healthy."
   ],
   "timing": {
-    "avgGap": 3.2,
+    "avgGap": 3.1,
     "longestGap": 35.7,
-    "perWeek": 4,
+    "perWeek": 4.3,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -8304,11 +8331,11 @@
       9,
       7,
       3,
-      14,
+      15,
       14
     ],
     "daysSinceLast": -0.1,
-    "total": 65
+    "total": 66
   },
   "relstrength": {
     "bodyweightKg": 80.25,
@@ -8357,15 +8384,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 32,
-    "km7": 6.3,
-    "km28": 25.7,
-    "totalKm": 134.3,
+    "count": 33,
+    "km7": 7.1,
+    "km28": 26.6,
+    "totalKm": 135.1,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 0,
-    "avgPace": 9.554498713319997,
-    "paceTrend": 2.42,
+    "avgPace": 9.758623043250852,
+    "paceTrend": -1.81,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -8376,6 +8403,14 @@
     "maxHr": 190,
     "daysSinceLast": -0.1,
     "recent": [
+      {
+        "t": 1789746000000,
+        "name": "Incline Walk",
+        "distanceKm": 0.85,
+        "durationMin": 13.5,
+        "avgHr": null,
+        "pace": 15.882352941176471
+      },
       {
         "t": 1789743300000,
         "name": "Incline Walk",
@@ -8402,14 +8437,6 @@
       },
       {
         "t": 1788369300000,
-        "name": "Outdoor Walk",
-        "distanceKm": 2.2,
-        "durationMin": 30,
-        "avgHr": null,
-        "pace": 13.636363636363635
-      },
-      {
-        "t": 1788295800000,
         "name": "Outdoor Walk",
         "distanceKm": 2.2,
         "durationMin": 30,
