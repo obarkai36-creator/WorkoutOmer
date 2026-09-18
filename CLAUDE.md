@@ -1,5 +1,26 @@
 # Session notes
 
+- Standing rule (added 2026-09-18): whenever the user logs a workout
+  containing an exercise not yet in `data.js`'s `EXERCISE_LIBRARY`, add it to
+  the catalog (with a sensible muscle-credit assignment, researched/reasoned
+  through rather than guessed blindly) as part of that same logging step —
+  don't let a new exercise go in as a one-off without joining the rotation.
+  Note the mechanics: `EXERCISE_LIBRARY` (muscle credits, feeds push/pull and
+  section-fatigue math) can be added immediately regardless of history, but
+  `SNAPSHOT` (the latest-vs-best rows that power the Training tab's exercise
+  search and `recommendSession()`'s suggestions) requires real logged data —
+  an exercise only appears there, and only becomes suggestable/searchable,
+  the first time it's actually performed and its numbers reported. Don't
+  fabricate a placeholder SNAPSHOT best for an exercise that hasn't been
+  done — say so plainly (catalog-ready, appears in rotation once logged)
+  rather than inventing one. Applied immediately: added "Lat Pulldown (Wide
+  Grip)" — `{ back: 1.0, biceps: 0.2 }` — distinct from the existing "Lat
+  Pulldown (Triangle)" (`{ back: 1.0, biceps: 0.4 }`): the wider overhand grip
+  biases the movement toward the lats and reduces elbow-flexion leverage, so
+  it recruits less biceps than the close-neutral-grip Triangle attachment.
+  Not yet logged as of adding it — will get its own SNAPSHOT row/history the
+  first time it's actually performed.
+
 - Supplement-compliance "Multivitamin" row fixed + Essential-5 added as its
   own row (2026-09-18, per explicit user direction: "for now, essential 5 +
   mayven replace the expensive multivitamin"): the compliance check's

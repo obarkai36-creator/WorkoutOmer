@@ -130,6 +130,13 @@ const EXERCISE_LIBRARY = {
   "Diverging Seated Row":   { kind: "strength", muscles: { back: 1.0, biceps: 0.4 } },
   "Low Row":                { kind: "strength", muscles: { back: 1.0, biceps: 0.4 } },
   "Lat Pulldown (Triangle)":{ kind: "strength", muscles: { back: 1.0, biceps: 0.4 } },
+  // Standard wide-grip lat pulldown (straight bar, wide overhand grip) — NOT
+  // equivalent to the Triangle/close-neutral-grip attachment above: the wider
+  // grip biases the movement toward the lats and reduces elbow-flexion
+  // leverage, so it recruits less biceps than the close-grip Triangle variant.
+  // Added to the rotation 2026-09-18 (not yet logged — SNAPSHOT row/history
+  // will appear the first time it's actually performed).
+  "Lat Pulldown (Wide Grip)": { kind: "strength", muscles: { back: 1.0, biceps: 0.2 } },
   "Reverse Incline DB Row": { kind: "strength", muscles: { back: 1.0, shoulders: 0.3, biceps: 0.3 } },
   "Dumbbell Pullover":      { kind: "strength", muscles: { back: 1.0, chest: 0.4 } },
   "Dead Hang":              { kind: "strength", iso: true, bodyweight: true, muscles: { forearms: 1.0, back: 0.3 } },
