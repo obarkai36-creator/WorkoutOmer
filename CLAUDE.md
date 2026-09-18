@@ -1,5 +1,15 @@
 # Session notes
 
+- Cache-busting for `docs/style.css`/`docs/app.js` (added 2026-09-18, after
+  the mobile aerobic-panel fix didn't visibly take effect on a real phone —
+  most likely a stale cached copy, since neither asset had ever been
+  version-tagged): `docs/index.html` now loads them as
+  `style.css?v=20260918-2` / `app.js?v=20260918-2`. **Standing rule: bump
+  this `?v=` string (e.g. to that day's date + an incrementing suffix)
+  every time either file changes**, so a phone/browser that cached the old
+  copy is forced to fetch the new one on next load instead of silently
+  keeping stale CSS/JS after a deploy.
+
 - Aerobic/cardio panel mobile follow-up (2026-09-18): the `.dpanel span` fix
   above solved the overflow on desktop, but on a phone-width screen 4 chips
   at their 92px min-width (+gaps) still need ~400px — wider than the
