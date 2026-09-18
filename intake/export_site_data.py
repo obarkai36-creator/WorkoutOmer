@@ -13,6 +13,7 @@ Usage:
 Writes: ../docs/data/<date>.json (one per exported day), ../docs/data/index.json
 (lightweight rollup of every day, for the history browser + trend charts).
 """
+import bisect
 import json
 import os
 import sys
@@ -30,9 +31,12 @@ def macro_block(consumed, target):
     return {"consumed": consumed, "target": target, "pct": pct}
 
 
+UNLOCK_DAYS = 14  # same gate generate_dashboard.py uses before a real score exists
+
+
 def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_entries,
                 lifestyle_events, ejac_entries, retainers_entries, workouts_entries,
-                sperm_weeks, sperm_trend_weeks, sperm_weights, sperm_bands, energy_days, energy_bands,
+                sperm_weights, sperm_bands, energy_bands, days_logged_asof,
                 is_latest, training_full, training_load_entries):
     intake = all_days_by_date[target_date]
     t = profile["targets"]
@@ -81,25 +85,35 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
     # first match, so a second same-day session isn't silently dropped.
     day_workout_entries = [w for w in workouts_entries if w["date"] == target_date]
 
-    sperm_week = next((w for w in sperm_weeks if w["week_end"] == target_date), None)
+    # Sperm score / energy score are computed LIVE here (the same pure
+    # functions generate_dashboard.py's EOD run uses), not read from
+    # sperm.json/energy.json's persisted history — that history is only
+    # refreshed once/day at EOD, so reading it made the site's numbers lag
+    # behind everything logged since the last EOD, which defeats the point
+    # of re-exporting after every single entry. Computing live means today's
+    # score reflects what's logged *right now*, exactly like macros/micros
+    # already do (fixed 2026-09-18, after the "still shows locked" report).
+    all_days_list = list(all_days_by_date.values())
+    score_unlocked = days_logged_asof >= UNLOCK_DAYS
     sperm_score = None
-    if sperm_week:
-        overall = round(sum(sperm_week["factors"][k] * w for k, w in sperm_weights.items()))
-        sperm_score = {**sperm_week, "overall": overall, "band": gd.band_for(overall, sperm_bands)}
-
-    # ~90-day trailing trend — the biologically-relevant window (spermatogenesis
-    # takes ~64-90 days), kept alongside the weekly "current habits" score above
-    # rather than replacing it. Same weights/bands, just a longer window.
-    sperm_trend_week = next((w for w in sperm_trend_weeks if w["week_end"] == target_date), None)
     sperm_trend = None
-    if sperm_trend_week:
-        trend_overall = round(sum(sperm_trend_week["factors"][k] * w for k, w in sperm_weights.items()))
-        sperm_trend = {**sperm_trend_week, "overall": trend_overall, "band": gd.band_for(trend_overall, sperm_bands)}
+    if score_unlocked:
+        wk = gd.compute_current_week(profile, target_date, all_days_list, weight_entries,
+                                      sleep_entries, lifestyle_events, ejac_entries)
+        overall = round(sum(wk["factors"][k] * w for k, w in sperm_weights.items()))
+        sperm_score = {**wk, "overall": overall, "band": gd.band_for(overall, sperm_bands)}
 
-    energy_day = next((e for e in energy_days if e["date"] == target_date), None)
-    energy_score = None
-    if energy_day:
-        energy_score = {**energy_day, "band": gd.band_for(energy_day["overall"], energy_bands)}
+        # ~90-day trailing trend — the biologically-relevant window
+        # (spermatogenesis takes ~64-90 days), kept alongside the weekly
+        # "current habits" score above rather than replacing it.
+        trend = gd.compute_trailing_trend(profile, target_date, all_days_list, weight_entries,
+                                           sleep_entries, lifestyle_events, ejac_entries)
+        trend_overall = round(sum(trend["factors"][k] * w for k, w in sperm_weights.items()))
+        sperm_trend = {**trend, "overall": trend_overall, "band": gd.band_for(trend_overall, sperm_bands)}
+
+    energy = gd.compute_energy_score(profile, target_date, intake, sleep_entries,
+                                      lifestyle_events, workouts_entries)
+    energy_score = {**energy, "band": gd.band_for(energy["overall"], energy_bands)}
 
     # Per-day ACWR (EWMA acute:chronic load ratio) history — persisted by
     # generate_dashboard.py's persist_training_load() pinned to that date's
@@ -190,14 +204,14 @@ def main():
     except FileNotFoundError:
         workouts_entries = []
 
+    # Only the static model config (weights/bands) is needed here now — the
+    # actual scores are computed live per-date in export_day(), not read
+    # from these files' persisted history (see export_day's comment).
     sperm_store = gd.load("data/metrics/sperm.json")
-    sperm_weeks = sperm_store["weeks"]
-    sperm_trend_weeks = sperm_store.get("trend", [])
     sperm_weights = sperm_store["model"]["weights"]
     sperm_bands = sperm_store["model"]["bands"]
 
     energy_store = gd.load("data/metrics/energy.json")
-    energy_days = energy_store["days"]
     energy_bands = energy_store["model"]["bands"]
 
     try:
@@ -230,10 +244,14 @@ def main():
 
     index_rows = []
     for d in dates:
+        # How many real days had been logged as of this date — the same
+        # 14-day gate generate_dashboard.py uses before the sperm score is a
+        # real (rather than illustrative) estimate.
+        days_logged_asof = bisect.bisect_right(real_dates, d)
         bundle = export_day(
             d, all_days_by_date, profile, weight_entries, sleep_entries,
             lifestyle_events, ejac_entries, retainers_entries, workouts_entries,
-            sperm_weeks, sperm_trend_weeks, sperm_weights, sperm_bands, energy_days, energy_bands,
+            sperm_weights, sperm_bands, energy_bands, days_logged_asof,
             is_latest=(d == latest_date), training_full=training_full,
             training_load_entries=training_load_entries,
         )
