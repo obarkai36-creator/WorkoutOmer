@@ -1,5 +1,16 @@
 # Session notes
 
+- Correction (2026-09-18): the 2026-09-16 hotel-gym Lower Body + Back
+  session's lat pulldown was originally mislogged as "Lat Pulldown
+  (Triangle)" (75kg×3×8) — the hotel machine was actually a wide-grip
+  attachment, a distinct exercise from home's Triangle/close-neutral-grip
+  one (see the "Lat Pulldown (Wide Grip)" catalog addition above). Fixed:
+  reverted Triangle's SNAPSHOT row back to its true 77kg×3×8 best (untouched
+  by that session), and gave "Lat Pulldown (Wide Grip)" its first real
+  SNAPSHOT entry (75kg×3×8, both latest and best) instead of the "not yet
+  attempted" placeholder — confirmed both now show correctly and separately
+  in the Training tab's exercise search.
+
 - Three site fixes (2026-09-18, per direct user report):
   1. **Aerobic/cardio panel layout bug (fixed)**: the panel's `.chips.four`
      grid (4 chips) was wrapped in a plain `.dpanel` (half-width column in

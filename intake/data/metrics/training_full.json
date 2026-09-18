@@ -1,5 +1,5 @@
 {
-  "now": 1789749096445,
+  "now": 1789749345168,
   "workouts": [
     {
       "datetime": "2026-09-18T15:40",
@@ -57,7 +57,7 @@
     },
     {
       "datetime": "2026-09-16T10:45",
-      "note": "Hotel-gym session — Lower Body + Back (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set plan (which was hamstring/glute-biased with cable-station substitutes) in favor of whatever equipment was actually available. Leg Extensions 50kg×4×10 (hotel machine's marker reading — user flagged the number as implausible/felt much harder than 50kg, likely a differently-calibrated stack; not comparable to home's 111kg machine, logged for session-load tracking only, not a PR read); Lat Pulldown (Triangle) 75kg×3×8 (hotel gym, just under the 77kg best, not a PR); Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 for the 20kg×4×12 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells, one per hand, vs the previous single-DB-both-hands style, so not a strictly equivalent progression); Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg/18kg-each best, not a PR — hotel dumbbell selection). Also did Rope Cable Extension on an offset-weighted cable machine, described only as 'Heavy' with no numeric marker available — not logged as a quantified set to avoid corrupting the real calibrated home PR (75kg×4×8) with an unverifiable number. 2 new PRs (1 execution-caveated).",
+      "note": "Hotel-gym session — Lower Body + Back (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set plan (which was hamstring/glute-biased with cable-station substitutes) in favor of whatever equipment was actually available. Leg Extensions 50kg×4×10 (hotel machine's marker reading — user flagged the number as implausible/felt much harder than 50kg, likely a differently-calibrated stack; not comparable to home's 111kg machine, logged for session-load tracking only, not a PR read); Lat Pulldown (Wide Grip) 75kg×3×8 (correction 2026-09-18 — originally mislogged under Lat Pulldown (Triangle), but this hotel machine was actually a wide-grip attachment, not the close-neutral Triangle grip; first logged instance of this exercise, so both latest and best); Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 for the 20kg×4×12 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells, one per hand, vs the previous single-DB-both-hands style, so not a strictly equivalent progression); Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg/18kg-each best, not a PR — hotel dumbbell selection). Also did Rope Cable Extension on an offset-weighted cable machine, described only as 'Heavy' with no numeric marker available — not logged as a quantified set to avoid corrupting the real calibrated home PR (75kg×4×8) with an unverifiable number. 1 new PR + 1 first-time log (execution-caveated).",
       "exercises": [
         {
           "name": "Leg Extensions",
@@ -88,7 +88,7 @@
           "kind": "strength"
         },
         {
-          "name": "Lat Pulldown (Triangle)",
+          "name": "Lat Pulldown (Wide Grip)",
           "sets": [
             {
               "reps": 8,
@@ -108,7 +108,7 @@
           "topWeight": 75,
           "muscles": {
             "back": 1800,
-            "biceps": 720
+            "biceps": 360
           },
           "kind": "strength"
         },
@@ -227,7 +227,7 @@
       "muscleLoad": {
         "quads": 2000,
         "back": 5010.75,
-        "biceps": 720,
+        "biceps": 360,
         "chest": 1248,
         "forearms": 7222.5,
         "hamstrings": 1080,
@@ -6681,7 +6681,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 11,
+      "pct": 9,
       "readyInHours": 0,
       "ready": true
     },
@@ -6754,7 +6754,7 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 52,
-      "readyInHours": 16.4,
+      "readyInHours": 16.3,
       "ready": false
     }
   },
@@ -6806,7 +6806,7 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
@@ -6821,7 +6821,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 11,
+          "pct": 9,
           "readyInHours": 0,
           "ready": true
         },
@@ -6900,14 +6900,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 52,
-      "readyInHours": 16.4,
+      "readyInHours": 16.3,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 52,
-          "readyInHours": 16.4,
+          "readyInHours": 16.3,
           "ready": false
         }
       ]
@@ -7180,17 +7180,38 @@
           "back",
           "biceps"
         ],
-        "latestText": "75kg × 3×8 (hotel gym)",
+        "latestText": "77kg × 3×8",
         "bestText": "77kg × 3×8",
-        "latestVol": 1800,
+        "latestVol": 1848,
         "bestVol": 1848,
-        "pct": 97,
-        "latest1RM": 95,
+        "pct": 100,
+        "latest1RM": 97.5,
         "best1RM": 97.5,
         "metric": "1RM",
-        "isPR": false,
-        "belowPR": true,
-        "gap": 3,
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Lat Pulldown (Wide Grip)",
+        "section": "Back",
+        "iso": false,
+        "muscles": [
+          "back",
+          "biceps"
+        ],
+        "latestText": "75kg × 3×8 (hotel gym)",
+        "bestText": "75kg × 3×8",
+        "latestVol": 1800,
+        "bestVol": 1800,
+        "pct": 100,
+        "latest1RM": 95,
+        "best1RM": 95,
+        "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
         "inToday": false
       },
       {
@@ -8131,13 +8152,13 @@
   "balance": {
     "bySection": {
       "Chest": 18414.4,
-      "Arms": 37314.2,
+      "Arms": 37693.399999999994,
       "Shoulders": 16383.4,
-      "Back": 14650.3,
+      "Back": 16498.3,
       "Legs": 48524.04,
       "Core": 14351.4
     },
-    "pushPull": 1.46,
+    "pushPull": 1.33,
     "quadHam": 1.81,
     "hasCore": true
   },
@@ -8175,14 +8196,14 @@
       },
       {
         "label": "This wk",
-        "stress": 649,
+        "stress": 639,
         "sessions": 5,
-        "acwr": 1.01
+        "acwr": 1
       }
     ],
-    "acute": 76.43,
-    "chronic": 75.94,
-    "acwr": 1.01,
+    "acute": 75,
+    "chronic": 75.33,
+    "acwr": 1,
     "acwrZone": "ok",
     "sessions28": 17
   },
@@ -8191,7 +8212,7 @@
     "fatigue": 23,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-18T16:31:36.445Z",
+    "readyAt": "2026-09-18T16:35:45.168Z",
     "neverLogged": false,
     "daysSince": 7.9,
     "suggestedExercises": [
@@ -8225,9 +8246,9 @@
         "best1RM": 97.5,
         "iso": false,
         "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (77kg × 3×8)",
-          "note": "Last session came in under your best (77kg × 3×8) — rebuild to that before pushing further."
+          "status": "progress",
+          "text": "+1 rep (aim 3×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×9 from 77kg × 3×8."
         },
         "preferred": true
       },
@@ -8245,15 +8266,14 @@
       },
       {
         "name": "Lat Pulldown (Wide Grip)",
-        "best": "",
-        "best1RM": 0,
+        "best": "75kg × 3×8",
+        "best1RM": 95,
         "iso": false,
         "target": {
-          "status": "new",
-          "text": "Not yet attempted",
-          "note": "No logged sessions yet — pick a comfortable starting weight/reps and it'll get its own target from there."
-        },
-        "isNew": true
+          "status": "progress",
+          "text": "+1 rep (aim 3×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×9 from 75kg × 3×8."
+        }
       },
       {
         "name": "Dumbbell Pullover",
@@ -8279,7 +8299,7 @@
       }
     ],
     "guidance": [
-      "Push is ahead of pull 1.46× program-wide — good timing for a pull day; lead with the rows (Diverging Seated Row / Low Row / Lat Pulldown / Reverse Incline DB Row) over Pullover or Dead Hang for the strongest correction."
+      "Push is ahead of pull 1.33× program-wide — good timing for a pull day; lead with the rows (Diverging Seated Row / Low Row / Lat Pulldown / Reverse Incline DB Row) over Pullover or Dead Hang for the strongest correction."
     ],
     "ranked": [
       {
@@ -8302,7 +8322,7 @@
       },
       {
         "section": "Arms",
-        "fatigue": 9,
+        "fatigue": 8,
         "readyInHours": 0,
         "daysSince": 2.2
       },
@@ -8322,14 +8342,14 @@
   },
   "alerts": [
     {
-      "level": "med",
-      "title": "Push outpacing pull",
-      "detail": "Push volume is 1.46× pull across your program. A press-dominant ratio rounds the shoulders forward and stresses the rotator cuff — add rows / rear-delt work."
+      "level": "ok",
+      "title": "No major red flags",
+      "detail": "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     }
   ],
   "changes": [
-    "You're below your PR on 17 lifts — closest wins first: Leg Extensions (43% of best), Angled Leg Press (77% of best), Incline Pec Fly (81% of best). Add a rep or a set before adding weight.",
-    "Add pulling volume — push is 1.46× your pull. Aim toward ~1:1 to keep shoulders healthy."
+    "You're below your PR on 16 lifts — closest wins first: Leg Extensions (43% of best), Angled Leg Press (77% of best), Incline Pec Fly (81% of best). Add a rep or a set before adding weight.",
+    "Add pulling volume — push is 1.33× your pull. Aim toward ~1:1 to keep shoulders healthy."
   ],
   "timing": {
     "avgGap": 3.1,
