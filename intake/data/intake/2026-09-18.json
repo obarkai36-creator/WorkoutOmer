@@ -24,7 +24,8 @@
     {"time": "13:00", "name": "Balsamic vinegar", "category": "food", "qty": "10 g", "kcal": 9, "protein_g": 0.05, "carbs_g": 1.7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "generic balsamic vinegar estimate (~88kcal/100g) — not label-verified."},
     {"time": "13:00", "name": "Baby mozzarella", "category": "food", "qty": "10 g", "kcal": 28, "protein_g": 2.2, "carbs_g": 0.2, "fat_g": 2.2, "fiber_g": 0, "time_approx": true, "note": "generic fresh whole-milk mozzarella estimate (~280kcal/100g) — first time logged, not label-verified."},
     {"time": "12:30", "name": "Biscuit cake (Biscoti)", "category": "food", "qty": "~10 g", "kcal": 46, "protein_g": 0.5, "carbs_g": 5, "fat_g": 2.8, "fiber_g": 0.2, "note": "same generic Biscoti reference as the 2026-09-11 entry (~460kcal/100g, ~5p/50c/28f/2fiber per 100g) — not label-verified."},
-    {"time": "13:40", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:40", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:00", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0}
   ],
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -36,7 +37,7 @@
     "vitamin_e_mg": 0,
     "lycopene_mg": 8.8
   },
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "assumptions": [
     "Sleep logged: 23:45-07:25, 7.67h — squarely in the 7-9h target band.",
     "07:45 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
@@ -47,7 +48,8 @@
     "09:30 Catalina Crunch Protein Cereal (Chocolate Peanut Butter), ~20g handful — verified label rate, gram amount estimated (no scale).",
     "13:00 lunch (time approximate): 2 Agami Pita Pro (verified reference), 40g Simfonia cheese spread (verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (verified reference, 100g total), 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE), 10g balsamic vinegar (generic estimate, first logged), 10g baby mozzarella (generic estimate, first logged).",
     "12:30 biscuit cake (Biscoti), ~10g — same generic reference as the 2026-09-11 entry.",
-    "13:40 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose."
+    "13:40 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "14:00 double espresso, 2 shots (3rd+4th caffeine shots today, 4 total)."
   ],
   "status_note": "In progress. Slept 7.67h (23:45-07:25)."
 }
