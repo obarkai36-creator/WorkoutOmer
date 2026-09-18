@@ -1,5 +1,5 @@
 {
-  "now": 1789722596257,
+  "now": 1789728065290,
   "workouts": [
     {
       "datetime": "2026-09-16T10:45",
@@ -6619,7 +6619,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 19,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -6627,7 +6627,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -6737,14 +6737,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 19,
+      "pct": 18,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 19,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         }
@@ -6767,7 +6767,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -8091,8 +8091,8 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 613,
-        "sessions": 5,
+        "stress": 448,
+        "sessions": 4,
         "acwr": 1.21
       },
       {
@@ -8137,9 +8137,9 @@
     "fatigue": 26,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-18T09:09:56.257Z",
+    "readyAt": "2026-09-18T10:41:05.290Z",
     "neverLogged": false,
-    "daysSince": 7.6,
+    "daysSince": 7.7,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -8220,17 +8220,17 @@
         "section": "Back",
         "fatigue": 26,
         "readyInHours": 0,
-        "daysSince": 7.6
+        "daysSince": 7.7
       },
       {
         "section": "Legs",
         "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 6
+        "daysSince": 6.1
       },
       {
         "section": "Shoulders",
-        "fatigue": 19,
+        "fatigue": 18,
         "readyInHours": 0,
         "daysSince": 2.8
       },
@@ -8238,13 +8238,13 @@
         "section": "Arms",
         "fatigue": 11,
         "readyInHours": 0,
-        "daysSince": 1.9
+        "daysSince": 2
       },
       {
         "section": "Chest",
         "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 40.7
+        "daysSince": 40.8
       }
     ],
     "suggestedCount": 5,
@@ -8281,7 +8281,7 @@
       13,
       14
     ],
-    "daysSinceLast": 1.9,
+    "daysSinceLast": 2,
     "total": 64
   },
   "relstrength": {
