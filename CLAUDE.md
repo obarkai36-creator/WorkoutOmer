@@ -1,5 +1,14 @@
 # Session notes
 
+- Aerobic/cardio panel mobile follow-up (2026-09-18): the `.dpanel span` fix
+  above solved the overflow on desktop, but on a phone-width screen 4 chips
+  at their 92px min-width (+gaps) still need ~400px — wider than the
+  content area even at full modal width — so the last chip(s) still
+  overflowed on mobile specifically (caught via a real phone screenshot).
+  Added a `@media (max-width: 520px)` override reflowing `.chips.four` to
+  2x2, and made the grid itself use `minmax(0,1fr)` columns as a general
+  safety net. Verified on a 390px-wide viewport.
+
 - Correction (2026-09-18): the 2026-09-16 hotel-gym Lower Body + Back
   session's lat pulldown was originally mislogged as "Lat Pulldown
   (Triangle)" (75kg×3×8) — the hotel machine was actually a wide-grip

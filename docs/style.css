@@ -197,7 +197,7 @@ header.top .subtitle { color: var(--text-3); font-size: 12.5px; margin-top: 3px;
 .bignum small { font-size: 13px; color: var(--text-3); font-weight: 500; margin-left: 3px; letter-spacing: 0; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 10px; }
-.chips.four { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+.chips.four { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; }
 .chip { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 9px 14px; min-width: 92px; }
 .chip .chip-v { font-size: 14.5px; font-weight: 700; color: var(--text-1); letter-spacing: -.01em; }
 .chip .chip-k { font-size: 9.5px; color: var(--text-3); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; margin-top: 3px; }
@@ -264,4 +264,8 @@ table.datatable tr:last-child td { border-bottom: none; }
   .grid { grid-template-columns: 1fr; }
   .hero { flex-direction: column; align-items: flex-start; text-align: left; }
   header.top { flex-direction: column; align-items: flex-start; }
+  /* 4 chips at their 92px min-width (+ gaps) need ~400px, wider than a
+     phone's content area even at full modal width — reflow to 2x2 instead
+     of overflowing the panel on mobile. */
+  .chips.four { grid-template-columns: repeat(2, 1fr); }
 }
