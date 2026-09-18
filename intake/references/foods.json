@@ -220,6 +220,30 @@
       "verified": false,
       "recipe": "950g raw chicken breast (stove-grilled) + 750g spelt pasta (dry weight incl. box, to be corrected) + 200g tomato paste + salt/sugar (unspecified qty, excluded) + 2 tbsp olive oil + 1 egg + 1 tbsp cornflour. 30 cherry tomatoes used in cooking but removed before the final dish weigh-in (excluded from macros). Final cooked dish weighed 2000g (3.8kg container+dish minus 1.8kg empty container) — close to the 1986g raw-ingredient sum, so cooking losses/gains roughly cancel.",
       "source": "Calculated from user-provided ingredient list and container/dish weights 2026-07-24, for a week-ahead meal-prep batch. Pasta weight includes packaging per the user's own flag ('to be changed') — refine once the net dry-pasta weight is known, which would lower kcal/carb/fiber per 100g slightly."
+    },
+    {
+      "id": "balsamic_vinegar_generic",
+      "name": "Balsamic vinegar (generic)",
+      "serving": "100 g",
+      "kcal": 88,
+      "protein_g": 0.5,
+      "carbs_g": 17,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic USDA-type estimate for balsamic vinegar, first logged 2026-09-18 (10g with lunch) — not label-verified against a specific product. Refine if a physical bottle label is checked."
+    },
+    {
+      "id": "baby_mozzarella_generic",
+      "name": "Baby mozzarella (fresh, whole milk, generic)",
+      "serving": "100 g",
+      "kcal": 280,
+      "protein_g": 22,
+      "carbs_g": 2,
+      "fat_g": 22,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic estimate for fresh whole-milk mozzarella (ciliegine/bocconcini style), first logged 2026-09-18 (10g with lunch) — not label-verified against a specific product. Refine if a physical pack label is checked."
     }
   ]
 }
