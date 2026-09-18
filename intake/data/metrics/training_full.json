@@ -1,5 +1,5 @@
 {
-  "now": 1789736265020,
+  "now": 1789738158121,
   "workouts": [
     {
       "datetime": "2026-09-18T15:40",
@@ -6665,7 +6665,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 25,
+      "pct": 24,
       "readyInHours": 0,
       "ready": true
     },
@@ -6697,7 +6697,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -6776,14 +6776,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 25,
+      "pct": 24,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 25,
+          "pct": 24,
           "readyInHours": 0,
           "ready": true
         }
@@ -6806,14 +6806,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 10,
+      "pct": 9,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -8188,10 +8188,10 @@
   },
   "recommendation": {
     "section": "Back",
-    "fatigue": 25,
+    "fatigue": 24,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-18T12:57:45.020Z",
+    "readyAt": "2026-09-18T13:29:18.121Z",
     "neverLogged": false,
     "daysSince": 7.8,
     "suggestedExercises": [
@@ -8272,7 +8272,7 @@
     "ranked": [
       {
         "section": "Back",
-        "fatigue": 25,
+        "fatigue": 24,
         "readyInHours": 0,
         "daysSince": 7.8
       },
@@ -8286,11 +8286,11 @@
         "section": "Shoulders",
         "fatigue": 17,
         "readyInHours": 0,
-        "daysSince": 2.9
+        "daysSince": 3
       },
       {
         "section": "Arms",
-        "fatigue": 10,
+        "fatigue": 9,
         "readyInHours": 0,
         "daysSince": 2.1
       },
