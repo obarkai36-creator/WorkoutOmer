@@ -476,7 +476,7 @@ function renderTrainingDetail(day, isLatest) {
   }
   const rec = day.training;
   const exRows = (rec.suggestedExercises || []).map((e) => `
-    <tr><td>${e.name}${e.preferred ? ` <span class="star">★ preferred</span>` : ""}</td><td>${e.best || ""}</td>
+    <tr><td>${e.name}${e.preferred ? ` <span class="star">★ preferred</span>` : ""}${e.isNew ? ` <span class="tag">new</span>` : ""}</td><td>${e.best || "—"}</td>
     <td class="num">${e.best1RM ? fmt(e.best1RM,1) : "—"}</td><td>${e.target ? e.target.text : ""}</td></tr>`).join("");
   const rankedRows = (rec.ranked || []).map((s) => `
     <tr><td>${s.section}</td><td class="num">${fmt(s.fatigue,0)}%</td><td class="num">${s.readyInHours === 0 ? "ready now" : fmt(s.readyInHours,1) + "h"}</td><td class="num">${s.daysSince === null ? "—" : fmt(s.daysSince,1) + "d"}</td></tr>`).join("");
@@ -518,7 +518,7 @@ function renderTrainingDetail(day, isLatest) {
       ${rel.items ? `<div class="small muted" style="margin:14px 0 8px">1RM ÷ bodyweight (${rel.bodyweightKg}kg)</div>
       <ul class="evul">${rel.items.slice(0,8).map((i) => `<li><b>${i.name}</b> · ${i.oneRM}kg 1RM <span style="float:right;color:var(--text-1)">${i.ratio}×BW</span></li>`).join("")}</ul>` : ""}
     </div>
-    <div class="dpanel"><h4>Aerobic / cardio</h4>
+    <div class="dpanel span"><h4>Aerobic / cardio</h4>
       <div class="chips four">
         <div class="chip"><div class="chip-v">${aer.km28 ?? "—"} km</div><div class="chip-k">28-day</div></div>
         <div class="chip"><div class="chip-v">${aer.avgHr ?? "—"}</div><div class="chip-k">Avg HR</div></div>
@@ -604,19 +604,21 @@ function renderSpermDetail(day) {
 
 function renderSleepDetail(day) {
   if (!day.sleep) return `<div class="empty-state">No sleep logged this day.</div>`;
-  const last7 = trailingRows(state.current, 7).filter((r) => r.sleep_hours !== null && r.sleep_hours !== undefined);
-  const last14 = trailingRows(state.current, 14).filter((r) => r.sleep_hours !== null && r.sleep_hours !== undefined);
-  const avg7 = last7.length ? fmt(last7.reduce((s, r) => s + r.sleep_hours, 0) / last7.length, 1) : null;
-  const avg14 = last14.length ? fmt(last14.reduce((s, r) => s + r.sleep_hours, 0) / last14.length, 1) : null;
-  const short7 = last7.filter((r) => r.sleep_hours < 6).length;
-  const long7 = last7.filter((r) => r.sleep_hours > 9.5).length;
+  const windows = [7, 30, 90].map((n) => {
+    const rows = trailingRows(state.current, n).filter((r) => r.sleep_hours !== null && r.sleep_hours !== undefined);
+    return { n, rows, avg: rows.length ? rows.reduce((s, r) => s + r.sleep_hours, 0) / rows.length : null };
+  });
+  const [w7] = windows;
+  const short7 = w7.rows.filter((r) => r.sleep_hours < 6).length;
+  const long7 = w7.rows.filter((r) => r.sleep_hours > 9.5).length;
+  const avgLine = windows.filter((w) => w.avg !== null).map((w) => `${fmt(w.avg,1)}h ${w.n}-day avg`).join(" · ");
   return `
   <div class="dgrid">
     <div class="dpanel span">
       <div class="bignum" style="color:${HUES.sleep.b}">${fmt(day.sleep.duration_hours,2)}<small> h</small></div>
-      <div class="goalline">${day.sleep.sleep_start} – ${day.sleep.sleep_end} · 7-9h target band${avg7 !== null ? ` · ${avg7}h 7-day avg` : ""}${avg14 !== null ? ` · ${avg14}h 14-day avg` : ""}</div>
+      <div class="goalline">${day.sleep.sleep_start} – ${day.sleep.sleep_end} · 7-9h target band${avgLine ? ` · ${avgLine}` : ""}</div>
       <div class="small muted">${day.sleep.notes || ""}</div>
-      <div class="small muted" style="margin-top:8px">Last 7 nights: <b style="color:${short7 ? COLORS.bad : "var(--text-1)"}">${short7} short</b> (&lt;6h) · <b style="color:${long7 ? COLORS.warn : "var(--text-1)"}">${long7} long</b> (&gt;9.5h) of ${last7.length} logged</div>
+      <div class="small muted" style="margin-top:8px">Last 7 nights: <b style="color:${short7 ? COLORS.bad : "var(--text-1)"}">${short7} short</b> (&lt;6h) · <b style="color:${long7 ? COLORS.warn : "var(--text-1)"}">${long7} long</b> (&gt;9.5h) of ${w7.rows.length} logged</div>
     </div>
     <div class="dpanel span"><h4>Sleep trend <span class="tag">(last 30 nights)</span></h4><div class="chart-box"><canvas id="chSleepPillar"></canvas></div></div>
   </div>`;

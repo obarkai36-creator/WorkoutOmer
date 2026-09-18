@@ -1,5 +1,48 @@
 # Session notes
 
+- Three site fixes (2026-09-18, per direct user report):
+  1. **Aerobic/cardio panel layout bug (fixed)**: the panel's `.chips.four`
+     grid (4 chips) was wrapped in a plain `.dpanel` (half-width column in
+     the `.dgrid` bento layout), but 4 chips at their 92px min-width each
+     need ~400px — more than the half-width column had, so the grid
+     overflowed and the last chip(s) visually floated outside the panel
+     border. Changed the wrapper to `.dpanel span` (full row width),
+     matching every other multi-chip panel on the page.
+  2. **`bestPace`/`avgPace` corrupted by a duration-less session (fixed)**:
+     `engine.js`'s `aerobicSummary()` computed `pace: dist > 0 ? dur / dist :
+     null` — a session logged with a distance but no duration (the 2026-08-31
+     "Stationary Bike, 4.83km" entry in `data.js`, no `durationMin` given)
+     silently got `dur = 0`, so `pace = 0/dist = 0`, an impossible "0 min/km"
+     that then won as `bestPace` by default and dragged `avgPace` down every
+     time it ran. Now requires both `dist > 0 && dur > 0` before computing a
+     pace at all — a distance-only or duration-only session correctly
+     contributes no pace data instead of a fabricated one.
+  3. **New exercises not showing in the recommended session until performed
+     (changed, per explicit push-back)**: `recommendSession()`'s
+     `suggestedExercises` for the picked section came only from `SNAPSHOT`
+     (real logged latest/best data) — an exercise added to `EXERCISE_LIBRARY`
+     but never yet performed (e.g. "Lat Pulldown (Wide Grip)", added
+     2026-09-18) was invisible until someone happened to log a session with
+     it, contrary to the standing rule of adding new exercises to the
+     rotation immediately. Now also scans `EXERCISE_LIBRARY` for entries in
+     the picked section (section inferred from whichever muscle the exercise
+     credits most, via `data.MUSCLES[muscle].section`, since
+     `EXERCISE_LIBRARY` itself has no section field) that aren't already in
+     `SNAPSHOT`, and adds them as an explicit "Not yet attempted" placeholder
+     row (`isNew: true`, `best`/`best1RM` blank) — `docs/app.js` tags these
+     with a "new" badge in the Recommended Next Session table. It'll get a
+     real `SNAPSHOT` row (and drop the placeholder) the first time it's
+     actually logged, same as before.
+  All three verified live in a browser after `export_site_data.py`.
+
+- Sleep averages now shown per 7/30/90 days (2026-09-18, per explicit
+  request): `docs/app.js`'s Sleep tab previously showed 7-day and 14-day
+  rolling averages — switched to 7/30/90-day, computed client-side from
+  `index.json`'s per-day `sleep_hours` via the existing `trailingRows()`
+  helper (which already gracefully handles a window longer than the day
+  count on hand, e.g. before 90 days of history exist). No backend change
+  needed — purely a `docs/app.js` display change.
+
 - Sperm/energy score fixed to compute live instead of a once-daily cache
   (2026-09-18, per explicit report: "sperm score presents locked for no
   reason - if we decided to push after every entry theres no reason that it

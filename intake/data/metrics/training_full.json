@@ -1,5 +1,5 @@
 {
-  "now": 1789748524064,
+  "now": 1789749096445,
   "workouts": [
     {
       "datetime": "2026-09-18T15:40",
@@ -6754,7 +6754,7 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 52,
-      "readyInHours": 16.5,
+      "readyInHours": 16.4,
       "ready": false
     }
   },
@@ -6900,14 +6900,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 52,
-      "readyInHours": 16.5,
+      "readyInHours": 16.4,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 52,
-          "readyInHours": 16.5,
+          "readyInHours": 16.4,
           "ready": false
         }
       ]
@@ -8191,7 +8191,7 @@
     "fatigue": 23,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-18T16:22:04.064Z",
+    "readyAt": "2026-09-18T16:31:36.445Z",
     "neverLogged": false,
     "daysSince": 7.9,
     "suggestedExercises": [
@@ -8242,6 +8242,18 @@
           "note": "Last session came in under your best (26kg each × 4×12) — rebuild to that before pushing further."
         },
         "preferred": true
+      },
+      {
+        "name": "Lat Pulldown (Wide Grip)",
+        "best": "",
+        "best1RM": 0,
+        "iso": false,
+        "target": {
+          "status": "new",
+          "text": "Not yet attempted",
+          "note": "No logged sessions yet — pick a comfortable starting weight/reps and it'll get its own target from there."
+        },
+        "isNew": true
       },
       {
         "name": "Dumbbell Pullover",
@@ -8302,7 +8314,7 @@
       }
     ],
     "suggestedCount": 5,
-    "totalAvailable": 6,
+    "totalAvailable": 7,
     "typicalSessionSize": 5,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
@@ -8390,8 +8402,8 @@
     "totalKm": 135.1,
     "longest": 13.35,
     "avgHr": 142,
-    "bestPace": 0,
-    "avgPace": 9.758623043250852,
+    "bestPace": 3.6764705882352944,
+    "avgPace": 10.08391047802588,
     "paceTrend": -1.81,
     "zones": {
       "Z1": 0,

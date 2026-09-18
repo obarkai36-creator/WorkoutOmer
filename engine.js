@@ -530,6 +530,27 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
       return { name: e.name, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso, target, lib };
     });
 
+  // An exercise can be added to EXERCISE_LIBRARY (catalog-ready, muscle
+  // credits assigned) before it's ever actually been performed — it has no
+  // SNAPSHOT row yet (no real latest/best data exists), so the filter above
+  // alone would silently omit it from the rotation until someone happens to
+  // log a session with it. Surface it here too, as an explicit "not yet
+  // attempted" placeholder, so a newly-catalogued exercise is visible and
+  // pickable the same week it's added, not just after the fact. Section is
+  // inferred from whichever muscle it credits most, since EXERCISE_LIBRARY
+  // entries (unlike SNAPSHOT rows) don't carry an explicit section field.
+  const snapshotNames = new Set(data.SNAPSHOT.map((e) => e.name));
+  for (const [name, lib] of Object.entries(data.EXERCISE_LIBRARY)) {
+    if (lib.kind !== "strength" || snapshotNames.has(name) || SUGGESTION_EXCLUDE.has(name)) continue;
+    const topMuscle = Object.entries(lib.muscles).sort((a, b) => b[1] - a[1])[0];
+    if (!topMuscle || muscles[topMuscle[0]].section !== pick.section) continue;
+    suggestedExercises.push({
+      name, best: "", best1RM: 0, iso: !!lib.iso, lib,
+      target: { status: "new", text: "Not yet attempted", note: "No logged sessions yet — pick a comfortable starting weight/reps and it'll get its own target from there." },
+      isNew: true,
+    });
+  }
+
   const guidance = [];
   // "preferred" flags the exercises that actively correct whatever imbalance
   // is driving the guidance text — the sort order alone isn't visible once
@@ -793,7 +814,11 @@ function aerobicSummary(workouts, athlete, now) {
     for (const ex of w.exercises) {
       if (ex.kind !== "aerobic") continue;
       const dist = ex.distanceKm || 0, dur = ex.durationMin || 0;
-      sessions.push({ t: w.t, name: ex.name, distanceKm: dist, durationMin: dur, avgHr: ex.avgHr || null, pace: dist > 0 ? dur / dist : null });
+      // A session logged with only a distance (no duration) — or vice versa
+      // — has no real pace; dividing by/into a missing value used to yield
+      // 0 min/km, which then won by default as "bestPace" and dragged the
+      // average down. Only compute pace when both are actually known.
+      sessions.push({ t: w.t, name: ex.name, distanceKm: dist, durationMin: dur, avgHr: ex.avgHr || null, pace: dist > 0 && dur > 0 ? dur / dist : null });
     }
   sessions.sort((a, b) => b.t - a.t);
   if (!sessions.length) return { any: false };
