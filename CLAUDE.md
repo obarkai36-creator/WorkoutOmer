@@ -1,5 +1,30 @@
 # Session notes
 
+- Sperm/energy score fixed to compute live instead of a once-daily cache
+  (2026-09-18, per explicit report: "sperm score presents locked for no
+  reason - if we decided to push after every entry theres no reason that it
+  wouldn't show exact info at all times"): `export_site_data.py` was reading
+  `sperm_score`/`sperm_trend`/`energy_score` from `sperm.json`/`energy.json`'s
+  persisted history, which is only refreshed once/day by
+  `generate_dashboard.py <date> --unified` at EOD. Since `export_site_data.py`
+  itself runs after every single logged item (not just at EOD), the site
+  could sit hours behind — today specifically always showed the sperm panel
+  as "locked" until EOD ran, even on day 83, long past the real 14-day
+  unlock threshold; the lock message ("unlocks after 14 logged days") was
+  actively misleading since the real cause was "not computed yet today," not
+  insufficient history. `export_site_data.py` now calls
+  `generate_dashboard.py`'s own compute functions directly
+  (`compute_current_week`, `compute_trailing_trend`, `compute_energy_score`)
+  for whichever date it's building, live, every time it runs — same pure
+  functions the EOD path uses, verified to produce identical values to the
+  persisted history for already-closed days. Side effect (a genuine
+  improvement, not a regression): historical days from before the
+  energy-score feature existed (e.g. day 1) now get a real energy score too,
+  since it's no longer dependent on that day ever having been backfilled
+  into `energy.json`. `generate_dashboard.py`'s own EOD persistence is
+  unchanged — still the durable growing history other things (monthly
+  recap, etc.) rely on.
+
 - Standing rule (added 2026-09-18): whenever the user logs a workout
   containing an exercise not yet in `data.js`'s `EXERCISE_LIBRARY`, add it to
   the catalog (with a sensible muscle-credit assignment, researched/reasoned
