@@ -1,6 +1,33 @@
 {
-  "now": 1789729678723,
+  "now": 1789734981813,
   "workouts": [
+    {
+      "datetime": "2026-09-18T14:55",
+      "note": "Gym treadmill incline walk (Precor console) — 2.77km in 33:39 (12:08/km avg pace), 332 kcal, ~300m elevation gain over the segment (steep incline, accounting for the high calorie output relative to distance/time). No heart-rate monitor worn (console showed avg HR 0).",
+      "exercises": [
+        {
+          "name": "Incline Walk",
+          "distanceKm": 2.77,
+          "durationMin": 33.65,
+          "load": 302.84999999999997,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 302.84999999999997,
+            "quads": 60.56999999999999,
+            "calves": 60.56999999999999
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1789743300000,
+      "muscleLoad": {
+        "cardio": 302.84999999999997,
+        "quads": 60.56999999999999,
+        "calves": 60.56999999999999
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-09-16T10:45",
       "note": "Hotel-gym session — Lower Body + Back (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set plan (which was hamstring/glute-biased with cable-station substitutes) in favor of whatever equipment was actually available. Leg Extensions 50kg×4×10 (hotel machine's marker reading — user flagged the number as implausible/felt much harder than 50kg, likely a differently-calibrated stack; not comparable to home's 111kg machine, logged for session-load tracking only, not a PR read); Lat Pulldown (Triangle) 75kg×3×8 (hotel gym, just under the 77kg best, not a PR); Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 for the 20kg×4×12 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells, one per hand, vs the previous single-DB-both-hands style, so not a strictly equivalent progression); Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg/18kg-each best, not a PR — hotel dumbbell selection). Also did Rope Cable Extension on an offset-weighted cable machine, described only as 'Heavy' with no numeric marker available — not logged as a quantified set to avoid corrupting the real calibrated home PR (75kg×4×8) with an unverifiable number. 2 new PRs (1 execution-caveated).",
@@ -6619,7 +6646,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "ready": true
     },
@@ -6635,7 +6662,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "ready": true
     },
@@ -6683,7 +6710,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 1,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -6699,9 +6726,9 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 39,
+      "readyInHours": 7.7,
+      "ready": false
     }
   },
   "sections": {
@@ -6737,14 +6764,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 18,
+          "pct": 17,
           "readyInHours": 0,
           "ready": true
         }
@@ -6775,7 +6802,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 4,
+          "pct": 3,
           "readyInHours": 0,
           "ready": true
         }
@@ -6814,7 +6841,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 1,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         },
@@ -6845,16 +6872,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 39,
+      "readyInHours": 7.7,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 39,
+          "readyInHours": 7.7,
+          "ready": false
         }
       ]
     }
@@ -6989,7 +7016,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 9,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Narrow Push-Ups",
@@ -7137,7 +7164,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 3,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Reverse Incline DB Row",
@@ -7180,7 +7207,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dead Hang",
@@ -7201,7 +7228,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Shoulders": [
@@ -7800,7 +7827,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 89,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Single-Leg Extensions",
@@ -7924,7 +7951,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell Sumo Squat",
@@ -8123,23 +8150,23 @@
         "label": "This wk",
         "stress": 627,
         "sessions": 4,
-        "acwr": 0.87
+        "acwr": 0.97
       }
     ],
-    "acute": 62.48,
-    "chronic": 72.09,
-    "acwr": 0.87,
+    "acute": 72.44,
+    "chronic": 74.84,
+    "acwr": 0.97,
     "acwrZone": "ok",
-    "sessions28": 15
+    "sessions28": 16
   },
   "recommendation": {
     "section": "Back",
     "fatigue": 25,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-18T11:07:58.723Z",
+    "readyAt": "2026-09-18T12:36:21.813Z",
     "neverLogged": false,
-    "daysSince": 7.7,
+    "daysSince": 7.8,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -8220,17 +8247,17 @@
         "section": "Back",
         "fatigue": 25,
         "readyInHours": 0,
-        "daysSince": 7.7
+        "daysSince": 7.8
       },
       {
         "section": "Legs",
         "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 6.1
+        "daysSince": 6.2
       },
       {
         "section": "Shoulders",
-        "fatigue": 18,
+        "fatigue": 17,
         "readyInHours": 0,
         "daysSince": 2.9
       },
@@ -8238,21 +8265,21 @@
         "section": "Arms",
         "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 2
+        "daysSince": 2.1
       },
       {
         "section": "Chest",
         "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 40.8
+        "daysSince": 40.9
       }
     ],
     "suggestedCount": 5,
     "totalAvailable": 6,
     "typicalSessionSize": 5,
-    "aerobicLast7": 1,
+    "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 6.8
+    "daysSinceAerobic": -0.1
   },
   "alerts": [
     {
@@ -8263,13 +8290,12 @@
   ],
   "changes": [
     "You're below your PR on 17 lifts — closest wins first: Leg Extensions (43% of best), Angled Leg Press (77% of best), Incline Pec Fly (81% of best). Add a rep or a set before adding weight.",
-    "Add pulling volume — push is 1.46× your pull. Aim toward ~1:1 to keep shoulders healthy.",
-    "Only 1/2 aerobic sessions this week — add an easy run or row."
+    "Add pulling volume — push is 1.46× your pull. Aim toward ~1:1 to keep shoulders healthy."
   ],
   "timing": {
     "avgGap": 3.2,
     "longestGap": 35.7,
-    "perWeek": 3.8,
+    "perWeek": 4,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -8278,11 +8304,11 @@
       9,
       7,
       3,
-      13,
+      14,
       14
     ],
-    "daysSinceLast": 2,
-    "total": 64
+    "daysSinceLast": -0.1,
+    "total": 65
   },
   "relstrength": {
     "bodyweightKg": 80.25,
@@ -8331,15 +8357,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 31,
-    "km7": 3.5,
-    "km28": 22.9,
-    "totalKm": 131.5,
+    "count": 32,
+    "km7": 6.3,
+    "km28": 25.7,
+    "totalKm": 134.3,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 0,
-    "avgPace": 9.465067136522991,
-    "paceTrend": 3.01,
+    "avgPace": 9.554498713319997,
+    "paceTrend": 2.42,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -8348,8 +8374,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 6.8,
+    "daysSinceLast": -0.1,
     "recent": [
+      {
+        "t": 1789743300000,
+        "name": "Incline Walk",
+        "distanceKm": 2.77,
+        "durationMin": 33.65,
+        "avgHr": null,
+        "pace": 12.148014440433212
+      },
       {
         "t": 1789138800000,
         "name": "Outdoor Run",
@@ -8381,14 +8415,6 @@
         "durationMin": 30,
         "avgHr": null,
         "pace": 13.636363636363635
-      },
-      {
-        "t": 1788212700000,
-        "name": "Stationary Bike",
-        "distanceKm": 4.83,
-        "durationMin": 0,
-        "avgHr": null,
-        "pace": 0
       }
     ]
   },
