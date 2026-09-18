@@ -434,13 +434,17 @@ function plannedWorkoutPanel(day) {
 
 function renderTrainingDetail(day, isLatest) {
   const plannedHtml = plannedWorkoutPanel(day);
-  const wl = day.workout_log;
+  // A day can have more than one logged session (e.g. two separate gym
+  // segments) -- render every entry, not just the first, so a second
+  // same-day session isn't silently dropped from the site.
+  const wls = day.workout_logs && day.workout_logs.length ? day.workout_logs : (day.workout_log ? [day.workout_log] : []);
   const sessionLogHtml = `
     <div class="dpanel span"><h4>${state.current} session log</h4>
-      ${day.workout_today && wl ? `
-        <div class="bignum" style="font-size:20px;color:${HUES.training.b}">${wl.type}</div>
-        <div class="metric-note" style="margin-top:8px">${wl.notes || ""}</div>
-      ` : `<div class="empty-state">No workout logged this day.</div>`}
+      ${day.workout_today && wls.length ? wls.map((wl) => `
+        <div style="margin-bottom:12px">
+          <div class="bignum" style="font-size:20px;color:${HUES.training.b}">${wl.type}</div>
+          <div class="metric-note" style="margin-top:8px">${wl.notes || ""}</div>
+        </div>`).join("") : `<div class="empty-state">No workout logged this day.</div>`}
     </div>`;
   const bwHtml = `<div class="dpanel span"><h4>Bodyweight trend <span class="tag">(full history)</span></h4><div class="chart-box small"><canvas id="chBw"></canvas></div></div>`;
   // Persisted per-date, so unlike the fatigue/recommendation/PR panels below

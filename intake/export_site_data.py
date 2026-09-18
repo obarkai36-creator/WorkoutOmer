@@ -76,7 +76,10 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
     day_lifestyle = [e for e in lifestyle_events if e["date"] == target_date]
     day_ejac = [e for e in ejac_entries if e["date"] == target_date]
     retainer_entry = next((r for r in retainers_entries if r["date"] == target_date), None)
-    workout_entry = next((w for w in workouts_entries if w["date"] == target_date), None)
+    # A day can have more than one logged session (e.g. two separate gym
+    # segments) -- collect ALL of that date's entries rather than just the
+    # first match, so a second same-day session isn't silently dropped.
+    day_workout_entries = [w for w in workouts_entries if w["date"] == target_date]
 
     sperm_week = next((w for w in sperm_weeks if w["week_end"] == target_date), None)
     sperm_score = None
@@ -128,7 +131,8 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
         "sperm_trend": sperm_trend,
         "energy_score": energy_score,
         "training_load": training_load,
-        "workout_log": workout_entry,
+        "workout_log": day_workout_entries[0] if day_workout_entries else None,
+        "workout_logs": day_workout_entries,
         "planned_workout": intake.get("planned_workout"),
     }
     if is_latest:
