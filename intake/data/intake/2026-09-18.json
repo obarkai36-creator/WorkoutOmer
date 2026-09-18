@@ -28,17 +28,21 @@
     {"time": "13:40", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:00", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
     {"time": "14:05", "name": "Biscuit cake (Biscoti)", "category": "food", "qty": "20 g", "kcal": 92, "protein_g": 1, "carbs_g": 10, "fat_g": 5.6, "fiber_g": 0.4, "note": "same generic Biscoti reference as the 2026-09-11/12:30 entries (~460kcal/100g, ~5p/50c/28f/2fiber per 100g) — not label-verified."},
-    {"time": "16:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "18:30", "name": "Sirloin steak, no fat strip (lean, trimmed)", "category": "food", "qty": "250 g", "kcal": 458, "protein_g": 72.5, "carbs_g": 0, "fat_g": 17.5, "fiber_g": 0, "note": "Dinner. Leaner cut than the standard blended red-meat reference (~230kcal/27p/14f per 100g) — used a trimmed-sirloin rate (~183kcal/29p/7f per 100g) since the fat cap was removed. Credits ~11.25mg zinc, ~37.5mcg selenium (same per-100g rate as the standard red-meat reference)."},
+    {"time": "18:30", "name": "Salad (lettuce, cherry tomatoes, red onion, cucumber) — 65% of batch", "category": "food", "qty": "~0.65 of a batch (1 head lettuce, 25 cherry tomatoes, 0.5 red onion, 1 cucumber)", "kcal": 142, "protein_g": 7.8, "carbs_g": 30.6, "fat_g": 1.7, "fiber_g": 11.3, "note": "Component weights assumed at standard portions (lettuce head ~500g, red onion ~110g whole, cucumber ~300g) since no exact weights given, then scaled to the 65% eaten — flagged as approximate. Credits ~7.2mg lycopene, ~35.8mg vitamin C, ~41.4mcg folate DFE (from the cherry tomato portion only, per standing convention)."},
+    {"time": "18:30", "name": "Maple-mustard-olive oil dressing", "category": "food", "qty": "full batch: 20g olive oil, 15g maple syrup, ~5g (1 tsp) dijon mustard, ~15g lemon juice (assumed), salt", "kcal": 223, "protein_g": 0.2, "carbs_g": 11.5, "fat_g": 20.2, "fiber_g": 0, "note": "Same style as the maple-balsamic-mustard vinaigrette reference but without balsamic glaze this time — computed fresh from ingredients. Lemon juice amount wasn't specified, assumed ~15g. Credits ~2.8mg vitamin E (olive oil), ~6mg vitamin C (lemon juice)."},
+    {"time": "18:30", "name": "Roasted potatoes in olive oil", "category": "food", "qty": "140 g eaten out of a 320 g baked batch (25g olive oil total, pre-bake; raw potato weight not given)", "kcal": 218, "protein_g": 3.3, "carbs_g": 27.8, "fat_g": 11.1, "fiber_g": 2.9, "note": "Oil (25g) assumed to distribute evenly through the whole post-bake batch — 140/320 = 43.75% of the dish, so ~10.9g of the oil and ~129g of potato flesh (standard baked-potato reference, ~94kcal/100g) came with this portion. Credits ~1.5mg vitamin E (olive oil), ~12.1mg vitamin C (potato)."}
   ],
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 151,
+    "zinc_mg": 14.05,
+    "selenium_mcg": 37.5,
+    "folate_mcg_dfe": 192.4,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 44,
+    "vitamin_c_mg": 97.9,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "vitamin_e_mg": 4.3,
+    "lycopene_mg": 16
   },
   "caffeine_shots": 4,
   "assumptions": [
@@ -56,7 +60,8 @@
     "14:05 biscuit cake (Biscoti), 20g — same generic reference.",
     "14:55 Incline Walk completed at the gym (treadmill, Precor console) — 2.77km/33:39/332kcal, ~300m elevation gain, no HR monitor worn — logged to data.js/workouts.json.",
     "15:40 additional Incline Walk segment at the same gym session — 0.85km/13.5min/115kcal, ~100m elevation gain — logged as a second workouts.json entry.",
-    "16:30 creatine monohydrate, 5g (post-workout, slightly above the usual 4.5g dose, logged as reported)."
+    "16:30 creatine monohydrate, 5g (post-workout, slightly above the usual 4.5g dose, logged as reported).",
+    "18:30 dinner: 250g sirloin steak, no fat strip (leaner rate used than the standard blended red-meat reference, since this cut was trimmed of its fat cap); salad — 65% of a batch of 1 head lettuce/25 cherry tomatoes/0.5 red onion/1 cucumber, component weights assumed; maple-mustard-olive oil dressing (full stated batch, no balsamic this time, lemon juice amount assumed ~15g); roasted potatoes — 140g eaten out of a 320g post-bake batch (25g olive oil total, raw potato weight not given, so oil/potato split within the eaten portion was estimated proportionally)."
   ],
   "status_note": "In progress. Slept 7.67h (23:45-07:25)."
 }

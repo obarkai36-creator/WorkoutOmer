@@ -244,6 +244,18 @@
       "fiber_g": 0,
       "verified": false,
       "source": "Generic estimate for fresh whole-milk mozzarella (ciliegine/bocconcini style), first logged 2026-09-18 (10g with lunch) — not label-verified against a specific product. Refine if a physical pack label is checked."
+    },
+    {
+      "id": "sirloin_lean_trimmed_generic",
+      "name": "Sirloin steak, lean/trimmed (no fat strip)",
+      "serving": "100 g",
+      "kcal": 183,
+      "protein_g": 29,
+      "carbs_g": 0,
+      "fat_g": 7,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic USDA-type estimate for sirloin trimmed to 0\" fat (fat cap removed), first logged 2026-09-18 -- distinct from the blended red-meat reference (~230kcal/27p/14f per 100g, established 09-10) used when the cut/trim isn't specified as extra-lean. Also credits ~4.5mg zinc / ~15mcg selenium per 100g, same rate as the blended reference. Not label-verified."
     }
   ]
 }
