@@ -1,36 +1,36 @@
 {
-  "now": 1789808906373,
+  "now": 1789809046156,
   "workouts": [
     {
       "datetime": "2026-09-19T11:20",
-      "note": "Back day, regular gym — mostly following the app's suggested progression. Diverging Seated Row 85kg×4×11 (+1 rep over last session's 85kg×4×10 — est. 1RM 116.2, still under the 97kg×4×10 best of 129.3, not a PR). Low Row 79kg×4×11, as suggested (rebuild to best — ties the 79kg×4×11 best exactly). Lat Pulldown (Wide Grip) 75kg×3×9 (new PR — est. 1RM 97.5 vs 95.0 for the 75kg×3×8 best). Dumbbell Pullover 22.5kg×4×9, as suggested (new PR — est. 1RM 29.25 vs 28.5 for the 22.5kg×4×8 best; this gym's dumbbells go in 0.5kg increments, noted per the user in case a set landed at 22.5kg rather than a round number). Dead Hang 1×30s only (abbreviated — well short of the 35s+30s+25s best, not a PR read). 2 new PRs.",
+      "note": "Back day, regular gym — mostly following the app's suggested progression. Diverging Seated Row 97kg×4×11 (+1 rep over the suggested rebuild target of 97kg×4×10 — new PR, est. 1RM 132.6 vs 129.3 prior best). Low Row 79kg×4×11, as suggested (rebuild to best — ties the 79kg×4×11 best exactly). Lat Pulldown (Wide Grip) 75kg×3×9 (new PR — est. 1RM 97.5 vs 95.0 for the 75kg×3×8 best). Dumbbell Pullover 22.5kg×4×9, as suggested (new PR — est. 1RM 29.25 vs 28.5 for the 22.5kg×4×8 best; this gym's dumbbells go in 0.5kg increments, noted per the user in case a set landed at 22.5kg rather than a round number). Dead Hang 1×30s only (abbreviated — well short of the 35s+30s+25s best, not a PR read). 3 new PRs.",
       "exercises": [
         {
           "name": "Diverging Seated Row",
           "sets": [
             {
               "reps": 11,
-              "weight": 85
+              "weight": 97
             },
             {
               "reps": 11,
-              "weight": 85
+              "weight": 97
             },
             {
               "reps": 11,
-              "weight": 85
+              "weight": 97
             },
             {
               "reps": 11,
-              "weight": 85
+              "weight": 97
             }
           ],
-          "load": 3740,
-          "top1RM": 116.16666666666667,
-          "topWeight": 85,
+          "load": 4268,
+          "top1RM": 132.56666666666666,
+          "topWeight": 97,
           "muscles": {
-            "back": 3740,
-            "biceps": 1496
+            "back": 4268,
+            "biceps": 1707.2
           },
           "kind": "strength"
         },
@@ -136,8 +136,8 @@
       ],
       "t": 1789816800000,
       "muscleLoad": {
-        "back": 10773.25,
-        "biceps": 3291.4,
+        "back": 11301.25,
+        "biceps": 3502.6000000000004,
         "chest": 324,
         "forearms": 2407.5
       },
@@ -6783,7 +6783,7 @@
     "chest": 7959,
     "back": 12018.75,
     "shoulders": 6892.8,
-    "biceps": 3686.4,
+    "biceps": 3897.6000000000004,
     "triceps": 6060,
     "forearms": 9150,
     "quads": 14905.6,
@@ -6808,7 +6808,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 100,
-      "readyInHours": 76.1,
+      "readyInHours": 78.5,
       "ready": false
     },
     "shoulders": {
@@ -6824,7 +6824,7 @@
       "label": "Biceps",
       "section": "Arms",
       "pct": 95,
-      "readyInHours": 45.9,
+      "readyInHours": 46,
       "ready": false
     },
     "triceps": {
@@ -6919,14 +6919,14 @@
     "Back": {
       "section": "Back",
       "pct": 100,
-      "readyInHours": 76.1,
+      "readyInHours": 78.5,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 100,
-          "readyInHours": 76.1,
+          "readyInHours": 78.5,
           "ready": false
         }
       ]
@@ -6949,14 +6949,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 45,
-      "readyInHours": 45.9,
+      "readyInHours": 46,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
           "pct": 95,
-          "readyInHours": 45.9,
+          "readyInHours": 46,
           "ready": false
         },
         {
@@ -7280,17 +7280,17 @@
           "back",
           "biceps"
         ],
-        "latestText": "85kg × 4×11",
-        "bestText": "97kg × 4×10",
-        "latestVol": 3740,
-        "bestVol": 3880,
-        "pct": 90,
-        "latest1RM": 116.2,
-        "best1RM": 129.3,
+        "latestText": "97kg × 4×11 (new PR)",
+        "bestText": "97kg × 4×11",
+        "latestVol": 4268,
+        "bestVol": 4268,
+        "pct": 100,
+        "latest1RM": 132.6,
+        "best1RM": 132.6,
         "metric": "1RM",
-        "isPR": false,
-        "belowPR": true,
-        "gap": 13,
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
         "inToday": true
       },
       {
@@ -8294,13 +8294,13 @@
   "balance": {
     "bySection": {
       "Chest": 18450.4,
-      "Arms": 33483.2,
+      "Arms": 33694.4,
       "Shoulders": 16383.4,
-      "Back": 16867.3,
+      "Back": 17395.3,
       "Legs": 48524.04,
       "Core": 14351.4
     },
-    "pushPull": 1.28,
+    "pushPull": 1.24,
     "quadHam": 1.81,
     "hasCore": true
   },
@@ -8308,44 +8308,44 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 696,
+        "stress": 693,
         "sessions": 5,
         "acwr": 1.47
       },
       {
         "label": "-4w",
-        "stress": 510,
+        "stress": 505,
         "sessions": 3,
         "acwr": 0.77
       },
       {
         "label": "-3w",
-        "stress": 921,
+        "stress": 912,
         "sessions": 5,
         "acwr": 1.13
       },
       {
         "label": "-2w",
-        "stress": 427,
+        "stress": 422,
         "sessions": 5,
         "acwr": 0.64
       },
       {
         "label": "-1w",
-        "stress": 510,
+        "stress": 506,
         "sessions": 3,
         "acwr": 1.29
       },
       {
         "label": "This wk",
-        "stress": 457,
+        "stress": 455,
         "sessions": 4,
-        "acwr": 1.27
+        "acwr": 1.29
       }
     ],
-    "acute": 113.44,
-    "chronic": 88.98,
-    "acwr": 1.27,
+    "acute": 114.39,
+    "chronic": 88.79,
+    "acwr": 1.29,
     "acwrZone": "ok",
     "sessions28": 18
   },
@@ -8354,7 +8354,7 @@
     "fatigue": 9,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-19T09:08:26.373Z",
+    "readyAt": "2026-09-19T09:10:46.156Z",
     "neverLogged": false,
     "daysSince": 41.7,
     "suggestedExercises": [
@@ -8492,13 +8492,13 @@
       {
         "section": "Arms",
         "fatigue": 45,
-        "readyInHours": 45.9,
+        "readyInHours": 46,
         "daysSince": 2.9
       },
       {
         "section": "Back",
         "fatigue": 100,
-        "readyInHours": 76.1,
+        "readyInHours": 78.5,
         "daysSince": -0.1
       }
     ],
@@ -8513,12 +8513,12 @@
     {
       "level": "low",
       "title": "Back fatigued (100%)",
-      "detail": "Recovers in ~76.1h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~78.5h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "low",
       "title": "Biceps fatigued (95%)",
-      "detail": "Recovers in ~45.9h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~46h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
@@ -8527,7 +8527,7 @@
     }
   ],
   "changes": [
-    "You're below your PR on 16 lifts — closest wins first: Dead Hang (33% of best), Leg Extensions (43% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight."
+    "You're below your PR on 15 lifts — closest wins first: Dead Hang (33% of best), Leg Extensions (43% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight."
   ],
   "timing": {
     "avgGap": 3.1,
@@ -8557,8 +8557,8 @@
       },
       {
         "name": "Diverging Seated Row",
-        "oneRM": 129.3,
-        "ratio": 1.61
+        "oneRM": 132.6,
+        "ratio": 1.65
       },
       {
         "name": "Seated Dips",
