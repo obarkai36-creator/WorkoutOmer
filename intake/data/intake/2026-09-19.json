@@ -1,7 +1,8 @@
 {
   "date": "2026-09-19",
   "day_number": 84,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 2000,
   "sleep": {
     "sleep_start": "00:10",
     "sleep_end": "09:00",
@@ -59,7 +60,8 @@
     "16:30 biscuit cake (Biscoti) — amount not specified, assumed ~20g (last logged serving size) pending correction.",
     "18:15 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose.",
     "18:50 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
-    "20:00 dinner: 2 Agami Pita Pro (136g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 50g Simfonia cheese spread (verified reference), 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE). Also two weigh-ins logged to weight.json today: 2026-09-18 retroactively at 82.00kg (screenshot, no time given, elevated 96bpm HR) and 2026-09-19 at 08:30, 81.30kg (73bpm, standard resting reading) — both scale readings now categorize body type as \"Muscular Overweight\" (previously \"Average\")."
+    "20:00 dinner: 2 Agami Pita Pro (136g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 50g Simfonia cheese spread (verified reference), 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE). Also two weigh-ins logged to weight.json today: 2026-09-18 retroactively at 82.00kg (screenshot, no time given, elevated 96bpm HR) and 2026-09-19 at 08:30, 81.30kg (73bpm, standard resting reading) — both scale readings now categorize body type as \"Muscular Overweight\" (previously \"Average\").",
+    "EOD: 2,000 steps reported. Retainers: worn tonight (night of 19-20 Sep) — logged to retainers.json. Prior night (18-19 Sep) has no entry, but tonight being worn breaks any consecutive-skip run, so no 3-night flag needed."
   ],
-  "status_note": "Day in progress. Slept 8.83h (00:10-09:00). Completed a Back session at the regular gym (11:20) — 3 new PRs (Diverging Seated Row, Lat Pulldown Wide Grip, Dumbbell Pullover). Lunch (13:40): baked sea bream, salad, potatoes. Dinner (20:00): pita, cheese, tomatoes. Weigh-ins for 09-18 (82.00kg) and 09-19 (81.30kg) both logged."
+  "status_note": "Day complete. Slept 8.83h (00:10-09:00). Completed a Back session at the regular gym (11:20) — 3 new PRs (Diverging Seated Row, Lat Pulldown Wide Grip, Dumbbell Pullover). Lunch (13:40): baked sea bream, salad, potatoes. Dinner (20:00): pita, cheese, tomatoes. Weigh-ins for 09-18 (82.00kg) and 09-19 (81.30kg) both logged. ~2,000 steps. Retainers worn tonight."
 }
