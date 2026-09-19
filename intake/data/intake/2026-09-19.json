@@ -22,9 +22,10 @@
     {"time": "13:40", "name": "Baby mozzarella", "category": "food", "qty": "60 g", "kcal": 168, "protein_g": 13.2, "carbs_g": 1.2, "fat_g": 13.2, "fiber_g": 0, "note": "generic fresh whole-milk mozzarella estimate (~280kcal/100g), same reference first logged 2026-09-18."},
     {"time": "13:40", "name": "Maple-Balsamic Mustard Vinaigrette (standard dressing)", "category": "food", "qty": "full batch (~98 g: 20g olive oil, 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt)", "kcal": 271, "protein_g": 0.7, "carbs_g": 21.8, "fat_g": 20.5, "fiber_g": 0, "note": "\"Standard balsamic vinaigrette\" taken as the established maple_balsamic_mustard_vinaigrette recipe reference (277kcal/100g) — quantity not stated, assumed full batch as in prior similar entries. Credits ~2.8mg vitamin E, ~13.3mg vitamin C (olive oil + lemon juice)."},
     {"time": "13:40", "name": "Roasted potatoes in olive oil", "category": "food", "qty": "140 g eaten out of a 320 g baked batch (post-bake, pre-oil weight), 30 g olive oil applied to the entire batch afterward", "kcal": 246, "protein_g": 3.5, "carbs_g": 29.7, "fat_g": 13.3, "fiber_g": 3.1, "note": "Oil (30g) applied to the whole 320g post-bake batch — 140/320=43.75% share pulls in ~13.1g of the oil plus 140g of potato flesh (standard baked-potato reference, ~93kcal/100g). Credits ~1.9mg vitamin E (olive oil), ~13.1mg vitamin C (potato)."},
-    {"time": "14:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:52", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0}
   ],
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "workout_today": true,
   "workout_summary": "Back, regular gym (11:20) — 3 new PRs",
   "micros_sperm_priority": {
@@ -46,7 +47,8 @@
     "11:20 Back workout at the regular gym, mostly following the app's suggested progression — logged to data.js/workouts.json. Diverging Seated Row 97kg×4×11 (+1 rep over the suggested rebuild target of 97kg×4×10 — new PR, est. 1RM 132.6 vs 129.3 prior best; corrected 2026-09-19 — originally mislogged as 85kg×4×11, a misreading of \"+1 rep\" as relative to the last logged session rather than the app's suggested target). Low Row 79kg×4×11, as suggested (ties the best exactly). Lat Pulldown (Wide Grip) 75kg×3×9 (new PR — est. 1RM 97.5 vs 95.0 prior best). Dumbbell Pullover 22.5kg×4×9, as suggested (new PR — est. 1RM 29.25 vs 28.5 prior best; this gym's dumbbells increment in 0.5kg steps). Dead Hang 1×30s only (abbreviated, well under the 35s+30s+25s best — not a PR read). 3 new PRs.",
     "13:20 creatine monohydrate, 5g (post-workout, standard dose).",
     "13:40 lunch (start time as given): 210g baked sea bream with butter, eaten out of a 300g post-bake total (butter treated as evenly distributed, new sea_bream_baked_generic reference — not label-verified); 10 baked cherry tomatoes (standard per-piece reference); salad — 65% of a batch of 1 head lettuce/25 cherry tomatoes/0.5 red onion/arugula (assumed ~100g bag) replacing the usual cucumber; 60g baby mozzarella (established reference); \"standard\" balsamic vinaigrette taken as the established Maple-Balsamic Mustard Vinaigrette recipe, full batch assumed (quantity not stated); roasted potatoes — 140g eaten out of a 320g post-bake (pre-oil) batch, 30g olive oil applied to the whole batch afterward, oil/potato split estimated proportionally.",
-    "14:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose, taken on top of the ~588mg already estimated from lunch's sea bream (total ~1588mg today)."
+    "14:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose, taken on top of the ~588mg already estimated from lunch's sea bream (total ~1588mg today).",
+    "15:52 double espresso, 2 shots (3rd+4th caffeine shots today, 4 total)."
   ],
   "status_note": "Day in progress. Slept 8.83h (00:10-09:00). Completed a Back session at the regular gym (11:20) — 3 new PRs (Diverging Seated Row, Lat Pulldown Wide Grip, Dumbbell Pullover). Lunch (13:40): baked sea bream, salad, potatoes."
 }
