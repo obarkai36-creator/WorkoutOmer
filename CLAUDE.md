@@ -1,5 +1,21 @@
 # Session notes
 
+- Standing rule (added 2026-09-19, per explicit user report — "Not seeing
+  latest updates on the site... We've decided to push on every entry to be
+  as up to date as possible throughout the day"): running
+  `python3 export_site_data.py <date>` (from `intake/`) plus commit+push is
+  NOT just an EOD step — do it after **every single logged item** throughout
+  the day (a sleep entry, one supplement, one food item, a workout), not
+  just at natural checkpoints like a workout or EOD. Caught missing this for
+  several 2026-09-19 entries (creatine, lunch items, omega-3) before the
+  user flagged it — the intake JSON and git history were correct/pushed
+  each time, but `docs/data/<date>.json` had gone stale in between since the
+  export step was skipped for those individual entries. Going forward,
+  every per-item logging step in this file's daily routine ends with:
+  edit intake file → validate JSON → `export_site_data.py <date>` →
+  commit+push everything together (intake file + `docs/data/*.json` +
+  `index.json` + any touched metrics file) in one commit.
+
 - Cache-busting for `docs/style.css`/`docs/app.js` (added 2026-09-18, after
   the mobile aerobic-panel fix didn't visibly take effect on a real phone —
   most likely a stale cached copy, since neither asset had ever been
