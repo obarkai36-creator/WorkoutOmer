@@ -23,20 +23,27 @@
     {"time": "13:40", "name": "Maple-Balsamic Mustard Vinaigrette (standard dressing)", "category": "food", "qty": "full batch (~98 g: 20g olive oil, 15g maple syrup, 15g dijon mustard, 13g balsamic glaze, 35g lemon juice, salt)", "kcal": 271, "protein_g": 0.7, "carbs_g": 21.8, "fat_g": 20.5, "fiber_g": 0, "note": "\"Standard balsamic vinaigrette\" taken as the established maple_balsamic_mustard_vinaigrette recipe reference (277kcal/100g) — quantity not stated, assumed full batch as in prior similar entries. Credits ~2.8mg vitamin E, ~13.3mg vitamin C (olive oil + lemon juice)."},
     {"time": "13:40", "name": "Roasted potatoes in olive oil", "category": "food", "qty": "140 g eaten out of a 320 g baked batch (post-bake, pre-oil weight), 30 g olive oil applied to the entire batch afterward", "kcal": 246, "protein_g": 3.5, "carbs_g": 29.7, "fat_g": 13.3, "fiber_g": 3.1, "note": "Oil (30g) applied to the whole 320g post-bake batch — 140/320=43.75% share pulls in ~13.1g of the oil plus 140g of potato flesh (standard baked-potato reference, ~93kcal/100g). Credits ~1.9mg vitamin E (olive oil), ~13.1mg vitamin C (potato)."},
     {"time": "14:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:52", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:52", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:30", "name": "Biscuit cake (Biscoti)", "category": "food", "qty": "~20 g (amount not specified, assumed same as the most recent logged serving)", "kcal": 92, "protein_g": 1, "carbs_g": 10, "fat_g": 5.6, "fiber_g": 0.4, "note": "Same generic Biscoti reference (~460kcal/100g) as prior entries — not label-verified. Exact amount wasn't given; defaulted to the last logged serving size (20g, 2026-09-18)."},
+    {"time": "18:15", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "18:50", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "20:00", "name": "Agami Pita Pro (whole spelt, protein-enriched)", "category": "food", "qty": "2 units (136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "note": "Dinner. Verified reference: 1 unit (68g) = 140kcal/15g protein/19g carb/2.5g fat/9g fiber."},
+    {"time": "20:00", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified reference: 1 slice (25g) = 50kcal/7.5g protein/0g carb/2.25g fat."},
+    {"time": "20:00", "name": "Simfonia cheese spread", "category": "food", "qty": "50 g", "kcal": 54, "protein_g": 4.9, "carbs_g": 2.3, "fat_g": 2.5, "fiber_g": 0, "note": "verified label rate: 108kcal/9.8g protein/4.6g carb/5g fat per 100g (simfonia_cheese_spread_generic)."},
+    {"time": "20:00", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "note": "Same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."}
   ],
   "caffeine_shots": 4,
   "workout_today": true,
   "workout_summary": "Back, regular gym (11:20) — 3 new PRs",
   "micros_sperm_priority": {
-    "zinc_mg": 3.98,
-    "selenium_mcg": 88.2,
-    "folate_mcg_dfe": 166.9,
+    "zinc_mg": 23.98,
+    "selenium_mcg": 188.2,
+    "folate_mcg_dfe": 217.9,
     "omega3_epa_dha_mg": 1588,
-    "vitamin_c_mg": 84.2,
-    "vitamin_d_iu": 588,
-    "vitamin_e_mg": 4.7,
-    "lycopene_mg": 11.6
+    "vitamin_c_mg": 1128.2,
+    "vitamin_d_iu": 2588,
+    "vitamin_e_mg": 138.7,
+    "lycopene_mg": 20.4
   },
   "assumptions": [
     "Sleep logged: 00:10-09:00, 8.83h — within (toward the top of) the 7-9h target band.",
@@ -48,7 +55,11 @@
     "13:20 creatine monohydrate, 5g (post-workout, standard dose).",
     "13:40 lunch (start time as given): 210g baked sea bream with butter, eaten out of a 300g post-bake total (butter treated as evenly distributed, new sea_bream_baked_generic reference — not label-verified); 10 baked cherry tomatoes (standard per-piece reference); salad — 65% of a batch of 1 head lettuce/25 cherry tomatoes/0.5 red onion/arugula (assumed ~100g bag) replacing the usual cucumber; 60g baby mozzarella (established reference); \"standard\" balsamic vinaigrette taken as the established Maple-Balsamic Mustard Vinaigrette recipe, full batch assumed (quantity not stated); roasted potatoes — 140g eaten out of a 320g post-bake (pre-oil) batch, 30g olive oil applied to the whole batch afterward, oil/potato split estimated proportionally.",
     "14:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose, taken on top of the ~588mg already estimated from lunch's sea bream (total ~1588mg today).",
-    "15:52 double espresso, 2 shots (3rd+4th caffeine shots today, 4 total)."
+    "15:52 double espresso, 2 shots (3rd+4th caffeine shots today, 4 total).",
+    "16:30 biscuit cake (Biscoti) — amount not specified, assumed ~20g (last logged serving size) pending correction.",
+    "18:15 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose.",
+    "18:50 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
+    "20:00 dinner: 2 Agami Pita Pro (136g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 50g Simfonia cheese spread (verified reference), 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE). Also two weigh-ins logged to weight.json today: 2026-09-18 retroactively at 82.00kg (screenshot, no time given, elevated 96bpm HR) and 2026-09-19 at 08:30, 81.30kg (73bpm, standard resting reading) — both scale readings now categorize body type as \"Muscular Overweight\" (previously \"Average\")."
   ],
-  "status_note": "Day in progress. Slept 8.83h (00:10-09:00). Completed a Back session at the regular gym (11:20) — 3 new PRs (Diverging Seated Row, Lat Pulldown Wide Grip, Dumbbell Pullover). Lunch (13:40): baked sea bream, salad, potatoes."
+  "status_note": "Day in progress. Slept 8.83h (00:10-09:00). Completed a Back session at the regular gym (11:20) — 3 new PRs (Diverging Seated Row, Lat Pulldown Wide Grip, Dumbbell Pullover). Lunch (13:40): baked sea bream, salad, potatoes. Dinner (20:00): pita, cheese, tomatoes. Weigh-ins for 09-18 (82.00kg) and 09-19 (81.30kg) both logged."
 }
