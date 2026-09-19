@@ -224,13 +224,13 @@ const SNAPSHOT = [
   { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 4, weight: 73, text: "73kg × 4×4" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
-  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 10, weight: 85, text: "85kg × 4×10" }, best: { sets: 4, reps: 10, weight: 97, text: "97kg × 4×10" } },
-  { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 8, weight: 72, text: "72kg × 4×8" }, best: { sets: 4, reps: 11, weight: 79, text: "79kg × 4×11" } },
+  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 11, weight: 85, text: "85kg × 4×11" }, best: { sets: 4, reps: 10, weight: 97, text: "97kg × 4×10" } },
+  { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 11, weight: 79, text: "79kg × 4×11" }, best: { sets: 4, reps: 11, weight: 79, text: "79kg × 4×11" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
-  { name: "Lat Pulldown (Wide Grip)", section: "Back", latest: { sets: 3, reps: 8, weight: 75, text: "75kg × 3×8 (hotel gym)" }, best: { sets: 3, reps: 8, weight: 75, text: "75kg × 3×8" } },
+  { name: "Lat Pulldown (Wide Grip)", section: "Back", latest: { sets: 3, reps: 9, weight: 75, text: "75kg × 3×9 (new PR)" }, best: { sets: 3, reps: 9, weight: 75, text: "75kg × 3×9" } },
   { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 52, text: "26kg each × 4×12" } },
-  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 8, weight: 22.5, text: "22.5kg × 4×8 (hotel gym, new PR)" }, best: { sets: 4, reps: 8, weight: 22.5, text: "22.5kg × 4×8" } },
-  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
+  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 9, weight: 22.5, text: "22.5kg × 4×9 (new PR)" }, best: { sets: 4, reps: 9, weight: 22.5, text: "22.5kg × 4×9" } },
+  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 30, weight: 81.00 } ], text: "30s (1 set, abbreviated)" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
@@ -299,6 +299,18 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 19 Sep — Back, regular gym (11:20)
+  {
+    datetime: "2026-09-19T11:20",
+    note: "Back day, regular gym — mostly following the app's suggested progression. Diverging Seated Row 85kg×4×11 (+1 rep over last session's 85kg×4×10 — est. 1RM 116.2, still under the 97kg×4×10 best of 129.3, not a PR). Low Row 79kg×4×11, as suggested (rebuild to best — ties the 79kg×4×11 best exactly). Lat Pulldown (Wide Grip) 75kg×3×9 (new PR — est. 1RM 97.5 vs 95.0 for the 75kg×3×8 best). Dumbbell Pullover 22.5kg×4×9, as suggested (new PR — est. 1RM 29.25 vs 28.5 for the 22.5kg×4×8 best; this gym's dumbbells go in 0.5kg increments, noted per the user in case a set landed at 22.5kg rather than a round number). Dead Hang 1×30s only (abbreviated — well short of the 35s+30s+25s best, not a PR read). 2 new PRs.",
+    exercises: [
+      { name: "Diverging Seated Row",     sets: [ { reps: 11, weight: 85 }, { reps: 11, weight: 85 }, { reps: 11, weight: 85 }, { reps: 11, weight: 85 } ] },
+      { name: "Low Row",                  sets: [ { reps: 11, weight: 79 }, { reps: 11, weight: 79 }, { reps: 11, weight: 79 }, { reps: 11, weight: 79 } ] },
+      { name: "Lat Pulldown (Wide Grip)", sets: [ { reps: 9, weight: 75 }, { reps: 9, weight: 75 }, { reps: 9, weight: 75 } ] },
+      { name: "Dumbbell Pullover",        sets: [ { reps: 9, weight: 22.5 }, { reps: 9, weight: 22.5 }, { reps: 9, weight: 22.5 }, { reps: 9, weight: 22.5 } ] },
+      { name: "Dead Hang",                sets: [ { seconds: 30 } ] },
+    ],
+  },
   // 18 Sep — Incline Walk, gym treadmill, second segment (15:40)
   {
     datetime: "2026-09-18T15:40",
