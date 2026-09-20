@@ -268,6 +268,18 @@
       "fiber_g": 0,
       "verified": false,
       "source": "Generic estimate for baked whole sea bream fillet/flesh, first logged 2026-09-19 -- moderate-fat white fish, similar in profile to sea bass/dorade. Also credits ~0.6mg zinc, ~45mcg selenium, ~300mg omega-3 EPA/DHA, ~300 IU vitamin D per 100g. Not label-verified; refine if a specific supplier/species nutrition panel is found."
+    },
+    {
+      "id": "angel_pita_pro_20g_protein",
+      "name": "Angel (אנג'ל) PRO Pita, 20g protein/100g",
+      "serving": "1 unit (62.5 g; pack is 8 units/500 g)",
+      "kcal": 125.6,
+      "protein_g": 12.9,
+      "carbs_g": 14.2,
+      "fat_g": 1.2,
+      "fiber_g": 3.7,
+      "verified": true,
+      "source": "Read directly from the product's Hebrew nutrition label (photographed 2026-09-21), per 100g: 201 kcal, 1.9g fat (0.5g sat), 0mg cholesterol, 289mg sodium, 22.7g carbs (4.3g sugar), 5.9g fiber, 20.6g protein. Scaled to 1 unit = 62.5g (500g pack / 8 units). Distinct brand from 'Agami Pita Pro' (agami_pita_pro_spelt) -- corrects a 2026-09-20 mislog where this brand's pita was logged under the Agami reference by mistake (visually similar product category, wrong brand read from a garbled voice/text note)."
     }
   ]
 }
