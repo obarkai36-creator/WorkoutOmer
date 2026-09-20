@@ -19,15 +19,23 @@
     {"time": "11:30", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified reference: 1 slice (25g) = 50kcal/7.5g protein/0g carb/2.25g fat."},
     {"time": "11:30", "name": "Simfonia cheese spread", "category": "food", "qty": "40 g", "kcal": 43, "protein_g": 3.92, "carbs_g": 1.84, "fat_g": 2, "fiber_g": 0, "note": "verified label rate: 108kcal/9.8g protein/4.6g carb/5g fat per 100g (simfonia_cheese_spread_generic)."},
     {"time": "11:30", "name": "Cherry tomatoes", "category": "food", "qty": "15 pieces", "kcal": 39.75, "protein_g": 2.05, "carbs_g": 8.8, "fat_g": 0.45, "fiber_g": 2.7, "note": "Same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
-    {"time": "12:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "12:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "14:45", "name": "Biscuit cake (Biscoti)", "category": "food", "qty": "20 g", "kcal": 92, "protein_g": 1, "carbs_g": 10, "fat_g": 5.6, "fiber_g": 0.4, "note": "same generic Biscoti reference (~460kcal/100g) as prior entries — not label-verified."},
+    {"time": "14:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:05", "name": "Pomegranate seeds", "category": "food", "qty": "3 tbsp (~33 g)", "kcal": 27.4, "protein_g": 0.56, "carbs_g": 6.17, "fat_g": 0.4, "fiber_g": 1.32, "note": "new generic reference (pomegranate_seeds_generic, ~83kcal/100g) — not label-verified, tbsp-to-gram conversion assumed (~11g/tbsp). Credits ~3.3mg vitamin C."},
+    {"time": "15:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "19:30", "name": "Burger (beef), oven-cooked", "category": "food", "qty": "200 g", "kcal": 460, "protein_g": 54, "carbs_g": 0, "fat_g": 28, "fiber_g": 0, "time_approx": true, "note": "Dinner — untracked/qualitative report (\"high enough protein to cover\", no exact composition given). Estimated using the standard blended red-meat reference (~230kcal/27p/14f per 100g). Credits ~9mg zinc, ~30mcg selenium (same rate as the blended reference). Time not given, assumed ~19:30."},
+    {"time": "19:30", "name": "Mixed salads", "category": "food", "qty": "estimated ~250 g combined (\"different types\", high fiber)", "kcal": 150, "protein_g": 5, "carbs_g": 20, "fat_g": 5, "fiber_g": 8, "time_approx": true, "note": "Rough estimate only — no composition/weights given beyond \"high fiber\". Flagged as low-confidence."},
+    {"time": "19:30", "name": "Mashed potatoes", "category": "food", "qty": "estimated ~200 g (\"high carbs\")", "kcal": 320, "protein_g": 5, "carbs_g": 40, "fat_g": 14, "fiber_g": 3, "time_approx": true, "note": "Rough estimate for a buttered/milk mashed-potato serving — no exact weight given, flagged as low-confidence."},
+    {"time": "19:30", "name": "Chicken soup with drumstick", "category": "food", "qty": "1 drumstick (~90g edible meat) + broth", "kcal": 205, "protein_g": 24.6, "carbs_g": 5, "fat_g": 8.2, "fiber_g": 0, "time_approx": true, "note": "Rough estimate — drumstick meat (~172kcal/100g) plus a light broth allowance. Not label/weight-verified."}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 22.8,
-    "selenium_mcg": 100,
+    "zinc_mg": 31.8,
+    "selenium_mcg": 130,
     "folate_mcg_dfe": 138.25,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1033,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 1036.3,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
     "lycopene_mg": 6.6
@@ -40,7 +48,12 @@
     "08:35 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "09:00 mango Danone PRO protein yogurt (1 cup, 200g) — same rate as prior strawberry/vanilla/lemon cream entries.",
     "11:30 lunch: 2 Angel PRO Pita (125g, verified reference — corrected 2026-09-21 from an initial Agami Pita Pro mislog, per a photographed label showing this is actually a different brand: 20.6g protein/100g, 8 units/500g pack), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 40g Simfonia cheese spread (verified reference), 15 cherry tomatoes (standard reference — credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE).",
-    "12:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose."
+    "12:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose.",
+    "14:30 partnered ejaculation, logged to ejaculation.json.",
+    "14:45 biscuit cake (Biscoti, 20g, same generic reference) + Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA, standard dose).",
+    "15:05 pomegranate seeds, 3 tbsp (~33g, new generic reference, tbsp-to-gram assumed).",
+    "15:45 creatine monohydrate, 5g (standard dose).",
+    "Dinner (~19:30, time not given) reported qualitatively rather than itemized (\"untracked, high enough protein to cover... calories sufficient, fat high, carbs high... chicken soup 1 drumstick\") — estimated macros from the description rather than exact weights: 200g oven burger (only weight given, standard blended red-meat reference), ~250g mixed salads (high fiber, composition unstated), ~200g mashed potatoes (high carb), chicken soup with 1 drumstick. All four dinner items are rough, low-confidence estimates built from qualitative description, not measured quantities — flagged accordingly, unlike the rest of today's precisely-logged items."
   ],
-  "status_note": "Day in progress. Slept 7.25h (00:30-07:45). Weigh-in 80.95kg. Lunch (11:30): pita, cheese, tomatoes."
+  "status_note": "Day in progress. Slept 7.25h (00:30-07:45). Weigh-in 80.95kg. Lunch (11:30): pita, cheese, tomatoes. Partnered ejaculation 14:30. Dinner (~19:30, estimated from qualitative description): burger, salads, mashed potatoes, chicken soup."
 }

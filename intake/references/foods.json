@@ -280,6 +280,18 @@
       "fiber_g": 3.7,
       "verified": true,
       "source": "Read directly from the product's Hebrew nutrition label (photographed 2026-09-21), per 100g: 201 kcal, 1.9g fat (0.5g sat), 0mg cholesterol, 289mg sodium, 22.7g carbs (4.3g sugar), 5.9g fiber, 20.6g protein. Scaled to 1 unit = 62.5g (500g pack / 8 units). Distinct brand from 'Agami Pita Pro' (agami_pita_pro_spelt) -- corrects a 2026-09-20 mislog where this brand's pita was logged under the Agami reference by mistake (visually similar product category, wrong brand read from a garbled voice/text note)."
+    },
+    {
+      "id": "pomegranate_seeds_generic",
+      "name": "Pomegranate seeds/arils (generic)",
+      "serving": "100 g",
+      "kcal": 83,
+      "protein_g": 1.7,
+      "carbs_g": 18.7,
+      "fat_g": 1.2,
+      "fiber_g": 4,
+      "verified": false,
+      "source": "Generic USDA-type estimate for raw pomegranate arils, first logged 2026-09-20 (3 tbsp, ~33g assumed at ~11g/tbsp). Also credits ~10mg vitamin C per 100g. Not label-verified."
     }
   ]
 }
