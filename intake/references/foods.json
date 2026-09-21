@@ -292,6 +292,66 @@
       "fiber_g": 4,
       "verified": false,
       "source": "Generic USDA-type estimate for raw pomegranate arils, first logged 2026-09-20 (3 tbsp, ~33g assumed at ~11g/tbsp). Also credits ~10mg vitamin C per 100g. Not label-verified."
+    },
+    {
+      "id": "eggs_omelette_2_generic",
+      "name": "Plain omelette, 2 eggs (no fillings)",
+      "serving": "1 omelette (2 large eggs, ~100g eggs + ~5g cooking oil)",
+      "kcal": 188,
+      "protein_g": 12.6,
+      "carbs_g": 0.8,
+      "fat_g": 14.6,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic estimate: 2 large eggs (~72kcal/6.3g protein/0.4g carb/4.8g fat each, standard USDA egg values) plus ~5g cooking oil for frying (~44kcal/5g fat), first logged 2026-09-21. No cheese/fillings assumed -- adjust up if the omelette actually included extras."
+    },
+    {
+      "id": "chocolate_ball_generic",
+      "name": "Chocolate ball (kadur shokolad, Israeli biscuit/cocoa treat)",
+      "serving": "1 ball (~20 g)",
+      "kcal": 90,
+      "protein_g": 0.8,
+      "carbs_g": 11,
+      "fat_g": 4.8,
+      "fiber_g": 0.4,
+      "verified": false,
+      "source": "Generic estimate for the classic Israeli 'kadur shokolad' (crushed biscuits, cocoa, margarine, rolled in coconut), ~450kcal/100g, first logged 2026-09-21. Not label-verified -- recipes vary."
+    },
+    {
+      "id": "pelmeni_generic",
+      "name": "Pelmeni (meat dumplings), frozen/boiled, generic",
+      "serving": "100 g",
+      "kcal": 250,
+      "protein_g": 10,
+      "carbs_g": 30,
+      "fat_g": 8,
+      "fiber_g": 1,
+      "verified": false,
+      "source": "Generic estimate for standard frozen meat-filled pelmeni, first logged 2026-09-21 (7 single pieces, ~12g each assumed, ~84g total). Not label-verified -- refine if a specific brand's pack is checked."
+    },
+    {
+      "id": "beigale_generic",
+      "name": "Beigale (בייגלה, small pretzel snack ring)",
+      "serving": "100 g",
+      "kcal": 380,
+      "protein_g": 10,
+      "carbs_g": 75,
+      "fat_g": 3,
+      "fiber_g": 3,
+      "verified": false,
+      "source": "Generic estimate for a typical Israeli pretzel-ring snack (e.g. Osem Beigale), first logged 2026-09-21 (1 piece, ~2g assumed). Not label-verified."
+    },
+    {
+      "id": "nutella",
+      "name": "Nutella hazelnut spread",
+      "serving": "100 g",
+      "kcal": 539,
+      "protein_g": 6.3,
+      "carbs_g": 57.5,
+      "fat_g": 30.9,
+      "fiber_g": 0,
+      "verified": true,
+      "source": "Official Ferrero label values (widely published, per 100g): 539 kcal, 30.9g fat (10.6g sat), 57.5g carbs (56.3g sugar), 6.3g protein. First logged 2026-09-21 (0.5 tsp, ~2.5g assumed)."
     }
   ]
 }
