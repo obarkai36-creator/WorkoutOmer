@@ -1136,6 +1136,22 @@
       },
       "notes": "Computed from real logged data for 2026-09-14 → 2026-09-20 (7 day(s) logged this window).",
       "sample": false
+    },
+    {
+      "week_start": "2026-09-15",
+      "week_end": "2026-09-21",
+      "window_days": 7,
+      "factors": {
+        "nutrition": 53,
+        "body_composition": 9,
+        "sleep": 100,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-09-15 → 2026-09-21 (7 day(s) logged this window).",
+      "sample": false
     }
   ],
   "trend": [
@@ -2289,6 +2305,22 @@
         "ejaculatory_frequency": 89
       },
       "notes": "Computed from real logged data for 2026-06-23 → 2026-09-20 (85 day(s) logged this window).",
+      "sample": false
+    },
+    {
+      "week_start": "2026-06-24",
+      "week_end": "2026-09-21",
+      "window_days": 90,
+      "factors": {
+        "nutrition": 74,
+        "body_composition": 9,
+        "sleep": 94,
+        "alcohol": 73,
+        "heat_travel_exposure": 95,
+        "smoking": 100,
+        "ejaculatory_frequency": 89
+      },
+      "notes": "Computed from real logged data for 2026-06-24 → 2026-09-21 (86 day(s) logged this window).",
       "sample": false
     }
   ]

@@ -1,7 +1,8 @@
 {
   "date": "2026-09-21",
   "day_number": 86,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 2000,
   "sleep": {
     "sleep_start": "00:30",
     "sleep_end": "09:30",
@@ -31,7 +32,9 @@
     {"time": "20:30", "name": "Chicken noodle soup", "category": "food", "qty": "2 bowls (~600 ml, estimated)", "kcal": 300, "protein_g": 20, "carbs_g": 30, "fat_g": 10, "fiber_g": 2, "note": "Rough homemade-soup estimate (chicken, noodles, broth) — no recipe/weight given, flagged as low-confidence."},
     {"time": "20:30", "name": "Pelmeni (meat dumplings)", "category": "food", "qty": "7 single pieces (~84 g)", "kcal": 210, "protein_g": 8.4, "carbs_g": 25.2, "fat_g": 6.72, "fiber_g": 0.84, "note": "new generic reference (pelmeni_generic, ~250kcal/100g) — not label-verified, ~12g/piece assumed."},
     {"time": "20:59", "name": "Chocolate mousse", "category": "food", "qty": "2 spoons (~40 g)", "kcal": 100, "protein_g": 1.6, "carbs_g": 10, "fat_g": 6, "fiber_g": 0, "note": "generic chocolate mousse estimate (~250kcal/100g) — not label-verified, \"spoon\" assumed ~20g each."},
-    {"time": "21:10", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "21:10", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "22:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "22:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
@@ -60,7 +63,10 @@
     "20:30: 2 bowls chicken noodle soup (rough homemade estimate) + 7 single pelmeni (new generic reference, ~12g/piece assumed).",
     "20:59 2 spoons chocolate mousse (~40g assumed, generic estimate).",
     "21:10 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose.",
-    "Several items today are rough/low-confidence estimates (chocolate ball, tomato soup, chicken noodle soup, pelmeni, pineapple bites, chocolate mousse) since no exact weights/recipes were given — flagged individually; corrections welcome."
+    "Several items today are rough/low-confidence estimates (chocolate ball, tomato soup, chicken noodle soup, pelmeni, pineapple bites, chocolate mousse) since no exact weights/recipes were given — flagged individually; corrections welcome.",
+    "22:15 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
+    "22:45 creatine monohydrate, 5g (standard dose).",
+    "EOD: 2,000 steps reported. Retainers: no entry logged tonight or last night (09-20); last logged night was 09-19 (worn:true), which breaks any consecutive-skip run regardless — no 3-night flag needed."
   ],
-  "status_note": "Day in progress (bulk-logged from a same-day message screenshot, not yet closed out). Slept 9.0h (00:30-09:30). Lunch (12:30): pita, eggs, salad. Dinner-ish items (18:10, 20:30): soup, Denver steak, pelmeni, chocolate mousse."
+  "status_note": "Day complete. Slept 9.0h (00:30-09:30). Lunch (12:30): pita, eggs, salad. Dinner-ish items (18:10, 20:30): soup, Denver steak, pelmeni, chocolate mousse. ~2,000 steps."
 }

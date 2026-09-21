@@ -1,5 +1,5 @@
 {
-  "now": 1790014485647,
+  "now": 1790018114735,
   "workouts": [
     {
       "datetime": "2026-09-19T11:20",
@@ -6799,7 +6799,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "ready": true
     },
@@ -6808,7 +6808,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 44,
-      "readyInHours": 23.2,
+      "readyInHours": 22.2,
       "ready": false
     },
     "shoulders": {
@@ -6823,7 +6823,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 24,
+      "pct": 23,
       "readyInHours": 0,
       "ready": true
     },
@@ -6903,14 +6903,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 4,
+          "pct": 3,
           "readyInHours": 0,
           "ready": true
         }
@@ -6919,14 +6919,14 @@
     "Back": {
       "section": "Back",
       "pct": 44,
-      "readyInHours": 23.2,
+      "readyInHours": 22.2,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 44,
-          "readyInHours": 23.2,
+          "readyInHours": 22.2,
           "ready": false
         }
       ]
@@ -6955,7 +6955,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 24,
+          "pct": 23,
           "readyInHours": 0,
           "ready": true
         },
@@ -8351,10 +8351,10 @@
   },
   "recommendation": {
     "section": "Chest",
-    "fatigue": 4,
+    "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-21T18:14:45.647Z",
+    "readyAt": "2026-09-21T19:15:14.735Z",
     "neverLogged": false,
     "daysSince": 44.1,
     "suggestedExercises": [
@@ -8473,7 +8473,7 @@
     "ranked": [
       {
         "section": "Chest",
-        "fatigue": 4,
+        "fatigue": 3,
         "readyInHours": 0,
         "daysSince": 44.1
       },
@@ -8493,12 +8493,12 @@
         "section": "Arms",
         "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 5.3
+        "daysSince": 5.4
       },
       {
         "section": "Back",
         "fatigue": 44,
-        "readyInHours": 23.2,
+        "readyInHours": 22.2,
         "daysSince": 2.3
       }
     ],
