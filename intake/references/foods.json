@@ -352,6 +352,18 @@
       "fiber_g": 0,
       "verified": true,
       "source": "Official Ferrero label values (widely published, per 100g): 539 kcal, 30.9g fat (10.6g sat), 57.5g carbs (56.3g sugar), 6.3g protein. First logged 2026-09-21 (0.5 tsp, ~2.5g assumed)."
+    },
+    {
+      "id": "vanilla_donut_generic",
+      "name": "Vanilla glazed donut (generic bakery-style)",
+      "serving": "100 g",
+      "kcal": 452,
+      "protein_g": 4.5,
+      "carbs_g": 51,
+      "fat_g": 25,
+      "fiber_g": 1,
+      "verified": false,
+      "source": "Generic USDA-type estimate for a standard vanilla-glazed cake/yeast donut, first logged 2026-09-22 (2 bites, ~30g assumed). Not label-verified -- refine if a specific bakery/brand is checked."
     }
   ]
 }
