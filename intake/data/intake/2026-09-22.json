@@ -1,7 +1,8 @@
 {
   "date": "2026-09-22",
   "day_number": 87,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 6000,
   "sleep": {
     "sleep_start": "23:35",
     "sleep_end": "06:10",
@@ -33,7 +34,8 @@
     {"time": "20:00", "name": "Simfonia cheese spread", "category": "food", "qty": "40 g", "kcal": 43.2, "protein_g": 3.92, "carbs_g": 1.84, "fat_g": 2, "fiber_g": 0, "note": "verified label rate: 108kcal/9.8g protein/4.6g carb/5g fat per 100g (simfonia_cheese_spread_generic)."},
     {"time": "20:00", "name": "Cherry tomatoes", "category": "food", "qty": "15 pieces", "kcal": 39.75, "protein_g": 2.05, "carbs_g": 8.8, "fat_g": 0.45, "fiber_g": 2.7, "note": "Same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
     {"time": "20:00", "name": "Cucumber", "category": "food", "qty": "1 cucumber (~300 g)", "kcal": 45, "protein_g": 1.95, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "standard whole-cucumber assumption."},
-    {"time": "20:00", "name": "Olive oil (sprayed)", "category": "food", "qty": "~1 g (spray)", "kcal": 8.84, "protein_g": 0, "carbs_g": 0, "fat_g": 1, "fiber_g": 0, "note": "cooking-spray-style light coating, assumed ~1g. Credits ~0.14mg vitamin E."}
+    {"time": "20:00", "name": "Olive oil (sprayed)", "category": "food", "qty": "~1 g (spray)", "kcal": 8.84, "protein_g": 0, "carbs_g": 0, "fat_g": 1, "fiber_g": 0, "note": "cooking-spray-style light coating, assumed ~1g. Credits ~0.14mg vitamin E."},
+    {"time": "22:20", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
@@ -61,7 +63,9 @@
     "17:20 75g cottage cheese (new generic reference) + 0.5 tsp honey (~3.5g, new generic reference).",
     "19:50 PM Rhinolast dose (2nd of the 2x/day spray) + essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — both allergy doses and essential-5 done today.",
     "20:00 dinner: 2 Angel PRO Pita (125g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 40g Simfonia cheese spread (verified reference), 15 cherry tomatoes (standard reference — credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE), 1 cucumber (~300g, standard assumption), sprayed olive oil (~1g, light coating).",
-    "21:30 self ejaculation (masturbation), logged to ejaculation.json."
+    "21:30 self ejaculation (masturbation), logged to ejaculation.json.",
+    "22:20 creatine monohydrate, 5g (standard dose).",
+    "EOD: 6,000 steps reported. Retainers: worn tonight (night of 22-23 Sep) — logged to retainers.json. Prior 2 nights (20-21, 21-22 Sep) had no entry, but tonight being worn breaks any consecutive-skip run — no flag needed."
   ],
-  "status_note": "Day in progress. Slept 6.58h (23:35-06:10), a bit short. Lunch (12:00): cucumber/tomato/onion salad, kebab."
+  "status_note": "Day complete. Slept 6.58h (23:35-06:10), a bit short. Lunch (12:00): cucumber/tomato/onion salad, kebab. Dinner (20:00): pita, cheese, tomatoes. Self ejaculation 21:30. ~6,000 steps, retainers worn."
 }
