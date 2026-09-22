@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-22",
+  "day_number": 87,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "23:35",
+    "sleep_end": "06:10",
+    "duration_hours": 6.58,
+    "quality": null,
+    "notes": "6.58h, a bit short of the 7-9h target band."
+  },
+  "items": [
+    {"time": "06:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "06:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "06:35", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
+    {"time": "06:40", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "08:35", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:50", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "note": "verified reference: 1 slice (25g) = 50kcal/7.5g protein/0g carb/2.25g fat."},
+    {"time": "09:50", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "note": "Same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "10:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "12:00", "name": "Salad (cucumber, cherry tomato, red onion)", "category": "food", "qty": "3 cucumbers (~900 g), 25 cherry tomatoes, 0.5 red onion (~55 g)", "kcal": 223.25, "protein_g": 9.87, "carbs_g": 52.18, "fat_g": 1.7, "fiber_g": 9.94, "note": "Standard per-component assumptions (whole cucumber ~300g, whole red onion ~110g). Credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE (from the cherry tomato portion, per standing convention)."},
+    {"time": "12:00", "name": "Kebab (ground meat skewer)", "category": "food", "qty": "200 g", "kcal": 460, "protein_g": 54, "carbs_g": 0, "fat_g": 28, "fiber_g": 0, "note": "Estimated using the standard blended red-meat reference (~230kcal/27p/14f per 100g). Credits ~9mg zinc, ~30mcg selenium (same rate as the blended reference)."},
+    {"time": "12:00", "name": "Olive oil + lemon juice + salt (salad dressing)", "category": "food", "qty": "1 spoon (~14g) olive oil, lemon juice (~15g assumed), salt", "kcal": 127.06, "protein_g": 0.05, "carbs_g": 1.04, "fat_g": 14.04, "fiber_g": 0, "note": "\"Spoon\" assumed ~14g (tbsp); lemon juice amount not stated, assumed ~15g. Credits ~2.0mg vitamin E (olive oil), ~5.8mg vitamin C (lemon juice)."},
+    {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+  ],
+  "caffeine_shots": 4,
+  "micros_sperm_priority": {
+    "zinc_mg": 11.8,
+    "selenium_mcg": 30,
+    "folate_mcg_dfe": 214.75,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 104.8,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 2,
+    "lycopene_mg": 19.8
+  },
+  "assumptions": [
+    "Sleep logged: 23:35-06:10, 6.58h — a bit short of the 7-9h target band.",
+    "06:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "06:35 double espresso, 2 shots (1st+2nd caffeine shots today).",
+    "06:40 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
+    "08:35 espresso, 1 shot (3rd caffeine shot today).",
+    "09:50 3 slices Tnuva Emek Light yellow cheese 9% (75g, verified reference), 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE).",
+    "10:15 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "12:00 salad: 3 cucumbers (~900g, standard whole-cucumber assumption), 25 cherry tomatoes, 0.5 red onion (~55g, standard whole-onion assumption); 200g kebab (estimated via the standard blended red-meat reference — credits ~9mg zinc, ~30mcg selenium); dressing of 1 spoon olive oil (~14g assumed) + lemon juice (~15g assumed) + salt — credits ~2.0mg vitamin E, ~5.8mg vitamin C.",
+    "13:00 espresso, 1 shot (4th caffeine shot today)."
+  ],
+  "status_note": "Day in progress. Slept 6.58h (23:35-06:10), a bit short. Lunch (12:00): cucumber/tomato/onion salad, kebab."
+}
