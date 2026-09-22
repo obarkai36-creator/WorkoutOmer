@@ -1,5 +1,5 @@
 {
-  "now": 1790087037260,
+  "now": 1790097874411,
   "workouts": [
     {
       "datetime": "2026-09-19T11:20",
@@ -6799,7 +6799,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -6807,8 +6807,8 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 32,
-      "readyInHours": 3.1,
+      "pct": 30,
+      "readyInHours": 0.1,
       "ready": false
     },
     "shoulders": {
@@ -6823,7 +6823,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -6903,14 +6903,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         }
@@ -6918,15 +6918,15 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 32,
-      "readyInHours": 3.1,
+      "pct": 30,
+      "readyInHours": 0.1,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 32,
-          "readyInHours": 3.1,
+          "pct": 30,
+          "readyInHours": 0.1,
           "ready": false
         }
       ]
@@ -6948,14 +6948,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 6,
+      "pct": 5,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -8332,14 +8332,14 @@
       },
       {
         "label": "-1w",
-        "stress": 507,
-        "sessions": 3,
+        "stress": 723,
+        "sessions": 4,
         "acwr": 1.22
       },
       {
         "label": "This wk",
-        "stress": 670,
-        "sessions": 5,
+        "stress": 453,
+        "sessions": 4,
         "acwr": 0.67
       }
     ],
@@ -8351,12 +8351,12 @@
   },
   "recommendation": {
     "section": "Chest",
-    "fatigue": 3,
+    "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-22T14:23:57.260Z",
+    "readyAt": "2026-09-22T17:24:34.411Z",
     "neverLogged": false,
-    "daysSince": 44.9,
+    "daysSince": 45.1,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -8475,33 +8475,33 @@
     "ranked": [
       {
         "section": "Chest",
-        "fatigue": 3,
+        "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 44.9
+        "daysSince": 45.1
       },
       {
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 10.2
+        "daysSince": 10.4
       },
       {
         "section": "Shoulders",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 7
+        "daysSince": 7.1
       },
       {
         "section": "Arms",
-        "fatigue": 6,
+        "fatigue": 5,
         "readyInHours": 0,
-        "daysSince": 6.2
+        "daysSince": 6.3
       },
       {
         "section": "Back",
-        "fatigue": 32,
-        "readyInHours": 3.1,
-        "daysSince": 3.1
+        "fatigue": 30,
+        "readyInHours": 0.1,
+        "daysSince": 3.3
       }
     ],
     "suggestedCount": 4,
@@ -8509,7 +8509,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 3.9
+    "daysSinceAerobic": 4.1
   },
   "alerts": [
     {
@@ -8541,7 +8541,7 @@
       15,
       15
     ],
-    "daysSinceLast": 3.1,
+    "daysSinceLast": 3.3,
     "total": 67
   },
   "relstrength": {
@@ -8608,7 +8608,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 3.9,
+    "daysSinceLast": 4.1,
     "recent": [
       {
         "t": 1789746000000,

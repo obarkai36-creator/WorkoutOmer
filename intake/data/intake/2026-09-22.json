@@ -25,18 +25,26 @@
     {"time": "15:00", "name": "Vanilla donut", "category": "food", "qty": "2 bites (~30 g)", "kcal": 135.6, "protein_g": 1.35, "carbs_g": 15.3, "fat_g": 7.5, "fiber_g": 0.3, "note": "new generic reference (vanilla_donut_generic, ~452kcal/100g) — not label-verified, \"bite\" size assumed ~15g each."},
     {"time": "16:00", "name": "Bounty bar", "category": "food", "qty": "10 g", "kcal": 49.3, "protein_g": 0.39, "carbs_g": 5.8, "fat_g": 2.6, "fiber_g": 0.26, "note": "official Mars label rate (493kcal/100g)."},
     {"time": "17:20", "name": "Cottage cheese", "category": "food", "qty": "75 g", "kcal": 73.5, "protein_g": 8.25, "carbs_g": 2.55, "fat_g": 3.23, "fiber_g": 0, "note": "new generic reference (cottage_cheese_generic, ~98kcal/100g, ~4-5% fat) — not label-verified."},
-    {"time": "17:20", "name": "Honey", "category": "food", "qty": "0.5 tsp (~3.5 g)", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0, "note": "new generic reference (honey_generic), tsp-to-gram assumed (~7g/tsp)."}
+    {"time": "17:20", "name": "Honey", "category": "food", "qty": "0.5 tsp (~3.5 g)", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0, "note": "new generic reference (honey_generic), tsp-to-gram assumed (~7g/tsp)."},
+    {"time": "19:50", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "19:50", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "20:00", "name": "Angel (אנג'ל) PRO Pita, 20g protein/100g", "category": "food", "qty": "2 units (125 g)", "kcal": 251.2, "protein_g": 25.8, "carbs_g": 28.4, "fat_g": 2.4, "fiber_g": 7.4, "note": "Dinner. Verified reference (angel_pita_pro_20g_protein): 201kcal/20.6g protein/22.7g carb/1.9g fat/5.9g fiber per 100g."},
+    {"time": "20:00", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified reference: 1 slice (25g) = 50kcal/7.5g protein/0g carb/2.25g fat."},
+    {"time": "20:00", "name": "Simfonia cheese spread", "category": "food", "qty": "40 g", "kcal": 43.2, "protein_g": 3.92, "carbs_g": 1.84, "fat_g": 2, "fiber_g": 0, "note": "verified label rate: 108kcal/9.8g protein/4.6g carb/5g fat per 100g (simfonia_cheese_spread_generic)."},
+    {"time": "20:00", "name": "Cherry tomatoes", "category": "food", "qty": "15 pieces", "kcal": 39.75, "protein_g": 2.05, "carbs_g": 8.8, "fat_g": 0.45, "fiber_g": 2.7, "note": "Same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
+    {"time": "20:00", "name": "Cucumber", "category": "food", "qty": "1 cucumber (~300 g)", "kcal": 45, "protein_g": 1.95, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "standard whole-cucumber assumption."},
+    {"time": "20:00", "name": "Olive oil (sprayed)", "category": "food", "qty": "~1 g (spray)", "kcal": 8.84, "protein_g": 0, "carbs_g": 0, "fat_g": 1, "fiber_g": 0, "note": "cooking-spray-style light coating, assumed ~1g. Credits ~0.14mg vitamin E."}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 11.8,
-    "selenium_mcg": 30,
-    "folate_mcg_dfe": 214.75,
+    "zinc_mg": 31.8,
+    "selenium_mcg": 130,
+    "folate_mcg_dfe": 253,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 104.8,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 2,
-    "lycopene_mg": 19.8
+    "vitamin_c_mg": 1137.8,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 136.14,
+    "lycopene_mg": 26.4
   },
   "assumptions": [
     "Sleep logged: 23:35-06:10, 6.58h — a bit short of the 7-9h target band.",
@@ -50,7 +58,9 @@
     "13:00 espresso, 1 shot (4th caffeine shot today).",
     "15:00 vanilla donut, 2 bites (~30g, new generic reference).",
     "16:00 Bounty bar, 10g (official Mars label rate).",
-    "17:20 75g cottage cheese (new generic reference) + 0.5 tsp honey (~3.5g, new generic reference)."
+    "17:20 75g cottage cheese (new generic reference) + 0.5 tsp honey (~3.5g, new generic reference).",
+    "19:50 PM Rhinolast dose (2nd of the 2x/day spray) + essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — both allergy doses and essential-5 done today.",
+    "20:00 dinner: 2 Angel PRO Pita (125g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 40g Simfonia cheese spread (verified reference), 15 cherry tomatoes (standard reference — credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE), 1 cucumber (~300g, standard assumption), sprayed olive oil (~1g, light coating)."
   ],
   "status_note": "Day in progress. Slept 6.58h (23:35-06:10), a bit short. Lunch (12:00): cucumber/tomato/onion salad, kebab."
 }
