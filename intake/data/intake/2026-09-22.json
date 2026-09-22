@@ -23,7 +23,9 @@
     {"time": "12:00", "name": "Olive oil + lemon juice + salt (salad dressing)", "category": "food", "qty": "1 spoon (~14g) olive oil, lemon juice (~15g assumed), salt", "kcal": 127.06, "protein_g": 0.05, "carbs_g": 1.04, "fat_g": 14.04, "fiber_g": 0, "note": "\"Spoon\" assumed ~14g (tbsp); lemon juice amount not stated, assumed ~15g. Credits ~2.0mg vitamin E (olive oil), ~5.8mg vitamin C (lemon juice)."},
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Vanilla donut", "category": "food", "qty": "2 bites (~30 g)", "kcal": 135.6, "protein_g": 1.35, "carbs_g": 15.3, "fat_g": 7.5, "fiber_g": 0.3, "note": "new generic reference (vanilla_donut_generic, ~452kcal/100g) — not label-verified, \"bite\" size assumed ~15g each."},
-    {"time": "16:00", "name": "Bounty bar", "category": "food", "qty": "10 g", "kcal": 49.3, "protein_g": 0.39, "carbs_g": 5.8, "fat_g": 2.6, "fiber_g": 0.26, "note": "official Mars label rate (493kcal/100g)."}
+    {"time": "16:00", "name": "Bounty bar", "category": "food", "qty": "10 g", "kcal": 49.3, "protein_g": 0.39, "carbs_g": 5.8, "fat_g": 2.6, "fiber_g": 0.26, "note": "official Mars label rate (493kcal/100g)."},
+    {"time": "17:20", "name": "Cottage cheese", "category": "food", "qty": "75 g", "kcal": 73.5, "protein_g": 8.25, "carbs_g": 2.55, "fat_g": 3.23, "fiber_g": 0, "note": "new generic reference (cottage_cheese_generic, ~98kcal/100g, ~4-5% fat) — not label-verified."},
+    {"time": "17:20", "name": "Honey", "category": "food", "qty": "0.5 tsp (~3.5 g)", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0, "note": "new generic reference (honey_generic), tsp-to-gram assumed (~7g/tsp)."}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
@@ -47,7 +49,8 @@
     "12:00 salad: 3 cucumbers (~900g, standard whole-cucumber assumption), 25 cherry tomatoes, 0.5 red onion (~55g, standard whole-onion assumption); 200g kebab (estimated via the standard blended red-meat reference — credits ~9mg zinc, ~30mcg selenium); dressing of 1 spoon olive oil (~14g assumed) + lemon juice (~15g assumed) + salt — credits ~2.0mg vitamin E, ~5.8mg vitamin C.",
     "13:00 espresso, 1 shot (4th caffeine shot today).",
     "15:00 vanilla donut, 2 bites (~30g, new generic reference).",
-    "16:00 Bounty bar, 10g (official Mars label rate)."
+    "16:00 Bounty bar, 10g (official Mars label rate).",
+    "17:20 75g cottage cheese (new generic reference) + 0.5 tsp honey (~3.5g, new generic reference)."
   ],
   "status_note": "Day in progress. Slept 6.58h (23:35-06:10), a bit short. Lunch (12:00): cucumber/tomato/onion salad, kebab."
 }

@@ -376,6 +376,30 @@
       "fiber_g": 1,
       "verified": false,
       "source": "Generic USDA-type estimate for a standard vanilla-glazed cake/yeast donut, first logged 2026-09-22 (2 bites, ~30g assumed). Not label-verified -- refine if a specific bakery/brand is checked."
+    },
+    {
+      "id": "cottage_cheese_generic",
+      "name": "Cottage cheese, generic (~4-5% fat)",
+      "serving": "100 g",
+      "kcal": 98,
+      "protein_g": 11,
+      "carbs_g": 3.4,
+      "fat_g": 4.3,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic USDA-type estimate for creamed cottage cheese (~4-5% fat, similar to standard Israeli cottage cheese), first logged 2026-09-22 (75g). Not label-verified -- refine if a specific brand/fat% is checked."
+    },
+    {
+      "id": "honey_generic",
+      "name": "Honey, generic",
+      "serving": "100 g",
+      "kcal": 304,
+      "protein_g": 0.3,
+      "carbs_g": 82.4,
+      "fat_g": 0,
+      "fiber_g": 0.2,
+      "verified": false,
+      "source": "Standard USDA honey values, first logged 2026-09-22 (0.5 tsp, ~3.5g assumed at ~7g/tsp). Not label-verified."
     }
   ]
 }
