@@ -23,18 +23,20 @@
     {"time": "14:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "16:30", "name": "Danone Bio (probiotic yogurt), 3% fat", "category": "food", "qty": "1 cup (150 g)", "kcal": 94.5, "protein_g": 5.4, "carbs_g": 7.05, "fat_g": 4.5, "fiber_g": 0, "note": "new generic reference (danone_bio_3pct_generic, ~63kcal/100g) — not label-verified, standard 150g cup assumed."},
-    {"time": "16:30", "name": "Granola", "category": "food", "qty": "0.5 tsp (~1.25 g)", "kcal": 5.9, "protein_g": 0.13, "carbs_g": 0.8, "fat_g": 0.25, "fiber_g": 0.09, "note": "new generic reference (granola_generic) — negligible quantity."}
+    {"time": "16:30", "name": "Granola", "category": "food", "qty": "0.5 tsp (~1.25 g)", "kcal": 5.9, "protein_g": 0.13, "carbs_g": 0.8, "fat_g": 0.25, "fiber_g": 0.09, "note": "new generic reference (granola_generic) — negligible quantity."},
+    {"time": "17:45", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified reference: 1 slice (25g) = 50kcal/7.5g protein/0g carb/2.25g fat."},
+    {"time": "17:45", "name": "Cherry tomatoes", "category": "food", "qty": "2 pieces", "kcal": 5.3, "protein_g": 0.27, "carbs_g": 1.17, "fat_g": 0.06, "fiber_g": 0.36, "note": "Same standard reference as prior entries. Credits ~0.88mg lycopene, ~4.4mg vitamin C, ~5.1mcg folate DFE."}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 151,
+    "folate_mcg_dfe": 156.1,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 44,
+    "vitamin_c_mg": 48.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 9.68
   },
   "assumptions": [
     "Sleep logged: 23:30-06:15, 6.75h — a bit short of the 7-9h target band.",
@@ -48,7 +50,8 @@
     "13:00 espresso, 1 shot (2nd caffeine shot today).",
     "14:15 espresso, 1 shot (3rd caffeine shot today).",
     "15:45 espresso, 1 shot (4th caffeine shot today) — close to the 16:00 cutoff, still under it.",
-    "16:30 Danone Bio probiotic yogurt (3% fat, 150g, new generic reference) + 0.5 tsp granola (new generic reference, negligible quantity)."
+    "16:30 Danone Bio probiotic yogurt (3% fat, 150g, new generic reference) + 0.5 tsp granola (new generic reference, negligible quantity).",
+    "17:45 1 slice Tnuva Emek Light yellow cheese 9% (25g, verified reference) + 2 cherry tomatoes (standard reference — credits ~0.88mg lycopene, ~4.4mg vitamin C, ~5.1mcg folate DFE)."
   ],
   "status_note": "Day in progress. Slept 6.75h (23:30-06:15), a bit short."
 }
