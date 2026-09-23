@@ -20,9 +20,10 @@
     {"time": "12:40", "name": "Brownie", "category": "food", "qty": "25 g", "kcal": 116.5, "protein_g": 1.375, "carbs_g": 15, "fat_g": 6, "fiber_g": 0.625, "note": "new generic reference (brownie_generic, ~466kcal/100g) — not label-verified."},
     {"time": "13:20", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
@@ -43,7 +44,8 @@
     "12:40 brownie, 25g (new generic reference).",
     "13:20 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "13:00 espresso, 1 shot (2nd caffeine shot today).",
-    "14:15 espresso, 1 shot (3rd caffeine shot today)."
+    "14:15 espresso, 1 shot (3rd caffeine shot today).",
+    "15:45 espresso, 1 shot (4th caffeine shot today) — close to the 16:00 cutoff, still under it."
   ],
   "status_note": "Day in progress. Slept 6.75h (23:30-06:15), a bit short."
 }
