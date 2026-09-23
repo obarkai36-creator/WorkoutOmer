@@ -733,10 +733,13 @@ function drawCharts(key, day) {
   if (key === "sleep" || key === "supplements") {
     const rows = trailingRows(state.current, 30);
     if (key === "sleep") {
+      const nights = rows.filter((r) => r.sleep_hours !== null && r.sleep_hours !== undefined);
+      const avg = nights.length ? nights.reduce((s, r) => s + r.sleep_hours, 0) / nights.length : null;
       lineChart("chSleepPillar", rows.map((r) => r.date.slice(5)), [
         { label: "Sleep (h)", data: rows.map((r) => r.sleep_hours), borderColor: HUES.sleep.b, backgroundColor: "transparent", spanGaps: true, pointRadius: 0 },
         { label: "7h target", data: rows.map(() => 7), borderColor: COLORS.muted, borderDash: [4,4], pointRadius: 0, backgroundColor: "transparent" },
         { label: "9h target", data: rows.map(() => 9), borderColor: COLORS.muted, borderDash: [4,4], pointRadius: 0, backgroundColor: "transparent" },
+        ...(avg !== null ? [{ label: `Avg (${avg.toFixed(1)}h)`, data: rows.map(() => avg), borderColor: HUES.sleep.a, borderDash: [2,3], pointRadius: 0, backgroundColor: "transparent" }] : []),
       ]);
     } else {
       lineChart("chSupp", rows.map((r) => r.date.slice(5)), [
