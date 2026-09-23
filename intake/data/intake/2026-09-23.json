@@ -21,7 +21,9 @@
     {"time": "13:20", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "14:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:30", "name": "Danone Bio (probiotic yogurt), 3% fat", "category": "food", "qty": "1 cup (150 g)", "kcal": 94.5, "protein_g": 5.4, "carbs_g": 7.05, "fat_g": 4.5, "fiber_g": 0, "note": "new generic reference (danone_bio_3pct_generic, ~63kcal/100g) — not label-verified, standard 150g cup assumed."},
+    {"time": "16:30", "name": "Granola", "category": "food", "qty": "0.5 tsp (~1.25 g)", "kcal": 5.9, "protein_g": 0.13, "carbs_g": 0.8, "fat_g": 0.25, "fiber_g": 0.09, "note": "new generic reference (granola_generic) — negligible quantity."}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
@@ -45,7 +47,8 @@
     "13:20 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "13:00 espresso, 1 shot (2nd caffeine shot today).",
     "14:15 espresso, 1 shot (3rd caffeine shot today).",
-    "15:45 espresso, 1 shot (4th caffeine shot today) — close to the 16:00 cutoff, still under it."
+    "15:45 espresso, 1 shot (4th caffeine shot today) — close to the 16:00 cutoff, still under it.",
+    "16:30 Danone Bio probiotic yogurt (3% fat, 150g, new generic reference) + 0.5 tsp granola (new generic reference, negligible quantity)."
   ],
   "status_note": "Day in progress. Slept 6.75h (23:30-06:15), a bit short."
 }

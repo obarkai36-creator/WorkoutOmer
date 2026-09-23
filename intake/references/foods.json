@@ -412,6 +412,30 @@
       "fiber_g": 2.5,
       "verified": false,
       "source": "Generic USDA-type estimate for a standard fudgy chocolate brownie, first logged 2026-09-23 (25g). Not label-verified -- refine if a specific bakery/brand is checked."
+    },
+    {
+      "id": "danone_bio_3pct_generic",
+      "name": "Danone Bio (probiotic yogurt), 3% fat, generic",
+      "serving": "1 cup (150 g)",
+      "kcal": 94.5,
+      "protein_g": 5.4,
+      "carbs_g": 7.05,
+      "fat_g": 4.5,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic estimate for Danone Bio natural probiotic yogurt, 3% fat (~63kcal/100g), first logged 2026-09-23. Standard 150g single-serving cup assumed. Not label-verified."
+    },
+    {
+      "id": "granola_generic",
+      "name": "Granola, generic",
+      "serving": "100 g",
+      "kcal": 471,
+      "protein_g": 10,
+      "carbs_g": 64,
+      "fat_g": 20,
+      "fiber_g": 7,
+      "verified": false,
+      "source": "Standard USDA-type granola values, first logged 2026-09-23 (0.5 tsp, ~1.25g assumed). Not label-verified."
     }
   ]
 }
