@@ -1,7 +1,8 @@
 {
   "date": "2026-09-23",
   "day_number": 88,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 4500,
   "sleep": {
     "sleep_start": "23:30",
     "sleep_end": "06:15",
@@ -35,7 +36,8 @@
     {"time": "19:50", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "19:50", "name": "M&M's (milk chocolate)", "category": "food", "qty": "3 pieces (~3 g)", "kcal": 14.4, "protein_g": 0.12, "carbs_g": 2.07, "fat_g": 0.6, "fiber_g": 0.03, "note": "new generic reference (mms_milk_chocolate, official Mars label rate)."},
     {"time": "19:50", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "20:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "20:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "21:15", "name": "Green grapes", "category": "food", "qty": "15 grapes (~75 g)", "kcal": 51.75, "protein_g": 0.54, "carbs_g": 13.58, "fat_g": 0.12, "fiber_g": 0.68, "note": "new generic reference (green_grapes_generic, ~69kcal/100g) — not label-verified. Credits ~8.1mg vitamin C."}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
@@ -43,7 +45,7 @@
     "selenium_mcg": 100,
     "folate_mcg_dfe": 194.35,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1081.4,
+    "vitamin_c_mg": 1089.5,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134.14,
     "lycopene_mg": 16.28
@@ -64,7 +66,9 @@
     "17:45 1 slice Tnuva Emek Light yellow cheese 9% (25g, verified reference) + 2 cherry tomatoes (standard reference — credits ~0.88mg lycopene, ~4.4mg vitamin C, ~5.1mcg folate DFE).",
     "19:30 dinner: same as 2026-09-22 — 2 Angel PRO Pita (125g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 40g Simfonia cheese spread (verified reference), 15 cherry tomatoes (standard reference — credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE), 1 cucumber (~300g, standard assumption), sprayed olive oil (~1g).",
     "19:50 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today. 3 M&M's (milk chocolate), ~3g (new generic reference, official Mars label rate). Essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose.",
-    "20:15 creatine monohydrate, 5g (standard dose)."
+    "20:15 creatine monohydrate, 5g (standard dose).",
+    "21:15 15 green grapes (~75g, new generic reference — credits ~8.1mg vitamin C).",
+    "EOD: 4,500 steps reported. Retainers: no entry tonight (not volunteered); last logged night was 09-22 (worn:true), which breaks any consecutive-skip run regardless — no 3-night flag needed."
   ],
-  "status_note": "Day in progress. Slept 6.75h (23:30-06:15), a bit short."
+  "status_note": "Day complete. Slept 6.75h (23:30-06:15), a bit short. Lunch (13:00): Mi Casa cucumber/chicken salad. Dinner (19:30): pita, cheese, tomatoes. ~4,500 steps."
 }
