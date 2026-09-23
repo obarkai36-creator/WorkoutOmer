@@ -15,7 +15,8 @@
     {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "08:30", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "3 slices (75 g)", "kcal": 150, "protein_g": 22.5, "carbs_g": 0, "fat_g": 6.75, "fiber_g": 0, "note": "Breakfast. Verified reference: 1 slice (25g) = 50kcal/7.5g protein/0g carb/2.25g fat."},
     {"time": "08:30", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "note": "Same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
-    {"time": "08:30", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+    {"time": "08:30", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "13:00", "name": "Lunch — Mi Casa (Herzliya) large cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as prior entries)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "time_approx": true, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Reused the standing estimate; exact time not given, placeholder 13:00."}
   ],
   "caffeine_shots": 1,
   "micros_sperm_priority": {
@@ -33,7 +34,8 @@
     "06:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "08:00 espresso, 1 shot (not specified as double, so logged as single) — 1st caffeine shot today.",
     "06:20 weigh-in logged to weight.json: 80.95kg — nearly identical to the 2026-09-20 reading across every field except heart rate (93 vs 81); confirmed with the user as a genuine fresh reading before logging.",
-    "08:30 breakfast: 3 slices Tnuva Emek Light yellow cheese 9% (75g, verified reference), 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE), Mayven Full Volume Gummies (2 gummies, standard multivitamin dose — adds 100mcg DFE folate, 2.8mg zinc)."
+    "08:30 breakfast: 3 slices Tnuva Emek Light yellow cheese 9% (75g, verified reference), 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE), Mayven Full Volume Gummies (2 gummies, standard multivitamin dose — adds 100mcg DFE folate, 2.8mg zinc).",
+    "Lunch (time not given, approximated at 13:00): Mi Casa Vietnamese-style cucumber/chicken noodle salad, same order as previously logged — reusing the standing estimate."
   ],
   "status_note": "Day in progress. Slept 6.75h (23:30-06:15), a bit short."
 }
