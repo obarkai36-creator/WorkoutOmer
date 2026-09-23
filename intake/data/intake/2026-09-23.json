@@ -18,9 +18,10 @@
     {"time": "08:30", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "13:00", "name": "Lunch — Mi Casa (Herzliya) large cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as prior entries)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "time_approx": true, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Reused the standing estimate; exact time not given, placeholder 13:00."},
     {"time": "12:40", "name": "Brownie", "category": "food", "qty": "25 g", "kcal": 116.5, "protein_g": 1.375, "carbs_g": 15, "fat_g": 6, "fiber_g": 0.625, "note": "new generic reference (brownie_generic, ~466kcal/100g) — not label-verified."},
-    {"time": "13:20", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:20", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
@@ -39,7 +40,8 @@
     "08:30 breakfast: 3 slices Tnuva Emek Light yellow cheese 9% (75g, verified reference), 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE), Mayven Full Volume Gummies (2 gummies, standard multivitamin dose — adds 100mcg DFE folate, 2.8mg zinc).",
     "Lunch (time not given, approximated at 13:00): Mi Casa Vietnamese-style cucumber/chicken noodle salad, same order as previously logged — reusing the standing estimate.",
     "12:40 brownie, 25g (new generic reference).",
-    "13:20 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose."
+    "13:20 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "13:00 espresso, 1 shot (2nd caffeine shot today)."
   ],
   "status_note": "Day in progress. Slept 6.75h (23:30-06:15), a bit short."
 }
