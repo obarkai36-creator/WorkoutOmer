@@ -1,5 +1,5 @@
 {
-  "now": 1790139798940,
+  "now": 1790140389853,
   "workouts": [
     {
       "datetime": "2026-09-19T11:20",
@@ -8354,9 +8354,9 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-23T05:03:18.940Z",
+    "readyAt": "2026-09-23T05:13:09.853Z",
     "neverLogged": false,
-    "daysSince": 45.5,
+    "daysSince": 45.6,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -8477,7 +8477,7 @@
         "section": "Chest",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 45.5
+        "daysSince": 45.6
       },
       {
         "section": "Legs",
@@ -8655,13 +8655,26 @@
   "bodyweight": {
     "any": true,
     "current": 80.95,
-    "prev": 81.3,
-    "delta": -0.35,
+    "prev": 80.95,
+    "delta": 0,
     "totalChange": -0.8,
-    "latestDate": "2026-09-20T08:05",
+    "latestDate": "2026-09-23T06:20",
     "min": 80.25,
     "max": 82,
     "history": [
+      {
+        "datetime": "2026-09-23T06:20",
+        "kg": 80.95,
+        "bodyComposition": {
+          "bmi": 27.6,
+          "body_fat_pct": 26.9,
+          "muscle_mass_kg": 56.2,
+          "visceral_fat": 11,
+          "bmr_kcal": 1718,
+          "body_age": 29,
+          "resting_heart_rate": 93
+        }
+      },
       {
         "datetime": "2026-09-20T08:05",
         "kg": 80.95,
@@ -8956,7 +8969,7 @@
       "visceral_fat": 11,
       "bmr_kcal": 1718,
       "body_age": 29,
-      "resting_heart_rate": 81
+      "resting_heart_rate": 93
     }
   },
   "sleep": {
