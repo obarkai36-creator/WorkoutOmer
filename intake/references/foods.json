@@ -436,6 +436,18 @@
       "fiber_g": 7,
       "verified": false,
       "source": "Standard USDA-type granola values, first logged 2026-09-23 (0.5 tsp, ~1.25g assumed). Not label-verified."
+    },
+    {
+      "id": "mms_milk_chocolate",
+      "name": "M&M's (milk chocolate)",
+      "serving": "100 g",
+      "kcal": 480,
+      "protein_g": 4,
+      "carbs_g": 69,
+      "fat_g": 20,
+      "fiber_g": 1,
+      "verified": true,
+      "source": "Official Mars label values (widely published, per 100g): ~480 kcal, 20g fat, 69g carbs (sugar-dominant), 4g protein. First logged 2026-09-23 (3 pieces, ~1g/piece assumed, ~3g total)."
     }
   ]
 }

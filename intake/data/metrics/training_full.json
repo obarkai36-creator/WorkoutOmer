@@ -1,5 +1,5 @@
 {
-  "now": 1790174917293,
+  "now": 1790182183060,
   "workouts": [
     {
       "datetime": "2026-09-19T11:20",
@@ -6807,7 +6807,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 21,
+      "pct": 20,
       "readyInHours": 0,
       "ready": true
     },
@@ -6823,7 +6823,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -6918,14 +6918,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 21,
+      "pct": 20,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 21,
+          "pct": 20,
           "readyInHours": 0,
           "ready": true
         }
@@ -6955,7 +6955,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         },
@@ -8354,7 +8354,7 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-23T14:48:37.293Z",
+    "readyAt": "2026-09-23T16:49:43.060Z",
     "neverLogged": false,
     "daysSince": 46,
     "suggestedExercises": [
@@ -8483,25 +8483,25 @@
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 11.2
+        "daysSince": 11.3
       },
       {
         "section": "Shoulders",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 8
+        "daysSince": 8.1
       },
       {
         "section": "Arms",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 7.2
+        "daysSince": 7.3
       },
       {
         "section": "Back",
-        "fatigue": 21,
+        "fatigue": 20,
         "readyInHours": 0,
-        "daysSince": 4.1
+        "daysSince": 4.2
       }
     ],
     "suggestedCount": 4,
@@ -8541,7 +8541,7 @@
       15,
       15
     ],
-    "daysSinceLast": 4.1,
+    "daysSinceLast": 4.2,
     "total": 67
   },
   "relstrength": {
