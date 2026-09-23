@@ -1,5 +1,5 @@
 {
-  "now": 1790159244598,
+  "now": 1790162148896,
   "workouts": [
     {
       "datetime": "2026-09-19T11:20",
@@ -6807,7 +6807,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 23,
+      "pct": 22,
       "readyInHours": 0,
       "ready": true
     },
@@ -6839,7 +6839,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 2,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -6918,14 +6918,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 23,
+      "pct": 22,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 23,
+          "pct": 22,
           "readyInHours": 0,
           "ready": true
         }
@@ -6948,7 +6948,7 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "muscles": [
         {
@@ -6963,7 +6963,7 @@
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 2,
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         },
@@ -8332,14 +8332,14 @@
       },
       {
         "label": "-1w",
-        "stress": 723,
-        "sessions": 4,
+        "stress": 907,
+        "sessions": 5,
         "acwr": 1.37
       },
       {
         "label": "This wk",
-        "stress": 453,
-        "sessions": 4,
+        "stress": 270,
+        "sessions": 3,
         "acwr": 0.54
       }
     ],
@@ -8354,7 +8354,7 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-23T10:27:24.598Z",
+    "readyAt": "2026-09-23T11:15:48.896Z",
     "neverLogged": false,
     "daysSince": 45.8,
     "suggestedExercises": [
@@ -8489,17 +8489,17 @@
         "section": "Shoulders",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 7.8
+        "daysSince": 7.9
       },
       {
         "section": "Arms",
-        "fatigue": 4,
+        "fatigue": 3,
         "readyInHours": 0,
         "daysSince": 7
       },
       {
         "section": "Back",
-        "fatigue": 23,
+        "fatigue": 22,
         "readyInHours": 0,
         "daysSince": 4
       }
