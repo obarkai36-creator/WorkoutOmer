@@ -299,6 +299,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 24 Sep — Outdoor Run, Or Akiva (clock time not given, "morning run")
+  {
+    datetime: "2026-09-24T06:00", note: "Outdoor Run — Or Akiva, morning (Nike Run Club, clock time not given, placeholder 06:00) — 3.00km in 24:16 (8:05/km avg pace), 206 kcal, 16m elevation gain, cadence 143. No heart-rate monitor worn.",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 3.00, durationMin: 24.27, cadence: 143, elevationGainM: 16 },
+    ],
+  },
   // 19 Sep — Back, regular gym (11:20)
   {
     datetime: "2026-09-19T11:20",

@@ -14,6 +14,8 @@
     {"time": "05:45", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "05:50", "name": "Green grapes", "category": "food", "qty": "10 grapes (~50 g)", "kcal": 34.5, "protein_g": 0.36, "carbs_g": 9.05, "fat_g": 0.08, "fiber_g": 0.45, "note": "same generic reference (green_grapes_generic, ~69kcal/100g) as first logged 2026-09-23. Credits ~5.4mg vitamin C."}
   ],
+  "workout_today": true,
+  "workout_summary": "Outdoor Run, Or Akiva (morning) — 3.00km, 24:16, 206 kcal",
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -27,7 +29,8 @@
   "assumptions": [
     "Sleep logged: 22:30-05:40, 7.17h — within the 7-9h target band.",
     "05:45 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "05:50 10 green grapes (~50g, same generic reference established 2026-09-23) — credits ~5.4mg vitamin C."
+    "05:50 10 green grapes (~50g, same generic reference established 2026-09-23) — credits ~5.4mg vitamin C.",
+    "Morning outdoor run at Or Akiva (Nike Run Club, clock time not given, placeholder 06:00) — 3.00km in 24:16 (8:05/km avg pace), 206 kcal, 16m elevation gain, cadence 143, no HR monitor — logged to data.js/workouts.json."
   ],
-  "status_note": "Day in progress. Slept 7.17h (22:30-05:40), within target."
+  "status_note": "Day in progress. Slept 7.17h (22:30-05:40), within target. Morning run: 3.00km, 24:16, 206 kcal."
 }
