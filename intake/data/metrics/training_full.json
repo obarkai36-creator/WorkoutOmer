@@ -1,5 +1,5 @@
 {
-  "now": 1790269222920,
+  "now": 1790274999585,
   "workouts": [
     {
       "datetime": "2026-09-24T06:00",
@@ -6836,7 +6836,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -6924,7 +6924,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "ready": true
     }
@@ -6947,14 +6947,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         }
@@ -7070,14 +7070,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 20,
+          "pct": 19,
           "readyInHours": 0,
           "ready": true
         }
@@ -8355,14 +8355,14 @@
       },
       {
         "label": "-2w",
-        "stress": 71,
-        "sessions": 1,
+        "stress": 315,
+        "sessions": 2,
         "acwr": 1
       },
       {
         "label": "-1w",
-        "stress": 907,
-        "sessions": 5,
+        "stress": 663,
+        "sessions": 4,
         "acwr": 1.1
       },
       {
@@ -8383,9 +8383,9 @@
     "fatigue": 1,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-24T17:00:22.920Z",
+    "readyAt": "2026-09-24T18:36:39.585Z",
     "neverLogged": false,
-    "daysSince": 47,
+    "daysSince": 47.1,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -8506,19 +8506,19 @@
         "section": "Chest",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 47
+        "daysSince": 47.1
       },
       {
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 12.3
+        "daysSince": 12.4
       },
       {
         "section": "Shoulders",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 9.1
+        "daysSince": 9.2
       },
       {
         "section": "Arms",
@@ -8528,9 +8528,9 @@
       },
       {
         "section": "Back",
-        "fatigue": 14,
+        "fatigue": 13,
         "readyInHours": 0,
-        "daysSince": 5.2
+        "daysSince": 5.3
       }
     ],
     "suggestedCount": 4,
