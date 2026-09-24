@@ -16,8 +16,11 @@
     {"time": "06:30", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
     {"time": "06:30", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (intake/recipes/catalina_crunch_choc_pb_cereal.json): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. \"Handful\" estimated at ~20g, consistent with prior handful-size logs."},
     {"time": "06:55", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
-    {"time": "06:55", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "06:55", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "07:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "08:25", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
+  "caffeine_shots": 2,
   "workout_today": true,
   "workout_summary": "Outdoor Run, Or Akiva (morning) — 3.00km, 24:16, 206 kcal",
   "micros_sperm_priority": {
@@ -36,7 +39,9 @@
     "05:50 10 green grapes (~50g, same generic reference established 2026-09-23) — credits ~5.4mg vitamin C.",
     "Morning outdoor run at Or Akiva (Nike Run Club, clock time not given, placeholder 06:00) — 3.00km in 24:16 (8:05/km avg pace), 206 kcal, 16m elevation gain, cadence 143, no HR monitor — logged to data.js/workouts.json.",
     "06:30 vanilla Danone PRO protein yogurt (1 cup, 200g) + Catalina Crunch Protein Cereal (Chocolate Peanut Butter), ~20g handful — verified label rate.",
-    "06:55 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc. Creatine monohydrate, 5g (post-workout, standard dose)."
+    "06:55 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc. Creatine monohydrate, 5g (post-workout, standard dose).",
+    "07:30 espresso, 1 shot (1st caffeine shot today).",
+    "08:25 espresso, 1 shot (2nd caffeine shot today)."
   ],
   "status_note": "Day in progress. Slept 7.17h (22:30-05:40), within target. Morning run: 3.00km, 24:16, 206 kcal."
 }
