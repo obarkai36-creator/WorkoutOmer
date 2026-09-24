@@ -2,6 +2,8 @@
   "date": "2026-09-24",
   "day_number": 89,
   "in_progress": true,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User explicitly asked to skip exact food macro/micro logging for 2026-09-24 (one-off day).",
   "sleep": {
     "sleep_start": "22:30",
     "sleep_end": "05:40",
@@ -41,7 +43,9 @@
     "06:30 vanilla Danone PRO protein yogurt (1 cup, 200g) + Catalina Crunch Protein Cereal (Chocolate Peanut Butter), ~20g handful — verified label rate.",
     "06:55 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc. Creatine monohydrate, 5g (post-workout, standard dose).",
     "07:30 espresso, 1 shot (1st caffeine shot today).",
-    "08:25 espresso, 1 shot (2nd caffeine shot today)."
+    "08:25 espresso, 1 shot (2nd caffeine shot today).",
+    "User asked to skip detailed food macro/micro logging for today (one-off day, not a standing break) — food items from here on are not itemized; supplements/meds/caffeine/workout/sleep/lifestyle events still logged as usual.",
+    "Lunch: white wine + red wine, 1 glass each (~150ml assumed, quantities not stated) — logged to lifestyle.json as a moderate-severity alcohol event. First drinking day since 09-14 (10-day gap), comfortably within the <=1 glass/week baseline by frequency despite today being 2 glasses."
   ],
-  "status_note": "Day in progress. Slept 7.17h (22:30-05:40), within target. Morning run: 3.00km, 24:16, 206 kcal."
+  "status_note": "Day in progress. Slept 7.17h (22:30-05:40), within target. Morning run: 3.00km, 24:16, 206 kcal. No detailed food tracking today (one-off); wine at lunch."
 }
