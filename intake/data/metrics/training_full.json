@@ -1,5 +1,5 @@
 {
-  "now": 1790339456338,
+  "now": 1790340603112,
   "workouts": [
     {
       "datetime": "2026-09-25T16:00",
@@ -7015,7 +7015,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 99,
-      "readyInHours": 71.6,
+      "readyInHours": 71.5,
       "ready": false
     },
     "back": {
@@ -7111,7 +7111,7 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 36,
-      "readyInHours": 5.2,
+      "readyInHours": 5.1,
       "ready": false
     }
   },
@@ -7119,14 +7119,14 @@
     "Chest": {
       "section": "Chest",
       "pct": 99,
-      "readyInHours": 71.6,
+      "readyInHours": 71.5,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 99,
-          "readyInHours": 71.6,
+          "readyInHours": 71.5,
           "ready": false
         }
       ]
@@ -7257,14 +7257,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 36,
-      "readyInHours": 5.2,
+      "readyInHours": 5.1,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 36,
-          "readyInHours": 5.2,
+          "readyInHours": 5.1,
           "ready": false
         }
       ]
@@ -8569,9 +8569,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-25T12:30:56.338Z",
+    "readyAt": "2026-09-25T12:50:03.112Z",
     "neverLogged": false,
-    "daysSince": 13.1,
+    "daysSince": 13.2,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -8734,7 +8734,7 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 13.1
+        "daysSince": 13.2
       },
       {
         "section": "Shoulders",
@@ -8746,7 +8746,7 @@
         "section": "Back",
         "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 6
+        "daysSince": 6.1
       },
       {
         "section": "Arms",
@@ -8757,7 +8757,7 @@
       {
         "section": "Chest",
         "fatigue": 99,
-        "readyInHours": 71.6,
+        "readyInHours": 71.5,
         "daysSince": -0.1
       }
     ],
@@ -8772,7 +8772,7 @@
     {
       "level": "low",
       "title": "Chest fatigued (99%)",
-      "detail": "Recovers in ~71.6h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~71.5h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
