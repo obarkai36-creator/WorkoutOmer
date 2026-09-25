@@ -1,0 +1,100 @@
+{
+  "id": "protein_crepes",
+  "name": "Protein crepes (קרפים חלבון) — 2-egg + protein-powder",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram (Hebrew caption)",
+    "captured": "2026-09-25",
+    "notes": "Blender/Ninja protein crepe: ½ a protein drink (or 25–40 g protein powder) + 2 eggs + 2 tbsp flour + a splash of sweetener. Makes 3–4 thin crepes. The post's headline '40 g protein / 440 kcal' ASSUMES you also drink the OTHER half of the protein bottle alongside — so that figure is the crepes PLUS the extra drink, not the crepes alone. Below I give the CREPES-ONLY macros (the batter as cooked) and note the poster's combined figure. Protein-drink macros vary a lot; assumed a ~25 g-protein / ~220 kcal bottle (half in the batter). Tell me the exact shake and I'll tighten it."
+  },
+  "servings": 1,
+  "serving_desc": "the full batch of 3–4 crepes (batter only) as one serving; per-crepe below",
+  "ingredients": [
+    {"item": "protein drink or powder", "qty": "½ bottle (or 25–40 g powder)", "note": "half goes in the batter; the post assumes you drink the other half separately"},
+    {"item": "eggs", "qty": "2"},
+    {"item": "flour", "qty": "2 tbsp (~16 g)", "note": "swap to whole-spelt/oat flour for fiber"},
+    {"item": "sweetener (stevia / sucralose)", "qty": "a small splash"},
+    {"item": "oil spray or coconut oil", "qty": "a touch, for the pan"}
+  ],
+  "steps": [
+    "Blend the protein, eggs, flour and sweetener smooth (Ninja/blender or whisk well).",
+    "Heat a pan, then drop to the LOWEST heat; a touch of oil spray or coconut oil.",
+    "Pour a thin layer and tilt to cover the whole pan.",
+    "Cover and stay by it — it burns in seconds. When bubbles appear on top, gently free the edges, then flip for ~½ min.",
+    "Makes 3–4 crepes depending on pan size."
+  ],
+  "per_serving": {
+    "kcal": 322,
+    "protein_g": 27,
+    "carbs_g": 15,
+    "fat_g": 12,
+    "fiber_g": 0.5,
+    "micros": {
+      "choline_mg": 300,
+      "selenium_mcg": 30,
+      "sodium_mg": 250,
+      "calcium_mg": 120
+    }
+  },
+  "batch_totals": {
+    "kcal": 322,
+    "protein_g": 27,
+    "carbs_g": 15,
+    "fat_g": 12,
+    "fiber_g": 0.5,
+    "note": "CREPES ONLY (½ shake + 2 eggs + 2 tbsp flour + spray). Per crepe (÷3.5): ~92 kcal, 7.6 g protein, 4 g carb, 3.5 g fat. The post's '40 g protein / 440 kcal' = these crepes PLUS drinking the remaining ½ bottle (~13 g protein / ~110 kcal more)."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "A genuinely good cut breakfast — ~27 g protein for ~322 kcal in the crepes alone (~8.4 g protein per 100 kcal), driven by 2 eggs plus the protein powder, with very little fat and modest carbs. Eggs also bring selenium and choline. The only real weakness is fiber: 2 tbsp of white flour gives almost none, easily fixed by swapping to spelt/oat flour. The sweetener keeps sugar at zero. If you follow the post and also drink the other half of the shake, you're at the ~40 g protein / ~440 kcal they quote — still a very lean, protein-dense meal.",
+      "flags": [
+        "~27 g protein / ~322 kcal crepes-only (~8.4 g protein per 100 kcal)",
+        "low fat, no added sugar (sweetener)",
+        "selenium + choline from the eggs",
+        "low fiber (~0.5 g) — white flour; swap for whole-grain",
+        "poster's 40 g/440 kcal includes drinking the other ½ shake"
+      ],
+      "suggested_mods": [
+        "Swap the 2 tbsp white flour for whole-spelt or oat flour to add fiber (little macro change)",
+        "Top with Greek yogurt + berries for fiber, vitamin C and prenatal micros; or go savory with veg + cheese",
+        "Keep the heat genuinely low — protein/egg batter scorches far faster than normal crepe batter"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "A strong preconception breakfast IF the eggs are cooked fully through — flip until set, no runny batter (the recipe cooks them through, so it's fine). Eggs are a standout here: ~300 mg choline (key for fetal brain development) plus selenium and protein. Two watch-points: pick a reputable protein powder (not all are third-party tested; some aren't recommended in pregnancy), and non-nutritive sweeteners (stevia/sucralose) are considered safe in normal amounts — moderate if she prefers. Low in folate/iron on its own — the flour swap + a fruit/veg topping fixes that.",
+      "prenatal_highlights": [
+        "choline (~300 mg) + selenium from 2 eggs — fetal brain development",
+        "high protein, low fat, fully cooked",
+        "no added sugar (sweetener)"
+      ],
+      "safety_advisories": [
+        {"note": "Cook the crepes fully through (set, not wet) — standard here, just don't undercook the egg batter.", "swap": "cook until fully set"},
+        {"note": "Use a reputable, ideally third-party-tested protein powder; some aren't recommended in pregnancy. Stevia/sucralose are considered safe in normal amounts.", "swap": "a pregnancy-safe protein powder, or extra egg white for protein"}
+      ],
+      "suggested_mods": [
+        "Swap to whole-grain flour and top with fruit/greens for folate, iron + vitamin C",
+        "Greek-yogurt + berry topping makes it a well-rounded prenatal breakfast"
+      ]
+    }
+  },
+  "tags": ["breakfast", "crepe", "high-protein", "low-fat", "low-sugar", "eggs", "quick", "bread"],
+  "adopted": false,
+  "created": "2026-09-25",
+  "updated": "2026-09-25",
+  "serving_g": 160,
+  "meal_type": "Bread",
+  "cooking_guide": [
+    "Blend everything (protein, eggs, flour, sweetener) until completely smooth — a Ninja/blender is ideal; by hand, whisk hard so there are no flour lumps.",
+    "Let the batter rest 5–10 min. This hydrates the flour and lets big bubbles settle, giving a more tender, even crepe.",
+    "Heat a nonstick pan over medium until hot, then turn it down to the LOWEST setting. Protein + egg batter browns and burns far faster than normal crepe batter — low heat is the whole game.",
+    "Add a touch of oil spray or a thin smear of coconut oil. Pour a thin layer of batter and immediately tilt/swirl the pan so it covers the whole surface in a thin, even sheet.",
+    "Cover and stay right by it. When the top has set and small bubbles appear and the edges start to lift, gently loosen the edges with a thin spatula.",
+    "Flip and cook about another 30 seconds until just set — don't overcook or it turns rubbery.",
+    "Stack the finished crepes under a clean towel to keep them soft and pliable.",
+    "Tips: thinner batter = lacier, more flexible crepes; a nonstick pan is essential here; for sweet, fill with Greek yogurt + berries or a little nut butter; for savory, skip the sweetener and fill with cheese, egg or veg."
+  ]
+}

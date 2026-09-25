@@ -1,0 +1,101 @@
+{
+  "id": "rice_paper_cheese_bake_allyellow",
+  "name": "Rice-paper & cheese bake — all-yellow variant (cottage + 130 g 9%)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Calculated variant of the logged batch",
+    "captured": "2026-09-25",
+    "notes": "Leaner variant of rice_paper_cheese_bake_logged: the cheddar is dropped and the whole 130 g of hard cheese is 9% light yellow. CALCULATED, not yet cooked. TOTAL batch = 3 rice-paper sheets (~33 g) + 250 g cottage cheese + 130 g of 9% light yellow cheese. Makes 2 units; macros below are PER UNIT (batch ÷ 2). ASSUMPTIONS: ~½ of one beaten egg sticking as the wash + ~3 g sesame, no added salt. Estimate."
+  },
+  "servings": 2,
+  "serving_desc": "1 unit (~200 g cooked) — the batch makes 2",
+  "ingredients": [
+    {"item": "rice-paper sheets (דפי אורז)", "qty": "3 total (~33 g)", "note": "used dry — do not soak"},
+    {"item": "cottage cheese", "qty": "250 g total (1 tub)"},
+    {"item": "9% light yellow cheese", "qty": "130 g total", "note": "replaces the 75 g yellow + 55 g cheddar of the logged batch"},
+    {"item": "egg, beaten (for brushing)", "qty": "~1 (assumed ~½ sticks)", "note": "amount assumed"},
+    {"item": "sesame seeds", "qty": "~3 g (assumed)"},
+    {"item": "salt, pepper", "qty": "none assumed"}
+  ],
+  "steps": [
+    "Mix the cottage and 9% yellow cheese; season with pepper.",
+    "On parchment layer: rice paper → half the cheese → rice paper → rest of cheese → rice paper on top.",
+    "Brush both sides with beaten egg, sprinkle sesame.",
+    "Bake at 200 °C for 25–30 min until golden and crispy; cut into 2 units."
+  ],
+  "per_serving": {
+    "kcal": 350,
+    "protein_g": 33,
+    "carbs_g": 18,
+    "fat_g": 14,
+    "fiber_g": 0.4,
+    "micros": {
+      "calcium_mg": 580,
+      "selenium_mcg": 10,
+      "zinc_mg": 2,
+      "choline_mg": 40,
+      "sodium_mg": 800,
+      "saturated_fat_g": 8
+    }
+  },
+  "batch_totals": {
+    "kcal": 701,
+    "protein_g": 65,
+    "carbs_g": 37,
+    "fat_g": 28,
+    "fiber_g": 0.7,
+    "sodium_mg": 1600,
+    "calcium_mg": 1160,
+    "note": "Whole batch (2 units), incl. assumed ~½ egg wash + ~3 g sesame. Vs the cheddar batch: same protein, ~37 fewer kcal and ~5 g less fat PER UNIT, because 9% cheese carries far less fat than 28% cheddar."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 9,
+      "verdict": "The leanest, highest-density version of this bake and a top-tier cut snack — ~33 g protein per unit for only 350 kcal is ~9.4 g protein per 100 kcal, right up with the best in your library. Swapping the 28%-fat cheddar for 9% cheese keeps the protein identical while cutting ~5 g fat and ~3 g saturated fat per unit vs the batch you actually made. Only reasons it's not a 10: still near-zero fiber and high sodium (~800 mg/unit), both inherent to the dish. The one thing you lose vs the cheddar version is flavor depth — worth a pinch of za'atar/paprika.",
+      "flags": [
+        "~33 g protein / unit at 350 kcal — ~9.4 g protein per 100 kcal (excellent)",
+        "leaner than the cheddar batch: ~5 g less fat, ~3 g less saturated fat per unit",
+        "very low fiber (~0.4 g)",
+        "high sodium (~800 mg/unit) from the cheeses",
+        "high calcium (~580 mg/unit)"
+      ],
+      "suggested_mods": [
+        "Best cut version of this bake — make this over the cheddar one on deficit days",
+        "Add za'atar / oregano / smoked paprika to the cheese to replace the cheddar's punch",
+        "Serve with tomato/salad for the fiber + vitamin C it lacks"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Same clean preconception profile as the cheddar batch — fully baked, all pasteurized cheeses (cottage + 9% yellow), no soft/brined cheese, no safety flags. Strong protein and calcium; leaning out the fat doesn't change her lens either way. Still not a folate/iron/DHA source, so it's a good snack rather than a prenatal main.",
+      "prenatal_highlights": [
+        "high protein (~33 g/unit) + calcium (~580 mg/unit)",
+        "some choline from the egg wash",
+        "fully baked, all pasteurized cheeses — no safety flags"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Pair with salad/tomato for folate + vitamin C",
+        "Fine as-is; no swaps needed for safety"
+      ]
+    }
+  },
+  "tags": ["snack", "cheese", "baked", "no-fry", "rice-paper", "vegetarian", "high-protein", "low-fiber", "low-fat", "variant"],
+  "adopted": false,
+  "created": "2026-09-25",
+  "updated": "2026-09-25",
+  "serving_g": 200,
+  "meal_type": "Snack",
+  "cooking_guide": [
+    "Mix the cottage and grated 9% yellow cheese with pepper until fairly even; it's a wet, cottage-forward mix, which helps the rice paper soften and seal.",
+    "Keep the rice papers DRY (don't soak). Line a tray with parchment.",
+    "Layer: rice paper → half the cheese (leave a ~1 cm border) → rice paper → rest of the cheese → rice paper on top. Press gently all over to seal.",
+    "Brush the top with beaten egg (gives the deep-golden, shatter-crisp surface), scatter sesame, then carefully flip and brush + sesame the other side too.",
+    "Bake in a fully preheated oven at 200 °C (400 °F) for 25–30 min. With no cheddar it's a touch less greasy, so watch it crisps evenly — flip once around 15 min if browning unevenly.",
+    "Pull it deep golden and crackly; rice paper burns fast, so watch the last 5 min.",
+    "Rest 2–3 min on a rack, then cut into 2 units with a serrated knife.",
+    "Tip: since there's no cheddar and no salt, lean on seasoning — za'atar, oregano, smoked paprika or a grating of garlic in the cheese brings back the flavor; a spoon of cooked spinach folded in adds a little fiber."
+  ]
+}
