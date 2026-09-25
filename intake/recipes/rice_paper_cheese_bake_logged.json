@@ -1,0 +1,102 @@
+{
+  "id": "rice_paper_cheese_bake_logged",
+  "name": "Rice-paper & cheese bake — logged batch (cottage + 9% + cheddar)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Logged batch — actually cooked 2026-09-25",
+    "captured": "2026-09-25",
+    "notes": "A batch the user actually cooked, logged as a reference. Distinct cheese blend from the base rice_paper_cheese_bake (this one is cottage-forward + cheddar). TOTAL batch = 3 rice-paper sheets (~33 g) + 250 g cottage cheese + 130 g combined cheese (75 g of 9% light yellow + 55 g cheddar at 28% fat, 3 slices). Makes 2 units; macros below are PER UNIT (batch ÷ 2). ASSUMPTIONS (not given): ~½ of one beaten egg actually sticking as the wash + ~3 g sesame, and NO added salt — tell me if you salted it or used more/less egg and I'll adjust. Estimate."
+  },
+  "servings": 2,
+  "serving_desc": "1 unit (~200 g cooked) — the batch makes 2",
+  "ingredients": [
+    {"item": "rice-paper sheets (דפי אורז)", "qty": "3 total (~33 g)", "note": "used dry — do not soak"},
+    {"item": "cottage cheese", "qty": "250 g total (1 tub)"},
+    {"item": "9% light yellow cheese", "qty": "75 g total"},
+    {"item": "cheddar (28% fat)", "qty": "55 g total (3 slices)"},
+    {"item": "egg, beaten (for brushing)", "qty": "~1 (assumed ~½ sticks)", "note": "amount assumed — not specified"},
+    {"item": "sesame seeds", "qty": "~3 g (assumed)", "note": "amount assumed — not specified"},
+    {"item": "salt, pepper", "qty": "none assumed", "note": "tell me if you salted it"}
+  ],
+  "steps": [
+    "Mix the cottage, 9% yellow and cheddar; season with pepper.",
+    "On parchment layer: rice paper → half the cheese → rice paper → rest of cheese → rice paper on top.",
+    "Brush both sides with beaten egg, sprinkle sesame.",
+    "Bake at 200 °C for 25–30 min until golden and crispy; cut into 2 units."
+  ],
+  "per_serving": {
+    "kcal": 387,
+    "protein_g": 32,
+    "carbs_g": 19,
+    "fat_g": 19,
+    "fiber_g": 0.4,
+    "micros": {
+      "calcium_mg": 575,
+      "selenium_mcg": 12,
+      "zinc_mg": 2,
+      "choline_mg": 40,
+      "sodium_mg": 800,
+      "saturated_fat_g": 11
+    }
+  },
+  "batch_totals": {
+    "kcal": 774,
+    "protein_g": 65,
+    "carbs_g": 37,
+    "fat_g": 39,
+    "fiber_g": 0.7,
+    "sodium_mg": 1600,
+    "calcium_mg": 1150,
+    "note": "Whole batch (2 units), incl. assumed ~½ egg wash + ~3 g sesame. Cheeses drive the fat, saturated fat and sodium; the cheddar (28% fat) is the richest lever."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "Excellent protein density for what it is — ~32 g protein per unit for only 387 kcal is ~8.3 g protein per 100 kcal, one of the best snacks in your library. The cottage-forward blend is what does it: 250 g of cottage keeps protein high while the fat stays moderate for a cheese bake (~19 g/unit, ~11 g saturated), and the cheddar is the richest lever. Downsides are the usual for this dish: barely any fiber (~0.4 g) and high sodium (~800 mg/unit even with no added salt). A genuinely strong high-protein snack — just pair it with something fibrous.",
+      "flags": [
+        "~32 g protein / unit at 387 kcal — ~8.3 g protein per 100 kcal (excellent)",
+        "moderate fat ~19 g/unit (~11 g saturated) — cheddar is the richest lever",
+        "very low fiber (~0.4 g) — no veg, refined rice-paper carbs",
+        "high sodium (~800 mg/unit) from the cheeses alone — good you skipped added salt",
+        "high calcium (~575 mg/unit)"
+      ],
+      "suggested_mods": [
+        "Keep it: swapping some cheddar for more 9% cheese would trim fat with little protein cost",
+        "Serve with salad / tomato / pepper for the fiber + vitamin C it lacks",
+        "Great post-workout or as the protein anchor of a lighter day"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "A high-protein, calcium-rich dairy snack, fully baked (egg wash cooked through). Cottage, 9% yellow and cheddar are all pasteurized hard/fresh cheeses — no Listeria concern, and no Bulgarian/soft cheese in this batch, so no safety flag at all. Strong calcium and protein for her; not a folate/iron/DHA source, so it's a snack rather than a prenatal main.",
+      "prenatal_highlights": [
+        "high protein (~32 g/unit) + calcium (~575 mg/unit)",
+        "some choline from the egg wash",
+        "fully baked, all pasteurized cheeses — no safety flags"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Pair with salad/tomato for folate + vitamin C",
+        "Fine as-is; no swaps needed for safety this time"
+      ]
+    }
+  },
+  "tags": ["snack", "cheese", "baked", "no-fry", "rice-paper", "vegetarian", "high-protein", "low-fiber", "logged-batch"],
+  "adopted": false,
+  "created": "2026-09-25",
+  "updated": "2026-09-25",
+  "serving_g": 200,
+  "meal_type": "Snack",
+  "cooking_guide": [
+    "Mix the cottage, 9% yellow and cheddar with pepper until fairly even. This blend is cottage-forward, so it's a bit wetter — that's fine, it helps the rice paper soften and seal.",
+    "Keep the rice papers DRY (don't soak). Line a tray with parchment.",
+    "Layer: one rice paper → half the cheese (leave a ~1 cm border) → second rice paper → rest of the cheese → third rice paper on top. Press gently all over to seal.",
+    "Brush the top with beaten egg (this is what gives the deep-golden, shatter-crisp surface), scatter sesame, then carefully flip and brush + sesame the other side too.",
+    "Bake in a fully preheated oven at 200 °C (400 °F) for 25–30 min. The cheddar makes it a little greasier/crispier — if it's browning unevenly, flip once around 15 min.",
+    "Pull it deep golden and crackly; rice paper burns fast, so watch the last 5 min.",
+    "Rest 2–3 min on a rack so it crisps as it cools, then cut into 2 units with a serrated knife.",
+    "Tip: since you skipped salt, a pinch of za'atar or dried oregano in the cheese adds savoriness without much sodium; a spoon of cooked spinach folded in adds the fiber this bake lacks."
+  ]
+}
