@@ -10,12 +10,15 @@
     "notes": "8.17h, within the 7-9h target band."
   },
   "items": [
-    {"time": "09:30", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0}
+    {"time": "09:30", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:35", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "09:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
   ],
   "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 00:40-08:50, 8.17h — within the 7-9h target band.",
-    "09:30 double espresso, 2 shots (1st+2nd caffeine shots today). AM allergy spray + pill not yet taken (\"to follow\") — not logged until confirmed taken."
+    "09:30 double espresso, 2 shots (1st+2nd caffeine shots today).",
+    "09:35 (approx, confirmed taken shortly after) Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done."
   ],
   "status_note": "Day in progress. Slept 8.17h (00:40-08:50)."
 }
