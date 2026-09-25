@@ -1,9 +1,9 @@
 {
-  "now": 1790325029812,
+  "now": 1790326457485,
   "workouts": [
     {
       "datetime": "2026-09-25T16:00",
-      "note": "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs.",
+      "note": "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs. Capped off with an easy Precor stationary bike cooldown — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
       "exercises": [
         {
           "name": "Bench Press",
@@ -162,15 +162,30 @@
             "shoulders": 194.4
           },
           "kind": "strength"
+        },
+        {
+          "name": "Stationary Bike",
+          "distanceKm": 5.15,
+          "durationMin": 22.1,
+          "load": 198.90000000000003,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 198.90000000000003,
+            "quads": 79.56000000000002
+          },
+          "kind": "aerobic"
         }
       ],
       "t": 1790352000000,
       "muscleLoad": {
         "chest": 7857,
         "triceps": 3594,
-        "shoulders": 2015.4
+        "shoulders": 2015.4,
+        "cardio": 198.90000000000003,
+        "quads": 79.56000000000002
       },
-      "isAerobic": false
+      "isAerobic": true
     },
     {
       "datetime": "2026-09-24T06:00",
@@ -7095,9 +7110,9 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 12,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 37,
+      "readyInHours": 6.3,
+      "ready": false
     }
   },
   "sections": {
@@ -7241,16 +7256,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 12,
-      "readyInHours": 0,
+      "pct": 37,
+      "readyInHours": 6.3,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 12,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 37,
+          "readyInHours": 6.3,
+          "ready": false
         }
       ]
     }
@@ -8540,12 +8555,12 @@
         "label": "This wk",
         "stress": 299,
         "sessions": 4,
-        "acwr": 1.03
+        "acwr": 1.09
       }
     ],
-    "acute": 76.38,
-    "chronic": 74.06,
-    "acwr": 1.03,
+    "acute": 82.86,
+    "chronic": 75.85,
+    "acwr": 1.09,
     "acwrZone": "ok",
     "sessions28": 16
   },
@@ -8554,7 +8569,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-25T08:30:29.812Z",
+    "readyAt": "2026-09-25T08:54:17.485Z",
     "neverLogged": false,
     "daysSince": 13,
     "suggestedExercises": [
@@ -8749,9 +8764,9 @@
     "suggestedCount": 6,
     "totalAvailable": 14,
     "typicalSessionSize": 6,
-    "aerobicLast7": 3,
+    "aerobicLast7": 4,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1.1
+    "daysSinceAerobic": -0.3
   },
   "alerts": [
     {
@@ -8833,15 +8848,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 34,
-    "km7": 6.6,
-    "km28": 29.6,
-    "totalKm": 138.1,
+    "count": 35,
+    "km7": 11.8,
+    "km28": 34.7,
+    "totalKm": 143.3,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 3.6764705882352944,
-    "avgPace": 10.019590785186336,
-    "paceTrend": 0.04,
+    "avgPace": 9.840580514896835,
+    "paceTrend": -2.09,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -8850,8 +8865,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.1,
+    "daysSinceLast": -0.3,
     "recent": [
+      {
+        "t": 1790352000000,
+        "name": "Stationary Bike",
+        "distanceKm": 5.15,
+        "durationMin": 22.1,
+        "avgHr": null,
+        "pace": 4.29126213592233
+      },
       {
         "t": 1790229600000,
         "name": "Outdoor Run",
@@ -8883,14 +8906,6 @@
         "durationMin": 28.4,
         "avgHr": null,
         "pace": 8.091168091168091
-      },
-      {
-        "t": 1788512400000,
-        "name": "Outdoor Walk",
-        "distanceKm": 4.2,
-        "durationMin": 60,
-        "avgHr": null,
-        "pace": 14.285714285714285
       }
     ]
   },

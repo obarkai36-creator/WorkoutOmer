@@ -2,15 +2,15 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-09-25",
-    "latest_session": "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs.",
+    "latest_session": "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs. Capped off with an easy Precor stationary bike cooldown — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
     "sessions_logged": 69,
     "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 29.6,
-    "aerobic_sessions_28d": 9,
-    "avg_pace": "10:01/km",
+    "aerobic_28d_km": 34.7,
+    "aerobic_sessions_28d": 10,
+    "avg_pace": "9:50/km",
     "avg_hr": 142,
-    "acwr": 1.03,
+    "acwr": 1.09,
     "recommended_next": "Legs day",
     "alerts": [
       "Recovers in ~71.6h. Avoid loading it hard before then — you trained it most recently.",
@@ -447,7 +447,7 @@
       "type": "Strength — Chest",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Clock time not given. Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best); Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best); Incline Dumbbell Bench Press 24kg each×1×10 (same weight, abbreviated to 1 set, not a PR); Incline Bench Press (barbell) 65kg×3×7 (22.5kg each side + 20kg bar) — lighter session, not a PR; Seated Dips 12.5kg each side (25kg added, dip belt)×4×10 — different execution from the 94kg machine best, not comparable; Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly. 2 new PRs.",
+      "notes": "Clock time not given. Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best); Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best); Incline Dumbbell Bench Press 24kg each×1×10 (same weight, abbreviated to 1 set, not a PR); Incline Bench Press (barbell) 65kg×3×7 (22.5kg each side + 20kg bar) — lighter session, not a PR; Seated Dips 12.5kg each side (25kg added, dip belt)×4×10 — different execution from the 94kg machine best, not comparable; Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly. 2 new PRs. Capped off with an easy Precor stationary bike cooldown — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
       "_source": "manual log"
     }
   ]

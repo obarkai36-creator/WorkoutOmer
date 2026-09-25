@@ -301,7 +301,7 @@ const SNAPSHOT = [
 const WORKOUTS = [
   // 25 Sep — Chest (clock time not given)
   {
-    datetime: "2026-09-25T16:00", note: "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs.",
+    datetime: "2026-09-25T16:00", note: "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs. Capped off with an easy Precor stationary bike cooldown — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
     exercises: [
       { name: "Bench Press",                  sets: [ { reps: 9, weight: 72.5 }, { reps: 9, weight: 72.5 }, { reps: 9, weight: 72.5 }, { reps: 9, weight: 72.5 } ] },
       { name: "Decline Bench Press",          sets: [ { reps: 7, weight: 72.5 }, { reps: 7, weight: 72.5 }, { reps: 7, weight: 72.5 }, { reps: 7, weight: 72.5 } ] },
@@ -309,6 +309,7 @@ const WORKOUTS = [
       { name: "Incline Bench Press",          sets: [ { reps: 7, weight: 65 }, { reps: 7, weight: 65 }, { reps: 7, weight: 65 } ] },
       { name: "Seated Dips",                  sets: [ { reps: 10, weight: 25 }, { reps: 10, weight: 25 }, { reps: 10, weight: 25 }, { reps: 10, weight: 25 } ] },
       { name: "Incline Pec Fly",              sets: [ { reps: 9, weight: 36 }, { reps: 9, weight: 36 }, { reps: 9, weight: 36 } ] },
+      { name: "Stationary Bike",              distanceKm: 5.15, durationMin: 22.1 },
     ],
   },
   // 24 Sep — Outdoor Run, Or Akiva (clock time not given, "morning run")
