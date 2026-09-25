@@ -9,9 +9,13 @@
     "quality": null,
     "notes": "8.17h, within the 7-9h target band."
   },
-  "items": [],
+  "items": [
+    {"time": "09:30", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0}
+  ],
+  "caffeine_shots": 2,
   "assumptions": [
-    "Sleep logged: 00:40-08:50, 8.17h — within the 7-9h target band."
+    "Sleep logged: 00:40-08:50, 8.17h — within the 7-9h target band.",
+    "09:30 double espresso, 2 shots (1st+2nd caffeine shots today). AM allergy spray + pill not yet taken (\"to follow\") — not logged until confirmed taken."
   ],
   "status_note": "Day in progress. Slept 8.17h (00:40-08:50)."
 }
