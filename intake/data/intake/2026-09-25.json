@@ -19,14 +19,16 @@
     {"time": "13:35", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified reference: 1 slice (25g) = 50kcal/7.5g protein/0g carb/2.25g fat."},
     {"time": "13:35", "name": "Simfonia cheese spread", "category": "food", "qty": "40 g", "kcal": 43.2, "protein_g": 3.92, "carbs_g": 1.84, "fat_g": 2, "fiber_g": 0, "note": "verified label rate: 108kcal/9.8g protein/4.6g carb/5g fat per 100g (simfonia_cheese_spread_generic)."},
     {"time": "13:35", "name": "Salad (arugula, cherry tomato, baby mozzarella, red onion, balsamic vinaigrette) — 0.8 of batch", "category": "food", "qty": "~0.8 of a batch (100g arugula, 30 cherry tomatoes, 30g baby mozzarella, 0.5 red onion, 0.5 of a full Maple-Balsamic Mustard Vinaigrette batch)", "kcal": 277, "protein_g": 11.38, "carbs_g": 30.31, "fat_g": 14.8, "fiber_g": 6.35, "note": "\"Regular balsamic vinaigrette\" confirmed as the established Maple-Balsamic Mustard Vinaigrette recipe. 0.5 red onion assumed ~55g (standard whole-onion assumption). Credits ~10.6mg lycopene, ~58.1mg vitamin C (tomato+dressing), ~61.2mcg folate DFE, ~1.1mg vitamin E (dressing) — all at the 0.8 eaten fraction."},
-    {"time": "13:35", "name": "Rice-paper & cheese bake (cottage + 9% + cheddar, logged batch)", "category": "food", "qty": "0.5 unit (~100 g)", "kcal": 193.5, "protein_g": 16, "carbs_g": 9.5, "fat_g": 9.5, "fiber_g": 0.2, "note": "From the recipe library (rice_paper_cheese_bake_logged.json) — the actual batch cooked today (3 rice-paper sheets, 250g cottage, 75g 9% yellow cheese, 55g cheddar, makes 2 units), reference per-unit: 387kcal/32g protein/19g carb/19g fat/0.4g fiber. Half a unit logged."}
+    {"time": "13:35", "name": "Rice-paper & cheese bake (cottage + 9% + cheddar, logged batch)", "category": "food", "qty": "0.5 unit (~100 g)", "kcal": 193.5, "protein_g": 16, "carbs_g": 9.5, "fat_g": 9.5, "fiber_g": 0.2, "note": "From the recipe library (rice_paper_cheese_bake_logged.json) — the actual batch cooked today (3 rice-paper sheets, 250g cottage, 75g 9% yellow cheese, 55g cheddar, makes 2 units), reference per-unit: 387kcal/32g protein/19g carb/19g fat/0.4g fiber. Half a unit logged."},
+    {"time": "13:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 61.2,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 58.1,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 1.1,
@@ -41,7 +43,8 @@
     "09:45 vanilla Danone PRO protein yogurt (1 cup, 200g) + Catalina Crunch Protein Cereal (Chocolate Peanut Butter), ~20g handful — verified label rate.",
     "Chest workout (clock time not given, placeholder 16:00) — logged to data.js/workouts.json. Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but only 1 set (not a PR, abbreviated). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best, not a PR. Seated Dips 12.5kg each side (25kg added via dip belt)×4×10 — different execution from the 94kg machine best, not comparable/no PR read. Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly (one fewer set). 2 new PRs (Bench Press, Decline Bench Press).",
     "Added an easy Precor stationary bike cooldown to the same session — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
-    "13:35 lunch: 2 Angel PRO Pita (125g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 40g Simfonia cheese spread (verified reference), salad — 0.8 of a batch (100g arugula, 30 cherry tomatoes, 30g baby mozzarella, 0.5 red onion, 0.5 of a full Maple-Balsamic Mustard Vinaigrette batch — confirmed as the \"regular balsamic vinaigrette\" the user meant), and 0.5 unit of the rice-paper & cheese bake pulled from the recipe library (synced from the recipe-analyzer session's branch — the exact batch cooked today: cottage + 9% yellow + cheddar, 387kcal/32g protein per unit)."
+    "13:35 lunch: 2 Angel PRO Pita (125g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 40g Simfonia cheese spread (verified reference), salad — 0.8 of a batch (100g arugula, 30 cherry tomatoes, 30g baby mozzarella, 0.5 red onion, 0.5 of a full Maple-Balsamic Mustard Vinaigrette batch — confirmed as the \"regular balsamic vinaigrette\" the user meant), and 0.5 unit of the rice-paper & cheese bake pulled from the recipe library (synced from the recipe-analyzer session's branch — the exact batch cooked today: cottage + 9% yellow + cheddar, 387kcal/32g protein per unit).",
+    "13:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) + creatine monohydrate (5g) — both standard doses."
   ],
   "status_note": "Day in progress. Slept 8.17h (00:40-08:50). Chest workout — 2 new PRs (Bench Press, Decline Bench Press)."
 }
