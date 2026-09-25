@@ -1,5 +1,5 @@
 {
-  "now": 1790336275819,
+  "now": 1790339456338,
   "workouts": [
     {
       "datetime": "2026-09-25T16:00",
@@ -7038,7 +7038,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -7111,7 +7111,7 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 36,
-      "readyInHours": 5.4,
+      "readyInHours": 5.2,
       "ready": false
     }
   },
@@ -7163,7 +7163,7 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 26,
+      "pct": 25,
       "readyInHours": 36.1,
       "muscles": [
         {
@@ -7178,7 +7178,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         },
@@ -7257,14 +7257,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 36,
-      "readyInHours": 5.4,
+      "readyInHours": 5.2,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 36,
-          "readyInHours": 5.4,
+          "readyInHours": 5.2,
           "ready": false
         }
       ]
@@ -8569,7 +8569,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-25T11:37:55.819Z",
+    "readyAt": "2026-09-25T12:30:56.338Z",
     "neverLogged": false,
     "daysSince": 13.1,
     "suggestedExercises": [
@@ -8750,15 +8750,15 @@
       },
       {
         "section": "Arms",
-        "fatigue": 26,
+        "fatigue": 25,
         "readyInHours": 36.1,
-        "daysSince": 9
+        "daysSince": 9.1
       },
       {
         "section": "Chest",
         "fatigue": 99,
         "readyInHours": 71.6,
-        "daysSince": -0.2
+        "daysSince": -0.1
       }
     ],
     "suggestedCount": 6,
@@ -8766,7 +8766,7 @@
     "typicalSessionSize": 6,
     "aerobicLast7": 4,
     "aerobicTarget": 2,
-    "daysSinceAerobic": -0.2
+    "daysSinceAerobic": -0.1
   },
   "alerts": [
     {
@@ -8798,7 +8798,7 @@
       16,
       15
     ],
-    "daysSinceLast": -0.2,
+    "daysSinceLast": -0.1,
     "total": 69
   },
   "relstrength": {
@@ -8865,7 +8865,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": -0.2,
+    "daysSinceLast": -0.1,
     "recent": [
       {
         "t": 1790352000000,

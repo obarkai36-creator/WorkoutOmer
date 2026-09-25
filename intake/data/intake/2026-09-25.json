@@ -22,17 +22,18 @@
     {"time": "13:35", "name": "Rice-paper & cheese bake (cottage + 9% + cheddar, logged batch)", "category": "food", "qty": "0.5 unit (~100 g)", "kcal": 193.5, "protein_g": 16, "carbs_g": 9.5, "fat_g": 9.5, "fiber_g": 0.2, "note": "From the recipe library (rice_paper_cheese_bake_logged.json) — the actual batch cooked today (3 rice-paper sheets, 250g cottage, 75g 9% yellow cheese, 55g cheddar, makes 2 units), reference per-unit: 387kcal/32g protein/19g carb/19g fat/0.4g fiber. Half a unit logged."},
     {"time": "13:45", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:35", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:35", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 0,
-    "selenium_mcg": 0,
+    "zinc_mg": 20,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 61.2,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 58.1,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 1.1,
+    "vitamin_c_mg": 1058.1,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 135.1,
     "lycopene_mg": 10.6
   },
   "workout_today": true,
@@ -46,7 +47,8 @@
     "Added an easy Precor stationary bike cooldown to the same session — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
     "13:35 lunch: 2 Angel PRO Pita (125g, verified reference), 4 slices Tnuva Emek Light yellow cheese 9% (100g total, verified reference), 40g Simfonia cheese spread (verified reference), salad — 0.8 of a batch (100g arugula, 30 cherry tomatoes, 30g baby mozzarella, 0.5 red onion, 0.5 of a full Maple-Balsamic Mustard Vinaigrette batch — confirmed as the \"regular balsamic vinaigrette\" the user meant), and 0.5 unit of the rice-paper & cheese bake pulled from the recipe library (synced from the recipe-analyzer session's branch — the exact batch cooked today: cottage + 9% yellow + cheddar, 387kcal/32g protein per unit).",
     "13:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) + creatine monohydrate (5g) — both standard doses.",
-    "14:35 double espresso, 2 shots (3rd+4th caffeine shots today)."
+    "14:35 double espresso, 2 shots (3rd+4th caffeine shots today).",
+    "15:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose."
   ],
   "status_note": "Day in progress. Slept 8.17h (00:40-08:50). Chest workout — 2 new PRs (Bench Press, Decline Bench Press)."
 }
