@@ -24,7 +24,10 @@
     {"time": "13:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:35", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
     {"time": "15:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "15:50", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+    {"time": "15:50", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "16:15", "name": "Cottage cheese", "category": "food", "qty": "100 g", "kcal": 98, "protein_g": 11, "carbs_g": 3.4, "fat_g": 4.3, "fiber_g": 0, "note": "same generic reference (cottage_cheese_generic, ~98kcal/100g) as first logged 2026-09-22."},
+    {"time": "16:15", "name": "Nacho Cheese Protein Puffs (TPI Foods)", "category": "food", "qty": "~20 g (handful)", "kcal": 86.67, "protein_g": 14, "carbs_g": 1.33, "fat_g": 2.67, "fiber_g": 0, "note": "verified label reference (intake/recipes/tpi_nacho_cheese_protein_puffs.json): 130kcal/21g protein/2g carb/4g fat per 30g serving. \"Handful\" estimated at ~20g."},
+    {"time": "16:15", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (intake/recipes/catalina_crunch_choc_pb_cereal.json): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. \"Handful\" estimated at ~20g, consistent with prior handful-size logs."}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
@@ -50,7 +53,8 @@
     "13:45 Omega-3 fish oil (2 softgels, ~1000mg EPA/DHA) + creatine monohydrate (5g) — both standard doses.",
     "14:35 double espresso, 2 shots (3rd+4th caffeine shots today).",
     "15:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose.",
-    "15:50 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc."
+    "15:50 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
+    "16:15 snack: 100g cottage cheese (same generic reference), ~20g handful Nacho Cheese Protein Puffs (TPI Foods, verified label reference), ~20g handful Catalina Crunch Protein Cereal (verified label reference)."
   ],
   "status_note": "Day in progress. Slept 8.17h (00:40-08:50). Chest workout — 2 new PRs (Bench Press, Decline Bench Press)."
 }
