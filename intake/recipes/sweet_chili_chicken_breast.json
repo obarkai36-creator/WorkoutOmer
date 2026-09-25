@@ -12,64 +12,63 @@
   "serving_desc": "≈220 g cooked (¼ of a 1 kg-chicken batch) — ~250 g raw chicken per serving",
   "ingredients": [
     {"item": "chicken breast, cut into strips/cubes", "qty": "1 kg"},
-    {"item": "flour (for dredging)", "qty": "~½ cup (~40 g adheres)", "note": "shake off excess; can skip/reduce for fewer refined carbs"},
+    {"item": "whole spelt flour (for dredging)", "qty": "~½ cup (~40 g adheres)", "note": "whole-grain dredge — a little fiber vs white; shake off excess"},
     {"item": "sweet chili sauce", "qty": "½ cup (~150 g)", "note": "main added-sugar source; a low-sugar sweet chili cuts it a lot"},
     {"item": "honey or silan", "qty": "1 heaping tbsp (~20 g)"},
-    {"item": "soy sauce", "qty": "¼ cup (~60 ml)", "note": "main sodium source — use low-sodium"},
+    {"item": "low-sodium soy sauce", "qty": "¼ cup (~60 ml)", "note": "low-sodium — roughly halves the sodium vs regular soy"},
     {"item": "olive oil spray (for frying)", "qty": "a few sprays", "note": "the user's swap for 4–5 tbsp oil — big calorie save"}
   ],
   "steps": [
-    "Cut the chicken; dredge lightly in flour and shake off the excess.",
+    "Cut the chicken; dredge lightly in whole spelt flour and shake off the excess.",
     "Spray a pan with olive oil, heat, and fry the chicken on both sides until golden and cooked through.",
-    "Mix the sweet chili, honey/silan and soy; pour into the pan and toss 1–2 min until the sauce coats the chicken and turns glossy. Serve."
+    "Mix the sweet chili, honey/silan and low-sodium soy; pour into the pan and toss 1–2 min until the sauce coats the chicken and turns glossy. Serve."
   ],
   "per_serving": {
-    "kcal": 450,
+    "kcal": 448,
     "protein_g": 59,
     "carbs_g": 33,
     "fat_g": 7,
-    "fiber_g": 0.5,
+    "fiber_g": 1.3,
     "micros": {
       "selenium_mcg": 60,
       "choline_mg": 213,
-      "sodium_mg": 1150,
+      "sodium_mg": 700,
       "added_sugar_g": 23,
-      "iron_mg": 1.3
+      "iron_mg": 1.4
     }
   },
   "batch_totals": {
-    "kcal": 1801,
-    "protein_g": 235,
-    "carbs_g": 133,
+    "kcal": 1790,
+    "protein_g": 237,
+    "carbs_g": 131,
     "fat_g": 29,
-    "fiber_g": 1,
-    "sodium_mg": 4600,
+    "fiber_g": 5,
+    "sodium_mg": 2800,
     "added_sugar_g": 91,
-    "note": "Whole 1 kg-chicken dish, spray-fried. Deep-frying the original way (4–5 tbsp oil) would add ~500 kcal / ~55 g fat — the spray swap keeps total fat to ~29 g. The sauce carries ~91 g added sugar and ~4,600 mg sodium across the batch."
+    "note": "Whole 1 kg-chicken dish, spray-fried, with low-sodium soy + whole spelt dredge. Deep-frying the original way (4–5 tbsp oil) would add ~500 kcal / ~55 g fat — the spray swap keeps total fat to ~29 g. Low-sodium soy roughly halves the salt (~2,800 mg batch vs ~4,600 with regular soy). The sweet chili + honey still carry ~91 g added sugar across the batch — the remaining lever."
   },
   "confidence": "estimate",
   "analysis": {
     "him": {
-      "fit_score": 7,
-      "verdict": "The lean-protein bones of this are excellent: ~59 g protein per serving for ~450 kcal (~13 g protein per 100 kcal!), and your olive-oil-spray swap is exactly right — it keeps fat to ~7 g/serving where deep-frying would have doubled the calories. The catch is entirely the sauce: sweet chili + honey push ~23 g added sugar per serving, and ¼ cup soy makes it ~1,150 mg sodium/serving. So it's a fantastic protein source wrapped in a sugary, salty glaze. Easy to fix without losing the flavor (see mods) — dial the sauce back and this is a 9.",
+      "fit_score": 8,
+      "verdict": "With the low-sodium soy + whole spelt dredge this is now a rotation-worthy lean-protein dish: ~59 g protein per serving for ~448 kcal (~13 g protein per 100 kcal!), the olive-oil-spray swap keeps fat to just ~7 g/serving, and the low-sodium soy roughly halves the salt to ~700 mg/serving. Whole spelt makes the dredge whole-grain for a bit of fiber. The only thing between this and a 9 is the sweet-chili + honey glaze — still ~23 g added sugar/serving. Cut the sweet chili and skip the honey whenever you want the cleaner version.",
       "flags": [
-        "~59 g protein / 450 kcal (~13 g protein per 100 kcal — outstanding)",
+        "~59 g protein / 448 kcal (~13 g protein per 100 kcal — outstanding)",
         "spray-fried: only ~7 g fat/serving (vs ~2x calories deep-fried)",
-        "~23 g added sugar/serving from sweet chili + honey",
-        "high sodium ~1,150 mg/serving (¼ cup soy)",
-        "flour dredge = a little refined carb; portion is large (~250 g raw chicken)"
+        "low-sodium soy: ~700 mg sodium/serving (~halved vs regular soy)",
+        "whole spelt dredge — whole-grain, a little fiber",
+        "~23 g added sugar/serving (sweet chili + honey) — the remaining lever"
       ],
       "suggested_mods": [
-        "Use LOW-SODIUM soy and cut it to ~2 tbsp — biggest sodium lever",
-        "Halve the sweet chili + skip the honey (or use a low-sugar sweet chili) — the chili flavor still carries; drops added sugar sharply",
-        "Skip or thin the flour dredge for fewer refined carbs; add garlic/ginger/chili flakes for flavor instead of sugar",
+        "For a 9: halve the sweet chili + skip the honey (or use a low-sugar sweet chili) — the chili flavor still carries; drops added sugar sharply",
+        "Add garlic/ginger/chili flakes for flavor so you lean less on the sweet glaze",
         "Bulk it with stir-fried veg (peppers, broccoli, snap peas) — adds fiber + vitamin C and stretches the servings",
-        "Keep the olive-oil spray — that swap is already doing the heavy lifting"
+        "Keep the olive-oil spray + low-sodium soy — those swaps are doing the heavy lifting"
       ]
     },
     "her_preconception": {
-      "fit_score": 6,
-      "verdict": "Lean, fully-cooked chicken is a solid protein + choline + selenium source for her with no safety flags — cook it through (74 °C, no pink) as standard. The downsides are the same as his: it's sugar- and sodium-heavy from the sauce (worth moderating in pregnancy), and it's not a big prenatal-micronutrient dish on its own. Great base; make it a winner by dialing back the sauce and serving it over vegetables for folate + vitamin C.",
+      "fit_score": 7,
+      "verdict": "Lean, fully-cooked chicken is a solid protein + choline + selenium source for her with no safety flags — cook it through (74 °C, no pink) as standard. The low-sodium soy meaningfully eases the salt (helpful in pregnancy) and the whole spelt adds a little folate/iron. The sweet-chili + honey glaze is still sugar-heavy, so keep the sauce modest and serve over vegetables for folate + vitamin C.",
       "prenatal_highlights": [
         "lean protein + choline + selenium (chicken)",
         "fully cooked, no safety flags"
@@ -83,15 +82,16 @@
       ]
     }
   },
-  "tags": ["dinner", "chicken", "poultry", "high-protein", "sweet-chili", "spray-fried", "low-fat", "web"],
-  "adopted": false,
+  "tags": ["dinner", "chicken", "poultry", "high-protein", "sweet-chili", "spray-fried", "low-fat", "low-sodium", "whole-grain", "spelt", "web"],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-09-25 with low-sodium soy + whole spelt dredge. Per serving (batch of 4, ~250 g raw chicken each): ~448 kcal, 59 g protein, 33 g carb, 7 g fat, ~700 mg sodium, ~23 g added sugar. him 8 / her 7. Spray-fry with olive oil (not deep-fry). Standing note: the sweet chili + honey are the remaining sugar lever — cut the sweet chili / skip the honey for a cleaner ~9 version; serve over veg for fiber + vitamin C.",
   "created": "2026-09-25",
   "updated": "2026-09-25",
   "serving_g": 220,
   "meal_type": "Chicken",
   "cooking_guide": [
     "Cut the chicken into even strips or cubes so they cook at the same rate. Pat them DRY with paper towel and season with salt and pepper — dry surface is what lets them brown instead of steam.",
-    "Dredge lightly in flour and shake off the excess for a thin crust (or skip the flour for a lower-carb version).",
+    "Dredge lightly in whole spelt flour and shake off the excess for a thin whole-grain crust (or skip it for a lower-carb version).",
     "Spray a nonstick pan with olive oil and heat over medium-high. Work in BATCHES — don't crowd the pan, or the chicken steams and goes grey instead of golden.",
     "Sear the pieces undisturbed 2–3 min per side until deep golden and cooked through (74 °C, no pink). Set aside while you do the next batch.",
     "Stir together the sweet chili, honey/silan and soy. Return all the chicken to the pan, pour the sauce over and toss 1–2 min on medium until it's glossy and clinging — don't go longer or the sugar scorches.",
