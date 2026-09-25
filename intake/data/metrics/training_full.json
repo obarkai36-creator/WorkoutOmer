@@ -1,5 +1,5 @@
 {
-  "now": 1790326457485,
+  "now": 1790333051453,
   "workouts": [
     {
       "datetime": "2026-09-25T16:00",
@@ -7110,8 +7110,8 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 37,
-      "readyInHours": 6.3,
+      "pct": 36,
+      "readyInHours": 5.7,
       "ready": false
     }
   },
@@ -7256,15 +7256,15 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 37,
-      "readyInHours": 6.3,
+      "pct": 36,
+      "readyInHours": 5.7,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 37,
-          "readyInHours": 6.3,
+          "pct": 36,
+          "readyInHours": 5.7,
           "ready": false
         }
       ]
@@ -8535,14 +8535,14 @@
       },
       {
         "label": "-3w",
-        "stress": 446,
-        "sessions": 5,
+        "stress": 517,
+        "sessions": 6,
         "acwr": 0.79
       },
       {
         "label": "-2w",
-        "stress": 315,
-        "sessions": 2,
+        "stress": 244,
+        "sessions": 1,
         "acwr": 0.9
       },
       {
@@ -8569,9 +8569,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-25T08:54:17.485Z",
+    "readyAt": "2026-09-25T10:44:11.453Z",
     "neverLogged": false,
-    "daysSince": 13,
+    "daysSince": 13.1,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -8734,7 +8734,7 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 13
+        "daysSince": 13.1
       },
       {
         "section": "Shoulders",
@@ -8746,19 +8746,19 @@
         "section": "Back",
         "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 5.9
+        "daysSince": 6
       },
       {
         "section": "Arms",
         "fatigue": 26,
         "readyInHours": 36.1,
-        "daysSince": 8.9
+        "daysSince": 9
       },
       {
         "section": "Chest",
         "fatigue": 99,
         "readyInHours": 71.6,
-        "daysSince": -0.3
+        "daysSince": -0.2
       }
     ],
     "suggestedCount": 6,
@@ -8766,7 +8766,7 @@
     "typicalSessionSize": 6,
     "aerobicLast7": 4,
     "aerobicTarget": 2,
-    "daysSinceAerobic": -0.3
+    "daysSinceAerobic": -0.2
   },
   "alerts": [
     {
@@ -8798,7 +8798,7 @@
       16,
       15
     ],
-    "daysSinceLast": -0.3,
+    "daysSinceLast": -0.2,
     "total": 69
   },
   "relstrength": {
@@ -8865,7 +8865,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": -0.3,
+    "daysSinceLast": -0.2,
     "recent": [
       {
         "t": 1790352000000,
