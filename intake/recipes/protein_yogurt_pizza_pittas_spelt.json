@@ -1,0 +1,90 @@
+{
+  "id": "protein_yogurt_pizza_pittas_spelt",
+  "name": "Protein-yogurt pizza pittas — spelt, no-yeast (base pitta, pre-filling)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram — shirel_blank / foodsdictionary_recipes (Hebrew), spelt adaptation",
+    "captured": "2026-08-22",
+    "notes": "Whole-spelt version of protein_yogurt_pizza_pittas — white flour swapped for whole spelt flour, everything else identical. Analyzed PER PITTA for the DOUGH BASE ONLY (pre-filling); makes 8-9, per-unit uses 8. Filling (pizza sauce, cheese, toppings) is unquantified and NOT in these macros. PRO yogurt taken as ~20 g-protein/200 g. Spelt has weaker gluten than wheat — see the cooking guide."
+  },
+  "servings": 8,
+  "serving_desc": "1 pitta (~62 g cooked) — recipe makes 8-9; base only, no filling",
+  "ingredients": [
+    {"item": "whole spelt flour", "qty": "2 cups (~250 g)", "note": "the swap vs the white version"},
+    {"item": "PRO natural protein yogurt", "qty": "1 tub (200 g)"},
+    {"item": "olive oil", "qty": "2 tbsp"},
+    {"item": "cold water", "qty": "start with ¼ cup, add as needed", "note": "spelt hydrates fast — less water than the white version"},
+    {"item": "salt", "qty": "½ tsp"},
+    {"item": "baking powder", "qty": "1 packet (~10 g)"},
+    {"item": "FILLING (not in macros): pizza sauce", "qty": "to taste", "note": "adds lycopene + a little sodium"},
+    {"item": "FILLING (not in macros): grated yellow cheese / mozzarella", "qty": "to taste", "note": "adds calcium + sat fat + sodium — the main add-on cost"},
+    {"item": "FILLING (not in macros): toppings you like", "qty": "to taste"}
+  ],
+  "steps": [
+    "Mix the spelt dough (go easy on water), rest, roll, stuff with sauce + cheese, pan-fry both sides."
+  ],
+  "per_serving": {
+    "kcal": 149,
+    "protein_g": 7.1,
+    "carbs_g": 22.9,
+    "fat_g": 4.2,
+    "fiber_g": 3.3,
+    "micros": {
+      "calcium_mg": 30,
+      "iron_mg": 1.3,
+      "folate_mcg_dfe": 12,
+      "sodium_mg": 205
+    }
+  },
+  "batch_totals": {
+    "kcal": 1194,
+    "protein_g": 56.5,
+    "carbs_g": 183,
+    "fat_g": 33.5,
+    "fiber_g": 27,
+    "sodium_mg": 1640,
+    "note": "Base dough only (8 pittas). Filling adds calories/fat/sodium on top depending on how much sauce + cheese you use."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "The spelt swap turns the pitta base from an okay bread into a genuinely good one: ~7.1 g protein per 149 kcal pitta (spelt + the PRO yogurt) and ~3.3 g fiber — about 4x the white version's fiber — for slightly fewer calories. Whole-grain, higher protein, more filling. It's still a bread vehicle, but a strong one; the filling (cheese) remains the main calorie/sodium lever.",
+      "flags": ["~7.1 g protein/pitta (spelt + yogurt)", "~3.3 g fiber (~4x the white version), whole-grain", "slightly fewer calories/carbs than white", "moderate sodium (~205 mg/pitta before filling)", "cheese filling is the calorie/sodium lever"],
+      "suggested_mods": [
+        "Go light on the yellow cheese in the filling — biggest calorie/sat-fat/sodium add",
+        "Load veg toppings + the tomato pizza sauce (lycopene) to make it a fuller meal"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Whole spelt makes this meaningfully better for her than the white base — it adds fiber, folate and a little iron on top of the yogurt's protein and calcium. Fully cooked, pasteurized yogurt, no safety flags. Contains gluten (spelt) — fine unless she's avoiding it. When filled, keep cheese pasteurized (standard) and toppings cooked.",
+      "prenatal_highlights": [
+        "whole-grain fiber + a little folate & iron from the spelt",
+        "protein + calcium from the PRO yogurt"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Pair with a protein + veg filling to make it prenatally useful",
+        "Spelt contains gluten — fine unless she avoids it"
+      ]
+    }
+  },
+  "tags": ["bread", "pitta", "no-yeast", "quick", "base", "pizza", "spelt", "whole-grain"],
+  "adopted": false,
+  "created": "2026-08-22",
+  "updated": "2026-08-22",
+  "serving_g": 62,
+  "meal_type": "Bread",
+  "cooking_guide": [
+    "In a bowl, mix the spelt flour, baking powder and salt. Add the yogurt, olive oil and just ¼ cup cold water to start — spelt absorbs water fast, so add more only if the dough is too dry.",
+    "Stir to a shaggy dough, then knead GENTLY for ~1 min — spelt has weaker gluten than wheat, so it's softer and tears more easily; over-kneading makes it gummy. Stop as soon as it comes together.",
+    "Cover and rest 10-15 min so the flour fully hydrates — this makes the soft dough much easier to roll.",
+    "Divide into 8-9 balls. On a lightly floured surface (don't over-flour), roll each ~½ cm thick.",
+    "For the pizza version: spread a little pizza sauce and cheese on one half, fold over (or top a second round) and press the edges to seal.",
+    "Heat a pan over medium with a thin film of olive oil. Cook each pitta ~2-3 min per side until deep golden with brown spots and the cheese is melted — medium heat so the inside cooks before the outside burns.",
+    "Keep the finished pittas under a clean towel so they stay soft.",
+    "Tip: spelt browns a touch faster than white flour — watch the heat and pull them at deep golden, not dark."
+  ]
+}

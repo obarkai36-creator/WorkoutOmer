@@ -1,0 +1,84 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Baked cornflake hot-honey chicken schnitzel</title><style>
+  :root { --bg:#0b0f17; --panel:#131a26; --panel2:#0f1622; --line:#1f2a3a;
+          --text:#e6edf3; --muted:#8b9bb0; --accent:#38bdf8;
+          --him:#38bdf8; --her:#f472b6; --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.45; padding:24px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  .toc { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+         padding:16px 20px; margin:0 0 22px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:4px; }
+  .chip { cursor:pointer; font-size:13px; padding:6px 14px; border-radius:999px;
+          background:var(--panel2); border:1px solid var(--line); color:var(--muted); user-select:none; }
+  .chip.active { color:var(--bg); background:var(--accent); border-color:var(--accent); font-weight:700; }
+  .chip:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .toc-group { margin-top:14px; }
+  .toc-group h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+                  color:var(--accent); margin:0 0 6px; }
+  .toc-list { list-style:none; padding:0; margin:0; }
+  .toc-list li { margin:4px 0; font-size:13px; display:flex; gap:8px; align-items:baseline; }
+  .toc-list a { color:var(--text); text-decoration:none; }
+  .toc-list a:hover { text-decoration:underline; }
+  .toc-dot { color:var(--good); font-size:11px; }
+  .toc-score { color:var(--muted); font-size:11px; font-variant-numeric:tabular-nums; margin-left:auto; white-space:nowrap; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px;
+          padding:18px 20px; margin:0 0 22px; scroll-margin-top:16px; }
+  .rtitle { font-size:18px; font-weight:700; margin:0; }
+  .badges { margin:8px 0 2px; }
+  .badge { display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px;
+           background:var(--panel2); border:1px solid var(--line); color:var(--muted); margin:0 6px 6px 0; }
+  .badge.src { color:var(--accent); border-color:var(--accent); }
+  .badge.adopted { color:var(--good); border-color:var(--good); }
+  .badge.meal { color:var(--text); border-color:var(--muted); font-weight:700; }
+  .badge.tag { color:var(--muted); }
+  .meta { color:var(--muted); font-size:12px; margin:4px 0 12px; }
+  .basis { font-size:12px; color:var(--text); margin:12px 0 6px; }
+  .basis b { color:var(--accent); }
+  .macros { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 14px; }
+  .m { flex:1 1 90px; background:var(--panel2); border:1px solid var(--line);
+       border-radius:10px; padding:8px 10px; text-align:center; }
+  .m .v { font-size:17px; font-weight:800; }
+  .m .l { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .micros { font-size:12px; color:var(--muted); margin:0 0 14px; }
+  .micros b { color:var(--text); }
+  .ingredients { font-size:12.5px; color:var(--muted); }
+  .cookwrap { display:grid; grid-template-columns:minmax(190px,1fr) 1.5fr; gap:14px;
+              margin:14px 0 2px; align-items:start; }
+  @media (max-width:680px){ .cookwrap { grid-template-columns:1fr; } }
+  .ingr, .cook { background:var(--panel2); border:1px solid var(--line); border-radius:12px;
+                 padding:12px 16px 14px; margin:0; }
+  .ingr h4, .cook h4 { margin:0 0 8px; font-size:13px; color:var(--text); }
+  .ingr ul { list-style:none; margin:0; padding:0; }
+  .ingr li { font-size:12.5px; margin:0; padding:6px 0; border-bottom:1px solid var(--line);
+             display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+  .ingr li:last-child { border-bottom:none; }
+  .ingr .name { color:var(--muted); flex:1 1 auto; }
+  .ingr .qty { color:var(--accent); font-weight:700; text-align:right; flex:0 1 45%;
+               font-variant-numeric:tabular-nums; }
+  .ingr .inote { display:block; color:var(--muted); font-size:11px; font-style:italic; margin-top:2px; }
+  .cook ol { margin:0; padding-left:20px; }
+  .cook ol li { font-size:12.5px; margin:5px 0; }
+  .lens { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:680px){ .lens { grid-template-columns:1fr; } }
+  .pane { background:var(--panel2); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .pane.him { border-top:3px solid var(--him); }
+  .pane.her { border-top:3px solid var(--her); }
+  .pane h3 { margin:0 0 2px; font-size:13px; }
+  .pane .who { font-size:11px; color:var(--muted); margin-bottom:8px; }
+  .score { display:inline-block; font-weight:800; font-size:15px; padding:2px 10px;
+           border-radius:8px; background:var(--bg); }
+  .verdict { font-size:13px; margin:8px 0; }
+  .lbl { font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:10px 0 3px; }
+  ul { margin:2px 0 0; padding-left:18px; }
+  li { font-size:12.5px; margin:2px 0; }
+  .flag { font-size:12px; color:var(--warn); }
+  .copyhint { font-size:11px; color:var(--muted); font-style:italic; margin-top:10px; }
+  .tmpl { background:var(--panel2); border-left:3px solid var(--accent); border-radius:8px;
+          padding:10px 12px; margin:10px 0 4px; font-size:12.5px; }
+  .tmpl b { color:var(--text); }
+  .tmpl .rule { color:var(--muted); margin-top:4px; }
+</style></head><body><div class='wrap'><h1>Baked cornflake hot-honey chicken schnitzel</h1><div class='sub'>Dual-lens recipe analysis · scored per intake/references/nutrition_lenses.json</div><div class='card'><div class='rtitle'>Baked cornflake hot-honey chicken schnitzel</div><div class='badges'><span class='badge meal'>Chicken</span><span class='badge src'>instagram</span><span class='badge tag'>dinner</span><span class='badge tag'>high-protein</span><span class='badge tag'>chicken</span><span class='badge tag'>poultry</span><span class='badge tag'>baked</span><span class='badge tag'>schnitzel</span><span class='badge tag'>hot-honey</span><span class='badge tag'>low-fat</span></div><div class='meta'>1 servings · 1 whole dish (~350 g cooked) as the post lists it — a big meal; split into 2 for ~435 kcal each · macros: estimate</div><div class='basis'>Values per <b>100 g</b> — you decide the portion <span class='muted'>· one typical serving ≈ 350 g</span></div><div class='macros'><div class='m'><div class='v'>249</div><div class='l'>kcal</div></div><div class='m'><div class='v'>23g</div><div class='l'>protein</div></div><div class='m'><div class='v'>30g</div><div class='l'>carbs</div></div><div class='m'><div class='v'>3.7g</div><div class='l'>fat</div></div><div class='m'><div class='v'>0.6g</div><div class='l'>fiber</div></div></div><div class='micros'>Per 100 g: <b>23</b> selenium mcg · <b>98</b> choline mg · <b>1.7</b> iron mg · <b>9.7</b> added sugar g · <b>400</b> sodium mg</div><div class='cookwrap'><div class='ingr'><h4>Ingredients</h4><ul><li><span class='name'>chicken breast, cut in strips</span><span class='qty'>300 g</span></li><li><span class='name'>crushed garlic</span><span class='qty'>1 tsp</span></li><li><span class='name'>smoked paprika</span><span class='qty'>1 tsp</span></li><li><span class='name'>salt, pepper</span><span class='qty'>to taste</span></li><li><span class='name'>flour</span><span class='qty'>3 tbsp (dredge)</span></li><li><span class='name'>egg</span><span class='qty'>1 (dredge)</span></li><li><span class='name'>crushed cornflakes</span><span class='qty'>1.5 cups (~42 g, the crust)</span></li><li><span class='name'>honey (sauce)</span><span class='qty'>2 tbsp</span></li><li><span class='name'>sriracha (sauce)</span><span class='qty'>1 tbsp</span></li><li><span class='name'>soy sauce (sauce)</span><span class='qty'>1 tsp</span></li><li><span class='name'>garlic powder (sauce)</span><span class='qty'>1 tsp</span></li></ul></div><div class='cook'><h4>🍳 Cooking guide — for best taste &amp; texture</h4><ol><li>Cut the chicken into even strips and toss with the crushed garlic, smoked paprika, salt and pepper.</li><li>Set up 3 bowls: flour / beaten egg / crushed cornflakes. Dredge each strip flour → egg → cornflakes, pressing the cornflakes on for a thick, even crust. (Crush the cornflakes coarse, not to powder — that&#x27;s what makes the crunch.)</li><li>Lay the strips on a lined tray; for all-around crisp without frying, set them on a wire rack over the tray and lightly spray/brush with oil.</li><li>Bake at 200 C (400 F) for 18–20 min, flipping halfway, until golden and cooked through (74 C, no pink).</li><li>Meanwhile simmer the honey, sriracha, soy sauce and garlic powder 1–2 min on medium until glossy.</li><li>Brush the glaze on AFTER baking (or toss just before serving) — glazing before baking would burn the sugar and soften the crust.</li><li>Tip: cornflakes give a lighter, crunchier crust than breadcrumbs; add the sauce at the last moment to keep it crisp.</li></ol></div></div><div class='lens' style='margin-top:14px'><div class='pane him'><h3>For him &nbsp;<span class='score' style='color:var(--good)'>8/10</span></h3><div class='who'>weight loss · muscle retention · sperm</div><div class='verdict'>Impressively lean for a schnitzel — it&#x27;s BAKED, not fried, so the whole dish has only 13 g fat while packing 80 g protein (~9.2 g protein per 100 kcal). The catch is carbs: ~105 g from the cornflake + flour crust and the honey glaze (~34 g of that is honey sugar). Split into 2 it&#x27;s ~435 kcal / 40 g protein / 52 g carb each — a solid protein-forward meal. The honey glaze is the main sugar lever; the crust is refined carbs.</div><div class='lbl'>Highlights</div><ul><li>80 g protein, only 13 g fat (baked not fried)</li><li>~9.2 g protein per 100 kcal</li><li>carb-heavy (~105 g) — cornflake/flour crust + honey</li><li>~34 g added sugar (honey glaze)</li><li>high sodium (~1,400 mg/dish; ~700 if split)</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Split the dish into 2 servings for logging — 870 kcal is a big single meal</li><li>Cut the honey to 1 tbsp (halves the added sugar) — the sriracha still carries it</li><li>Use low-sodium soy; serve over salad/greens for fiber the crust lacks</li></ul></div><div class='pane her'><h3>For her &nbsp;<span class='score' style='color:var(--good)'>7/10</span></h3><div class='who'>preconception / prenatal (advisory)</div><div class='verdict'>Lean high-protein chicken with choline and selenium, baked and fully cooked — no safety flags. The honey and sriracha are fine for her. It&#x27;s carb/sugar-heavy and not a big micronutrient source, so it&#x27;s a good protein main rather than a nutrient star; pair with veg for folate/vitamin C.</div><div class='lbl'>Highlights</div><ul><li>lean protein + choline (chicken + egg)</li><li>selenium; some iron (fortified cornflakes)</li></ul><div class='lbl'>Safety advisories</div><ul><li class='flag'>⚠ Cook the chicken fully through (74 C / no pink) — standard for schnitzel. — swap: bake until cooked through</li></ul><div class='lbl'>Suggested modifications</div><ul><li>Serve with a big leafy/veg side for folate + vitamin C</li><li>Use low-sodium soy to ease the salt</li></ul><div class='copyhint'>↑ Copy this block into the lihitrack session.</div></div></div></div></div></body></html>

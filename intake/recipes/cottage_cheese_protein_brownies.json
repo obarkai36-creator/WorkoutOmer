@@ -1,0 +1,91 @@
+{
+  "id": "cottage_cheese_protein_brownies",
+  "name": "Cottage cheese protein brownies (fudgy, flourless)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Hebrew recipe (screenshot) — ingredients listed, NO quantities given",
+    "captured": "2026-09-02",
+    "notes": "The caption named the 5 ingredients (cottage, egg white, peanut butter, honey, cocoa) but gave no amounts. Quantities here are reference-grounded (typical flourless cottage-cheese protein brownie ratios) then TUNED for ideal macros: cottage maxed for protein, lean egg WHITES (per the caption) instead of whole eggs, peanut butter moderated to 2 tbsp (calorie-dense), honey moderated to 3 tbsp (main sugar source), cocoa ⅓ cup for chocolate flavor + micros (iron/magnesium/polyphenols). Cottage assumed 5% fat. Yields ~9 brownies in an 8×8 pan."
+  },
+  "servings": 9,
+  "serving_desc": "1 brownie (~52 g) — 8×8 pan cut into 9",
+  "ingredients": [
+    {"item": "cottage cheese (5%)", "qty": "1 cup (~225 g)", "note": "protein + fudgy texture"},
+    {"item": "egg whites", "qty": "4 (~120 g)", "note": "lean protein + binding (caption's choice vs whole egg)"},
+    {"item": "peanut butter", "qty": "2 tbsp (~32 g)", "note": "moderated — it's the calorie-dense one"},
+    {"item": "honey", "qty": "3 tbsp (~60 g)", "note": "moderated — main sugar; cut to 2 tbsp or part-stevia for less"},
+    {"item": "unsweetened cocoa powder", "qty": "⅓ cup (~30 g)", "note": "chocolate + iron/magnesium/polyphenols"},
+    {"item": "vanilla extract", "qty": "1 tsp"},
+    {"item": "baking powder", "qty": "½ tsp"},
+    {"item": "salt", "qty": "pinch"}
+  ],
+  "steps": [
+    "Blend cottage cheese, egg whites, peanut butter and honey smooth; blend in cocoa, vanilla, baking powder, salt; bake in a lined 8×8 pan."
+  ],
+  "per_serving": {
+    "kcal": 83,
+    "protein_g": 5.7,
+    "carbs_g": 9,
+    "fat_g": 3.3,
+    "fiber_g": 1.2,
+    "micros": {
+      "added_sugar_g": 5.4,
+      "calcium_mg": 22,
+      "magnesium_mg": 20,
+      "iron_mg": 0.5,
+      "sodium_mg": 35
+    }
+  },
+  "batch_totals": {
+    "kcal": 750,
+    "protein_g": 51.6,
+    "carbs_g": 81,
+    "fat_g": 30,
+    "fiber_g": 10.6,
+    "note": "≈9 brownies. Honey (~49 g sugar) is the main sugar; halving it drops each brownie by ~2.5 g sugar."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "A genuinely goal-aligned dessert. At the tuned amounts each brownie is ~83 kcal with ~5.7 g protein — that's ~6.9 g protein per 100 kcal, elite for a sweet — from cottage + egg white (complete, high-absorption animal protein). Cocoa adds fiber, magnesium, iron and polyphenols. The main lever is honey (~5.4 g sugar/brownie); the peanut butter is the calorie-dense part (already moderated to 2 tbsp). Hits the sweet craving while actually contributing protein.",
+      "flags": ["~6.9 g protein per 100 kcal (elite for a dessert)", "complete animal protein (cottage + egg white)", "cocoa: fiber + magnesium + iron + polyphenols", "honey is the main sugar (~5.4 g/brownie)", "low calorie (~83/brownie)"],
+      "suggested_mods": [
+        "For a leaner cut: drop honey to 2 tbsp (or swap half for stevia) — takes each brownie to ~75 kcal / ~4 g sugar",
+        "A scoop of chocolate protein powder in the batter lifts protein further and firms the texture",
+        "Cap the portion — small and moreish; log how many you eat"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "A nice better-for-her treat: complete protein + calcium (cottage), plus iron and magnesium from the cocoa, and honey's antioxidants. Baked (eggs cooked), pasteurized cottage — no safety flags. One minor note: cocoa contains a little caffeine/theobromine (~8 mg caffeine per brownie), so a few brownies still sit well under the pregnancy caffeine limit — just count it if she's also having coffee.",
+      "prenatal_highlights": [
+        "complete protein + calcium from cottage cheese",
+        "iron + magnesium from the cocoa",
+        "honey antioxidants; low per-brownie calories"
+      ],
+      "safety_advisories": [
+        {"note": "Cocoa has a little caffeine/theobromine (~8 mg caffeine/brownie) — count it toward the ~200 mg/day pregnancy caffeine limit if also drinking coffee.", "swap": "fewer brownies / less cocoa if caffeine is close to the limit"}
+      ],
+      "suggested_mods": [
+        "Great with berries (adds vitamin C) as a protein-forward dessert",
+        "Honey (not for infants, but fine for her) — moderate the amount for less sugar"
+      ]
+    }
+  },
+  "tags": ["dessert", "brownie", "high-protein", "flourless", "cottage-cheese", "sweet-craving"],
+  "adopted": false,
+  "created": "2026-09-02",
+  "updated": "2026-09-02",
+  "serving_g": 52,
+  "meal_type": "Dessert",
+  "cooking_guide": [
+    "Blend the cottage cheese, egg whites, peanut butter and honey in a blender/food processor until completely smooth — blending out the cottage lumps is what gives the fudgy, not-grainy texture.",
+    "Add the cocoa powder, vanilla, baking powder and salt; blend again just until uniform and glossy.",
+    "Pour into a parchment-lined 8×8 pan and level the top.",
+    "Bake at 175 C (350 F) ~20-25 min — pull it when the top is set but the centre is still slightly soft (a toothpick comes out with a few moist crumbs). Overbaking makes protein brownies dry/rubbery, so err on the fudgy side.",
+    "Cool fully in the pan, then chill 1-2 hours before cutting — they firm up a lot cold and slice cleanly into 9.",
+    "Tip: a scoop of chocolate protein powder in the batter boosts protein and firms the texture; a spoon of cocoa nibs or a light swirl of extra peanut butter on top adds crunch/richness."
+  ]
+}
