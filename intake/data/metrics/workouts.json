@@ -1,19 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-24",
-    "latest_session": "Outdoor Run — Or Akiva, morning (Nike Run Club, clock time not given, placeholder 06:00) — 3.00km in 24:16 (8:05/km avg pace), 206 kcal, 16m elevation gain, cadence 143. No heart-rate monitor worn.",
-    "sessions_logged": 68,
+    "report_date": "2026-09-25",
+    "latest_session": "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs.",
+    "sessions_logged": 69,
     "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 29.6,
     "aerobic_sessions_28d": 9,
     "avg_pace": "10:01/km",
     "avg_hr": 142,
-    "acwr": 0.54,
-    "recommended_next": "Chest day",
+    "acwr": 1.03,
+    "recommended_next": "Legs day",
     "alerts": [
-      "Load ratio 0.54 (<0.8). A normal training week will bring this back up.",
+      "Recovers in ~71.6h. Avoid loading it hard before then — you trained it most recently.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
@@ -440,6 +440,14 @@
       "duration_min": 24.27,
       "intensity": "moderate",
       "notes": "Morning run, Or Akiva (Nike Run Club, clock time not given) — 3.00km in 24:16 (8:05/km avg pace), 206 kcal, 16m elevation gain, cadence 143. No heart-rate monitor worn.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-25",
+      "type": "Strength — Chest",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Clock time not given. Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best); Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best); Incline Dumbbell Bench Press 24kg each×1×10 (same weight, abbreviated to 1 set, not a PR); Incline Bench Press (barbell) 65kg×3×7 (22.5kg each side + 20kg bar) — lighter session, not a PR; Seated Dips 12.5kg each side (25kg added, dip belt)×4×10 — different execution from the 94kg machine best, not comparable; Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly. 2 new PRs.",
       "_source": "manual log"
     }
   ]
