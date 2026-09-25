@@ -12,13 +12,16 @@
   "items": [
     {"time": "09:30", "name": "Espresso", "category": "drink", "qty": "2 shots (double, ~90 ml)", "kcal": 6, "protein_g": 0.6, "carbs_g": 1, "fat_g": 0, "fiber_g": 0},
     {"time": "09:35", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
-    {"time": "09:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"}
+    {"time": "09:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "09:45", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
+    {"time": "09:45", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (intake/recipes/catalina_crunch_choc_pb_cereal.json): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. \"Handful\" estimated at ~20g, consistent with prior handful-size logs."}
   ],
   "caffeine_shots": 2,
   "assumptions": [
     "Sleep logged: 00:40-08:50, 8.17h — within the 7-9h target band.",
     "09:30 double espresso, 2 shots (1st+2nd caffeine shots today).",
-    "09:35 (approx, confirmed taken shortly after) Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done."
+    "09:35 (approx, confirmed taken shortly after) Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "09:45 vanilla Danone PRO protein yogurt (1 cup, 200g) + Catalina Crunch Protein Cereal (Chocolate Peanut Butter), ~20g handful — verified label rate."
   ],
   "status_note": "Day in progress. Slept 8.17h (00:40-08:50)."
 }
