@@ -12,15 +12,16 @@
   "items": [
     {"time": "08:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "08:50", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "09:20", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."}
+    {"time": "09:20", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
+    {"time": "11:40", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
   ],
   "caffeine_shots": 2,
   "workout_today": true,
   "workout_summary": "Legs (10:09-10:41) — Leg Press 132kg×4×11 (new PR), Outer Thigh 79kg×4×12 (new PR) — 2 new PRs, + incline treadmill cooldown (0.7km, 90 kcal)",
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
@@ -33,7 +34,8 @@
     "08:50 double espresso, 1 double (2 caffeine shots today).",
     "09:20 Danone PRO Vanilla Yogurt, 0% fat (1 cup, 200g) — same line as prior entries.",
     "Legs day, 10:09-10:41 — Leg Press 132kg×4×11, as suggested (new PR — est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg×4×12 (ties best exactly). Leg Curls 111kg×4×12 (ties best exactly). Calf Raises Machine 81kg×4×8 — still under the 76kg×4×11 rebuild target, not a PR. Outer Thigh 79kg×4×12 — new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg×5×10) despite 1 fewer set. 2 new PRs.",
-    "Incline treadmill cooldown — 0.7km in 15:15 (mm:ss, ~2.75 km/h avg, matching the user's stated ~2.7 km/h), 90 kcal. Incline % wasn't read directly off the display, so it (and elevation gain) was derived from speed+kcal+bodyweight (80.95kg, latest weigh-in) via the ACSM walking VO2 equation (VO2 = 0.1×speed + 1.8×speed×grade + 3.5, kcal/min = VO2×weight/1000×5): worked out to ~7.86% grade, 55.0m elevation gain over the 700m. Flagged as a rough, low-confidence estimate — a physiologically-derived approximation, not a measured incline reading."
+    "Incline treadmill cooldown — 0.7km in 15:15 (mm:ss, ~2.75 km/h avg, matching the user's stated ~2.7 km/h), 90 kcal. Incline % wasn't read directly off the display, so it (and elevation gain) was derived from speed+kcal+bodyweight (80.95kg, latest weigh-in) via the ACSM walking VO2 equation (VO2 = 0.1×speed + 1.8×speed×grade + 3.5, kcal/min = VO2×weight/1000×5): worked out to ~7.86% grade, 55.0m elevation gain over the 700m. Flagged as a rough, low-confidence estimate — a physiologically-derived approximation, not a measured incline reading.",
+    "11:40 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc."
   ],
   "status_note": "Day in progress. Slept 8.58h (23:40-08:15). Legs workout — 2 new PRs (Leg Press, Outer Thigh) — plus an incline treadmill cooldown (0.7km, 90 kcal, ~55m elevation estimated). AM spray + double espresso + vanilla protein yogurt logged. Bilaxten pill missed this morning (left at home) — reminder set for tonight."
 }
