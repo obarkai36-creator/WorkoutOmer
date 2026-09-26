@@ -299,15 +299,16 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
-  // 26 Sep — Legs (10:09-10:41)
+  // 26 Sep — Legs (10:09-10:41), + incline treadmill cooldown (later)
   {
-    datetime: "2026-09-26T10:09", note: "Legs day (10:09-10:41) — Leg Press 132kg×4×11, as suggested (new PR — est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg×4×12 (ties best exactly). Leg Curls 111kg×4×12 (ties best exactly). Calf Raises Machine 81kg×4×8 — still under the 76kg×4×11 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg×4×12 — new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg×5×10) despite 1 fewer set. 2 new PRs.",
+    datetime: "2026-09-26T10:09", note: "Legs day (10:09-10:41) — Leg Press 132kg×4×11, as suggested (new PR — est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg×4×12 (ties best exactly). Leg Curls 111kg×4×12 (ties best exactly). Calf Raises Machine 81kg×4×8 — still under the 76kg×4×11 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg×4×12 — new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg×5×10) despite 1 fewer set. 2 new PRs. Capped off with an incline treadmill cooldown — 0.7km in 15:15 (~2.75 km/h), 90 kcal, ~7.9% incline / 55m elevation gain (estimated via ACSM walking VO2 equation from speed+kcal+bodyweight, since incline % wasn't read off the display directly — rough estimate, flagged low-confidence).",
     exercises: [
       { name: "Leg Press",           sets: [ { reps: 11, weight: 132 }, { reps: 11, weight: 132 }, { reps: 11, weight: 132 }, { reps: 11, weight: 132 } ] },
       { name: "Leg Extensions",      sets: [ { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 } ] },
       { name: "Leg Curls",           sets: [ { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 } ] },
       { name: "Calf Raises Machine", sets: [ { reps: 8, weight: 81 }, { reps: 8, weight: 81 }, { reps: 8, weight: 81 }, { reps: 8, weight: 81 } ] },
       { name: "Outer Thigh",         sets: [ { reps: 12, weight: 79 }, { reps: 12, weight: 79 }, { reps: 12, weight: 79 }, { reps: 12, weight: 79 } ] },
+      { name: "Incline Walk",        distanceKm: 0.7, durationMin: 15.25, elevationGainM: 55 },
     ],
   },
   // 25 Sep — Chest (clock time not given)

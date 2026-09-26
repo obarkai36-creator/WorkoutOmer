@@ -2,19 +2,19 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js \u2014 run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-09-26",
-    "latest_session": "Legs day (10:09-10:41) \u2014 Leg Press 132kg\u00d74\u00d711, as suggested (new PR \u2014 est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg\u00d74\u00d712 (ties best exactly). Leg Curls 111kg\u00d74\u00d712 (ties best exactly). Calf Raises Machine 81kg\u00d74\u00d78 \u2014 still under the 76kg\u00d74\u00d711 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg\u00d74\u00d712 \u2014 new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg\u00d75\u00d710) despite 1 fewer set. 2 new PRs.",
+    "latest_session": "Legs day (10:09-10:41) \u2014 Leg Press 132kg\u00d74\u00d711, as suggested (new PR \u2014 est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg\u00d74\u00d712 (ties best exactly). Leg Curls 111kg\u00d74\u00d712 (ties best exactly). Calf Raises Machine 81kg\u00d74\u00d78 \u2014 still under the 76kg\u00d74\u00d711 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg\u00d74\u00d712 \u2014 new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg\u00d75\u00d710) despite 1 fewer set. 2 new PRs. Capped off with an incline treadmill cooldown \u2014 0.7km in 15:15 (~2.75 km/h), 90 kcal, ~7.9% incline / 55m elevation gain (estimated via ACSM walking VO2 equation from speed+kcal+bodyweight, since incline % wasn't read off the display directly \u2014 rough estimate, flagged low-confidence).",
     "sessions_logged": 70,
     "sessions_per_week": 4.3,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 34.7,
-    "aerobic_sessions_28d": 10,
-    "avg_pace": "9:50/km",
+    "aerobic_28d_km": 35.4,
+    "aerobic_sessions_28d": 11,
+    "avg_pace": "10:12/km",
     "avg_hr": 142,
-    "acwr": 1.45,
+    "acwr": 1.48,
     "recommended_next": "Shoulders day",
     "alerts": [
-      "Load ratio 1.45 (sweet spot 0.8\u20131.3). Keep added volume under ~10% next week.",
-      "Recovers in ~59.3h. Avoid loading it hard before then \u2014 you trained it most recently.",
+      "Load ratio 1.48 (sweet spot 0.8\u20131.3). Keep added volume under ~10% next week.",
+      "Recovers in ~59.4h. Avoid loading it hard before then \u2014 you trained it most recently.",
       "Recovers in ~63.9h. Avoid loading it hard before then \u2014 you trained it most recently."
     ]
   },
@@ -456,7 +456,7 @@
       "type": "Strength \u2014 Legs",
       "duration_min": 32,
       "intensity": "moderate",
-      "notes": "10:09-10:41. Leg Press 132kg\u00d74\u00d711, as suggested (new PR \u2014 est. 1RM 180.4 vs 176.0 prior best); Leg Extensions 111kg\u00d74\u00d712 (ties best exactly); Leg Curls 111kg\u00d74\u00d712 (ties best exactly); Calf Raises Machine 81kg\u00d74\u00d78 \u2014 still under the 76kg\u00d74\u00d711 rebuild target, not a PR; Outer Thigh 79kg\u00d74\u00d712 \u2014 new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg\u00d75\u00d710) despite 1 fewer set. 2 new PRs.",
+      "notes": "10:09-10:41. Leg Press 132kg\u00d74\u00d711, as suggested (new PR \u2014 est. 1RM 180.4 vs 176.0 prior best); Leg Extensions 111kg\u00d74\u00d712 (ties best exactly); Leg Curls 111kg\u00d74\u00d712 (ties best exactly); Calf Raises Machine 81kg\u00d74\u00d78 \u2014 still under the 76kg\u00d74\u00d711 rebuild target, not a PR; Outer Thigh 79kg\u00d74\u00d712 \u2014 new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg\u00d75\u00d710) despite 1 fewer set. 2 new PRs. Capped off with an incline treadmill cooldown \u2014 0.7km in 15:15 (~2.75 km/h), 90 kcal, ~7.9% incline / 55m elevation gain (estimated via ACSM walking VO2 equation, flagged low-confidence since incline % wasn't read directly).",
       "_source": "manual log"
     }
   ]

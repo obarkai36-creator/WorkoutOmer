@@ -1,9 +1,9 @@
 {
-  "now": 1790410479916,
+  "now": 1790410581911,
   "workouts": [
     {
       "datetime": "2026-09-26T10:09",
-      "note": "Legs day (10:09-10:41) — Leg Press 132kg×4×11, as suggested (new PR — est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg×4×12 (ties best exactly). Leg Curls 111kg×4×12 (ties best exactly). Calf Raises Machine 81kg×4×8 — still under the 76kg×4×11 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg×4×12 — new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg×5×10) despite 1 fewer set. 2 new PRs.",
+      "note": "Legs day (10:09-10:41) — Leg Press 132kg×4×11, as suggested (new PR — est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg×4×12 (ties best exactly). Leg Curls 111kg×4×12 (ties best exactly). Calf Raises Machine 81kg×4×8 — still under the 76kg×4×11 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg×4×12 — new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg×5×10) despite 1 fewer set. 2 new PRs. Capped off with an incline treadmill cooldown — 0.7km in 15:15 (~2.75 km/h), 90 kcal, ~7.9% incline / 55m elevation gain (estimated via ACSM walking VO2 equation from speed+kcal+bodyweight, since incline % wasn't read off the display directly — rough estimate, flagged low-confidence).",
       "exercises": [
         {
           "name": "Leg Press",
@@ -147,16 +147,32 @@
             "quads": 758.4000000000001
           },
           "kind": "strength"
+        },
+        {
+          "name": "Incline Walk",
+          "distanceKm": 0.7,
+          "durationMin": 15.25,
+          "elevationGainM": 55,
+          "load": 137.25,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 137.25,
+            "quads": 27.450000000000003,
+            "calves": 27.450000000000003
+          },
+          "kind": "aerobic"
         }
       ],
       "t": 1790417340000,
       "muscleLoad": {
-        "quads": 11894.4,
+        "quads": 11921.85,
         "glutes": 5937.6,
         "hamstrings": 7070.4,
-        "calves": 2592
+        "calves": 2619.45,
+        "cardio": 137.25
       },
-      "isAerobic": false
+      "isAerobic": true
     },
     {
       "datetime": "2026-09-25T16:00",
@@ -7204,7 +7220,7 @@
       "label": "Triceps",
       "section": "Arms",
       "pct": 49,
-      "readyInHours": 19.9,
+      "readyInHours": 19.8,
       "ready": false
     },
     "forearms": {
@@ -7220,7 +7236,7 @@
       "label": "Quads",
       "section": "Legs",
       "pct": 81,
-      "readyInHours": 59.3,
+      "readyInHours": 59.4,
       "ready": false
     },
     "hamstrings": {
@@ -7252,7 +7268,7 @@
       "label": "Calves",
       "section": "Legs",
       "pct": 32,
-      "readyInHours": 2.7,
+      "readyInHours": 3.1,
       "ready": false
     },
     "core": {
@@ -7267,9 +7283,9 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 20,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 38,
+      "readyInHours": 6.7,
+      "ready": false
     }
   },
   "sections": {
@@ -7321,14 +7337,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 17,
-      "readyInHours": 19.9,
+      "readyInHours": 19.8,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
           "pct": 49,
-          "readyInHours": 19.9,
+          "readyInHours": 19.8,
           "ready": false
         },
         {
@@ -7367,7 +7383,7 @@
           "label": "Quads",
           "section": "Legs",
           "pct": 81,
-          "readyInHours": 59.3,
+          "readyInHours": 59.4,
           "ready": false
         },
         {
@@ -7383,7 +7399,7 @@
           "label": "Calves",
           "section": "Legs",
           "pct": 32,
-          "readyInHours": 2.7,
+          "readyInHours": 3.1,
           "ready": false
         },
         {
@@ -7413,16 +7429,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 20,
-      "readyInHours": 0,
+      "pct": 38,
+      "readyInHours": 6.7,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 20,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 38,
+          "readyInHours": 6.7,
+          "ready": false
         }
       ]
     }
@@ -8712,12 +8728,12 @@
         "label": "This wk",
         "stress": 471,
         "sessions": 3,
-        "acwr": 1.45
+        "acwr": 1.48
       }
     ],
-    "acute": 128.38,
-    "chronic": 88.81,
-    "acwr": 1.45,
+    "acute": 132.89,
+    "chronic": 90.06,
+    "acwr": 1.48,
     "acwrZone": "caution",
     "sessions28": 17
   },
@@ -8726,7 +8742,7 @@
     "fatigue": 20,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-26T08:14:39.916Z",
+    "readyAt": "2026-09-26T08:16:21.911Z",
     "neverLogged": false,
     "daysSince": 10.7,
     "suggestedExercises": [
@@ -8831,7 +8847,7 @@
       }
     ],
     "guidance": [
-      "Load ratio 1.45 is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR."
+      "Load ratio 1.48 is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR."
     ],
     "ranked": [
       {
@@ -8849,7 +8865,7 @@
       {
         "section": "Arms",
         "fatigue": 17,
-        "readyInHours": 19.9,
+        "readyInHours": 19.8,
         "daysSince": 9.9
       },
       {
@@ -8868,20 +8884,20 @@
     "suggestedCount": 4,
     "totalAvailable": 9,
     "typicalSessionSize": 4,
-    "aerobicLast7": 2,
+    "aerobicLast7": 3,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 0.7
+    "daysSinceAerobic": -0.1
   },
   "alerts": [
     {
       "level": "med",
       "title": "Load climbing fast",
-      "detail": "Load ratio 1.45 (sweet spot 0.8–1.3). Keep added volume under ~10% next week."
+      "detail": "Load ratio 1.48 (sweet spot 0.8–1.3). Keep added volume under ~10% next week."
     },
     {
       "level": "low",
       "title": "Quads fatigued (81%)",
-      "detail": "Recovers in ~59.3h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~59.4h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "low",
@@ -8957,15 +8973,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 35,
-    "km7": 8.2,
-    "km28": 34.7,
-    "totalKm": 143.3,
+    "count": 36,
+    "km7": 8.9,
+    "km28": 35.4,
+    "totalKm": 144,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 3.6764705882352944,
-    "avgPace": 9.840580514896835,
-    "paceTrend": -2.09,
+    "avgPace": 10.202554265527667,
+    "paceTrend": -0.65,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -8974,8 +8990,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.7,
+    "daysSinceLast": -0.1,
     "recent": [
+      {
+        "t": 1790417340000,
+        "name": "Incline Walk",
+        "distanceKm": 0.7,
+        "durationMin": 15.25,
+        "avgHr": null,
+        "pace": 21.78571428571429
+      },
       {
         "t": 1790352000000,
         "name": "Stationary Bike",
@@ -9007,14 +9031,6 @@
         "durationMin": 33.65,
         "avgHr": null,
         "pace": 12.148014440433212
-      },
-      {
-        "t": 1789138800000,
-        "name": "Outdoor Run",
-        "distanceKm": 3.51,
-        "durationMin": 28.4,
-        "avgHr": null,
-        "pace": 8.091168091168091
       }
     ]
   },
