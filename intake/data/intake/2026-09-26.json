@@ -25,7 +25,8 @@
     {"time": "14:20", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:25", "name": "Burgul, pomegranate & Bulgarian cheese salad", "category": "food", "qty": "100 g", "kcal": 133.5, "protein_g": 6.2, "carbs_g": 14.2, "fat_g": 6.4, "fiber_g": 3.3, "time_approx": true, "note": "same generic reference as the earlier 1-spoon serving today (burgul_pomegranate_bulgarian_cheese_salad_generic) — not label-verified, still flagged low-confidence."},
     {"time": "16:00", "name": "Cherry tomato soup, with butter, no cream", "category": "food", "qty": "1 bowl (~300 g assumed)", "kcal": 126, "protein_g": 3, "carbs_g": 15, "fat_g": 6, "fiber_g": 3.3, "note": "new generic reference (cherry_tomato_soup_butter_generic, not label-verified, first time logged) — modeled lighter than a cream-based tomato soup since no cream was used. Credits ~18mg lycopene, ~24mg vitamin C, ~24mcg folate DFE."},
-    {"time": "16:30", "name": "Green grapes", "category": "food", "qty": "15 grapes (~75 g)", "kcal": 51.75, "protein_g": 0.54, "carbs_g": 13.58, "fat_g": 0.12, "fiber_g": 0.68, "note": "same generic reference (green_grapes_generic). Credits ~8.1mg vitamin C."}
+    {"time": "16:30", "name": "Green grapes", "category": "food", "qty": "15 grapes (~75 g)", "kcal": 51.75, "protein_g": 0.54, "carbs_g": 13.58, "fat_g": 0.12, "fiber_g": 0.68, "note": "same generic reference (green_grapes_generic). Credits ~8.1mg vitamin C."},
+    {"time": "17:00", "name": "Chocolate ice cream, single unit", "category": "food", "qty": "1 unit (~43 g)", "kcal": 99, "protein_g": 2.5, "carbs_g": 10.1, "fat_g": 5.4, "fiber_g": 2.3, "note": "verified label reference (chocolate_ice_cream_unit_merkado, merkado.co.il product catalog) — protein wasn't visible on the photographed label crop, derived from calorie math instead (~2.5g), not read directly."}
   ],
   "caffeine_shots": 4,
   "workout_today": true,
@@ -53,7 +54,9 @@
     "14:20 double espresso, 1 double (4 caffeine shots today).",
     "~15:25 (clock time not given, approximated) 100g burgul/pomegranate/Bulgarian cheese salad — same generic reference as the earlier lunch spoon, still flagged low-confidence (no recipe/label available).",
     "16:00 1 bowl (~300g assumed) cherry tomato soup with butter, no cream — new generic reference (cherry_tomato_soup_butter_generic, not label-verified, first time logged), modeled lighter than a cream-based version since no cream was added. Credits ~18mg lycopene, ~24mg vitamin C, ~24mcg folate DFE.",
-    "16:30 15 green grapes (~75g, same generic reference) — credits ~8.1mg vitamin C."
+    "16:30 15 green grapes (~75g, same generic reference) — credits ~8.1mg vitamin C.",
+    "17:00 chocolate ice cream, 1 unit (~43g) — new verified label reference (chocolate_ice_cream_unit_merkado, merkado.co.il catalog photo). Protein wasn't visible on the photographed crop, so it was derived from calorie math (~2.5g) rather than read off the label.",
+    "17:40 partnered ejaculation."
   ],
   "status_note": "Day in progress. Slept 8.58h (23:40-08:15). Legs workout — 2 new PRs (Leg Press, Outer Thigh) — plus an incline treadmill cooldown (0.7km, 90 kcal, ~55m elevation estimated). AM spray + double espresso + vanilla protein yogurt + lunch + omega-3 + afternoon snacks logged. Bilaxten pill missed this morning (left at home) — reminder set for tonight."
 }

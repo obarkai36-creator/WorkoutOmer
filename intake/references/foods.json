@@ -496,6 +496,18 @@
       "fiber_g": 1.1,
       "verified": false,
       "source": "Rough estimate (no recipe/label available), first logged 2026-09-26 (1 bowl, ~300g assumed): modeled as a pureed cherry-tomato soup with butter for richness and no cream (keeping fat well below a cream-based tomato soup, which typically runs 2-3x higher). Also credits ~6mg lycopene / ~8mg vitamin C / ~8mcg folate DFE per 100g (cooking concentrates lycopene vs raw tomatoes, similar logic to the matbucha reference, but more diluted so credited at a lower rate). Flagged low-confidence — refine if the actual recipe/ratios become available."
+    },
+    {
+      "id": "chocolate_ice_cream_unit_merkado",
+      "name": "Chocolate ice cream, single unit (merkado.co.il catalog)",
+      "serving": "1 unit",
+      "kcal": 99,
+      "protein_g": 2.5,
+      "carbs_g": 10.1,
+      "fat_g": 5.4,
+      "fiber_g": 2.3,
+      "verified": true,
+      "source": "Photographed nutrition label from merkado.co.il product catalog, 2026-09-26. Per-unit (\"למנה\") column: 99 kcal, 5.4g fat (3g sat, 0.5g trans), 15.9mg cholesterol, 22mg sodium, 10.1g total carbs (7.5g sugars), 2.3g fiber. Protein row was cropped out of the screenshot -- derived from calorie math instead (99 - fat 48.6kcal - carbs 40.4kcal = ~10kcal remaining / 4kcal per g protein = ~2.5g), not read directly off the label. Per-100g column (231kcal/12.5g fat/23.5g carb/5.4g fiber) implies unit weight ~43g."
     }
   ]
 }
