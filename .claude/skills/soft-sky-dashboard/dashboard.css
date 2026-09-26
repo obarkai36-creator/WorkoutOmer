@@ -1,0 +1,226 @@
+/* "Soft sky" dashboard — structural component styles. Load AFTER
+ * tokens.css. Rarely needs edits beyond adding new component variants;
+ * customize colors/spacing via tokens.css instead of editing values here. */
+
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(1100px 500px at 50% -220px, rgba(37,99,235,.06), transparent 62%),
+    radial-gradient(700px 420px at 105% 0%, rgba(236,72,153,.04), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+  color: var(--text-1);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.006em;
+}
+a { color: var(--pillar3-b); text-decoration: none; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 18px 70px; }
+.muted { color: var(--text-2); }
+.small { font-size: 12px; }
+::-webkit-scrollbar { height: 6px; width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
+
+/* ---- header ---- */
+header.top {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 14px; margin-bottom: 20px;
+}
+header.top .brand { display: flex; align-items: center; gap: 10px; }
+header.top .mark {
+  width: 34px; height: 34px; border-radius: 10px; flex: none;
+  background: linear-gradient(135deg, var(--pillar2-a), var(--pillar3-b));
+  box-shadow: 0 0 0 1px rgba(255,255,255,.5) inset, 0 6px 16px -6px rgba(37,99,235,.4);
+}
+header.top h1 { font-size: 19px; margin: 0; letter-spacing: -.02em; font-weight: 700; }
+header.top .subtitle { color: var(--text-3); font-size: 12.5px; margin-top: 3px; }
+
+.datenav {
+  display: flex; align-items: center; gap: 6px; background: var(--surface-1);
+  border: 1px solid var(--border); border-radius: var(--r-chip); padding: 5px 6px;
+  box-shadow: var(--shadow-card);
+}
+.datenav button:not(.today-btn) {
+  background: transparent; border: none; color: var(--text-2);
+  border-radius: 8px; width: 28px; height: 28px; cursor: pointer; font-size: 15px;
+  display: flex; align-items: center; justify-content: center; flex: none;
+}
+.datenav button:hover:not(:disabled) { background: var(--surface-2-hover); color: var(--text-1); }
+.datenav button:disabled { opacity: .35; cursor: default; }
+.datenav input[type="date"] {
+  background: transparent; border: none; color: var(--text-1);
+  border-radius: 8px; padding: 4px 6px; font-size: 12.5px; color-scheme: light;
+  height: 28px; box-sizing: border-box;
+}
+.datenav .today-btn {
+  font-size: 11.5px; color: var(--pillar3-b); background: none; border: none; cursor: pointer;
+  padding: 0 8px; font-weight: 600; height: 28px; width: auto; white-space: nowrap; flex: none;
+}
+
+/* ---- section labels ---- */
+.section-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--text-3); margin: 28px 0 12px;
+}
+.section-eyebrow:first-child { margin-top: 0; }
+.section-eyebrow .sub { text-transform: none; font-weight: 500; letter-spacing: 0; color: var(--text-3); }
+
+/* ---- hero ---- */
+.hero {
+  background: linear-gradient(160deg, var(--surface-2) 0%, var(--surface-1) 100%);
+  border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow-card);
+  padding: 26px 30px; display: flex; align-items: center; gap: 30px; flex-wrap: wrap;
+}
+.hero .ring-col { flex: none; }
+.hero .body { flex: 1 1 260px; min-width: 0; }
+.hero .eyebrow-inline { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--text-3); margin-bottom: 6px; }
+.hero .headline { font-size: 16.5px; font-weight: 500; line-height: 1.55; color: var(--text-1); max-width: 560px; }
+.hero .headline b { font-weight: 700; }
+.hero .trendrow { display: flex; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+
+.trend-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: var(--r-pill); background: rgba(22,163,74,.1); color: var(--good); border: 1px solid rgba(22,163,74,.16); }
+.trend-pill.down { background: rgba(220,38,38,.1); color: var(--bad); border-color: rgba(220,38,38,.16); }
+.trend-pill.warn { background: rgba(217,119,6,.1); color: var(--warn); border-color: rgba(217,119,6,.16); }
+.trend-pill.flat { background: var(--surface-inset); color: var(--text-2); border-color: var(--border); }
+
+/* ---- top strip ---- */
+.strip { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 4px; }
+.strip .pill {
+  flex: 0 0 auto; background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-pill);
+  padding: 8px 16px; font-size: 12.5px; color: var(--text-2); display: flex; align-items: center; gap: 8px;
+  box-shadow: var(--shadow-card);
+}
+.strip .pill b { color: var(--text-1); font-weight: 600; }
+.strip .pill.tap { cursor: pointer; }
+.strip .pill.tap:hover { border-color: var(--border-hover); background: var(--surface-2-hover); }
+.dot { width: 6px; height: 6px; border-radius: 50%; flex: none; }
+
+/* ---- bento tile grid: keep the tile count a multiple of the column
+   count (3 by default) — an uneven count leaves an orphaned tile with a
+   big empty gap; every category addition/removal must preserve this ---- */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.tile {
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-card);
+  box-shadow: var(--shadow-card); padding: 20px 22px; position: relative;
+  transition: background .16s, border-color .16s, box-shadow .16s, transform .16s;
+}
+.tile.tap:hover { background: var(--surface-2-hover); border-color: var(--border-hover); box-shadow: var(--shadow-card-hover); transform: translateY(-1px); cursor: pointer; }
+.tile .go { position: absolute; top: 20px; right: 20px; color: var(--text-3); font-size: 15px; transition: color .16s, transform .16s; }
+.tile.tap:hover .go { color: var(--text-2); transform: translateX(2px); }
+.tile h3 { margin: 0 0 14px; font-size: 11px; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: .09em; }
+.tile .row { display: flex; align-items: center; gap: 16px; }
+.tile .num { font-size: 25px; font-weight: 700; letter-spacing: -.02em; color: var(--text-1); }
+.tile .num small { font-size: 12.5px; font-weight: 500; color: var(--text-3); letter-spacing: 0; margin-left: 2px; }
+.tile .sub { font-size: 12.5px; color: var(--text-2); margin-top: 3px; }
+.tile-divider { height: 1px; background: var(--border); margin: 16px 0; }
+
+.bar-row { display: flex; flex-direction: column; gap: 9px; }
+.bar { background: var(--surface-inset); border-radius: 8px; height: 6px; overflow: hidden; }
+.bar > div { height: 100%; border-radius: 8px; }
+.bar-label { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--text-2); margin-bottom: 4px; }
+
+/* ---- generic panel (top-level panel + inside modals) ---- */
+.panel { background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow-card); padding: 20px 24px; }
+.panel.span { grid-column: 1 / -1; }
+.panel h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .09em; font-weight: 700; color: var(--text-3); margin: 0 0 14px; }
+.panel h2 .tag { text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--text-3); }
+.tips { list-style: none; margin: 0; padding: 0; }
+.tips li { padding: 10px 0; font-size: 13.5px; line-height: 1.5; color: var(--text-2); border-bottom: 1px solid var(--border); }
+.tips li:last-child { border-bottom: none; }
+.tips li b { color: var(--text-1); }
+.status-note-text { font-size: 13.5px; line-height: 1.6; color: var(--text-2); }
+
+/* ---- shared metric/chip/table components (top-level + modal) ---- */
+.dgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.dpanel { background: var(--surface-2); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px; }
+.dpanel.span { grid-column: 1 / -1; }
+.dpanel h4 { font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: var(--text-3); margin: 0 0 14px; }
+.dpanel h4 .tag { text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--text-3); }
+
+.metric { margin-bottom: 14px; } .metric:last-child { margin-bottom: 0; }
+.metric-top { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 5px; color: var(--text-1); }
+.metric-top .vals { color: var(--text-3); }
+.track { background: var(--surface-inset); border-radius: 8px; height: 6px; overflow: hidden; }
+.fill { height: 100%; border-radius: 8px; }
+.metric-note { font-size: 12px; color: var(--text-3); margin-top: 4px; }
+.metric-tip { font-size: 11.5px; margin-top: 5px; padding: 6px 8px; border-radius: 8px; background: var(--surface-inset); border-left: 3px solid var(--warn); color: var(--text-1); }
+
+.bignum { font-size: 27px; font-weight: 700; line-height: 1; letter-spacing: -.02em; color: var(--text-1); }
+.bignum small { font-size: 13px; color: var(--text-3); font-weight: 500; margin-left: 3px; letter-spacing: 0; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chips.four { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; }
+.chip { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 9px 14px; min-width: 92px; }
+.chip .chip-v { font-size: 14.5px; font-weight: 700; color: var(--text-1); letter-spacing: -.01em; }
+.chip .chip-k { font-size: 9.5px; color: var(--text-3); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; margin-top: 3px; }
+
+.evul { list-style: none; margin: 0; padding: 0; }
+.evul li { padding: 9px 0; font-size: 13px; color: var(--text-2); border-bottom: 1px solid var(--border); }
+.evul li:last-child { border-bottom: none; }
+.evul li b { color: var(--text-1); font-weight: 600; }
+.goalline { font-size: 12.5px; color: var(--text-3); margin: 6px 0 14px; }
+
+.ex-search {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 13.5px;
+  padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--r-chip);
+  background: var(--surface-inset); color: var(--text-1); margin-bottom: 12px;
+}
+.ex-search:focus { outline: 2px solid var(--pillar3-b); outline-offset: -1px; }
+.ex-search::placeholder { color: var(--text-3); }
+
+table.datatable { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+table.datatable th, table.datatable td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+table.datatable th { color: var(--text-3); font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; position: sticky; top: 0; background: var(--surface-2); }
+table.datatable td.num { text-align: right; white-space: nowrap; }
+table.datatable tr:last-child td { border-bottom: none; }
+.scrollbox { max-height: 340px; overflow-y: auto; border: 1px solid var(--border); border-radius: 12px; }
+
+.chart-box { position: relative; height: 200px; }
+.chart-box.small { height: 140px; }
+
+.star { color: #d97706; font-size: 11px; }
+.alert-row { padding: 10px 12px; border-radius: 10px; background: var(--surface-1); border-left: 3px solid var(--warn); margin-bottom: 8px; font-size: 12.5px; color: var(--text-2); }
+.alert-row b { color: var(--text-1); }
+.alert-row.low { border-left-color: var(--text-3); }
+
+.dot-strip { display: flex; gap: 4px; flex-wrap: wrap; }
+.dot-cell { width: 18px; height: 18px; border-radius: 4px; }
+
+.empty-state { color: var(--text-3); font-size: 13px; padding: 30px 10px; text-align: center; background: var(--surface-inset); border-radius: 12px; }
+.loading { color: var(--text-3); text-align: center; padding: 60px 0; }
+.footer { color: var(--text-3); font-size: 12px; text-align: center; margin-top: 30px; }
+
+/* ---- modal (tap-through detail view) ---- */
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(10,14,26,.55); backdrop-filter: blur(3px);
+  display: none; align-items: flex-start; justify-content: center; z-index: 50;
+  padding: 4vh 16px; overflow-y: auto;
+}
+.modal-backdrop.open { display: flex; }
+.modal-panel {
+  background: var(--surface-1); border: 1px solid var(--border-strong); border-radius: 22px;
+  box-shadow: 0 30px 60px -20px rgba(15,23,60,.35), 0 1px 0 rgba(255,255,255,.8) inset;
+  width: 100%; max-width: 1000px; padding: 8px; animation: pop .16s ease-out;
+}
+@keyframes pop { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+.modal-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px 14px; }
+.modal-head .title { display: flex; align-items: center; gap: 12px; }
+.modal-head h2 { font-size: 17px; font-weight: 700; letter-spacing: -.01em; margin: 0; }
+.modal-head .subtitle { font-size: 12.5px; color: var(--text-3); margin-top: 2px; }
+.modal-close { background: var(--surface-2); border: 1px solid var(--border); color: var(--text-2); width: 32px; height: 32px; border-radius: 10px; cursor: pointer; font-size: 15px; }
+.modal-close:hover { color: var(--text-1); border-color: var(--border-hover); }
+.modal-body { padding: 6px 20px 22px; max-height: 78vh; overflow-y: auto; }
+
+@media (max-width: 860px) { .grid { grid-template-columns: repeat(2, 1fr); } .hero { padding: 22px; } }
+@media (max-width: 520px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero { flex-direction: column; align-items: flex-start; text-align: left; }
+  header.top { flex-direction: column; align-items: flex-start; }
+  /* 4 chips at their 92px min-width (+ gaps) need ~400px, wider than a
+     phone's content area even at full modal width — reflow to 2x2 instead
+     of overflowing the panel on mobile. */
+  .chips.four { grid-template-columns: repeat(2, 1fr); }
+}

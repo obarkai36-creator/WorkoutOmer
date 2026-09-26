@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Dashboard</title>
+<!-- Bump ?v=... on every CSS/JS change so hosts/browsers that cache
+     aggressively (GitHub Pages, mobile Safari, etc.) don't serve a stale
+     copy after a deploy. -->
+<link rel="stylesheet" href="tokens.css?v=1">
+<link rel="stylesheet" href="dashboard.css?v=1">
+<!-- Optional: only needed if you use lineChart()/barChart() from
+     chart-helpers.js. Vendor locally (npm install chart.js, then copy
+     node_modules/chart.js/dist/chart.umd.js here) rather than pulling
+     from a CDN, so the dashboard keeps working behind restrictive
+     network policies. -->
+<script src="chart.umd.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <div class="mark"></div>
+      <div>
+        <h1>My Dashboard</h1>
+        <div class="subtitle" id="subtitle">Loading…</div>
+      </div>
+    </div>
+    <!-- Optional date-picker nav, if your dashboard is per-day like the
+         original. Drop this whole block for a single-snapshot dashboard. -->
+    <div class="datenav">
+      <button id="prevDay" title="Previous">‹</button>
+      <input type="date" id="datePick">
+      <button id="nextDay" title="Next">›</button>
+      <button class="today-btn" id="jumpLatest">Latest</button>
+    </div>
+  </header>
+
+  <!-- Overview: render your .hero / .strip / .grid of .tile elements here,
+       built as template strings from your data (see SKILL.md's component
+       table for the class vocabulary). -->
+  <div id="content">
+    <div class="loading">Loading…</div>
+  </div>
+
+  <div class="footer" id="footer"></div>
+</div>
+
+<!-- Single shared modal — detail views render into #modalBody on tile
+     click rather than each pillar getting its own modal markup. -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <div class="title"><div id="modalRing"></div><div><h2 id="modalTitle">—</h2><div class="subtitle" id="modalSubtitle">—</div></div></div>
+      <button class="modal-close" id="modalClose">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="chart-helpers.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>

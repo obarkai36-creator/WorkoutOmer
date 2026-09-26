@@ -1,0 +1,56 @@
+/* "Soft sky" dashboard design tokens — EDIT THIS FILE per project.
+ * Everything here is a CSS custom property consumed by dashboard.css.
+ * Rename/re-pick the --<pillar>-a/-b pairs to match your own data
+ * categories; leave the rest as-is for the same base look, or retune to
+ * taste (they're intentionally subtle/neutral). */
+
+:root {
+  /* base surfaces — pale sky-blue page, pure white cards for contrast */
+  --bg: #eef2f9;
+  --surface-1: #ffffff;
+  --surface-2: #ffffff;
+  --surface-2-hover: #f6f9fd;
+  --surface-inset: #eef2f9;
+
+  --border: rgba(30, 45, 90, .09);
+  --border-strong: rgba(30, 45, 90, .16);
+  --border-hover: rgba(30, 45, 90, .24);
+
+  /* text */
+  --text-1: #16213f;
+  --text-2: #5b6b8c;
+  --text-3: #93a1c2;
+
+  /* status — used ONLY for state (on-target / borderline / off-target),
+     never decoratively. Keeping this rule keeps these colors meaningful. */
+  --good: #16a34a;
+  --warn: #d97706;
+  --bad: #dc2626;
+
+  /* per-pillar fixed hue identity — same metric/category = same color
+     everywhere it appears (tile, ring, chart line, dot). Rename these to
+     your own data categories; keep each pair a light "a" tone (for
+     backgrounds/gradient starts) and a saturated "b" tone (for text/
+     gradient ends/chart lines). Six shown here as an example set —
+     add or remove pairs to match how many categories your dashboard has. */
+  --pillar1-a: #fcd34d;   --pillar1-b: #f59e0b;  /* e.g. "Energy" — gold */
+  --pillar2-a: #e0aaff;   --pillar2-b: #ec4899;  /* e.g. "Wellness" — violet -> pink */
+  --pillar3-a: #7dd3fc;   --pillar3-b: #2563eb;  /* e.g. "Activity" — cyan -> blue */
+  --pillar4-a: #6ee7b7;   --pillar4-b: #0d9488;  /* e.g. "Nutrition" — green -> teal */
+  --pillar5-a: #a5b4fc;   --pillar5-b: #4f46e5;  /* e.g. "Sleep" — indigo */
+  --pillar6-a: #7dd3fc;   --pillar6-b: #0284c7;  /* e.g. "Body/metrics" — blue */
+  --pillar7-a: #93a1c2;   --pillar7-b: #66709a;  /* e.g. "Lifestyle" — neutral slate */
+
+  --r-pill: 999px;
+  --r-chip: 12px;
+  --r-card: 18px;
+
+  --shadow-card:
+    0 1px 0 rgba(255,255,255,.6) inset,
+    0 0 0 1px rgba(30,45,90,.02) inset,
+    0 10px 24px -12px rgba(30,45,90,.14);
+  --shadow-card-hover:
+    0 1px 0 rgba(255,255,255,.7) inset,
+    0 0 0 1px rgba(30,45,90,.03) inset,
+    0 16px 32px -14px rgba(30,45,90,.2);
+}
