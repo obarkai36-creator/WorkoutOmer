@@ -484,6 +484,18 @@
       "fiber_g": 3.3,
       "verified": false,
       "source": "Rough composite estimate (no recipe/label available), first logged 2026-09-26 (1 spoon, ~30g assumed): modeled as ~50% cooked bulgur (83kcal/100g), 25% pomegranate arils (pomegranate_seeds_generic rate), 25% Bulgarian (Sirene-style brined) cheese (~285kcal/100g, ~17g protein, ~24g fat per 100g). Flagged low-confidence — refine if exact recipe/ratios or a label become available."
+    },
+    {
+      "id": "cherry_tomato_soup_butter_generic",
+      "name": "Cherry tomato soup, with butter, no cream (generic, homemade)",
+      "serving": "100 g",
+      "kcal": 42,
+      "protein_g": 1,
+      "carbs_g": 5,
+      "fat_g": 2,
+      "fiber_g": 1.1,
+      "verified": false,
+      "source": "Rough estimate (no recipe/label available), first logged 2026-09-26 (1 bowl, ~300g assumed): modeled as a pureed cherry-tomato soup with butter for richness and no cream (keeping fat well below a cream-based tomato soup, which typically runs 2-3x higher). Also credits ~6mg lycopene / ~8mg vitamin C / ~8mcg folate DFE per 100g (cooking concentrates lycopene vs raw tomatoes, similar logic to the matbucha reference, but more diluted so credited at a lower rate). Flagged low-confidence — refine if the actual recipe/ratios become available."
     }
   ]
 }
