@@ -9,8 +9,11 @@
     "quality": null,
     "notes": "8.58h, within the 7-9h target band."
   },
-  "items": [],
-  "caffeine_shots": 0,
+  "items": [
+    {"time": "08:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "08:50", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
+  "caffeine_shots": 2,
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -22,7 +25,9 @@
     "lycopene_mg": 0
   },
   "assumptions": [
-    "Sleep logged: 23:40-08:15, 8.58h (night of 25-26 Sep) — within the 7-9h target band."
+    "Sleep logged: 23:40-08:15, 8.58h (night of 25-26 Sep) — within the 7-9h target band.",
+    "08:30 Rhinolast (azelastine nasal spray, AM dose) — zero kcal/macros. Bilaxten (AM pill) not reported yet.",
+    "08:50 double espresso, 1 double (2 caffeine shots today)."
   ],
-  "status_note": "Day in progress. Slept 8.58h (23:40-08:15)."
+  "status_note": "Day in progress. Slept 8.58h (23:40-08:15). AM spray + double espresso logged."
 }
