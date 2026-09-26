@@ -26,7 +26,11 @@
     {"time": "15:25", "name": "Burgul, pomegranate & Bulgarian cheese salad", "category": "food", "qty": "100 g", "kcal": 133.5, "protein_g": 6.2, "carbs_g": 14.2, "fat_g": 6.4, "fiber_g": 3.3, "time_approx": true, "note": "same generic reference as the earlier 1-spoon serving today (burgul_pomegranate_bulgarian_cheese_salad_generic) — not label-verified, still flagged low-confidence."},
     {"time": "16:00", "name": "Cherry tomato soup, with butter, no cream", "category": "food", "qty": "1 bowl (~300 g assumed)", "kcal": 126, "protein_g": 3, "carbs_g": 15, "fat_g": 6, "fiber_g": 3.3, "note": "new generic reference (cherry_tomato_soup_butter_generic, not label-verified, first time logged) — modeled lighter than a cream-based tomato soup since no cream was used. Credits ~18mg lycopene, ~24mg vitamin C, ~24mcg folate DFE."},
     {"time": "16:30", "name": "Green grapes", "category": "food", "qty": "15 grapes (~75 g)", "kcal": 51.75, "protein_g": 0.54, "carbs_g": 13.58, "fat_g": 0.12, "fiber_g": 0.68, "note": "same generic reference (green_grapes_generic). Credits ~8.1mg vitamin C."},
-    {"time": "17:00", "name": "Chocolate ice cream, single unit", "category": "food", "qty": "1 unit (~43 g)", "kcal": 99, "protein_g": 2.5, "carbs_g": 10.1, "fat_g": 5.4, "fiber_g": 2.3, "note": "verified label reference (chocolate_ice_cream_unit_merkado, merkado.co.il product catalog) — protein wasn't visible on the photographed label crop, derived from calorie math instead (~2.5g), not read directly."}
+    {"time": "17:00", "name": "Chocolate ice cream, single unit", "category": "food", "qty": "1 unit (~43 g)", "kcal": 99, "protein_g": 2.5, "carbs_g": 10.1, "fat_g": 5.4, "fiber_g": 2.3, "note": "verified label reference (chocolate_ice_cream_unit_merkado, merkado.co.il product catalog) — protein wasn't visible on the photographed label crop, derived from calorie math instead (~2.5g), not read directly."},
+    {"time": "18:35", "name": "Baked salmon", "category": "food", "qty": "200 g", "kcal": 412, "protein_g": 44, "carbs_g": 0, "fat_g": 26, "fiber_g": 0, "note": "standard reference (baked_salmon_generic). Credits ~3600mg omega-3 EPA/DHA and ~700IU vitamin D — a strong single-meal source of both."},
+    {"time": "18:35", "name": "Broccolini", "category": "food", "qty": "50 g", "kcal": 17.5, "protein_g": 1.19, "carbs_g": 3.59, "fat_g": 0.18, "fiber_g": 1.65, "note": "new generic reference (broccolini_cooked_generic, USDA cooked-broccoli proxy, not label-verified) — first time logged. Credits ~32.5mg vitamin C."},
+    {"time": "18:35", "name": "Onion quiche", "category": "food", "qty": "30 g", "kcal": 87, "protein_g": 2.4, "carbs_g": 5.4, "fat_g": 6, "fiber_g": 0.3, "note": "new generic reference (onion_quiche_generic, not label/recipe-verified) — first time logged, rough estimate for a savory egg/pastry quiche."},
+    {"time": "18:35", "name": "Burgul, pomegranate & Bulgarian cheese salad", "category": "food", "qty": "100 g", "kcal": 133.5, "protein_g": 6.2, "carbs_g": 14.2, "fat_g": 6.4, "fiber_g": 3.3, "note": "same generic reference as earlier today (burgul_pomegranate_bulgarian_cheese_salad_generic) — not label-verified, still flagged low-confidence."}
   ],
   "caffeine_shots": 4,
   "workout_today": true,
@@ -35,9 +39,9 @@
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 200.5,
-    "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 103.5,
-    "vitamin_d_iu": 0,
+    "omega3_epa_dha_mg": 4600,
+    "vitamin_c_mg": 136.0,
+    "vitamin_d_iu": 700,
     "vitamin_e_mg": 0,
     "lycopene_mg": 31.2
   },
@@ -56,7 +60,8 @@
     "16:00 1 bowl (~300g assumed) cherry tomato soup with butter, no cream — new generic reference (cherry_tomato_soup_butter_generic, not label-verified, first time logged), modeled lighter than a cream-based version since no cream was added. Credits ~18mg lycopene, ~24mg vitamin C, ~24mcg folate DFE.",
     "16:30 15 green grapes (~75g, same generic reference) — credits ~8.1mg vitamin C.",
     "17:00 chocolate ice cream, 1 unit (~43g) — new verified label reference (chocolate_ice_cream_unit_merkado, merkado.co.il catalog photo). Protein wasn't visible on the photographed crop, so it was derived from calorie math (~2.5g) rather than read off the label.",
-    "17:40 partnered ejaculation."
+    "17:40 partnered ejaculation.",
+    "18:35 dinner: 200g baked salmon (standard reference — credits ~3600mg omega-3 EPA/DHA, ~700IU vitamin D, a strong single-meal source of both), 50g broccolini (new generic reference, USDA cooked-broccoli proxy, not label-verified, first time logged — credits ~32.5mg vitamin C), 30g onion quiche (new generic reference, not label/recipe-verified, first time logged), 100g burgul/pomegranate/Bulgarian cheese salad (same reference as earlier today)."
   ],
-  "status_note": "Day in progress. Slept 8.58h (23:40-08:15). Legs workout — 2 new PRs (Leg Press, Outer Thigh) — plus an incline treadmill cooldown (0.7km, 90 kcal, ~55m elevation estimated). AM spray + double espresso + vanilla protein yogurt + lunch + omega-3 + afternoon snacks logged. Bilaxten pill missed this morning (left at home) — reminder set for tonight."
+  "status_note": "Day in progress. Slept 8.58h (23:40-08:15). Legs workout — 2 new PRs (Leg Press, Outer Thigh) — plus an incline treadmill cooldown (0.7km, 90 kcal, ~55m elevation estimated). Full day of meals + dinner (salmon/broccolini/quiche/burgul salad) logged. Bilaxten pill missed this morning (left at home) — reminder set for tonight."
 }

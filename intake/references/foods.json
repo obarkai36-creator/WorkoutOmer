@@ -508,6 +508,42 @@
       "fiber_g": 2.3,
       "verified": true,
       "source": "Photographed nutrition label from merkado.co.il product catalog, 2026-09-26. Per-unit (\"למנה\") column: 99 kcal, 5.4g fat (3g sat, 0.5g trans), 15.9mg cholesterol, 22mg sodium, 10.1g total carbs (7.5g sugars), 2.3g fiber. Protein row was cropped out of the screenshot -- derived from calorie math instead (99 - fat 48.6kcal - carbs 40.4kcal = ~10kcal remaining / 4kcal per g protein = ~2.5g), not read directly off the label. Per-100g column (231kcal/12.5g fat/23.5g carb/5.4g fiber) implies unit weight ~43g."
+    },
+    {
+      "id": "baked_salmon_generic",
+      "name": "Baked/grilled salmon (standard reference)",
+      "serving": "100 g",
+      "kcal": 206,
+      "protein_g": 22,
+      "carbs_g": 0,
+      "fat_g": 13,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Standard reference rate reused across many prior entries since 2026-07 (e.g. 170g=350kcal on 2026-09-03, 140g/150g fillets on 2026-08-10) -- formalized as its own foods.json entry 2026-09-26 rather than only living in per-entry notes. Also credits ~1800mg omega-3 EPA/DHA and ~350IU vitamin D per 100g -- a strong single-meal source of both."
+    },
+    {
+      "id": "broccolini_cooked_generic",
+      "name": "Broccolini/broccoli, cooked (generic)",
+      "serving": "100 g",
+      "kcal": 35,
+      "protein_g": 2.38,
+      "carbs_g": 7.18,
+      "fat_g": 0.37,
+      "fiber_g": 3.3,
+      "verified": false,
+      "source": "Standard USDA cooked-broccoli values used as a broccolini proxy (closely related, similar composition), first logged 2026-09-26. Also credits ~65mg vitamin C per 100g. Not label-verified."
+    },
+    {
+      "id": "onion_quiche_generic",
+      "name": "Onion quiche (generic, egg custard + pastry)",
+      "serving": "100 g",
+      "kcal": 290,
+      "protein_g": 8,
+      "carbs_g": 18,
+      "fat_g": 20,
+      "fiber_g": 1,
+      "verified": false,
+      "source": "Generic typical-value estimate for a savory onion quiche (egg/cream custard, pastry base, caramelized onion), first logged 2026-09-26 (30g portion). Not label/recipe-verified -- refine if the actual recipe becomes available."
     }
   ]
 }
