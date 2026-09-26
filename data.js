@@ -265,16 +265,16 @@ const SNAPSHOT = [
   { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 8, weight: 81, text: "81kg × 4×8 (inc. frame)" }, best: { sets: 4, reps: 11, weight: 76, text: "76kg × 4×11" } },
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
   { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 10, weight: 132, text: "132kg × 4×10" }, best: { sets: 4, reps: 10, weight: 132, text: "132kg × 4×10" } },
+  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 11, weight: 132, text: "132kg × 4×11" }, best: { sets: 4, reps: 11, weight: 132, text: "132kg × 4×11" } },
   // NOTE: 11 Jul (202kg) is the first entry counting the full setup total
   // (plates each side x2 + sled/frame weight). Earlier entries (e.g. 131kg)
   // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
   // as not directly comparable; use the each-side+frame total from now on.
   { name: "Angled Leg Press",             section: "Legs", latest: { sets: 3, reps: 8, weight: 152, text: "152kg setup (45kg each side + 62kg frame) × 3×8" }, best: { sets: 4, reps: 7, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×7" } },
-  { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 10, weight: 50, text: "50kg × 4×10 (hotel gym — machine marker reading, felt much harder than the number suggests; likely a differently-calibrated stack, not directly comparable to home's)" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
+  { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12 (ties best)" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" } },
   { name: "Leg Curls",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
-  { name: "Outer Thigh",                  section: "Legs", latest: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" }, best: { sets: 5, reps: 10, weight: 79, text: "79kg × 5×10" } },
+  { name: "Outer Thigh",                  section: "Legs", latest: { sets: 4, reps: 12, weight: 79, text: "79kg × 4×12" }, best: { sets: 4, reps: 12, weight: 79, text: "79kg × 4×12" } },
   { name: "Inner Thigh",                  section: "Legs", latest: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" }, best: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" } },
   { name: "Glute Extension",              section: "Legs", latest: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" }, best: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" } },
   { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 6, weight: 45, text: "22.5kg each × 4×6 (45kg total, hotel gym — two dumbbells, one per hand; prior best was a single DB held with both hands, so this is a different execution rather than a directly equivalent progression)" }, best: { sets: 4, reps: 6, weight: 45, text: "22.5kg each × 4×6 (45kg total)" } },
@@ -299,6 +299,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 26 Sep — Legs (10:09-10:41)
+  {
+    datetime: "2026-09-26T10:09", note: "Legs day (10:09-10:41) — Leg Press 132kg×4×11, as suggested (new PR — est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg×4×12 (ties best exactly). Leg Curls 111kg×4×12 (ties best exactly). Calf Raises Machine 81kg×4×8 — still under the 76kg×4×11 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg×4×12 — new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg×5×10) despite 1 fewer set. 2 new PRs.",
+    exercises: [
+      { name: "Leg Press",           sets: [ { reps: 11, weight: 132 }, { reps: 11, weight: 132 }, { reps: 11, weight: 132 }, { reps: 11, weight: 132 } ] },
+      { name: "Leg Extensions",      sets: [ { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 } ] },
+      { name: "Leg Curls",           sets: [ { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 } ] },
+      { name: "Calf Raises Machine", sets: [ { reps: 8, weight: 81 }, { reps: 8, weight: 81 }, { reps: 8, weight: 81 }, { reps: 8, weight: 81 } ] },
+      { name: "Outer Thigh",         sets: [ { reps: 12, weight: 79 }, { reps: 12, weight: 79 }, { reps: 12, weight: 79 }, { reps: 12, weight: 79 } ] },
+    ],
+  },
   // 25 Sep — Chest (clock time not given)
   {
     datetime: "2026-09-25T16:00", note: "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs. Capped off with an easy Precor stationary bike cooldown — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",

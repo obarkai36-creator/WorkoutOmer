@@ -1,20 +1,21 @@
 {
-  "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
+  "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js \u2014 run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-09-25",
-    "latest_session": "Chest day (clock time not given, placeholder 16:00) — Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best). Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best). Incline Dumbbell Bench Press 24kg each×1×10, same weight but abbreviated to 1 set only (not a PR — est. 1RM 64.0 vs 65.6 prior best). Incline Bench Press (barbell) 22.5kg each side + 20kg bar = 65kg×3×7 — a lighter session, well under the 72.5kg×4×7 best (est. 1RM 80.17 vs 89.42), not a PR. Seated Dips 12.5kg each side (25kg added weight via dip belt)×4×10 — different execution from the 94kg machine best (not comparable, no PR read). Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly by weight/reps (one fewer set). 2 new PRs. Capped off with an easy Precor stationary bike cooldown — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
-    "sessions_logged": 69,
-    "sessions_per_week": 4,
+    "report_date": "2026-09-26",
+    "latest_session": "Legs day (10:09-10:41) \u2014 Leg Press 132kg\u00d74\u00d711, as suggested (new PR \u2014 est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg\u00d74\u00d712 (ties best exactly). Leg Curls 111kg\u00d74\u00d712 (ties best exactly). Calf Raises Machine 81kg\u00d74\u00d78 \u2014 still under the 76kg\u00d74\u00d711 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg\u00d74\u00d712 \u2014 new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg\u00d75\u00d710) despite 1 fewer set. 2 new PRs.",
+    "sessions_logged": 70,
+    "sessions_per_week": 4.3,
     "typical_time": "afternoon",
     "aerobic_28d_km": 34.7,
     "aerobic_sessions_28d": 10,
     "avg_pace": "9:50/km",
     "avg_hr": 142,
-    "acwr": 1.09,
-    "recommended_next": "Legs day",
+    "acwr": 1.45,
+    "recommended_next": "Shoulders day",
     "alerts": [
-      "Recovers in ~67.9h. Avoid loading it hard before then — you trained it most recently.",
-      "Nothing acutely concerning. The notes below are housekeeping, not warnings."
+      "Load ratio 1.45 (sweet spot 0.8\u20131.3). Keep added volume under ~10% next week.",
+      "Recovers in ~59.3h. Avoid loading it hard before then \u2014 you trained it most recently.",
+      "Recovers in ~63.9h. Avoid loading it hard before then \u2014 you trained it most recently."
     ]
   },
   "entries": [
@@ -31,7 +32,7 @@
       "type": "Outdoor Run",
       "duration_min": 20,
       "intensity": "moderate",
-      "notes": "3.06 km · 6:34/km · 150 bpm",
+      "notes": "3.06 km \u00b7 6:34/km \u00b7 150 bpm",
       "_source": "training report"
     },
     {
@@ -47,12 +48,12 @@
       "type": "Outdoor Walk",
       "duration_min": 50,
       "intensity": "easy",
-      "notes": "4.5 km · 11:07/km",
+      "notes": "4.5 km \u00b7 11:07/km",
       "_source": "training report"
     },
     {
       "date": "2026-06-27",
-      "type": "Strength — Back (pull)",
+      "type": "Strength \u2014 Back (pull)",
       "duration_min": null,
       "intensity": "moderate",
       "notes": "21st session logged; back fatigue 100% post-session",
@@ -63,15 +64,15 @@
       "type": "Outdoor Walk",
       "duration_min": 60,
       "intensity": "easy",
-      "notes": "4.3 km · 13:57/km",
+      "notes": "4.3 km \u00b7 13:57/km",
       "_source": "training report"
     },
     {
       "date": "2026-06-30",
-      "type": "Strength — Shoulders/Chest (push)",
+      "type": "Strength \u2014 Shoulders/Chest (push)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "DB shoulder press 14kg×4×12; seated lateral raises 14kg×4×7; front raises 16kg×3×10; incline pec fly 14kg×4×12; DB bench 14kg×4×15. (Followed report's recommended Shoulders day.)",
+      "notes": "DB shoulder press 14kg\u00d74\u00d712; seated lateral raises 14kg\u00d74\u00d77; front raises 16kg\u00d73\u00d710; incline pec fly 14kg\u00d74\u00d712; DB bench 14kg\u00d74\u00d715. (Followed report's recommended Shoulders day.)",
       "_source": "manual log"
     },
     {
@@ -100,10 +101,10 @@
     },
     {
       "date": "2026-07-06",
-      "type": "Strength — Push + arms (travel gym)",
+      "type": "Strength \u2014 Push + arms (travel gym)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Chest press 73kg×4×6; incline chest press 73kg×4×6; shoulder press 82kg×4×6; incline hammer curls 16kg each×4×8; incline DB curls 16kg×4×6 (travel gym — machine weights not comparable, home PRs unchanged)",
+      "notes": "Chest press 73kg\u00d74\u00d76; incline chest press 73kg\u00d74\u00d76; shoulder press 82kg\u00d74\u00d76; incline hammer curls 16kg each\u00d74\u00d78; incline DB curls 16kg\u00d74\u00d76 (travel gym \u2014 machine weights not comparable, home PRs unchanged)",
       "_source": "manual log"
     },
     {
@@ -111,15 +112,15 @@
       "type": "Outdoor Run",
       "duration_min": 12,
       "intensity": "moderate",
-      "notes": "2.01 km · 5'46\"/km avg pace · 11:36 · cadence 162 · 159 kcal (Nike Run Club, 06:45, along the Thames, 22°C) — positive split, first km faster than second",
+      "notes": "2.01 km \u00b7 5'46\"/km avg pace \u00b7 11:36 \u00b7 cadence 162 \u00b7 159 kcal (Nike Run Club, 06:45, along the Thames, 22\u00b0C) \u2014 positive split, first km faster than second",
       "_source": "manual log"
     },
     {
       "date": "2026-07-11",
-      "type": "Strength — Legs",
+      "type": "Strength \u2014 Legs",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Calf raises machine 77kg×4×10 (PR); Angled leg press 202kg setup [70kg each side + 62kg frame]×4×6 (PR); Leg extensions 111kg×4×12; Outer thigh 79kg×4×8; Inner thigh 75kg×3×10 (PR); Leg press 132kg×4×8. Followed the report's recommended Legs day.",
+      "notes": "Calf raises machine 77kg\u00d74\u00d710 (PR); Angled leg press 202kg setup [70kg each side + 62kg frame]\u00d74\u00d76 (PR); Leg extensions 111kg\u00d74\u00d712; Outer thigh 79kg\u00d74\u00d78; Inner thigh 75kg\u00d73\u00d710 (PR); Leg press 132kg\u00d74\u00d78. Followed the report's recommended Legs day.",
       "_source": "manual log"
     },
     {
@@ -127,23 +128,23 @@
       "type": "Stretching / mobility (rehab) + Plank",
       "duration_min": 20,
       "intensity": "easy",
-      "notes": "20 min stretching/rehab session, then plank 3×30s (bodyweight, first time logged).",
+      "notes": "20 min stretching/rehab session, then plank 3\u00d730s (bodyweight, first time logged).",
       "_source": "manual log"
     },
     {
       "date": "2026-07-15",
-      "type": "Strength — Chest",
+      "type": "Strength \u2014 Chest",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Chest press machine 73kg×4×4; Bench press 72.5kg×4×6 (PR — more reps at the same weight than the prior 72.5kg×4×5 best); Incline bench press 72.5kg×4×5; Incline pec fly 18kg each×4×8 (ties existing best). 07:35.",
+      "notes": "Chest press machine 73kg\u00d74\u00d74; Bench press 72.5kg\u00d74\u00d76 (PR \u2014 more reps at the same weight than the prior 72.5kg\u00d74\u00d75 best); Incline bench press 72.5kg\u00d74\u00d75; Incline pec fly 18kg each\u00d74\u00d78 (ties existing best). 07:35.",
       "_source": "manual log"
     },
     {
       "date": "2026-07-18",
-      "type": "Strength — Arms",
+      "type": "Strength \u2014 Arms",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Incline hammer curl 18kg each×4×8 (ties best); Incline DB curl 18kg each×4×5 (ties best); Half curl 16kg each×4×6 (ties best); Forearm twists 12kg each×4×10 (ties best); Dead hang 20s×3 (PR — same duration as prior best but at a heavier bodyweight, 81.25kg); Biceps curl machine 45kg×2×6 (fewer sets than the 3×6 best, not a PR); Plank 45s×1 (single longer hold, but lower total volume than the 3×30s best). Followed the report's recommended Arms day. 18:20.",
+      "notes": "Incline hammer curl 18kg each\u00d74\u00d78 (ties best); Incline DB curl 18kg each\u00d74\u00d75 (ties best); Half curl 16kg each\u00d74\u00d76 (ties best); Forearm twists 12kg each\u00d74\u00d710 (ties best); Dead hang 20s\u00d73 (PR \u2014 same duration as prior best but at a heavier bodyweight, 81.25kg); Biceps curl machine 45kg\u00d72\u00d76 (fewer sets than the 3\u00d76 best, not a PR); Plank 45s\u00d71 (single longer hold, but lower total volume than the 3\u00d730s best). Followed the report's recommended Arms day. 18:20.",
       "_source": "manual log"
     },
     {
@@ -151,87 +152,87 @@
       "type": "Outdoor Run",
       "duration_min": 25,
       "intensity": "moderate",
-      "notes": "3.7 km · 6:45/km avg pace (clock time not given).",
+      "notes": "3.7 km \u00b7 6:45/km avg pace (clock time not given).",
       "_source": "manual log"
     },
     {
       "date": "2026-07-21",
-      "type": "Strength — Back",
+      "type": "Strength \u2014 Back",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Diverging seated row 97kg×4×8 (ties best); Low row 79kg×4×8 (ties best); Reverse incline DB row 24kg each×4×10 (ties best); Dumbbell pullover 18kg×4×10 (ties best); Dead hang 20s×3 (ties yesterday's PR). Followed the report's recommended Back day. 15:30.",
+      "notes": "Diverging seated row 97kg\u00d74\u00d78 (ties best); Low row 79kg\u00d74\u00d78 (ties best); Reverse incline DB row 24kg each\u00d74\u00d710 (ties best); Dumbbell pullover 18kg\u00d74\u00d710 (ties best); Dead hang 20s\u00d73 (ties yesterday's PR). Followed the report's recommended Back day. 15:30.",
       "_source": "manual log"
     },
     {
       "date": "2026-07-24",
-      "type": "Strength — Shoulders",
+      "type": "Strength \u2014 Shoulders",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Front raises 18kg KB×4×8 (ties best); Dumbbell shoulder press 18kg each×4×9 (new PR, +1 rep at same weight); Shoulder shrugs 24kg each×4×11 (new PR, +1 rep at same weight); Lateral raises 16kg each×4×8 (ties best); Rear delt machine 73kg×3×9 (new PR, +1 rep at same weight); VKR 4×8 and VKR to sides 4×8 (new bodyweight core exercises, first log). Followed the report's recommended Shoulders day. 10:20.",
+      "notes": "Front raises 18kg KB\u00d74\u00d78 (ties best); Dumbbell shoulder press 18kg each\u00d74\u00d79 (new PR, +1 rep at same weight); Shoulder shrugs 24kg each\u00d74\u00d711 (new PR, +1 rep at same weight); Lateral raises 16kg each\u00d74\u00d78 (ties best); Rear delt machine 73kg\u00d73\u00d79 (new PR, +1 rep at same weight); VKR 4\u00d78 and VKR to sides 4\u00d78 (new bodyweight core exercises, first log). Followed the report's recommended Shoulders day. 10:20.",
       "_source": "manual log"
     },
     {
       "date": "2026-07-25",
-      "type": "Strength — Legs",
+      "type": "Strength \u2014 Legs",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Calf raises machine 76kg×4×11 (65kg add + 11kg frame; new PR by est. 1RM vs 77kg×4×10); Leg press 132kg×4×10 (new PR, +2 reps at same weight); Angled leg press 202kg setup [70kg each side + 62kg frame]×4×7 (new PR, +1 rep at same weight); Single-leg extensions 57kg each×4×6 (new PR — large jump from the prior 23.25kg-each reference, possibly a different machine setting; flagged); Outer thigh 79kg×4×10 (ties best by weight/reps, fewer total sets — 4 vs 5); Inner thigh 79kg×3×8 (new PR by est. 1RM vs 75kg×3×10, essentially equivalent). Followed the report's recommended Legs day. 10:20.",
+      "notes": "Calf raises machine 76kg\u00d74\u00d711 (65kg add + 11kg frame; new PR by est. 1RM vs 77kg\u00d74\u00d710); Leg press 132kg\u00d74\u00d710 (new PR, +2 reps at same weight); Angled leg press 202kg setup [70kg each side + 62kg frame]\u00d74\u00d77 (new PR, +1 rep at same weight); Single-leg extensions 57kg each\u00d74\u00d76 (new PR \u2014 large jump from the prior 23.25kg-each reference, possibly a different machine setting; flagged); Outer thigh 79kg\u00d74\u00d710 (ties best by weight/reps, fewer total sets \u2014 4 vs 5); Inner thigh 79kg\u00d73\u00d78 (new PR by est. 1RM vs 75kg\u00d73\u00d710, essentially equivalent). Followed the report's recommended Legs day. 10:20.",
       "_source": "manual log"
     },
     {
       "date": "2026-07-27",
-      "type": "Strength — Chest",
+      "type": "Strength \u2014 Chest",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Bench press 72.5kg [26.25kg each side + 20kg bar]×4×7 (new PR, +1 rep at same weight vs 72.5kg×4×6); Incline bench press 72.5kg×4×6 (user-corrected new best — disregards the earlier 73kg×4×6 entry); Decline bench press 72.5kg×4×6 (new PR, +1 rep at same weight vs 72.5kg×4×5); VKR 4×10 (new PR, +2 reps vs 4×8); VKR to sides 4×8 (ties best). Followed the report's recommended Chest day. 20:20.",
+      "notes": "Bench press 72.5kg [26.25kg each side + 20kg bar]\u00d74\u00d77 (new PR, +1 rep at same weight vs 72.5kg\u00d74\u00d76); Incline bench press 72.5kg\u00d74\u00d76 (user-corrected new best \u2014 disregards the earlier 73kg\u00d74\u00d76 entry); Decline bench press 72.5kg\u00d74\u00d76 (new PR, +1 rep at same weight vs 72.5kg\u00d74\u00d75); VKR 4\u00d710 (new PR, +2 reps vs 4\u00d78); VKR to sides 4\u00d78 (ties best). Followed the report's recommended Chest day. 20:20.",
       "_source": "manual log"
     },
     {
       "date": "2026-07-29",
-      "type": "Strength — Full Body (Deload)",
+      "type": "Strength \u2014 Full Body (Deload)",
       "duration_min": null,
       "intensity": "light",
-      "notes": "Pec Fly Machine 73kg×3×6, Diverging Seated Row 84kg×4×6, Converging Shoulder Press 68kg×4×6, Angled Leg Press 172kg×4×5, Rope Cable Extension 64kg×4×6 — one lift per section, all ~85-87% of best with capped reps. Followed up on the ACWR-driven deload recommendation (1.66-1.67 in the danger zone). No PR attempts; all bests unchanged. 06:10.",
+      "notes": "Pec Fly Machine 73kg\u00d73\u00d76, Diverging Seated Row 84kg\u00d74\u00d76, Converging Shoulder Press 68kg\u00d74\u00d76, Angled Leg Press 172kg\u00d74\u00d75, Rope Cable Extension 64kg\u00d74\u00d76 \u2014 one lift per section, all ~85-87% of best with capped reps. Followed up on the ACWR-driven deload recommendation (1.66-1.67 in the danger zone). No PR attempts; all bests unchanged. 06:10.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-01",
-      "type": "Strength — Back + Arms",
+      "type": "Strength \u2014 Back + Arms",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Dumbbell pullover 18kg×4×10 (ties best); Reverse incline DB row 26kg each×4×8 (new PR, +2kg each side vs 24kg each×4×10); Incline DB curl 18kg each×4×6 (new PR, +1 rep at same weight); Incline hammer curl 18kg each×4×8 (ties best); Half curl 18kg each×4×5 (new PR by est. 1RM vs 16kg each×4×6); Dead hang 25s×3 (new PR, +5s vs 20s×3). 09:00.",
+      "notes": "Dumbbell pullover 18kg\u00d74\u00d710 (ties best); Reverse incline DB row 26kg each\u00d74\u00d78 (new PR, +2kg each side vs 24kg each\u00d74\u00d710); Incline DB curl 18kg each\u00d74\u00d76 (new PR, +1 rep at same weight); Incline hammer curl 18kg each\u00d74\u00d78 (ties best); Half curl 18kg each\u00d74\u00d75 (new PR by est. 1RM vs 16kg each\u00d74\u00d76); Dead hang 25s\u00d73 (new PR, +5s vs 20s\u00d73). 09:00.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-03",
-      "type": "Strength — Chest",
+      "type": "Strength \u2014 Chest",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Plank 35s×3 (new PR, +5s vs 30s×3); Bench press 72.5kg×4×8 (new PR, +1 rep at same weight vs 72.5kg×4×7); Incline bench press 72.5kg×4×7 (new PR, +1 rep at same weight vs 72.5kg×4×6); Incline pec fly 18kg each×4×9 (new PR, +1 rep at same weight vs 18kg each×4×8). 4 new PRs. 21:05.",
+      "notes": "Plank 35s\u00d73 (new PR, +5s vs 30s\u00d73); Bench press 72.5kg\u00d74\u00d78 (new PR, +1 rep at same weight vs 72.5kg\u00d74\u00d77); Incline bench press 72.5kg\u00d74\u00d77 (new PR, +1 rep at same weight vs 72.5kg\u00d74\u00d76); Incline pec fly 18kg each\u00d74\u00d79 (new PR, +1 rep at same weight vs 18kg each\u00d74\u00d78). 4 new PRs. 21:05.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-04",
-      "type": "Strength — Back",
+      "type": "Strength \u2014 Back",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Diverging Seated Row 97kg×4×8 (ties best); Low Row 79kg×4×9 (new PR, +1 rep at same weight vs 79kg×4×8); Reverse Incline DB Row 26kg each×4×9 (new PR, +1 rep at same weight vs 26kg each×4×8); Dumbbell Pullover 18kg×4×11 (new PR, +1 rep at same weight vs 18kg×4×10); Dead Hang 35s×2 (not a PR — lower total volume than the 25s×3 best, fewer sets despite the longer hold). 3 new PRs. 14:30.",
+      "notes": "Diverging Seated Row 97kg\u00d74\u00d78 (ties best); Low Row 79kg\u00d74\u00d79 (new PR, +1 rep at same weight vs 79kg\u00d74\u00d78); Reverse Incline DB Row 26kg each\u00d74\u00d79 (new PR, +1 rep at same weight vs 26kg each\u00d74\u00d78); Dumbbell Pullover 18kg\u00d74\u00d711 (new PR, +1 rep at same weight vs 18kg\u00d74\u00d710); Dead Hang 35s\u00d72 (not a PR \u2014 lower total volume than the 25s\u00d73 best, fewer sets despite the longer hold). 3 new PRs. 14:30.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-07",
-      "type": "Strength — Shoulders",
+      "type": "Strength \u2014 Shoulders",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Dumbbell Shoulder Press 18kg each×4×10 (new PR, +1 rep at same weight vs 18kg each×4×9); Shoulder Shrugs 24kg each×4×12 (new PR, +1 rep at same weight vs 24kg each×4×11); Farmer's Hold 24kg each×4×35s (new PR, +5s at same weight vs 4×30s); Lateral Raises 16kg each×4×9 (new PR, +1 rep at same weight vs 16kg each×4×8). 4 new PRs. 10:30.",
+      "notes": "Dumbbell Shoulder Press 18kg each\u00d74\u00d710 (new PR, +1 rep at same weight vs 18kg each\u00d74\u00d79); Shoulder Shrugs 24kg each\u00d74\u00d712 (new PR, +1 rep at same weight vs 24kg each\u00d74\u00d711); Farmer's Hold 24kg each\u00d74\u00d735s (new PR, +5s at same weight vs 4\u00d730s); Lateral Raises 16kg each\u00d74\u00d79 (new PR, +1 rep at same weight vs 16kg each\u00d74\u00d78). 4 new PRs. 10:30.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-08",
-      "type": "Strength — Chest",
+      "type": "Strength \u2014 Chest",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Dumbbell Bench Press 24kg each×4×12 (ties best); Incline Pec Fly 18kg each×4×9 (ties best); Incline Dumbbell Bench Press 24kg each×4×11 (new PR, +1 rep at same weight vs 24kg each×4×10); Narrow Push-Ups BW×4×10 (new bodyweight exercise, first log). 1 new PR. 15:55.",
+      "notes": "Dumbbell Bench Press 24kg each\u00d74\u00d712 (ties best); Incline Pec Fly 18kg each\u00d74\u00d79 (ties best); Incline Dumbbell Bench Press 24kg each\u00d74\u00d711 (new PR, +1 rep at same weight vs 24kg each\u00d74\u00d710); Narrow Push-Ups BW\u00d74\u00d710 (new bodyweight exercise, first log). 1 new PR. 15:55.",
       "_source": "manual log"
     },
     {
@@ -239,7 +240,7 @@
       "type": "Outdoor Run",
       "duration_min": 46.03,
       "intensity": "easy",
-      "notes": "5.01 km · 9'11\"/km avg pace · 314 kcal · 35m elevation gain · cadence 127 · no HR data. Alternating run/walk, Or Akiva, sun exposure ~half the run. 18:15.",
+      "notes": "5.01 km \u00b7 9'11\"/km avg pace \u00b7 314 kcal \u00b7 35m elevation gain \u00b7 cadence 127 \u00b7 no HR data. Alternating run/walk, Or Akiva, sun exposure ~half the run. 18:15.",
       "_source": "manual log"
     },
     {
@@ -247,39 +248,39 @@
       "type": "Stationary Bike",
       "duration_min": 25,
       "intensity": "easy",
-      "notes": "6.8 km · avg speed 16.7km/h · 115 kcal (machine, level 3) · no HR data. \"Lazy bike.\" 07:00.",
+      "notes": "6.8 km \u00b7 avg speed 16.7km/h \u00b7 115 kcal (machine, level 3) \u00b7 no HR data. \"Lazy bike.\" 07:00.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-12",
-      "type": "Strength — Back",
+      "type": "Strength \u2014 Back",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Diverging Seated Row 100kg×4×6 (new max weight, +3kg vs 97kg, but lower total volume than the 97kg×4×8 best — not a volume PR); Dumbbell Pullover 20kg×4×10 (new PR, +2kg vs 18kg×4×11); Reverse Incline DB Row 26kg each×4×10 (new PR, +1 rep at same weight); Dead Hang 35s+30s+25s (new PR, 90s total vs 75s best). 3 new PRs. 07:15.",
+      "notes": "Diverging Seated Row 100kg\u00d74\u00d76 (new max weight, +3kg vs 97kg, but lower total volume than the 97kg\u00d74\u00d78 best \u2014 not a volume PR); Dumbbell Pullover 20kg\u00d74\u00d710 (new PR, +2kg vs 18kg\u00d74\u00d711); Reverse Incline DB Row 26kg each\u00d74\u00d710 (new PR, +1 rep at same weight); Dead Hang 35s+30s+25s (new PR, 90s total vs 75s best). 3 new PRs. 07:15.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-14",
-      "type": "Strength — Legs",
+      "type": "Strength \u2014 Legs",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Calf Raises Machine 81kg (70kg+11kg frame)×4×8 (new max weight, +5kg vs 76kg, but lower total volume than the 76kg×4×11 best — not a volume PR); Angled Leg Press 202kg setup (70kg each side+62kg frame)×4×7 (ties best); Single-Leg Extensions 57kg each×4×6 (ties best); Inner Thigh 79kg×3×9 (new PR, +1 rep at same weight vs 79kg×3×8); Outer Thigh 79kg×4×10 (matches latest, still below the 79kg×5×10 best — not a PR). 1 new PR. 16:45.",
+      "notes": "Calf Raises Machine 81kg (70kg+11kg frame)\u00d74\u00d78 (new max weight, +5kg vs 76kg, but lower total volume than the 76kg\u00d74\u00d711 best \u2014 not a volume PR); Angled Leg Press 202kg setup (70kg each side+62kg frame)\u00d74\u00d77 (ties best); Single-Leg Extensions 57kg each\u00d74\u00d76 (ties best); Inner Thigh 79kg\u00d73\u00d79 (new PR, +1 rep at same weight vs 79kg\u00d73\u00d78); Outer Thigh 79kg\u00d74\u00d710 (matches latest, still below the 79kg\u00d75\u00d710 best \u2014 not a PR). 1 new PR. 16:45.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-15",
-      "type": "Strength — Back",
+      "type": "Strength \u2014 Back",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Diverging Seated Row 97kg×4×8 (ties best — rebuilt to it); Low Row 79kg×4×10 (new PR, +1 rep at same weight vs 79kg×4×9); Reverse Incline DB Row 26kg each×4×11 (new PR, +1 rep at same weight vs 26kg each×4×10); Dumbbell Pullover 20kg×4×11 (new PR, +1 rep at same weight vs 20kg×4×10); Dead Hang 35s+30s+25s (ties best, held rather than pushed for +5s). 3 new PRs. Followed by 16 min low-intensity Stationary Bike for rehab. 11:00.",
+      "notes": "Diverging Seated Row 97kg\u00d74\u00d78 (ties best \u2014 rebuilt to it); Low Row 79kg\u00d74\u00d710 (new PR, +1 rep at same weight vs 79kg\u00d74\u00d79); Reverse Incline DB Row 26kg each\u00d74\u00d711 (new PR, +1 rep at same weight vs 26kg each\u00d74\u00d710); Dumbbell Pullover 20kg\u00d74\u00d711 (new PR, +1 rep at same weight vs 20kg\u00d74\u00d710); Dead Hang 35s+30s+25s (ties best, held rather than pushed for +5s). 3 new PRs. Followed by 16 min low-intensity Stationary Bike for rehab. 11:00.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-18",
-      "type": "Strength — Shoulders",
+      "type": "Strength \u2014 Shoulders",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Dumbbell Shoulder Press 18kg each×4×10 (ties best exactly); Seated Lateral Raises 12kg each×4×10 (below best — est. 1RM 32.0 vs 34.5 for the 14kg each×4×7 best, since Epley's formula weights reps heavily; best unchanged); Shoulder Shrugs 26kg each×4×8 (heavier weight than the 24kg each×4×12 best, but est. 1RM 65.9 vs 67.2 — below best, not a PR; best unchanged); Farmer's Hold 26kg each×4×30s (heavier weight than the 24kg each×4×35s best, but volume 6240 vs 6720 load·seconds — below best, not a PR; best unchanged). 0 new PRs — 3 of 4 lifts used heavier weight but at reduced reps/duration, which the app's Epley-1RM/volume comparison doesn't credit as beating the best. 20:00.",
+      "notes": "Dumbbell Shoulder Press 18kg each\u00d74\u00d710 (ties best exactly); Seated Lateral Raises 12kg each\u00d74\u00d710 (below best \u2014 est. 1RM 32.0 vs 34.5 for the 14kg each\u00d74\u00d77 best, since Epley's formula weights reps heavily; best unchanged); Shoulder Shrugs 26kg each\u00d74\u00d78 (heavier weight than the 24kg each\u00d74\u00d712 best, but est. 1RM 65.9 vs 67.2 \u2014 below best, not a PR; best unchanged); Farmer's Hold 26kg each\u00d74\u00d730s (heavier weight than the 24kg each\u00d74\u00d735s best, but volume 6240 vs 6720 load\u00b7seconds \u2014 below best, not a PR; best unchanged). 0 new PRs \u2014 3 of 4 lifts used heavier weight but at reduced reps/duration, which the app's Epley-1RM/volume comparison doesn't credit as beating the best. 20:00.",
       "_source": "manual log"
     },
     {
@@ -287,39 +288,39 @@
       "type": "Outdoor Run",
       "duration_min": 44.2,
       "intensity": "easy",
-      "notes": "4.68 km · 9'27\"/km avg pace (44:12 total) · ~321 kcal · cadence 129 · no HR data. Tel Aviv-Yafo beach promenade. Nike Run Club tracked 4.18km/38:12/276kcal/129 cadence/1m elevation gain; user added an untracked ~6 min/0.5km warm-up before the tracker started — extra distance/time folded in, extra ~45kcal estimated (flagged, not app-measured). Morning, exact clock time not given.",
+      "notes": "4.68 km \u00b7 9'27\"/km avg pace (44:12 total) \u00b7 ~321 kcal \u00b7 cadence 129 \u00b7 no HR data. Tel Aviv-Yafo beach promenade. Nike Run Club tracked 4.18km/38:12/276kcal/129 cadence/1m elevation gain; user added an untracked ~6 min/0.5km warm-up before the tracker started \u2014 extra distance/time folded in, extra ~45kcal estimated (flagged, not app-measured). Morning, exact clock time not given.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-22",
-      "type": "Strength — Arms (hotel gym)",
+      "type": "Strength \u2014 Arms (hotel gym)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Hotel gym, single fixed 17.5kg dumbbell pair. Incline Hammer Curl 17.5kg each×4×9 (est. 1RM 22.75 vs 22.8 for the 18kg each×4×8 best — essentially tied, not a PR by a hair); Incline DB Curl 17.5kg each×4×7 (est. 1RM 21.58 vs 21.6 for the 18kg each×4×6 best — same, essentially tied); Flat DB Triceps Extension 17.5kg each×4×6 (new PR — heavier than the 16kg each×4×6 best at the same reps); Overhead DB Triceps Extension 17.5kg×4×13 (est. 1RM 25.08 vs 25.2 for the 18kg×4×12 best — essentially tied, not a PR by a hair); Forearm Twists 17.5kg each×4×8 (new PR — big jump from the 12kg each×4×10 best, swapped in for Single-Hand DB Triceps Extension). 2 new PRs. 15:45.",
+      "notes": "Hotel gym, single fixed 17.5kg dumbbell pair. Incline Hammer Curl 17.5kg each\u00d74\u00d79 (est. 1RM 22.75 vs 22.8 for the 18kg each\u00d74\u00d78 best \u2014 essentially tied, not a PR by a hair); Incline DB Curl 17.5kg each\u00d74\u00d77 (est. 1RM 21.58 vs 21.6 for the 18kg each\u00d74\u00d76 best \u2014 same, essentially tied); Flat DB Triceps Extension 17.5kg each\u00d74\u00d76 (new PR \u2014 heavier than the 16kg each\u00d74\u00d76 best at the same reps); Overhead DB Triceps Extension 17.5kg\u00d74\u00d713 (est. 1RM 25.08 vs 25.2 for the 18kg\u00d74\u00d712 best \u2014 essentially tied, not a PR by a hair); Forearm Twists 17.5kg each\u00d74\u00d78 (new PR \u2014 big jump from the 12kg each\u00d74\u00d710 best, swapped in for Single-Hand DB Triceps Extension). 2 new PRs. 15:45.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-24",
-      "type": "Strength — Legs & Glutes (אימון A, one-off scheme with wife)",
+      "type": "Strength \u2014 Legs & Glutes (\u05d0\u05d9\u05de\u05d5\u05df A, one-off scheme with wife)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "One-off 3-sets-each scheme across 10 exercises. Leg Extensions 111kg×3×8 (below the 111kg×4×12 best, not a PR); Leg Curls 111kg×3×8 (same, not a PR); Inner Thigh 79kg×3×9 (ties best exactly); Outer Thigh 79kg×3×9 (below the 79kg×5×10 best, not a PR); Glute Extension 32kg×3×6 each (well below the 59kg×1×5 each best, not a PR — much lighter load this session); Leg Press 132kg×3×10 (ties best by weight/reps, fewer sets); Calf Raises Machine 83.5kg×3×6 (heavier than both prior figures but est. 1RM 100.2 vs 103.9 for the 76kg×4×11 best — not a PR); Angled Leg Press 152kg setup (45kg each side + 62kg frame)×3×8 (well below the 202kg×4×7 best, not a PR); Hip Thrust bodyweight×3×8 (unweighted variant, not compared to the 24kg barbell-loaded best — different loading scheme); Hack Squat bodyweight+42.6kg frame×3×6 (first time logged, no comparison). 0 new PRs — a deliberately lighter, higher-exercise-count session by design, not a max-effort day. 21:05.",
+      "notes": "One-off 3-sets-each scheme across 10 exercises. Leg Extensions 111kg\u00d73\u00d78 (below the 111kg\u00d74\u00d712 best, not a PR); Leg Curls 111kg\u00d73\u00d78 (same, not a PR); Inner Thigh 79kg\u00d73\u00d79 (ties best exactly); Outer Thigh 79kg\u00d73\u00d79 (below the 79kg\u00d75\u00d710 best, not a PR); Glute Extension 32kg\u00d73\u00d76 each (well below the 59kg\u00d71\u00d75 each best, not a PR \u2014 much lighter load this session); Leg Press 132kg\u00d73\u00d710 (ties best by weight/reps, fewer sets); Calf Raises Machine 83.5kg\u00d73\u00d76 (heavier than both prior figures but est. 1RM 100.2 vs 103.9 for the 76kg\u00d74\u00d711 best \u2014 not a PR); Angled Leg Press 152kg setup (45kg each side + 62kg frame)\u00d73\u00d78 (well below the 202kg\u00d74\u00d77 best, not a PR); Hip Thrust bodyweight\u00d73\u00d78 (unweighted variant, not compared to the 24kg barbell-loaded best \u2014 different loading scheme); Hack Squat bodyweight+42.6kg frame\u00d73\u00d76 (first time logged, no comparison). 0 new PRs \u2014 a deliberately lighter, higher-exercise-count session by design, not a max-effort day. 21:05.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-26",
-      "type": "Strength — Back day",
+      "type": "Strength \u2014 Back day",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Back day, +1 rep across the board vs. established working weights (except Dead Hang). Diverging Seated Row 97kg×4×9 (new PR — est. 1RM 126.1 vs 122.9 for the 97kg×4×8 best); Reverse Incline DB Row 52kg (26kg each)×4×12 (new PR — est. 1RM 72.8 vs 71.1 for the ×4×11 best); Dumbbell Pullover 20kg×4×12 (new PR — est. 1RM 28.0 vs 27.3 for the ×4×11 best); Low Row 79kg×4×11 (new PR — est. 1RM 108.0 vs 105.3 for the ×4×10 best); Dead Hang 35s×1 set (well below the 35s+30s+25s/90s-total best — only 1 set this time, not a PR, excluded from the +1 rep pattern). 4 new PRs.",
+      "notes": "Back day, +1 rep across the board vs. established working weights (except Dead Hang). Diverging Seated Row 97kg\u00d74\u00d79 (new PR \u2014 est. 1RM 126.1 vs 122.9 for the 97kg\u00d74\u00d78 best); Reverse Incline DB Row 52kg (26kg each)\u00d74\u00d712 (new PR \u2014 est. 1RM 72.8 vs 71.1 for the \u00d74\u00d711 best); Dumbbell Pullover 20kg\u00d74\u00d712 (new PR \u2014 est. 1RM 28.0 vs 27.3 for the \u00d74\u00d711 best); Low Row 79kg\u00d74\u00d711 (new PR \u2014 est. 1RM 108.0 vs 105.3 for the \u00d74\u00d710 best); Dead Hang 35s\u00d71 set (well below the 35s+30s+25s/90s-total best \u2014 only 1 set this time, not a PR, excluded from the +1 rep pattern). 4 new PRs.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-28",
-      "type": "Strength — Shoulders/Arms (אימון B, one-off scheme with wife)",
+      "type": "Strength \u2014 Shoulders/Arms (\u05d0\u05d9\u05de\u05d5\u05df B, one-off scheme with wife)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Second one-off session with wife, 3 sets each; Back (Diverging Seated Row, Low Row) skipped for fatigue, extra shoulders added instead. Single-Hand DB Triceps Extension 12kg each×3×8 (ties best exactly, fewer sets than the ×4×8 best — not a PR); Dumbbell Shoulder Press 20kg each (40kg)×2×9+1×8 (new PR — est. 1RM 52.0 vs 48.0 for the 18kg each×4×10 best); Shoulder Shrugs 26kg each (52kg)×3×10 (new PR — est. 1RM 69.3 vs 67.2 for the 24kg each×4×12 best); Seated Dips 94kg×3×8 (new PR — est. 1RM 119.1 vs 78.5 for the 62kg×4×8 best, big jump); Front Raises 18kg KB×3×8 (ties best exactly, fewer sets than the ×4×8 best — not a PR); Rear Delt Machine 73kg×3×9 (ties best exactly — not a PR); Incline Hammer Curl 20kg each×3×8 (new PR — est. 1RM 25.3 vs 22.8 for the 18kg each×4×8 best); Incline DB Curl 20kg each×3×6 (new PR — est. 1RM 24.0 vs 21.6 for the 18kg each×4×6 best). 5 new PRs.",
+      "notes": "Second one-off session with wife, 3 sets each; Back (Diverging Seated Row, Low Row) skipped for fatigue, extra shoulders added instead. Single-Hand DB Triceps Extension 12kg each\u00d73\u00d78 (ties best exactly, fewer sets than the \u00d74\u00d78 best \u2014 not a PR); Dumbbell Shoulder Press 20kg each (40kg)\u00d72\u00d79+1\u00d78 (new PR \u2014 est. 1RM 52.0 vs 48.0 for the 18kg each\u00d74\u00d710 best); Shoulder Shrugs 26kg each (52kg)\u00d73\u00d710 (new PR \u2014 est. 1RM 69.3 vs 67.2 for the 24kg each\u00d74\u00d712 best); Seated Dips 94kg\u00d73\u00d78 (new PR \u2014 est. 1RM 119.1 vs 78.5 for the 62kg\u00d74\u00d78 best, big jump); Front Raises 18kg KB\u00d73\u00d78 (ties best exactly, fewer sets than the \u00d74\u00d78 best \u2014 not a PR); Rear Delt Machine 73kg\u00d73\u00d79 (ties best exactly \u2014 not a PR); Incline Hammer Curl 20kg each\u00d73\u00d78 (new PR \u2014 est. 1RM 25.3 vs 22.8 for the 18kg each\u00d74\u00d78 best); Incline DB Curl 20kg each\u00d73\u00d76 (new PR \u2014 est. 1RM 24.0 vs 21.6 for the 18kg each\u00d74\u00d76 best). 5 new PRs.",
       "_source": "manual log"
     },
     {
@@ -327,15 +328,15 @@
       "type": "Outdoor Walk",
       "duration_min": 80,
       "intensity": "easy",
-      "notes": "6km / 1:20hr, concluded 10:00 (started ~08:40). Arms/legs sun exposure through most of the walk, 34 SPF sunscreen applied — vitamin D estimated ~600IU per the standing sun-exposure method, folded into the day's micros rather than logged as a separate item.",
+      "notes": "6km / 1:20hr, concluded 10:00 (started ~08:40). Arms/legs sun exposure through most of the walk, 34 SPF sunscreen applied \u2014 vitamin D estimated ~600IU per the standing sun-exposure method, folded into the day's micros rather than logged as a separate item.",
       "_source": "manual log"
     },
     {
       "date": "2026-08-31",
-      "type": "Strength — Back day",
+      "type": "Strength \u2014 Back day",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Back day, as suggested by the report (Lat Pulldown skipped). Diverging Seated Row 97kg×4×10 (new PR — est. 1RM 129.3 vs 126.1 for the 97kg×4×9 best); Low Row 79kg×4×11 (ties best exactly — not a PR); Reverse Incline DB Row 28kg each (56kg)×4×8 (fewer reps than the 26kg each×4×12 best, est. 1RM 70.9 vs 72.8 — not a PR, a planned weight-step/rep-reset); Dumbbell Pullover 22kg×4×8 (fewer reps than the 20kg×4×12 best, est. 1RM 27.9 vs 28.0 — not a PR, a planned weight-step/rep-reset); Dead Hang 35s+30s+25s (ties best exactly, at a slightly lower bodyweight — not a PR). 1 new PR.",
+      "notes": "Back day, as suggested by the report (Lat Pulldown skipped). Diverging Seated Row 97kg\u00d74\u00d710 (new PR \u2014 est. 1RM 129.3 vs 126.1 for the 97kg\u00d74\u00d79 best); Low Row 79kg\u00d74\u00d711 (ties best exactly \u2014 not a PR); Reverse Incline DB Row 28kg each (56kg)\u00d74\u00d78 (fewer reps than the 26kg each\u00d74\u00d712 best, est. 1RM 70.9 vs 72.8 \u2014 not a PR, a planned weight-step/rep-reset); Dumbbell Pullover 22kg\u00d74\u00d78 (fewer reps than the 20kg\u00d74\u00d712 best, est. 1RM 27.9 vs 28.0 \u2014 not a PR, a planned weight-step/rep-reset); Dead Hang 35s+30s+25s (ties best exactly, at a slightly lower bodyweight \u2014 not a PR). 1 new PR.",
       "_source": "manual log"
     },
     {
@@ -359,7 +360,7 @@
       "type": "Outdoor Walk",
       "duration_min": 30,
       "intensity": "easy",
-      "notes": "Or Akiva walk, 2.2km / 30min, concluded 17:45 (started ~17:15). Sun exposure with 30 SPF sunscreen applied to exposed skin — vitamin D estimated per the standing sun-exposure method, folded into the day's micros.",
+      "notes": "Or Akiva walk, 2.2km / 30min, concluded 17:45 (started ~17:15). Sun exposure with 30 SPF sunscreen applied to exposed skin \u2014 vitamin D estimated per the standing sun-exposure method, folded into the day's micros.",
       "_source": "manual log"
     },
     {
@@ -367,15 +368,15 @@
       "type": "Outdoor Walk",
       "duration_min": 60,
       "intensity": "easy",
-      "notes": "4.2km / 60min, concluded 10:00 (started ~09:00). Some arms/legs sun exposure with 35 SPF sunscreen applied — vitamin D estimated per the standing sun-exposure method, folded into the day's micros.",
+      "notes": "4.2km / 60min, concluded 10:00 (started ~09:00). Some arms/legs sun exposure with 35 SPF sunscreen applied \u2014 vitamin D estimated per the standing sun-exposure method, folded into the day's micros.",
       "_source": "manual log"
     },
     {
       "date": "2026-09-10",
-      "type": "Strength — Back (return after layoff)",
+      "type": "Strength \u2014 Back (return after layoff)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Return after a ~10-day layoff since the last Back day (08-31) plus back/leg stress from moving — deliberately scaled-down plan, no PRs expected or attempted. Diverging Seated Row 85kg×4×10 (down from 97kg×4×10 best, est. 1RM 113.3 vs 129.3); Low Row 72kg×4×8 (down from 79kg×4×11 best, est. 1RM 91.2 vs 108.0); Reverse Incline DB Row 24kg each (48kg)×4×12, as suggested (down from 26kg each×4×12 best, est. 1RM 67.2 vs 72.8); Dumbbell Pullover 18kg×4×10 (down from 20kg×4×12 best, est. 1RM 24.0 vs 28.0); Dead Hang 25s×3, as suggested (down from 35s+30s+25s best, volume 6022.5 vs 7290.0). 0 PRs — as planned.",
+      "notes": "Return after a ~10-day layoff since the last Back day (08-31) plus back/leg stress from moving \u2014 deliberately scaled-down plan, no PRs expected or attempted. Diverging Seated Row 85kg\u00d74\u00d710 (down from 97kg\u00d74\u00d710 best, est. 1RM 113.3 vs 129.3); Low Row 72kg\u00d74\u00d78 (down from 79kg\u00d74\u00d711 best, est. 1RM 91.2 vs 108.0); Reverse Incline DB Row 24kg each (48kg)\u00d74\u00d712, as suggested (down from 26kg each\u00d74\u00d712 best, est. 1RM 67.2 vs 72.8); Dumbbell Pullover 18kg\u00d74\u00d710 (down from 20kg\u00d74\u00d712 best, est. 1RM 24.0 vs 28.0); Dead Hang 25s\u00d73, as suggested (down from 35s+30s+25s best, volume 6022.5 vs 7290.0). 0 PRs \u2014 as planned.",
       "_source": "manual log"
     },
     {
@@ -383,31 +384,31 @@
       "type": "Outdoor Run",
       "duration_min": 28.4,
       "intensity": "moderate",
-      "notes": "Or Akiva, 3.51km · 8'05\"/km · cadence 138 · 23m elevation gain · ~240 kcal, 31°C sun (Nike Run Club).",
+      "notes": "Or Akiva, 3.51km \u00b7 8'05\"/km \u00b7 cadence 138 \u00b7 23m elevation gain \u00b7 ~240 kcal, 31\u00b0C sun (Nike Run Club).",
       "_source": "manual log"
     },
     {
       "date": "2026-09-12",
-      "type": "Strength — Legs",
+      "type": "Strength \u2014 Legs",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "09:00. Leg Press 132kg×4×10 (ties best). Glute Extension 59kg×2×5 each (ties best 1RM ~68.4kg, but 2 sets vs the 1×5 best — more total volume, logged as a new best). Calf Raises Machine 81kg×4×8 inc. frame (est. 1RM 102.6 vs 103.9 best — not a PR). Leg Curls 111kg×4×12 (ties best). Single-Leg Extensions 57kg×4×7 each (new PR, +1 rep at same weight vs 4×6 best, est. 1RM 70.3 vs 68.4). Hip Thrust 24kg each side×4×8 (48kg total, new PR — confirmed genuine progression: prior 24kg best was a single dumbbell, now loaded each side, est. 1RM 60.8 vs 33.6).",
+      "notes": "09:00. Leg Press 132kg\u00d74\u00d710 (ties best). Glute Extension 59kg\u00d72\u00d75 each (ties best 1RM ~68.4kg, but 2 sets vs the 1\u00d75 best \u2014 more total volume, logged as a new best). Calf Raises Machine 81kg\u00d74\u00d78 inc. frame (est. 1RM 102.6 vs 103.9 best \u2014 not a PR). Leg Curls 111kg\u00d74\u00d712 (ties best). Single-Leg Extensions 57kg\u00d74\u00d77 each (new PR, +1 rep at same weight vs 4\u00d76 best, est. 1RM 70.3 vs 68.4). Hip Thrust 24kg each side\u00d74\u00d78 (48kg total, new PR \u2014 confirmed genuine progression: prior 24kg best was a single dumbbell, now loaded each side, est. 1RM 60.8 vs 33.6).",
       "_source": "manual log"
     },
     {
       "date": "2026-09-15",
-      "type": "Strength — Shoulders/Arms (hotel gym)",
+      "type": "Strength \u2014 Shoulders/Arms (hotel gym)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "14:30, hotel gym while traveling (dumbbells to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station). Cable Face Pull 17.5kg×4×12 (new exercise, no home equivalent — replaces Rear Delt Machine); Shoulder Shrugs 20kg each (40kg)×4×12 (below the 52kg/26kg-each best — hotel cap, not a PR); Lateral Raises 15kg each (30kg)×4×8 (below the 32kg/16kg-each best, not a PR); Dumbbell Shoulder Press 17.5kg each (35kg)×3×10 (below the 40kg/20kg-each best, not a PR — deliberately light per the push-side correction plan); Farmer's Hold 20kg each (40kg)×4×35s (below the 48kg/24kg-each best at the same duration, not a PR); Incline Hammer Curl 20kg each×3×8 (ties best exactly); Overhead DB Triceps Extension 20kg×4×10 (new PR — est. 1RM 26.7 vs 25.2 prior best); Cable Curl 25kg×3×10 (new exercise, no home equivalent — replaces Biceps Curl Machine). 1 new PR.",
+      "notes": "14:30, hotel gym while traveling (dumbbells to 20kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station). Cable Face Pull 17.5kg\u00d74\u00d712 (new exercise, no home equivalent \u2014 replaces Rear Delt Machine); Shoulder Shrugs 20kg each (40kg)\u00d74\u00d712 (below the 52kg/26kg-each best \u2014 hotel cap, not a PR); Lateral Raises 15kg each (30kg)\u00d74\u00d78 (below the 32kg/16kg-each best, not a PR); Dumbbell Shoulder Press 17.5kg each (35kg)\u00d73\u00d710 (below the 40kg/20kg-each best, not a PR \u2014 deliberately light per the push-side correction plan); Farmer's Hold 20kg each (40kg)\u00d74\u00d735s (below the 48kg/24kg-each best at the same duration, not a PR); Incline Hammer Curl 20kg each\u00d73\u00d78 (ties best exactly); Overhead DB Triceps Extension 20kg\u00d74\u00d710 (new PR \u2014 est. 1RM 26.7 vs 25.2 prior best); Cable Curl 25kg\u00d73\u00d710 (new exercise, no home equivalent \u2014 replaces Biceps Curl Machine). 1 new PR.",
       "_source": "manual log"
     },
     {
       "date": "2026-09-16",
-      "type": "Strength — Lower Body + Back (hotel gym)",
+      "type": "Strength \u2014 Lower Body + Back (hotel gym)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "10:45, hotel gym while traveling (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set hamstring/glute-biased plan given the equipment actually on hand. Leg Extensions 50kg×4×10 (hotel machine's marker reading, flagged by the user as implausible/felt much harder than 50kg — likely a differently-calibrated stack, not comparable to home's 111kg machine, logged for session-load tracking only); Lat Pulldown (Wide Grip) 75kg×3×8 (correction 2026-09-18 — originally mislogged as Lat Pulldown (Triangle); this hotel machine was actually a wide-grip attachment; first logged instance of this exercise, so both latest and best); Dumbbell Pullover 22.5kg×4×8 (new PR — est. 1RM 28.5 vs 28.0 for the 20kg×4×12 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)×4×6 (new PR by load, but a different execution — two dumbbells, one per hand, vs the previous single-DB-both-hands style); Incline Pec Fly 15kg each (30kg)×4×8 (below the 36kg/18kg-each best, not a PR). Also did Rope Cable Extension on an offset-weighted machine, described only as 'Heavy' with no numeric marker — not logged as a quantified set. 1 new PR + 1 first-time log (execution-caveated).",
+      "notes": "10:45, hotel gym while traveling (dumbbells to 20/22.5kg, kettlebells 8/12/16kg, one adjustable dual-pulley cable station, plus a seated leg extension machine and a lat pulldown machine). Departed from the pre-set hamstring/glute-biased plan given the equipment actually on hand. Leg Extensions 50kg\u00d74\u00d710 (hotel machine's marker reading, flagged by the user as implausible/felt much harder than 50kg \u2014 likely a differently-calibrated stack, not comparable to home's 111kg machine, logged for session-load tracking only); Lat Pulldown (Wide Grip) 75kg\u00d73\u00d78 (correction 2026-09-18 \u2014 originally mislogged as Lat Pulldown (Triangle); this hotel machine was actually a wide-grip attachment; first logged instance of this exercise, so both latest and best); Dumbbell Pullover 22.5kg\u00d74\u00d78 (new PR \u2014 est. 1RM 28.5 vs 28.0 for the 20kg\u00d74\u00d712 best); Dead Hang 35s+30s+25s (ties best exactly); Dumbbell RDL 22.5kg each (45kg total)\u00d74\u00d76 (new PR by load, but a different execution \u2014 two dumbbells, one per hand, vs the previous single-DB-both-hands style); Incline Pec Fly 15kg each (30kg)\u00d74\u00d78 (below the 36kg/18kg-each best, not a PR). Also did Rope Cable Extension on an offset-weighted machine, described only as 'Heavy' with no numeric marker \u2014 not logged as a quantified set. 1 new PR + 1 first-time log (execution-caveated).",
       "_source": "manual log"
     },
     {
@@ -415,7 +416,7 @@
       "type": "Incline Walk",
       "duration_min": 33.65,
       "intensity": "moderate",
-      "notes": "14:55, gym treadmill (Precor console) — 2.77km in 33:39 (12:08/km avg pace), 332 kcal, ~300m elevation gain over the segment (steep incline, accounting for the high calorie output relative to distance/time). No heart-rate monitor worn (console showed avg HR 0).",
+      "notes": "14:55, gym treadmill (Precor console) \u2014 2.77km in 33:39 (12:08/km avg pace), 332 kcal, ~300m elevation gain over the segment (steep incline, accounting for the high calorie output relative to distance/time). No heart-rate monitor worn (console showed avg HR 0).",
       "_source": "manual log"
     },
     {
@@ -423,15 +424,15 @@
       "type": "Incline Walk",
       "duration_min": 13.5,
       "intensity": "moderate",
-      "notes": "15:40, gym treadmill (Precor console), additional segment after the first — 0.85km in 13.5min, 115 kcal, ~100m elevation gain.",
+      "notes": "15:40, gym treadmill (Precor console), additional segment after the first \u2014 0.85km in 13.5min, 115 kcal, ~100m elevation gain.",
       "_source": "manual log"
     },
     {
       "date": "2026-09-19",
-      "type": "Strength — Back (regular gym)",
+      "type": "Strength \u2014 Back (regular gym)",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "11:20, regular gym — mostly following the app's suggested progression. Diverging Seated Row 97kg×4×11 (+1 rep over the suggested rebuild target of 97kg×4×10 — new PR, est. 1RM 132.6 vs 129.3 prior best); Low Row 79kg×4×11, as suggested (ties the 79kg×4×11 best exactly); Lat Pulldown (Wide Grip) 75kg×3×9 (new PR — est. 1RM 97.5 vs 95.0 prior best); Dumbbell Pullover 22.5kg×4×9, as suggested (new PR — est. 1RM 29.25 vs 28.5 prior best; this gym's dumbbells increment in 0.5kg steps); Dead Hang 1×30s only (abbreviated, well under the 35s+30s+25s best — not a PR read). 3 new PRs.",
+      "notes": "11:20, regular gym \u2014 mostly following the app's suggested progression. Diverging Seated Row 97kg\u00d74\u00d711 (+1 rep over the suggested rebuild target of 97kg\u00d74\u00d710 \u2014 new PR, est. 1RM 132.6 vs 129.3 prior best); Low Row 79kg\u00d74\u00d711, as suggested (ties the 79kg\u00d74\u00d711 best exactly); Lat Pulldown (Wide Grip) 75kg\u00d73\u00d79 (new PR \u2014 est. 1RM 97.5 vs 95.0 prior best); Dumbbell Pullover 22.5kg\u00d74\u00d79, as suggested (new PR \u2014 est. 1RM 29.25 vs 28.5 prior best; this gym's dumbbells increment in 0.5kg steps); Dead Hang 1\u00d730s only (abbreviated, well under the 35s+30s+25s best \u2014 not a PR read). 3 new PRs.",
       "_source": "manual log"
     },
     {
@@ -439,15 +440,23 @@
       "type": "Outdoor Run",
       "duration_min": 24.27,
       "intensity": "moderate",
-      "notes": "Morning run, Or Akiva (Nike Run Club, clock time not given) — 3.00km in 24:16 (8:05/km avg pace), 206 kcal, 16m elevation gain, cadence 143. No heart-rate monitor worn.",
+      "notes": "Morning run, Or Akiva (Nike Run Club, clock time not given) \u2014 3.00km in 24:16 (8:05/km avg pace), 206 kcal, 16m elevation gain, cadence 143. No heart-rate monitor worn.",
       "_source": "manual log"
     },
     {
       "date": "2026-09-25",
-      "type": "Strength — Chest",
+      "type": "Strength \u2014 Chest",
       "duration_min": null,
       "intensity": "moderate",
-      "notes": "Clock time not given. Bench Press 72.5kg×4×9, as suggested (new PR — est. 1RM 94.25 vs 91.83 prior best); Decline Bench Press 72.5kg×4×7, as suggested (new PR — est. 1RM 89.42 vs 87.0 prior best); Incline Dumbbell Bench Press 24kg each×1×10 (same weight, abbreviated to 1 set, not a PR); Incline Bench Press (barbell) 65kg×3×7 (22.5kg each side + 20kg bar) — lighter session, not a PR; Seated Dips 12.5kg each side (25kg added, dip belt)×4×10 — different execution from the 94kg machine best, not comparable; Incline Pec Fly 18kg each×3×9 — ties the 18kg×4×9 best exactly. 2 new PRs. Capped off with an easy Precor stationary bike cooldown — 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
+      "notes": "Clock time not given. Bench Press 72.5kg\u00d74\u00d79, as suggested (new PR \u2014 est. 1RM 94.25 vs 91.83 prior best); Decline Bench Press 72.5kg\u00d74\u00d77, as suggested (new PR \u2014 est. 1RM 89.42 vs 87.0 prior best); Incline Dumbbell Bench Press 24kg each\u00d71\u00d710 (same weight, abbreviated to 1 set, not a PR); Incline Bench Press (barbell) 65kg\u00d73\u00d77 (22.5kg each side + 20kg bar) \u2014 lighter session, not a PR; Seated Dips 12.5kg each side (25kg added, dip belt)\u00d74\u00d710 \u2014 different execution from the 94kg machine best, not comparable; Incline Pec Fly 18kg each\u00d73\u00d79 \u2014 ties the 18kg\u00d74\u00d79 best exactly. 2 new PRs. Capped off with an easy Precor stationary bike cooldown \u2014 5.15km in 22:06, avg 64 RPM, 52 kcal, no heart-rate monitor worn (\"lazy bike\").",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-09-26",
+      "type": "Strength \u2014 Legs",
+      "duration_min": 32,
+      "intensity": "moderate",
+      "notes": "10:09-10:41. Leg Press 132kg\u00d74\u00d711, as suggested (new PR \u2014 est. 1RM 180.4 vs 176.0 prior best); Leg Extensions 111kg\u00d74\u00d712 (ties best exactly); Leg Curls 111kg\u00d74\u00d712 (ties best exactly); Calf Raises Machine 81kg\u00d74\u00d78 \u2014 still under the 76kg\u00d74\u00d711 rebuild target, not a PR; Outer Thigh 79kg\u00d74\u00d712 \u2014 new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg\u00d75\u00d710) despite 1 fewer set. 2 new PRs.",
       "_source": "manual log"
     }
   ]
