@@ -1,5 +1,24 @@
 # Session notes
 
+- Standing rule (added 2026-09-27, per explicit user request — "include it
+  every time to maintain a balanced physique and overall feel", after the
+  user noticed exact-exercise suggestions had quietly dropped out of
+  replies even though the underlying data was still being computed
+  correctly): every time a workout is logged (or whenever training is
+  otherwise discussed), surface `training_full.json`'s current
+  `recommendation` — the suggested next section plus its
+  `suggestedExercises` list with each exercise's target (e.g. "+1 rep, aim
+  4×9" or "Rebuild to best (X)") — in the chat reply, not just silently in
+  the exported data. This is a return to what the session used to do
+  routinely; don't let it go quiet again just because logging turns became
+  fast/transactional. The separate 2026-08-27 push/pull-corrective
+  exercise-priority rule (favoring rows/flys/curls etc. within whichever
+  section is trained) is DISTINCT from this and only applies while
+  `bal.pushPull` sits outside the healthy 0.8-1.3x range — it was back in
+  range (1.09) as of 2026-09-27, so that specific bias is currently
+  inactive; re-apply it automatically if `bal.pushPull` drifts out of range
+  again.
+
 - Standing rule (added 2026-09-19, per explicit user report — "Not seeing
   latest updates on the site... We've decided to push on every entry to be
   as up to date as possible throughout the day"): running
