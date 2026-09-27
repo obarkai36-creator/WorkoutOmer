@@ -27,14 +27,15 @@
     {"time": "15:15", "name": "Beigale (בייגלה) snack", "category": "food", "qty": "2 pieces (~4 g)", "kcal": 15.2, "protein_g": 0.4, "carbs_g": 3.0, "fat_g": 0.12, "fiber_g": 0.12, "note": "same generic reference as prior entries (beigale_generic, ~2g/piece assumed, not label-verified)."},
     {"time": "17:20", "name": "Cottage cheese", "category": "food", "qty": "150 g", "kcal": 147, "protein_g": 16.5, "carbs_g": 5.1, "fat_g": 6.45, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, ~98kcal/100g, not label-verified)."},
     {"time": "17:20", "name": "Honey", "category": "food", "qty": "1 tbsp (~21 g)", "kcal": 63.84, "protein_g": 0.06, "carbs_g": 17.3, "fat_g": 0, "fiber_g": 0.04, "note": "same generic reference as prior entries (honey_generic), tbsp-to-gram assumed (~21g/tbsp)."},
-    {"time": "17:20", "name": "Beet cracker", "category": "food", "qty": "1 cracker (~6 g)", "kcal": 25.2, "protein_g": 0.48, "carbs_g": 3.9, "fat_g": 0.84, "fiber_g": 0.36, "note": "new generic reference (beet_cracker_generic, not label-verified) — first time logged."}
+    {"time": "17:20", "name": "Beet cracker", "category": "food", "qty": "1 cracker (~6 g)", "kcal": 25.2, "protein_g": 0.48, "carbs_g": 3.9, "fat_g": 0.84, "fiber_g": 0.36, "note": "new generic reference (beet_cracker_generic, not label-verified) — first time logged."},
+    {"time": "17:21", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 3,
   "micros_sperm_priority": {
     "zinc_mg": 11.8,
     "selenium_mcg": 30,
     "folate_mcg_dfe": 209.65,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 117.8,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 1.96,
@@ -51,7 +52,8 @@
     "13:20 espresso, 1 shot (2 caffeine shots today).",
     "14:15 espresso, 1 shot (3 caffeine shots today).",
     "15:15 snack: 3 cherry tomatoes (standard reference — credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE) + 1 slice Tnuva Emek Light yellow cheese 9% (25g, verified reference) + 2 pieces beigale (בייגלה) snack (~4g, same generic reference as prior entries).",
-    "17:20 150g cottage cheese (same generic reference as prior entries) + 1 tbsp honey (~21g, same generic reference) + 1 beet cracker (~6g, new generic reference, not label-verified, first time logged)."
+    "17:20 150g cottage cheese (same generic reference as prior entries) + 1 tbsp honey (~21g, same generic reference) + 1 beet cracker (~6g, new generic reference, not label-verified, first time logged).",
+    "17:21 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose."
   ],
-  "status_note": "Day in progress. Slept 6.83h (22:45-05:35), slightly under target. AM spray + pill + Mayven + espresso + breakfast + mango yogurt + lunch (salad, kebab) + 2 afternoon snacks logged."
+  "status_note": "Day in progress. Slept 6.83h (22:45-05:35), slightly under target. AM spray + pill + Mayven + espresso + breakfast + mango yogurt + lunch (salad, kebab) + 2 afternoon snacks + omega-3 logged."
 }
