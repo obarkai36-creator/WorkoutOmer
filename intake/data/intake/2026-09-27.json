@@ -16,18 +16,22 @@
     {"time": "06:40", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "08:00", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2.5 slices (62.5 g)", "kcal": 125, "protein_g": 18.75, "carbs_g": 0, "fat_g": 5.625, "fiber_g": 0, "note": "verified label reference."},
     {"time": "08:00", "name": "Cherry tomatoes", "category": "food", "qty": "15 pieces", "kcal": 39.75, "protein_g": 2.05, "carbs_g": 8.8, "fat_g": 0.45, "fiber_g": 2.7, "note": "Same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
-    {"time": "10:15", "name": "Danone PRO Mango Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior strawberry/vanilla/mango entries."}
+    {"time": "10:15", "name": "Danone PRO Mango Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior strawberry/vanilla/mango entries."},
+    {"time": "12:45", "name": "Salad (cucumber, cherry tomato, red onion)", "category": "food", "qty": "2 cucumbers (~600 g), 25 cherry tomatoes, 0.5 red onion (~55 g)", "kcal": 178.25, "protein_g": 7.92, "carbs_g": 41.38, "fat_g": 1.4, "fiber_g": 8.44, "note": "Standard per-component assumptions (whole cucumber ~300g, whole red onion ~110g), same rates as prior salad entries. Credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE (from the cherry tomato portion)."},
+    {"time": "12:45", "name": "Kebab (ground meat skewer)", "category": "food", "qty": "200 g", "kcal": 460, "protein_g": 54, "carbs_g": 0, "fat_g": 28, "fiber_g": 0, "note": "same standard blended red-meat reference as prior entries (~230kcal/27p/14f per 100g). Credits ~9mg zinc, ~30mcg selenium."},
+    {"time": "12:45", "name": "Olive oil + lemon juice + salt (salad dressing)", "category": "food", "qty": "1 spoon (~14g) olive oil, lemon juice from 2 lemons (~60g assumed), salt", "kcal": 136.96, "protein_g": 0.2, "carbs_g": 4.16, "fat_g": 14.16, "fiber_g": 0, "note": "\"Spoon\" assumed ~14g; 2 lemons' juice assumed ~30g each (~60g total) — more juice than the prior single-lemon-squeeze entries. Credits ~2.0mg vitamin E (olive oil), ~23.2mg vitamin C (lemon juice, scaled up from the usual ~15g assumption)."},
+    {"time": "13:20", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 138.25,
+    "zinc_mg": 11.8,
+    "selenium_mcg": 30,
+    "folate_mcg_dfe": 202.0,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 33.0,
+    "vitamin_c_mg": 111.2,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 6.6
+    "vitamin_e_mg": 1.96,
+    "lycopene_mg": 17.6
   },
   "assumptions": [
     "Sleep logged: 22:45-05:35, 6.83h — a bit short of the 7-9h target band.",
@@ -35,7 +39,9 @@
     "05:50 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "06:40 espresso, 1 shot (1st caffeine shot today).",
     "08:00 breakfast: 2.5 slices Tnuva Emek Light yellow cheese 9% (62.5g, verified reference) + 15 cherry tomatoes (standard reference — credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE).",
-    "10:15 mango Danone PRO protein yogurt (1 cup, 200g) — same rate as prior strawberry/vanilla/mango entries."
+    "10:15 mango Danone PRO protein yogurt (1 cup, 200g) — same rate as prior strawberry/vanilla/mango entries.",
+    "12:45 lunch salad: 2 cucumbers (~600g) + 25 cherry tomatoes + 0.5 red onion (~55g), same standard component rates as prior salad entries — credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE. Plus 200g kebab (ground meat skewer, standard blended red-meat reference — credits ~9mg zinc, ~30mcg selenium) and a dressing of 1 spoon olive oil + lemon juice from 2 lemons (~60g assumed, more than the usual single-squeeze) + salt — credits ~2.0mg vitamin E, ~23.2mg vitamin C.",
+    "13:20 espresso, 1 shot (2 caffeine shots today)."
   ],
-  "status_note": "Day in progress. Slept 6.83h (22:45-05:35), slightly under target. AM spray + pill + Mayven + espresso + breakfast + mango yogurt logged."
+  "status_note": "Day in progress. Slept 6.83h (22:45-05:35), slightly under target. AM spray + pill + Mayven + espresso + breakfast + mango yogurt + lunch (salad, kebab) logged."
 }
