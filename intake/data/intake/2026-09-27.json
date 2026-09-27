@@ -1,7 +1,8 @@
 {
   "date": "2026-09-27",
   "day_number": 92,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 3000,
   "sleep": {
     "sleep_start": "22:45",
     "sleep_end": "05:35",
@@ -33,7 +34,8 @@
     {"time": "19:30", "name": "Cherry tomato soup, with butter, no cream", "category": "food", "qty": "2 bowls (~600 g assumed)", "kcal": 252, "protein_g": 6, "carbs_g": 30, "fat_g": 12, "fiber_g": 6.6, "time_approx": true, "note": "same generic reference as prior entries (cherry_tomato_soup_butter_generic, not label-verified). Credits ~36mg lycopene, ~48mg vitamin C, ~48mcg folate DFE."},
     {"time": "19:30", "name": "Pumpkin seeds", "category": "food", "qty": "1 handful (~30 g assumed)", "kcal": 167.7, "protein_g": 9.06, "carbs_g": 3.21, "fat_g": 14.7, "fiber_g": 1.8, "time_approx": true, "note": "new generic reference (pumpkin_seeds_generic, not label-verified) — first time logged. Credits ~2.34mg zinc."},
     {"time": "19:40", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
-    {"time": "19:40", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "19:40", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "22:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 3,
   "micros_sperm_priority": {
@@ -60,7 +62,9 @@
     "17:20 150g cottage cheese (same generic reference as prior entries) + 1 tbsp honey (~21g, same generic reference) + 1 beet cracker (~6g, new generic reference, not label-verified, first time logged).",
     "17:21 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "Dinner (clock time not given, placeholder 19:30): 2 Angel PRO Pita (125g, verified reference), 2 bowls (~600g assumed) cherry tomato soup (same reference as prior entries — credits ~36mg lycopene, ~48mg vitamin C, ~48mcg folate DFE), 1 handful (~30g assumed) pumpkin seeds (new generic reference, not label-verified, first time logged — credits ~2.34mg zinc).",
-    "19:40 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today. Essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E."
+    "19:40 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today. Essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
+    "22:30 creatine monohydrate, 5g (standard dose).",
+    "EOD: 3,000 steps reported. Retainers: no entry tonight (not volunteered); last logged night was 09-26 (worn:true), which breaks any consecutive-skip run regardless — no 3-night flag needed."
   ],
-  "status_note": "Day in progress. Slept 6.83h (22:45-05:35), slightly under target. Full day of meals + dinner (pita, tomato soup, pumpkin seeds) logged. PM spray + essential-5 done. Zinc/selenium/vitamin C/D/E all cleared today's targets."
+  "status_note": "Day complete. Slept 6.83h (22:45-05:35), slightly under target. Rest day (no workout). Full day of meals + dinner (pita, tomato soup, pumpkin seeds) logged. Both allergy doses + essential-5 done. Zinc/selenium/vitamin C/D/E all cleared today's targets. 3,000 steps."
 }
