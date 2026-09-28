@@ -1,7 +1,8 @@
 {
   "date": "2026-09-28",
   "day_number": 93,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 10000,
   "sleep": {
     "sleep_start": "00:00",
     "sleep_end": "06:15",
@@ -34,7 +35,8 @@
     {"time": "19:15", "name": "Green grapes", "category": "food", "qty": "10 grapes (~50 g)", "kcal": 34.5, "protein_g": 0.36, "carbs_g": 9.05, "fat_g": 0.08, "fiber_g": 0.45, "note": "same generic reference (green_grapes_generic). Credits ~5.4mg vitamin C."},
     {"time": "20:00", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
     {"time": "20:00", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~10 g (0.5 handful)", "kcal": 30.6, "protein_g": 3.1, "carbs_g": 4.4, "fat_g": 1.4, "fiber_g": 2.5, "note": "verified label reference (catalina_crunch_choc_pb_cereal): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. Half of the usual ~20g handful."},
-    {"time": "20:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "20:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "20:05", "name": "Green grapes", "category": "food", "qty": "20 grapes (~100 g)", "kcal": 69, "protein_g": 0.72, "carbs_g": 18.1, "fat_g": 0.16, "fiber_g": 0.9, "time_approx": true, "note": "same generic reference (green_grapes_generic). Credits ~10.8mg vitamin C."}
   ],
   "caffeine_shots": 3,
   "workout_today": true,
@@ -44,7 +46,7 @@
     "selenium_mcg": 100,
     "folate_mcg_dfe": 187.75,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1084.4,
+    "vitamin_c_mg": 1095.2,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
     "lycopene_mg": 29.0
@@ -65,7 +67,9 @@
     "Outdoor Walk, Or Akiva (Nike Run Club, 18:34-19:11) — 3.69km in 36:54 (10:00/km pace), 223 kcal, 13m elevation gain, cadence 125. No heart-rate monitor worn.",
     "18:15 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
     "19:15 dinner: 1 bowl (~300g assumed) cherry tomato soup (same generic reference — credits ~18mg lycopene, ~24mg vitamin C, ~24mcg folate DFE), 2 Angel PRO Pita (125g, verified reference), 1 slice Tnuva Emek Light yellow cheese 9% (25g, verified reference), 10 green grapes (~50g, standard reference — credits ~5.4mg vitamin C).",
-    "20:00 vanilla Danone PRO protein yogurt (1 cup, 200g) + Catalina Crunch Protein Cereal (Chocolate Peanut Butter, ~10g, half the usual handful) + creatine monohydrate (5g, standard dose)."
+    "20:00 vanilla Danone PRO protein yogurt (1 cup, 200g) + Catalina Crunch Protein Cereal (Chocolate Peanut Butter, ~10g, half the usual handful) + creatine monohydrate (5g, standard dose).",
+    "20:05 20 green grapes (~100g, same generic reference) — credits ~10.8mg vitamin C.",
+    "EOD: 10,000 steps reported, including today's Outdoor Walk. Retainers: no entry tonight (not volunteered); last logged night was 09-26 (worn:true), which breaks any consecutive-skip run regardless — no 3-night flag needed."
   ],
-  "status_note": "Day in progress. Slept 6.25h (00:00-06:15), short of target. Outdoor Walk (3.69km, 36:54, 223 kcal). Full day of meals + dinner + evening snack logged. Both allergy doses + essential-5 done. Zinc/selenium/vitamin C/D/E all cleared today's targets."
+  "status_note": "Day complete. Slept 6.25h (00:00-06:15), short of target. Outdoor Walk (3.69km, 36:54, 223 kcal). Full day of meals + dinner + evening snack logged. Both allergy doses + essential-5 done. Zinc/selenium/vitamin C/D/E all cleared today's targets. 10,000 steps."
 }
