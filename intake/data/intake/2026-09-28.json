@@ -23,18 +23,21 @@
     {"time": "12:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:00", "name": "Cottage cheese", "category": "food", "qty": "250 g", "kcal": 245, "protein_g": 27.5, "carbs_g": 8.5, "fat_g": 10.75, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, not label-verified)."},
+    {"time": "15:00", "name": "Honey (drizzle)", "category": "food", "qty": "~3.5 g assumed", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0.01, "note": "same generic reference as prior entries (honey_generic); \"drizzle\" assumed at the usual ~0.5 tsp rate."},
+    {"time": "15:00", "name": "Cherry tomatoes", "category": "food", "qty": "3 pieces", "kcal": 7.95, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "Same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."}
   ],
   "caffeine_shots": 3,
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
     "selenium_mcg": 100,
-    "folate_mcg_dfe": 156.1,
+    "folate_mcg_dfe": 163.75,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1048.4,
+    "vitamin_c_mg": 1055.0,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
-    "lycopene_mg": 9.68
+    "lycopene_mg": 11.0
   },
   "assumptions": [
     "Sleep logged: 00:00-06:15, 6.25h — short of the 7-9h target band.",
@@ -47,7 +50,8 @@
     "12:30 espresso, 1 shot (2 caffeine shots today).",
     "13:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "14:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
-    "15:00 espresso, 1 shot (3 caffeine shots today)."
+    "15:00 espresso, 1 shot (3 caffeine shots today).",
+    "15:00 snack: 250g cottage cheese (same generic reference as prior entries) + a drizzle of honey (~3.5g assumed, same generic reference) + 3 cherry tomatoes (standard reference — credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE)."
   ],
-  "status_note": "Day in progress. Slept 6.25h (00:00-06:15), short of target. AM spray + pill + Mayven + breakfast + lunch + omega-3 + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
+  "status_note": "Day in progress. Slept 6.25h (00:00-06:15), short of target. AM spray + pill + Mayven + breakfast + lunch + omega-3 + essential-5 + afternoon snack logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
 }
