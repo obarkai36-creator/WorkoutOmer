@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-28",
+  "day_number": 93,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "00:00",
+    "sleep_end": "06:15",
+    "duration_hours": 6.25,
+    "quality": null,
+    "notes": "6.25h, short of the 7-9h target band."
+  },
+  "items": [
+    {"time": "06:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "06:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "06:35", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+  ],
+  "caffeine_shots": 0,
+  "micros_sperm_priority": {
+    "zinc_mg": 2.8,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 100,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Sleep logged: 00:00-06:15, 6.25h — short of the 7-9h target band.",
+    "06:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "06:35 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc."
+  ],
+  "status_note": "Day in progress. Slept 6.25h (00:00-06:15), short of target. AM spray + pill + Mayven logged."
+}
