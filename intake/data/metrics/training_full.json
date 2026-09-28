@@ -1,5 +1,5 @@
 {
-  "now": 1790611960999,
+  "now": 1790613112506,
   "workouts": [
     {
       "datetime": "2026-09-28T18:34",
@@ -7216,7 +7216,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 30,
+      "pct": 29,
       "readyInHours": 0,
       "ready": true
     },
@@ -7265,7 +7265,7 @@
       "label": "Quads",
       "section": "Legs",
       "pct": 33,
-      "readyInHours": 6.1,
+      "readyInHours": 5.8,
       "ready": false
     },
     "hamstrings": {
@@ -7273,7 +7273,7 @@
       "label": "Hamstrings",
       "section": "Legs",
       "pct": 35,
-      "readyInHours": 9.8,
+      "readyInHours": 9.5,
       "ready": false
     },
     "glutes": {
@@ -7313,21 +7313,21 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 48,
-      "readyInHours": 14.3,
+      "readyInHours": 14.2,
       "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 30,
+      "pct": 29,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 30,
+          "pct": 29,
           "readyInHours": 0,
           "ready": true
         }
@@ -7397,14 +7397,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 21,
-      "readyInHours": 9.8,
+      "readyInHours": 9.5,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
           "pct": 35,
-          "readyInHours": 9.8,
+          "readyInHours": 9.5,
           "ready": false
         },
         {
@@ -7412,7 +7412,7 @@
           "label": "Quads",
           "section": "Legs",
           "pct": 33,
-          "readyInHours": 6.1,
+          "readyInHours": 5.8,
           "ready": false
         },
         {
@@ -7459,14 +7459,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 48,
-      "readyInHours": 14.3,
+      "readyInHours": 14.2,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 48,
-          "readyInHours": 14.3,
+          "readyInHours": 14.2,
           "ready": false
         }
       ]
@@ -8771,7 +8771,7 @@
     "fatigue": 5,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-28T16:12:40.999Z",
+    "readyAt": "2026-09-28T16:31:52.506Z",
     "neverLogged": false,
     "daysSince": 13.1,
     "suggestedExercises": [
@@ -8897,14 +8897,14 @@
       },
       {
         "section": "Chest",
-        "fatigue": 30,
+        "fatigue": 29,
         "readyInHours": 0,
         "daysSince": 3
       },
       {
         "section": "Legs",
         "fatigue": 21,
-        "readyInHours": 9.8,
+        "readyInHours": 9.5,
         "daysSince": 2.3
       }
     ],
