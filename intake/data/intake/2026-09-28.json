@@ -20,17 +20,20 @@
     {"time": "11:30", "name": "Cherry tomatoes", "category": "food", "qty": "2 pieces", "kcal": 5.3, "protein_g": 0.27, "carbs_g": 1.17, "fat_g": 0.06, "fiber_g": 0.36, "note": "Same standard reference as prior entries. Credits ~0.88mg lycopene, ~4.4mg vitamin C, ~5.1mcg folate DFE."},
     {"time": "12:00", "name": "Mixed rice, chicken breast & mushroom (leftovers)", "category": "food", "qty": "400 g", "kcal": 515, "protein_g": 50.6, "carbs_g": 58.4, "fat_g": 6.54, "fiber_g": 1.1, "note": "new generic composite reference (mixed_rice_chicken_mushroom_leftover_generic, not label-verified, first time logged) — leftovers from a recipe not cooked by the user, ingredient ratios unknown; modeled as ~50% rice / 35% chicken breast / 15% mushroom. Flagged low-confidence."},
     {"time": "12:00", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "note": "Same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
-    {"time": "12:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "12:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 156.1,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 48.4,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 1048.4,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 9.68
   },
   "assumptions": [
@@ -41,7 +44,10 @@
     "10:35 espresso, 1 shot (1st caffeine shot today).",
     "11:30 snack: 1 slice Tnuva Emek Light yellow cheese 9% (25g, verified reference) + 2 cherry tomatoes (standard reference — credits ~0.88mg lycopene, ~4.4mg vitamin C, ~5.1mcg folate DFE).",
     "12:00 lunch: 400g leftovers, mixed rice/chicken breast/mushroom — original recipe not cooked by the user, ingredient ratios unknown. New generic composite reference (mixed_rice_chicken_mushroom_leftover_generic), modeled ~50% rice/35% chicken/15% mushroom, flagged low-confidence. Plus 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE).",
-    "12:30 espresso, 1 shot (2 caffeine shots today)."
+    "12:30 espresso, 1 shot (2 caffeine shots today).",
+    "13:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "14:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
+    "15:00 espresso, 1 shot (3 caffeine shots today)."
   ],
-  "status_note": "Day in progress. Slept 6.25h (00:00-06:15), short of target. AM spray + pill + Mayven + breakfast + espresso + lunch logged."
+  "status_note": "Day in progress. Slept 6.25h (00:00-06:15), short of target. AM spray + pill + Mayven + breakfast + lunch + omega-3 + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
 }
