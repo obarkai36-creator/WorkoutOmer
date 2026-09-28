@@ -299,6 +299,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 28 Sep — Outdoor Walk, Or Akiva (18:34-19:11)
+  {
+    datetime: "2026-09-28T18:34", note: "Outdoor Walk — Or Akiva (Nike Run Club) — 3.69km in 36:54 (10:00/km pace), 223 kcal, 13m elevation gain, cadence 125. No heart-rate monitor worn.",
+    exercises: [
+      { name: "Outdoor Walk", distanceKm: 3.69, durationMin: 36.9, cadence: 125, elevationGainM: 13 },
+    ],
+  },
   // 26 Sep — Legs (10:09-10:41), + incline treadmill cooldown (later)
   {
     datetime: "2026-09-26T10:09", note: "Legs day (10:09-10:41) — Leg Press 132kg×4×11, as suggested (new PR — est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg×4×12 (ties best exactly). Leg Curls 111kg×4×12 (ties best exactly). Calf Raises Machine 81kg×4×8 — still under the 76kg×4×11 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg×4×12 — new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg×5×10) despite 1 fewer set. 2 new PRs. Capped off with an incline treadmill cooldown — 0.7km in 15:15 (~2.75 km/h), 90 kcal, ~7.9% incline / 55m elevation gain (estimated via ACSM walking VO2 equation from speed+kcal+bodyweight, since incline % wasn't read off the display directly — rough estimate, flagged low-confidence).",

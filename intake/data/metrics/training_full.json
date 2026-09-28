@@ -1,6 +1,35 @@
 {
-  "now": 1790598305665,
+  "now": 1790611960999,
   "workouts": [
+    {
+      "datetime": "2026-09-28T18:34",
+      "note": "Outdoor Walk — Or Akiva (Nike Run Club) — 3.69km in 36:54 (10:00/km pace), 223 kcal, 13m elevation gain, cadence 125. No heart-rate monitor worn.",
+      "exercises": [
+        {
+          "name": "Outdoor Walk",
+          "distanceKm": 3.69,
+          "durationMin": 36.9,
+          "cadence": 125,
+          "elevationGainM": 13,
+          "load": 332.09999999999997,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 332.09999999999997,
+            "quads": 66.42,
+            "calves": 66.42
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1790620440000,
+      "muscleLoad": {
+        "cardio": 332.09999999999997,
+        "quads": 66.42,
+        "calves": 66.42
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-09-26T10:09",
       "note": "Legs day (10:09-10:41) — Leg Press 132kg×4×11, as suggested (new PR — est. 1RM 180.4 vs 176.0 prior best). Leg Extensions 111kg×4×12 (ties best exactly). Leg Curls 111kg×4×12 (ties best exactly). Calf Raises Machine 81kg×4×8 — still under the 76kg×4×11 rebuild target (est. 1RM 102.6 vs 103.87), not a PR. Outer Thigh 79kg×4×12 — new PR by est. 1RM (110.6 vs 105.33 prior best at 79kg×5×10) despite 1 fewer set. 2 new PRs. Capped off with an incline treadmill cooldown — 0.7km in 15:15 (~2.75 km/h), 90 kcal, ~7.9% incline / 55m elevation gain (estimated via ACSM walking VO2 equation from speed+kcal+bodyweight, since incline % wasn't read off the display directly — rough estimate, flagged low-confidence).",
@@ -7187,9 +7216,9 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 32,
-      "readyInHours": 3.1,
-      "ready": false
+      "pct": 30,
+      "readyInHours": 0,
+      "ready": true
     },
     "back": {
       "key": "back",
@@ -7219,7 +7248,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 13,
+      "pct": 12,
       "readyInHours": 0,
       "ready": true
     },
@@ -7235,23 +7264,23 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 35,
-      "readyInHours": 9.1,
+      "pct": 33,
+      "readyInHours": 6.1,
       "ready": false
     },
     "hamstrings": {
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 38,
-      "readyInHours": 13.6,
+      "pct": 35,
+      "readyInHours": 9.8,
       "ready": false
     },
     "glutes": {
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 29,
+      "pct": 27,
       "readyInHours": 0,
       "ready": true
     },
@@ -7283,24 +7312,24 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 7,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 48,
+      "readyInHours": 14.3,
+      "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 32,
-      "readyInHours": 3.1,
+      "pct": 30,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 32,
-          "readyInHours": 3.1,
-          "ready": false
+          "pct": 30,
+          "readyInHours": 0,
+          "ready": true
         }
       ]
     },
@@ -7343,7 +7372,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 13,
+          "pct": 12,
           "readyInHours": 0,
           "ready": true
         },
@@ -7367,30 +7396,30 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 22,
-      "readyInHours": 13.6,
+      "pct": 21,
+      "readyInHours": 9.8,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 38,
-          "readyInHours": 13.6,
+          "pct": 35,
+          "readyInHours": 9.8,
           "ready": false
         },
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 35,
-          "readyInHours": 9.1,
+          "pct": 33,
+          "readyInHours": 6.1,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 29,
+          "pct": 27,
           "readyInHours": 0,
           "ready": true
         },
@@ -7429,16 +7458,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 7,
-      "readyInHours": 0,
+      "pct": 48,
+      "readyInHours": 14.3,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 7,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 48,
+          "readyInHours": 14.3,
+          "ready": false
         }
       ]
     }
@@ -8302,7 +8331,7 @@
         "isPR": false,
         "belowPR": false,
         "gap": 1,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Standing Calf Raises (Frame)",
@@ -8364,7 +8393,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Angled Leg Press",
@@ -8405,7 +8434,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Single-Leg Extensions",
@@ -8445,7 +8474,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Outer Thigh",
@@ -8466,7 +8495,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Inner Thigh",
@@ -8728,23 +8757,23 @@
         "label": "This wk",
         "stress": 540,
         "sessions": 3,
-        "acwr": 0.96
+        "acwr": 1.06
       }
     ],
-    "acute": 74.75,
-    "chronic": 78.04,
-    "acwr": 0.96,
+    "acute": 85.67,
+    "chronic": 81.05,
+    "acwr": 1.06,
     "acwrZone": "ok",
-    "sessions28": 16
+    "sessions28": 17
   },
   "recommendation": {
     "section": "Shoulders",
     "fatigue": 5,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-28T12:25:05.665Z",
+    "readyAt": "2026-09-28T16:12:40.999Z",
     "neverLogged": false,
-    "daysSince": 12.9,
+    "daysSince": 13.1,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -8852,39 +8881,39 @@
         "section": "Shoulders",
         "fatigue": 5,
         "readyInHours": 0,
-        "daysSince": 12.9
+        "daysSince": 13.1
       },
       {
         "section": "Arms",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 12.1
+        "daysSince": 12.2
       },
       {
         "section": "Back",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 9
+        "daysSince": 9.2
       },
       {
         "section": "Chest",
-        "fatigue": 32,
-        "readyInHours": 3.1,
-        "daysSince": 2.9
+        "fatigue": 30,
+        "readyInHours": 0,
+        "daysSince": 3
       },
       {
         "section": "Legs",
-        "fatigue": 22,
-        "readyInHours": 13.6,
-        "daysSince": 2.1
+        "fatigue": 21,
+        "readyInHours": 9.8,
+        "daysSince": 2.3
       }
     ],
     "suggestedCount": 4,
     "totalAvailable": 9,
     "typicalSessionSize": 4,
-    "aerobicLast7": 3,
+    "aerobicLast7": 4,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 2.1
+    "daysSinceAerobic": -0.1
   },
   "alerts": [
     {
@@ -8897,22 +8926,22 @@
     "You're below your PR on 15 lifts — closest wins first: Seated Dips (28% of best), Dead Hang (33% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight."
   ],
   "timing": {
-    "avgGap": 3.1,
+    "avgGap": 3,
     "longestGap": 35.7,
-    "perWeek": 4,
+    "perWeek": 4.3,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
       5,
-      13,
+      14,
       9,
       7,
       4,
       16,
       16
     ],
-    "daysSinceLast": 2.1,
-    "total": 70
+    "daysSinceLast": -0.1,
+    "total": 71
   },
   "relstrength": {
     "bodyweightKg": 80.95,
@@ -8961,15 +8990,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 36,
-    "km7": 8.9,
-    "km28": 29.4,
-    "totalKm": 144,
+    "count": 37,
+    "km7": 12.5,
+    "km28": 33.1,
+    "totalKm": 147.6,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 3.6764705882352944,
-    "avgPace": 10.202554265527667,
-    "paceTrend": -0.65,
+    "avgPace": 10.196596787129796,
+    "paceTrend": -0.01,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -8978,8 +9007,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 2.1,
+    "daysSinceLast": -0.1,
     "recent": [
+      {
+        "t": 1790620440000,
+        "name": "Outdoor Walk",
+        "distanceKm": 3.69,
+        "durationMin": 36.9,
+        "avgHr": null,
+        "pace": 10
+      },
       {
         "t": 1790417340000,
         "name": "Incline Walk",
@@ -9011,14 +9048,6 @@
         "durationMin": 13.5,
         "avgHr": null,
         "pace": 15.882352941176471
-      },
-      {
-        "t": 1789743300000,
-        "name": "Incline Walk",
-        "distanceKm": 2.77,
-        "durationMin": 33.65,
-        "avgHr": null,
-        "pace": 12.148014440433212
       }
     ]
   },

@@ -26,9 +26,12 @@
     {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Cottage cheese", "category": "food", "qty": "250 g", "kcal": 245, "protein_g": 27.5, "carbs_g": 8.5, "fat_g": 10.75, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, not label-verified)."},
     {"time": "15:00", "name": "Honey (drizzle)", "category": "food", "qty": "~3.5 g assumed", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0.01, "note": "same generic reference as prior entries (honey_generic); \"drizzle\" assumed at the usual ~0.5 tsp rate."},
-    {"time": "15:00", "name": "Cherry tomatoes", "category": "food", "qty": "3 pieces", "kcal": 7.95, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "Same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."}
+    {"time": "15:00", "name": "Cherry tomatoes", "category": "food", "qty": "3 pieces", "kcal": 7.95, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "Same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."},
+    {"time": "18:15", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"}
   ],
   "caffeine_shots": 3,
+  "workout_today": true,
+  "workout_summary": "Outdoor Walk, Or Akiva — 3.69km, 36:54, 223 kcal",
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
     "selenium_mcg": 100,
@@ -51,7 +54,9 @@
     "13:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "14:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
     "15:00 espresso, 1 shot (3 caffeine shots today).",
-    "15:00 snack: 250g cottage cheese (same generic reference as prior entries) + a drizzle of honey (~3.5g assumed, same generic reference) + 3 cherry tomatoes (standard reference — credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE)."
+    "15:00 snack: 250g cottage cheese (same generic reference as prior entries) + a drizzle of honey (~3.5g assumed, same generic reference) + 3 cherry tomatoes (standard reference — credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE).",
+    "Outdoor Walk, Or Akiva (Nike Run Club, 18:34-19:11) — 3.69km in 36:54 (10:00/km pace), 223 kcal, 13m elevation gain, cadence 125. No heart-rate monitor worn.",
+    "18:15 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today."
   ],
-  "status_note": "Day in progress. Slept 6.25h (00:00-06:15), short of target. AM spray + pill + Mayven + breakfast + lunch + omega-3 + essential-5 + afternoon snack logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
+  "status_note": "Day in progress. Slept 6.25h (00:00-06:15), short of target. AM spray + pill + Mayven + breakfast + lunch + omega-3 + essential-5 + afternoon snack + outdoor walk + PM spray logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
 }
