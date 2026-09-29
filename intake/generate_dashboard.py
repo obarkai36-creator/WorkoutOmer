@@ -523,9 +523,16 @@ def compute_window_factors(profile, target_date, all_days, weight_entries, sleep
 
     week_days = [d for d in all_days if in_week(d["date"])]
 
-    # nutrition: daily average of protein/fiber attainment + calorie adherence
+    # nutrition: daily average of protein/fiber attainment + calorie adherence.
+    # Days with a macro-tracking break logged (exclude_from_monthly_macros)
+    # have no real food data — 0/target kcal isn't a bad-nutrition day, it's
+    # an untracked one, so exclude those days from the average entirely
+    # rather than let them drag the window's nutrition factor toward zero
+    # (same fix/rationale as compute_energy_score's per-day nutrition drop).
+    nutrition_days = [d for d in week_days if not d.get("exclude_from_monthly_macros")]
+    untracked_days_in_window = len(week_days) - len(nutrition_days)
     day_scores = []
-    for d in week_days:
+    for d in nutrition_days:
         items = d.get("items", [])
         kcal = sum(i.get("kcal", 0) for i in items)
         protein = sum(i.get("protein_g", 0) for i in items)
@@ -606,6 +613,7 @@ def compute_window_factors(profile, target_date, all_days, weight_entries, sleep
     caveats = [c for c in [
         "No nights logged in this window yet — sleep factor defaulted to neutral." if not week_nights else "",
         "No ejaculation events logged yet — factor defaulted to neutral." if not ejac_entries else "",
+        f"{untracked_days_in_window} day(s) in this window had no food tracking (macro break) — excluded from the nutrition factor." if untracked_days_in_window else "",
     ] if c]
     notes = (f"Computed from real logged data for {week_start.strftime('%Y-%m-%d')} → {target_date} "
              f"({len(week_days)} day(s) logged this window)." + (" " + " ".join(caveats) if caveats else ""))
