@@ -17,17 +17,21 @@
     {"time": "07:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:45", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "09:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "11:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "11:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "14:15", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
-  "caffeine_shots": 3,
+  "caffeine_shots": 5,
+  "workout_today": true,
+  "workout_summary": "Shoulders (15:00) — Front Raises 18kg×4×9 (new PR), Rear Delt Machine 73kg×3×10 (new PR) — 2 new PRs",
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "assumptions": [
@@ -37,7 +41,10 @@
     "07:45 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "User asked to skip detailed food macro/micro logging for today (one-off day, not a standing break) — food items from here on are not itemized; supplements/meds/caffeine/workout/sleep/lifestyle events still logged as usual.",
     "09:30 espresso, 1 shot (3rd caffeine shot today).",
-    "11:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose."
+    "11:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "13:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
+    "14:15 double espresso, 1 double (5 caffeine shots today).",
+    "Shoulders day, 15:00 — Farmer's Hold 24kg each×4×35s (ties best exactly). Front Raises 18kg×4×9, as suggested (new PR — est. 1RM 23.4 vs 22.8 prior best at 18kg×4×8). Lateral Raises 16kg each×4×9 (ties best exactly). Rear Delt Machine 73kg×3×10, as suggested (new PR — est. 1RM 97.3 vs 94.9 prior best at 73kg×3×9). Dumbbell Shoulder Press 20kg each×3×9 — matches the 20kg×9 best set exactly, all 3 sets landing 9 reps (more consistent than the prior best's 2×9, 1×8), not a strict est.1RM PR. 2 new PRs."
   ],
-  "status_note": "Day in progress. Slept 7.17h (23:50-07:00), within target. AM spray + pill + double espresso + Mayven + espresso + omega-3 logged. No detailed food tracking today (one-off, user request)."
+  "status_note": "Day in progress. Slept 7.17h (23:50-07:00), within target. Shoulders workout — 2 new PRs (Front Raises, Rear Delt Machine). AM spray + pill + Mayven + omega-3 + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets. No detailed food tracking today (one-off, user request)."
 }

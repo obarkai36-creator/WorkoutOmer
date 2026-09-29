@@ -234,13 +234,13 @@ const SNAPSHOT = [
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
-  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 10, weight: 35, text: "17.5kg each × 3×10 (hotel gym)" }, best: { sets: 3, reps: 9, weight: 40, text: "20kg each × 2×9, 1×8" } },
-  { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 8, weight: 30, text: "15kg each × 4×8 (hotel gym)" }, best: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" } },
+  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 9, weight: 40, text: "20kg each × 3×9 (matches the 20kg×9 best set, more consistent than the prior 2×9, 1×8)" }, best: { sets: 3, reps: 9, weight: 40, text: "20kg each × 2×9, 1×8" } },
+  { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9 (ties best)" }, best: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
-  { name: "Front Raises",              section: "Shoulders", latest: { sets: 3, reps: 8, weight: 18, text: "18kg KB × 3×8" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg KB × 4×8" } },
-  { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 9, weight: 73, text: "73kg × 3×9" }, best: { sets: 3, reps: 9, weight: 73, text: "73kg × 3×9" } },
+  { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 9, weight: 18, text: "18kg KB × 4×9" }, best: { sets: 4, reps: 9, weight: 18, text: "18kg KB × 4×9" } },
+  { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" }, best: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" } },
   { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 12, weight: 40, text: "20kg each × 4×12 (hotel gym)" }, best: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10" } },
-  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 35, weight: 40, text: "20kg each × 4×35s (hotel gym)" }, best: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" } },
+  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s (ties best)" }, best: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" } },
   { name: "Cable Face Pull",           section: "Shoulders", latest: { sets: 4, reps: 12, weight: 17.5, text: "17.5kg × 4×12 (hotel gym, first logged)" }, best: { sets: 4, reps: 12, weight: 17.5, text: "17.5kg × 4×12" } },
 
   // ---- Arms: Triceps ----
@@ -299,6 +299,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 29 Sep — Shoulders (15:00)
+  {
+    datetime: "2026-09-29T15:00", note: "Shoulders day (15:00) — Farmer's Hold 24kg each×4×35s (ties best exactly). Front Raises 18kg×4×9, as suggested (new PR — est. 1RM 23.4 vs 22.8 prior best at 18kg×4×8). Lateral Raises 16kg each×4×9 (ties best exactly). Rear Delt Machine 73kg×3×10, as suggested (new PR — est. 1RM 97.3 vs 94.9 prior best at 73kg×3×9). Dumbbell Shoulder Press 20kg each×3×9 — matches the 20kg×9 best set exactly, but with all 3 sets landing 9 reps (more consistent than the prior best's 2×9, 1×8 dropoff), not a strict est.1RM PR. 2 new PRs.",
+    exercises: [
+      { name: "Farmer's Hold",             sets: [ { seconds: 35, weight: 48 }, { seconds: 35, weight: 48 }, { seconds: 35, weight: 48 }, { seconds: 35, weight: 48 } ] },
+      { name: "Front Raises",              sets: [ { reps: 9, weight: 18 }, { reps: 9, weight: 18 }, { reps: 9, weight: 18 }, { reps: 9, weight: 18 } ] },
+      { name: "Lateral Raises",            sets: [ { reps: 9, weight: 32 }, { reps: 9, weight: 32 }, { reps: 9, weight: 32 }, { reps: 9, weight: 32 } ] },
+      { name: "Rear Delt Machine",         sets: [ { reps: 10, weight: 73 }, { reps: 10, weight: 73 }, { reps: 10, weight: 73 } ] },
+      { name: "Dumbbell Shoulder Press",   sets: [ { reps: 9, weight: 40 }, { reps: 9, weight: 40 }, { reps: 9, weight: 40 } ] },
+    ],
+  },
   // 28 Sep — Outdoor Walk, Or Akiva (18:34-19:11)
   {
     datetime: "2026-09-28T18:34", note: "Outdoor Walk — Or Akiva (Nike Run Club) — 3.69km in 36:54 (10:00/km pace), 223 kcal, 13m elevation gain, cadence 125. No heart-rate monitor worn.",
