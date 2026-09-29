@@ -1,7 +1,8 @@
 {
   "date": "2026-09-29",
   "day_number": 94,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 3000,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "User explicitly asked to skip exact food macro/micro logging for 2026-09-29 (one-off day).",
   "sleep": {
@@ -48,7 +49,8 @@
     "14:15 double espresso, 1 double (5 caffeine shots today).",
     "Shoulders day, 15:00 — Farmer's Hold 24kg each×4×35s (ties best exactly). Front Raises 18kg×4×9, as suggested (new PR — est. 1RM 23.4 vs 22.8 prior best at 18kg×4×8). Lateral Raises 16kg each×4×9 (ties best exactly). Rear Delt Machine 73kg×3×10, as suggested (new PR — est. 1RM 97.3 vs 94.9 prior best at 73kg×3×9). Dumbbell Shoulder Press 20kg each×3×9 — matches the 20kg×9 best set exactly, all 3 sets landing 9 reps (more consistent than the prior best's 2×9, 1×8), not a strict est.1RM PR. 2 new PRs.",
     "16:45 creatine monohydrate, 5g (standard dose).",
-    "18:30 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today."
+    "18:30 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
+    "EOD: 3,000 steps reported. Retainers: worn tonight (volunteered) — logged to retainers.json; no entries for 09-27 or 09-28 in between, but tonight's worn:true breaks any consecutive-skip run regardless — no flag needed."
   ],
-  "status_note": "Day in progress. Slept 7.17h (23:50-07:00), within target. Shoulders workout — 2 new PRs (Front Raises, Rear Delt Machine). Both allergy doses + omega-3 + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets. No detailed food tracking today (one-off, user request)."
+  "status_note": "Day complete. Slept 7.17h (23:50-07:00), within target. Shoulders workout — 2 new PRs (Front Raises, Rear Delt Machine). Both allergy doses + omega-3 + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets. No detailed food tracking today (one-off, user request). 3,000 steps. Retainers worn tonight."
 }
