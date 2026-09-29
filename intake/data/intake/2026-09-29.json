@@ -16,14 +16,15 @@
     {"time": "07:20", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "07:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:45", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
-    {"time": "09:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "09:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "11:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 3,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -35,7 +36,8 @@
     "07:30 double espresso, 1 double (2 caffeine shots today).",
     "07:45 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "User asked to skip detailed food macro/micro logging for today (one-off day, not a standing break) — food items from here on are not itemized; supplements/meds/caffeine/workout/sleep/lifestyle events still logged as usual.",
-    "09:30 espresso, 1 shot (3rd caffeine shot today)."
+    "09:30 espresso, 1 shot (3rd caffeine shot today).",
+    "11:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose."
   ],
-  "status_note": "Day in progress. Slept 7.17h (23:50-07:00), within target. AM spray + pill + double espresso + Mayven + espresso logged. No detailed food tracking today (one-off, user request)."
+  "status_note": "Day in progress. Slept 7.17h (23:50-07:00), within target. AM spray + pill + double espresso + Mayven + espresso + omega-3 logged. No detailed food tracking today (one-off, user request)."
 }
