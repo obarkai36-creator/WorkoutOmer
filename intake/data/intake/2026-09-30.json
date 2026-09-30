@@ -15,14 +15,16 @@
     {"time": "06:45", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "09:00", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
-    {"time": "10:10", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference."}
+    {"time": "10:10", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference."},
+    {"time": "12:00", "name": "Lunch — Mi Casa cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as prior entries)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Same reference as prior Mi Casa lunches."},
+    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 1,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -34,7 +36,10 @@
     "06:45 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "08:00 espresso, 1 shot (1st caffeine shot today).",
     "09:00 vanilla Danone PRO protein yogurt (1 cup, 200g) — same line as prior entries.",
-    "10:10 2 slices Tnuva Emek Light yellow cheese 9% (50g, verified reference)."
+    "10:10 2 slices Tnuva Emek Light yellow cheese 9% (50g, verified reference).",
+    "12:00 lunch: Mi Casa cucumber/chicken noodle salad, same order/reference as prior entries.",
+    "13:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "Essential-5 not taken yet as of 11:20 (correction) — will be taken later today; no reminder requested."
   ],
-  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven + espresso + breakfast + snack logged."
+  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven + espresso + breakfast + snack + lunch + omega-3 logged. Essential-5 pending, to be taken later today."
 }
