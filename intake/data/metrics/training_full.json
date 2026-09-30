@@ -1,5 +1,5 @@
 {
-  "now": 1790773753467,
+  "now": 1790775108695,
   "workouts": [
     {
       "datetime": "2026-09-29T15:00",
@@ -7381,8 +7381,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 59,
-      "readyInHours": 26.8,
+      "pct": 58,
+      "readyInHours": 26.4,
       "ready": false
     },
     "biceps": {
@@ -7406,7 +7406,7 @@
       "label": "Forearms",
       "section": "Arms",
       "pct": 31,
-      "readyInHours": 1.2,
+      "readyInHours": 0.8,
       "ready": false
     },
     "quads": {
@@ -7461,7 +7461,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     }
@@ -7499,15 +7499,15 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 59,
-      "readyInHours": 26.8,
+      "pct": 58,
+      "readyInHours": 26.4,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 59,
-          "readyInHours": 26.8,
+          "pct": 58,
+          "readyInHours": 26.4,
           "ready": false
         }
       ]
@@ -7515,14 +7515,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 13,
-      "readyInHours": 1.2,
+      "readyInHours": 0.8,
       "muscles": [
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
           "pct": 31,
-          "readyInHours": 1.2,
+          "readyInHours": 0.8,
           "ready": false
         },
         {
@@ -7607,14 +7607,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 12,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         }
@@ -8920,7 +8920,7 @@
     "fatigue": 5,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-09-30T13:09:13.467Z",
+    "readyAt": "2026-09-30T13:31:48.695Z",
     "neverLogged": false,
     "daysSince": 11.1,
     "suggestedExercises": [
@@ -9025,13 +9025,13 @@
       {
         "section": "Arms",
         "fatigue": 13,
-        "readyInHours": 1.2,
+        "readyInHours": 0.8,
         "daysSince": 0.9
       },
       {
         "section": "Shoulders",
-        "fatigue": 59,
-        "readyInHours": 26.8,
+        "fatigue": 58,
+        "readyInHours": 26.4,
         "daysSince": 0.9
       }
     ],
