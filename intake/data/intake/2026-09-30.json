@@ -32,7 +32,7 @@
     {"time": "19:30", "name": "Balsamic vinegar (drizzle)", "category": "food", "qty": "~10 g assumed", "kcal": 8.8, "protein_g": 0.05, "carbs_g": 1.7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "same generic reference as prior entries (balsamic_vinegar_generic), \"drizzle\" assumed at the usual ~10g rate."},
     {"time": "21:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
     {"time": "21:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
-    {"time": "21:00", "name": "Click (קליק) chocolate wafer biscuit", "category": "food", "qty": "1 unit (~26 g)", "kcal": 135, "protein_g": 1.56, "carbs_g": 14.8, "fat_g": 7.5, "fiber_g": 0.4, "note": "new generic reference (click_biscuit_generic, not label-verified, first time logged)."},
+    {"time": "21:00", "name": "Click (קליק) chocolate wafer biscuit", "category": "food", "qty": "1 unit (~5 g)", "kcal": 26, "protein_g": 0.3, "carbs_g": 2.85, "fat_g": 1.44, "fiber_g": 0.08, "note": "new generic reference (click_biscuit_generic, not label-verified, first time logged) — corrected: 1 piece is ~5g, not a ~26g full bar."},
     {"time": "21:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 3,
@@ -64,7 +64,7 @@
     "Dinner (clock time not given, placeholder 19:30): 3 whole-spelt cheese rolls from the adopted rotation recipe (spinach_free_cheese_rolls_spelt, pulled fresh from the recipe-analyzer branch), 25 cherry tomatoes (standard reference), 50g Mozzarella Fresca by Gad (generic fresh-mozzarella reference, not brand-verified), and a balsamic vinegar drizzle (~10g assumed, generic reference).",
     "21:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E — the pending dose from earlier today, now taken.",
     "21:00 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
-    "21:00 1 Click (קליק) chocolate wafer biscuit (~26g) — new generic reference, not label-verified, first time logged.",
+    "21:00 1 Click (קליק) chocolate wafer biscuit (~5g, corrected from an initial ~26g full-bar assumption per user correction) — new generic reference, not label-verified, first time logged.",
     "21:45 creatine monohydrate, 5g (standard dose)."
   ],
   "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. Full day of meals + dinner logged. Both allergy doses + essential-5 done. Zinc/selenium/vitamin C/D/E all cleared today's targets."
