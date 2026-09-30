@@ -18,18 +18,22 @@
     {"time": "10:10", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference."},
     {"time": "12:00", "name": "Lunch — Mi Casa cucumber salad with chicken", "category": "food", "qty": "1 large salad + chicken (same order as prior entries)", "kcal": 590, "protein_g": 59, "carbs_g": 32, "fat_g": 24, "fiber_g": 3.3, "note": "Vietnamese-style noodle salad — chicken, cucumber, mint, cilantro, bean sprouts, glass noodles, nut mix, yuzu vinaigrette. Same reference as prior Mi Casa lunches."},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:00", "name": "Cottage cheese", "category": "food", "qty": "50 g", "kcal": 49, "protein_g": 5.5, "carbs_g": 1.7, "fat_g": 2.15, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, not label-verified)."},
+    {"time": "15:00", "name": "Honey (drizzle)", "category": "food", "qty": "~3.5 g assumed", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0.01, "note": "same generic reference as prior entries (honey_generic); \"drizzle\" assumed at the usual ~0.5 tsp rate."},
+    {"time": "15:00", "name": "Cherry tomatoes", "category": "food", "qty": "15 pieces", "kcal": 39.75, "protein_g": 2.05, "carbs_g": 8.8, "fat_g": 0.6, "fiber_g": 3.6, "note": "Same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
+    {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 138.25,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 33.0,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 6.6
   },
   "assumptions": [
     "Sleep logged: 23:15-06:35, 7.33h — within the 7-9h target band.",
@@ -41,7 +45,8 @@
     "12:00 lunch: Mi Casa cucumber/chicken noodle salad, same order/reference as prior entries.",
     "13:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "13:00 espresso, 1 shot (2 caffeine shots today).",
-    "Essential-5 not taken yet as of 11:20 (correction) — will be taken later today; no reminder requested."
+    "Essential-5 not taken yet as of 11:20 (correction) — will be taken later today; no reminder requested.",
+    "15:00 snack: 50g cottage cheese (same generic reference as prior entries) + a drizzle of honey (~3.5g assumed, same generic reference) + 15 cherry tomatoes (standard reference — credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE) + espresso (3 caffeine shots today)."
   ],
-  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven + espresso + breakfast + snack + lunch + omega-3 logged. Essential-5 pending, to be taken later today."
+  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven + espresso + breakfast + snack + lunch + omega-3 + afternoon snack logged. Essential-5 pending, to be taken later today."
 }
