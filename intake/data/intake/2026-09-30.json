@@ -12,9 +12,11 @@
   "items": [
     {"time": "06:42", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "06:42", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
-    {"time": "06:45", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+    {"time": "06:45", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "08:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "09:00", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."}
   ],
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
@@ -28,7 +30,9 @@
   "assumptions": [
     "Sleep logged: 23:15-06:35, 7.33h — within the 7-9h target band.",
     "06:42 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
-    "06:45 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc."
+    "06:45 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
+    "08:00 espresso, 1 shot (1st caffeine shot today).",
+    "09:00 vanilla Danone PRO protein yogurt (1 cup, 200g) — same line as prior entries."
   ],
-  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven logged."
+  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven + espresso + breakfast logged."
 }
