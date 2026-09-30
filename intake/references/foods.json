@@ -580,6 +580,18 @@
       "fiber_g": 0.28,
       "verified": false,
       "source": "Rough composite estimate, first logged 2026-09-28 (400g, leftovers from a recipe the user did not cook themselves and whose ingredient ratios are unknown). Modeled as ~50% cooked white rice (130kcal/100g), 35% cooked chicken breast (165kcal/100g), 15% sauteed mushroom (~40kcal/100g, some cooking fat). Flagged low-confidence -- refine if the actual recipe/ratios become known."
+    },
+    {
+      "id": "sweet_pretzel_generic",
+      "name": "Sweet/glazed pretzel, generic",
+      "serving": "100 g",
+      "kcal": 380,
+      "protein_g": 8,
+      "carbs_g": 75,
+      "fat_g": 5,
+      "fiber_g": 3,
+      "verified": false,
+      "source": "Generic typical-value estimate for a sweet/sugar-glazed soft pretzel snack (distinct from the savory beigale pretzel-ring reference), first logged 2026-09-30 (3 bites, ~15g/bite assumed, consistent with prior bite-size estimates). Not label-verified."
     }
   ]
 }

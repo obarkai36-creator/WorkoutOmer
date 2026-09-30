@@ -22,7 +22,9 @@
     {"time": "15:00", "name": "Cottage cheese", "category": "food", "qty": "50 g", "kcal": 49, "protein_g": 5.5, "carbs_g": 1.7, "fat_g": 2.15, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, not label-verified)."},
     {"time": "15:00", "name": "Honey (drizzle)", "category": "food", "qty": "~3.5 g assumed", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0.01, "note": "same generic reference as prior entries (honey_generic); \"drizzle\" assumed at the usual ~0.5 tsp rate."},
     {"time": "15:00", "name": "Cherry tomatoes", "category": "food", "qty": "15 pieces", "kcal": 39.75, "protein_g": 2.05, "carbs_g": 8.8, "fat_g": 0.6, "fiber_g": 3.6, "note": "Same standard reference as prior entries. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE."},
-    {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "16:00", "name": "Sweet pretzels", "category": "food", "qty": "3 bites (~45 g)", "kcal": 171, "protein_g": 3.6, "carbs_g": 33.75, "fat_g": 2.25, "fiber_g": 1.35, "note": "new generic reference (sweet_pretzel_generic, not label-verified, first time logged) — distinct from the savory beigale pretzel-ring reference. \"Bite\" assumed ~15g each."},
+    {"time": "16:00", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference."}
   ],
   "caffeine_shots": 3,
   "micros_sperm_priority": {
@@ -46,7 +48,8 @@
     "13:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "13:00 espresso, 1 shot (2 caffeine shots today).",
     "Essential-5 not taken yet as of 11:20 (correction) — will be taken later today; no reminder requested.",
-    "15:00 snack: 50g cottage cheese (same generic reference as prior entries) + a drizzle of honey (~3.5g assumed, same generic reference) + 15 cherry tomatoes (standard reference — credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE) + espresso (3 caffeine shots today)."
+    "15:00 snack: 50g cottage cheese (same generic reference as prior entries) + a drizzle of honey (~3.5g assumed, same generic reference) + 15 cherry tomatoes (standard reference — credits ~6.6mg lycopene, ~33mg vitamin C, ~38.25mcg folate DFE) + espresso (3 caffeine shots today).",
+    "16:00 snack: 3 bites (~45g) sweet pretzels (new generic reference, not label-verified, first time logged — distinct from the savory beigale reference) + 2 slices Tnuva Emek Light yellow cheese 9% (50g, verified reference)."
   ],
-  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven + espresso + breakfast + snack + lunch + omega-3 + afternoon snack logged. Essential-5 pending, to be taken later today."
+  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven + espresso + breakfast + snack + lunch + omega-3 + 2 afternoon snacks logged. Essential-5 pending, to be taken later today."
 }
