@@ -1,0 +1,107 @@
+{
+  "id": "cheese_dough_stuffed_rolls",
+  "name": "2-ingredient cheese-dough stuffed rolls (לחמניות בצק גבינה ממולאות)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram / blog (Hebrew caption)",
+    "captured": "2026-09-25",
+    "notes": "No-yeast, no-rise 2-ingredient dough (self-rising flour + a tub of white cheese/cottage/yogurt) with fresh za'atar/oregano, stuffed with mozzarella + Bulgarian cheese and pan-fried. Makes 9 rolls. Analyzed PER ROLL for the whole roll (dough + filling + absorbed frying oil). Frying oil assumed ~1.5 tbsp absorbed across the batch. White-cheese tub taken at 5%. Estimate — no macros given. User asked for improvement recommendations (see suggested_mods)."
+  },
+  "servings": 9,
+  "serving_desc": "1 stuffed roll (~90 g) — recipe makes 9",
+  "ingredients": [
+    {"item": "self-rising flour", "qty": "280 g (2 cups)", "note": "or 2 cups plain flour + 1 packet baking powder; swap to whole-spelt self-rising for fiber"},
+    {"item": "white cheese / cottage / yogurt", "qty": "1 tub (250 g)", "note": "cottage or 5% white cheese = most protein; yogurt = lighter"},
+    {"item": "fresh za'atar or oregano leaves", "qty": "½ cup (optional)"},
+    {"item": "salt", "qty": "¼ tsp"},
+    {"item": "FILLING: grated mozzarella", "qty": "50 g"},
+    {"item": "FILLING: crumbled Bulgarian cheese", "qty": "50 g", "note": "very salty + brined — see her safety note; light hand recommended"},
+    {"item": "olive oil (for pan-frying)", "qty": "a little (~1.5 tbsp absorbed)"}
+  ],
+  "steps": [
+    "Mix all the dough ingredients to a smooth dough.",
+    "On a lightly floured surface form a ball and cut into 9 pieces.",
+    "Flatten each piece into a round by hand (or a rolling pin).",
+    "Place both cheeses in the center, gather the edges in and pinch to seal into a closed ball.",
+    "In a lightly oiled pan, space the balls out and flatten slightly; fry both sides until golden, flipping several times and gently pressing with a spatula.",
+    "Serve hot."
+  ],
+  "per_serving": {
+    "kcal": 189,
+    "protein_g": 7.5,
+    "carbs_g": 25,
+    "fat_g": 6.2,
+    "fiber_g": 1,
+    "micros": {
+      "calcium_mg": 90,
+      "sodium_mg": 320,
+      "iron_mg": 1.4,
+      "folate_mcg_dfe": 15
+    }
+  },
+  "batch_totals": {
+    "kcal": 1699,
+    "protein_g": 67.5,
+    "carbs_g": 224,
+    "fat_g": 56,
+    "fiber_g": 8.6,
+    "sodium_mg": 2900,
+    "note": "All 9 rolls incl. filling + ~1.5 tbsp absorbed frying oil. Sodium is high (self-rising flour + salt + salty Bulgarian cheese). The frying oil and the Bulgarian cheese are the main calorie/fat/sodium levers."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 5,
+      "verdict": "Tasty but it's fundamentally a fried white-flour bread: per roll ~189 kcal with only ~7.5 g protein (~4 g protein per 100 kcal) and ~25 g refined carbs. The cheese dough gives it more protein than a plain roll, but the white flour means almost no fiber and the pan-frying adds oil calories on top. Fine as an occasional treat or a carb portion, not a protein anchor. The good news: it's very easy to upgrade — a few swaps roughly double the fiber and cut the added oil (see mods).",
+      "flags": [
+        "~7.5 g protein / roll, ~25 g refined carbs (~4 g protein per 100 kcal)",
+        "low fiber (~1 g) — white self-rising flour",
+        "pan-fried — added oil calories (~1.5 tbsp across the batch)",
+        "high sodium (~320 mg/roll; ~2,900 mg batch) — flour + salt + Bulgarian cheese",
+        "cheese dough does add protein + calcium vs a plain roll"
+      ],
+      "suggested_mods": [
+        "Swap to WHOLE-SPELT or whole-wheat self-rising flour (or plain whole flour + baking powder) — roughly doubles fiber, keeps it whole-grain",
+        "Use COTTAGE or 5% white cheese for the dough (more protein than yogurt); add a scoop of the tub's whey/an egg white if you want to push protein",
+        "BAKE instead of fry: brush with egg + sesame and bake 190–200 °C ~18–22 min — cuts the added oil almost entirely for a similar golden crust",
+        "Go light on the Bulgarian cheese (biggest sodium lever) — 30 g Bulgarian + 70 g mozzarella keeps flavor with less salt; skip the ¼ tsp added salt",
+        "Boost protein-per-roll in the filling: mix in some low-fat white cheese or a little grated 9% yellow cheese with the mozzarella",
+        "Serve with a salad/tomato to add the fiber + vitamin C the roll lacks; the fresh za'atar is a great keep (flavor + antioxidants)"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 6,
+      "verdict": "A calcium- and protein-contributing cheese bread that's fully cooked, so it's broadly fine — with one thing to check. The Bulgarian cheese is a brined soft cheese: it carries a Listeria note in pregnancy unless pasteurized. Pan-frying heats it through (cooked cheese is considered safe), and most Israeli 'Bulgarit' is pasteurized anyway — just verify it, or lean on mozzarella instead. Otherwise the white cheese/cottage/yogurt and mozzarella are pasteurized and fine. It's not a big prenatal-nutrient source on its own (white flour); the whole-grain swap adds folate + iron.",
+      "prenatal_highlights": [
+        "calcium + protein from the cheese dough + filling",
+        "fully cooked; herbs (za'atar/oregano) add antioxidants",
+        "whole-grain flour swap would add folate + iron"
+      ],
+      "safety_advisories": [
+        {"note": "Bulgarian cheese is a brined soft cheese — Listeria risk unless pasteurized. It's cooked here (fried through) which is considered safe, and most Israeli Bulgarit is pasteurized; verify or use more mozzarella instead.", "swap": "verify pasteurized, cook through (as here), or use pasteurized mozzarella/hard cheese"}
+      ],
+      "suggested_mods": [
+        "Verify the Bulgarian cheese is pasteurized, or shift the filling toward mozzarella",
+        "Use whole-grain self-rising flour for folate + iron; pair with veg for a rounder meal"
+      ]
+    }
+  },
+  "tags": ["bread", "rolls", "cheese", "no-yeast", "stuffed", "pan-fried", "quick", "vegetarian"],
+  "adopted": false,
+  "created": "2026-09-25",
+  "updated": "2026-09-25",
+  "serving_g": 90,
+  "meal_type": "Bread",
+  "cooking_guide": [
+    "Mix the dough JUST until it comes together and is smooth — don't overwork it. A cheese + self-rising dough turns tough and dense if over-kneaded; stop as soon as it's uniform.",
+    "Rest the dough 10 min under a towel so the flour hydrates and it's easier to shape.",
+    "Divide into 9 even pieces. Flatten each into a round ~½ cm thick, a little thinner at the edges so the seal isn't too thick.",
+    "Put the mozzarella + Bulgarian in the center, don't overfill (cheese leaks if you do), gather the edges up over the filling and pinch firmly to seal into a closed ball. Set seam-side DOWN.",
+    "Heat a lightly oiled or nonstick pan over MEDIUM-LOW. Place the balls seam-down, spaced apart, and flatten slightly into thick discs.",
+    "Cover the pan — this steams the thick center so the dough cooks through before the outside burns. Fry, flipping several times and gently pressing with a spatula, until deep golden on both sides and cooked in the middle (5–8 min total).",
+    "If any cheese escapes and crisps in the pan, that's a bonus — scoop it onto the roll. Serve hot while the cheese is melty.",
+    "LOWER-OIL OPTION: instead of frying, set the sealed balls on parchment, brush with beaten egg, sprinkle sesame, and bake at 190–200 °C for 18–22 min until golden — nearly the same result with almost no added oil.",
+    "Tip: fresh za'atar or oregano in the dough is worth keeping; a little grated garlic or chili flakes in the filling lifts it too."
+  ]
+}
