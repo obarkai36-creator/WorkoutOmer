@@ -29,17 +29,21 @@
     {"time": "19:30", "name": "Cheese rolls, whole-spelt (baked, from rotation)", "category": "food", "qty": "3 rolls (~270 g)", "kcal": 528, "protein_g": 34.2, "carbs_g": 69.6, "fat_g": 14.1, "fiber_g": 9.9, "time_approx": true, "note": "Dinner (clock time not given). From intake/recipes/spinach_free_cheese_rolls_spelt.json (adopted rotation recipe, pulled from the recipe-analyzer branch) — 176kcal/11.4g protein/3.3g fiber per roll. Credits ~66mcg folate DFE, ~12mg vitamin C per the recipe's own micros."},
     {"time": "19:30", "name": "Cherry tomatoes", "category": "food", "qty": "25 pieces", "kcal": 66.25, "protein_g": 3.41, "carbs_g": 14.66, "fat_g": 0.75, "fiber_g": 4.5, "time_approx": true, "note": "Same standard reference as prior entries. Credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE."},
     {"time": "19:30", "name": "Mozzarella Fresca (Gad brand)", "category": "food", "qty": "50 g", "kcal": 140, "protein_g": 11, "carbs_g": 1, "fat_g": 11, "fiber_g": 0, "time_approx": true, "note": "generic fresh whole-milk mozzarella reference (baby_mozzarella_generic, not label-verified against the Gad product specifically)."},
-    {"time": "19:30", "name": "Balsamic vinegar (drizzle)", "category": "food", "qty": "~10 g assumed", "kcal": 8.8, "protein_g": 0.05, "carbs_g": 1.7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "same generic reference as prior entries (balsamic_vinegar_generic), \"drizzle\" assumed at the usual ~10g rate."}
+    {"time": "19:30", "name": "Balsamic vinegar (drizzle)", "category": "food", "qty": "~10 g assumed", "kcal": 8.8, "protein_g": 0.05, "carbs_g": 1.7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "same generic reference as prior entries (balsamic_vinegar_generic), \"drizzle\" assumed at the usual ~10g rate."},
+    {"time": "21:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "21:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "21:00", "name": "Click (קליק) chocolate wafer biscuit", "category": "food", "qty": "1 unit (~26 g)", "kcal": 135, "protein_g": 1.56, "carbs_g": 14.8, "fat_g": 7.5, "fiber_g": 0.4, "note": "new generic reference (click_biscuit_generic, not label-verified, first time logged)."},
+    {"time": "21:45", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 3,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 268.0,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 121.6,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1121.6,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 17.6
   },
   "assumptions": [
@@ -57,7 +61,11 @@
     "16:00 snack: 3 bites (~45g) sweet pretzels (new generic reference, not label-verified, first time logged — distinct from the savory beigale reference) + 2 slices Tnuva Emek Light yellow cheese 9% (50g, verified reference).",
     "16:30 2 green apples (~360g, new generic reference, standard USDA values, not label-verified, first time logged) — credits ~21.6mg vitamin C.",
     "20:00 partnered ejaculation.",
-    "Dinner (clock time not given, placeholder 19:30): 3 whole-spelt cheese rolls from the adopted rotation recipe (spinach_free_cheese_rolls_spelt, pulled fresh from the recipe-analyzer branch), 25 cherry tomatoes (standard reference), 50g Mozzarella Fresca by Gad (generic fresh-mozzarella reference, not brand-verified), and a balsamic vinegar drizzle (~10g assumed, generic reference)."
+    "Dinner (clock time not given, placeholder 19:30): 3 whole-spelt cheese rolls from the adopted rotation recipe (spinach_free_cheese_rolls_spelt, pulled fresh from the recipe-analyzer branch), 25 cherry tomatoes (standard reference), 50g Mozzarella Fresca by Gad (generic fresh-mozzarella reference, not brand-verified), and a balsamic vinegar drizzle (~10g assumed, generic reference).",
+    "21:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E — the pending dose from earlier today, now taken.",
+    "21:00 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
+    "21:00 1 Click (קליק) chocolate wafer biscuit (~26g) — new generic reference, not label-verified, first time logged.",
+    "21:45 creatine monohydrate, 5g (standard dose)."
   ],
-  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. AM spray + pill + Mayven + espresso + breakfast + snack + lunch + omega-3 + 3 afternoon snacks + dinner logged. Essential-5 pending, to be taken later today."
+  "status_note": "Day in progress. Slept 7.33h (23:15-06:35), within target. Full day of meals + dinner logged. Both allergy doses + essential-5 done. Zinc/selenium/vitamin C/D/E all cleared today's targets."
 }
