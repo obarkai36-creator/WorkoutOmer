@@ -16,6 +16,7 @@ block) — this file intentionally duplicates rather than imports it, since the
 two dashboards are meant to be able to diverge in layout independently.
 """
 import json
+import re
 import sys
 import glob
 import os
@@ -233,7 +234,8 @@ def aggregate_month(ym, profile, sperm_model, all_days, weight_entries, sleep_en
     sperm_best = sperm_in[sperm_overalls.index(max(sperm_overalls))] if sperm_overalls else None
     sperm_worst = sperm_in[sperm_overalls.index(min(sperm_overalls))] if sperm_overalls else None
 
-    prs = [w for w in workout_entries if in_range(w["date"], start, end) and "(pr" in (w.get("notes") or "").lower()]
+    new_pr_pat = re.compile(r"\bnew\s+prs?\b", re.IGNORECASE)
+    prs = [w for w in workout_entries if in_range(w["date"], start, end) and new_pr_pat.search(w.get("notes") or "")]
 
     training = run_training_stats(ym)
 
