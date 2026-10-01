@@ -19,6 +19,8 @@
     {"time": "09:15", "name": "Cherry tomatoes", "category": "food", "qty": "12 pieces", "kcal": 31.8, "protein_g": 1.64, "carbs_g": 7.04, "fat_g": 0.36, "fiber_g": 2.16, "note": "Same standard reference as prior entries. Credits ~5.28mg lycopene, ~26.4mg vitamin C, ~30.6mcg folate DFE."},
     {"time": "09:15", "name": "Honey", "category": "food", "qty": "0.5 tsp (~3.5 g)", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0.01, "note": "same generic reference as prior entries (honey_generic), tsp-to-gram assumed (~7g/tsp)."},
     {"time": "09:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "12:10", "name": "Lunch — salad (cherry tomatoes, cucumber, red onion, olive oil & lemon dressing)", "category": "food", "qty": "20 cherry tomatoes + 3 cucumbers (~900 g) + 0.5 red onion (~55 g), dressed with 0.5 tbsp olive oil + juice of 2 lemons", "kcal": 285.1, "protein_g": 9.4, "carbs_g": 53.4, "fat_g": 8.7, "fiber_g": 9.0, "note": "Each component at its standard saved per-unit reference (tomatoes ~2.65kcal/piece, cucumber ~45kcal/300g, red onion ~40kcal/100g). Olive oil halved from the usual 1-tbsp reference; lemon-juice-from-2-lemons reused at the same rate as the 2026-09-27 dressing. Credits ~8.8mg lycopene, ~71.1mg vitamin C, ~51mcg folate DFE, ~1.0mg vitamin E (olive oil)."},
+    {"time": "12:10", "name": "Cheese rolls, whole-spelt (leftover, from yesterday's batch)", "category": "food", "qty": "3.5 rolls (~315 g)", "kcal": 616, "protein_g": 39.9, "carbs_g": 81.2, "fat_g": 16.5, "fiber_g": 11.6, "note": "Leftovers from the 2026-09-30 dinner batch — same recipe reference (intake/recipes/spinach_free_cheese_rolls_spelt.json, 176kcal/11.4g protein/23.2g carbs/4.7g fat/3.3g fiber per roll). Credits ~5.25mg iron, ~371mg calcium, ~84mg choline, ~14mg vitamin C, ~77mcg folate DFE."},
     {"time": "13:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
     {"time": "15:30", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries. Correction: pushed from the originally-logged 09:00 to 15:30."}
   ],
@@ -26,12 +28,12 @@
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
     "selenium_mcg": 100,
-    "folate_mcg_dfe": 130.6,
+    "folate_mcg_dfe": 258.6,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1026.4,
+    "vitamin_c_mg": 1111.5,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 134,
-    "lycopene_mg": 5.28
+    "vitamin_e_mg": 135,
+    "lycopene_mg": 14.08
   },
   "assumptions": [
     "Sleep logged: 23:45-06:15, 6.5h — a bit short of the 7-9h target band.",
@@ -41,8 +43,9 @@
     "08:35 espresso, 1 shot (3 caffeine shots today).",
     "09:15 breakfast (correction — this replaces the originally-logged 09:00 yogurt entry, which was pushed to 15:30 instead): 150g cottage cheese (same generic reference as prior entries) + 12 cherry tomatoes (standard reference — credits ~5.28mg lycopene, ~26.4mg vitamin C, ~30.6mcg folate DFE) + 0.5 tsp honey (~3.5g, same generic reference).",
     "09:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "12:10 lunch: salad (20 cherry tomatoes, 3 cucumbers ~900g, 0.5 red onion ~55g, dressed with 0.5 tbsp olive oil + juice of 2 lemons — each component at its standard saved reference, olive oil halved vs. the usual 1-tbsp dressing, lemon-juice-from-2-lemons reused at the same rate as 2026-09-27's dressing; credits ~8.8mg lycopene, ~71.1mg vitamin C, ~51mcg folate DFE, ~1.0mg vitamin E) + 3.5 leftover whole-spelt cheese rolls from yesterday's batch (same recipe reference, spinach_free_cheese_rolls_spelt; credits ~5.25mg iron, ~371mg calcium, ~84mg choline, ~14mg vitamin C, ~77mcg folate DFE).",
     "13:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
     "15:30 vanilla Danone PRO protein yogurt (1 cup, 200g) — same line as prior entries; correction, pushed from 09:00."
   ],
-  "status_note": "Day in progress. Slept 6.5h (23:45-06:15), slightly under target. AM spray + pill + double espresso + Mayven + espresso + breakfast + omega-3 + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
+  "status_note": "Day in progress. Slept 6.5h (23:45-06:15), slightly under target. AM spray + pill + double espresso + Mayven + espresso + breakfast + omega-3 + lunch (salad + leftover cheese rolls) + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
 }
