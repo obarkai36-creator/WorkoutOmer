@@ -1,7 +1,8 @@
 {
   "date": "2026-10-01",
   "day_number": 96,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 4200,
   "sleep": {
     "sleep_start": "23:45",
     "sleep_end": "06:15",
@@ -34,7 +35,9 @@
     {"time": "19:30", "name": "Dinner — BBQ chicken (breast, chopped, thighs)", "category": "food", "qty": "300 g, mixed cuts, no per-cut weights given", "kcal": 561, "protein_g": 85.5, "carbs_g": 0, "fat_g": 21.7, "fiber_g": 0, "time_approx": true, "note": "Blended 50/50 average of the standard grilled chicken breast (~165kcal/100g, 31g protein, 3.6g fat) and thigh (~209kcal/100g, 26g protein, 10.9g fat) references, since no per-cut weight breakdown was given. Credits ~3.3mg zinc, ~57mcg selenium (blended rate)."},
     {"time": "19:30", "name": "Dinner — kebab (ground meat skewer)", "category": "food", "qty": "100 g", "kcal": 230, "protein_g": 27, "carbs_g": 0, "fat_g": 14, "fiber_g": 0, "time_approx": true, "note": "same standard blended red-meat kebab reference as prior entries (~230kcal/27p/14f per 100g). Credits ~4.5mg zinc, ~15mcg selenium."},
     {"time": "19:30", "name": "Dinner — chopped salad", "category": "food", "qty": "~200 g assumed (quantity not given)", "kcal": 70, "protein_g": 3, "carbs_g": 14, "fat_g": 0.6, "fiber_g": 4, "time_approx": true, "note": "quantity not stated — assumed a typical ~200g BBQ side portion at the standard buffet-style chopped mixed-vegetable salad rate (~0.35kcal/g), same reference as prior entries. Credits ~30mg vitamin C."},
-    {"time": "19:30", "name": "Dinner — egg salad in mayo", "category": "food", "qty": "1 spoon (~30 g)", "kcal": 69, "protein_g": 2.4, "carbs_g": 0.3, "fat_g": 6.3, "fiber_g": 0, "time_approx": true, "note": "same standard mashed-egg-and-mayo salad reference as prior entries (~230kcal/100g)."}
+    {"time": "19:30", "name": "Dinner — egg salad in mayo", "category": "food", "qty": "1 spoon (~30 g)", "kcal": 69, "protein_g": 2.4, "carbs_g": 0.3, "fat_g": 6.3, "fiber_g": 0, "time_approx": true, "note": "same standard mashed-egg-and-mayo salad reference as prior entries (~230kcal/100g)."},
+    {"time": "22:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "22:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 6,
   "micros_sperm_priority": {
@@ -64,7 +67,10 @@
     "16:30 espresso, 1 shot (6th caffeine shot today — flagged as high; user acknowledged).",
     "17:20 snack: 1 bite (~15g) chocolate chip cookie (new generic reference, not label-verified, first time logged — 'bite' assumed ~15g per the existing bite-sizing convention) + 1 slice (25g) Tnuva Emek Light yellow cheese 9% (verified label reference, half the usual 2-slice serving).",
     "17:50 1 cube (~5g) dark chocolate (new generic reference, not label-verified, first time logged — generic ~70% cacao values).",
-    "19:30 BBQ dinner (clock time not given, placeholder 19:30): 300g mixed chicken (breast/chopped/thighs, no per-cut weights — blended 50/50 breast+thigh reference, credits ~3.3mg zinc/~57mcg selenium) + 100g kebab (ground meat skewer, standard blended red-meat reference, credits ~4.5mg zinc/~15mcg selenium) + chopped salad (quantity not given, assumed ~200g typical BBQ side at the standard buffet-chopped-salad rate, credits ~30mg vitamin C) + 1 spoon (~30g) egg salad in mayo (standard reference). All flagged as estimates given the unweighed/unspecified portions."
+    "19:30 BBQ dinner (clock time not given, placeholder 19:30): 300g mixed chicken (breast/chopped/thighs, no per-cut weights — blended 50/50 breast+thigh reference, credits ~3.3mg zinc/~57mcg selenium) + 100g kebab (ground meat skewer, standard blended red-meat reference, credits ~4.5mg zinc/~15mcg selenium) + chopped salad (quantity not given, assumed ~200g typical BBQ side at the standard buffet-chopped-salad rate, credits ~30mg vitamin C) + 1 spoon (~30g) egg salad in mayo (standard reference). All flagged as estimates given the unweighed/unspecified portions.",
+    "22:00 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
+    "22:00 creatine monohydrate, 5g (standard dose).",
+    "EOD: 4,200 steps reported. Retainers: no entry volunteered tonight — last logged entry is 2026-09-29 (worn:true), so tonight and 09-30 make only 2 consecutive no-entry nights, not the 3-night flag threshold — no flag needed."
   ],
-  "status_note": "Day in progress. Slept 6.5h (23:45-06:15), slightly under target. Full day logged through a BBQ dinner (chicken + kebab + chopped salad + egg salad). Zinc/selenium/vitamin C/D/E all well past today's targets; caffeine at 6 shots (flagged, user acknowledged)."
+  "status_note": "Day complete. Slept 6.5h (23:45-06:15), slightly under target. Both allergy doses + omega-3 + essential-5 + creatine logged. BBQ dinner logged (chicken + kebab + chopped salad + egg salad, estimated portions). Zinc/selenium/vitamin C/D/E all well past today's targets; caffeine at 6 shots (flagged, user acknowledged). 4,200 steps."
 }
