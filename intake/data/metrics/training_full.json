@@ -1,5 +1,5 @@
 {
-  "now": 1790845785559,
+  "now": 1790850360556,
   "workouts": [
     {
       "datetime": "2026-09-29T15:00",
@@ -7381,8 +7381,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 36,
-      "readyInHours": 6.8,
+      "pct": 34,
+      "readyInHours": 5.5,
       "ready": false
     },
     "biceps": {
@@ -7405,7 +7405,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 16,
+      "pct": 15,
       "readyInHours": 0,
       "ready": true
     },
@@ -7499,15 +7499,15 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 36,
-      "readyInHours": 6.8,
+      "pct": 34,
+      "readyInHours": 5.5,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 36,
-          "readyInHours": 6.8,
+          "pct": 34,
+          "readyInHours": 5.5,
           "ready": false
         }
       ]
@@ -7521,7 +7521,7 @@
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 16,
+          "pct": 15,
           "readyInHours": 0,
           "ready": true
         },
@@ -8920,9 +8920,9 @@
     "fatigue": 4,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-01T09:09:45.559Z",
+    "readyAt": "2026-10-01T10:26:00.556Z",
     "neverLogged": false,
-    "daysSince": 11.9,
+    "daysSince": 12,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -9008,13 +9008,13 @@
         "section": "Back",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 11.9
+        "daysSince": 12
       },
       {
         "section": "Chest",
         "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 5.7
+        "daysSince": 5.8
       },
       {
         "section": "Legs",
@@ -9030,8 +9030,8 @@
       },
       {
         "section": "Shoulders",
-        "fatigue": 36,
-        "readyInHours": 6.8,
+        "fatigue": 34,
+        "readyInHours": 5.5,
         "daysSince": 1.8
       }
     ],
@@ -9040,7 +9040,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 3,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 2.6
+    "daysSinceAerobic": 2.7
   },
   "alerts": [
     {
@@ -9134,7 +9134,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 2.6,
+    "daysSinceLast": 2.7,
     "recent": [
       {
         "t": 1790620440000,
