@@ -628,6 +628,18 @@
       "fiber_g": 0.3,
       "verified": false,
       "source": "Generic typical bakery/store-bought chocolate chip cookie values (~480kcal/100g), first logged 2026-10-01. 'Bite' assumed ~15g, same convention as other bite-sized items (e.g. sweet pretzel bites). Not brand/label-verified -- refine if a specific product or full-cookie weight is given."
+    },
+    {
+      "id": "dark_chocolate_cube_generic",
+      "name": "Dark chocolate, generic (per cube/square)",
+      "serving": "1 cube (~5 g)",
+      "kcal": 30,
+      "protein_g": 0.39,
+      "carbs_g": 2.3,
+      "fat_g": 2.13,
+      "fiber_g": 0.55,
+      "verified": false,
+      "source": "Generic typical dark chocolate (~70% cacao) USDA-style values (~598kcal/100g, 7.8g protein, 45.9g carbs, 42.6g fat, 10.9g fiber per 100g), first logged 2026-10-01. 'Cube' assumed ~5g (one square of a standard bar). Not brand/label-verified -- refine if a specific product or cacao % is given."
     }
   ]
 }
