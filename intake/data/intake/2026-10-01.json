@@ -30,15 +30,19 @@
     {"time": "16:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "17:20", "name": "Chocolate chip cookie", "category": "food", "qty": "1 bite (~15 g)", "kcal": 72, "protein_g": 0.83, "carbs_g": 9.45, "fat_g": 3.6, "fiber_g": 0.3, "note": "new generic reference (chocolate_chip_cookie_bite_generic, not label-verified, first time logged) — generic bakery cookie values, 'bite' assumed ~15g same as other bite-sized items."},
     {"time": "17:20", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified label reference, same as prior entries."},
-    {"time": "17:50", "name": "Dark chocolate", "category": "food", "qty": "1 cube (~5 g)", "kcal": 30, "protein_g": 0.39, "carbs_g": 2.3, "fat_g": 2.13, "fiber_g": 0.55, "note": "new generic reference (dark_chocolate_cube_generic, not label-verified, first time logged) — generic ~70% cacao values, 'cube' assumed ~5g."}
+    {"time": "17:50", "name": "Dark chocolate", "category": "food", "qty": "1 cube (~5 g)", "kcal": 30, "protein_g": 0.39, "carbs_g": 2.3, "fat_g": 2.13, "fiber_g": 0.55, "note": "new generic reference (dark_chocolate_cube_generic, not label-verified, first time logged) — generic ~70% cacao values, 'cube' assumed ~5g."},
+    {"time": "19:30", "name": "Dinner — BBQ chicken (breast, chopped, thighs)", "category": "food", "qty": "300 g, mixed cuts, no per-cut weights given", "kcal": 561, "protein_g": 85.5, "carbs_g": 0, "fat_g": 21.7, "fiber_g": 0, "time_approx": true, "note": "Blended 50/50 average of the standard grilled chicken breast (~165kcal/100g, 31g protein, 3.6g fat) and thigh (~209kcal/100g, 26g protein, 10.9g fat) references, since no per-cut weight breakdown was given. Credits ~3.3mg zinc, ~57mcg selenium (blended rate)."},
+    {"time": "19:30", "name": "Dinner — kebab (ground meat skewer)", "category": "food", "qty": "100 g", "kcal": 230, "protein_g": 27, "carbs_g": 0, "fat_g": 14, "fiber_g": 0, "time_approx": true, "note": "same standard blended red-meat kebab reference as prior entries (~230kcal/27p/14f per 100g). Credits ~4.5mg zinc, ~15mcg selenium."},
+    {"time": "19:30", "name": "Dinner — chopped salad", "category": "food", "qty": "~200 g assumed (quantity not given)", "kcal": 70, "protein_g": 3, "carbs_g": 14, "fat_g": 0.6, "fiber_g": 4, "time_approx": true, "note": "quantity not stated — assumed a typical ~200g BBQ side portion at the standard buffet-style chopped mixed-vegetable salad rate (~0.35kcal/g), same reference as prior entries. Credits ~30mg vitamin C."},
+    {"time": "19:30", "name": "Dinner — egg salad in mayo", "category": "food", "qty": "1 spoon (~30 g)", "kcal": 69, "protein_g": 2.4, "carbs_g": 0.3, "fat_g": 6.3, "fiber_g": 0, "time_approx": true, "note": "same standard mashed-egg-and-mayo salad reference as prior entries (~230kcal/100g)."}
   ],
   "caffeine_shots": 6,
   "micros_sperm_priority": {
-    "zinc_mg": 22.8,
-    "selenium_mcg": 100,
+    "zinc_mg": 30.6,
+    "selenium_mcg": 172,
     "folate_mcg_dfe": 258.6,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1122.3,
+    "vitamin_c_mg": 1152.3,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 135,
     "lycopene_mg": 14.08
@@ -59,7 +63,8 @@
     "16:00 1 green apple (~180g, same generic reference as prior entries) — credits ~10.8mg vitamin C.",
     "16:30 espresso, 1 shot (6th caffeine shot today — flagged as high; user acknowledged).",
     "17:20 snack: 1 bite (~15g) chocolate chip cookie (new generic reference, not label-verified, first time logged — 'bite' assumed ~15g per the existing bite-sizing convention) + 1 slice (25g) Tnuva Emek Light yellow cheese 9% (verified label reference, half the usual 2-slice serving).",
-    "17:50 1 cube (~5g) dark chocolate (new generic reference, not label-verified, first time logged — generic ~70% cacao values)."
+    "17:50 1 cube (~5g) dark chocolate (new generic reference, not label-verified, first time logged — generic ~70% cacao values).",
+    "19:30 BBQ dinner (clock time not given, placeholder 19:30): 300g mixed chicken (breast/chopped/thighs, no per-cut weights — blended 50/50 breast+thigh reference, credits ~3.3mg zinc/~57mcg selenium) + 100g kebab (ground meat skewer, standard blended red-meat reference, credits ~4.5mg zinc/~15mcg selenium) + chopped salad (quantity not given, assumed ~200g typical BBQ side at the standard buffet-chopped-salad rate, credits ~30mg vitamin C) + 1 spoon (~30g) egg salad in mayo (standard reference). All flagged as estimates given the unweighed/unspecified portions."
   ],
-  "status_note": "Day in progress. Slept 6.5h (23:45-06:15), slightly under target. AM spray + pill + double espresso + Mayven + espresso + breakfast + omega-3 + lunch (salad + leftover cheese rolls) + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
+  "status_note": "Day in progress. Slept 6.5h (23:45-06:15), slightly under target. Full day logged through a BBQ dinner (chicken + kebab + chopped salad + egg salad). Zinc/selenium/vitamin C/D/E all well past today's targets; caffeine at 6 shots (flagged, user acknowledged)."
 }
