@@ -1,5 +1,5 @@
 {
-  "now": 1790833172011,
+  "now": 1790835689905,
   "workouts": [
     {
       "datetime": "2026-09-29T15:00",
@@ -7365,7 +7365,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "ready": true
     },
@@ -7381,8 +7381,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 39,
-      "readyInHours": 10.3,
+      "pct": 38,
+      "readyInHours": 9.6,
       "ready": false
     },
     "biceps": {
@@ -7461,7 +7461,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     }
@@ -7469,14 +7469,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 11,
+          "pct": 10,
           "readyInHours": 0,
           "ready": true
         }
@@ -7499,15 +7499,15 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 39,
-      "readyInHours": 10.3,
+      "pct": 38,
+      "readyInHours": 9.6,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 39,
-          "readyInHours": 10.3,
+          "pct": 38,
+          "readyInHours": 9.6,
           "ready": false
         }
       ]
@@ -7607,14 +7607,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         }
@@ -8898,14 +8898,14 @@
       },
       {
         "label": "-1w",
-        "stress": 267,
-        "sessions": 3,
+        "stress": 296,
+        "sessions": 4,
         "acwr": 0.54
       },
       {
         "label": "This wk",
-        "stress": 760,
-        "sessions": 5,
+        "stress": 731,
+        "sessions": 4,
         "acwr": 0.82
       }
     ],
@@ -8920,7 +8920,7 @@
     "fatigue": 4,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-01T05:39:32.011Z",
+    "readyAt": "2026-10-01T06:21:29.905Z",
     "neverLogged": false,
     "daysSince": 11.8,
     "suggestedExercises": [
@@ -9012,7 +9012,7 @@
       },
       {
         "section": "Chest",
-        "fatigue": 11,
+        "fatigue": 10,
         "readyInHours": 0,
         "daysSince": 5.6
       },
@@ -9030,15 +9030,15 @@
       },
       {
         "section": "Shoulders",
-        "fatigue": 39,
-        "readyInHours": 10.3,
+        "fatigue": 38,
+        "readyInHours": 9.6,
         "daysSince": 1.6
       }
     ],
     "suggestedCount": 5,
     "totalAvailable": 7,
     "typicalSessionSize": 5,
-    "aerobicLast7": 4,
+    "aerobicLast7": 3,
     "aerobicTarget": 2,
     "daysSinceAerobic": 2.5
   },
@@ -9118,7 +9118,7 @@
   "aerobic": {
     "any": true,
     "count": 37,
-    "km7": 12.5,
+    "km7": 9.5,
     "km28": 23.9,
     "totalKm": 147.6,
     "longest": 13.35,

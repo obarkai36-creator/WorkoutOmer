@@ -15,18 +15,21 @@
     {"time": "07:05", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:15", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "08:35", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
-    {"time": "09:00", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."}
+    {"time": "09:15", "name": "Cottage cheese", "category": "food", "qty": "150 g", "kcal": 147, "protein_g": 16.5, "carbs_g": 5.1, "fat_g": 6.45, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, not label-verified)."},
+    {"time": "09:15", "name": "Cherry tomatoes", "category": "food", "qty": "12 pieces", "kcal": 31.8, "protein_g": 1.64, "carbs_g": 7.04, "fat_g": 0.36, "fiber_g": 2.16, "note": "Same standard reference as prior entries. Credits ~5.28mg lycopene, ~26.4mg vitamin C, ~30.6mcg folate DFE."},
+    {"time": "09:15", "name": "Honey", "category": "food", "qty": "0.5 tsp (~3.5 g)", "kcal": 10.64, "protein_g": 0.01, "carbs_g": 2.88, "fat_g": 0, "fiber_g": 0.01, "note": "same generic reference as prior entries (honey_generic), tsp-to-gram assumed (~7g/tsp)."},
+    {"time": "15:30", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries. Correction: pushed from the originally-logged 09:00 to 15:30."}
   ],
   "caffeine_shots": 3,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 130.6,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 26.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 5.28
   },
   "assumptions": [
     "Sleep logged: 23:45-06:15, 6.5h — a bit short of the 7-9h target band.",
@@ -34,7 +37,8 @@
     "07:05 double espresso, 1 double (2 caffeine shots today).",
     "07:15 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "08:35 espresso, 1 shot (3 caffeine shots today).",
-    "09:00 vanilla Danone PRO protein yogurt (1 cup, 200g) — same line as prior entries."
+    "09:15 breakfast (correction — this replaces the originally-logged 09:00 yogurt entry, which was pushed to 15:30 instead): 150g cottage cheese (same generic reference as prior entries) + 12 cherry tomatoes (standard reference — credits ~5.28mg lycopene, ~26.4mg vitamin C, ~30.6mcg folate DFE) + 0.5 tsp honey (~3.5g, same generic reference).",
+    "15:30 vanilla Danone PRO protein yogurt (1 cup, 200g) — same line as prior entries; correction, pushed from 09:00."
   ],
-  "status_note": "Day in progress. Slept 6.5h (23:45-06:15), slightly under target. AM spray + pill + double espresso + Mayven + espresso + breakfast logged."
+  "status_note": "Day in progress. Slept 6.5h (23:45-06:15), slightly under target. AM spray + pill + double espresso + Mayven + espresso + breakfast (cottage cheese/tomatoes/honey) logged; yogurt moved to 15:30."
 }
