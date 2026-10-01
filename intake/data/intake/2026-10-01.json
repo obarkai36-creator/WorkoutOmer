@@ -27,7 +27,9 @@
     {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:30", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries. Correction: pushed from the originally-logged 09:00 to 15:30."},
     {"time": "16:00", "name": "Green apple", "category": "food", "qty": "1 apple (~180 g)", "kcal": 93.6, "protein_g": 0.47, "carbs_g": 24.84, "fat_g": 0.3, "fiber_g": 4.32, "note": "same generic reference as prior entries (green_apple_generic). Credits ~10.8mg vitamin C."},
-    {"time": "16:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "17:20", "name": "Chocolate chip cookie", "category": "food", "qty": "1 bite (~15 g)", "kcal": 72, "protein_g": 0.83, "carbs_g": 9.45, "fat_g": 3.6, "fiber_g": 0.3, "note": "new generic reference (chocolate_chip_cookie_bite_generic, not label-verified, first time logged) — generic bakery cookie values, 'bite' assumed ~15g same as other bite-sized items."},
+    {"time": "17:20", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified label reference, same as prior entries."}
   ],
   "caffeine_shots": 6,
   "micros_sperm_priority": {
@@ -54,7 +56,8 @@
     "14:30 espresso, 1 shot (5th caffeine shot today).",
     "15:30 vanilla Danone PRO protein yogurt (1 cup, 200g) — same line as prior entries; correction, pushed from 09:00.",
     "16:00 1 green apple (~180g, same generic reference as prior entries) — credits ~10.8mg vitamin C.",
-    "16:30 espresso, 1 shot (6th caffeine shot today — flagged as high; user acknowledged)."
+    "16:30 espresso, 1 shot (6th caffeine shot today — flagged as high; user acknowledged).",
+    "17:20 snack: 1 bite (~15g) chocolate chip cookie (new generic reference, not label-verified, first time logged — 'bite' assumed ~15g per the existing bite-sizing convention) + 1 slice (25g) Tnuva Emek Light yellow cheese 9% (verified label reference, half the usual 2-slice serving)."
   ],
   "status_note": "Day in progress. Slept 6.5h (23:45-06:15), slightly under target. AM spray + pill + double espresso + Mayven + espresso + breakfast + omega-3 + lunch (salad + leftover cheese rolls) + essential-5 logged. Zinc/selenium/vitamin C/D/E all cleared today's targets."
 }

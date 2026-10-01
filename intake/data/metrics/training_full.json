@@ -1,5 +1,5 @@
 {
-  "now": 1790861409882,
+  "now": 1790864584603,
   "workouts": [
     {
       "datetime": "2026-09-29T15:00",
@@ -7381,8 +7381,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 32,
-      "readyInHours": 2.4,
+      "pct": 31,
+      "readyInHours": 1.6,
       "ready": false
     },
     "biceps": {
@@ -7405,7 +7405,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -7499,15 +7499,15 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 32,
-      "readyInHours": 2.4,
+      "pct": 31,
+      "readyInHours": 1.6,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 32,
-          "readyInHours": 2.4,
+          "pct": 31,
+          "readyInHours": 1.6,
           "ready": false
         }
       ]
@@ -7521,7 +7521,7 @@
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -8920,7 +8920,7 @@
     "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-01T13:30:09.882Z",
+    "readyAt": "2026-10-01T14:23:04.603Z",
     "neverLogged": false,
     "daysSince": 12.1,
     "suggestedExercises": [
@@ -9020,19 +9020,19 @@
         "section": "Legs",
         "fatigue": 6,
         "readyInHours": 0,
-        "daysSince": 5.1
+        "daysSince": 5.2
       },
       {
         "section": "Arms",
         "fatigue": 6,
         "readyInHours": 0,
-        "daysSince": 1.9
+        "daysSince": 2
       },
       {
         "section": "Shoulders",
-        "fatigue": 32,
-        "readyInHours": 2.4,
-        "daysSince": 1.9
+        "fatigue": 31,
+        "readyInHours": 1.6,
+        "daysSince": 2
       }
     ],
     "suggestedCount": 5,
@@ -9067,7 +9067,7 @@
       16,
       16
     ],
-    "daysSinceLast": 1.9,
+    "daysSinceLast": 2,
     "total": 72
   },
   "relstrength": {

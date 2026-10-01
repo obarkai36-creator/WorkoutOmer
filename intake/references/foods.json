@@ -616,6 +616,18 @@
       "fiber_g": 0.08,
       "verified": false,
       "source": "Generic typical-value estimate for a Strauss Click chocolate-coated wafer biscuit (~520kcal/100g), first logged 2026-09-30. Corrected same-day: a single piece is ~5g (not a ~26g full bar as first assumed) -- user confirmed the actual unit size. Not label-verified -- refine if the actual wrapper label is checked."
+    },
+    {
+      "id": "chocolate_chip_cookie_bite_generic",
+      "name": "Chocolate chip cookie, generic (per bite)",
+      "serving": "1 bite (~15 g)",
+      "kcal": 72,
+      "protein_g": 0.83,
+      "carbs_g": 9.45,
+      "fat_g": 3.6,
+      "fiber_g": 0.3,
+      "verified": false,
+      "source": "Generic typical bakery/store-bought chocolate chip cookie values (~480kcal/100g), first logged 2026-10-01. 'Bite' assumed ~15g, same convention as other bite-sized items (e.g. sweet pretzel bites). Not brand/label-verified -- refine if a specific product or full-cookie weight is given."
     }
   ]
 }
