@@ -1,5 +1,5 @@
 {
-  "now": 1790881314998,
+  "now": 1790883696486,
   "workouts": [
     {
       "datetime": "2026-09-29T15:00",
@@ -7381,7 +7381,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 28,
+      "pct": 27,
       "readyInHours": 0,
       "ready": true
     },
@@ -7413,7 +7413,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 10,
+      "pct": 9,
       "readyInHours": 0,
       "ready": true
     },
@@ -7499,14 +7499,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 28,
+      "pct": 27,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 28,
+          "pct": 27,
           "readyInHours": 0,
           "ready": true
         }
@@ -7549,18 +7549,18 @@
       "readyInHours": 0,
       "muscles": [
         {
-          "key": "quads",
-          "label": "Quads",
+          "key": "hamstrings",
+          "label": "Hamstrings",
           "section": "Legs",
           "pct": 10,
           "readyInHours": 0,
           "ready": true
         },
         {
-          "key": "hamstrings",
-          "label": "Hamstrings",
+          "key": "quads",
+          "label": "Quads",
           "section": "Legs",
-          "pct": 10,
+          "pct": 9,
           "readyInHours": 0,
           "ready": true
         },
@@ -8920,7 +8920,7 @@
     "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-01T19:01:54.998Z",
+    "readyAt": "2026-10-01T19:41:36.486Z",
     "neverLogged": false,
     "daysSince": 12.3,
     "suggestedExercises": [
@@ -9014,7 +9014,7 @@
         "section": "Chest",
         "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 6.1
+        "daysSince": 6.2
       },
       {
         "section": "Legs",
@@ -9030,7 +9030,7 @@
       },
       {
         "section": "Shoulders",
-        "fatigue": 28,
+        "fatigue": 27,
         "readyInHours": 0,
         "daysSince": 2.2
       }
