@@ -613,13 +613,41 @@
   this URL is unauthenticated/unlisted — anyone with the link can view it,
   per the user's explicit choice). Remind the user to do this if they ask
   why the link doesn't work yet.
-- Monthly recap (automated 2026-07-31): a Routine ("Monthly recap generator",
-  trigger trig_01Gxt8g3RG6GfePJ2ZbTTCMr) fires on the 1st of every month,
-  generates the previous month's intake/dashboards/monthly/<YYYY-MM>.html via
-  generate_monthly_recap.py, commits/pushes it, and sends it to the user
-  automatically. Don't generate it manually anymore unless the user asks for
-  an ad-hoc recap or the automated run visibly failed/was skipped — check
-  `list_triggers`/recent commits first rather than assuming it didn't run.
+- Monthly recap — SWITCHED TO MANUAL (2026-10-01, per explicit user request,
+  superseding the 2026-07-31 automation below): the "Monthly recap
+  generator" Routine (trigger trig_01Gxt8g3RG6GfePJ2ZbTTCMr, cron `0 7 1 *
+  *`) is now **disabled** (`update_trigger enabled:false`, confirmed
+  2026-10-01) because its automated runs weren't trustworthy — the
+  2026-10-01 run reported `ROUTINE_RUN_STATUS_SUCCEEDED` at the routine
+  level, but its child session only staged the file and never actually
+  committed/pushed it (caught by checking `git status` directly, not by
+  trusting the routine's own success report). Going forward, run the
+  monthly recap manually instead: on/after the 1st of the month (or
+  whenever asked), `cd intake/ && python3 generate_monthly_recap.py
+  <YYYY-MM>` for the previous month, check `git status --short` in the
+  repo root to confirm the file actually changed, then commit+push+
+  SendUserFile it myself — don't re-enable or rely on the Routine firing
+  this on its own. (Original 2026-07-31 automation, now superseded: fired
+  on the 1st of every month, generated the file, committed/pushed it, and
+  sent it automatically — this is what's now replaced by the manual flow
+  above.)
+- Standing rule (added 2026-10-01, per explicit user request — "remember to
+  always pull all the information (shouldn't be hard, everything is
+  available) and get real info", prompted by the monthly-recap PR-count bug
+  below): whenever generating any report/recap/summary stat (monthly recap,
+  dashboard, ad-hoc stat the user asks for), always compute it from the
+  real underlying source data (the actual `data.js`/`workouts.json`
+  entries, intake files, etc.) rather than trusting a persisted/cached
+  figure or a narrow/literal filter that might silently miss or
+  misattribute data — the data needed is essentially always already
+  available in this repo, so there's no excuse for a stat to be
+  approximate or stale. This was prompted by catching
+  `generate_monthly_recap.py`'s PR-count bug (a literal `"(pr"` substring
+  check that both missed real "new PR" mentions and false-positived on
+  "(Precor console)", reporting September's PR count as 2 instead of the
+  real 7) after the user challenged the number as implausibly low — verify
+  a surprising/round/too-clean-looking aggregate against the raw source
+  data before reporting it, not just at the user's request after the fact.
 - Standing permission (given 2026-07-27): proactively suggest full-body
   deload sessions when training-load signals call for it (e.g. repeated ACWR
   alerts >1.5 with no deload taken), and proactively make intake-based
