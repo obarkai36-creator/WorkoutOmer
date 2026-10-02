@@ -33,18 +33,26 @@
     {"time": "15:45", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (catalina_crunch_choc_pb_cereal): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. \"Handful\" estimated at ~20g, consistent with prior handful-size logs."},
     {"time": "16:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "17:00", "name": "Green grapes", "category": "food", "qty": "10 grapes (~50 g)", "kcal": 34.5, "protein_g": 0.36, "carbs_g": 9.05, "fat_g": 0.08, "fiber_g": 0.45, "note": "same generic reference (green_grapes_generic, ~69kcal/100g). Credits ~5.4mg vitamin C."},
-    {"time": "17:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
+    {"time": "17:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "20:15", "name": "Dinner — chicken thighs", "category": "food", "qty": "150 g", "kcal": 313.5, "protein_g": 39, "carbs_g": 0, "fat_g": 16.3, "fiber_g": 0, "note": "standard grilled boneless/skinless chicken thigh reference (~209kcal/100g). Credits ~1.95mg zinc, ~21mcg selenium."},
+    {"time": "20:15", "name": "Dinner — chicken sausage (chopped breast)", "category": "food", "qty": "50 g", "kcal": 82.7, "protein_g": 15.5, "carbs_g": 0, "fat_g": 1.8, "fiber_g": 0, "note": "read as breast-based chicken sausage (chopped breast meat) — used the standard plain grilled chicken breast reference (~165kcal/100g) as the closest match, flagged as an assumption since the exact product isn't known. Credits ~0.45mg zinc, ~12mcg selenium."},
+    {"time": "20:15", "name": "Dinner — kebab (ground meat skewer)", "category": "food", "qty": "100 g", "kcal": 230, "protein_g": 27, "carbs_g": 0, "fat_g": 14, "fiber_g": 0, "note": "same standard blended red-meat kebab reference as prior entries (~230kcal/27p/14f per 100g). Credits ~4.5mg zinc, ~15mcg selenium."},
+    {"time": "20:15", "name": "Dinner — tahini", "category": "food", "qty": "1 spoon (~15 g)", "kcal": 89.3, "protein_g": 2.6, "carbs_g": 3.2, "fat_g": 8.1, "fiber_g": 1.4, "note": "generic sesame tahini paste reference (~595kcal/100g), first time logged plain (prior entries used it mixed into other dishes). Credits ~0.7mg zinc."},
+    {"time": "20:15", "name": "Dinner — egg salad in mayo", "category": "food", "qty": "1 spoon (~30 g)", "kcal": 69, "protein_g": 2.4, "carbs_g": 0.3, "fat_g": 6.3, "fiber_g": 0, "note": "same standard mashed-egg-and-mayo salad reference as prior entries (~230kcal/100g)."},
+    {"time": "20:15", "name": "Dinner — mayo salad (potato, carrot, pickles)", "category": "food", "qty": "2 spoons (~60 g)", "kcal": 90, "protein_g": 0.9, "carbs_g": 7.2, "fat_g": 6, "fiber_g": 0.9, "note": "new generic reference (potato_carrot_pickle_mayo_salad_generic, ~150kcal/100g, Russian/Olivier-style), not label-verified, first time logged this specific type."},
+    {"time": "20:15", "name": "Dinner — sea bream", "category": "food", "qty": "40 g", "kcal": 58, "protein_g": 9.6, "carbs_g": 0, "fat_g": 2, "fiber_g": 0, "note": "same generic reference as prior entries (sea_bream_baked_generic, 145kcal/24p/5f per 100g). Credits ~0.25mg zinc, ~18mcg selenium, ~120mg omega-3 EPA/DHA, ~120 IU vitamin D."},
+    {"time": "20:15", "name": "Dinner — matbucha", "category": "food", "qty": "1 spoon (~20 g)", "kcal": 30, "protein_g": 0.5, "carbs_g": 3, "fat_g": 2, "fiber_g": 0.7, "note": "same per-spoon rate as prior matbucha entries (cooked tomato-pepper relish in olive oil)."}
   ],
   "caffeine_shots": 6,
   "workout_today": true,
   "workout_summary": "Outdoor Run — Or Akiva, Haifa District (14:52-15:27, Nike Run Club) — 2.91km in 35:06 (12:02/km avg pace), 161 kcal, 18m elevation gain, cadence 120. No heart-rate monitor worn.",
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 10.65,
+    "selenium_mcg": 66,
     "folate_mcg_dfe": 151,
-    "omega3_epa_dha_mg": 1000,
+    "omega3_epa_dha_mg": 1120,
     "vitamin_c_mg": 54.4,
-    "vitamin_d_iu": 0,
+    "vitamin_d_iu": 120,
     "vitamin_e_mg": 0,
     "lycopene_mg": 8.8
   },
@@ -63,7 +71,8 @@
     "15:45 partnered ejaculation.",
     "16:00 creatine monohydrate, 5g (standard dose).",
     "17:00 10 green grapes (~50g, same generic reference as prior entries) — credits ~5.4mg vitamin C.",
-    "17:30 espresso, 1 shot (6 caffeine shots today)."
+    "17:30 espresso, 1 shot (6 caffeine shots today).",
+    "20:15 dinner: 150g chicken thighs (standard reference, credits ~1.95mg zinc/~21mcg selenium) + 50g chicken sausage (read as chopped breast meat, used plain breast reference, flagged assumption) + 100g kebab (standard blended red-meat reference, credits ~4.5mg zinc/~15mcg selenium) + 1 spoon tahini (~15g, generic reference, credits ~0.7mg zinc) + 1 spoon egg salad in mayo + 2 spoons mayo salad (potato/carrot/pickle, new generic reference) + 40g sea bream (standard reference, credits ~0.25mg zinc/~18mcg selenium/~120mg omega-3/~120IU vitamin D) + 1 spoon matbucha (standard per-spoon rate)."
   ],
-  "status_note": "Day in progress. Slept 7.33h (00:10-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast + lunch spread (incl. 150ml beer) + omega-3 logged. Outdoor Run (2.91km, 35:06) + post-run yogurt/cereal + creatine logged. Partnered ejaculation (15:45)."
+  "status_note": "Day in progress. Slept 7.33h (00:10-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast + lunch spread (incl. 150ml beer) + omega-3 logged. Outdoor Run (2.91km, 35:06) + post-run yogurt/cereal + creatine logged. Partnered ejaculation (15:45). Dinner logged (chicken thighs, chicken sausage, kebab, tahini, egg salad, mayo salad, sea bream, matbucha)."
 }
