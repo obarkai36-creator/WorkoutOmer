@@ -1,7 +1,8 @@
 {
   "date": "2026-10-02",
   "day_number": 97,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 8000,
   "sleep": {
     "sleep_start": "00:10",
     "sleep_end": "07:30",
@@ -41,19 +42,21 @@
     {"time": "20:15", "name": "Dinner — egg salad in mayo", "category": "food", "qty": "1 spoon (~30 g)", "kcal": 69, "protein_g": 2.4, "carbs_g": 0.3, "fat_g": 6.3, "fiber_g": 0, "note": "same standard mashed-egg-and-mayo salad reference as prior entries (~230kcal/100g)."},
     {"time": "20:15", "name": "Dinner — mayo salad (potato, carrot, pickles)", "category": "food", "qty": "2 spoons (~60 g)", "kcal": 90, "protein_g": 0.9, "carbs_g": 7.2, "fat_g": 6, "fiber_g": 0.9, "note": "new generic reference (potato_carrot_pickle_mayo_salad_generic, ~150kcal/100g, Russian/Olivier-style), not label-verified, first time logged this specific type."},
     {"time": "20:15", "name": "Dinner — sea bream", "category": "food", "qty": "40 g", "kcal": 58, "protein_g": 9.6, "carbs_g": 0, "fat_g": 2, "fiber_g": 0, "note": "same generic reference as prior entries (sea_bream_baked_generic, 145kcal/24p/5f per 100g). Credits ~0.25mg zinc, ~18mcg selenium, ~120mg omega-3 EPA/DHA, ~120 IU vitamin D."},
-    {"time": "20:15", "name": "Dinner — matbucha", "category": "food", "qty": "1 spoon (~20 g)", "kcal": 30, "protein_g": 0.5, "carbs_g": 3, "fat_g": 2, "fiber_g": 0.7, "note": "same per-spoon rate as prior matbucha entries (cooked tomato-pepper relish in olive oil)."}
+    {"time": "20:15", "name": "Dinner — matbucha", "category": "food", "qty": "1 spoon (~20 g)", "kcal": 30, "protein_g": 0.5, "carbs_g": 3, "fat_g": 2, "fiber_g": 0.7, "note": "same per-spoon rate as prior matbucha entries (cooked tomato-pepper relish in olive oil)."},
+    {"time": "22:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "22:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "caffeine_shots": 6,
   "workout_today": true,
   "workout_summary": "Outdoor Run — Or Akiva, Haifa District (14:52-15:27, Nike Run Club) — 2.91km in 35:06 (12:02/km avg pace), 161 kcal, 18m elevation gain, cadence 120. No heart-rate monitor worn.",
   "micros_sperm_priority": {
-    "zinc_mg": 10.65,
-    "selenium_mcg": 66,
+    "zinc_mg": 30.65,
+    "selenium_mcg": 166,
     "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 1120,
-    "vitamin_c_mg": 54.4,
-    "vitamin_d_iu": 120,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1054.4,
+    "vitamin_d_iu": 2120,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 8.8
   },
   "assumptions": [
@@ -72,7 +75,10 @@
     "16:00 creatine monohydrate, 5g (standard dose).",
     "17:00 10 green grapes (~50g, same generic reference as prior entries) — credits ~5.4mg vitamin C.",
     "17:30 espresso, 1 shot (6 caffeine shots today).",
-    "20:15 dinner: 150g chicken thighs (standard reference, credits ~1.95mg zinc/~21mcg selenium) + 50g chicken sausage (read as chopped breast meat, used plain breast reference, flagged assumption) + 100g kebab (standard blended red-meat reference, credits ~4.5mg zinc/~15mcg selenium) + 1 spoon tahini (~15g, generic reference, credits ~0.7mg zinc) + 1 spoon egg salad in mayo + 2 spoons mayo salad (potato/carrot/pickle, new generic reference) + 40g sea bream (standard reference, credits ~0.25mg zinc/~18mcg selenium/~120mg omega-3/~120IU vitamin D) + 1 spoon matbucha (standard per-spoon rate)."
+    "20:15 dinner: 150g chicken thighs (standard reference, credits ~1.95mg zinc/~21mcg selenium) + 50g chicken sausage (read as chopped breast meat, used plain breast reference, flagged assumption) + 100g kebab (standard blended red-meat reference, credits ~4.5mg zinc/~15mcg selenium) + 1 spoon tahini (~15g, generic reference, credits ~0.7mg zinc) + 1 spoon egg salad in mayo + 2 spoons mayo salad (potato/carrot/pickle, new generic reference) + 40g sea bream (standard reference, credits ~0.25mg zinc/~18mcg selenium/~120mg omega-3/~120IU vitamin D) + 1 spoon matbucha (standard per-spoon rate).",
+    "22:00 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
+    "22:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
+    "EOD: 8,000 steps reported (includes today's 2.91km Outdoor Run). Retainers: worn tonight (volunteered) — logged to retainers.json; no entries for 09-30 or 10-01 in between, but tonight's worn:true breaks any consecutive-skip run regardless — no flag needed."
   ],
-  "status_note": "Day in progress. Slept 7.33h (00:10-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast + lunch spread (incl. 150ml beer) + omega-3 logged. Outdoor Run (2.91km, 35:06) + post-run yogurt/cereal + creatine logged. Partnered ejaculation (15:45). Dinner logged (chicken thighs, chicken sausage, kebab, tahini, egg salad, mayo salad, sea bream, matbucha)."
+  "status_note": "Day complete. Slept 7.33h (00:10-07:30), within target. Both allergy doses + omega-3 + essential-5 + creatine logged. Outdoor Run (2.91km, 35:06) + full day of meals (incl. 150ml beer) + dinner logged. Zinc/selenium/vitamin C/D/E all well past today's targets. Partnered ejaculation (15:45). 8,000 steps. Retainers worn tonight."
 }
