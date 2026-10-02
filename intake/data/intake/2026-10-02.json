@@ -14,25 +14,37 @@
     {"time": "07:40", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "07:45", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:50", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
-    {"time": "09:00", "name": "Cottage cheese, 5% fat", "category": "food", "qty": "125 g", "kcal": 122.5, "protein_g": 13.75, "carbs_g": 4.25, "fat_g": 5.4, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, ~4-5% fat, not label-verified)."}
+    {"time": "09:00", "name": "Cottage cheese, 5% fat", "category": "food", "qty": "125 g", "kcal": 122.5, "protein_g": 13.75, "carbs_g": 4.25, "fat_g": 5.4, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, ~4-5% fat, not label-verified)."},
+    {"time": "12:45", "name": "Beer", "category": "drink", "qty": "150 ml", "kcal": 57, "protein_g": 0.5, "carbs_g": 3.9, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "type unspecified, generic lager reference (~0.378kcal/ml), same rate as prior beer entries. ~0.6 standard alcohol units."},
+    {"time": "12:45", "name": "Agami PRO pita (whole spelt, protein-enriched)", "category": "food", "qty": "2 units (68 g each, 136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "time_approx": true, "note": "verified reference, reused (140kcal/68g each)."},
+    {"time": "12:45", "name": "Simfonia cheese spread", "category": "food", "qty": "40 g", "kcal": 43.2, "protein_g": 3.92, "carbs_g": 1.84, "fat_g": 2.0, "fiber_g": 0, "time_approx": true, "note": "verified label reference (simfonia_cheese_spread_generic). Credits ~9.6mg cholesterol, ~150mg sodium, ~52mg calcium (not tracked in micros_sperm_priority)."},
+    {"time": "12:45", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "verified label reference, same as prior entries."},
+    {"time": "12:45", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "time_approx": true, "note": "Same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "12:45", "name": "Cucumber", "category": "food", "qty": "1 cucumber (~300 g)", "kcal": 45, "protein_g": 1.95, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "time_approx": true, "note": "standard whole-cucumber assumption."},
+    {"time": "12:45", "name": "Baby mozzarella (Gad brand)", "category": "food", "qty": "30 g", "kcal": 84, "protein_g": 6.6, "carbs_g": 0.6, "fat_g": 6.6, "fiber_g": 0, "time_approx": true, "note": "same generic fresh-mozzarella reference as prior entries (baby_mozzarella_generic)."},
+    {"time": "12:45", "name": "Balsamic vinegar (drizzle)", "category": "food", "qty": "~10 g assumed", "kcal": 8.8, "protein_g": 0.05, "carbs_g": 1.7, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "same generic reference as prior entries (balsamic_vinegar_generic), \"drizzle\" assumed at the usual ~10g rate."},
+    {"time": "12:45", "name": "Lemon juice (drizzle)", "category": "food", "qty": "~15 g assumed", "kcal": 3, "protein_g": 0.1, "carbs_g": 1, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "quantity not given, assumed standard ~1 tbsp (15ml) reference. Credits ~5mg vitamin C."},
+    {"time": "12:45", "name": "Ice cream", "category": "food", "qty": "2 bites (~30 g)", "kcal": 64, "protein_g": 1.3, "carbs_g": 7.7, "fat_g": 3.4, "fiber_g": 0.2, "time_approx": true, "note": "no brand given, generic vanilla-style ice cream reference (~214kcal/100g, same rate as prior scoop entries). \"Bite\" assumed ~15g each."},
+    {"time": "12:45", "name": "Click (קליק) chocolate wafer biscuit", "category": "food", "qty": "1 unit (~5 g)", "kcal": 26, "protein_g": 0.3, "carbs_g": 2.85, "fat_g": 1.44, "fiber_g": 0.08, "time_approx": true, "note": "same generic reference as prior entries (click_biscuit_generic)."}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 49,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 8.8
   },
   "assumptions": [
     "Sleep logged: 00:10-07:30, 7.33h (night of 2026-10-01) — within the 7-9h target band, despite a late past-midnight start.",
     "07:40 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "07:45 double espresso, 1 double (2 caffeine shots today).",
     "07:50 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
-    "09:00 125g cottage cheese, 5% fat (same generic reference as prior entries)."
+    "09:00 125g cottage cheese, 5% fat (same generic reference as prior entries).",
+    "Until 12:45 — snack/lunch spread (individual item times not given, logged at 12:45): 150ml beer (~0.6 units, generic lager reference) + 2 Agami PRO pitas (verified reference) + 40g Simfonia cheese spread (verified label reference) + 4 slices Tnuva Emek Light yellow cheese 9% (100g) + 20 cherry tomatoes (credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 1 cucumber (~300g) + 30g baby mozzarella (Gad) + a balsamic drizzle (~10g assumed) + a lemon juice drizzle (~15g assumed, credits ~5mg vitamin C) + 2 bites ice cream (no brand given, generic reference) + 1 bite/unit (~5g) Click biscuit (same generic reference as prior entries). Alcohol event logged to lifestyle.json — 8-day gap since the last one (2026-09-24), comfortably within baseline."
   ],
-  "status_note": "Day in progress. Slept 7.33h (00:10-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast logged."
+  "status_note": "Day in progress. Slept 7.33h (00:10-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast + lunch spread (incl. 150ml beer) logged."
 }
