@@ -299,6 +299,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 2 Oct — Outdoor Run, Or Akiva (14:52-15:27)
+  {
+    datetime: "2026-10-02T14:52", note: "Outdoor Run — Or Akiva, Haifa District (14:52-15:27, Nike Run Club) — 2.91km in 35:06 (12:02/km avg pace), 161 kcal, 18m elevation gain, cadence 120. No heart-rate monitor worn.",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 2.91, durationMin: 35.1, cadence: 120, elevationGainM: 18 },
+    ],
+  },
   // 29 Sep — Shoulders (15:00)
   {
     datetime: "2026-09-29T15:00", note: "Shoulders day (15:00) — Farmer's Hold 24kg each×4×35s (ties best exactly). Front Raises 18kg×4×9, as suggested (new PR — est. 1RM 23.4 vs 22.8 prior best at 18kg×4×8). Lateral Raises 16kg each×4×9 (ties best exactly). Rear Delt Machine 73kg×3×10, as suggested (new PR — est. 1RM 97.3 vs 94.9 prior best at 73kg×3×9). Dumbbell Shoulder Press 20kg each×3×9 — matches the 20kg×9 best set exactly, but with all 3 sets landing 9 reps (more consistent than the prior best's 2×9, 1×8 dropoff), not a strict est.1RM PR. 2 new PRs.",

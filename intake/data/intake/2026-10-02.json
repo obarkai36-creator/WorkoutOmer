@@ -28,9 +28,14 @@
     {"time": "12:45", "name": "Ice cream", "category": "food", "qty": "2 bites (~30 g)", "kcal": 64, "protein_g": 1.3, "carbs_g": 7.7, "fat_g": 3.4, "fiber_g": 0.2, "time_approx": true, "note": "no brand given, generic vanilla-style ice cream reference (~214kcal/100g, same rate as prior scoop entries). \"Bite\" assumed ~15g each."},
     {"time": "12:45", "name": "Click (קליק) chocolate wafer biscuit", "category": "food", "qty": "1 unit (~5 g)", "kcal": 26, "protein_g": 0.3, "carbs_g": 2.85, "fat_g": 1.44, "fiber_g": 0.08, "time_approx": true, "note": "same generic reference as prior entries (click_biscuit_generic)."},
     {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "14:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:30", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:45", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
+    {"time": "15:45", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (catalina_crunch_choc_pb_cereal): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. \"Handful\" estimated at ~20g, consistent with prior handful-size logs."},
+    {"time": "16:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 5,
+  "workout_today": true,
+  "workout_summary": "Outdoor Run — Or Akiva, Haifa District (14:52-15:27, Nike Run Club) — 2.91km in 35:06 (12:02/km avg pace), 161 kcal, 18m elevation gain, cadence 120. No heart-rate monitor worn.",
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
@@ -50,7 +55,10 @@
     "11:00 espresso, 1 shot (3 caffeine shots today).",
     "Until 12:45 — snack/lunch spread (individual item times not given, logged at 12:45): 150ml beer (~0.6 units, generic lager reference) + 2 Agami PRO pitas (verified reference) + 40g Simfonia cheese spread (verified label reference) + 4 slices Tnuva Emek Light yellow cheese 9% (100g) + 20 cherry tomatoes (credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 1 cucumber (~300g) + 30g baby mozzarella (Gad) + a balsamic drizzle (~10g assumed) + a lemon juice drizzle (~15g assumed, credits ~5mg vitamin C) + 2 bites ice cream (no brand given, generic reference) + 1 bite/unit (~5g) Click biscuit (same generic reference as prior entries). Alcohol event logged to lifestyle.json — 8-day gap since the last one (2026-09-24), comfortably within baseline.",
     "13:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
-    "14:30 double espresso, 1 double (5 caffeine shots today)."
+    "14:30 double espresso, 1 double (5 caffeine shots today).",
+    "14:52-15:27 Outdoor Run — Or Akiva, Haifa District (Nike Run Club) — 2.91km in 35:06 (12:02/km avg pace), 161 kcal, 18m elevation gain, cadence 120. No heart-rate monitor worn.",
+    "15:45 vanilla Danone PRO protein yogurt (1 cup, 200g, same line as prior entries) + ~20g handful Catalina Crunch Chocolate PB protein cereal (verified label reference).",
+    "16:00 creatine monohydrate, 5g (standard dose)."
   ],
-  "status_note": "Day in progress. Slept 7.33h (00:10-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast + lunch spread (incl. 150ml beer) + omega-3 logged."
+  "status_note": "Day in progress. Slept 7.33h (00:10-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast + lunch spread (incl. 150ml beer) + omega-3 logged. Outdoor Run (2.91km, 35:06) + post-run yogurt/cereal + creatine logged."
 }

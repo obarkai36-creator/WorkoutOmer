@@ -1,18 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-01",
-    "latest_session": "Shoulders day (15:00) — Farmer's Hold 24kg each×4×35s (ties best exactly). Front Raises 18kg×4×9, as suggested (new PR — est. 1RM 23.4 vs 22.8 prior best at 18kg×4×8). Lateral Raises 16kg each×4×9 (ties best exactly). Rear Delt Machine 73kg×3×10, as suggested (new PR — est. 1RM 97.3 vs 94.9 prior best at 73kg×3×9). Dumbbell Shoulder Press 20kg each×3×9 — matches the 20kg×9 best set exactly, but with all 3 sets landing 9 reps (more consistent than the prior best's 2×9, 1×8 dropoff), not a strict est.1RM PR. 2 new PRs.",
-    "sessions_logged": 72,
+    "report_date": "2026-10-02",
+    "latest_session": "Outdoor Run — Or Akiva, Haifa District (14:52-15:27, Nike Run Club) — 2.91km in 35:06 (12:02/km avg pace), 161 kcal, 18m elevation gain, cadence 120. No heart-rate monitor worn.",
+    "sessions_logged": 73,
     "sessions_per_week": 3.5,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 23.9,
+    "aerobic_28d_km": 22.6,
     "aerobic_sessions_28d": 8,
-    "avg_pace": "10:12/km",
+    "avg_pace": "10:15/km",
     "avg_hr": 142,
-    "acwr": 0.82,
+    "acwr": 0.78,
     "recommended_next": "Back day",
     "alerts": [
+      "Load ratio 0.78 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
@@ -471,6 +472,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "15:00. Farmer's Hold 24kg each×4×35s (ties best exactly); Front Raises 18kg×4×9, as suggested (new PR — est. 1RM 23.4 vs 22.8 prior best); Lateral Raises 16kg each×4×9 (ties best exactly); Rear Delt Machine 73kg×3×10, as suggested (new PR — est. 1RM 97.3 vs 94.9 prior best); Dumbbell Shoulder Press 20kg each×3×9 — matches the best set exactly with better consistency (all 3 sets at 9 reps vs prior 2×9,1×8), not a strict PR. 2 new PRs.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-02",
+      "type": "Outdoor Run",
+      "duration_min": 35.1,
+      "intensity": "light",
+      "notes": "Or Akiva, Haifa District (14:52-15:27, Nike Run Club) — 2.91km in 35:06 (12:02/km avg pace), 161 kcal, 18m elevation gain, cadence 120. No heart-rate monitor worn.",
       "_source": "manual log"
     }
   ]
