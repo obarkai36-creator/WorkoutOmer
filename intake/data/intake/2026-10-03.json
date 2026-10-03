@@ -28,19 +28,24 @@
     {"time": "14:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Danish pastry", "category": "food", "qty": "1 piece (~75 g)", "kcal": 280.5, "protein_g": 4.5, "carbs_g": 33, "fat_g": 14.25, "fiber_g": 1.1, "note": "new generic reference (danish_pastry_generic, not label-verified, first time logged) — generic bakery danish pastry values, piece size assumed ~75g."},
-    {"time": "16:45", "name": "Merci finger chocolate", "category": "food", "qty": "1 piece (~5 g)", "kcal": 27, "protein_g": 0.3, "carbs_g": 2.6, "fat_g": 1.7, "fiber_g": 0.1, "note": "new generic reference (merci_finger_chocolate, not label-verified against the exact variety, first time logged) — standard Merci (Storck) Finest Selection per-piece values."}
+    {"time": "16:45", "name": "Merci finger chocolate", "category": "food", "qty": "1 piece (~5 g)", "kcal": 27, "protein_g": 0.3, "carbs_g": 2.6, "fat_g": 1.7, "fiber_g": 0.1, "note": "new generic reference (merci_finger_chocolate, not label-verified against the exact variety, first time logged) — standard Merci (Storck) Finest Selection per-piece values."},
+    {"time": "18:00", "name": "Dinner — chicken thighs", "category": "food", "qty": "150 g", "kcal": 313.5, "protein_g": 39, "carbs_g": 0, "fat_g": 16.3, "fiber_g": 0, "note": "standard grilled boneless/skinless chicken thigh reference (~209kcal/100g). Credits ~1.95mg zinc, ~21mcg selenium."},
+    {"time": "18:00", "name": "Dinner — kebab (ground meat skewer)", "category": "food", "qty": "50 g", "kcal": 115, "protein_g": 13.5, "carbs_g": 0, "fat_g": 7, "fiber_g": 0, "note": "same standard blended red-meat kebab reference as prior entries (~230kcal/27p/14f per 100g). Credits ~2.25mg zinc, ~7.5mcg selenium."},
+    {"time": "18:00", "name": "Dinner — chicken breast", "category": "food", "qty": "30 g", "kcal": 49.6, "protein_g": 9.3, "carbs_g": 0, "fat_g": 1.08, "fiber_g": 0, "note": "standard plain grilled chicken breast reference (~165kcal/100g). Credits ~0.27mg zinc, ~7.2mcg selenium."},
+    {"time": "18:00", "name": "Dinner — white cabbage salad in lemon juice", "category": "food", "qty": "6 spoons (~210 g)", "kcal": 58.8, "protein_g": 2.94, "carbs_g": 13.44, "fat_g": 0.42, "fiber_g": 5.0, "note": "same standard raw-cabbage-in-lemon-juice reference as prior entries (~28kcal/100g, no oil), spoon size ~35g."},
+    {"time": "18:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "caffeine_shots": 3,
   "workout_today": true,
   "workout_summary": "Back day (ended ~10:00, start time not given) — all exercises performed as suggested. Diverging Seated Row 97kg×4×12, new PR. Lat Pulldown (Wide Grip) 75kg×3×10, new PR. Dead Hang 35s+30s+25s, ties best. Reverse Incline DB Row 26kg each×4×12, ties best. Dumbbell Pullover 22.5kg×4×10, new PR. Low Row not performed. 3 new PRs.",
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 27.27,
+    "selenium_mcg": 135.7,
     "folate_mcg_dfe": 155.4,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 63.7,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 2.0,
+    "vitamin_c_mg": 1063.7,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 136.0,
     "lycopene_mg": 11.5
   },
   "assumptions": [
@@ -54,7 +59,9 @@
     "13:00 lunch (clock time not given, placeholder 13:00): 100g spelt garlic bread (standard reference) + salad (3 tomatoes ~369g, 2 cucumbers ~600g, 0.7 red onion ~77g, olive oil/lemon juice/salt dressing — credits ~9.5mg lycopene, ~61.7mg vitamin C, ~55.4mcg folate DFE, ~2.0mg vitamin E) + 200g cottage cheese (5% fat, standard reference) + 3 hard-boiled egg whites (standard reference) + 1 spoon potato-mayo salad (standard reference) + 1 spoon crushed tomato (new generic reference, credits ~2.0mg lycopene, ~2.0mg vitamin C).",
     "14:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "15:00 espresso, 1 shot (3 caffeine shots today) + 1 piece (~75g) danish pastry (new generic reference, not label-verified, first time logged).",
-    "16:45 1 piece (~5g) Merci finger chocolate (new generic reference, not label-verified, first time logged)."
+    "16:45 1 piece (~5g) Merci finger chocolate (new generic reference, not label-verified, first time logged).",
+    "18:00 dinner: 150g chicken thighs (standard reference, credits ~1.95mg zinc/~21mcg selenium) + 50g kebab (standard blended red-meat reference, credits ~2.25mg zinc/~7.5mcg selenium) + 30g chicken breast (standard reference, credits ~0.27mg zinc/~7.2mcg selenium) + 6 spoons (~210g) white cabbage salad in lemon juice (standard reference, no oil).",
+    "18:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E."
   ],
-  "status_note": "Day in progress. Slept 8h (00:00-08:00), within target. AM spray + pill + double espresso + breakfast logged. Back day workout (3 new PRs: Diverging Seated Row, Lat Pulldown Wide Grip, Dumbbell Pullover; 2 ties: Dead Hang, Reverse Incline DB Row). Post-workout yogurt/cereal + creatine + Mayven logged. Masturbation (11:30). Full lunch logged (garlic bread, salad, cottage cheese, egg whites, potato salad, crushed tomato) + omega-3."
+  "status_note": "Day in progress. Slept 8h (00:00-08:00), within target. AM spray + pill + double espresso + breakfast logged. Back day workout (3 new PRs: Diverging Seated Row, Lat Pulldown Wide Grip, Dumbbell Pullover; 2 ties: Dead Hang, Reverse Incline DB Row). Post-workout yogurt/cereal + creatine + Mayven logged. Masturbation (11:30). Full lunch logged. Dinner + essential-5 logged. Zinc/selenium/vitamin C/D/E all well past today's targets."
 }

@@ -1,5 +1,5 @@
 {
-  "now": 1791035545413,
+  "now": 1791040728986,
   "workouts": [
     {
       "datetime": "2026-10-03T10:00",
@@ -7552,8 +7552,8 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 95,
-      "readyInHours": 69,
+      "pct": 93,
+      "readyInHours": 67.6,
       "ready": false
     },
     "shoulders": {
@@ -7568,8 +7568,8 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 71,
-      "readyInHours": 34.5,
+      "pct": 69,
+      "readyInHours": 33.1,
       "ready": false
     },
     "triceps": {
@@ -7584,8 +7584,8 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 65,
-      "readyInHours": 23.1,
+      "pct": 62,
+      "readyInHours": 21.7,
       "ready": false
     },
     "quads": {
@@ -7640,7 +7640,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "ready": true
     }
@@ -7663,15 +7663,15 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 95,
-      "readyInHours": 69,
+      "pct": 93,
+      "readyInHours": 67.6,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 95,
-          "readyInHours": 69,
+          "pct": 93,
+          "readyInHours": 67.6,
           "ready": false
         }
       ]
@@ -7693,23 +7693,23 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 46,
-      "readyInHours": 34.5,
+      "pct": 44,
+      "readyInHours": 33.1,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 71,
-          "readyInHours": 34.5,
+          "pct": 69,
+          "readyInHours": 33.1,
           "ready": false
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 65,
-          "readyInHours": 23.1,
+          "pct": 62,
+          "readyInHours": 21.7,
           "ready": false
         },
         {
@@ -7786,14 +7786,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 20,
+          "pct": 19,
           "readyInHours": 0,
           "ready": true
         }
@@ -9099,9 +9099,9 @@
     "fatigue": 8,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-03T13:52:25.413Z",
+    "readyAt": "2026-10-03T15:18:48.986Z",
     "neverLogged": false,
-    "daysSince": 7.9,
+    "daysSince": 8,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -9220,7 +9220,7 @@
         "section": "Chest",
         "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 7.9
+        "daysSince": 8
       },
       {
         "section": "Legs",
@@ -9236,14 +9236,14 @@
       },
       {
         "section": "Arms",
-        "fatigue": 46,
-        "readyInHours": 34.5,
+        "fatigue": 44,
+        "readyInHours": 33.1,
         "daysSince": 0.2
       },
       {
         "section": "Back",
-        "fatigue": 95,
-        "readyInHours": 69,
+        "fatigue": 93,
+        "readyInHours": 67.6,
         "daysSince": 0.2
       }
     ],
@@ -9257,8 +9257,8 @@
   "alerts": [
     {
       "level": "low",
-      "title": "Back fatigued (95%)",
-      "detail": "Recovers in ~69h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Back fatigued (93%)",
+      "detail": "Recovers in ~67.6h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
