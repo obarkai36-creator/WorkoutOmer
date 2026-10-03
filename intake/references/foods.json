@@ -652,6 +652,18 @@
       "fiber_g": 1.5,
       "verified": false,
       "source": "Generic typical-value estimate for a mayo-dressed potato/carrot/pickle salad (Russian/Olivier-style), first logged 2026-10-02 (2 spoons, ~60g). Not label/recipe-verified -- refine if the actual recipe/ratios become available."
+    },
+    {
+      "id": "crushed_tomato_generic",
+      "name": "Crushed tomato, generic (canned/cooked)",
+      "serving": "100 g",
+      "kcal": 32,
+      "protein_g": 1.6,
+      "carbs_g": 7,
+      "fat_g": 0.2,
+      "fiber_g": 1.9,
+      "verified": false,
+      "source": "Generic USDA-type canned crushed tomato values, first logged 2026-10-03 (1 spoon, ~20g). Credits ~10mg lycopene/100g and ~10mg vitamin C/100g (cooking/canning concentrates lycopene vs raw tomato, similar logic to the matbucha reference). Not label-verified -- refine if a specific brand is checked."
     }
   ]
 }
