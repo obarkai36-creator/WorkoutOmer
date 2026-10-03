@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-04",
+  "day_number": 99,
+  "in_progress": true,
+  "planned_only": true,
+  "sleep": {
+    "sleep_start": null,
+    "sleep_end": null,
+    "duration_hours": null,
+    "quality": null,
+    "notes": "Not yet logged — day pre-planned ahead of time, will fill in when the day actually starts."
+  },
+  "items": [
+    {"time": "13:00", "name": "Lunch — kebab (ground meat skewer)", "category": "food", "qty": "200 g", "kcal": 460, "protein_g": 54, "carbs_g": 0, "fat_g": 28, "fiber_g": 0, "time_approx": true, "note": "PRE-LOGGED the night before (2026-10-03) for planned lunch. Same standard blended red-meat kebab reference as prior entries (~230kcal/27p/14f per 100g). Credits ~9mg zinc, ~30mcg selenium. Clock time is a placeholder (13:00) — update once the actual lunch time is known."},
+    {"time": "13:00", "name": "Lunch — homemade melanzana", "category": "food", "qty": "200 g", "kcal": 280, "protein_g": 12, "carbs_g": 20, "fat_g": 18, "fiber_g": 6, "time_approx": true, "note": "PRE-LOGGED the night before (2026-10-03) for planned lunch. New generic reference (homemade_melanzana_generic, not recipe-verified, rough directional estimate — baked aubergine/tomato/cheese style). User flagged they'll probably add vegetables too, not yet accounted for — refine this entry once the actual lunch (incl. any added veg) is confirmed."}
+  ],
+  "caffeine_shots": 0,
+  "micros_sperm_priority": {
+    "zinc_mg": 9,
+    "selenium_mcg": 30,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "PRE-LOGGED 2026-10-03 evening, ahead of the day actually happening — user said lunch tomorrow will be 200g kebab + 200g homemade melanzana, and may add vegetables (not yet accounted for). Logged now as a placeholder/estimate so it's not forgotten; to be confirmed/refined (incl. exact time, any added veg, and the melanzana recipe) once actually eaten. Sleep and the rest of the day are not yet logged — this file will be filled in normally starting with tomorrow's sleep entry."
+  ],
+  "status_note": "Day not yet started — only a pre-logged, estimated lunch is in place (200g kebab + 200g homemade melanzana, veg TBD). Sleep and the rest of the day to be logged when it actually begins."
+}
