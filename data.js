@@ -299,6 +299,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 3 Oct — Back (ended ~10:00)
+  {
+    datetime: "2026-10-03T10:00", note: "Back day (ended ~10:00, start time not given) — all exercises performed as suggested. Diverging Seated Row 97kg×4×12, as suggested (new PR — est. 1RM 135.8 vs 132.6 prior best at 97kg×4×11). Lat Pulldown (Wide Grip) 75kg×3×10, as suggested (new PR — est. 1RM 100.0 vs 97.5 prior best at 75kg×3×9). Dead Hang 35s+30s+25s, as suggested (rebuild to best — ties exactly). Reverse Incline DB Row 26kg each (52kg total)×4×12, as suggested (rebuild to best — ties exactly). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Low Row (also suggested) was not performed this session. 3 new PRs.",
+    exercises: [
+      { name: "Diverging Seated Row",    sets: [ { reps: 12, weight: 97 }, { reps: 12, weight: 97 }, { reps: 12, weight: 97 }, { reps: 12, weight: 97 } ] },
+      { name: "Lat Pulldown (Wide Grip)", sets: [ { reps: 10, weight: 75 }, { reps: 10, weight: 75 }, { reps: 10, weight: 75 } ] },
+      { name: "Dead Hang",               sets: [ { seconds: 35 }, { seconds: 30 }, { seconds: 25 } ] },
+      { name: "Reverse Incline DB Row",  sets: [ { reps: 12, weight: 52 }, { reps: 12, weight: 52 }, { reps: 12, weight: 52 }, { reps: 12, weight: 52 } ] },
+      { name: "Dumbbell Pullover",       sets: [ { reps: 10, weight: 22.5 }, { reps: 10, weight: 22.5 }, { reps: 10, weight: 22.5 }, { reps: 10, weight: 22.5 } ] },
+    ],
+  },
   // 2 Oct — Outdoor Run, Or Akiva (14:52-15:27)
   {
     datetime: "2026-10-02T14:52", note: "Outdoor Run — Or Akiva, Haifa District (14:52-15:27, Nike Run Club) — 2.91km in 35:06 (12:02/km avg pace), 161 kcal, 18m elevation gain, cadence 120. No heart-rate monitor worn.",
