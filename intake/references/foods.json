@@ -664,6 +664,18 @@
       "fiber_g": 1.9,
       "verified": false,
       "source": "Generic USDA-type canned crushed tomato values, first logged 2026-10-03 (1 spoon, ~20g). Credits ~10mg lycopene/100g and ~10mg vitamin C/100g (cooking/canning concentrates lycopene vs raw tomato, similar logic to the matbucha reference). Not label-verified -- refine if a specific brand is checked."
+    },
+    {
+      "id": "danish_pastry_generic",
+      "name": "Danish pastry, generic (per piece)",
+      "serving": "1 piece (~75 g)",
+      "kcal": 280.5,
+      "protein_g": 4.5,
+      "carbs_g": 33,
+      "fat_g": 14.25,
+      "fiber_g": 1.1,
+      "verified": false,
+      "source": "Generic typical bakery danish pastry values (~374kcal/100g, USDA-type cheese/fruit danish reference), first logged 2026-10-03. Piece size assumed ~75g (standard bakery individual piece). Not brand/label-verified -- refine if a specific product or weight is given."
     }
   ]
 }
