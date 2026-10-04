@@ -14,6 +14,8 @@
     {"time": "07:00", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "07:10", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "07:15", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "08:30", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2.5 slices (62.5 g)", "kcal": 125, "protein_g": 18.75, "carbs_g": 0, "fat_g": 5.625, "fiber_g": 0, "note": "verified label reference, same as prior entries."},
+    {"time": "08:30", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "note": "Same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
     {"time": "13:00", "name": "Lunch — kebab (ground meat skewer)", "category": "food", "qty": "200 g", "kcal": 460, "protein_g": 54, "carbs_g": 0, "fat_g": 28, "fiber_g": 0, "time_approx": true, "note": "PRE-LOGGED the night before (2026-10-03) for planned lunch. Same standard blended red-meat kebab reference as prior entries (~230kcal/27p/14f per 100g). Credits ~9mg zinc, ~30mcg selenium. Clock time is a placeholder (13:00) — update once the actual lunch time is known."},
     {"time": "13:00", "name": "Lunch — homemade melanzana", "category": "food", "qty": "200 g", "kcal": 280, "protein_g": 12, "carbs_g": 20, "fat_g": 18, "fiber_g": 6, "time_approx": true, "note": "PRE-LOGGED the night before (2026-10-03) for planned lunch. New generic reference (homemade_melanzana_generic, not recipe-verified, rough directional estimate — baked aubergine/tomato/cheese style). User flagged they'll probably add vegetables too, not yet accounted for — refine this entry once the actual lunch (incl. any added veg) is confirmed."}
   ],
@@ -21,18 +23,19 @@
   "micros_sperm_priority": {
     "zinc_mg": 11.8,
     "selenium_mcg": 30,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 44,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 8.8
   },
   "assumptions": [
     "Sleep logged: 23:15-06:45, 7.5h (night of 2026-10-03) — within the 7-9h target band.",
     "07:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "07:10 double espresso, 1 double (2 caffeine shots today).",
     "07:15 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
+    "08:30 breakfast: 2.5 slices (62.5g) Tnuva Emek Light yellow cheese 9% (verified label reference) + 20 cherry tomatoes (standard reference — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE).",
     "PRE-LOGGED 2026-10-03 evening, ahead of the day actually happening — user said lunch today will be 200g kebab + 200g homemade melanzana, and may add vegetables (not yet accounted for). Logged as a placeholder/estimate so it's not forgotten; to be confirmed/refined (incl. exact time, any added veg, and the melanzana recipe) once actually eaten."
   ],
   "status_note": "Day in progress. Slept 7.5h (23:15-06:45), within target. AM spray + pill + double espresso + Mayven logged. Lunch still shows the pre-logged estimate (200g kebab + 200g homemade melanzana) — confirm/refine once actually eaten."
