@@ -38,7 +38,8 @@
     {"time": "20:00", "name": "Kinder Choco-Bon", "category": "food", "qty": "1 piece (~4.3 g)", "kcal": 23.6, "protein_g": 0.29, "carbs_g": 2.15, "fat_g": 1.54, "fiber_g": 0.13, "note": "new generic reference (kinder_choco_bons, not label-verified, first time logged) — standard Ferrero-published per-piece values."},
     {"time": "20:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
     {"time": "20:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "21:00", "name": "20 pushups (casual, not a training session)", "category": "exercise", "qty": "1 set of 20", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "Per explicit user request, logged for the record only — NOT entered into data.js/WORKOUTS, so it doesn't touch the training engine's fatigue/rotation calc or shift the next recommended session (still Chest day)."}
+    {"time": "21:00", "name": "20 pushups (casual, not a training session)", "category": "exercise", "qty": "1 set of 20", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "Per explicit user request, logged for the record only — NOT entered into data.js/WORKOUTS, so it doesn't touch the training engine's fatigue/rotation calc or shift the next recommended session (still Chest day)."},
+    {"time": "21:00", "name": "20 incline pushups (casual, not a training session)", "category": "exercise", "qty": "1 set of 20", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "Same procedure as the regular pushups — logged for the record only, NOT entered into data.js/WORKOUTS, so it doesn't touch the training engine's fatigue/rotation calc or shift the next recommended session (still Chest day)."}
   ],
   "caffeine_shots": 5,
   "micros_sperm_priority": {
@@ -68,7 +69,8 @@
     "20:00 dinner: 2 Angel PRO pitas (verified reference) + 2 sunny side up eggs (standard estimate, fried in a little oil/butter) + 40g Simfonia cheese spread (verified label reference) + 30 cherry tomatoes (credits ~13.2mg lycopene, ~66mg vitamin C, ~76.5mcg folate DFE) + a balsamic glaze drizzle (~15g assumed) + 20g baby mozzarella (Gad) + 1 Kinder Choco-Bon (new generic reference, not label-verified, first time logged).",
     "20:30 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
     "20:30 creatine monohydrate, 5g (standard dose).",
-    "21:00 20 pushups, casual — per explicit user request, logged for the record only, NOT added to data.js/WORKOUTS so it doesn't reset Chest's recovery timer or shift the next recommended session away from Chest day."
+    "21:00 20 pushups, casual — per explicit user request, logged for the record only, NOT added to data.js/WORKOUTS so it doesn't reset Chest's recovery timer or shift the next recommended session away from Chest day.",
+    "21:00 20 incline pushups, same procedure — also logged for the record only, not added to data.js/WORKOUTS."
   ],
   "status_note": "Day in progress. Slept 7.5h (23:15-06:45), within target. Both allergy doses + omega-3 + essential-5 + creatine logged. Full day of meals + dinner logged. Melanzana portion is still a rough estimate pending the actual recipe. Zinc/selenium/vitamin C/D/E all well past today's targets."
 }
