@@ -21,17 +21,22 @@
     {"time": "12:45", "name": "Lunch — kebab (ground meat skewer)", "category": "food", "qty": "200 g", "kcal": 460, "protein_g": 54, "carbs_g": 0, "fat_g": 28, "fiber_g": 0, "note": "pre-logged the night before (2026-10-03), confirmed at the actual time (12:45). Same standard blended red-meat kebab reference as prior entries (~230kcal/27p/14f per 100g). Credits ~9mg zinc, ~30mcg selenium."},
     {"time": "12:45", "name": "Lunch — homemade melanzana", "category": "food", "qty": "200 g", "kcal": 280, "protein_g": 12, "carbs_g": 20, "fat_g": 18, "fiber_g": 6, "note": "pre-logged the night before (2026-10-03), confirmed at the actual time (12:45). Generic reference (homemade_melanzana_generic, not recipe-verified, rough directional estimate — baked aubergine/tomato/cheese style). Still flagged for refinement if the actual recipe composition differs."},
     {"time": "12:45", "name": "Cherry tomatoes", "category": "food", "qty": "25 pieces", "kcal": 66.25, "protein_g": 3.42, "carbs_g": 14.67, "fat_g": 0.75, "fiber_g": 4.5, "note": "Same standard reference as prior entries. Credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE."},
-    {"time": "13:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:45", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:45", "name": "Pesek Zman", "category": "food", "qty": "1 personal bar (~17 g)", "kcal": 90, "protein_g": 1.36, "carbs_g": 9.69, "fat_g": 5.1, "fiber_g": 0.34, "note": "standard Pesek Zman reference (~530kcal/100g, wafer/peanut/chocolate bar), same as prior entries — personal (אישי) bar size ~17g."},
+    {"time": "15:00", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
+    {"time": "15:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "16:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0.3, "carbs_g": 0.5, "fat_g": 0, "fiber_g": 0}
   ],
-  "caffeine_shots": 3,
+  "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 20.8,
-    "selenium_mcg": 60,
+    "zinc_mg": 40.8,
+    "selenium_mcg": 160,
     "folate_mcg_dfe": 214.75,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 109.8,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1109.8,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 19.8
   },
   "assumptions": [
@@ -43,7 +48,10 @@
     "10:45 1 green apple (~180g, same generic reference as prior entries) — credits ~10.8mg vitamin C.",
     "11:05 espresso, 1 shot (3 caffeine shots today).",
     "12:45 lunch, confirmed at actual time: 200g kebab + 200g homemade melanzana (both pre-logged the night before, kebab reference confirmed, melanzana still a rough recipe estimate) + 25 cherry tomatoes (standard reference — credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE).",
-    "13:15 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose."
+    "13:15 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "13:45 espresso, 1 shot (4 caffeine shots today) + 1 Pesek Zman personal bar (~17g, standard reference).",
+    "15:00 vanilla Danone PRO protein yogurt (1 cup, 200g, same line as prior entries) + essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
+    "16:00 espresso, 1 shot (5 caffeine shots today)."
   ],
-  "status_note": "Day in progress. Slept 7.5h (23:15-06:45), within target. AM spray + pill + double espresso + Mayven + breakfast + green apple + espresso + lunch (incl. 25 cherry tomatoes) + omega-3 logged. Melanzana portion is still a rough estimate pending the actual recipe."
+  "status_note": "Day in progress. Slept 7.5h (23:15-06:45), within target. AM spray + pill + double espresso + Mayven + breakfast + green apple + espresso + lunch (incl. 25 cherry tomatoes) + omega-3 + Pesek Zman + yogurt + essential-5 logged. Melanzana portion is still a rough estimate pending the actual recipe. Zinc/selenium/vitamin C/D/E all well past today's targets."
 }
