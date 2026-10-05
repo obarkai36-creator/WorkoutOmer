@@ -712,6 +712,30 @@
       "fiber_g": 0.13,
       "verified": false,
       "source": "Standard per-piece values for Kinder Choco-Bons (hazelnut-praline-filled chocolate shell), first logged 2026-10-04 (~549kcal/100g, typical Ferrero-published values). Typical single-piece weight ~4.3g. Not label-verified -- refine if checked."
+    },
+    {
+      "id": "chopped_liver_with_silan_generic",
+      "name": "Chopped liver (with silan/date syrup), generic",
+      "serving": "100 g",
+      "kcal": 230,
+      "protein_g": 13,
+      "carbs_g": 8,
+      "fat_g": 15,
+      "fiber_g": 0.3,
+      "verified": false,
+      "source": "Generic estimate for traditional chopped chicken liver (liver, onion, egg, schmaltz/oil) with a drizzle of silan (date syrup) mixed in, first logged 2026-10-05. Credits ~2.5mg zinc/100g (liver is zinc-rich). Not recipe-verified -- refine if the actual ratio/recipe is given."
+    },
+    {
+      "id": "baguette_slice_generic",
+      "name": "Baguette, generic (per slice/round)",
+      "serving": "1 slice (~30 g)",
+      "kcal": 81,
+      "protein_g": 2.7,
+      "carbs_g": 16.5,
+      "fat_g": 0.45,
+      "fiber_g": 0.75,
+      "verified": false,
+      "source": "Generic typical French baguette (white bread) values (~270kcal/100g), first logged 2026-10-05. Slice/round size assumed ~30g. Not brand/label-verified -- refine if a specific size or product is given."
     }
   ]
 }

@@ -16,20 +16,28 @@
     {"time": "07:30", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "08:45", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
     {"time": "08:45", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (catalina_crunch_choc_pb_cereal): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. \"Handful\" estimated at ~20g, consistent with prior handful-size logs."},
+    {"time": "10:15", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
     {"time": "11:45", "name": "Lunch — Angel PRO pita", "category": "food", "qty": "2 units (125 g)", "kcal": 251.2, "protein_g": 25.8, "carbs_g": 28.4, "fat_g": 2.4, "fiber_g": 7.4, "time_approx": true, "note": "stated in advance (not yet eaten) — verified label reference (angel_pita_pro_20g_protein), same as prior entries."},
     {"time": "11:45", "name": "Lunch — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "time_approx": true, "note": "stated in advance (not yet eaten) — verified label reference, same as prior entries."},
     {"time": "11:45", "name": "Lunch — Simfonia cheese spread", "category": "food", "qty": "40 g", "kcal": 43.2, "protein_g": 3.92, "carbs_g": 1.84, "fat_g": 2.0, "fiber_g": 0, "time_approx": true, "note": "stated in advance (not yet eaten) — verified label reference (simfonia_cheese_spread_generic). Credits ~9.6mg cholesterol, ~150mg sodium, ~52mg calcium (not tracked in micros_sperm_priority)."},
-    {"time": "11:45", "name": "Lunch — Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "time_approx": true, "note": "stated in advance (not yet eaten) — same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."}
+    {"time": "11:45", "name": "Lunch — Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "time_approx": true, "note": "stated in advance (not yet eaten) — same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "13:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "18:15", "name": "Dinner — chicken breast", "category": "food", "qty": "250 g", "kcal": 413.25, "protein_g": 77.5, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "standard plain grilled chicken breast reference (~165kcal/100g). Credits ~2.25mg zinc, ~60mcg selenium."},
+    {"time": "18:15", "name": "Dinner — chopped liver with silan", "category": "food", "qty": "2 spoons (~60 g)", "kcal": 138, "protein_g": 7.8, "carbs_g": 4.8, "fat_g": 9, "fiber_g": 0.18, "note": "new generic reference (chopped_liver_with_silan_generic, not recipe-verified, first time logged) — traditional chopped chicken liver with a drizzle of silan. Credits ~1.5mg zinc (liver)."},
+    {"time": "18:15", "name": "Dinner — white rice", "category": "food", "qty": "3 spoons (~105 g cooked)", "kcal": 138, "protein_g": 2.85, "carbs_g": 29.4, "fat_g": 0.3, "fiber_g": 0.42, "note": "same standard cooked white rice reference as prior entries (~130kcal/100g)."},
+    {"time": "18:15", "name": "Dinner — egg salad in mayo", "category": "food", "qty": "50 g", "kcal": 115, "protein_g": 4, "carbs_g": 0.5, "fat_g": 10.5, "fiber_g": 0, "note": "same standard mashed-egg-and-mayo salad reference as prior entries (~230kcal/100g)."},
+    {"time": "18:15", "name": "Dinner — white cabbage salad in lemon juice", "category": "food", "qty": "50 g", "kcal": 14, "protein_g": 0.7, "carbs_g": 3.2, "fat_g": 0.1, "fiber_g": 1.2, "note": "same standard raw-cabbage-in-lemon-juice reference as prior entries (~28kcal/100g, no oil)."},
+    {"time": "18:15", "name": "Dinner — baguette", "category": "food", "qty": "2 pieces/rounds (~60 g)", "kcal": 162, "protein_g": 5.4, "carbs_g": 33, "fat_g": 0.9, "fiber_g": 1.5, "note": "new generic reference (baguette_slice_generic, not label-verified, first time logged) — generic French baguette values, slice size assumed ~30g each."}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 26.55,
+    "selenium_mcg": 160,
     "folate_mcg_dfe": 151,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 44,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 1044,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 8.8
   },
   "assumptions": [
@@ -38,7 +46,10 @@
     "07:20 double espresso, 1 double (2 caffeine shots today).",
     "07:30 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "08:45 vanilla Danone PRO protein yogurt (1 cup, 200g, same line as prior entries) + ~20g handful Catalina Crunch Chocolate PB protein cereal (verified label reference).",
-    "Lunch stated in advance for ~11:45 (not yet eaten): 2 Angel PRO pitas + 4 slices Tnuva Emek Light yellow cheese 9% + 40g Simfonia cheese spread + 20 cherry tomatoes — all standard/verified references, logged ahead of time; will confirm/adjust once actually eaten."
+    "10:15 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
+    "Lunch stated in advance for ~11:45 (not yet eaten): 2 Angel PRO pitas + 4 slices Tnuva Emek Light yellow cheese 9% + 40g Simfonia cheese spread + 20 cherry tomatoes — all standard/verified references, logged ahead of time; will confirm/adjust once actually eaten.",
+    "13:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "18:15 dinner: 250g chicken breast (standard reference, credits ~2.25mg zinc/~60mcg selenium) + 2 spoons (~60g) chopped liver with silan (new generic reference, credits ~1.5mg zinc) + 3 spoons (~105g) white rice (standard reference) + 50g egg salad in mayo (standard reference) + 50g white cabbage salad in lemon juice (standard reference, no oil) + 2 pieces (~60g) baguette (new generic reference)."
   ],
-  "status_note": "Day in progress. Slept 6.5h (00:15-06:45), slightly under target. AM spray + pill + double espresso + Mayven + breakfast logged. Lunch stated in advance for ~11:45, not yet confirmed."
+  "status_note": "Day in progress. Slept 6.5h (00:15-06:45), slightly under target. AM spray + pill + double espresso + Mayven + breakfast + essential-5 logged. Lunch stated in advance for ~11:45, not yet confirmed. Omega-3 + full dinner logged. Zinc/selenium/vitamin C/D/E all well past today's targets."
 }
