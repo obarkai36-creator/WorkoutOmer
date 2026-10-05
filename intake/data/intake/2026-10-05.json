@@ -1,7 +1,8 @@
 {
   "date": "2026-10-05",
   "day_number": 100,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 7500,
   "sleep": {
     "sleep_start": "00:15",
     "sleep_end": "06:45",
@@ -27,7 +28,10 @@
     {"time": "18:15", "name": "Dinner — white rice", "category": "food", "qty": "3 spoons (~105 g cooked)", "kcal": 138, "protein_g": 2.85, "carbs_g": 29.4, "fat_g": 0.3, "fiber_g": 0.42, "note": "same standard cooked white rice reference as prior entries (~130kcal/100g)."},
     {"time": "18:15", "name": "Dinner — egg salad in mayo", "category": "food", "qty": "50 g", "kcal": 115, "protein_g": 4, "carbs_g": 0.5, "fat_g": 10.5, "fiber_g": 0, "note": "same standard mashed-egg-and-mayo salad reference as prior entries (~230kcal/100g)."},
     {"time": "18:15", "name": "Dinner — white cabbage salad in lemon juice", "category": "food", "qty": "50 g", "kcal": 14, "protein_g": 0.7, "carbs_g": 3.2, "fat_g": 0.1, "fiber_g": 1.2, "note": "same standard raw-cabbage-in-lemon-juice reference as prior entries (~28kcal/100g, no oil)."},
-    {"time": "18:15", "name": "Dinner — baguette", "category": "food", "qty": "2 pieces/rounds (~60 g)", "kcal": 162, "protein_g": 5.4, "carbs_g": 33, "fat_g": 0.9, "fiber_g": 1.5, "note": "new generic reference (baguette_slice_generic, not label-verified, first time logged) — generic French baguette values, slice size assumed ~30g each."}
+    {"time": "18:15", "name": "Dinner — baguette", "category": "food", "qty": "2 pieces/rounds (~60 g)", "kcal": 162, "protein_g": 5.4, "carbs_g": 33, "fat_g": 0.9, "fiber_g": 1.5, "note": "new generic reference (baguette_slice_generic, not label-verified, first time logged) — generic French baguette values, slice size assumed ~30g each."},
+    {"time": "21:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "21:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "21:00", "name": "Kinder Choco-Bon", "category": "food", "qty": "1 piece (~4.3 g)", "kcal": 23.6, "protein_g": 0.29, "carbs_g": 2.15, "fat_g": 1.54, "fiber_g": 0.13, "note": "same generic reference as prior entries (kinder_choco_bons)."}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
@@ -49,7 +53,10 @@
     "10:15 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
     "Lunch stated in advance for ~11:45 (not yet eaten): 2 Angel PRO pitas + 4 slices Tnuva Emek Light yellow cheese 9% + 40g Simfonia cheese spread + 20 cherry tomatoes — all standard/verified references, logged ahead of time; will confirm/adjust once actually eaten.",
     "13:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
-    "18:15 dinner: 250g chicken breast (standard reference, credits ~2.25mg zinc/~60mcg selenium) + 2 spoons (~60g) chopped liver with silan (new generic reference, credits ~1.5mg zinc) + 3 spoons (~105g) white rice (standard reference) + 50g egg salad in mayo (standard reference) + 50g white cabbage salad in lemon juice (standard reference, no oil) + 2 pieces (~60g) baguette (new generic reference)."
+    "18:15 dinner: 250g chicken breast (standard reference, credits ~2.25mg zinc/~60mcg selenium) + 2 spoons (~60g) chopped liver with silan (new generic reference, credits ~1.5mg zinc) + 3 spoons (~105g) white rice (standard reference) + 50g egg salad in mayo (standard reference) + 50g white cabbage salad in lemon juice (standard reference, no oil) + 2 pieces (~60g) baguette (new generic reference).",
+    "21:00 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
+    "21:00 creatine monohydrate, 5g (standard dose) + 1 Kinder Choco-Bon (same generic reference as prior entries).",
+    "EOD: 7,500 steps reported. Retainers: no entry volunteered tonight — last logged entry is 2026-10-02 (worn:true), so 10-03, 10-04, and tonight (10-05) make 3 consecutive no-entry nights, hitting the flag threshold — noting once per the standing rule."
   ],
-  "status_note": "Day in progress. Slept 6.5h (00:15-06:45), slightly under target. AM spray + pill + double espresso + Mayven + breakfast + essential-5 logged. Lunch stated in advance for ~11:45, not yet confirmed. Omega-3 + full dinner logged. Zinc/selenium/vitamin C/D/E all well past today's targets."
+  "status_note": "Day complete. Slept 6.5h (00:15-06:45), slightly under target. Both allergy doses + omega-3 + essential-5 + creatine logged. Full day of meals + dinner logged (lunch was stated in advance, not separately confirmed). Zinc/selenium/vitamin C/D/E all well past today's targets. 7,500 steps. Retainers: 3 consecutive nights with no entry (10-03 through 10-05) — flagged once."
 }

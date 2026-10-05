@@ -1,7 +1,7 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-03",
+    "report_date": "2026-10-05",
     "latest_session": "Back day (ended ~10:00, start time not given) — all exercises performed as suggested. Diverging Seated Row 97kg×4×12, as suggested (new PR — est. 1RM 135.8 vs 132.6 prior best at 97kg×4×11). Lat Pulldown (Wide Grip) 75kg×3×10, as suggested (new PR — est. 1RM 100.0 vs 97.5 prior best at 75kg×3×9). Dead Hang 35s+30s+25s, as suggested (rebuild to best — ties exactly). Reverse Incline DB Row 26kg each (52kg total)×4×12, as suggested (rebuild to best — ties exactly). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Low Row (also suggested) was not performed this session. 3 new PRs.",
     "sessions_logged": 74,
     "sessions_per_week": 3.8,
@@ -10,10 +10,9 @@
     "aerobic_sessions_28d": 8,
     "avg_pace": "10:15/km",
     "avg_hr": 142,
-    "acwr": 1.26,
+    "acwr": 0.82,
     "recommended_next": "Chest day",
     "alerts": [
-      "Recovers in ~62.9h. Avoid loading it hard before then — you trained it most recently.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
