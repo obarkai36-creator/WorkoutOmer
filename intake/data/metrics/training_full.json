@@ -1,5 +1,5 @@
 {
-  "now": 1791297273164,
+  "now": 1791301069278,
   "workouts": [
     {
       "datetime": "2026-10-06T15:10",
@@ -7597,7 +7597,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     },
@@ -7669,7 +7669,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "ready": true
     }
@@ -7729,7 +7729,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 12,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         },
@@ -7815,14 +7815,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 18,
+          "pct": 17,
           "readyInHours": 0,
           "ready": true
         }
@@ -9106,13 +9106,13 @@
       },
       {
         "label": "-1w",
-        "stress": 580,
-        "sessions": 4,
+        "stress": 760,
+        "sessions": 5,
         "acwr": 1.26
       },
       {
         "label": "This wk",
-        "stress": 485,
+        "stress": 323,
         "sessions": 3,
         "acwr": 0.71
       }
@@ -9128,9 +9128,9 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-06T14:34:33.164Z",
+    "readyAt": "2026-10-06T15:37:49.278Z",
     "neverLogged": false,
-    "daysSince": 10.9,
+    "daysSince": 11,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -9251,7 +9251,7 @@
         "section": "Chest",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 10.9
+        "daysSince": 11
       },
       {
         "section": "Legs",
