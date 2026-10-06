@@ -1,18 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-05",
-    "latest_session": "Back day (ended ~10:00, start time not given) — all exercises performed as suggested. Diverging Seated Row 97kg×4×12, as suggested (new PR — est. 1RM 135.8 vs 132.6 prior best at 97kg×4×11). Lat Pulldown (Wide Grip) 75kg×3×10, as suggested (new PR — est. 1RM 100.0 vs 97.5 prior best at 75kg×3×9). Dead Hang 35s+30s+25s, as suggested (rebuild to best — ties exactly). Reverse Incline DB Row 26kg each (52kg total)×4×12, as suggested (rebuild to best — ties exactly). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Low Row (also suggested) was not performed this session. 3 new PRs.",
-    "sessions_logged": 74,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-10-06",
+    "latest_session": "Outdoor Run — Or Akiva, Haifa District (15:10-15:24, Nike Run Club) — 2.01km in 13:57 (6:56/km avg pace), 149 kcal, 7m elevation gain, cadence 154. No heart-rate monitor worn. Additional walking afterward, not tracked/quantified separately.",
+    "sessions_logged": 75,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 22.6,
-    "aerobic_sessions_28d": 8,
-    "avg_pace": "10:15/km",
+    "aerobic_28d_km": 24.6,
+    "aerobic_sessions_28d": 9,
+    "avg_pace": "10:09/km",
     "avg_hr": 142,
-    "acwr": 0.82,
+    "acwr": 0.71,
     "recommended_next": "Chest day",
     "alerts": [
+      "Load ratio 0.71 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
@@ -487,6 +488,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Ended ~10:00, start time not given. All exercises performed as suggested. Diverging Seated Row 97kg×4×12, new PR (est. 1RM 135.8 vs 132.6 prior best); Lat Pulldown (Wide Grip) 75kg×3×10, new PR (est. 1RM 100.0 vs 97.5 prior best); Dead Hang 35s+30s+25s, ties best exactly; Reverse Incline DB Row 26kg each (52kg total)×4×12, ties best exactly; Dumbbell Pullover 22.5kg×4×10, new PR (est. 1RM 30.0 vs 29.25 prior best). Low Row (also suggested) not performed. 3 new PRs.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-06",
+      "type": "Outdoor Run",
+      "duration_min": 13.95,
+      "intensity": "light",
+      "notes": "Or Akiva, Haifa District (15:10-15:24, Nike Run Club) — 2.01km in 13:57 (6:56/km avg pace), 149 kcal, 7m elevation gain, cadence 154. No heart-rate monitor worn. Additional walking afterward, not tracked/quantified separately.",
       "_source": "manual log"
     }
   ]

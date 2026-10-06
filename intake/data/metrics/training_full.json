@@ -1,6 +1,35 @@
 {
-  "now": 1791285701199,
+  "now": 1791290947931,
   "workouts": [
+    {
+      "datetime": "2026-10-06T15:10",
+      "note": "Outdoor Run — Or Akiva, Haifa District (15:10-15:24, Nike Run Club) — 2.01km in 13:57 (6:56/km avg pace), 149 kcal, 7m elevation gain, cadence 154. No heart-rate monitor worn. Additional walking afterward, not tracked/quantified separately.",
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 2.01,
+          "durationMin": 13.95,
+          "cadence": 154,
+          "elevationGainM": 7,
+          "load": 125.54999999999998,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 125.54999999999998,
+            "quads": 37.66499999999999,
+            "calves": 37.66499999999999
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1791299400000,
+      "muscleLoad": {
+        "cardio": 125.54999999999998,
+        "quads": 37.66499999999999,
+        "calves": 37.66499999999999
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-10-03T10:00",
       "note": "Back day (ended ~10:00, start time not given) — all exercises performed as suggested. Diverging Seated Row 97kg×4×12, as suggested (new PR — est. 1RM 135.8 vs 132.6 prior best at 97kg×4×11). Lat Pulldown (Wide Grip) 75kg×3×10, as suggested (new PR — est. 1RM 100.0 vs 97.5 prior best at 75kg×3×9). Dead Hang 35s+30s+25s, as suggested (rebuild to best — ties exactly). Reverse Incline DB Row 26kg each (52kg total)×4×12, as suggested (rebuild to best — ties exactly). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Low Row (also suggested) was not performed this session. 3 new PRs.",
@@ -7552,7 +7581,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 30,
+      "pct": 29,
       "readyInHours": 0,
       "ready": true
     },
@@ -7624,7 +7653,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 0,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -7640,7 +7669,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 2,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     }
@@ -7663,14 +7692,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 30,
+      "pct": 29,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 30,
+          "pct": 29,
           "readyInHours": 0,
           "ready": true
         }
@@ -7752,16 +7781,16 @@
           "ready": true
         },
         {
-          "key": "adductors",
-          "label": "Adductors",
+          "key": "calves",
+          "label": "Calves",
           "section": "Legs",
-          "pct": 0,
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         },
         {
-          "key": "calves",
-          "label": "Calves",
+          "key": "adductors",
+          "label": "Adductors",
           "section": "Legs",
           "pct": 0,
           "readyInHours": 0,
@@ -7786,14 +7815,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 2,
+      "pct": 18,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 2,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         }
@@ -8036,7 +8065,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Low Row",
@@ -8099,7 +8128,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Reverse Incline DB Row",
@@ -8121,7 +8150,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 6,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell Pullover",
@@ -8142,7 +8171,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dead Hang",
@@ -8163,7 +8192,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 4860,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Shoulders": [
@@ -9085,23 +9114,23 @@
         "label": "This wk",
         "stress": 485,
         "sessions": 3,
-        "acwr": 0.66
+        "acwr": 0.71
       }
     ],
-    "acute": 45.64,
-    "chronic": 69,
-    "acwr": 0.66,
+    "acute": 49.83,
+    "chronic": 70.15,
+    "acwr": 0.71,
     "acwrZone": "detraining",
-    "sessions28": 15
+    "sessions28": 16
   },
   "recommendation": {
     "section": "Chest",
     "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-06T11:21:41.199Z",
+    "readyAt": "2026-10-06T12:49:07.931Z",
     "neverLogged": false,
-    "daysSince": 10.8,
+    "daysSince": 10.9,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -9215,14 +9244,14 @@
       }
     ],
     "guidance": [
-      "Load ratio 0.66 has dipped — a normal, or even a slightly harder, session is fine."
+      "Load ratio 0.71 has dipped — a normal, or even a slightly harder, session is fine."
     ],
     "ranked": [
       {
         "section": "Chest",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 10.8
+        "daysSince": 10.9
       },
       {
         "section": "Legs",
@@ -9234,7 +9263,7 @@
         "section": "Shoulders",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 6.8
+        "daysSince": 6.9
       },
       {
         "section": "Arms",
@@ -9244,7 +9273,7 @@
       },
       {
         "section": "Back",
-        "fatigue": 30,
+        "fatigue": 29,
         "readyInHours": 0,
         "daysSince": 3.1
       }
@@ -9252,15 +9281,15 @@
     "suggestedCount": 4,
     "totalAvailable": 10,
     "typicalSessionSize": 4,
-    "aerobicLast7": 1,
+    "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 3.9
+    "daysSinceAerobic": -0.1
   },
   "alerts": [
     {
       "level": "low",
       "title": "Load dropped off",
-      "detail": "Load ratio 0.66 (<0.8). A normal training week will bring this back up."
+      "detail": "Load ratio 0.71 (<0.8). A normal training week will bring this back up."
     },
     {
       "level": "ok",
@@ -9269,26 +9298,25 @@
     }
   ],
   "changes": [
-    "You're below your PR on 12 lifts — closest wins first: Seated Dips (28% of best), Dead Hang (33% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight.",
-    "Only 1/2 aerobic sessions this week — add an easy run or row."
+    "You're below your PR on 12 lifts — closest wins first: Seated Dips (28% of best), Dead Hang (33% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight."
   ],
   "timing": {
     "avgGap": 3,
     "longestGap": 35.7,
-    "perWeek": 3.8,
+    "perWeek": 4,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
       5,
       14,
-      10,
+      11,
       7,
       4,
       17,
       17
     ],
-    "daysSinceLast": 3.1,
-    "total": 74
+    "daysSinceLast": -0.1,
+    "total": 75
   },
   "relstrength": {
     "bodyweightKg": 80.95,
@@ -9337,15 +9365,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 38,
-    "km7": 2.9,
-    "km28": 22.6,
-    "totalKm": 150.6,
+    "count": 39,
+    "km7": 4.9,
+    "km28": 24.6,
+    "totalKm": 152.6,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 3.6764705882352944,
-    "avgPace": 10.24988989807189,
-    "paceTrend": 5.19,
+    "avgPace": 10.157956803888302,
+    "paceTrend": -1.72,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -9354,8 +9382,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 3.9,
+    "daysSinceLast": -0.1,
     "recent": [
+      {
+        "t": 1791299400000,
+        "name": "Outdoor Run",
+        "distanceKm": 2.01,
+        "durationMin": 13.95,
+        "avgHr": null,
+        "pace": 6.940298507462687
+      },
       {
         "t": 1790952720000,
         "name": "Outdoor Run",
@@ -9387,14 +9423,6 @@
         "durationMin": 22.1,
         "avgHr": null,
         "pace": 4.29126213592233
-      },
-      {
-        "t": 1790229600000,
-        "name": "Outdoor Run",
-        "distanceKm": 3,
-        "durationMin": 24.27,
-        "avgHr": null,
-        "pace": 8.09
       }
     ]
   },

@@ -299,6 +299,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 6 Oct — Outdoor Run, Or Akiva (15:10-15:24, + extra walking after)
+  {
+    datetime: "2026-10-06T15:10", note: "Outdoor Run — Or Akiva, Haifa District (15:10-15:24, Nike Run Club) — 2.01km in 13:57 (6:56/km avg pace), 149 kcal, 7m elevation gain, cadence 154. No heart-rate monitor worn. Additional walking afterward, not tracked/quantified separately.",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 2.01, durationMin: 13.95, cadence: 154, elevationGainM: 7 },
+    ],
+  },
   // 3 Oct — Back (ended ~10:00)
   {
     datetime: "2026-10-03T10:00", note: "Back day (ended ~10:00, start time not given) — all exercises performed as suggested. Diverging Seated Row 97kg×4×12, as suggested (new PR — est. 1RM 135.8 vs 132.6 prior best at 97kg×4×11). Lat Pulldown (Wide Grip) 75kg×3×10, as suggested (new PR — est. 1RM 100.0 vs 97.5 prior best at 75kg×3×9). Dead Hang 35s+30s+25s, as suggested (rebuild to best — ties exactly). Reverse Incline DB Row 26kg each (52kg total)×4×12, as suggested (rebuild to best — ties exactly). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Low Row (also suggested) was not performed this session. 3 new PRs.",
