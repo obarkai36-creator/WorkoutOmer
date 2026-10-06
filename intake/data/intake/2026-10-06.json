@@ -1,7 +1,8 @@
 {
   "date": "2026-10-06",
   "day_number": 101,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 7000,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "User explicitly asked to skip exact food macro/micro logging for 2026-10-06 (one-off day).",
   "sleep": {
@@ -46,7 +47,8 @@
     "15:45 double espresso, 1 double (4 caffeine shots today).",
     "17:15 creatine monohydrate, 5g (standard dose).",
     "17:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
-    "18:40 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today."
+    "18:40 PM Rhinolast dose (2nd of the 2x/day spray) — both allergy doses done today.",
+    "EOD: 7,000 steps reported (includes today's 2.01km Outdoor Run). Retainers: worn tonight (volunteered) — logged to retainers.json, clears the 3-missing-night flag noted at 10-05 EOD (10-03/04/05)."
   ],
-  "status_note": "Day in progress. Slept 8.67h (22:50-07:30), within target. AM spray + pill + double espresso + Mayven + omega-3 logged. Outdoor Run (2.01km, 13:57) + extra walking + post-run espresso + creatine + essential-5 logged. No detailed food tracking today (one-off, user request). Zinc/selenium/vitamin C/D/E all well past today's targets."
+  "status_note": "Day complete. Slept 8.67h (22:50-07:30), within target. Both allergy doses + omega-3 + essential-5 + creatine logged. Outdoor Run (2.01km, 13:57) + extra walking logged. No detailed food tracking today (one-off, user request). Zinc/selenium/vitamin C/D/E all well past today's targets. 7,000 steps. Retainers worn tonight."
 }
