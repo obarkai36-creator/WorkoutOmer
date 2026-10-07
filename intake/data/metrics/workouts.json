@@ -1,7 +1,7 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-06",
+    "report_date": "2026-10-07",
     "latest_session": "Outdoor Run — Or Akiva, Haifa District (15:10-15:24, Nike Run Club) — 2.01km in 13:57 (6:56/km avg pace), 149 kcal, 7m elevation gain, cadence 154. No heart-rate monitor worn. Additional walking afterward, not tracked/quantified separately.",
     "sessions_logged": 75,
     "sessions_per_week": 4,
@@ -10,10 +10,10 @@
     "aerobic_sessions_28d": 9,
     "avg_pace": "10:09/km",
     "avg_hr": 142,
-    "acwr": 0.71,
+    "acwr": 0.57,
     "recommended_next": "Chest day",
     "alerts": [
-      "Load ratio 0.71 (<0.8). A normal training week will bring this back up.",
+      "Load ratio 0.57 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
