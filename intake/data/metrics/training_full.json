@@ -1,5 +1,5 @@
 {
-  "now": 1791369548837,
+  "now": 1791389904052,
   "workouts": [
     {
       "datetime": "2026-10-06T15:10",
@@ -7581,7 +7581,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 20,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -7597,7 +7597,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     },
@@ -7613,7 +7613,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -7669,7 +7669,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "ready": true
     }
@@ -7692,14 +7692,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 20,
+      "pct": 18,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 20,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         }
@@ -7729,7 +7729,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         },
@@ -7737,7 +7737,7 @@
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         },
@@ -7815,14 +7815,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 9,
+          "pct": 8,
           "readyInHours": 0,
           "ready": true
         }
@@ -9094,14 +9094,14 @@
       },
       {
         "label": "-3w",
-        "stress": 697,
-        "sessions": 4,
+        "stress": 870,
+        "sessions": 5,
         "acwr": 1.35
       },
       {
         "label": "-2w",
-        "stress": 436,
-        "sessions": 4,
+        "stress": 264,
+        "sessions": 3,
         "acwr": 0.54
       },
       {
@@ -9128,9 +9128,9 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-07T10:39:08.837Z",
+    "readyAt": "2026-10-07T16:18:24.052Z",
     "neverLogged": false,
-    "daysSince": 11.8,
+    "daysSince": 12,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -9251,31 +9251,31 @@
         "section": "Chest",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 11.8
+        "daysSince": 12
       },
       {
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 11
+        "daysSince": 11.3
       },
       {
         "section": "Shoulders",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 7.8
+        "daysSince": 8.1
       },
       {
         "section": "Arms",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 4
+        "daysSince": 4.3
       },
       {
         "section": "Back",
-        "fatigue": 20,
+        "fatigue": 18,
         "readyInHours": 0,
-        "daysSince": 4
+        "daysSince": 4.3
       }
     ],
     "suggestedCount": 4,
@@ -9283,7 +9283,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 0.8
+    "daysSinceAerobic": 1
   },
   "alerts": [
     {
@@ -9315,7 +9315,7 @@
       17,
       17
     ],
-    "daysSinceLast": 0.8,
+    "daysSinceLast": 1,
     "total": 75
   },
   "relstrength": {
@@ -9382,7 +9382,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.8,
+    "daysSinceLast": 1,
     "recent": [
       {
         "t": 1791299400000,
