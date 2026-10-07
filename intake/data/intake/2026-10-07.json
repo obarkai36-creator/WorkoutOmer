@@ -16,25 +16,32 @@
     {"time": "09:10", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:20", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "09:30", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
-    {"time": "09:30", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (catalina_crunch_choc_pb_cereal): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. \"Handful\" estimated at ~20g, consistent with prior handful-size logs."}
+    {"time": "09:30", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "verified label reference (catalina_crunch_choc_pb_cereal): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. \"Handful\" estimated at ~20g, consistent with prior handful-size logs."},
+    {"time": "10:20", "name": "Green grapes", "category": "food", "qty": "5 grapes (~25 g)", "kcal": 17.5, "protein_g": 0.25, "carbs_g": 4.5, "fat_g": 0, "fiber_g": 0.25, "note": "same generic reference as prior entries (green_grapes_generic). Credits ~2.7mg vitamin C."},
+    {"time": "11:45", "name": "Lunch — Angel PRO pita", "category": "food", "qty": "2 units (125 g)", "kcal": 251.2, "protein_g": 25.8, "carbs_g": 28.4, "fat_g": 2.4, "fiber_g": 7.4, "note": "verified label reference (angel_pita_pro_20g_protein), same as prior entries."},
+    {"time": "11:45", "name": "Lunch — Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.73, "carbs_g": 11.73, "fat_g": 0.6, "fiber_g": 3.6, "note": "Same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "11:45", "name": "Lunch — Simfonia cheese spread", "category": "food", "qty": "40 g", "kcal": 43.2, "protein_g": 3.92, "carbs_g": 1.84, "fat_g": 2.0, "fiber_g": 0, "note": "verified label reference (simfonia_cheese_spread_generic). Credits ~9.6mg cholesterol, ~150mg sodium, ~52mg calcium (not tracked in micros_sperm_priority)."},
+    {"time": "11:45", "name": "Lunch — Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified label reference, same as prior entries."}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 46.7,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 8.8
   },
   "assumptions": [
     "Sleep logged: fragmented, 22:45-01:50 + 05:00-08:45 (night of 2026-10-06), ~6.83h total — a bit short of the 7-9h target band.",
     "09:00 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
     "09:10 double espresso, 1 double (2 caffeine shots today).",
     "09:20 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
-    "09:30 vanilla Danone PRO protein yogurt (1 cup, 200g, same line as prior entries) + ~20g handful Catalina Crunch Chocolate PB protein cereal (verified label reference)."
+    "09:30 vanilla Danone PRO protein yogurt (1 cup, 200g, same line as prior entries) + ~20g handful Catalina Crunch Chocolate PB protein cereal (verified label reference).",
+    "10:20 5 green grapes (~25g, same generic reference as prior entries) — credits ~2.7mg vitamin C.",
+    "11:45 lunch: 2 Angel PRO pitas (verified reference) + 20 cherry tomatoes (credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 40g Simfonia cheese spread (verified label reference) + 4 slices Tnuva Emek Light yellow cheese 9% (100g, verified label reference)."
   ],
-  "status_note": "Day in progress. Slept ~6.83h, fragmented into two segments (22:45-01:50, 05:00-08:45), a bit short of target. AM spray + pill + double espresso + Mayven + breakfast logged."
+  "status_note": "Day in progress. Slept ~6.83h, fragmented into two segments (22:45-01:50, 05:00-08:45), a bit short of target. AM spray + pill + double espresso + Mayven + breakfast + grapes + lunch logged."
 }
