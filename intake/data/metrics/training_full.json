@@ -1,5 +1,5 @@
 {
-  "now": 1791466628030,
+  "now": 1791472144714,
   "workouts": [
     {
       "datetime": "2026-10-08T15:00",
@@ -7728,7 +7728,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 83,
-      "readyInHours": 61,
+      "readyInHours": 60.8,
       "ready": false
     },
     "back": {
@@ -7760,7 +7760,7 @@
       "label": "Triceps",
       "section": "Arms",
       "pct": 82,
-      "readyInHours": 40.1,
+      "readyInHours": 39.9,
       "ready": false
     },
     "forearms": {
@@ -7791,7 +7791,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 1,
+      "pct": 0,
       "readyInHours": 0,
       "ready": true
     },
@@ -7832,14 +7832,14 @@
     "Chest": {
       "section": "Chest",
       "pct": 83,
-      "readyInHours": 61,
+      "readyInHours": 60.8,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 83,
-          "readyInHours": 61,
+          "readyInHours": 60.8,
           "ready": false
         }
       ]
@@ -7877,14 +7877,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 37,
-      "readyInHours": 40.1,
+      "readyInHours": 39.9,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
           "pct": 82,
-          "readyInHours": 40.1,
+          "readyInHours": 39.9,
           "ready": false
         },
         {
@@ -7907,7 +7907,7 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 1,
+      "pct": 0,
       "readyInHours": 0,
       "muscles": [
         {
@@ -7930,7 +7930,7 @@
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 1,
+          "pct": 0,
           "readyInHours": 0,
           "ready": true
         },
@@ -9286,8 +9286,8 @@
       },
       {
         "label": "This wk",
-        "stress": 319,
-        "sessions": 3,
+        "stress": 521,
+        "sessions": 4,
         "acwr": 1.05
       }
     ],
@@ -9299,12 +9299,12 @@
   },
   "recommendation": {
     "section": "Legs",
-    "fatigue": 1,
+    "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-08T13:37:08.030Z",
+    "readyAt": "2026-10-08T15:09:04.714Z",
     "neverLogged": false,
-    "daysSince": 12.1,
+    "daysSince": 12.2,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -9465,15 +9465,15 @@
     "ranked": [
       {
         "section": "Legs",
-        "fatigue": 1,
+        "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 12.1
+        "daysSince": 12.2
       },
       {
         "section": "Shoulders",
         "fatigue": 15,
         "readyInHours": 0,
-        "daysSince": 8.9
+        "daysSince": 9
       },
       {
         "section": "Back",
@@ -9484,14 +9484,14 @@
       {
         "section": "Arms",
         "fatigue": 37,
-        "readyInHours": 40.1,
+        "readyInHours": 39.9,
         "daysSince": 5.2
       },
       {
         "section": "Chest",
         "fatigue": 83,
-        "readyInHours": 61,
-        "daysSince": -0.1
+        "readyInHours": 60.8,
+        "daysSince": 0
       }
     ],
     "suggestedCount": 5,
@@ -9499,18 +9499,18 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1.9
+    "daysSinceAerobic": 2
   },
   "alerts": [
     {
       "level": "low",
       "title": "Chest fatigued (83%)",
-      "detail": "Recovers in ~61h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~60.8h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "low",
       "title": "Triceps fatigued (82%)",
-      "detail": "Recovers in ~40.1h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~39.9h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
@@ -9536,7 +9536,7 @@
       17,
       17
     ],
-    "daysSinceLast": -0.1,
+    "daysSinceLast": 0,
     "total": 76
   },
   "relstrength": {
@@ -9603,7 +9603,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.9,
+    "daysSinceLast": 2,
     "recent": [
       {
         "t": 1791299400000,
