@@ -1,0 +1,117 @@
+{
+  "id": "broccoli_cheese_bake",
+  "name": "Broccoli & cheese bake (פשטידת ברוקולי וגבינות)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Hebrew recipe (pasted)",
+    "captured": "2026-10-08",
+    "notes": "Baked broccoli-and-cheese pashtida: 600 g frozen broccoli + a cottage/white/Bulgarian cheese + egg custard, bound with a little flour/cornflour/baking powder, topped with panko + yellow cheese for crunch. Analyzed for the whole bake; per_serving = batch ÷ 8 (~170 g each). Cheeses taken at the stated 5% versions. Estimate. Optimization captured in suggested_mods — an optimized variant is in chat."
+  },
+  "servings": 8,
+  "serving_desc": "≈170 g slice (batch ÷8) — side or light main; 2 slices = a fuller meal",
+  "ingredients": [
+    {"item": "frozen broccoli (Sunfrost)", "qty": "600 g", "note": "drain VERY well after cooking — wet broccoli = watery bake"},
+    {"item": "onion, finely chopped", "qty": "1 large (~150 g)"},
+    {"item": "garlic, crushed", "qty": "2 cloves"},
+    {"item": "olive oil", "qty": "1 tsp"},
+    {"item": "cottage cheese 5%", "qty": "250 g"},
+    {"item": "white cheese 5% (gvina levana)", "qty": "150 g"},
+    {"item": "Bulgarian cheese 5% (refined), crumbled", "qty": "80–100 g", "note": "salty — it sets the salt level; verify pasteurized (her note)"},
+    {"item": "eggs L", "qty": "3"},
+    {"item": "flour", "qty": "3 tbsp (~30 g)", "note": "swap to whole spelt for fiber (see mods)"},
+    {"item": "cornflour", "qty": "1 flat tbsp (~8 g)"},
+    {"item": "baking powder", "qty": "1 tsp"},
+    {"item": "black pepper", "qty": "½ tsp"},
+    {"item": "salt", "qty": "¼–½ tsp", "note": "depends on how salty the Bulgarian is — taste first"},
+    {"item": "TOPPING: yellow cheese flakes", "qty": "~30 g"},
+    {"item": "TOPPING: panko", "qty": "~30 g", "note": "whole-wheat panko adds a little fiber"},
+    {"item": "TOPPING: oil spray", "qty": "a few sprays"}
+  ],
+  "steps": [
+    "Soften the broccoli in boiling salted water a few minutes; drain well and cool. Keep a few nice florets aside, roughly chop the rest.",
+    "Sauté the onion in olive oil until soft and lightly golden; add garlic ~30 sec.",
+    "Mix cottage, white cheese, Bulgarian, eggs, flour, cornflour, baking powder, salt and pepper.",
+    "Fold in the broccoli and the sautéed onion.",
+    "Transfer to a dish, level it, top with the reserved florets, a little yellow cheese, an even layer of panko, and a few sprays of oil.",
+    "Bake 180 °C top-bottom 45–55 min until set and golden. Rest 10–15 min before slicing."
+  ],
+  "per_serving": {
+    "kcal": 175,
+    "protein_g": 12.8,
+    "carbs_g": 16.2,
+    "fat_g": 7.4,
+    "fiber_g": 2.5,
+    "micros": {
+      "folate_mcg_dfe": 56,
+      "vitamin_c_mg": 22,
+      "choline_mg": 55,
+      "calcium_mg": 134,
+      "iron_mg": 1.2,
+      "sodium_mg": 425
+    }
+  },
+  "batch_totals": {
+    "kcal": 1396,
+    "protein_g": 103,
+    "carbs_g": 129,
+    "fat_g": 60,
+    "fiber_g": 20,
+    "sodium_mg": 3400,
+    "calcium_mg": 1075,
+    "note": "Whole bake (8 slices). Broccoli drives the fiber + folate + vitamin C; the cheeses + eggs drive protein + calcium. Sodium is high (Bulgarian + added salt + baking powder) and the flour/cornflour/panko are the refined-carb bits — both are the main optimization levers."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "A genuinely strong veggie bake — for only ~175 kcal a slice it packs ~12.8 g protein (~7.4 g protein per 100 kcal, excellent for a vegetable dish) from the cottage/white/Bulgarian cheeses + eggs, plus real fiber and a big folate/vitamin-C load from 600 g of broccoli. Fat is moderate and mostly from the eggs + cheese. The only soft spots: sodium is high (Bulgarian + added salt), and the flour/cornflour/panko add a little refined carb. Dial those two and it's a 9 — see the optimized version.",
+      "flags": [
+        "~12.8 g protein / 175 kcal slice (~7.4 g protein per 100 kcal)",
+        "broccoli-forward: fiber + folate + vitamin C",
+        "high sodium (~425 mg/slice; ~3,400 mg batch) — Bulgarian + added salt",
+        "refined carbs from flour + cornflour + panko topping",
+        "moderate fat (~7.4 g/slice), mostly eggs + cheese"
+      ],
+      "suggested_mods": [
+        "Skip the added salt — the Bulgarian is already salty (taste the mix first)",
+        "Swap the 3 tbsp flour to whole spelt and use whole-wheat panko — more fiber, whole-grain",
+        "Halve the yellow-cheese topping (~15 g) — panko alone crisps up with a spray of oil; trims fat + sodium",
+        "Add 1–2 egg whites to push protein further with no extra fat",
+        "Great as a protein+veg anchor; pair with a lean protein (chicken) to make it a full cut meal"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 9,
+      "verdict": "An excellent preconception dish — close to ideal for her lens. 600 g of broccoli makes it a folate powerhouse (her #1 nutrient), the 3 eggs bring choline (fetal brain development), the cheeses add calcium + protein, and the broccoli's own vitamin C helps iron absorption. Fully baked and set. One thing to confirm: the Bulgarian cheese is a brined soft cheese — it's baked through here (cooked = considered safe) and the 'refined' Israeli ones are usually pasteurized, but verify it. This is a dish worth making for her regularly.",
+      "prenatal_highlights": [
+        "folate from 600 g broccoli — her top preconception nutrient",
+        "choline from 3 eggs; vitamin C (broccoli) aids iron absorption",
+        "calcium + protein from the cheeses; high fiber; fully baked"
+      ],
+      "safety_advisories": [
+        {"note": "Bulgarian cheese is a brined soft cheese — Listeria risk unless pasteurized. It's baked through here (considered safe cooked) and refined Israeli Bulgarit is usually pasteurized; verify it.", "swap": "verify pasteurized / keep it baked through, or use a little extra white cheese"}
+      ],
+      "suggested_mods": [
+        "Verify the Bulgarian is pasteurized (it's cooked here, so low risk)",
+        "Already rich in folate — no changes needed for her; the lower-sodium tweaks help too"
+      ]
+    }
+  },
+  "tags": ["bake", "pashtida", "broccoli", "cheese", "vegetarian", "high-protein", "high-folate", "baked", "eggs"],
+  "adopted": false,
+  "created": "2026-10-08",
+  "updated": "2026-10-08",
+  "serving_g": 170,
+  "meal_type": "Bread",
+  "cooking_guide": [
+    "Cook the frozen broccoli in boiling salted water just a few minutes — don't overcook it to mush. Then DRAIN IT VERY WELL and even press/pat out the excess water: wet broccoli is the #1 cause of a soggy pashtida. Reserve a few nice florets for the top and roughly chop the rest.",
+    "Sauté the chopped onion in the olive oil over medium until soft and lightly golden (this builds sweetness), then add the garlic for ~30 sec — don't let it brown or it turns bitter.",
+    "In a bowl, whisk the eggs, then stir in the cottage, white cheese and crumbled Bulgarian with the flour, cornflour, baking powder and pepper. Go EASY on the salt — taste the mix first, because the Bulgarian is already salty.",
+    "Fold in the well-drained broccoli and the sautéed onion until evenly coated.",
+    "Transfer to a greased/lined baking dish and level the top. Arrange the reserved florets on top, scatter a little yellow cheese, then an even layer of panko, and a few sprays of oil — the panko + oil is what gives the crisp golden crust without deep-frying.",
+    "Bake at 180 °C (conventional, top-bottom heat) 45–55 min until the center is set (not wobbly) and the top is deep golden. A knife in the middle should come out clean. Larger/wider dish = check earlier.",
+    "REST 10–15 min before cutting — this is important: it lets the custard finish setting so the slices hold together instead of falling apart.",
+    "Tips: for more fiber use whole-spelt flour + whole-wheat panko; for more protein add 1–2 egg whites; a grating of nutmeg or a little chili lifts the flavor."
+  ]
+}
