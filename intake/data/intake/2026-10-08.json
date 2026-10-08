@@ -16,18 +16,23 @@
     {"time": "08:40", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "09:20", "name": "Danone PRO Vanilla Yogurt, 0% fat (20g protein cup)", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same Danone PRO 0% line as prior entries."},
     {"time": "09:20", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "2 handfuls (~40 g)", "kcal": 122.4, "protein_g": 12.4, "carbs_g": 17.6, "fat_g": 5.6, "fiber_g": 10, "note": "verified label reference (catalina_crunch_choc_pb_cereal): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g. Double the usual ~20g handful."},
-    {"time": "09:45", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "09:45", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "13:00", "name": "Lunch — kebab (ground meat skewer)", "category": "food", "qty": "80 g", "kcal": 184, "protein_g": 21.6, "carbs_g": 0, "fat_g": 11.2, "fiber_g": 0, "time_approx": true, "note": "same standard blended red-meat kebab reference as prior entries (~230kcal/27p/14f per 100g). Credits ~3.6mg zinc, ~12mcg selenium."},
+    {"time": "13:00", "name": "Lunch — chicken thighs", "category": "food", "qty": "80 g", "kcal": 167.2, "protein_g": 20.8, "carbs_g": 0, "fat_g": 8.7, "fiber_g": 0, "time_approx": true, "note": "standard grilled boneless/skinless chicken thigh reference (~209kcal/100g). Credits ~1.04mg zinc, ~11.2mcg selenium."},
+    {"time": "13:00", "name": "Lunch — chicken breast hot dogs", "category": "food", "qty": "80 g", "kcal": 136, "protein_g": 10.4, "carbs_g": 1.6, "fat_g": 9.6, "fiber_g": 0, "time_approx": true, "note": "new generic reference (chicken_breast_hotdog_generic, not label-verified, first time logged) — processed chicken-breast hot dog sausage values."},
+    {"time": "13:00", "name": "Lunch — white rice", "category": "food", "qty": "100 g cooked", "kcal": 131, "protein_g": 2.71, "carbs_g": 28, "fat_g": 0.29, "fiber_g": 0.4, "time_approx": true, "note": "same standard cooked white rice reference as prior entries (~130kcal/100g)."},
+    {"time": "13:00", "name": "Lunch — salad (tomato, cucumber, olive oil & lemon)", "category": "food", "qty": "1.5 tomatoes (~184 g) + 1.5 cucumbers (~450 g), dressed with 1 spoon (~14g) olive oil + lemon juice", "kcal": 227.3, "protein_g": 4.68, "carbs_g": 24.4, "fat_g": 14.75, "fiber_g": 4.5, "time_approx": true, "note": "each component at its standard saved reference (tomato ~18kcal/100g, cucumber ~45kcal/300g); olive oil + lemon juice at the usual per-spoon rates. Credits ~4.74mg lycopene, ~30.3mg vitamin C, ~27.7mcg folate DFE, ~2.0mg vitamin E (olive oil)."}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 22.8,
-    "selenium_mcg": 100,
-    "folate_mcg_dfe": 100,
+    "zinc_mg": 27.44,
+    "selenium_mcg": 123.2,
+    "folate_mcg_dfe": 127.68,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1000,
+    "vitamin_c_mg": 1030.3,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 134,
-    "lycopene_mg": 0
+    "vitamin_e_mg": 136,
+    "lycopene_mg": 4.74
   },
   "assumptions": [
     "Sleep logged: 22:45-07:30, 8.75h (night of 2026-10-07) — within the 7-9h target band.",
@@ -35,7 +40,8 @@
     "08:25 double espresso, 1 double (2 caffeine shots today).",
     "08:40 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "09:20 vanilla Danone PRO protein yogurt (1 cup, 200g, same line as prior entries) + 2 handfuls (~40g) Catalina Crunch Chocolate PB protein cereal (verified label reference, double the usual handful).",
-    "09:45 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E."
+    "09:45 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
+    "13:00 lunch (clock time not given, placeholder 13:00): 80g kebab (credits ~3.6mg zinc/~12mcg selenium) + 80g chicken thighs (credits ~1.04mg zinc/~11.2mcg selenium) + 80g chicken breast hot dogs (new generic reference) + 100g cooked white rice (standard reference) + salad (1.5 tomatoes, 1.5 cucumbers, 1 spoon olive oil + lemon juice — credits ~4.74mg lycopene, ~30.3mg vitamin C, ~27.7mcg folate DFE, ~2.0mg vitamin E)."
   ],
-  "status_note": "Day in progress. Slept 8.75h (22:45-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast + essential-5 logged. Zinc/selenium/vitamin C/D/E all well past today's targets."
+  "status_note": "Day in progress. Slept 8.75h (22:45-07:30), within target. AM spray + pill + double espresso + Mayven + breakfast + essential-5 + lunch (3 meats, rice, salad) logged. Zinc/selenium/vitamin C/D/E all well past today's targets."
 }
