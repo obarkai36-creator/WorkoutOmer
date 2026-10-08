@@ -1,5 +1,5 @@
 {
-  "now": 1791474281214,
+  "now": 1791475756343,
   "workouts": [
     {
       "datetime": "2026-10-08T15:00",
@@ -7728,7 +7728,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 82,
-      "readyInHours": 60.2,
+      "readyInHours": 59.8,
       "ready": false
     },
     "back": {
@@ -7760,7 +7760,7 @@
       "label": "Triceps",
       "section": "Arms",
       "pct": 80,
-      "readyInHours": 39.3,
+      "readyInHours": 38.9,
       "ready": false
     },
     "forearms": {
@@ -7832,14 +7832,14 @@
     "Chest": {
       "section": "Chest",
       "pct": 82,
-      "readyInHours": 60.2,
+      "readyInHours": 59.8,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 82,
-          "readyInHours": 60.2,
+          "readyInHours": 59.8,
           "ready": false
         }
       ]
@@ -7877,14 +7877,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 36,
-      "readyInHours": 39.3,
+      "readyInHours": 38.9,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
           "pct": 80,
-          "readyInHours": 39.3,
+          "readyInHours": 38.9,
           "ready": false
         },
         {
@@ -9302,9 +9302,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-08T15:44:41.214Z",
+    "readyAt": "2026-10-08T16:09:16.343Z",
     "neverLogged": false,
-    "daysSince": 12.2,
+    "daysSince": 12.3,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -9467,7 +9467,7 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 12.2
+        "daysSince": 12.3
       },
       {
         "section": "Shoulders",
@@ -9479,18 +9479,18 @@
         "section": "Back",
         "fatigue": 12,
         "readyInHours": 0,
-        "daysSince": 5.2
+        "daysSince": 5.3
       },
       {
         "section": "Arms",
         "fatigue": 36,
-        "readyInHours": 39.3,
-        "daysSince": 5.2
+        "readyInHours": 38.9,
+        "daysSince": 5.3
       },
       {
         "section": "Chest",
         "fatigue": 82,
-        "readyInHours": 60.2,
+        "readyInHours": 59.8,
         "daysSince": 0
       }
     ],
@@ -9505,12 +9505,12 @@
     {
       "level": "low",
       "title": "Chest fatigued (82%)",
-      "detail": "Recovers in ~60.2h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~59.8h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "low",
       "title": "Triceps fatigued (80%)",
-      "detail": "Recovers in ~39.3h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~38.9h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
