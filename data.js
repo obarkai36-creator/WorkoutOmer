@@ -165,6 +165,7 @@ const EXERCISE_LIBRARY = {
   "Incline DB Curl":        { kind: "strength", muscles: { biceps: 1.0 } },
   "Hammer Curl":            { kind: "strength", muscles: { biceps: 1.0, forearms: 0.4 } },
   "Preacher Curl":          { kind: "strength", muscles: { biceps: 1.0 } },
+  "EZ Bar Curl":            { kind: "strength", muscles: { biceps: 1.0 } },
   "Biceps Curl Machine":    { kind: "strength", muscles: { biceps: 1.0 } },
   "Half Curl":              { kind: "strength", muscles: { biceps: 1.0 } },
   "Cable Curl":             { kind: "strength", muscles: { biceps: 1.0 } }, // hotel-gym substitute for Biceps Curl Machine
@@ -256,6 +257,7 @@ const SNAPSHOT = [
   { name: "Incline DB Curl",      section: "Arms", latest: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6" }, best: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
+  { name: "EZ Bar Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 25, text: "7.5kg each + bar × 4×10" }, best: { sets: 4, reps: 10, weight: 25, text: "7.5kg each + bar × 4×10" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 2, reps: 6, weight: 45, text: "45kg × 2×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
   { name: "Half Curl",            section: "Arms", latest: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" } },
   { name: "Cable Curl",           section: "Arms", latest: { sets: 3, reps: 10, weight: 25, text: "25kg × 3×10 (hotel gym, first logged)" }, best: { sets: 3, reps: 10, weight: 25, text: "25kg × 3×10" } },
@@ -299,6 +301,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 8 Oct — Chest (15:00)
+  {
+    datetime: "2026-10-08T15:00", note: "Chest day (15:00) — Bench Press 72.5kg×4×9, as best (ties exactly, no PR). Incline Pec Fly 18kg each (36kg total)×4×10, as suggested (new PR — est. 1RM 48.0 vs 46.8 prior best at 36kg×4×9). Narrow Push-Ups BW×4×11, as suggested (new PR — est. 1RM 110.7 vs 108.0 prior best at BW×4×10). EZ Bar Curl 7.5kg each + bar (25kg total)×4×10 — new exercise, added to the catalog and logged for the first time (not a PR, first-ever entry). Single-Hand DB Triceps Extension 12kg each×4×9, +1 rep on best (new PR — est. 1RM 15.6 vs 15.2 prior best at 12kg each×4×8). 3 new PRs + 1 new exercise added to rotation.",
+    exercises: [
+      { name: "Bench Press",                       sets: [ { reps: 9, weight: 72.5 }, { reps: 9, weight: 72.5 }, { reps: 9, weight: 72.5 }, { reps: 9, weight: 72.5 } ] },
+      { name: "Incline Pec Fly",                    sets: [ { reps: 10, weight: 36 }, { reps: 10, weight: 36 }, { reps: 10, weight: 36 }, { reps: 10, weight: 36 } ] },
+      { name: "Narrow Push-Ups",                    sets: [ { reps: 11 }, { reps: 11 }, { reps: 11 }, { reps: 11 } ] },
+      { name: "EZ Bar Curl",                        sets: [ { reps: 10, weight: 25 }, { reps: 10, weight: 25 }, { reps: 10, weight: 25 }, { reps: 10, weight: 25 } ] },
+      { name: "Single-Hand DB Triceps Extension",   sets: [ { reps: 9, weight: 12 }, { reps: 9, weight: 12 }, { reps: 9, weight: 12 }, { reps: 9, weight: 12 } ] },
+    ],
+  },
   // 6 Oct — Outdoor Run, Or Akiva (15:10-15:24, + extra walking after)
   {
     datetime: "2026-10-06T15:10", note: "Outdoor Run — Or Akiva, Haifa District (15:10-15:24, Nike Run Club) — 2.01km in 13:57 (6:56/km avg pace), 149 kcal, 7m elevation gain, cadence 154. No heart-rate monitor worn. Additional walking afterward, not tracked/quantified separately.",
