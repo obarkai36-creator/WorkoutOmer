@@ -1,0 +1,112 @@
+{
+  "id": "rice_paper_cheese_bourekas_lean",
+  "name": "Rice-paper cheese bourekas — lean (cottage + 9% + light Bulgarian + parsley)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Lean, dual-lens-optimized version of rice_paper_cheese_bourekas",
+    "captured": "2026-10-08",
+    "notes": "Leaned-out version of the rice-paper cheese bourekas, designed with the user and adopted. Cheese blend swapped to cottage 5% + 9% yellow + light Bulgarian 5% (no full-fat yellow/mozzarella), with a generous amount of fresh parsley folded in for folate/iron/vitamin C. Baked, not fried. Makes ~10; macros PER BOUREKA. Parsley taken at ~60 g ('a nice amount' — exact amount flexible, barely moves macros). No added salt (the Bulgarian salts it). Estimate."
+  },
+  "servings": 10,
+  "serving_desc": "1 boureka (~50 g baked) — batch makes ~10",
+  "ingredients": [
+    {"item": "rice-paper sheets", "qty": "1 per boureka (~10)", "note": "dipped a few seconds, not soaked"},
+    {"item": "FILLING: cottage cheese 5%", "qty": "~150 g"},
+    {"item": "FILLING: 9% yellow cheese, grated", "qty": "~120 g", "note": "high protein, lower fat than full-fat yellow"},
+    {"item": "FILLING: light Bulgarian cheese 5%, crumbled", "qty": "75 g", "note": "salty — no added salt needed; verify pasteurized (her note)"},
+    {"item": "FILLING: fresh parsley, chopped", "qty": "a generous ~60 g (½–1 cup)", "note": "folate + iron + vitamin C; amount flexible"},
+    {"item": "FILLING: egg", "qty": "1"},
+    {"item": "FILLING: black pepper", "qty": "to taste", "note": "no added salt — Bulgarian covers it"},
+    {"item": "DIP: egg", "qty": "1"},
+    {"item": "DIP: honey", "qty": "½ tbsp", "note": "halved vs original; helps browning/crisp"},
+    {"item": "DIP: water", "qty": "a little"},
+    {"item": "TOPPING: beaten egg (to brush)", "qty": "1"},
+    {"item": "TOPPING: sesame + nigella seeds", "qty": "to sprinkle"}
+  ],
+  "steps": [
+    "Mix the filling (cottage, grated 9% yellow, crumbled light Bulgarian, chopped parsley, 1 egg, pepper) to a uniform mix. No added salt — the Bulgarian is salty.",
+    "In a shallow plate mix the dip: 1 egg + ½ tbsp honey + a little water.",
+    "Dip one rice paper a few seconds until slightly pliable (not fully soft).",
+    "Lay it flat, put ~1 tbsp filling in the center and fold into a rectangle (envelope).",
+    "Place on greased parchment, folds facing UP.",
+    "Brush with beaten egg, sprinkle sesame + nigella.",
+    "Bake 220 °C ~25 min until deep golden and crispy."
+  ],
+  "per_serving": {
+    "kcal": 110,
+    "protein_g": 7.6,
+    "carbs_g": 10.8,
+    "fat_g": 3.9,
+    "fiber_g": 0.5,
+    "micros": {
+      "calcium_mg": 120,
+      "sodium_mg": 195,
+      "folate_mcg_dfe": 16,
+      "added_sugar_g": 0.9,
+      "saturated_fat_g": 2.2
+    }
+  },
+  "batch_totals": {
+    "kcal": 1104,
+    "protein_g": 76,
+    "carbs_g": 108,
+    "fat_g": 39,
+    "fiber_g": 4.6,
+    "sodium_mg": 1950,
+    "calcium_mg": 1200,
+    "note": "~10 bourekas. Vs the original (per boureka ~127 kcal / 6.4 g protein / 6.3 g fat): MORE protein (7.6 g), ~40% less fat (3.9 g), lower sodium — because cottage + 9% yellow + light Bulgarian replace the full-fat cheeses, plus generous parsley for folate/iron. Baked, no frying."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 9,
+      "verdict": "The lean version is a genuinely great high-protein snack: ~7.6 g protein for ~110 kcal per boureka (~6.9 g protein per 100 kcal) with only ~3.9 g fat, baked (no frying), in a light rice-paper wrapper. Swapping the full-fat cheeses for cottage + 9% yellow + LIGHT Bulgarian is what did it — more protein, far less fat than the original, and the generous parsley adds a little folate and fiber. Low-sodium-ish for a cheese pastry (~195 mg). Excellent for portion control — log by the piece.",
+      "flags": [
+        "~7.6 g protein / 110 kcal (~6.9 g protein per 100 kcal)",
+        "only ~3.9 g fat/boureka — ~40% less than the original",
+        "baked, not fried; light rice-paper wrapper",
+        "moderate sodium (~195 mg/boureka), no added salt",
+        "generous parsley adds a little folate + fiber"
+      ],
+      "suggested_mods": [
+        "Great as-is; 2–3 bourekas is a solid high-protein snack",
+        "Push parsley toward a full cup for even more folate/fiber",
+        "Serve with tomato/pepper for vitamin C"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 8,
+      "verdict": "A solid preconception snack now — fully baked (egg filling + wash cooked through), with calcium + protein from the cheeses, choline from the eggs, and a real folate/iron/vitamin-C lift from the generous parsley (vitamin C aids iron absorption). The one flag is the light Bulgarian — a brined soft cheese: it's baked through here (cooked = considered safe) and light Israeli Bulgarit is usually pasteurized, but verify it. Dropping the full-fat cheeses also makes it lighter overall.",
+      "prenatal_highlights": [
+        "folate + iron + vitamin C from generous parsley",
+        "calcium + protein (cottage, 9% yellow, Bulgarian); choline (eggs)",
+        "fully baked; lighter and lower-fat than the original"
+      ],
+      "safety_advisories": [
+        {"note": "Light Bulgarian is a brined soft cheese — verify pasteurized. It's baked through here (considered safe cooked).", "swap": "verify pasteurized / keep baked through, or shift to more cottage + 9% yellow"}
+      ],
+      "suggested_mods": [
+        "A full cup of parsley pushes folate higher",
+        "Serve with tomato/pepper for extra vitamin C"
+      ]
+    }
+  },
+  "tags": ["snack", "bourekas", "cheese", "baked", "no-fry", "rice-paper", "vegetarian", "high-protein", "low-fat", "parsley"],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-10-08 as the lean version of the rice-paper cheese bourekas (supersedes rice_paper_cheese_bourekas for actual use). Per boureka (of ~10, ~50 g): ~110 kcal, 7.6 g protein, 3.9 g fat, ~195 mg sodium. him 9 / her 8. Standing spec: filling = 150 g cottage 5% + 120 g of 9% yellow + 75 g light Bulgarian 5% + a generous ~60 g parsley + 1 egg, no added salt; dip = egg + ½ tbsp honey + water; bake 220 C ~25 min, folds up. Verify Bulgarian pasteurized; parsley amount flexible (more = more folate).",
+  "created": "2026-10-08",
+  "updated": "2026-10-08",
+  "serving_g": 50,
+  "meal_type": "Snack",
+  "cooking_guide": [
+    "Mix the filling: cottage, grated 9% yellow, crumbled light Bulgarian, the chopped parsley, 1 egg and pepper, to a uniform mix. Taste — you shouldn't need added salt, the Bulgarian salts it.",
+    "Make the dip in a shallow plate: 1 egg + ½ tbsp honey + a little water, whisked. The egg-honey wash is the crunch secret and helps browning.",
+    "Dip ONE rice paper for just a few seconds — until slightly pliable, not fully soft. Over-dipping makes it tear and go gummy.",
+    "Lay it flat, put ~1 tbsp filling in the center (don't overfill) and fold into a rectangle like an envelope.",
+    "Place on greased parchment with the FOLDS FACING UP — keeps the base flat and the whole thing crisp.",
+    "Brush each with beaten egg and sprinkle sesame + nigella.",
+    "Bake at 220 °C (or Ninja Grill on Bake) ~25 min until deep golden and very crispy. Watch the last few minutes — rice paper crisps fast.",
+    "Tips: a full cup of parsley adds more folate/fiber; a grating of garlic or chili flakes lifts the filling; serve with tomato/pepper for vitamin C."
+  ]
+}
