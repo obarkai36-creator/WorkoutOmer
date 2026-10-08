@@ -1,0 +1,108 @@
+{
+  "id": "rice_paper_cheese_bourekas",
+  "name": "Rice-paper cheese bourekas (בורקס דפי אורז וגבינות)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Hebrew recipe (pasted)",
+    "captured": "2026-10-08",
+    "notes": "No-dough 'bourekas': each one is a single rice-paper sheet dipped in an egg-honey-water wash (for crunch), filled with a cottage/Bulgarian/cheese-mix + egg filling, folded envelope-style, egg-washed and sesame+nigella topped, baked 220°C ~25 min. No frying. Analyzed per boureka; batch assumed to make ~8 (filling ~260 g, ~1 tbsp each). Bulgarian + cheese mix taken at standard (not light) fat. Estimate — 'play with the cheeses' means macros vary. Optimization in suggested_mods / chat."
+  },
+  "servings": 8,
+  "serving_desc": "1 boureka (~55 g baked) — batch makes ~8",
+  "ingredients": [
+    {"item": "rice-paper sheets", "qty": "1 per boureka (~8)", "note": "dipped, not soaked — a few seconds only"},
+    {"item": "FILLING: cottage cheese", "qty": "2–3 heaping tbsp (~50 g)"},
+    {"item": "FILLING: Bulgarian cheese, crumbled", "qty": "½ package (~100 g)", "note": "very salty — go easy on added salt; verify pasteurized"},
+    {"item": "FILLING: cheese mix (yellow, mozzarella…)", "qty": "generous handful (~60 g)", "note": "the fat/sodium lever — 'play with what's in the fridge'"},
+    {"item": "FILLING: egg", "qty": "1"},
+    {"item": "FILLING: salt, pepper", "qty": "careful with salt (Bulgarian is salty)"},
+    {"item": "DIP: egg", "qty": "1"},
+    {"item": "DIP: honey", "qty": "1 tbsp", "note": "helps browning/crisp; a little added sugar"},
+    {"item": "DIP: water", "qty": "a little"},
+    {"item": "TOPPING: beaten egg (to brush)", "qty": "1"},
+    {"item": "TOPPING: sesame + nigella seeds", "qty": "to sprinkle"}
+  ],
+  "steps": [
+    "Mix all the filling ingredients (cottage, Bulgarian, cheese mix, egg, s&p) to a uniform mix.",
+    "In a shallow plate mix the dip: egg, honey and a little water.",
+    "Dip one rice paper in the dip a few seconds until slightly softened (not too much).",
+    "Lay it on the counter, put a spoon of filling in the center and fold into a rectangle (envelope).",
+    "Place on greased parchment, folds facing UP (keeps it crisp).",
+    "Brush each boureka with beaten egg, sprinkle sesame + nigella.",
+    "Bake 220 °C ~25 min until deep golden and very crispy."
+  ],
+  "per_serving": {
+    "kcal": 127,
+    "protein_g": 6.4,
+    "carbs_g": 11,
+    "fat_g": 6.3,
+    "fiber_g": 0.3,
+    "micros": {
+      "calcium_mg": 90,
+      "sodium_mg": 230,
+      "added_sugar_g": 1.5,
+      "saturated_fat_g": 3.5
+    }
+  },
+  "batch_totals": {
+    "kcal": 1012,
+    "protein_g": 51,
+    "carbs_g": 87,
+    "fat_g": 51,
+    "fiber_g": 1.5,
+    "sodium_mg": 1800,
+    "note": "~8 bourekas. The Bulgarian + cheese mix drive the fat, saturated fat and sodium; the rice paper is a light wrapper (no dough). Baked, not fried. 'Play with the cheeses' changes these a lot — leaner cheeses drop fat/sodium sharply."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 6,
+      "verdict": "A clever no-dough, baked (not fried) cheese pastry — the rice-paper wrapper keeps the carbs light and there's no fried oil, which is the good part. But the filling is cheese-heavy: the Bulgarian + yellow/mozzarella mix make it fat- and sodium-forward, so per boureka it's ~6.4 g protein for ~127 kcal (~5 g protein per 100 kcal) with ~6 g fat and little fiber. Fine as a tasty snack / light bite, not a protein anchor. Very easy to lean out — shift the cheese ratio toward cottage + light cheeses (see mods) and it climbs to ~8.",
+      "flags": [
+        "~6.4 g protein / 127 kcal (~5 g protein per 100 kcal)",
+        "baked, not fried — no added frying oil (good)",
+        "cheese-heavy: ~6 g fat/boureka (~3.5 g saturated), Bulgarian + yellow mix",
+        "high sodium (~230 mg/boureka) + salty Bulgarian",
+        "low fiber — refined rice-paper wrapper; honey adds a little sugar"
+      ],
+      "suggested_mods": [
+        "Shift the cheese ratio: more cottage, use LIGHT Bulgarian 5% + part-skim mozzarella, less full-fat yellow — more protein, far less fat/sodium",
+        "Skip the added salt entirely (Bulgarian covers it); the honey in the dip can be halved",
+        "Fold chopped spinach / parsley + za'atar into the filling — adds folate + fiber the pastry lacks",
+        "These are great for portion control — log by the piece; 2–3 is a reasonable snack"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 6,
+      "verdict": "A calcium- and protein-contributing cheese pastry, fully baked (egg filling + wash cooked through), so broadly fine. The one flag is the Bulgarian cheese — a brined soft cheese: it's baked through here (cooked = considered safe) and most Israeli Bulgarit is pasteurized, but verify it. Not a big prenatal-nutrient source on its own; folding in spinach would turn it into a real folate contributor.",
+      "prenatal_highlights": [
+        "calcium + protein from the cheeses + egg",
+        "fully baked; some choline from the eggs"
+      ],
+      "safety_advisories": [
+        {"note": "Bulgarian cheese is a brined soft cheese — Listeria risk unless pasteurized. It's baked through here (considered safe cooked); verify pasteurized.", "swap": "verify pasteurized / keep baked through, or shift to more cottage + mozzarella"}
+      ],
+      "suggested_mods": [
+        "Fold spinach into the filling for folate + iron",
+        "Verify the Bulgarian is pasteurized; serve with tomato/pepper for vitamin C"
+      ]
+    }
+  },
+  "tags": ["snack", "bourekas", "cheese", "baked", "no-fry", "rice-paper", "vegetarian"],
+  "adopted": false,
+  "created": "2026-10-08",
+  "updated": "2026-10-08",
+  "serving_g": 55,
+  "meal_type": "Snack",
+  "cooking_guide": [
+    "Mix the filling (cottage, crumbled Bulgarian, cheese mix, 1 egg, pepper) to a uniform mix. Go easy on salt — the Bulgarian is already very salty; taste before adding any.",
+    "Make the dip in a shallow plate: 1 egg + 1 tbsp honey + a little water, whisked. The egg-honey wash is the crunch secret and it helps the bourekas brown.",
+    "Dip ONE rice paper in the wash for just a few seconds — until slightly pliable, not fully soft. Over-dipping makes it tear and go gummy.",
+    "Lay it flat, put ~1 tbsp filling in the center (don't overfill or it bursts) and fold into a rectangle like an envelope.",
+    "Place on greased parchment with the FOLDS FACING UP — this keeps the base flat and the whole thing crisp.",
+    "Brush each with beaten egg and sprinkle sesame + nigella.",
+    "Bake at 220 °C (or Ninja Grill on Bake) ~25 min until deep golden and very crispy. Rice paper crisps fast at the end, so watch the last few minutes.",
+    "Tips: shift the cheese toward cottage + light cheeses for a leaner version; fold in chopped spinach or parsley + za'atar for flavor, folate and a bit of fiber."
+  ]
+}

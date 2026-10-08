@@ -517,16 +517,42 @@
   to work from a pasted caption/screenshot. Proactively suggest recipe
   modifications and which recipes to adopt into the daily rotation (per the
   standing permission to make intake-based suggestions).
-  **Notify the daily-tracking session (standing rule, added 2026-09-02):**
-  whenever a recipe is ADDED or UPDATED and merged to trunk, push a note to the
-  daily-tracking session ("Exercise & Lifestyle Tracking",
-  session_01VMFqiW7kqpzCsd8qLjr4KR) by firing trigger
-  trig_01RVx35MLg4aStEyXbjwxbGW (`fire_trigger`), passing `text` = the recipe
-  name, meal_type, key per-unit macros, adopted state, and the new library
-  count. The trigger's base prompt already tells that session to pull trunk and
-  where the recipes live. This is how the main session references new recipes
-  "for easy reference." (Do this every recipe add, right after the trunk merge
-  + artifact republish.)
+  - **Cooking guide (standing skill, added 2026-08-22):** for every NEW
+    cook-yourself recipe, also write a `cooking_guide` field — easy-to-follow
+    numbered steps grounded in best-practice technique from online sources,
+    including seasoning and the preferable steps for optimal taste + texture
+    (e.g. pat chicken dry, don't crowd the pan, rest before slicing; whip whites
+    to soft peaks, dry the surface for cracks). Keep steps short and plain.
+    Eat-as-is packaged snacks don't need one; frozen products get a short
+    heating guide. The generator renders `cooking_guide` (falls back to `steps`).
+  - **Meal type:** every recipe carries a `meal_type` (Chicken / Fish / Beef /
+    Snack / Dessert) used by the library's filter/sort table of contents.
+  - **Logged batches (standing skill, added 2026-08-22):** when the user reports
+    a batch they ACTUALLY COOKED (ingredient list + amounts), automatically log
+    it as a reference recipe (`adopted:false`, tag `logged-batch`) with correct
+    macros for those exact amounts + a `cooking_guide`, then regenerate and
+    re-publish — without being asked. Flag any assumptions (oil/sauce/seasoning
+    not given) and offer to adjust. Don't create near-duplicates gratuitously,
+    but a distinct ingredient set is its own entry.
+  - **Library website:** `intake/recipes/library.html` is the browsable index
+    (filter chips + grouped TOC by meal type, ● = in rotation). Published as a
+    private claude.ai Artifact the user can open anytime without asking for a
+    card: https://claude.ai/code/artifact/f7578491-c080-44eb-b485-5ce2b62a432e
+    After adding/adopting recipes, regenerate then RE-PUBLISH TO THAT SAME URL
+    (Artifact tool, pass `url=`) — build the artifact fragment WITHOUT the
+    doctype/html/head/body wrapper (host adds it): `<style>{CSS}</style>` +
+    `<div class='wrap'>…</div>` + the filter `<script>`, from generate_recipe_card
+    (see the one-off python that built it). Don't create a new artifact each time.
+  - **Notify the daily-tracking session (standing rule, added 2026-09-02):**
+    whenever a recipe is ADDED or UPDATED and merged to trunk, push a note to the
+    daily-tracking session ("Exercise & Lifestyle Tracking",
+    session_01VMFqiW7kqpzCsd8qLjr4KR) by firing trigger
+    trig_01RVx35MLg4aStEyXbjwxbGW (`fire_trigger`), passing `text` = the recipe
+    name, meal_type, key per-unit macros, adopted state, and the new library
+    count. The trigger's base prompt already tells that session to pull trunk and
+    where the recipes live. This is how the main session references new recipes
+    "for easy reference." (Do this every recipe add, right after the trunk merge
+    + artifact republish.)
 
 - If an upcoming action risks hitting a platform/tool limit (e.g. request size
   caps like the ~32MB upload limit, rate limits, context limits), flag it to
