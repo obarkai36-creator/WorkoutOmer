@@ -1,5 +1,5 @@
 {
-  "now": 1791541350039,
+  "now": 1791560423161,
   "workouts": [
     {
       "datetime": "2026-10-08T15:00",
@@ -7727,15 +7727,15 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 60,
-      "readyInHours": 41.6,
+      "pct": 55,
+      "readyInHours": 36.3,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "ready": true
     },
@@ -7743,7 +7743,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "ready": true
     },
@@ -7751,7 +7751,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 17,
+      "pct": 15,
       "readyInHours": 0,
       "ready": true
     },
@@ -7759,15 +7759,15 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 50,
-      "readyInHours": 20.7,
+      "pct": 44,
+      "readyInHours": 15.4,
       "ready": false
     },
     "forearms": {
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 1,
+      "pct": 0,
       "readyInHours": 0,
       "ready": true
     },
@@ -7831,29 +7831,29 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 60,
-      "readyInHours": 41.6,
+      "pct": 55,
+      "readyInHours": 36.3,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 60,
-          "readyInHours": 41.6,
+          "pct": 55,
+          "readyInHours": 36.3,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 9,
+          "pct": 8,
           "readyInHours": 0,
           "ready": true
         }
@@ -7861,14 +7861,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 9,
+          "pct": 8,
           "readyInHours": 0,
           "ready": true
         }
@@ -7876,22 +7876,22 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 23,
-      "readyInHours": 20.7,
+      "pct": 20,
+      "readyInHours": 15.4,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 50,
-          "readyInHours": 20.7,
+          "pct": 44,
+          "readyInHours": 15.4,
           "ready": false
         },
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 17,
+          "pct": 15,
           "readyInHours": 0,
           "ready": true
         },
@@ -7899,7 +7899,7 @@
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 1,
+          "pct": 0,
           "readyInHours": 0,
           "ready": true
         }
@@ -9262,32 +9262,32 @@
       },
       {
         "label": "-4w",
-        "stress": 229,
-        "sessions": 1,
+        "stress": 263,
+        "sessions": 2,
         "acwr": 0.89
       },
       {
         "label": "-3w",
-        "stress": 635,
-        "sessions": 4,
+        "stress": 657,
+        "sessions": 5,
         "acwr": 1.01
       },
       {
         "label": "-2w",
-        "stress": 289,
-        "sessions": 4,
+        "stress": 233,
+        "sessions": 2,
         "acwr": 1.11
       },
       {
         "label": "-1w",
-        "stress": 731,
-        "sessions": 4,
+        "stress": 773,
+        "sessions": 5,
         "acwr": 0.78
       },
       {
         "label": "This wk",
-        "stress": 521,
-        "sessions": 4,
+        "stress": 479,
+        "sessions": 3,
         "acwr": 0.85
       }
     ],
@@ -9295,16 +9295,16 @@
     "chronic": 69.22,
     "acwr": 0.85,
     "acwrZone": "ok",
-    "sessions28": 16
+    "sessions28": 15
   },
   "recommendation": {
     "section": "Legs",
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-09T10:22:30.039Z",
+    "readyAt": "2026-10-09T15:40:23.161Z",
     "neverLogged": false,
-    "daysSince": 13,
+    "daysSince": 13.2,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -9467,39 +9467,39 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 13
+        "daysSince": 13.2
       },
       {
         "section": "Shoulders",
-        "fatigue": 9,
+        "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 9.8
+        "daysSince": 10
       },
       {
         "section": "Back",
-        "fatigue": 9,
+        "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 6
+        "daysSince": 6.2
       },
       {
         "section": "Arms",
-        "fatigue": 23,
-        "readyInHours": 20.7,
-        "daysSince": 6
+        "fatigue": 20,
+        "readyInHours": 15.4,
+        "daysSince": 6.2
       },
       {
         "section": "Chest",
-        "fatigue": 60,
-        "readyInHours": 41.6,
-        "daysSince": 0.8
+        "fatigue": 55,
+        "readyInHours": 36.3,
+        "daysSince": 1
       }
     ],
     "suggestedCount": 5,
     "totalAvailable": 14,
     "typicalSessionSize": 5,
-    "aerobicLast7": 2,
+    "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 2.8
+    "daysSinceAerobic": 3
   },
   "alerts": [
     {
@@ -9509,12 +9509,13 @@
     }
   ],
   "changes": [
-    "You're below your PR on 12 lifts — closest wins first: Seated Dips (28% of best), Dead Hang (33% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight."
+    "You're below your PR on 12 lifts — closest wins first: Seated Dips (28% of best), Dead Hang (33% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight.",
+    "Only 1/2 aerobic sessions this week — add an easy run or row."
   ],
   "timing": {
     "avgGap": 3,
     "longestGap": 35.7,
-    "perWeek": 4,
+    "perWeek": 3.8,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -9526,7 +9527,7 @@
       17,
       17
     ],
-    "daysSinceLast": 0.8,
+    "daysSinceLast": 1,
     "total": 76
   },
   "relstrength": {
@@ -9577,8 +9578,8 @@
   "aerobic": {
     "any": true,
     "count": 39,
-    "km7": 4.9,
-    "km28": 24.6,
+    "km7": 2,
+    "km28": 21.1,
     "totalKm": 152.6,
     "longest": 13.35,
     "avgHr": 142,
@@ -9593,7 +9594,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 2.8,
+    "daysSinceLast": 3,
     "recent": [
       {
         "t": 1791299400000,
