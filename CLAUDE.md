@@ -1,5 +1,17 @@
 # Session notes
 
+- Macro tracking break (2026-10-09 through 2026-10-10, inclusive; resume
+  2026-10-11): user explicitly asked to skip exact food macro/micro logging
+  for this window. Only log supplements/medication (with their usual
+  zero-kcal item entries), caffeine, workouts (data.js/workouts.json as
+  normal), sleep, weigh-ins, and lifestyle events (alcohol, ejaculation,
+  retainers, etc.) as usual — do NOT create detailed `items` food entries
+  or estimate macros/micros for meals during this window. Mark each
+  affected day file `exclude_from_monthly_macros: true` with an
+  `exclude_reason` noting this break, same pattern as prior lighter-logging
+  windows. Resume full detailed food logging on 2026-10-11 without being
+  asked.
+
 - Standing rule (added 2026-09-27, per explicit user request — "include it
   every time to maintain a balanced physique and overall feel", after the
   user noticed exact-exercise suggestions had quietly dropped out of

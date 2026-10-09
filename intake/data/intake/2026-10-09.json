@@ -19,6 +19,8 @@
     {"time": "08:30", "name": "Espresso", "category": "drink", "qty": "1 single", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 2,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User asked to skip exact food macro/micro logging for 2026-10-09 and 2026-10-10. Supplements/medication, caffeine, workouts, sleep, weigh-ins, and lifestyle events still logged as usual.",
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
@@ -36,7 +38,8 @@
     "06:25 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "06:20 creatine monohydrate, 5g.",
     "Green grapes (6:25-8:00), ~15 grapes (~75g, same generic reference as prior entries) — credits ~8.1mg vitamin C.",
-    "08:30 espresso, 1 single (2 caffeine shots today)."
+    "08:30 espresso, 1 single (2 caffeine shots today).",
+    "User requested no exact food macro/micro tracking for today (2026-10-09) and tomorrow (2026-10-10) — marked exclude_from_monthly_macros. Supplements/medication, caffeine, workouts, sleep, weigh-ins, and lifestyle events still logged as usual."
   ],
-  "status_note": "Day in progress. Slept 6.75h (23:15-06:00), slightly under target. AM spray + pill + double espresso + Mayven + creatine + green grapes + 08:30 espresso logged."
+  "status_note": "Day in progress. Slept 6.75h (23:15-06:00), slightly under target. AM spray + pill + double espresso + Mayven + creatine + green grapes + 08:30 espresso logged. No exact food tracking today/tomorrow per user request."
 }
