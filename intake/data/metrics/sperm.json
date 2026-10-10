@@ -1376,6 +1376,22 @@
       },
       "notes": "Computed from real logged data for 2026-10-01 → 2026-10-07 (7 day(s) logged this window). 1 day(s) in this window had no food tracking (macro break) — excluded from the nutrition factor.",
       "sample": false
+    },
+    {
+      "week_start": "2026-10-03",
+      "week_end": "2026-10-09",
+      "window_days": 7,
+      "factors": {
+        "nutrition": 90,
+        "body_composition": 9,
+        "sleep": 98,
+        "alcohol": 100,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-10-03 → 2026-10-09 (7 day(s) logged this window). 2 day(s) in this window had no food tracking (macro break) — excluded from the nutrition factor.",
+      "sample": false
     }
   ],
   "trend": [
@@ -2769,6 +2785,22 @@
         "ejaculatory_frequency": 100
       },
       "notes": "Computed from real logged data for 2026-07-10 → 2026-10-07 (90 day(s) logged this window). 19 day(s) in this window had no food tracking (macro break) — excluded from the nutrition factor.",
+      "sample": false
+    },
+    {
+      "week_start": "2026-07-12",
+      "week_end": "2026-10-09",
+      "window_days": 90,
+      "factors": {
+        "nutrition": 90,
+        "body_composition": 9,
+        "sleep": 95,
+        "alcohol": 85,
+        "heat_travel_exposure": 100,
+        "smoking": 100,
+        "ejaculatory_frequency": 100
+      },
+      "notes": "Computed from real logged data for 2026-07-12 → 2026-10-09 (90 day(s) logged this window). 20 day(s) in this window had no food tracking (macro break) — excluded from the nutrition factor.",
       "sample": false
     }
   ]
