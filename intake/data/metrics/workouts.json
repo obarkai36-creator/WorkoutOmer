@@ -2,18 +2,17 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-10-10",
-    "latest_session": "Chest day (15:00) — Bench Press 72.5kg×4×9, as best (ties exactly, no PR). Incline Pec Fly 18kg each (36kg total)×4×10, as suggested (new PR — est. 1RM 48.0 vs 46.8 prior best at 36kg×4×9). Narrow Push-Ups BW×4×11, as suggested (new PR — est. 1RM 110.7 vs 108.0 prior best at BW×4×10). EZ Bar Curl 7.5kg each + bar (25kg total)×4×10 — new exercise, added to the catalog and logged for the first time (not a PR, first-ever entry). Single-Hand DB Triceps Extension 12kg each×4×9, +1 rep on best (new PR — est. 1RM 15.6 vs 15.2 prior best at 12kg each×4×8). 3 new PRs + 1 new exercise added to rotation.",
-    "sessions_logged": 76,
-    "sessions_per_week": 3.8,
+    "latest_session": "Outdoor Walk — Jerusalem (Gan Sacher), 08:15 — 4km in 50 min, hilly/inclined route (no exact elevation gain reported). No heart-rate monitor worn.",
+    "sessions_logged": 77,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 21.1,
-    "aerobic_sessions_28d": 8,
-    "avg_pace": "10:09/km",
+    "aerobic_28d_km": 25.1,
+    "aerobic_sessions_28d": 9,
+    "avg_pace": "10:13/km",
     "avg_hr": 142,
-    "acwr": 0.68,
+    "acwr": 0.86,
     "recommended_next": "Legs day",
     "alerts": [
-      "Load ratio 0.68 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
@@ -504,6 +503,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "15:00. Bench Press 72.5kg×4×9, as best (ties exactly, no PR); Incline Pec Fly 18kg each (36kg total)×4×10, as suggested, new PR (est. 1RM 48.0 vs 46.8 prior best); Narrow Push-Ups BW×4×11, as suggested, new PR (est. 1RM 110.7 vs 108.0 prior best); EZ Bar Curl 7.5kg each + bar (25kg total)×4×10 — new exercise, first-ever logged entry; Single-Hand DB Triceps Extension 12kg each×4×9, +1 rep on best, new PR (est. 1RM 15.6 vs 15.2 prior best). 3 new PRs + 1 new exercise added to rotation.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-10",
+      "type": "Outdoor Walk",
+      "duration_min": 50,
+      "intensity": "light",
+      "notes": "Jerusalem (Gan Sacher), 08:15 — 4km in 50 min, hilly/inclined route (no exact elevation gain reported). No heart-rate monitor worn.",
       "_source": "manual log"
     }
   ]
