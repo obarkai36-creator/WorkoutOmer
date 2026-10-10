@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-10",
+  "day_number": 105,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "23:30",
+    "sleep_end": "07:30",
+    "duration_hours": 8,
+    "quality": null,
+    "notes": "8h (night of 2026-10-09) — within the 7-9h target band."
+  },
+  "items": [
+    {"time": "07:45", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "07:45", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "07:55", "name": "Espresso", "category": "drink", "qty": "1 single", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "08:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+  ],
+  "caffeine_shots": 1,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User asked to skip exact food macro/micro logging for 2026-10-09 and 2026-10-10. Supplements/medication, caffeine, workouts, sleep, weigh-ins, and lifestyle events still logged as usual.",
+  "micros_sperm_priority": {
+    "zinc_mg": 2.8,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 100,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Sleep logged: 23:30-07:30, 8h (night of 2026-10-09) — within the 7-9h target band.",
+    "07:45 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "07:55 espresso, 1 single.",
+    "08:00 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
+    "Macro break continues today (last day, resumes 2026-10-11 per CLAUDE.md)."
+  ],
+  "status_note": "Day in progress. Slept 8h (23:30-07:30), within target. AM spray + pill + espresso + Mayven logged. No exact food tracking today (last day of macro break)."
+}
