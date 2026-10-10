@@ -13,7 +13,8 @@
     {"time": "07:45", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
     {"time": "07:45", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
     {"time": "07:55", "name": "Espresso", "category": "drink", "qty": "1 single", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "08:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+    {"time": "08:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "09:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "workout_today": true,
   "workout_summary": "Outdoor Walk — Jerusalem (Gan Sacher), 08:15 — 4km in 50 min, hilly/inclined route (no exact elevation gain reported).",
@@ -21,13 +22,13 @@
   "exclude_from_monthly_macros": true,
   "exclude_reason": "User asked to skip exact food macro/micro logging for 2026-10-09 and 2026-10-10. Supplements/medication, caffeine, workouts, sleep, weigh-ins, and lifestyle events still logged as usual.",
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "assumptions": [
@@ -36,7 +37,8 @@
     "07:55 espresso, 1 single.",
     "08:00 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "Macro break continues today (last day, resumes 2026-10-11 per CLAUDE.md).",
-    "08:15 Outdoor Walk — Jerusalem (Gan Sacher), 4km in 50 min, hilly/inclined route (no exact elevation gain given)."
+    "08:15 Outdoor Walk — Jerusalem (Gan Sacher), 4km in 50 min, hilly/inclined route (no exact elevation gain given).",
+    "09:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E."
   ],
-  "status_note": "Day in progress. Slept 8h (23:30-07:30), within target. AM spray + pill + espresso + Mayven logged. 08:15 outdoor walk (4km/50min, Jerusalem) logged. No exact food tracking today (last day of macro break)."
+  "status_note": "Day in progress. Slept 8h (23:30-07:30), within target. AM spray + pill + espresso + Mayven + essential-5 logged. 08:15 outdoor walk (4km/50min, Jerusalem) logged. No exact food tracking today (last day of macro break)."
 }
