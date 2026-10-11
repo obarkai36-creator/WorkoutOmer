@@ -19,6 +19,8 @@
     {"time": "09:30", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.734, "carbs_g": 11.734, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."}
   ],
   "caffeine_shots": 3,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User asked to skip exact food macro/micro logging for 2026-10-11 too (extends past the planned end of the prior break). Supplements/medication, caffeine, workouts, sleep, weigh-ins, and lifestyle events still logged as usual. The 09:30 yellow cheese + cherry tomatoes item logged earlier today (before this request) stays as-is.",
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
@@ -36,7 +38,8 @@
     "06:17 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "Macro tracking break ended — full detailed food logging resumes today (2026-10-11) per CLAUDE.md.",
     "07:45 espresso, 1 single (3 caffeine shots today).",
-    "09:30 2.5 slices (62.5g) Tnuva Emek Light yellow cheese 9% (verified label reference) + 20 cherry tomatoes (same standard reference as prior entries — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE)."
+    "09:30 2.5 slices (62.5g) Tnuva Emek Light yellow cheese 9% (verified label reference) + 20 cherry tomatoes (same standard reference as prior entries — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE).",
+    "User asked to skip exact food macro/micro tracking for the rest of today (2026-10-11) too — marked exclude_from_monthly_macros. Supplements/medication, caffeine, workouts, sleep, weigh-ins, and lifestyle events still logged as usual."
   ],
-  "status_note": "Day in progress. Slept only 5.25h (00:30-05:45), notably short of target — worth watching for fatigue today. AM spray + pill + double espresso + Mayven + 07:45 espresso + 09:30 snack (yellow cheese + cherry tomatoes) logged. Full food tracking resumes today."
+  "status_note": "Day in progress. Slept only 5.25h (00:30-05:45), notably short of target — worth watching for fatigue today. AM spray + pill + double espresso + Mayven + 07:45 espresso + 09:30 snack logged. No further exact food tracking today per user request."
 }
