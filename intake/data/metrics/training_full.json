@@ -1,5 +1,5 @@
 {
-  "now": 1791694383799,
+  "now": 1791702143443,
   "workouts": [
     {
       "datetime": "2026-10-10T08:15",
@@ -7754,7 +7754,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 30,
+      "pct": 28,
       "readyInHours": 0,
       "ready": true
     },
@@ -7786,7 +7786,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "ready": true
     },
@@ -7850,7 +7850,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 29,
+      "pct": 27,
       "readyInHours": 0,
       "ready": true
     }
@@ -7858,14 +7858,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 30,
+      "pct": 28,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 30,
+          "pct": 28,
           "readyInHours": 0,
           "ready": true
         }
@@ -7903,14 +7903,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 17,
+          "pct": 16,
           "readyInHours": 0,
           "ready": true
         },
@@ -7996,14 +7996,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 29,
+      "pct": 27,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 29,
+          "pct": 27,
           "readyInHours": 0,
           "ready": true
         }
@@ -9329,9 +9329,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-11T04:53:03.799Z",
+    "readyAt": "2026-10-11T07:02:23.443Z",
     "neverLogged": false,
-    "daysSince": 14.8,
+    "daysSince": 14.9,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -9496,31 +9496,31 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 14.8
+        "daysSince": 14.9
       },
       {
         "section": "Shoulders",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 11.6
+        "daysSince": 11.7
       },
       {
         "section": "Back",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 7.8
+        "daysSince": 7.9
       },
       {
         "section": "Arms",
-        "fatigue": 8,
+        "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 7.8
+        "daysSince": 7.9
       },
       {
         "section": "Chest",
-        "fatigue": 30,
+        "fatigue": 28,
         "readyInHours": 0,
-        "daysSince": 2.6
+        "daysSince": 2.7
       }
     ],
     "suggestedCount": 5,
