@@ -266,8 +266,8 @@ const SNAPSHOT = [
   // ---- Legs (incl. calves) ----
   { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 8, weight: 81, text: "81kg × 4×8 (inc. frame)" }, best: { sets: 4, reps: 11, weight: 76, text: "76kg × 4×11" } },
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
-  { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 11, weight: 132, text: "132kg × 4×11" }, best: { sets: 4, reps: 11, weight: 132, text: "132kg × 4×11" } },
+  { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 8, weight: 53, text: "26.5kg each × 4×8" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
+  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12 (new PR)" }, best: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12" } },
   // NOTE: 11 Jul (202kg) is the first entry counting the full setup total
   // (plates each side x2 + sled/frame weight). Earlier entries (e.g. 131kg)
   // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
@@ -278,12 +278,12 @@ const SNAPSHOT = [
   { name: "Leg Curls",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Outer Thigh",                  section: "Legs", latest: { sets: 4, reps: 12, weight: 79, text: "79kg × 4×12" }, best: { sets: 4, reps: 12, weight: 79, text: "79kg × 4×12" } },
   { name: "Inner Thigh",                  section: "Legs", latest: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" }, best: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" } },
-  { name: "Glute Extension",              section: "Legs", latest: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" }, best: { sets: 2, reps: 5, weight: 59, text: "59kg × 2×5 each" } },
+  { name: "Glute Extension",              section: "Legs", latest: { sets: 2, reps: 6, weight: 59, text: "59kg × 2×6 each (new PR)" }, best: { sets: 2, reps: 6, weight: 59, text: "59kg × 2×6 each" } },
   { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 6, weight: 45, text: "22.5kg each × 4×6 (45kg total, hotel gym — two dumbbells, one per hand; prior best was a single DB held with both hands, so this is a different execution rather than a directly equivalent progression)" }, best: { sets: 4, reps: 6, weight: 45, text: "22.5kg each × 4×6 (45kg total)" } },
   { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
   { name: "Hip Thrust",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total — confirmed genuine progression: prior 24kg best was a single dumbbell, now loaded each side)" }, best: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total)" } },
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
-  { name: "Hack Squat",                   section: "Legs", latest: { sets: 3, reps: 6, weight: 123.7, text: "Bodyweight + 42.6kg frame × 3×6" }, best: { sets: 3, reps: 6, weight: 123.7, text: "Bodyweight + 42.6kg frame × 3×6" } },
+  { name: "Hack Squat",                   section: "Legs", latest: { sets: 4, reps: 7, weight: 123.7, text: "Bodyweight + 42.6kg frame × 4×7 (new PR)" }, best: { sets: 4, reps: 7, weight: 123.7, text: "Bodyweight + 42.6kg frame × 4×7" } },
 
   // ---- Core ----
   { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 35, weight: 81.00, text: "BW × 3×35s" }, best: { sets: 3, seconds: 35, weight: 81.00, text: "BW × 3×35s" } },
@@ -301,6 +301,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 11 Oct — Legs (20:30)
+  {
+    datetime: "2026-10-11T20:30", note: "Legs day (20:30) — Leg Press 132kg×4×12, as suggested (new PR — est. 1RM 184.8 vs 180.4 prior best at 132kg×4×11). Dumbbell Calf Raise 26.5kg each (53kg total)×4×8, as suggested (+2.5kg, reset to 4×8 from 24kg each×4×12 — est. 1RM essentially flat at 67.1 vs 67.2, a weight-up/rep-reset rather than a strict PR). Glute Extension 59kg×2×6, as suggested (new PR — est. 1RM 70.8 vs 68.8 prior best at 59kg×2×5). Hack Squat Bodyweight+42.6kg frame×4×7, as suggested +1 extra set (new PR — est. 1RM 152.6 vs 148.4 prior best at 3×6, plus an added 4th set). Finished with Incline Walk (treadmill), 15 min, 0.95km, 110m elevation, 125 kcal. 3 new PRs.",
+    exercises: [
+      { name: "Leg Press",            sets: [ { reps: 12, weight: 132 }, { reps: 12, weight: 132 }, { reps: 12, weight: 132 }, { reps: 12, weight: 132 } ] },
+      { name: "Dumbbell Calf Raise",  sets: [ { reps: 8, weight: 53 }, { reps: 8, weight: 53 }, { reps: 8, weight: 53 }, { reps: 8, weight: 53 } ] },
+      { name: "Glute Extension",      sets: [ { reps: 6, weight: 59 }, { reps: 6, weight: 59 } ] },
+      { name: "Hack Squat",           sets: [ { reps: 7, weight: 123.7 }, { reps: 7, weight: 123.7 }, { reps: 7, weight: 123.7 }, { reps: 7, weight: 123.7 } ] },
+      { name: "Incline Walk",         distanceKm: 0.95, durationMin: 15, elevationGainM: 110 },
+    ],
+  },
   // 10 Oct — Outdoor Walk, Jerusalem (Gan Sacher, 08:15)
   {
     datetime: "2026-10-10T08:15", note: "Outdoor Walk — Jerusalem (Gan Sacher), 08:15 — 4km in 50 min, hilly/inclined route (no exact elevation gain reported). No heart-rate monitor worn.",

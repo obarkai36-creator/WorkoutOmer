@@ -1,17 +1,17 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-10",
-    "latest_session": "Outdoor Walk — Jerusalem (Gan Sacher), 08:15 — 4km in 50 min, hilly/inclined route (no exact elevation gain reported). No heart-rate monitor worn.",
-    "sessions_logged": 77,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-10-11",
+    "latest_session": "Legs day (20:30) — Leg Press 132kg×4×12, as suggested (new PR — est. 1RM 184.8 vs 180.4 prior best at 132kg×4×11). Dumbbell Calf Raise 26.5kg each (53kg total)×4×8, as suggested (+2.5kg, reset to 4×8 from 24kg each×4×12 — est. 1RM essentially flat at 67.1 vs 67.2, a weight-up/rep-reset rather than a strict PR). Glute Extension 59kg×2×6, as suggested (new PR — est. 1RM 70.8 vs 68.8 prior best at 59kg×2×5). Hack Squat Bodyweight+42.6kg frame×4×7, as suggested +1 extra set (new PR — est. 1RM 152.6 vs 148.4 prior best at 3×6, plus an added 4th set). Finished with Incline Walk (treadmill), 15 min, 0.95km, 110m elevation, 125 kcal. 3 new PRs.",
+    "sessions_logged": 78,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 25.1,
-    "aerobic_sessions_28d": 9,
-    "avg_pace": "10:13/km",
+    "aerobic_28d_km": 26,
+    "aerobic_sessions_28d": 10,
+    "avg_pace": "10:22/km",
     "avg_hr": 142,
-    "acwr": 0.86,
-    "recommended_next": "Legs day",
+    "acwr": 1.19,
+    "recommended_next": "Shoulders day",
     "alerts": [
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
@@ -511,6 +511,14 @@
       "duration_min": 50,
       "intensity": "light",
       "notes": "Jerusalem (Gan Sacher), 08:15 — 4km in 50 min, hilly/inclined route (no exact elevation gain reported). No heart-rate monitor worn.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-11",
+      "type": "Strength — Legs",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "20:30. Leg Press 132kg×4×12, as suggested, new PR (est. 1RM 184.8 vs 180.4 prior best); Dumbbell Calf Raise 26.5kg each (53kg total)×4×8, as suggested, +2.5kg reset to 4×8 (est. 1RM ~flat, not a strict PR); Glute Extension 59kg×2×6, as suggested, new PR (est. 1RM 70.8 vs 68.8 prior best); Hack Squat Bodyweight+42.6kg frame×4×7, as suggested +1 extra set, new PR (est. 1RM 152.6 vs 148.4 prior best). Finished with Incline Walk (treadmill), 15 min, 0.95km, 110m elevation, 125 kcal. 3 new PRs.",
       "_source": "manual log"
     }
   ]
