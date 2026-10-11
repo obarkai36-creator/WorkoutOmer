@@ -1,5 +1,5 @@
 {
-  "now": 1791709633048,
+  "now": 1791712592180,
   "workouts": [
     {
       "datetime": "2026-10-10T08:15",
@@ -7754,7 +7754,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 28,
+      "pct": 27,
       "readyInHours": 0,
       "ready": true
     },
@@ -7786,7 +7786,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 16,
+      "pct": 15,
       "readyInHours": 0,
       "ready": true
     },
@@ -7858,14 +7858,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 28,
+      "pct": 27,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 28,
+          "pct": 27,
           "readyInHours": 0,
           "ready": true
         }
@@ -7910,7 +7910,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 16,
+          "pct": 15,
           "readyInHours": 0,
           "ready": true
         },
@@ -9329,7 +9329,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-11T09:07:13.048Z",
+    "readyAt": "2026-10-11T09:56:32.180Z",
     "neverLogged": false,
     "daysSince": 15,
     "suggestedExercises": [
@@ -9518,7 +9518,7 @@
       },
       {
         "section": "Chest",
-        "fatigue": 28,
+        "fatigue": 27,
         "readyInHours": 0,
         "daysSince": 2.8
       }
@@ -9528,7 +9528,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1
+    "daysSinceAerobic": 1.1
   },
   "alerts": [
     {
@@ -9560,7 +9560,7 @@
       17,
       18
     ],
-    "daysSinceLast": 1,
+    "daysSinceLast": 1.1,
     "total": 77
   },
   "relstrength": {
@@ -9627,7 +9627,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1,
+    "daysSinceLast": 1.1,
     "recent": [
       {
         "t": 1791620100000,
