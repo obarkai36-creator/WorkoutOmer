@@ -1,5 +1,5 @@
 {
-  "now": 1791743189631,
+  "now": 1791744601404,
   "workouts": [
     {
       "datetime": "2026-10-11T20:30",
@@ -7892,7 +7892,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 24,
+      "pct": 23,
       "readyInHours": 0,
       "ready": true
     },
@@ -7989,21 +7989,21 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 36,
-      "readyInHours": 5.3,
+      "readyInHours": 5.1,
       "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 24,
+      "pct": 23,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 24,
+          "pct": 23,
           "readyInHours": 0,
           "ready": true
         }
@@ -8135,14 +8135,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 36,
-      "readyInHours": 5.3,
+      "readyInHours": 5.1,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 36,
-          "readyInHours": 5.3,
+          "readyInHours": 5.1,
           "ready": false
         }
       ]
@@ -9467,9 +9467,9 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-11T18:26:29.631Z",
+    "readyAt": "2026-10-11T18:50:01.404Z",
     "neverLogged": false,
-    "daysSince": 12.1,
+    "daysSince": 12.2,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -9577,7 +9577,7 @@
         "section": "Shoulders",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 12.1
+        "daysSince": 12.2
       },
       {
         "section": "Back",
@@ -9593,9 +9593,9 @@
       },
       {
         "section": "Chest",
-        "fatigue": 24,
+        "fatigue": 23,
         "readyInHours": 0,
-        "daysSince": 3.1
+        "daysSince": 3.2
       },
       {
         "section": "Legs",
