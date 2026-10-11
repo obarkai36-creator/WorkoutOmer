@@ -19,7 +19,8 @@
     {"time": "09:30", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.734, "carbs_g": 11.734, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
     {"time": "12:30", "name": "Espresso", "category": "drink", "qty": "1 single", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "12:55", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 single", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 single", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "caffeine_shots": 5,
   "exclude_from_monthly_macros": true,
@@ -28,7 +29,7 @@
     "zinc_mg": 22.8,
     "selenium_mcg": 100,
     "folate_mcg_dfe": 151,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1044,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
@@ -44,7 +45,8 @@
     "09:30 2.5 slices (62.5g) Tnuva Emek Light yellow cheese 9% (verified label reference) + 20 cherry tomatoes (same standard reference as prior entries — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE).",
     "User asked to skip exact food macro/micro tracking for the rest of today (2026-10-11) too — marked exclude_from_monthly_macros. Supplements/medication, caffeine, workouts, sleep, weigh-ins, and lifestyle events still logged as usual.",
     "12:30 espresso, 1 single (4 caffeine shots today) + 12:55 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
-    "14:30 espresso, 1 single (5 caffeine shots today)."
+    "14:30 espresso, 1 single (5 caffeine shots today).",
+    "15:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose."
   ],
-  "status_note": "Day in progress. Slept only 5.25h (00:30-05:45), notably short of target — worth watching for fatigue today. AM spray + pill + double espresso + Mayven + 07:45/12:30/14:30 espresso + 09:30 snack + essential-5 logged. No further exact food tracking today per user request."
+  "status_note": "Day in progress. Slept only 5.25h (00:30-05:45), notably short of target — worth watching for fatigue today. AM spray + pill + double espresso + Mayven + 07:45/12:30/14:30 espresso + 09:30 snack + essential-5 + omega-3 logged. No further exact food tracking today per user request."
 }

@@ -1,5 +1,5 @@
 {
-  "now": 1791718445513,
+  "now": 1791730557721,
   "workouts": [
     {
       "datetime": "2026-10-10T08:15",
@@ -7754,7 +7754,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 26,
+      "pct": 25,
       "readyInHours": 0,
       "ready": true
     },
@@ -7770,7 +7770,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -7786,7 +7786,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 15,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -7850,7 +7850,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 23,
+      "pct": 21,
       "readyInHours": 0,
       "ready": true
     }
@@ -7858,14 +7858,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 26,
+      "pct": 25,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 26,
+          "pct": 25,
           "readyInHours": 0,
           "ready": true
         }
@@ -7888,14 +7888,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         }
@@ -7903,14 +7903,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 15,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -7996,14 +7996,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 23,
+      "pct": 21,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 23,
+          "pct": 21,
           "readyInHours": 0,
           "ready": true
         }
@@ -9329,9 +9329,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-11T11:34:05.513Z",
+    "readyAt": "2026-10-11T14:55:57.721Z",
     "neverLogged": false,
-    "daysSince": 15.1,
+    "daysSince": 15.2,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -9496,31 +9496,31 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 15.1
+        "daysSince": 15.2
       },
       {
         "section": "Shoulders",
-        "fatigue": 3,
+        "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 11.9
+        "daysSince": 12
       },
       {
         "section": "Back",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 8.1
+        "daysSince": 8.2
       },
       {
         "section": "Arms",
-        "fatigue": 7,
+        "fatigue": 6,
         "readyInHours": 0,
-        "daysSince": 8.1
+        "daysSince": 8.2
       },
       {
         "section": "Chest",
-        "fatigue": 26,
+        "fatigue": 25,
         "readyInHours": 0,
-        "daysSince": 2.9
+        "daysSince": 3
       }
     ],
     "suggestedCount": 5,
@@ -9528,7 +9528,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1.1
+    "daysSinceAerobic": 1.3
   },
   "alerts": [
     {
@@ -9560,7 +9560,7 @@
       17,
       18
     ],
-    "daysSinceLast": 1.1,
+    "daysSinceLast": 1.3,
     "total": 77
   },
   "relstrength": {
@@ -9627,7 +9627,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.1,
+    "daysSinceLast": 1.3,
     "recent": [
       {
         "t": 1791620100000,
