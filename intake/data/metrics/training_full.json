@@ -1,5 +1,5 @@
 {
-  "now": 1791712592180,
+  "now": 1791718445513,
   "workouts": [
     {
       "datetime": "2026-10-10T08:15",
@@ -7754,7 +7754,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 27,
+      "pct": 26,
       "readyInHours": 0,
       "ready": true
     },
@@ -7850,7 +7850,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 25,
+      "pct": 23,
       "readyInHours": 0,
       "ready": true
     }
@@ -7858,14 +7858,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 27,
+      "pct": 26,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 27,
+          "pct": 26,
           "readyInHours": 0,
           "ready": true
         }
@@ -7996,14 +7996,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 25,
+      "pct": 23,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 25,
+          "pct": 23,
           "readyInHours": 0,
           "ready": true
         }
@@ -9329,9 +9329,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-11T09:56:32.180Z",
+    "readyAt": "2026-10-11T11:34:05.513Z",
     "neverLogged": false,
-    "daysSince": 15,
+    "daysSince": 15.1,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -9496,31 +9496,31 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 15
+        "daysSince": 15.1
       },
       {
         "section": "Shoulders",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 11.8
+        "daysSince": 11.9
       },
       {
         "section": "Back",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 8
+        "daysSince": 8.1
       },
       {
         "section": "Arms",
         "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 8
+        "daysSince": 8.1
       },
       {
         "section": "Chest",
-        "fatigue": 27,
+        "fatigue": 26,
         "readyInHours": 0,
-        "daysSince": 2.8
+        "daysSince": 2.9
       }
     ],
     "suggestedCount": 5,
