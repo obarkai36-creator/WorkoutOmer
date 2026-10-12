@@ -784,6 +784,30 @@
       "fiber_g": 0.3,
       "verified": false,
       "source": "Generic estimate for a plain fresh (not frozen/breaded) ground-chicken ball/meatball, no stated vegetable filler or breading, first logged 2026-10-12 (35g). Not label-verified -- refine if the actual recipe/ingredients are given."
+    },
+    {
+      "id": "sea_bream_fried_generic",
+      "name": "Sea bream (gilthead/dorade), pan-fried in olive oil, small amount, generic",
+      "serving": "100 g cooked",
+      "kcal": 160,
+      "protein_g": 24,
+      "carbs_g": 0,
+      "fat_g": 7,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Pan-fried variant of sea_bream_baked_generic (145kcal/24p/5f per 100g baked) — bumped fat by ~2g/100g and kcal by ~15 to account for a 'small amount' of absorbed olive oil, first logged 2026-10-12 (150g). Same per-100g micros as the baked reference (~0.6mg zinc, ~45mcg selenium, ~300mg omega-3 EPA/DHA, ~300 IU vitamin D). Not label-verified -- refine if the actual oil quantity is given."
+    },
+    {
+      "id": "string_beans_cooked_generic",
+      "name": "String beans (green beans), cooked, generic",
+      "serving": "100 g",
+      "kcal": 35,
+      "protein_g": 1.9,
+      "carbs_g": 7.9,
+      "fat_g": 0.3,
+      "fiber_g": 3.4,
+      "verified": false,
+      "source": "Generic USDA-type estimate for boiled/steamed green beans, first logged 2026-10-12 (2 spoons, ~35g/spoon assumed, ~70g total). Also credits ~8mg vitamin C per 100g. Not label-verified -- refine if a specific prep (oil/seasoning) is given."
     }
   ]
 }

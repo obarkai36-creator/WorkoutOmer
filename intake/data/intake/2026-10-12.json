@@ -28,18 +28,22 @@
     {"time": "12:05", "name": "Lunch — sweet potato (additional)", "category": "food", "qty": "15 g", "kcal": 13.5, "protein_g": 0.3, "carbs_g": 3.15, "fat_g": 0.015, "fiber_g": 0.45, "note": "same baked/roasted reference as above. Credits ~0.36mg vitamin C."},
     {"time": "13:20", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "14:00", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "15:30", "name": "Green grapes", "category": "food", "qty": "20 grapes (~100 g)", "kcal": 69, "protein_g": 0.72, "carbs_g": 18.1, "fat_g": 0.16, "fiber_g": 0.9, "note": "same generic reference as prior entries (green_grapes_generic). Credits ~10.8mg vitamin C."}
+    {"time": "15:30", "name": "Green grapes", "category": "food", "qty": "20 grapes (~100 g)", "kcal": 69, "protein_g": 0.72, "carbs_g": 18.1, "fat_g": 0.16, "fiber_g": 0.9, "note": "same generic reference as prior entries (green_grapes_generic). Credits ~10.8mg vitamin C."},
+    {"time": "19:30", "name": "Dinner — string beans", "category": "food", "qty": "2 spoons (~70 g)", "kcal": 24.5, "protein_g": 1.33, "carbs_g": 5.53, "fat_g": 0.21, "fiber_g": 2.38, "time_approx": true, "note": "new generic reference (string_beans_cooked_generic, not label-verified, first time logged), spoon size ~35g assumed. Credits ~5.6mg vitamin C."},
+    {"time": "19:30", "name": "Dinner — large salad (lettuce, tomato, cherry tomato, red onion, lemon juice dressing)", "category": "food", "qty": "~500 g total (no weights given, 4 named veg equally split ~125g each) + lemon juice dressing", "kcal": 118, "protein_g": 4.85, "carbs_g": 26, "fat_g": 0.75, "fiber_g": 6.63, "time_approx": true, "note": "no weights given — distributed equally across the 4 named vegetables at standard per-100g references (lettuce, tomato, cherry tomato, red onion), lemon juice dressing at the usual rate, no oil mentioned. Credits ~8.1mg lycopene, ~61.25mg vitamin C, ~81.25mcg folate DFE."},
+    {"time": "19:30", "name": "Dinner — sea bream, pan-fried (small amount olive oil)", "category": "food", "qty": "150 g", "kcal": 240, "protein_g": 36, "carbs_g": 0, "fat_g": 10.5, "fiber_g": 0, "time_approx": true, "note": "new generic reference (sea_bream_fried_generic, not label-verified, first time logged) — pan-fried variant of the existing baked sea bream reference, fat bumped up for a 'small amount' of absorbed olive oil. Credits ~0.9mg zinc, ~67.5mcg selenium, ~450mg omega-3 EPA/DHA, ~450 IU vitamin D."},
+    {"time": "19:30", "name": "Dinner — chicken thighs", "category": "food", "qty": "80 g", "kcal": 167.2, "protein_g": 20.8, "carbs_g": 0, "fat_g": 8.7, "fiber_g": 0, "time_approx": true, "note": "standard grilled boneless/skinless chicken thigh reference (~209kcal/100g), same as prior entries. Credits ~1.04mg zinc, ~11.2mcg selenium."}
   ],
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 24.96,
-    "selenium_mcg": 157.6,
-    "folate_mcg_dfe": 202,
-    "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1100.49,
-    "vitamin_d_iu": 2000,
+    "zinc_mg": 26.9,
+    "selenium_mcg": 236.3,
+    "folate_mcg_dfe": 283.25,
+    "omega3_epa_dha_mg": 1450,
+    "vitamin_c_mg": 1167.34,
+    "vitamin_d_iu": 2450,
     "vitamin_e_mg": 134,
-    "lycopene_mg": 17.6
+    "lycopene_mg": 25.7
   },
   "assumptions": [
     "Sleep logged: 23:30-05:40, 6.17h (night of 2026-10-11) — a bit short of the 7-9h target band.",
@@ -53,7 +57,8 @@
     "Additional lunch items: 30g grilled chicken breast (credits ~0.27mg zinc, ~7.2mcg selenium) + 35g chicken ball, fresh (new generic reference, chicken_ball_fresh_generic, first time logged) + 15g sweet potato (credits ~0.36mg vitamin C).",
     "13:20 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "14:00 double espresso, 1 double (4 caffeine shots today).",
-    "15:30 20 green grapes (~100g, same generic reference as prior entries — credits ~10.8mg vitamin C)."
+    "15:30 20 green grapes (~100g, same generic reference as prior entries — credits ~10.8mg vitamin C).",
+    "19:30 (clock time not given, placeholder) dinner: 2 spoons (~70g) string beans (new generic reference, first time logged, credits ~5.6mg vitamin C) + large salad (lettuce, tomato, cherry tomato, red onion, lemon juice dressing, no weights given — ~500g total split equally across the 4 veg, credits ~8.1mg lycopene, ~61.25mg vitamin C, ~81.25mcg folate DFE) + 150g sea bream pan-fried in a small amount of olive oil (new generic reference, first time logged, credits ~0.9mg zinc, ~67.5mcg selenium, ~450mg omega-3, ~450IU vitamin D) + 80g chicken thighs (credits ~1.04mg zinc, ~11.2mcg selenium)."
   ],
-  "status_note": "Day in progress. Slept 6.17h (23:30-05:40), a bit short of target. AM spray + pill + double espresso + Mayven + essential-5 + 12:05 lunch (chicken breast, sweet potato, edamame, cabbage, tomatoes, chicken ball) + omega-3 + 14:00 double espresso + 15:30 grapes logged. Full food tracking resumes today."
+  "status_note": "Day in progress. Slept 6.17h (23:30-05:40), a bit short of target. AM spray + pill + double espresso + Mayven + essential-5 + 12:05 lunch + omega-3 + 14:00 double espresso + 15:30 grapes + dinner (string beans, large salad, sea bream, chicken thighs) logged. Full food tracking resumes today."
 }
