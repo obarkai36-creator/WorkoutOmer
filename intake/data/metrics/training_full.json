@@ -1,5 +1,5 @@
 {
-  "now": 1791823377728,
+  "now": 1791830069609,
   "workouts": [
     {
       "datetime": "2026-10-11T20:30",
@@ -7940,15 +7940,15 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 46,
-      "readyInHours": 25.8,
+      "pct": 45,
+      "readyInHours": 23.9,
       "ready": false
     },
     "hamstrings": {
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 19,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -7956,8 +7956,8 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 42,
-      "readyInHours": 20.3,
+      "pct": 41,
+      "readyInHours": 18.5,
       "ready": false
     },
     "adductors": {
@@ -7972,7 +7972,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -7988,7 +7988,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "ready": true
     }
@@ -8072,30 +8072,30 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 24,
-      "readyInHours": 25.8,
+      "pct": 23,
+      "readyInHours": 23.9,
       "muscles": [
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 46,
-          "readyInHours": 25.8,
+          "pct": 45,
+          "readyInHours": 23.9,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 42,
-          "readyInHours": 20.3,
+          "pct": 41,
+          "readyInHours": 18.5,
           "ready": false
         },
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 19,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         },
@@ -8103,7 +8103,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -8134,14 +8134,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 18,
+          "pct": 17,
           "readyInHours": 0,
           "ready": true
         }
@@ -9439,14 +9439,14 @@
       },
       {
         "label": "-2w",
-        "stress": 536,
-        "sessions": 3,
+        "stress": 579,
+        "sessions": 4,
         "acwr": 1.08
       },
       {
         "label": "-1w",
-        "stress": 525,
-        "sessions": 4,
+        "stress": 482,
+        "sessions": 3,
         "acwr": 0.82
       },
       {
@@ -9467,7 +9467,7 @@
     "fatigue": 1,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-12T16:42:57.728Z",
+    "readyAt": "2026-10-12T18:34:29.609Z",
     "neverLogged": false,
     "daysSince": 13.1,
     "suggestedExercises": [
@@ -9583,13 +9583,13 @@
         "section": "Back",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 9.3
+        "daysSince": 9.4
       },
       {
         "section": "Arms",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 9.3
+        "daysSince": 9.4
       },
       {
         "section": "Chest",
@@ -9599,9 +9599,9 @@
       },
       {
         "section": "Legs",
-        "fatigue": 24,
-        "readyInHours": 25.8,
-        "daysSince": 0.8
+        "fatigue": 23,
+        "readyInHours": 23.9,
+        "daysSince": 0.9
       }
     ],
     "suggestedCount": 4,
@@ -9609,7 +9609,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 3,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 0.8
+    "daysSinceAerobic": 0.9
   },
   "alerts": [
     {
@@ -9636,7 +9636,7 @@
       17,
       18
     ],
-    "daysSinceLast": 0.8,
+    "daysSinceLast": 0.9,
     "total": 78
   },
   "relstrength": {
@@ -9703,7 +9703,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.8,
+    "daysSinceLast": 0.9,
     "recent": [
       {
         "t": 1791750600000,
