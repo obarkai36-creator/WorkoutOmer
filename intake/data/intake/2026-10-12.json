@@ -16,17 +16,18 @@
     {"time": "06:45", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "09:10", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.734, "carbs_g": 11.734, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
     {"time": "09:10", "name": "Baby mozzarella (fresh, whole milk, generic)", "category": "food", "qty": "30 g", "kcal": 84, "protein_g": 6.6, "carbs_g": 0.6, "fat_g": 6.6, "fiber_g": 0, "note": "same generic reference as prior entries (baby_mozzarella_generic)."},
-    {"time": "09:10", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference, same as prior entries."}
+    {"time": "09:10", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference, same as prior entries."},
+    {"time": "09:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 151,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 44,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1044,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 8.8
   },
   "assumptions": [
@@ -35,7 +36,8 @@
     "06:40 double espresso, 1 double.",
     "06:45 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "Full detailed food logging resumes today (2026-10-12) per CLAUDE.md.",
-    "09:10 20 cherry tomatoes (same standard reference as prior entries — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 30g baby mozzarella (same generic reference as prior entries) + 2 slices (50g) Tnuva Emek Light yellow cheese 9% (verified label reference)."
+    "09:10 20 cherry tomatoes (same standard reference as prior entries — credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 30g baby mozzarella (same generic reference as prior entries) + 2 slices (50g) Tnuva Emek Light yellow cheese 9% (verified label reference).",
+    "09:30 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E."
   ],
-  "status_note": "Day in progress. Slept 6.17h (23:30-05:40), a bit short of target. AM spray + pill + double espresso + Mayven + 09:10 snack (tomatoes, mozzarella, yellow cheese) logged. Full food tracking resumes today."
+  "status_note": "Day in progress. Slept 6.17h (23:30-05:40), a bit short of target. AM spray + pill + double espresso + Mayven + 09:10 snack (tomatoes, mozzarella, yellow cheese) + essential-5 logged. Full food tracking resumes today."
 }
