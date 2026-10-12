@@ -1,5 +1,5 @@
 {
-  "now": 1791830069609,
+  "now": 1791832614381,
   "workouts": [
     {
       "datetime": "2026-10-11T20:30",
@@ -7940,8 +7940,8 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 45,
-      "readyInHours": 23.9,
+      "pct": 44,
+      "readyInHours": 23.2,
       "ready": false
     },
     "hamstrings": {
@@ -7956,8 +7956,8 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 41,
-      "readyInHours": 18.5,
+      "pct": 40,
+      "readyInHours": 17.8,
       "ready": false
     },
     "adductors": {
@@ -7988,7 +7988,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "ready": true
     }
@@ -8073,22 +8073,22 @@
     "Legs": {
       "section": "Legs",
       "pct": 23,
-      "readyInHours": 23.9,
+      "readyInHours": 23.2,
       "muscles": [
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 45,
-          "readyInHours": 23.9,
+          "pct": 44,
+          "readyInHours": 23.2,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 41,
-          "readyInHours": 18.5,
+          "pct": 40,
+          "readyInHours": 17.8,
           "ready": false
         },
         {
@@ -8134,14 +8134,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 17,
+          "pct": 16,
           "readyInHours": 0,
           "ready": true
         }
@@ -9467,9 +9467,9 @@
     "fatigue": 1,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-12T18:34:29.609Z",
+    "readyAt": "2026-10-12T19:16:54.381Z",
     "neverLogged": false,
-    "daysSince": 13.1,
+    "daysSince": 13.2,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -9577,7 +9577,7 @@
         "section": "Shoulders",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 13.1
+        "daysSince": 13.2
       },
       {
         "section": "Back",
@@ -9595,12 +9595,12 @@
         "section": "Chest",
         "fatigue": 16,
         "readyInHours": 0,
-        "daysSince": 4.1
+        "daysSince": 4.2
       },
       {
         "section": "Legs",
         "fatigue": 23,
-        "readyInHours": 23.9,
+        "readyInHours": 23.2,
         "daysSince": 0.9
       }
     ],
