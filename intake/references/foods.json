@@ -832,6 +832,18 @@
       "fiber_g": 0,
       "verified": true,
       "source": "Verified label data (Google/product panel, 2026-10-13): per 100g — 58kcal, 10g protein, 0.4g fat, 3.3g carb; per 200g cup — 115kcal, 20g protein, 0.8g fat, 6.6g carb. Main ingredients: milk, water, coconut (0.67%), stabilizers, aspartame + acesulfame K sweeteners. Corrects the earlier unverified placeholder estimate (100kcal/150g) first logged the same day."
+    },
+    {
+      "id": "meatballs_tomato_sauce_generic",
+      "name": "Meatballs in tomato sauce, generic (meat type not specified)",
+      "serving": "100 g",
+      "kcal": 180,
+      "protein_g": 12,
+      "carbs_g": 6,
+      "fat_g": 10,
+      "fiber_g": 1,
+      "verified": false,
+      "source": "Generic estimate for standard ground-meat meatballs (beef/mixed, not specified) simmered in tomato sauce, first logged 2026-10-13 (250g). Also credits ~3mg lycopene per 100g from the tomato sauce. Not label-verified -- refine if the meat type or recipe is given."
     }
   ]
 }
