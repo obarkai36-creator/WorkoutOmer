@@ -868,6 +868,18 @@
       "fiber_g": 0.3,
       "verified": false,
       "source": "Generic estimate for lean-beef meatballs (just the balls, sauce logged separately via crushed_tomato_generic) -- lean ground beef with modest egg/breadcrumb binder diluting protein slightly vs pure lean beef (~31p/100g). First logged 2026-10-13, correcting an earlier same-day entry (meatballs_tomato_sauce_generic, 180kcal/12p/100g) that under-counted protein by treating the whole 250g dish as a single composite without separating the sauce; user confirmed ~300g was lean-beef meatballs and only ~50g was sauce. Also credits ~4.5mg zinc, ~15mcg selenium per 100g. Not label-verified -- refine if the actual recipe is given."
+    },
+    {
+      "id": "cheesecake_slice_generic",
+      "name": "Cheesecake, generic, 1 slice",
+      "serving": "1 slice (~100 g)",
+      "kcal": 321,
+      "protein_g": 5.5,
+      "carbs_g": 25.5,
+      "fat_g": 22.5,
+      "fiber_g": 0.4,
+      "verified": false,
+      "source": "Standard USDA-type cheesecake values (~321kcal/100g), first logged 2026-10-13 (1 slice, ~100g assumed, no specific bakery/brand given). Not label-verified -- refine if a specific product/weight is checked."
     }
   ]
 }
