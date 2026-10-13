@@ -16,7 +16,9 @@
     {"time": "07:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "07:15", "name": "Chocolate cookie", "category": "food", "qty": "20 g", "kcal": 96, "protein_g": 1.109, "carbs_g": 12.6, "fat_g": 4.8, "fiber_g": 0.4, "note": "same generic reference as prior entries (chocolate_cookie_homemade_generic)."},
     {"time": "09:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "09:15", "name": "Yoplait GO coconut-flavor protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 115, "protein_g": 20, "carbs_g": 6.6, "fat_g": 0.8, "fiber_g": 0, "note": "CORRECTED to verified label values (per 100g: 58kcal/10p/0.4f/3.3c) — supersedes the earlier unverified placeholder estimate (100kcal/150g)."}
+    {"time": "09:15", "name": "Yoplait GO coconut-flavor protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 115, "protein_g": 20, "carbs_g": 6.6, "fat_g": 0.8, "fiber_g": 0, "note": "CORRECTED to verified label values (per 100g: 58kcal/10p/0.4f/3.3c) — supersedes the earlier unverified placeholder estimate (100kcal/150g)."},
+    {"time": "10:55", "name": "Green grapes", "category": "food", "qty": "20 grapes (~100 g)", "kcal": 69, "protein_g": 0.72, "carbs_g": 18.1, "fat_g": 0.16, "fiber_g": 0.9, "note": "same generic reference as prior entries (green_grapes_generic). Credits ~10.8mg vitamin C."},
+    {"time": "10:55", "name": "Tnuva Emek Light yellow cheese, 9% fat", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified label reference, same as prior entries."}
   ],
   "workout_today": true,
   "workout_summary": "Shoulders day (07:50) — Cable Face Pull 27kg×4×8 (new PR). Dumbbell Shoulder Press 20kg each×3×10, as suggested (new PR). Farmer's Hold 24kg each×4×40s, as suggested (new PR). Front Raises 18kg×4×10 (DB instead of usual KB, new PR). Shoulder Shrugs 26kg each×3×10, as suggested (ties best). 4 new PRs.",
@@ -26,7 +28,7 @@
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 10.8,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
@@ -40,7 +42,8 @@
     "07:50 Shoulders day: Cable Face Pull 27kg×4×8, logged directly, new PR (est. 1RM 34.2 vs 24.5 prior). Dumbbell Shoulder Press 20kg each (40kg total)×3×10 as suggested, new PR (est. 1RM 53.3 vs 52.0 prior). Farmer's Hold 24kg each (48kg total)×4×40s as suggested, new PR (+5s on prior best). Front Raises 18kg×4×10, dumbbell instead of the usual kettlebell, new PR (est. 1RM 24.0 vs 23.4 prior). Shoulder Shrugs 26kg each (52kg total)×3×10 as suggested, rebuild to best (ties exactly). 4 new PRs. bal.pushPull now 1.05 (still healthy).",
     "07:15 20g chocolate cookie (same generic reference as prior entries).",
     "09:00 creatine monohydrate, 5g.",
-    "09:15 Yoplait GO coconut-flavor protein yogurt, 1 cup (200g) — CORRECTED to verified label values (115kcal/20p/0.8f/6.6c), supersedes the earlier unverified placeholder estimate."
+    "09:15 Yoplait GO coconut-flavor protein yogurt, 1 cup (200g) — CORRECTED to verified label values (115kcal/20p/0.8f/6.6c), supersedes the earlier unverified placeholder estimate.",
+    "10:55 20 green grapes (~100g, same generic reference as prior entries — credits ~10.8mg vitamin C) + 1 slice (25g) Tnuva Emek Light yellow cheese 9% (verified label reference)."
   ],
-  "status_note": "Day in progress. Slept 7.67h (22:35-06:15), within target. AM spray + pill + weigh-in (80.65kg) + double espresso + Mayven + 07:50 Shoulders day (4 new PRs) + chocolate cookie + creatine + coconut yogurt logged."
+  "status_note": "Day in progress. Slept 7.67h (22:35-06:15), within target. AM spray + pill + weigh-in (80.65kg) + double espresso + Mayven + 07:50 Shoulders day (4 new PRs) + chocolate cookie + creatine + coconut yogurt + 10:55 snack (grapes, yellow cheese) logged."
 }
