@@ -235,14 +235,14 @@ const SNAPSHOT = [
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
-  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 9, weight: 40, text: "20kg each × 3×9 (matches the 20kg×9 best set, more consistent than the prior 2×9, 1×8)" }, best: { sets: 3, reps: 9, weight: 40, text: "20kg each × 2×9, 1×8" } },
+  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 10, weight: 40, text: "20kg each × 3×10 (new PR)" }, best: { sets: 3, reps: 10, weight: 40, text: "20kg each × 3×10" } },
   { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9 (ties best)" }, best: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
-  { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 9, weight: 18, text: "18kg KB × 4×9" }, best: { sets: 4, reps: 9, weight: 18, text: "18kg KB × 4×9" } },
+  { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 10, weight: 18, text: "18kg DB × 4×10 (new PR, DB instead of the usual KB)" }, best: { sets: 4, reps: 10, weight: 18, text: "18kg DB × 4×10" } },
   { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" }, best: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" } },
-  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 4, reps: 12, weight: 40, text: "20kg each × 4×12 (hotel gym)" }, best: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10" } },
-  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s (ties best)" }, best: { sets: 4, seconds: 35, weight: 48, text: "24kg each × 4×35s" } },
-  { name: "Cable Face Pull",           section: "Shoulders", latest: { sets: 4, reps: 12, weight: 17.5, text: "17.5kg × 4×12 (hotel gym, first logged)" }, best: { sets: 4, reps: 12, weight: 17.5, text: "17.5kg × 4×12" } },
+  { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10 (ties best)" }, best: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10" } },
+  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 40, weight: 48, text: "24kg each × 4×40s (new PR)" }, best: { sets: 4, seconds: 40, weight: 48, text: "24kg each × 4×40s" } },
+  { name: "Cable Face Pull",           section: "Shoulders", latest: { sets: 4, reps: 8, weight: 27, text: "27kg × 4×8 (new PR)" }, best: { sets: 4, reps: 8, weight: 27, text: "27kg × 4×8" } },
 
   // ---- Arms: Triceps ----
   { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" } },
@@ -301,6 +301,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 13 Oct — Shoulders (07:50)
+  {
+    datetime: "2026-10-13T07:50", note: "Shoulders day (07:50) — Cable Face Pull 27kg×4×8, logged directly (new PR — est. 1RM 34.2 vs 24.5 prior best at 17.5kg×4×12). Dumbbell Shoulder Press 20kg each (40kg total)×3×10, as suggested (new PR — est. 1RM 53.3 vs 52.0 prior best at 20kg each×1×9). Farmer's Hold 24kg each (48kg total)×4×40s, as suggested (new PR — +5s on the prior best of 4×35s). Front Raises 18kg×4×10, logged with a dumbbell instead of the usual kettlebell, same weight (new PR — est. 1RM 24.0 vs 23.4 prior best at 18kg×4×9). Shoulder Shrugs 26kg each (52kg total)×3×10, as suggested (rebuild to best — ties exactly). 4 new PRs.",
+    exercises: [
+      { name: "Cable Face Pull",           sets: [ { reps: 8, weight: 27 }, { reps: 8, weight: 27 }, { reps: 8, weight: 27 }, { reps: 8, weight: 27 } ] },
+      { name: "Dumbbell Shoulder Press",   sets: [ { reps: 10, weight: 40 }, { reps: 10, weight: 40 }, { reps: 10, weight: 40 } ] },
+      { name: "Farmer's Hold",             sets: [ { seconds: 40, weight: 48 }, { seconds: 40, weight: 48 }, { seconds: 40, weight: 48 }, { seconds: 40, weight: 48 } ] },
+      { name: "Front Raises",              sets: [ { reps: 10, weight: 18 }, { reps: 10, weight: 18 }, { reps: 10, weight: 18 }, { reps: 10, weight: 18 } ] },
+      { name: "Shoulder Shrugs",           sets: [ { reps: 10, weight: 52 }, { reps: 10, weight: 52 }, { reps: 10, weight: 52 } ] },
+    ],
+  },
   // 11 Oct — Legs (20:30)
   {
     datetime: "2026-10-11T20:30", note: "Legs day (20:30) — Leg Press 132kg×4×12, as suggested (new PR — est. 1RM 184.8 vs 180.4 prior best at 132kg×4×11). Dumbbell Calf Raise 26.5kg each (53kg total)×4×8, as suggested (+2.5kg, reset to 4×8 from 24kg each×4×12 — est. 1RM essentially flat at 67.1 vs 67.2, a weight-up/rep-reset rather than a strict PR). Glute Extension 59kg×2×6, as suggested (new PR — est. 1RM 70.8 vs 68.8 prior best at 59kg×2×5). Hack Squat Bodyweight+42.6kg frame×4×7, as suggested +1 extra set (new PR — est. 1RM 152.6 vs 148.4 prior best at 3×6, plus an added 4th set). Finished with Incline Walk (treadmill), 15 min, 0.95km, 110m elevation, 125 kcal. 3 new PRs.",
