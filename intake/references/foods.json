@@ -844,6 +844,18 @@
       "fiber_g": 1,
       "verified": false,
       "source": "Generic estimate for standard ground-meat meatballs (beef/mixed, not specified) simmered in tomato sauce, first logged 2026-10-13 (250g). Also credits ~3mg lycopene per 100g from the tomato sauce. Not label-verified -- refine if the meat type or recipe is given."
+    },
+    {
+      "id": "potato_baked_generic",
+      "name": "Potato, white, baked/oven-roasted, generic (per raw/pre-bake weight)",
+      "serving": "100 g (pre-bake weight)",
+      "kcal": 93,
+      "protein_g": 2.5,
+      "carbs_g": 21,
+      "fat_g": 0.1,
+      "fiber_g": 2.2,
+      "verified": false,
+      "source": "Generic USDA-type estimate for baked white potato, first logged 2026-10-13. IMPORTANT: use the potato's PRE-BAKE (raw) weight, not the post-bake weight -- baking only drives off water, so using a smaller post-bake weight would under-count real calories/macros. Add any oil/butter separately. Not label-verified."
     }
   ]
 }
