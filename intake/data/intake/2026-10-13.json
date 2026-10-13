@@ -23,11 +23,12 @@
     {"time": "13:00", "name": "Lunch — tomato sauce", "category": "food", "qty": "50 g", "kcal": 16, "protein_g": 0.8, "carbs_g": 3.5, "fat_g": 0.1, "fiber_g": 0.95, "time_approx": true, "note": "same standard crushed-tomato reference as prior entries (crushed_tomato_generic). Credits ~5mg lycopene, ~5mg vitamin C."},
     {"time": "13:00", "name": "Lunch — baked potatoes with olive oil", "category": "food", "qty": "400g potato (pre-bake) + 13g olive oil, 175g post-bake serving weight", "kcal": 487, "protein_g": 10, "carbs_g": 84, "fat_g": 13.4, "fiber_g": 8.8, "time_approx": true, "note": "macros computed from the pre-bake raw quantities (400g potato at ~93kcal/100g baked-potato rate + 13g olive oil) since baking only drives off water — the much lower 175g post-bake weight reflects moisture loss, not fewer calories/macros, so it isn't used to scale the nutrition."},
     {"time": "13:00", "name": "Schoko-Bon (Kinder Choco-Bons, Ferrero)", "category": "food", "qty": "1 piece (~4.3 g)", "kcal": 23.6, "protein_g": 0.29, "carbs_g": 2.15, "fat_g": 1.54, "fiber_g": 0.13, "note": "same verified reference as prior entries (kinder_choco_bons)."},
-    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "13:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:10", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "workout_today": true,
   "workout_summary": "Shoulders day (07:50) — Cable Face Pull 27kg×4×8 (new PR). Dumbbell Shoulder Press 20kg each×3×10, as suggested (new PR). Farmer's Hold 24kg each×4×40s, as suggested (new PR). Front Raises 18kg×4×10 (DB instead of usual KB, new PR). Shoulder Shrugs 26kg each×3×10, as suggested (ties best). 4 new PRs.",
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
     "zinc_mg": 16.3,
     "selenium_mcg": 45,
@@ -51,7 +52,8 @@
     "10:55 20 green grapes (~100g, same generic reference as prior entries — credits ~10.8mg vitamin C) + 1 slice (25g) Tnuva Emek Light yellow cheese 9% (verified label reference).",
     "Lunch (clock time not given, placeholder 13:00): baked potatoes, 400g pre-bake + 13g olive oil (175g post-bake weight given, but macros computed from the pre-bake raw quantity since baking only removes water, not calories — new generic reference potato_baked_generic added).",
     "CORRECTION: the meatballs were re-split after the user flagged the protein as too low — actual composition was ~300g lean-beef meatballs + ~50g tomato sauce (not a 250g composite). Replaced with lean_beef_meatballs_generic (300g, credits ~13.5mg zinc/~45mcg selenium) + crushed_tomato_generic (50g sauce, credits ~5mg lycopene/~5mg vitamin C) — new totals: 586kcal/72.8p/18.5c/24.1f vs the original 450kcal/30p/15c/25f.",
-    "13:00 1 Schoko-Bon (same verified reference as prior entries) + Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose."
+    "13:00 1 Schoko-Bon (same verified reference as prior entries) + Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "14:10 double espresso, 1 double (4 caffeine shots today)."
   ],
-  "status_note": "Day in progress. Slept 7.67h (22:35-06:15), within target. AM spray + pill + weigh-in (80.65kg) + double espresso + Mayven + 07:50 Shoulders day (4 new PRs) + chocolate cookie + creatine + coconut yogurt + 10:55 snack + lunch (corrected meatballs + sauce + potatoes) + schoko-bon + omega-3 logged."
+  "status_note": "Day in progress. Slept 7.67h (22:35-06:15), within target. AM spray + pill + weigh-in (80.65kg) + double espresso + Mayven + 07:50 Shoulders day (4 new PRs) + chocolate cookie + creatine + coconut yogurt + 10:55 snack + lunch (corrected meatballs + sauce + potatoes) + schoko-bon + omega-3 + 14:10 double espresso logged."
 }
