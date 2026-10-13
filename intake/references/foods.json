@@ -823,15 +823,15 @@
     },
     {
       "id": "yoplait_coconut_protein_yogurt_generic",
-      "name": "Yoplait coconut protein yogurt (generic)",
-      "serving": "1 cup (~150 g)",
-      "kcal": 100,
-      "protein_g": 15,
-      "carbs_g": 7,
-      "fat_g": 1.5,
+      "name": "Yoplait GO coconut-flavor protein yogurt, verified",
+      "serving": "1 cup (200 g)",
+      "kcal": 115,
+      "protein_g": 20,
+      "carbs_g": 6.6,
+      "fat_g": 0.8,
       "fiber_g": 0,
-      "verified": false,
-      "source": "Generic typical-value estimate for a Yoplait-style high-protein, low-sugar coconut yogurt cup, first logged 2026-10-13. Not label-verified -- refine if the actual nutrition panel is given."
+      "verified": true,
+      "source": "Verified label data (Google/product panel, 2026-10-13): per 100g — 58kcal, 10g protein, 0.4g fat, 3.3g carb; per 200g cup — 115kcal, 20g protein, 0.8g fat, 6.6g carb. Main ingredients: milk, water, coconut (0.67%), stabilizers, aspartame + acesulfame K sweeteners. Corrects the earlier unverified placeholder estimate (100kcal/150g) first logged the same day."
     }
   ]
 }
