@@ -820,6 +820,18 @@
       "fiber_g": 0.7,
       "verified": false,
       "source": "Same per-100g rate as chocolate_chip_cookie_bite_generic (~480kcal/100g, standard bakery-style chocolate cookie), scaled to a whole homemade cookie (~35g assumed, no recipe given), first logged 2026-10-12. Not recipe/label-verified -- refine if the actual recipe or weight is given."
+    },
+    {
+      "id": "yoplait_coconut_protein_yogurt_generic",
+      "name": "Yoplait coconut protein yogurt (generic)",
+      "serving": "1 cup (~150 g)",
+      "kcal": 100,
+      "protein_g": 15,
+      "carbs_g": 7,
+      "fat_g": 1.5,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic typical-value estimate for a Yoplait-style high-protein, low-sugar coconut yogurt cup, first logged 2026-10-13. Not label-verified -- refine if the actual nutrition panel is given."
     }
   ]
 }
