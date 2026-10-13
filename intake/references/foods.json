@@ -856,6 +856,18 @@
       "fiber_g": 2.2,
       "verified": false,
       "source": "Generic USDA-type estimate for baked white potato, first logged 2026-10-13. IMPORTANT: use the potato's PRE-BAKE (raw) weight, not the post-bake weight -- baking only drives off water, so using a smaller post-bake weight would under-count real calories/macros. Add any oil/butter separately. Not label-verified."
+    },
+    {
+      "id": "lean_beef_meatballs_generic",
+      "name": "Meatballs, lean beef, plain (generic, cooked)",
+      "serving": "100 g",
+      "kcal": 190,
+      "protein_g": 24,
+      "carbs_g": 5,
+      "fat_g": 8,
+      "fiber_g": 0.3,
+      "verified": false,
+      "source": "Generic estimate for lean-beef meatballs (just the balls, sauce logged separately via crushed_tomato_generic) -- lean ground beef with modest egg/breadcrumb binder diluting protein slightly vs pure lean beef (~31p/100g). First logged 2026-10-13, correcting an earlier same-day entry (meatballs_tomato_sauce_generic, 180kcal/12p/100g) that under-counted protein by treating the whole 250g dish as a single composite without separating the sauce; user confirmed ~300g was lean-beef meatballs and only ~50g was sauce. Also credits ~4.5mg zinc, ~15mcg selenium per 100g. Not label-verified -- refine if the actual recipe is given."
     }
   ]
 }
