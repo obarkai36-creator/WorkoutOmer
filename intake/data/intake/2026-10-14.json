@@ -1,7 +1,8 @@
 {
   "date": "2026-10-14",
   "day_number": 109,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 10000,
   "sleep": {
     "sleep_start": "00:45",
     "sleep_end": "05:50",
@@ -52,7 +53,8 @@
     "12:30 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "17:35 0.5 Quest Nutrition protein bar (~30g, new verified reference from a photographed label, first time logged) + essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
     "User asked to skip logging dinner (and therefore nutrition tracking for the rest of the day) — marked exclude_from_monthly_macros.",
-    "21:10 Rhinolast PM spray (PM allergy dose done)."
+    "21:10 Rhinolast PM spray (PM allergy dose done).",
+    "EOD: 10,000 steps. Retainers worn tonight — logged in retainers.json, clears the 3-missing-night flag noted at 10-13 EOD (10-11/12/13)."
   ],
-  "status_note": "Day in progress. Slept only 5.08h (00:45-05:50), notably short of target. AM spray + pill + double espresso + Mayven + 08:30 espresso + 09:00 yogurt + creatine + 11:45 lunch + omega-3 + 17:35 protein bar + essential-5 + PM spray logged. Masturbation logged. Dinner/full-day nutrition not tracked per user request."
+  "status_note": "Day complete. Slept only 5.08h (00:45-05:50), notably short of target. AM spray + pill + double espresso + Mayven + 08:30 espresso + 09:00 yogurt + creatine + 11:45 lunch + omega-3 + 17:35 protein bar + essential-5 + PM spray logged. Masturbation logged. Dinner/full-day nutrition not tracked per user request. 10,000 steps. Retainers worn."
 }
