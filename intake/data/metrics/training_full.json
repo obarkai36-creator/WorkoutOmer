@@ -1,5 +1,5 @@
 {
-  "now": 1791952765768,
+  "now": 1791953464897,
   "workouts": [
     {
       "datetime": "2026-10-13T07:50",
@@ -8058,8 +8058,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 54,
-      "readyInHours": 23.2,
+      "pct": 53,
+      "readyInHours": 23,
       "ready": false
     },
     "biceps": {
@@ -8083,7 +8083,7 @@
       "label": "Forearms",
       "section": "Arms",
       "pct": 34,
-      "readyInHours": 3.8,
+      "readyInHours": 3.6,
       "ready": false
     },
     "quads": {
@@ -8176,15 +8176,15 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 54,
-      "readyInHours": 23.2,
+      "pct": 53,
+      "readyInHours": 23,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 54,
-          "readyInHours": 23.2,
+          "pct": 53,
+          "readyInHours": 23,
           "ready": false
         }
       ]
@@ -8192,14 +8192,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 15,
-      "readyInHours": 3.8,
+      "readyInHours": 3.6,
       "muscles": [
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
           "pct": 34,
-          "readyInHours": 3.8,
+          "readyInHours": 3.6,
           "ready": false
         },
         {
@@ -9617,7 +9617,7 @@
     "fatigue": 6,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-14T04:39:25.768Z",
+    "readyAt": "2026-10-14T04:51:04.897Z",
     "neverLogged": false,
     "daysSince": 10.8,
     "suggestedExercises": [
@@ -9722,13 +9722,13 @@
       {
         "section": "Arms",
         "fatigue": 15,
-        "readyInHours": 3.8,
+        "readyInHours": 3.6,
         "daysSince": 0.9
       },
       {
         "section": "Shoulders",
-        "fatigue": 54,
-        "readyInHours": 23.2,
+        "fatigue": 53,
+        "readyInHours": 23,
         "daysSince": 0.9
       }
     ],
