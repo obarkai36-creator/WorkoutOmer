@@ -880,6 +880,18 @@
       "fiber_g": 0.4,
       "verified": false,
       "source": "Standard USDA-type cheesecake values (~321kcal/100g), first logged 2026-10-13 (1 slice, ~100g assumed, no specific bakery/brand given). Not label-verified -- refine if a specific product/weight is checked."
+    },
+    {
+      "id": "quest_bar_60g_verified",
+      "name": "Quest Nutrition protein bar, 1 bar (60g), verified",
+      "serving": "1 bar (60 g)",
+      "kcal": 190,
+      "protein_g": 20,
+      "carbs_g": 23,
+      "fat_g": 7,
+      "fiber_g": 12,
+      "verified": true,
+      "source": "Photographed nutrition label, first logged 2026-10-14: 190kcal, 7g fat (1.5g sat), 5mg cholesterol, 210mg sodium, 23g carb (12g fiber, 1g total sugar, 0g added sugar, 6g sugar alcohols), 20g protein, 10% calcium, 4% iron, 2% potassium per 60g bar. Distinct from the Quest Oatmeal Chocolate Chip bar already in the recipe library (different flavor/values: 180kcal/24c/14fiber) -- this is a separate Quest flavor."
     }
   ]
 }
