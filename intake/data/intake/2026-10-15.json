@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "day_number": 110,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "23:40",
+    "sleep_end": "06:15",
+    "duration_hours": 6.58,
+    "quality": null,
+    "notes": "6.58h (night of 2026-10-14) — a bit short of the 7-9h target band."
+  },
+  "items": [
+    {"time": "06:30", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (AM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — AM dose of the 2x/day spray"},
+    {"time": "06:30", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill"},
+    {"time": "06:35", "name": "Espresso", "category": "drink", "qty": "1 single", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "exact time not given — placed between spray/pill and Mayven."},
+    {"time": "06:45", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "07:00", "name": "Quest Nutrition protein bar", "category": "food", "qty": "0.5 bar (~30 g)", "kcal": 95, "protein_g": 10, "carbs_g": 11.5, "fat_g": 3.5, "fiber_g": 6, "note": "same verified reference as prior entries (quest_bar_60g_verified) — leftover half from yesterday."}
+  ],
+  "caffeine_shots": 1,
+  "micros_sperm_priority": {
+    "zinc_mg": 2.8,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 100,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Sleep logged: 23:40-06:15, 6.58h (night of 2026-10-14) — a bit short of the 7-9h target band.",
+    "06:30 Rhinolast (azelastine nasal spray, AM dose) + Bilaxten (bilastine pill, morning) — zero kcal/macros. Both AM allergy doses done.",
+    "Espresso (exact time not given), 1 single, placed at 6:35 between spray/pill and Mayven.",
+    "06:45 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
+    "07:00 0.5 Quest Nutrition protein bar (~30g, same verified reference as prior entries) — leftover half from yesterday."
+  ],
+  "status_note": "Day in progress. Slept 6.58h (23:40-06:15), a bit short of target. AM spray + pill + espresso + Mayven + protein bar leftover logged."
+}
