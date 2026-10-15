@@ -892,6 +892,66 @@
       "fiber_g": 12,
       "verified": true,
       "source": "Photographed nutrition label, first logged 2026-10-14: 190kcal, 7g fat (1.5g sat), 5mg cholesterol, 210mg sodium, 23g carb (12g fiber, 1g total sugar, 0g added sugar, 6g sugar alcohols), 20g protein, 10% calcium, 4% iron, 2% potassium per 60g bar. Distinct from the Quest Oatmeal Chocolate Chip bar already in the recipe library (different flavor/values: 180kcal/24c/14fiber) -- this is a separate Quest flavor."
+    },
+    {
+      "id": "burrata_generic",
+      "name": "Burrata cheese, generic",
+      "serving": "100 g",
+      "kcal": 250,
+      "protein_g": 14,
+      "carbs_g": 1,
+      "fat_g": 21,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic typical-value estimate for burrata (fresh mozzarella shell with creamy curd/cream center), first logged 2026-10-15 (hotel breakfast buffet, ~80g estimated from photo, no scale). Not label-verified -- refine if a specific brand/weight is checked."
+    },
+    {
+      "id": "halloumi_fried_generic",
+      "name": "Halloumi cheese, pan-fried, generic",
+      "serving": "100 g",
+      "kcal": 320,
+      "protein_g": 25,
+      "carbs_g": 2,
+      "fat_g": 25,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic USDA/typical-value estimate for pan-fried halloumi, first logged 2026-10-15 (hotel breakfast buffet, ~40g slice estimated from photo, no scale). Not label-verified."
+    },
+    {
+      "id": "hard_cheese_slice_generic",
+      "name": "Hard cheese (parmesan/kashkaval-style), generic",
+      "serving": "100 g",
+      "kcal": 380,
+      "protein_g": 28,
+      "carbs_g": 1,
+      "fat_g": 29,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Generic typical-value estimate for a hard aged cheese slice (parmesan/kashkaval-style), first logged 2026-10-15 (hotel breakfast buffet, ~30g estimated from photo, no scale). Not label-verified."
+    },
+    {
+      "id": "grilled_zucchini_generic",
+      "name": "Zucchini, grilled, generic",
+      "serving": "100 g",
+      "kcal": 35,
+      "protein_g": 1.3,
+      "carbs_g": 3.5,
+      "fat_g": 1.8,
+      "fiber_g": 1.2,
+      "verified": false,
+      "source": "Generic estimate for grilled zucchini slices (light oil char), first logged 2026-10-15 (hotel breakfast buffet, ~40g estimated from photo, no scale). Not label-verified."
+    },
+    {
+      "id": "baked_stuffed_tomato_generic",
+      "name": "Baked stuffed tomato (rice/cheese filling), generic",
+      "serving": "100 g",
+      "kcal": 90,
+      "protein_g": 3.8,
+      "carbs_g": 12.5,
+      "fat_g": 3.1,
+      "fiber_g": 1.9,
+      "verified": false,
+      "source": "Generic estimate for a whole tomato baked and stuffed with a rice/cheese/breadcrumb-style filling, first logged 2026-10-15 (hotel breakfast buffet, ~80g estimated from photo, no scale). Also credits ~3.5mg lycopene per 100g (baking concentrates lycopene vs raw tomato). Not label-verified -- refine if the actual filling/recipe is known."
     }
   ]
 }
