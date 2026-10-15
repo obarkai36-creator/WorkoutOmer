@@ -30,19 +30,22 @@
     {"time": "18:30", "name": "Dinner — Angel PRO Pita", "category": "food", "qty": "2 units (125 g)", "kcal": 251.2, "protein_g": 25.8, "carbs_g": 28.4, "fat_g": 2.4, "fiber_g": 7.4, "note": "verified label reference, same as prior entries (angel_pita_pro_20g_protein)."},
     {"time": "18:30", "name": "Dinner — air-fried chicken schnitzel", "category": "food", "qty": "250 g", "kcal": 475, "protein_g": 55, "carbs_g": 25, "fat_g": 17.5, "fiber_g": 1.25, "note": "same baked/air-fried chicken schnitzel reference as prior entries (~190kcal/100g, lighter than deep-fried). Credits ~1.83mg zinc, ~48.3mcg selenium (rough estimate)."},
     {"time": "18:30", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "30 pieces", "kcal": 79.5, "protein_g": 4.1, "carbs_g": 17.6, "fat_g": 0.9, "fiber_g": 5.4, "note": "same standard reference as prior entries. Credits ~13.2mg lycopene, ~66mg vitamin C, ~76.5mcg folate DFE."},
-    {"time": "18:30", "name": "Dinner — baked potatoes", "category": "food", "qty": "85 g", "kcal": 79.05, "protein_g": 2.125, "carbs_g": 17.85, "fat_g": 0.085, "fiber_g": 1.87, "note": "same baked-potato reference as prior entries (potato_baked_generic, ~93kcal/100g)."}
+    {"time": "18:30", "name": "Dinner — baked potatoes", "category": "food", "qty": "85 g", "kcal": 79.05, "protein_g": 2.125, "carbs_g": 17.85, "fat_g": 0.085, "fiber_g": 1.87, "note": "same baked-potato reference as prior entries (potato_baked_generic, ~93kcal/100g)."},
+    {"time": "19:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "19:00", "name": "Rhinolast (azelastine nasal spray)", "category": "medication", "qty": "1 dose (PM)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — PM dose of the 2x/day spray"},
+    {"time": "19:00", "name": "Schoko-Bon (Kinder Choco-Bons, Ferrero)", "category": "food", "qty": "1 piece (~4.3 g)", "kcal": 23.6, "protein_g": 0.29, "carbs_g": 2.15, "fat_g": 1.54, "fiber_g": 0.13, "note": "same verified reference as prior entries (kinder_choco_bons)."}
   ],
   "workout_today": true,
   "workout_summary": "Back day (07:00, hotel gym) — Row Machine 85.5kg×4×8, new exercise (hotel-gym substitute for Diverging Seated Row/Low Row), first-ever logged. Dumbbell Pullover 22.5kg×4×10, as suggested (new PR). Dead Hang 30s+30s+30s, ties best total hold time (90s), more even distribution. 1 new PR + 1 new exercise added to rotation.",
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 4.63,
-    "selenium_mcg": 48.3,
+    "zinc_mg": 24.63,
+    "selenium_mcg": 148.3,
     "folate_mcg_dfe": 196.9,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 122.6,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1122.6,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 19.52
   },
   "assumptions": [
@@ -57,7 +60,8 @@
     "CORRECTION: the creamy cheese dollop was initially guessed as burrata — user identified it as labneh instead. Replaced burrata_generic (250kcal/14p/21f per 100g) with labneh_generic (150kcal/5.5p/13f per 100g); item total dropped from 244kcal/11.2p/21.8f to 164kcal/4.4p/15.4f.",
     "12:00 1 full Quest Nutrition protein bar (60g, same verified reference as prior entries) — CORRECTED from an earlier 0.5-bar assumption + Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
     "14:30 double espresso, 1 double (4 caffeine shots today).",
-    "18:30 dinner: 2 Angel PRO Pita (verified label reference) + 250g air-fried chicken schnitzel (same baked/air-fried reference as prior entries, credits ~1.83mg zinc, ~48.3mcg selenium) + 30 cherry tomatoes (credits ~13.2mg lycopene, ~66mg vitamin C, ~76.5mcg folate DFE) + 85g baked potatoes (same reference as prior entries)."
+    "18:30 dinner: 2 Angel PRO Pita (verified label reference) + 250g air-fried chicken schnitzel (same baked/air-fried reference as prior entries, credits ~1.83mg zinc, ~48.3mcg selenium) + 30 cherry tomatoes (credits ~13.2mg lycopene, ~66mg vitamin C, ~76.5mcg folate DFE) + 85g baked potatoes (same reference as prior entries).",
+    "19:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E + Rhinolast PM spray (PM allergy dose done) + 1 Schoko-Bon (same verified reference as prior entries)."
   ],
-  "status_note": "Day in progress. Slept 6.58h (23:40-06:15), a bit short of target. AM spray + pill + espresso + Mayven + protein bar leftover logged. 07:00 Back day completed at hotel gym (1 new PR + 1 new exercise). Masturbation logged. 08:00-08:05 double espresso + large hotel breakfast buffet logged (estimated from photo). 12:00 protein bar + omega-3 + 14:30 double espresso + 18:30 dinner (pita, schnitzel, tomatoes, potatoes) logged."
+  "status_note": "Day in progress. Slept 6.58h (23:40-06:15), a bit short of target. AM spray + pill + espresso + Mayven + protein bar leftover logged. 07:00 Back day completed at hotel gym (1 new PR + 1 new exercise). Masturbation logged. 08:00-08:05 double espresso + large hotel breakfast buffet logged (estimated from photo). 12:00 protein bar + omega-3 + 14:30 double espresso + 18:30 dinner + 19:00 essential-5/PM spray/schoko-bon logged."
 }
