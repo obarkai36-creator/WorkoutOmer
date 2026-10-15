@@ -129,6 +129,7 @@ const EXERCISE_LIBRARY = {
   // Back
   "Diverging Seated Row":   { kind: "strength", muscles: { back: 1.0, biceps: 0.4 } },
   "Low Row":                { kind: "strength", muscles: { back: 1.0, biceps: 0.4 } },
+  "Row Machine":            { kind: "strength", muscles: { back: 1.0, biceps: 0.4 } }, // hotel-gym substitute for Diverging Seated Row / Low Row (same credit shape)
   "Lat Pulldown (Triangle)":{ kind: "strength", muscles: { back: 1.0, biceps: 0.4 } },
   // Standard wide-grip lat pulldown (straight bar, wide overhand grip) — NOT
   // equivalent to the Triangle/close-neutral-grip attachment above: the wider
@@ -227,11 +228,12 @@ const SNAPSHOT = [
   // ---- Back ----
   { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 11, weight: 97, text: "97kg × 4×11 (new PR)" }, best: { sets: 4, reps: 11, weight: 97, text: "97kg × 4×11" } },
   { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 11, weight: 79, text: "79kg × 4×11" }, best: { sets: 4, reps: 11, weight: 79, text: "79kg × 4×11" } },
+  { name: "Row Machine",             section: "Back", latest: { sets: 4, reps: 8, weight: 85.5, text: "85.5kg × 4×8 (hotel gym, first logged)" }, best: { sets: 4, reps: 8, weight: 85.5, text: "85.5kg × 4×8" } },
   { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
   { name: "Lat Pulldown (Wide Grip)", section: "Back", latest: { sets: 3, reps: 9, weight: 75, text: "75kg × 3×9 (new PR)" }, best: { sets: 3, reps: 9, weight: 75, text: "75kg × 3×9" } },
   { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 52, text: "26kg each × 4×12" } },
-  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 9, weight: 22.5, text: "22.5kg × 4×9 (new PR)" }, best: { sets: 4, reps: 9, weight: 22.5, text: "22.5kg × 4×9" } },
-  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 30, weight: 81.00 } ], text: "30s (1 set, abbreviated)" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
+  { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 10, weight: 22.5, text: "22.5kg × 4×10 (new PR)" }, best: { sets: 4, reps: 10, weight: 22.5, text: "22.5kg × 4×10" } },
+  { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 } ], text: "30s + 30s + 30s (ties best total hold time, more even distribution)" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
@@ -301,6 +303,15 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 15 Oct — Back, hotel gym while traveling (07:00)
+  {
+    datetime: "2026-10-15T07:00", note: "Back day (07:00, hotel gym) — Row Machine 85.5kg×4×8, logged directly — new exercise, hotel-gym substitute for Diverging Seated Row/Low Row, added to the catalog and given its first SNAPSHOT entry (not a PR, first-ever logged). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Dead Hang 30s+30s+30s — ties the prior best's 90s total hold time (35s+30s+25s) with a more even distribution, not a strict PR. 1 new PR + 1 new exercise added to rotation.",
+    exercises: [
+      { name: "Row Machine",             sets: [ { reps: 8, weight: 85.5 }, { reps: 8, weight: 85.5 }, { reps: 8, weight: 85.5 }, { reps: 8, weight: 85.5 } ] },
+      { name: "Dumbbell Pullover",       sets: [ { reps: 10, weight: 22.5 }, { reps: 10, weight: 22.5 }, { reps: 10, weight: 22.5 }, { reps: 10, weight: 22.5 } ] },
+      { name: "Dead Hang",               sets: [ { seconds: 30 }, { seconds: 30 }, { seconds: 30 } ] },
+    ],
+  },
   // 13 Oct — Shoulders (07:50)
   {
     datetime: "2026-10-13T07:50", note: "Shoulders day (07:50) — Cable Face Pull 27kg×4×8, logged directly (new PR — est. 1RM 34.2 vs 24.5 prior best at 17.5kg×4×12). Dumbbell Shoulder Press 20kg each (40kg total)×3×10, as suggested (new PR — est. 1RM 53.3 vs 52.0 prior best at 20kg each×1×9). Farmer's Hold 24kg each (48kg total)×4×40s, as suggested (new PR — +5s on the prior best of 4×35s). Front Raises 18kg×4×10, logged with a dumbbell instead of the usual kettlebell, same weight (new PR — est. 1RM 24.0 vs 23.4 prior best at 18kg×4×9). Shoulder Shrugs 26kg each (52kg total)×3×10, as suggested (rebuild to best — ties exactly). 4 new PRs.",
