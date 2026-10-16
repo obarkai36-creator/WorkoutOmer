@@ -15,7 +15,8 @@
     {"time": "09:15", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:30", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
     {"time": "10:00", "name": "Yoplait GO coconut-flavor protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 115, "protein_g": 20, "carbs_g": 6.6, "fat_g": 0.8, "fiber_g": 0, "note": "same verified reference as prior entries (yoplait_coconut_protein_yogurt_generic)."},
-    {"time": "10:00", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter, handful", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "CORRECTED — existing verified label reference (intake/recipes/catalina_crunch_choc_pb_cereal.json), 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g, same ~20g/handful convention as prior entries (e.g. 2026-09-02, 2026-09-05)."}
+    {"time": "10:00", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter, handful", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "CORRECTED — existing verified label reference (intake/recipes/catalina_crunch_choc_pb_cereal.json), 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g, same ~20g/handful convention as prior entries (e.g. 2026-09-02, 2026-09-05)."},
+    {"time": "10:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "workout_today": false,
   "workout_summary": null,
@@ -36,7 +37,8 @@
     "09:15 double espresso, 1 double (1 caffeine shot — counted as 2 shots per standard double-espresso convention).",
     "09:30 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "10:00 Yoplait GO coconut-flavor protein yogurt, 1 cup (200g, same verified reference as prior entries) + a handful (~20g) Catalina Crunch Protein Cereal, Chocolate Peanut Butter.",
-    "CORRECTION: the 10:00 Catalina Crunch handful was initially logged against a newly-invented generic estimate (wrong flavor assumed, no label). It's actually an already-established item — the real verified label reference already exists in both intake/recipes/catalina_crunch_choc_pb_cereal.json and prior day entries (306kcal/31g protein/44g carb/14g fat/25g fiber per 100g, Chocolate Peanut Butter flavor). Removed the bad generic reference from foods.json and recomputed the item at the standard ~20g/handful rate (61kcal/6.2p/8.8c/2.8f/5fiber, up slightly from the wrong 50kcal/5.5p/8c/1.75f/4.5fiber estimate)."
+    "CORRECTION: the 10:00 Catalina Crunch handful was initially logged against a newly-invented generic estimate (wrong flavor assumed, no label). It's actually an already-established item — the real verified label reference already exists in both intake/recipes/catalina_crunch_choc_pb_cereal.json and prior day entries (306kcal/31g protein/44g carb/14g fat/25g fiber per 100g, Chocolate Peanut Butter flavor). Removed the bad generic reference from foods.json and recomputed the item at the standard ~20g/handful rate (61kcal/6.2p/8.8c/2.8f/5fiber, up slightly from the wrong 50kcal/5.5p/8c/1.75f/4.5fiber estimate).",
+    "10:15 creatine monohydrate, 5g — zero kcal/macros."
   ],
-  "status_note": "Day in progress. Slept 7.5h (00:30-08:00), within target. AM spray + pill + double espresso + Mayven + yogurt + cereal handful logged."
+  "status_note": "Day in progress. Slept 7.5h (00:30-08:00), within target. AM spray + pill + double espresso + Mayven + yogurt + cereal handful + creatine logged."
 }
