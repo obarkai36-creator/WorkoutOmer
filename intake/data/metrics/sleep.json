@@ -1,100 +1,889 @@
 {
   "_note": "Nightly sleep log, entered manually each morning (no wearable / automatic feed available — Health Connect integration is US-only and not accessible yet). Feeds energy, sperm-optimization (sleep sub-factor, 15% weight in sperm.json), and fatigue tracking.",
   "entries": [
-    {"date": "2026-07-11", "night_of": "2026-07-10", "sleep_start": "00:30", "sleep_end": "11:45", "duration_hours": 11.25, "quality": null, "notes": "Long catch-up sleep — night after the 10 Jul travel day (4:50hr daytime flight, tz +2 shift). Well above typical baseline; likely recovery sleep rather than a new normal."},
-    {"date": "2026-07-12", "night_of": "2026-07-11", "sleep_start": "02:45", "sleep_end": "05:03", "duration_hours": 1.47, "quality": null, "segments": [{"start": "02:45", "end": "04:00"}, {"start": "04:50", "end": "05:03"}], "notes": "Fragmented, very short night — two segments (1h15m + 13m) totaling ~1.47h. Significant sleep debt; a sharp swing from the 11.25h catch-up night before."},
-    {"date": "2026-07-13", "night_of": "2026-07-12", "sleep_start": "22:35", "sleep_end": "06:30", "duration_hours": 7.92, "quality": null, "notes": "Solid full night, squarely in the 7-9h range — good recovery after the fragmented ~1.47h night before."},
-    {"date": "2026-07-14", "night_of": "2026-07-13", "sleep_start": "23:00", "sleep_end": "05:20", "duration_hours": 6.33, "quality": null, "notes": "Moderate night, ~6.3h — a bit short of the 7-9h target band, but one continuous stretch (no fragmentation noted)."},
-    {"date": "2026-07-15", "night_of": "2026-07-14", "sleep_start": "01:10", "sleep_end": "06:45", "duration_hours": 5.58, "quality": null, "notes": "Short night, ~5.58h — below the 7-9h target band; late bedtime (01:10) after the buffet day, one continuous stretch."},
-    {"date": "2026-07-16", "night_of": "2026-07-15", "sleep_start": "01:00", "sleep_end": "06:25", "duration_hours": 5.42, "quality": null, "notes": "Short night, ~5.42h — below the 7-9h target band; third late-bedtime night in a row, one continuous stretch."},
-    {"date": "2026-07-17", "night_of": "2026-07-16", "sleep_start": "22:30", "sleep_end": "07:20", "duration_hours": 8.83, "quality": null, "notes": "Long solid night, ~8.83h — squarely in the 7-9h target band, a strong bounce-back after three short/late nights in a row."},
-    {"date": "2026-07-18", "night_of": "2026-07-17", "sleep_start": "23:15", "sleep_end": "09:00", "duration_hours": 9.75, "quality": null, "notes": "Very long night, ~9.75h — just above the 7-9h target band, strong recovery."},
-    {"date": "2026-07-19", "night_of": "2026-07-18", "sleep_start": "01:50", "sleep_end": "08:20", "duration_hours": 6.5, "quality": null, "notes": "Moderate night, ~6.5h — a bit short of the 7-9h target band, late bedtime, one continuous stretch."},
-    {"date": "2026-07-20", "night_of": "2026-07-19", "sleep_start": "01:50", "sleep_end": "06:30", "duration_hours": 4.67, "quality": null, "notes": "Short night, ~4.67h — well below the 7-9h target band, late bedtime, one continuous stretch."},
-    {"date": "2026-07-21", "night_of": "2026-07-20", "sleep_start": "22:50", "sleep_end": "06:30", "duration_hours": 7.67, "quality": null, "notes": "Solid full night, ~7.67h — squarely in the 7-9h target band, a strong bounce-back after two short nights in a row."},
-    {"date": "2026-07-22", "night_of": "2026-07-21", "sleep_start": "23:35", "sleep_end": "05:40", "duration_hours": 6.08, "quality": null, "notes": "Moderate night, ~6.08h — a bit short of the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-23", "night_of": "2026-07-22", "sleep_start": "22:50", "sleep_end": "06:25", "duration_hours": 7.58, "quality": null, "notes": "Solid full night, ~7.58h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-24", "night_of": "2026-07-23", "sleep_start": "23:00", "sleep_end": "08:00", "duration_hours": 9, "quality": null, "notes": "Long solid night, 9h — just above the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-25", "night_of": "2026-07-24", "sleep_start": "23:45", "sleep_end": "08:30", "duration_hours": 8.75, "quality": null, "notes": "Long solid night, 8.75h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-26", "night_of": "2026-07-25", "sleep_start": "23:45", "sleep_end": "06:15", "duration_hours": 6.5, "quality": null, "notes": "Moderate night, ~6.5h — a bit short of the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-27", "night_of": "2026-07-26", "sleep_start": "23:15", "sleep_end": "06:30", "duration_hours": 7.25, "quality": null, "notes": "Solid full night, ~7.25h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-28", "night_of": "2026-07-27", "sleep_start": "23:45", "sleep_end": "06:55", "duration_hours": 7.17, "quality": null, "notes": "Solid full night, ~7.17h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-29", "night_of": "2026-07-28", "sleep_start": "23:15", "sleep_end": "05:30", "duration_hours": 6.25, "quality": null, "notes": "Moderate night, ~6.25h — a bit short of the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-30", "night_of": "2026-07-29", "sleep_start": "22:50", "sleep_end": "06:45", "duration_hours": 7.92, "quality": null, "notes": "Solid full night, ~7.92h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-07-31", "night_of": "2026-07-30", "sleep_start": "23:15", "sleep_end": "08:00", "duration_hours": 8.75, "quality": null, "notes": "Long solid night, ~8.75h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-01", "night_of": "2026-07-31", "sleep_start": "23:30", "sleep_end": "06:50", "duration_hours": 7.33, "quality": null, "notes": "Solid full night, ~7.33h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-02", "night_of": "2026-08-01", "sleep_start": "01:10", "sleep_end": "06:55", "duration_hours": 5.75, "quality": null, "notes": "Short night, ~5.75h — below the 7-9h target band, late bedtime (01:10), one continuous stretch."},
-    {"date": "2026-08-03", "night_of": "2026-08-02", "sleep_start": "23:30", "sleep_end": "06:55", "duration_hours": 7.42, "quality": null, "notes": "Solid full night, ~7.42h — squarely in the 7-9h target band, one continuous stretch. A partnered ejaculation event at 23:00 preceded bedtime."},
-    {"date": "2026-08-04", "night_of": "2026-08-03", "sleep_start": "23:30", "sleep_end": "07:30", "duration_hours": 8, "quality": null, "notes": "Long solid night, 8h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-05", "night_of": "2026-08-04", "sleep_start": "23:45", "sleep_end": "05:35", "duration_hours": 5.83, "quality": null, "notes": "Short night, ~5.83h — below the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-06", "night_of": "2026-08-05", "sleep_start": "22:45", "sleep_end": "06:00", "duration_hours": 7.25, "quality": null, "notes": "Solid full night, ~7.25h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-07", "night_of": "2026-08-06", "sleep_start": "22:45", "sleep_end": "07:15", "duration_hours": 8.5, "quality": null, "notes": "Long solid night, 8.5h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-08", "night_of": "2026-08-07", "sleep_start": "23:30", "sleep_end": "08:55", "duration_hours": 9.42, "quality": null, "notes": "Very long night, ~9.42h — just above the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-09", "night_of": "2026-08-08", "sleep_start": "00:00", "sleep_end": "06:45", "duration_hours": 6.75, "quality": null, "notes": "Short night, ~6.75h — below the 7-9h target band, slightly intoxicated (following the day's ~5.3 alcohol units) and interrupted/fragmented sleep."},
-    {"date": "2026-08-10", "night_of": "2026-08-09", "sleep_start": "22:30", "sleep_end": "06:25", "duration_hours": 7.92, "quality": null, "notes": "Solid full night, ~7.92h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-11", "night_of": "2026-08-10", "sleep_start": "23:15", "sleep_end": "06:45", "duration_hours": 7.5, "quality": null, "notes": "Solid full night, 7.5h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-12", "night_of": "2026-08-11", "sleep_start": "23:50", "sleep_end": "06:30", "duration_hours": 6.67, "quality": null, "notes": "Short night, ~6.67h — below the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-13", "night_of": "2026-08-12", "sleep_start": "00:15", "sleep_end": "06:35", "duration_hours": 6.33, "quality": null, "notes": "Short night, ~6.33h — below the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-14", "night_of": "2026-08-13", "sleep_start": "23:35", "sleep_end": "07:25", "duration_hours": 7.83, "quality": null, "notes": "Solid full night, ~7.83h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-15", "night_of": "2026-08-14", "sleep_start": "23:45", "sleep_end": "08:15", "duration_hours": 8.5, "quality": null, "notes": "Long solid night, 8.5h — squarely in the 7-9h target band, one continuous stretch. A partnered ejaculation event at 22:45 preceded bedtime."},
-    {"date": "2026-08-16", "night_of": "2026-08-15", "sleep_start": "00:00", "sleep_end": "06:45", "duration_hours": 6.75, "quality": null, "notes": "Short night, 6.75h — below the 7-9h target band, late bedtime, one continuous stretch."},
-    {"date": "2026-08-17", "night_of": "2026-08-16", "sleep_start": "23:15", "sleep_end": "06:20", "duration_hours": 7.08, "quality": null, "notes": "Solid full night, ~7.08h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-18", "night_of": "2026-08-17", "sleep_start": "23:15", "sleep_end": "06:00", "duration_hours": 6.75, "quality": null, "notes": "Short night, 6.75h — below the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-19", "night_of": "2026-08-18", "sleep_start": "22:30", "sleep_end": "06:15", "duration_hours": 7.75, "quality": null, "notes": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-20", "night_of": "2026-08-19", "sleep_start": "00:15", "sleep_end": "06:00", "duration_hours": 5.75, "quality": null, "notes": "Short night, 5.75h — below the 7-9h target band, late bedtime, one continuous stretch."},
-    {"date": "2026-08-21", "night_of": "2026-08-20", "sleep_start": "23:00", "sleep_end": "06:45", "duration_hours": 7.75, "quality": null, "notes": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-22", "night_of": "2026-08-21", "sleep_start": "23:00", "sleep_end": "08:30", "duration_hours": 9.5, "quality": null, "notes": "Long night, 9.5h — just above the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-23", "night_of": "2026-08-22", "sleep_start": "00:45", "sleep_end": "08:30", "duration_hours": 7.75, "quality": null, "notes": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-24", "night_of": "2026-08-23", "sleep_start": "00:25", "sleep_end": "06:55", "duration_hours": 6.5, "quality": null, "notes": "Short night, 6.5h — below the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-25", "night_of": "2026-08-24", "sleep_start": "23:45", "sleep_end": "06:55", "duration_hours": 7.17, "quality": null, "notes": "Solid full night, ~7.17h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-26", "night_of": "2026-08-25", "sleep_start": "23:15", "sleep_end": "06:20", "duration_hours": 7.08, "quality": null, "notes": "Solid full night, ~7.08h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-27", "night_of": "2026-08-26", "sleep_start": "23:45", "sleep_end": "06:20", "duration_hours": 6.58, "quality": null, "notes": "Moderate night, ~6.58h — a bit short of the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-28", "night_of": "2026-08-27", "sleep_start": "00:10", "sleep_end": "06:45", "duration_hours": 6.58, "quality": null, "notes": "Moderate night, ~6.58h — a bit short of the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-29", "night_of": "2026-08-28", "sleep_start": "00:30", "sleep_end": "08:00", "duration_hours": 7.5, "quality": null, "notes": "Solid full night, 7.5h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-30", "night_of": "2026-08-29", "sleep_start": "23:45", "sleep_end": "06:25", "duration_hours": 6.67, "quality": null, "notes": "Short night, ~6.67h — below the 7-9h target band, one continuous stretch."},
-    {"date": "2026-08-31", "night_of": "2026-08-30", "sleep_start": "23:45", "sleep_end": "06:15", "duration_hours": 6.5, "quality": null, "notes": "Short night, 6.5h — below the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-01", "night_of": "2026-08-31", "sleep_start": "00:35", "sleep_end": "06:55", "duration_hours": 6.33, "quality": null, "notes": "Short night, ~6.33h — below the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-02", "night_of": "2026-09-01", "sleep_start": "23:15", "sleep_end": "07:45", "duration_hours": 8.5, "quality": null, "notes": "Long solid night, 8.5h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-03", "night_of": "2026-09-02", "sleep_start": "22:50", "sleep_end": "06:15", "duration_hours": 7.42, "quality": null, "notes": "Solid full night, ~7.42h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-04", "night_of": "2026-09-03", "sleep_start": "23:05", "sleep_end": "08:00", "duration_hours": 8.92, "quality": null, "notes": "Long solid night, ~8.92h — just above the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-05", "night_of": "2026-09-04", "sleep_start": "22:45", "sleep_end": "08:15", "duration_hours": 9.5, "quality": null, "notes": "Long night, ~9.5h — just above the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-06", "night_of": "2026-09-05", "sleep_start": "00:30", "sleep_end": "07:00", "duration_hours": 6.5, "quality": null, "notes": "Short night, ~6.5h — a bit short of the 7-9h target band, late bedtime (00:30) preceded by a partnered ejaculation event."},
-    {"date": "2026-09-09", "night_of": "2026-09-08", "sleep_start": "00:00", "sleep_end": "06:10", "duration_hours": 6.17, "quality": null, "notes": "Short night, ~6.17h — a bit short of the 7-9h target band, late bedtime (00:00)."},
-    {"date": "2026-09-10", "night_of": "2026-09-09", "sleep_start": "23:45", "sleep_end": "07:30", "duration_hours": 7.75, "quality": null, "notes": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-11", "night_of": "2026-09-10", "sleep_start": "00:15", "sleep_end": "07:45", "duration_hours": 7.5, "quality": null, "notes": "Solid full night, ~7.5h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-12", "night_of": "2026-09-11", "sleep_start": "23:15", "sleep_end": "07:25", "duration_hours": 8.17, "quality": null, "notes": "Long solid night, ~8.17h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-13", "night_of": "2026-09-12", "sleep_start": "23:45", "sleep_end": "08:00", "duration_hours": 8.25, "quality": null, "notes": "Long solid night, ~8.25h — squarely in the 7-9h target band, one continuous stretch."},
-    {"date": "2026-09-14", "night_of": "2026-09-13", "sleep_start": "00:15", "sleep_end": "05:40", "duration_hours": 5.42, "quality": null, "notes": "Short night, ~5.42h — well under the 7-9h target band."},
-    {"date": "2026-09-15", "night_of": "2026-09-14", "sleep_start": "23:00", "sleep_end": "07:50", "duration_hours": 8.83, "quality": null, "notes": "Solid full night, ~8.83h — squarely in the 7-9h target band."},
-    {"date": "2026-09-16", "night_of": "2026-09-15", "sleep_start": "00:30", "sleep_end": "08:00", "duration_hours": 7.5, "quality": null, "notes": "7.5h, within the 7-9h target band despite a late (past-midnight) start."},
-    {"date": "2026-09-17", "night_of": "2026-09-16", "sleep_start": "00:30", "sleep_end": "07:45", "duration_hours": 7.25, "quality": null, "notes": "7.25h, within the 7-9h target band despite a late (past-midnight) start."},
-    {"date": "2026-09-18", "night_of": "2026-09-17", "sleep_start": "23:45", "sleep_end": "07:25", "duration_hours": 7.67, "quality": null, "notes": "7.67h, within the 7-9h target band."},
-    {"date": "2026-09-19", "night_of": "2026-09-18", "sleep_start": "00:10", "sleep_end": "09:00", "duration_hours": 8.83, "quality": null, "notes": "8.83h, above the 7-9h target band's midpoint — a long, well-rested night."},
-    {"date": "2026-09-20", "night_of": "2026-09-19", "sleep_start": "00:30", "sleep_end": "07:45", "duration_hours": 7.25, "quality": null, "notes": "7.25h, within the 7-9h target band."},
-    {"date": "2026-09-21", "night_of": "2026-09-20", "sleep_start": "00:30", "sleep_end": "09:30", "duration_hours": 9, "quality": null, "notes": "9.0h, at the top of the 7-9h target band."},
-    {"date": "2026-09-22", "night_of": "2026-09-21", "sleep_start": "23:35", "sleep_end": "06:10", "duration_hours": 6.58, "quality": null, "notes": "6.58h, a bit short of the 7-9h target band."},
-    {"date": "2026-09-23", "night_of": "2026-09-22", "sleep_start": "23:30", "sleep_end": "06:15", "duration_hours": 6.75, "quality": null, "notes": "6.75h, a bit short of the 7-9h target band."},
-    {"date": "2026-09-24", "night_of": "2026-09-23", "sleep_start": "22:30", "sleep_end": "05:40", "duration_hours": 7.17, "quality": null, "notes": "7.17h, within the 7-9h target band."},
-    {"date": "2026-09-25", "night_of": "2026-09-24", "sleep_start": "00:40", "sleep_end": "08:50", "duration_hours": 8.17, "quality": null, "notes": "8.17h, within the 7-9h target band."},
-    {"date": "2026-09-26", "night_of": "2026-09-25", "sleep_start": "23:40", "sleep_end": "08:15", "duration_hours": 8.58, "quality": null, "notes": "8.58h, within the 7-9h target band."},
-    {"date": "2026-09-27", "night_of": "2026-09-26", "sleep_start": "22:45", "sleep_end": "05:35", "duration_hours": 6.83, "quality": null, "notes": "6.83h, a bit short of the 7-9h target band."},
-    {"date": "2026-09-28", "night_of": "2026-09-27", "sleep_start": "00:00", "sleep_end": "06:15", "duration_hours": 6.25, "quality": null, "notes": "6.25h, short of the 7-9h target band."},
-    {"date": "2026-09-29", "night_of": "2026-09-28", "sleep_start": "23:50", "sleep_end": "07:00", "duration_hours": 7.17, "quality": null, "notes": "7.17h, within the 7-9h target band."},
-    {"date": "2026-09-30", "night_of": "2026-09-29", "sleep_start": "23:15", "sleep_end": "06:35", "duration_hours": 7.33, "quality": null, "notes": "7.33h, within the 7-9h target band."},
-    {"date": "2026-10-01", "night_of": "2026-09-30", "sleep_start": "23:45", "sleep_end": "06:15", "duration_hours": 6.5, "quality": null, "notes": "6.5h, a bit short of the 7-9h target band."},
-    {"date": "2026-10-02", "night_of": "2026-10-01", "sleep_start": "00:10", "sleep_end": "07:30", "duration_hours": 7.33, "quality": null, "notes": "7.33h, within the 7-9h target band, late (past-midnight) start."},
-    {"date": "2026-10-03", "night_of": "2026-10-02", "sleep_start": "00:00", "sleep_end": "08:00", "duration_hours": 8, "quality": null, "notes": "8h, within the 7-9h target band."},
-    {"date": "2026-10-04", "night_of": "2026-10-03", "sleep_start": "23:15", "sleep_end": "06:45", "duration_hours": 7.5, "quality": null, "notes": "7.5h, within the 7-9h target band."},
-    {"date": "2026-10-05", "night_of": "2026-10-04", "sleep_start": "00:15", "sleep_end": "06:45", "duration_hours": 6.5, "quality": null, "notes": "6.5h, a bit short of the 7-9h target band."},
-    {"date": "2026-10-06", "night_of": "2026-10-05", "sleep_start": "22:50", "sleep_end": "07:30", "duration_hours": 8.67, "quality": null, "notes": "8.67h, within the 7-9h target band."},
-    {"date": "2026-10-07", "night_of": "2026-10-06", "sleep_start": "22:45", "sleep_end": "08:45", "duration_hours": 6.83, "quality": null, "segments": [{"start": "22:45", "end": "01:50"}, {"start": "05:00", "end": "08:45"}], "notes": "Fragmented, two segments (3h05m + 3h45m) totaling ~6.83h — a bit short of the 7-9h target band."},
-    {"date": "2026-10-08", "night_of": "2026-10-07", "sleep_start": "22:45", "sleep_end": "07:30", "duration_hours": 8.75, "quality": null, "notes": "8.75h, within the 7-9h target band."},
-    {"date": "2026-10-09", "night_of": "2026-10-08", "sleep_start": "23:15", "sleep_end": "06:00", "duration_hours": 6.75, "quality": null, "notes": "6.75h, slightly under the 7-9h target band."},
-    {"date": "2026-10-10", "night_of": "2026-10-09", "sleep_start": "23:30", "sleep_end": "07:30", "duration_hours": 8, "quality": null, "notes": "8h, within the 7-9h target band."},
-    {"date": "2026-10-11", "night_of": "2026-10-10", "sleep_start": "00:30", "sleep_end": "05:45", "duration_hours": 5.25, "quality": null, "notes": "5.25h, notably short of the 7-9h target band."},
-    {"date": "2026-10-12", "night_of": "2026-10-11", "sleep_start": "23:30", "sleep_end": "05:40", "duration_hours": 6.17, "quality": null, "notes": "6.17h, a bit short of the 7-9h target band."},
-    {"date": "2026-10-13", "night_of": "2026-10-12", "sleep_start": "22:35", "sleep_end": "06:15", "duration_hours": 7.67, "quality": null, "notes": "7.67h, within the 7-9h target band."},
-    {"date": "2026-10-14", "night_of": "2026-10-13", "sleep_start": "00:45", "sleep_end": "05:50", "duration_hours": 5.08, "quality": null, "notes": "5.08h, notably short of the 7-9h target band."},
-    {"date": "2026-10-15", "night_of": "2026-10-14", "sleep_start": "23:40", "sleep_end": "06:15", "duration_hours": 6.58, "quality": null, "notes": "6.58h, a bit short of the 7-9h target band."}
+    {
+      "date": "2026-07-11",
+      "night_of": "2026-07-10",
+      "sleep_start": "00:30",
+      "sleep_end": "11:45",
+      "duration_hours": 11.25,
+      "quality": null,
+      "notes": "Long catch-up sleep — night after the 10 Jul travel day (4:50hr daytime flight, tz +2 shift). Well above typical baseline; likely recovery sleep rather than a new normal."
+    },
+    {
+      "date": "2026-07-12",
+      "night_of": "2026-07-11",
+      "sleep_start": "02:45",
+      "sleep_end": "05:03",
+      "duration_hours": 1.47,
+      "quality": null,
+      "segments": [
+        {
+          "start": "02:45",
+          "end": "04:00"
+        },
+        {
+          "start": "04:50",
+          "end": "05:03"
+        }
+      ],
+      "notes": "Fragmented, very short night — two segments (1h15m + 13m) totaling ~1.47h. Significant sleep debt; a sharp swing from the 11.25h catch-up night before."
+    },
+    {
+      "date": "2026-07-13",
+      "night_of": "2026-07-12",
+      "sleep_start": "22:35",
+      "sleep_end": "06:30",
+      "duration_hours": 7.92,
+      "quality": null,
+      "notes": "Solid full night, squarely in the 7-9h range — good recovery after the fragmented ~1.47h night before."
+    },
+    {
+      "date": "2026-07-14",
+      "night_of": "2026-07-13",
+      "sleep_start": "23:00",
+      "sleep_end": "05:20",
+      "duration_hours": 6.33,
+      "quality": null,
+      "notes": "Moderate night, ~6.3h — a bit short of the 7-9h target band, but one continuous stretch (no fragmentation noted)."
+    },
+    {
+      "date": "2026-07-15",
+      "night_of": "2026-07-14",
+      "sleep_start": "01:10",
+      "sleep_end": "06:45",
+      "duration_hours": 5.58,
+      "quality": null,
+      "notes": "Short night, ~5.58h — below the 7-9h target band; late bedtime (01:10) after the buffet day, one continuous stretch."
+    },
+    {
+      "date": "2026-07-16",
+      "night_of": "2026-07-15",
+      "sleep_start": "01:00",
+      "sleep_end": "06:25",
+      "duration_hours": 5.42,
+      "quality": null,
+      "notes": "Short night, ~5.42h — below the 7-9h target band; third late-bedtime night in a row, one continuous stretch."
+    },
+    {
+      "date": "2026-07-17",
+      "night_of": "2026-07-16",
+      "sleep_start": "22:30",
+      "sleep_end": "07:20",
+      "duration_hours": 8.83,
+      "quality": null,
+      "notes": "Long solid night, ~8.83h — squarely in the 7-9h target band, a strong bounce-back after three short/late nights in a row."
+    },
+    {
+      "date": "2026-07-18",
+      "night_of": "2026-07-17",
+      "sleep_start": "23:15",
+      "sleep_end": "09:00",
+      "duration_hours": 9.75,
+      "quality": null,
+      "notes": "Very long night, ~9.75h — just above the 7-9h target band, strong recovery."
+    },
+    {
+      "date": "2026-07-19",
+      "night_of": "2026-07-18",
+      "sleep_start": "01:50",
+      "sleep_end": "08:20",
+      "duration_hours": 6.5,
+      "quality": null,
+      "notes": "Moderate night, ~6.5h — a bit short of the 7-9h target band, late bedtime, one continuous stretch."
+    },
+    {
+      "date": "2026-07-20",
+      "night_of": "2026-07-19",
+      "sleep_start": "01:50",
+      "sleep_end": "06:30",
+      "duration_hours": 4.67,
+      "quality": null,
+      "notes": "Short night, ~4.67h — well below the 7-9h target band, late bedtime, one continuous stretch."
+    },
+    {
+      "date": "2026-07-21",
+      "night_of": "2026-07-20",
+      "sleep_start": "22:50",
+      "sleep_end": "06:30",
+      "duration_hours": 7.67,
+      "quality": null,
+      "notes": "Solid full night, ~7.67h — squarely in the 7-9h target band, a strong bounce-back after two short nights in a row."
+    },
+    {
+      "date": "2026-07-22",
+      "night_of": "2026-07-21",
+      "sleep_start": "23:35",
+      "sleep_end": "05:40",
+      "duration_hours": 6.08,
+      "quality": null,
+      "notes": "Moderate night, ~6.08h — a bit short of the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-23",
+      "night_of": "2026-07-22",
+      "sleep_start": "22:50",
+      "sleep_end": "06:25",
+      "duration_hours": 7.58,
+      "quality": null,
+      "notes": "Solid full night, ~7.58h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-24",
+      "night_of": "2026-07-23",
+      "sleep_start": "23:00",
+      "sleep_end": "08:00",
+      "duration_hours": 9,
+      "quality": null,
+      "notes": "Long solid night, 9h — just above the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-25",
+      "night_of": "2026-07-24",
+      "sleep_start": "23:45",
+      "sleep_end": "08:30",
+      "duration_hours": 8.75,
+      "quality": null,
+      "notes": "Long solid night, 8.75h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-26",
+      "night_of": "2026-07-25",
+      "sleep_start": "23:45",
+      "sleep_end": "06:15",
+      "duration_hours": 6.5,
+      "quality": null,
+      "notes": "Moderate night, ~6.5h — a bit short of the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-27",
+      "night_of": "2026-07-26",
+      "sleep_start": "23:15",
+      "sleep_end": "06:30",
+      "duration_hours": 7.25,
+      "quality": null,
+      "notes": "Solid full night, ~7.25h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-28",
+      "night_of": "2026-07-27",
+      "sleep_start": "23:45",
+      "sleep_end": "06:55",
+      "duration_hours": 7.17,
+      "quality": null,
+      "notes": "Solid full night, ~7.17h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-29",
+      "night_of": "2026-07-28",
+      "sleep_start": "23:15",
+      "sleep_end": "05:30",
+      "duration_hours": 6.25,
+      "quality": null,
+      "notes": "Moderate night, ~6.25h — a bit short of the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-30",
+      "night_of": "2026-07-29",
+      "sleep_start": "22:50",
+      "sleep_end": "06:45",
+      "duration_hours": 7.92,
+      "quality": null,
+      "notes": "Solid full night, ~7.92h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-07-31",
+      "night_of": "2026-07-30",
+      "sleep_start": "23:15",
+      "sleep_end": "08:00",
+      "duration_hours": 8.75,
+      "quality": null,
+      "notes": "Long solid night, ~8.75h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-01",
+      "night_of": "2026-07-31",
+      "sleep_start": "23:30",
+      "sleep_end": "06:50",
+      "duration_hours": 7.33,
+      "quality": null,
+      "notes": "Solid full night, ~7.33h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-02",
+      "night_of": "2026-08-01",
+      "sleep_start": "01:10",
+      "sleep_end": "06:55",
+      "duration_hours": 5.75,
+      "quality": null,
+      "notes": "Short night, ~5.75h — below the 7-9h target band, late bedtime (01:10), one continuous stretch."
+    },
+    {
+      "date": "2026-08-03",
+      "night_of": "2026-08-02",
+      "sleep_start": "23:30",
+      "sleep_end": "06:55",
+      "duration_hours": 7.42,
+      "quality": null,
+      "notes": "Solid full night, ~7.42h — squarely in the 7-9h target band, one continuous stretch. A partnered ejaculation event at 23:00 preceded bedtime."
+    },
+    {
+      "date": "2026-08-04",
+      "night_of": "2026-08-03",
+      "sleep_start": "23:30",
+      "sleep_end": "07:30",
+      "duration_hours": 8,
+      "quality": null,
+      "notes": "Long solid night, 8h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-05",
+      "night_of": "2026-08-04",
+      "sleep_start": "23:45",
+      "sleep_end": "05:35",
+      "duration_hours": 5.83,
+      "quality": null,
+      "notes": "Short night, ~5.83h — below the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-06",
+      "night_of": "2026-08-05",
+      "sleep_start": "22:45",
+      "sleep_end": "06:00",
+      "duration_hours": 7.25,
+      "quality": null,
+      "notes": "Solid full night, ~7.25h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-07",
+      "night_of": "2026-08-06",
+      "sleep_start": "22:45",
+      "sleep_end": "07:15",
+      "duration_hours": 8.5,
+      "quality": null,
+      "notes": "Long solid night, 8.5h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-08",
+      "night_of": "2026-08-07",
+      "sleep_start": "23:30",
+      "sleep_end": "08:55",
+      "duration_hours": 9.42,
+      "quality": null,
+      "notes": "Very long night, ~9.42h — just above the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-09",
+      "night_of": "2026-08-08",
+      "sleep_start": "00:00",
+      "sleep_end": "06:45",
+      "duration_hours": 6.75,
+      "quality": null,
+      "notes": "Short night, ~6.75h — below the 7-9h target band, slightly intoxicated (following the day's ~5.3 alcohol units) and interrupted/fragmented sleep."
+    },
+    {
+      "date": "2026-08-10",
+      "night_of": "2026-08-09",
+      "sleep_start": "22:30",
+      "sleep_end": "06:25",
+      "duration_hours": 7.92,
+      "quality": null,
+      "notes": "Solid full night, ~7.92h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-11",
+      "night_of": "2026-08-10",
+      "sleep_start": "23:15",
+      "sleep_end": "06:45",
+      "duration_hours": 7.5,
+      "quality": null,
+      "notes": "Solid full night, 7.5h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-12",
+      "night_of": "2026-08-11",
+      "sleep_start": "23:50",
+      "sleep_end": "06:30",
+      "duration_hours": 6.67,
+      "quality": null,
+      "notes": "Short night, ~6.67h — below the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-13",
+      "night_of": "2026-08-12",
+      "sleep_start": "00:15",
+      "sleep_end": "06:35",
+      "duration_hours": 6.33,
+      "quality": null,
+      "notes": "Short night, ~6.33h — below the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-14",
+      "night_of": "2026-08-13",
+      "sleep_start": "23:35",
+      "sleep_end": "07:25",
+      "duration_hours": 7.83,
+      "quality": null,
+      "notes": "Solid full night, ~7.83h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-15",
+      "night_of": "2026-08-14",
+      "sleep_start": "23:45",
+      "sleep_end": "08:15",
+      "duration_hours": 8.5,
+      "quality": null,
+      "notes": "Long solid night, 8.5h — squarely in the 7-9h target band, one continuous stretch. A partnered ejaculation event at 22:45 preceded bedtime."
+    },
+    {
+      "date": "2026-08-16",
+      "night_of": "2026-08-15",
+      "sleep_start": "00:00",
+      "sleep_end": "06:45",
+      "duration_hours": 6.75,
+      "quality": null,
+      "notes": "Short night, 6.75h — below the 7-9h target band, late bedtime, one continuous stretch."
+    },
+    {
+      "date": "2026-08-17",
+      "night_of": "2026-08-16",
+      "sleep_start": "23:15",
+      "sleep_end": "06:20",
+      "duration_hours": 7.08,
+      "quality": null,
+      "notes": "Solid full night, ~7.08h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-18",
+      "night_of": "2026-08-17",
+      "sleep_start": "23:15",
+      "sleep_end": "06:00",
+      "duration_hours": 6.75,
+      "quality": null,
+      "notes": "Short night, 6.75h — below the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-19",
+      "night_of": "2026-08-18",
+      "sleep_start": "22:30",
+      "sleep_end": "06:15",
+      "duration_hours": 7.75,
+      "quality": null,
+      "notes": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-20",
+      "night_of": "2026-08-19",
+      "sleep_start": "00:15",
+      "sleep_end": "06:00",
+      "duration_hours": 5.75,
+      "quality": null,
+      "notes": "Short night, 5.75h — below the 7-9h target band, late bedtime, one continuous stretch."
+    },
+    {
+      "date": "2026-08-21",
+      "night_of": "2026-08-20",
+      "sleep_start": "23:00",
+      "sleep_end": "06:45",
+      "duration_hours": 7.75,
+      "quality": null,
+      "notes": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-22",
+      "night_of": "2026-08-21",
+      "sleep_start": "23:00",
+      "sleep_end": "08:30",
+      "duration_hours": 9.5,
+      "quality": null,
+      "notes": "Long night, 9.5h — just above the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-23",
+      "night_of": "2026-08-22",
+      "sleep_start": "00:45",
+      "sleep_end": "08:30",
+      "duration_hours": 7.75,
+      "quality": null,
+      "notes": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-24",
+      "night_of": "2026-08-23",
+      "sleep_start": "00:25",
+      "sleep_end": "06:55",
+      "duration_hours": 6.5,
+      "quality": null,
+      "notes": "Short night, 6.5h — below the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-25",
+      "night_of": "2026-08-24",
+      "sleep_start": "23:45",
+      "sleep_end": "06:55",
+      "duration_hours": 7.17,
+      "quality": null,
+      "notes": "Solid full night, ~7.17h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-26",
+      "night_of": "2026-08-25",
+      "sleep_start": "23:15",
+      "sleep_end": "06:20",
+      "duration_hours": 7.08,
+      "quality": null,
+      "notes": "Solid full night, ~7.08h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-27",
+      "night_of": "2026-08-26",
+      "sleep_start": "23:45",
+      "sleep_end": "06:20",
+      "duration_hours": 6.58,
+      "quality": null,
+      "notes": "Moderate night, ~6.58h — a bit short of the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-28",
+      "night_of": "2026-08-27",
+      "sleep_start": "00:10",
+      "sleep_end": "06:45",
+      "duration_hours": 6.58,
+      "quality": null,
+      "notes": "Moderate night, ~6.58h — a bit short of the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-29",
+      "night_of": "2026-08-28",
+      "sleep_start": "00:30",
+      "sleep_end": "08:00",
+      "duration_hours": 7.5,
+      "quality": null,
+      "notes": "Solid full night, 7.5h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-30",
+      "night_of": "2026-08-29",
+      "sleep_start": "23:45",
+      "sleep_end": "06:25",
+      "duration_hours": 6.67,
+      "quality": null,
+      "notes": "Short night, ~6.67h — below the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-08-31",
+      "night_of": "2026-08-30",
+      "sleep_start": "23:45",
+      "sleep_end": "06:15",
+      "duration_hours": 6.5,
+      "quality": null,
+      "notes": "Short night, 6.5h — below the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-01",
+      "night_of": "2026-08-31",
+      "sleep_start": "00:35",
+      "sleep_end": "06:55",
+      "duration_hours": 6.33,
+      "quality": null,
+      "notes": "Short night, ~6.33h — below the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-02",
+      "night_of": "2026-09-01",
+      "sleep_start": "23:15",
+      "sleep_end": "07:45",
+      "duration_hours": 8.5,
+      "quality": null,
+      "notes": "Long solid night, 8.5h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-03",
+      "night_of": "2026-09-02",
+      "sleep_start": "22:50",
+      "sleep_end": "06:15",
+      "duration_hours": 7.42,
+      "quality": null,
+      "notes": "Solid full night, ~7.42h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-04",
+      "night_of": "2026-09-03",
+      "sleep_start": "23:05",
+      "sleep_end": "08:00",
+      "duration_hours": 8.92,
+      "quality": null,
+      "notes": "Long solid night, ~8.92h — just above the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-05",
+      "night_of": "2026-09-04",
+      "sleep_start": "22:45",
+      "sleep_end": "08:15",
+      "duration_hours": 9.5,
+      "quality": null,
+      "notes": "Long night, ~9.5h — just above the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-06",
+      "night_of": "2026-09-05",
+      "sleep_start": "00:30",
+      "sleep_end": "07:00",
+      "duration_hours": 6.5,
+      "quality": null,
+      "notes": "Short night, ~6.5h — a bit short of the 7-9h target band, late bedtime (00:30) preceded by a partnered ejaculation event."
+    },
+    {
+      "date": "2026-09-09",
+      "night_of": "2026-09-08",
+      "sleep_start": "00:00",
+      "sleep_end": "06:10",
+      "duration_hours": 6.17,
+      "quality": null,
+      "notes": "Short night, ~6.17h — a bit short of the 7-9h target band, late bedtime (00:00)."
+    },
+    {
+      "date": "2026-09-10",
+      "night_of": "2026-09-09",
+      "sleep_start": "23:45",
+      "sleep_end": "07:30",
+      "duration_hours": 7.75,
+      "quality": null,
+      "notes": "Solid full night, ~7.75h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-11",
+      "night_of": "2026-09-10",
+      "sleep_start": "00:15",
+      "sleep_end": "07:45",
+      "duration_hours": 7.5,
+      "quality": null,
+      "notes": "Solid full night, ~7.5h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-12",
+      "night_of": "2026-09-11",
+      "sleep_start": "23:15",
+      "sleep_end": "07:25",
+      "duration_hours": 8.17,
+      "quality": null,
+      "notes": "Long solid night, ~8.17h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-13",
+      "night_of": "2026-09-12",
+      "sleep_start": "23:45",
+      "sleep_end": "08:00",
+      "duration_hours": 8.25,
+      "quality": null,
+      "notes": "Long solid night, ~8.25h — squarely in the 7-9h target band, one continuous stretch."
+    },
+    {
+      "date": "2026-09-14",
+      "night_of": "2026-09-13",
+      "sleep_start": "00:15",
+      "sleep_end": "05:40",
+      "duration_hours": 5.42,
+      "quality": null,
+      "notes": "Short night, ~5.42h — well under the 7-9h target band."
+    },
+    {
+      "date": "2026-09-15",
+      "night_of": "2026-09-14",
+      "sleep_start": "23:00",
+      "sleep_end": "07:50",
+      "duration_hours": 8.83,
+      "quality": null,
+      "notes": "Solid full night, ~8.83h — squarely in the 7-9h target band."
+    },
+    {
+      "date": "2026-09-16",
+      "night_of": "2026-09-15",
+      "sleep_start": "00:30",
+      "sleep_end": "08:00",
+      "duration_hours": 7.5,
+      "quality": null,
+      "notes": "7.5h, within the 7-9h target band despite a late (past-midnight) start."
+    },
+    {
+      "date": "2026-09-17",
+      "night_of": "2026-09-16",
+      "sleep_start": "00:30",
+      "sleep_end": "07:45",
+      "duration_hours": 7.25,
+      "quality": null,
+      "notes": "7.25h, within the 7-9h target band despite a late (past-midnight) start."
+    },
+    {
+      "date": "2026-09-18",
+      "night_of": "2026-09-17",
+      "sleep_start": "23:45",
+      "sleep_end": "07:25",
+      "duration_hours": 7.67,
+      "quality": null,
+      "notes": "7.67h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-09-19",
+      "night_of": "2026-09-18",
+      "sleep_start": "00:10",
+      "sleep_end": "09:00",
+      "duration_hours": 8.83,
+      "quality": null,
+      "notes": "8.83h, above the 7-9h target band's midpoint — a long, well-rested night."
+    },
+    {
+      "date": "2026-09-20",
+      "night_of": "2026-09-19",
+      "sleep_start": "00:30",
+      "sleep_end": "07:45",
+      "duration_hours": 7.25,
+      "quality": null,
+      "notes": "7.25h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-09-21",
+      "night_of": "2026-09-20",
+      "sleep_start": "00:30",
+      "sleep_end": "09:30",
+      "duration_hours": 9,
+      "quality": null,
+      "notes": "9.0h, at the top of the 7-9h target band."
+    },
+    {
+      "date": "2026-09-22",
+      "night_of": "2026-09-21",
+      "sleep_start": "23:35",
+      "sleep_end": "06:10",
+      "duration_hours": 6.58,
+      "quality": null,
+      "notes": "6.58h, a bit short of the 7-9h target band."
+    },
+    {
+      "date": "2026-09-23",
+      "night_of": "2026-09-22",
+      "sleep_start": "23:30",
+      "sleep_end": "06:15",
+      "duration_hours": 6.75,
+      "quality": null,
+      "notes": "6.75h, a bit short of the 7-9h target band."
+    },
+    {
+      "date": "2026-09-24",
+      "night_of": "2026-09-23",
+      "sleep_start": "22:30",
+      "sleep_end": "05:40",
+      "duration_hours": 7.17,
+      "quality": null,
+      "notes": "7.17h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-09-25",
+      "night_of": "2026-09-24",
+      "sleep_start": "00:40",
+      "sleep_end": "08:50",
+      "duration_hours": 8.17,
+      "quality": null,
+      "notes": "8.17h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-09-26",
+      "night_of": "2026-09-25",
+      "sleep_start": "23:40",
+      "sleep_end": "08:15",
+      "duration_hours": 8.58,
+      "quality": null,
+      "notes": "8.58h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-09-27",
+      "night_of": "2026-09-26",
+      "sleep_start": "22:45",
+      "sleep_end": "05:35",
+      "duration_hours": 6.83,
+      "quality": null,
+      "notes": "6.83h, a bit short of the 7-9h target band."
+    },
+    {
+      "date": "2026-09-28",
+      "night_of": "2026-09-27",
+      "sleep_start": "00:00",
+      "sleep_end": "06:15",
+      "duration_hours": 6.25,
+      "quality": null,
+      "notes": "6.25h, short of the 7-9h target band."
+    },
+    {
+      "date": "2026-09-29",
+      "night_of": "2026-09-28",
+      "sleep_start": "23:50",
+      "sleep_end": "07:00",
+      "duration_hours": 7.17,
+      "quality": null,
+      "notes": "7.17h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-09-30",
+      "night_of": "2026-09-29",
+      "sleep_start": "23:15",
+      "sleep_end": "06:35",
+      "duration_hours": 7.33,
+      "quality": null,
+      "notes": "7.33h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-10-01",
+      "night_of": "2026-09-30",
+      "sleep_start": "23:45",
+      "sleep_end": "06:15",
+      "duration_hours": 6.5,
+      "quality": null,
+      "notes": "6.5h, a bit short of the 7-9h target band."
+    },
+    {
+      "date": "2026-10-02",
+      "night_of": "2026-10-01",
+      "sleep_start": "00:10",
+      "sleep_end": "07:30",
+      "duration_hours": 7.33,
+      "quality": null,
+      "notes": "7.33h, within the 7-9h target band, late (past-midnight) start."
+    },
+    {
+      "date": "2026-10-03",
+      "night_of": "2026-10-02",
+      "sleep_start": "00:00",
+      "sleep_end": "08:00",
+      "duration_hours": 8,
+      "quality": null,
+      "notes": "8h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-10-04",
+      "night_of": "2026-10-03",
+      "sleep_start": "23:15",
+      "sleep_end": "06:45",
+      "duration_hours": 7.5,
+      "quality": null,
+      "notes": "7.5h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-10-05",
+      "night_of": "2026-10-04",
+      "sleep_start": "00:15",
+      "sleep_end": "06:45",
+      "duration_hours": 6.5,
+      "quality": null,
+      "notes": "6.5h, a bit short of the 7-9h target band."
+    },
+    {
+      "date": "2026-10-06",
+      "night_of": "2026-10-05",
+      "sleep_start": "22:50",
+      "sleep_end": "07:30",
+      "duration_hours": 8.67,
+      "quality": null,
+      "notes": "8.67h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-10-07",
+      "night_of": "2026-10-06",
+      "sleep_start": "22:45",
+      "sleep_end": "08:45",
+      "duration_hours": 6.83,
+      "quality": null,
+      "segments": [
+        {
+          "start": "22:45",
+          "end": "01:50"
+        },
+        {
+          "start": "05:00",
+          "end": "08:45"
+        }
+      ],
+      "notes": "Fragmented, two segments (3h05m + 3h45m) totaling ~6.83h — a bit short of the 7-9h target band."
+    },
+    {
+      "date": "2026-10-08",
+      "night_of": "2026-10-07",
+      "sleep_start": "22:45",
+      "sleep_end": "07:30",
+      "duration_hours": 8.75,
+      "quality": null,
+      "notes": "8.75h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-10-09",
+      "night_of": "2026-10-08",
+      "sleep_start": "23:15",
+      "sleep_end": "06:00",
+      "duration_hours": 6.75,
+      "quality": null,
+      "notes": "6.75h, slightly under the 7-9h target band."
+    },
+    {
+      "date": "2026-10-10",
+      "night_of": "2026-10-09",
+      "sleep_start": "23:30",
+      "sleep_end": "07:30",
+      "duration_hours": 8,
+      "quality": null,
+      "notes": "8h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-10-11",
+      "night_of": "2026-10-10",
+      "sleep_start": "00:30",
+      "sleep_end": "05:45",
+      "duration_hours": 5.25,
+      "quality": null,
+      "notes": "5.25h, notably short of the 7-9h target band."
+    },
+    {
+      "date": "2026-10-12",
+      "night_of": "2026-10-11",
+      "sleep_start": "23:30",
+      "sleep_end": "05:40",
+      "duration_hours": 6.17,
+      "quality": null,
+      "notes": "6.17h, a bit short of the 7-9h target band."
+    },
+    {
+      "date": "2026-10-13",
+      "night_of": "2026-10-12",
+      "sleep_start": "22:35",
+      "sleep_end": "06:15",
+      "duration_hours": 7.67,
+      "quality": null,
+      "notes": "7.67h, within the 7-9h target band."
+    },
+    {
+      "date": "2026-10-14",
+      "night_of": "2026-10-13",
+      "sleep_start": "00:45",
+      "sleep_end": "05:50",
+      "duration_hours": 5.08,
+      "quality": null,
+      "notes": "5.08h, notably short of the 7-9h target band."
+    },
+    {
+      "date": "2026-10-15",
+      "night_of": "2026-10-14",
+      "sleep_start": "23:40",
+      "sleep_end": "06:15",
+      "duration_hours": 6.58,
+      "quality": null,
+      "notes": "6.58h, a bit short of the 7-9h target band."
+    },
+    {
+      "date": "2026-10-16",
+      "night_of": "2026-10-15",
+      "sleep_start": "00:30",
+      "sleep_end": "08:00",
+      "duration_hours": 7.5,
+      "quality": null,
+      "notes": "7.5h, within the 7-9h target band."
+    }
   ]
 }
