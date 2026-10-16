@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "catalina_crunch_cereal_generic",
+      "name": "Catalina Crunch protein cereal (generic, Cinnamon Toast)",
+      "serving": "100 g",
+      "kcal": 333,
+      "protein_g": 36.7,
+      "carbs_g": 53.3,
+      "fat_g": 11.7,
+      "fiber_g": 30,
+      "verified": false,
+      "source": "First logged 2026-10-16, no label photo — estimated from typical Catalina Crunch label values (1 cup/30g serving: 100kcal, 11g protein, 16g carb, 9g fiber, 3.5g fat), scaled to 100g. Flavor assumed Cinnamon Toast (most common); update if a different flavor's label differs."
+    },
+    {
       "id": "simfonia_cheese_spread_generic",
       "name": "Simfonia cheese spread, 5% fat (generic)",
       "serving": "100 g",
