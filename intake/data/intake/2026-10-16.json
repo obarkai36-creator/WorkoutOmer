@@ -1,7 +1,8 @@
 {
   "date": "2026-10-16",
   "day_number": 111,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 2000,
   "sleep": {
     "sleep_start": "00:30",
     "sleep_end": "08:00",
@@ -64,7 +65,8 @@
     "14:30 double espresso, 1 double (4 caffeine shots today) + essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
     "15:00 1 Schoko-Bon (same verified reference as prior entries).",
     "18:00 dinner (mixed-grill-style, several meats): 40g kebab (standard generic reference, credits ~1.8mg zinc/~6mcg selenium) + 150g ribeye steak (standard reference, credits ~6.75mg zinc/~22.5mcg selenium) + 1 bowl chicken soup with 3 kreplach (new generic reference, chicken_soup_with_kreplach_generic, first time logged, rough/low-confidence estimate) + a taste-sized (2 spoons, ~40g) side salad with balsamic vinaigrette (components/quantity not weighed, flagged) + 50g skinless duck breast (new generic reference, duck_breast_skinless_roasted_generic, first time logged, credits ~0.75mg zinc/~7mcg selenium) + 20g sirloin (standard reference, credits ~0.9mg zinc/~3mcg selenium) + 3 green grapes (~15g, standard reference, credits ~1.62mg vitamin C) + 0.5 glass (~75ml) red wine (standard reference, ~0.75 alcohol units, logged to lifestyle.json — first drinking day since 2026-10-02, 14-day gap).",
-    "20:00 1 piece chocolate cake (~100g, piece size assumed) — standard frosted chocolate cake reference as prior entries (~371kcal/100g)."
+    "20:00 1 piece chocolate cake (~100g, piece size assumed) — standard frosted chocolate cake reference as prior entries (~371kcal/100g).",
+    "EOD: 2,000 steps. No retainers entry volunteered tonight — only 1 night (15-16 Oct) missing since the last logged night (14-15 Oct, worn), below the 3-night flag threshold, so no note per the standing rule."
   ],
-  "status_note": "Day in progress. Slept 7.5h (00:30-08:00), within target. AM spray + pill + double espresso + Mayven + yogurt + cereal handful + creatine + lunch + omega-3 + 14:30 espresso/essential-5 + schoko-bon + mixed-grill dinner with red wine + chocolate cake logged. 2 new generic references added (chicken soup w/ kreplach, duck breast)."
+  "status_note": "Day complete. Slept 7.5h (00:30-08:00), within target. AM spray + pill + double espresso + Mayven + yogurt + cereal handful + creatine + lunch + omega-3 + 14:30 espresso/essential-5 + schoko-bon + mixed-grill dinner with red wine + chocolate cake logged. 2,000 steps."
 }

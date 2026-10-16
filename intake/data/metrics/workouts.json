@@ -1,17 +1,17 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-15",
+    "report_date": "2026-10-16",
     "latest_session": "Back day (07:00, hotel gym) — Row Machine 85.5kg×4×8, logged directly — new exercise, hotel-gym substitute for Diverging Seated Row/Low Row, added to the catalog and given its first SNAPSHOT entry (not a PR, first-ever logged). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Dead Hang 30s+30s+30s — ties the prior best's 90s total hold time (35s+30s+25s) with a more even distribution, not a strict PR. 1 new PR + 1 new exercise added to rotation.",
     "sessions_logged": 80,
-    "sessions_per_week": 4,
+    "sessions_per_week": 3.5,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 26,
-    "aerobic_sessions_28d": 10,
+    "aerobic_28d_km": 22.4,
+    "aerobic_sessions_28d": 8,
     "avg_pace": "10:22/km",
     "avg_hr": 142,
-    "acwr": 1.11,
-    "recommended_next": "Chest day",
+    "acwr": 0.89,
+    "recommended_next": "Back day",
     "alerts": [
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
