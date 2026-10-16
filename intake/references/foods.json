@@ -2,6 +2,30 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "duck_breast_skinless_roasted_generic",
+      "name": "Duck breast, skinless, roasted (generic)",
+      "serving": "100 g",
+      "kcal": 201,
+      "protein_g": 23.5,
+      "carbs_g": 0,
+      "fat_g": 11.2,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "First logged 2026-10-16 (50g). Generic USDA-type estimate for skinless roasted duck breast meat (skin removed before cooking). Also credits ~1.5mg zinc / ~14mcg selenium per 100g. Not label-verified."
+    },
+    {
+      "id": "chicken_soup_with_kreplach_generic",
+      "name": "Chicken soup with kreplach (meat-filled dumplings), 1 bowl with 3 pieces (generic, homemade)",
+      "serving": "1 bowl with 3 kreplach (~350 g)",
+      "kcal": 225,
+      "protein_g": 18,
+      "carbs_g": 24,
+      "fat_g": 7.5,
+      "fiber_g": 1,
+      "verified": false,
+      "source": "First logged 2026-10-16 (1 bowl, 3 kreplach). Rough estimate (no recipe/label available): clear chicken broth (~300ml, ~20kcal/100ml) + 3 small ground-meat-filled dumplings (kreplach, ~25g each, ~55kcal/piece). Flagged low-confidence — refine if a specific recipe/ratio becomes available."
+    },
+    {
       "id": "simfonia_cheese_spread_generic",
       "name": "Simfonia cheese spread, 5% fat (generic)",
       "serving": "100 g",

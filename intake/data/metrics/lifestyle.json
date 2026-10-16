@@ -5,7 +5,9 @@
       "date": "2026-06-29",
       "type": "travel",
       "description": "3-hour daytime flight",
-      "affects": ["heat_travel_exposure"],
+      "affects": [
+        "heat_travel_exposure"
+      ],
       "severity": "mild",
       "notes": "Prolonged sitting + cabin environment (mild scrotal heat, sedentary, dehydration risk). Daytime — no sleep disruption. Minor, occasional-frequency impact."
     },
@@ -13,7 +15,9 @@
       "date": "2026-06-30",
       "type": "alcohol",
       "description": "3 Aperol spritz + limoncello (dinner out)",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "moderate",
       "notes": "Well above the usual <=1 glass/week baseline. One-off social dinner; returning to baseline keeps the weekly alcohol factor healthy."
     },
@@ -21,7 +25,9 @@
       "date": "2026-07-01",
       "type": "alcohol",
       "description": "~750 ml Peroni draft beer (~2.5 units), pre-dinner",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "moderate",
       "notes": "Second consecutive day with alcohol (after 30 Jun spritz + limoncello). Two drinking days in one week pulls the weekly alcohol factor down noticeably vs the <=1/week baseline — a few dry days would restore it."
     },
@@ -29,7 +35,9 @@
       "date": "2026-07-02",
       "type": "travel",
       "description": "3-hour flight (travel day)",
-      "affects": ["heat_travel_exposure"],
+      "affects": [
+        "heat_travel_exposure"
+      ],
       "severity": "mild",
       "notes": "Prolonged sitting + cabin environment (mild scrotal heat, sedentary, dehydration risk). First of back-to-back travel days."
     },
@@ -37,7 +45,10 @@
       "date": "2026-07-03",
       "type": "travel",
       "description": "5-hour red-eye flight — only ~2.5 h sleep",
-      "affects": ["heat_travel_exposure", "sleep"],
+      "affects": [
+        "heat_travel_exposure",
+        "sleep"
+      ],
       "severity": "high",
       "notes": "Overnight red-eye between the two travel days — ~2.5 h sleep plus a longer flight. Back-to-back flights + a near-sleepless night are a meaningful recovery/fertility hit for the week; prioritise catch-up sleep and hydration after landing."
     },
@@ -45,7 +56,9 @@
       "date": "2026-07-03",
       "type": "alcohol",
       "description": "Singha beer (~0.7 of a 330 ml bottle, ~1 unit) at lunch",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "Third day with alcohol this week (30 Jun, 1 Jul, 3 Jul). Small amount, but the frequency vs the <=1 glass/week baseline is what pulls the weekly alcohol factor down."
     },
@@ -53,7 +66,9 @@
       "date": "2026-07-05",
       "type": "alcohol",
       "description": "~0.5 glass Rioja red wine",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "Fourth alcohol day this week (30 Jun, 1 Jul, 3 Jul, 5 Jul). Individually tiny, but 4/7 days with alcohol is well above the <=1 glass/week baseline — the biggest recurring drag on the weekly alcohol factor. A stretch of dry days would reset it."
     },
@@ -61,7 +76,9 @@
       "date": "2026-07-07",
       "type": "alcohol",
       "description": "1 pint Birra Moretti (~1.9 units)",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "moderate",
       "notes": "Fifth alcohol day in the last 8 (30 Jun, 1, 3, 5, 7 Jul). Frequency remains the standout drag on the weekly alcohol/fertility factor vs the <=1 glass/week baseline. Worth a genuine dry stretch, especially with sperm optimization ramping."
     },
@@ -69,7 +86,9 @@
       "date": "2026-07-08",
       "type": "alcohol",
       "description": "2 very small glasses red wine (~1.9 units) with dinner at claro; London",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "Sixth alcohol day in the last 9 (30 Jun, 1, 3, 5, 7, 8 Jul) — now back-to-back with 7 Jul. Small pours, but the near-daily frequency is still the dominant drag on the weekly alcohol/fertility factor vs the <=1 glass/week baseline."
     },
@@ -77,7 +96,9 @@
       "date": "2026-07-09",
       "type": "alcohol",
       "description": "1 pint of beer (~2 units), 21:30",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "moderate",
       "notes": "Seventh alcohol day in the last 10 (30 Jun, 1, 3, 5, 7, 8, 9 Jul) — third day running (7-9 Jul). This is now a sustained daily-drinking streak rather than occasional spikes; the weekly alcohol/fertility factor is being pulled down consistently vs the <=1 glass/week baseline. A genuine dry stretch is the clear lever here."
     },
@@ -85,7 +106,9 @@
       "date": "2026-07-10",
       "type": "travel",
       "description": "4:50hr morning daytime flight, no major sleep disruption (>5h sleep beforehand)",
-      "affects": ["heat_travel_exposure"],
+      "affects": [
+        "heat_travel_exposure"
+      ],
       "severity": "moderate",
       "notes": "Prolonged sitting + cabin environment (scrotal heat, sedentary, dehydration risk) for close to 5 hours. Daytime departure with >5h sleep beforehand — no sleep-debt hit, unlike the 3 Jul red-eye. Severity kept at moderate (vs mild for the routine 3-hour flights) on flight duration alone."
     },
@@ -93,7 +116,9 @@
       "date": "2026-07-14",
       "type": "alcohol",
       "description": "1 shot arak (~30ml) + 0.5 lowball Aperol spritz (~75ml), ~midday",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~2 units total. First drinking day since 9 Jul — a genuine 4-day dry stretch just ended, so this is a one-off rather than a return to the earlier daily-drinking streak."
     },
@@ -101,7 +126,9 @@
       "date": "2026-07-30",
       "type": "alcohol",
       "description": "1 shot (~30ml) Johnny Walker Black, at Patrick's Caesarea (date night)",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1.2 units. First drinking day since 14 Jul — a genuine 16-day dry stretch just ended, so this is a one-off rather than a return to the earlier daily-drinking streak."
     },
@@ -109,7 +136,9 @@
       "date": "2026-07-31",
       "type": "alcohol",
       "description": "Small (~100ml) red wine serving with dinner",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1 unit. Second drinking day in 2, following the 30 Jul Johnny Walker Black — worth watching if it becomes a pattern, though two days is not yet a real streak."
     },
@@ -117,7 +146,9 @@
       "date": "2026-08-01",
       "type": "alcohol",
       "description": "Some wine with a large dinner (dinner not itemized)",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1 unit assumed (small glass). Third drinking day in a row (30 Jul, 31 Jul, 1 Aug) — this is now a real back-to-back streak, not a one-off. Worth a genuine dry stretch soon."
     },
@@ -125,7 +156,9 @@
       "date": "2026-08-08",
       "type": "alcohol",
       "description": "1 Goldstar beer (~330ml) + 1 limonarak (arak+lemonade) + 1 Heineken (500ml), from 18:30 — ~5.3 units total",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "high",
       "notes": "Heaviest single-day alcohol total logged this cycle (~5.3 units vs the <=1 glass/week baseline). First drinking day since 1 Aug (a real week-long gap), but a large one-day spike rather than a small pour — flagged per the standing intake-pattern suggestion permission."
     },
@@ -133,7 +166,9 @@
       "date": "2026-08-15",
       "type": "alcohol",
       "description": "1 glass red wine (~150ml) with dinner at רפאלו חיפה",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1.5 units. First drinking day since 8 Aug — a genuine week-long gap, so this is a one-off rather than a return to a streak."
     },
@@ -141,7 +176,9 @@
       "date": "2026-08-19",
       "type": "alcohol",
       "description": "2 beers (~300ml each, ~600ml total) with dinner",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~2.1 units. First drinking day since 15 Aug — a 4-day gap."
     },
@@ -149,7 +186,9 @@
       "date": "2026-08-28",
       "type": "alcohol",
       "description": "1 glass red wine (~150ml) with dinner",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1.5 units. First drinking day since 19 Aug — a 9-day gap, comfortably within the <=1 glass/week baseline."
     },
@@ -157,7 +196,9 @@
       "date": "2026-08-30",
       "type": "alcohol",
       "description": "1 glass red wine (~150ml) with dinner",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1.5 units. Only a 2-day gap since 28 Aug — more frequent than the <=1 glass/week baseline, flagged per the standing intake-pattern suggestion permission (though still a single mild pour, not a spike)."
     },
@@ -165,7 +206,9 @@
       "date": "2026-09-03",
       "type": "alcohol",
       "description": "~3 wine tastings (~40ml each, ~120ml total) + ~2 whiskey tastings (~20ml each, ~40ml total) throughout the evening",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "moderate",
       "notes": "~2.8 alcohol units combined (~1.2 wine + ~1.6 whiskey) — small tasting-size pours but a notably higher single-day total than the usual single glass/shot. Only a 3-day gap since the 30 Aug red wine, within the <=1 glass/week baseline by frequency, but flagged for total volume this session."
     },
@@ -173,7 +216,9 @@
       "date": "2026-09-10",
       "type": "alcohol",
       "description": "1 glass red wine (~150ml) with dinner",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1.5 units. First drinking day since 3 Sep — a 7-day gap, comfortably within the <=1 glass/week baseline."
     },
@@ -181,7 +226,9 @@
       "date": "2026-09-11",
       "type": "alcohol",
       "description": "1 glass red wine (~150ml) with dinner",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1.5 units. Second consecutive drinking day (also 09-10) — small single-glass pours, but back-to-back days run a bit more frequent than the <=1 glass/week baseline."
     },
@@ -189,7 +236,9 @@
       "date": "2026-09-12",
       "type": "alcohol",
       "description": "1 glass red wine (~150ml) + 1 shot whiskey (~30ml), time not given, assumed ~14:30",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "moderate",
       "notes": "~2.7 units combined (~1.5 wine + ~1.2 whiskey). Third consecutive drinking day (also 09-10 and 09-11) — running well above the <=1 glass/week baseline this week, though each day's pours were modest."
     },
@@ -197,7 +246,9 @@
       "date": "2026-09-14",
       "type": "alcohol",
       "description": "1 portion whiskey (~30ml, standard pour assumed), 20:00",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~1.2 units. First drinking day since 12 Sep — a 2-day gap, comfortably within the <=1 glass/week baseline by frequency."
     },
@@ -205,7 +256,9 @@
       "date": "2026-09-24",
       "type": "alcohol",
       "description": "1 glass white wine + 1 glass red wine at lunch (~150ml each assumed, quantities not stated)",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "moderate",
       "notes": "~2 standard drinks combined. First drinking day since 14 Sep — a 10-day gap, comfortably within the <=1 glass/week baseline by frequency despite today's session being 2 glasses."
     },
@@ -213,9 +266,21 @@
       "date": "2026-10-02",
       "type": "alcohol",
       "description": "150ml beer, type unspecified, ~12:45",
-      "affects": ["alcohol"],
+      "affects": [
+        "alcohol"
+      ],
       "severity": "mild",
       "notes": "~0.6 standard alcohol units. First drinking day since 24 Sep — an 8-day gap, comfortably within the <=1 glass/week baseline."
+    },
+    {
+      "date": "2026-10-16",
+      "type": "alcohol",
+      "description": "0.5 glass (~75ml) red wine with dinner",
+      "affects": [
+        "alcohol"
+      ],
+      "severity": "mild",
+      "notes": "~0.75 standard alcohol units. First drinking day since 2 Oct — a 14-day gap, comfortably within the <=1 glass/week baseline."
     }
   ]
 }
