@@ -22,7 +22,8 @@
     {"time": "12:00", "name": "Lunch — cucumber", "category": "food", "qty": "1 whole (~300 g)", "kcal": 45, "protein_g": 1.95, "carbs_g": 10.8, "fat_g": 0.3, "fiber_g": 1.5, "note": "standard cucumber rate (~15kcal/100g), same as prior entries."},
     {"time": "12:00", "name": "Lunch — yellow cheese, 9% (Tnuva Emek Light)", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified label reference, same as prior entries (tnuva_emek_light_yellow_cheese_9pct)."},
     {"time": "12:00", "name": "Lunch — Simfonia cheese spread, 5% fat", "category": "food", "qty": "40 g", "kcal": 43.2, "protein_g": 3.92, "carbs_g": 1.84, "fat_g": 2, "fiber_g": 0, "note": "verified label reference, same as prior entries (simfonia_cheese_spread_generic)."},
-    {"time": "12:00", "name": "Lunch — green grapes, seedless", "category": "food", "qty": "10 pieces (~50 g)", "kcal": 34.5, "protein_g": 0.36, "carbs_g": 9.05, "fat_g": 0.08, "fiber_g": 0.45, "note": "same standard reference as prior entries (~5g/grape). Credits ~5.4mg vitamin C."}
+    {"time": "12:00", "name": "Lunch — green grapes, seedless", "category": "food", "qty": "10 pieces (~50 g)", "kcal": 34.5, "protein_g": 0.36, "carbs_g": 9.05, "fat_g": 0.08, "fiber_g": 0.45, "note": "same standard reference as prior entries (~5g/grape). Credits ~5.4mg vitamin C."},
+    {"time": "12:00", "name": "Lunch — cottage cheese", "category": "food", "qty": "75 g", "kcal": 73.5, "protein_g": 8.25, "carbs_g": 2.55, "fat_g": 3.225, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, ~98kcal/100g)."}
   ],
   "workout_today": false,
   "workout_summary": null,
@@ -45,7 +46,7 @@
     "10:00 Yoplait GO coconut-flavor protein yogurt, 1 cup (200g, same verified reference as prior entries) + a handful (~20g) Catalina Crunch Protein Cereal, Chocolate Peanut Butter.",
     "CORRECTION: the 10:00 Catalina Crunch handful was initially logged against a newly-invented generic estimate (wrong flavor assumed, no label). It's actually an already-established item — the real verified label reference already exists in both intake/recipes/catalina_crunch_choc_pb_cereal.json and prior day entries (306kcal/31g protein/44g carb/14g fat/25g fiber per 100g, Chocolate Peanut Butter flavor). Removed the bad generic reference from foods.json and recomputed the item at the standard ~20g/handful rate (61kcal/6.2p/8.8c/2.8f/5fiber, up slightly from the wrong 50kcal/5.5p/8c/1.75f/4.5fiber estimate).",
     "10:15 creatine monohydrate, 5g — zero kcal/macros.",
-    "12:00 lunch: 2 Agami Pita Pro (verified reference) + 6 cherry tomatoes (credits ~2.64mg lycopene, ~13.2mg vitamin C, ~15.3mcg folate DFE) + 1 whole cucumber (~300g, standard rate) + 4 Tnuva Emek Light yellow cheese slices 9% (verified reference) + 40g Simfonia cheese spread (verified reference) + 10 green grapes (~50g, standard reference, credits ~5.4mg vitamin C). All standard/verified references, no new items."
+    "12:00 lunch: 2 Agami Pita Pro (verified reference) + 6 cherry tomatoes (credits ~2.64mg lycopene, ~13.2mg vitamin C, ~15.3mcg folate DFE) + 1 whole cucumber (~300g, standard rate) + 4 Tnuva Emek Light yellow cheese slices 9% (verified reference) + 40g Simfonia cheese spread (verified reference) + 10 green grapes (~50g, standard reference, credits ~5.4mg vitamin C) + 75g cottage cheese (same generic reference as prior entries). All standard/verified references, no new items."
   ],
   "status_note": "Day in progress. Slept 7.5h (00:30-08:00), within target. AM spray + pill + double espresso + Mayven + yogurt + cereal handful + creatine + lunch logged."
 }
