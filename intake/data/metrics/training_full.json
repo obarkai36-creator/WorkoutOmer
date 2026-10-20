@@ -1,5 +1,5 @@
 {
-  "now": 1792502120269,
+  "now": 1792502271509,
   "workouts": [
     {
       "datetime": "2026-10-20T05:50",
@@ -153,7 +153,7 @@
     {
       "datetime": "2026-10-17T10:00",
       "timeUnknown": true,
-      "note": "Chest + Arms day — clock time not given, placeholder 10:00. Incline Bench Press 22.5kg each side + 20kg bar (65kg)×3×10, logged directly (higher reps than the 72.5kg×4×7 best but still below it by est. 1RM — 86.7 vs 89.4, not a PR). Seated Dips 36kg each side (72kg added, dip belt)×4×10, logged directly — different execution from the 94kg machine best, not comparable, no PR read (large jump from the prior 25kg-added dip-belt session, flagged for confirmation). EZ Bar Curl 10kg each + bar (30kg)×4×10, logged directly (new PR — est. 1RM 40.0 vs 33.3 prior best at 25kg×4×10). Incline Pec Fly 18kg each (36kg)×4×10, +1 rep on best (new PR — est. 1RM 48.0 vs 46.8 prior best at 36kg×4×9). Low Pulley Biceps Curl 36kg×4×8 — new exercise, added to the catalog and logged for the first time (not a PR, first-ever entry; distinct cable low-pulley curl station from the Biceps Curl Machine). Single-Hand DB Triceps Extension 12kg each×4×9 — this exact result was already logged as a PR on 2026-10-08, but the SNAPSHOT best/latest had stayed stuck at 12kg each×4×8 since then (a stale-data bug, not a fresh PR this session) — corrected to 12kg each×4×9 here. Incline DB Curl 12kg each×4×10, logged directly (lighter session, below the 20kg each×3×6 best, not a PR). 2 new PRs + 1 new exercise added to rotation + 1 stale-SNAPSHOT correction. Logged as part of a multi-day catch-up batch after a usage-credit gap.",
+      "note": "Chest + Arms day — clock time not given, placeholder 10:00. Incline Bench Press 22.5kg each side + 20kg bar (65kg)×3×10, logged directly (higher reps than the 72.5kg×4×7 best but still below it by est. 1RM — 86.7 vs 89.4, not a PR). Seated Dips 36kg each side (72kg added, dip belt)×4×10, logged directly — different execution from the 94kg machine best, not comparable, no PR read (large jump from the prior 25kg-added dip-belt session — confirmed accurate by the user). EZ Bar Curl 10kg each + bar (30kg)×4×10, logged directly (new PR — est. 1RM 40.0 vs 33.3 prior best at 25kg×4×10). Incline Pec Fly 18kg each (36kg)×4×10, +1 rep on best (new PR — est. 1RM 48.0 vs 46.8 prior best at 36kg×4×9). Low Pulley Biceps Curl 36kg×4×8 — new exercise, added to the catalog and logged for the first time (not a PR, first-ever entry; distinct cable low-pulley curl station from the Biceps Curl Machine). Single-Hand DB Triceps Extension 12kg each×4×9 — this exact result was already logged as a PR on 2026-10-08, but the SNAPSHOT best/latest had stayed stuck at 12kg each×4×8 since then (a stale-data bug, not a fresh PR this session) — corrected to 12kg each×4×9 here. Incline DB Curl 12kg each×4×10, logged directly (lighter session, below the 20kg each×3×6 best, not a PR). 2 new PRs + 1 new exercise added to rotation + 1 stale-SNAPSHOT correction. Logged as part of a multi-day catch-up batch after a usage-credit gap.",
       "exercises": [
         {
           "name": "Incline Bench Press",
@@ -8545,8 +8545,8 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 60,
-      "readyInHours": 41,
+      "pct": 59,
+      "readyInHours": 40.9,
       "ready": false
     },
     "hamstrings": {
@@ -8562,7 +8562,7 @@
       "label": "Glutes",
       "section": "Legs",
       "pct": 30,
-      "readyInHours": 0.7,
+      "readyInHours": 0.6,
       "ready": false
     },
     "adductors": {
@@ -8578,7 +8578,7 @@
       "label": "Calves",
       "section": "Legs",
       "pct": 31,
-      "readyInHours": 1.5,
+      "readyInHours": 1.4,
       "ready": false
     },
     "core": {
@@ -8678,14 +8678,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 28,
-      "readyInHours": 41,
+      "readyInHours": 40.9,
       "muscles": [
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 60,
-          "readyInHours": 41,
+          "pct": 59,
+          "readyInHours": 40.9,
           "ready": false
         },
         {
@@ -8693,7 +8693,7 @@
           "label": "Calves",
           "section": "Legs",
           "pct": 31,
-          "readyInHours": 1.5,
+          "readyInHours": 1.4,
           "ready": false
         },
         {
@@ -8701,7 +8701,7 @@
           "label": "Glutes",
           "section": "Legs",
           "pct": 30,
-          "readyInHours": 0.7,
+          "readyInHours": 0.6,
           "ready": false
         },
         {
@@ -10113,7 +10113,7 @@
     "fatigue": 17,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-20T13:15:20.269Z",
+    "readyAt": "2026-10-20T13:17:51.509Z",
     "neverLogged": false,
     "daysSince": 11.9,
     "suggestedExercises": [
@@ -10257,7 +10257,7 @@
       {
         "section": "Legs",
         "fatigue": 28,
-        "readyInHours": 41,
+        "readyInHours": 40.9,
         "daysSince": 0.3
       }
     ],
