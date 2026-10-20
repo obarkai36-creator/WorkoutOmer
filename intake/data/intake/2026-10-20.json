@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-20",
+  "day_number": 115,
+  "in_progress": true,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "Usage credits ran out on the evening of 2026-10-16; session resumed today at 16:00. Macro/supplement detail wasn't tracked for 2026-10-17 through 2026-10-19, and no food items were logged earlier today before the resume either — supplements assumed taken as usual except the Rhinolast nasal spray, skipped (out of stock). Full detailed food logging resumes from this point forward.",
+  "sleep": {
+    "sleep_start": "23:00",
+    "sleep_end": "05:15",
+    "duration_hours": 6.25,
+    "quality": null,
+    "notes": "6.25h (night of 2026-10-19) — a bit short of the 7-9h target band."
+  },
+  "items": [
+    {"time": "05:50", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "10:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:40", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+  ],
+  "workout_today": true,
+  "workout_summary": "Legs day (05:50) — Leg Press 136kg×4×8 (heavier weight, fewer reps than the 132kg×4×12 best — not a PR by est. 1RM). Calf Raises Machine 81kg×4×9, inc. frame (new PR). Glute Extension 59kg×2×6 (ties best exactly). Leg Extensions 111kg×4×12 (ties best exactly). 1 new PR.",
+  "caffeine_shots": 5,
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Sleep logged: 23:00-05:15, 6.25h (night of 2026-10-19) — a bit short of target.",
+    "05:50 double espresso (2 shots) + Legs day workout: Leg Press 136kg×4×8 (not a PR by est. 1RM, heavier but fewer reps) + Calf Raises Machine 81kg×4×9 inc. frame (new PR — est. 1RM 105.3 vs 103.9 prior best) + Glute Extension 59kg×2×6 (ties best) + Leg Extensions 111kg×4×12 (ties best). 1 new PR.",
+    "10:00, 13:00, 15:40 single espresso each (3 shots) — 5 caffeine shots so far today.",
+    "Session resumed at 16:00 after a usage-credit gap since 2026-10-16 evening. No food items tracked yet today — full detailed macro/micro logging resumes from this point forward; supplements assumed taken as usual except the Rhinolast nasal spray (out of stock, skipped)."
+  ],
+  "status_note": "Day in progress. Slept 6.25h (23:00-05:15), a bit short of target. Legs day completed (1 new PR). 5 caffeine shots so far. Session resumed 16:00 after a 4-day usage-credit gap — full food tracking resumes now."
+}

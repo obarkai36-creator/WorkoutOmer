@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-18",
+  "day_number": 113,
+  "in_progress": false,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "Usage credits ran out on the evening of 2026-10-16; session resumed 2026-10-20 at 16:00. Per explicit user instruction, macro/micro food tracking and detailed supplement logging are skipped for this gap (2026-10-17 through 2026-10-20 up to resume time) — supplements are assumed taken as usual except the Rhinolast nasal spray, which was skipped (out of stock). Only workouts, lifestyle events, and sleep were tracked for this window.",
+  "sleep": {
+    "sleep_start": "23:45",
+    "sleep_end": "07:00",
+    "duration_hours": 7.25,
+    "quality": null,
+    "notes": "7.25h (night of 2026-10-17) — within the 7-9h target band. Retainers worn."
+  },
+  "items": [],
+  "workout_today": true,
+  "workout_summary": "Outdoor Run (clock time not given, placeholder 14:45) — 2.25km in 14:45 (6:33/km avg pace). No kcal/cadence/elevation given, no heart-rate monitor worn.",
+  "caffeine_shots": 5,
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Sleep logged: 23:45-07:00, 7.25h (night of 2026-10-17) — within target band. Retainers worn tonight (night of 17-18 Oct) — logged to retainers.json.",
+    "Macro/supplement detail NOT tracked today per explicit user instruction (usage-credit gap, resumed 2026-10-20 16:00) — supplements assumed taken as usual except the Rhinolast nasal spray, skipped (out of stock). Day excluded from monthly macro averages.",
+    "11:00 self (masturbation) — logged in ejaculation.json.",
+    "Caffeine: 2 double espresso (8:00, 13:00, 4 shots) + 1 single espresso (19:00, 1 shot) — 5 caffeine shots today.",
+    "Outdoor Run (clock time not given, placeholder 14:45) — 2.25km in 14:45 (6:33/km avg pace). No kcal/cadence/elevation given."
+  ],
+  "status_note": "Day complete. Slept 7.25h (23:45-07:00), within target, retainers worn. Masturbation logged. Outdoor run completed (2.25km/14:45). 5 caffeine shots. Macros/supplements not tracked (usage-credit gap, excluded from monthly macro averages)."
+}

@@ -170,6 +170,7 @@ const EXERCISE_LIBRARY = {
   "Biceps Curl Machine":    { kind: "strength", muscles: { biceps: 1.0 } },
   "Half Curl":              { kind: "strength", muscles: { biceps: 1.0 } },
   "Cable Curl":             { kind: "strength", muscles: { biceps: 1.0 } }, // hotel-gym substitute for Biceps Curl Machine
+  "Low Pulley Biceps Curl": { kind: "strength", muscles: { biceps: 1.0 } }, // distinct low-pulley cable curl station, not the Biceps Curl Machine
   "Forearm Twists":         { kind: "strength", muscles: { forearms: 1.0 } },
 
   // Calves (Legs)
@@ -216,10 +217,10 @@ const SNAPSHOT = [
   // ---- Chest ----
   { name: "Bench Press",         section: "Chest", latest: { sets: 4, reps: 9, weight: 72.5, text: "72.5kg × 4×9 (new PR)" }, best: { sets: 4, reps: 9, weight: 72.5, text: "72.5kg × 4×9" } },
   { name: "Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Incline Bench Press", section: "Chest", latest: { sets: 3, reps: 7, weight: 65, text: "22.5kg each side + 20kg bar × 3×7 (lighter session)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
+  { name: "Incline Bench Press", section: "Chest", latest: { sets: 3, reps: 10, weight: 65, text: "22.5kg each side + 20kg bar × 3×10 (higher reps, still below best — not a PR)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
   { name: "Incline Dumbbell Bench Press", section: "Chest", latest: { sets: 1, reps: 10, weight: 48, text: "24kg each × 1×10 (abbreviated, 1 set only)" }, best: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" } },
   { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7 (new PR)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
-  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 3, reps: 9, weight: 36, text: "18kg each × 3×9 (ties best, 1 fewer set)" }, best: { sets: 4, reps: 9, weight: 36, text: "18kg each × 4×9" } },
+  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 10, weight: 36, text: "18kg each × 4×10 (new PR, +1 rep on best)" }, best: { sets: 4, reps: 10, weight: 36, text: "18kg each × 4×10" } },
   { name: "Narrow Push-Ups",     section: "Chest", latest: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" }, best: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 6, weight: 73, text: "73kg × 3×6 (deload)" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
@@ -249,27 +250,28 @@ const SNAPSHOT = [
   // ---- Arms: Triceps ----
   { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" } },
   { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10 (hotel gym, new PR)" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
-  { name: "Seated Dips",                      section: "Arms", latest: { sets: 4, reps: 10, weight: 25, text: "12.5kg each side (25kg added) × 4×10 (dip belt — different execution, not comparable to the 94kg machine best)" }, best: { sets: 3, reps: 8, weight: 94, text: "94kg × 3×8" } },
+  { name: "Seated Dips",                      section: "Arms", latest: { sets: 4, reps: 10, weight: 72, text: "36kg each side (72kg added) × 4×10 (dip belt — different execution, not comparable to the 94kg machine best)" }, best: { sets: 3, reps: 8, weight: 94, text: "94kg × 3×8" } },
   { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
   { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 6, weight: 64, text: "64kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
-  { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 3, reps: 8, weight: 12, text: "12kg each × 3×8" }, best: { sets: 4, reps: 8, weight: 12, text: "12kg each × 4×8" } },
+  { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" } },
 
   // ---- Arms: Biceps / Forearms ----
   { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 3, reps: 8, weight: 20, text: "20kg each × 3×8" }, best: { sets: 3, reps: 8, weight: 20, text: "20kg each × 3×8" } },
-  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6" }, best: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6" } },
+  { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 10, weight: 12, text: "12kg each × 4×10 (lighter session, below the 20kg each×3×6 best)" }, best: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
-  { name: "EZ Bar Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 25, text: "7.5kg each + bar × 4×10" }, best: { sets: 4, reps: 10, weight: 25, text: "7.5kg each + bar × 4×10" } },
+  { name: "EZ Bar Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 30, text: "10kg each + bar × 4×10 (new PR)" }, best: { sets: 4, reps: 10, weight: 30, text: "10kg each + bar × 4×10" } },
+  { name: "Low Pulley Biceps Curl", section: "Arms", latest: { sets: 4, reps: 8, weight: 36, text: "36kg × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 36, text: "36kg × 4×8" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 2, reps: 6, weight: 45, text: "45kg × 2×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
   { name: "Half Curl",            section: "Arms", latest: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" } },
   { name: "Cable Curl",           section: "Arms", latest: { sets: 3, reps: 10, weight: 25, text: "25kg × 3×10 (hotel gym, first logged)" }, best: { sets: 3, reps: 10, weight: 25, text: "25kg × 3×10" } },
   { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" } },
 
   // ---- Legs (incl. calves) ----
-  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 8, weight: 81, text: "81kg × 4×8 (inc. frame)" }, best: { sets: 4, reps: 11, weight: 76, text: "76kg × 4×11" } },
+  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 9, weight: 81, text: "81kg × 4×9 (inc. frame, new PR)" }, best: { sets: 4, reps: 9, weight: 81, text: "81kg × 4×9 (inc. frame)" } },
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
   { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 8, weight: 53, text: "26.5kg each × 4×8" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12 (new PR)" }, best: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12" } },
+  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 8, weight: 136, text: "136kg × 4×8 (heavier, fewer reps — below the 132kg×4×12 best by est. 1RM, not a PR)" }, best: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12" } },
   // NOTE: 11 Jul (202kg) is the first entry counting the full setup total
   // (plates each side x2 + sled/frame weight). Earlier entries (e.g. 131kg)
   // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
@@ -303,6 +305,36 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 20 Oct — Legs (05:50)
+  {
+    datetime: "2026-10-20T05:50", note: "Legs day (05:50) — Leg Press 136kg×4×8, logged directly (heavier weight but fewer reps than the 132kg×4×12 best — est. 1RM 172.3 vs 184.8, not a PR). Calf Raises Machine 81kg×4×9 (inc. frame), as suggested (new PR — est. 1RM 105.3 vs 103.9 prior best at 76kg×4×11). Glute Extension 59kg×2×6, ties best exactly. Leg Extensions 111kg×4×12, ties best exactly. 1 new PR. Logged as part of a multi-day catch-up batch after a usage-credit gap (2026-10-16 evening to 2026-10-20 16:00) — macros/supplements not retracked for this window per explicit user instruction, only workouts/lifestyle/sleep.",
+    exercises: [
+      { name: "Leg Press",            sets: [ { reps: 8, weight: 136 }, { reps: 8, weight: 136 }, { reps: 8, weight: 136 }, { reps: 8, weight: 136 } ] },
+      { name: "Calf Raises Machine",  sets: [ { reps: 9, weight: 81 }, { reps: 9, weight: 81 }, { reps: 9, weight: 81 }, { reps: 9, weight: 81 } ] },
+      { name: "Glute Extension",      sets: [ { reps: 6, weight: 59 }, { reps: 6, weight: 59 } ] },
+      { name: "Leg Extensions",       sets: [ { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 } ] },
+    ],
+  },
+  // 18 Oct — Outdoor Run (14:45 placeholder — clock time not given)
+  {
+    datetime: "2026-10-18T14:45", timeUnknown: true, note: "Outdoor Run — clock time not given, placeholder 14:45 — 2.25km in 14:45 (6:33/km avg pace). No kcal/cadence/elevation given, no heart-rate monitor worn. Logged as part of a multi-day catch-up batch after a usage-credit gap.",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 2.25, durationMin: 14.75 },
+    ],
+  },
+  // 17 Oct — Chest + Arms (clock time not given)
+  {
+    datetime: "2026-10-17T10:00", timeUnknown: true, note: "Chest + Arms day — clock time not given, placeholder 10:00. Incline Bench Press 22.5kg each side + 20kg bar (65kg)×3×10, logged directly (higher reps than the 72.5kg×4×7 best but still below it by est. 1RM — 86.7 vs 89.4, not a PR). Seated Dips 36kg each side (72kg added, dip belt)×4×10, logged directly — different execution from the 94kg machine best, not comparable, no PR read (large jump from the prior 25kg-added dip-belt session, flagged for confirmation). EZ Bar Curl 10kg each + bar (30kg)×4×10, logged directly (new PR — est. 1RM 40.0 vs 33.3 prior best at 25kg×4×10). Incline Pec Fly 18kg each (36kg)×4×10, +1 rep on best (new PR — est. 1RM 48.0 vs 46.8 prior best at 36kg×4×9). Low Pulley Biceps Curl 36kg×4×8 — new exercise, added to the catalog and logged for the first time (not a PR, first-ever entry; distinct cable low-pulley curl station from the Biceps Curl Machine). Single-Hand DB Triceps Extension 12kg each×4×9 — this exact result was already logged as a PR on 2026-10-08, but the SNAPSHOT best/latest had stayed stuck at 12kg each×4×8 since then (a stale-data bug, not a fresh PR this session) — corrected to 12kg each×4×9 here. Incline DB Curl 12kg each×4×10, logged directly (lighter session, below the 20kg each×3×6 best, not a PR). 2 new PRs + 1 new exercise added to rotation + 1 stale-SNAPSHOT correction. Logged as part of a multi-day catch-up batch after a usage-credit gap.",
+    exercises: [
+      { name: "Incline Bench Press",                sets: [ { reps: 10, weight: 65 }, { reps: 10, weight: 65 }, { reps: 10, weight: 65 } ] },
+      { name: "Seated Dips",                         sets: [ { reps: 10, weight: 72 }, { reps: 10, weight: 72 }, { reps: 10, weight: 72 }, { reps: 10, weight: 72 } ] },
+      { name: "EZ Bar Curl",                         sets: [ { reps: 10, weight: 30 }, { reps: 10, weight: 30 }, { reps: 10, weight: 30 }, { reps: 10, weight: 30 } ] },
+      { name: "Incline Pec Fly",                     sets: [ { reps: 10, weight: 36 }, { reps: 10, weight: 36 }, { reps: 10, weight: 36 }, { reps: 10, weight: 36 } ] },
+      { name: "Low Pulley Biceps Curl",              sets: [ { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 } ] },
+      { name: "Single-Hand DB Triceps Extension",    sets: [ { reps: 9, weight: 12 }, { reps: 9, weight: 12 }, { reps: 9, weight: 12 }, { reps: 9, weight: 12 } ] },
+      { name: "Incline DB Curl",                     sets: [ { reps: 10, weight: 12 }, { reps: 10, weight: 12 }, { reps: 10, weight: 12 }, { reps: 10, weight: 12 } ] },
+    ],
+  },
   // 15 Oct — Back, hotel gym while traveling (07:00)
   {
     datetime: "2026-10-15T07:00", note: "Back day (07:00, hotel gym) — Row Machine 85.5kg×4×8, logged directly — new exercise, hotel-gym substitute for Diverging Seated Row/Low Row, added to the catalog and given its first SNAPSHOT entry (not a PR, first-ever logged). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Dead Hang 30s+30s+30s — ties the prior best's 90s total hold time (35s+30s+25s) with a more even distribution, not a strict PR. 1 new PR + 1 new exercise added to rotation.",

@@ -1,16 +1,16 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-16",
-    "latest_session": "Back day (07:00, hotel gym) — Row Machine 85.5kg×4×8, logged directly — new exercise, hotel-gym substitute for Diverging Seated Row/Low Row, added to the catalog and given its first SNAPSHOT entry (not a PR, first-ever logged). Dumbbell Pullover 22.5kg×4×10, as suggested (new PR — est. 1RM 30.0 vs 29.25 prior best at 22.5kg×4×9). Dead Hang 30s+30s+30s — ties the prior best's 90s total hold time (35s+30s+25s) with a more even distribution, not a strict PR. 1 new PR + 1 new exercise added to rotation.",
-    "sessions_logged": 80,
-    "sessions_per_week": 3.5,
+    "report_date": "2026-10-20",
+    "latest_session": "Legs day (05:50) — Leg Press 136kg×4×8, logged directly (heavier weight but fewer reps than the 132kg×4×12 best — est. 1RM 172.3 vs 184.8, not a PR). Calf Raises Machine 81kg×4×9 (inc. frame), as suggested (new PR — est. 1RM 105.3 vs 103.9 prior best at 76kg×4×11). Glute Extension 59kg×2×6, ties best exactly. Leg Extensions 111kg×4×12, ties best exactly. 1 new PR. Logged as part of a multi-day catch-up batch after a usage-credit gap (2026-10-16 evening to 2026-10-20 16:00) — macros/supplements not retracked for this window per explicit user instruction, only workouts/lifestyle/sleep.",
+    "sessions_logged": 83,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 22.4,
-    "aerobic_sessions_28d": 8,
-    "avg_pace": "10:22/km",
+    "aerobic_28d_km": 24.7,
+    "aerobic_sessions_28d": 9,
+    "avg_pace": "10:16/km",
     "avg_hr": 142,
-    "acwr": 0.89,
+    "acwr": 1.12,
     "recommended_next": "Back day",
     "alerts": [
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
@@ -535,6 +535,30 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "07:00, hotel gym while traveling. Row Machine 85.5kg×4×8, logged directly — new exercise, hotel-gym substitute for Diverging Seated Row/Low Row, first-ever logged; Dumbbell Pullover 22.5kg×4×10, as suggested, new PR (est. 1RM 30.0 vs 29.25 prior best); Dead Hang 30s+30s+30s, ties the prior best's 90s total hold time (35s+30s+25s), not a strict PR. 1 new PR + 1 new exercise added to rotation.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-17",
+      "type": "Strength — Chest + Arms",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Clock time not given. Incline Bench Press 22.5kg each side + 20kg bar (65kg)×3×10, logged directly, not a PR (est. 1RM 86.7 vs 89.4 prior best); Seated Dips 36kg each side (72kg added, dip belt)×4×10, different execution from the 94kg machine best, not comparable; EZ Bar Curl 10kg each + bar (30kg)×4×10, logged directly, new PR (est. 1RM 40.0 vs 33.3 prior best); Incline Pec Fly 18kg each (36kg)×4×10, +1 rep on best, new PR (est. 1RM 48.0 vs 46.8 prior best); Low Pulley Biceps Curl 36kg×4×8, new exercise, first-ever logged; Single-Hand DB Triceps Extension 12kg each×4×9, corrects a stale SNAPSHOT (this result was already a PR on 2026-10-08 but never saved); Incline DB Curl 12kg each×4×10, lighter session, not a PR. 2 new PRs + 1 new exercise + 1 stale-data correction. Part of a multi-day catch-up batch after a usage-credit gap (2026-10-16 evening to 2026-10-20 16:00).",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-18",
+      "type": "Cardio — Outdoor Run",
+      "duration_min": 14.75,
+      "intensity": "moderate",
+      "notes": "Clock time not given, placeholder 14:45. 2.25km in 14:45 (6:33/km avg pace). No kcal/cadence/elevation given. Part of the same multi-day catch-up batch.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-20",
+      "type": "Strength — Legs",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "05:50. Leg Press 136kg×4×8, logged directly, not a PR (est. 1RM 172.3 vs 184.8 prior best, heavier but fewer reps); Calf Raises Machine 81kg×4×9 (inc. frame), as suggested, new PR (est. 1RM 105.3 vs 103.9 prior best); Glute Extension 59kg×2×6, ties best exactly; Leg Extensions 111kg×4×12, ties best exactly. 1 new PR. Last session of the multi-day catch-up batch; macros/supplements not retracked for the gap window.",
       "_source": "manual log"
     }
   ]

@@ -1,30 +1,135 @@
 {
   "_note": "Dental retainer usage, logged manually. Goal is 2x/week, not nightly. One entry per night worn (or explicitly skipped). Don't ask proactively — only log when volunteered. At EOD, note it once if the last 3 consecutive tracked nights are all worn:false/missing; otherwise say nothing. See CLAUDE.md for the standing rule (added 2026-08-10, reverted to this flat trigger 2026-08-13).",
   "entries": [
-    {"date": "2026-08-10", "worn": false, "note": "Skipped — first tracked night."},
-    {"date": "2026-08-11", "worn": true, "note": "Worn."},
-    {"date": "2026-08-12", "worn": false, "note": "Skipped."},
-    {"date": "2026-08-16", "worn": true, "note": "Worn."},
-    {"date": "2026-08-20", "worn": true, "note": "Worn, night of 20-21 Aug."},
-    {"date": "2026-08-22", "worn": true, "note": "Worn, night of 22-23 Aug."},
-    {"date": "2026-08-26", "worn": true, "note": "Worn, night of 26-27 Aug. Prior 3 nights (23-25 Aug) had no entry logged."},
-    {"date": "2026-08-30", "worn": true, "note": "Worn, night of 30-31 Aug. Prior 3 nights (27-29 Aug) had no entry logged."},
-    {"date": "2026-09-02", "worn": true, "note": "Worn, night of 2-3 Sep. Prior 2 nights (31 Aug-1 Sep, 1-2 Sep) had no entry logged."},
-    {"date": "2026-09-05", "worn": true, "note": "Worn, night of 5-6 Sep. Prior 2 nights (3-4 Sep, 4-5 Sep) had no entry logged."},
-    {"date": "2026-09-06", "worn": false, "note": "Skipped, night of 6-7 Sep — confirmed actually skipped, as agreed (2x/week goal, not nightly)."},
-    {"date": "2026-09-07", "worn": false, "note": "Skipped, night of 7-8 Sep — confirmed actually skipped, as agreed."},
-    {"date": "2026-09-08", "worn": false, "note": "Skipped, night of 8-9 Sep — confirmed actually skipped, as agreed. 3 consecutive skipped nights, flagged at 09-09 EOD (retroactively — see CLAUDE.md correction)."},
-    {"date": "2026-09-09", "worn": true, "note": "Worn, night of 9-10 Sep — as agreed after the 3-skipped-night flag."},
-    {"date": "2026-09-13", "worn": true, "note": "Worn, night of 13-14 Sep. Prior 3 nights (10-12 Sep) had no entry logged."},
-    {"date": "2026-09-17", "worn": true, "note": "Worn, night of 17-18 Sep — flagged at 09-16 EOD for 3 missing nights (09-14/15/16), worn tonight."},
-    {"date": "2026-09-19", "worn": true, "note": "Worn, night of 19-20 Sep. Prior night (18-19 Sep) had no entry logged."},
-    {"date": "2026-09-22", "worn": true, "note": "Worn, night of 22-23 Sep. Prior 2 nights (20-21, 21-22 Sep) had no entry logged."},
-    {"date": "2026-09-26", "worn": true, "note": "Worn, night of 26-27 Sep. No entries for 23-24, 24-25, or 25-26 Sep in between."},
-    {"date": "2026-09-29", "worn": true, "note": "Worn, night of 29-30 Sep. No entries for 27-28 or 28-29 Sep in between."},
-    {"date": "2026-10-02", "worn": true, "note": "Worn, night of 2-3 Oct. No entries for 09-30 or 10-01 in between."},
-    {"date": "2026-10-06", "worn": true, "note": "Worn, night of 6-7 Oct — flagged at 10-05 EOD for 3 missing nights (10-03/04/05), worn tonight."},
-    {"date": "2026-10-10", "worn": true, "note": "Worn, night of 10-11 Oct — flagged at 10-09 EOD for 3 missing nights (10-07/08/09), worn tonight."},
-    {"date": "2026-10-13", "worn": false, "note": "Skipped, night of 13-14 Oct — confirmed actually skipped. 3 consecutive no-entry/skipped nights (10-11, 10-12, 10-13), hitting the flag threshold — noting once per the standing rule."},
-    {"date": "2026-10-14", "worn": true, "note": "Worn, night of 14-15 Oct — flagged at 10-13 EOD for 3 missing/skipped nights (10-11/12/13), worn tonight."}
+    {
+      "date": "2026-08-10",
+      "worn": false,
+      "note": "Skipped — first tracked night."
+    },
+    {
+      "date": "2026-08-11",
+      "worn": true,
+      "note": "Worn."
+    },
+    {
+      "date": "2026-08-12",
+      "worn": false,
+      "note": "Skipped."
+    },
+    {
+      "date": "2026-08-16",
+      "worn": true,
+      "note": "Worn."
+    },
+    {
+      "date": "2026-08-20",
+      "worn": true,
+      "note": "Worn, night of 20-21 Aug."
+    },
+    {
+      "date": "2026-08-22",
+      "worn": true,
+      "note": "Worn, night of 22-23 Aug."
+    },
+    {
+      "date": "2026-08-26",
+      "worn": true,
+      "note": "Worn, night of 26-27 Aug. Prior 3 nights (23-25 Aug) had no entry logged."
+    },
+    {
+      "date": "2026-08-30",
+      "worn": true,
+      "note": "Worn, night of 30-31 Aug. Prior 3 nights (27-29 Aug) had no entry logged."
+    },
+    {
+      "date": "2026-09-02",
+      "worn": true,
+      "note": "Worn, night of 2-3 Sep. Prior 2 nights (31 Aug-1 Sep, 1-2 Sep) had no entry logged."
+    },
+    {
+      "date": "2026-09-05",
+      "worn": true,
+      "note": "Worn, night of 5-6 Sep. Prior 2 nights (3-4 Sep, 4-5 Sep) had no entry logged."
+    },
+    {
+      "date": "2026-09-06",
+      "worn": false,
+      "note": "Skipped, night of 6-7 Sep — confirmed actually skipped, as agreed (2x/week goal, not nightly)."
+    },
+    {
+      "date": "2026-09-07",
+      "worn": false,
+      "note": "Skipped, night of 7-8 Sep — confirmed actually skipped, as agreed."
+    },
+    {
+      "date": "2026-09-08",
+      "worn": false,
+      "note": "Skipped, night of 8-9 Sep — confirmed actually skipped, as agreed. 3 consecutive skipped nights, flagged at 09-09 EOD (retroactively — see CLAUDE.md correction)."
+    },
+    {
+      "date": "2026-09-09",
+      "worn": true,
+      "note": "Worn, night of 9-10 Sep — as agreed after the 3-skipped-night flag."
+    },
+    {
+      "date": "2026-09-13",
+      "worn": true,
+      "note": "Worn, night of 13-14 Sep. Prior 3 nights (10-12 Sep) had no entry logged."
+    },
+    {
+      "date": "2026-09-17",
+      "worn": true,
+      "note": "Worn, night of 17-18 Sep — flagged at 09-16 EOD for 3 missing nights (09-14/15/16), worn tonight."
+    },
+    {
+      "date": "2026-09-19",
+      "worn": true,
+      "note": "Worn, night of 19-20 Sep. Prior night (18-19 Sep) had no entry logged."
+    },
+    {
+      "date": "2026-09-22",
+      "worn": true,
+      "note": "Worn, night of 22-23 Sep. Prior 2 nights (20-21, 21-22 Sep) had no entry logged."
+    },
+    {
+      "date": "2026-09-26",
+      "worn": true,
+      "note": "Worn, night of 26-27 Sep. No entries for 23-24, 24-25, or 25-26 Sep in between."
+    },
+    {
+      "date": "2026-09-29",
+      "worn": true,
+      "note": "Worn, night of 29-30 Sep. No entries for 27-28 or 28-29 Sep in between."
+    },
+    {
+      "date": "2026-10-02",
+      "worn": true,
+      "note": "Worn, night of 2-3 Oct. No entries for 09-30 or 10-01 in between."
+    },
+    {
+      "date": "2026-10-06",
+      "worn": true,
+      "note": "Worn, night of 6-7 Oct — flagged at 10-05 EOD for 3 missing nights (10-03/04/05), worn tonight."
+    },
+    {
+      "date": "2026-10-10",
+      "worn": true,
+      "note": "Worn, night of 10-11 Oct — flagged at 10-09 EOD for 3 missing nights (10-07/08/09), worn tonight."
+    },
+    {
+      "date": "2026-10-13",
+      "worn": false,
+      "note": "Skipped, night of 13-14 Oct — confirmed actually skipped. 3 consecutive no-entry/skipped nights (10-11, 10-12, 10-13), hitting the flag threshold — noting once per the standing rule."
+    },
+    {
+      "date": "2026-10-14",
+      "worn": true,
+      "note": "Worn, night of 14-15 Oct — flagged at 10-13 EOD for 3 missing/skipped nights (10-11/12/13), worn tonight."
+    },
+    {
+      "date": "2026-10-17",
+      "worn": true,
+      "note": "Worn, night of 17-18 Oct — volunteered during a multi-day catch-up log."
+    }
   ]
 }

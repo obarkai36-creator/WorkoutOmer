@@ -1,5 +1,22 @@
 # Session notes
 
+- Usage-credit gap, macro/supplement tracking skipped (2026-10-16 evening
+  through 2026-10-20 16:00): session ran out of usage credits after the
+  2026-10-16 EOD close-out, resumed 2026-10-20 at 16:00. User explicitly
+  said: "Not retracking macros and supplements (consider them as taken
+  except for spray, im out), tracking lifestyle and workouts." Per this,
+  2026-10-17 through 2026-10-19 (full days) plus 2026-10-20 up to the
+  16:00 resume point have NO detailed food/supplement items logged —
+  supplements are assumed taken as usual (Mayven, essential-5, omega-3,
+  creatine, etc.) except the Rhinolast nasal spray, which was explicitly
+  NOT taken (out of stock) — don't log spray doses for this window, and
+  flag the user needs to restock. Workouts (data.js/workouts.json),
+  lifestyle events (masturbation, retainers, alcohol), caffeine, and sleep
+  were all logged normally/retroactively from the user's batch recap.
+  2026-10-17/18/19 and the 10-20 pre-resume portion are marked
+  `exclude_from_monthly_macros: true`. Full detailed food logging resumed
+  2026-10-20 from 16:00 onward without being asked.
+
 - Macro tracking break (2026-10-09 through 2026-10-11, inclusive; resume
   2026-10-12): user explicitly asked to skip exact food macro/micro logging
   for this window. Only log supplements/medication (with their usual

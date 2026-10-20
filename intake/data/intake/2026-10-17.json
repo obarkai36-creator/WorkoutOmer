@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-17",
+  "day_number": 112,
+  "in_progress": false,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "Usage credits ran out on the evening of 2026-10-16; session resumed 2026-10-20 at 16:00. Per explicit user instruction, macro/micro food tracking and detailed supplement logging are skipped for this gap (2026-10-17 through 2026-10-20 up to resume time) — supplements are assumed taken as usual except the Rhinolast nasal spray, which was skipped (out of stock). Only workouts, lifestyle events, and sleep were tracked for this window.",
+  "sleep": {
+    "sleep_start": "23:30",
+    "sleep_end": "06:45",
+    "duration_hours": 7.25,
+    "quality": null,
+    "notes": "7.25h (night of 2026-10-16) — within the 7-9h target band."
+  },
+  "items": [],
+  "workout_today": true,
+  "workout_summary": "Chest + Arms day (clock time not given, placeholder 10:00) — Incline Bench Press 65kg×3×10 (higher reps, still below best, not a PR). Seated Dips 72kg added (dip belt)×4×10 (different execution from the machine best, not comparable). EZ Bar Curl 30kg×4×10 (new PR). Incline Pec Fly 36kg×4×10 (new PR, +1 rep on best). Low Pulley Biceps Curl 36kg×4×8 — new exercise, first logged. Single-Hand DB Triceps Extension 12kg each×4×9 — corrects a stale SNAPSHOT (this result was already a PR on 2026-10-08 but never saved). Incline DB Curl 12kg each×4×10 (lighter session, not a PR). 2 new PRs + 1 new exercise + 1 stale-data correction.",
+  "caffeine_shots": 0,
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Sleep logged: 23:30-06:45, 7.25h (night of 2026-10-16) — within target band.",
+    "Macro/supplement detail NOT tracked today per explicit user instruction (usage-credit gap, resumed 2026-10-20 16:00) — supplements assumed taken as usual except the Rhinolast nasal spray, skipped (out of stock). Day excluded from monthly macro averages.",
+    "Chest + Arms day (clock time not given, placeholder 10:00): full exercise-by-exercise breakdown in workout_summary. 2 new PRs (EZ Bar Curl, Incline Pec Fly) + 1 new exercise (Low Pulley Biceps Curl, added to EXERCISE_LIBRARY and SNAPSHOT) + 1 stale-SNAPSHOT correction (Single-Hand DB Triceps Extension). Seated Dips' dip-belt jump (25kg added -> 72kg added) is a large one-session increase, flagged for confirmation.",
+    "11:00 self (masturbation) — logged in ejaculation.json."
+  ],
+  "status_note": "Day complete. Slept 7.25h (23:30-06:45), within target. Chest + Arms workout completed (2 new PRs + 1 new exercise + 1 stale-data correction). Masturbation logged. Macros/supplements not tracked (usage-credit gap, excluded from monthly macro averages)."
+}
