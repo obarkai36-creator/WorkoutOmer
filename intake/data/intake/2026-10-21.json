@@ -15,19 +15,21 @@
     {"time": "07:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:00", "name": "Yoplait GO coconut-flavor protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 115, "protein_g": 20, "carbs_g": 6.6, "fat_g": 0.8, "fiber_g": 0, "note": "same verified reference as prior entries (yoplait_coconut_protein_yogurt_generic)."},
     {"time": "09:30", "name": "Yellow cheese, 9% (Tnuva Emek Light)", "category": "food", "qty": "1 slice (25 g)", "kcal": 50, "protein_g": 7.5, "carbs_g": 0, "fat_g": 2.25, "fiber_g": 0, "note": "verified label reference, same as prior entries (tnuva_emek_light_yellow_cheese_9pct)."},
-    {"time": "09:30", "name": "Cherry tomatoes", "category": "food", "qty": "3 pieces", "kcal": 7.95, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."}
+    {"time": "09:30", "name": "Cherry tomatoes", "category": "food", "qty": "3 pieces", "kcal": 7.95, "protein_g": 0.41, "carbs_g": 1.76, "fat_g": 0.09, "fiber_g": 0.54, "note": "same standard reference as prior entries. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."},
+    {"time": "11:00", "name": "Cottage cheese", "category": "food", "qty": "50 g", "kcal": 49, "protein_g": 5.5, "carbs_g": 1.7, "fat_g": 2.15, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic, ~98kcal/100g)."},
+    {"time": "11:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "workout_today": false,
   "workout_summary": null,
   "caffeine_shots": 1,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 107.65,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 6.6,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1006.6,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 1.32
   },
   "assumptions": [
@@ -35,7 +37,8 @@
     "05:45 Bilaxten (bilastine pill, morning) — no Rhinolast spray logged, still out of stock. Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
     "07:30 espresso, 1 single (1 caffeine shot).",
     "09:00 Yoplait GO coconut-flavor protein yogurt, 1 cup (200g, same verified reference as prior entries). Full detailed food + supplement logging resumes today as planned.",
-    "09:30 1 yellow cheese slice (9%, verified reference) + 3 cherry tomatoes (standard reference, credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE)."
+    "09:30 1 yellow cheese slice (9%, verified reference) + 3 cherry tomatoes (standard reference, credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE).",
+    "11:00 50g cottage cheese (same generic reference as prior entries) + essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E."
   ],
-  "status_note": "Day in progress. Slept only 5.17h (00:20-05:30), a short night below target. AM pill + Mayven + espresso + yogurt + cheese/tomatoes logged. Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept only 5.17h (00:20-05:30), a short night below target. AM pill + Mayven + espresso + yogurt + cheese/tomatoes + cottage cheese/essential-5 logged. Still out of Rhinolast spray — worth restocking."
 }
