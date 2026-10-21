@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "high_protein_hot_spicy_chips_verified",
+      "name": "High-protein Hot & Spicy chips (plant-based pea/wheat/soy protein), verified label",
+      "serving": "100 g",
+      "kcal": 417,
+      "protein_g": 52.4,
+      "carbs_g": 12,
+      "fat_g": 13.3,
+      "fiber_g": 20,
+      "verified": true,
+      "source": "Photographed nutrition label, 2026-10-21: 417kcal, 13.3g fat (3.9g saturated, <0.5g trans), 0mg cholesterol, 900mg sodium, 12g carbs (1.5g sugars), 20g fiber, 52.4g protein per 100g. Plant-based protein chips (65% hydrolyzed wheat/soy/carob seed protein), Hot & Spicy seasoning. Contains wheat, barley (gluten), soy; may contain sesame. Brand name not visible in the photo."
+    },
+    {
       "id": "duck_breast_skinless_roasted_generic",
       "name": "Duck breast, skinless, roasted (generic)",
       "serving": "100 g",
