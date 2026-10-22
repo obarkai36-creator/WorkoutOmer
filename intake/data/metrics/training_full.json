@@ -1,5 +1,5 @@
 {
-  "now": 1792638263296,
+  "now": 1792638290489,
   "workouts": [
     {
       "datetime": "2026-10-20T05:50",
@@ -10113,7 +10113,7 @@
     "fatigue": 9,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-22T03:04:23.296Z",
+    "readyAt": "2026-10-22T03:04:50.489Z",
     "neverLogged": false,
     "daysSince": 13.5,
     "suggestedExercises": [
@@ -10826,15 +10826,22 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-10-21",
-      "start": "00:20",
-      "end": "05:30",
-      "hours": 5.17,
-      "note": "5.17h, below the 7-9h target band."
+      "date": "2026-10-22",
+      "start": "22:30",
+      "end": "06:00",
+      "hours": 7.5,
+      "note": "7.5h, within the 7-9h target band."
     },
-    "avg7": 6.4,
-    "status": "low",
+    "avg7": 6.6,
+    "status": "good",
     "history": [
+      {
+        "date": "2026-10-22",
+        "start": "22:30",
+        "end": "06:00",
+        "hours": 7.5,
+        "note": "7.5h, within the 7-9h target band."
+      },
       {
         "date": "2026-10-21",
         "start": "00:20",
