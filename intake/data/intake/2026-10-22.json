@@ -2,6 +2,8 @@
   "date": "2026-10-22",
   "day_number": 117,
   "in_progress": true,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User explicitly asked to skip food macro/micro tracking today (2026-10-22), one-off day. Supplements/medication, caffeine, workouts, sleep, and lifestyle events still logged as usual.",
   "sleep": {
     "sleep_start": "22:30",
     "sleep_end": "06:00",
@@ -29,7 +31,8 @@
   },
   "assumptions": [
     "Sleep logged: 22:30-06:00, 7.5h (night of 2026-10-21) — within target band.",
-    "Pill (Bilaxten), double espresso, and Mayven all logged as happening before 6:30 — exact individual times not given, all placed at 06:30 as a placeholder. No Rhinolast spray, still out of stock."
+    "Pill (Bilaxten), double espresso, and Mayven all logged as happening before 6:30 — exact individual times not given, all placed at 06:30 as a placeholder. No Rhinolast spray, still out of stock.",
+    "No food macro/micro tracking today, per explicit user request — supplements/medication, caffeine, workouts, sleep, and lifestyle events still get logged as usual. Day excluded from monthly macro averages."
   ],
-  "status_note": "Day in progress. Slept 7.5h (22:30-06:00), within target. AM pill + double espresso + Mayven logged (before 6:30). Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept 7.5h (22:30-06:00), within target. AM pill + double espresso + Mayven logged (before 6:30). No food tracking today, per request. Still out of Rhinolast spray — worth restocking."
 }
