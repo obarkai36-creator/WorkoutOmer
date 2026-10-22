@@ -1,5 +1,5 @@
 {
-  "now": 1792640910402,
+  "now": 1792648873206,
   "workouts": [
     {
       "datetime": "2026-10-20T05:50",
@@ -8529,7 +8529,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "ready": true
     },
@@ -8545,8 +8545,8 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 31,
-      "readyInHours": 2.4,
+      "pct": 30,
+      "readyInHours": 0.2,
       "ready": false
     },
     "hamstrings": {
@@ -8561,7 +8561,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 16,
+      "pct": 15,
       "readyInHours": 0,
       "ready": true
     },
@@ -8577,7 +8577,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     },
@@ -8646,7 +8646,7 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "muscles": [
         {
@@ -8661,7 +8661,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 4,
+          "pct": 3,
           "readyInHours": 0,
           "ready": true
         },
@@ -8677,22 +8677,22 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 14,
-      "readyInHours": 2.4,
+      "pct": 13,
+      "readyInHours": 0.2,
       "muscles": [
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 31,
-          "readyInHours": 2.4,
+          "pct": 30,
+          "readyInHours": 0.2,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 16,
+          "pct": 15,
           "readyInHours": 0,
           "ready": true
         },
@@ -8700,7 +8700,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 12,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         },
@@ -10073,14 +10073,14 @@
       },
       {
         "label": "-4w",
-        "stress": 247,
-        "sessions": 3,
+        "stress": 276,
+        "sessions": 4,
         "acwr": 0.54
       },
       {
         "label": "-3w",
-        "stress": 719,
-        "sessions": 5,
+        "stress": 690,
+        "sessions": 4,
         "acwr": 0.82
       },
       {
@@ -10106,16 +10106,16 @@
     "chronic": 63.62,
     "acwr": 0.73,
     "acwrZone": "detraining",
-    "sessions28": 16
+    "sessions28": 15
   },
   "recommendation": {
     "section": "Chest",
     "fatigue": 9,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-22T03:48:30.402Z",
+    "readyAt": "2026-10-22T06:01:13.206Z",
     "neverLogged": false,
-    "daysSince": 13.5,
+    "daysSince": 13.6,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -10236,31 +10236,31 @@
         "section": "Chest",
         "fatigue": 9,
         "readyInHours": 0,
-        "daysSince": 13.5
+        "daysSince": 13.6
       },
       {
         "section": "Shoulders",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 8.8
+        "daysSince": 8.9
       },
       {
         "section": "Back",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 6.9
+        "daysSince": 7
       },
       {
         "section": "Arms",
-        "fatigue": 3,
+        "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 4.7
+        "daysSince": 4.8
       },
       {
         "section": "Legs",
-        "fatigue": 14,
-        "readyInHours": 2.4,
-        "daysSince": 1.9
+        "fatigue": 13,
+        "readyInHours": 0.2,
+        "daysSince": 2
       }
     ],
     "suggestedCount": 4,
@@ -10268,7 +10268,7 @@
     "typicalSessionSize": 4,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 3.5
+    "daysSinceAerobic": 3.6
   },
   "alerts": [
     {
@@ -10289,7 +10289,7 @@
   "timing": {
     "avgGap": 2.9,
     "longestGap": 35.7,
-    "perWeek": 4,
+    "perWeek": 3.8,
     "avgHour": 14,
     "todPref": "afternoon",
     "dow": [
@@ -10301,7 +10301,7 @@
       17,
       19
     ],
-    "daysSinceLast": 1.9,
+    "daysSinceLast": 2,
     "total": 83
   },
   "relstrength": {
@@ -10353,7 +10353,7 @@
     "any": true,
     "count": 42,
     "km7": 2.3,
-    "km28": 24.7,
+    "km28": 21.7,
     "totalKm": 159.8,
     "longest": 13.35,
     "avgHr": 142,
@@ -10368,7 +10368,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 3.5,
+    "daysSinceLast": 3.6,
     "recent": [
       {
         "t": 1792334700000,
