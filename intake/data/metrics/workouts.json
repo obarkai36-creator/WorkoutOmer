@@ -1,7 +1,7 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-20",
+    "report_date": "2026-10-22",
     "latest_session": "Legs day (05:50) — Leg Press 136kg×4×8, logged directly (heavier weight but fewer reps than the 132kg×4×12 best — est. 1RM 172.3 vs 184.8, not a PR). Calf Raises Machine 81kg×4×9 (inc. frame), as suggested (new PR — est. 1RM 105.3 vs 103.9 prior best at 76kg×4×11). Glute Extension 59kg×2×6, ties best exactly. Leg Extensions 111kg×4×12, ties best exactly. 1 new PR. Logged as part of a multi-day catch-up batch after a usage-credit gap (2026-10-16 evening to 2026-10-20 16:00) — macros/supplements not retracked for this window per explicit user instruction, only workouts/lifestyle/sleep.",
     "sessions_logged": 83,
     "sessions_per_week": 4,
@@ -10,9 +10,10 @@
     "aerobic_sessions_28d": 9,
     "avg_pace": "10:16/km",
     "avg_hr": 142,
-    "acwr": 1.12,
+    "acwr": 0.73,
     "recommended_next": "Back day",
     "alerts": [
+      "Load ratio 0.73 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
