@@ -1,7 +1,8 @@
 {
   "date": "2026-10-22",
   "day_number": 117,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 7500,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "User explicitly asked to skip food macro/micro tracking today (2026-10-22), one-off day. Supplements/medication, caffeine, workouts, sleep, and lifestyle events still logged as usual.",
   "sleep": {
@@ -20,7 +21,8 @@
     {"time": "14:10", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "16:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
-    {"time": "16:55", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
+    {"time": "16:55", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "22:15", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "workout_today": false,
   "workout_summary": null,
@@ -42,7 +44,9 @@
     "09:00 espresso, 1 single.",
     "13:00 and 14:10 espresso, 1 single each (5 caffeine shots today).",
     "15:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
-    "16:00 espresso, 1 single (6 caffeine shots today) + 16:55 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E. Zinc/selenium/vitamin C/D/E all cleared for the day."
+    "16:00 espresso, 1 single (6 caffeine shots today) + 16:55 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E. Zinc/selenium/vitamin C/D/E all cleared for the day.",
+    "22:15 partnered ejaculation — logged in ejaculation.json. Creatine monohydrate, 5g — zero kcal/macros.",
+    "EOD: 7,500 steps. No retainers entry volunteered tonight — only 1 night missing since the last logged night (2026-10-21, worn), below the 3-night flag threshold, so no note per the standing rule."
   ],
-  "status_note": "Day in progress. Slept 7.5h (22:30-06:00), within target. AM pill + double espresso + Mayven + 4 more espressos + omega-3 + essential-5 logged (6 caffeine shots). No food tracking today, per request. Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day complete. Slept 7.5h (22:30-06:00), within target. AM pill + double espresso + Mayven + 4 more espressos + omega-3 + essential-5 + creatine logged (6 caffeine shots). No food tracking today, per request. Partnered ejaculation at 22:15. 7,500 steps. Still out of Rhinolast spray — worth restocking."
 }
