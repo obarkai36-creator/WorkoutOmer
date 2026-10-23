@@ -14,7 +14,10 @@
     {"time": "08:00", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "09:45", "name": "Yoplait GO coconut-flavor protein yogurt", "category": "food", "qty": "1 cup (200 g)", "kcal": 115, "protein_g": 20, "carbs_g": 6.6, "fat_g": 0.8, "fiber_g": 0, "note": "same verified reference as prior entries (yoplait_coconut_protein_yogurt_generic)."},
     {"time": "09:45", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter", "category": "food", "qty": "~9 g", "kcal": 27.54, "protein_g": 2.79, "carbs_g": 3.96, "fat_g": 1.26, "fiber_g": 2.25, "note": "verified label reference, same as prior entries (catalina_crunch_choc_pb_cereal): 306kcal/31g protein/44g carb/14g fat/25g fiber per 100g."},
-    {"time": "10:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+    {"time": "10:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "11:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "11:30", "name": "Yellow cheese, 9% (Tnuva Emek Light)", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference, same as prior entries (tnuva_emek_light_yellow_cheese_9pct)."},
+    {"time": "11:30", "name": "Green grapes, seedless", "category": "food", "qty": "4 pieces (~20 g)", "kcal": 13.8, "protein_g": 0.14, "carbs_g": 3.62, "fat_g": 0.03, "fiber_g": 0.18, "note": "same standard reference as prior entries (~5g/grape). Credits ~2.16mg vitamin C."}
   ],
   "workout_today": true,
   "workout_summary": "Chest + Arms day (10:08) — Bench Press 75kg×3×10 (new PR). Incline Pec Fly 36kg×4×11, as suggested (+1 rep on best, new PR). Seated Dips 99kg added (dip belt)×4×8 (different execution from the machine best, not comparable). EZ Bar Curl 30kg×4×8 (lighter session, not a PR). Incline Hammer Curl 14kg each×4×10 (lighter session, not a PR). 2 new PRs.",
@@ -24,7 +27,7 @@
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 2.16,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
@@ -34,7 +37,8 @@
     "08:00 Bilaxten (bilastine pill, morning) — no Rhinolast spray, still out of stock + double espresso (2 caffeine shots).",
     "09:45 Yoplait GO coconut-flavor protein yogurt, 1 cup (200g, same verified reference as prior entries) + ~9g Catalina Crunch Protein Cereal, Chocolate Peanut Butter (same verified reference as prior entries, 306kcal/31p/44c/14f/25fiber per 100g).",
     "10:00 Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
-    "10:08 Chest + Arms day: Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly, new PR (est. 1RM 100.0 vs 94.25 prior best). Incline Pec Fly 18kg each (36kg)×4×11, as suggested, new PR (+1 rep on best, est. 1RM 49.2 vs 48.0 prior best). Seated Dips 49.5kg each side (99kg added, dip belt)×4×8 — different execution from the 94kg machine best, not comparable. EZ Bar Curl 10kg each + bar (30kg)×4×8 — lighter session, below the 4×10 best, not a PR. Incline Hammer Curl 14kg each×4×10 — lighter session, below the 20kg each×3×8 best, not a PR. 2 new PRs. bal.pushPull still in healthy range."
+    "10:08 Chest + Arms day: Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly, new PR (est. 1RM 100.0 vs 94.25 prior best). Incline Pec Fly 18kg each (36kg)×4×11, as suggested, new PR (+1 rep on best, est. 1RM 49.2 vs 48.0 prior best). Seated Dips 49.5kg each side (99kg added, dip belt)×4×8 — different execution from the 94kg machine best, not comparable. EZ Bar Curl 10kg each + bar (30kg)×4×8 — lighter session, below the 4×10 best, not a PR. Incline Hammer Curl 14kg each×4×10 — lighter session, below the 20kg each×3×8 best, not a PR. 2 new PRs. bal.pushPull still in healthy range.",
+    "11:30 creatine monohydrate, 5g — zero kcal/macros + 2 yellow cheese slices (9%, verified reference) + 4 green grapes (~20g, standard reference, credits ~2.16mg vitamin C)."
   ],
-  "status_note": "Day in progress. Slept 8h (23:45-07:45), a solid full night. AM pill + double espresso + yogurt + cereal + Mayven logged. Chest + Arms day completed (2 new PRs). Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept 8h (23:45-07:45), a solid full night. AM pill + double espresso + yogurt + cereal + Mayven + creatine/cheese/grapes logged. Chest + Arms day completed (2 new PRs). Still out of Rhinolast spray — worth restocking."
 }
