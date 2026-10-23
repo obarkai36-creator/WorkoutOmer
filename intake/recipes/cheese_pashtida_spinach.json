@@ -1,0 +1,109 @@
+{
+  "id": "cheese_pashtida_spinach",
+  "name": "Cheese pashtida — with spinach, optimized (פשטידת גבינות ותרד)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Optimized version of cheese_pashtida_base",
+    "captured": "2026-10-23",
+    "notes": "Dual-lens-optimized version of cheese_pashtida_base, adopted per user request (user chose spinach as the add-in the base recipe offered as optional). Changes from the base: 150 g fresh spinach folded in raw (wilts in the bake — the single biggest fix, since the base recipe has almost no folate/fiber without a vegetable), feta trimmed from 250 g to 180 g to cut sodium, flour swapped to whole spelt, no added salt anywhere. Everything else identical (4 eggs, cottage, white cheese, yellow cheese, cream cheese, baking powder). Analyzed for the whole bake; per_serving = batch ÷ 8 (~190 g). Raw-spinach folate is used for the batch total; actual folate retention after baking is somewhat lower (egg custards shield it better than boiling, but some loss is normal) — still a large net gain over the base recipe's near-zero folate. Estimate."
+  },
+  "servings": 8,
+  "serving_desc": "≈190 g slice (batch ÷8) — side or light main; 2 slices = a fuller meal",
+  "ingredients": [
+    {"item": "eggs", "qty": "4"},
+    {"item": "cottage cheese 5%", "qty": "1 cup (~225 g)"},
+    {"item": "white cheese 5% (gvina levana)", "qty": "2 tbsp (~30 g)"},
+    {"item": "whole-spelt flour", "qty": "2 tbsp (~20 g)", "note": "whole-grain swap for fiber vs the base recipe's white flour"},
+    {"item": "baking powder", "qty": "1 heaping tsp"},
+    {"item": "yellow cheese 9%, sliced/chopped", "qty": "3 slices (~60 g)"},
+    {"item": "feta cheese 5%", "qty": "180 g", "note": "trimmed from the base recipe's 250 g — cuts sodium, keeps the tang"},
+    {"item": "cream cheese 5% (Hemed-style)", "qty": "50–60 g"},
+    {"item": "fresh spinach, roughly chopped", "qty": "150 g", "note": "folded in raw — the big nutritional fix vs the base recipe"},
+    {"item": "salt", "qty": "none — omitted on purpose", "note": "feta + yellow cheese already salt the dish"}
+  ],
+  "steps": [
+    "Whisk the eggs; mix in the cottage, white cheese, whole-spelt flour and baking powder.",
+    "Fold in the yellow cheese, feta, cream cheese and the raw chopped spinach.",
+    "Pour into a greased/lined baking dish and level the top.",
+    "Bake at 180 °C, top-bottom heat, ~35-45 min until set (not wobbly) and golden on top; a knife in the middle should come out clean.",
+    "Rest 10 min before slicing."
+  ],
+  "per_serving": {
+    "kcal": 127,
+    "protein_g": 12.5,
+    "carbs_g": 4.8,
+    "fat_g": 6.6,
+    "fiber_g": 0.7,
+    "micros": {
+      "folate_mcg_dfe": 44,
+      "calcium_mg": 150,
+      "sodium_mg": 355,
+      "choline_mg": 75,
+      "iron_mg": 0.9,
+      "saturated_fat_g": 3.8
+    }
+  },
+  "batch_totals": {
+    "kcal": 1015,
+    "protein_g": 100,
+    "carbs_g": 39,
+    "fat_g": 53,
+    "fiber_g": 5.3,
+    "sodium_mg": 2840,
+    "calcium_mg": 1180,
+    "folate_mcg_dfe": 355,
+    "note": "Whole bake (8 slices), optimized. Vs the base recipe (per slice ~131 kcal / 12.8 g protein / ~0.1 g fiber / ~430 mg sodium / near-zero folate): nearly identical protein, meaningfully more fiber (spinach), real folate (spinach's biggest contribution), and lower sodium (trimmed feta + no added salt)."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 9,
+      "verdict": "This is the version of the cheese pashtida worth making: still ~12.5 g protein for only 127 kcal (~9.9 g protein per 100 kcal — essentially unchanged from the base, still near the top of your library), but now with real fiber and folate from 150 g of spinach, and lower sodium from trimming the feta and skipping added salt. The egg-and-four-cheese base was already an excellent protein source; folding in the vegetable the original poster suggested fixes its one real gap without costing you anything on protein or calories.",
+      "flags": [
+        "~12.5 g protein / 127 kcal slice (~9.9 g protein per 100 kcal)",
+        "~0.7 g fiber/slice — spinach turns this from near-zero to a real contribution",
+        "lower sodium (~355 mg/slice) — trimmed feta + no added salt",
+        "still very high calcium + choline from eggs/cheeses",
+        "near-identical protein and calories to the base recipe"
+      ],
+      "suggested_mods": [
+        "Great as-is; pair with a lean protein for a fuller cut meal",
+        "Push spinach to 200 g if you want even more fiber/folate — macros barely move",
+        "Serve with tomato for a vitamin-C boost alongside the iron"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 8,
+      "verdict": "A big step up from the base recipe for her: 150 g of spinach is a genuine folate contributor (her #1 preconception nutrient), on top of the choline (4 eggs), calcium and protein the cheese base already brought — and sodium is now meaningfully lower. Fully baked custard, so the spinach and eggs are cooked through. One flag carries over: feta is a brined cheese, baked through here (cooked = considered safe), but verify it's pasteurized. This is now a dish worth making for her regularly, not just an occasional protein source.",
+      "prenatal_highlights": [
+        "real folate from 150 g spinach — her top preconception nutrient, missing in the base recipe",
+        "choline (4 eggs) + calcium + protein (4 cheeses)",
+        "lower sodium than the base; fully baked"
+      ],
+      "safety_advisories": [
+        {"note": "Feta is a brined cheese — Listeria risk unless pasteurized. It's baked through here (cooked = considered safe); verify it's a pasteurized feta.", "swap": "verify pasteurized, or use more cottage/white cheese in its place"}
+      ],
+      "suggested_mods": [
+        "No changes needed — this is now a solid folate + protein + calcium dish for her",
+        "Serve with tomato/pepper for extra vitamin C to aid iron absorption"
+      ]
+    }
+  },
+  "tags": ["bake", "pashtida", "cheese", "spinach", "vegetarian", "high-protein", "high-folate", "whole-grain", "low-sodium", "baked", "eggs"],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-10-23 as the spinach-optimized version of the cheese pashtida (supersedes cheese_pashtida_base for actual use — user chose spinach as the add-in). Per slice (of 8, ~190 g): ~127 kcal, 12.5 g protein, 0.7 g fiber, ~44 mcg DFE folate, ~355 mg sodium. him 9 / her 8. Standing spec: 150 g fresh spinach folded in raw, feta trimmed to 180 g, whole-spelt flour, no added salt. Bake 180 C top-bottom ~35-45 min. Verify feta pasteurized.",
+  "created": "2026-10-23",
+  "updated": "2026-10-23",
+  "serving_g": 190,
+  "meal_type": "Bread",
+  "cooking_guide": [
+    "Whisk the eggs well, then stir in the cottage cheese, white cheese, whole-spelt flour and baking powder until smooth.",
+    "Fold in the chopped yellow cheese, crumbled feta, cream cheese, and the raw chopped spinach — no need to pre-cook it, it wilts fully in the bake.",
+    "Taste the raw batter before considering any salt — the feta and yellow cheese almost certainly cover it; this version adds none.",
+    "Pour into a greased or lined baking dish and level the top.",
+    "Bake at 180 °C with top-bottom heat ~35-45 min until the center is set (not wobbly) and the top is golden; a knife in the middle should come out clean. Check your specific pan size — a wider/shallower dish bakes faster.",
+    "Rest 10 min before slicing so it holds together.",
+    "Tip: a little lemon zest or fresh dill folded in with the spinach brightens the whole dish."
+  ]
+}
