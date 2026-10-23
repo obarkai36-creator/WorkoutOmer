@@ -1,7 +1,8 @@
 {
   "date": "2026-10-23",
   "day_number": 118,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 4500,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "User explicitly asked to skip food macro/micro tracking again today (2026-10-23) — buffet-style lunch with raw fish and salads, impractical to itemize. Items already logged earlier today (yogurt, cereal, cheese, grapes) stay on the record as-is; no further detailed food items for the rest of the day. Supplements/medication, caffeine, workouts, sleep, and lifestyle events still logged as usual.",
   "sleep": {
@@ -20,7 +21,8 @@
     {"time": "11:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "11:30", "name": "Yellow cheese, 9% (Tnuva Emek Light)", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference, same as prior entries (tnuva_emek_light_yellow_cheese_9pct)."},
     {"time": "11:30", "name": "Green grapes, seedless", "category": "food", "qty": "4 pieces (~20 g)", "kcal": 13.8, "protein_g": 0.14, "carbs_g": 3.62, "fat_g": 0.03, "fiber_g": 0.18, "note": "same standard reference as prior entries (~5g/grape). Credits ~2.16mg vitamin C."},
-    {"time": "16:15", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "16:15", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "19:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "exact time not given, logged at EOD."}
   ],
   "workout_today": true,
   "workout_summary": "Chest + Arms day (10:08) — Bench Press 75kg×3×10 (new PR). Incline Pec Fly 36kg×4×11, as suggested (+1 rep on best, new PR). Seated Dips 99kg added (dip belt)×4×8 (different execution from the machine best, not comparable). EZ Bar Curl 30kg×4×8 (lighter session, not a PR). Incline Hammer Curl 14kg each×4×10 (lighter session, not a PR). 2 new PRs.",
@@ -29,7 +31,7 @@
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 2.16,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -43,7 +45,9 @@
     "10:08 Chest + Arms day: Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly, new PR (est. 1RM 100.0 vs 94.25 prior best). Incline Pec Fly 18kg each (36kg)×4×11, as suggested, new PR (+1 rep on best, est. 1RM 49.2 vs 48.0 prior best). Seated Dips 49.5kg each side (99kg added, dip belt)×4×8 — different execution from the 94kg machine best, not comparable. EZ Bar Curl 10kg each + bar (30kg)×4×8 — lighter session, below the 4×10 best, not a PR. Incline Hammer Curl 14kg each×4×10 — lighter session, below the 20kg each×3×8 best, not a PR. 2 new PRs. bal.pushPull still in healthy range.",
     "11:30 creatine monohydrate, 5g — zero kcal/macros + 2 yellow cheese slices (9%, verified reference) + 4 green grapes (~20g, standard reference, credits ~2.16mg vitamin C).",
     "No further food macro/micro tracking for the rest of today, per explicit user request — buffet-style lunch (raw fish, salads) not itemized. Day excluded from monthly macro averages.",
-    "16:15 double espresso, 1 double (4 caffeine shots today)."
+    "16:15 double espresso, 1 double (4 caffeine shots today).",
+    "19:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose, exact time not given, logged at EOD.",
+    "EOD: 4,500 steps. Retainers worn tonight — logged to retainers.json."
   ],
-  "status_note": "Day in progress. Slept 8h (23:45-07:45), a solid full night. AM pill + double espresso + yogurt + cereal + Mayven + creatine/cheese/grapes + 16:15 espresso logged (4 caffeine shots). Chest + Arms day completed (2 new PRs). Buffet lunch not itemized, per request. Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day complete. Slept 8h (23:45-07:45), a solid full night. AM pill + double espresso + yogurt + cereal + Mayven + creatine/cheese/grapes + 16:15 espresso + omega-3 logged (4 caffeine shots). Chest + Arms day completed (2 new PRs). Buffet lunch not itemized, per request. 4,500 steps, retainers worn. Still out of Rhinolast spray — worth restocking."
 }
