@@ -1,19 +1,18 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-22",
-    "latest_session": "Legs day (05:50) — Leg Press 136kg×4×8, logged directly (heavier weight but fewer reps than the 132kg×4×12 best — est. 1RM 172.3 vs 184.8, not a PR). Calf Raises Machine 81kg×4×9 (inc. frame), as suggested (new PR — est. 1RM 105.3 vs 103.9 prior best at 76kg×4×11). Glute Extension 59kg×2×6, ties best exactly. Leg Extensions 111kg×4×12, ties best exactly. 1 new PR. Logged as part of a multi-day catch-up batch after a usage-credit gap (2026-10-16 evening to 2026-10-20 16:00) — macros/supplements not retracked for this window per explicit user instruction, only workouts/lifestyle/sleep.",
-    "sessions_logged": 83,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-10-23",
+    "latest_session": "Chest + Arms day (10:08) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly (new PR — est. 1RM 100.0 vs 94.25 prior best at 72.5kg×4×9). Incline Pec Fly 18kg each (36kg)×4×11, as suggested (+1 rep on best, new PR — est. 1RM 49.2 vs 48.0 prior best at 36kg×4×10). Seated Dips 49.5kg each side (99kg added, dip belt)×4×8, logged directly — different execution from the 94kg machine best, not comparable. EZ Bar Curl 10kg each + bar (30kg)×4×8, logged directly (lighter session, below the 4×10 best, not a PR). Incline Hammer Curl 14kg each×4×10, logged directly (lighter session, below the 20kg each×3×8 best, not a PR). 2 new PRs.",
+    "sessions_logged": 84,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
     "aerobic_28d_km": 21.7,
     "aerobic_sessions_28d": 8,
     "avg_pace": "10:16/km",
     "avg_hr": 142,
-    "acwr": 0.73,
+    "acwr": 1.12,
     "recommended_next": "Back day",
     "alerts": [
-      "Load ratio 0.73 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
@@ -560,6 +559,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "05:50. Leg Press 136kg×4×8, logged directly, not a PR (est. 1RM 172.3 vs 184.8 prior best, heavier but fewer reps); Calf Raises Machine 81kg×4×9 (inc. frame), as suggested, new PR (est. 1RM 105.3 vs 103.9 prior best); Glute Extension 59kg×2×6, ties best exactly; Leg Extensions 111kg×4×12, ties best exactly. 1 new PR. Last session of the multi-day catch-up batch; macros/supplements not retracked for the gap window.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-23",
+      "type": "Strength — Chest + Arms",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "10:08. Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly, new PR (est. 1RM 100.0 vs 94.25 prior best); Incline Pec Fly 18kg each (36kg)×4×11, as suggested, new PR (est. 1RM 49.2 vs 48.0 prior best); Seated Dips 49.5kg each side (99kg added, dip belt)×4×8, different execution from the 94kg machine best, not comparable; EZ Bar Curl 10kg each + bar (30kg)×4×8, lighter session, not a PR; Incline Hammer Curl 14kg each×4×10, lighter session, not a PR. 2 new PRs.",
       "_source": "manual log"
     }
   ]
