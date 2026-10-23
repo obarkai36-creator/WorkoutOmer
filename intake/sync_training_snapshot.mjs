@@ -31,7 +31,39 @@ function fmtPace(min) {
   return `${m}:${String(s).padStart(2, "0")}/km`;
 }
 
+function loadJson(relPath) {
+  return JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf-8"));
+}
+
+/* ---- sleep.json entries -> the {date,start,end,hours,note} shape engine.js expects
+ * (same substitution export_training_state.mjs uses — data.js's own SLEEP array
+ * is a stale, unmaintained duplicate; sleep.json is the one kept current every day) */
+function sleepFromNutrition() {
+  const log = loadJson("data/metrics/sleep.json");
+  return (log.entries || []).map((e) => ({
+    date: e.date, start: e.sleep_start, end: e.sleep_end,
+    hours: e.duration_hours, note: e.notes || "",
+  }));
+}
+
+/* ---- weight.json entries -> the {datetime,kg} shape data.js's BODYWEIGHT uses */
+function bodyweightFromNutrition() {
+  const log = loadJson("data/metrics/weight.json");
+  const entries = (log.entries || []).slice().sort((a, b) => a.date.localeCompare(b.date));
+  return entries.map((e) => ({ datetime: `${e.date}T${e.time || "00:00"}`, kg: e.weight_kg }));
+}
+
 const { data, engine } = loadWorkoutEngine();
+
+// Substitute the nutrition side's sleep/bodyweight as the single source of
+// truth, same as export_training_state.mjs — keeps this trimmed summary
+// (and its "recommended_next") consistent with training_full.json instead
+// of silently drifting from data.js's stale SLEEP/BODYWEIGHT arrays.
+data.SLEEP = sleepFromNutrition().sort((a, b) => b.date.localeCompare(a.date));
+const bw = bodyweightFromNutrition();
+data.BODYWEIGHT = bw.slice().sort((a, b) => new Date(b.datetime) - new Date(a.datetime));
+if (bw.length) data.ATHLETE.bodyweightKg = bw[bw.length - 1].kg;
+
 const now = Date.now();
 const a = engine.analyze(data, now);
 
