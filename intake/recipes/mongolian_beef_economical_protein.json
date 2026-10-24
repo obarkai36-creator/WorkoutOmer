@@ -1,0 +1,120 @@
+{
+  "id": "mongolian_beef_economical_protein",
+  "name": "Mongolian beef — economical protein (beef or chicken)",
+  "source": {
+    "type": "web",
+    "url": null,
+    "author": "Pasted recipe text (English)",
+    "captured": "2026-10-24",
+    "notes": "A velveting-technique stir-fry: beef (or chicken) marinated with baking soda + cornstarch + egg white for tenderness, dusted in cornstarch, flash-fried at a moderate 120-140°C, then tossed in a soy-brown sugar-Shaoxing wine sauce with garlic, ginger, capsicum and spring onion. Analyzed with BEEF chuck as the protein (as listed first); the recipe's own 'economical protein' framing explicitly allows swapping in chicken breast/thigh instead — that swap would cut fat roughly in half and raise protein density noticeably (see suggested_mods). Rice ('to serve') is not quantified in the post, so it's excluded from the macros here — add it separately when logging a meal. Oil absorption during flash-frying is an estimate (lower-temp velvet-frying absorbs less than deep-frying, but it's still a fried step). Not quantified: optional baking-soda 'extra tender' pre-step (washed off before marinating, so it doesn't add macros). Estimate."
+  },
+  "servings": 4,
+  "serving_desc": "≈310 g cooked (batch ÷4), beef version — not including rice",
+  "ingredients": [
+    {"item": "beef (chuck or topside), sliced thin against the grain", "qty": "500 g", "note": "or swap to chicken breast/thigh — see suggested_mods"},
+    {"item": "baking soda (marinade/tenderizer)", "qty": "½ tsp"},
+    {"item": "cornstarch (marinade)", "qty": "1 tbsp"},
+    {"item": "egg white", "qty": "1"},
+    {"item": "soy sauce (marinade)", "qty": "1 tbsp"},
+    {"item": "white pepper", "qty": "¼ tsp"},
+    {"item": "neutral oil (marinade)", "qty": "1 tbsp"},
+    {"item": "cornstarch, for dusting", "qty": "extra, as needed — shake off excess"},
+    {"item": "neutral oil, for flash-frying", "qty": "for the pan/wok"},
+    {"item": "soy sauce (sauce)", "qty": "2 tbsp"},
+    {"item": "brown sugar (sauce)", "qty": "2 tbsp"},
+    {"item": "water (sauce)", "qty": "3 tbsp"},
+    {"item": "Shaoxing wine (sauce)", "qty": "2 tbsp"},
+    {"item": "cornstarch + water (optional thickener)", "qty": "1 tsp cornstarch + 1 tbsp water"},
+    {"item": "neutral oil (stir-fry)", "qty": "1 tbsp"},
+    {"item": "garlic, minced", "qty": "3 cloves"},
+    {"item": "ginger, minced", "qty": "1 tbsp"},
+    {"item": "capsicum (bell pepper), sliced", "qty": "1, optional"},
+    {"item": "spring onions, cut into batons", "qty": "3"},
+    {"item": "steamed rice, to serve", "qty": "not quantified — add separately"}
+  ],
+  "steps": [
+    "Slice the protein thin against the grain.",
+    "Mix with baking soda, cornstarch, egg white, soy sauce, white pepper and oil; marinate ~30 min (optionally, pre-tenderize raw meat with baking soda alone for ~40 min, then rinse and pat dry before marinating as above).",
+    "Dust lightly in extra cornstarch, shaking off excess.",
+    "Flash-fry in batches in oil at ~120-140°C until just cooked; drain.",
+    "Stir-fry the capsicum briefly, then the ginger and garlic until fragrant.",
+    "Add the combined sauce ingredients (soy sauce, brown sugar, water, Shaoxing wine) and simmer until glossy; thicken with the cornstarch slurry if needed.",
+    "Return the protein and spring onions to the pan; toss to coat in the sauce.",
+    "Serve over steamed rice."
+  ],
+  "per_serving": {
+    "kcal": 446,
+    "protein_g": 28.7,
+    "carbs_g": 14.4,
+    "fat_g": 30.4,
+    "fiber_g": 0.8,
+    "micros": {
+      "sodium_mg": 679,
+      "vitamin_c_mg": 58,
+      "added_sugar_g": 6,
+      "iron_mg": 2.4
+    }
+  },
+  "batch_totals": {
+    "kcal": 1785,
+    "protein_g": 115,
+    "carbs_g": 58,
+    "fat_g": 122,
+    "fiber_g": 3.4,
+    "sodium_mg": 2715,
+    "vitamin_c_mg": 231,
+    "note": "Whole dish (4 servings), BEEF version, excluding rice. Three separate oil additions (marinade + flash-fry + stir-fry, ~56 g total) plus beef chuck's own fat make this fattier than most of your library's chicken dishes; soy sauce x2 + Shaoxing wine drive the sodium."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 6,
+      "verdict": "Decent protein (~28.7 g/serving) but with meaningfully more fat than your typical rotation dish — ~30 g/serving, from beef chuck's own marbling plus three separate oil additions (marinade, flash-fry, stir-fry). That's ~6.4 g protein per 100 kcal, below your usual chicken dishes' density. Sodium is also high (~679 mg/serving) from the double soy sauce + Shaoxing wine. The capsicum and spring onion add a real vitamin-C boost. Swapping to chicken breast (the recipe's own suggested alternative) would be the single biggest lever — it would cut fat roughly in half while keeping protein similar or higher.",
+      "flags": [
+        "~28.7 g protein / 446 kcal (~6.4 g protein per 100 kcal — below your usual chicken-dish density)",
+        "~30 g fat/serving — beef chuck's own fat + 3 separate oil additions",
+        "high sodium (~679 mg/serving) — double soy sauce + Shaoxing wine",
+        "~6 g added sugar/serving (brown sugar in the sauce)",
+        "good vitamin C from capsicum + spring onion; rice not included in these macros"
+      ],
+      "suggested_mods": [
+        "Swap to chicken breast or thigh (the recipe's own suggested economical protein) — roughly halves the fat while keeping protein as high or higher",
+        "Cut the flash-fry oil to a thin film instead of enough to submerge — the velveting marinade (baking soda + cornstarch + egg white) already does most of the tenderizing work, so less oil is needed to get a good result",
+        "Use low-sodium soy sauce for both the marinade and the sauce",
+        "Halve the brown sugar — the Shaoxing wine and soy already bring plenty of flavor",
+        "Keep the capsicum — it's doing real nutritional work here (vitamin C)"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 5,
+      "verdict": "Good iron from the beef and a solid vitamin-C boost from the capsicum and spring onion (which also helps absorb that iron — a nice pairing as written). Cook the beef fully through as standard. The downsides are the same as his: fairly high sodium and fat, and it's not a folate or choline source on its own. Shaoxing wine is a cooking wine — most of the alcohol cooks off during the simmer, but it's worth noting if she prefers to avoid it entirely; a swap exists.",
+      "prenatal_highlights": [
+        "iron from beef, paired with vitamin C (capsicum, spring onion) for better absorption",
+        "protein; fully cooked"
+      ],
+      "safety_advisories": [
+        {"note": "Shaoxing wine is a cooking wine — most alcohol cooks off during the simmer, but if she'd rather avoid any alcohol in the dish, there's a direct swap.", "swap": "rice vinegar + a splash of chicken/beef stock in place of the Shaoxing wine"}
+      ],
+      "suggested_mods": [
+        "Chicken breast swap (as for him) also helps her lens — less fat, same iron-absorption pairing with the capsicum",
+        "Use low-sodium soy; keep the capsicum for the vitamin C"
+      ]
+    }
+  },
+  "tags": ["dinner", "beef", "stir-fry", "high-sodium", "web", "chicken-swap-available"],
+  "adopted": false,
+  "created": "2026-10-24",
+  "updated": "2026-10-24",
+  "serving_g": 310,
+  "meal_type": "Beef",
+  "cooking_guide": [
+    "Slice the beef thin and AGAINST THE GRAIN — this is what keeps stir-fried beef tender rather than chewy; look for the direction of the muscle fibers and cut perpendicular to them.",
+    "The baking soda + cornstarch + egg white marinade is a classic Chinese 'velveting' technique — it tenderizes and forms a protective coating so the meat stays juicy through the hot flash-fry. Don't skip it, and don't over-marinate past the stated time or the texture can turn mushy.",
+    "If using the optional extra-tenderizing baking-soda step, rinse it off thoroughly and pat the meat fully dry before mixing in the actual marinade — any baking soda left on gives an off, soapy taste.",
+    "Dust lightly in cornstarch right before frying, not earlier — shake off the excess so you get a thin, crisp coating rather than a gummy one.",
+    "Flash-fry at a moderate 120-140°C (lower than a typical deep-fry) in small batches — crowding the pan drops the oil temperature and the coating steams instead of crisping.",
+    "Build the sauce in the same pan after the aromatics so it picks up the fond (browned bits) left behind — that's a lot of the flavor.",
+    "Toss the protein back in only at the very end, off or just over the heat, so the crisp coating doesn't go soggy sitting in the sauce too long.",
+    "Tip: for a lighter version, swap in chicken and shallow-fry in a thin film of oil rather than enough to submerge the pieces — the velveting marinade does most of the tenderizing work either way."
+  ]
+}
