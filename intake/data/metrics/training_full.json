@@ -1,6 +1,33 @@
 {
-  "now": 1792814427475,
+  "now": 1792821278697,
   "workouts": [
+    {
+      "datetime": "2026-10-24T07:53",
+      "note": "Outdoor Walk (07:53-08:53) — 1 hour, ~8000 steps, solid walking pace, exact distance not given. Estimated ~5.6km from step count (~0.7m/step), flagged as approximate.",
+      "exercises": [
+        {
+          "name": "Outdoor Walk",
+          "distanceKm": 5.6,
+          "durationMin": 60,
+          "load": 540,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 540,
+            "quads": 108,
+            "calves": 108
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1792828380000,
+      "muscleLoad": {
+        "cardio": 540,
+        "quads": 108,
+        "calves": 108
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-10-23T10:08",
       "note": "Chest + Arms day (10:08) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly (new PR — est. 1RM 100.0 vs 94.25 prior best at 72.5kg×4×9). Incline Pec Fly 18kg each (36kg)×4×11, as suggested (+1 rep on best, new PR — est. 1RM 49.2 vs 48.0 prior best at 36kg×4×10). Seated Dips 49.5kg each side (99kg added, dip belt)×4×8, logged directly — different execution from the 94kg machine best, not comparable. EZ Bar Curl 10kg each + bar (30kg)×4×8, logged directly (lighter session, below the 4×10 best, not a PR). Incline Hammer Curl 14kg each×4×10, logged directly (lighter session, below the 20kg each×3×8 best, not a PR). 2 new PRs.",
@@ -8654,8 +8681,8 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 52,
-      "readyInHours": 32.4,
+      "pct": 50,
+      "readyInHours": 30.5,
       "ready": false
     },
     "back": {
@@ -8670,7 +8697,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "ready": true
     },
@@ -8678,7 +8705,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 24,
+      "pct": 23,
       "readyInHours": 0,
       "ready": true
     },
@@ -8686,8 +8713,8 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 38,
-      "readyInHours": 9.7,
+      "pct": 37,
+      "readyInHours": 7.8,
       "ready": false
     },
     "forearms": {
@@ -8734,7 +8761,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 4,
+      "pct": 5,
       "readyInHours": 0,
       "ready": true
     },
@@ -8750,23 +8777,23 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 69,
+      "readyInHours": 25,
+      "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 52,
-      "readyInHours": 32.4,
+      "pct": 50,
+      "readyInHours": 30.5,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 52,
-          "readyInHours": 32.4,
+          "pct": 50,
+          "readyInHours": 30.5,
           "ready": false
         }
       ]
@@ -8788,14 +8815,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 17,
+          "pct": 16,
           "readyInHours": 0,
           "ready": true
         }
@@ -8803,22 +8830,22 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 21,
-      "readyInHours": 9.7,
+      "pct": 20,
+      "readyInHours": 7.8,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 38,
-          "readyInHours": 9.7,
+          "pct": 37,
+          "readyInHours": 7.8,
           "ready": false
         },
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 24,
+          "pct": 23,
           "readyInHours": 0,
           "ready": true
         },
@@ -8854,16 +8881,16 @@
           "ready": true
         },
         {
-          "key": "hamstrings",
-          "label": "Hamstrings",
+          "key": "calves",
+          "label": "Calves",
           "section": "Legs",
-          "pct": 4,
+          "pct": 5,
           "readyInHours": 0,
           "ready": true
         },
         {
-          "key": "calves",
-          "label": "Calves",
+          "key": "hamstrings",
+          "label": "Hamstrings",
           "section": "Legs",
           "pct": 4,
           "readyInHours": 0,
@@ -8896,16 +8923,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 69,
+      "readyInHours": 25,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 69,
+          "readyInHours": 25,
+          "ready": false
         }
       ]
     }
@@ -8932,7 +8959,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell Bench Press",
@@ -9040,7 +9067,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Narrow Push-Ups",
@@ -9546,7 +9573,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Triceps Extension Machine",
@@ -9627,7 +9654,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 7,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Incline DB Curl",
@@ -9708,7 +9735,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 2,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Low Pulley Biceps Curl",
@@ -10256,23 +10283,23 @@
         "label": "This wk",
         "stress": 564,
         "sessions": 4,
-        "acwr": 0.91
+        "acwr": 1.09
       }
     ],
-    "acute": 60.55,
-    "chronic": 66.87,
-    "acwr": 0.91,
+    "acute": 78.31,
+    "chronic": 71.77,
+    "acwr": 1.09,
     "acwrZone": "ok",
-    "sessions28": 15
+    "sessions28": 16
   },
   "recommendation": {
     "section": "Shoulders",
-    "fatigue": 17,
+    "fatigue": 16,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-24T04:00:27.475Z",
+    "readyAt": "2026-10-24T05:54:38.697Z",
     "neverLogged": false,
-    "daysSince": 10.8,
+    "daysSince": 10.9,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -10378,41 +10405,41 @@
     "ranked": [
       {
         "section": "Shoulders",
-        "fatigue": 17,
+        "fatigue": 16,
         "readyInHours": 0,
-        "daysSince": 10.8
+        "daysSince": 10.9
       },
       {
         "section": "Back",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 8.9
+        "daysSince": 9
       },
       {
         "section": "Legs",
         "fatigue": 6,
         "readyInHours": 0,
-        "daysSince": 3.9
+        "daysSince": 4
       },
       {
         "section": "Arms",
-        "fatigue": 21,
-        "readyInHours": 9.7,
-        "daysSince": 0.7
+        "fatigue": 20,
+        "readyInHours": 7.8,
+        "daysSince": 0.8
       },
       {
         "section": "Chest",
-        "fatigue": 52,
-        "readyInHours": 32.4,
-        "daysSince": 15.5
+        "fatigue": 50,
+        "readyInHours": 30.5,
+        "daysSince": 15.6
       }
     ],
     "suggestedCount": 5,
     "totalAvailable": 9,
     "typicalSessionSize": 5,
-    "aerobicLast7": 1,
+    "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 5.6
+    "daysSinceAerobic": -0.1
   },
   "alerts": [
     {
@@ -10422,13 +10449,12 @@
     }
   ],
   "changes": [
-    "You're below your PR on 13 lifts — closest wins first: Incline DB Curl (67% of best), Incline Hammer Curl (74% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight.",
-    "Only 1/2 aerobic sessions this week — add an easy run or row."
+    "You're below your PR on 13 lifts — closest wins first: Incline DB Curl (67% of best), Incline Hammer Curl (74% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight."
   ],
   "timing": {
-    "avgGap": 2.9,
+    "avgGap": 2.8,
     "longestGap": 35.7,
-    "perWeek": 3.8,
+    "perWeek": 4,
     "avgHour": 13,
     "todPref": "afternoon",
     "dow": [
@@ -10438,10 +10464,10 @@
       7,
       6,
       18,
-      19
+      20
     ],
-    "daysSinceLast": 0.7,
-    "total": 84
+    "daysSinceLast": -0.1,
+    "total": 85
   },
   "relstrength": {
     "bodyweightKg": 80.65,
@@ -10490,15 +10516,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 42,
-    "km7": 2.3,
-    "km28": 16.5,
-    "totalKm": 159.8,
+    "count": 43,
+    "km7": 7.9,
+    "km28": 22.1,
+    "totalKm": 165.4,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 3.6764705882352944,
-    "avgPace": 10.270037799480638,
-    "paceTrend": 1.95,
+    "avgPace": 10.281143997350766,
+    "paceTrend": 0.52,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -10507,8 +10533,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 5.6,
+    "daysSinceLast": -0.1,
     "recent": [
+      {
+        "t": 1792828380000,
+        "name": "Outdoor Walk",
+        "distanceKm": 5.6,
+        "durationMin": 60,
+        "avgHr": null,
+        "pace": 10.714285714285715
+      },
       {
         "t": 1792334700000,
         "name": "Outdoor Run",
@@ -10540,14 +10574,6 @@
         "durationMin": 13.95,
         "avgHr": null,
         "pace": 6.940298507462687
-      },
-      {
-        "t": 1790952720000,
-        "name": "Outdoor Run",
-        "distanceKm": 2.91,
-        "durationMin": 35.1,
-        "avgHr": null,
-        "pace": 12.061855670103093
       }
     ]
   },

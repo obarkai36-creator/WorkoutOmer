@@ -13,10 +13,11 @@
     {"time": "05:35", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "allergy medication — 1x/day pill. No Rhinolast spray, still out of stock."},
     {"time": "07:00", "name": "Danone PRO Strawberry Yogurt, 0% fat", "category": "food", "qty": "1 cup (200 g)", "kcal": 112, "protein_g": 20, "carbs_g": 7, "fat_g": 0, "fiber_g": 0, "note": "same reference as prior entries (danone_pro_strawberry_0pct)."},
     {"time": "07:00", "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter, handful", "category": "food", "qty": "~20 g (handful)", "kcal": 61, "protein_g": 6.2, "carbs_g": 8.8, "fat_g": 2.8, "fiber_g": 5, "note": "same verified reference as prior entries (catalina_crunch_choc_pb_cereal), standard ~20g/handful convention."},
-    {"time": "07:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+    {"time": "07:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
+    {"time": "08:53", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
-  "workout_today": false,
-  "workout_summary": null,
+  "workout_today": true,
+  "workout_summary": "Outdoor Walk (07:53-08:53) — 1 hour, ~8000 steps, solid walking pace, exact distance not given — estimated ~5.6km from step count.",
   "caffeine_shots": 0,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
@@ -31,7 +32,8 @@
   "assumptions": [
     "Sleep logged: 22:30-05:10, 6.67h (night of 2026-10-23) — a bit short of target.",
     "05:35 Bilaxten (bilastine pill, morning) — no Rhinolast spray, still out of stock.",
-    "07:00 Danone PRO Strawberry Yogurt (1 cup, 200g, same reference as prior entries) + a handful (~20g) Catalina Crunch Protein Cereal, Chocolate Peanut Butter (same verified reference as prior entries) + Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc."
+    "07:00 Danone PRO Strawberry Yogurt (1 cup, 200g, same reference as prior entries) + a handful (~20g) Catalina Crunch Protein Cereal, Chocolate Peanut Butter (same verified reference as prior entries) + Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
+    "07:53-08:53 Outdoor Walk — 1 hour, ~8000 steps, solid walking pace, exact distance not given; estimated ~5.6km from step count (~0.7m/step), flagged as approximate. 08:53 creatine monohydrate, 5g — zero kcal/macros."
   ],
-  "status_note": "Day in progress. Slept 6.67h (22:30-05:10), a bit short of target. AM pill + yogurt + cereal + Mayven logged. Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept 6.67h (22:30-05:10), a bit short of target. AM pill + yogurt + cereal + Mayven logged. 1-hour outdoor walk completed (~8000 steps, ~5.6km estimated) + creatine. Still out of Rhinolast spray — worth restocking."
 }

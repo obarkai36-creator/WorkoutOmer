@@ -1,16 +1,16 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-23",
-    "latest_session": "Chest + Arms day (10:08) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly (new PR — est. 1RM 100.0 vs 94.25 prior best at 72.5kg×4×9). Incline Pec Fly 18kg each (36kg)×4×11, as suggested (+1 rep on best, new PR — est. 1RM 49.2 vs 48.0 prior best at 36kg×4×10). Seated Dips 49.5kg each side (99kg added, dip belt)×4×8, logged directly — different execution from the 94kg machine best, not comparable. EZ Bar Curl 10kg each + bar (30kg)×4×8, logged directly (lighter session, below the 4×10 best, not a PR). Incline Hammer Curl 14kg each×4×10, logged directly (lighter session, below the 20kg each×3×8 best, not a PR). 2 new PRs.",
-    "sessions_logged": 84,
-    "sessions_per_week": 3.8,
+    "report_date": "2026-10-24",
+    "latest_session": "Outdoor Walk (07:53-08:53) — 1 hour, ~8000 steps, solid walking pace, exact distance not given. Estimated ~5.6km from step count (~0.7m/step), flagged as approximate.",
+    "sessions_logged": 85,
+    "sessions_per_week": 4,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 16.5,
-    "aerobic_sessions_28d": 7,
-    "avg_pace": "10:16/km",
+    "aerobic_28d_km": 22.1,
+    "aerobic_sessions_28d": 8,
+    "avg_pace": "10:17/km",
     "avg_hr": 142,
-    "acwr": 1.12,
+    "acwr": 1.09,
     "recommended_next": "Shoulders day",
     "alerts": [
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
@@ -567,6 +567,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "10:08. Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly, new PR (est. 1RM 100.0 vs 94.25 prior best); Incline Pec Fly 18kg each (36kg)×4×11, as suggested, new PR (est. 1RM 49.2 vs 48.0 prior best); Seated Dips 49.5kg each side (99kg added, dip belt)×4×8, different execution from the 94kg machine best, not comparable; EZ Bar Curl 10kg each + bar (30kg)×4×8, lighter session, not a PR; Incline Hammer Curl 14kg each×4×10, lighter session, not a PR. 2 new PRs.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-24",
+      "type": "Cardio — Outdoor Walk",
+      "duration_min": 60,
+      "intensity": "moderate",
+      "notes": "07:53-08:53. 1 hour, ~8000 steps, solid walking pace, exact distance not given — estimated ~5.6km from step count (~0.7m/step), flagged as approximate.",
       "_source": "manual log"
     }
   ]

@@ -305,6 +305,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 24 Oct — Outdoor Walk (07:53-08:53)
+  {
+    datetime: "2026-10-24T07:53", note: "Outdoor Walk (07:53-08:53) — 1 hour, ~8000 steps, solid walking pace, exact distance not given. Estimated ~5.6km from step count (~0.7m/step), flagged as approximate.",
+    exercises: [
+      { name: "Outdoor Walk", distanceKm: 5.6, durationMin: 60 },
+    ],
+  },
   // 23 Oct — Chest + Arms (10:08)
   {
     datetime: "2026-10-23T10:08", note: "Chest + Arms day (10:08) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×10, logged directly (new PR — est. 1RM 100.0 vs 94.25 prior best at 72.5kg×4×9). Incline Pec Fly 18kg each (36kg)×4×11, as suggested (+1 rep on best, new PR — est. 1RM 49.2 vs 48.0 prior best at 36kg×4×10). Seated Dips 49.5kg each side (99kg added, dip belt)×4×8, logged directly — different execution from the 94kg machine best, not comparable. EZ Bar Curl 10kg each + bar (30kg)×4×8, logged directly (lighter session, below the 4×10 best, not a PR). Incline Hammer Curl 14kg each×4×10, logged directly (lighter session, below the 20kg each×3×8 best, not a PR). 2 new PRs.",
