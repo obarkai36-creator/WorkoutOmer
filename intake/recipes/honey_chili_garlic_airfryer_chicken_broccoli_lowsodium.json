@@ -1,0 +1,94 @@
+{
+  "id": "honey_chili_garlic_airfryer_chicken_broccoli_lowsodium",
+  "name": "Honey chili-garlic air-fryer chicken & broccoli — low-sodium, optimized",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Optimized version of honey_chili_garlic_airfryer_chicken_broccoli",
+    "captured": "2026-10-24",
+    "notes": "Dual-lens-optimized version of honey_chili_garlic_airfryer_chicken_broccoli, adopted per user request. Changes: soy sauce halved (¼ cup instead of ½ cup) AND swapped to LOW-SODIUM soy; excess marinade drained off before air-frying rather than tossed in whole (assumed ~65% of the smaller marinade volume actually coats/is consumed, vs ~70% of a larger volume in the base recipe). Everything else identical (chicken, onion, honey, chili crisp oil, garlic, broccoli, same method and bake). Estimate — see base recipe for the original consumption-fraction caveat, which still applies."
+  },
+  "servings": 4,
+  "serving_desc": "≈260 g cooked (batch ÷4)",
+  "ingredients": [
+    {"item": "chicken breasts, large, cubed", "qty": "2 (~600 g)", "note": "thighs also work as a swap"},
+    {"item": "white onion, sliced", "qty": "½"},
+    {"item": "low-sodium soy sauce", "qty": "¼ cup", "note": "halved from the base recipe's ½ cup, AND low-sodium"},
+    {"item": "honey", "qty": "3–4 tbsp"},
+    {"item": "chili crisp oil", "qty": "2 tbsp"},
+    {"item": "garlic, minced", "qty": "1 tbsp"},
+    {"item": "frozen broccoli (or fresh)", "qty": "12 oz (~340 g)"}
+  ],
+  "steps": [
+    "Marinate the cubed chicken with the honey, low-sodium soy sauce, chili crisp oil and garlic for a few hours.",
+    "Lift the chicken out of the marinade (rather than pouring everything in) and place it in the air fryer along with the onion and broccoli, letting excess liquid drain off first.",
+    "Cook at 400°F (≈200°C) for 10–15 min, then serve."
+  ],
+  "per_serving": {
+    "kcal": 283,
+    "protein_g": 35.9,
+    "carbs_g": 19.1,
+    "fat_g": 7.0,
+    "fiber_g": 3.2,
+    "micros": {
+      "sodium_mg": 400,
+      "vitamin_c_mg": 26,
+      "added_sugar_g": 11
+    }
+  },
+  "batch_totals": {
+    "kcal": 1133,
+    "protein_g": 143.5,
+    "carbs_g": 76.4,
+    "fat_g": 28.2,
+    "fiber_g": 12.7,
+    "sodium_mg": 1598,
+    "note": "Whole dish (4 servings), optimized. Vs the base recipe (per serving ~296 kcal / 36.9 g protein / ~1,371 mg sodium): essentially identical protein and calories, but sodium drops by roughly 70% (~400 mg/serving vs ~1,371 mg) thanks to halving the soy sauce, switching to low-sodium, and draining the marinade before air-frying."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 9,
+      "verdict": "This is the version worth making regularly — essentially the same excellent protein profile as the base recipe (~35.9 g protein for only 283 kcal, ~12.7 g protein per 100 kcal, right at the top of your library) but with sodium cut by roughly 70%. The soy sauce halving + low-sodium swap + draining the marinade before air-frying removes the one real weakness the base recipe had without touching the flavor-carrying ingredients (honey, chili oil, garlic) at all.",
+      "flags": [
+        "~35.9 g protein / 283 kcal (~12.7 g protein per 100 kcal — excellent, essentially unchanged from the base)",
+        "sodium cut ~70% vs the base recipe (~400 mg/serving vs ~1,371 mg)",
+        "real fiber (~3.2 g/serving) from a full 12 oz of broccoli",
+        "air-fried, low fat (~7 g/serving)",
+        "draining the marinade also likely means crispier results, not just lower sodium"
+      ],
+      "suggested_mods": [
+        "Great as-is; a genuinely strong regular rotation dish now",
+        "The thigh swap from the original post still works here if you want extra juiciness"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 8,
+      "verdict": "Same strong folate + vitamin-C contribution from the broccoli, same solid protein from the chicken, now with meaningfully lower sodium — a real improvement for her lens too. Fully cooked, no safety flags.",
+      "prenatal_highlights": [
+        "folate + vitamin C from a full 12 oz of broccoli",
+        "protein (chicken); fully cooked",
+        "much lower sodium than the base version"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "No changes needed — this is now a solid, low-sodium regular option for her"
+      ]
+    }
+  },
+  "tags": ["dinner", "chicken", "poultry", "broccoli", "air-fryer", "chili-crisp", "one-pan", "low-sodium", "instagram"],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-10-24 as the low-sodium optimized version of the honey chili-garlic air-fryer chicken (supersedes honey_chili_garlic_airfryer_chicken_broccoli for actual use). Per serving (of 4, ~260 g): ~283 kcal, 35.9 g protein, 7 g fat, ~400 mg sodium. him 9 / her 8. Standing spec: ¼ cup LOW-SODIUM soy sauce (not ½ cup regular), drain excess marinade before air-frying, 400°F ~10-15 min.",
+  "created": "2026-10-24",
+  "updated": "2026-10-24",
+  "serving_g": 260,
+  "meal_type": "Chicken",
+  "cooking_guide": [
+    "Cut the chicken into even cubes so everything cooks at the same rate in the air fryer.",
+    "Marinate for at least a couple of hours if you have time — honey-soy marinades need a bit longer than a quick soak to really penetrate.",
+    "Lift the chicken out of the marinade with tongs rather than pouring everything into the basket — a wetter basket means steaming instead of the caramelized edges you want, and it also cuts the sodium you actually eat.",
+    "Arrange in a single layer, not piled up — crowding the basket blocks the hot-air circulation that makes an air fryer work.",
+    "Check at the 10-minute mark and shake the basket partway through for even browning; pull it as soon as the chicken hits a safe internal temp.",
+    "Tip: a quick blast at a higher temp for the last 2 minutes helps the honey glaze caramelize without drying out the chicken."
+  ]
+}
