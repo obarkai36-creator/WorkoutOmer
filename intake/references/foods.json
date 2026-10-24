@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "couscous_feta_pomegranate_salad_generic",
+      "name": "Couscous, feta & pomegranate salad, generic",
+      "serving": "100 g",
+      "kcal": 146,
+      "protein_g": 6.0,
+      "carbs_g": 17.6,
+      "fat_g": 5.5,
+      "fiber_g": 1.4,
+      "verified": false,
+      "source": "First logged 2026-10-24 (2 spoons, ~60g assumed). No recipe given — estimated as a typical couscous-based salad (~60% couscous, ~25% feta, ~15% pomegranate seeds by weight): couscous ~112kcal/100g, feta ~264kcal/100g, pomegranate seeds ~83kcal/100g. Also credits ~1.5mg vitamin C per 100g (pomegranate). Not label-verified, refine if the actual ratio/recipe is given."
+    },
+    {
       "id": "elite_shahar_chocolate_generic",
       "name": "Elite Shahar chocolate (שוקולד השחר), generic",
       "serving": "100 g",
