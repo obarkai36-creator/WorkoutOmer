@@ -1,0 +1,95 @@
+{
+  "id": "honey_chili_garlic_airfryer_chicken_broccoli",
+  "name": "Honey chili-garlic air-fryer chicken & broccoli",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram (English, pasted text)",
+    "captured": "2026-10-24",
+    "notes": "A one-pan air-fryer marinade dish: cubed chicken breast marinated in soy sauce, honey, chili crisp oil and garlic, then air-fried with sliced onion and broccoli. The post itself notes chicken thighs work well as a swap too. The ½ CUP of soy sauce is a large amount of liquid marinade for an air fryer — the method doesn't mention draining before cooking, so macros here ASSUME roughly 70% of the marinade (soy sauce, honey, chili oil, garlic) actually coats/is consumed and the rest stays in the marinating bowl, a reasonable but uncertain split; if you drain more or less than that, sodium and sugar will move accordingly — flag if you want it recalculated. Chili crisp oil taken as a standard jarred chili-crunch product. Estimate."
+  },
+  "servings": 4,
+  "serving_desc": "≈260 g cooked (batch ÷4)",
+  "ingredients": [
+    {"item": "chicken breasts, large, cubed", "qty": "2 (~600 g)", "note": "thighs work well as a swap per the original post"},
+    {"item": "white onion, sliced", "qty": "½"},
+    {"item": "soy sauce", "qty": "½ cup", "note": "the dominant sodium source — see notes on assumed consumption"},
+    {"item": "honey", "qty": "3–4 tbsp"},
+    {"item": "chili crisp oil", "qty": "2 tbsp"},
+    {"item": "garlic, minced", "qty": "1 tbsp"},
+    {"item": "frozen broccoli (or fresh)", "qty": "12 oz (~340 g)"}
+  ],
+  "steps": [
+    "Marinate the cubed chicken with the honey, soy sauce, chili crisp oil and garlic for a few hours.",
+    "Toss the marinated chicken into the air fryer along with the onion and broccoli.",
+    "Cook at 400°F (≈200°C) for 10–15 min, then serve."
+  ],
+  "per_serving": {
+    "kcal": 296,
+    "protein_g": 36.9,
+    "carbs_g": 20.6,
+    "fat_g": 7.4,
+    "fiber_g": 3.2,
+    "micros": {
+      "sodium_mg": 1371,
+      "vitamin_c_mg": 26,
+      "added_sugar_g": 11
+    }
+  },
+  "batch_totals": {
+    "kcal": 1185,
+    "protein_g": 147.4,
+    "carbs_g": 82.4,
+    "fat_g": 29.5,
+    "fiber_g": 12.7,
+    "sodium_mg": 5482,
+    "note": "Whole dish (4 servings). Genuinely strong protein and fiber (broccoli pulls real weight here), and it's air-fried rather than pan-fried, so fat stays moderate. The ½ cup soy sauce is the clear sodium outlier of this batch — even at the ~70% assumed consumption used here, it's still very high."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "A strong, simple weeknight dish — ~36.9 g protein for only 296 kcal (~12.4 g protein per 100 kcal, right at the top of your library) with real fiber from a full 12 oz of broccoli, and it's air-fried, so fat stays low. The one clear issue is sodium: ½ cup of soy sauce is a lot, and even assuming a chunk of it doesn't fully transfer to the food, this still lands as one of the saltier dishes in your rotation. An easy, high-value fix — cut the soy sauce and/or switch to low-sodium, and this becomes an excellent regular rotation candidate.",
+      "flags": [
+        "~36.9 g protein / 296 kcal (~12.4 g protein per 100 kcal — excellent)",
+        "real fiber (~3.2 g/serving) from a full 12 oz of broccoli",
+        "air-fried, not pan-fried — fat stays moderate (~7.4 g/serving)",
+        "very high sodium (~1,371 mg/serving) — ½ cup soy sauce is the dominant source",
+        "quick, simple, one-pan method — easy weeknight fit"
+      ],
+      "suggested_mods": [
+        "Cut the soy sauce to ¼ cup and use a low-sodium version — the honey and chili oil still carry plenty of flavor",
+        "Drain off excess marinade before air-frying rather than tossing it all in — less liquid pooling, crispier result, less sodium consumed",
+        "Try the suggested thigh swap for extra juiciness if breast ever comes out dry in the air fryer",
+        "A genuinely good candidate for the rotation once the sodium is dialed back"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Broccoli is a real folate and vitamin-C contributor here, alongside solid protein from the chicken — fully cooked, no safety flags. Sodium is the one thing worth moderating in pregnancy more broadly, same note as for him. A good, simple dish otherwise.",
+      "prenatal_highlights": [
+        "folate + vitamin C from a full 12 oz of broccoli",
+        "protein (chicken); fully cooked, no safety flags"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Same sodium-reduction mods as for him — worth it in pregnancy generally",
+        "This is already one of the better folate sources among the recent additions thanks to the broccoli"
+      ]
+    }
+  },
+  "tags": ["dinner", "chicken", "poultry", "broccoli", "air-fryer", "chili-crisp", "one-pan", "high-sodium", "instagram"],
+  "adopted": false,
+  "created": "2026-10-24",
+  "updated": "2026-10-24",
+  "serving_g": 260,
+  "meal_type": "Chicken",
+  "cooking_guide": [
+    "Cut the chicken into even cubes so everything cooks at the same rate in the air fryer.",
+    "Marinate for at least a couple of hours if you have time — honey-soy marinades need a bit longer than a quick 15-minute soak to really penetrate.",
+    "Before air-frying, consider lifting the chicken out with tongs rather than pouring in all the marinade liquid — a wetter basket means steaming instead of the caramelized edges you want from an air fryer.",
+    "Arrange in a single layer, not piled up — air fryers work by circulating hot air, and crowding the basket blocks that and leads to uneven, soggier results.",
+    "Check at the 10-minute mark and shake the basket partway through for even browning; pull it as soon as the chicken hits a safe internal temp rather than going the full 15 min by default.",
+    "Tip: if you want more crisp, a quick blast at a higher temp for the last 2 minutes helps the honey glaze caramelize without drying out the chicken."
+  ]
+}
