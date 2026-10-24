@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "homemade_rolled_pastry_sweet_generic",
+      "name": "Homemade rolled pastry/cookie, sweet (מגולגלת, rugelach-style, generic)",
+      "serving": "100 g",
+      "kcal": 420,
+      "protein_g": 6,
+      "carbs_g": 48,
+      "fat_g": 22,
+      "fiber_g": 2,
+      "verified": false,
+      "source": "First logged 2026-10-24 (20g piece), no recipe given — generic rugelach-style rolled sweet pastry estimate (buttery dough rolled around a filling, e.g. chocolate/cinnamon/nuts). Not label-verified, refine if the actual recipe/filling is specified."
+    },
+    {
       "id": "high_protein_hot_spicy_chips_verified",
       "name": "High-protein Hot & Spicy chips (plant-based pea/wheat/soy protein), verified label",
       "serving": "100 g",
