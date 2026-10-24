@@ -23,19 +23,23 @@
     {"time": "13:00", "name": "Lunch — sea bream with butter", "category": "food", "qty": "200 g fish + 10 g butter", "kcal": 361.7, "protein_g": 48.09, "carbs_g": 0, "fat_g": 18.11, "fiber_g": 0, "note": "same baked sea bream reference as prior entries (sea_bream_baked_generic, ~145kcal/100g) + standard butter reference (10g). Credits ~1.2mg zinc, ~90mcg selenium, ~600mg omega-3 EPA/DHA, ~600IU vitamin D."},
     {"time": "13:00", "name": "Lunch — cheese pashtida with spinach + whole-spelt pasta", "category": "food", "qty": "150 g", "kcal": 123, "protein_g": 10.35, "carbs_g": 9.45, "fat_g": 5.1, "fiber_g": 1.2, "note": "pulled from the recipe library via photo (cheese_pashtida_spinach_spelt_pasta_logged, first time logged in this session's data — the recipe file itself isn't present in this checkout's intake/recipes/, flagged for re-sync). Credits ~36mcg folate DFE."},
     {"time": "13:00", "name": "Lunch — salad (lettuce, cherry tomatoes, red onion, baby mozzarella)", "category": "food", "qty": "0.7 of a large salad (whole recipe: 1 lettuce head ~300g, 40 cherry tomatoes, 1 red onion ~170g, 80g baby mozzarella)", "kcal": 310.1, "protein_g": 19.99, "carbs_g": 34.71, "fat_g": 13.70, "fiber_g": 9.79, "note": "each component at its standard saved per-gram reference; onion weight assumed ~170g (same as prior similar salads), not weighed. Credits ~12.32mg lycopene, ~70.41mg vitamin C, ~71.4mcg folate DFE."},
-    {"time": "13:00", "name": "Lunch — dressing (lighter oil, regular maple/mustard/balsamic/lemon)", "category": "food", "qty": "~85 g batch (7g olive oil + 15g maple syrup + 15g dijon mustard + 13g balsamic glaze + 35g lemon juice, salt)", "kcal": 151, "protein_g": 0.74, "carbs_g": 21.0, "fat_g": 7.68, "fiber_g": 0, "note": "same recipe as the usual Maple-Balsamic Mustard Vinaigrette but with oil cut to 7g (vs the usual 20g) — recomputed from per-ingredient rates rather than the full-batch per-100g reference, since the ratio changed. Credits ~1.0mg vitamin E, ~13.33mg vitamin C."}
+    {"time": "13:00", "name": "Lunch — dressing (lighter oil, regular maple/mustard/balsamic/lemon)", "category": "food", "qty": "~85 g batch (7g olive oil + 15g maple syrup + 15g dijon mustard + 13g balsamic glaze + 35g lemon juice, salt)", "kcal": 151, "protein_g": 0.74, "carbs_g": 21.0, "fat_g": 7.68, "fiber_g": 0, "note": "same recipe as the usual Maple-Balsamic Mustard Vinaigrette but with oil cut to 7g (vs the usual 20g) — recomputed from per-ingredient rates rather than the full-batch per-100g reference, since the ratio changed. Credits ~1.0mg vitamin E, ~13.33mg vitamin C."},
+    {"time": "13:15", "name": "Schoko-Bon (Kinder Choco-Bons, Ferrero)", "category": "food", "qty": "1 piece (~4.3 g)", "kcal": 23.6, "protein_g": 0.29, "carbs_g": 2.15, "fat_g": 1.54, "fiber_g": 0.13, "note": "same verified reference as prior entries (kinder_choco_bons)."},
+    {"time": "13:15", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:30", "name": "Green grapes, seedless", "category": "food", "qty": "25 pieces (~125 g)", "kcal": 86.25, "protein_g": 0.9, "carbs_g": 22.63, "fat_g": 0.2, "fiber_g": 1.13, "note": "same standard reference as prior entries (~5g/grape). Credits ~13.5mg vitamin C."},
+    {"time": "14:30", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."}
   ],
   "workout_today": true,
   "workout_summary": "Outdoor Walk (07:53-08:53) — 1 hour, ~8000 steps, solid walking pace, exact distance not given — estimated ~5.6km from step count.",
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 4.0,
-    "selenium_mcg": 90,
+    "zinc_mg": 24.0,
+    "selenium_mcg": 190,
     "folate_mcg_dfe": 207.4,
-    "omega3_epa_dha_mg": 600,
-    "vitamin_c_mg": 86.44,
-    "vitamin_d_iu": 600,
-    "vitamin_e_mg": 1.0,
+    "omega3_epa_dha_mg": 1600,
+    "vitamin_c_mg": 1099.94,
+    "vitamin_d_iu": 2600,
+    "vitamin_e_mg": 135.0,
     "lycopene_mg": 12.32
   },
   "assumptions": [
@@ -46,7 +50,9 @@
     "07:53-08:53 Outdoor Walk — 1 hour, ~8000 steps, solid walking pace, exact distance not given; estimated ~5.6km from step count (~0.7m/step), flagged as approximate. 08:53 creatine monohydrate, 5g — zero kcal/macros.",
     "09:15 5 green grapes (~25g, standard reference, credits ~2.7mg vitamin C) + 1 yellow cheese slice (9%, verified reference).",
     "10:30 double espresso (4 caffeine shots today) + 20g homemade rolled pastry (מגולגלת, sweet) — new generic reference added (homemade_rolled_pastry_sweet_generic, first time logged), estimated as rugelach-style, no recipe given, flagged low-confidence.",
-    "13:00 lunch: 200g sea bream + 10g butter (credits ~1.2mg zinc, ~90mcg selenium, ~600mg omega-3, ~600IU vitamin D) + 150g cheese pashtida with spinach + whole-spelt pasta (pulled from the recipe library via a photo of the card — the recipe file isn't present in this checkout's intake/recipes/, flagged for re-sync with the sibling recipe-analyzer session; credits ~36mcg folate DFE) + 0.7 of a salad (1 lettuce head ~300g, 40 cherry tomatoes, 1 red onion ~170g assumed, 80g baby mozzarella — credits ~12.32mg lycopene, ~70.41mg vitamin C, ~71.4mcg folate DFE) + ~85g dressing batch (regular maple/mustard/balsamic/lemon proportions but oil cut to 7g instead of the usual 20g — recomputed from per-ingredient rates, credits ~1.0mg vitamin E, ~13.33mg vitamin C). 2 new generic references added (lettuce, raw red onion) formalizing rates used informally before."
+    "13:00 lunch: 200g sea bream + 10g butter (credits ~1.2mg zinc, ~90mcg selenium, ~600mg omega-3, ~600IU vitamin D) + 150g cheese pashtida with spinach + whole-spelt pasta (pulled from the recipe library via a photo of the card — the recipe file isn't present in this checkout's intake/recipes/, flagged for re-sync with the sibling recipe-analyzer session; credits ~36mcg folate DFE) + 0.7 of a salad (1 lettuce head ~300g, 40 cherry tomatoes, 1 red onion ~170g assumed, 80g baby mozzarella — credits ~12.32mg lycopene, ~70.41mg vitamin C, ~71.4mcg folate DFE) + ~85g dressing batch (regular maple/mustard/balsamic/lemon proportions but oil cut to 7g instead of the usual 20g — recomputed from per-ingredient rates, credits ~1.0mg vitamin E, ~13.33mg vitamin C). 2 new generic references added (lettuce, raw red onion) formalizing rates used informally before.",
+    "13:15 1 Schoko-Bon (same verified reference as prior entries) + Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "14:30 25 green grapes (~125g, standard reference, credits ~13.5mg vitamin C) + essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E. Zinc/selenium/vitamin C/D/E/omega-3 all well past target for the day."
   ],
-  "status_note": "Day in progress. Slept 6.67h (22:30-05:10), a bit short of target. AM pill + double espresso + yogurt + cereal + Mayven logged. 1-hour outdoor walk completed (~8000 steps, ~5.6km estimated) + creatine + grapes/cheese + 10:30 espresso/pastry + lunch (sea bream, pashtida, salad, dressing) logged (4 caffeine shots). Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept 6.67h (22:30-05:10), a bit short of target. AM pill + double espresso + yogurt + cereal + Mayven logged. 1-hour outdoor walk completed (~8000 steps, ~5.6km estimated) + creatine + grapes/cheese + 10:30 espresso/pastry + lunch (sea bream, pashtida, salad, dressing) + schoko-bon/omega-3 + 14:30 grapes/essential-5 logged (4 caffeine shots). Still out of Rhinolast spray — worth restocking."
 }
