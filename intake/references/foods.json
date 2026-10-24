@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "elite_shahar_chocolate_generic",
+      "name": "Elite Shahar chocolate (שוקולד השחר), generic",
+      "serving": "100 g",
+      "kcal": 545,
+      "protein_g": 5,
+      "carbs_g": 58,
+      "fat_g": 32,
+      "fiber_g": 5,
+      "verified": false,
+      "source": "First logged 2026-10-24 (30g). Generic estimate for Elite Shahar, a semi-dark (~53% cocoa) parve Israeli chocolate bar — less fat/more carb than the 70%-cacao dark_chocolate_cube_generic reference, so not reused from there. Not label-verified, refine if a physical bar label is checked."
+    },
+    {
       "id": "lettuce_generic",
       "name": "Lettuce, raw, generic (romaine-type)",
       "serving": "100 g",
