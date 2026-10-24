@@ -2,6 +2,42 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "lettuce_generic",
+      "name": "Lettuce, raw, generic (romaine-type)",
+      "serving": "100 g",
+      "kcal": 15,
+      "protein_g": 1.2,
+      "carbs_g": 2.9,
+      "fat_g": 0.2,
+      "fiber_g": 1.3,
+      "verified": false,
+      "source": "Standard USDA-type raw lettuce values, formalized 2026-10-24 (used informally in several prior salad entries, e.g. 11 Jul, 18 Jul, 31 Jul). Standard whole-head weight assumed ~300g unless stated. Not label-verified."
+    },
+    {
+      "id": "red_onion_raw_generic",
+      "name": "Red onion, raw, generic",
+      "serving": "100 g",
+      "kcal": 40,
+      "protein_g": 1.1,
+      "carbs_g": 9.3,
+      "fat_g": 0.1,
+      "fiber_g": 1.7,
+      "verified": false,
+      "source": "Standard USDA-type raw red onion values, first logged 2026-10-21 (0.5 onion, ~75g), distinct from the baked red onion entries used elsewhere. Also credits ~7.4mg vitamin C per 100g. Not label-verified."
+    },
+    {
+      "id": "cheese_pashtida_spinach_spelt_pasta_logged",
+      "name": "Cheese pashtida with spinach + whole-spelt pasta — logged batch (recipe library)",
+      "serving": "100 g",
+      "kcal": 82,
+      "protein_g": 6.9,
+      "carbs_g": 6.3,
+      "fat_g": 3.4,
+      "fiber_g": 0.8,
+      "verified": false,
+      "source": "Pulled from the recipe library via a screenshot of the card (2026-10-24) — the recipe JSON itself isn't present in this checkout's intake/recipes/ folder (likely added by the sibling recipe-analyzer session and not yet synced here), so values are taken directly from the photographed card rather than the file. Per 100g: 82kcal, 6.9g protein, 6.3g carb, 3.4g fat, 0.8g fiber, 24mcg folate DFE, 74mg calcium, 176mg sodium, 37mg choline, 0.6mg iron, 1.9g saturated fat. Batch makes 9 servings, 1 slice ≈190g baked, estimate confidence. Flagged — re-sync intake/recipes/ with the sibling session if the full recipe file is needed."
+    },
+    {
       "id": "homemade_rolled_pastry_sweet_generic",
       "name": "Homemade rolled pastry/cookie, sweet (מגולגלת, rugelach-style, generic)",
       "serving": "100 g",
