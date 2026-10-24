@@ -1,0 +1,109 @@
+{
+  "id": "lemongrass_chicken_edamame_rice",
+  "name": "Charred lemongrass chicken with edamame rice",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram (English) — a rice-brand-sponsored weeknight recipe post",
+    "captured": "2026-10-24",
+    "notes": "A blended garlic-shallot-lemongrass-lime-fish sauce marinade on chicken thighs, charred under a broiler or air fryer, served over basmati rice cooked in broth and folded with edamame, parsley and togarashi. NOTE: the post's own caption text describes a 'steak salad' while the actual ingredient list and method are entirely chicken + rice — the caption and recipe don't match (likely a copy/paste mismatch in the original post). Analyzed strictly from the stated ingredients/method (chicken + edamame rice), which is internally consistent. SODIUM IS A WIDE-RANGE ESTIMATE: ¼ cup fish sauce is a major, very salty ingredient, but a meaningful amount of marinade typically drips off / stays in the pan during broiling/air-frying rather than being fully consumed — real intake is likely somewhat lower than the raw-ingredient sum below. Chicken broth sodium assumed at a standard (not low-sodium) store-bought broth. Estimate."
+  },
+  "servings": 6,
+  "serving_desc": "≈310 g (batch ÷6) — chicken + rice together",
+  "ingredients": [
+    {"item": "boneless, skinless chicken thighs", "qty": "2 lb (~907 g)"},
+    {"item": "garlic cloves", "qty": "6"},
+    {"item": "shallot, roughly chopped", "qty": "1"},
+    {"item": "lemongrass stalk, roughly chopped", "qty": "1 large"},
+    {"item": "lime juice", "qty": "from 2 limes"},
+    {"item": "brown sugar", "qty": "¼ cup"},
+    {"item": "fish sauce", "qty": "¼ cup", "note": "major sodium source — see notes"},
+    {"item": "dark soy sauce", "qty": "2 tbsp"},
+    {"item": "water", "qty": "2 tbsp, plus more to thin"},
+    {"item": "basmati rice", "qty": "2 cups dry"},
+    {"item": "chicken broth (for cooking the rice)", "qty": "3½ cups"},
+    {"item": "frozen edamame", "qty": "12 oz bag (~340 g)"},
+    {"item": "fresh parsley, minced", "qty": "1 large bunch"},
+    {"item": "togarashi", "qty": "1 tbsp, plus more to taste"},
+    {"item": "salt", "qty": "to taste"},
+    {"item": "OPTIONAL finishing sauce: fresh chilies, lime juice, fish sauce, brown sugar", "qty": "to taste"}
+  ],
+  "steps": [
+    "Blend the garlic, shallot, lemongrass, lime juice, brown sugar, fish sauce, soy sauce and water until smooth.",
+    "Pour most of it over the chicken and marinate; reserve a little to brush on at the end.",
+    "Cook the rice per package instructions, substituting chicken broth for the water.",
+    "Fold the cooked rice with the edamame, parsley and togarashi; season with salt to taste.",
+    "Broil or air-fry the chicken on high heat until charred and cooked through, brushing with the reserved marinade.",
+    "Serve the chicken over the edamame rice. Optionally finish with a quick sauce of chopped chilies, lime juice, fish sauce and a little brown sugar."
+  ],
+  "per_serving": {
+    "kcal": 549,
+    "protein_g": 42,
+    "carbs_g": 71,
+    "fat_g": 10.1,
+    "fiber_g": 4.2,
+    "micros": {
+      "sodium_mg": 1869,
+      "vitamin_c_mg": 5,
+      "added_sugar_g": 9
+    }
+  },
+  "batch_totals": {
+    "kcal": 3291,
+    "protein_g": 252,
+    "carbs_g": 426,
+    "fat_g": 60,
+    "fiber_g": 25,
+    "sodium_mg": 11214,
+    "note": "Whole dish (6 servings). Edamame contributes meaningfully to both protein and fiber alongside the chicken and rice — a genuinely balanced bowl on macros. Sodium is the standout concern: fish sauce alone contributes roughly half the batch total, with chicken broth and soy sauce adding more on top. Real intake likely somewhat lower than this raw-ingredient estimate since some marinade is discarded/drips off during cooking."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 7,
+      "verdict": "A genuinely well-rounded bowl — ~42 g protein and ~4.2 g fiber per serving, helped a lot by the edamame (a real protein + fiber contributor, not just a garnish), with moderate fat since the chicken is thigh (not fried) and broiled/air-fried. Carbs are substantial (~71 g/serving) from 2 cups of rice split 6 ways — reasonable for a dinner, less so if logging this as a lighter meal. The clear weak point is sodium: fish sauce, soy sauce and broth stack up to a very high estimate, though real intake is probably somewhat lower since marinade sheds during broiling. Worth moderating regardless.",
+      "flags": [
+        "~42 g protein / 549 kcal, helped by edamame (protein + fiber, not just a veg)",
+        "~4.2 g fiber/serving — rice + edamame + parsley",
+        "very high sodium estimate (~1,869 mg/serving) — fish sauce is the dominant source",
+        "moderate fat (~10 g) — thigh meat, broiled/air-fried, not deep-fried",
+        "substantial carbs (~71 g/serving) from 2 cups dry rice across 6 servings"
+      ],
+      "suggested_mods": [
+        "Cut the fish sauce to ~2-3 tbsp instead of ¼ cup (4 tbsp) and taste before adding more — the biggest single sodium lever",
+        "Use low-sodium chicken broth for the rice",
+        "Add salt at the very end, to taste, rather than by default — the marinade and broth likely already cover it",
+        "The edamame + parsley combo is worth keeping as-is — real nutritional value, not filler"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Edamame is a genuine folate and fiber contributor here (soybeans are one of the better plant folate sources), on top of protein from the chicken — a solid combination for her lens. Fully cooked chicken (charred/broiled through), no raw elements. Sodium is high, same caveat as for him — worth moderating in pregnancy generally. Not a big iron or choline source on its own.",
+      "prenatal_highlights": [
+        "folate + fiber from edamame — a real plant source of her top nutrient",
+        "protein from chicken; fully cooked, no safety flags"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Same sodium-reduction mods as for him — worth it in pregnancy generally",
+        "Pair with a vitamin-C side (citrus, pepper) to round things out further"
+      ]
+    }
+  },
+  "tags": ["dinner", "chicken", "poultry", "lemongrass", "rice", "edamame", "fish-sauce", "high-sodium", "instagram", "sponsored"],
+  "adopted": false,
+  "created": "2026-10-24",
+  "updated": "2026-10-24",
+  "serving_g": 310,
+  "meal_type": "Chicken",
+  "cooking_guide": [
+    "Blend the marinade until fully smooth — lemongrass is fibrous, and leaving it chunky means unpleasant woody bits in the finished sauce.",
+    "Reserve some unused (never touched raw chicken) marinade before adding the rest to the chicken, specifically so you have a clean portion to brush on at the end without any food-safety concern.",
+    "Pat the chicken thighs reasonably dry before marinating and again before broiling/air-frying — too much surface liquid stops you from getting a real char.",
+    "Cook the rice in broth instead of water for a meaningfully savory base — this is doing real flavor work, not just a swap for the sake of it.",
+    "Fold in the edamame, parsley and togarashi AFTER the rice is cooked and off the heat — this keeps the edamame's color and the parsley fresh rather than cooking them further.",
+    "Broil or air-fry on genuinely high heat and don't walk away — you want char, not just cooked-through, and that line gets crossed to burnt quickly.",
+    "Brush with the reserved clean marinade in the last minute or two for a glossy, flavorful finish.",
+    "Tip: if sodium is a concern, start with less fish sauce than called for and build up to taste — it's far easier to add more salt/fish sauce than to fix an over-salted dish."
+  ]
+}
