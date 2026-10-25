@@ -1,5 +1,5 @@
 {
-  "now": 1792929165489,
+  "now": 1792931272358,
   "workouts": [
     {
       "datetime": "2026-10-24T07:53",
@@ -8682,8 +8682,8 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 30,
-      "readyInHours": 0.5,
-      "ready": false
+      "readyInHours": 0,
+      "ready": true
     },
     "back": {
       "key": "back",
@@ -8786,15 +8786,15 @@
     "Chest": {
       "section": "Chest",
       "pct": 30,
-      "readyInHours": 0.5,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 30,
-          "readyInHours": 0.5,
-          "ready": false
+          "readyInHours": 0,
+          "ready": true
         }
       ]
     },
@@ -10295,9 +10295,9 @@
   "recommendation": {
     "section": "Chest",
     "fatigue": 30,
-    "restHours": 0.5,
+    "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-25T12:22:45.489Z",
+    "readyAt": "2026-10-25T12:27:52.358Z",
     "neverLogged": false,
     "daysSince": 16.9,
     "suggestedExercises": [
@@ -10417,7 +10417,7 @@
       {
         "section": "Chest",
         "fatigue": 30,
-        "readyInHours": 0.5,
+        "readyInHours": 0,
         "daysSince": 16.9
       },
       {

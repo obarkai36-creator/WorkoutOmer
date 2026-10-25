@@ -18,16 +18,16 @@
     {"time": "12:15", "name": "Lunch — mashed potatoes", "category": "food", "qty": "250 g", "kcal": 275, "protein_g": 5, "carbs_g": 40, "fat_g": 10, "fiber_g": 2.5, "note": "same buttered mashed-potato reference as prior entries (mashed_potato_buttered_generic, ~110kcal/100g), now formalized as a saved reference."},
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:50", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "15:00", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "workout_today": false,
   "workout_summary": null,
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
     "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 1000,
+    "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 1000,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
@@ -39,8 +39,8 @@
     "Sometime before 12:00 (placeholder 12:00): 1 Quest Nutrition protein bar, cookie dough flavor — confirmed same product/macros as prior Quest bar entries (quest_bar_60g_verified).",
     "12:15 lunch: 200g chicken breast in teriyaki (new generic reference, chicken_breast_teriyaki_generic, first time logged) + 250g mashed potatoes (standard buttered reference, now formalized as mashed_potato_buttered_generic).",
     "13:00 espresso, 1 single (3 caffeine shots today).",
-    "13:50 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E.",
-    "15:00 Omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose. Zinc/selenium/vitamin C/D/E/omega-3 all cleared for the day."
+    "13:50 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E. CORRECTED — the previously-logged 15:00 omega-3 wasn't actually taken yet; removed, will be logged when actually taken.",
+    "14:30 espresso, 1 single (4 caffeine shots today)."
   ],
-  "status_note": "Day in progress. Slept 8h (23:00-06:00, DST adjusted), within target. AM pill + double espresso + Mayven + protein bar + lunch (teriyaki chicken, mashed potatoes) + 13:00 espresso + essential-5 + omega-3 logged (3 caffeine shots). Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept 8h (23:00-06:00, DST adjusted), within target. AM pill + double espresso + Mayven + protein bar + lunch (teriyaki chicken, mashed potatoes) + 13:00/14:30 espresso + essential-5 logged (4 caffeine shots). Omega-3 not yet taken today. Still out of Rhinolast spray — worth restocking."
 }
