@@ -18,14 +18,17 @@
     {"time": "12:15", "name": "Lunch — mashed potatoes", "category": "food", "qty": "250 g", "kcal": 275, "protein_g": 5, "carbs_g": 40, "fat_g": 10, "fiber_g": 2.5, "note": "same buttered mashed-potato reference as prior entries (mashed_potato_buttered_generic, ~110kcal/100g), now formalized as a saved reference."},
     {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "13:50", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
-    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
+    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:30", "name": "Cottage cheese", "category": "food", "qty": "200 g", "kcal": 196, "protein_g": 22, "carbs_g": 6.8, "fat_g": 8.6, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic)."},
+    {"time": "15:30", "name": "Walnuts", "category": "food", "qty": "3 pieces (~15 g)", "kcal": 98.1, "protein_g": 2.28, "carbs_g": 2.07, "fat_g": 9.78, "fiber_g": 1.02, "note": "same standard reference as prior entries (walnut_generic, now formalized), ~5g/walnut."},
+    {"time": "15:30", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.4, "note": "same standard reference as prior entries (brazil_nut_generic, now formalized), ~95mcg selenium/nut — combined with today's essential-5, selenium totals ~195mcg, still well under the 400mcg UL."}
   ],
   "workout_today": false,
   "workout_summary": null,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
-    "selenium_mcg": 100,
+    "selenium_mcg": 195,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 1000,
@@ -40,7 +43,8 @@
     "12:15 lunch: 200g chicken breast in teriyaki (new generic reference, chicken_breast_teriyaki_generic, first time logged) + 250g mashed potatoes (standard buttered reference, now formalized as mashed_potato_buttered_generic).",
     "13:00 espresso, 1 single (3 caffeine shots today).",
     "13:50 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E. CORRECTED — the previously-logged 15:00 omega-3 wasn't actually taken yet; removed, will be logged when actually taken.",
-    "14:30 espresso, 1 single (4 caffeine shots today)."
+    "14:30 espresso, 1 single (4 caffeine shots today).",
+    "15:30 200g cottage cheese (same generic reference as prior entries) + 3 walnuts (~15g, standard reference now formalized as walnut_generic) + 1 Brazil nut (~5g, standard reference now formalized as brazil_nut_generic, credits ~95mcg selenium — combined with today's essential-5, ~195mcg total, well under the 400mcg UL)."
   ],
-  "status_note": "Day in progress. Slept 8h (23:00-06:00, DST adjusted), within target. AM pill + double espresso + Mayven + protein bar + lunch (teriyaki chicken, mashed potatoes) + 13:00/14:30 espresso + essential-5 logged (4 caffeine shots). Omega-3 not yet taken today. Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept 8h (23:00-06:00, DST adjusted), within target. AM pill + double espresso + Mayven + protein bar + lunch (teriyaki chicken, mashed potatoes) + 13:00/14:30 espresso + essential-5 + cottage cheese/nuts logged (4 caffeine shots). Omega-3 not yet taken today. Still out of Rhinolast spray — worth restocking."
 }

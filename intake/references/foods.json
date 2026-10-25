@@ -2,6 +2,30 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "walnut_generic",
+      "name": "Walnut, generic, per piece",
+      "serving": "1 walnut (~5 g)",
+      "kcal": 32.7,
+      "protein_g": 0.76,
+      "carbs_g": 0.69,
+      "fat_g": 3.26,
+      "fiber_g": 0.34,
+      "verified": false,
+      "source": "Standard USDA-type walnut values (~654kcal/100g, 15.2p/13.7c/65.2f/6.7fiber per 100g), formalized 2026-10-25 (used informally in several prior entries, e.g. 28 Jun, 12 Jul). Standard whole-walnut weight assumed ~5g. Not label-verified."
+    },
+    {
+      "id": "brazil_nut_generic",
+      "name": "Brazil nut, per piece",
+      "serving": "1 nut (~5 g)",
+      "kcal": 33,
+      "protein_g": 0.7,
+      "carbs_g": 0.6,
+      "fat_g": 3.3,
+      "fiber_g": 0.4,
+      "verified": false,
+      "source": "Standard Brazil nut reference, used repeatedly since first logged 2026-08-03, formalized 2026-10-25. Credits ~95mcg selenium per nut — Brazil nuts are a standing selenium-surplus-risk flag when stacked with the essential-5 supplement (100mcg) on the same day."
+    },
+    {
       "id": "chicken_breast_teriyaki_generic",
       "name": "Chicken breast in teriyaki sauce, generic",
       "serving": "100 g",
