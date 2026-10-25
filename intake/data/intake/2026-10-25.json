@@ -13,7 +13,9 @@
     {"time": "06:15", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — 1x/day pill. No Rhinolast spray, still out of stock."},
     {"time": "06:15", "name": "Double espresso", "category": "drink", "qty": "1 double", "kcal": 6, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
     {"time": "06:15", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"},
-    {"time": "12:00", "name": "Quest Nutrition protein bar, cookie dough", "category": "food", "qty": "1 bar (60 g)", "kcal": 190, "protein_g": 20, "carbs_g": 23, "fat_g": 7, "fiber_g": 12, "time_approx": true, "note": "same verified reference as prior entries (quest_bar_60g_verified), cookie dough flavor — confirmed same product/macros as prior Quest bar entries. Exact time not given, logged sometime before 12:00, placeholder 12:00."}
+    {"time": "12:00", "name": "Quest Nutrition protein bar, cookie dough", "category": "food", "qty": "1 bar (60 g)", "kcal": 190, "protein_g": 20, "carbs_g": 23, "fat_g": 7, "fiber_g": 12, "time_approx": true, "note": "same verified reference as prior entries (quest_bar_60g_verified), cookie dough flavor — confirmed same product/macros as prior Quest bar entries. Exact time not given, logged sometime before 12:00, placeholder 12:00."},
+    {"time": "12:15", "name": "Lunch — chicken breast in teriyaki", "category": "food", "qty": "200 g", "kcal": 400, "protein_g": 60, "carbs_g": 16, "fat_g": 10, "fiber_g": 0, "note": "new generic reference (chicken_breast_teriyaki_generic, first time logged) — chicken breast + an estimated teriyaki glaze allowance, not label/recipe-verified."},
+    {"time": "12:15", "name": "Lunch — mashed potatoes", "category": "food", "qty": "250 g", "kcal": 275, "protein_g": 5, "carbs_g": 40, "fat_g": 10, "fiber_g": 2.5, "note": "same buttered mashed-potato reference as prior entries (mashed_potato_buttered_generic, ~110kcal/100g), now formalized as a saved reference."}
   ],
   "workout_today": false,
   "workout_summary": null,
@@ -31,7 +33,8 @@
   "assumptions": [
     "Sleep logged: 23:00-06:00, 8h (night of 2026-10-24) — the user noted a +1hr clock change (DST ending) accounts for the gap between the raw 7h clock reading and the actual 8h elapsed. Within target band.",
     "06:15 (exact time not given, placeholder) Bilaxten (bilastine pill, morning) — no Rhinolast spray, still out of stock + double espresso (2 caffeine shots) + Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
-    "Sometime before 12:00 (placeholder 12:00): 1 Quest Nutrition protein bar, cookie dough flavor — confirmed same product/macros as prior Quest bar entries (quest_bar_60g_verified)."
+    "Sometime before 12:00 (placeholder 12:00): 1 Quest Nutrition protein bar, cookie dough flavor — confirmed same product/macros as prior Quest bar entries (quest_bar_60g_verified).",
+    "12:15 lunch: 200g chicken breast in teriyaki (new generic reference, chicken_breast_teriyaki_generic, first time logged) + 250g mashed potatoes (standard buttered reference, now formalized as mashed_potato_buttered_generic)."
   ],
-  "status_note": "Day in progress. Slept 8h (23:00-06:00, DST adjusted), within target. AM pill + double espresso + Mayven + protein bar logged. Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept 8h (23:00-06:00, DST adjusted), within target. AM pill + double espresso + Mayven + protein bar + lunch (teriyaki chicken, mashed potatoes) logged. Still out of Rhinolast spray — worth restocking."
 }

@@ -2,6 +2,30 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "chicken_breast_teriyaki_generic",
+      "name": "Chicken breast in teriyaki sauce, generic",
+      "serving": "100 g",
+      "kcal": 200,
+      "protein_g": 30,
+      "carbs_g": 8,
+      "fat_g": 5,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "First logged 2026-10-25 (200g). Generic estimate: skinless cooked chicken breast (~165kcal/100g, 31p) plus an allowance for teriyaki glaze/sauce (sugar+soy-based, adds carbs/sodium and a little fat). Not label/recipe-verified, refine if the actual sauce amount is given."
+    },
+    {
+      "id": "mashed_potato_buttered_generic",
+      "name": "Mashed potatoes, buttered, generic",
+      "serving": "100 g",
+      "kcal": 110,
+      "protein_g": 2,
+      "carbs_g": 16,
+      "fat_g": 4,
+      "fiber_g": 1,
+      "verified": false,
+      "source": "Standard buttered/milk mashed-potato rate, used informally in several prior entries (2026-08-07, 2026-09-13), formalized 2026-10-25. Not label-verified."
+    },
+    {
       "id": "couscous_feta_pomegranate_salad_generic",
       "name": "Couscous, feta & pomegranate salad, generic",
       "serving": "100 g",
