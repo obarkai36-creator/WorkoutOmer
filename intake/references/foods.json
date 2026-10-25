@@ -2,6 +2,30 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "feta_cheese_16pct_generic",
+      "name": "Feta cheese, 16% fat, generic",
+      "serving": "100 g",
+      "kcal": 180,
+      "protein_g": 14,
+      "carbs_g": 3,
+      "fat_g": 13,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "First logged 2026-10-25 (75g). Generic estimate for reduced-fat (16%) feta, lighter than standard full-fat feta (~264kcal/100g). Not label-verified, refine if a physical pack label is checked."
+    },
+    {
+      "id": "egg_large_plain_generic",
+      "name": "Egg, large, plain (no added oil), per egg",
+      "serving": "1 large egg (~50 g)",
+      "kcal": 72,
+      "protein_g": 6.3,
+      "carbs_g": 0.4,
+      "fat_g": 4.8,
+      "fiber_g": 0,
+      "verified": false,
+      "source": "Standard USDA large-egg values, formalized 2026-10-25 for eggs eaten without a separate frying-oil allowance (distinct from eggs_omelette_2_generic and the sunny-side-up references, which both add cooking oil/fat)."
+    },
+    {
       "id": "walnut_generic",
       "name": "Walnut, generic, per piece",
       "serving": "1 walnut (~5 g)",

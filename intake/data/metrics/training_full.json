@@ -1,5 +1,5 @@
 {
-  "now": 1792933133091,
+  "now": 1792958048532,
   "workouts": [
     {
       "datetime": "2026-10-24T07:53",
@@ -8681,7 +8681,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 30,
+      "pct": 26,
       "readyInHours": 0,
       "ready": true
     },
@@ -8697,7 +8697,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     },
@@ -8705,7 +8705,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 11,
+      "pct": 9,
       "readyInHours": 0,
       "ready": true
     },
@@ -8713,7 +8713,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 17,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -8737,7 +8737,7 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -8777,7 +8777,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 26,
+      "pct": 21,
       "readyInHours": 0,
       "ready": true
     }
@@ -8785,14 +8785,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 30,
+      "pct": 26,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 30,
+          "pct": 26,
           "readyInHours": 0,
           "ready": true
         }
@@ -8815,14 +8815,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         }
@@ -8830,14 +8830,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 17,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         },
@@ -8845,7 +8845,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 11,
+          "pct": 9,
           "readyInHours": 0,
           "ready": true
         },
@@ -8884,7 +8884,7 @@
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         },
@@ -8923,14 +8923,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 26,
+      "pct": 21,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 26,
+          "pct": 21,
           "readyInHours": 0,
           "ready": true
         }
@@ -10275,14 +10275,14 @@
       },
       {
         "label": "-1w",
-        "stress": 673,
-        "sessions": 4,
+        "stress": 690,
+        "sessions": 5,
         "acwr": 1.07
       },
       {
         "label": "This wk",
-        "stress": 428,
-        "sessions": 4,
+        "stress": 411,
+        "sessions": 3,
         "acwr": 0.88
       }
     ],
@@ -10294,12 +10294,12 @@
   },
   "recommendation": {
     "section": "Chest",
-    "fatigue": 30,
+    "fatigue": 26,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-25T12:58:53.091Z",
+    "readyAt": "2026-10-25T19:54:08.532Z",
     "neverLogged": false,
-    "daysSince": 16.9,
+    "daysSince": 17.2,
     "suggestedExercises": [
       {
         "name": "Bench Press",
@@ -10416,41 +10416,41 @@
     "ranked": [
       {
         "section": "Chest",
-        "fatigue": 30,
+        "fatigue": 26,
         "readyInHours": 0,
-        "daysSince": 16.9
+        "daysSince": 17.2
       },
       {
         "section": "Shoulders",
-        "fatigue": 7,
+        "fatigue": 6,
         "readyInHours": 0,
-        "daysSince": 12.2
+        "daysSince": 12.5
       },
       {
         "section": "Back",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 10.2
+        "daysSince": 10.5
       },
       {
         "section": "Legs",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 5.3
+        "daysSince": 5.6
       },
       {
         "section": "Arms",
-        "fatigue": 9,
+        "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 2.1
+        "daysSince": 2.4
       }
     ],
     "suggestedCount": 4,
     "totalAvailable": 10,
     "typicalSessionSize": 4,
-    "aerobicLast7": 2,
+    "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1.2
+    "daysSinceAerobic": 1.5
   },
   "alerts": [
     {
@@ -10460,7 +10460,8 @@
     }
   ],
   "changes": [
-    "You're below your PR on 13 lifts — closest wins first: Incline DB Curl (67% of best), Incline Hammer Curl (74% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight."
+    "You're below your PR on 13 lifts — closest wins first: Incline DB Curl (67% of best), Incline Hammer Curl (74% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight.",
+    "Only 1/2 aerobic sessions this week — add an easy run or row."
   ],
   "timing": {
     "avgGap": 2.8,
@@ -10477,7 +10478,7 @@
       18,
       20
     ],
-    "daysSinceLast": 1.2,
+    "daysSinceLast": 1.5,
     "total": 85
   },
   "relstrength": {
@@ -10528,7 +10529,7 @@
   "aerobic": {
     "any": true,
     "count": 43,
-    "km7": 7.9,
+    "km7": 5.6,
     "km28": 21.4,
     "totalKm": 165.4,
     "longest": 13.35,
@@ -10544,7 +10545,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.2,
+    "daysSinceLast": 1.5,
     "recent": [
       {
         "t": 1792828380000,

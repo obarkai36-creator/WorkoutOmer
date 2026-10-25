@@ -21,20 +21,30 @@
     {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "15:30", "name": "Cottage cheese", "category": "food", "qty": "200 g", "kcal": 196, "protein_g": 22, "carbs_g": 6.8, "fat_g": 8.6, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic)."},
     {"time": "15:30", "name": "Walnuts", "category": "food", "qty": "3 pieces (~15 g)", "kcal": 98.1, "protein_g": 2.28, "carbs_g": 2.07, "fat_g": 9.78, "fiber_g": 1.02, "note": "same standard reference as prior entries (walnut_generic, now formalized), ~5g/walnut."},
-    {"time": "15:30", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.4, "note": "same standard reference as prior entries (brazil_nut_generic, now formalized), ~95mcg selenium/nut — combined with today's essential-5, selenium totals ~195mcg, still well under the 400mcg UL."}
+    {"time": "15:30", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.4, "note": "same standard reference as prior entries (brazil_nut_generic, now formalized), ~95mcg selenium/nut — combined with today's essential-5, selenium totals ~195mcg, still well under the 400mcg UL."},
+    {"time": "16:00", "name": "Green apple", "category": "food", "qty": "1 medium (~180 g)", "kcal": 93.6, "protein_g": 0.47, "carbs_g": 24.84, "fat_g": 0.31, "fiber_g": 4.32, "note": "same standard reference as prior entries (green_apple_generic). Credits ~10.8mg vitamin C."},
+    {"time": "17:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "17:30", "name": "Yellow cheese, 9% (Tnuva Emek Light)", "category": "food", "qty": "2 slices (50 g)", "kcal": 100, "protein_g": 15, "carbs_g": 0, "fat_g": 4.5, "fiber_g": 0, "note": "verified label reference, same as prior entries (tnuva_emek_light_yellow_cheese_9pct)."},
+    {"time": "17:30", "name": "Cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.74, "carbs_g": 11.74, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "20:30", "name": "Dinner — Agami Pita Pro (whole spelt)", "category": "food", "qty": "2 units (136 g)", "kcal": 280, "protein_g": 30, "carbs_g": 38, "fat_g": 5, "fiber_g": 18, "note": "verified reference, same as prior entries (agami_pita_pro_spelt)."},
+    {"time": "20:30", "name": "Dinner — eggs", "category": "food", "qty": "4 large", "kcal": 288, "protein_g": 25.2, "carbs_g": 1.6, "fat_g": 19.2, "fiber_g": 0, "note": "plain eggs, no cooking method/oil specified — standard per-egg reference (egg_large_plain_generic)."},
+    {"time": "20:30", "name": "Dinner — feta cheese, 16% fat", "category": "food", "qty": "75 g", "kcal": 135, "protein_g": 10.5, "carbs_g": 2.25, "fat_g": 9.75, "fiber_g": 0, "note": "new generic reference (feta_cheese_16pct_generic, first time logged) — reduced-fat feta, not label-verified."},
+    {"time": "20:30", "name": "Dinner — cherry tomatoes", "category": "food", "qty": "25 pieces", "kcal": 66.25, "protein_g": 3.43, "carbs_g": 14.68, "fat_g": 0.75, "fiber_g": 4.5, "note": "same standard reference as prior entries. Credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE."},
+    {"time": "20:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "21:00", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0}
   ],
   "workout_today": false,
   "workout_summary": null,
-  "caffeine_shots": 4,
+  "caffeine_shots": 5,
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
     "selenium_mcg": 195,
-    "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1000,
+    "folate_mcg_dfe": 214.75,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 1109.8,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
-    "lycopene_mg": 0
+    "lycopene_mg": 19.8
   },
   "assumptions": [
     "Sleep logged: 23:00-06:00, 8h (night of 2026-10-24) — the user noted a +1hr clock change (DST ending) accounts for the gap between the raw 7h clock reading and the actual 8h elapsed. Within target band.",
@@ -44,7 +54,11 @@
     "13:00 espresso, 1 single (3 caffeine shots today).",
     "13:50 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E. CORRECTED — the previously-logged 15:00 omega-3 wasn't actually taken yet; removed, will be logged when actually taken.",
     "14:30 espresso, 1 single (4 caffeine shots today).",
-    "15:30 200g cottage cheese (same generic reference as prior entries) + 3 walnuts (~15g, standard reference now formalized as walnut_generic) + 1 Brazil nut (~5g, standard reference now formalized as brazil_nut_generic, credits ~95mcg selenium — combined with today's essential-5, ~195mcg total, well under the 400mcg UL)."
+    "15:30 200g cottage cheese (same generic reference as prior entries) + 3 walnuts (~15g, standard reference now formalized as walnut_generic) + 1 Brazil nut (~5g, standard reference now formalized as brazil_nut_generic, credits ~95mcg selenium — combined with today's essential-5, ~195mcg total, well under the 400mcg UL).",
+    "16:00 1 medium green apple (~180g, standard reference, credits ~10.8mg vitamin C).",
+    "17:30 espresso (5 caffeine shots today) + 2 yellow cheese slices (9%, verified reference) + 20 cherry tomatoes (credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE).",
+    "20:30 dinner: 2 Agami Pita Pro (verified reference) + 4 eggs (plain, no cooking oil specified — new per-egg reference, egg_large_plain_generic) + 75g feta cheese 16% (new generic reference, feta_cheese_16pct_generic, first time logged) + 25 cherry tomatoes (credits ~11mg lycopene, ~55mg vitamin C, ~63.75mcg folate DFE) + omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — omega-3 now taken for the day.",
+    "21:00 creatine monohydrate, 5g — zero kcal/macros."
   ],
-  "status_note": "Day in progress. Slept 8h (23:00-06:00, DST adjusted), within target. AM pill + double espresso + Mayven + protein bar + lunch (teriyaki chicken, mashed potatoes) + 13:00/14:30 espresso + essential-5 + cottage cheese/nuts logged (4 caffeine shots). Omega-3 not yet taken today. Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept 8h (23:00-06:00, DST adjusted), within target. AM pill + double espresso + Mayven + protein bar + lunch (teriyaki chicken, mashed potatoes) + 13:00/14:30/17:30 espresso + essential-5 + cottage cheese/nuts + apple + 17:30 snack + dinner (pita, eggs, feta, tomatoes, omega-3) + creatine logged (5 caffeine shots). Still out of Rhinolast spray — worth restocking."
 }
