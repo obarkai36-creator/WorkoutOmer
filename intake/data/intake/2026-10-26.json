@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-26",
+  "day_number": 121,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "01:00",
+    "sleep_end": "06:00",
+    "duration_hours": 5.0,
+    "quality": null,
+    "notes": "5h (night of 2026-10-25) — well below the 7-9h target band, a short night."
+  },
+  "items": [
+    {"time": "06:15", "name": "Bilaxten (bilastine)", "category": "medication", "qty": "1 pill (morning)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true, "note": "allergy medication — 1x/day pill. No Rhinolast spray, still out of stock."},
+    {"time": "06:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
+    {"time": "07:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "08:45", "name": "Green grapes, seedless", "category": "food", "qty": "20 pieces (~100 g)", "kcal": 69, "protein_g": 0.72, "carbs_g": 18.1, "fat_g": 0.16, "fiber_g": 0.9, "note": "same standard reference as prior entries. Credits ~10.8mg vitamin C."},
+    {"time": "09:15", "name": "Quest Bake Shop Frosted Cookie, Chocolate Cake", "category": "food", "qty": "1 cookie (~33 g)", "kcal": 130, "protein_g": 9, "carbs_g": 16, "fat_g": 6, "fiber_g": 5, "note": "new generic reference (quest_bake_shop_frosted_cookie_chocolate_cake, first time logged) — estimated from typical published values, no label photo given."},
+    {"time": "10:30", "name": "Cottage cheese", "category": "food", "qty": "200 g", "kcal": 196, "protein_g": 22, "carbs_g": 6.8, "fat_g": 8.6, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic)."},
+    {"time": "10:30", "name": "Honey", "category": "food", "qty": "5 g", "kcal": 15.2, "protein_g": 0.02, "carbs_g": 4.12, "fat_g": 0, "fiber_g": 0.01, "note": "same standard reference as prior entries (honey_generic)."},
+    {"time": "11:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "12:00", "name": "Lunch — cherry tomatoes", "category": "food", "qty": "20 pieces", "kcal": 53, "protein_g": 2.74, "carbs_g": 11.74, "fat_g": 0.6, "fiber_g": 3.6, "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."},
+    {"time": "12:00", "name": "Lunch — cheese pashtida with spinach + whole-spelt pasta", "category": "food", "qty": "200 g", "kcal": 164, "protein_g": 13.8, "carbs_g": 12.6, "fat_g": 6.8, "fiber_g": 1.6, "note": "pulled from the recipe library, same reference as prior entries (cheese_pashtida_spinach_spelt_pasta_logged). Credits ~48mcg folate DFE."},
+    {"time": "12:00", "name": "Lunch — kebab", "category": "food", "qty": "120 g", "kcal": 300, "protein_g": 26.4, "carbs_g": 0, "fat_g": 21.6, "fiber_g": 0, "note": "same generic grilled skewer-meat reference as prior entries (~250kcal/100g). Credits ~5.4mg zinc, ~18mcg selenium."},
+    {"time": "12:00", "name": "Lunch — cucumber", "category": "food", "qty": "2 whole (~600 g)", "kcal": 90, "protein_g": 3.9, "carbs_g": 21.6, "fat_g": 0.6, "fiber_g": 3.0, "note": "standard cucumber rate (~15kcal/100g), same as prior entries."},
+    {"time": "13:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "14:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "15:00", "name": "Cottage cheese", "category": "food", "qty": "250 g", "kcal": 245, "protein_g": 27.5, "carbs_g": 8.5, "fat_g": 10.75, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic)."},
+    {"time": "15:00", "name": "Walnuts", "category": "food", "qty": "2 pieces (~10 g)", "kcal": 65.4, "protein_g": 1.52, "carbs_g": 1.38, "fat_g": 6.52, "fiber_g": 0.68, "note": "same standard reference as prior entries (walnut_generic)."},
+    {"time": "15:00", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.4, "note": "same standard reference as prior entries (brazil_nut_generic). Credits ~95mcg selenium."},
+    {"time": "15:00", "name": "Almond", "category": "food", "qty": "1 piece (~1.2 g)", "kcal": 6.95, "protein_g": 0.25, "carbs_g": 0.26, "fat_g": 0.6, "fiber_g": 0.14, "note": "new generic reference (almond_generic, formalized — used informally once before)."},
+    {"time": "15:30", "name": "Quest Bake Shop Frosted Cookie, Chocolate Cake", "category": "food", "qty": "1 cookie (~33 g)", "kcal": 130, "protein_g": 9, "carbs_g": 16, "fat_g": 6, "fiber_g": 5, "note": "same new reference as the 09:15 entry today (quest_bake_shop_frosted_cookie_chocolate_cake)."},
+    {"time": "19:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
+    {"time": "19:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
+  ],
+  "workout_today": false,
+  "workout_summary": null,
+  "caffeine_shots": 5,
+  "micros_sperm_priority": {
+    "zinc_mg": 28.2,
+    "selenium_mcg": 213,
+    "folate_mcg_dfe": 199,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 1054.8,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
+    "lycopene_mg": 8.8
+  },
+  "assumptions": [
+    "Sleep logged: 01:00-06:00, 5h (night of 2026-10-25) — well below target, a short night.",
+    "06:15 (exact time not given, placeholder) Bilaxten (bilastine pill, morning) — no Rhinolast spray, still out of stock + espresso (1 caffeine shot).",
+    "07:30 espresso, 1 single (2 caffeine shots today).",
+    "08:45 20 green grapes (~100g, standard reference, credits ~10.8mg vitamin C).",
+    "09:15 1 Quest Bake Shop Frosted Cookie, Chocolate Cake — new generic reference added (quest_bake_shop_frosted_cookie_chocolate_cake, first time logged), estimated from typical published values, no label photo.",
+    "10:30 200g cottage cheese (same generic reference as prior entries) + 5g honey (standard reference).",
+    "11:00 espresso, 1 single (3 caffeine shots today).",
+    "12:00 lunch: 20 cherry tomatoes (credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 200g cheese pashtida with spinach + whole-spelt pasta (pulled from the recipe library, same reference as the 2026-10-24 entry, credits ~48mcg folate DFE) + 120g kebab (standard reference, credits ~5.4mg zinc, ~18mcg selenium) + 2 cucumbers (~600g, standard rate).",
+    "13:00 and 14:30 espresso, 1 single each (5 caffeine shots today).",
+    "15:00 250g cottage cheese + 2 walnuts (~10g, standard reference) + 1 Brazil nut (~5g, standard reference, credits ~95mcg selenium — combined with today's essential-5, selenium totals ~213mcg, well under the 400mcg UL) + 1 almond (new generic reference, almond_generic, formalized — used informally once before).",
+    "15:30 1 Quest Bake Shop Frosted Cookie, Chocolate Cake — same new reference as the 09:15 entry.",
+    "19:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E + Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc."
+  ],
+  "status_note": "Day in progress. Slept only 5h (01:00-06:00), a short night, well below target. Full day of items logged: AM pill/espressos, grapes, Quest Bake Shop cookie x2, cottage cheese x2, lunch (pashtida, kebab, tomatoes, cucumber), nuts, essential-5/Mayven (5 caffeine shots). Still out of Rhinolast spray — worth restocking."
+}

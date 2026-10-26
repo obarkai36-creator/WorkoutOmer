@@ -2,6 +2,30 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "almond_generic",
+      "name": "Almond, generic, per piece",
+      "serving": "1 almond (~1.2 g)",
+      "kcal": 6.95,
+      "protein_g": 0.25,
+      "carbs_g": 0.26,
+      "fat_g": 0.6,
+      "fiber_g": 0.14,
+      "verified": false,
+      "source": "Standard USDA-type almond values (~579kcal/100g, 21p/22c/50f/12fiber per 100g), formalized 2026-10-26 (used informally once before, 28 Jun). Standard whole-almond weight assumed ~1.2g. Not label-verified."
+    },
+    {
+      "id": "quest_bake_shop_frosted_cookie_chocolate_cake",
+      "name": "Quest Bake Shop Frosted Cookie, Chocolate Cake flavor",
+      "serving": "1 cookie (~33 g)",
+      "kcal": 130,
+      "protein_g": 9,
+      "carbs_g": 16,
+      "fat_g": 6,
+      "fiber_g": 5,
+      "verified": false,
+      "source": "First logged 2026-10-26. Estimated from typical published Quest Bake Shop Frosted Cookie values (high-fiber, sugar-alcohol-sweetened protein cookie) since no label photo was given — not label-verified, refine if the actual package nutrition panel is checked."
+    },
+    {
       "id": "feta_cheese_16pct_generic",
       "name": "Feta cheese, 16% fat, generic",
       "serving": "100 g",
