@@ -1,7 +1,7 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-25",
+    "report_date": "2026-10-26",
     "latest_session": "Outdoor Walk (07:53-08:53) — 1 hour, ~8000 steps, solid walking pace, exact distance not given. Estimated ~5.6km from step count (~0.7m/step), flagged as approximate.",
     "sessions_logged": 85,
     "sessions_per_week": 3.8,
@@ -10,9 +10,10 @@
     "aerobic_sessions_28d": 7,
     "avg_pace": "10:17/km",
     "avg_hr": 142,
-    "acwr": 0.88,
+    "acwr": 0.71,
     "recommended_next": "Chest day",
     "alerts": [
+      "Load ratio 0.71 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },

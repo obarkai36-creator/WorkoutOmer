@@ -1,7 +1,8 @@
 {
   "date": "2026-10-26",
   "day_number": 121,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 7500,
   "sleep": {
     "sleep_start": "01:00",
     "sleep_end": "06:00",
@@ -14,7 +15,7 @@
     {"time": "06:15", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "time_approx": true},
     {"time": "07:30", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "08:45", "name": "Green grapes, seedless", "category": "food", "qty": "20 pieces (~100 g)", "kcal": 69, "protein_g": 0.72, "carbs_g": 18.1, "fat_g": 0.16, "fiber_g": 0.9, "note": "same standard reference as prior entries. Credits ~10.8mg vitamin C."},
-    {"time": "09:15", "name": "Quest Bake Shop Frosted Cookie, Chocolate Cake", "category": "food", "qty": "1 cookie (~33 g)", "kcal": 130, "protein_g": 9, "carbs_g": 16, "fat_g": 6, "fiber_g": 5, "note": "new generic reference (quest_bake_shop_frosted_cookie_chocolate_cake, first time logged) — estimated from typical published values, no label photo given."},
+    {"time": "09:15", "name": "Quest Bake Shop Frosted Cookie, Chocolate Cake (half)", "category": "food", "qty": "0.5 package (~25 g)", "kcal": 95, "protein_g": 5.5, "carbs_g": 9, "fat_g": 6.5, "fiber_g": 3, "note": "CORRECTED — verified label reference (quest_bake_shop_frosted_cookie_chocolate_cake, 190kcal/11p/18c/13f/6fiber per 50g package) from a photographed iHerb label, replacing the earlier unverified estimate. 1 package eaten in 2 halves today (this + the 15:30 entry)."},
     {"time": "10:30", "name": "Cottage cheese", "category": "food", "qty": "200 g", "kcal": 196, "protein_g": 22, "carbs_g": 6.8, "fat_g": 8.6, "fiber_g": 0, "note": "same generic reference as prior entries (cottage_cheese_generic)."},
     {"time": "10:30", "name": "Honey", "category": "food", "qty": "5 g", "kcal": 15.2, "protein_g": 0.02, "carbs_g": 4.12, "fat_g": 0, "fiber_g": 0.01, "note": "same standard reference as prior entries (honey_generic)."},
     {"time": "11:00", "name": "Espresso", "category": "drink", "qty": "1 shot (~45 ml)", "kcal": 3, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
@@ -28,7 +29,11 @@
     {"time": "15:00", "name": "Walnuts", "category": "food", "qty": "2 pieces (~10 g)", "kcal": 65.4, "protein_g": 1.52, "carbs_g": 1.38, "fat_g": 6.52, "fiber_g": 0.68, "note": "same standard reference as prior entries (walnut_generic)."},
     {"time": "15:00", "name": "Brazil nut", "category": "food", "qty": "1 nut (~5 g)", "kcal": 33, "protein_g": 0.7, "carbs_g": 0.6, "fat_g": 3.3, "fiber_g": 0.4, "note": "same standard reference as prior entries (brazil_nut_generic). Credits ~95mcg selenium."},
     {"time": "15:00", "name": "Almond", "category": "food", "qty": "1 piece (~1.2 g)", "kcal": 6.95, "protein_g": 0.25, "carbs_g": 0.26, "fat_g": 0.6, "fiber_g": 0.14, "note": "new generic reference (almond_generic, formalized — used informally once before)."},
-    {"time": "15:30", "name": "Quest Bake Shop Frosted Cookie, Chocolate Cake", "category": "food", "qty": "1 cookie (~33 g)", "kcal": 130, "protein_g": 9, "carbs_g": 16, "fat_g": 6, "fiber_g": 5, "note": "same new reference as the 09:15 entry today (quest_bake_shop_frosted_cookie_chocolate_cake)."},
+    {"time": "15:30", "name": "Quest Bake Shop Frosted Cookie, Chocolate Cake (half)", "category": "food", "qty": "0.5 package (~25 g)", "kcal": 95, "protein_g": 5.5, "carbs_g": 9, "fat_g": 6.5, "fiber_g": 3, "note": "CORRECTED — same verified reference as the 09:15 entry; second half of the same package."},
+    {"time": "20:30", "name": "Dinner — cheese pashtida with spinach + whole-spelt pasta", "category": "food", "qty": "300 g", "kcal": 246, "protein_g": 20.7, "carbs_g": 18.9, "fat_g": 10.2, "fiber_g": 2.4, "note": "same reference as the lunch entry (cheese_pashtida_spinach_spelt_pasta_logged). Credits ~72mcg folate DFE."},
+    {"time": "20:30", "name": "Dinner — yellow cheese, 9% (Tnuva Emek Light)", "category": "food", "qty": "4 slices (100 g)", "kcal": 200, "protein_g": 30, "carbs_g": 0, "fat_g": 9, "fiber_g": 0, "note": "verified label reference, same as prior entries (tnuva_emek_light_yellow_cheese_9pct)."},
+    {"time": "20:30", "name": "Creatine monohydrate", "category": "supplement", "qty": "5 g", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
+    {"time": "20:30", "name": "Omega-3 fish oil (EPA/DHA)", "category": "supplement", "qty": "2 softgels (~1000 mg EPA/DHA)", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0},
     {"time": "19:00", "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium", "category": "supplement", "qty": "2 capsules", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."},
     {"time": "19:00", "name": "Mayven Full Volume Gummies", "category": "supplement", "qty": "2 gummies", "kcal": 0, "protein_g": 0, "carbs_g": 0, "fat_g": 0, "fiber_g": 0, "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"}
   ],
@@ -38,8 +43,8 @@
   "micros_sperm_priority": {
     "zinc_mg": 28.2,
     "selenium_mcg": 213,
-    "folate_mcg_dfe": 199,
-    "omega3_epa_dha_mg": 0,
+    "folate_mcg_dfe": 271,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1054.8,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
@@ -57,7 +62,10 @@
     "13:00 and 14:30 espresso, 1 single each (5 caffeine shots today).",
     "15:00 250g cottage cheese + 2 walnuts (~10g, standard reference) + 1 Brazil nut (~5g, standard reference, credits ~95mcg selenium — combined with today's essential-5, selenium totals ~213mcg, well under the 400mcg UL) + 1 almond (new generic reference, almond_generic, formalized — used informally once before).",
     "15:30 1 Quest Bake Shop Frosted Cookie, Chocolate Cake — same new reference as the 09:15 entry.",
-    "19:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E + Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc."
+    "19:00 essential-5 (Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium, 2 capsules) — standard verified dose, adds 20mg zinc, 100mcg selenium, 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E + Mayven Full Volume Gummies, 2 gummies (standard multivitamin dose) — adds 100mcg DFE folate, 2.8mg zinc.",
+    "CORRECTION: the Quest Bake Shop Frosted Cookie reference was initially an unverified estimate; corrected from a photographed iHerb label to the real values (190kcal/11p/18c/13f/6fiber per 50g package) — both the 09:15 and 15:30 entries recomputed as halves of 1 package eaten throughout the day, as clarified by the user.",
+    "20:30 dinner: 300g cheese pashtida with spinach + whole-spelt pasta (same reference as lunch, credits ~72mcg folate DFE) + 4 yellow cheese slices 9% (verified reference) + creatine monohydrate, 5g + omega-3 fish oil, 2 softgels (~1000mg EPA/DHA) — standard dose.",
+    "EOD: 7,500 steps. Retainers: 3 consecutive nights (10-24, 10-25, 10-26) with no entry since the last logged night (10-23, worn) — hits the 3-night flag threshold, noting once per the standing rule."
   ],
-  "status_note": "Day in progress. Slept only 5h (01:00-06:00), a short night, well below target. Full day of items logged: AM pill/espressos, grapes, Quest Bake Shop cookie x2, cottage cheese x2, lunch (pashtida, kebab, tomatoes, cucumber), nuts, essential-5/Mayven (5 caffeine shots). Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day complete. Slept only 5h (01:00-06:00), a short night, well below target. Full day of items logged: AM pill/espressos, grapes, Quest Bake Shop cookie (corrected to verified label, split across 2 half-package entries), cottage cheese x2, lunch (pashtida, kebab, tomatoes, cucumber), nuts, essential-5/Mayven, dinner (pashtida, yellow cheese, creatine, omega-3) (5 caffeine shots). 7,500 steps. Still out of Rhinolast spray — worth restocking."
 }
