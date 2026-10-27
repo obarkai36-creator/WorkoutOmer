@@ -1,0 +1,109 @@
+{
+  "id": "cheese_pashtida_spinach_pasta_logged",
+  "name": "Cheese pashtida with spinach + whole-spelt pasta — logged batch",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Logged batch — actually cooked 2026-10-24",
+    "captured": "2026-10-24",
+    "notes": "A batch the user actually cooked, logged as a reference per the standing skill. Based on cheese_pashtida_spinach (the adopted spinach-optimized pashtida), with 3 handfuls of whole-spelt pasta PRE-COOKED (boiled), then folded into the batter and baked together — confirmed by the user. TOTAL batch = the full cheese_pashtida_spinach recipe (4 eggs, cottage, white cheese, whole-spelt flour, baking powder, 9% yellow cheese, 180 g feta, cream cheese, 150 g raw spinach, no added salt) PLUS 3 handfuls of whole-spelt pasta (cooked before folding in). Makes 9 slices (bulkier than the 8-slice base due to the added pasta); macros below are PER SLICE (batch ÷ 9). ASSUMPTION (not given — flag and adjust if off): '3 handfuls' taken as ~90 g DRY pasta before boiling (~30 g/handful) — the macro content (protein/carbs/fiber) is the same whether the pasta is boiled before or baked raw into the dish, since boiling only adds water weight, not nutrients; the main effect of pre-cooking is a moister, slightly heavier slice (extra water retained in the pasta) and a more reliably cooked result (no risk of underdone pasta). Estimate."
+  },
+  "servings": 9,
+  "serving_desc": "1 slice (~190 g baked) — batch makes 9; pasta was boiled before folding in, which adds a little retained water vs baking it dry",
+  "ingredients": [
+    {"item": "eggs", "qty": "4"},
+    {"item": "cottage cheese 5%", "qty": "1 cup (~225 g)"},
+    {"item": "white cheese 5% (gvina levana)", "qty": "2 tbsp (~30 g)"},
+    {"item": "whole-spelt flour", "qty": "2 tbsp (~20 g)"},
+    {"item": "baking powder", "qty": "1 heaping tsp"},
+    {"item": "yellow cheese 9%, sliced/chopped", "qty": "3 slices (~60 g)"},
+    {"item": "feta cheese 5%", "qty": "180 g"},
+    {"item": "cream cheese 5% (Hemed-style)", "qty": "50–60 g"},
+    {"item": "fresh spinach, roughly chopped", "qty": "150 g", "note": "folded in raw"},
+    {"item": "whole-spelt pasta, pre-cooked (boiled, then drained)", "qty": "3 handfuls dry before boiling (~90 g assumed)", "note": "NEW vs the base recipe — dry weight assumed; boiled and drained BEFORE folding into the batter"},
+    {"item": "salt", "qty": "none — as in the base recipe"}
+  ],
+  "steps": [
+    "Boil the 3 handfuls of whole-spelt pasta until just cooked, then drain well.",
+    "Whisk the eggs; mix in the cottage, white cheese, whole-spelt flour and baking powder.",
+    "Fold in the yellow cheese, feta, cream cheese, raw spinach, and the cooked, drained pasta.",
+    "Pour into a greased/lined baking dish and level the top.",
+    "Bake at 180 °C, top-bottom heat, same as the base recipe (~35-45 min) until the custard is set and the top is golden — no extra time needed since the pasta is already cooked.",
+    "Rest 10 min before slicing."
+  ],
+  "per_serving": {
+    "kcal": 148,
+    "protein_g": 12.4,
+    "carbs_g": 11.3,
+    "fat_g": 6.1,
+    "fiber_g": 1.4,
+    "micros": {
+      "folate_mcg_dfe": 44,
+      "calcium_mg": 133,
+      "sodium_mg": 316,
+      "choline_mg": 67,
+      "iron_mg": 1.0,
+      "saturated_fat_g": 3.4
+    }
+  },
+  "batch_totals": {
+    "kcal": 1330,
+    "protein_g": 112,
+    "carbs_g": 102,
+    "fat_g": 55,
+    "fiber_g": 12.5,
+    "sodium_mg": 2845,
+    "calcium_mg": 1200,
+    "folate_mcg_dfe": 395,
+    "note": "Whole bake (9 slices), incl. ~90 g dry whole-spelt pasta (assumed amount — flag if different). Vs cheese_pashtida_spinach (per slice ~127 kcal / 12.5 g protein / 0.7 g fiber): similar protein, meaningfully more carbs and fiber from the pasta (whole-spelt pasta is a real fiber source), slightly lower calcium/sodium per slice since the batch is split 9 ways instead of 8."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "Adding pre-boiled whole-spelt pasta turns the egg-cheese pashtida into more of a complete one-dish meal — carbs jump from ~5 g to ~11 g per slice and fiber more than doubles (~1.4 g vs ~0.7 g), while protein stays essentially the same (~12.4 g) and fat barely moves. Protein density drops a little (~8.4 g protein per 100 kcal vs ~9.9 g in the spinach-only version) simply because pasta adds calories without adding protein, but this is now a more balanced, filling dish — good as an actual meal rather than a side. Boiling the pasta first (rather than baking it in dry) is the reliable way to do this: no risk of underdone pasta, since the custard only needs to set, not cook raw starch through.",
+      "flags": [
+        "~12.4 g protein / 148 kcal slice (~8.4 g protein per 100 kcal — still strong, slightly diluted by the pasta carbs)",
+        "fiber roughly doubled vs the spinach-only version (~1.4 g vs ~0.7 g) — whole-spelt pasta is a real contributor",
+        "more balanced as a standalone meal now (protein + carb + veg in one dish)",
+        "sodium/calcium per slice ticked down slightly (same batch, split 9 ways instead of 8)",
+        "pre-boiling the pasta means a reliably cooked result — no undercooking risk like baking it in dry"
+      ],
+      "suggested_mods": [
+        "This is the right method — pre-boiling the pasta before folding in is more reliable than baking it dry",
+        "This works well as a full meal on its own; the spinach-only version is still the better pick when you want a leaner side",
+        "Pair with a simple salad for extra vitamin C/fiber if eating this as the main dish"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 8,
+      "verdict": "Still a strong preconception dish — the folate from the spinach carries over almost unchanged (~44 mcg DFE/slice), and the added whole-spelt pasta brings a bit more fiber and B-vitamins on top. Protein, choline and calcium remain solid. No new safety concerns versus the base recipe (fully baked; verify the feta is pasteurized as before).",
+      "prenatal_highlights": [
+        "folate from spinach carries over (~44 mcg DFE/slice)",
+        "added fiber + B-vitamins from whole-spelt pasta",
+        "protein, choline, calcium unchanged in substance"
+      ],
+      "safety_advisories": [
+        {"note": "Feta is a brined cheese — Listeria risk unless pasteurized. Baked through here (cooked = considered safe); verify pasteurized, same as the base recipe.", "swap": "verify pasteurized"}
+      ],
+      "suggested_mods": [
+        "No changes needed — this remains a good folate + protein dish for her, now also more filling as a full meal"
+      ]
+    }
+  },
+  "tags": ["bake", "pashtida", "cheese", "spinach", "pasta", "whole-grain", "vegetarian", "high-protein", "baked", "eggs", "logged-batch"],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-10-24 as the optimized version in this family (already the furthest-optimized variant: whole-spelt flour, trimmed feta, no added salt, spinach, plus whole-spelt pasta from an actual cooked batch). Per slice (of 9, ~190 g): ~148 kcal, 12.4 g protein, 1.4 g fiber, ~44 mcg DFE folate, ~316 mg sodium. him 8 / her 8. Pasta pre-boiled and drained before folding into the batter (confirmed by user) — more reliable than baking it in dry. Supersedes both cheese_pashtida_base and cheese_pashtida_spinach for actual use.",
+  "created": "2026-10-24",
+  "updated": "2026-10-24",
+  "serving_g": 180,
+  "meal_type": "Bread",
+  "cooking_guide": [
+    "Boil the 3 handfuls of whole-spelt pasta in salted water until just cooked (whole-grain pasta can go slightly mushy if overdone — aim for al dente since it'll sit in the custard too), then drain well.",
+    "Follow the cheese_pashtida_spinach method (whisk eggs, mix in cottage/white cheese/whole-spelt flour/baking powder, fold in yellow cheese, feta, cream cheese and raw spinach).",
+    "Fold in the cooked, drained pasta last, distributing it evenly through the batter.",
+    "Pour into a greased/lined dish and level. Bake the same as the base recipe (~35-45 min) — the pasta is already cooked, so you're just waiting for the egg custard to set and the top to go golden.",
+    "Rest 10 min before slicing.",
+    "Tip: drain the pasta really well before folding in — excess water from under-drained pasta can make the custard slower to set."
+  ]
+}

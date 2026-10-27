@@ -155,7 +155,7 @@
       "fat_g": 3.4,
       "fiber_g": 0.8,
       "verified": false,
-      "source": "Pulled from the recipe library via a screenshot of the card (2026-10-24) — the recipe JSON itself isn't present in this checkout's intake/recipes/ folder (likely added by the sibling recipe-analyzer session and not yet synced here), so values are taken directly from the photographed card rather than the file. Per 100g: 82kcal, 6.9g protein, 6.3g carb, 3.4g fat, 0.8g fiber, 24mcg folate DFE, 74mg calcium, 176mg sodium, 37mg choline, 0.6mg iron, 1.9g saturated fat. Batch makes 9 servings, 1 slice ≈190g baked, estimate confidence. Flagged — re-sync intake/recipes/ with the sibling session if the full recipe file is needed."
+      "source": "Matches recipe-library file intake/recipes/cheese_pashtida_spinach_pasta_logged.json (synced from trunk 2026-10-27; values first taken from a screenshot of the card on 2026-10-24 and confirmed identical): per 100g 82kcal, 6.9g protein, 6.3g carb, 3.4g fat, 0.8g fiber, 24mcg folate DFE, 74mg calcium, 176mg sodium, 37mg choline, 0.6mg iron, 1.9g saturated fat. Batch makes 9 servings (~180-190g each). Estimate confidence. Distinct from cheese_pashtida_spinach (no pasta, ~67kcal/100g) and cheese_pashtida_base."
     },
     {
       "id": "homemade_rolled_pastry_sweet_generic",

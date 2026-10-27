@@ -1,0 +1,103 @@
+{
+  "id": "cheese_pashtida_base",
+  "name": "Cheese pashtida — base recipe (פשטידת גבינות)",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram — rotemnisim (Hebrew, \"healthy & balanced recipes\" series)",
+    "captured": "2026-10-09",
+    "notes": "A bare cheese-custard pashtida (no vegetables in the base ingredient list) — eggs + 4 cheeses bound with a little flour/baking powder, baked. The post explicitly offers optional veg add-ins (onion, oregano, broccoli, corn, spinach, etc.) but doesn't fix amounts, so this entry is the BASE as listed. Method caption was cut off after '180°C, top-bottom heat' — baked similarly to the other egg-cheese bakes in this library (~35-45 min until set and golden, standard for this batter size); confirm exact time/pan size if available. Feta 5% and Hemed-style cream cheese 5% taken as standard light Israeli soft-cheese densities. Estimate — no macros given in the post. An optimized variant (whole-spelt flour, less salt, veg folded in) is presented in chat; this base entry is left as posted."
+  },
+  "servings": 8,
+  "serving_desc": "≈175 g slice (batch ÷8) — side or light main; 2 slices = a fuller meal",
+  "ingredients": [
+    {"item": "eggs", "qty": "4"},
+    {"item": "cottage cheese 5%", "qty": "1 cup (~225 g)"},
+    {"item": "white cheese 5% (gvina levana)", "qty": "2 tbsp (~30 g)"},
+    {"item": "flour", "qty": "2 tbsp (~20 g)", "note": "swap to whole spelt for fiber (see optimized version)"},
+    {"item": "baking powder", "qty": "1 heaping tsp"},
+    {"item": "yellow cheese 9%, sliced/chopped", "qty": "3 slices (~60 g)"},
+    {"item": "feta cheese 5%", "qty": "250 g", "note": "the main salt + fat lever"},
+    {"item": "cream cheese 5% (Hemed-style)", "qty": "50–60 g"},
+    {"item": "OPTIONAL add-ins (not quantified)", "qty": "—", "note": "caramelized onion, oregano, broccoli, corn, spinach, etc. — the poster's own suggestion"}
+  ],
+  "steps": [
+    "Whisk the eggs; mix in the cottage, white cheese, flour and baking powder.",
+    "Fold in the yellow cheese, feta and cream cheese (and any optional veg/herbs you're adding).",
+    "Pour into a greased/lined baking dish.",
+    "Bake at 180 °C, top-bottom heat, until set and golden on top (method caption cut off after this point — bake similarly to the library's other egg-cheese bakes, ~35-45 min, until a knife comes out clean; check your pan size)."
+  ],
+  "per_serving": {
+    "kcal": 131,
+    "protein_g": 12.8,
+    "carbs_g": 4.6,
+    "fat_g": 6.9,
+    "fiber_g": 0.1,
+    "micros": {
+      "calcium_mg": 150,
+      "sodium_mg": 430,
+      "choline_mg": 75,
+      "saturated_fat_g": 4
+    }
+  },
+  "batch_totals": {
+    "kcal": 1048,
+    "protein_g": 103,
+    "carbs_g": 37,
+    "fat_g": 55,
+    "fiber_g": 0.8,
+    "sodium_mg": 3440,
+    "calcium_mg": 1200,
+    "note": "Whole bake (8 slices), BASE recipe (no veg add-in). Four cheeses + 4 eggs drive protein and calcium hard, but feta (salty, brined) is the dominant sodium and fat source, and with no vegetables the dish has almost no fiber or folate — the opposite profile of the broccoli pashtida in this library."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 7,
+      "verdict": "Very high protein density for a baked dish — ~12.8 g protein for only 131 kcal (~9.8 g protein per 100 kcal, among the best in your library) from 4 eggs + 4 cheeses. The catch: as posted it's a cheese-only bake with essentially zero fiber and a heavy sodium load, almost entirely from the 250 g of feta (feta is a brined cheese — salty by nature even at '5%' fat). It's an excellent protein source, just nutritionally one-note without the vegetables the poster herself suggests adding.",
+      "flags": [
+        "~12.8 g protein / 131 kcal slice (~9.8 g protein per 100 kcal — excellent)",
+        "very high sodium (~430 mg/slice; ~3,440 mg batch) — feta is the main driver",
+        "almost no fiber (~0.1 g) or folate — no vegetables in the base list",
+        "moderate saturated fat (~4 g/slice) from 4 cheeses",
+        "white-flour binder is a small refined-carb contributor"
+      ],
+      "suggested_mods": [
+        "Take the poster's own suggestion: fold in a vegetable (spinach/broccoli/onion) — turns this from a protein-only dish into a real folate + fiber contributor",
+        "Rinse or soak the feta briefly, or cut it to ~180-200 g, to pull sodium down without losing the tang",
+        "Swap the 2 tbsp flour to whole spelt — small change, some fiber",
+        "No added salt needed anywhere — feta alone covers it"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 5,
+      "verdict": "Good protein, choline (4 eggs) and calcium (4 cheeses), but as posted — with no vegetables — it's missing her top preconception nutrient (folate) almost entirely, and the sodium load from 250 g of feta is worth moderating in pregnancy. Feta is also a brined cheese: fully baked here, which is considered safe (cooked), but verify it's pasteurized. This is a dish that goes from fine to genuinely good for her the moment the optional spinach/broccoli get added — see the optimized version.",
+      "prenatal_highlights": [
+        "choline (4 eggs); calcium + protein (4 cheeses)",
+        "fully baked, considered safe when cooked through"
+      ],
+      "safety_advisories": [
+        {"note": "Feta is a brined cheese — Listeria risk unless pasteurized. It's baked through here (cooked = considered safe); verify it's a pasteurized feta.", "swap": "verify pasteurized, or use more cottage/white cheese in its place"}
+      ],
+      "suggested_mods": [
+        "Fold in spinach or broccoli — turns this into a real folate source, which the base recipe lacks entirely",
+        "Keep sodium in mind — moderate the feta amount",
+        "Serve with tomato/pepper for vitamin C"
+      ]
+    }
+  },
+  "tags": ["bake", "pashtida", "cheese", "vegetarian", "high-protein", "eggs", "baked", "no-fiber"],
+  "adopted": false,
+  "created": "2026-10-09",
+  "updated": "2026-10-09",
+  "serving_g": 175,
+  "meal_type": "Bread",
+  "cooking_guide": [
+    "Whisk the eggs well, then stir in the cottage cheese, white cheese, flour and baking powder until smooth.",
+    "Fold in the chopped yellow cheese, crumbled feta and cream cheese — if you're adding any vegetables (spinach, broccoli, sautéed onion, corn), fold them in now too, well-drained if they were cooked.",
+    "Pour into a greased or lined baking dish and level the top.",
+    "Bake at 180 °C with top-bottom heat until the center is set (not wobbly) and the top is golden — check around 35 min and continue in 5-min increments; a knife in the middle should come out clean.",
+    "Rest 10 min before slicing so it holds together.",
+    "Tip: because feta and the yellow cheese are both salty, taste the raw batter before considering any extra salt — you almost certainly won't need it."
+  ]
+}
