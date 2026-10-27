@@ -1,5 +1,20 @@
 # Session notes
 
+- "Last trained" fix (2026-10-27, per user report that it wasn't up to date /
+  didn't compute automatically): two separate causes. (1) `engine.js`
+  `recommendSession()` only counted a section as trained if it was >40% of
+  that session's muscle LOAD — combined "Chest + Arms" days put Chest at
+  34-40%, so Chest kept reading 19 days (last pure chest day) and Arms got
+  credited from Shoulders/Back days via secondary muscles. Lowering the cut
+  wasn't an option: walks/runs credit ~30% of load to Legs. Now classified by
+  the strength EXERCISES performed (each exercise's SNAPSHOT section, else its
+  top-credit muscle's section): a section counts with 2+ exercises or >=40%
+  of the session's strength exercises; aerobic exercises never count. This
+  changed the recommendation (Chest -> Back, 12 days untrained). (2) The site's
+  "days since" values were frozen at export time: `export_site_data.py` now
+  emits `training_now` and `docs/app.js` advances "last trained" / "since
+  cardio" by elapsed time on page load. `app.js` bumped to `?v=20261027-1`.
+
 - Usage-credit gap, macro/supplement tracking skipped (2026-10-16 evening
   through end of 2026-10-20; resume 2026-10-21): session ran out of usage
   credits after the 2026-10-16 EOD close-out, resumed 2026-10-20 at 16:00.

@@ -475,11 +475,14 @@ function renderTrainingDetail(day, isLatest) {
     return `<div class="dgrid">${plannedHtml}${exerciseSearchHtml}${acwrHistHtml}${sessionLogHtml}${acwrChartHtml}${bwHtml}</div>`;
   }
   const rec = day.training;
+  // daysSince is frozen at export time; advance it to the viewer's clock.
+  const elapsedDays = day.training_now ? Math.max(0, (Date.now() - day.training_now) / 86400000) : 0;
+  const liveDays = (d) => d === null || d === undefined ? null : d + elapsedDays;
   const exRows = (rec.suggestedExercises || []).map((e) => `
     <tr><td>${e.name}${e.preferred ? ` <span class="star">★ preferred</span>` : ""}${e.isNew ? ` <span class="tag">new</span>` : ""}</td><td>${e.best || "—"}</td>
     <td class="num">${e.best1RM ? fmt(e.best1RM,1) : "—"}</td><td>${e.target ? e.target.text : ""}</td></tr>`).join("");
   const rankedRows = (rec.ranked || []).map((s) => `
-    <tr><td>${s.section}</td><td class="num">${fmt(s.fatigue,0)}%</td><td class="num">${s.readyInHours === 0 ? "ready now" : fmt(s.readyInHours,1) + "h"}</td><td class="num">${s.daysSince === null ? "—" : fmt(s.daysSince,1) + "d"}</td></tr>`).join("");
+    <tr><td>${s.section}</td><td class="num">${fmt(s.fatigue,0)}%</td><td class="num">${s.readyInHours === 0 ? "ready now" : fmt(s.readyInHours,1) + "h"}</td><td class="num">${s.daysSince === null ? "—" : fmt(liveDays(s.daysSince),1) + "d"}</td></tr>`).join("");
   const sections = day.training_sections || {};
   const bal = day.training_balance || {};
   const rel = day.training_relstrength || {};
@@ -498,7 +501,7 @@ function renderTrainingDetail(day, isLatest) {
     </div>
     <div class="dpanel span"><h4>Recommended next session</h4>
       <div class="bignum" style="color:${HUES.training.b}">${rec.deload ? "Full-body deload" : rec.section}</div>
-      <div class="metric-note">${rec.readyNow ? "Ready now" : "Rest " + fmt(rec.restHours,1) + "h"} · last trained ${rec.daysSince === null ? "never" : fmt(rec.daysSince,1) + "d ago"}${rec.suggestedCount ? ` · go for <b style="color:var(--text-1)">${rec.suggestedCount} of ${rec.totalAvailable}</b> below (typical ${rec.typicalSessionSize})` : ""}</div>
+      <div class="metric-note">${rec.readyNow ? "Ready now" : "Rest " + fmt(rec.restHours,1) + "h"} · last trained ${rec.daysSince === null ? "never" : fmt(liveDays(rec.daysSince),1) + "d ago"}${rec.suggestedCount ? ` · go for <b style="color:var(--text-1)">${rec.suggestedCount} of ${rec.totalAvailable}</b> below (typical ${rec.typicalSessionSize})` : ""}</div>
       ${(rec.guidance || []).map((g) => `<div class="metric-note" style="margin-top:6px">💡 ${g}</div>`).join("")}
       ${exRows ? `<div class="scrollbox" style="margin-top:12px;max-height:none"><table class="datatable">
         <thead><tr><th>Exercise</th><th>Best</th><th class="num">1RM</th><th>Target this session</th></tr></thead>
@@ -523,7 +526,7 @@ function renderTrainingDetail(day, isLatest) {
         <div class="chip"><div class="chip-v">${aer.km28 ?? "—"} km</div><div class="chip-k">28-day</div></div>
         <div class="chip"><div class="chip-v">${aer.avgHr ?? "—"}</div><div class="chip-k">Avg HR</div></div>
         <div class="chip"><div class="chip-v">${aer.avgPace ? fmt(aer.avgPace,2) : "—"}</div><div class="chip-k">Pace min/km</div></div>
-        <div class="chip"><div class="chip-v">${aer.daysSinceLast ?? "—"}d</div><div class="chip-k">Since cardio</div></div>
+        <div class="chip"><div class="chip-v">${aer.daysSinceLast == null ? "—" : fmt(liveDays(aer.daysSinceLast),1)}d</div><div class="chip-k">Since cardio</div></div>
       </div>
     </div>
     <div class="dpanel span"><h4>Bodyweight trend <span class="tag">(training-load reference)</span></h4><div class="chart-box small"><canvas id="chBw"></canvas></div></div>

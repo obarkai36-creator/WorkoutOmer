@@ -151,6 +151,9 @@ def export_day(target_date, all_days_by_date, profile, weight_entries, sleep_ent
     }
     if is_latest:
         bundle["training"] = training_full.get("recommendation") if training_full else None
+        # When the analysis was computed (ms epoch) — lets the page advance
+        # "days since" figures to the viewer's current time.
+        bundle["training_now"] = training_full.get("now") if training_full else None
         bundle["training_alerts"] = training_full.get("alerts", []) if training_full else []
         bundle["training_trends"] = training_full.get("trends") if training_full else None
         bundle["training_balance"] = training_full.get("balance") if training_full else None

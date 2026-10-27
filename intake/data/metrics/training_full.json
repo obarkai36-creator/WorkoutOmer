@@ -1,5 +1,5 @@
 {
-  "now": 1793110878561,
+  "now": 1793110983340,
   "workouts": [
     {
       "datetime": "2026-10-27T07:30",
@@ -8840,7 +8840,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -8849,7 +8849,7 @@
       "label": "Shoulders",
       "section": "Shoulders",
       "pct": 86,
-      "readyInHours": 42.1,
+      "readyInHours": 42,
       "ready": false
     },
     "biceps": {
@@ -8951,14 +8951,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         }
@@ -8967,14 +8967,14 @@
     "Shoulders": {
       "section": "Shoulders",
       "pct": 86,
-      "readyInHours": 42.1,
+      "readyInHours": 42,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
           "pct": 86,
-          "readyInHours": 42.1,
+          "readyInHours": 42,
           "ready": false
         }
       ]
@@ -10444,136 +10444,108 @@
     "sessions28": 15
   },
   "recommendation": {
-    "section": "Chest",
-    "fatigue": 13,
+    "section": "Back",
+    "fatigue": 7,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-27T14:21:18.561Z",
+    "readyAt": "2026-10-27T14:23:03.340Z",
     "neverLogged": false,
-    "daysSince": 19,
+    "daysSince": 12.3,
     "suggestedExercises": [
       {
-        "name": "Bench Press",
-        "best": "27.5kg each side + 20kg bar × 3×10",
-        "best1RM": 100,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 3×11)",
-          "note": "Add 1 rep per set at the same weight — aim for 3×11 from 27.5kg each side + 20kg bar × 3×10."
-        }
-      },
-      {
-        "name": "Dumbbell Bench Press",
-        "best": "24kg each × 4×12",
-        "best1RM": 67.2,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+2.5kg (reset to 4×8)",
-          "note": "You're at 12 reps on 24kg each × 4×12 — step the weight up ~2.5kg and reset to 4×8."
-        }
-      },
-      {
-        "name": "Incline Bench Press",
-        "best": "72.5kg × 4×7",
-        "best1RM": 89.4,
-        "iso": false,
-        "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (72.5kg × 4×7)",
-          "note": "Last session came in under your best (72.5kg × 4×7) — rebuild to that before pushing further."
-        }
-      },
-      {
-        "name": "Incline Dumbbell Bench Press",
-        "best": "24kg each × 4×11",
-        "best1RM": 65.6,
-        "iso": false,
-        "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (24kg each × 4×11)",
-          "note": "Last session came in under your best (24kg each × 4×11) — rebuild to that before pushing further."
-        }
-      },
-      {
-        "name": "Decline Bench Press",
-        "best": "72.5kg × 4×7",
-        "best1RM": 89.4,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×8)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×8 from 72.5kg × 4×7."
-        }
-      },
-      {
-        "name": "Incline Pec Fly",
-        "best": "18kg each × 4×11",
-        "best1RM": 49.2,
+        "name": "Diverging Seated Row",
+        "best": "97kg × 4×11",
+        "best1RM": 132.6,
         "iso": false,
         "target": {
           "status": "progress",
           "text": "+1 rep (aim 4×12)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×12 from 18kg each × 4×11."
+          "note": "Add 1 rep per set at the same weight — aim for 4×12 from 97kg × 4×11."
         }
       },
       {
-        "name": "Narrow Push-Ups",
-        "best": "BW × 4×10",
+        "name": "Low Row",
+        "best": "79kg × 4×11",
         "best1RM": 108,
         "iso": false,
         "target": {
           "status": "progress",
-          "text": "+1 rep (aim 4×11)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×11 from BW × 4×10."
+          "text": "+1 rep (aim 4×12)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×12 from 79kg × 4×11."
         }
       },
       {
-        "name": "Dumbbell Pec Fly",
-        "best": "16kg each × 4×8",
-        "best1RM": 40.5,
+        "name": "Row Machine",
+        "best": "85.5kg × 4×8",
+        "best1RM": 108.3,
         "iso": false,
         "target": {
           "status": "progress",
           "text": "+1 rep (aim 4×9)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×9 from 16kg each × 4×8."
+          "note": "Add 1 rep per set at the same weight — aim for 4×9 from 85.5kg × 4×8."
         }
       },
       {
-        "name": "Pec Fly Machine",
-        "best": "84kg × 3×8",
-        "best1RM": 106.4,
+        "name": "Lat Pulldown (Triangle)",
+        "best": "77kg × 3×8",
+        "best1RM": 97.5,
         "iso": false,
         "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (84kg × 3×8)",
-          "note": "Last session came in under your best (84kg × 3×8) — rebuild to that before pushing further."
+          "status": "progress",
+          "text": "+1 rep (aim 3×9)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×9 from 77kg × 3×8."
         }
       },
       {
-        "name": "Chest Press Machine",
-        "best": "73kg × 4×6",
-        "best1RM": 87.6,
+        "name": "Lat Pulldown (Wide Grip)",
+        "best": "75kg × 3×9",
+        "best1RM": 97.5,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 3×10)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×10 from 75kg × 3×9."
+        }
+      },
+      {
+        "name": "Reverse Incline DB Row",
+        "best": "26kg each × 4×12",
+        "best1RM": 72.8,
         "iso": false,
         "target": {
           "status": "rebuild",
-          "text": "Rebuild to best (73kg × 4×6)",
-          "note": "Last session came in under your best (73kg × 4×6) — rebuild to that before pushing further."
+          "text": "Rebuild to best (26kg each × 4×12)",
+          "note": "Last session came in under your best (26kg each × 4×12) — rebuild to that before pushing further."
+        }
+      },
+      {
+        "name": "Dumbbell Pullover",
+        "best": "22.5kg × 4×10",
+        "best1RM": 30,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×11)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 22.5kg × 4×10."
+        }
+      },
+      {
+        "name": "Dead Hang",
+        "best": "35s + 30s + 25s",
+        "best1RM": 0,
+        "iso": true,
+        "target": {
+          "status": "progress",
+          "text": "+5s each (aim 40s + 35s + 30s)",
+          "note": "Add 5s to each set from your best (35s + 30s + 25s) — aim for 40s + 35s + 30s."
         }
       }
     ],
     "guidance": [],
     "ranked": [
       {
-        "section": "Chest",
-        "fatigue": 13,
-        "readyInHours": 0,
-        "daysSince": 19
-      },
-      {
         "section": "Back",
-        "fatigue": 8,
+        "fatigue": 7,
         "readyInHours": 0,
         "daysSince": 12.3
       },
@@ -10584,21 +10556,27 @@
         "daysSince": 7.4
       },
       {
+        "section": "Chest",
+        "fatigue": 13,
+        "readyInHours": 0,
+        "daysSince": 4.2
+      },
+      {
         "section": "Arms",
         "fatigue": 17,
         "readyInHours": 6,
-        "daysSince": 0.3
+        "daysSince": 4.2
       },
       {
         "section": "Shoulders",
         "fatigue": 86,
-        "readyInHours": 42.1,
+        "readyInHours": 42,
         "daysSince": 0.3
       }
     ],
-    "suggestedCount": 4,
-    "totalAvailable": 10,
-    "typicalSessionSize": 4,
+    "suggestedCount": 5,
+    "totalAvailable": 8,
+    "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
     "daysSinceAerobic": 3.3
@@ -10607,7 +10585,7 @@
     {
       "level": "low",
       "title": "Shoulders fatigued (86%)",
-      "detail": "Recovers in ~42.1h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~42h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",

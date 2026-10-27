@@ -448,14 +448,35 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
 
   if (!trainable.length) return null;
 
-  // When was each section last the primary focus of a logged session?
+  // When was each section last actually trained? Classified by the strength
+  // exercises performed (each exercise's SNAPSHOT section, else the section of
+  // its highest-credit muscle), not by share of muscle load: a load-share cut
+  // missed combined days (Chest sat at 34-40% on "Chest + Arms" sessions and
+  // never registered) while aerobic sessions credit ~30% to Legs, so no single
+  // load threshold works. A section counts if it got 2+ exercises, or at least
+  // 40% of that session's strength exercises — one accessory doesn't count.
+  const snapSection = Object.fromEntries(data.SNAPSHOT.map((e) => [e.name, e.section]));
+  const exSection = (name) => {
+    if (snapSection[name]) return snapSection[name];
+    const def = data.EXERCISE_LIBRARY[name];
+    if (!def) return null;
+    const top = Object.entries(def.muscles).sort((a, b) => b[1] - a[1])[0];
+    return top && muscles[top[0]] ? muscles[top[0]].section : null;
+  };
   const lastTrained = {};
   for (const w of workouts) {
-    const total = sum(Object.values(w.muscleLoad)) || 1;
+    const counts = {};
+    let strengthCount = 0;
+    for (const ex of w.exercises) {
+      if (ex.kind !== "strength") continue;
+      const s = exSection(ex.name);
+      if (!s) continue;
+      counts[s] = (counts[s] || 0) + 1;
+      strengthCount++;
+    }
     for (const s of trainable) {
-      if (lastTrained[s] != null) continue;
-      const secLoad = sum(Object.entries(w.muscleLoad).filter(([m]) => muscles[m].section === s).map(([, v]) => v));
-      if (secLoad / total > 0.4) lastTrained[s] = w.t;
+      if (lastTrained[s] != null || !counts[s]) continue;
+      if (counts[s] >= 2 || counts[s] / strengthCount >= 0.4) lastTrained[s] = w.t;
     }
   }
 
