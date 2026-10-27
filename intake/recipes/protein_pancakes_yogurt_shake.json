@@ -6,7 +6,7 @@
     "url": null,
     "author": "Ingredient-list screenshot (Hebrew, app-style shopping-list view)",
     "captured": "2026-10-27",
-    "notes": "A simple protein-pancake batter: high-protein 0%-fat yogurt (Danone PRO-style, 21 g protein/200 g tub) + egg + a splash of vanilla protein drink + vanilla extract, bound with a little white flour and baking powder. The screenshot lists quantities only (no cooking method shown) — makes 10 units, ~36 g each (varies with pan/ladle size). The protein-drink quantity (30 ml / 3 tbsp) is assumed drawn from a standard ~330 ml bottle carrying 25 g protein total, since only the per-bottle total was given, not a concentration — flag if your bottle differs and I'll recalculate. No frying method specified; standard stovetop pancake method assumed in the cooking guide. Estimate."
+    "notes": "A simple protein-pancake batter: high-protein 0%-fat yogurt (Danone PRO-style, 21 g protein/200 g tub) + egg + a splash of vanilla protein drink + vanilla extract, bound with a little flour and baking powder. SWAPPED to whole-spelt flour in place of the original white flour per standing preference — adds real fiber (~3.2 g across the batch vs ~0.9 g with white flour) at a near-identical calorie cost. The screenshot lists quantities only (no cooking method shown) — makes 10 units, ~36 g each (varies with pan/ladle size). The protein-drink quantity (30 ml / 3 tbsp) is assumed drawn from a standard ~330 ml bottle carrying 25 g protein total, since only the per-bottle total was given, not a concentration — flag if your bottle differs and I'll recalculate. No frying method specified; standard stovetop pancake method assumed in the cooking guide. Estimate."
   },
   "servings": 10,
   "serving_desc": "1 pancake (~36 g) — size varies with pan/ladle",
@@ -15,7 +15,7 @@
     {"item": "egg, large (L)", "qty": "1"},
     {"item": "vanilla protein drink, 0% fat, no added sugar (25 g protein/bottle)", "qty": "30 ml (3 tbsp)", "note": "amount taken from a bottle, assumed ~330 ml/25 g protein — flag if your bottle differs"},
     {"item": "vanilla extract", "qty": "1 tsp", "note": "a good-quality one, per the source"},
-    {"item": "white flour", "qty": "4 level tbsp (~32 g)"},
+    {"item": "whole-spelt flour", "qty": "4 level tbsp (~32 g)", "note": "swapped in place of white flour"},
     {"item": "baking powder", "qty": "1 tsp (~5 g)"}
   ],
   "steps": [
@@ -25,39 +25,38 @@
     "Makes about 10 pancakes, ~36 g each."
   ],
   "per_serving": {
-    "kcal": 33,
-    "protein_g": 3.3,
-    "carbs_g": 3.6,
-    "fat_g": 0.6,
-    "fiber_g": 0.1,
+    "kcal": 32,
+    "protein_g": 3.4,
+    "carbs_g": 3.4,
+    "fat_g": 0.7,
+    "fiber_g": 0.3,
     "micros": {
       "sodium_mg": 66
     }
   },
   "batch_totals": {
-    "kcal": 328,
-    "protein_g": 33,
-    "carbs_g": 35.8,
-    "fat_g": 6.2,
-    "fiber_g": 0.9,
+    "kcal": 321,
+    "protein_g": 34,
+    "carbs_g": 34,
+    "fat_g": 6.7,
+    "fiber_g": 3.2,
     "sodium_mg": 663,
-    "note": "Whole batch (10 small pancakes). Protein-to-calorie ratio is genuinely strong — the 0%-fat high-protein yogurt is doing most of the work, with the flour kept to a modest 4 tbsp across the whole batch. Very low fat (mostly from the egg) and low fiber, typical of a flour-light protein-pancake batter."
+    "note": "Whole batch (10 small pancakes), whole-spelt flour. Protein-to-calorie ratio is genuinely strong — the 0%-fat high-protein yogurt is doing most of the work, with the flour kept to a modest 4 tbsp across the whole batch. Vs the white-flour version: essentially the same calories and protein, but fiber more than triples (~3.2 g vs ~0.9 g across the batch) from the whole-spelt swap."
   },
   "confidence": "estimate",
   "analysis": {
     "him": {
       "fit_score": 8,
-      "verdict": "A lean, protein-forward pancake batter — ~10.1 g protein per 100 kcal, among the best ratios in your library, driven by the high-protein 0%-fat yogurt rather than a flour-heavy base. Very low fat and modest carbs per pancake, so a few of these make an efficient high-protein breakfast or snack. The flip side of being this lean is there's essentially no fiber and it's a small, light pancake rather than a filling meal on its own — plan on a stack of several, plus a topping, to make it a real breakfast.",
+      "verdict": "A lean, protein-forward pancake batter — ~10.6 g protein per 100 kcal, among the best ratios in your library, driven by the high-protein 0%-fat yogurt rather than a flour-heavy base. With whole-spelt flour in place of white, fiber more than triples across the batch for essentially no calorie cost, and the batter stays very low in fat. It's still a small, light pancake rather than a filling meal on its own — plan on a stack of several, plus a topping, to make it a real breakfast.",
       "flags": [
-        "~10.1 g protein per 100 kcal — excellent ratio, driven by the 0%-fat high-protein yogurt",
-        "very low fat (~0.6 g/pancake) and modest carbs",
-        "almost no fiber — a light, flour-light batter",
+        "~10.6 g protein per 100 kcal — excellent ratio, driven by the 0%-fat high-protein yogurt",
+        "whole-spelt flour: fiber more than triples vs the white-flour version (~3.2 g vs ~0.9 g across the batch), same calories/protein",
+        "very low fat (~0.7 g/pancake) and modest carbs",
         "small portion per unit (~36 g) — plan for several pancakes per serving",
         "sodium is modest overall but concentrated from the baking powder"
       ],
       "suggested_mods": [
-        "Top with berries or a little nut butter to add fiber and make it a more complete meal",
-        "Swap the white flour for whole-spelt or oat flour for some fiber, with minimal taste impact at this small a quantity",
+        "Top with berries or a little nut butter to add even more fiber and make it a more complete meal",
         "Stack 3-4 for a real breakfast portion rather than counting one as a full meal",
         "Confirm your actual protein-drink bottle size/protein content if it differs from the ~330 ml/25 g assumption — it's a small ingredient here so the impact is minor either way"
       ]
@@ -84,8 +83,8 @@
   "meal_type": "Bread",
   "cooking_guide": [
     "Whisk the yogurt, egg, protein drink and vanilla extract together first until fully smooth — getting the wet ingredients uniform before adding flour avoids lumps later.",
-    "Sift the flour and baking powder in together rather than dumping them straight in — this distributes the leavening evenly so every pancake puffs the same.",
-    "Fold just until no dry streaks remain — overmixing develops gluten in the flour and makes the pancakes tougher and less fluffy, even in a small quantity like this.",
+    "Sift the whole-spelt flour and baking powder in together rather than dumping them straight in — this distributes the leavening evenly so every pancake puffs the same.",
+    "Fold just until no dry streaks remain — whole spelt has weaker gluten than white flour, and overmixing still makes the pancakes tougher and less fluffy even here, so stop as soon as it's combined.",
     "Let the batter rest 5 minutes before cooking if you have time — it lets the baking powder start working and the flour hydrate, giving a slightly better rise.",
     "Use a lightly greased nonstick pan on MEDIUM-LOW — high-protein batters (lots of yogurt/egg, little flour) brown and scorch faster than a classic flour-heavy pancake batter.",
     "Pour small rounds (these are meant to be bite-sized, ~36 g each) and wait for bubbles to form across the surface before flipping — flipping too early tears a delicate, low-flour batter.",
