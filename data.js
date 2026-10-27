@@ -238,14 +238,14 @@ const SNAPSHOT = [
 
   // ---- Shoulders ----
   { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
-  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 10, weight: 40, text: "20kg each × 3×10 (new PR)" }, best: { sets: 3, reps: 10, weight: 40, text: "20kg each × 3×10" } },
+  { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 11, weight: 40, text: "20kg each × 3×11 (new PR, as suggested)" }, best: { sets: 3, reps: 11, weight: 40, text: "20kg each × 3×11" } },
   { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9 (ties best)" }, best: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
-  { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 10, weight: 18, text: "18kg DB × 4×10 (new PR, DB instead of the usual KB)" }, best: { sets: 4, reps: 10, weight: 18, text: "18kg DB × 4×10" } },
-  { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" }, best: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" } },
+  { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 10, weight: 18, text: "18kg DB × 4×10 (ties best)" }, best: { sets: 4, reps: 10, weight: 18, text: "18kg DB × 4×10" } },
+  { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10 (ties best)" }, best: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" } },
   { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10 (ties best)" }, best: { sets: 3, reps: 10, weight: 52, text: "26kg each × 3×10" } },
-  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 40, weight: 48, text: "24kg each × 4×40s (new PR)" }, best: { sets: 4, seconds: 40, weight: 48, text: "24kg each × 4×40s" } },
-  { name: "Cable Face Pull",           section: "Shoulders", latest: { sets: 4, reps: 8, weight: 27, text: "27kg × 4×8 (new PR)" }, best: { sets: 4, reps: 8, weight: 27, text: "27kg × 4×8" } },
+  { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 45, weight: 40, text: "20kg each × 4×45s (lighter, +5s longer — below the 48kg×40s best by load-time, not a PR)" }, best: { sets: 4, seconds: 40, weight: 48, text: "24kg each × 4×40s" } },
+  { name: "Cable Face Pull",           section: "Shoulders", latest: { sets: 3, reps: 10, weight: 29, text: "29kg × 3×10 after a 27kg × 1×10 opener (new PR)" }, best: { sets: 3, reps: 10, weight: 29, text: "29kg × 3×10" } },
 
   // ---- Arms: Triceps ----
   { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" } },
@@ -305,6 +305,17 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 27 Oct — Shoulders (clock time not given, placeholder 07:30)
+  {
+    datetime: "2026-10-27T07:30", timeUnknown: true, note: "Shoulders day (clock time not given, placeholder 07:30) — Cable Face Pull 27kg×1×10 opener then 29kg×3×10 (new PR — est. 1RM 38.7 vs 34.2 prior best at 27kg×4×8). Dumbbell Shoulder Press 20kg each (40kg)×3×11, as suggested (new PR — est. 1RM 54.7 vs 53.3). Front Raises 18kg DB×4×10, ties best. Farmer's Hold 20kg each (40kg, 'each' assumed)×4×45s — +5s duration but lighter than the 24kg-each best, not a PR by load-time. Rear Delt Machine 73kg×3×10, as best (ties). 2 new PRs.",
+    exercises: [
+      { name: "Cable Face Pull",          sets: [ { reps: 10, weight: 27 }, { reps: 10, weight: 29 }, { reps: 10, weight: 29 }, { reps: 10, weight: 29 } ] },
+      { name: "Dumbbell Shoulder Press",  sets: [ { reps: 11, weight: 40 }, { reps: 11, weight: 40 }, { reps: 11, weight: 40 } ] },
+      { name: "Front Raises",             sets: [ { reps: 10, weight: 18 }, { reps: 10, weight: 18 }, { reps: 10, weight: 18 }, { reps: 10, weight: 18 } ] },
+      { name: "Farmer's Hold",            sets: [ { seconds: 45, weight: 40 }, { seconds: 45, weight: 40 }, { seconds: 45, weight: 40 }, { seconds: 45, weight: 40 } ] },
+      { name: "Rear Delt Machine",        sets: [ { reps: 10, weight: 73 }, { reps: 10, weight: 73 }, { reps: 10, weight: 73 } ] },
+    ],
+  },
   // 24 Oct — Outdoor Walk (07:53-08:53)
   {
     datetime: "2026-10-24T07:53", note: "Outdoor Walk (07:53-08:53) — 1 hour, ~8000 steps, solid walking pace, exact distance not given. Estimated ~5.6km from step count (~0.7m/step), flagged as approximate.",
