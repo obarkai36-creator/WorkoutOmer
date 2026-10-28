@@ -1,7 +1,8 @@
 {
   "date": "2026-10-28",
   "day_number": 123,
-  "in_progress": true,
+  "in_progress": false,
+  "steps": 6000,
   "sleep": {
     "sleep_start": "23:30",
     "sleep_end": "05:00",
@@ -169,27 +170,163 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "13:00",
+      "name": "Elite Mekupelet (מקופלת)",
+      "category": "food",
+      "qty": "1 bar (~25 g)",
+      "kcal": 135,
+      "protein_g": 1.75,
+      "carbs_g": 14.5,
+      "fat_g": 7.75,
+      "fiber_g": 0.5,
+      "note": "new generic reference (elite_mekupelet_bar_generic), bar size assumed ~25g, not label-verified."
+    },
+    {
+      "time": "13:30",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot (~45 ml)",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "17:15",
+      "name": "Green grapes, seedless",
+      "category": "food",
+      "qty": "10 pieces (~50 g)",
+      "kcal": 34.5,
+      "protein_g": 0.36,
+      "carbs_g": 9.05,
+      "fat_g": 0.08,
+      "fiber_g": 0.45,
+      "note": "standard reference. Credits ~5.4mg vitamin C."
+    },
+    {
+      "time": "17:15",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."
+    },
+    {
+      "time": "18:00",
+      "name": "Dinner — cheese pashtida with spinach + whole-spelt pasta",
+      "category": "food",
+      "qty": "130 g",
+      "kcal": 106.6,
+      "protein_g": 8.97,
+      "carbs_g": 8.19,
+      "fat_g": 4.42,
+      "fiber_g": 1.04,
+      "note": "'spelt pasta pie with low-fat cheeses' read as the same recipe-library pashtida as prior entries (cheese_pashtida_spinach_spelt_pasta_logged, 82kcal/100g). Credits ~31mcg folate DFE."
+    },
+    {
+      "time": "18:00",
+      "name": "Dinner — Angel PRO Pita",
+      "category": "food",
+      "qty": "2 units (125 g)",
+      "kcal": 251.2,
+      "protein_g": 25.8,
+      "carbs_g": 28.4,
+      "fat_g": 2.4,
+      "fiber_g": 7.4,
+      "note": "verified label reference (angel_pita_pro_20g_protein)."
+    },
+    {
+      "time": "18:00",
+      "name": "Dinner — yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "4 slices (100 g)",
+      "kcal": 200,
+      "protein_g": 30,
+      "carbs_g": 0,
+      "fat_g": 9,
+      "fiber_g": 0,
+      "note": "verified label reference."
+    },
+    {
+      "time": "18:00",
+      "name": "Dinner — Simfonia cheese spread, 5% fat",
+      "category": "food",
+      "qty": "50 g",
+      "kcal": 54,
+      "protein_g": 4.9,
+      "carbs_g": 2.3,
+      "fat_g": 2.5,
+      "fiber_g": 0,
+      "note": "verified label reference (simfonia_cheese_spread_generic)."
+    },
+    {
+      "time": "18:00",
+      "name": "Dinner — cherry tomatoes",
+      "category": "food",
+      "qty": "30 pieces",
+      "kcal": 79.5,
+      "protein_g": 4.11,
+      "carbs_g": 17.61,
+      "fat_g": 0.9,
+      "fiber_g": 5.4,
+      "note": "standard reference. Credits ~13.2mg lycopene, ~66mg vitamin C, ~76.5mcg folate DFE."
+    },
+    {
+      "time": "20:15",
+      "name": "Cheese pashtida with spinach + whole-spelt pasta",
+      "category": "food",
+      "qty": "50 g",
+      "kcal": 41,
+      "protein_g": 3.45,
+      "carbs_g": 3.15,
+      "fat_g": 1.7,
+      "fiber_g": 0.4,
+      "note": "same recipe-library pashtida as prior entries (cheese_pashtida_spinach_spelt_pasta_logged, 82kcal/100g). Credits ~12mcg folate DFE."
+    },
+    {
+      "time": "20:15",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
   "workout_summary": null,
-  "caffeine_shots": 3,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 158.65,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
+    "folate_mcg_dfe": 278.35,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 50.6,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 10.12
+    "vitamin_c_mg": 1122.0,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
+    "lycopene_mg": 23.32
   },
   "assumptions": [
     "Sleep logged: 23:30-05:00, 5.5h (night of 2026-10-27) — below target, a short night.",
     "Pill (Bilaxten), double espresso and Mayven all taken by 05:35 — placeholder 05:35. No Rhinolast spray, still out of stock.",
     "08:30 125g cottage cheese + 20 cherry tomatoes (credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 5g honey — all standard references.",
     "Before lunch (time not given, placeholder 11:00): 1 walnut + 1 almond + 1 yellow cheese slice 9% + 3 cherry tomatoes — all standard references.",
-    "12:00 Mi Casa large cucumber salad with chicken (same standing estimate as prior entries, 590kcal/59p) + espresso (3 caffeine shots today) + omega-3, 2 softgels (~1000mg EPA/DHA)."
+    "12:00 Mi Casa large cucumber salad with chicken (same standing estimate as prior entries, 590kcal/59p) + espresso (3 caffeine shots today) + omega-3, 2 softgels (~1000mg EPA/DHA).",
+    "13:00 1 Elite Mekupelet bar (new generic reference, ~25g assumed). 13:30 espresso (4 caffeine shots today).",
+    "16:30 self (masturbation) — logged in ejaculation.json.",
+    "17:15 10 green grapes + essential-5 (standard verified dose).",
+    "18:00 dinner: 130g 'spelt pasta pie with low-fat cheeses' (read as the recipe-library cheese pashtida with spinach + spelt pasta) + 2 Angel PRO pita + 4 yellow cheese slices 9% + 50g Simfonia + 30 cherry tomatoes.",
+    "20:15 another 50g of the same pashtida + creatine 5g.",
+    "EOD: 6,000 steps. Retainers last worn 10-27 (1 night ago), no flag."
   ],
-  "status_note": "Day in progress. Slept only 5.5h (23:30-05:00), below target. AM pill + double espresso + Mayven + 08:30 cottage cheese/tomatoes/honey + pre-lunch snack + Mi Casa lunch, espresso, omega-3 logged (3 caffeine shots). Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day complete. Slept only 5.5h (23:30-05:00), below target. Breakfast, pre-lunch snack, Mi Casa lunch, Mekupelet, grapes, dinner (pashtida, pita, cheeses, tomatoes), more pashtida logged; Mayven, omega-3, essential-5, creatine all taken (4 caffeine shots). Masturbation at 16:30. 6,000 steps. Still out of Rhinolast spray."
 }

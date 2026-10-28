@@ -2,6 +2,18 @@
   "_note": "Known / repeat food items with confirmed macros, for quick reuse when logging (no re-estimation needed). Values are per the stated serving.",
   "items": [
     {
+      "id": "elite_mekupelet_bar_generic",
+      "name": "Elite Mekupelet (מקופלת) folded milk-chocolate bar, single",
+      "serving": "1 bar (~25 g)",
+      "kcal": 135,
+      "protein_g": 1.75,
+      "carbs_g": 14.5,
+      "fat_g": 7.75,
+      "fiber_g": 0.5,
+      "verified": false,
+      "source": "First logged 2026-10-28. Generic milk-chocolate estimate (~540kcal/100g) for a single standard ~25g Mekupelet bar. Not label-verified."
+    },
+    {
       "id": "almond_generic",
       "name": "Almond, generic, per piece",
       "serving": "1 almond (~1.2 g)",
