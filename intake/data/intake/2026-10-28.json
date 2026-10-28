@@ -83,6 +83,58 @@
       "fat_g": 0,
       "fiber_g": 0.01,
       "note": "same standard reference as prior entries (honey_generic)."
+    },
+    {
+      "time": "11:00",
+      "name": "Walnut",
+      "category": "food",
+      "qty": "1 piece (~5 g)",
+      "kcal": 32.7,
+      "protein_g": 0.76,
+      "carbs_g": 0.69,
+      "fat_g": 3.26,
+      "fiber_g": 0.34,
+      "time_approx": true,
+      "note": "standard reference (walnut_generic); time not given (before lunch), placeholder 11:00."
+    },
+    {
+      "time": "11:00",
+      "name": "Almond",
+      "category": "food",
+      "qty": "1 piece (~1.2 g)",
+      "kcal": 6.95,
+      "protein_g": 0.25,
+      "carbs_g": 0.26,
+      "fat_g": 0.6,
+      "fiber_g": 0.14,
+      "time_approx": true,
+      "note": "standard reference (almond_generic); time not given (before lunch), placeholder 11:00."
+    },
+    {
+      "time": "11:00",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "1 slice (25 g)",
+      "kcal": 50,
+      "protein_g": 7.5,
+      "carbs_g": 0,
+      "fat_g": 2.25,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "verified label reference (tnuva_emek_light_yellow_cheese_9pct); time not given (before lunch), placeholder 11:00."
+    },
+    {
+      "time": "11:00",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "3 pieces",
+      "kcal": 7.95,
+      "protein_g": 0.41,
+      "carbs_g": 1.76,
+      "fat_g": 0.09,
+      "fiber_g": 0.54,
+      "time_approx": true,
+      "note": "standard reference. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE; time not given (before lunch), placeholder 11:00."
     }
   ],
   "workout_today": false,
@@ -91,17 +143,18 @@
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 151,
+    "folate_mcg_dfe": 158.65,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 44,
+    "vitamin_c_mg": 50.6,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 10.12
   },
   "assumptions": [
     "Sleep logged: 23:30-05:00, 5.5h (night of 2026-10-27) — below target, a short night.",
     "Pill (Bilaxten), double espresso and Mayven all taken by 05:35 — placeholder 05:35. No Rhinolast spray, still out of stock.",
-    "08:30 125g cottage cheese + 20 cherry tomatoes (credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 5g honey — all standard references."
+    "08:30 125g cottage cheese + 20 cherry tomatoes (credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE) + 5g honey — all standard references.",
+    "Before lunch (time not given, placeholder 11:00): 1 walnut + 1 almond + 1 yellow cheese slice 9% + 3 cherry tomatoes — all standard references."
   ],
-  "status_note": "Day in progress. Slept only 5.5h (23:30-05:00), below target. AM pill + double espresso + Mayven + 08:30 cottage cheese/tomatoes/honey logged (2 caffeine shots). Still out of Rhinolast spray — worth restocking."
+  "status_note": "Day in progress. Slept only 5.5h (23:30-05:00), below target. AM pill + double espresso + Mayven + 08:30 cottage cheese/tomatoes/honey + pre-lunch snack logged (2 caffeine shots). Still out of Rhinolast spray — worth restocking."
 }
