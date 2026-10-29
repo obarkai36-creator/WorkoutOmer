@@ -177,26 +177,61 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "14:00",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "16:00",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "16:00",
+      "name": "Chocolate crepe",
+      "category": "food",
+      "qty": "1 crepe (~130 g: ~100g crepe + ~30g chocolate spread, assumed)",
+      "kcal": 360,
+      "protein_g": 7,
+      "carbs_g": 45,
+      "fat_g": 17,
+      "fiber_g": 2,
+      "note": "generic estimate — size/filling not given, assumed one standard crepe with ~30g chocolate-hazelnut spread; low-confidence, flagged. Credits ~1.5mg vitamin E."
     }
   ],
   "workout_today": false,
   "workout_summary": null,
-  "caffeine_shots": 4,
+  "caffeine_shots": 5,
   "micros_sperm_priority": {
     "zinc_mg": 9.4,
     "selenium_mcg": 68,
     "folate_mcg_dfe": 272,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 110,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0.6,
+    "vitamin_e_mg": 2.1,
     "lycopene_mg": 13.2
   },
   "assumptions": [
     "Sleep logged: 21:45-06:15, 8.5h (night of 2026-10-28) — within target band.",
     "Pill (Bilaxten), double espresso and Mayven all taken by 07:00 — placeholder 07:00. No Rhinolast spray, still out of stock.",
     "Weigh-in (Eufy): 80.9kg, 26.9% body fat, 21.7kg fat mass, 30.8kg skeletal muscle, visceral 11, RHR 83 — saved to weight.json.",
-    "08:45 espresso + 3 yellow cheese slices + 20 cherry tomatoes; 11:00 1 yellow cheese slice; 12:00 250g cottage cheese + large salad (veg, sweet potato, pasta, 1 egg, 5% Bulgarian cheese, red onion in balsamic) — salad component amounts assumed, no oil; 13:00 espresso. Espressos read as single shots."
+    "08:45 espresso + 3 yellow cheese slices + 20 cherry tomatoes; 11:00 1 yellow cheese slice; 12:00 250g cottage cheese + large salad (veg, sweet potato, pasta, 1 egg, 5% Bulgarian cheese, red onion in balsamic) — salad component amounts assumed, no oil; 13:00 espresso. Espressos read as single shots.",
+    "14:00 omega-3, 2 softgels. 16:00 espresso (single) + chocolate crepe — generic estimate (~100g crepe + ~30g chocolate spread assumed), flagged."
   ],
   "status_note": "Day in progress. Slept 8.5h (21:45-06:15), a full night within target. AM pill + double espresso + Mayven logged (2 caffeine shots). Still out of Rhinolast spray — worth restocking."
 }
