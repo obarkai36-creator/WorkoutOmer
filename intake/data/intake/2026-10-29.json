@@ -211,27 +211,111 @@
       "fat_g": 17,
       "fiber_g": 2,
       "note": "generic estimate — size/filling not given, assumed one standard crepe with ~30g chocolate-hazelnut spread; low-confidence, flagged. Credits ~1.5mg vitamin E."
+    },
+    {
+      "time": "20:45",
+      "name": "Dinner — Angel PRO Pita",
+      "category": "food",
+      "qty": "2 units (125 g)",
+      "kcal": 251.2,
+      "protein_g": 25.8,
+      "carbs_g": 28.4,
+      "fat_g": 2.4,
+      "fiber_g": 7.4,
+      "note": "verified label reference, same as prior entries (angel_pita_pro_20g_protein)."
+    },
+    {
+      "time": "20:45",
+      "name": "Dinner — Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "4 slices (100 g)",
+      "kcal": 200,
+      "protein_g": 30,
+      "carbs_g": 0,
+      "fat_g": 9,
+      "fiber_g": 0,
+      "note": "verified label reference (tnuva_emek_light_yellow_cheese_9pct)."
+    },
+    {
+      "time": "20:45",
+      "name": "Dinner — Simfonia cheese spread",
+      "category": "food",
+      "qty": "50 g",
+      "kcal": 54,
+      "protein_g": 4.9,
+      "carbs_g": 2.3,
+      "fat_g": 2.5,
+      "fiber_g": 0,
+      "note": "verified label reference (simfonia_cheese_spread_generic)."
+    },
+    {
+      "time": "20:45",
+      "name": "Dinner — Cherry tomatoes",
+      "category": "food",
+      "qty": "20 pieces",
+      "kcal": 53,
+      "protein_g": 2.74,
+      "carbs_g": 11.74,
+      "fat_g": 0.6,
+      "fiber_g": 3.6,
+      "note": "standard reference. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."
+    },
+    {
+      "time": "20:45",
+      "name": "Dinner — Cheese pashtida with spinach + whole-spelt pasta",
+      "category": "food",
+      "qty": "50 g",
+      "kcal": 41,
+      "protein_g": 3.45,
+      "carbs_g": 3.15,
+      "fat_g": 1.7,
+      "fiber_g": 0.4,
+      "note": "'pasta pie' read as the recipe-library pashtida (cheese_pashtida_spinach_spelt_pasta_logged, 82kcal/100g). Credits ~12mcg folate DFE."
+    },
+    {
+      "time": "20:45",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."
+    },
+    {
+      "time": "21:30",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
   "workout_summary": null,
   "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 9.4,
-    "selenium_mcg": 68,
-    "folate_mcg_dfe": 272,
+    "zinc_mg": 33.8,
+    "selenium_mcg": 204,
+    "folate_mcg_dfe": 365,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 110,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 2.1,
-    "lycopene_mg": 13.2
+    "vitamin_c_mg": 1154,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 136.6,
+    "lycopene_mg": 22.0
   },
   "assumptions": [
     "Sleep logged: 21:45-06:15, 8.5h (night of 2026-10-28) — within target band.",
     "Pill (Bilaxten), double espresso and Mayven all taken by 07:00 — placeholder 07:00. No Rhinolast spray, still out of stock.",
     "Weigh-in (Eufy): 80.9kg, 26.9% body fat, 21.7kg fat mass, 30.8kg skeletal muscle, visceral 11, RHR 83 — saved to weight.json.",
     "08:45 espresso + 3 yellow cheese slices + 20 cherry tomatoes; 11:00 1 yellow cheese slice; 12:00 250g cottage cheese + large salad (veg, sweet potato, pasta, 1 egg, 5% Bulgarian cheese, red onion in balsamic) — salad component amounts assumed, no oil; 13:00 espresso. Espressos read as single shots.",
-    "14:00 omega-3, 2 softgels. 16:00 espresso (single) + chocolate crepe — generic estimate (~100g crepe + ~30g chocolate spread assumed), flagged."
+    "14:00 omega-3, 2 softgels. 16:00 espresso (single) + chocolate crepe — generic estimate (~100g crepe + ~30g chocolate spread assumed), flagged.",
+    "20:45 dinner: 2 Angel PRO pita + 4 yellow cheese slices 9% + 50g Simfonia + 20 cherry tomatoes + 50g 'pasta pie' (read as the recipe-library cheese pashtida) + essential-5. 21:30 creatine 5g."
   ],
   "status_note": "Day in progress. Slept 8.5h (21:45-06:15), a full night within target. AM pill + double espresso + Mayven logged (2 caffeine shots). Still out of Rhinolast spray — worth restocking."
 }
