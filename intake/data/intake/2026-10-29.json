@@ -47,25 +47,156 @@
       "fiber_g": 0,
       "time_approx": true,
       "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"
+    },
+    {
+      "time": "08:45",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "08:45",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "3 slices (75 g)",
+      "kcal": 150,
+      "protein_g": 22.5,
+      "carbs_g": 0,
+      "fat_g": 6.75,
+      "fiber_g": 0,
+      "note": "verified label reference, same as prior entries (tnuva_emek_light_yellow_cheese_9pct)."
+    },
+    {
+      "time": "08:45",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "20 pieces",
+      "kcal": 53,
+      "protein_g": 2.74,
+      "carbs_g": 11.74,
+      "fat_g": 0.6,
+      "fiber_g": 3.6,
+      "note": "same standard reference as prior entries. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."
+    },
+    {
+      "time": "11:00",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "1 slice (25 g)",
+      "kcal": 50,
+      "protein_g": 7.5,
+      "carbs_g": 0,
+      "fat_g": 2.25,
+      "fiber_g": 0,
+      "note": "verified label reference, same as prior entries (tnuva_emek_light_yellow_cheese_9pct)."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — cottage cheese",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 245,
+      "protein_g": 27.5,
+      "carbs_g": 8.5,
+      "fat_g": 10.75,
+      "fiber_g": 0,
+      "note": "same generic reference as prior entries (cottage_cheese_generic, ~98kcal/100g)."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — large salad, vegetables (cucumber, ~10 cherry tomatoes, sprouts, cabbage, cauliflower, red onion in balsamic)",
+      "category": "food",
+      "qty": "~150g cucumber + ~120g tomatoes + ~30g sprouts + ~50g cabbage + ~50g cauliflower + ~30g onion + ~10g balsamic (all assumed)",
+      "kcal": 104.5,
+      "protein_g": 5.2,
+      "carbs_g": 23.8,
+      "fat_g": 0.8,
+      "fiber_g": 5.8,
+      "note": "component estimate, quantities not given — flagged. No oil mentioned, none assumed."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — salad: sweet potato (cooked)",
+      "category": "food",
+      "qty": "~80 g (assumed)",
+      "kcal": 72,
+      "protein_g": 1.6,
+      "carbs_g": 16.6,
+      "fat_g": 0.1,
+      "fiber_g": 2.4,
+      "note": "quantity assumed."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — salad: pasta (cooked)",
+      "category": "food",
+      "qty": "~60 g (assumed)",
+      "kcal": 94,
+      "protein_g": 3.5,
+      "carbs_g": 18.5,
+      "fat_g": 0.6,
+      "fiber_g": 1.1,
+      "note": "quantity assumed, generic cooked pasta."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — salad: hard-boiled egg",
+      "category": "food",
+      "qty": "1 large",
+      "kcal": 78,
+      "protein_g": 6.3,
+      "carbs_g": 0.6,
+      "fat_g": 5.3,
+      "fiber_g": 0,
+      "note": "egg_large_plain_generic."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — salad: Bulgarian cheese 5%",
+      "category": "food",
+      "qty": "~50 g (assumed)",
+      "kcal": 70,
+      "protein_g": 8.5,
+      "carbs_g": 1.5,
+      "fat_g": 2.5,
+      "fiber_g": 0,
+      "note": "5% Bulgarian/feta-style, quantity assumed."
+    },
+    {
+      "time": "13:00",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
   "workout_summary": null,
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "zinc_mg": 9.4,
+    "selenium_mcg": 68,
+    "folate_mcg_dfe": 272,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 110,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "vitamin_e_mg": 0.6,
+    "lycopene_mg": 13.2
   },
   "assumptions": [
     "Sleep logged: 21:45-06:15, 8.5h (night of 2026-10-28) — within target band.",
     "Pill (Bilaxten), double espresso and Mayven all taken by 07:00 — placeholder 07:00. No Rhinolast spray, still out of stock.",
-    "Weigh-in (Eufy): 80.9kg, 26.9% body fat, 21.7kg fat mass, 30.8kg skeletal muscle, visceral 11, RHR 83 — saved to weight.json."
+    "Weigh-in (Eufy): 80.9kg, 26.9% body fat, 21.7kg fat mass, 30.8kg skeletal muscle, visceral 11, RHR 83 — saved to weight.json.",
+    "08:45 espresso + 3 yellow cheese slices + 20 cherry tomatoes; 11:00 1 yellow cheese slice; 12:00 250g cottage cheese + large salad (veg, sweet potato, pasta, 1 egg, 5% Bulgarian cheese, red onion in balsamic) — salad component amounts assumed, no oil; 13:00 espresso. Espressos read as single shots."
   ],
   "status_note": "Day in progress. Slept 8.5h (21:45-06:15), a full night within target. AM pill + double espresso + Mayven logged (2 caffeine shots). Still out of Rhinolast spray — worth restocking."
 }
