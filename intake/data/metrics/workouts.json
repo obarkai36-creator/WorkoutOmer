@@ -1,7 +1,7 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-28",
+    "report_date": "2026-10-29",
     "latest_session": "Shoulders day (clock time not given, placeholder 07:30) — Cable Face Pull 27kg×1×10 opener then 29kg×3×10 (new PR — est. 1RM 38.7 vs 34.2 prior best at 27kg×4×8). Dumbbell Shoulder Press 20kg each (40kg)×3×11, as suggested (new PR — est. 1RM 54.7 vs 53.3). Front Raises 18kg DB×4×10, ties best. Farmer's Hold 20kg each (40kg, 'each' assumed)×4×45s — +5s duration but lighter than the 24kg-each best, not a PR by load-time. Rear Delt Machine 73kg×3×10, as best (ties). 2 new PRs.",
     "sessions_logged": 86,
     "sessions_per_week": 3.5,
@@ -10,9 +10,10 @@
     "aerobic_sessions_28d": 6,
     "avg_pace": "10:17/km",
     "avg_hr": 142,
-    "acwr": 0.86,
+    "acwr": 0.69,
     "recommended_next": "Back day",
     "alerts": [
+      "Load ratio 0.69 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
