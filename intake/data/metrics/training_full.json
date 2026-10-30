@@ -1,5 +1,5 @@
 {
-  "now": 1793345920409,
+  "now": 1793354941861,
   "workouts": [
     {
       "datetime": "2026-10-30T08:50",
@@ -8965,15 +8965,15 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 89,
-      "readyInHours": 65.4,
+      "pct": 87,
+      "readyInHours": 64,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "ready": true
     },
@@ -8981,8 +8981,8 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 81,
-      "readyInHours": 39.8,
+      "pct": 79,
+      "readyInHours": 38.5,
       "ready": false
     },
     "triceps": {
@@ -9076,29 +9076,29 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 89,
-      "readyInHours": 65.4,
+      "pct": 87,
+      "readyInHours": 64,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 89,
-          "readyInHours": 65.4,
+          "pct": 87,
+          "readyInHours": 64,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 17,
+          "pct": 16,
           "readyInHours": 0,
           "ready": true
         }
@@ -9106,15 +9106,15 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 29,
-      "readyInHours": 39.8,
+      "pct": 28,
+      "readyInHours": 38.5,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 81,
-          "readyInHours": 39.8,
+          "pct": 79,
+          "readyInHours": 38.5,
           "ready": false
         },
         {
@@ -10551,13 +10551,13 @@
       },
       {
         "label": "-1w",
-        "stress": 374,
-        "sessions": 3,
+        "stress": 555,
+        "sessions": 4,
         "acwr": 1.12
       },
       {
         "label": "This wk",
-        "stress": 414,
+        "stress": 406,
         "sessions": 3,
         "acwr": 1.1
       }
@@ -10573,9 +10573,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-30T07:38:40.409Z",
+    "readyAt": "2026-10-30T10:09:01.861Z",
     "neverLogged": false,
-    "daysSince": 10.1,
+    "daysSince": 10.2,
     "suggestedExercises": [
       {
         "name": "Calf Raises Machine",
@@ -10738,31 +10738,31 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 10.1
+        "daysSince": 10.2
       },
       {
         "section": "Chest",
         "fatigue": 9,
         "readyInHours": 0,
-        "daysSince": 6.9
+        "daysSince": 7
       },
       {
         "section": "Shoulders",
-        "fatigue": 17,
+        "fatigue": 16,
         "readyInHours": 0,
-        "daysSince": 3
+        "daysSince": 3.1
       },
       {
         "section": "Arms",
-        "fatigue": 29,
-        "readyInHours": 39.8,
-        "daysSince": 6.9
+        "fatigue": 28,
+        "readyInHours": 38.5,
+        "daysSince": 7
       },
       {
         "section": "Back",
-        "fatigue": 89,
-        "readyInHours": 65.4,
-        "daysSince": 0
+        "fatigue": 87,
+        "readyInHours": 64,
+        "daysSince": 0.1
       }
     ],
     "suggestedCount": 5,
@@ -10770,18 +10770,13 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 6
+    "daysSinceAerobic": 6.1
   },
   "alerts": [
     {
       "level": "low",
-      "title": "Back fatigued (89%)",
-      "detail": "Recovers in ~65.4h. Avoid loading it hard before then — you trained it most recently."
-    },
-    {
-      "level": "low",
-      "title": "Biceps fatigued (81%)",
-      "detail": "Recovers in ~39.8h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Back fatigued (87%)",
+      "detail": "Recovers in ~64h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
@@ -10808,7 +10803,7 @@
       19,
       20
     ],
-    "daysSinceLast": 0,
+    "daysSinceLast": 0.1,
     "total": 87
   },
   "relstrength": {
@@ -10875,7 +10870,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 6,
+    "daysSinceLast": 6.1,
     "recent": [
       {
         "t": 1792828380000,

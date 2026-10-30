@@ -80,25 +80,86 @@
       "fat_g": 0.08,
       "fiber_g": 0.45,
       "note": "standard reference. Credits ~5.4mg vitamin C."
+    },
+    {
+      "time": "11:45",
+      "name": "Lunch — baked salmon",
+      "category": "food",
+      "qty": "100 g",
+      "kcal": 206,
+      "protein_g": 22,
+      "carbs_g": 0,
+      "fat_g": 12.4,
+      "fiber_g": 0,
+      "note": "standard baked salmon (~206kcal/100g). Credits ~1800mg omega-3 EPA/DHA, ~500IU vitamin D, ~41mcg selenium, ~0.4mg zinc."
+    },
+    {
+      "time": "11:45",
+      "name": "Lunch — fried chicken schnitzel",
+      "category": "food",
+      "qty": "150 g",
+      "kcal": 397,
+      "protein_g": 30,
+      "carbs_g": 18,
+      "fat_g": 22,
+      "fiber_g": 1,
+      "note": "generic breaded+fried schnitzel (~265kcal/100g), frying oil included. Credits ~30mcg selenium, ~1.5mg zinc."
+    },
+    {
+      "time": "11:45",
+      "name": "Lunch — baked potato",
+      "category": "food",
+      "qty": "1 medium (~173 g)",
+      "kcal": 161,
+      "protein_g": 4.3,
+      "carbs_g": 36.6,
+      "fat_g": 0.2,
+      "fiber_g": 3.8,
+      "note": "size not given, medium assumed. Credits ~17mg vitamin C, ~48mcg folate."
+    },
+    {
+      "time": "11:45",
+      "name": "Lunch — string beans",
+      "category": "food",
+      "qty": "2 spoons (~60 g)",
+      "kcal": 21,
+      "protein_g": 1.1,
+      "carbs_g": 4.7,
+      "fat_g": 0.1,
+      "fiber_g": 2,
+      "note": "cooked green beans. Credits ~7mg vitamin C, ~20mcg folate."
+    },
+    {
+      "time": "11:45",
+      "name": "Lunch — salad (lettuce, 3 tomatoes, 2 cucumbers, red onion, lemon juice)",
+      "category": "food",
+      "qty": "~50g lettuce + 3 tomatoes (~360g) + 2 cucumbers (~600g) + ~30g onion + lemon",
+      "kcal": 179,
+      "protein_g": 8,
+      "carbs_g": 41.3,
+      "fat_g": 1.4,
+      "fiber_g": 8.5,
+      "note": "component estimate, sizes assumed, no oil. Credits ~9.3mg lycopene, ~74mg vitamin C, ~85mcg folate DFE."
     }
   ],
   "workout_today": true,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 5.4,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "zinc_mg": 5.4,
+    "selenium_mcg": 71,
+    "folate_mcg_dfe": 253,
+    "omega3_epa_dha_mg": 1800,
+    "vitamin_c_mg": 103.4,
+    "vitamin_d_iu": 500,
+    "vitamin_e_mg": 1.5,
+    "lycopene_mg": 9.3
   },
   "assumptions": [
     "Sleep logged: 23:15-06:15, 7.0h (night of 2026-10-29).",
     "07:30 pill (Bilaxten) + double espresso + Mayven gummies — no Rhinolast spray, still out of stock.",
     "08:00 Danone PRO strawberry yogurt + ~20g Catalina Crunch (handful) + 10 green grapes.",
-    "Workout: Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged)."
+    "Workout: Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged).",
+    "11:45 lunch: 100g baked salmon + 150g fried chicken schnitzel (generic breaded/fried) + 1 medium baked potato (assumed ~173g) + ~60g string beans + salad (lettuce, 3 tomatoes, 2 cucumbers, red onion, lemon juice, no oil) — sizes assumed where not given."
   ],
   "status_note": "In progress. Slept 7.0h. Morning pill, double espresso, Mayven taken.",
   "workout_summary": "Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged)."
