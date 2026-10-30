@@ -44,23 +44,62 @@
       "fat_g": 0,
       "fiber_g": 0,
       "note": "multivitamin — 100mcg DFE folate, 2.8mg zinc per label; no selenium/C/D/E"
+    },
+    {
+      "time": "08:00",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat",
+      "category": "food",
+      "qty": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "same reference as prior entries (danone_pro_strawberry_0pct)."
+    },
+    {
+      "time": "08:00",
+      "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter",
+      "category": "food",
+      "qty": "~20 g (handful)",
+      "kcal": 61.2,
+      "protein_g": 6.2,
+      "carbs_g": 8.8,
+      "fat_g": 2.8,
+      "fiber_g": 5,
+      "note": "verified reference (catalina_crunch_choc_pb_cereal); handful = ~20g as prior entries."
+    },
+    {
+      "time": "08:00",
+      "name": "Green grapes, seedless",
+      "category": "food",
+      "qty": "10 pieces (~50 g)",
+      "kcal": 34.5,
+      "protein_g": 0.36,
+      "carbs_g": 9.05,
+      "fat_g": 0.08,
+      "fiber_g": 0.45,
+      "note": "standard reference. Credits ~5.4mg vitamin C."
     }
   ],
-  "workout_today": false,
+  "workout_today": true,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 5.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
   "assumptions": [
     "Sleep logged: 23:15-06:15, 7.0h (night of 2026-10-29).",
-    "07:30 pill (Bilaxten) + double espresso + Mayven gummies — no Rhinolast spray, still out of stock."
+    "07:30 pill (Bilaxten) + double espresso + Mayven gummies — no Rhinolast spray, still out of stock.",
+    "08:00 Danone PRO strawberry yogurt + ~20g Catalina Crunch (handful) + 10 green grapes.",
+    "Workout: Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged)."
   ],
-  "status_note": "In progress. Slept 7.0h. Morning pill, double espresso, Mayven taken."
+  "status_note": "In progress. Slept 7.0h. Morning pill, double espresso, Mayven taken.",
+  "workout_summary": "Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged)."
 }
