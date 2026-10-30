@@ -187,18 +187,64 @@
       "fat_g": 1.4,
       "fiber_g": 8.5,
       "note": "component estimate, sizes assumed, no oil. Credits ~9.3mg lycopene, ~74mg vitamin C, ~85mcg folate DFE."
+    },
+    {
+      "time": "13:00",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "13:45",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."
+    },
+    {
+      "time": "14:15",
+      "name": "Biscuit cake (עוגת ביסקוויטים)",
+      "category": "food",
+      "qty": "2 bites (~30 g)",
+      "kcal": 130,
+      "protein_g": 1.8,
+      "carbs_g": 16,
+      "fat_g": 6.5,
+      "fiber_g": 0.5,
+      "note": "generic estimate (~430kcal/100g, biscuits + pudding/cream/chocolate layers), bite size assumed ~15g, flagged."
+    },
+    {
+      "time": "14:30",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "1 double",
+      "kcal": 6,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": true,
-  "caffeine_shots": 2,
+  "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 6.4,
-    "selenium_mcg": 75,
+    "zinc_mg": 26.4,
+    "selenium_mcg": 175,
     "folate_mcg_dfe": 260.65,
     "omega3_epa_dha_mg": 1800,
-    "vitamin_c_mg": 112.7,
-    "vitamin_d_iu": 500,
-    "vitamin_e_mg": 1.5,
+    "vitamin_c_mg": 1112.7,
+    "vitamin_d_iu": 2500,
+    "vitamin_e_mg": 135.5,
     "lycopene_mg": 10.62
   },
   "assumptions": [
@@ -207,7 +253,8 @@
     "08:00 Danone PRO strawberry yogurt + ~20g Catalina Crunch (handful) + 10 green grapes.",
     "Workout: Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged).",
     "11:45 lunch: 100g baked salmon + 150g fried chicken schnitzel (generic breaded/fried) + 1 medium baked potato (assumed ~173g) + ~60g string beans + salad (lettuce, 3 tomatoes, 2 cucumbers, red onion, lemon juice, no oil) — sizes assumed where not given.",
-    "10:30 creatine 5g. 11:00 1 yellow cheese slice + 3 cherry tomatoes + 5 green grapes."
+    "10:30 creatine 5g. 11:00 1 yellow cheese slice + 3 cherry tomatoes + 5 green grapes.",
+    "13:00 espresso (single), 13:45 essential-5, 14:15 2 bites of biscuit cake (~30g, generic estimate), 14:30 double espresso — 5 caffeine shots so far."
   ],
   "status_note": "In progress. Slept 7.0h. Morning pill, double espresso, Mayven taken.",
   "workout_summary": "Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged)."
