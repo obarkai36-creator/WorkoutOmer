@@ -82,6 +82,53 @@
       "note": "standard reference. Credits ~5.4mg vitamin C."
     },
     {
+      "time": "10:30",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "11:00",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "1 slice (25 g)",
+      "kcal": 50,
+      "protein_g": 7.5,
+      "carbs_g": 0,
+      "fat_g": 2.25,
+      "fiber_g": 0,
+      "note": "verified label reference (tnuva_emek_light_yellow_cheese_9pct)."
+    },
+    {
+      "time": "11:00",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "3 pieces",
+      "kcal": 7.95,
+      "protein_g": 0.41,
+      "carbs_g": 1.76,
+      "fat_g": 0.09,
+      "fiber_g": 0.54,
+      "note": "standard reference. Credits ~1.32mg lycopene, ~6.6mg vitamin C, ~7.65mcg folate DFE."
+    },
+    {
+      "time": "11:00",
+      "name": "Green grapes, seedless",
+      "category": "food",
+      "qty": "5 pieces (~25 g)",
+      "kcal": 17.25,
+      "protein_g": 0.18,
+      "carbs_g": 4.53,
+      "fat_g": 0.04,
+      "fiber_g": 0.23,
+      "note": "standard reference. Credits ~2.7mg vitamin C."
+    },
+    {
       "time": "11:45",
       "name": "Lunch — baked salmon",
       "category": "food",
@@ -145,21 +192,22 @@
   "workout_today": true,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 5.4,
-    "selenium_mcg": 71,
-    "folate_mcg_dfe": 253,
+    "zinc_mg": 6.4,
+    "selenium_mcg": 75,
+    "folate_mcg_dfe": 260.65,
     "omega3_epa_dha_mg": 1800,
-    "vitamin_c_mg": 103.4,
+    "vitamin_c_mg": 112.7,
     "vitamin_d_iu": 500,
     "vitamin_e_mg": 1.5,
-    "lycopene_mg": 9.3
+    "lycopene_mg": 10.62
   },
   "assumptions": [
     "Sleep logged: 23:15-06:15, 7.0h (night of 2026-10-29).",
     "07:30 pill (Bilaxten) + double espresso + Mayven gummies — no Rhinolast spray, still out of stock.",
     "08:00 Danone PRO strawberry yogurt + ~20g Catalina Crunch (handful) + 10 green grapes.",
     "Workout: Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged).",
-    "11:45 lunch: 100g baked salmon + 150g fried chicken schnitzel (generic breaded/fried) + 1 medium baked potato (assumed ~173g) + ~60g string beans + salad (lettuce, 3 tomatoes, 2 cucumbers, red onion, lemon juice, no oil) — sizes assumed where not given."
+    "11:45 lunch: 100g baked salmon + 150g fried chicken schnitzel (generic breaded/fried) + 1 medium baked potato (assumed ~173g) + ~60g string beans + salad (lettuce, 3 tomatoes, 2 cucumbers, red onion, lemon juice, no oil) — sizes assumed where not given.",
+    "10:30 creatine 5g. 11:00 1 yellow cheese slice + 3 cherry tomatoes + 5 green grapes."
   ],
   "status_note": "In progress. Slept 7.0h. Morning pill, double espresso, Mayven taken.",
   "workout_summary": "Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged)."

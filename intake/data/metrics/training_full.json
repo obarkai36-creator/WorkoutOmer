@@ -1,5 +1,5 @@
 {
-  "now": 1793354941861,
+  "now": 1793355201944,
   "workouts": [
     {
       "datetime": "2026-10-30T08:50",
@@ -8966,7 +8966,7 @@
       "label": "Back",
       "section": "Back",
       "pct": 87,
-      "readyInHours": 64,
+      "readyInHours": 63.9,
       "ready": false
     },
     "shoulders": {
@@ -8982,7 +8982,7 @@
       "label": "Biceps",
       "section": "Arms",
       "pct": 79,
-      "readyInHours": 38.5,
+      "readyInHours": 38.4,
       "ready": false
     },
     "triceps": {
@@ -9077,14 +9077,14 @@
     "Back": {
       "section": "Back",
       "pct": 87,
-      "readyInHours": 64,
+      "readyInHours": 63.9,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
           "pct": 87,
-          "readyInHours": 64,
+          "readyInHours": 63.9,
           "ready": false
         }
       ]
@@ -9107,14 +9107,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 28,
-      "readyInHours": 38.5,
+      "readyInHours": 38.4,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
           "pct": 79,
-          "readyInHours": 38.5,
+          "readyInHours": 38.4,
           "ready": false
         },
         {
@@ -10573,7 +10573,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-10-30T10:09:01.861Z",
+    "readyAt": "2026-10-30T10:13:21.944Z",
     "neverLogged": false,
     "daysSince": 10.2,
     "suggestedExercises": [
@@ -10755,13 +10755,13 @@
       {
         "section": "Arms",
         "fatigue": 28,
-        "readyInHours": 38.5,
+        "readyInHours": 38.4,
         "daysSince": 7
       },
       {
         "section": "Back",
         "fatigue": 87,
-        "readyInHours": 64,
+        "readyInHours": 63.9,
         "daysSince": 0.1
       }
     ],
@@ -10776,7 +10776,7 @@
     {
       "level": "low",
       "title": "Back fatigued (87%)",
-      "detail": "Recovers in ~64h. Avoid loading it hard before then — you trained it most recently."
+      "detail": "Recovers in ~63.9h. Avoid loading it hard before then — you trained it most recently."
     },
     {
       "level": "ok",
