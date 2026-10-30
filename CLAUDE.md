@@ -1,5 +1,14 @@
 # Session notes
 
+- Macro tracking break (2026-10-30 mid-afternoon through 2026-11-06,
+  inclusive; resume Saturday 2026-11-07): user said "Stop food tracking until
+  saturday, 7/11". Items logged on 10-30 before the request (through the
+  14:30 espresso) stay on record; no further detailed food items. Same
+  pattern as prior breaks: still log supplements/medication (zero-kcal
+  items), caffeine, workouts, sleep, weigh-ins, lifestyle events; mark each
+  day `exclude_from_monthly_macros: true` with an `exclude_reason`. Resume
+  full food logging on 2026-11-07 without being asked.
+
 - "Last trained" fix (2026-10-27, per user report that it wasn't up to date /
   didn't compute automatically): two separate causes. (1) `engine.js`
   `recommendSession()` only counted a section as trained if it was >40% of
