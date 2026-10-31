@@ -268,10 +268,10 @@ const SNAPSHOT = [
   { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" } },
 
   // ---- Legs (incl. calves) ----
-  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 9, weight: 81, text: "81kg × 4×9 (inc. frame, new PR)" }, best: { sets: 4, reps: 9, weight: 81, text: "81kg × 4×9 (inc. frame)" } },
+  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 10, weight: 81, text: "81kg × 4×10 (inc. frame, new PR)" }, best: { sets: 4, reps: 10, weight: 81, text: "81kg × 4×10 (inc. frame)" } },
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
   { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 8, weight: 53, text: "26.5kg each × 4×8" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 8, weight: 136, text: "136kg × 4×8 (heavier, fewer reps — below the 132kg×4×12 best by est. 1RM, not a PR)" }, best: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12" } },
+  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12 (ties best)" }, best: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12" } },
   // NOTE: 11 Jul (202kg) is the first entry counting the full setup total
   // (plates each side x2 + sled/frame weight). Earlier entries (e.g. 131kg)
   // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
@@ -287,7 +287,7 @@ const SNAPSHOT = [
   { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
   { name: "Hip Thrust",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total — confirmed genuine progression: prior 24kg best was a single dumbbell, now loaded each side)" }, best: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total)" } },
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
-  { name: "Hack Squat",                   section: "Legs", latest: { sets: 4, reps: 7, weight: 123.7, text: "Bodyweight + 42.6kg frame × 4×7 (new PR)" }, best: { sets: 4, reps: 7, weight: 123.7, text: "Bodyweight + 42.6kg frame × 4×7" } },
+  { name: "Hack Squat",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 143.5, text: "Bodyweight + 42.6kg frame + 20kg plates (10kg each side) × 4×8 (new PR)" }, best: { sets: 4, reps: 8, weight: 143.5, text: "Bodyweight + 42.6kg frame + 20kg plates × 4×8" } },
 
   // ---- Core ----
   { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 35, weight: 81.00, text: "BW × 3×35s" }, best: { sets: 3, seconds: 35, weight: 81.00, text: "BW × 3×35s" } },
@@ -305,6 +305,16 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 31 Oct — Legs (started 08:30)
+  {
+    datetime: "2026-10-31T08:30", note: "Legs day (started 08:30) — Calf Raises Machine 81kg×4×10, as suggested (new PR). Leg Press 132kg×4×12 (rebuild to best — ties). Leg Extensions 111kg×4×12 (ties best). Hack Squat 10kg plate each side + 42.6kg frame + bodyweight (80.9kg) = 143.5kg×4×8 (new PR — first loaded session, vs bodyweight+frame ×4×7). 2 new PRs.",
+    exercises: [
+      { name: "Calf Raises Machine", sets: [ { reps: 10, weight: 81 }, { reps: 10, weight: 81 }, { reps: 10, weight: 81 }, { reps: 10, weight: 81 } ] },
+      { name: "Leg Press", sets: [ { reps: 12, weight: 132 }, { reps: 12, weight: 132 }, { reps: 12, weight: 132 }, { reps: 12, weight: 132 } ] },
+      { name: "Leg Extensions", sets: [ { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 }, { reps: 12, weight: 111 } ] },
+      { name: "Hack Squat", sets: [ { reps: 8, weight: 143.5 }, { reps: 8, weight: 143.5 }, { reps: 8, weight: 143.5 }, { reps: 8, weight: 143.5 } ] },
+    ],
+  },
   // 30 Oct — Back (started 08:50)
   {
     datetime: "2026-10-30T08:50", note: "Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged).",

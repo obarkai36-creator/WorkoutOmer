@@ -1,21 +1,20 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-10-30",
-    "latest_session": "Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged).",
-    "sessions_logged": 87,
+    "report_date": "2026-10-31",
+    "latest_session": "Legs day (started 08:30) — Calf Raises Machine 81kg×4×10, as suggested (new PR). Leg Press 132kg×4×12 (rebuild to best — ties). Leg Extensions 111kg×4×12 (ties best). Hack Squat 10kg plate each side + 42.6kg frame + bodyweight (80.9kg) = 143.5kg×4×8 (new PR — first loaded session, vs bodyweight+frame ×4×7). 2 new PRs.",
+    "sessions_logged": 88,
     "sessions_per_week": 3.8,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 17.7,
-    "aerobic_sessions_28d": 6,
+    "aerobic_28d_km": 14.8,
+    "aerobic_sessions_28d": 5,
     "avg_pace": "10:17/km",
     "avg_hr": 142,
-    "acwr": 1.1,
-    "recommended_next": "Legs day",
+    "acwr": 1.43,
+    "recommended_next": "Chest day",
     "alerts": [
-      "Recovers in ~65.4h. Avoid loading it hard before then — you trained it most recently.",
-      "Recovers in ~39.8h. Avoid loading it hard before then — you trained it most recently.",
-      "Nothing acutely concerning. The notes below are housekeeping, not warnings."
+      "Load ratio 1.43 (sweet spot 0.8–1.3). Keep added volume under ~10% next week.",
+      "Recovers in ~72.5h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -593,6 +592,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Back day (started 08:50) — Low Row 79kg×4×12, as suggested (new PR — est. 1RM 110.6 vs 108.0). Lat Pulldown (Wide Grip) 79kg×3×6 — heavier, fewer reps; est. 1RM 94.8 vs 100.0 best (75kg×3×10, 10-03), not a PR. Diverging Seated Row 97kg×4×12, as suggested (ties the 10-03 best). Dumbbell Pullover 22.5kg×4×11, as suggested (new PR — est. 1RM 30.75 vs 30.0). 2 new PRs. SNAPSHOT bests for DSR/Wide Grip corrected to the 10-03 values (had lagged).",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-10-31",
+      "type": "Strength — Legs",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Legs day (started 08:30) — Calf Raises Machine 81kg×4×10, as suggested (new PR). Leg Press 132kg×4×12 (rebuild to best — ties). Leg Extensions 111kg×4×12 (ties best). Hack Squat 10kg plate each side + 42.6kg frame + bodyweight (80.9kg) = 143.5kg×4×8 (new PR — first loaded session, vs bodyweight+frame ×4×7). 2 new PRs.",
       "_source": "manual log"
     }
   ]
