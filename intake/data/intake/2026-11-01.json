@@ -46,6 +46,30 @@
       "fat_g": 0,
       "fiber_g": 0,
       "time_approx": true
+    },
+    {
+      "time": "08:00",
+      "name": "Malarone (atovaquone/proguanil)",
+      "category": "medication",
+      "qty": "1 tablet",
+      "note": "12-day course, day 1 of 12.",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "09:00",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving: 1000mg vitamin C, 2000IU vitamin D3, 134mg vitamin E, 20mg zinc, 100mcg selenium."
     }
   ],
   "workout_today": false,
@@ -53,19 +77,20 @@
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break 2026-10-30 (mid-day) through 2026-11-06 — resume 2026-11-07, per explicit user request.",
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "assumptions": [
     "Sleep 00:05-07:05, 7.0h.",
     "Pill, Mayven, double espresso by 07:30 (placeholder 07:30). Food tracking paused (break through 11-06).",
-    "Malarone added to the daily supplement/medication checklist for a 12-day course (11-01 through 11-12) — not yet logged as taken today."
+    "Malarone added to the daily supplement/medication checklist for a 12-day course (11-01 through 11-12) — not yet logged as taken today.",
+    "08:00 Malarone (day 1 of 12), 09:00 essential-5."
   ],
   "status_note": "In progress (food tracking paused). Slept 7.0h. Malarone course starts today (12 days)."
 }
