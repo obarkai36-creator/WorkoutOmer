@@ -1,7 +1,7 @@
 {
   "date": "2026-11-01",
   "day_number": 127,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "00:05",
     "sleep_end": "07:05",
@@ -139,8 +139,10 @@
     "Malarone added to the daily supplement/medication checklist for a 12-day course (11-01 through 11-12) — not yet logged as taken today.",
     "08:00 Malarone (day 1 of 12), 09:00 essential-5.",
     "09:30 creatine 5g. Travel day: connecting flights (~4h + ~3h legs) — expect low steps, disrupted sleep/timezone; rest day.",
-    "13:00 espresso (TLV), 17:00 omega-3, 20:30 Addis Ababa espresso (logged 19:30 Israel time). 4 caffeine shots. Times in Israel time (UTC+2)."
+    "13:00 espresso (TLV), 17:00 omega-3, 20:30 Addis Ababa espresso (logged 19:30 Israel time). 4 caffeine shots. Times in Israel time (UTC+2).",
+    "EOD: 6,500 steps."
   ],
-  "status_note": "In progress — travel day (connecting flights ~4h+3h). Food tracking paused. Slept 7.0h. Malarone day 1/12.",
-  "travel_day": true
+  "status_note": "Day complete — travel day (connecting flights). Food tracking paused. Slept 7.0h. All supplements + Malarone (day 1/12) taken. 4 caffeine shots. 6,500 steps.",
+  "travel_day": true,
+  "steps": 6500
 }
