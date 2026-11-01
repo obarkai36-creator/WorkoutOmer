@@ -304,6 +304,9 @@ ZINC_DISCONTINUED_DATE = "2026-08-26"
 # items from the date each started.
 ESSENTIAL5_ROW = ("Essential-5 (C+D+E+Zinc+Selenium)", "advance physician formulas", None, False)
 ESSENTIAL5_START_DATE = "2026-08-26"
+# Malarone (atovaquone/proguanil) — 12-day course per user, 2026-11-01 through 2026-11-12.
+MALARONE_ROW = ("Malarone", "malarone", None, False)
+MALARONE_START_DATE, MALARONE_END_DATE = "2026-11-01", "2026-11-12"
 
 
 def expected_supplements_for(date=None):
@@ -313,6 +316,8 @@ def expected_supplements_for(date=None):
         rows.append(ZINC_ROW)
     if not date or date >= ESSENTIAL5_START_DATE:
         rows.append(ESSENTIAL5_ROW)
+    if date and MALARONE_START_DATE <= date <= MALARONE_END_DATE:
+        rows.append(MALARONE_ROW)
     return rows + list(BASE_SUPPLEMENTS_POST)
 
 

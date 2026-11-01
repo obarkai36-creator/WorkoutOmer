@@ -1,5 +1,11 @@
 # Session notes
 
+- Malarone course (2026-11-01 through 2026-11-12, 12 days, per user): added
+  as a date-gated row in `expected_supplements_for()` (generate_dashboard.py,
+  `MALARONE_START_DATE`/`MALARONE_END_DATE`, matches "malarone"). Log each
+  dose as a zero-kcal medication item named "Malarone (atovaquone/proguanil)"
+  when the user reports it. Row drops off automatically after 11-12.
+
 - Macro tracking break (2026-10-30 mid-afternoon through 2026-11-06,
   inclusive; resume Saturday 2026-11-07): user said "Stop food tracking until
   saturday, 7/11". Items logged on 10-30 before the request (through the
