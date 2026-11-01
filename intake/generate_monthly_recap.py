@@ -236,6 +236,12 @@ def aggregate_month(ym, profile, sperm_model, all_days, weight_entries, sleep_en
 
     new_pr_pat = re.compile(r"\bnew\s+prs?\b", re.IGNORECASE)
     prs = [w for w in workout_entries if in_range(w["date"], start, end) and new_pr_pat.search(w.get("notes") or "")]
+    # Count individual PRs, not PR sessions: prefer the note's "N new PRs" tally,
+    # else count each "(new PR" mention.
+    def _pr_n(note):
+        m = re.findall(r"(\d+)\s+new\s+prs?\b", note, re.IGNORECASE)
+        return int(m[-1]) if m else max(1, len(re.findall(r"\(new pr", note, re.IGNORECASE)))
+    pr_count = sum(_pr_n(w.get("notes") or "") for w in prs)
 
     training = run_training_stats(ym)
 
@@ -259,6 +265,7 @@ def aggregate_month(ym, profile, sperm_model, all_days, weight_entries, sleep_en
         "sperm_avg": safe_avg(sperm_overalls, 0),
         "sperm_best": sperm_best, "sperm_worst": sperm_worst,
         "prs": prs,
+        "pr_count": pr_count,
         "sessions_count": training.get("sessions_in_month_count", 0),
         "sessions_per_week": training.get("sessions_per_week"),
         "acwr": training.get("acwr"),
@@ -366,8 +373,8 @@ def render(ym, cur, prev, profile, latest_weight_entry):
         <div class="chip"><div class="chip-v">{cur['sessions_count']}</div>
           <div class="chip-delta muted">pace ~{cur['sessions_per_week'] or '–'}/wk · {prev['ym']} had {prev['sessions_count']}</div>
           <div class="chip-k">Sessions logged</div></div>
-        <div class="chip"><div class="chip-v">{len(cur['prs'])}</div>
-          <div class="chip-delta muted">{prev['ym']} had {len(prev['prs'])}</div>
+        <div class="chip"><div class="chip-v">{cur['pr_count']}</div>
+          <div class="chip-delta muted">across {len(cur['prs'])} sessions · {prev['ym']} had {prev['pr_count']}</div>
           <div class="chip-k">New PRs</div></div>
         <div class="chip"><div class="chip-v" style="color:{acwr_color}">{f'{acwr:.2f}' if acwr is not None else '—'}</div>
           {acwr_delta or "<div class='chip-delta muted'>no prior data</div>"}
@@ -612,7 +619,7 @@ def render(ym, cur, prev, profile, latest_weight_entry):
     with open(out, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"Wrote {out}  (days {cur['n_days']}, sperm avg {cur['sperm_avg']}, energy avg {cur['energy_avg']}, "
-          f"sessions {cur['sessions_count']}, PRs {len(cur['prs'])})")
+          f"sessions {cur['sessions_count']}, PRs {cur['pr_count']} in {len(cur['prs'])} sessions)")
 
 
 def build(ym):
