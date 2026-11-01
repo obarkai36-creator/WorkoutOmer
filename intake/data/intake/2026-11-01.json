@@ -81,17 +81,53 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "13:00",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "Tel Aviv time."
+    },
+    {
+      "time": "17:00",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "timezone not stated — assumed Israel time."
+    },
+    {
+      "time": "19:30",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "20:30 Addis Ababa local (UTC+3) = 19:30 Israel time."
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break 2026-10-30 (mid-day) through 2026-11-06 — resume 2026-11-07, per explicit user request.",
   "micros_sperm_priority": {
     "zinc_mg": 22.8,
     "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1000,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
@@ -102,7 +138,8 @@
     "Pill, Mayven, double espresso by 07:30 (placeholder 07:30). Food tracking paused (break through 11-06).",
     "Malarone added to the daily supplement/medication checklist for a 12-day course (11-01 through 11-12) — not yet logged as taken today.",
     "08:00 Malarone (day 1 of 12), 09:00 essential-5.",
-    "09:30 creatine 5g. Travel day: connecting flights (~4h + ~3h legs) — expect low steps, disrupted sleep/timezone; rest day."
+    "09:30 creatine 5g. Travel day: connecting flights (~4h + ~3h legs) — expect low steps, disrupted sleep/timezone; rest day.",
+    "13:00 espresso (TLV), 17:00 omega-3, 20:30 Addis Ababa espresso (logged 19:30 Israel time). 4 caffeine shots. Times in Israel time (UTC+2)."
   ],
   "status_note": "In progress — travel day (connecting flights ~4h+3h). Food tracking paused. Slept 7.0h. Malarone day 1/12.",
   "travel_day": true
