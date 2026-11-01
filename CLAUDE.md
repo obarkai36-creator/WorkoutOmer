@@ -1,5 +1,11 @@
 # Session notes
 
+- Travel (2026-11-01 out, Friday 2026-11-06 back): connecting flights both
+  ways (~4h + ~3h legs). Mark both days `travel_day: true` and treat as rest
+  days — no training recommendation pressure, expect low steps, timezone/sleep
+  disruption. Keep Malarone at a consistent time daily. Coincides with the
+  food-tracking break (resumes 2026-11-07).
+
 - Malarone course (2026-11-01 through 2026-11-12, 12 days, per user): added
   as a date-gated row in `expected_supplements_for()` (generate_dashboard.py,
   `MALARONE_START_DATE`/`MALARONE_END_DATE`, matches "malarone"). Log each
