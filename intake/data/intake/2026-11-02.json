@@ -2,7 +2,13 @@
   "date": "2026-11-02",
   "day_number": 128,
   "in_progress": true,
-  "sleep": null,
+  "sleep": {
+    "sleep_start": "02:30",
+    "sleep_end": "09:00",
+    "duration_hours": 6.5,
+    "quality": null,
+    "notes": "6.5h (night of 2026-11-01, after travel) — below the 7-9h target."
+  },
   "items": [
     {
       "time": "10:15",
@@ -53,6 +59,17 @@
       "fiber_g": 0,
       "time_approx": true,
       "note": "day 2 of 12, taken after breakfast."
+    },
+    {
+      "time": "10:25",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
@@ -63,7 +80,7 @@
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -72,7 +89,8 @@
   "assumptions": [
     "Traveling — times are local (destination) time.",
     "Masturbation 02:00 — logged in ejaculation.json.",
-    "Double espresso, pill, Mayven, Malarone (day 2/12) by 10:15 after breakfast. Food not tracked (break through 11-06). Sleep not given yet."
+    "Double espresso, pill, Mayven, Malarone (day 2/12) by 10:15 after breakfast. Food not tracked (break through 11-06).",
+    "Sleep 02:30-09:00 local, 6.5h (late arrival). 10:25 omega-3."
   ],
   "status_note": "In progress (traveling, food tracking paused). Malarone day 2/12."
 }

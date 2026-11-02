@@ -1,5 +1,5 @@
 {
-  "now": 1793607499956,
+  "now": 1793607918091,
   "workouts": [
     {
       "datetime": "2026-10-31T08:30",
@@ -9135,7 +9135,7 @@
       "label": "Quads",
       "section": "Legs",
       "pct": 45,
-      "readyInHours": 24.6,
+      "readyInHours": 24.5,
       "ready": false
     },
     "hamstrings": {
@@ -9267,14 +9267,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 18,
-      "readyInHours": 24.6,
+      "readyInHours": 24.5,
       "muscles": [
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
           "pct": 45,
-          "readyInHours": 24.6,
+          "readyInHours": 24.5,
           "ready": false
         },
         {
@@ -10702,7 +10702,7 @@
     "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-02T08:18:19.956Z",
+    "readyAt": "2026-11-02T08:25:18.091Z",
     "neverLogged": false,
     "daysSince": 9.9,
     "suggestedExercises": [
@@ -10846,7 +10846,7 @@
       {
         "section": "Legs",
         "fatigue": 18,
-        "readyInHours": 24.6,
+        "readyInHours": 24.5,
         "daysSince": 2
       }
     ],
@@ -11435,15 +11435,22 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-11-01",
-      "start": "00:05",
-      "end": "07:05",
-      "hours": 7,
-      "note": "7.0h, bottom of target band."
+      "date": "2026-11-02",
+      "start": "02:30",
+      "end": "09:00",
+      "hours": 6.5,
+      "note": "6.5h, below target (travel)."
     },
-    "avg7": 7.3,
+    "avg7": 7.2,
     "status": "good",
     "history": [
+      {
+        "date": "2026-11-02",
+        "start": "02:30",
+        "end": "09:00",
+        "hours": 6.5,
+        "note": "6.5h, below target (travel)."
+      },
       {
         "date": "2026-11-01",
         "start": "00:05",
