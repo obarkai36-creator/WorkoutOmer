@@ -118,6 +118,7 @@ const EXERCISE_LIBRARY = {
   "Bench Press":            { kind: "strength", muscles: { chest: 1.0, triceps: 0.4, shoulders: 0.3 } },
   "Dumbbell Bench Press":   { kind: "strength", muscles: { chest: 1.0, triceps: 0.4, shoulders: 0.3 } },
   "Incline Bench Press":    { kind: "strength", muscles: { chest: 1.0, shoulders: 0.4, triceps: 0.4 } },
+  "Incline Smith Machine Press": { kind: "strength", muscles: { chest: 1.0, shoulders: 0.4, triceps: 0.4 } },
   "Incline Dumbbell Bench Press": { kind: "strength", muscles: { chest: 1.0, shoulders: 0.4, triceps: 0.4 } },
   "Decline Bench Press":    { kind: "strength", muscles: { chest: 1.0, triceps: 0.4 } },
   "Incline Pec Fly":        { kind: "strength", muscles: { chest: 1.0, shoulders: 0.2 } },
@@ -215,12 +216,13 @@ const EXERCISE_LIBRARY = {
  */
 const SNAPSHOT = [
   // ---- Chest ----
-  { name: "Bench Press",         section: "Chest", latest: { sets: 3, reps: 10, weight: 75, text: "27.5kg each side + 20kg bar × 3×10 (new PR)" }, best: { sets: 3, reps: 10, weight: 75, text: "27.5kg each side + 20kg bar × 3×10" } },
+  { name: "Bench Press",         section: "Chest", latest: { sets: 3, reps: 11, weight: 75, text: "27.5kg each side + 20kg bar × 3×11 (new PR)" }, best: { sets: 3, reps: 11, weight: 75, text: "27.5kg each side + 20kg bar × 3×11" } },
   { name: "Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
   { name: "Incline Bench Press", section: "Chest", latest: { sets: 3, reps: 10, weight: 65, text: "22.5kg each side + 20kg bar × 3×10 (higher reps, still below best — not a PR)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
+  { name: "Incline Smith Machine Press", section: "Chest", latest: { sets: 4, reps: 8, weight: 40, text: "20kg each side × 4×8 (plates only — Smith bar weight not counted; first logged)" }, best: { sets: 4, reps: 8, weight: 40, text: "20kg each side × 4×8 (plates only)" } },
   { name: "Incline Dumbbell Bench Press", section: "Chest", latest: { sets: 1, reps: 10, weight: 48, text: "24kg each × 1×10 (abbreviated, 1 set only)" }, best: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" } },
   { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7 (new PR)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
-  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 11, weight: 36, text: "18kg each × 4×11 (new PR, +1 rep on best, as suggested)" }, best: { sets: 4, reps: 11, weight: 36, text: "18kg each × 4×11" } },
+  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 12, weight: 36, text: "18kg each × 4×12 (new PR)" }, best: { sets: 4, reps: 12, weight: 36, text: "18kg each × 4×12" } },
   { name: "Narrow Push-Ups",     section: "Chest", latest: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" }, best: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 6, weight: 73, text: "73kg × 3×6 (deload)" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
@@ -249,18 +251,18 @@ const SNAPSHOT = [
 
   // ---- Arms: Triceps ----
   { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" } },
-  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10 (hotel gym, new PR)" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
+  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 11, weight: 20, text: "20kg × 4×11 (new PR)" }, best: { sets: 4, reps: 11, weight: 20, text: "20kg × 4×11" } },
   { name: "Seated Dips",                      section: "Arms", latest: { sets: 4, reps: 8, weight: 99, text: "49.5kg each side (99kg added) × 4×8 (dip belt — different execution, not comparable to the 94kg machine best)" }, best: { sets: 3, reps: 8, weight: 94, text: "94kg × 3×8" } },
   { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
   { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 6, weight: 64, text: "64kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" } },
 
   // ---- Arms: Biceps / Forearms ----
-  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 10, weight: 14, text: "14kg each × 4×10 (lighter session, below the 20kg each×3×8 best)" }, best: { sets: 3, reps: 8, weight: 20, text: "20kg each × 3×8" } },
+  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 10, weight: 12.5, text: "12.5kg each × 4×10 (lighter, below the 20kg each×3×8 best)" }, best: { sets: 3, reps: 8, weight: 20, text: "20kg each × 3×8" } },
   { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 10, weight: 12, text: "12kg each × 4×10 (lighter session, below the 20kg each×3×6 best)" }, best: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
-  { name: "EZ Bar Curl",          section: "Arms", latest: { sets: 4, reps: 8, weight: 30, text: "10kg each + bar × 4×8 (lighter session, below the 4×10 best)" }, best: { sets: 4, reps: 10, weight: 30, text: "10kg each + bar × 4×10" } },
+  { name: "EZ Bar Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 30, text: "10kg each + bar × 4×10 (ties best)" }, best: { sets: 4, reps: 10, weight: 30, text: "10kg each + bar × 4×10" } },
   { name: "Low Pulley Biceps Curl", section: "Arms", latest: { sets: 4, reps: 8, weight: 36, text: "36kg × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 36, text: "36kg × 4×8" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 2, reps: 6, weight: 45, text: "45kg × 2×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
   { name: "Half Curl",            section: "Arms", latest: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" } },
@@ -305,6 +307,18 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 2 Nov — Chest + Arms (11:45)
+  {
+    datetime: "2026-11-02T11:45", note: "Chest + Arms day (11:45, traveling) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×11 (new PR, +1 rep). Incline Pec Fly 18kg each×4×12 (new PR). Incline Smith Machine Press 20kg each side×4×8 — new exercise, added to catalog; logged as 40kg plates only (Smith bar weight unknown, not counted). EZ Bar Curl 10kg each + bar×4×10 (ties best). Incline Hammer Curl 12.5kg each×4×10 (lighter, below best). Overhead DB Triceps Extension 20kg×4×11 (new PR). 3 new PRs.",
+    exercises: [
+      { name: "Bench Press", sets: [ { reps: 11, weight: 75 }, { reps: 11, weight: 75 }, { reps: 11, weight: 75 } ] },
+      { name: "Incline Pec Fly", sets: [ { reps: 12, weight: 36 }, { reps: 12, weight: 36 }, { reps: 12, weight: 36 }, { reps: 12, weight: 36 } ] },
+      { name: "Incline Smith Machine Press", sets: [ { reps: 8, weight: 40 }, { reps: 8, weight: 40 }, { reps: 8, weight: 40 }, { reps: 8, weight: 40 } ] },
+      { name: "EZ Bar Curl", sets: [ { reps: 10, weight: 30 }, { reps: 10, weight: 30 }, { reps: 10, weight: 30 }, { reps: 10, weight: 30 } ] },
+      { name: "Incline Hammer Curl", sets: [ { reps: 10, weight: 12.5 }, { reps: 10, weight: 12.5 }, { reps: 10, weight: 12.5 }, { reps: 10, weight: 12.5 } ] },
+      { name: "Overhead DB Triceps Extension", sets: [ { reps: 11, weight: 20 }, { reps: 11, weight: 20 }, { reps: 11, weight: 20 }, { reps: 11, weight: 20 } ] },
+    ],
+  },
   // 31 Oct — Legs (started 08:30)
   {
     datetime: "2026-10-31T08:30", note: "Legs day (started 08:30) — Calf Raises Machine 81kg×4×10, as suggested (new PR). Leg Press 132kg×4×12 (rebuild to best — ties). Leg Extensions 111kg×4×12 (ties best). Hack Squat 10kg plate each side + 42.6kg frame + bodyweight (80.9kg) = 143.5kg×4×8 (new PR — first loaded session, vs bodyweight+frame ×4×7). 2 new PRs.",

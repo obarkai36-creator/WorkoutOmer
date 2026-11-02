@@ -70,27 +70,42 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "13:30",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving."
     }
   ],
-  "workout_today": false,
+  "workout_today": true,
   "caffeine_shots": 2,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break 2026-10-30 (mid-day) through 2026-11-06 — resume 2026-11-07, per explicit user request.",
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "assumptions": [
     "Traveling — times are local (destination) time.",
     "Masturbation 02:00 — logged in ejaculation.json.",
     "Double espresso, pill, Mayven, Malarone (day 2/12) by 10:15 after breakfast. Food not tracked (break through 11-06).",
-    "Sleep 02:30-09:00 local, 6.5h (late arrival). 10:25 omega-3."
+    "Sleep 02:30-09:00 local, 6.5h (late arrival). 10:25 omega-3.",
+    "Workout: Chest + Arms day (11:45, traveling) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×11 (new PR, +1 rep). Incline Pec Fly 18kg each×4×12 (new PR). Incline Smith Machine Press 20kg each side×4×8 — new exercise, added to catalog; logged as 40kg plates only (Smith bar weight unknown, not counted). EZ Bar Curl 10kg each + bar×4×10 (ties best). Incline Hammer Curl 12.5kg each×4×10 (lighter, below best). Overhead DB Triceps Extension 20kg×4×11 (new PR). 3 new PRs.",
+    "13:30 essential-5."
   ],
-  "status_note": "In progress (traveling, food tracking paused). Malarone day 2/12."
+  "status_note": "In progress (traveling, food tracking paused). Malarone day 2/12.",
+  "workout_summary": "Chest + Arms day (11:45, traveling) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×11 (new PR, +1 rep). Incline Pec Fly 18kg each×4×12 (new PR). Incline Smith Machine Press 20kg each side×4×8 — new exercise, added to catalog; logged as 40kg plates only (Smith bar weight unknown, not counted). EZ Bar Curl 10kg each + bar×4×10 (ties best). Incline Hammer Curl 12.5kg each×4×10 (lighter, below best). Overhead DB Triceps Extension 20kg×4×11 (new PR). 3 new PRs."
 }

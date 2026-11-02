@@ -1,19 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-11-01",
-    "latest_session": "Legs day (started 08:30) — Calf Raises Machine 81kg×4×10, as suggested (new PR). Leg Press 132kg×4×12 (rebuild to best — ties). Leg Extensions 111kg×4×12 (ties best). Hack Squat 10kg plate each side + 42.6kg frame + bodyweight (80.9kg) = 143.5kg×4×8 (new PR — first loaded session, vs bodyweight+frame ×4×7). 2 new PRs.",
-    "sessions_logged": 88,
-    "sessions_per_week": 3.5,
+    "report_date": "2026-11-02",
+    "latest_session": "Chest + Arms day (11:45, traveling) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×11 (new PR, +1 rep). Incline Pec Fly 18kg each×4×12 (new PR). Incline Smith Machine Press 20kg each side×4×8 — new exercise, added to catalog; logged as 40kg plates only (Smith bar weight unknown, not counted). EZ Bar Curl 10kg each + bar×4×10 (ties best). Incline Hammer Curl 12.5kg each×4×10 (lighter, below best). Overhead DB Triceps Extension 20kg×4×11 (new PR). 3 new PRs.",
+    "sessions_logged": 89,
+    "sessions_per_week": 3.8,
     "typical_time": "afternoon",
     "aerobic_28d_km": 14.8,
     "aerobic_sessions_28d": 5,
     "avg_pace": "10:17/km",
     "avg_hr": 142,
-    "acwr": 1.15,
-    "recommended_next": "Chest day",
+    "acwr": 1.31,
+    "recommended_next": "Shoulders day",
     "alerts": [
-      "Nothing acutely concerning. The notes below are housekeeping, not warnings."
+      "Load ratio 1.31 (sweet spot 0.8–1.3). Keep added volume under ~10% next week."
     ]
   },
   "entries": [
@@ -599,6 +599,14 @@
       "duration_min": null,
       "intensity": "moderate",
       "notes": "Legs day (started 08:30) — Calf Raises Machine 81kg×4×10, as suggested (new PR). Leg Press 132kg×4×12 (rebuild to best — ties). Leg Extensions 111kg×4×12 (ties best). Hack Squat 10kg plate each side + 42.6kg frame + bodyweight (80.9kg) = 143.5kg×4×8 (new PR — first loaded session, vs bodyweight+frame ×4×7). 2 new PRs.",
+      "_source": "manual log"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "Strength — Chest + Arms",
+      "duration_min": null,
+      "intensity": "moderate",
+      "notes": "Chest + Arms day (11:45, traveling) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×11 (new PR, +1 rep). Incline Pec Fly 18kg each×4×12 (new PR). Incline Smith Machine Press 20kg each side×4×8 — new exercise, added to catalog; logged as 40kg plates only (Smith bar weight unknown, not counted). EZ Bar Curl 10kg each + bar×4×10 (ties best). Incline Hammer Curl 12.5kg each×4×10 (lighter, below best). Overhead DB Triceps Extension 20kg×4×11 (new PR). 3 new PRs.",
       "_source": "manual log"
     }
   ]
