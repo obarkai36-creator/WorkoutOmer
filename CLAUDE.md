@@ -1,5 +1,12 @@
 # Session notes
 
+- Supplement pauses (added 2026-11-03, per user: "make sure paused
+  supplements don't impact the supplement graph"): `SUPPLEMENT_PAUSES` in
+  generate_dashboard.py lists (row label, start, end) windows that are dropped
+  from `expected_supplements_for()` so they don't count against compliance.
+  Creatine paused 2026-11-02 through 2026-11-06 (resume 11-07). Add any future
+  pause there (then re-export the affected dates).
+
 - Travel (2026-11-01 out, Friday 2026-11-06 back): connecting flights both
   ways (~4h + ~3h legs). Mark both days `travel_day: true` and treat as rest
   days — no training recommendation pressure, expect low steps, timezone/sleep

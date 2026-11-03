@@ -309,6 +309,17 @@ MALARONE_ROW = ("Malarone", "malarone", None, False)
 MALARONE_START_DATE, MALARONE_END_DATE = "2026-11-01", "2026-11-12"
 
 
+# User-requested pauses: a paused row is dropped from the expected list for
+# those dates, so it doesn't count against compliance. (label, start, end) inclusive.
+SUPPLEMENT_PAUSES = [
+    ("Creatine", "2026-11-02", "2026-11-06"),  # paused while traveling, resume 11-07
+]
+
+
+def _paused(label, date):
+    return bool(date) and any(l == label and s <= date <= e for l, s, e in SUPPLEMENT_PAUSES)
+
+
 def expected_supplements_for(date=None):
     multivit_row = MULTIVIT_ROW_THORNE if (date and date < MAYVEN_SWAP_DATE) else MULTIVIT_ROW_MAYVEN
     rows = list(BASE_SUPPLEMENTS_PRE) + [multivit_row]
@@ -318,7 +329,8 @@ def expected_supplements_for(date=None):
         rows.append(ESSENTIAL5_ROW)
     if date and MALARONE_START_DATE <= date <= MALARONE_END_DATE:
         rows.append(MALARONE_ROW)
-    return rows + list(BASE_SUPPLEMENTS_POST)
+    rows += list(BASE_SUPPLEMENTS_POST)
+    return [r for r in rows if not _paused(r[0], date)]
 
 
 def build_supplement_check(items, date=None, omega3_total=None, omega3_target=None):
