@@ -45,6 +45,18 @@
       "fat_g": 0,
       "fiber_g": 0,
       "note": "day 3 of 12."
+    },
+    {
+      "time": "19:30",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving."
     }
   ],
   "workout_today": true,
@@ -53,13 +65,13 @@
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break 2026-10-30 (mid-day) through 2026-11-06 — resume 2026-11-07, per explicit user request.",
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "assumptions": [
@@ -68,7 +80,9 @@
     "Pill (time not given, placeholder 05:30). 06:45 Mayven.",
     "Workout: Stationary Bike, \"lazy bike\" recumbent (hotel gym, ended 06:18) — 40:04 min, 7.90 mi (12.71 km), level 1, avg 11.8 mph / 70 rpm, 239 kcal per machine. Longest bike session logged.",
     "Creatine paused through 11-06 (resume 11-07) — excluded from compliance.",
-    "08:30 Malarone (day 3/12)."
+    "08:30 Malarone (day 3/12).",
+    "Whiskey, 1 drink (~45ml assumed, time not given) — logged to lifestyle.json as an alcohol event.",
+    "19:30 essential-5."
   ],
   "status_note": "In progress (traveling, food tracking paused). Slept 6.5h. 40-min recumbent bike."
 }

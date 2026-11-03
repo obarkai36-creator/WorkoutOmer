@@ -291,6 +291,16 @@
       ],
       "severity": "mild",
       "notes": "Amount not specified — assumed ~1 serving (~45ml, ~1.4 standard alcohol units), flagged as a rough estimate. 2nd drinking day in 4 (after the 0.5 glass red wine on 16 Oct), slightly more frequent than the <=1 glass/week baseline."
+    },
+    {
+      "date": "2026-11-03",
+      "type": "alcohol",
+      "description": "Whiskey, 1 drink",
+      "affects": [
+        "alcohol"
+      ],
+      "severity": "mild",
+      "notes": "1 drink assumed ~45ml (~1.4 standard units), time not given. First alcohol since 2026-10-19."
     }
   ]
 }
