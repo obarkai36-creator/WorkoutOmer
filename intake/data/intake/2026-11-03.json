@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-03",
+  "day_number": 129,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "23:00",
+    "sleep_end": "05:30",
+    "duration_hours": 6.5,
+    "quality": null,
+    "notes": "6.5h (night of 2026-11-02) — below the 7-9h target."
+  },
+  "items": [
+    {
+      "time": "05:30",
+      "name": "Bilaxten (bilastine)",
+      "category": "medication",
+      "qty": "1 pill (morning)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "No Rhinolast spray, still out of stock."
+    },
+    {
+      "time": "06:45",
+      "name": "Mayven Full Volume Gummies",
+      "category": "supplement",
+      "qty": "2 gummies",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    }
+  ],
+  "workout_today": true,
+  "workout_summary": "Stationary Bike, \"lazy bike\" recumbent (hotel gym, ended 06:18) — 40:04 min, 7.90 mi (12.71 km), level 1, avg 11.8 mph / 70 rpm, 239 kcal per machine. Longest bike session logged.",
+  "caffeine_shots": 0,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "Macro tracking break 2026-10-30 (mid-day) through 2026-11-06 — resume 2026-11-07, per explicit user request.",
+  "micros_sperm_priority": {
+    "zinc_mg": 2.8,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 100,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Traveling — local times.",
+    "Sleep 23:00-05:30, 6.5h.",
+    "Pill (time not given, placeholder 05:30). 06:45 Mayven.",
+    "Workout: Stationary Bike, \"lazy bike\" recumbent (hotel gym, ended 06:18) — 40:04 min, 7.90 mi (12.71 km), level 1, avg 11.8 mph / 70 rpm, 239 kcal per machine. Longest bike session logged."
+  ],
+  "status_note": "In progress (traveling, food tracking paused). Slept 6.5h. 40-min recumbent bike."
+}

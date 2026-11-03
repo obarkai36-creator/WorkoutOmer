@@ -307,6 +307,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 3 Nov — Stationary Bike, recumbent (05:38-06:18)
+  {
+    datetime: "2026-11-03T05:38", note: "Stationary Bike, \"lazy bike\" recumbent (hotel gym, ended 06:18) — 40:04 min, 7.90 mi (12.71 km), level 1, avg 11.8 mph / 70 rpm, 239 kcal per machine. Longest bike session logged.",
+    exercises: [
+      { name: "Stationary Bike", distanceKm: 12.71, durationMin: 40.07 },
+    ],
+  },
   // 2 Nov — Chest + Arms (11:45)
   {
     datetime: "2026-11-02T11:45", note: "Chest + Arms day (11:45, traveling) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×11 (new PR, +1 rep). Incline Pec Fly 18kg each×4×12 (new PR). Incline Smith Machine Press 20kg each side×4×8 — new exercise, added to catalog; logged as 40kg plates only (Smith bar weight unknown, not counted). EZ Bar Curl 10kg each + bar×4×10 (ties best). Incline Hammer Curl 12.5kg each×4×10 (lighter, below best). Overhead DB Triceps Extension 20kg×4×11 (new PR). 3 new PRs.",

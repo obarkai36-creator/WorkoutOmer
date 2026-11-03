@@ -1,6 +1,31 @@
 {
-  "now": 1793616808275,
+  "now": 1793681185153,
   "workouts": [
+    {
+      "datetime": "2026-11-03T05:38",
+      "note": "Stationary Bike, \"lazy bike\" recumbent (hotel gym, ended 06:18) — 40:04 min, 7.90 mi (12.71 km), level 1, avg 11.8 mph / 70 rpm, 239 kcal per machine. Longest bike session logged.",
+      "exercises": [
+        {
+          "name": "Stationary Bike",
+          "distanceKm": 12.71,
+          "durationMin": 40.07,
+          "load": 360.63,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 360.63,
+            "quads": 144.252
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1793684280000,
+      "muscleLoad": {
+        "cardio": 360.63,
+        "quads": 144.252
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-11-02T11:45",
       "note": "Chest + Arms day (11:45, traveling) — Bench Press 27.5kg each side + 20kg bar (75kg)×3×11 (new PR, +1 rep). Incline Pec Fly 18kg each×4×12 (new PR). Incline Smith Machine Press 20kg each side×4×8 — new exercise, added to catalog; logged as 40kg plates only (Smith bar weight unknown, not counted). EZ Bar Curl 10kg each + bar×4×10 (ties best). Incline Hammer Curl 12.5kg each×4×10 (lighter, below best). Overhead DB Triceps Extension 20kg×4×11 (new PR). 3 new PRs.",
@@ -9271,15 +9296,15 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 71,
-      "readyInHours": 51.9,
+      "pct": 54,
+      "readyInHours": 34.8,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 26,
+      "pct": 19,
       "readyInHours": 0,
       "ready": true
     },
@@ -9287,7 +9312,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 22,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -9295,23 +9320,23 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 50,
-      "readyInHours": 20.1,
+      "pct": 32,
+      "readyInHours": 2.9,
       "ready": false
     },
     "triceps": {
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 34,
-      "readyInHours": 5.6,
-      "ready": false
+      "pct": 23,
+      "readyInHours": 0,
+      "ready": true
     },
     "forearms": {
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 2,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -9319,15 +9344,15 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 43,
-      "readyInHours": 22.1,
+      "pct": 33,
+      "readyInHours": 5.8,
       "ready": false
     },
     "hamstrings": {
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 10,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -9335,7 +9360,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 24,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -9351,7 +9376,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 11,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -9367,37 +9392,37 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 46,
+      "readyInHours": 12.8,
+      "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 71,
-      "readyInHours": 51.9,
+      "pct": 54,
+      "readyInHours": 34.8,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 71,
-          "readyInHours": 51.9,
+          "pct": 54,
+          "readyInHours": 34.8,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 26,
+      "pct": 19,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 26,
+          "pct": 19,
           "readyInHours": 0,
           "ready": true
         }
@@ -9405,14 +9430,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 22,
+      "pct": 14,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 22,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         }
@@ -9420,30 +9445,30 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 29,
-      "readyInHours": 20.1,
+      "pct": 19,
+      "readyInHours": 2.9,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 50,
-          "readyInHours": 20.1,
+          "pct": 32,
+          "readyInHours": 2.9,
           "ready": false
         },
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 34,
-          "readyInHours": 5.6,
-          "ready": false
+          "pct": 23,
+          "readyInHours": 0,
+          "ready": true
         },
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 2,
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         }
@@ -9451,30 +9476,22 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 18,
-      "readyInHours": 22.1,
+      "pct": 13,
+      "readyInHours": 5.8,
       "muscles": [
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 43,
-          "readyInHours": 22.1,
+          "pct": 33,
+          "readyInHours": 5.8,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 24,
-          "readyInHours": 0,
-          "ready": true
-        },
-        {
-          "key": "calves",
-          "label": "Calves",
-          "section": "Legs",
-          "pct": 11,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         },
@@ -9482,7 +9499,15 @@
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 10,
+          "pct": 7,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "calves",
+          "label": "Calves",
+          "section": "Legs",
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         },
@@ -9513,16 +9538,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 46,
+      "readyInHours": 12.8,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 46,
+          "readyInHours": 12.8,
+          "ready": false
         }
       ]
     }
@@ -9549,7 +9574,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell Bench Press",
@@ -9615,7 +9640,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Incline Dumbbell Bench Press",
@@ -9679,7 +9704,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Narrow Push-Ups",
@@ -10163,7 +10188,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Seated Dips",
@@ -10266,7 +10291,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 9,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Incline DB Curl",
@@ -10347,7 +10372,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Low Pulley Biceps Curl",
@@ -10863,55 +10888,55 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 504,
-        "sessions": 3,
-        "acwr": 1.11
+        "stress": 548,
+        "sessions": 4,
+        "acwr": 1.25
       },
       {
         "label": "-4w",
-        "stress": 461,
-        "sessions": 4,
-        "acwr": 0.81
+        "stress": 418,
+        "sessions": 3,
+        "acwr": 0.7
       },
       {
         "label": "-3w",
         "stress": 434,
         "sessions": 4,
-        "acwr": 0.99
+        "acwr": 1.2
       },
       {
         "label": "-2w",
         "stress": 488,
         "sessions": 4,
-        "acwr": 0.86
+        "acwr": 1.11
       },
       {
         "label": "-1w",
         "stress": 398,
         "sessions": 3,
-        "acwr": 0.71
+        "acwr": 1.08
       },
       {
         "label": "This wk",
-        "stress": 552,
-        "sessions": 3,
-        "acwr": 1.31
+        "stress": 713,
+        "sessions": 4,
+        "acwr": 1.17
       }
     ],
-    "acute": 102,
-    "chronic": 77.66,
-    "acwr": 1.31,
-    "acwrZone": "caution",
-    "sessions28": 15
+    "acute": 88.23,
+    "chronic": 75.54,
+    "acwr": 1.17,
+    "acwrZone": "ok",
+    "sessions28": 16
   },
   "recommendation": {
     "section": "Shoulders",
-    "fatigue": 22,
+    "fatigue": 14,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-02T10:53:28.275Z",
+    "readyAt": "2026-11-03T04:46:25.153Z",
     "neverLogged": false,
-    "daysSince": 6.1,
+    "daysSince": 6.9,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -11013,77 +11038,75 @@
         }
       }
     ],
-    "guidance": [
-      "Load ratio 1.31 is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR."
-    ],
+    "guidance": [],
     "ranked": [
       {
         "section": "Shoulders",
-        "fatigue": 22,
+        "fatigue": 14,
         "readyInHours": 0,
-        "daysSince": 6.1
+        "daysSince": 6.9
       },
       {
         "section": "Back",
-        "fatigue": 26,
+        "fatigue": 19,
         "readyInHours": 0,
-        "daysSince": 3.1
+        "daysSince": 3.8
       },
       {
         "section": "Legs",
-        "fatigue": 18,
-        "readyInHours": 22.1,
-        "daysSince": 2.1
+        "fatigue": 13,
+        "readyInHours": 5.8,
+        "daysSince": 2.8
       },
       {
         "section": "Arms",
-        "fatigue": 29,
-        "readyInHours": 20.1,
-        "daysSince": 0
+        "fatigue": 19,
+        "readyInHours": 2.9,
+        "daysSince": 0.7
       },
       {
         "section": "Chest",
-        "fatigue": 71,
-        "readyInHours": 51.9,
-        "daysSince": 0
+        "fatigue": 54,
+        "readyInHours": 34.8,
+        "daysSince": 0.7
       }
     ],
     "suggestedCount": 5,
     "totalAvailable": 9,
     "typicalSessionSize": 5,
-    "aerobicLast7": 0,
+    "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 9.1
+    "daysSinceAerobic": 0
   },
   "alerts": [
     {
-      "level": "med",
-      "title": "Load climbing fast",
-      "detail": "Load ratio 1.31 (sweet spot 0.8–1.3). Keep added volume under ~10% next week."
+      "level": "ok",
+      "title": "No major red flags",
+      "detail": "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     }
   ],
   "changes": [
     "You're below your PR on 13 lifts — closest wins first: Incline Hammer Curl (66% of best), Incline DB Curl (67% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight.",
     "Hamstrings lag quads (2.51×). Keep RDLs/leg curls heavy and add a set.",
-    "Only 0/2 aerobic sessions this week — add an easy run or row."
+    "Only 1/2 aerobic sessions this week — add an easy run or row."
   ],
   "timing": {
     "avgGap": 2.8,
     "longestGap": 35.7,
-    "perWeek": 3.8,
+    "perWeek": 4,
     "avgHour": 13,
     "todPref": "afternoon",
     "dow": [
       7,
       15,
-      14,
+      15,
       7,
       6,
       19,
       21
     ],
     "daysSinceLast": 0,
-    "total": 89
+    "total": 90
   },
   "relstrength": {
     "bodyweightKg": 80.9,
@@ -11132,15 +11155,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 43,
-    "km7": 0,
-    "km28": 14.8,
-    "totalKm": 165.4,
+    "count": 44,
+    "km7": 12.7,
+    "km28": 27.5,
+    "totalKm": 178.1,
     "longest": 13.35,
     "avgHr": 142,
-    "bestPace": 3.6764705882352944,
-    "avgPace": 10.281143997350766,
-    "paceTrend": 0.52,
+    "bestPace": 3.152635719905586,
+    "avgPace": 10.107277941803323,
+    "paceTrend": -4.94,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -11149,8 +11172,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 9.1,
+    "daysSinceLast": 0,
     "recent": [
+      {
+        "t": 1793684280000,
+        "name": "Stationary Bike",
+        "distanceKm": 12.71,
+        "durationMin": 40.07,
+        "avgHr": null,
+        "pace": 3.152635719905586
+      },
       {
         "t": 1792828380000,
         "name": "Outdoor Walk",
@@ -11182,14 +11213,6 @@
         "durationMin": 50,
         "avgHr": null,
         "pace": 12.5
-      },
-      {
-        "t": 1791299400000,
-        "name": "Outdoor Run",
-        "distanceKm": 2.01,
-        "durationMin": 13.95,
-        "avgHr": null,
-        "pace": 6.940298507462687
       }
     ]
   },
@@ -11633,15 +11656,22 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-11-02",
-      "start": "02:30",
-      "end": "09:00",
+      "date": "2026-11-03",
+      "start": "23:00",
+      "end": "05:30",
       "hours": 6.5,
-      "note": "6.5h, below target (travel)."
+      "note": "6.5h, below target."
     },
-    "avg7": 7.2,
+    "avg7": 7,
     "status": "good",
     "history": [
+      {
+        "date": "2026-11-03",
+        "start": "23:00",
+        "end": "05:30",
+        "hours": 6.5,
+        "note": "6.5h, below target."
+      },
       {
         "date": "2026-11-02",
         "start": "02:30",
