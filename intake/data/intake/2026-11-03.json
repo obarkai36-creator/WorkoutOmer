@@ -1,7 +1,7 @@
 {
   "date": "2026-11-03",
   "day_number": 129,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "23:00",
     "sleep_end": "05:30",
@@ -57,6 +57,17 @@
       "fat_g": 0,
       "fiber_g": 0,
       "note": "\"essential 5\" — verified per-serving."
+    },
+    {
+      "time": "22:30",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": true,
@@ -68,7 +79,7 @@
     "zinc_mg": 22.8,
     "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1000,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134,
@@ -82,7 +93,10 @@
     "Creatine paused through 11-06 (resume 11-07) — excluded from compliance.",
     "08:30 Malarone (day 3/12).",
     "Whiskey, 1 drink (~45ml assumed, time not given) — logged to lifestyle.json as an alcohol event.",
-    "19:30 essential-5."
+    "19:30 essential-5.",
+    "22:30 omega-3.",
+    "EOD: 3,500 steps."
   ],
-  "status_note": "In progress (traveling, food tracking paused). Slept 6.5h. 40-min recumbent bike."
+  "status_note": "Day complete (traveling, food tracking paused). Slept 6.5h. 40-min recumbent bike. All supplements + Malarone 3/12 taken (creatine paused). 1 whiskey. 3,500 steps.",
+  "steps": 3500
 }
