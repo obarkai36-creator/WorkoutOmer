@@ -45,6 +45,29 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "08:30",
+      "name": "Malarone (atovaquone/proguanil)",
+      "category": "medication",
+      "qty": "1 tablet",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "day 4 of 12."
+    },
+    {
+      "time": "09:00",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
@@ -55,7 +78,7 @@
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -64,7 +87,8 @@
   "assumptions": [
     "Traveling — local times.",
     "Sleep 00:00-06:15, 6.25h.",
-    "Pill + Mayven (time not given, placeholder 06:15). 08:00 double espresso."
+    "Pill + Mayven (time not given, placeholder 06:15). 08:00 double espresso.",
+    "08:30 Malarone (day 4/12), 09:00 omega-3."
   ],
   "status_note": "In progress (traveling, food tracking paused). Slept 6.25h."
 }
