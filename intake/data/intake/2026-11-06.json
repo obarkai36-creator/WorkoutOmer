@@ -43,6 +43,54 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "08:00",
+      "name": "Malarone (atovaquone/proguanil)",
+      "category": "medication",
+      "qty": "1 tablet",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "day 6 of 12, time not given."
+    },
+    {
+      "time": "16:30",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving."
+    },
+    {
+      "time": "19:00",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "20:00",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "resumed after travel pause."
     }
   ],
   "workout_today": false,
@@ -50,19 +98,22 @@
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Macro tracking break 2026-10-30 (mid-day) through 2026-11-06 — resume 2026-11-07, per explicit user request.",
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "assumptions": [
     "Travel day — red-eye flight home (connecting).",
     "Sleep ~2h, mediocre, on the plane (exact times not given).",
-    "06:15 pill, Mayven, double espresso."
+    "06:15 pill, Mayven, double espresso.",
+    "Malarone (day 6/12, time not given, placeholder 08:00). 16:30 essential-5, 19:00 omega-3, 20:00 creatine (resumed).",
+    "Steps so far: 8,000 (day not closed)."
   ],
-  "status_note": "In progress — travel day (red-eye home). ~2h sleep. Food tracking resumes tomorrow."
+  "status_note": "In progress — travel day (red-eye home). ~2h sleep. Food tracking resumes tomorrow.",
+  "steps": 8000
 }

@@ -312,7 +312,7 @@ MALARONE_START_DATE, MALARONE_END_DATE = "2026-11-01", "2026-11-12"
 # User-requested pauses: a paused row is dropped from the expected list for
 # those dates, so it doesn't count against compliance. (label, start, end) inclusive.
 SUPPLEMENT_PAUSES = [
-    ("Creatine", "2026-11-02", "2026-11-06"),  # paused while traveling, resume 11-07
+    ("Creatine", "2026-11-02", "2026-11-05"),  # paused while traveling, resumed 11-06 20:00
     # Rhinolast out of stock since 2026-10-17 — open-ended until restocked
     # (set the end date to the day before the user restarts it).
     ("Allergy spray · AM", "2026-10-17", "9999-12-31"),

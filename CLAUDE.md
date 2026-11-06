@@ -4,7 +4,7 @@
   supplements don't impact the supplement graph"): `SUPPLEMENT_PAUSES` in
   generate_dashboard.py lists (row label, start, end) windows that are dropped
   from `expected_supplements_for()` so they don't count against compliance.
-  Creatine paused 2026-11-02 through 2026-11-06 (resume 11-07). Rhinolast
+  Creatine paused 2026-11-02 through 2026-11-05 (resumed 11-06 20:00). Rhinolast
   spray (AM+PM rows) paused from 2026-10-17 (out of stock), open-ended —
   when the user restocks, set its end date to the day before. Add any future
   pause there (then re-export the affected dates).
