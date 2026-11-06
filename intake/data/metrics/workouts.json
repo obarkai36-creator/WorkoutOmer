@@ -1,18 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-11-04",
+    "report_date": "2026-11-06",
     "latest_session": "Stationary Bike, \"lazy bike\" recumbent (hotel gym, ended 06:18) — 40:04 min, 7.90 mi (12.71 km), level 1, avg 11.8 mph / 70 rpm, 239 kcal per machine. Longest bike session logged.",
     "sessions_logged": 90,
-    "sessions_per_week": 3.8,
+    "sessions_per_week": 3.5,
     "typical_time": "afternoon",
     "aerobic_28d_km": 25.5,
     "aerobic_sessions_28d": 5,
     "avg_pace": "10:06/km",
     "avg_hr": 142,
-    "acwr": 0.94,
+    "acwr": 0.61,
     "recommended_next": "Shoulders day",
     "alerts": [
+      "Load ratio 0.61 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
