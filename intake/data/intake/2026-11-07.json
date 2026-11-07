@@ -140,18 +140,52 @@
       "fat_g": 22.75,
       "fiber_g": 7.47,
       "note": "recurring salad + dressing, same reference as the 0.6-portion entry on prior days (347kcal at 0.6 → 578kcal per full salad incl. dressing), scaled to 0.7. Credits ~9.2mg lycopene, ~59.9mg vitamin C, ~53.6mcg folate DFE, ~2mg vitamin E."
+    },
+    {
+      "time": "13:00",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "1 double",
+      "kcal": 6,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "14:15",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "16:00",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving."
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 6.3,
-    "selenium_mcg": 120,
+    "zinc_mg": 26.3,
+    "selenium_mcg": 220,
     "folate_mcg_dfe": 211.6,
-    "omega3_epa_dha_mg": 750,
-    "vitamin_c_mg": 68.0,
-    "vitamin_d_iu": 750,
-    "vitamin_e_mg": 2.0,
+    "omega3_epa_dha_mg": 1750,
+    "vitamin_c_mg": 1068.0,
+    "vitamin_d_iu": 2750,
+    "vitamin_e_mg": 136.0,
     "lycopene_mg": 9.2
   },
   "assumptions": [
@@ -159,7 +193,8 @@
     "Sleep 19:45-07:20, 11.6h recovery sleep.",
     "08:30 pill; Rhinolast (AM, resumed) + Steronase (new, 1x/day x30 days) — times not given, logged with the pill. 08:50 Mayven.",
     "09:00 double espresso. 10:30 15 green grapes + 2 yellow cheese slices 9%. 11:00 Malarone (day 7/12).",
-    "12:00 lunch: 250g sea bream + 10g butter, 250g cheese & spinach pashtida (library, no-pasta version), 0.7 of the recurring large salad (lettuce, 30 cherry tomatoes, ½ red onion, 50g baby mozzarella) + recurring maple-balsamic mustard vinaigrette."
+    "12:00 lunch: 250g sea bream + 10g butter, 250g cheese & spinach pashtida (library, no-pasta version), 0.7 of the recurring large salad (lettuce, 30 cherry tomatoes, ½ red onion, 50g baby mozzarella) + recurring maple-balsamic mustard vinaigrette.",
+    "13:00 double espresso (4 shots today), 14:15 omega-3, 16:00 essential-5."
   ],
   "status_note": "In progress. Recovery sleep 11.6h. Rhinolast resumed, Steronase started (day 1/30). Food tracking resumed."
 }
