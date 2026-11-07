@@ -307,16 +307,18 @@ ESSENTIAL5_START_DATE = "2026-08-26"
 # Malarone (atovaquone/proguanil) — 12-day course per user, 2026-11-01 through 2026-11-12.
 MALARONE_ROW = ("Malarone", "malarone", None, False)
 MALARONE_START_DATE, MALARONE_END_DATE = "2026-11-01", "2026-11-12"
+# Steronase (triamcinolone nasal spray) — 1x/day, 30-day course per user.
+STERONASE_ROW = ("Steronase", "steronase", None, False)
+STERONASE_START_DATE, STERONASE_END_DATE = "2026-11-07", "2026-12-06"
 
 
 # User-requested pauses: a paused row is dropped from the expected list for
 # those dates, so it doesn't count against compliance. (label, start, end) inclusive.
 SUPPLEMENT_PAUSES = [
     ("Creatine", "2026-11-02", "2026-11-05"),  # paused while traveling, resumed 11-06 20:00
-    # Rhinolast out of stock since 2026-10-17 — open-ended until restocked
-    # (set the end date to the day before the user restarts it).
-    ("Allergy spray · AM", "2026-10-17", "9999-12-31"),
-    ("Allergy spray · PM", "2026-10-17", "9999-12-31"),
+    # Rhinolast out of stock 2026-10-17, resumed 2026-11-07.
+    ("Allergy spray · AM", "2026-10-17", "2026-11-06"),
+    ("Allergy spray · PM", "2026-10-17", "2026-11-06"),
 ]
 
 
@@ -333,6 +335,8 @@ def expected_supplements_for(date=None):
         rows.append(ESSENTIAL5_ROW)
     if date and MALARONE_START_DATE <= date <= MALARONE_END_DATE:
         rows.append(MALARONE_ROW)
+    if date and STERONASE_START_DATE <= date <= STERONASE_END_DATE:
+        rows.append(STERONASE_ROW)
     rows += list(BASE_SUPPLEMENTS_POST)
     return [r for r in rows if not _paused(r[0], date)]
 

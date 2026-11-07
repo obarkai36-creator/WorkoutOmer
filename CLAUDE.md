@@ -1,12 +1,18 @@
 # Session notes
 
+- Steronase (triamcinolone nasal spray) 1x/day, 30-day course 2026-11-07
+  through 2026-12-06 (per user): date-gated row `STERONASE_ROW` in
+  generate_dashboard.py, matches "steronase". Log each dose as a zero-kcal
+  medication item "Steronase (triamcinolone nasal spray)". Rhinolast back to
+  2x/day from 2026-11-07 — resume the AM/PM spray reminders.
+
 - Supplement pauses (added 2026-11-03, per user: "make sure paused
   supplements don't impact the supplement graph"): `SUPPLEMENT_PAUSES` in
   generate_dashboard.py lists (row label, start, end) windows that are dropped
   from `expected_supplements_for()` so they don't count against compliance.
   Creatine paused 2026-11-02 through 2026-11-05 (resumed 11-06 20:00). Rhinolast
-  spray (AM+PM rows) paused from 2026-10-17 (out of stock), open-ended —
-  when the user restocks, set its end date to the day before. Add any future
+  spray (AM+PM rows) paused 2026-10-17 through 2026-11-06 (out of stock;
+  resumed 2026-11-07). Add any future
   pause there (then re-export the affected dates).
 
 - Travel (2026-11-01 out, Friday 2026-11-06 back): connecting flights both

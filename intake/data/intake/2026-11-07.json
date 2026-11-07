@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-07",
+  "day_number": 133,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "19:45",
+    "sleep_end": "07:20",
+    "duration_hours": 11.58,
+    "quality": null,
+    "notes": "11.6h (night of 2026-11-06) — recovery sleep after the red-eye flight; above the 7-9h band."
+  },
+  "items": [
+    {
+      "time": "08:30",
+      "name": "Bilaxten (bilastine)",
+      "category": "medication",
+      "qty": "1 pill (morning)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "08:30",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (AM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "resumed after restock — AM dose of the 2x/day spray (time assumed with the pill)."
+    },
+    {
+      "time": "08:30",
+      "name": "Steronase (triamcinolone nasal spray)",
+      "category": "medication",
+      "qty": "1 dose",
+      "time_approx": true,
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "new — 1x/day, 30-day course (day 1/30)."
+    },
+    {
+      "time": "08:50",
+      "name": "Mayven Full Volume Gummies",
+      "category": "supplement",
+      "qty": "2 gummies",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    }
+  ],
+  "workout_today": false,
+  "caffeine_shots": 0,
+  "micros_sperm_priority": {
+    "zinc_mg": 2.8,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 100,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Back home — full food tracking resumes today.",
+    "Sleep 19:45-07:20, 11.6h recovery sleep.",
+    "08:30 pill; Rhinolast (AM, resumed) + Steronase (new, 1x/day x30 days) — times not given, logged with the pill. 08:50 Mayven."
+  ],
+  "status_note": "In progress. Recovery sleep 11.6h. Rhinolast resumed, Steronase started (day 1/30). Food tracking resumed."
+}
