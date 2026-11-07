@@ -1,5 +1,5 @@
 {
-  "now": 1794053787754,
+  "now": 1794060223484,
   "workouts": [
     {
       "datetime": "2026-11-03T05:38",
@@ -9296,7 +9296,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 10,
+      "pct": 9,
       "readyInHours": 0,
       "ready": true
     },
@@ -9400,14 +9400,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 10,
+      "pct": 9,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 10,
+          "pct": 9,
           "readyInHours": 0,
           "ready": true
         }
@@ -10934,9 +10934,9 @@
     "fatigue": 1,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-07T12:16:27.754Z",
+    "readyAt": "2026-11-07T14:03:43.484Z",
     "neverLogged": false,
-    "daysSince": 11.2,
+    "daysSince": 11.3,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -11046,13 +11046,13 @@
         "section": "Shoulders",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 11.2
+        "daysSince": 11.3
       },
       {
         "section": "Back",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 8.1
+        "daysSince": 8.2
       },
       {
         "section": "Legs",
@@ -11064,13 +11064,13 @@
         "section": "Arms",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 5
+        "daysSince": 5.1
       },
       {
         "section": "Chest",
-        "fatigue": 10,
+        "fatigue": 9,
         "readyInHours": 0,
-        "daysSince": 5
+        "daysSince": 5.1
       }
     ],
     "suggestedCount": 5,
@@ -11078,7 +11078,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 4.3
+    "daysSinceAerobic": 4.4
   },
   "alerts": [
     {
@@ -11112,7 +11112,7 @@
       19,
       21
     ],
-    "daysSinceLast": 4.3,
+    "daysSinceLast": 4.4,
     "total": 90
   },
   "relstrength": {
@@ -11179,7 +11179,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 4.3,
+    "daysSinceLast": 4.4,
     "recent": [
       {
         "t": 1793684280000,
