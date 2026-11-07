@@ -1,5 +1,5 @@
 {
-  "now": 1794034878234,
+  "now": 1794041916374,
   "workouts": [
     {
       "datetime": "2026-11-03T05:38",
@@ -10894,32 +10894,32 @@
       },
       {
         "label": "-4w",
-        "stress": 418,
-        "sessions": 3,
+        "stress": 477,
+        "sessions": 4,
         "acwr": 0.86
       },
       {
         "label": "-3w",
-        "stress": 512,
-        "sessions": 4,
+        "stress": 453,
+        "sessions": 3,
         "acwr": 1.27
       },
       {
         "label": "-2w",
-        "stress": 546,
-        "sessions": 4,
+        "stress": 617,
+        "sessions": 5,
         "acwr": 1.09
       },
       {
         "label": "-1w",
-        "stress": 405,
+        "stress": 552,
         "sessions": 3,
         "acwr": 1.43
       },
       {
         "label": "This wk",
-        "stress": 426,
-        "sessions": 3,
+        "stress": 208,
+        "sessions": 2,
         "acwr": 0.49
       }
     ],
@@ -10927,16 +10927,16 @@
     "chronic": 56.7,
     "acwr": 0.49,
     "acwrZone": "detraining",
-    "sessions28": 14
+    "sessions28": 13
   },
   "recommendation": {
     "section": "Shoulders",
     "fatigue": 1,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-07T07:01:18.234Z",
+    "readyAt": "2026-11-07T08:58:36.374Z",
     "neverLogged": false,
-    "daysSince": 11,
+    "daysSince": 11.1,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -11046,31 +11046,31 @@
         "section": "Shoulders",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 11
+        "daysSince": 11.1
       },
       {
         "section": "Back",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 7.9
+        "daysSince": 8
       },
       {
         "section": "Legs",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 6.9
+        "daysSince": 7
       },
       {
         "section": "Arms",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 4.8
+        "daysSince": 4.9
       },
       {
         "section": "Chest",
         "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 4.8
+        "daysSince": 4.9
       }
     ],
     "suggestedCount": 5,
@@ -11100,7 +11100,7 @@
   "timing": {
     "avgGap": 2.8,
     "longestGap": 35.7,
-    "perWeek": 3.5,
+    "perWeek": 3.3,
     "avgHour": 13,
     "todPref": "afternoon",
     "dow": [
@@ -11164,7 +11164,7 @@
     "any": true,
     "count": 44,
     "km7": 12.7,
-    "km28": 25.5,
+    "km28": 21.5,
     "totalKm": 178.1,
     "longest": 13.35,
     "avgHr": 142,

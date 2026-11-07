@@ -57,16 +57,63 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "09:00",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "1 double",
+      "kcal": 6,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "10:30",
+      "name": "Green grapes, seedless",
+      "category": "food",
+      "qty": "15 pieces (~75 g)",
+      "kcal": 51.75,
+      "protein_g": 0.54,
+      "carbs_g": 13.58,
+      "fat_g": 0.12,
+      "fiber_g": 0.68,
+      "note": "standard reference (~5g/grape). Credits ~8.1mg vitamin C."
+    },
+    {
+      "time": "10:30",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "2 slices (50 g)",
+      "kcal": 100,
+      "protein_g": 15,
+      "carbs_g": 0,
+      "fat_g": 4.5,
+      "fiber_g": 0,
+      "note": "verified label reference (tnuva_emek_light_yellow_cheese_9pct)."
+    },
+    {
+      "time": "11:00",
+      "name": "Malarone (atovaquone/proguanil)",
+      "category": "medication",
+      "qty": "1 tablet",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "day 7 of 12."
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 4.8,
+    "selenium_mcg": 8,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 8.1,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
@@ -74,7 +121,8 @@
   "assumptions": [
     "Back home — full food tracking resumes today.",
     "Sleep 19:45-07:20, 11.6h recovery sleep.",
-    "08:30 pill; Rhinolast (AM, resumed) + Steronase (new, 1x/day x30 days) — times not given, logged with the pill. 08:50 Mayven."
+    "08:30 pill; Rhinolast (AM, resumed) + Steronase (new, 1x/day x30 days) — times not given, logged with the pill. 08:50 Mayven.",
+    "09:00 double espresso. 10:30 15 green grapes + 2 yellow cheese slices 9%. 11:00 Malarone (day 7/12)."
   ],
   "status_note": "In progress. Recovery sleep 11.6h. Rhinolast resumed, Steronase started (day 1/30). Food tracking resumed."
 }
