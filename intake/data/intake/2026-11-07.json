@@ -131,15 +131,15 @@
     },
     {
       "time": "12:00",
-      "name": "Lunch — regular salad with dressing",
+      "name": "Lunch — salad (lettuce, cherry tomatoes, red onion, baby mozzarella) with maple-balsamic mustard vinaigrette",
       "category": "food",
-      "qty": "0.7 of a portion",
-      "kcal": 141,
-      "protein_g": 3.6,
-      "carbs_g": 24.4,
-      "fat_g": 4.1,
-      "fiber_g": 4.2,
-      "note": "'regular salad' not yet defined — estimated as the usual mix (~60g lettuce, ~15 cherry tomatoes, 1 cucumber, ½ red onion) + usual dressing (5g olive oil, 15g balsamic glaze, lemon), ×0.7. Flagged; credits ~6mg lycopene, ~35mg vitamin C, ~50mcg folate."
+      "qty": "0.7 of the recurring recipe (1 lettuce head ~300g, 30 cherry tomatoes, 0.5 red onion, 50g baby mozzarella) + 0.7 of the standard Maple-Balsamic Mustard Vinaigrette batch",
+      "kcal": 404.8,
+      "protein_g": 13.94,
+      "carbs_g": 39.9,
+      "fat_g": 22.75,
+      "fiber_g": 7.47,
+      "note": "recurring salad + dressing, same reference as the 0.6-portion entry on prior days (347kcal at 0.6 → 578kcal per full salad incl. dressing), scaled to 0.7. Credits ~9.2mg lycopene, ~59.9mg vitamin C, ~53.6mcg folate DFE, ~2mg vitamin E."
     }
   ],
   "workout_today": false,
@@ -147,19 +147,19 @@
   "micros_sperm_priority": {
     "zinc_mg": 6.3,
     "selenium_mcg": 120,
-    "folate_mcg_dfe": 208,
+    "folate_mcg_dfe": 211.6,
     "omega3_epa_dha_mg": 750,
-    "vitamin_c_mg": 43.1,
+    "vitamin_c_mg": 68.0,
     "vitamin_d_iu": 750,
-    "vitamin_e_mg": 0.4,
-    "lycopene_mg": 6
+    "vitamin_e_mg": 2.0,
+    "lycopene_mg": 9.2
   },
   "assumptions": [
     "Back home — full food tracking resumes today.",
     "Sleep 19:45-07:20, 11.6h recovery sleep.",
     "08:30 pill; Rhinolast (AM, resumed) + Steronase (new, 1x/day x30 days) — times not given, logged with the pill. 08:50 Mayven.",
     "09:00 double espresso. 10:30 15 green grapes + 2 yellow cheese slices 9%. 11:00 Malarone (day 7/12).",
-    "12:00 lunch: 250g sea bream + 10g butter, 250g cheese & spinach pashtida (library, no-pasta version), 0.7 'regular salad' + dressing (estimated mix, flagged)."
+    "12:00 lunch: 250g sea bream + 10g butter, 250g cheese & spinach pashtida (library, no-pasta version), 0.7 of the recurring large salad (lettuce, 30 cherry tomatoes, ½ red onion, 50g baby mozzarella) + recurring maple-balsamic mustard vinaigrette."
   ],
   "status_note": "In progress. Recovery sleep 11.6h. Rhinolast resumed, Steronase started (day 1/30). Food tracking resumed."
 }

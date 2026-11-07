@@ -1,5 +1,13 @@
 # Session notes
 
+- "Regular salad" / "regular dressing" (per user 2026-11-07): the recurring
+  large salad = 1 lettuce head (~300g) + 30 cherry tomatoes + 0.5 red onion +
+  50g baby mozzarella, with the recurring Maple-Balsamic Mustard Vinaigrette
+  (olive oil, balsamic glaze, maple syrup, mustard, lemon juice). Full salad
+  incl. dressing ≈ 578kcal / 19.9p / 57c / 32.5f / 10.7 fiber; per full:
+  ~13.2mg lycopene, ~85.5mg vit C, ~76.5mcg folate, ~2.8mg vit E. Scale by
+  the fraction eaten.
+
 - Steronase (triamcinolone nasal spray) 1x/day, 30-day course 2026-11-07
   through 2026-12-06 (per user): date-gated row `STERONASE_ROW` in
   generate_dashboard.py, matches "steronase". Log each dose as a zero-kcal
