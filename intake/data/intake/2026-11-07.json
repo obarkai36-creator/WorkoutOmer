@@ -104,25 +104,62 @@
       "fat_g": 0,
       "fiber_g": 0,
       "note": "day 7 of 12."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — sea bream with butter",
+      "category": "food",
+      "qty": "250 g fish + 10 g butter",
+      "kcal": 434.5,
+      "protein_g": 60.1,
+      "carbs_g": 0,
+      "fat_g": 20.6,
+      "fiber_g": 0,
+      "note": "same baked sea bream reference as prior entries (~145kcal/24g protein/5g fat per 100g) + 10g butter. Credits ~1.5mg zinc, ~112mcg selenium, ~750mg omega-3 EPA/DHA, ~750IU vitamin D."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — cheese & spinach pashtida (recipe library)",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 167,
+      "protein_g": 16.4,
+      "carbs_g": 6.3,
+      "fat_g": 8.7,
+      "fiber_g": 0.9,
+      "note": "recipe library cheese_pashtida_spinach (127kcal/12.5g protein per 190g slice), scaled to 250g. Credits ~58mcg folate DFE."
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — regular salad with dressing",
+      "category": "food",
+      "qty": "0.7 of a portion",
+      "kcal": 141,
+      "protein_g": 3.6,
+      "carbs_g": 24.4,
+      "fat_g": 4.1,
+      "fiber_g": 4.2,
+      "note": "'regular salad' not yet defined — estimated as the usual mix (~60g lettuce, ~15 cherry tomatoes, 1 cucumber, ½ red onion) + usual dressing (5g olive oil, 15g balsamic glaze, lemon), ×0.7. Flagged; credits ~6mg lycopene, ~35mg vitamin C, ~50mcg folate."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 4.8,
-    "selenium_mcg": 8,
-    "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 8.1,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "zinc_mg": 6.3,
+    "selenium_mcg": 120,
+    "folate_mcg_dfe": 208,
+    "omega3_epa_dha_mg": 750,
+    "vitamin_c_mg": 43.1,
+    "vitamin_d_iu": 750,
+    "vitamin_e_mg": 0.4,
+    "lycopene_mg": 6
   },
   "assumptions": [
     "Back home — full food tracking resumes today.",
     "Sleep 19:45-07:20, 11.6h recovery sleep.",
     "08:30 pill; Rhinolast (AM, resumed) + Steronase (new, 1x/day x30 days) — times not given, logged with the pill. 08:50 Mayven.",
-    "09:00 double espresso. 10:30 15 green grapes + 2 yellow cheese slices 9%. 11:00 Malarone (day 7/12)."
+    "09:00 double espresso. 10:30 15 green grapes + 2 yellow cheese slices 9%. 11:00 Malarone (day 7/12).",
+    "12:00 lunch: 250g sea bream + 10g butter, 250g cheese & spinach pashtida (library, no-pasta version), 0.7 'regular salad' + dressing (estimated mix, flagged)."
   ],
   "status_note": "In progress. Recovery sleep 11.6h. Rhinolast resumed, Steronase started (day 1/30). Food tracking resumed."
 }
