@@ -244,19 +244,54 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "16:10",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "150 g",
+      "kcal": 147,
+      "protein_g": 16.5,
+      "carbs_g": 5.1,
+      "fat_g": 6.45,
+      "fiber_g": 0,
+      "note": "same generic reference (cottage_cheese_generic)."
+    },
+    {
+      "time": "16:10",
+      "name": "Honey",
+      "category": "food",
+      "qty": "5 g",
+      "kcal": 15.2,
+      "protein_g": 0,
+      "carbs_g": 4.1,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "16:10",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "5 pieces",
+      "kcal": 13.25,
+      "protein_g": 0.68,
+      "carbs_g": 2.93,
+      "fat_g": 0.15,
+      "fiber_g": 0.9,
+      "note": "standard reference. Credits ~2.2mg lycopene, ~11mg vitamin C, ~12.75mcg folate DFE."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 25.2,
-    "selenium_mcg": 140,
-    "folate_mcg_dfe": 260,
+    "zinc_mg": 25.8,
+    "selenium_mcg": 153,
+    "folate_mcg_dfe": 272.75,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1088,
+    "vitamin_c_mg": 1099,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134.5,
-    "lycopene_mg": 17.6
+    "lycopene_mg": 19.8
   },
   "assumptions": [
     "Sleep 23:20-05:15, 5.9h.",
@@ -266,7 +301,8 @@
     "Lunch (time not given, placeholder 12:30): 250g chicken patties (library, newly added) + 250g cheese & spinach pashtida (library).",
     "Lunch also 25 cherry tomatoes. 13:00 espresso (4 shots) + Pesek Zman personal bar (20g). 14:00 omega-3. 15:00 Malarone (day 8/12).",
     "14:10 75g cottage cheese + 2g honey.",
-    "15:00 espresso (5 shots today)."
+    "15:00 espresso (5 shots today).",
+    "16:10 150g cottage cheese + 5g honey + 5 cherry tomatoes."
   ],
   "status_note": "In progress. Slept 5.9h (short)."
 }
