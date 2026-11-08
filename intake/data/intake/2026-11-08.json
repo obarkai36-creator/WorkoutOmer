@@ -178,15 +178,15 @@
     },
     {
       "time": "13:00",
-      "name": "Pesek Zman bar",
+      "name": "Pesek Zman (personal size bar)",
       "category": "food",
-      "qty": "1 regular bar (~45 g, size assumed)",
-      "kcal": 238.5,
-      "protein_g": 3.6,
-      "carbs_g": 25.2,
-      "fat_g": 13.5,
-      "fiber_g": 0.9,
-      "note": "same Pesek Zman rate as prior entry (~530kcal/100g); regular ~45g bar assumed (not the 17g personal size) — flagged."
+      "qty": "1 personal bar (20 g)",
+      "kcal": 106,
+      "protein_g": 1.6,
+      "carbs_g": 11.2,
+      "fat_g": 6,
+      "fiber_g": 0.4,
+      "note": "same Pesek Zman rate as prior entry (~530kcal/100g); personal bar = 20g per user."
     },
     {
       "time": "14:00",
@@ -221,7 +221,7 @@
     "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1088,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 135,
+    "vitamin_e_mg": 134.5,
     "lycopene_mg": 17.6
   },
   "assumptions": [
@@ -230,7 +230,7 @@
     "Rhinolast (AM) + Steronase (day 2/30) — time not given, placeholder 06:00.",
     "07:30 espresso (3 shots). 09:30 100g cottage cheese + 15 cherry tomatoes + 5g honey. 10:00 essential-5.",
     "Lunch (time not given, placeholder 12:30): 250g chicken patties (library, newly added) + 250g cheese & spinach pashtida (library).",
-    "Lunch also 25 cherry tomatoes. 13:00 espresso (4 shots) + Pesek Zman (regular ~45g bar assumed, flagged). 14:00 omega-3. 15:00 Malarone (day 8/12)."
+    "Lunch also 25 cherry tomatoes. 13:00 espresso (4 shots) + Pesek Zman personal bar (20g). 14:00 omega-3. 15:00 Malarone (day 8/12)."
   ],
   "status_note": "In progress. Slept 5.9h (short)."
 }
