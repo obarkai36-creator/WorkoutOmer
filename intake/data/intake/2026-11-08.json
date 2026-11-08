@@ -279,19 +279,71 @@
       "fat_g": 0.15,
       "fiber_g": 0.9,
       "note": "standard reference. Credits ~2.2mg lycopene, ~11mg vitamin C, ~12.75mcg folate DFE."
+    },
+    {
+      "time": "19:00",
+      "name": "Dinner — Angel PRO Pita",
+      "category": "food",
+      "qty": "2 units (125 g)",
+      "kcal": 251.2,
+      "protein_g": 25.8,
+      "carbs_g": 28.4,
+      "fat_g": 2.4,
+      "fiber_g": 7.4,
+      "time_approx": true,
+      "note": "verified label reference (angel_pita_pro_20g_protein)."
+    },
+    {
+      "time": "19:00",
+      "name": "Dinner — Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "4 slices (100 g)",
+      "kcal": 200,
+      "protein_g": 30,
+      "carbs_g": 0,
+      "fat_g": 9,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "verified label reference."
+    },
+    {
+      "time": "19:00",
+      "name": "Dinner — Simfonia cheese spread",
+      "category": "food",
+      "qty": "20 g",
+      "kcal": 21.6,
+      "protein_g": 1.96,
+      "carbs_g": 0.92,
+      "fat_g": 1,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "verified label reference (simfonia_cheese_spread_generic)."
+    },
+    {
+      "time": "19:00",
+      "name": "Dinner — cherry tomato soup",
+      "category": "food",
+      "qty": "300 ml",
+      "kcal": 120,
+      "protein_g": 3,
+      "carbs_g": 18,
+      "fat_g": 4.5,
+      "fiber_g": 3.6,
+      "time_approx": true,
+      "note": "generic homemade cherry-tomato soup estimate (~40kcal/100ml incl. a little oil), recipe not given — flagged. Credits ~15mg lycopene, ~30mg vitamin C, ~30mcg folate."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 25.8,
-    "selenium_mcg": 153,
-    "folate_mcg_dfe": 272.75,
+    "zinc_mg": 29.8,
+    "selenium_mcg": 173,
+    "folate_mcg_dfe": 302.75,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1099,
+    "vitamin_c_mg": 1129,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 134.5,
-    "lycopene_mg": 19.8
+    "lycopene_mg": 34.8
   },
   "assumptions": [
     "Sleep 23:20-05:15, 5.9h.",
@@ -302,7 +354,8 @@
     "Lunch also 25 cherry tomatoes. 13:00 espresso (4 shots) + Pesek Zman personal bar (20g). 14:00 omega-3. 15:00 Malarone (day 8/12).",
     "14:10 75g cottage cheese + 2g honey.",
     "15:00 espresso (5 shots today).",
-    "16:10 150g cottage cheese + 5g honey + 5 cherry tomatoes."
+    "16:10 150g cottage cheese + 5g honey + 5 cherry tomatoes.",
+    "Dinner (time not given, placeholder 19:00): 2 Angel PRO pita, 4 yellow cheese slices 9%, 20g Simfonia, 300ml cherry tomato soup (generic estimate, flagged)."
   ],
   "status_note": "In progress. Slept 5.9h (short)."
 }
