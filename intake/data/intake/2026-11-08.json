@@ -42,6 +42,31 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "06:00",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (AM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:00",
+      "name": "Steronase (triamcinolone nasal spray)",
+      "category": "medication",
+      "qty": "1 dose",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "day 2/30."
     }
   ],
   "workout_today": false,
@@ -58,7 +83,8 @@
   },
   "assumptions": [
     "Sleep 23:20-05:15, 5.9h.",
-    "05:30 pill, 05:50 double espresso, 06:00 Mayven."
+    "05:30 pill, 05:50 double espresso, 06:00 Mayven.",
+    "Rhinolast (AM) + Steronase (day 2/30) — time not given, placeholder 06:00."
   ],
   "status_note": "In progress. Slept 5.9h (short)."
 }
