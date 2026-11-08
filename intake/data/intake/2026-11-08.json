@@ -125,14 +125,40 @@
       "fat_g": 0,
       "fiber_g": 0,
       "note": "\"essential 5\" — verified per-serving."
+    },
+    {
+      "time": "12:30",
+      "name": "Lunch — chicken patties with sweet potato & zucchini (recipe library)",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 441.7,
+      "protein_g": 34.9,
+      "carbs_g": 16.9,
+      "fat_g": 26.25,
+      "fiber_g": 1.94,
+      "time_approx": true,
+      "note": "recipe library chicken_patties_sweet_potato_zucchini (318kcal/25.1g protein per 180g serving), scaled to 250g. Credits ~31mcg selenium."
+    },
+    {
+      "time": "12:30",
+      "name": "Lunch — cheese & spinach pashtida (recipe library)",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 167,
+      "protein_g": 16.4,
+      "carbs_g": 6.3,
+      "fat_g": 8.7,
+      "fiber_g": 0.9,
+      "time_approx": true,
+      "note": "recipe library cheese_pashtida_spinach (127kcal/12.5g protein per 190g slice), scaled to 250g. Credits ~58mcg folate DFE."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 3,
   "micros_sperm_priority": {
-    "zinc_mg": 23.2,
-    "selenium_mcg": 109,
-    "folate_mcg_dfe": 138,
+    "zinc_mg": 25.2,
+    "selenium_mcg": 140,
+    "folate_mcg_dfe": 196,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 1033,
     "vitamin_d_iu": 2000,
@@ -143,7 +169,8 @@
     "Sleep 23:20-05:15, 5.9h.",
     "05:30 pill, 05:50 double espresso, 06:00 Mayven.",
     "Rhinolast (AM) + Steronase (day 2/30) — time not given, placeholder 06:00.",
-    "07:30 espresso (3 shots). 09:30 100g cottage cheese + 15 cherry tomatoes + 5g honey. 10:00 essential-5."
+    "07:30 espresso (3 shots). 09:30 100g cottage cheese + 15 cherry tomatoes + 5g honey. 10:00 essential-5.",
+    "Lunch (time not given, placeholder 12:30): 250g chicken patties (library, newly added) + 250g cheese & spinach pashtida (library)."
   ],
   "status_note": "In progress. Slept 5.9h (short)."
 }

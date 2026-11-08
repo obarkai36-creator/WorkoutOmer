@@ -1,0 +1,103 @@
+{
+  "id": "chicken_patties_sweet_potato_zucchini",
+  "name": "Chicken patties with sweet potato & zucchini (קציצות עוף)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Pasted family-style recipe (Hebrew)",
+    "captured": "2026-11-08",
+    "notes": "1 kg ground chicken mixed with fried onion, finely grated sweet potato and zucchini, 2 eggs, ~½ cup breadcrumbs, a little ketchup, salt and pepper; rested 1 h in the fridge, spooned (≈2 tbsp each) into a pan and fried over medium heat. Adopted into rotation directly per user request. ASSUMPTIONS (amounts not given — tell me to adjust): ground chicken taken as a standard mixed ground chicken (~8% fat; leaner if it's all breast, fattier if pargit/thigh), 1 medium sweet potato (~150 g), 1 medium zucchini (~200 g), ~1 tbsp oil to fry the onion, ~2 tbsp ketchup, ~1 tsp salt, and ~3 tbsp of frying oil absorbed across the whole batch. Makes ~28-30 patties; analyzed as 8 servings of ~3-4 patties. Estimate."
+  },
+  "servings": 8,
+  "serving_desc": "≈180 g cooked (~3–4 patties; batch makes ~28–30)",
+  "ingredients": [
+    {"item": "ground chicken", "qty": "1 kg", "note": "breast = leaner; pargit/thigh = fattier"},
+    {"item": "large onion, chopped and fried", "qty": "1 (~150 g)"},
+    {"item": "sweet potato, finely grated", "qty": "1 medium (~150 g, assumed)"},
+    {"item": "zucchini / kishu, finely grated", "qty": "1 medium (~200 g, assumed)"},
+    {"item": "salt and pepper", "qty": "to taste (~1 tsp salt assumed)"},
+    {"item": "ketchup", "qty": "a little (~2 tbsp assumed)"},
+    {"item": "eggs", "qty": "2"},
+    {"item": "breadcrumbs", "qty": "~½ cup"},
+    {"item": "oil for frying", "qty": "for the pan (~3 tbsp absorbed, assumed)"}
+  ],
+  "steps": [
+    "Fry the chopped onion until soft and golden; cool slightly.",
+    "Mix the ground chicken, fried onion, grated sweet potato and zucchini, salt, pepper, ketchup, eggs and breadcrumbs.",
+    "Rest the mixture in the fridge about 1 hour.",
+    "Spoon about 2 tablespoons per patty into a pan and fry over medium heat until golden on both sides and cooked through."
+  ],
+  "per_serving": {
+    "kcal": 318,
+    "protein_g": 25.1,
+    "carbs_g": 12.2,
+    "fat_g": 18.9,
+    "fiber_g": 1.4,
+    "micros": {
+      "sodium_mg": 474,
+      "vitamin_a_iu": 3200,
+      "selenium_mcg": 22,
+      "choline_mg": 95
+    }
+  },
+  "batch_totals": {
+    "kcal": 2542,
+    "protein_g": 201,
+    "carbs_g": 98,
+    "fat_g": 151,
+    "fiber_g": 11.5,
+    "sodium_mg": 3792,
+    "note": "Whole batch (~28–30 patties, 8 servings). Fat is driven by the ground chicken's own fat plus pan-frying oil — the two biggest levers. Grated sweet potato and zucchini add moisture, fibre and vitamin A while stretching the meat."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 7,
+      "verdict": "A solid, family-friendly protein staple: ~25 g protein per ~318 kcal serving, with hidden veg (sweet potato + zucchini) adding moisture, a little fibre and vitamin A. It lands at ~7.9 g protein per 100 kcal — good, but fat (~19 g/serving) is on the higher side from mixed ground chicken plus pan-frying. Using breast mince and baking or spraying instead of shallow-frying would push it to 9.",
+      "flags": [
+        "~25 g protein / 318 kcal per serving (~7.9 g protein per 100 kcal)",
+        "fat ~19 g/serving — ground chicken fat + pan-frying oil",
+        "hidden veg: sweet potato + zucchini (vitamin A, moisture, some fibre)",
+        "moderate sodium (~474 mg) — salt + ketchup + breadcrumbs",
+        "batch-friendly, freezes and reheats well"
+      ],
+      "suggested_mods": [
+        "Use ground chicken breast instead of mixed/pargit — biggest fat cut",
+        "Bake on a lined tray at 200 °C ~20 min (flip once) or pan-fry with spray oil instead of shallow oil",
+        "Swap breadcrumbs for whole-spelt/whole-wheat breadcrumbs or oats for fibre",
+        "Double the zucchini — more volume and moisture for almost no calories"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Good everyday dish for her: lean poultry protein, choline from the eggs, vitamin A (as beta-carotene, the safe form) from sweet potato. Fully cooked — just make sure the centres are cooked through (no pink). Not a big folate or iron source on its own; pair with a green salad.",
+      "prenatal_highlights": [
+        "protein + choline (chicken, eggs)",
+        "beta-carotene vitamin A from sweet potato (the pregnancy-safe form)",
+        "fully cooked"
+      ],
+      "safety_advisories": [
+        {"note": "Ground chicken must be cooked through (74 °C, no pink inside) — check a thick patty.", "swap": "lower the heat and cook a little longer if the outside browns before the inside is done"}
+      ],
+      "suggested_mods": [
+        "Serve with a leafy green salad for folate + vitamin C"
+      ]
+    }
+  },
+  "tags": ["dinner", "chicken", "poultry", "patties", "ketzitzot", "hidden-veg", "sweet-potato", "zucchini", "batch", "family"],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-11-08 directly per user request (as written, not optimized). Per serving (~3-4 patties, ~180 g, of 8): ~318 kcal, 25.1 g protein, 12.2 g carb, 18.9 g fat, 1.4 g fibre, ~474 mg sodium. him 7 / her 7. Amounts for sweet potato, zucchini, ketchup, salt and frying oil were assumed — flag actual amounts to tighten. Easy upgrades if wanted later: breast mince, bake/spray-fry, whole-grain crumbs.",
+  "created": "2026-11-08",
+  "updated": "2026-11-08",
+  "serving_g": 180,
+  "meal_type": "Chicken",
+  "cooking_guide": [
+    "Grate the sweet potato and zucchini finely, then squeeze the zucchini in a towel to remove excess water — otherwise the mix gets too wet and the patties fall apart.",
+    "Fry the onion slowly until golden for sweetness, and let it cool before mixing so it doesn't start cooking the raw egg.",
+    "Mix just until combined — overworking ground meat makes patties dense and tough.",
+    "Don't skip the 1-hour rest in the fridge: the breadcrumbs hydrate and the mix firms up, so the patties hold their shape in the pan.",
+    "Wet your hands or the spoon slightly when shaping to stop sticking; flatten each to an even thickness so they cook through evenly.",
+    "Fry over MEDIUM heat, not high — the sweet potato and ketchup contain sugar and brown quickly, and you need time for the centre to cook through. Don't crowd the pan; flip once when the underside is golden and releases easily.",
+    "Drain briefly on paper towel. Check a thick one in the centre (no pink)."
+  ]
+}

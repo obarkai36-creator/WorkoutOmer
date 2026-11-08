@@ -1,0 +1,103 @@
+{
+  "id": "cheesy_salmon_broccoli_bake",
+  "name": "Cheesy salmon & broccoli egg bake",
+  "source": {
+    "type": "instagram",
+    "url": null,
+    "author": "Instagram (English, pasted text)",
+    "captured": "2026-11-07",
+    "notes": "Cubed fresh salmon and blanched broccoli in a dish, covered with an egg + cream custard, topped with halved cherry tomatoes and shredded mozzarella, baked 190°C 25–30 min. Analyzed as 4 servings; eggs taken as 5.5 (the post says 5–6), mozzarella as standard (not light), salmon as farmed Atlantic. Estimate."
+  },
+  "servings": 4,
+  "serving_desc": "≈250 g (batch ÷4)",
+  "ingredients": [
+    {"item": "fresh salmon, cubed", "qty": "250 g"},
+    {"item": "broccoli", "qty": "200 g"},
+    {"item": "cherry tomatoes, halved", "qty": "100 g"},
+    {"item": "shredded mozzarella", "qty": "150 g", "note": "the main fat/sodium lever"},
+    {"item": "eggs", "qty": "5–6"},
+    {"item": "heavy cream", "qty": "2 tbsp"},
+    {"item": "salt, black pepper, dried oregano", "qty": "to taste"}
+  ],
+  "steps": [
+    "Preheat to 190 °C and line a baking dish.",
+    "Boil the broccoli 3–4 min in salted water; drain well.",
+    "Spread broccoli and salmon cubes in the dish.",
+    "Whisk eggs, cream, salt, pepper and oregano; pour over.",
+    "Top with halved cherry tomatoes and the mozzarella.",
+    "Bake 25–30 min until set, salmon cooked through and the top golden. Cool slightly before slicing."
+  ],
+  "per_serving": {
+    "kcal": 397,
+    "protein_g": 31.9,
+    "carbs_g": 5.7,
+    "fat_g": 26.8,
+    "fiber_g": 1.6,
+    "micros": {
+      "omega3_epa_dha_mg": 1100,
+      "vitamin_d_iu": 300,
+      "choline_mg": 230,
+      "selenium_mcg": 40,
+      "calcium_mg": 300,
+      "folate_mcg_dfe": 85,
+      "vitamin_c_mg": 50,
+      "sodium_mg": 488
+    }
+  },
+  "batch_totals": {
+    "kcal": 1588,
+    "protein_g": 128,
+    "carbs_g": 23,
+    "fat_g": 107,
+    "fiber_g": 6.4,
+    "sodium_mg": 1951,
+    "note": "Whole bake (4 servings). Very low carb, high protein; fat is substantial but a big share is salmon's omega-3s. The full-fat mozzarella is the one place the fat is 'empty' — the obvious lever."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "A nutrient-dense bake: ~32 g protein per serving with a big dose of omega-3 EPA/DHA and vitamin D from the salmon (both sperm-priority micros), plus selenium from eggs + salmon and vitamin C from broccoli. Fat is high (~27 g), but much of it is the good kind; the 150 g of full-fat mozzarella is the avoidable part. Swap to light mozzarella / halve it and it's a 9.",
+      "flags": [
+        "~32 g protein, very low carb (~6 g)",
+        "~1.1 g omega-3 + ~300 IU vitamin D per serving (sperm micros)",
+        "high fat (~27 g) — salmon (good) + full-fat mozzarella (lever)",
+        "selenium, choline, vitamin C"
+      ],
+      "suggested_mods": [
+        "Use light mozzarella or halve it (~75 g) — saves ~45 kcal / ~4 g fat per serving",
+        "Skip the cream (milk or nothing) — eggs set fine on their own",
+        "Double the broccoli for more fibre and volume"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 9,
+      "verdict": "Close to ideal for her: salmon is low-mercury and a top DHA + vitamin D source, eggs bring choline, broccoli adds folate + vitamin C, mozzarella adds calcium — all fully baked. Just make sure the salmon and eggs are cooked through (set custard, opaque salmon).",
+      "prenatal_highlights": [
+        "DHA + vitamin D (salmon) — fetal brain development",
+        "choline (eggs); folate + vitamin C (broccoli); calcium (mozzarella)",
+        "low-mercury fish; fully baked"
+      ],
+      "safety_advisories": [
+        {"note": "Bake until the custard is fully set and the salmon is opaque throughout — no runny egg or undercooked fish in pregnancy.", "swap": "add a few minutes if the centre is soft"}
+      ],
+      "suggested_mods": [
+        "No changes needed — a strong prenatal dish"
+      ]
+    }
+  },
+  "tags": ["dinner", "lunch", "fish", "salmon", "omega-3", "eggs", "broccoli", "baked", "low-carb", "high-protein", "preconception-friendly", "instagram"],
+  "adopted": false,
+  "created": "2026-11-07",
+  "updated": "2026-11-07",
+  "serving_g": 250,
+  "meal_type": "Fish",
+  "cooking_guide": [
+    "Drain the blanched broccoli very well (even pat it dry) — wet broccoli makes the custard watery.",
+    "Cut the salmon into even ~2–3 cm cubes so it cooks at the same rate as the custard sets.",
+    "Season the egg mix properly — eggs need salt to taste of anything — but go lighter if using salty cheese.",
+    "Spread everything in a single even layer so the custard surrounds it rather than pooling.",
+    "Bake until the centre is set (no wobble) and a knife comes out clean; check at 25 min.",
+    "Rest 5 min before slicing so it holds together."
+  ]
+}
