@@ -307,6 +307,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 9 Nov — Incline Walk (time not given)
+  {
+    datetime: "2026-11-09T19:30", timeUnknown: true, note: "Incline Walk (treadmill, clock time not given) — 4.93 km in 63:55, avg pace 12:56 min/km (~4.6 km/h), 546 kcal per machine. Incline not shown: back-calculated with the ACSM walking equation from calories/speed at 80.9 kg bodyweight → ~7% average grade, ~350 m elevation gain (estimate, flagged). Longest incline walk logged.",
+    exercises: [
+      { name: "Incline Walk", distanceKm: 4.93, durationMin: 63.92, elevationGainM: 350 },
+    ],
+  },
   // 3 Nov — Stationary Bike, recumbent (05:38-06:18)
   {
     datetime: "2026-11-03T05:38", note: "Stationary Bike, \"lazy bike\" recumbent (hotel gym, ended 06:18) — 40:04 min, 7.90 mi (12.71 km), level 1, avg 11.8 mph / 70 rpm, 239 kcal per machine. Longest bike session logged.",

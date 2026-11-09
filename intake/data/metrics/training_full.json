@@ -1,6 +1,35 @@
 {
-  "now": 1794245197720,
+  "now": 1794254272504,
   "workouts": [
+    {
+      "datetime": "2026-11-09T19:30",
+      "timeUnknown": true,
+      "note": "Incline Walk (treadmill, clock time not given) — 4.93 km in 63:55, avg pace 12:56 min/km (~4.6 km/h), 546 kcal per machine. Incline not shown: back-calculated with the ACSM walking equation from calories/speed at 80.9 kg bodyweight → ~7% average grade, ~350 m elevation gain (estimate, flagged). Longest incline walk logged.",
+      "exercises": [
+        {
+          "name": "Incline Walk",
+          "distanceKm": 4.93,
+          "durationMin": 63.92,
+          "elevationGainM": 350,
+          "load": 575.28,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 575.28,
+            "quads": 115.056,
+            "calves": 115.056
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1794252600000,
+      "muscleLoad": {
+        "cardio": 575.28,
+        "quads": 115.056,
+        "calves": 115.056
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-11-03T05:38",
       "note": "Stationary Bike, \"lazy bike\" recumbent (hotel gym, ended 06:18) — 40:04 min, 7.90 mi (12.71 km), level 1, avg 11.8 mph / 70 rpm, 239 kcal per machine. Longest bike session logged.",
@@ -9344,7 +9373,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 2,
+      "pct": 3,
       "readyInHours": 0,
       "ready": true
     },
@@ -9376,7 +9405,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 0,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -9392,9 +9421,9 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 73,
+      "readyInHours": 26.4,
+      "ready": false
     }
   },
   "sections": {
@@ -9483,6 +9512,14 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
+          "pct": 3,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "calves",
+          "label": "Calves",
+          "section": "Legs",
           "pct": 2,
           "readyInHours": 0,
           "ready": true
@@ -9510,14 +9547,6 @@
           "pct": 0,
           "readyInHours": 0,
           "ready": true
-        },
-        {
-          "key": "calves",
-          "label": "Calves",
-          "section": "Legs",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
         }
       ]
     },
@@ -9538,16 +9567,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 73,
+      "readyInHours": 26.4,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 73,
+          "readyInHours": 26.4,
+          "ready": false
         }
       ]
     }
@@ -10888,8 +10917,8 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 461,
-        "sessions": 4,
+        "stress": 418,
+        "sessions": 3,
         "acwr": 0.81
       },
       {
@@ -10918,25 +10947,25 @@
       },
       {
         "label": "This wk",
-        "stress": 47,
-        "sessions": 1,
-        "acwr": 0.32
+        "stress": 123,
+        "sessions": 2,
+        "acwr": 0.64
       }
     ],
-    "acute": 15.7,
-    "chronic": 49.12,
-    "acwr": 0.32,
+    "acute": 34.6,
+    "chronic": 54.33,
+    "acwr": 0.64,
     "acwrZone": "detraining",
-    "sessions28": 12
+    "sessions28": 13
   },
   "recommendation": {
     "section": "Shoulders",
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-09T17:26:37.720Z",
+    "readyAt": "2026-11-09T19:57:52.504Z",
     "neverLogged": false,
-    "daysSince": 13.4,
+    "daysSince": 13.5,
     "suggestedExercises": [
       {
         "name": "Converging Shoulder Press",
@@ -11039,52 +11068,52 @@
       }
     ],
     "guidance": [
-      "Load ratio 0.32 has dipped — a normal, or even a slightly harder, session is fine."
+      "Load ratio 0.64 has dipped — a normal, or even a slightly harder, session is fine."
     ],
     "ranked": [
       {
         "section": "Shoulders",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 13.4
+        "daysSince": 13.5
       },
       {
         "section": "Back",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 10.4
+        "daysSince": 10.5
       },
       {
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 9.4
+        "daysSince": 9.5
       },
       {
         "section": "Arms",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 7.2
+        "daysSince": 7.3
       },
       {
         "section": "Chest",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 7.2
+        "daysSince": 7.3
       }
     ],
     "suggestedCount": 5,
     "totalAvailable": 9,
     "typicalSessionSize": 5,
-    "aerobicLast7": 1,
+    "aerobicLast7": 2,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 6.5
+    "daysSinceAerobic": 0
   },
   "alerts": [
     {
       "level": "low",
       "title": "Load dropped off",
-      "detail": "Load ratio 0.32 (<0.8). A normal training week will bring this back up."
+      "detail": "Load ratio 0.64 (<0.8). A normal training week will bring this back up."
     },
     {
       "level": "ok",
@@ -11094,26 +11123,25 @@
   ],
   "changes": [
     "You're below your PR on 13 lifts — closest wins first: Incline Hammer Curl (66% of best), Incline DB Curl (67% of best), Angled Leg Press (77% of best). Add a rep or a set before adding weight.",
-    "Hamstrings lag quads (2.51×). Keep RDLs/leg curls heavy and add a set.",
-    "Only 1/2 aerobic sessions this week — add an easy run or row."
+    "Hamstrings lag quads (2.51×). Keep RDLs/leg curls heavy and add a set."
   ],
   "timing": {
     "avgGap": 2.8,
     "longestGap": 35.7,
-    "perWeek": 3,
+    "perWeek": 3.3,
     "avgHour": 13,
     "todPref": "afternoon",
     "dow": [
       7,
-      15,
+      16,
       15,
       7,
       6,
       19,
       21
     ],
-    "daysSinceLast": 6.5,
-    "total": 90
+    "daysSinceLast": 0,
+    "total": 91
   },
   "relstrength": {
     "bodyweightKg": 80.9,
@@ -11162,15 +11190,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 44,
-    "km7": 12.7,
-    "km28": 20.6,
-    "totalKm": 178.1,
+    "count": 45,
+    "km7": 17.6,
+    "km28": 25.5,
+    "totalKm": 183,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 3.152635719905586,
-    "avgPace": 10.107277941803323,
-    "paceTrend": -4.94,
+    "avgPace": 10.175331258459895,
+    "paceTrend": -2.67,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -11179,8 +11207,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 6.5,
+    "daysSinceLast": 0,
     "recent": [
+      {
+        "t": 1794252600000,
+        "name": "Incline Walk",
+        "distanceKm": 4.93,
+        "durationMin": 63.92,
+        "avgHr": null,
+        "pace": 12.965517241379311
+      },
       {
         "t": 1793684280000,
         "name": "Stationary Bike",
@@ -11212,14 +11248,6 @@
         "durationMin": 15,
         "avgHr": null,
         "pace": 15.789473684210527
-      },
-      {
-        "t": 1791620100000,
-        "name": "Outdoor Walk",
-        "distanceKm": 4,
-        "durationMin": 50,
-        "avgHr": null,
-        "pace": 12.5
       }
     ]
   },
