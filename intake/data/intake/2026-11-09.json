@@ -69,23 +69,93 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "08:30",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 245,
+      "protein_g": 27.5,
+      "carbs_g": 8.5,
+      "fat_g": 10.75,
+      "fiber_g": 0,
+      "note": "same generic reference (cottage_cheese_generic)."
+    },
+    {
+      "time": "08:30",
+      "name": "Honey",
+      "category": "food",
+      "qty": "5 g",
+      "kcal": 15.2,
+      "protein_g": 0,
+      "carbs_g": 4.1,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "08:30",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "20 pieces",
+      "kcal": 53,
+      "protein_g": 2.74,
+      "carbs_g": 11.74,
+      "fat_g": 0.6,
+      "fiber_g": 3.6,
+      "note": "standard reference. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."
+    },
+    {
+      "time": "10:00",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "10:45",
+      "name": "Danone PRO Coconut Protein Yogurt",
+      "category": "food",
+      "qty": "1 cup (~200 g)",
+      "kcal": 130,
+      "protein_g": 20,
+      "carbs_g": 8,
+      "fat_g": 1.5,
+      "fiber_g": 0,
+      "note": "estimated from the Danone PRO line (same 20g-protein cup as the verified strawberry variant); coconut flavour assumed slightly higher fat — not label-verified, flagged."
+    },
+    {
+      "time": "11:00",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "zinc_mg": 4.8,
+    "selenium_mcg": 30,
+    "folate_mcg_dfe": 151,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 44,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 8.8
   },
   "assumptions": [
     "Sleep 00:20-05:50, 5.5h.",
-    "Pill, Mayven, Rhinolast (AM) + Steronase (day 3/30) by 06:15. 07:30 espresso."
+    "Pill, Mayven, Rhinolast (AM) + Steronase (day 3/30) by 06:15. 07:30 espresso.",
+    "08:30 250g cottage cheese + 5g honey + 20 cherry tomatoes. 10:00 espresso (2 shots). 10:45 Danone PRO coconut protein yogurt (estimated, not label-verified). 11:00 omega-3."
   ],
   "status_note": "In progress. Slept 5.5h (short, 2nd short night running)."
 }
