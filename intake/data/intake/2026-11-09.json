@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "day_number": 135,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "00:20",
     "sleep_end": "05:50",
@@ -305,6 +305,18 @@
       "fiber_g": 4.8,
       "time_approx": true,
       "note": "same generic cherry-tomato soup estimate as 2026-11-08 (~40kcal/100ml). Credits ~20mg lycopene, ~40mg vitamin C, ~40mcg folate."
+    },
+    {
+      "time": "21:00",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
     }
   ],
   "workout_today": true,
@@ -328,8 +340,10 @@
     "15:50 espresso (4 shots) + Danone PRO coconut yogurt (estimate).",
     "18:30 Rhinolast (PM) + essential-5. Dinner: 150g boiled beef dumplings (generic estimate) + 400ml cherry tomato soup.",
     "18:00 masturbation — logged in ejaculation.json.",
-    "Workout: Incline Walk (treadmill, clock time not given) — 4.93 km in 63:55, avg pace 12:56 min/km (~4.6 km/h), 546 kcal per machine. Incline not shown: back-calculated with the ACSM walking equation from calories/speed at 80.9 kg bodyweight → ~7% average grade, ~350 m elevation gain (estimate, flagged). Longest incline walk logged."
+    "Workout: Incline Walk (treadmill, clock time not given) — 4.93 km in 63:55, avg pace 12:56 min/km (~4.6 km/h), 546 kcal per machine. Incline not shown: back-calculated with the ACSM walking equation from calories/speed at 80.9 kg bodyweight → ~7% average grade, ~350 m elevation gain (estimate, flagged). Longest incline walk logged.",
+    "Creatine 5g (time not given, placeholder 21:00). EOD: ~8,000 steps."
   ],
-  "status_note": "In progress. Slept 5.5h (short, 2nd short night running).",
-  "workout_summary": "Incline Walk (treadmill, clock time not given) — 4.93 km in 63:55, avg pace 12:56 min/km (~4.6 km/h), 546 kcal per machine. Incline not shown: back-calculated with the ACSM walking equation from calories/speed at 80.9 kg bodyweight → ~7% average grade, ~350 m elevation gain (estimate, flagged). Longest incline walk logged."
+  "status_note": "Day complete. Slept 5.5h. 64-min incline walk (~7% est.). ~1,922 kcal / 189g protein — protein target hit, fiber 21g. All supplements/meds taken (Malarone 9/12, Steronase 3/30). 4 caffeine shots. ~8,000 steps.",
+  "workout_summary": "Incline Walk (treadmill, clock time not given) — 4.93 km in 63:55, avg pace 12:56 min/km (~4.6 km/h), 546 kcal per machine. Incline not shown: back-calculated with the ACSM walking equation from calories/speed at 80.9 kg bodyweight → ~7% average grade, ~350 m elevation gain (estimate, flagged). Longest incline walk logged.",
+  "steps": 8000
 }
