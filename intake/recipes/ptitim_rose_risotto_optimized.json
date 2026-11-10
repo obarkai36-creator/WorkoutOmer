@@ -1,0 +1,173 @@
+{
+  "id": "ptitim_rose_risotto_optimized",
+  "name": "Ptitim rosé risotto — optimized (ריזוטו פתיתים רוזה, גרסה ממוטבת)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Optimized version of ptitim_rose_risotto_cottage",
+    "captured": "2026-11-10",
+    "notes": "Optimized version of ptitim_rose_risotto_cottage, adopted per user request (the original stays as reference). Changes: whole-wheat/spelt ptitim cut to 400 g, cottage 3% instead of 5%, yellow cheese 150→100 g, olive oil halved, plain passata instead of jarred sauce, NO added salt, plus 250 g mushrooms, 200 g zucchini and 200 g spinach, finished with lemon zest + basil. 8 servings. Vegetarian version. Estimate."
+  },
+  "servings": 8,
+  "serving_desc": "≈290 g (batch ÷8)",
+  "ingredients": [
+    {
+      "item": "whole-wheat (or spelt) ptitim",
+      "qty": "400 g",
+      "note": "down from 500 g white ptitim — more fibre, better protein ratio"
+    },
+    {
+      "item": "cottage cheese 3%",
+      "qty": "1 kg (4 tubs)",
+      "note": "3% instead of 5% — same protein, less fat"
+    },
+    {
+      "item": "yellow cheese 9%, grated",
+      "qty": "100 g",
+      "note": "down from 150 g"
+    },
+    {
+      "item": "olive oil",
+      "qty": "1 tbsp",
+      "note": "halved"
+    },
+    {
+      "item": "tomato passata (plain, unsweetened)",
+      "qty": "350 g",
+      "note": "instead of a sweetened jarred sauce"
+    },
+    {
+      "item": "garlic, crushed",
+      "qty": "4 cloves"
+    },
+    {
+      "item": "mushrooms, sliced",
+      "qty": "250 g"
+    },
+    {
+      "item": "zucchini, diced",
+      "qty": "1 medium (~200 g)"
+    },
+    {
+      "item": "fresh spinach",
+      "qty": "200 g",
+      "note": "folded in at the end"
+    },
+    {
+      "item": "sweet paprika",
+      "qty": "1½ tsp"
+    },
+    {
+      "item": "black pepper",
+      "qty": "¼ tsp"
+    },
+    {
+      "item": "chili flakes",
+      "qty": "½ tsp"
+    },
+    {
+      "item": "salt",
+      "qty": "none — taste at the end",
+      "note": "cottage, cheese and parmesan already bring plenty"
+    },
+    {
+      "item": "lemon zest + fresh basil",
+      "qty": "to finish",
+      "note": "flavour instead of salt"
+    },
+    {
+      "item": "water",
+      "qty": "2 cups to start, up to 1 more as needed"
+    },
+    {
+      "item": "parmesan / grana padano, grated",
+      "qty": "~20 g total, to serve"
+    }
+  ],
+  "steps": [
+    "In a wide pot, sauté the mushrooms and zucchini in the olive oil until browned and their liquid has evaporated; add the garlic for 30 sec.",
+    "Add the ptitim, cottage, yellow cheese, passata, paprika, pepper and chili flakes. Pour in 2 cups water and stir gently down to the bottom.",
+    "Cover and bring to a boil on high, stirring gently now and then; lower to medium-low and cook covered ~8–10 min (whole-wheat ptitim may need a couple of minutes more).",
+    "Uncover, stir and add ¼ cup water at a time if needed; cook uncovered ~4–5 min, stirring, until tender and creamy.",
+    "Off the heat, fold in the spinach until wilted, add lemon zest and basil, cover 2 min. Taste — add salt only if really needed. Serve with a little parmesan."
+  ],
+  "per_serving": {
+    "kcal": 361,
+    "protein_g": 27.2,
+    "carbs_g": 44.5,
+    "fat_g": 8.7,
+    "fiber_g": 6.9,
+    "micros": {
+      "calcium_mg": 200,
+      "folate_mcg_dfe": 95,
+      "iron_mg": 3.2,
+      "lycopene_mg": 5,
+      "sodium_mg": 564
+    }
+  },
+  "batch_totals": {
+    "kcal": 2891,
+    "protein_g": 217,
+    "carbs_g": 356,
+    "fat_g": 70,
+    "fiber_g": 55,
+    "sodium_mg": 4514,
+    "note": "Whole pot (8 servings), optimized. Vs the original (per serving ~454 kcal / 28.4 g protein / 2.7 g fibre / ~1,173 mg sodium): ~93 kcal less, ~5 g less fat, ~2.5x the fibre, about half the sodium, near-identical protein, plus real folate/iron from spinach."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "Keeps the 'protein-packed creamy pasta' idea (~27 g protein per serving) while fixing its weak spots: ~361 kcal instead of ~454, ~6.9 g fibre instead of ~2.7 (whole-wheat ptitim + three vegetables), and sodium roughly halved by dropping the added salt. ~7.5 g protein per 100 kcal, plus lycopene from the tomato.",
+      "flags": [
+        "~27 g protein / 361 kcal (~7.5 g/100 kcal)",
+        "~6.9 g fibre — whole-wheat ptitim + mushrooms, zucchini, spinach",
+        "sodium ~564 mg (was ~1,173)",
+        "lycopene (tomato)"
+      ],
+      "suggested_mods": [
+        "Want more protein? Use the chicken version"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 8,
+      "verdict": "A much better fit for her than the original: spinach adds folate and iron (with vitamin C from tomato and lemon helping absorption), cottage brings protein and calcium, and sodium is halved. Fully cooked, pasteurized cheeses, no safety flags.",
+      "prenatal_highlights": [
+        "folate + iron from spinach (with vitamin C from tomato/lemon for absorption)",
+        "protein + calcium (cottage, cheeses)",
+        "high fibre; fully cooked; pasteurized cheeses"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "No changes needed"
+      ]
+    }
+  },
+  "tags": [
+    "dinner",
+    "ptitim",
+    "pasta",
+    "cottage",
+    "one-pot",
+    "high-protein",
+    "high-fiber",
+    "high-folate",
+    "whole-grain",
+    "optimized",
+    "vegetarian"
+  ],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-11-10 (optimized, vegetarian). Per serving (of 8, ~290 g): ~361 kcal, 27.2 g protein, 44.5 g carb, 8.7 g fat, 6.9 g fibre, ~564 mg sodium. him 8 / her 8. Standing spec: 400 g whole-wheat ptitim, 1 kg cottage 3%, 100 g yellow 9%, 1 tbsp olive oil, passata, mushrooms + zucchini + spinach, no added salt, lemon + basil.",
+  "created": "2026-11-10",
+  "updated": "2026-11-10",
+  "serving_g": 290,
+  "meal_type": "Other",
+  "cooking_guide": [
+    "Brown the mushrooms and zucchini first and let their water cook off — this builds flavour (so you need less salt) and stops the risotto going watery.",
+    "Use a WIDE pot and stir right down to the base after adding the water; cottage-based sauces catch easily.",
+    "Whole-wheat ptitim absorbs a bit more liquid and takes a little longer — add water ¼ cup at a time and taste for tenderness.",
+    "Fold the spinach in off the heat; the residual heat wilts it in a minute and keeps its colour and folate.",
+    "Finish with lemon zest and fresh basil, then taste before adding any salt — the brightness makes salt mostly unnecessary.",
+    "Take it off slightly looser than you want; it thickens on standing. Reheat with a splash of water."
+  ]
+}
