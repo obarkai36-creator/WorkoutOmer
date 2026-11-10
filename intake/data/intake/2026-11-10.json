@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "day_number": 136,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "23:35",
     "sleep_end": "07:40",
@@ -278,6 +278,28 @@
       "fiber_g": 0.6,
       "time_approx": true,
       "note": "generic steamed gyoza (~45kcal each), filling not given — flagged."
+    },
+    {
+      "time": "21:30",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (PM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "21:30",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": true,
@@ -301,8 +323,10 @@
     "12:00 essential-5. 13:00 double espresso (4 shots).",
     "Workout: Shoulders day (14:00) — Dumbbell Shoulder Press 20kg each×3×12, as suggested (new PR). Front Raises 18kg DB×4×11, as suggested (new PR). Farmer's Hold 24kg each×4×40s (ties best). Cable Face Pull 36kg×3×10 (new PR — +7kg over the 29kg×3×10 best; est. 1RM 48 vs 38.7). Shoulder Shrugs 26kg each×3×11, as suggested (new PR). 4 new PRs.",
     "15:00 Danone PRO strawberry yogurt + 20g Catalina Crunch. 15:30 Malarone (day 10/12).",
-    "Dinner (time not given, placeholder 19:30): restaurant ramen with chicken + duck breast, extra veg (estimated ~750kcal) + 2 steamed gyoza."
+    "Dinner (time not given, placeholder 19:30): restaurant ramen with chicken + duck breast, extra veg (estimated ~750kcal) + 2 steamed gyoza.",
+    "21:30 Rhinolast (PM) + creatine 5g. EOD: 3,000 steps."
   ],
-  "status_note": "In progress. Slept 8.1h.",
-  "workout_summary": "Shoulders day (14:00) — Dumbbell Shoulder Press 20kg each×3×12, as suggested (new PR). Front Raises 18kg DB×4×11, as suggested (new PR). Farmer's Hold 24kg each×4×40s (ties best). Cable Face Pull 36kg×3×10 (new PR — +7kg over the 29kg×3×10 best; est. 1RM 48 vs 38.7). Shoulder Shrugs 26kg each×3×11, as suggested (new PR). 4 new PRs."
+  "status_note": "Day complete. Slept 8.1h. Weigh-in 80.45kg / 26.7% BF (lowest yet). Shoulders day, 4 PRs. ~1,978 kcal / 173g protein / 32g fiber — protein and fiber targets hit. All supplements/meds taken (Malarone 10/12, Steronase 4/30). 4 caffeine shots. 3,000 steps.",
+  "workout_summary": "Shoulders day (14:00) — Dumbbell Shoulder Press 20kg each×3×12, as suggested (new PR). Front Raises 18kg DB×4×11, as suggested (new PR). Farmer's Hold 24kg each×4×40s (ties best). Cable Face Pull 36kg×3×10 (new PR — +7kg over the 29kg×3×10 best; est. 1RM 48 vs 38.7). Shoulder Shrugs 26kg each×3×11, as suggested (new PR). 4 new PRs.",
+  "steps": 3000
 }
