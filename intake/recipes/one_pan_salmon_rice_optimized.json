@@ -1,0 +1,103 @@
+{
+  "id": "one_pan_salmon_rice_optimized",
+  "name": "One-pan salmon rice — optimized (אורז עם סלמון במחבת, גרסה מתוקנת)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Optimized version of one_pan_salmon_rice",
+    "captured": "2026-11-10",
+    "notes": "Corrected version of one_pan_salmon_rice, adopted per user request (only this version goes into rotation; the original stays as reference). Changes: the rice-to-salmon ratio is flipped — rice cut from 2 cups to 1 cup (~185 g dry) with water cut to 1½ cups, and salmon raised to ~550 g; low-sodium soy; no added salt; sesame oil halved to ½ tbsp. Same method. 4 servings. White rice kept so the method/timing stay identical (brown rice is an optional swap, but needs more water and ~35–40 min). Estimate."
+  },
+  "servings": 4,
+  "serving_desc": "≈265 g cooked (batch ÷4)",
+  "ingredients": [
+    {"item": "rice (white, rinsed)", "qty": "1 cup (~185 g dry)", "note": "halved from 2 cups"},
+    {"item": "salmon, skin on", "qty": "~550 g", "note": "raised from 300–400 g"},
+    {"item": "water", "qty": "1½ cups", "note": "halved with the rice"},
+    {"item": "spring onion, chopped", "qty": "lots (~60 g)"},
+    {"item": "oil (for searing)", "qty": "~1 tbsp"},
+    {"item": "low-sodium soy sauce", "qty": "3 tbsp"},
+    {"item": "garlic, crushed", "qty": "1 tsp"},
+    {"item": "salt", "qty": "none", "note": "the soy covers it — taste at the end"},
+    {"item": "sesame oil", "qty": "½ tbsp", "note": "halved"},
+    {"item": "sesame seeds", "qty": "~1 tbsp"}
+  ],
+  "steps": [
+    "Sear the salmon skin-side down in a little oil until the skin is crispy, flip and sear the other side; remove when almost cooked.",
+    "Toast the rinsed rice in the same pan 1–2 min.",
+    "Add 1½ cups water, the low-sodium soy and garlic (no salt) and stir.",
+    "Lay the salmon on the rice, cover, bring to a boil on medium, then cook on low 12–15 min.",
+    "Turn off the heat and leave covered 10 more min.",
+    "Flake the salmon, add plenty of spring onion, the sesame oil and sesame seeds, and mix. Keep the crispy skin on top or remove it."
+  ],
+  "per_serving": {
+    "kcal": 526,
+    "protein_g": 33,
+    "carbs_g": 39.6,
+    "fat_g": 25.1,
+    "fiber_g": 1.3,
+    "micros": {
+      "omega3_epa_dha_mg": 2500,
+      "vitamin_d_iu": 700,
+      "selenium_mcg": 55,
+      "vitamin_b12_mcg": 4,
+      "sodium_mg": 420
+    }
+  },
+  "batch_totals": {
+    "kcal": 2102,
+    "protein_g": 132,
+    "carbs_g": 158,
+    "fat_g": 100,
+    "fiber_g": 5.2,
+    "sodium_mg": 1682,
+    "note": "Whole pan (4 servings), optimized. Vs the original (per serving ~605 kcal / 26 g protein / 77 g carb / ~830 mg sodium): ~80 kcal less, +7 g protein, carbs roughly halved, sodium halved, and about 1.5x the omega-3 and vitamin D. The extra fat is almost all salmon fat (omega-3), not added oil."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "Flipping the ratio turns this from a rice dish with some salmon into a salmon dish with some rice: ~33 g protein and only ~40 g carbs for ~526 kcal, with roughly 2.5 g omega-3 and ~700 IU vitamin D per serving — two of your top sperm-priority micros in big amounts. Sodium is halved (low-sodium soy, no added salt). Fat is still ~25 g, but nearly all of it is salmon's own omega-3-rich fat. Fibre is low (white rice), so add a green side.",
+      "flags": [
+        "~33 g protein / ~40 g carbs per serving (was 26 g / 77 g)",
+        "~2.5 g omega-3 + ~700 IU vitamin D per serving (sperm micros)",
+        "sodium ~420 mg (was ~830)",
+        "fat ~25 g — mostly salmon omega-3",
+        "low fibre — white rice"
+      ],
+      "suggested_mods": [
+        "Serve with a green vegetable side (broccoli, edamame) for fibre",
+        "Optional: brown rice for fibre (needs more water and ~35–40 min cook)"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 9,
+      "verdict": "Excellent for her: more low-mercury salmon per serving means more DHA and vitamin D — both key for fetal brain development — plus selenium and B12, with lower sodium than the original. Fully cooked by steaming on the rice; confirm the salmon is opaque throughout. Pair with greens for folate.",
+      "prenatal_highlights": [
+        "high DHA/omega-3 + vitamin D (salmon) — fetal brain development",
+        "low-mercury fish; selenium + B12; lower sodium; fully cooked"
+      ],
+      "safety_advisories": [
+        {"note": "Salmon finishes cooking on the rice — check it's fully opaque and flakes before serving.", "swap": "a few extra minutes covered if the centre is translucent"}
+      ],
+      "suggested_mods": [
+        "Serve with a green vegetable side for folate + vitamin C"
+      ]
+    }
+  },
+  "tags": ["dinner", "fish", "salmon", "omega-3", "rice", "one-pan", "low-sodium", "preconception-friendly", "optimized"],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-11-10 (corrected/optimized version only — the original one_pan_salmon_rice stays as reference). Per serving (of 4, ~265 g): ~526 kcal, 33 g protein, 39.6 g carb, 25.1 g fat, ~2.5 g omega-3, ~420 mg sodium. him 8 / her 9. Standing spec: 1 cup rice + 1½ cups water, ~550 g salmon, low-sodium soy, no added salt, ½ tbsp sesame oil. Serve with greens.",
+  "created": "2026-11-10",
+  "updated": "2026-11-10",
+  "serving_g": 265,
+  "meal_type": "Fish",
+  "cooking_guide": [
+    "Pat the salmon skin completely dry and start it skin-down in a hot, lightly oiled pan; press gently for the first 30 sec so it stays flat and crisps evenly. Don't move it until it releases on its own.",
+    "Pull the salmon while the centre is still slightly translucent — it finishes cooking as it steams on top of the rice.",
+    "Rinse the rice until the water runs mostly clear and drain well, so the grains stay separate.",
+    "With half the rice, keep the water at 1½ cups — don't use the original 3 cups or it'll be soupy.",
+    "Once it boils, drop to the lowest heat and don't lift the lid; then rest 10 min covered off the heat.",
+    "Add spring onion, sesame oil and sesame only at the end. Taste before adding any salt — with soy you usually won't need it."
+  ]
+}
