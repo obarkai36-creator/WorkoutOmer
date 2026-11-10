@@ -1,5 +1,5 @@
 {
-  "now": 1794314809298,
+  "now": 1794316204082,
   "workouts": [
     {
       "datetime": "2026-11-10T14:00",
@@ -9568,7 +9568,7 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 41,
-      "readyInHours": 9.6,
+      "readyInHours": 9.2,
       "ready": false
     }
   },
@@ -9714,14 +9714,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 41,
-      "readyInHours": 9.6,
+      "readyInHours": 9.2,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 41,
-          "readyInHours": 9.6,
+          "readyInHours": 9.2,
           "ready": false
         }
       ]
@@ -11109,7 +11109,7 @@
     "fatigue": 9,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-10T12:46:49.298Z",
+    "readyAt": "2026-11-10T13:10:04.082Z",
     "neverLogged": false,
     "daysSince": 11.2,
     "suggestedExercises": [
@@ -11220,19 +11220,19 @@
         "section": "Chest",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 8
+        "daysSince": 8.1
       },
       {
         "section": "Arms",
         "fatigue": 19,
         "readyInHours": 13.9,
-        "daysSince": 8
+        "daysSince": 8.1
       },
       {
         "section": "Shoulders",
         "fatigue": 92,
         "readyInHours": 44.7,
-        "daysSince": -0.1
+        "daysSince": 0
       }
     ],
     "suggestedCount": 5,
@@ -11274,7 +11274,7 @@
       19,
       21
     ],
-    "daysSinceLast": -0.1,
+    "daysSinceLast": 0,
     "total": 92
   },
   "relstrength": {
