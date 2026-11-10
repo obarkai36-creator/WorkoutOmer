@@ -130,6 +130,18 @@
       "note": "standard reference. Credits ~2.2mg lycopene, ~11mg vitamin C, ~12.75mcg folate DFE."
     },
     {
+      "time": "12:00",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving."
+    },
+    {
       "time": "13:00",
       "name": "Lunch — Angel PRO Pita",
       "category": "food",
@@ -193,18 +205,29 @@
       "fiber_g": 6,
       "time_approx": true,
       "note": "same generic cherry-tomato soup estimate (~40kcal/100ml). Credits ~25mg lycopene, ~50mg vitamin C, ~50mcg folate."
+    },
+    {
+      "time": "13:00",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "1 double",
+      "kcal": 6,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 5.8,
-    "selenium_mcg": 15,
+    "zinc_mg": 25.8,
+    "selenium_mcg": 115,
     "folate_mcg_dfe": 186.75,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 61,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1061,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 27.2
   },
   "assumptions": [
@@ -212,7 +235,8 @@
     "Sprays (Rhinolast AM + Steronase day 4/30), pill, double espresso by 08:15. 08:30 Mayven. 09:00 Danone PRO strawberry yogurt + 20g Catalina Crunch. 09:15 omega-3.",
     "07:45 weigh-in (Eufy): 80.45kg, 26.7% body fat, 21.4kg fat mass, 30.7kg skeletal muscle, visceral 11 — saved to weight.json.",
     "10:00 1 yellow cheese slice + 5 cherry tomatoes.",
-    "Lunch (time not given, placeholder 13:00): 2 Angel PRO pita, 3 yellow cheese slices, 30g Simfonia, 100g spelt-pasta pashtida (library), 500ml cherry tomato soup."
+    "Lunch (time not given, placeholder 13:00): 2 Angel PRO pita, 3 yellow cheese slices, 30g Simfonia, 100g spelt-pasta pashtida (library), 500ml cherry tomato soup.",
+    "12:00 essential-5. 13:00 double espresso (4 shots)."
   ],
   "status_note": "In progress. Slept 8.1h."
 }
