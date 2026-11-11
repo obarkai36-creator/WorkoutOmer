@@ -273,29 +273,29 @@
     },
     {
       "time": "19:30",
-      "name": "Dinner — chicken Caesar salad, double (classic, 2 eggs)",
+      "name": "Dinner — chicken Caesar salad, double chicken (classic, 2 eggs)",
       "category": "food",
-      "qty": "~150g chicken breast + 2 eggs + romaine + ~15g parmesan + croutons + ~45g Caesar dressing",
-      "kcal": 809,
-      "protein_g": 70.3,
-      "carbs_g": 25.2,
-      "fat_g": 47.2,
-      "fiber_g": 4,
+      "qty": "~150g chicken breast + 2 eggs + single-portion romaine, ~10g parmesan, croutons, ~30g Caesar dressing",
+      "kcal": 668,
+      "protein_g": 66.4,
+      "carbs_g": 15.8,
+      "fat_g": 36.3,
+      "fiber_g": 2.6,
       "time_approx": true,
-      "note": "restaurant estimate: chicken ~150g (per user), 2 eggs, classic creamy Caesar dressing (~45g assumed) + croutons + parmesan — dressing amount is the main uncertainty, flagged. Credits ~40mcg selenium from chicken + ~30mcg from eggs, ~3mg zinc, ~1.5mg vitamin E, ~80mcg folate."
+      "note": "restaurant estimate: 'double' = chicken only (~150g, per user); rest a standard single portion — ~30g classic dressing assumed, flagged."
     },
     {
       "time": "19:30",
       "name": "Dinner — arancini",
       "category": "food",
-      "qty": "1 piece (~120 g)",
-      "kcal": 300,
-      "protein_g": 8,
-      "carbs_g": 35,
-      "fat_g": 14,
-      "fiber_g": 1.5,
+      "qty": "1 small piece (~60 g)",
+      "kcal": 150,
+      "protein_g": 4,
+      "carbs_g": 17.5,
+      "fat_g": 7,
+      "fiber_g": 0.8,
       "time_approx": true,
-      "note": "generic fried risotto ball (~250kcal/100g), filling not given — flagged."
+      "note": "generic fried risotto ball (~250kcal/100g), small size per user (~60g assumed)."
     }
   ],
   "workout_today": false,
@@ -319,7 +319,8 @@
     "14:30 espresso (4 shots).",
     "15:00 essential-5. 16:00 250g cottage cheese + 5g honey + 15 cherry tomatoes.",
     "17:00 2 yellow cheese slices 9% + 15 cherry tomatoes.",
-    "Dinner (restaurant, time not given, placeholder 19:30): 80g beef carpaccio w/ parmesan & balsamic, double chicken Caesar (~150g chicken, 2 eggs, classic dressing), 1 arancini — all estimates, flagged."
+    "Dinner (restaurant, time not given, placeholder 19:30): 80g beef carpaccio w/ parmesan & balsamic, double chicken Caesar (~150g chicken, 2 eggs, classic dressing), 1 arancini — all estimates, flagged.",
+    "Correction: Caesar 'double' = chicken only (rest single portion); arancini small (~60g)."
   ],
   "status_note": "In progress. Slept 7.2h."
 }
