@@ -275,14 +275,14 @@
       "time": "19:30",
       "name": "Dinner — chicken Caesar salad, double chicken (classic, 2 eggs)",
       "category": "food",
-      "qty": "~150g chicken breast + 2 eggs + single-portion romaine, ~10g parmesan, croutons, ~30g Caesar dressing",
-      "kcal": 668,
-      "protein_g": 66.4,
-      "carbs_g": 15.8,
-      "fat_g": 36.3,
-      "fiber_g": 2.6,
+      "qty": "~150g chicken breast + 2 eggs + single-portion romaine, ~10g parmesan, ~30g Caesar dressing, no croutons",
+      "kcal": 608,
+      "protein_g": 64.6,
+      "carbs_g": 5.8,
+      "fat_g": 34.5,
+      "fiber_g": 2,
       "time_approx": true,
-      "note": "restaurant estimate: 'double' = chicken only (~150g, per user); rest a standard single portion — ~30g classic dressing assumed, flagged."
+      "note": "restaurant estimate: 'double' = chicken only (~150g, per user); rest a standard single portion, no croutons — ~30g classic dressing assumed, flagged."
     },
     {
       "time": "19:30",
@@ -320,7 +320,8 @@
     "15:00 essential-5. 16:00 250g cottage cheese + 5g honey + 15 cherry tomatoes.",
     "17:00 2 yellow cheese slices 9% + 15 cherry tomatoes.",
     "Dinner (restaurant, time not given, placeholder 19:30): 80g beef carpaccio w/ parmesan & balsamic, double chicken Caesar (~150g chicken, 2 eggs, classic dressing), 1 arancini — all estimates, flagged.",
-    "Correction: Caesar 'double' = chicken only (rest single portion); arancini small (~60g)."
+    "Correction: Caesar 'double' = chicken only (rest single portion); arancini small (~60g).",
+    "Correction: no croutons in the Caesar."
   ],
   "status_note": "In progress. Slept 7.2h."
 }
