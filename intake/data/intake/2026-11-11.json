@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "day_number": 137,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "22:05",
     "sleep_end": "05:15",
@@ -296,18 +296,64 @@
       "fiber_g": 0.8,
       "time_approx": true,
       "note": "generic fried risotto ball (~250kcal/100g), small size per user (~60g assumed)."
+    },
+    {
+      "time": "21:00",
+      "name": "Malarone (atovaquone/proguanil)",
+      "category": "medication",
+      "qty": "1 tablet",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "day 11 of 12."
+    },
+    {
+      "time": "21:05",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — reported again at 21:00-21:15 (a dose was already logged at 15:00) — logged as reported, possible double dose; flagged."
+    },
+    {
+      "time": "21:10",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (PM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "21:15",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 36.8,
-    "selenium_mcg": 249,
+    "zinc_mg": 56.8,
+    "selenium_mcg": 349,
     "folate_mcg_dfe": 544,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1206,
-    "vitamin_d_iu": 2080,
-    "vitamin_e_mg": 137.4,
+    "vitamin_c_mg": 2206,
+    "vitamin_d_iu": 4080,
+    "vitamin_e_mg": 271.4,
     "lycopene_mg": 33.0
   },
   "assumptions": [
@@ -321,7 +367,9 @@
     "17:00 2 yellow cheese slices 9% + 15 cherry tomatoes.",
     "Dinner (restaurant, time not given, placeholder 19:30): 80g beef carpaccio w/ parmesan & balsamic, double chicken Caesar (~150g chicken, 2 eggs, classic dressing), 1 arancini — all estimates, flagged.",
     "Correction: Caesar 'double' = chicken only (rest single portion); arancini small (~60g).",
-    "Correction: no croutons in the Caesar."
+    "Correction: no croutons in the Caesar.",
+    "21:00-21:15 Malarone (day 11/12), essential-5 (second dose today — flagged), Rhinolast (PM), creatine 5g. EOD: 6,000 steps, retainers worn."
   ],
-  "status_note": "In progress. Slept 7.2h."
+  "status_note": "Day complete. Slept 7.2h. Rest day. ~2,538 kcal / 217g protein / 120g fat — over target via restaurant dinner. All supplements/meds taken (Malarone 11/12, Steronase 5/30); essential-5 logged twice. 4 caffeine shots. 6,000 steps. Retainers worn.",
+  "steps": 6000
 }
