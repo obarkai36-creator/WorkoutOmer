@@ -1,5 +1,5 @@
 {
-  "now": 1794394142173,
+  "now": 1794400482671,
   "workouts": [
     {
       "datetime": "2026-11-10T14:00",
@@ -9487,8 +9487,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 55,
-      "readyInHours": 23.9,
+      "pct": 52,
+      "readyInHours": 22.1,
       "ready": false
     },
     "biceps": {
@@ -9511,7 +9511,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 24,
+      "pct": 22,
       "readyInHours": 0,
       "ready": true
     },
@@ -9567,7 +9567,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "ready": true
     }
@@ -9605,29 +9605,29 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 55,
-      "readyInHours": 23.9,
+      "pct": 52,
+      "readyInHours": 22.1,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 55,
-          "readyInHours": 23.9,
+          "pct": 52,
+          "readyInHours": 22.1,
           "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 10,
+      "pct": 9,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 24,
+          "pct": 22,
           "readyInHours": 0,
           "ready": true
         },
@@ -9713,14 +9713,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 20,
+          "pct": 19,
           "readyInHours": 0,
           "ready": true
         }
@@ -11109,9 +11109,9 @@
     "fatigue": 6,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-11T10:49:02.173Z",
+    "readyAt": "2026-11-11T12:34:42.671Z",
     "neverLogged": false,
-    "daysSince": 12.1,
+    "daysSince": 12.2,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -11208,13 +11208,13 @@
         "section": "Back",
         "fatigue": 6,
         "readyInHours": 0,
-        "daysSince": 12.1
+        "daysSince": 12.2
       },
       {
         "section": "Legs",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 11.1
+        "daysSince": 11.2
       },
       {
         "section": "Chest",
@@ -11224,14 +11224,14 @@
       },
       {
         "section": "Arms",
-        "fatigue": 10,
+        "fatigue": 9,
         "readyInHours": 0,
         "daysSince": 9
       },
       {
         "section": "Shoulders",
-        "fatigue": 55,
-        "readyInHours": 23.9,
+        "fatigue": 52,
+        "readyInHours": 22.1,
         "daysSince": 0.9
       }
     ],
@@ -11240,7 +11240,7 @@
     "typicalSessionSize": 5,
     "aerobicLast7": 1,
     "aerobicTarget": 2,
-    "daysSinceAerobic": 1.6
+    "daysSinceAerobic": 1.7
   },
   "alerts": [
     {
@@ -11336,7 +11336,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.6,
+    "daysSinceLast": 1.7,
     "recent": [
       {
         "t": 1794252600000,
