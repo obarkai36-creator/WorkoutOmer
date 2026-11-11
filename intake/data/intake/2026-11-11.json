@@ -186,19 +186,66 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "15:00",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving."
+    },
+    {
+      "time": "16:00",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 245,
+      "protein_g": 27.5,
+      "carbs_g": 8.5,
+      "fat_g": 10.75,
+      "fiber_g": 0,
+      "note": "same generic reference."
+    },
+    {
+      "time": "16:00",
+      "name": "Honey",
+      "category": "food",
+      "qty": "5 g",
+      "kcal": 15.2,
+      "protein_g": 0,
+      "carbs_g": 4.1,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "16:00",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "15 pieces",
+      "kcal": 39.75,
+      "protein_g": 2.05,
+      "carbs_g": 8.8,
+      "fat_g": 0.45,
+      "fiber_g": 2.7,
+      "note": "standard reference. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38mcg folate DFE."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 6.8,
-    "selenium_mcg": 37,
-    "folate_mcg_dfe": 388,
+    "zinc_mg": 27.8,
+    "selenium_mcg": 159,
+    "folate_mcg_dfe": 426,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 130,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 1.9,
-    "lycopene_mg": 19.8
+    "vitamin_c_mg": 1163,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 135.9,
+    "lycopene_mg": 26.4
   },
   "assumptions": [
     "Sleep 22:05-05:15, 7.2h.",
@@ -206,7 +253,8 @@
     "07:00 espresso. 07:30 250g cottage cheese + 5g honey + 25 cherry tomatoes. 08:15 espresso (2 shots).",
     "Lunch (time not given, placeholder 12:00): 600g cheese & spinach pashtida (library, no-pasta version) + salad (3 cucumbers, 20 cherry tomatoes, ½ red onion, 1 tbsp olive oil). 12:40 espresso (3 shots). 12:45 1 Nutella biscuit.",
     "12:45 omega-3.",
-    "14:30 espresso (4 shots)."
+    "14:30 espresso (4 shots).",
+    "15:00 essential-5. 16:00 250g cottage cheese + 5g honey + 15 cherry tomatoes."
   ],
   "status_note": "In progress. Slept 7.2h."
 }
