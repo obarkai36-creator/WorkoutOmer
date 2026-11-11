@@ -58,23 +58,81 @@
       "fat_g": 0,
       "fiber_g": 0,
       "time_approx": true
+    },
+    {
+      "time": "07:00",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "07:30",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 245,
+      "protein_g": 27.5,
+      "carbs_g": 8.5,
+      "fat_g": 10.75,
+      "fiber_g": 0,
+      "note": "same generic reference (cottage_cheese_generic)."
+    },
+    {
+      "time": "07:30",
+      "name": "Honey",
+      "category": "food",
+      "qty": "5 g",
+      "kcal": 15.2,
+      "protein_g": 0,
+      "carbs_g": 4.1,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "07:30",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "25 pieces",
+      "kcal": 66.25,
+      "protein_g": 3.42,
+      "carbs_g": 14.67,
+      "fat_g": 0.75,
+      "fiber_g": 4.5,
+      "note": "standard reference. Credits ~11mg lycopene, ~55mg vitamin C, ~64mcg folate DFE."
+    },
+    {
+      "time": "08:15",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "zinc_mg": 3.8,
+    "selenium_mcg": 22,
+    "folate_mcg_dfe": 164,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 55,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 11
   },
   "assumptions": [
     "Sleep 22:05-05:15, 7.2h.",
-    "Sprays (Rhinolast AM + Steronase day 5/30), pill, Mayven by 05:30."
+    "Sprays (Rhinolast AM + Steronase day 5/30), pill, Mayven by 05:30.",
+    "07:00 espresso. 07:30 250g cottage cheese + 5g honey + 25 cherry tomatoes. 08:15 espresso (2 shots)."
   ],
   "status_note": "In progress. Slept 7.2h."
 }
