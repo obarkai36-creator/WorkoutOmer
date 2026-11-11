@@ -115,24 +115,74 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — cheese & spinach pashtida (recipe library)",
+      "category": "food",
+      "qty": "600 g",
+      "kcal": 401,
+      "protein_g": 39.5,
+      "carbs_g": 15.2,
+      "fat_g": 20.8,
+      "fiber_g": 2.2,
+      "note": "recipe library cheese_pashtida_spinach (127kcal/12.5g protein per 190g slice), scaled to 600g. Credits ~139mcg folate DFE.",
+      "time_approx": true
+    },
+    {
+      "time": "12:00",
+      "name": "Lunch — salad (3 cucumbers, 20 cherry tomatoes, ½ red onion, 1 tbsp olive oil)",
+      "category": "food",
+      "qty": "~900g cucumber + 20 cherry tomatoes + ~85g red onion + 13.5g olive oil",
+      "kcal": 341,
+      "protein_g": 9.5,
+      "carbs_g": 52.1,
+      "fat_g": 15.1,
+      "fiber_g": 9.5,
+      "note": "standard per-item references (cucumber ~300g each assumed). Credits ~8.8mg lycopene, ~75mg vitamin C, ~85mcg folate DFE, ~1.9mg vitamin E.",
+      "time_approx": true
+    },
+    {
+      "time": "12:40",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "12:45",
+      "name": "Nutella Biscuits (mini bite)",
+      "category": "food",
+      "qty": "1 biscuit (~14 g)",
+      "kcal": 69,
+      "protein_g": 0.9,
+      "carbs_g": 8.3,
+      "fat_g": 3.5,
+      "fiber_g": 0.4,
+      "note": "standard Nutella Biscuits reference (~69kcal per biscuit); 'mini bite' read as 1 biscuit — flagged."
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "micros_sperm_priority": {
-    "zinc_mg": 3.8,
-    "selenium_mcg": 22,
-    "folate_mcg_dfe": 164,
+    "zinc_mg": 6.8,
+    "selenium_mcg": 37,
+    "folate_mcg_dfe": 388,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 55,
+    "vitamin_c_mg": 130,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 11
+    "vitamin_e_mg": 1.9,
+    "lycopene_mg": 19.8
   },
   "assumptions": [
     "Sleep 22:05-05:15, 7.2h.",
     "Sprays (Rhinolast AM + Steronase day 5/30), pill, Mayven by 05:30.",
-    "07:00 espresso. 07:30 250g cottage cheese + 5g honey + 25 cherry tomatoes. 08:15 espresso (2 shots)."
+    "07:00 espresso. 07:30 250g cottage cheese + 5g honey + 25 cherry tomatoes. 08:15 espresso (2 shots).",
+    "Lunch (time not given, placeholder 12:00): 600g cheese & spinach pashtida (library, no-pasta version) + salad (3 cucumbers, 20 cherry tomatoes, ½ red onion, 1 tbsp olive oil). 12:40 espresso (3 shots). 12:45 1 Nutella biscuit."
   ],
   "status_note": "In progress. Slept 7.2h."
 }
