@@ -244,19 +244,58 @@
       "fat_g": 14,
       "fiber_g": 1,
       "note": "estimated from photo: small cup, pistachio scoop over chocolate gelato (~225kcal/100g) — flagged. Credits ~1mg vitamin E."
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner (anniversary, shared) — veal sirloin schnitzel, mashed potato, aioli + mustard",
+      "category": "food",
+      "qty": "½ of dish (dish ≈ 220g breaded veal + ~150g mash + ~25g aioli)",
+      "kcal": 450,
+      "protein_g": 24,
+      "carbs_g": 22,
+      "fat_g": 28.5,
+      "fiber_g": 1.2,
+      "time_approx": true,
+      "note": "photo estimate, full dish ~900kcal/48p/44c/57f; 50% eaten assumed (shared) — flagged."
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner (anniversary, shared) — roast beef with aioli, mustard, rocket/tomato/onion",
+      "category": "food",
+      "qty": "½ of plate (plate ≈ 180g roast beef + ~40g sauces)",
+      "kcal": 265,
+      "protein_g": 25.5,
+      "carbs_g": 2.5,
+      "fat_g": 15.5,
+      "fiber_g": 1,
+      "time_approx": true,
+      "note": "photo estimate, full plate ~530kcal/51p/5c/31f; 50% eaten assumed (shared) — flagged. Credits ~4mg zinc."
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner (anniversary, shared) — intias (amberjack) crudo in tomato soup with crème fraîche",
+      "category": "food",
+      "qty": "½ of dish (dish ≈ 100g fish + tomato soup + crème fraîche)",
+      "kcal": 170,
+      "protein_g": 12.5,
+      "carbs_g": 5.5,
+      "fat_g": 8,
+      "fiber_g": 1,
+      "time_approx": true,
+      "note": "photo estimate, full dish ~340kcal/25p/11c/16f; 50% eaten assumed (shared) — flagged. Credits ~200mg omega-3, ~2mg lycopene, ~20mcg selenium."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 24.8,
-    "selenium_mcg": 128,
+    "zinc_mg": 29.8,
+    "selenium_mcg": 163,
     "folate_mcg_dfe": 140,
-    "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1005,
+    "omega3_epa_dha_mg": 1200,
+    "vitamin_c_mg": 1013,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 136,
-    "lycopene_mg": 0
+    "lycopene_mg": 2
   },
   "assumptions": [
     "Sleep 22:30-05:15, 6.75h.",
@@ -267,7 +306,8 @@
     "Lunch (time not given, placeholder 13:00): Caesar salad no croutons (dressing ~30g assumed), 120g chicken schnitzel, 1 bite of hamburger.",
     "13:30 omega-3 + essential-5.",
     "15:40 partnered ejaculation — logged in ejaculation.json. Planned tomorrow (11-13): Cardio — walk/run intervals (planned_workout).",
-    "15:55 espresso (5 shots). 16:30 small Otello gelato cup, pistachio + chocolate (~120g estimated from photo)."
+    "15:55 espresso (5 shots). 16:30 small Otello gelato cup, pistachio + chocolate (~120g estimated from photo).",
+    "Anniversary dinner (restaurant, time not given, placeholder 19:30): veal sirloin schnitzel + mash, roast beef plate, intias crudo in tomato soup — photo estimates, assumed shared (50% each), flagged pending confirmation."
   ],
   "status_note": "In progress. Slept 6.75h. Last Malarone dose due today (12/12).",
   "planned_workout": {
