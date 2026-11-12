@@ -65,10 +65,56 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "09:00",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "09:10",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "1 double",
+      "kcal": 6,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "09:20",
+      "name": "Hamantasch (oznei haman cookie)",
+      "category": "food",
+      "qty": "20 g",
+      "kcal": 86,
+      "protein_g": 1.2,
+      "carbs_g": 12,
+      "fat_g": 3.6,
+      "fiber_g": 0.4,
+      "note": "generic filled shortbread cookie (~430kcal/100g), filling not given — flagged."
+    },
+    {
+      "time": "09:30",
+      "name": "Malarone (atovaquone/proguanil)",
+      "category": "medication",
+      "qty": "1 tablet",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "day 12 of 12 — course complete."
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
@@ -81,7 +127,8 @@
   },
   "assumptions": [
     "Sleep 22:30-05:15, 6.75h.",
-    "05:30 sprays (Rhinolast AM + Steronase day 6/30) + pill. 06:15 double espresso. 06:20 Mayven."
+    "05:30 sprays (Rhinolast AM + Steronase day 6/30) + pill. 06:15 double espresso. 06:20 Mayven.",
+    "09:00 creatine 5g. 09:10 double espresso (4 shots). 09:20 20g hamantasch. 09:30 Malarone — final dose (12/12), course complete."
   ],
   "status_note": "In progress. Slept 6.75h. Last Malarone dose due today (12/12)."
 }
