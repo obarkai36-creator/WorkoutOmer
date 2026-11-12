@@ -242,7 +242,44 @@
     "08:00 protein yogurt (Danone PRO strawberry assumed) + 20g Catalina Crunch.",
     "10:00 second protein yogurt + 20g Catalina Crunch.",
     "Lunch (time not given, placeholder 13:00): Caesar salad no croutons (dressing ~30g assumed), 120g chicken schnitzel, 1 bite of hamburger.",
-    "13:30 omega-3 + essential-5."
+    "13:30 omega-3 + essential-5.",
+    "15:40 partnered ejaculation — logged in ejaculation.json. Planned tomorrow (11-13): Cardio — walk/run intervals (planned_workout)."
   ],
-  "status_note": "In progress. Slept 6.75h. Last Malarone dose due today (12/12)."
+  "status_note": "In progress. Slept 6.75h. Last Malarone dose due today (12/12).",
+  "planned_workout": {
+    "section": "Cardio (2026-11-13) — walk/run intervals, treadmill ~45 min",
+    "note": "Run pace taken from recent runs (~6:55/km ≈ 8.7 km/h, HR ~145-155). Runs RPE 6-7 (short phrases only), walks RPE 3-4. Progress next time to 3 min run / 2 min walk, then 4:2.",
+    "exercises": [
+      {
+        "name": "Warm-up — brisk walk",
+        "last": "Incline walk 11-09: 4.6 km/h avg",
+        "target": "8 min @ 5.5 km/h, 2% incline",
+        "reasoning": "Raise HR gradually before running."
+      },
+      {
+        "name": "Intervals — run",
+        "last": "Run 10-24: 2.01 km in 13:57 (~6:56/km)",
+        "target": "8 × 2 min @ 8.5–9 km/h, 1% incline",
+        "reasoning": "Current comfortable run pace; total 16 min running."
+      },
+      {
+        "name": "Intervals — walk recovery",
+        "last": "—",
+        "target": "8 × 2 min @ 5.5–6 km/h, 3% incline",
+        "reasoning": "Active recovery keeps HR in zone 2-3 between runs."
+      },
+      {
+        "name": "Cool-down — easy walk",
+        "last": "—",
+        "target": "5 min @ 4.5–5 km/h, flat",
+        "reasoning": "Bring HR down before stopping."
+      },
+      {
+        "name": "Core (rotation)",
+        "last": "—",
+        "target": "Plank 3×40s + Hanging Knee Raise 3×8-10",
+        "reasoning": "PPL core rotation — every session gets 2 core exercises."
+      }
+    ]
+  }
 }
