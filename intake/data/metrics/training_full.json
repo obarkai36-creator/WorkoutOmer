@@ -1,5 +1,5 @@
 {
-  "now": 1794489088436,
+  "now": 1794490008755,
   "workouts": [
     {
       "datetime": "2026-11-10T14:00",
@@ -11110,7 +11110,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-12T13:11:28.436Z",
+    "readyAt": "2026-11-12T13:26:48.755Z",
     "neverLogged": false,
     "daysSince": 12.2,
     "suggestedExercises": [
@@ -11210,6 +11210,21 @@
         }
       },
       {
+        "name": "Seated Calf Raise",
+        "region": "Calves — soleus (bent knee)",
+        "alternatives": [],
+        "optional": false,
+        "best": "",
+        "best1RM": 0,
+        "iso": false,
+        "isNew": true,
+        "target": {
+          "status": "new",
+          "text": "Not yet attempted",
+          "note": "No logged sessions yet — pick a comfortable starting weight/reps."
+        }
+      },
+      {
         "name": "Dumbbell Sumo Squat",
         "region": "Adductors / glute med (alternate)",
         "alternatives": [
@@ -11224,6 +11239,21 @@
           "status": "progress",
           "text": "+1 rep (aim 6×9)",
           "note": "Add 1 rep per set at the same weight — aim for 6×9 from 24kg × 6×8."
+        }
+      },
+      {
+        "name": "Back Extension (45°)",
+        "region": "Lower back — spinal erectors",
+        "alternatives": [],
+        "optional": true,
+        "best": "",
+        "best1RM": 0,
+        "iso": false,
+        "isNew": true,
+        "target": {
+          "status": "new",
+          "text": "Not yet attempted",
+          "note": "No logged sessions yet — pick a comfortable starting weight/reps."
         }
       },
       {
@@ -11242,17 +11272,18 @@
         "core": true
       },
       {
-        "name": "VKR",
+        "name": "Hanging Knee Raise",
         "region": "Core (rotating)",
         "alternatives": [],
         "optional": false,
-        "best": "BW × 4×10",
-        "best1RM": 108.3,
+        "best": "",
+        "best1RM": 0,
         "iso": false,
+        "isNew": true,
         "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×11)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×11 from BW × 4×10."
+          "status": "new",
+          "text": "Not yet attempted",
+          "note": "No logged sessions yet — pick a comfortable starting weight/reps."
         },
         "core": true
       }
@@ -11287,9 +11318,9 @@
         "daysSince": 2
       }
     ],
-    "suggestedCount": 9,
-    "totalAvailable": 9,
-    "typicalSessionSize": 7,
+    "suggestedCount": 10,
+    "totalAvailable": 11,
+    "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
     "daysSinceAerobic": 2.7

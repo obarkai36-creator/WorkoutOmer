@@ -14,8 +14,11 @@
   least-recently-performed option; core pairs rotate via
   `PROGRAM.coreRotation`. Past sessions are mapped to P/P/L by exercise.
   `docs/app.js` shows each row's region + alternatives (`?v=20261112-1`).
-  ATHLETE.weeklyTarget is now 3 strength + 1 aerobic. Known catalog gaps:
-  soleus (no seated/bent-knee calf raise) and limited core variety. New
+  ATHLETE.weeklyTarget is now 3 strength + 1 aerobic. Gaps closed same day
+  (user: "add exercises... longer sessions if needed"): added Seated Calf
+  Raise, Back Extension (45°), Prone Y-Raise, Cable External Rotation, Hanging
+  Knee Raise, Cable Crunch, Pallof Press, Side Plank, Dead Bug; sessions now
+  target 8 strength exercises (~75-90 min) + 2 rotating core. New
   exercises the user logs should also be added to the right PROGRAM slot.
 
 - "Regular salad" / "regular dressing" (per user 2026-11-07): the recurring

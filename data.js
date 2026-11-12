@@ -200,6 +200,17 @@ const EXERCISE_LIBRARY = {
   "VKR to Sides":           { kind: "strength", bodyweight: true, muscles: { core: 1.0 } },
   "Stretching / Mobility (rehab)": { kind: "mobility", iso: true, muscles: {} },
 
+  // Added 2026-11-12 to close PPL coverage gaps (catalog-ready, not yet logged)
+  "Seated Calf Raise":      { kind: "strength", muscles: { calves: 1.0 } }, // bent knee -> soleus
+  "Back Extension (45°)":   { kind: "strength", muscles: { back: 0.6, glutes: 0.6, hamstrings: 0.5 } }, // spinal erectors
+  "Prone Y-Raise":          { kind: "strength", muscles: { back: 0.7, shoulders: 0.6 } }, // lower/mid traps
+  "Cable External Rotation":{ kind: "strength", muscles: { shoulders: 1.0 } }, // rotator cuff (infraspinatus/teres minor)
+  "Hanging Knee Raise":     { kind: "strength", bodyweight: true, muscles: { core: 1.0 } }, // lower abs / hip flexion
+  "Cable Crunch":           { kind: "strength", muscles: { core: 1.0 } }, // loaded spinal flexion (rectus)
+  "Pallof Press":           { kind: "strength", muscles: { core: 1.0 } }, // anti-rotation (obliques)
+  "Side Plank":             { kind: "strength", iso: true, bodyweight: true, muscles: { core: 1.0 } }, // lateral (obliques/QL)
+  "Dead Bug":               { kind: "strength", bodyweight: true, muscles: { core: 1.0 } }, // anti-extension / deep core
+
   // Cardio
   "Outdoor Run":            { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.3, calves: 0.3 } },
   "Long Run":               { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.3, calves: 0.3 } },
@@ -235,14 +246,16 @@ const EXERCISE_LIBRARY = {
  *    via hip extension; leg curl = hamstrings via knee flexion (both needed);
  *    hip thrust = glute max; abduction = glute med; adduction = adductors;
  *    straight-knee calf raise = gastrocnemius.
- * Known coverage gaps with the current catalog: soleus (needs a bent-knee /
- * seated calf raise) and core variety (only Plank / VKR / VKR to Sides). */
+ * Gaps closed 2026-11-12 by adding Seated Calf Raise (soleus), Back Extension
+ * (erectors), Prone Y-Raise (lower traps), Cable External Rotation (rotator
+ * cuff) and five core movements covering flexion, anti-extension,
+ * anti-rotation and lateral flexion. */
 const PROGRAM = {
   name: "Push / Pull / Legs + Cardio",
   adopted: "2026-11-12",
   sessionsPerWeek: 4,
-  targetExercises: 7, // strength exercises per lifting session (60-75 min), core extra
-  coreRotation: [["Plank", "VKR"], ["VKR to Sides"], ["VKR", "VKR to Sides"], ["Plank"]],
+  targetExercises: 8, // strength exercises per lifting session (~75-90 min, extended 2026-11-12 per user), core extra
+  coreRotation: [["Plank", "Hanging Knee Raise"], ["Pallof Press", "VKR"], ["Cable Crunch", "Side Plank"], ["VKR to Sides", "Dead Bug"]], // flexion / anti-extension / anti-rotation / lateral, 2 per session
   days: {
     Push: { slots: [
       { region: "Chest — upper (clavicular head)", options: ["Incline Bench Press", "Incline Smith Machine Press", "Incline Dumbbell Bench Press"] },
@@ -263,7 +276,9 @@ const PROGRAM = {
       { region: "Biceps — long head (stretched)", options: ["Incline DB Curl", "Incline Hammer Curl"] },
       { region: "Biceps — short head", options: ["Preacher Curl", "EZ Bar Curl", "Biceps Curl Machine", "Cable Curl", "Low Pulley Biceps Curl", "Half Curl"] },
       { region: "Brachialis / forearms", options: ["Hammer Curl", "Forearm Twists"] },
+      { region: "Lower / mid traps", options: ["Prone Y-Raise"] },
       { region: "Lats — stretch (pullover)", options: ["Dumbbell Pullover"], optional: true },
+      { region: "Rotator cuff (external rotation)", options: ["Cable External Rotation"], optional: true },
       { region: "Upper traps", options: ["Shoulder Shrugs"], optional: true },
       { region: "Grip", options: ["Dead Hang", "Farmer's Hold"], optional: true },
     ] },
@@ -274,7 +289,9 @@ const PROGRAM = {
       { region: "Hamstrings — knee flexion", options: ["Leg Curls"] },
       { region: "Glutes — max", options: ["Hip Thrust", "Glute Extension", "Glute Bridge"] },
       { region: "Calves — gastrocnemius", options: ["Calf Raises Machine", "Dumbbell Calf Raise", "Standing Calf Raises (Frame)"] },
+      { region: "Calves — soleus (bent knee)", options: ["Seated Calf Raise"] },
       { region: "Adductors / glute med (alternate)", options: ["Inner Thigh", "Outer Thigh", "Dumbbell Sumo Squat"] },
+      { region: "Lower back — spinal erectors", options: ["Back Extension (45°)"], optional: true },
     ] },
     Cardio: { cardio: true, options: ["Incline Walk", "Stationary Bike", "Outdoor Run"], note: "40-60 min zone 2 (conversational pace); incline walk or bike preferred." },
   },
