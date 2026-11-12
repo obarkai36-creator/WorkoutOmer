@@ -438,6 +438,8 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
     };
   }
 
+  if (data.PROGRAM) return programRecommendation(data, workouts, sectionFat, now, bal, trends);
+
   const muscles = data.MUSCLES;
   // Trainable sections = those with at least one strength exercise in the snapshot.
   // Core isn't suggested as a standalone session — it still fully tracks
@@ -676,6 +678,131 @@ function recommendSession(data, workouts, sectionFat, now, bal, trends, sleep, b
     daysSince: pick.daysSince,
     suggestedExercises, guidance, ranked,
     suggestedCount, totalAvailable, typicalSessionSize,
+    aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
+    daysSinceAerobic: lastAerobic ? round((now - lastAerobic.t) / DAY, 1) : null,
+  };
+}
+
+/* ---- program-driven recommendation (PROGRAM in data.js) -------------------
+ * Picks the next Push / Pull / Legs / Cardio day and builds its exercise list
+ * slot-by-slot so every region of every muscle is covered. Within a slot the
+ * least-recently-performed option is chosen, so variants rotate week to week
+ * (e.g. incline barbell -> incline Smith -> incline DB for the upper chest).
+ * Day readiness follows the day's primary section (Push: Chest, Pull: Back,
+ * Legs: Legs; Cardio is always ready); among ready days the one trained
+ * longest ago wins. 1-2 core exercises rotate onto every session. */
+const PROGRAM_PRIMARY_SECTION = { Push: "Chest", Pull: "Back", Legs: "Legs" };
+function programRecommendation(data, workouts, sectionFat, now, bal, trends) {
+  const P = data.PROGRAM;
+  const dayNames = Object.keys(P.days);
+  const exDay = {};
+  for (const d of dayNames) {
+    for (const slot of P.days[d].slots || []) for (const o of slot.options) if (!exDay[o]) exDay[o] = d;
+    for (const o of P.days[d].options || []) if (!exDay[o]) exDay[o] = d;
+  }
+  // Older sessions map onto P/P/L by exercise: chest/triceps/front+side delts
+  // -> Push, back/biceps/rear delts/traps/grip -> Pull, legs -> Legs.
+  const lastDone = {};
+  const lastEx = {};
+  for (const w of workouts) {
+    for (const ex of w.exercises) if (lastEx[ex.name] == null) lastEx[ex.name] = w.t;
+    if (w.isAerobic && lastDone.Cardio == null) lastDone.Cardio = w.t;
+    const counts = {};
+    let n = 0;
+    for (const ex of w.exercises) {
+      if (ex.kind !== "strength") continue;
+      const d = exDay[ex.name];
+      if (!d || d === "Cardio") continue;
+      counts[d] = (counts[d] || 0) + 1;
+      n++;
+    }
+    for (const [d, c] of Object.entries(counts))
+      if (lastDone[d] == null && (c >= 2 || c / n >= 0.4)) lastDone[d] = w.t;
+  }
+
+  const READY_TOLERANCE_HOURS = 6;
+  const ranked = dayNames.map((d) => {
+    const sec = PROGRAM_PRIMARY_SECTION[d];
+    const f = sec && sectionFat[sec];
+    return {
+      section: d,
+      fatigue: f ? f.pct : 0,
+      readyInHours: f ? f.readyInHours : 0,
+      daysSince: lastDone[d] != null ? round((now - lastDone[d]) / DAY, 1) : null,
+    };
+  }).sort((a, b) => {
+    const ar = a.readyInHours > READY_TOLERANCE_HOURS, br = b.readyInHours > READY_TOLERANCE_HOURS;
+    if (ar !== br) return ar ? 1 : -1;
+    if (ar) return a.readyInHours - b.readyInHours;
+    return (b.daysSince == null ? 999 : b.daysSince) - (a.daysSince == null ? 999 : a.daysSince);
+  });
+  const pick = ranked[0];
+  const day = P.days[pick.section];
+  const holdLoad = !!(trends && trends.acwrZone === "danger");
+  const snap = Object.fromEntries(data.SNAPSHOT.map((e) => [e.name, e]));
+
+  const entry = (name, region, alternatives, optional) => {
+    const e = snap[name];
+    const lib = data.EXERCISE_LIBRARY[name] || {};
+    if (!e) return {
+      name, region, alternatives, optional: !!optional, best: "", best1RM: 0, iso: !!lib.iso, isNew: true,
+      target: { status: "new", text: "Not yet attempted", note: "No logged sessions yet — pick a comfortable starting weight/reps." },
+    };
+    const B = recStats(e.best, e.iso);
+    return { name, region, alternatives, optional: !!optional, best: e.best?.text || "", best1RM: round(B.top1RM, 1), iso: !!e.iso, target: nextLiftTarget(e, holdLoad) };
+  };
+  const pickOption = (options) => {
+    const usable = options.filter((o) => !SUGGESTION_EXCLUDE.has(o));
+    const pool = usable.length ? usable : options;
+    return [...pool].sort((a, b) => (lastEx[a] ?? -Infinity) - (lastEx[b] ?? -Infinity))[0];
+  };
+
+  const guidance = [];
+  let suggestedExercises = [];
+  if (day.cardio) {
+    const o = pickOption(day.options);
+    suggestedExercises.push({ name: o, region: "Cardio", alternatives: day.options.filter((x) => x !== o), best: "", best1RM: 0, iso: false,
+      target: { status: "cardio", text: day.note || "Zone 2 cardio" } });
+  } else {
+    for (const slot of day.slots) {
+      const o = pickOption(slot.options);
+      suggestedExercises.push(entry(o, slot.region, slot.options.filter((x) => x !== o), slot.optional));
+    }
+  }
+  // Core: rotate the pairs in PROGRAM.coreRotation by sessions since adoption.
+  const since = Date.parse(P.adopted + "T00:00:00");
+  const sessionsSince = workouts.filter((w) => w.t >= since).length;
+  const core = P.coreRotation[sessionsSince % P.coreRotation.length];
+  for (const c of core) suggestedExercises.push({ ...entry(c, "Core (rotating)", [], false), core: true });
+
+  if (pick.section === "Push" && bal && bal.pushPull > 1.3)
+    guidance.push(`Push is ahead of pull ${bal.pushPull}× — keep presses to the listed sets and don't add extra pressing volume today.`);
+  if (pick.section === "Pull" && bal && bal.pushPull > 1.3)
+    guidance.push(`Push is ahead of pull ${bal.pushPull}× — today's pull day helps; include the optional pullover/shrug slots if time allows.`);
+  if (pick.section === "Legs" && bal && bal.quadHam > 2.5)
+    guidance.push(`Quads are outpacing hamstrings ${bal.quadHam}× — do the RDL and leg curl slots first.`);
+  if (trends && trends.acwrZone === "danger")
+    guidance.push(`Load ratio ${trends.acwr} is in the danger zone — keep weight/sets flat this session, no PR attempts.`);
+  else if (trends && trends.acwrZone === "caution")
+    guidance.push(`Load ratio ${trends.acwr} is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR.`);
+  guidance.push(day.cardio ? "Cardio day of the 4-day Push / Pull / Legs / Cardio week." : "Each row is one muscle region; the listed exercise is this week's rotation pick — alternatives rotate in on later sessions. Optional rows fill the session if time allows.");
+
+  const strength = suggestedExercises.filter((e) => !e.core && !e.optional).length;
+  const aerobicLast7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
+  const lastAerobic = workouts.find((w) => w.isAerobic);
+  return {
+    section: pick.section,
+    program: P.name,
+    fatigue: pick.fatigue,
+    restHours: round(pick.readyInHours, 1),
+    readyNow: pick.readyInHours < 1,
+    readyAt: new Date(now + pick.readyInHours * HOUR),
+    neverLogged: pick.daysSince == null,
+    daysSince: pick.daysSince,
+    suggestedExercises, guidance, ranked,
+    suggestedCount: day.cardio ? suggestedExercises.length : Math.min(P.targetExercises, strength) + core.length,
+    totalAvailable: suggestedExercises.length,
+    typicalSessionSize: day.cardio ? 1 : P.targetExercises,
     aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
     daysSinceAerobic: lastAerobic ? round((now - lastAerobic.t) / DAY, 1) : null,
   };

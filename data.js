@@ -18,7 +18,7 @@ const ATHLETE = {
   name: "Omer",
   bodyweightKg: 81.00, // most recent weigh-in (see BODYWEIGHT log)
   units: { weight: "kg", distance: "km" },
-  weeklyTarget: { strengthSessions: 5, aerobicSessions: 2 },
+  weeklyTarget: { strengthSessions: 3, aerobicSessions: 1 }, // PPL + 1 cardio (2026-11-12)
 };
 
 /* ---- Bodyweight log (newest first) ----------------------------------------
@@ -207,6 +207,77 @@ const EXERCISE_LIBRARY = {
   "Incline Walk":           { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.2, calves: 0.2 } },
   "Outdoor Walk":           { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.2, calves: 0.2 } },
   "Stationary Bike":        { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.4 } },
+};
+
+/* ---- PROGRAM — Push / Pull / Legs + Cardio (adopted 2026-11-12) -----------
+ * 4 sessions/week (each day once), 60-75 min, 1-2 alternating core exercises
+ * appended to every session; arms folded into Push (triceps) / Pull (biceps,
+ * forearms). Each day is a list of SLOTS — one anatomical region per slot —
+ * with the existing exercises that train it ("options"). The engine rotates
+ * through a slot's options (least-recently-performed first) so every region
+ * of every muscle gets hit over successive weeks. `optional` slots fill the
+ * session up to its target exercise count when time allows.
+ * Region rationale (EMG / hypertrophy literature summary):
+ *  - Chest: incline press biases the clavicular (upper) head; flat press the
+ *    sternal (mid); decline/dips the costal (lower) fibres; flys load the pec
+ *    in the lengthened position.
+ *  - Delts: overhead press = anterior (front raises redundant once pressing);
+ *    lateral raises = lateral head (the only real side-delt driver); rear
+ *    delt fly / face pull = posterior (pull day).
+ *  - Triceps: overhead extensions stretch the long head (it crosses the
+ *    shoulder); pushdowns/machine bias the lateral + medial heads.
+ *  - Back: vertical pulls = lat width; horizontal rows = mid-back thickness
+ *    (rhomboids/mid traps); pullover = lats in the stretched position; shrugs
+ *    = upper traps.
+ *  - Biceps: incline curls stretch the long head; preacher/EZ bias the short
+ *    head; hammer curls hit brachialis/brachioradialis.
+ *  - Legs: squat-pattern = quads; extensions = rectus femoris; RDL = hamstrings
+ *    via hip extension; leg curl = hamstrings via knee flexion (both needed);
+ *    hip thrust = glute max; abduction = glute med; adduction = adductors;
+ *    straight-knee calf raise = gastrocnemius.
+ * Known coverage gaps with the current catalog: soleus (needs a bent-knee /
+ * seated calf raise) and core variety (only Plank / VKR / VKR to Sides). */
+const PROGRAM = {
+  name: "Push / Pull / Legs + Cardio",
+  adopted: "2026-11-12",
+  sessionsPerWeek: 4,
+  targetExercises: 7, // strength exercises per lifting session (60-75 min), core extra
+  coreRotation: [["Plank", "VKR"], ["VKR to Sides"], ["VKR", "VKR to Sides"], ["Plank"]],
+  days: {
+    Push: { slots: [
+      { region: "Chest — upper (clavicular head)", options: ["Incline Bench Press", "Incline Smith Machine Press", "Incline Dumbbell Bench Press"] },
+      { region: "Chest — mid (sternal head)", options: ["Bench Press", "Dumbbell Bench Press", "Chest Press Machine"] },
+      { region: "Chest — stretch / adduction", options: ["Incline Pec Fly", "Pec Fly Machine", "Dumbbell Pec Fly"] },
+      { region: "Front delts (overhead press)", options: ["Dumbbell Shoulder Press", "Converging Shoulder Press"] },
+      { region: "Side delts", options: ["Lateral Raises", "Seated Lateral Raises"] },
+      { region: "Triceps — long head (overhead)", options: ["Overhead DB Triceps Extension", "Single-Hand DB Triceps Extension", "Flat DB Triceps Extension"] },
+      { region: "Triceps — lateral/medial heads", options: ["Rope Cable Extension", "Triceps Extension Machine"] },
+      { region: "Chest — lower (costal fibres)", options: ["Decline Bench Press", "Seated Dips", "Narrow Push-Ups"], optional: true },
+      { region: "Front delts (isolation)", options: ["Front Raises"], optional: true },
+    ] },
+    Pull: { slots: [
+      { region: "Lats — width (vertical pull)", options: ["Lat Pulldown (Wide Grip)", "Lat Pulldown (Triangle)"] },
+      { region: "Mid back — thickness (horizontal row)", options: ["Diverging Seated Row", "Low Row", "Row Machine"] },
+      { region: "Upper back — chest-supported row", options: ["Reverse Incline DB Row"] },
+      { region: "Rear delts", options: ["Rear Delt Machine", "Cable Face Pull"] },
+      { region: "Biceps — long head (stretched)", options: ["Incline DB Curl", "Incline Hammer Curl"] },
+      { region: "Biceps — short head", options: ["Preacher Curl", "EZ Bar Curl", "Biceps Curl Machine", "Cable Curl", "Low Pulley Biceps Curl", "Half Curl"] },
+      { region: "Brachialis / forearms", options: ["Hammer Curl", "Forearm Twists"] },
+      { region: "Lats — stretch (pullover)", options: ["Dumbbell Pullover"], optional: true },
+      { region: "Upper traps", options: ["Shoulder Shrugs"], optional: true },
+      { region: "Grip", options: ["Dead Hang", "Farmer's Hold"], optional: true },
+    ] },
+    Legs: { slots: [
+      { region: "Quads — compound", options: ["Hack Squat", "Leg Press", "Angled Leg Press"] },
+      { region: "Hamstrings — hip hinge", options: ["Dumbbell RDL"] },
+      { region: "Quads — rectus femoris (extension)", options: ["Single-Leg Extensions", "Leg Extensions"] },
+      { region: "Hamstrings — knee flexion", options: ["Leg Curls"] },
+      { region: "Glutes — max", options: ["Hip Thrust", "Glute Extension", "Glute Bridge"] },
+      { region: "Calves — gastrocnemius", options: ["Calf Raises Machine", "Dumbbell Calf Raise", "Standing Calf Raises (Frame)"] },
+      { region: "Adductors / glute med (alternate)", options: ["Inner Thigh", "Outer Thigh", "Dumbbell Sumo Squat"] },
+    ] },
+    Cardio: { cardio: true, options: ["Incline Walk", "Stationary Bike", "Outdoor Run"], note: "40-60 min zone 2 (conversational pace); incline walk or bike preferred." },
+  },
 };
 
 /* ---- SNAPSHOT — latest vs best for every tracked lift ----------------------
@@ -1168,5 +1239,5 @@ const WORKOUTS = [
 
 /* Expose for the engine. */
 if (typeof window !== "undefined") {
-  window.GYM_DATA = { ATHLETE, MUSCLES, SECTION_ORDER, EXERCISE_LIBRARY, SNAPSHOT, WORKOUTS, BODYWEIGHT, SLEEP };
+  window.GYM_DATA = { ATHLETE, MUSCLES, SECTION_ORDER, EXERCISE_LIBRARY, PROGRAM, SNAPSHOT, WORKOUTS, BODYWEIGHT, SLEEP };
 }

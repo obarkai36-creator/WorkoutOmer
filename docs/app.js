@@ -479,7 +479,7 @@ function renderTrainingDetail(day, isLatest) {
   const elapsedDays = day.training_now ? Math.max(0, (Date.now() - day.training_now) / 86400000) : 0;
   const liveDays = (d) => d === null || d === undefined ? null : d + elapsedDays;
   const exRows = (rec.suggestedExercises || []).map((e) => `
-    <tr><td>${e.name}${e.preferred ? ` <span class="star">★ preferred</span>` : ""}${e.isNew ? ` <span class="tag">new</span>` : ""}</td><td>${e.best || "—"}</td>
+    <tr><td>${e.region ? `<div class="small muted">${e.region}</div>` : ""}${e.name}${e.preferred ? ` <span class="star">★ preferred</span>` : ""}${e.isNew ? ` <span class="tag">new</span>` : ""}${e.optional ? ` <span class="tag">optional</span>` : ""}${e.core ? ` <span class="tag">core</span>` : ""}${e.alternatives && e.alternatives.length ? `<div class="small muted">or: ${e.alternatives.join(", ")}</div>` : ""}</td><td>${e.best || "—"}</td>
     <td class="num">${e.best1RM ? fmt(e.best1RM,1) : "—"}</td><td>${e.target ? e.target.text : ""}</td></tr>`).join("");
   const rankedRows = (rec.ranked || []).map((s) => `
     <tr><td>${s.section}</td><td class="num">${fmt(s.fatigue,0)}%</td><td class="num">${s.readyInHours === 0 ? "ready now" : fmt(s.readyInHours,1) + "h"}</td><td class="num">${s.daysSince === null ? "—" : fmt(liveDays(s.daysSince),1) + "d"}</td></tr>`).join("");
@@ -500,7 +500,7 @@ function renderTrainingDetail(day, isLatest) {
       <div class="track"><div class="fill" style="width:${s.pct}%;background:${s.pct >= 50 ? COLORS.warn : COLORS.good}"></div></div></div>`).join("")}
     </div>
     <div class="dpanel span"><h4>Recommended next session</h4>
-      <div class="bignum" style="color:${HUES.training.b}">${rec.deload ? "Full-body deload" : rec.section}</div>
+      <div class="bignum" style="color:${HUES.training.b}">${rec.deload ? "Full-body deload" : rec.section}</div>${rec.program ? `<div class="small muted">${rec.program}</div>` : ""}
       <div class="metric-note">${rec.readyNow ? "Ready now" : "Rest " + fmt(rec.restHours,1) + "h"} · last trained ${rec.daysSince === null ? "never" : fmt(liveDays(rec.daysSince),1) + "d ago"}${rec.suggestedCount ? ` · go for <b style="color:var(--text-1)">${rec.suggestedCount} of ${rec.totalAvailable}</b> below (typical ${rec.typicalSessionSize})` : ""}</div>
       ${(rec.guidance || []).map((g) => `<div class="metric-note" style="margin-top:6px">💡 ${g}</div>`).join("")}
       ${exRows ? `<div class="scrollbox" style="margin-top:12px;max-height:none"><table class="datatable">

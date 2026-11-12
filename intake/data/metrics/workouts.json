@@ -1,18 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-11-11",
+    "report_date": "2026-11-12",
     "latest_session": "Shoulders day (14:00) — Dumbbell Shoulder Press 20kg each×3×12, as suggested (new PR). Front Raises 18kg DB×4×11, as suggested (new PR). Farmer's Hold 24kg each×4×40s (ties best). Cable Face Pull 36kg×3×10 (new PR — +7kg over the 29kg×3×10 best; est. 1RM 48 vs 38.7). Shoulder Shrugs 26kg each×3×11, as suggested (new PR). 4 new PRs.",
     "sessions_logged": 92,
-    "sessions_per_week": 3.3,
+    "sessions_per_week": 3,
     "typical_time": "afternoon",
     "aerobic_28d_km": 25.5,
     "aerobic_sessions_28d": 4,
     "avg_pace": "10:11/km",
     "avg_hr": 142,
-    "acwr": 0.85,
-    "recommended_next": "Back day",
+    "acwr": 0.69,
+    "recommended_next": "Legs day",
     "alerts": [
+      "Load ratio 0.69 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },

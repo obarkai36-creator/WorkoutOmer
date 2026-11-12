@@ -1,5 +1,23 @@
 # Session notes
 
+- Workout program switched to Push / Pull / Legs + Cardio (2026-11-12, per
+  user: 4 sessions/week, one each; 60-75 min; 1-2 alternating core exercises
+  every session; arms folded into Push/Pull). Defined as `PROGRAM` in data.js:
+  per-day SLOTS, one anatomical region each (upper/mid/lower chest, front/side
+  delts, triceps long vs lateral/medial heads; lat width vs mid-back
+  thickness, rear delts, biceps long/short heads, brachialis, traps, grip;
+  quads compound/isolation, hamstrings hinge + curl, glute max, abductors/
+  adductors, gastrocnemius), with the existing exercises as rotating options.
+  `engine.js` `programRecommendation()` (used whenever `data.PROGRAM` exists)
+  picks the ready day trained longest ago (Push readiness = Chest section,
+  Pull = Back, Legs = Legs, Cardio always ready) and, per slot, the
+  least-recently-performed option; core pairs rotate via
+  `PROGRAM.coreRotation`. Past sessions are mapped to P/P/L by exercise.
+  `docs/app.js` shows each row's region + alternatives (`?v=20261112-1`).
+  ATHLETE.weeklyTarget is now 3 strength + 1 aerobic. Known catalog gaps:
+  soleus (no seated/bent-knee calf raise) and limited core variety. New
+  exercises the user logs should also be added to the right PROGRAM slot.
+
 - "Regular salad" / "regular dressing" (per user 2026-11-07): the recurring
   large salad = 1 lettuce head (~300g) + 30 cherry tomatoes + 0.5 red onion +
   50g baby mozzarella, with the recurring Maple-Balsamic Mustard Vinaigrette
