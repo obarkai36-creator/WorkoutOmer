@@ -159,18 +159,57 @@
       "fat_g": 2.8,
       "fiber_g": 5,
       "note": "verified reference."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — Caesar salad, no croutons",
+      "category": "food",
+      "qty": "single portion: romaine + ~10g parmesan + ~30g Caesar dressing",
+      "kcal": 204,
+      "protein_g": 5.5,
+      "carbs_g": 4.6,
+      "fat_g": 18.5,
+      "fiber_g": 2,
+      "time_approx": true,
+      "note": "same Caesar base as 2026-11-11 (no croutons), no egg assumed — dressing amount flagged."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — chicken schnitzel (cutlet)",
+      "category": "food",
+      "qty": "1 large, 120 g",
+      "kcal": 318,
+      "protein_g": 24,
+      "carbs_g": 14.4,
+      "fat_g": 17.6,
+      "fiber_g": 0.8,
+      "time_approx": true,
+      "note": "generic breaded fried chicken schnitzel (~265kcal/100g). Credits ~25mcg selenium, ~1.2mg zinc."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — hamburger",
+      "category": "food",
+      "qty": "1 bite (~30 g)",
+      "kcal": 75,
+      "protein_g": 4,
+      "carbs_g": 6,
+      "fat_g": 4,
+      "fiber_g": 0.3,
+      "time_approx": true,
+      "note": "generic burger in bun, one bite — rough estimate."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "zinc_mg": 4.8,
+    "selenium_mcg": 28,
+    "folate_mcg_dfe": 140,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 5,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_e_mg": 1,
     "lycopene_mg": 0
   },
   "assumptions": [
@@ -178,7 +217,8 @@
     "05:30 sprays (Rhinolast AM + Steronase day 6/30) + pill. 06:15 double espresso. 06:20 Mayven.",
     "09:00 creatine 5g. 09:10 double espresso (4 shots). 09:20 20g hamantasch. 09:30 Malarone — final dose (12/12), course complete.",
     "08:00 protein yogurt (Danone PRO strawberry assumed) + 20g Catalina Crunch.",
-    "10:00 second protein yogurt + 20g Catalina Crunch."
+    "10:00 second protein yogurt + 20g Catalina Crunch.",
+    "Lunch (time not given, placeholder 13:00): Caesar salad no croutons (dressing ~30g assumed), 120g chicken schnitzel, 1 bite of hamburger."
   ],
   "status_note": "In progress. Slept 6.75h. Last Malarone dose due today (12/12)."
 }
