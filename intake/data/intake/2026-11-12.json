@@ -198,18 +198,41 @@
       "fiber_g": 0.3,
       "time_approx": true,
       "note": "generic burger in bun, one bite — rough estimate."
+    },
+    {
+      "time": "13:30",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "13:30",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 4.8,
-    "selenium_mcg": 28,
+    "zinc_mg": 24.8,
+    "selenium_mcg": 128,
     "folate_mcg_dfe": 140,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 5,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 1,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 1005,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 135,
     "lycopene_mg": 0
   },
   "assumptions": [
@@ -218,7 +241,8 @@
     "09:00 creatine 5g. 09:10 double espresso (4 shots). 09:20 20g hamantasch. 09:30 Malarone — final dose (12/12), course complete.",
     "08:00 protein yogurt (Danone PRO strawberry assumed) + 20g Catalina Crunch.",
     "10:00 second protein yogurt + 20g Catalina Crunch.",
-    "Lunch (time not given, placeholder 13:00): Caesar salad no croutons (dressing ~30g assumed), 120g chicken schnitzel, 1 bite of hamburger."
+    "Lunch (time not given, placeholder 13:00): Caesar salad no croutons (dressing ~30g assumed), 120g chicken schnitzel, 1 bite of hamburger.",
+    "13:30 omega-3 + essential-5."
   ],
   "status_note": "In progress. Slept 6.75h. Last Malarone dose due today (12/12)."
 }
