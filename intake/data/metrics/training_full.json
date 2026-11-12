@@ -1,5 +1,5 @@
 {
-  "now": 1794467570883,
+  "now": 1794470610026,
   "workouts": [
     {
       "datetime": "2026-11-10T14:00",
@@ -9487,8 +9487,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 33,
-      "readyInHours": 3.5,
+      "pct": 32,
+      "readyInHours": 2.7,
       "ready": false
     },
     "biceps": {
@@ -9605,15 +9605,15 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 33,
-      "readyInHours": 3.5,
+      "pct": 32,
+      "readyInHours": 2.7,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 33,
-          "readyInHours": 3.5,
+          "pct": 32,
+          "readyInHours": 2.7,
           "ready": false
         }
       ]
@@ -11109,9 +11109,9 @@
     "fatigue": 5,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-12T07:12:50.883Z",
+    "readyAt": "2026-11-12T08:03:30.026Z",
     "neverLogged": false,
-    "daysSince": 12.9,
+    "daysSince": 13,
     "suggestedExercises": [
       {
         "name": "Diverging Seated Row",
@@ -11210,13 +11210,13 @@
         "section": "Back",
         "fatigue": 5,
         "readyInHours": 0,
-        "daysSince": 12.9
+        "daysSince": 13
       },
       {
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 11.9
+        "daysSince": 12
       },
       {
         "section": "Chest",
@@ -11232,9 +11232,9 @@
       },
       {
         "section": "Shoulders",
-        "fatigue": 33,
-        "readyInHours": 3.5,
-        "daysSince": 1.7
+        "fatigue": 32,
+        "readyInHours": 2.7,
+        "daysSince": 1.8
       }
     ],
     "suggestedCount": 5,
@@ -11276,7 +11276,7 @@
       19,
       21
     ],
-    "daysSinceLast": 1.7,
+    "daysSinceLast": 1.8,
     "total": 92
   },
   "relstrength": {
