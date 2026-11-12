@@ -221,10 +221,33 @@
       "fat_g": 0,
       "fiber_g": 0,
       "note": "\"essential 5\" — verified per-serving."
+    },
+    {
+      "time": "15:55",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "16:30",
+      "name": "Gelato (Otello), pistachio + chocolate",
+      "category": "food",
+      "qty": "1 small cup (~120 g, from photo)",
+      "kcal": 270,
+      "protein_g": 5,
+      "carbs_g": 32,
+      "fat_g": 14,
+      "fiber_g": 1,
+      "note": "estimated from photo: small cup, pistachio scoop over chocolate gelato (~225kcal/100g) — flagged. Credits ~1mg vitamin E."
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 4,
+  "caffeine_shots": 5,
   "micros_sperm_priority": {
     "zinc_mg": 24.8,
     "selenium_mcg": 128,
@@ -232,7 +255,7 @@
     "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 1005,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 135,
+    "vitamin_e_mg": 136,
     "lycopene_mg": 0
   },
   "assumptions": [
@@ -243,7 +266,8 @@
     "10:00 second protein yogurt + 20g Catalina Crunch.",
     "Lunch (time not given, placeholder 13:00): Caesar salad no croutons (dressing ~30g assumed), 120g chicken schnitzel, 1 bite of hamburger.",
     "13:30 omega-3 + essential-5.",
-    "15:40 partnered ejaculation — logged in ejaculation.json. Planned tomorrow (11-13): Cardio — walk/run intervals (planned_workout)."
+    "15:40 partnered ejaculation — logged in ejaculation.json. Planned tomorrow (11-13): Cardio — walk/run intervals (planned_workout).",
+    "15:55 espresso (5 shots). 16:30 small Otello gelato cup, pistachio + chocolate (~120g estimated from photo)."
   ],
   "status_note": "In progress. Slept 6.75h. Last Malarone dose due today (12/12).",
   "planned_workout": {
