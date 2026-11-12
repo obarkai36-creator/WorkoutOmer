@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "day_number": 138,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "22:30",
     "sleep_end": "05:15",
@@ -283,6 +283,17 @@
       "fiber_g": 2,
       "time_approx": true,
       "note": "photo estimate, whole dish. Credits ~400mg omega-3, ~4mg lycopene, ~40mcg selenium."
+    },
+    {
+      "time": "20:45",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (PM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
@@ -307,9 +318,10 @@
     "13:30 omega-3 + essential-5.",
     "15:40 partnered ejaculation — logged in ejaculation.json. Planned tomorrow (11-13): Cardio — walk/run intervals (planned_workout).",
     "15:55 espresso (5 shots). 16:30 small Otello gelato cup, pistachio + chocolate (~120g estimated from photo).",
-    "Anniversary dinner (restaurant, placeholder 19:30): full veal schnitzel, full roast beef plate, full intias crudo in tomato soup — not shared; mash/aioli/mustard only a few bites. Photo estimates, flagged."
+    "Anniversary dinner (restaurant, placeholder 19:30): full veal schnitzel, full roast beef plate, full intias crudo in tomato soup — not shared; mash/aioli/mustard only a few bites. Photo estimates, flagged.",
+    "20:45 Rhinolast (PM). EOD: 13,000 steps."
   ],
-  "status_note": "In progress. Slept 6.75h. Last Malarone dose due today (12/12).",
+  "status_note": "Day complete. Slept 6.75h. Rest day; switched program to Push/Pull/Legs + Cardio. Anniversary dinner — ~2,695 kcal / 214g protein / 134g fat. All supplements/meds taken; Malarone course finished (12/12). 5 caffeine shots. Partnered ejaculation 15:40. 13,000 steps.",
   "planned_workout": {
     "section": "Cardio (2026-11-13) — walk/run intervals, treadmill ~45 min",
     "note": "Run pace taken from recent runs (~6:55/km ≈ 8.7 km/h, HR ~145-155). Runs RPE 6-7 (short phrases only), walks RPE 3-4. Progress next time to 3 min run / 2 min walk, then 4:2.",
@@ -345,5 +357,6 @@
         "reasoning": "PPL core rotation — every session gets 2 core exercises."
       }
     ]
-  }
+  },
+  "steps": 13000
 }
