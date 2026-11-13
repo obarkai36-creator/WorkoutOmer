@@ -1,5 +1,5 @@
 {
-  "now": 1794557261585,
+  "now": 1794572866331,
   "workouts": [
     {
       "datetime": "2026-11-13T09:30",
@@ -9517,7 +9517,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 18,
+      "pct": 16,
       "readyInHours": 0,
       "ready": true
     },
@@ -9533,7 +9533,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 2,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -9597,9 +9597,9 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 32,
-      "readyInHours": 1.9,
-      "ready": false
+      "pct": 29,
+      "readyInHours": 0,
+      "ready": true
     }
   },
   "sections": {
@@ -9635,14 +9635,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 18,
+      "pct": 16,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 18,
+          "pct": 16,
           "readyInHours": 0,
           "ready": true
         }
@@ -9665,7 +9665,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 2,
+          "pct": 1,
           "readyInHours": 0,
           "ready": true
         },
@@ -9743,16 +9743,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 32,
-      "readyInHours": 1.9,
+      "pct": 29,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 32,
-          "readyInHours": 1.9,
-          "ready": false
+          "pct": 29,
+          "readyInHours": 0,
+          "ready": true
         }
       ]
     }
@@ -11105,26 +11105,26 @@
       },
       {
         "label": "-3w",
-        "stress": 365,
-        "sessions": 3,
+        "stress": 546,
+        "sessions": 4,
         "acwr": 1.12
       },
       {
         "label": "-2w",
-        "stress": 412,
+        "stress": 403,
         "sessions": 3,
         "acwr": 1.11
       },
       {
         "label": "-1w",
-        "stress": 598,
-        "sessions": 4,
+        "stress": 426,
+        "sessions": 3,
         "acwr": 0.61
       },
       {
         "label": "This wk",
-        "stress": 232,
-        "sessions": 2,
+        "stress": 260,
+        "sessions": 3,
         "acwr": 0.67
       }
     ],
@@ -11140,9 +11140,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-13T08:07:41.585Z",
+    "readyAt": "2026-11-13T12:27:46.331Z",
     "neverLogged": false,
-    "daysSince": 13,
+    "daysSince": 13.2,
     "suggestedExercises": [
       {
         "name": "Angled Leg Press",
@@ -11327,25 +11327,25 @@
         "section": "Legs",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 13
+        "daysSince": 13.2
       },
       {
         "section": "Push",
         "fatigue": 1,
         "readyInHours": 0,
-        "daysSince": 2.8
+        "daysSince": 2.9
       },
       {
         "section": "Pull",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 2.8
+        "daysSince": 2.9
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": -0.1
+        "daysSince": 0.1
       }
     ],
     "suggestedCount": 10,
@@ -11353,7 +11353,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 2,
     "aerobicTarget": 1,
-    "daysSinceAerobic": -0.1
+    "daysSinceAerobic": 0.1
   },
   "alerts": [
     {
@@ -11386,7 +11386,7 @@
       20,
       21
     ],
-    "daysSinceLast": -0.1,
+    "daysSinceLast": 0.1,
     "total": 93
   },
   "relstrength": {
@@ -11453,7 +11453,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": -0.1,
+    "daysSinceLast": 0.1,
     "recent": [
       {
         "t": 1794562200000,
