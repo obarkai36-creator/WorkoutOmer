@@ -82,7 +82,44 @@
   "assumptions": [
     "Sleep 23:45-07:55, 8.2h.",
     "08:10 pill + sprays (Rhinolast AM, Steronase day 7/30). 08:15 espresso. 08:20 Mayven.",
-    "Neck / upper-back pain reported this morning — cardio intervals may be reduced."
+    "Neck / upper-back pain reported this morning — cardio intervals may be reduced.",
+    "Cardio moved outdoors (flat boardwalk) — plan converted to pace/effort, 5 rounds."
   ],
-  "status_note": "In progress. Slept 8.2h. Neck/upper-back pain; planned walk/run intervals may be shortened."
+  "status_note": "In progress. Slept 8.2h. Neck/upper-back pain; planned walk/run intervals may be shortened.",
+  "planned_workout": {
+    "section": "Cardio — outdoor walk/run intervals (flat boardwalk), adjusted for neck/upper-back pain",
+    "note": "Reduced from 8 to 5 rounds. Effort-based (no treadmill): runs ~6:45-7:15/km, conversational-but-short-phrases; relaxed shoulders. Switch to brisk walking if the neck/upper back worsens; stop if pain radiates to the arm or there's numbness/tingling.",
+    "exercises": [
+      {
+        "name": "Warm-up — brisk walk",
+        "last": "—",
+        "target": "8-10 min brisk walk (~9:00-10:00/km) + shoulder rolls / gentle neck turns",
+        "reasoning": "Loosen upper back before impact."
+      },
+      {
+        "name": "Intervals — run",
+        "last": "Run 10-24: ~6:56/km",
+        "target": "5 × 2 min @ ~6:45-7:15/km (RPE 6-7)",
+        "reasoning": "Shortened set while neck/upper back is sore."
+      },
+      {
+        "name": "Intervals — walk recovery",
+        "last": "—",
+        "target": "5 × 2 min brisk walk (~9:30-10:30/km)",
+        "reasoning": "Active recovery."
+      },
+      {
+        "name": "Cool-down — easy walk",
+        "last": "—",
+        "target": "5-10 min easy walk",
+        "reasoning": "Bring HR down; total ~40 min."
+      },
+      {
+        "name": "Core",
+        "last": "—",
+        "target": "Plank 3×40s or Dead Bug 3×10/side — skip Hanging Knee Raise today",
+        "reasoning": "Avoid hanging load on a sore neck/upper back."
+      }
+    ]
+  }
 }
