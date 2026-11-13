@@ -1,19 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-11-12",
-    "latest_session": "Shoulders day (14:00) — Dumbbell Shoulder Press 20kg each×3×12, as suggested (new PR). Front Raises 18kg DB×4×11, as suggested (new PR). Farmer's Hold 24kg each×4×40s (ties best). Cable Face Pull 36kg×3×10 (new PR — +7kg over the 29kg×3×10 best; est. 1RM 48 vs 38.7). Shoulder Shrugs 26kg each×3×11, as suggested (new PR). 4 new PRs.",
-    "sessions_logged": 92,
-    "sessions_per_week": 3,
+    "report_date": "2026-11-13",
+    "latest_session": "Interval Run — outdoor, Tel Aviv boardwalk (flat), clock time not given. Nike Run Club: 3.44 km in 24:01 (avg 6:58/km), 257 kcal, cadence 148, elevation gain 2 m. Pace graph shows 6 run intervals peaking ~5:30-6:00/km (fastest 5:01/km) with walk recoveries down to ~10:29/km — one more round and faster runs than the reduced 5×2 plan, despite neck/upper-back soreness. No HR data.",
+    "sessions_logged": 93,
+    "sessions_per_week": 3.3,
     "typical_time": "afternoon",
-    "aerobic_28d_km": 25.5,
-    "aerobic_sessions_28d": 4,
-    "avg_pace": "10:11/km",
+    "aerobic_28d_km": 28.9,
+    "aerobic_sessions_28d": 5,
+    "avg_pace": "10:06/km",
     "avg_hr": 142,
-    "acwr": 0.69,
+    "acwr": 0.67,
     "recommended_next": "Legs day",
     "alerts": [
-      "Load ratio 0.69 (<0.8). A normal training week will bring this back up.",
+      "Load ratio 0.67 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
@@ -633,6 +633,14 @@
       "intensity": "moderate",
       "notes": "Shoulders day (14:00) — Dumbbell Shoulder Press 20kg each×3×12, as suggested (new PR). Front Raises 18kg DB×4×11, as suggested (new PR). Farmer's Hold 24kg each×4×40s (ties best). Cable Face Pull 36kg×3×10 (new PR — +7kg over the 29kg×3×10 best; est. 1RM 48 vs 38.7). Shoulder Shrugs 26kg each×3×11, as suggested (new PR). 4 new PRs.",
       "_source": "manual log"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "Cardio — Interval Run (walk/run)",
+      "duration_min": 24,
+      "intensity": "moderate-high",
+      "notes": "Interval Run — outdoor, Tel Aviv boardwalk (flat), clock time not given. Nike Run Club: 3.44 km in 24:01 (avg 6:58/km), 257 kcal, cadence 148, elevation gain 2 m. Pace graph shows 6 run intervals peaking ~5:30-6:00/km (fastest 5:01/km) with walk recoveries down to ~10:29/km — one more round and faster runs than the reduced 5×2 plan, despite neck/upper-back soreness. No HR data.",
+      "_source": "Nike Run Club screenshot"
     }
   ]
 }

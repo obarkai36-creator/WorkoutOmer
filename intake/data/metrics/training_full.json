@@ -1,6 +1,36 @@
 {
-  "now": 1794550647938,
+  "now": 1794552948799,
   "workouts": [
+    {
+      "datetime": "2026-11-13T09:30",
+      "timeUnknown": true,
+      "note": "Interval Run — outdoor, Tel Aviv boardwalk (flat), clock time not given. Nike Run Club: 3.44 km in 24:01 (avg 6:58/km), 257 kcal, cadence 148, elevation gain 2 m. Pace graph shows 6 run intervals peaking ~5:30-6:00/km (fastest 5:01/km) with walk recoveries down to ~10:29/km — one more round and faster runs than the reduced 5×2 plan, despite neck/upper-back soreness. No HR data.",
+      "exercises": [
+        {
+          "name": "Outdoor Run",
+          "distanceKm": 3.44,
+          "durationMin": 24.02,
+          "cadence": 148,
+          "elevationGainM": 2,
+          "load": 216.18,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 216.18,
+            "quads": 64.854,
+            "calves": 64.854
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1794562200000,
+      "muscleLoad": {
+        "cardio": 216.18,
+        "quads": 64.854,
+        "calves": 64.854
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-11-10T14:00",
       "note": "Shoulders day (14:00) — Dumbbell Shoulder Press 20kg each×3×12, as suggested (new PR). Front Raises 18kg DB×4×11, as suggested (new PR). Farmer's Hold 24kg each×4×40s (ties best). Cable Face Pull 36kg×3×10 (new PR — +7kg over the 29kg×3×10 best; est. 1RM 48 vs 38.7). Shoulder Shrugs 26kg each×3×11, as suggested (new PR). 4 new PRs.",
@@ -9511,7 +9541,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 6,
+      "pct": 5,
       "readyInHours": 0,
       "ready": true
     },
@@ -9551,7 +9581,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 0,
+      "pct": 1,
       "readyInHours": 0,
       "ready": true
     },
@@ -9567,9 +9597,9 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 5,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 32,
+      "readyInHours": 2.1,
+      "ready": false
     }
   },
   "sections": {
@@ -9620,14 +9650,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 6,
+          "pct": 5,
           "readyInHours": 0,
           "ready": true
         },
@@ -9663,6 +9693,14 @@
           "ready": true
         },
         {
+          "key": "calves",
+          "label": "Calves",
+          "section": "Legs",
+          "pct": 1,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
@@ -9681,14 +9719,6 @@
         {
           "key": "adductors",
           "label": "Adductors",
-          "section": "Legs",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
-        },
-        {
-          "key": "calves",
-          "label": "Calves",
           "section": "Legs",
           "pct": 0,
           "readyInHours": 0,
@@ -9713,16 +9743,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 5,
-      "readyInHours": 0,
+      "pct": 32,
+      "readyInHours": 2.1,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 5,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 32,
+          "readyInHours": 2.1,
+          "ready": false
         }
       ]
     }
@@ -10177,7 +10207,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Lateral Raises",
@@ -10237,7 +10267,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Rear Delt Machine",
@@ -10279,7 +10309,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Farmer's Hold",
@@ -10300,7 +10330,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Cable Face Pull",
@@ -10321,7 +10351,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Arms": [
@@ -11095,14 +11125,14 @@
         "label": "This wk",
         "stress": 232,
         "sessions": 2,
-        "acwr": 0.55
+        "acwr": 0.67
       }
     ],
-    "acute": 27.4,
-    "chronic": 49.43,
-    "acwr": 0.55,
+    "acute": 34.6,
+    "chronic": 51.41,
+    "acwr": 0.67,
     "acwrZone": "detraining",
-    "sessions28": 12
+    "sessions28": 13
   },
   "recommendation": {
     "section": "Legs",
@@ -11110,7 +11140,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-13T06:17:27.938Z",
+    "readyAt": "2026-11-13T06:55:48.799Z",
     "neverLogged": false,
     "daysSince": 12.9,
     "suggestedExercises": [
@@ -11257,22 +11287,7 @@
         }
       },
       {
-        "name": "Plank",
-        "region": "Core (rotating)",
-        "alternatives": [],
-        "optional": false,
-        "best": "BW × 3×35s",
-        "best1RM": 0,
-        "iso": true,
-        "target": {
-          "status": "progress",
-          "text": "+5s (aim 3×40s)",
-          "note": "Add 5s per set from your best (BW × 3×35s) — aim for 3×40s."
-        },
-        "core": true
-      },
-      {
-        "name": "Hanging Knee Raise",
+        "name": "Pallof Press",
         "region": "Core (rotating)",
         "alternatives": [],
         "optional": false,
@@ -11284,6 +11299,21 @@
           "status": "new",
           "text": "Not yet attempted",
           "note": "No logged sessions yet — pick a comfortable starting weight/reps."
+        },
+        "core": true
+      },
+      {
+        "name": "VKR",
+        "region": "Core (rotating)",
+        "alternatives": [],
+        "optional": false,
+        "best": "BW × 4×10",
+        "best1RM": 108.3,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×11)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×11 from BW × 4×10."
         },
         "core": true
       }
@@ -11300,12 +11330,6 @@
         "daysSince": 12.9
       },
       {
-        "section": "Cardio",
-        "fatigue": 0,
-        "readyInHours": 0,
-        "daysSince": 3.4
-      },
-      {
         "section": "Push",
         "fatigue": 1,
         "readyInHours": 0,
@@ -11316,20 +11340,26 @@
         "fatigue": 3,
         "readyInHours": 0,
         "daysSince": 2.7
+      },
+      {
+        "section": "Cardio",
+        "fatigue": 0,
+        "readyInHours": 0,
+        "daysSince": -0.1
       }
     ],
     "suggestedCount": 10,
     "totalAvailable": 11,
     "typicalSessionSize": 8,
-    "aerobicLast7": 1,
+    "aerobicLast7": 2,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 3.4
+    "daysSinceAerobic": -0.1
   },
   "alerts": [
     {
       "level": "low",
       "title": "Load dropped off",
-      "detail": "Load ratio 0.55 (<0.8). A normal training week will bring this back up."
+      "detail": "Load ratio 0.67 (<0.8). A normal training week will bring this back up."
     },
     {
       "level": "ok",
@@ -11344,7 +11374,7 @@
   "timing": {
     "avgGap": 2.8,
     "longestGap": 35.7,
-    "perWeek": 3,
+    "perWeek": 3.3,
     "avgHour": 13,
     "todPref": "afternoon",
     "dow": [
@@ -11353,11 +11383,11 @@
       16,
       7,
       6,
-      19,
+      20,
       21
     ],
-    "daysSinceLast": 2.7,
-    "total": 92
+    "daysSinceLast": -0.1,
+    "total": 93
   },
   "relstrength": {
     "bodyweightKg": 80.45,
@@ -11406,15 +11436,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 45,
-    "km7": 4.9,
-    "km28": 25.5,
-    "totalKm": 183,
+    "count": 46,
+    "km7": 8.4,
+    "km28": 28.9,
+    "totalKm": 186.5,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 3.152635719905586,
-    "avgPace": 10.175331258459895,
-    "paceTrend": -2.67,
+    "avgPace": 10.101080720810476,
+    "paceTrend": -3.32,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -11423,8 +11453,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 3.4,
+    "daysSinceLast": -0.1,
     "recent": [
+      {
+        "t": 1794562200000,
+        "name": "Outdoor Run",
+        "distanceKm": 3.44,
+        "durationMin": 24.02,
+        "avgHr": null,
+        "pace": 6.982558139534884
+      },
       {
         "t": 1794252600000,
         "name": "Incline Walk",
@@ -11456,14 +11494,6 @@
         "durationMin": 14.75,
         "avgHr": null,
         "pace": 6.555555555555555
-      },
-      {
-        "t": 1791750600000,
-        "name": "Incline Walk",
-        "distanceKm": 0.95,
-        "durationMin": 15,
-        "avgHr": null,
-        "pace": 15.789473684210527
       }
     ]
   },

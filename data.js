@@ -395,6 +395,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 13 Nov — Interval Run, outdoor (time not given)
+  {
+    datetime: "2026-11-13T09:30", timeUnknown: true, note: "Interval Run — outdoor, Tel Aviv boardwalk (flat), clock time not given. Nike Run Club: 3.44 km in 24:01 (avg 6:58/km), 257 kcal, cadence 148, elevation gain 2 m. Pace graph shows 6 run intervals peaking ~5:30-6:00/km (fastest 5:01/km) with walk recoveries down to ~10:29/km — one more round and faster runs than the reduced 5×2 plan, despite neck/upper-back soreness. No HR data.",
+    exercises: [
+      { name: "Outdoor Run", distanceKm: 3.44, durationMin: 24.02, cadence: 148, elevationGainM: 2 },
+    ],
+  },
   // 10 Nov — Shoulders (14:00)
   {
     datetime: "2026-11-10T14:00", note: "Shoulders day (14:00) — Dumbbell Shoulder Press 20kg each×3×12, as suggested (new PR). Front Raises 18kg DB×4×11, as suggested (new PR). Farmer's Hold 24kg each×4×40s (ties best). Cable Face Pull 36kg×3×10 (new PR — +7kg over the 29kg×3×10 best; est. 1RM 48 vs 38.7). Shoulder Shrugs 26kg each×3×11, as suggested (new PR). 4 new PRs.",
