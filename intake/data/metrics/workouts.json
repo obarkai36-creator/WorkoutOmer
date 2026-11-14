@@ -2,19 +2,19 @@
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
     "report_date": "2026-11-14",
-    "latest_session": "Interval Run — outdoor, Tel Aviv boardwalk (flat), clock time not given. Nike Run Club: 3.44 km in 24:01 (avg 6:58/km), 257 kcal, cadence 148, elevation gain 2 m. Pace graph shows 6 run intervals peaking ~5:30-6:00/km (fastest 5:01/km) with walk recoveries down to ~10:29/km — one more round and faster runs than the reduced 5×2 plan, despite neck/upper-back soreness. No HR data.",
-    "sessions_logged": 93,
-    "sessions_per_week": 3.3,
+    "latest_session": "Legs day (~08:00-09:16) — Angled Leg Press 202kg setup×4×7, as suggested (ties best). Dumbbell RDL 22.5kg each×4×7, as suggested (new PR). Leg Extensions 111kg×4×12 (ties best). Leg Curls 116kg×4×8, as suggested (+5kg, heaviest yet; not a PR by est. 1RM). Hip Thrust 20kg each side (40kg)×4×8 (lighter than 48kg best). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine (= the seated calf raise, per user) 81kg inc. frame×4×8. Back Extension (45°) BW×4×8 (first logged). Core: Pallof Press 18kg×4×8 (first logged), VKR BW×4×11 as suggested (new PR). 2 new PRs.",
+    "sessions_logged": 94,
+    "sessions_per_week": 3.5,
     "typical_time": "afternoon",
     "aerobic_28d_km": 28.9,
     "aerobic_sessions_28d": 5,
     "avg_pace": "10:06/km",
     "avg_hr": 142,
-    "acwr": 0.54,
-    "recommended_next": "Legs day",
+    "acwr": 1.52,
+    "recommended_next": "Full Body (Deload) day",
     "alerts": [
-      "Load ratio 0.54 (<0.8). A normal training week will bring this back up.",
-      "Nothing acutely concerning. The notes below are housekeeping, not warnings."
+      "Load ratio 1.52 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload.",
+      "Recovers in ~63.9h. Avoid loading it hard before then — you trained it most recently."
     ]
   },
   "entries": [
@@ -641,6 +641,14 @@
       "intensity": "moderate-high",
       "notes": "Interval Run — outdoor, Tel Aviv boardwalk (flat), clock time not given. Nike Run Club: 3.44 km in 24:01 (avg 6:58/km), 257 kcal, cadence 148, elevation gain 2 m. Pace graph shows 6 run intervals peaking ~5:30-6:00/km (fastest 5:01/km) with walk recoveries down to ~10:29/km — one more round and faster runs than the reduced 5×2 plan, despite neck/upper-back soreness. No HR data.",
       "_source": "Nike Run Club screenshot"
+    },
+    {
+      "date": "2026-11-14",
+      "type": "Strength — Legs (PPL)",
+      "duration_min": 76,
+      "intensity": "moderate",
+      "notes": "Legs day (~08:00-09:16) — Angled Leg Press 202kg setup×4×7, as suggested (ties best). Dumbbell RDL 22.5kg each×4×7, as suggested (new PR). Leg Extensions 111kg×4×12 (ties best). Leg Curls 116kg×4×8, as suggested (+5kg, heaviest yet; not a PR by est. 1RM). Hip Thrust 20kg each side (40kg)×4×8 (lighter than 48kg best). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine (= the seated calf raise, per user) 81kg inc. frame×4×8. Back Extension (45°) BW×4×8 (first logged). Core: Pallof Press 18kg×4×8 (first logged), VKR BW×4×11 as suggested (new PR). 2 new PRs.",
+      "_source": "manual log"
     }
   ]
 }
