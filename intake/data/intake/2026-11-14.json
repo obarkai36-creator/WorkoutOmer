@@ -69,10 +69,33 @@
       "fat_g": 2.8,
       "fiber_g": 5,
       "note": "usual 20g portion assumed (amount not given)."
+    },
+    {
+      "time": "07:30",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "1 double",
+      "kcal": 6,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "07:30",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat",
+      "category": "food",
+      "qty": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "flavour not given — strawberry assumed."
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 4,
   "micros_sperm_priority": {
     "zinc_mg": 0,
     "selenium_mcg": 0,
@@ -85,7 +108,8 @@
   },
   "assumptions": [
     "Sleep 23:45-05:10, 5.4h.",
-    "Sprays (Rhinolast AM + Steronase day 8/30), time not given — placeholder 06:30. 06:30 double espresso. 07:15 protein yogurt (strawberry assumed) + 20g Catalina Crunch (assumed). Pill and Mayven not yet reported."
+    "Sprays (Rhinolast AM + Steronase day 8/30), time not given — placeholder 06:30. 06:30 double espresso. 07:15 protein yogurt (strawberry assumed) + 20g Catalina Crunch (assumed). Pill and Mayven not yet reported.",
+    "07:30 double espresso (4 shots) + second PRO yogurt."
   ],
   "status_note": "In progress. Slept 5.4h (short)."
 }
