@@ -215,18 +215,56 @@
       "fat_g": 1,
       "fiber_g": 0.3,
       "time_approx": true
+    },
+    {
+      "time": "15:45",
+      "name": "Black coffee (instant)",
+      "category": "drink",
+      "qty": "1 tsp",
+      "kcal": 2,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "~1 shot-equivalent caffeine."
+    },
+    {
+      "time": "15:45",
+      "name": "Chocolate English cake (pound-cake style, no cream)",
+      "category": "food",
+      "qty": "1 small slice (~40 g)",
+      "kcal": 160,
+      "protein_g": 2.4,
+      "carbs_g": 20,
+      "fat_g": 8,
+      "fiber_g": 0.8,
+      "time_approx": true,
+      "note": "generic chocolate loaf cake (~400kcal/100g), small slice assumed — flagged."
+    },
+    {
+      "time": "15:45",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\" — verified per-serving."
     }
   ],
   "workout_today": true,
-  "caffeine_shots": 4,
+  "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 4.3,
-    "selenium_mcg": 30,
+    "zinc_mg": 24.3,
+    "selenium_mcg": 130,
     "folate_mcg_dfe": 260,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 115,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1115,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 6
   },
   "assumptions": [
@@ -234,7 +272,8 @@
     "Sprays (Rhinolast AM + Steronase day 8/30), time not given — placeholder 06:30. 06:30 double espresso. 07:15 protein yogurt (strawberry assumed) + 20g Catalina Crunch (assumed). Pill and Mayven not yet reported.",
     "07:30 double espresso (4 shots) + second PRO yogurt.",
     "Workout: Legs day (~08:00-09:16) — Angled Leg Press 202kg setup×4×7, as suggested (ties best). Dumbbell RDL 22.5kg each×4×7, as suggested (new PR). Leg Extensions 111kg×4×12 (ties best). Leg Curls 116kg×4×8, as suggested (+5kg, heaviest yet; not a PR by est. 1RM). Hip Thrust 20kg each side (40kg)×4×8 (lighter than 48kg best). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine (= the seated calf raise, per user) 81kg inc. frame×4×8. Back Extension (45°) BW×4×8 (first logged). Core: Pallof Press 18kg×4×8 (first logged), VKR BW×4×11 as suggested (new PR). 2 new PRs.",
-    "10:00 Mayven. 12:20 omega-3. Lunch (placeholder 12:30): 50g spelt garlic bread, large lemon-dressed salad, 200g cottage cheese, 1 tsp egg salad, 2 egg whites, large bowl white cabbage salad (lemon assumed), ~20g tamarind sauce, 1 bite mash."
+    "10:00 Mayven. 12:20 omega-3. Lunch (placeholder 12:30): 50g spelt garlic bread, large lemon-dressed salad, 200g cottage cheese, 1 tsp egg salad, 2 egg whites, large bowl white cabbage salad (lemon assumed), ~20g tamarind sauce, 1 bite mash.",
+    "Black coffee (1 tsp instant, ~1 shot) + small slice chocolate English cake (~40g), time not given — placeholder 15:45. 15:45 essential-5."
   ],
   "status_note": "In progress. Slept 5.4h (short).",
   "workout_summary": "Legs day (~08:00-09:16) — Angled Leg Press 202kg setup×4×7, as suggested (ties best). Dumbbell RDL 22.5kg each×4×7, as suggested (new PR). Leg Extensions 111kg×4×12 (ties best). Leg Curls 116kg×4×8, as suggested (+5kg, heaviest yet; not a PR by est. 1RM). Hip Thrust 20kg each side (40kg)×4×8 (lighter than 48kg best). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine (= the seated calf raise, per user) 81kg inc. frame×4×8. Back Extension (45°) BW×4×8 (first logged). Core: Pallof Press 18kg×4×8 (first logged), VKR BW×4×11 as suggested (new PR). 2 new PRs."
