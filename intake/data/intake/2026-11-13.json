@@ -1,7 +1,7 @@
 {
   "date": "2026-11-13",
   "day_number": 139,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "23:45",
     "sleep_end": "07:55",
@@ -156,9 +156,10 @@
     "14:30 double espresso (5 shots) + essential-5.",
     "15:00 creatine 5g. 16:50 omega-3.",
     "19:35 Rhinolast (PM).",
-    "18:00 partnered ejaculation — logged in ejaculation.json."
+    "18:00 partnered ejaculation — logged in ejaculation.json.",
+    "EOD (closed next morning): 11,500 steps."
   ],
-  "status_note": "In progress. Slept 8.2h. Neck/upper-back pain; planned walk/run intervals may be shortened.",
+  "status_note": "Day complete. Slept 8.2h. Outdoor interval run (3.44 km, 6 intervals). Food not tracked (excluded from monthly macros). All supplements/meds taken (Steronase 7/30). 5 caffeine shots. Partnered ejaculation 18:00. 11,500 steps.",
   "planned_workout": {
     "section": "Cardio — outdoor walk/run intervals (flat boardwalk), adjusted for neck/upper-back pain",
     "note": "Reduced from 8 to 5 rounds. Effort-based (no treadmill): runs ~6:45-7:15/km, conversational-but-short-phrases; relaxed shoulders. Switch to brisk walking if the neck/upper back worsens; stop if pain radiates to the arm or there's numbness/tingling.",
@@ -197,5 +198,6 @@
   },
   "workout_summary": "Interval Run — outdoor, Tel Aviv boardwalk (flat), clock time not given. Nike Run Club: 3.44 km in 24:01 (avg 6:58/km), 257 kcal, cadence 148, elevation gain 2 m. Pace graph shows 6 run intervals peaking ~5:30-6:00/km (fastest 5:01/km) with walk recoveries down to ~10:29/km — one more round and faster runs than the reduced 5×2 plan, despite neck/upper-back soreness. No HR data.",
   "exclude_from_monthly_macros": true,
-  "exclude_reason": "No food tracking today (2026-11-13) per user — supplements, caffeine, workouts, sleep and lifestyle still logged."
+  "exclude_reason": "No food tracking today (2026-11-13) per user — supplements, caffeine, workouts, sleep and lifestyle still logged.",
+  "steps": 11500
 }
