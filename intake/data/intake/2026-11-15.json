@@ -253,19 +253,77 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "15:30",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "175 g",
+      "kcal": 171.5,
+      "protein_g": 19.25,
+      "carbs_g": 5.95,
+      "fat_g": 7.53,
+      "fiber_g": 0,
+      "note": "same generic reference."
+    },
+    {
+      "time": "15:30",
+      "name": "Cucumbers",
+      "category": "food",
+      "qty": "2 whole (~600 g)",
+      "kcal": 90,
+      "protein_g": 3.9,
+      "carbs_g": 21.6,
+      "fat_g": 0.6,
+      "fiber_g": 3,
+      "note": "standard cucumber rate (~15kcal/100g, ~300g each)."
+    },
+    {
+      "time": "15:30",
+      "name": "Honey",
+      "category": "food",
+      "qty": "3 g",
+      "kcal": 9.1,
+      "protein_g": 0,
+      "carbs_g": 2.46,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "15:30",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "20 pieces",
+      "kcal": 53,
+      "protein_g": 2.74,
+      "carbs_g": 11.74,
+      "fat_g": 0.6,
+      "fiber_g": 3.6,
+      "note": "standard reference. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."
+    },
+    {
+      "time": "15:30",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 25.4,
-    "selenium_mcg": 168,
-    "folate_mcg_dfe": 278,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1165,
+    "zinc_mg": 26.1,
+    "selenium_mcg": 183,
+    "folate_mcg_dfe": 369,
+    "omega3_epa_dha_mg": 1000,
+    "vitamin_c_mg": 1226,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 136,
-    "lycopene_mg": 15.5
+    "lycopene_mg": 24.3
   },
   "assumptions": [
     "Sleep 23:15-05:45, 6.5h.",
@@ -274,7 +332,8 @@
     "10:45 banana (medium) + essential-5 (time not given, logged together).",
     "Lunch (time not given, placeholder 12:30): build-your-own large salad from receipt — cucumber, red onion, cherry tomatoes, white + red cabbage, roasted sweet potato, roasted cauliflower, croutons, 200g chicken breast (2 portions), 30g pesto, lots of lemon. Veg/croutons portions assumed.",
     "12:30 espresso (3 shots).",
-    "14:00 espresso (4 shots)."
+    "14:00 espresso (4 shots).",
+    "15:30 175g cottage cheese + 2 cucumbers + 3g honey + 20 cherry tomatoes; omega-3."
   ],
   "status_note": "In progress. Slept 6.5h."
 }
