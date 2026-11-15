@@ -1,5 +1,5 @@
 {
-  "now": 1794729235545,
+  "now": 1794729550344,
   "workouts": [
     {
       "datetime": "2026-11-14T08:00",
@@ -9851,8 +9851,8 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 59,
-      "readyInHours": 40,
+      "pct": 58,
+      "readyInHours": 39.9,
       "ready": false
     },
     "glutes": {
@@ -9860,7 +9860,7 @@
       "label": "Glutes",
       "section": "Legs",
       "pct": 48,
-      "readyInHours": 27.8,
+      "readyInHours": 27.7,
       "ready": false
     },
     "adductors": {
@@ -9875,8 +9875,8 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 32,
-      "readyInHours": 2,
+      "pct": 31,
+      "readyInHours": 1.9,
       "ready": false
     },
     "core": {
@@ -9976,14 +9976,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 36,
-      "readyInHours": 40,
+      "readyInHours": 39.9,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 59,
-          "readyInHours": 40,
+          "pct": 58,
+          "readyInHours": 39.9,
           "ready": false
         },
         {
@@ -9991,7 +9991,7 @@
           "label": "Glutes",
           "section": "Legs",
           "pct": 48,
-          "readyInHours": 27.8,
+          "readyInHours": 27.7,
           "ready": false
         },
         {
@@ -10006,8 +10006,8 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 32,
-          "readyInHours": 2,
+          "pct": 31,
+          "readyInHours": 1.9,
           "ready": false
         },
         {
@@ -11476,7 +11476,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-15T07:53:55.545Z",
+    "readyAt": "2026-11-15T07:59:10.344Z",
     "neverLogged": false,
     "daysSince": 4.7,
     "suggestedExercises": [
@@ -11484,8 +11484,26 @@
         "name": "Incline Dumbbell Bench Press",
         "region": "Chest — upper (clavicular head)",
         "alternatives": [
-          "Incline Bench Press",
-          "Incline Smith Machine Press"
+          {
+            "name": "Incline Bench Press",
+            "best": "72.5kg × 4×7",
+            "target": {
+              "status": "rebuild",
+              "text": "Rebuild to best (72.5kg × 4×7)",
+              "note": "Last session came in under your best (72.5kg × 4×7) — rebuild to that before pushing further."
+            },
+            "isNew": false
+          },
+          {
+            "name": "Incline Smith Machine Press",
+            "best": "20kg each side × 4×8 (plates only)",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 4×9)",
+              "note": "Add 1 rep per set at the same weight — aim for 4×9 from 20kg each side × 4×8 (plates only)."
+            },
+            "isNew": false
+          }
         ],
         "optional": false,
         "best": "24kg each × 4×11",
@@ -11501,8 +11519,26 @@
         "name": "Chest Press Machine",
         "region": "Chest — mid (sternal head)",
         "alternatives": [
-          "Bench Press",
-          "Dumbbell Bench Press"
+          {
+            "name": "Bench Press",
+            "best": "27.5kg each side + 20kg bar × 3×11",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 3×12)",
+              "note": "Add 1 rep per set at the same weight — aim for 3×12 from 27.5kg each side + 20kg bar × 3×11."
+            },
+            "isNew": false
+          },
+          {
+            "name": "Dumbbell Bench Press",
+            "best": "24kg each × 4×12",
+            "target": {
+              "status": "progress",
+              "text": "+2.5kg (reset to 4×8)",
+              "note": "You're at 12 reps on 24kg each × 4×12 — step the weight up ~2.5kg and reset to 4×8."
+            },
+            "isNew": false
+          }
         ],
         "optional": false,
         "best": "73kg × 4×6",
@@ -11518,8 +11554,26 @@
         "name": "Dumbbell Pec Fly",
         "region": "Chest — stretch / adduction",
         "alternatives": [
-          "Incline Pec Fly",
-          "Pec Fly Machine"
+          {
+            "name": "Incline Pec Fly",
+            "best": "18kg each × 4×12",
+            "target": {
+              "status": "progress",
+              "text": "+2kg (reset to 4×8)",
+              "note": "You're at 12 reps on 18kg each × 4×12 — step the weight up ~2kg and reset to 4×8."
+            },
+            "isNew": false
+          },
+          {
+            "name": "Pec Fly Machine",
+            "best": "84kg × 3×8",
+            "target": {
+              "status": "rebuild",
+              "text": "Rebuild to best (84kg × 3×8)",
+              "note": "Last session came in under your best (84kg × 3×8) — rebuild to that before pushing further."
+            },
+            "isNew": false
+          }
         ],
         "optional": false,
         "best": "16kg each × 4×8",
@@ -11535,7 +11589,16 @@
         "name": "Converging Shoulder Press",
         "region": "Front delts (overhead press)",
         "alternatives": [
-          "Dumbbell Shoulder Press"
+          {
+            "name": "Dumbbell Shoulder Press",
+            "best": "20kg each × 3×12",
+            "target": {
+              "status": "progress",
+              "text": "+2.5kg (reset to 3×8)",
+              "note": "You're at 12 reps on 20kg each × 3×12 — step the weight up ~2.5kg and reset to 3×8."
+            },
+            "isNew": false
+          }
         ],
         "optional": false,
         "best": "79kg × 4×8",
@@ -11551,7 +11614,16 @@
         "name": "Seated Lateral Raises",
         "region": "Side delts",
         "alternatives": [
-          "Lateral Raises"
+          {
+            "name": "Lateral Raises",
+            "best": "16kg each × 4×9",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 4×10)",
+              "note": "Add 1 rep per set at the same weight — aim for 4×10 from 16kg each × 4×9."
+            },
+            "isNew": false
+          }
         ],
         "optional": false,
         "best": "14kg each × 4×7",
@@ -11567,8 +11639,26 @@
         "name": "Flat DB Triceps Extension",
         "region": "Triceps — long head (overhead)",
         "alternatives": [
-          "Overhead DB Triceps Extension",
-          "Single-Hand DB Triceps Extension"
+          {
+            "name": "Overhead DB Triceps Extension",
+            "best": "20kg × 4×11",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 4×12)",
+              "note": "Add 1 rep per set at the same weight — aim for 4×12 from 20kg × 4×11."
+            },
+            "isNew": false
+          },
+          {
+            "name": "Single-Hand DB Triceps Extension",
+            "best": "12kg each × 4×9",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 4×10)",
+              "note": "Add 1 rep per set at the same weight — aim for 4×10 from 12kg each × 4×9."
+            },
+            "isNew": false
+          }
         ],
         "optional": false,
         "best": "17.5kg each × 4×6",
@@ -11584,7 +11674,16 @@
         "name": "Triceps Extension Machine",
         "region": "Triceps — lateral/medial heads",
         "alternatives": [
-          "Rope Cable Extension"
+          {
+            "name": "Rope Cable Extension",
+            "best": "75kg × 4×8",
+            "target": {
+              "status": "rebuild",
+              "text": "Rebuild to best (75kg × 4×8)",
+              "note": "Last session came in under your best (75kg × 4×8) — rebuild to that before pushing further."
+            },
+            "isNew": false
+          }
         ],
         "optional": false,
         "best": "41kg × 3×8",
@@ -11600,8 +11699,26 @@
         "name": "Decline Bench Press",
         "region": "Chest — lower (costal fibres)",
         "alternatives": [
-          "Seated Dips",
-          "Narrow Push-Ups"
+          {
+            "name": "Seated Dips",
+            "best": "94kg × 3×8",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 3×9)",
+              "note": "Add 1 rep per set at the same weight — aim for 3×9 from 94kg × 3×8."
+            },
+            "isNew": false
+          },
+          {
+            "name": "Narrow Push-Ups",
+            "best": "BW × 4×10",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 4×11)",
+              "note": "Add 1 rep per set at the same weight — aim for 4×11 from BW × 4×10."
+            },
+            "isNew": false
+          }
         ],
         "optional": true,
         "best": "72.5kg × 4×7",
@@ -11685,7 +11802,7 @@
       {
         "section": "Legs",
         "fatigue": 36,
-        "readyInHours": 40,
+        "readyInHours": 39.9,
         "daysSince": 1
       }
     ],

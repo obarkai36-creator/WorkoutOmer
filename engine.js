@@ -766,7 +766,13 @@ function programRecommendation(data, workouts, sectionFat, now, bal, trends) {
   } else {
     for (const slot of day.slots) {
       const o = pickOption(slot.options);
-      suggestedExercises.push(entry(o, slot.region, slot.options.filter((x) => x !== o), slot.optional));
+      // Alternatives carry their own best + next-session target so any of
+      // them can be swapped in with a ready-made goal.
+      const alts = slot.options.filter((x) => x !== o).map((a) => {
+        const r = entry(a, slot.region, [], slot.optional);
+        return { name: a, best: r.best, target: r.target, isNew: !!r.isNew };
+      });
+      suggestedExercises.push(entry(o, slot.region, alts, slot.optional));
     }
   }
   // Core: rotate the pairs in PROGRAM.coreRotation by sessions since adoption.
