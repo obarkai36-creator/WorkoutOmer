@@ -1,7 +1,7 @@
 {
   "date": "2026-11-15",
   "day_number": 141,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "23:15",
     "sleep_end": "05:45",
@@ -386,6 +386,40 @@
       "fiber_g": 0,
       "time_approx": true,
       "note": "verified label (max_brenner_dark_truffle, 544kcal/100g) — new reference saved."
+    },
+    {
+      "time": "21:00",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "21:00",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (PM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "21:00",
+      "name": "Green grapes, seedless",
+      "category": "food",
+      "qty": "10 pieces (~50 g)",
+      "kcal": 34.5,
+      "protein_g": 0.36,
+      "carbs_g": 9.05,
+      "fat_g": 0.08,
+      "fiber_g": 0.45,
+      "note": "standard reference."
     }
   ],
   "workout_today": false,
@@ -395,7 +429,7 @@
     "selenium_mcg": 197,
     "folate_mcg_dfe": 426.65,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1282.6,
+    "vitamin_c_mg": 1288.0,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 136,
     "lycopene_mg": 50.6
@@ -410,7 +444,9 @@
     "14:00 espresso (4 shots).",
     "15:30 175g cottage cheese + 2 cucumbers + 3g honey + 20 cherry tomatoes; omega-3.",
     "17:25 1 yellow cheese slice + 3 beigale pretzel snack pieces + 3 cherry tomatoes.",
-    "Dinner (time not given, placeholder 19:30): 500ml cherry tomato soup + 2 Agami Pita Pro + 3g Max Brenner dark truffle (label verified, new reference)."
+    "Dinner (time not given, placeholder 19:30): 500ml cherry tomato soup + 2 Agami Pita Pro + 3g Max Brenner dark truffle (label verified, new reference).",
+    "21:00 creatine 5g, Rhinolast PM, 10 green grapes. EOD: 7,500 steps, retainers worn."
   ],
-  "status_note": "In progress. Slept 6.5h."
+  "status_note": "Day complete. Slept 6.5h. Rest day. ~2,137 kcal / 165g protein / 51g fiber — protein and fiber targets hit. All supplements/meds taken (Steronase 9/30). 4 caffeine shots. 7,500 steps. Retainers worn.",
+  "steps": 7500
 }
