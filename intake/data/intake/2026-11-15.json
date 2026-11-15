@@ -128,24 +128,50 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "10:45",
+      "name": "Banana",
+      "category": "food",
+      "qty": "1 medium (~118 g)",
+      "kcal": 105,
+      "protein_g": 1.3,
+      "carbs_g": 27,
+      "fat_g": 0.4,
+      "fiber_g": 3.1,
+      "note": "standard medium banana. Credits ~10mg vitamin C, ~24mcg folate."
+    },
+    {
+      "time": "10:45",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "\"essential 5\" — time not given, logged with the banana."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 3.4,
-    "selenium_mcg": 13,
-    "folate_mcg_dfe": 164,
+    "zinc_mg": 23.4,
+    "selenium_mcg": 113,
+    "folate_mcg_dfe": 188,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 55,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1065,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 11
   },
   "assumptions": [
     "Sleep 23:15-05:45, 6.5h.",
     "Pill, sprays (Rhinolast AM + Steronase day 9/30), Mayven, 20g chocolate hamantasch — times not given, placeholder 06:00.",
-    "07:30 + 10:00 espresso (2 shots). 09:15 150g cottage cheese + 3g honey + 25 cherry tomatoes."
+    "07:30 + 10:00 espresso (2 shots). 09:15 150g cottage cheese + 3g honey + 25 cherry tomatoes.",
+    "10:45 banana (medium) + essential-5 (time not given, logged together)."
   ],
   "status_note": "In progress. Slept 6.5h."
 }
