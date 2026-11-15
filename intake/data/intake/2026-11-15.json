@@ -153,25 +153,104 @@
       "fiber_g": 0,
       "time_approx": true,
       "note": "\"essential 5\" — time not given, logged with the banana."
+    },
+    {
+      "time": "12:30",
+      "name": "Lunch — build-your-own large salad: vegetables (cucumber, red onion, cherry tomatoes, white + red cabbage)",
+      "category": "food",
+      "qty": "~100g cucumber + ~30g red onion + ~100g cherry tomatoes + ~60g white cabbage + ~60g red cabbage (portions assumed)",
+      "kcal": 79,
+      "protein_g": 3.6,
+      "carbs_g": 18.2,
+      "fat_g": 0.5,
+      "fiber_g": 5,
+      "time_approx": true,
+      "note": "from the receipt; vegetable portions assumed for a large salad. Credits ~4.5mg lycopene, ~75mg vitamin C, ~70mcg folate."
+    },
+    {
+      "time": "12:30",
+      "name": "Lunch — salad: roasted sweet potato + roasted cauliflower",
+      "category": "food",
+      "qty": "~80g each (assumed), roasted with a little oil",
+      "kcal": 130,
+      "protein_g": 3.2,
+      "carbs_g": 24,
+      "fat_g": 4,
+      "fiber_g": 5,
+      "time_approx": true,
+      "note": "roasting oil assumed (~4g total). Credits ~20mg vitamin C, ~20mcg folate."
+    },
+    {
+      "time": "12:30",
+      "name": "Lunch — salad: croutons",
+      "category": "food",
+      "qty": "~20 g (assumed)",
+      "kcal": 82,
+      "protein_g": 2.4,
+      "carbs_g": 14,
+      "fat_g": 2,
+      "fiber_g": 1,
+      "time_approx": true,
+      "note": "portion assumed."
+    },
+    {
+      "time": "12:30",
+      "name": "Lunch — salad: chicken breast",
+      "category": "food",
+      "qty": "200 g (2 portions, per user)",
+      "kcal": 330,
+      "protein_g": 62,
+      "carbs_g": 0,
+      "fat_g": 7.2,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "standard cooked chicken breast (~165kcal/31g protein per 100g). Credits ~55mcg selenium, ~2mg zinc."
+    },
+    {
+      "time": "12:30",
+      "name": "Lunch — salad: pesto",
+      "category": "food",
+      "qty": "30 g (per user)",
+      "kcal": 145,
+      "protein_g": 1.5,
+      "carbs_g": 1.8,
+      "fat_g": 15,
+      "fiber_g": 0.5,
+      "time_approx": true,
+      "note": "generic basil pesto (~480kcal/100g). Credits ~2mg vitamin E."
+    },
+    {
+      "time": "12:30",
+      "name": "Lunch — salad: lemon juice",
+      "category": "food",
+      "qty": "~30 ml",
+      "kcal": 7,
+      "protein_g": 0.1,
+      "carbs_g": 2.1,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "'a lot of lemon juice'."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 23.4,
-    "selenium_mcg": 113,
-    "folate_mcg_dfe": 188,
+    "zinc_mg": 25.4,
+    "selenium_mcg": 168,
+    "folate_mcg_dfe": 278,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1065,
+    "vitamin_c_mg": 1165,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 134,
-    "lycopene_mg": 11
+    "vitamin_e_mg": 136,
+    "lycopene_mg": 15.5
   },
   "assumptions": [
     "Sleep 23:15-05:45, 6.5h.",
     "Pill, sprays (Rhinolast AM + Steronase day 9/30), Mayven, 20g chocolate hamantasch — times not given, placeholder 06:00.",
     "07:30 + 10:00 espresso (2 shots). 09:15 150g cottage cheese + 3g honey + 25 cherry tomatoes.",
-    "10:45 banana (medium) + essential-5 (time not given, logged together)."
+    "10:45 banana (medium) + essential-5 (time not given, logged together).",
+    "Lunch (time not given, placeholder 12:30): build-your-own large salad from receipt — cucumber, red onion, cherry tomatoes, white + red cabbage, roasted sweet potato, roasted cauliflower, croutons, 200g chicken breast (2 portions), 30g pesto, lots of lemon. Veg/croutons portions assumed."
   ],
   "status_note": "In progress. Slept 6.5h."
 }

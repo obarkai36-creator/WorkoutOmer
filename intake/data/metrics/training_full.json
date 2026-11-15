@@ -1,5 +1,5 @@
 {
-  "now": 1794732707196,
+  "now": 1794736370173,
   "workouts": [
     {
       "datetime": "2026-11-14T08:00",
@@ -9803,7 +9803,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     },
@@ -9844,23 +9844,23 @@
       "label": "Quads",
       "section": "Legs",
       "pct": 42,
-      "readyInHours": 20.6,
+      "readyInHours": 19.6,
       "ready": false
     },
     "hamstrings": {
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 58,
-      "readyInHours": 39,
+      "pct": 57,
+      "readyInHours": 38,
       "ready": false
     },
     "glutes": {
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 47,
-      "readyInHours": 26.8,
+      "pct": 46,
+      "readyInHours": 25.8,
       "ready": false
     },
     "adductors": {
@@ -9875,8 +9875,8 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 31,
-      "readyInHours": 1,
+      "pct": 30,
+      "readyInHours": 0,
       "ready": false
     },
     "core": {
@@ -9891,7 +9891,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     }
@@ -9914,14 +9914,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 12,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         }
@@ -9975,23 +9975,23 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 36,
-      "readyInHours": 39,
+      "pct": 35,
+      "readyInHours": 38,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 58,
-          "readyInHours": 39,
+          "pct": 57,
+          "readyInHours": 38,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 47,
-          "readyInHours": 26.8,
+          "pct": 46,
+          "readyInHours": 25.8,
           "ready": false
         },
         {
@@ -9999,15 +9999,15 @@
           "label": "Quads",
           "section": "Legs",
           "pct": 42,
-          "readyInHours": 20.6,
+          "readyInHours": 19.6,
           "ready": false
         },
         {
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 31,
-          "readyInHours": 1,
+          "pct": 30,
+          "readyInHours": 0,
           "ready": false
         },
         {
@@ -10037,14 +10037,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         }
@@ -11476,7 +11476,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-15T08:51:47.196Z",
+    "readyAt": "2026-11-15T09:52:50.173Z",
     "neverLogged": false,
     "daysSince": 4.8,
     "suggestedExercises": [
@@ -11789,7 +11789,7 @@
       },
       {
         "section": "Pull",
-        "fatigue": 12,
+        "fatigue": 11,
         "readyInHours": 0,
         "daysSince": 4.8
       },
@@ -11801,9 +11801,9 @@
       },
       {
         "section": "Legs",
-        "fatigue": 36,
-        "readyInHours": 39,
-        "daysSince": 1
+        "fatigue": 35,
+        "readyInHours": 38,
+        "daysSince": 1.1
       }
     ],
     "suggestedCount": 9,
@@ -11839,7 +11839,7 @@
       20,
       22
     ],
-    "daysSinceLast": 1,
+    "daysSinceLast": 1.1,
     "total": 94
   },
   "relstrength": {
