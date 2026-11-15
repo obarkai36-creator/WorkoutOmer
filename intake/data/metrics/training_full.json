@@ -1,5 +1,5 @@
 {
-  "now": 1794736370173,
+  "now": 1794740154623,
   "workouts": [
     {
       "datetime": "2026-11-14T08:00",
@@ -9843,24 +9843,24 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 42,
-      "readyInHours": 19.6,
+      "pct": 41,
+      "readyInHours": 18.5,
       "ready": false
     },
     "hamstrings": {
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 57,
-      "readyInHours": 38,
+      "pct": 56,
+      "readyInHours": 37,
       "ready": false
     },
     "glutes": {
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 46,
-      "readyInHours": 25.8,
+      "pct": 45,
+      "readyInHours": 24.7,
       "ready": false
     },
     "adductors": {
@@ -9875,15 +9875,15 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 30,
+      "pct": 29,
       "readyInHours": 0,
-      "ready": false
+      "ready": true
     },
     "core": {
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     },
@@ -9975,40 +9975,40 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 35,
-      "readyInHours": 38,
+      "pct": 34,
+      "readyInHours": 37,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 57,
-          "readyInHours": 38,
+          "pct": 56,
+          "readyInHours": 37,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 46,
-          "readyInHours": 25.8,
+          "pct": 45,
+          "readyInHours": 24.7,
           "ready": false
         },
         {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 42,
-          "readyInHours": 19.6,
+          "pct": 41,
+          "readyInHours": 18.5,
           "ready": false
         },
         {
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 30,
+          "pct": 29,
           "readyInHours": 0,
-          "ready": false
+          "ready": true
         },
         {
           "key": "adductors",
@@ -10022,14 +10022,14 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 12,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         }
@@ -11476,9 +11476,9 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-15T09:52:50.173Z",
+    "readyAt": "2026-11-15T10:55:54.623Z",
     "neverLogged": false,
-    "daysSince": 4.8,
+    "daysSince": 4.9,
     "suggestedExercises": [
       {
         "name": "Incline Dumbbell Bench Press",
@@ -11785,24 +11785,24 @@
         "section": "Push",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 4.8
+        "daysSince": 4.9
       },
       {
         "section": "Pull",
         "fatigue": 11,
         "readyInHours": 0,
-        "daysSince": 4.8
+        "daysSince": 4.9
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 2
+        "daysSince": 2.1
       },
       {
         "section": "Legs",
-        "fatigue": 35,
-        "readyInHours": 38,
+        "fatigue": 34,
+        "readyInHours": 37,
         "daysSince": 1.1
       }
     ],
@@ -11811,7 +11811,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 2,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 2
+    "daysSinceAerobic": 2.1
   },
   "alerts": [
     {
@@ -11906,7 +11906,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 2,
+    "daysSinceLast": 2.1,
     "recent": [
       {
         "t": 1794562200000,
