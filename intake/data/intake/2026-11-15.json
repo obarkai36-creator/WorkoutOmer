@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-15",
+  "day_number": 141,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "23:15",
+    "sleep_end": "05:45",
+    "duration_hours": 6.5,
+    "quality": null,
+    "notes": "6.5h (night of 2026-11-14) — below the 7-9h target."
+  },
+  "items": [
+    {
+      "time": "06:00",
+      "name": "Bilaxten (bilastine)",
+      "category": "medication",
+      "qty": "1 pill (morning)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:00",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (AM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:00",
+      "name": "Steronase (triamcinolone nasal spray)",
+      "category": "medication",
+      "qty": "1 dose",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "day 9/30."
+    },
+    {
+      "time": "06:00",
+      "name": "Mayven Full Volume Gummies",
+      "category": "supplement",
+      "qty": "2 gummies",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:00",
+      "name": "Hamantasch with chocolate filling",
+      "category": "food",
+      "qty": "20 g",
+      "kcal": 88,
+      "protein_g": 1.2,
+      "carbs_g": 12,
+      "fat_g": 4,
+      "fiber_g": 0.5,
+      "time_approx": true,
+      "note": "same generic filled-cookie reference (~440kcal/100g with chocolate filling)."
+    }
+  ],
+  "workout_today": false,
+  "caffeine_shots": 0,
+  "micros_sperm_priority": {
+    "zinc_mg": 2.8,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 100,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Sleep 23:15-05:45, 6.5h.",
+    "Pill, sprays (Rhinolast AM + Steronase day 9/30), Mayven, 20g chocolate hamantasch — times not given, placeholder 06:00."
+  ],
+  "status_note": "In progress. Slept 6.5h."
+}
