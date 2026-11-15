@@ -347,19 +347,58 @@
       "fat_g": 0.09,
       "fiber_g": 0.54,
       "note": "standard reference."
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — cherry tomato soup",
+      "category": "food",
+      "qty": "500 ml",
+      "kcal": 200,
+      "protein_g": 5,
+      "carbs_g": 30,
+      "fat_g": 7.5,
+      "fiber_g": 6,
+      "time_approx": true,
+      "note": "same generic cherry-tomato soup estimate (~40kcal/100ml). Credits ~25mg lycopene, ~50mg vitamin C, ~50mcg folate."
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — Agami Pita Pro (whole spelt)",
+      "category": "food",
+      "qty": "2 units (136 g)",
+      "kcal": 280,
+      "protein_g": 30,
+      "carbs_g": 38,
+      "fat_g": 5,
+      "fiber_g": 18,
+      "time_approx": true,
+      "note": "verified reference (agami_pita_pro_spelt)."
+    },
+    {
+      "time": "19:30",
+      "name": "Max Brenner Dark Truffle",
+      "category": "food",
+      "qty": "3 g",
+      "kcal": 16.3,
+      "protein_g": 0.18,
+      "carbs_g": 0.78,
+      "fat_g": 1.38,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "verified label (max_brenner_dark_truffle, 544kcal/100g) — new reference saved."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 27.1,
-    "selenium_mcg": 187,
-    "folate_mcg_dfe": 376.65,
+    "zinc_mg": 29.1,
+    "selenium_mcg": 197,
+    "folate_mcg_dfe": 426.65,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1232.6,
+    "vitamin_c_mg": 1282.6,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 136,
-    "lycopene_mg": 25.6
+    "lycopene_mg": 50.6
   },
   "assumptions": [
     "Sleep 23:15-05:45, 6.5h.",
@@ -370,7 +409,8 @@
     "12:30 espresso (3 shots).",
     "14:00 espresso (4 shots).",
     "15:30 175g cottage cheese + 2 cucumbers + 3g honey + 20 cherry tomatoes; omega-3.",
-    "17:25 1 yellow cheese slice + 3 beigale pretzel snack pieces + 3 cherry tomatoes."
+    "17:25 1 yellow cheese slice + 3 beigale pretzel snack pieces + 3 cherry tomatoes.",
+    "Dinner (time not given, placeholder 19:30): 500ml cherry tomato soup + 2 Agami Pita Pro + 3g Max Brenner dark truffle (label verified, new reference)."
   ],
   "status_note": "In progress. Slept 6.5h."
 }
