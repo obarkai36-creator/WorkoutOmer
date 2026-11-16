@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-16",
+  "day_number": 142,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "22:35",
+    "sleep_end": "05:55",
+    "duration_hours": 7.33,
+    "quality": null,
+    "notes": "7.3h (night of 2026-11-15) — within the 7-9h target band."
+  },
+  "items": [
+    {
+      "time": "06:10",
+      "name": "Bilaxten (bilastine)",
+      "category": "medication",
+      "qty": "1 pill (morning)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:10",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (AM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:10",
+      "name": "Steronase (triamcinolone nasal spray)",
+      "category": "medication",
+      "qty": "1 dose",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "day 10/30."
+    },
+    {
+      "time": "06:10",
+      "name": "Mayven Full Volume Gummies",
+      "category": "supplement",
+      "qty": "2 gummies",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    }
+  ],
+  "workout_today": false,
+  "caffeine_shots": 0,
+  "micros_sperm_priority": {
+    "zinc_mg": 2.8,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 100,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "assumptions": [
+    "Sleep 22:35-05:55, 7.3h.",
+    "Pill, sprays (Rhinolast AM + Steronase day 10/30), Mayven by 06:10."
+  ],
+  "status_note": "In progress. Slept 7.3h."
+}
