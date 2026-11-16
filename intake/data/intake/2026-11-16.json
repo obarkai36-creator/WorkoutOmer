@@ -126,19 +126,43 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "10:00",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "3 slices (75 g)",
+      "kcal": 150,
+      "protein_g": 22.5,
+      "carbs_g": 0,
+      "fat_g": 6.75,
+      "fiber_g": 0,
+      "note": "verified label reference."
+    },
+    {
+      "time": "10:00",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "15 pieces",
+      "kcal": 39.75,
+      "protein_g": 2.05,
+      "carbs_g": 8.8,
+      "fat_g": 0.45,
+      "fiber_g": 2.7,
+      "note": "standard reference. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38mcg folate DFE."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 3.3,
-    "selenium_mcg": 11,
-    "folate_mcg_dfe": 151,
+    "zinc_mg": 6.3,
+    "selenium_mcg": 23,
+    "folate_mcg_dfe": 189,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 44,
+    "vitamin_c_mg": 77,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 15.4
   },
   "assumptions": [
     "Sleep 22:35-05:55, 7.3h.",
@@ -146,7 +170,8 @@
     "07:30 espresso.",
     "08:15 125g cottage cheese + 2g honey + 20 cherry tomatoes.",
     "08:30 omega-3.",
-    "09:30 espresso (2 shots)."
+    "09:30 espresso (2 shots).",
+    "10:00 3 yellow cheese slices + 15 cherry tomatoes."
   ],
   "status_note": "In progress. Slept 7.3h."
 }
