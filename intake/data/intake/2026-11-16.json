@@ -261,18 +261,78 @@
       "fat_g": 0,
       "fiber_g": 0,
       "note": "\"essential 5\"."
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — Angel PRO Pita",
+      "category": "food",
+      "qty": "2 units (125 g)",
+      "kcal": 251.2,
+      "protein_g": 25.8,
+      "carbs_g": 28.4,
+      "fat_g": 2.4,
+      "fiber_g": 7.4,
+      "time_approx": true
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "5 slices (125 g)",
+      "kcal": 250,
+      "protein_g": 37.5,
+      "carbs_g": 0,
+      "fat_g": 11.25,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — Simfonia cheese spread",
+      "category": "food",
+      "qty": "45 g",
+      "kcal": 48.6,
+      "protein_g": 4.41,
+      "carbs_g": 2.07,
+      "fat_g": 2.25,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — white cabbage salad",
+      "category": "food",
+      "qty": "200 g",
+      "kcal": 60,
+      "protein_g": 2.6,
+      "carbs_g": 12,
+      "fat_g": 0.2,
+      "fiber_g": 5,
+      "time_approx": true
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — Green grapes, seedless",
+      "category": "food",
+      "qty": "5 pieces (~25 g)",
+      "kcal": 17.3,
+      "protein_g": 0.18,
+      "carbs_g": 4.53,
+      "fat_g": 0.04,
+      "fiber_g": 0.23,
+      "time_approx": true
     }
   ],
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 29.7,
-    "selenium_mcg": 177,
-    "folate_mcg_dfe": 276,
+    "zinc_mg": 34.7,
+    "selenium_mcg": 207,
+    "folate_mcg_dfe": 366,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1085,
+    "vitamin_c_mg": 1150,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 135.5,
+    "vitamin_e_mg": 136.0,
     "lycopene_mg": 15.4
   },
   "assumptions": [
@@ -283,7 +343,8 @@
     "08:30 omega-3.",
     "09:30 espresso (2 shots).",
     "10:00 3 yellow cheese slices + 15 cherry tomatoes.",
-    "Lunch (time not given, placeholder 13:00): 250g chicken schnitzel, 250g cucumber & sesame salad, 50g black lentil & sweet potato salad, 15g chimichurri, 10g salsa."
+    "Lunch (time not given, placeholder 13:00): 250g chicken schnitzel, 250g cucumber & sesame salad, 50g black lentil & sweet potato salad, 15g chimichurri, 10g salsa.",
+    "Dinner time not given (placeholder 19:30); cabbage salad per 11-14 estimate."
   ],
   "status_note": "In progress. Slept 7.3h."
 }
