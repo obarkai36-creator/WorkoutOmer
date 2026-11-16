@@ -397,9 +397,9 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
-  // 16 Nov — Push (time not given)
+  // 16 Nov — Push (19:00)
   {
-    datetime: "2026-11-16T16:00", timeUnknown: true, note: "Push day (clock time not given, placeholder 16:00) — Incline Bench Press 70kg×3×6 (below 72.5kg×4×7 best). Dumbbell Bench Press 26kg each×3×8 (step-up from 24kg; not a PR by est. 1RM). Incline Pec Fly 20kg each×4×8, as suggested (new PR). Converging Shoulder Press 79kg×4×8, as suggested (ties best). Lateral Raises 16kg each×4×10, as suggested (new PR). Overhead DB Triceps Extension 20kg×4×12, as suggested (new PR). Seated Dips 94kg×3×9, as suggested (new PR). Triceps Extension Machine 41kg×2×7 to failure. Core: VKR BW×4×10, Side Plank 2×20s each side (first logged). 4 new PRs.",
+    datetime: "2026-11-16T19:00", note: "Push day (19:00) — Incline Bench Press 70kg×3×6 (below 72.5kg×4×7 best). Dumbbell Bench Press 26kg each×3×8 (step-up from 24kg; not a PR by est. 1RM). Incline Pec Fly 20kg each×4×8, as suggested (new PR). Converging Shoulder Press 79kg×4×8, as suggested (ties best). Lateral Raises 16kg each×4×10, as suggested (new PR). Overhead DB Triceps Extension 20kg×4×12, as suggested (new PR). Seated Dips 94kg×3×9, as suggested (new PR). Triceps Extension Machine 41kg×2×7 to failure. Core: VKR BW×4×10, Side Plank 2×20s each side (first logged). 4 new PRs.",
     exercises: [
       { name: "Incline Bench Press", sets: [ { reps: 6, weight: 70 }, { reps: 6, weight: 70 }, { reps: 6, weight: 70 } ] },
       { name: "Dumbbell Bench Press", sets: [ { reps: 8, weight: 52 }, { reps: 8, weight: 52 }, { reps: 8, weight: 52 } ] },

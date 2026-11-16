@@ -1,10 +1,9 @@
 {
-  "now": 1794853153938,
+  "now": 1794853433962,
   "workouts": [
     {
-      "datetime": "2026-11-16T16:00",
-      "timeUnknown": true,
-      "note": "Push day (clock time not given, placeholder 16:00) — Incline Bench Press 70kg×3×6 (below 72.5kg×4×7 best). Dumbbell Bench Press 26kg each×3×8 (step-up from 24kg; not a PR by est. 1RM). Incline Pec Fly 20kg each×4×8, as suggested (new PR). Converging Shoulder Press 79kg×4×8, as suggested (ties best). Lateral Raises 16kg each×4×10, as suggested (new PR). Overhead DB Triceps Extension 20kg×4×12, as suggested (new PR). Seated Dips 94kg×3×9, as suggested (new PR). Triceps Extension Machine 41kg×2×7 to failure. Core: VKR BW×4×10, Side Plank 2×20s each side (first logged). 4 new PRs.",
+      "datetime": "2026-11-16T19:00",
+      "note": "Push day (19:00) — Incline Bench Press 70kg×3×6 (below 72.5kg×4×7 best). Dumbbell Bench Press 26kg each×3×8 (step-up from 24kg; not a PR by est. 1RM). Incline Pec Fly 20kg each×4×8, as suggested (new PR). Converging Shoulder Press 79kg×4×8, as suggested (ties best). Lateral Raises 16kg each×4×10, as suggested (new PR). Overhead DB Triceps Extension 20kg×4×12, as suggested (new PR). Seated Dips 94kg×3×9, as suggested (new PR). Triceps Extension Machine 41kg×2×7 to failure. Core: VKR BW×4×10, Side Plank 2×20s each side (first logged). 4 new PRs.",
       "exercises": [
         {
           "name": "Incline Bench Press",
@@ -267,7 +266,7 @@
           "kind": "strength"
         }
       ],
-      "t": 1794844800000,
+      "t": 1794855600000,
       "muscleLoad": {
         "chest": 4803.2,
         "shoulders": 5703.799999999999,
@@ -10070,8 +10069,8 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 58,
-      "readyInHours": 39.7,
+      "pct": 61,
+      "readyInHours": 42,
       "ready": false
     },
     "back": {
@@ -10086,8 +10085,8 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 67,
-      "readyInHours": 32.3,
+      "pct": 71,
+      "readyInHours": 34.5,
       "ready": false
     },
     "biceps": {
@@ -10102,8 +10101,8 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 91,
-      "readyInHours": 44.1,
+      "pct": 96,
+      "readyInHours": 46.5,
       "ready": false
     },
     "forearms": {
@@ -10127,7 +10126,7 @@
       "label": "Hamstrings",
       "section": "Legs",
       "pct": 33,
-      "readyInHours": 5.6,
+      "readyInHours": 5.5,
       "ready": false
     },
     "glutes": {
@@ -10158,8 +10157,8 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 64,
-      "readyInHours": 22.5,
+      "pct": 69,
+      "readyInHours": 24.7,
       "ready": false
     },
     "cardio": {
@@ -10174,15 +10173,15 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 58,
-      "readyInHours": 39.7,
+      "pct": 61,
+      "readyInHours": 42,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 58,
-          "readyInHours": 39.7,
+          "pct": 61,
+          "readyInHours": 42,
           "ready": false
         }
       ]
@@ -10204,30 +10203,30 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 67,
-      "readyInHours": 32.3,
+      "pct": 71,
+      "readyInHours": 34.5,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 67,
-          "readyInHours": 32.3,
+          "pct": 71,
+          "readyInHours": 34.5,
           "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 30,
-      "readyInHours": 44.1,
+      "pct": 32,
+      "readyInHours": 46.5,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 91,
-          "readyInHours": 44.1,
+          "pct": 96,
+          "readyInHours": 46.5,
           "ready": false
         },
         {
@@ -10251,14 +10250,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 19,
-      "readyInHours": 5.6,
+      "readyInHours": 5.5,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
           "pct": 33,
-          "readyInHours": 5.6,
+          "readyInHours": 5.5,
           "ready": false
         },
         {
@@ -10297,15 +10296,15 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 64,
-      "readyInHours": 22.5,
+      "pct": 69,
+      "readyInHours": 24.7,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 64,
-          "readyInHours": 22.5,
+          "pct": 69,
+          "readyInHours": 24.7,
           "ready": false
         }
       ]
@@ -11754,8 +11753,8 @@
       },
       {
         "label": "This wk",
-        "stress": 873,
-        "sessions": 5,
+        "stress": 583,
+        "sessions": 4,
         "acwr": 1.63
       }
     ],
@@ -11774,7 +11773,7 @@
     "fatigue": null,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-16T18:19:13.938Z",
+    "readyAt": "2026-11-16T18:23:53.962Z",
     "neverLogged": false,
     "daysSince": null,
     "suggestedExercises": [
@@ -11850,8 +11849,8 @@
     },
     {
       "level": "low",
-      "title": "Triceps fatigued (91%)",
-      "detail": "Recovers in ~44.1h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Triceps fatigued (96%)",
+      "detail": "Recovers in ~46.5h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
@@ -11873,7 +11872,7 @@
       20,
       22
     ],
-    "daysSinceLast": 0.1,
+    "daysSinceLast": 0,
     "total": 95
   },
   "relstrength": {
