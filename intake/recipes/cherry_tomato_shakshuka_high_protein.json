@@ -1,0 +1,101 @@
+{
+  "id": "cherry_tomato_shakshuka_high_protein",
+  "name": "Cherry-tomato shakshuka — high-protein (שקשוקת עגבניות שרי, גרסה עתירת חלבון)",
+  "source": {
+    "type": "family",
+    "url": null,
+    "author": "Higher-protein version of cherry_tomato_shakshuka",
+    "captured": "2026-11-16",
+    "notes": "High-protein version of cherry_tomato_shakshuka, adopted per user request — WITHOUT egg whites and WITHOUT cottage (user's choice). Changes from the base: 6 eggs (instead of ~5), olive oil cut from 2 to 1 tbsp, and 100 g bulgarit 5% crumbled on top. Same cherry tomatoes (~250 g), garlic, chili, tomato paste. Whole pan = 2 servings. Kosher dairy. Estimate."
+  },
+  "servings": 2,
+  "serving_desc": "½ the pan (3 eggs + half the cheese)",
+  "ingredients": [
+    {"item": "cherry tomatoes (red or mixed / cherry-date)", "qty": "1 basket (~250 g)"},
+    {"item": "olive oil", "qty": "1 tbsp", "note": "halved from 2 tbsp"},
+    {"item": "garlic, crushed or sliced", "qty": "2–3 cloves"},
+    {"item": "green/red chili, chopped", "qty": "1 (to taste)"},
+    {"item": "tomato paste", "qty": "1 tbsp"},
+    {"item": "eggs", "qty": "6"},
+    {"item": "bulgarit cheese 5%, crumbled", "qty": "100 g", "note": "verify pasteurized; it's salty, so go light on salt"},
+    {"item": "salt and coarse black pepper", "qty": "pepper to taste; salt only a pinch, if any"}
+  ],
+  "steps": [
+    "Heat 1 tbsp olive oil in a wide nonstick pan and cook the cherry tomatoes until they blister and burst into a sauce.",
+    "Add the garlic, chili and tomato paste and cook briefly; season with pepper (little or no salt — the bulgarit is salty).",
+    "Make 6 wells, crack in the eggs, cover and cook on low until the whites set.",
+    "Crumble the bulgarit over the top for the last 2 minutes, covered, until warmed through. Cook until the yolks are firm for Lihi."
+  ],
+  "per_serving": {
+    "kcal": 362,
+    "protein_g": 26.2,
+    "carbs_g": 10.8,
+    "fat_g": 24.2,
+    "fiber_g": 2,
+    "micros": {
+      "choline_mg": 440,
+      "selenium_mcg": 46,
+      "vitamin_d_iu": 130,
+      "calcium_mg": 260,
+      "lycopene_mg": 7,
+      "vitamin_c_mg": 30,
+      "sodium_mg": 725
+    }
+  },
+  "batch_totals": {
+    "kcal": 724,
+    "protein_g": 52.5,
+    "carbs_g": 21.7,
+    "fat_g": 48.4,
+    "fiber_g": 4,
+    "sodium_mg": 1450,
+    "note": "WHOLE PAN. Vs the base as listed (~681 kcal / ~35 g protein): only ~43 kcal more but ~17.5 g more protein (~7.3 vs ~5.2 g protein per 100 kcal) — from the 6th egg and the bulgarit, paid for by halving the olive oil."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 7,
+      "verdict": "A meaningfully better shakshuka for the cut: ~26 g protein per half-pan for ~362 kcal (~7.3 g per 100 kcal, vs ~5.2 in the original). The added protein costs almost nothing in calories because the olive oil was halved. Eggs bring choline and selenium, tomatoes bring lycopene and vitamin C. Without egg whites or cottage it doesn't reach the ~9 g/100 kcal of the max version, and fat stays the dominant macro (~24 g, mostly yolks).",
+      "flags": [
+        "~26 g protein / 362 kcal per half-pan (~7.3 g/100 kcal)",
+        "only +~43 kcal for +~17.5 g protein vs the original whole pan",
+        "choline + selenium (eggs); lycopene + vitamin C (tomatoes); calcium (bulgarit)",
+        "sodium ~725 mg per half-pan — bulgarit is salty, skip added salt"
+      ],
+      "suggested_mods": [
+        "Serve with a whole-grain or high-protein pita",
+        "Add a side of greens or a chopped salad for fibre"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Good for her: 6 eggs make it a strong choline source (fetal brain development), plus selenium and some vitamin D; bulgarit adds calcium. Two safety points in pregnancy: cook the yolks until fully firm (no runny yolks), and make sure the bulgarit is pasteurized (it's heated through on top, which helps).",
+      "prenatal_highlights": [
+        "choline (6 eggs) — fetal brain development",
+        "calcium (bulgarit); vitamin C + lycopene (tomatoes); selenium"
+      ],
+      "safety_advisories": [
+        {"note": "Runny yolks carry a salmonella risk in pregnancy — cook until whites and yolks are fully set.", "swap": "cover longer, or use pasteurized eggs"},
+        {"note": "Bulgarit is a brined soft cheese — verify it's pasteurized; heating it through on top lowers the risk.", "swap": "pasteurized bulgarit/feta"}
+      ],
+      "suggested_mods": [
+        "Fold in a handful of spinach with the garlic for folate + iron"
+      ]
+    }
+  },
+  "tags": ["breakfast", "brunch", "shakshuka", "eggs", "tomato", "bulgarit", "vegetarian", "kosher-dairy", "low-carb", "one-pan", "high-protein"],
+  "adopted": true,
+  "adopted_note": "Adopted 2026-11-16 (high-protein version, without egg whites and without cottage, per user). Per half-pan: ~362 kcal, 26.2 g protein, 10.8 g carb, 24.2 g fat, ~725 mg sodium. Whole pan ~724 kcal / ~52.5 g protein. him 7 / her 7. Standing spec: 6 eggs, 1 tbsp olive oil, ~250 g cherry tomatoes, garlic, chili, 1 tbsp tomato paste, 100 g bulgarit 5% on top, little or no salt. Yolks fully set for Lihi; pasteurized bulgarit.",
+  "created": "2026-11-16",
+  "updated": "2026-11-16",
+  "serving_g": 260,
+  "meal_type": "Other",
+  "cooking_guide": [
+    "With only 1 tbsp oil, use a nonstick pan on medium-high so the tomatoes blister and burst rather than stick; press some with a spoon once soft to release their juices.",
+    "Add the garlic after the tomatoes start to burst so it doesn't burn; fry the tomato paste for 30 seconds before stirring it through.",
+    "Crack each egg into a small cup first and slide it into its well so the yolk stays whole.",
+    "Lower the heat and cover — the whites set from the steam without the bottom scorching.",
+    "Add the bulgarit only for the last ~2 minutes so it softens and warms through without turning rubbery.",
+    "Taste before salting: the bulgarit usually seasons the whole pan."
+  ]
+}
