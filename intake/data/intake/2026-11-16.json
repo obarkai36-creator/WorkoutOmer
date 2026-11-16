@@ -150,18 +150,83 @@
       "fat_g": 0.45,
       "fiber_g": 2.7,
       "note": "standard reference. Credits ~6.6mg lycopene, ~33mg vitamin C, ~38mcg folate DFE."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — chicken schnitzel",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 662,
+      "protein_g": 50,
+      "carbs_g": 30,
+      "fat_g": 36.7,
+      "fiber_g": 1.7,
+      "time_approx": true,
+      "note": "generic breaded fried chicken schnitzel (~265kcal/100g). Credits ~45mcg selenium, ~2.5mg zinc."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — cucumber & sesame salad",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 110,
+      "protein_g": 2.5,
+      "carbs_g": 10,
+      "fat_g": 7.5,
+      "fiber_g": 1.7,
+      "time_approx": true,
+      "note": "same estimate as 2026-11-09 (~5g sesame seeds + ~5g sesame oil assumed). Credits ~0.5mg vitamin E."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — black lentil & sweet potato salad",
+      "category": "food",
+      "qty": "50 g",
+      "kcal": 65,
+      "protein_g": 3,
+      "carbs_g": 11,
+      "fat_g": 1,
+      "fiber_g": 2.5,
+      "time_approx": true,
+      "note": "generic estimate (~130kcal/100g, light dressing). Credits ~60mcg folate."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — chimichurri",
+      "category": "food",
+      "qty": "15 g",
+      "kcal": 67,
+      "protein_g": 0.2,
+      "carbs_g": 0.6,
+      "fat_g": 7.2,
+      "fiber_g": 0.3,
+      "time_approx": true,
+      "note": "oil-based herb sauce (~450kcal/100g). Credits ~1mg vitamin E."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — salsa",
+      "category": "food",
+      "qty": "10 g",
+      "kcal": 3,
+      "protein_g": 0.1,
+      "carbs_g": 0.7,
+      "fat_g": 0,
+      "fiber_g": 0.2,
+      "time_approx": true,
+      "note": "tomato salsa."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 6.3,
-    "selenium_mcg": 23,
-    "folate_mcg_dfe": 189,
+    "zinc_mg": 9.3,
+    "selenium_mcg": 68,
+    "folate_mcg_dfe": 264,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 77,
+    "vitamin_c_mg": 85,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_e_mg": 1.5,
     "lycopene_mg": 15.4
   },
   "assumptions": [
@@ -171,7 +236,8 @@
     "08:15 125g cottage cheese + 2g honey + 20 cherry tomatoes.",
     "08:30 omega-3.",
     "09:30 espresso (2 shots).",
-    "10:00 3 yellow cheese slices + 15 cherry tomatoes."
+    "10:00 3 yellow cheese slices + 15 cherry tomatoes.",
+    "Lunch (time not given, placeholder 13:00): 250g chicken schnitzel, 250g cucumber & sesame salad, 50g black lentil & sweet potato salad, 15g chimichurri, 10g salsa."
   ],
   "status_note": "In progress. Slept 7.3h."
 }
