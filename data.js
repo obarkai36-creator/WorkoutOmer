@@ -304,12 +304,12 @@ const PROGRAM = {
 const SNAPSHOT = [
   // ---- Chest ----
   { name: "Bench Press",         section: "Chest", latest: { sets: 3, reps: 11, weight: 75, text: "27.5kg each side + 20kg bar × 3×11 (new PR)" }, best: { sets: 3, reps: 11, weight: 75, text: "27.5kg each side + 20kg bar × 3×11" } },
-  { name: "Dumbbell Bench Press", section: "Chest", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Incline Bench Press", section: "Chest", latest: { sets: 3, reps: 10, weight: 65, text: "22.5kg each side + 20kg bar × 3×10 (higher reps, still below best — not a PR)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
+  { name: "Dumbbell Bench Press", section: "Chest", latest: { sets: 3, reps: 8, weight: 52, text: "26kg each × 3×8 (+2kg step-up, heaviest yet; not a PR by est. 1RM)" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
+  { name: "Incline Bench Press", section: "Chest", latest: { sets: 3, reps: 6, weight: 70, text: "70kg × 3×6 (below best)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
   { name: "Incline Smith Machine Press", section: "Chest", latest: { sets: 4, reps: 8, weight: 40, text: "20kg each side × 4×8 (plates only — Smith bar weight not counted; first logged)" }, best: { sets: 4, reps: 8, weight: 40, text: "20kg each side × 4×8 (plates only)" } },
   { name: "Incline Dumbbell Bench Press", section: "Chest", latest: { sets: 1, reps: 10, weight: 48, text: "24kg each × 1×10 (abbreviated, 1 set only)" }, best: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" } },
   { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7 (new PR)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
-  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 12, weight: 36, text: "18kg each × 4×12 (new PR)" }, best: { sets: 4, reps: 12, weight: 36, text: "18kg each × 4×12" } },
+  { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 8, weight: 40, text: "20kg each × 4×8 (new PR, as suggested)" }, best: { sets: 4, reps: 8, weight: 40, text: "20kg each × 4×8" } },
   { name: "Narrow Push-Ups",     section: "Chest", latest: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" }, best: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 6, weight: 73, text: "73kg × 3×6 (deload)" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
@@ -326,9 +326,9 @@ const SNAPSHOT = [
   { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 } ], text: "30s + 30s + 30s (ties best total hold time, more even distribution)" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
 
   // ---- Shoulders ----
-  { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 6, weight: 68, text: "68kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
+  { name: "Converging Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8 (as suggested, ties best)" }, best: { sets: 4, reps: 8, weight: 79, text: "79kg × 4×8" } },
   { name: "Dumbbell Shoulder Press",   section: "Shoulders", latest: { sets: 3, reps: 12, weight: 40, text: "20kg each × 3×12 (new PR, as suggested)" }, best: { sets: 3, reps: 12, weight: 40, text: "20kg each × 3×12" } },
-  { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9 (ties best)" }, best: { sets: 4, reps: 9, weight: 32, text: "16kg each × 4×9" } },
+  { name: "Lateral Raises",            section: "Shoulders", latest: { sets: 4, reps: 10, weight: 32, text: "16kg each × 4×10 (new PR, as suggested)" }, best: { sets: 4, reps: 10, weight: 32, text: "16kg each × 4×10" } },
   { name: "Seated Lateral Raises",     section: "Shoulders", latest: { sets: 4, reps: 10, weight: 24, text: "12kg each × 4×10" }, best: { sets: 4, reps: 7, weight: 28, text: "14kg each × 4×7" } },
   { name: "Front Raises",              section: "Shoulders", latest: { sets: 4, reps: 11, weight: 18, text: "18kg DB × 4×11 (new PR, as suggested)" }, best: { sets: 4, reps: 11, weight: 18, text: "18kg DB × 4×11" } },
   { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10 (ties best)" }, best: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" } },
@@ -338,9 +338,9 @@ const SNAPSHOT = [
 
   // ---- Arms: Triceps ----
   { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" } },
-  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 11, weight: 20, text: "20kg × 4×11 (new PR)" }, best: { sets: 4, reps: 11, weight: 20, text: "20kg × 4×11" } },
-  { name: "Seated Dips",                      section: "Arms", latest: { sets: 4, reps: 8, weight: 99, text: "49.5kg each side (99kg added) × 4×8 (dip belt — different execution, not comparable to the 94kg machine best)" }, best: { sets: 3, reps: 8, weight: 94, text: "94kg × 3×8" } },
-  { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
+  { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 12, weight: 20, text: "20kg × 4×12 (new PR, as suggested)" }, best: { sets: 4, reps: 12, weight: 20, text: "20kg × 4×12" } },
+  { name: "Seated Dips",                      section: "Arms", latest: { sets: 3, reps: 9, weight: 94, text: "94kg × 3×9 (new PR, as suggested)" }, best: { sets: 3, reps: 9, weight: 94, text: "94kg × 3×9" } },
+  { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 2, reps: 7, weight: 41, text: "41kg × 2×7 (to failure, end of session)" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
   { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 6, weight: 64, text: "64kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" } },
 
@@ -380,9 +380,10 @@ const SNAPSHOT = [
 
   // ---- Core ----
   { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 35, weight: 81.00, text: "BW × 3×35s" }, best: { sets: 3, seconds: 35, weight: 81.00, text: "BW × 3×35s" } },
-  { name: "VKR", section: "Core", latest: { sets: 4, reps: 11, weight: 80.45, text: "BW × 4×11 (new PR, as suggested)" }, best: { sets: 4, reps: 11, weight: 80.45, text: "BW × 4×11" } },
+  { name: "VKR", section: "Core", latest: { sets: 4, reps: 10, weight: 80.45, text: "BW × 4×10" }, best: { sets: 4, reps: 11, weight: 80.45, text: "BW × 4×11" } },
   { name: "Pallof Press", section: "Core", latest: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" } },
   { name: "Back Extension (45°)", section: "Legs", latest: { sets: 4, reps: 8, weight: 80.45, text: "BW × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 80.45, text: "BW × 4×8" } },
+  { name: "Side Plank", section: "Core", iso: true, latest: { sets: 2, seconds: 20, weight: 80.45, text: "BW × 2×20s each side (first logged)" }, best: { sets: 2, seconds: 20, weight: 80.45, text: "BW × 2×20s each side" } },
   { name: "VKR to Sides", section: "Core", latest: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" }, best: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" } },
 ];
 
@@ -396,6 +397,22 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 16 Nov — Push (time not given)
+  {
+    datetime: "2026-11-16T16:00", timeUnknown: true, note: "Push day (clock time not given, placeholder 16:00) — Incline Bench Press 70kg×3×6 (below 72.5kg×4×7 best). Dumbbell Bench Press 26kg each×3×8 (step-up from 24kg; not a PR by est. 1RM). Incline Pec Fly 20kg each×4×8, as suggested (new PR). Converging Shoulder Press 79kg×4×8, as suggested (ties best). Lateral Raises 16kg each×4×10, as suggested (new PR). Overhead DB Triceps Extension 20kg×4×12, as suggested (new PR). Seated Dips 94kg×3×9, as suggested (new PR). Triceps Extension Machine 41kg×2×7 to failure. Core: VKR BW×4×10, Side Plank 2×20s each side (first logged). 4 new PRs.",
+    exercises: [
+      { name: "Incline Bench Press", sets: [ { reps: 6, weight: 70 }, { reps: 6, weight: 70 }, { reps: 6, weight: 70 } ] },
+      { name: "Dumbbell Bench Press", sets: [ { reps: 8, weight: 52 }, { reps: 8, weight: 52 }, { reps: 8, weight: 52 } ] },
+      { name: "Incline Pec Fly", sets: [ { reps: 8, weight: 40 }, { reps: 8, weight: 40 }, { reps: 8, weight: 40 }, { reps: 8, weight: 40 } ] },
+      { name: "Converging Shoulder Press", sets: [ { reps: 8, weight: 79 }, { reps: 8, weight: 79 }, { reps: 8, weight: 79 }, { reps: 8, weight: 79 } ] },
+      { name: "Lateral Raises", sets: [ { reps: 10, weight: 32 }, { reps: 10, weight: 32 }, { reps: 10, weight: 32 }, { reps: 10, weight: 32 } ] },
+      { name: "Overhead DB Triceps Extension", sets: [ { reps: 12, weight: 20 }, { reps: 12, weight: 20 }, { reps: 12, weight: 20 }, { reps: 12, weight: 20 } ] },
+      { name: "Seated Dips", sets: [ { reps: 9, weight: 94 }, { reps: 9, weight: 94 }, { reps: 9, weight: 94 } ] },
+      { name: "Triceps Extension Machine", sets: [ { reps: 7, weight: 41 }, { reps: 7, weight: 41 } ] },
+      { name: "VKR", sets: [ { reps: 10 }, { reps: 10 }, { reps: 10 }, { reps: 10 } ] },
+      { name: "Side Plank", sets: [ { seconds: 20 }, { seconds: 20 }, { seconds: 20 }, { seconds: 20 } ] },
+    ],
+  },
   // 14 Nov — Legs (~08:00)
   {
     datetime: "2026-11-14T08:00", note: "Legs day (~08:00-09:16) — Angled Leg Press 202kg setup×4×7, as suggested (ties best). Dumbbell RDL 22.5kg each×4×7, as suggested (new PR). Leg Extensions 111kg×4×12 (ties best). Leg Curls 116kg×4×8, as suggested (+5kg, heaviest yet; not a PR by est. 1RM). Hip Thrust 20kg each side (40kg)×4×8 (lighter than 48kg best). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine (= the seated calf raise, per user) 81kg inc. frame×4×8. Back Extension (45°) BW×4×8 (first logged). Core: Pallof Press 18kg×4×8 (first logged), VKR BW×4×11 as suggested (new PR). 2 new PRs.",

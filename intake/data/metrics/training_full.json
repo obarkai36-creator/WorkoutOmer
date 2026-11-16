@@ -1,6 +1,281 @@
 {
-  "now": 1794844697895,
+  "now": 1794853153938,
   "workouts": [
+    {
+      "datetime": "2026-11-16T16:00",
+      "timeUnknown": true,
+      "note": "Push day (clock time not given, placeholder 16:00) — Incline Bench Press 70kg×3×6 (below 72.5kg×4×7 best). Dumbbell Bench Press 26kg each×3×8 (step-up from 24kg; not a PR by est. 1RM). Incline Pec Fly 20kg each×4×8, as suggested (new PR). Converging Shoulder Press 79kg×4×8, as suggested (ties best). Lateral Raises 16kg each×4×10, as suggested (new PR). Overhead DB Triceps Extension 20kg×4×12, as suggested (new PR). Seated Dips 94kg×3×9, as suggested (new PR). Triceps Extension Machine 41kg×2×7 to failure. Core: VKR BW×4×10, Side Plank 2×20s each side (first logged). 4 new PRs.",
+      "exercises": [
+        {
+          "name": "Incline Bench Press",
+          "sets": [
+            {
+              "reps": 6,
+              "weight": 70
+            },
+            {
+              "reps": 6,
+              "weight": 70
+            },
+            {
+              "reps": 6,
+              "weight": 70
+            }
+          ],
+          "load": 1260,
+          "top1RM": 84,
+          "topWeight": 70,
+          "muscles": {
+            "chest": 1260,
+            "shoulders": 504,
+            "triceps": 504
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Dumbbell Bench Press",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 52
+            },
+            {
+              "reps": 8,
+              "weight": 52
+            },
+            {
+              "reps": 8,
+              "weight": 52
+            }
+          ],
+          "load": 1248,
+          "top1RM": 65.86666666666666,
+          "topWeight": 52,
+          "muscles": {
+            "chest": 1248,
+            "triceps": 499.20000000000005,
+            "shoulders": 374.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Incline Pec Fly",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 40
+            },
+            {
+              "reps": 8,
+              "weight": 40
+            },
+            {
+              "reps": 8,
+              "weight": 40
+            },
+            {
+              "reps": 8,
+              "weight": 40
+            }
+          ],
+          "load": 1280,
+          "top1RM": 50.666666666666664,
+          "topWeight": 40,
+          "muscles": {
+            "chest": 1280,
+            "shoulders": 256
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Converging Shoulder Press",
+          "sets": [
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            },
+            {
+              "reps": 8,
+              "weight": 79
+            }
+          ],
+          "load": 2528,
+          "top1RM": 100.06666666666666,
+          "topWeight": 79,
+          "muscles": {
+            "shoulders": 2528,
+            "triceps": 1011.2
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Lateral Raises",
+          "sets": [
+            {
+              "reps": 10,
+              "weight": 32
+            },
+            {
+              "reps": 10,
+              "weight": 32
+            },
+            {
+              "reps": 10,
+              "weight": 32
+            },
+            {
+              "reps": 10,
+              "weight": 32
+            }
+          ],
+          "load": 1280,
+          "top1RM": 42.666666666666664,
+          "topWeight": 32,
+          "muscles": {
+            "shoulders": 1280
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Overhead DB Triceps Extension",
+          "sets": [
+            {
+              "reps": 12,
+              "weight": 20
+            },
+            {
+              "reps": 12,
+              "weight": 20
+            },
+            {
+              "reps": 12,
+              "weight": 20
+            },
+            {
+              "reps": 12,
+              "weight": 20
+            }
+          ],
+          "load": 960,
+          "top1RM": 28,
+          "topWeight": 20,
+          "muscles": {
+            "triceps": 960
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Seated Dips",
+          "sets": [
+            {
+              "reps": 9,
+              "weight": 94
+            },
+            {
+              "reps": 9,
+              "weight": 94
+            },
+            {
+              "reps": 9,
+              "weight": 94
+            }
+          ],
+          "load": 2538,
+          "top1RM": 122.2,
+          "topWeight": 94,
+          "muscles": {
+            "triceps": 2538,
+            "chest": 1015.2,
+            "shoulders": 761.4
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Triceps Extension Machine",
+          "sets": [
+            {
+              "reps": 7,
+              "weight": 41
+            },
+            {
+              "reps": 7,
+              "weight": 41
+            }
+          ],
+          "load": 574,
+          "top1RM": 50.56666666666667,
+          "topWeight": 41,
+          "muscles": {
+            "triceps": 574
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "VKR",
+          "sets": [
+            {
+              "reps": 10
+            },
+            {
+              "reps": 10
+            },
+            {
+              "reps": 10
+            },
+            {
+              "reps": 10
+            }
+          ],
+          "load": 3218,
+          "top1RM": 107.26666666666667,
+          "topWeight": 80.45,
+          "muscles": {
+            "core": 3218
+          },
+          "kind": "strength"
+        },
+        {
+          "name": "Side Plank",
+          "sets": [
+            {
+              "seconds": 20
+            },
+            {
+              "seconds": 20
+            },
+            {
+              "seconds": 20
+            },
+            {
+              "seconds": 20
+            }
+          ],
+          "load": 6436,
+          "top1RM": 0,
+          "topWeight": 80.45,
+          "muscles": {
+            "core": 6436
+          },
+          "kind": "strength"
+        }
+      ],
+      "t": 1794844800000,
+      "muscleLoad": {
+        "chest": 4803.2,
+        "shoulders": 5703.799999999999,
+        "triceps": 6086.4,
+        "core": 9654
+      },
+      "isAerobic": false
+    },
     {
       "datetime": "2026-11-14T08:00",
       "note": "Legs day (~08:00-09:16) — Angled Leg Press 202kg setup×4×7, as suggested (ties best). Dumbbell RDL 22.5kg each×4×7, as suggested (new PR). Leg Extensions 111kg×4×12 (ties best). Leg Curls 116kg×4×8, as suggested (+5kg, heaviest yet; not a PR by est. 1RM). Hip Thrust 20kg each side (40kg)×4×8 (lighter than 48kg best). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine (= the seated calf raise, per user) 81kg inc. frame×4×8. Back Extension (45°) BW×4×8 (first logged). Core: Pallof Press 18kg×4×8 (first logged), VKR BW×4×11 as suggested (new PR). 2 new PRs.",
@@ -9780,14 +10055,14 @@
     "back": 12474.15,
     "shoulders": 8250,
     "biceps": 4579.200000000001,
-    "triceps": 6972,
+    "triceps": 6342,
     "forearms": 16090,
     "quads": 17320,
     "hamstrings": 7762.4,
     "glutes": 9029.6,
     "adductors": 2709,
     "calves": 7490,
-    "core": 14643.199999999999,
+    "core": 14941,
     "cardio": 783
   },
   "fatigue": {
@@ -9795,9 +10070,9 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 58,
+      "readyInHours": 39.7,
+      "ready": false
     },
     "back": {
       "key": "back",
@@ -9811,9 +10086,9 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 2,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 67,
+      "readyInHours": 32.3,
+      "ready": false
     },
     "biceps": {
       "key": "biceps",
@@ -9827,9 +10102,9 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 91,
+      "readyInHours": 44.1,
+      "ready": false
     },
     "forearms": {
       "key": "forearms",
@@ -9843,7 +10118,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 25,
+      "pct": 24,
       "readyInHours": 0,
       "ready": true
     },
@@ -9851,15 +10126,15 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 34,
-      "readyInHours": 7.9,
+      "pct": 33,
+      "readyInHours": 5.6,
       "ready": false
     },
     "glutes": {
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 28,
+      "pct": 27,
       "readyInHours": 0,
       "ready": true
     },
@@ -9875,7 +10150,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -9883,9 +10158,9 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 4,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 64,
+      "readyInHours": 22.5,
+      "ready": false
     },
     "cardio": {
       "key": "cardio",
@@ -9899,16 +10174,16 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 58,
+      "readyInHours": 39.7,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 58,
+          "readyInHours": 39.7,
+          "ready": false
         }
       ]
     },
@@ -9929,35 +10204,35 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 2,
-      "readyInHours": 0,
+      "pct": 67,
+      "readyInHours": 32.3,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 2,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 67,
+          "readyInHours": 32.3,
+          "ready": false
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 30,
+      "readyInHours": 44.1,
       "muscles": [
-        {
-          "key": "biceps",
-          "label": "Biceps",
-          "section": "Arms",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
-        },
         {
           "key": "triceps",
           "label": "Triceps",
+          "section": "Arms",
+          "pct": 91,
+          "readyInHours": 44.1,
+          "ready": false
+        },
+        {
+          "key": "biceps",
+          "label": "Biceps",
           "section": "Arms",
           "pct": 0,
           "readyInHours": 0,
@@ -9975,22 +10250,22 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 20,
-      "readyInHours": 7.9,
+      "pct": 19,
+      "readyInHours": 5.6,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 34,
-          "readyInHours": 7.9,
+          "pct": 33,
+          "readyInHours": 5.6,
           "ready": false
         },
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 28,
+          "pct": 27,
           "readyInHours": 0,
           "ready": true
         },
@@ -9998,7 +10273,7 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 25,
+          "pct": 24,
           "readyInHours": 0,
           "ready": true
         },
@@ -10006,7 +10281,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -10022,16 +10297,16 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 4,
-      "readyInHours": 0,
+      "pct": 64,
+      "readyInHours": 22.5,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 4,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 64,
+          "readyInHours": 22.5,
+          "ready": false
         }
       ]
     },
@@ -10084,18 +10359,18 @@
           "triceps",
           "shoulders"
         ],
-        "latestText": "24kg each × 4×12",
+        "latestText": "26kg each × 3×8 (+2kg step-up, heaviest yet; not a PR by est. 1RM)",
         "bestText": "24kg each × 4×12",
-        "latestVol": 2304,
+        "latestVol": 1248,
         "bestVol": 2304,
-        "pct": 100,
-        "latest1RM": 67.2,
+        "pct": 98,
+        "latest1RM": 65.9,
         "best1RM": 67.2,
         "metric": "1RM",
-        "isPR": true,
-        "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "isPR": false,
+        "belowPR": true,
+        "gap": 1,
+        "inToday": true
       },
       {
         "name": "Incline Bench Press",
@@ -10106,18 +10381,18 @@
           "shoulders",
           "triceps"
         ],
-        "latestText": "22.5kg each side + 20kg bar × 3×10 (higher reps, still below best — not a PR)",
+        "latestText": "70kg × 3×6 (below best)",
         "bestText": "72.5kg × 4×7",
-        "latestVol": 1950,
+        "latestVol": 1260,
         "bestVol": 2030,
-        "pct": 97,
-        "latest1RM": 86.7,
+        "pct": 94,
+        "latest1RM": 84,
         "best1RM": 89.4,
         "metric": "1RM",
         "isPR": false,
         "belowPR": true,
-        "gap": 3,
-        "inToday": false
+        "gap": 5,
+        "inToday": true
       },
       {
         "name": "Incline Smith Machine Press",
@@ -10192,18 +10467,18 @@
           "chest",
           "shoulders"
         ],
-        "latestText": "18kg each × 4×12 (new PR)",
-        "bestText": "18kg each × 4×12",
-        "latestVol": 1728,
-        "bestVol": 1728,
+        "latestText": "20kg each × 4×8 (new PR, as suggested)",
+        "bestText": "20kg each × 4×8",
+        "latestVol": 1280,
+        "bestVol": 1280,
         "pct": 100,
-        "latest1RM": 50.4,
-        "best1RM": 50.4,
+        "latest1RM": 50.7,
+        "best1RM": 50.7,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Narrow Push-Ups",
@@ -10469,18 +10744,18 @@
           "shoulders",
           "triceps"
         ],
-        "latestText": "68kg × 4×6 (deload)",
+        "latestText": "79kg × 4×8 (as suggested, ties best)",
         "bestText": "79kg × 4×8",
-        "latestVol": 1632,
+        "latestVol": 2528,
         "bestVol": 2528,
-        "pct": 82,
-        "latest1RM": 81.6,
+        "pct": 100,
+        "latest1RM": 100.1,
         "best1RM": 100.1,
         "metric": "1RM",
-        "isPR": false,
-        "belowPR": true,
-        "gap": 18,
-        "inToday": false
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": true
       },
       {
         "name": "Dumbbell Shoulder Press",
@@ -10510,18 +10785,18 @@
         "muscles": [
           "shoulders"
         ],
-        "latestText": "16kg each × 4×9 (ties best)",
-        "bestText": "16kg each × 4×9",
-        "latestVol": 1152,
-        "bestVol": 1152,
+        "latestText": "16kg each × 4×10 (new PR, as suggested)",
+        "bestText": "16kg each × 4×10",
+        "latestVol": 1280,
+        "bestVol": 1280,
         "pct": 100,
-        "latest1RM": 41.6,
-        "best1RM": 41.6,
+        "latest1RM": 42.7,
+        "best1RM": 42.7,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Seated Lateral Raises",
@@ -10676,18 +10951,18 @@
         "muscles": [
           "triceps"
         ],
-        "latestText": "20kg × 4×11 (new PR)",
-        "bestText": "20kg × 4×11",
-        "latestVol": 880,
-        "bestVol": 880,
+        "latestText": "20kg × 4×12 (new PR, as suggested)",
+        "bestText": "20kg × 4×12",
+        "latestVol": 960,
+        "bestVol": 960,
         "pct": 100,
-        "latest1RM": 27.3,
-        "best1RM": 27.3,
+        "latest1RM": 28,
+        "best1RM": 28,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Seated Dips",
@@ -10698,18 +10973,18 @@
           "chest",
           "shoulders"
         ],
-        "latestText": "49.5kg each side (99kg added) × 4×8 (dip belt — different execution, not comparable to the 94kg machine best)",
-        "bestText": "94kg × 3×8",
-        "latestVol": 3168,
-        "bestVol": 2256,
+        "latestText": "94kg × 3×9 (new PR, as suggested)",
+        "bestText": "94kg × 3×9",
+        "latestVol": 2538,
+        "bestVol": 2538,
         "pct": 100,
-        "latest1RM": 125.4,
-        "best1RM": 119.1,
+        "latest1RM": 122.2,
+        "best1RM": 122.2,
         "metric": "1RM",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": false
+        "inToday": true
       },
       {
         "name": "Triceps Extension Machine",
@@ -10718,18 +10993,18 @@
         "muscles": [
           "triceps"
         ],
-        "latestText": "41kg × 3×8",
+        "latestText": "41kg × 2×7 (to failure, end of session)",
         "bestText": "41kg × 3×8",
-        "latestVol": 984,
+        "latestVol": 574,
         "bestVol": 984,
-        "pct": 100,
-        "latest1RM": 51.9,
+        "pct": 97,
+        "latest1RM": 50.6,
         "best1RM": 51.9,
         "metric": "1RM",
-        "isPR": true,
-        "belowPR": false,
-        "gap": 0,
-        "inToday": false
+        "isPR": false,
+        "belowPR": true,
+        "gap": 1,
+        "inToday": true
       },
       {
         "name": "Rope Cable Extension",
@@ -10993,7 +11268,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 5,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Standing Calf Raises (Frame)",
@@ -11033,7 +11308,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 1,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Leg Press",
@@ -11076,7 +11351,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Leg Extensions",
@@ -11096,7 +11371,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Single-Leg Extensions",
@@ -11136,7 +11411,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 8,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Outer Thigh",
@@ -11220,7 +11495,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Dumbbell Sumo Squat",
@@ -11263,7 +11538,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 10,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Glute Bridge",
@@ -11326,7 +11601,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Core": [
@@ -11357,17 +11632,17 @@
         "muscles": [
           "core"
         ],
-        "latestText": "BW × 4×11 (new PR, as suggested)",
+        "latestText": "BW × 4×10",
         "bestText": "BW × 4×11",
-        "latestVol": 3540,
+        "latestVol": 3218,
         "bestVol": 3540,
-        "pct": 100,
-        "latest1RM": 109.9,
+        "pct": 98,
+        "latest1RM": 107.3,
         "best1RM": 109.9,
         "metric": "1RM",
-        "isPR": true,
-        "belowPR": false,
-        "gap": 0,
+        "isPR": false,
+        "belowPR": true,
+        "gap": 3,
         "inToday": true
       },
       {
@@ -11385,6 +11660,26 @@
         "latest1RM": 22.8,
         "best1RM": 22.8,
         "metric": "1RM",
+        "isPR": true,
+        "belowPR": false,
+        "gap": 0,
+        "inToday": false
+      },
+      {
+        "name": "Side Plank",
+        "section": "Core",
+        "iso": true,
+        "muscles": [
+          "core"
+        ],
+        "latestText": "BW × 2×20s each side (first logged)",
+        "bestText": "BW × 2×20s each side",
+        "latestVol": 3218,
+        "bestVol": 3218,
+        "pct": 100,
+        "latest1RM": 0,
+        "best1RM": 0,
+        "metric": "load",
         "isPR": true,
         "belowPR": false,
         "gap": 0,
@@ -11414,14 +11709,14 @@
   },
   "balance": {
     "bySection": {
-      "Chest": 19668.2,
-      "Arms": 45687,
-      "Shoulders": 18774.5,
+      "Chest": 17222.2,
+      "Arms": 44387,
+      "Shoulders": 18927.100000000002,
       "Back": 23525.04,
       "Legs": 62406.04,
-      "Core": 15219.199999999999
+      "Core": 18115.4
     },
-    "pushPull": 0.98,
+    "pushPull": 0.87,
     "quadHam": 2.8,
     "hasCore": true
   },
@@ -11429,25 +11724,25 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 433,
+        "stress": 438,
         "sessions": 4,
         "acwr": 0.98
       },
       {
         "label": "-4w",
-        "stress": 485,
+        "stress": 491,
         "sessions": 4,
         "acwr": 0.86
       },
       {
         "label": "-3w",
-        "stress": 399,
+        "stress": 405,
         "sessions": 3,
         "acwr": 0.71
       },
       {
         "label": "-2w",
-        "stress": 710,
+        "stress": 714,
         "sessions": 4,
         "acwr": 1.31
       },
@@ -11459,388 +11754,127 @@
       },
       {
         "label": "This wk",
-        "stress": 583,
-        "sessions": 4,
-        "acwr": 0.99
+        "stress": 873,
+        "sessions": 5,
+        "acwr": 1.63
       }
     ],
-    "acute": 59.88,
-    "chronic": 60.71,
-    "acwr": 0.99,
-    "acwrZone": "ok",
-    "sessions28": 12
+    "acute": 132.36,
+    "chronic": 80.97,
+    "acwr": 1.63,
+    "acwrZone": "danger",
+    "sessions28": 13
   },
   "recommendation": {
-    "section": "Push",
-    "program": "Push / Pull / Legs + Cardio",
-    "fatigue": 0,
+    "section": "Full Body",
+    "deload": true,
+    "deloadReasons": [
+      "Load ratio (ACWR) 1.63 is in the danger zone (>1.5) from your recent logged sessions."
+    ],
+    "fatigue": null,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-16T15:58:17.895Z",
+    "readyAt": "2026-11-16T18:19:13.938Z",
     "neverLogged": false,
-    "daysSince": 6.1,
+    "daysSince": null,
     "suggestedExercises": [
       {
-        "name": "Incline Dumbbell Bench Press",
-        "region": "Chest — upper (clavicular head)",
-        "alternatives": [
-          {
-            "name": "Incline Bench Press",
-            "best": "72.5kg × 4×7",
-            "target": {
-              "status": "rebuild",
-              "text": "Rebuild to best (72.5kg × 4×7)",
-              "note": "Last session came in under your best (72.5kg × 4×7) — rebuild to that before pushing further."
-            },
-            "isNew": false
-          },
-          {
-            "name": "Incline Smith Machine Press",
-            "best": "20kg each side × 4×8 (plates only)",
-            "target": {
-              "status": "progress",
-              "text": "+1 rep (aim 4×9)",
-              "note": "Add 1 rep per set at the same weight — aim for 4×9 from 20kg each side × 4×8 (plates only)."
-            },
-            "isNew": false
-          }
-        ],
-        "optional": false,
-        "best": "24kg each × 4×11",
-        "best1RM": 65.6,
+        "name": "Narrow Push-Ups",
+        "best": "BW × 4×10",
+        "best1RM": 108,
         "iso": false,
         "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (24kg each × 4×11)",
-          "note": "Last session came in under your best (24kg each × 4×11) — rebuild to that before pushing further."
+          "status": "deload",
+          "text": "70kg × 4×8 (deload)",
+          "note": "~13% lighter than your best (BW × 4×10), reps capped well short of failure — recovery session, no PR attempt."
         }
       },
       {
-        "name": "Chest Press Machine",
-        "region": "Chest — mid (sternal head)",
-        "alternatives": [
-          {
-            "name": "Bench Press",
-            "best": "27.5kg each side + 20kg bar × 3×11",
-            "target": {
-              "status": "progress",
-              "text": "+1 rep (aim 3×12)",
-              "note": "Add 1 rep per set at the same weight — aim for 3×12 from 27.5kg each side + 20kg bar × 3×11."
-            },
-            "isNew": false
-          },
-          {
-            "name": "Dumbbell Bench Press",
-            "best": "24kg each × 4×12",
-            "target": {
-              "status": "progress",
-              "text": "+2.5kg (reset to 4×8)",
-              "note": "You're at 12 reps on 24kg each × 4×12 — step the weight up ~2.5kg and reset to 4×8."
-            },
-            "isNew": false
-          }
-        ],
-        "optional": false,
-        "best": "73kg × 4×6",
-        "best1RM": 87.6,
+        "name": "Diverging Seated Row",
+        "best": "97kg × 4×12",
+        "best1RM": 135.8,
         "iso": false,
         "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (73kg × 4×6)",
-          "note": "Last session came in under your best (73kg × 4×6) — rebuild to that before pushing further."
-        }
-      },
-      {
-        "name": "Dumbbell Pec Fly",
-        "region": "Chest — stretch / adduction",
-        "alternatives": [
-          {
-            "name": "Incline Pec Fly",
-            "best": "18kg each × 4×12",
-            "target": {
-              "status": "progress",
-              "text": "+2kg (reset to 4×8)",
-              "note": "You're at 12 reps on 18kg each × 4×12 — step the weight up ~2kg and reset to 4×8."
-            },
-            "isNew": false
-          },
-          {
-            "name": "Pec Fly Machine",
-            "best": "84kg × 3×8",
-            "target": {
-              "status": "rebuild",
-              "text": "Rebuild to best (84kg × 3×8)",
-              "note": "Last session came in under your best (84kg × 3×8) — rebuild to that before pushing further."
-            },
-            "isNew": false
-          }
-        ],
-        "optional": false,
-        "best": "16kg each × 4×8",
-        "best1RM": 40.5,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×9)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×9 from 16kg each × 4×8."
+          "status": "deload",
+          "text": "85kg × 4×10 (deload)",
+          "note": "~13% lighter than your best (97kg × 4×12), reps capped well short of failure — recovery session, no PR attempt."
         }
       },
       {
         "name": "Converging Shoulder Press",
-        "region": "Front delts (overhead press)",
-        "alternatives": [
-          {
-            "name": "Dumbbell Shoulder Press",
-            "best": "20kg each × 3×12",
-            "target": {
-              "status": "progress",
-              "text": "+2.5kg (reset to 3×8)",
-              "note": "You're at 12 reps on 20kg each × 3×12 — step the weight up ~2.5kg and reset to 3×8."
-            },
-            "isNew": false
-          }
-        ],
-        "optional": false,
         "best": "79kg × 4×8",
         "best1RM": 100.1,
         "iso": false,
         "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (79kg × 4×8)",
-          "note": "Last session came in under your best (79kg × 4×8) — rebuild to that before pushing further."
+          "status": "deload",
+          "text": "67.5kg × 4×6 (deload)",
+          "note": "~13% lighter than your best (79kg × 4×8), reps capped well short of failure — recovery session, no PR attempt."
         }
       },
       {
-        "name": "Seated Lateral Raises",
-        "region": "Side delts",
-        "alternatives": [
-          {
-            "name": "Lateral Raises",
-            "best": "16kg each × 4×9",
-            "target": {
-              "status": "progress",
-              "text": "+1 rep (aim 4×10)",
-              "note": "Add 1 rep per set at the same weight — aim for 4×10 from 16kg each × 4×9."
-            },
-            "isNew": false
-          }
-        ],
-        "optional": false,
-        "best": "14kg each × 4×7",
-        "best1RM": 34.5,
+        "name": "Angled Leg Press",
+        "best": "202kg setup (70kg each side + 62kg frame) × 4×7",
+        "best1RM": 249.1,
         "iso": false,
         "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (14kg each × 4×7)",
-          "note": "Last session came in under your best (14kg each × 4×7) — rebuild to that before pushing further."
+          "status": "deload",
+          "text": "175kg × 4×5 (deload)",
+          "note": "~13% lighter than your best (202kg setup (70kg each side + 62kg frame) × 4×7), reps capped well short of failure — recovery session, no PR attempt."
         }
       },
       {
-        "name": "Flat DB Triceps Extension",
-        "region": "Triceps — long head (overhead)",
-        "alternatives": [
-          {
-            "name": "Overhead DB Triceps Extension",
-            "best": "20kg × 4×11",
-            "target": {
-              "status": "progress",
-              "text": "+1 rep (aim 4×12)",
-              "note": "Add 1 rep per set at the same weight — aim for 4×12 from 20kg × 4×11."
-            },
-            "isNew": false
-          },
-          {
-            "name": "Single-Hand DB Triceps Extension",
-            "best": "12kg each × 4×9",
-            "target": {
-              "status": "progress",
-              "text": "+1 rep (aim 4×10)",
-              "note": "Add 1 rep per set at the same weight — aim for 4×10 from 12kg each × 4×9."
-            },
-            "isNew": false
-          }
-        ],
-        "optional": false,
-        "best": "17.5kg each × 4×6",
-        "best1RM": 42,
+        "name": "Seated Dips",
+        "best": "94kg × 3×9",
+        "best1RM": 122.2,
         "iso": false,
         "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×7)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×7 from 17.5kg each × 4×6."
+          "status": "deload",
+          "text": "82.5kg × 3×7 (deload)",
+          "note": "~13% lighter than your best (94kg × 3×9), reps capped well short of failure — recovery session, no PR attempt."
         }
-      },
-      {
-        "name": "Triceps Extension Machine",
-        "region": "Triceps — lateral/medial heads",
-        "alternatives": [
-          {
-            "name": "Rope Cable Extension",
-            "best": "75kg × 4×8",
-            "target": {
-              "status": "rebuild",
-              "text": "Rebuild to best (75kg × 4×8)",
-              "note": "Last session came in under your best (75kg × 4×8) — rebuild to that before pushing further."
-            },
-            "isNew": false
-          }
-        ],
-        "optional": false,
-        "best": "41kg × 3×8",
-        "best1RM": 51.9,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 3×9)",
-          "note": "Add 1 rep per set at the same weight — aim for 3×9 from 41kg × 3×8."
-        }
-      },
-      {
-        "name": "Decline Bench Press",
-        "region": "Chest — lower (costal fibres)",
-        "alternatives": [
-          {
-            "name": "Seated Dips",
-            "best": "94kg × 3×8",
-            "target": {
-              "status": "progress",
-              "text": "+1 rep (aim 3×9)",
-              "note": "Add 1 rep per set at the same weight — aim for 3×9 from 94kg × 3×8."
-            },
-            "isNew": false
-          },
-          {
-            "name": "Narrow Push-Ups",
-            "best": "BW × 4×10",
-            "target": {
-              "status": "progress",
-              "text": "+1 rep (aim 4×11)",
-              "note": "Add 1 rep per set at the same weight — aim for 4×11 from BW × 4×10."
-            },
-            "isNew": false
-          }
-        ],
-        "optional": true,
-        "best": "72.5kg × 4×7",
-        "best1RM": 89.4,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×8)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×8 from 72.5kg × 4×7."
-        }
-      },
-      {
-        "name": "Front Raises",
-        "region": "Front delts (isolation)",
-        "alternatives": [],
-        "optional": true,
-        "best": "18kg DB × 4×11",
-        "best1RM": 24.6,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 4×12)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×12 from 18kg DB × 4×11."
-        }
-      },
-      {
-        "name": "Cable Crunch",
-        "region": "Core (rotating)",
-        "alternatives": [],
-        "optional": false,
-        "best": "",
-        "best1RM": 0,
-        "iso": false,
-        "isNew": true,
-        "target": {
-          "status": "new",
-          "text": "Not yet attempted",
-          "note": "No logged sessions yet — pick a comfortable starting weight/reps."
-        },
-        "core": true
-      },
-      {
-        "name": "Side Plank",
-        "region": "Core (rotating)",
-        "alternatives": [],
-        "optional": false,
-        "best": "",
-        "best1RM": 0,
-        "iso": true,
-        "isNew": true,
-        "target": {
-          "status": "new",
-          "text": "Not yet attempted",
-          "note": "No logged sessions yet — pick a comfortable starting weight/reps."
-        },
-        "core": true
       }
     ],
     "guidance": [
-      "Each row is one muscle region; the listed exercise is this week's rotation pick — alternatives rotate in on later sessions. Optional rows fill the session if time allows."
+      "Load ratio (ACWR) 1.63 is in the danger zone (>1.5) from your recent logged sessions."
     ],
-    "ranked": [
-      {
-        "section": "Push",
-        "fatigue": 0,
-        "readyInHours": 0,
-        "daysSince": 6.1
-      },
-      {
-        "section": "Pull",
-        "fatigue": 7,
-        "readyInHours": 0,
-        "daysSince": 6.1
-      },
-      {
-        "section": "Cardio",
-        "fatigue": 0,
-        "readyInHours": 0,
-        "daysSince": 3.3
-      },
-      {
-        "section": "Legs",
-        "fatigue": 20,
-        "readyInHours": 7.9,
-        "daysSince": 2.3
-      }
-    ],
-    "suggestedCount": 9,
-    "totalAvailable": 11,
-    "typicalSessionSize": 8,
+    "ranked": [],
     "aerobicLast7": 2,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 3.3
+    "daysSinceAerobic": 3.4
   },
   "alerts": [
     {
-      "level": "ok",
-      "title": "No major red flags",
-      "detail": "Nothing acutely concerning. The notes below are housekeeping, not warnings."
+      "level": "high",
+      "title": "Training load spike",
+      "detail": "Load ratio 1.63 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload."
+    },
+    {
+      "level": "low",
+      "title": "Triceps fatigued (91%)",
+      "detail": "Recovers in ~44.1h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
-    "You're below your PR on 15 lifts — closest wins first: Incline Hammer Curl (66% of best), Incline DB Curl (67% of best), Rope Cable Extension (81% of best). Add a rep or a set before adding weight.",
+    "You're below your PR on 17 lifts — closest wins first: Incline Hammer Curl (66% of best), Incline DB Curl (67% of best), Rope Cable Extension (81% of best). Add a rep or a set before adding weight.",
     "Hamstrings lag quads (2.8×). Keep RDLs/leg curls heavy and add a set."
   ],
   "timing": {
     "avgGap": 2.8,
     "longestGap": 35.7,
-    "perWeek": 3,
+    "perWeek": 3.3,
     "avgHour": 13,
     "todPref": "afternoon",
     "dow": [
       7,
-      16,
+      17,
       16,
       7,
       6,
       20,
       22
     ],
-    "daysSinceLast": 2.3,
-    "total": 94
+    "daysSinceLast": 0.1,
+    "total": 95
   },
   "relstrength": {
     "bodyweightKg": 80.45,
@@ -11857,8 +11891,8 @@
       },
       {
         "name": "Seated Dips",
-        "oneRM": 119.1,
-        "ratio": 1.48
+        "oneRM": 122.2,
+        "ratio": 1.52
       },
       {
         "name": "Low Row",
@@ -11906,7 +11940,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 3.3,
+    "daysSinceLast": 3.4,
     "recent": [
       {
         "t": 1794562200000,
