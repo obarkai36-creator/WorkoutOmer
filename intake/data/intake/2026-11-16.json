@@ -58,10 +58,21 @@
       "fat_g": 0,
       "fiber_g": 0,
       "time_approx": true
+    },
+    {
+      "time": "07:30",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
-  "caffeine_shots": 0,
+  "caffeine_shots": 1,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
     "selenium_mcg": 0,
@@ -74,7 +85,8 @@
   },
   "assumptions": [
     "Sleep 22:35-05:55, 7.3h.",
-    "Pill, sprays (Rhinolast AM + Steronase day 10/30), Mayven by 06:10."
+    "Pill, sprays (Rhinolast AM + Steronase day 10/30), Mayven by 06:10.",
+    "07:30 espresso."
   ],
   "status_note": "In progress. Slept 7.3h."
 }
