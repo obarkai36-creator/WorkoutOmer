@@ -104,6 +104,17 @@
       "fat_g": 0.6,
       "fiber_g": 3.6,
       "note": "standard reference. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."
+    },
+    {
+      "time": "08:30",
+      "name": "Omega-3 fish oil (EPA/DHA)",
+      "category": "supplement",
+      "qty": "2 softgels (~1000 mg EPA/DHA)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "workout_today": false,
@@ -112,7 +123,7 @@
     "zinc_mg": 3.3,
     "selenium_mcg": 11,
     "folate_mcg_dfe": 151,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 1000,
     "vitamin_c_mg": 44,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
@@ -122,7 +133,8 @@
     "Sleep 22:35-05:55, 7.3h.",
     "Pill, sprays (Rhinolast AM + Steronase day 10/30), Mayven by 06:10.",
     "07:30 espresso.",
-    "08:15 125g cottage cheese + 2g honey + 20 cherry tomatoes."
+    "08:15 125g cottage cheese + 2g honey + 20 cherry tomatoes.",
+    "08:30 omega-3."
   ],
   "status_note": "In progress. Slept 7.3h."
 }
