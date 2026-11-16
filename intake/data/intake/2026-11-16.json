@@ -237,18 +237,42 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "15:00",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "100 g",
+      "kcal": 98,
+      "protein_g": 11,
+      "carbs_g": 3.4,
+      "fat_g": 4.3,
+      "fiber_g": 0,
+      "note": "same generic reference."
+    },
+    {
+      "time": "15:00",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\"."
     }
   ],
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 9.3,
-    "selenium_mcg": 68,
-    "folate_mcg_dfe": 264,
+    "zinc_mg": 29.7,
+    "selenium_mcg": 177,
+    "folate_mcg_dfe": 276,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 85,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 1.5,
+    "vitamin_c_mg": 1085,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 135.5,
     "lycopene_mg": 15.4
   },
   "assumptions": [
