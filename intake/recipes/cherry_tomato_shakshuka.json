@@ -1,0 +1,100 @@
+{
+  "id": "cherry_tomato_shakshuka",
+  "name": "Cherry-tomato shakshuka (שקשוקת עגבניות שרי)",
+  "source": {
+    "type": "other",
+    "url": null,
+    "author": "AI-summary screenshot of a TikTok recipe (Hebrew)",
+    "captured": "2026-11-16",
+    "notes": "A quick, fresh shakshuka: a basket of cherry tomatoes blistered in olive oil with garlic and chili until they burst into a sauce, then eggs cracked in, with optional tomato paste. Analyzed strictly as listed, per user request — NO 'upgrade' toppings (goat cheese / bulgarit / feta / basil). Midpoints used: 1 basket cherry tomatoes ≈ 250 g, 5 eggs (of 4–6), 2.5 garlic cloves, 1 tbsp tomato paste included, ~½ tsp salt. The source says 4 servings, but at ~680 kcal for the whole pan that's ~170 kcal and ~9 g protein per plate — realistically this is 2 servings (or 1 big one). Stored as 2 servings. A max-protein variant is described in suggested_mods. Manual intake — reference only, not adopted. Estimate."
+  },
+  "servings": 2,
+  "serving_desc": "½ the pan (~2–3 eggs) — the source's '4 servings' is unrealistically small",
+  "ingredients": [
+    {"item": "cherry tomatoes (red or mixed / cherry-date)", "qty": "1 basket (~250 g)"},
+    {"item": "olive oil", "qty": "2 tbsp", "note": "≈36% of the dish's calories"},
+    {"item": "garlic, crushed or sliced", "qty": "2–3 cloves"},
+    {"item": "green/red chili, chopped", "qty": "1 (to taste)"},
+    {"item": "eggs", "qty": "4–6 (5 assumed)"},
+    {"item": "tomato paste", "qty": "1 tbsp (optional)"},
+    {"item": "salt and coarse black pepper", "qty": "to taste"}
+  ],
+  "steps": [
+    "Heat the olive oil and cook the cherry tomatoes until they blister and burst into a sauce.",
+    "Add the garlic and chili (and tomato paste, if using) and cook briefly; season with salt and pepper.",
+    "Make wells, crack in the eggs, cover and cook until the whites are set."
+  ],
+  "per_serving": {
+    "kcal": 341,
+    "protein_g": 17.6,
+    "carbs_g": 9.2,
+    "fat_g": 26.3,
+    "fiber_g": 2,
+    "micros": {
+      "choline_mg": 370,
+      "selenium_mcg": 39,
+      "vitamin_d_iu": 110,
+      "lycopene_mg": 7,
+      "vitamin_c_mg": 30,
+      "sodium_mg": 765
+    }
+  },
+  "batch_totals": {
+    "kcal": 681,
+    "protein_g": 35,
+    "carbs_g": 18,
+    "fat_g": 53,
+    "fiber_g": 4,
+    "sodium_mg": 1529,
+    "note": "WHOLE PAN as listed (5 eggs): ~681 kcal (range ~610 kcal with 4 eggs to ~750 kcal with 6). Fat-led: the 2 tbsp olive oil (~248 kcal) plus egg yolks make up most of the calories; protein is only ~5.2 g per 100 kcal."
+  },
+  "confidence": "estimate",
+  "analysis": {
+    "him": {
+      "fit_score": 6,
+      "verdict": "Nutritious but not protein-dense as written: the whole pan is ~681 kcal with ~35 g protein (~5.2 g per 100 kcal), because 2 tbsp olive oil is over a third of the calories and the only protein source is the eggs. Good micros — choline and selenium from the eggs, lycopene and vitamin C from the tomatoes (sperm-relevant). The max-protein version (see mods) more than doubles the protein to ~83 g for ~915 kcal (~9.1 g per 100 kcal).",
+      "flags": [
+        "whole pan ~681 kcal / ~35 g protein (~5.2 g per 100 kcal)",
+        "olive oil ≈36% of calories",
+        "lycopene + vitamin C (tomatoes), selenium + choline (eggs)",
+        "very low carb; ~765 mg sodium per half-pan"
+      ],
+      "suggested_mods": [
+        "MAX-PROTEIN VERSION (whole pan): 6 eggs + 4 egg whites, olive oil cut to 1 tbsp, 150 g cottage 3% dolloped in with the eggs, 100 g bulgarit 5% crumbled on top → ~915 kcal / ~83 g protein / ~28 g carb / ~53 g fat (~9.1 g protein per 100 kcal). Split 2 ways: ~458 kcal / ~42 g protein each",
+        "Biggest single lever: cut the oil to 1 tbsp (−~124 kcal) — the tomatoes still blister fine in a nonstick pan",
+        "Egg whites are the 'cheapest' protein to add: 4 whites ≈ +14 g protein for only ~68 kcal",
+        "Cottage dolloped into the sauce sets into creamy pockets and adds ~16 g protein per 150 g",
+        "Serve with a high-protein or whole-grain pita/bread rather than white bread"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "A good preconception dish: eggs are a top choline source (fetal brain development) plus selenium and some vitamin D, and tomatoes add vitamin C and lycopene. The one rule in pregnancy: cook the eggs until both whites and yolks are firm — runny shakshuka yolks are a salmonella risk.",
+      "prenatal_highlights": [
+        "choline (eggs) — fetal brain development",
+        "selenium, some vitamin D (eggs); vitamin C + lycopene (tomatoes)"
+      ],
+      "safety_advisories": [
+        {"note": "Runny/soft yolks carry a salmonella risk in pregnancy — cook until whites and yolks are fully set.", "swap": "cover longer until the yolks are firm, or use pasteurized eggs"}
+      ],
+      "suggested_mods": [
+        "Fold in a handful of spinach for folate and iron",
+        "If adding the bulgarit/feta 'upgrade', make sure it's pasteurized (it's heated through on top)"
+      ]
+    }
+  },
+  "tags": ["breakfast", "brunch", "shakshuka", "eggs", "tomato", "vegetarian", "low-carb", "one-pan"],
+  "adopted": false,
+  "created": "2026-11-16",
+  "updated": "2026-11-16",
+  "serving_g": 230,
+  "meal_type": "Other",
+  "cooking_guide": [
+    "Use a wide pan and medium-high heat so the cherry tomatoes blister and burst rather than stew; press some with a spoon once they soften to release their juices into a sauce.",
+    "Add the garlic after the tomatoes have started to burst — added first, it burns before the tomatoes are ready.",
+    "If using tomato paste, fry it for 30 seconds in the oil before stirring it through — it deepens colour and flavour.",
+    "Make wells in the sauce, crack each egg into a small cup first and slide it in so the yolk stays intact.",
+    "Season the whites lightly, lower the heat, and cover; cook until whites are set (and yolks firm for Lihi).",
+    "For the max-protein version, pour the egg whites around the whole eggs and dot the cottage in spoonfuls before covering; scatter the bulgarit on top for the last 2 minutes."
+  ]
+}
