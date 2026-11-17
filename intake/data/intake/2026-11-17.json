@@ -12,14 +12,14 @@
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 3.1,
-    "selenium_mcg": 7,
-    "folate_mcg_dfe": 158,
+    "zinc_mg": 5.1,
+    "selenium_mcg": 14,
+    "folate_mcg_dfe": 178,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 44,
+    "vitamin_c_mg": 61.6,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 8.8
+    "lycopene_mg": 12.3
   },
   "status_note": "In progress. Slept 7.7h.",
   "items": [
@@ -113,6 +113,29 @@
       "fat_g": 0.6,
       "fiber_g": 3.6,
       "note": "standard reference. Credits ~8.8mg lycopene, ~44mg vitamin C, ~51mcg folate DFE."
+    },
+    {
+      "time": "10:00",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "2 slices (50 g)",
+      "kcal": 100,
+      "protein_g": 15,
+      "carbs_g": 0,
+      "fat_g": 4.5,
+      "fiber_g": 0
+    },
+    {
+      "time": "10:00",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "8 pieces",
+      "kcal": 21.2,
+      "protein_g": 1.1,
+      "carbs_g": 4.7,
+      "fat_g": 0.24,
+      "fiber_g": 1.44,
+      "note": "standard reference. Credits ~3.5mg lycopene, ~17.6mg vitamin C, ~20mcg folate DFE."
     }
   ],
   "assumptions": []
