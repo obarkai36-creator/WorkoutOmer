@@ -10,15 +10,15 @@
     "notes": "7.7h (night of 2026-11-16) — within the 7-9h target band."
   },
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 5.1,
-    "selenium_mcg": 14,
-    "folate_mcg_dfe": 178,
+    "zinc_mg": 7.6,
+    "selenium_mcg": 59,
+    "folate_mcg_dfe": 203,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 61.6,
+    "vitamin_c_mg": 72.6,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_e_mg": 0.8,
     "lycopene_mg": 12.3
   },
   "status_note": "In progress. Slept 7.7h.",
@@ -136,6 +136,52 @@
       "fat_g": 0.24,
       "fiber_g": 1.44,
       "note": "standard reference. Credits ~3.5mg lycopene, ~17.6mg vitamin C, ~20mcg folate DFE."
+    },
+    {
+      "time": "10:45",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "2 shots",
+      "kcal": 5,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — chicken schnitzel",
+      "category": "food",
+      "qty": "250 g",
+      "kcal": 662,
+      "protein_g": 50,
+      "carbs_g": 30,
+      "fat_g": 36.7,
+      "fiber_g": 1.7,
+      "note": "generic breaded fried chicken schnitzel (~265kcal/100g), same as 11-16."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — cucumber & sesame salad",
+      "category": "food",
+      "qty": "400 g",
+      "kcal": 176,
+      "protein_g": 4,
+      "carbs_g": 16,
+      "fat_g": 12,
+      "fiber_g": 2.7,
+      "note": "scaled from the 11-16 250g estimate."
+    },
+    {
+      "time": "15:00",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "assumptions": []
