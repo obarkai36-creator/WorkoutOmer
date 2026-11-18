@@ -12,13 +12,13 @@
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "zinc_mg": 22.8,
+    "selenium_mcg": 100,
     "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1000,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 0
   },
   "status_note": "In progress. Slept 8.0h (recovering from a suspected stomach bug).",
@@ -83,6 +83,42 @@
       "fat_g": 0,
       "fiber_g": 0,
       "time_approx": true
+    },
+    {
+      "time": "09:30",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat",
+      "category": "food",
+      "qty": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "same reference (danone_pro_strawberry_0pct)."
+    },
+    {
+      "time": "09:30",
+      "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter",
+      "category": "food",
+      "qty": "10 g",
+      "kcal": 30.6,
+      "protein_g": 3.1,
+      "carbs_g": 4.4,
+      "fat_g": 1.4,
+      "fiber_g": 2.5,
+      "note": "verified reference (catalina_crunch_choc_pb_cereal)."
+    },
+    {
+      "time": "09:30",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\"."
     }
   ],
   "assumptions": []

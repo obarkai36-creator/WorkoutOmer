@@ -1,5 +1,5 @@
 {
-  "now": 1794976263073,
+  "now": 1794987704140,
   "workouts": [
     {
       "datetime": "2026-11-16T19:00",
@@ -10069,8 +10069,8 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 35,
-      "readyInHours": 8.5,
+      "pct": 33,
+      "readyInHours": 5.3,
       "ready": false
     },
     "back": {
@@ -10085,9 +10085,9 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 31,
-      "readyInHours": 1,
-      "ready": false
+      "pct": 28,
+      "readyInHours": 0,
+      "ready": true
     },
     "biceps": {
       "key": "biceps",
@@ -10101,8 +10101,8 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 41,
-      "readyInHours": 12.9,
+      "pct": 38,
+      "readyInHours": 9.8,
       "ready": false
     },
     "forearms": {
@@ -10117,7 +10117,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -10125,7 +10125,7 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 19,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -10133,7 +10133,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 15,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -10149,7 +10149,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 6,
+      "pct": 5,
       "readyInHours": 0,
       "ready": true
     },
@@ -10157,7 +10157,7 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 22,
+      "pct": 20,
       "readyInHours": 0,
       "ready": true
     },
@@ -10173,15 +10173,15 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 35,
-      "readyInHours": 8.5,
+      "pct": 33,
+      "readyInHours": 5.3,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 35,
-          "readyInHours": 8.5,
+          "pct": 33,
+          "readyInHours": 5.3,
           "ready": false
         }
       ]
@@ -10203,30 +10203,30 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 31,
-      "readyInHours": 1,
+      "pct": 28,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 31,
-          "readyInHours": 1,
-          "ready": false
+          "pct": 28,
+          "readyInHours": 0,
+          "ready": true
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 14,
-      "readyInHours": 12.9,
+      "pct": 13,
+      "readyInHours": 9.8,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 41,
-          "readyInHours": 12.9,
+          "pct": 38,
+          "readyInHours": 9.8,
           "ready": false
         },
         {
@@ -10249,14 +10249,14 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 19,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         },
@@ -10264,7 +10264,7 @@
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 15,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         },
@@ -10272,7 +10272,7 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -10280,7 +10280,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 6,
+          "pct": 5,
           "readyInHours": 0,
           "ready": true
         },
@@ -10296,14 +10296,14 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 22,
+      "pct": 20,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 22,
+          "pct": 20,
           "readyInHours": 0,
           "ready": true
         }
@@ -11770,9 +11770,9 @@
     "fatigue": 4,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-18T04:31:03.073Z",
+    "readyAt": "2026-11-18T07:41:44.140Z",
     "neverLogged": false,
-    "daysSince": 7.6,
+    "daysSince": 7.7,
     "suggestedExercises": [
       {
         "name": "Lat Pulldown (Triangle)",
@@ -12111,25 +12111,25 @@
         "section": "Pull",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 7.6
+        "daysSince": 7.7
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 4.8
+        "daysSince": 4.9
       },
       {
         "section": "Legs",
-        "fatigue": 11,
+        "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 3.9
+        "daysSince": 4
       },
       {
         "section": "Push",
-        "fatigue": 35,
-        "readyInHours": 8.5,
-        "daysSince": 1.4
+        "fatigue": 33,
+        "readyInHours": 5.3,
+        "daysSince": 1.5
       }
     ],
     "suggestedCount": 10,
@@ -12137,7 +12137,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 4.8
+    "daysSinceAerobic": 4.9
   },
   "alerts": [
     {
@@ -12165,7 +12165,7 @@
       20,
       22
     ],
-    "daysSinceLast": 1.4,
+    "daysSinceLast": 1.5,
     "total": 95
   },
   "relstrength": {
@@ -12232,7 +12232,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 4.8,
+    "daysSinceLast": 4.9,
     "recent": [
       {
         "t": 1794562200000,
