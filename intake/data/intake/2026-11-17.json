@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
   "day_number": 143,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "22:30",
     "sleep_end": "06:10",
@@ -21,7 +21,7 @@
     "vitamin_e_mg": 134.8,
     "lycopene_mg": 12.3
   },
-  "status_note": "In progress. Slept 7.7h.",
+  "status_note": "Closed. Slept 7.7h. Evening cut short by a suspected stomach bug (no dinner, PM spray + creatine skipped).",
   "items": [
     {
       "time": "06:10",
@@ -220,5 +220,7 @@
       "note": "Granny Smith-type, generic reference. Credits ~8mg vitamin C."
     }
   ],
-  "assumptions": []
+  "assumptions": [
+    "Evening: suspected stomach bug — no dinner, PM Rhinolast and creatine skipped. Steps not reported."
+  ]
 }

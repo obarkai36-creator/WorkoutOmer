@@ -1,20 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-11-16",
+    "report_date": "2026-11-18",
     "latest_session": "Push day (19:00) — Incline Bench Press 70kg×3×6 (below 72.5kg×4×7 best). Dumbbell Bench Press 26kg each×3×8 (step-up from 24kg; not a PR by est. 1RM). Incline Pec Fly 20kg each×4×8, as suggested (new PR). Converging Shoulder Press 79kg×4×8, as suggested (ties best). Lateral Raises 16kg each×4×10, as suggested (new PR). Overhead DB Triceps Extension 20kg×4×12, as suggested (new PR). Seated Dips 94kg×3×9, as suggested (new PR). Triceps Extension Machine 41kg×2×7 to failure. Core: VKR BW×4×10, Side Plank 2×20s each side (first logged). 4 new PRs.",
     "sessions_logged": 95,
-    "sessions_per_week": 3.3,
+    "sessions_per_week": 3,
     "typical_time": "afternoon",
     "aerobic_28d_km": 26.7,
     "aerobic_sessions_28d": 4,
     "avg_pace": "10:06/km",
     "avg_hr": 142,
-    "acwr": 1.63,
-    "recommended_next": "Full Body (Deload) day",
+    "acwr": 1.06,
+    "recommended_next": "Pull day",
     "alerts": [
-      "Load ratio 1.63 (>1.5). Sharp jumps are the classic soft-tissue injury setup — hold volume flat or deload.",
-      "Recovers in ~45.6h. Avoid loading it hard before then — you trained it most recently."
+      "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },
   "entries": [
