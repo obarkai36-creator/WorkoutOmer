@@ -1,5 +1,5 @@
 {
-  "now": 1795023017872,
+  "now": 1795025589064,
   "workouts": [
     {
       "datetime": "2026-11-16T19:00",
@@ -10069,7 +10069,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 28,
+      "pct": 27,
       "readyInHours": 0,
       "ready": true
     },
@@ -10101,7 +10101,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 30,
+      "pct": 29,
       "readyInHours": 0,
       "ready": true
     },
@@ -10173,14 +10173,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 28,
+      "pct": 27,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 28,
+          "pct": 27,
           "readyInHours": 0,
           "ready": true
         }
@@ -10225,7 +10225,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 30,
+          "pct": 29,
           "readyInHours": 0,
           "ready": true
         },
@@ -11770,9 +11770,9 @@
     "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-18T17:30:17.872Z",
+    "readyAt": "2026-11-18T18:13:09.064Z",
     "neverLogged": false,
-    "daysSince": 8.1,
+    "daysSince": 8.2,
     "suggestedExercises": [
       {
         "name": "Lat Pulldown (Triangle)",
@@ -12111,13 +12111,13 @@
         "section": "Pull",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 8.1
+        "daysSince": 8.2
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 5.3
+        "daysSince": 5.4
       },
       {
         "section": "Legs",
@@ -12127,9 +12127,9 @@
       },
       {
         "section": "Push",
-        "fatigue": 28,
+        "fatigue": 27,
         "readyInHours": 0,
-        "daysSince": 1.9
+        "daysSince": 2
       }
     ],
     "suggestedCount": 10,
@@ -12137,7 +12137,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 5.3
+    "daysSinceAerobic": 5.4
   },
   "alerts": [
     {
@@ -12165,7 +12165,7 @@
       20,
       22
     ],
-    "daysSinceLast": 1.9,
+    "daysSinceLast": 2,
     "total": 95
   },
   "relstrength": {
@@ -12232,7 +12232,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 5.3,
+    "daysSinceLast": 5.4,
     "recent": [
       {
         "t": 1794562200000,
