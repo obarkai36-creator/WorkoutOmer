@@ -1,5 +1,5 @@
 {
-  "now": 1794987704140,
+  "now": 1794991261089,
   "workouts": [
     {
       "datetime": "2026-11-16T19:00",
@@ -10069,15 +10069,15 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 33,
-      "readyInHours": 5.3,
+      "pct": 32,
+      "readyInHours": 4.3,
       "ready": false
     },
     "back": {
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "ready": true
     },
@@ -10101,8 +10101,8 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 38,
-      "readyInHours": 9.8,
+      "pct": 37,
+      "readyInHours": 8.8,
       "ready": false
     },
     "forearms": {
@@ -10125,7 +10125,7 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 18,
+      "pct": 17,
       "readyInHours": 0,
       "ready": true
     },
@@ -10157,7 +10157,7 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "ready": true
     },
@@ -10173,29 +10173,29 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 33,
-      "readyInHours": 5.3,
+      "pct": 32,
+      "readyInHours": 4.3,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 33,
-          "readyInHours": 5.3,
+          "pct": 32,
+          "readyInHours": 4.3,
           "ready": false
         }
       ]
     },
     "Back": {
       "section": "Back",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 4,
+          "pct": 3,
           "readyInHours": 0,
           "ready": true
         }
@@ -10218,15 +10218,15 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 13,
-      "readyInHours": 9.8,
+      "pct": 12,
+      "readyInHours": 8.8,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 38,
-          "readyInHours": 9.8,
+          "pct": 37,
+          "readyInHours": 8.8,
           "ready": false
         },
         {
@@ -10256,7 +10256,7 @@
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 18,
+          "pct": 17,
           "readyInHours": 0,
           "ready": true
         },
@@ -10296,14 +10296,14 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 20,
+          "pct": 19,
           "readyInHours": 0,
           "ready": true
         }
@@ -11767,12 +11767,12 @@
   "recommendation": {
     "section": "Pull",
     "program": "Push / Pull / Legs + Cardio",
-    "fatigue": 4,
+    "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-18T07:41:44.140Z",
+    "readyAt": "2026-11-18T08:41:01.089Z",
     "neverLogged": false,
-    "daysSince": 7.7,
+    "daysSince": 7.8,
     "suggestedExercises": [
       {
         "name": "Lat Pulldown (Triangle)",
@@ -12109,15 +12109,15 @@
     "ranked": [
       {
         "section": "Pull",
-        "fatigue": 4,
+        "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 7.7
+        "daysSince": 7.8
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 4.9
+        "daysSince": 5
       },
       {
         "section": "Legs",
@@ -12127,9 +12127,9 @@
       },
       {
         "section": "Push",
-        "fatigue": 33,
-        "readyInHours": 5.3,
-        "daysSince": 1.5
+        "fatigue": 32,
+        "readyInHours": 4.3,
+        "daysSince": 1.6
       }
     ],
     "suggestedCount": 10,
@@ -12137,7 +12137,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 4.9
+    "daysSinceAerobic": 5
   },
   "alerts": [
     {
@@ -12165,7 +12165,7 @@
       20,
       22
     ],
-    "daysSinceLast": 1.5,
+    "daysSinceLast": 1.6,
     "total": 95
   },
   "relstrength": {
@@ -12232,7 +12232,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 4.9,
+    "daysSinceLast": 5,
     "recent": [
       {
         "t": 1794562200000,
