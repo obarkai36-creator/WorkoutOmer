@@ -1,0 +1,131 @@
+{
+  "id": "cottage_pizza_mini_muffins",
+  "name": "Cottage pizza mini-muffins (מיני מאפינס פיצה מקוטג')",
+  "source": {
+    "type": "other",
+    "url": null,
+    "author": "Recipe-app screenshot (Hebrew)",
+    "captured": "2026-11-18",
+    "notes": "Mini 'pizza' muffins: cottage cheese + 9% yellow cheese + egg + a little flour/baking powder, with tomato sauce and fresh basil, baked in a muffin tin ~20–25 min at 220°C until golden. Makes 6. MACROS ARE THE CARD'S OWN per-muffin values (80 kcal / 7.5 g protein / 8 g carb / 2.5 g fat). The screenshot is low-resolution, so the ingredient quantities below are a best reading (≈60 g grated 9% yellow cheese, ≈100 g cottage 3%, small amounts of flour and white cheese, 1 egg, baking powder, ≈50 g tomato sauce, fresh basil; salt / parmesan / oregano to top) — send a clearer shot to confirm. Manual intake — reference only, not adopted."
+  },
+  "servings": 6,
+  "serving_desc": "1 mini-muffin (~50 g) — recipe makes 6",
+  "ingredients": [
+    {
+      "item": "yellow cheese 9%, grated",
+      "qty": "~60 g",
+      "note": "best reading"
+    },
+    {
+      "item": "cottage cheese 3%",
+      "qty": "~100 g",
+      "note": "best reading"
+    },
+    {
+      "item": "white cheese / flour (small amounts)",
+      "qty": "~25 g each",
+      "note": "low-res — confirm"
+    },
+    {
+      "item": "egg L",
+      "qty": "1"
+    },
+    {
+      "item": "baking powder",
+      "qty": "~½ tsp"
+    },
+    {
+      "item": "tomato sauce",
+      "qty": "~50 g"
+    },
+    {
+      "item": "fresh basil",
+      "qty": "a handful"
+    },
+    {
+      "item": "TOPPING: salt, parmesan, oregano",
+      "qty": "a little"
+    }
+  ],
+  "steps": [
+    "Preheat the oven to 220°C and grease a muffin tin.",
+    "Mix the cottage, egg, flour/white cheese and baking powder into a batter.",
+    "Fold in the grated yellow cheese, tomato sauce and basil.",
+    "Divide into 6 muffin cups and top with a little parmesan and oregano.",
+    "Bake ~20–25 min until golden and set; cool a few minutes before unmoulding."
+  ],
+  "per_serving": {
+    "kcal": 80,
+    "protein_g": 7.5,
+    "carbs_g": 8,
+    "fat_g": 2.5,
+    "fiber_g": 0.5,
+    "micros": {
+      "calcium_mg": 120,
+      "sodium_mg": 180
+    }
+  },
+  "batch_totals": {
+    "kcal": 480,
+    "protein_g": 45,
+    "carbs_g": 48,
+    "fat_g": 15,
+    "fiber_g": 3,
+    "sodium_mg": 1080,
+    "note": "All 6 muffins, from the card's per-muffin values. ~9.4 g protein per 100 kcal — very lean for a 'pizza' snack."
+  },
+  "confidence": "label",
+  "analysis": {
+    "him": {
+      "fit_score": 8,
+      "verdict": "A very lean savoury snack: 80 kcal and 7.5 g protein per muffin (~9.4 g protein per 100 kcal), so 3 muffins is a ~240 kcal / ~22 g protein snack or light meal that scratches a pizza craving. Low fat thanks to cottage 3% and 9% yellow cheese. Low in fibre; tomato sauce adds a bit of lycopene.",
+      "flags": [
+        "80 kcal / 7.5 g protein per muffin (~9.4 g/100 kcal)",
+        "3 muffins ≈ 240 kcal / 22 g protein",
+        "very low fat",
+        "low fibre"
+      ],
+      "suggested_mods": [
+        "Use whole-spelt flour for a little fibre",
+        "Fold in chopped spinach or roasted peppers/mushrooms for volume and micros",
+        "Pair with a salad to make it a light meal"
+      ]
+    },
+    "her_preconception": {
+      "fit_score": 7,
+      "verdict": "Good for her: pasteurized cheeses, fully baked egg, protein + calcium in a portable snack. Not a folate or iron source on its own — adding spinach would help.",
+      "prenatal_highlights": [
+        "protein + calcium (cottage, yellow cheese)",
+        "fully baked; pasteurized cheeses"
+      ],
+      "safety_advisories": [],
+      "suggested_mods": [
+        "Fold in spinach for folate + iron"
+      ]
+    }
+  },
+  "tags": [
+    "snack",
+    "muffins",
+    "pizza",
+    "cottage",
+    "cheese",
+    "baked",
+    "vegetarian",
+    "kosher-dairy",
+    "high-protein",
+    "low-fat"
+  ],
+  "adopted": false,
+  "created": "2026-11-18",
+  "updated": "2026-11-18",
+  "serving_g": 50,
+  "meal_type": "Snack",
+  "cooking_guide": [
+    "Grease the muffin tin well (or use silicone) — cheesy batters stick.",
+    "Mix the batter just until combined; overmixing makes egg-and-cheese bakes rubbery.",
+    "If using fresh vegetables, chop them small and pat dry so the muffins don't go soggy.",
+    "Bake on the middle rack at the high 220°C until golden on top; check from ~18 min.",
+    "Let them rest 5 minutes in the tin — they firm up and release cleanly."
+  ]
+}
