@@ -10,11 +10,11 @@
     "notes": "8.0h (night of 2026-11-17) — early night after a suspected stomach bug."
   },
   "workout_today": false,
-  "caffeine_shots": 0,
+  "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 0,
+    "zinc_mg": 2.8,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 0,
+    "folate_mcg_dfe": 100,
     "omega3_epa_dha_mg": 0,
     "vitamin_c_mg": 0,
     "vitamin_d_iu": 0,
@@ -22,6 +22,68 @@
     "lycopene_mg": 0
   },
   "status_note": "In progress. Slept 8.0h (recovering from a suspected stomach bug).",
-  "items": [],
+  "items": [
+    {
+      "time": "06:45",
+      "name": "Bilaxten (bilastine)",
+      "category": "medication",
+      "qty": "1 pill (morning)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:45",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (AM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:45",
+      "name": "Steronase (triamcinolone nasal spray)",
+      "category": "medication",
+      "qty": "1 dose",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "day 12/30."
+    },
+    {
+      "time": "06:45",
+      "name": "Mayven Full Volume Gummies",
+      "category": "supplement",
+      "qty": "2 gummies",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "06:45",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "2 shots",
+      "kcal": 5,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    }
+  ],
   "assumptions": []
 }
