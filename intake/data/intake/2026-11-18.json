@@ -1,7 +1,7 @@
 {
   "date": "2026-11-18",
   "day_number": 144,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "20:30",
     "sleep_end": "04:30",
@@ -269,9 +269,22 @@
       "fat_g": 6,
       "fiber_g": 0.5,
       "note": "generic reference (~490kcal/100g)."
+    },
+    {
+      "time": "20:30",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
     }
   ],
   "assumptions": [
     "Dinner shakshuka: whole 4-egg pan of the library's high-protein cherry-tomato shakshuka assumed eaten."
-  ]
+  ],
+  "steps": 3000
 }
