@@ -12,14 +12,14 @@
   "workout_today": false,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 26.3,
-    "selenium_mcg": 139,
-    "folate_mcg_dfe": 138,
+    "zinc_mg": 28.9,
+    "selenium_mcg": 199,
+    "folate_mcg_dfe": 278,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 1033,
-    "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 134.3,
-    "lycopene_mg": 6.6
+    "vitamin_c_mg": 1093,
+    "vitamin_d_iu": 2120,
+    "vitamin_e_mg": 136.3,
+    "lycopene_mg": 20.6
   },
   "status_note": "In progress. Slept 8.0h (recovering from a suspected stomach bug).",
   "items": [
@@ -223,7 +223,32 @@
       "carbs_g": 4.53,
       "fat_g": 0.04,
       "fiber_g": 0.23
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — Angel PRO Pita",
+      "category": "food",
+      "qty": "2 units (125 g)",
+      "kcal": 251.2,
+      "protein_g": 25.8,
+      "carbs_g": 28.4,
+      "fat_g": 2.4,
+      "fiber_g": 7.4
+    },
+    {
+      "time": "19:30",
+      "name": "Dinner — High-protein cherry-tomato shakshuka (recipe library), 4 eggs + 80g bulgarit 5%",
+      "category": "food",
+      "qty": "1 pan (whole batch, 4-egg version)",
+      "kcal": 559,
+      "protein_g": 38.9,
+      "carbs_g": 20.4,
+      "fat_g": 37.8,
+      "fiber_g": 4,
+      "note": "recipe base (~250g cherry tomatoes, 1 tbsp olive oil, garlic, chili, 1 tbsp tomato paste) kept as written; eggs scaled 6→4 and bulgarit 100g→80g. Assumes the whole pan was eaten. Credits ~60mcg selenium, ~2.6mg zinc, ~120IU vitamin D, ~14mg lycopene, ~60mg vitamin C, ~2mg vitamin E, ~100mcg folate."
     }
   ],
-  "assumptions": []
+  "assumptions": [
+    "Dinner shakshuka: whole 4-egg pan of the library's high-protein cherry-tomato shakshuka assumed eaten."
+  ]
 }
