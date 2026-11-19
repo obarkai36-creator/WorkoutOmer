@@ -12,14 +12,14 @@
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 5.3,
-    "selenium_mcg": 35,
-    "folate_mcg_dfe": 140,
+    "zinc_mg": 9.8,
+    "selenium_mcg": 60,
+    "folate_mcg_dfe": 227,
     "omega3_epa_dha_mg": 1000,
-    "vitamin_c_mg": 15,
+    "vitamin_c_mg": 94,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 2,
-    "lycopene_mg": 0
+    "vitamin_e_mg": 3.6,
+    "lycopene_mg": 30.2
   },
   "status_note": "In progress. Slept 7.1h.",
   "items": [
@@ -140,7 +140,89 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "19:15",
+      "name": "Dinner — Red grapes, seedless",
+      "category": "food",
+      "qty": "10 pieces (~50 g)",
+      "kcal": 34.5,
+      "protein_g": 0.36,
+      "carbs_g": 9.05,
+      "fat_g": 0.08,
+      "fiber_g": 0.45
+    },
+    {
+      "time": "19:15",
+      "name": "Dinner — Angel PRO Pita",
+      "category": "food",
+      "qty": "2 units (125 g)",
+      "kcal": 251.2,
+      "protein_g": 25.8,
+      "carbs_g": 28.4,
+      "fat_g": 2.4,
+      "fiber_g": 7.4
+    },
+    {
+      "time": "19:15",
+      "name": "Dinner — Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "4 slices (100 g)",
+      "kcal": 200,
+      "protein_g": 30,
+      "carbs_g": 0,
+      "fat_g": 9,
+      "fiber_g": 0
+    },
+    {
+      "time": "19:15",
+      "name": "Dinner — Bulgarit cheese 5%",
+      "category": "food",
+      "qty": "30 g",
+      "kcal": 32,
+      "protein_g": 4.2,
+      "carbs_g": 0.3,
+      "fat_g": 1.5,
+      "fiber_g": 0,
+      "note": "generic 5% bulgarit (~105kcal/100g)."
+    },
+    {
+      "time": "19:15",
+      "name": "Dinner — Tomato paste",
+      "category": "food",
+      "qty": "60 g",
+      "kcal": 49,
+      "protein_g": 2.6,
+      "carbs_g": 11.3,
+      "fat_g": 0.3,
+      "fiber_g": 2.4,
+      "note": "read 'tomato pasta' as tomato paste (רסק) used as a spread — confirm. Credits ~17mg lycopene, ~13mg vitamin C."
+    },
+    {
+      "time": "19:15",
+      "name": "Dinner — Cherry tomatoes",
+      "category": "food",
+      "qty": "30 pieces",
+      "kcal": 79.5,
+      "protein_g": 4.1,
+      "carbs_g": 17.6,
+      "fat_g": 0.9,
+      "fiber_g": 5.4,
+      "note": "standard reference. Credits ~13.2mg lycopene, ~66mg vitamin C, ~77mcg folate DFE."
+    },
+    {
+      "time": "19:15",
+      "name": "Dinner — Olive oil (sprayed)",
+      "category": "food",
+      "qty": "2 spritzes (~2 g)",
+      "kcal": 17.7,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 2,
+      "fiber_g": 0
     }
   ],
-  "assumptions": []
+  "assumptions": [
+    "Dinner: '60g tomato pasta' interpreted as tomato paste (pending confirmation)."
+  ]
 }
