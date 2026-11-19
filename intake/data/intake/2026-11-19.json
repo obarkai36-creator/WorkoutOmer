@@ -1,7 +1,7 @@
 {
   "date": "2026-11-19",
   "day_number": 145,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "22:50",
     "sleep_end": "05:55",
@@ -9,7 +9,7 @@
     "quality": null,
     "notes": "7.1h (night of 2026-11-18) — within the 7-9h target band."
   },
-  "workout_today": false,
+  "workout_today": true,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
     "zinc_mg": 29.8,
@@ -243,9 +243,45 @@
       "fat_g": 0,
       "fiber_g": 0,
       "note": "\"essential 5\"."
+    },
+    {
+      "time": "22:00",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "22:00",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat",
+      "category": "food",
+      "qty": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "same reference (danone_pro_strawberry_0pct); flavor assumed."
+    },
+    {
+      "time": "22:00",
+      "name": "Chocolate chip cookie",
+      "category": "food",
+      "qty": "25 g",
+      "kcal": 122.5,
+      "protein_g": 1.5,
+      "carbs_g": 16.3,
+      "fat_g": 6,
+      "fiber_g": 0.5,
+      "note": "generic reference (~490kcal/100g)."
     }
   ],
   "assumptions": [
     "Dinner: '60g tomato pasta' interpreted as tomato paste (pending confirmation)."
-  ]
+  ],
+  "steps": 10000
 }
