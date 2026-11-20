@@ -9,17 +9,17 @@
     "quality": null,
     "notes": "9.2h (night of 2026-11-19) — above the 7-9h target band (long sleep-in)."
   },
-  "workout_today": false,
+  "workout_today": true,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "zinc_mg": 3.8,
+    "selenium_mcg": 3.5,
+    "folate_mcg_dfe": 118,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 15.4,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 3.1
   },
   "status_note": "In progress. Slept 9.2h. Weigh-in 80.25kg.",
   "items": [
@@ -107,6 +107,29 @@
       "fat_g": 3.6,
       "fiber_g": 0.3,
       "note": "generic reference (~490kcal/100g)."
+    },
+    {
+      "time": "10:15",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "1 slice (25 g)",
+      "kcal": 50,
+      "protein_g": 7.5,
+      "carbs_g": 0,
+      "fat_g": 2.25,
+      "fiber_g": 0
+    },
+    {
+      "time": "10:15",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "7 pieces",
+      "kcal": 18.6,
+      "protein_g": 0.96,
+      "carbs_g": 4.1,
+      "fat_g": 0.21,
+      "fiber_g": 1.26,
+      "note": "standard reference."
     }
   ],
   "assumptions": []

@@ -316,12 +316,12 @@ const SNAPSHOT = [
   { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 4, weight: 73, text: "73kg × 4×4" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
-  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 12, weight: 97, text: "97kg × 4×12 (ties best)" }, best: { sets: 4, reps: 12, weight: 97, text: "97kg × 4×12" } },
+  { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 8, weight: 100, text: "100kg × 4×8 (heavier; not a PR by est. 1RM)" }, best: { sets: 4, reps: 12, weight: 97, text: "97kg × 4×12" } },
   { name: "Low Row",                 section: "Back", latest: { sets: 4, reps: 12, weight: 79, text: "79kg × 4×12 (new PR)" }, best: { sets: 4, reps: 12, weight: 79, text: "79kg × 4×12" } },
   { name: "Row Machine",             section: "Back", latest: { sets: 4, reps: 8, weight: 85.5, text: "85.5kg × 4×8 (hotel gym, first logged)" }, best: { sets: 4, reps: 8, weight: 85.5, text: "85.5kg × 4×8" } },
-  { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" }, best: { sets: 3, reps: 8, weight: 77, text: "77kg × 3×8" } },
+  { name: "Lat Pulldown (Triangle)", section: "Back", latest: { sets: 3, reps: 9, weight: 77, text: "77kg × 3×9 (new PR, as suggested)" }, best: { sets: 3, reps: 9, weight: 77, text: "77kg × 3×9" } },
   { name: "Lat Pulldown (Wide Grip)", section: "Back", latest: { sets: 3, reps: 6, weight: 79, text: "79kg × 3×6" }, best: { sets: 3, reps: 10, weight: 75, text: "75kg × 3×10" } },
-  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" }, best: { sets: 4, reps: 12, weight: 52, text: "26kg each × 4×12" } },
+  { name: "Reverse Incline DB Row",  section: "Back", latest: { sets: 4, reps: 12, weight: 52, text: "26kg each × 4×12 (as suggested, ties best)" }, best: { sets: 4, reps: 12, weight: 52, text: "26kg each × 4×12" } },
   { name: "Dumbbell Pullover",       section: "Back", latest: { sets: 4, reps: 11, weight: 22.5, text: "22.5kg × 4×11 (new PR)" }, best: { sets: 4, reps: 11, weight: 22.5, text: "22.5kg × 4×11" } },
   { name: "Dead Hang",               section: "Back", iso: true, latest: { scheme: [ { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 } ], text: "30s + 30s + 30s (ties best total hold time, more even distribution)" }, best: { scheme: [ { sets: 1, seconds: 35, weight: 81.00 }, { sets: 1, seconds: 30, weight: 81.00 }, { sets: 1, seconds: 25, weight: 81.00 } ], text: "35s + 30s + 25s" } },
 
@@ -334,7 +334,7 @@ const SNAPSHOT = [
   { name: "Rear Delt Machine",         section: "Shoulders", latest: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10 (ties best)" }, best: { sets: 3, reps: 10, weight: 73, text: "73kg × 3×10" } },
   { name: "Shoulder Shrugs",           section: "Shoulders", latest: { sets: 3, reps: 11, weight: 52, text: "26kg each × 3×11 (new PR, as suggested)" }, best: { sets: 3, reps: 11, weight: 52, text: "26kg each × 3×11" } },
   { name: "Farmer's Hold",             section: "Shoulders", iso: true, latest: { sets: 4, seconds: 40, weight: 48, text: "24kg each × 4×40s (ties best)" }, best: { sets: 4, seconds: 40, weight: 48, text: "24kg each × 4×40s" } },
-  { name: "Cable Face Pull",           section: "Shoulders", latest: { sets: 3, reps: 10, weight: 36, text: "36kg × 3×10 (new PR, +7kg)" }, best: { sets: 3, reps: 10, weight: 36, text: "36kg × 3×10" } },
+  { name: "Cable Face Pull",           section: "Shoulders", latest: { sets: 3, reps: 11, weight: 36, text: "36kg × 3×11 (new PR)" }, best: { sets: 3, reps: 11, weight: 36, text: "36kg × 3×11" } },
 
   // ---- Arms: Triceps ----
   { name: "Flat DB Triceps Extension",        section: "Arms", latest: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" }, best: { sets: 4, reps: 6, weight: 35, text: "17.5kg each × 4×6" } },
@@ -345,16 +345,16 @@ const SNAPSHOT = [
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" } },
 
   // ---- Arms: Biceps / Forearms ----
-  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 4, reps: 10, weight: 12.5, text: "12.5kg each × 4×10 (lighter, below the 20kg each×3×8 best)" }, best: { sets: 3, reps: 8, weight: 20, text: "20kg each × 3×8" } },
+  { name: "Incline Hammer Curl",  section: "Arms", latest: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6 (below the 3×8 best)" }, best: { sets: 3, reps: 8, weight: 20, text: "20kg each × 3×8" } },
   { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 10, weight: 12, text: "12kg each × 4×10 (lighter session, below the 20kg each×3×6 best)" }, best: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
-  { name: "EZ Bar Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 30, text: "10kg each + bar × 4×10 (ties best)" }, best: { sets: 4, reps: 10, weight: 30, text: "10kg each + bar × 4×10" } },
+  { name: "EZ Bar Curl",          section: "Arms", latest: { sets: 3, reps: 11, weight: 30, text: "10kg each + bar × 3×11 (new PR, +1 rep / 1 fewer set)" }, best: { sets: 3, reps: 11, weight: 30, text: "10kg each + bar × 3×11" } },
   { name: "Low Pulley Biceps Curl", section: "Arms", latest: { sets: 4, reps: 8, weight: 36, text: "36kg × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 36, text: "36kg × 4×8" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 2, reps: 6, weight: 45, text: "45kg × 2×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
   { name: "Half Curl",            section: "Arms", latest: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" } },
   { name: "Cable Curl",           section: "Arms", latest: { sets: 3, reps: 10, weight: 25, text: "25kg × 3×10 (hotel gym, first logged)" }, best: { sets: 3, reps: 10, weight: 25, text: "25kg × 3×10" } },
-  { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" }, best: { sets: 4, reps: 8, weight: 35, text: "17.5kg each × 4×8" } },
+  { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8 (new PR)" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
 
   // ---- Legs (incl. calves) ----
   { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 8, weight: 81, text: "81kg × 4×8 (inc. frame; seated machine — below the 4×10 best)" }, best: { sets: 4, reps: 10, weight: 81, text: "81kg × 4×10 (inc. frame)" } },
@@ -379,11 +379,12 @@ const SNAPSHOT = [
   { name: "Hack Squat",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 143.5, text: "Bodyweight + 42.6kg frame + 20kg plates (10kg each side) × 4×8 (new PR)" }, best: { sets: 4, reps: 8, weight: 143.5, text: "Bodyweight + 42.6kg frame + 20kg plates × 4×8" } },
 
   // ---- Core ----
-  { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 35, weight: 81.00, text: "BW × 3×35s" }, best: { sets: 3, seconds: 35, weight: 81.00, text: "BW × 3×35s" } },
+  { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 40, weight: 80.25, text: "BW × 3×40s (new PR)" }, best: { sets: 3, seconds: 40, weight: 80.25, text: "BW × 3×40s" } },
   { name: "VKR", section: "Core", latest: { sets: 4, reps: 10, weight: 80.45, text: "BW × 4×10" }, best: { sets: 4, reps: 11, weight: 80.45, text: "BW × 4×11" } },
   { name: "Pallof Press", section: "Core", latest: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" } },
   { name: "Back Extension (45°)", section: "Legs", latest: { sets: 4, reps: 8, weight: 80.45, text: "BW × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 80.45, text: "BW × 4×8" } },
   { name: "Side Plank", section: "Core", iso: true, latest: { sets: 2, seconds: 20, weight: 80.45, text: "BW × 2×20s each side (first logged)" }, best: { sets: 2, seconds: 20, weight: 80.45, text: "BW × 2×20s each side" } },
+  { name: "Hanging Knee Raise", section: "Core", latest: { sets: 3, reps: 6, weight: 80.25, text: "BW × 3×6 (first logged)" }, best: { sets: 3, reps: 6, weight: 80.25, text: "BW × 3×6" } },
   { name: "VKR to Sides", section: "Core", latest: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" }, best: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" } },
 ];
 
@@ -397,6 +398,21 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 20 Nov — Pull (10:30)
+  {
+    datetime: "2026-11-20T10:30", note: "Pull day (10:30) — Lat Pulldown (Triangle) 77kg×3×9, as suggested (new PR). Diverging Seated Row 100kg×4×8 (heavier than the 97kg×4×12 best; not a PR by est. 1RM). Reverse Incline DB Row 26kg each×4×12, as suggested (ties best). Cable Face Pull 36kg×3×11 (new PR). Incline Hammer Curl 20kg each×3×6 (below 3×8 best). EZ Bar Curl 10kg each + bar×3×11 (new PR). Forearm Twists 18kg each×4×8 (new PR). Core: Plank BW×3×40s (new PR), Hanging Knee Raise BW×3×6 (first logged). 5 new PRs.",
+    exercises: [
+      { name: "Lat Pulldown (Triangle)", sets: [ { reps: 9, weight: 77 }, { reps: 9, weight: 77 }, { reps: 9, weight: 77 } ] },
+      { name: "Diverging Seated Row", sets: [ { reps: 8, weight: 100 }, { reps: 8, weight: 100 }, { reps: 8, weight: 100 }, { reps: 8, weight: 100 } ] },
+      { name: "Reverse Incline DB Row", sets: [ { reps: 12, weight: 52 }, { reps: 12, weight: 52 }, { reps: 12, weight: 52 }, { reps: 12, weight: 52 } ] },
+      { name: "Cable Face Pull", sets: [ { reps: 11, weight: 36 }, { reps: 11, weight: 36 }, { reps: 11, weight: 36 } ] },
+      { name: "Incline Hammer Curl", sets: [ { reps: 6, weight: 20 }, { reps: 6, weight: 20 }, { reps: 6, weight: 20 } ] },
+      { name: "EZ Bar Curl", sets: [ { reps: 11, weight: 30 }, { reps: 11, weight: 30 }, { reps: 11, weight: 30 } ] },
+      { name: "Forearm Twists", sets: [ { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 }, { reps: 8, weight: 36 } ] },
+      { name: "Plank", sets: [ { seconds: 40 }, { seconds: 40 }, { seconds: 40 } ] },
+      { name: "Hanging Knee Raise", sets: [ { reps: 6 }, { reps: 6 }, { reps: 6 } ] },
+    ],
+  },
   // 19 Nov — Outdoor Walk (time not given)
   {
     datetime: "2026-11-19T21:00", timeUnknown: true, note: "Outdoor Walk (clock time not given, placeholder 21:00) — 40 min, low pace. ~4000 steps (10k day total minus 6k beforehand) → ~2.8 km estimated (~0.7 m/step), flagged as approximate.",
