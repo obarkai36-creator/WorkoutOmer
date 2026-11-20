@@ -83,6 +83,30 @@
       "fat_g": 0,
       "fiber_g": 0,
       "time_approx": true
+    },
+    {
+      "time": "09:00",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat",
+      "category": "food",
+      "qty": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "same reference (danone_pro_strawberry_0pct); flavor assumed."
+    },
+    {
+      "time": "09:00",
+      "name": "Chocolate chip cookie",
+      "category": "food",
+      "qty": "15 g",
+      "kcal": 73.5,
+      "protein_g": 0.9,
+      "carbs_g": 9.8,
+      "fat_g": 3.6,
+      "fiber_g": 0.3,
+      "note": "generic reference (~490kcal/100g)."
     }
   ],
   "assumptions": []

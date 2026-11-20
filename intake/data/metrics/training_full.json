@@ -1,5 +1,5 @@
 {
-  "now": 1795155176092,
+  "now": 1795158875653,
   "workouts": [
     {
       "datetime": "2026-11-19T21:00",
@@ -10161,7 +10161,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     },
@@ -10193,8 +10193,8 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 34,
-      "readyInHours": 3.7,
+      "pct": 33,
+      "readyInHours": 2.6,
       "ready": false
     }
   },
@@ -10277,7 +10277,7 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "muscles": [
         {
@@ -10289,16 +10289,16 @@
           "ready": true
         },
         {
-          "key": "glutes",
-          "label": "Glutes",
+          "key": "quads",
+          "label": "Quads",
           "section": "Legs",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         },
         {
-          "key": "quads",
-          "label": "Quads",
+          "key": "glutes",
+          "label": "Glutes",
           "section": "Legs",
           "pct": 6,
           "readyInHours": 0,
@@ -10339,15 +10339,15 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 34,
-      "readyInHours": 3.7,
+      "pct": 33,
+      "readyInHours": 2.6,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 34,
-          "readyInHours": 3.7,
+          "pct": 33,
+          "readyInHours": 2.6,
           "ready": false
         }
       ]
@@ -11798,7 +11798,7 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-20T06:12:56.092Z",
+    "readyAt": "2026-11-20T07:14:35.653Z",
     "neverLogged": false,
     "daysSince": 9.7,
     "suggestedExercises": [
@@ -12143,9 +12143,9 @@
       },
       {
         "section": "Legs",
-        "fatigue": 5,
+        "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 5.9
+        "daysSince": 6
       },
       {
         "section": "Push",
