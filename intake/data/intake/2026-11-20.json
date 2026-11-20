@@ -12,13 +12,13 @@
   "workout_today": true,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 3.8,
-    "selenium_mcg": 3.5,
+    "zinc_mg": 23.8,
+    "selenium_mcg": 103.5,
     "folate_mcg_dfe": 118,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 15.4,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
+    "vitamin_c_mg": 1015.4,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 134,
     "lycopene_mg": 3.1
   },
   "status_note": "In progress. Slept 9.2h. Weigh-in 80.25kg.",
@@ -154,6 +154,29 @@
       "fat_g": 3.6,
       "fiber_g": 0.3,
       "note": "generic reference (~490kcal/100g)."
+    },
+    {
+      "time": "12:00",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "13:10",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\"."
     }
   ],
   "assumptions": []
