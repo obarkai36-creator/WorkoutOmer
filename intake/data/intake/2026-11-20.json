@@ -179,5 +179,9 @@
       "note": "\"essential 5\"."
     }
   ],
-  "assumptions": []
+  "assumptions": [
+    "Lunch (untracked, high-protein per user) and the rest of the day's food not itemized."
+  ],
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User stopped food tracking mid-day 2026-11-20 (untracked high-protein lunch onward). Items logged before the request stay on record; supplements/meds/caffeine/workouts/lifestyle still logged."
 }

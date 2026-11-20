@@ -1,5 +1,5 @@
 {
-  "now": 1795173062077,
+  "now": 1795180438415,
   "workouts": [
     {
       "datetime": "2026-11-20T10:30",
@@ -10340,7 +10340,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -10348,31 +10348,31 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 66,
-      "readyInHours": 47.1,
+      "pct": 64,
+      "readyInHours": 45.1,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 31,
-      "readyInHours": 1.2,
-      "ready": false
+      "pct": 29,
+      "readyInHours": 0,
+      "ready": true
     },
     "biceps": {
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 98,
-      "readyInHours": 47.3,
+      "pct": 93,
+      "readyInHours": 45.3,
       "ready": false
     },
     "triceps": {
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "ready": true
     },
@@ -10380,7 +10380,7 @@
       "key": "forearms",
       "label": "Forearms",
       "section": "Arms",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -10428,15 +10428,15 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 71,
-      "readyInHours": 25.6,
+      "pct": 66,
+      "readyInHours": 23.6,
       "ready": false
     },
     "cardio": {
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 29,
+      "pct": 27,
       "readyInHours": 0,
       "ready": true
     }
@@ -10444,14 +10444,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         }
@@ -10459,52 +10459,52 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 66,
-      "readyInHours": 47.1,
+      "pct": 64,
+      "readyInHours": 45.1,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 66,
-          "readyInHours": 47.1,
+          "pct": 64,
+          "readyInHours": 45.1,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 31,
-      "readyInHours": 1.2,
+      "pct": 29,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 31,
-          "readyInHours": 1.2,
-          "ready": false
+          "pct": 29,
+          "readyInHours": 0,
+          "ready": true
         }
       ]
     },
     "Arms": {
       "section": "Arms",
-      "pct": 39,
-      "readyInHours": 47.3,
+      "pct": 37,
+      "readyInHours": 45.3,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 98,
-          "readyInHours": 47.3,
+          "pct": 93,
+          "readyInHours": 45.3,
           "ready": false
         },
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 11,
+          "pct": 10,
           "readyInHours": 0,
           "ready": true
         },
@@ -10512,7 +10512,7 @@
           "key": "forearms",
           "label": "Forearms",
           "section": "Arms",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         }
@@ -10567,29 +10567,29 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 71,
-      "readyInHours": 25.6,
+      "pct": 66,
+      "readyInHours": 23.6,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 71,
-          "readyInHours": 25.6,
+          "pct": 66,
+          "readyInHours": 23.6,
           "ready": false
         }
       ]
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 29,
+      "pct": 27,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 29,
+          "pct": 27,
           "readyInHours": 0,
           "ready": true
         }
@@ -12061,9 +12061,9 @@
     "fatigue": 4,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-20T11:11:02.077Z",
+    "readyAt": "2026-11-20T13:13:58.415Z",
     "neverLogged": false,
-    "daysSince": 6.1,
+    "daysSince": 6.2,
     "suggestedExercises": [
       {
         "name": "Hack Squat",
@@ -12317,25 +12317,25 @@
         "section": "Legs",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 6.1
+        "daysSince": 6.2
       },
       {
         "section": "Push",
-        "fatigue": 14,
+        "fatigue": 13,
         "readyInHours": 0,
-        "daysSince": 3.7
+        "daysSince": 3.8
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 0.6
+        "daysSince": 0.7
       },
       {
         "section": "Pull",
-        "fatigue": 66,
-        "readyInHours": 47.1,
-        "daysSince": 0
+        "fatigue": 64,
+        "readyInHours": 45.1,
+        "daysSince": 0.1
       }
     ],
     "suggestedCount": 10,
@@ -12343,7 +12343,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 0.6
+    "daysSinceAerobic": 0.7
   },
   "alerts": [
     {
@@ -12353,8 +12353,8 @@
     },
     {
       "level": "low",
-      "title": "Biceps fatigued (98%)",
-      "detail": "Recovers in ~47.3h. Avoid loading it hard before then — you trained it most recently."
+      "title": "Biceps fatigued (93%)",
+      "detail": "Recovers in ~45.3h. Avoid loading it hard before then — you trained it most recently."
     }
   ],
   "changes": [
@@ -12376,7 +12376,7 @@
       21,
       22
     ],
-    "daysSinceLast": 0,
+    "daysSinceLast": 0.1,
     "total": 97
   },
   "relstrength": {
@@ -12443,7 +12443,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.6,
+    "daysSinceLast": 0.7,
     "recent": [
       {
         "t": 1795122000000,
