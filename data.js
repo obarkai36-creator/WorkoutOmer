@@ -284,7 +284,7 @@ const PROGRAM = {
     Legs: { slots: [
       { region: "Quads — compound", options: ["Hack Squat", "Leg Press", "Angled Leg Press"] },
       { region: "Hamstrings — hip hinge", options: ["Dumbbell RDL"] },
-      { region: "Quads — rectus femoris (extension)", options: ["Single-Leg Extensions", "Leg Extensions"] },
+      { region: "Quads — rectus femoris (extension)", options: ["Leg Extensions"] }, // Single-Leg Extensions dropped 2026-11-21 (uncomfortable, per user),
       { region: "Hamstrings — knee flexion", options: ["Leg Curls"] },
       { region: "Glutes — max", options: ["Hip Thrust", "Glute Extension", "Glute Bridge"] },
       { region: "Calves — gastrocnemius", options: ["Dumbbell Calf Raise", "Standing Calf Raises (Frame)"] },
@@ -357,31 +357,31 @@ const SNAPSHOT = [
   { name: "Forearm Twists",       section: "Arms", latest: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8 (new PR)" }, best: { sets: 4, reps: 8, weight: 36, text: "18kg each × 4×8" } },
 
   // ---- Legs (incl. calves) ----
-  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 8, weight: 81, text: "81kg × 4×8 (inc. frame; seated machine — below the 4×10 best)" }, best: { sets: 4, reps: 10, weight: 81, text: "81kg × 4×10 (inc. frame)" } },
+  { name: "Calf Raises Machine",          section: "Legs", latest: { sets: 4, reps: 10, weight: 81, text: "81kg × 4×10 (inc. frame; ties best)" }, best: { sets: 4, reps: 10, weight: 81, text: "81kg × 4×10 (inc. frame)" } },
   { name: "Standing Calf Raises (Frame)", section: "Legs", latest: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" }, best: { sets: 4, reps: 11, weight: 73.5, text: "73.5kg × 4×11" } },
-  { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 8, weight: 52, text: "26kg each × 4×8" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12 (ties best)" }, best: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12" } },
+  { name: "Dumbbell Calf Raise",          section: "Legs", latest: { sets: 4, reps: 8, weight: 52, text: "26kg each × 4×8 (not a PR by est. 1RM)" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
+  { name: "Leg Press",                    section: "Legs", latest: { sets: 4, reps: 8, weight: 137, text: "137kg × 4×8 (heavier; not a PR by est. 1RM)" }, best: { sets: 4, reps: 12, weight: 132, text: "132kg × 4×12" } },
   // NOTE: 11 Jul (202kg) is the first entry counting the full setup total
   // (plates each side x2 + sled/frame weight). Earlier entries (e.g. 131kg)
   // likely under-counted this (confirmed by user) — treat pre-11-Jul figures
   // as not directly comparable; use the each-side+frame total from now on.
   { name: "Angled Leg Press",             section: "Legs", latest: { sets: 4, reps: 7, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×7 (ties best)" }, best: { sets: 4, reps: 7, weight: 202, text: "202kg setup (70kg each side + 62kg frame) × 4×7" } },
   { name: "Leg Extensions",               section: "Legs", latest: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12 (ties best)" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
-  { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" }, best: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" } },
+  { name: "Single-Leg Extensions",        section: "Legs", latest: { sets: 3, reps: 4, weight: 57, text: "57kg each × 3×4 each leg (uncomfortable — dropped from rotation per user)" }, best: { sets: 4, reps: 7, weight: 57, text: "57kg each × 4×7" } },
   { name: "Leg Curls",                    section: "Legs", latest: { sets: 4, reps: 8, weight: 116, text: "116kg × 4×8 (+5kg, as suggested — heaviest yet, below the 111kg×4×12 best by est. 1RM)" }, best: { sets: 4, reps: 12, weight: 111, text: "111kg × 4×12" } },
   { name: "Outer Thigh",                  section: "Legs", latest: { sets: 4, reps: 12, weight: 79, text: "79kg × 4×12" }, best: { sets: 4, reps: 12, weight: 79, text: "79kg × 4×12" } },
   { name: "Inner Thigh",                  section: "Legs", latest: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" }, best: { sets: 3, reps: 9, weight: 79, text: "79kg × 3×9" } },
   { name: "Glute Extension",              section: "Legs", latest: { sets: 2, reps: 6, weight: 59, text: "59kg × 2×6 each (new PR)" }, best: { sets: 2, reps: 6, weight: 59, text: "59kg × 2×6 each" } },
-  { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 7, weight: 45, text: "22.5kg each × 4×7 (new PR, as suggested)" }, best: { sets: 4, reps: 7, weight: 45, text: "22.5kg each × 4×7 (45kg total)" } },
-  { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 12, weight: 24, text: "24kg × 4×12" }, best: { sets: 6, reps: 8, weight: 24, text: "24kg × 6×8" } },
-  { name: "Hip Thrust",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 40, text: "20kg each side × 4×8 (lighter than the 48kg best)" }, best: { sets: 4, reps: 8, weight: 48, text: "24kg each side × 4×8 (48kg total)" } },
+  { name: "Dumbbell RDL",                 section: "Legs", latest: { sets: 4, reps: 8, weight: 44, text: "22kg each × 4×8 (new PR, as suggested reps)" }, best: { sets: 4, reps: 8, weight: 44, text: "22kg each × 4×8 (44kg total)" } },
+  { name: "Dumbbell Sumo Squat",          section: "Legs", latest: { sets: 4, reps: 8, weight: 26, text: "26kg × 4×8 (new PR, heavier DB)" }, best: { sets: 4, reps: 8, weight: 26, text: "26kg × 4×8" } },
+  { name: "Hip Thrust",                   section: "Legs", latest: { sets: 4, reps: 6, weight: 60, text: "30kg each side × 4×6 (new PR — heaviest yet)" }, best: { sets: 4, reps: 6, weight: 60, text: "30kg each side × 4×6 (60kg total)" } },
   { name: "Glute Bridge",                 section: "Legs", latest: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" }, best: { sets: 2, reps: 12, weight: 78, text: "BW × 2×12" } },
   { name: "Hack Squat",                   section: "Legs", latest: { sets: 4, reps: 8, weight: 143.5, text: "Bodyweight + 42.6kg frame + 20kg plates (10kg each side) × 4×8 (new PR)" }, best: { sets: 4, reps: 8, weight: 143.5, text: "Bodyweight + 42.6kg frame + 20kg plates × 4×8" } },
 
   // ---- Core ----
   { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 40, weight: 80.25, text: "BW × 3×40s (new PR)" }, best: { sets: 3, seconds: 40, weight: 80.25, text: "BW × 3×40s" } },
-  { name: "VKR", section: "Core", latest: { sets: 4, reps: 10, weight: 80.45, text: "BW × 4×10" }, best: { sets: 4, reps: 11, weight: 80.45, text: "BW × 4×11" } },
-  { name: "Pallof Press", section: "Core", latest: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" } },
+  { name: "VKR", section: "Core", latest: { sets: 4, reps: 12, weight: 80.25, text: "BW × 4×12 (new PR)" }, best: { sets: 4, reps: 12, weight: 80.25, text: "BW × 4×12" } },
+  { name: "Pallof Press", section: "Core", latest: { sets: 4, reps: 4, weight: 18, text: "18kg × 4×4 each side" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" } },
   { name: "Back Extension (45°)", section: "Legs", latest: { sets: 4, reps: 8, weight: 80.45, text: "BW × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 80.45, text: "BW × 4×8" } },
   { name: "Side Plank", section: "Core", iso: true, latest: { sets: 2, seconds: 20, weight: 80.45, text: "BW × 2×20s each side (first logged)" }, best: { sets: 2, seconds: 20, weight: 80.45, text: "BW × 2×20s each side" } },
   { name: "Hanging Knee Raise", section: "Core", latest: { sets: 3, reps: 6, weight: 80.25, text: "BW × 3×6 (first logged)" }, best: { sets: 3, reps: 6, weight: 80.25, text: "BW × 3×6" } },
@@ -398,6 +398,21 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 21 Nov — Legs (09:30)
+  {
+    datetime: "2026-11-21T09:30", note: "Legs day (09:30) — Leg Press 137kg×4×8 (heavier; not a PR by est. 1RM vs 132kg×4×12). Dumbbell RDL 22kg each×4×8 (new PR). Single-Leg Extensions 57kg each×3×4 — uncomfortable; dropped from the rotation per user (Leg Extensions now fills the slot). Hip Thrust 30kg each side (60kg)×4×6 (new PR, heaviest yet). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine 81kg×4×10 (ties best). Dumbbell Sumo Squat 26kg×4×8 (new PR). Core: Pallof Press 18kg×4×4 each side, VKR BW×4×12 (new PR). 4 new PRs.",
+    exercises: [
+      { name: "Leg Press", sets: [ { reps: 8, weight: 137 }, { reps: 8, weight: 137 }, { reps: 8, weight: 137 }, { reps: 8, weight: 137 } ] },
+      { name: "Dumbbell RDL", sets: [ { reps: 8, weight: 44 }, { reps: 8, weight: 44 }, { reps: 8, weight: 44 }, { reps: 8, weight: 44 } ] },
+      { name: "Single-Leg Extensions", sets: [ { reps: 4, weight: 57 }, { reps: 4, weight: 57 }, { reps: 4, weight: 57 } ] },
+      { name: "Hip Thrust", sets: [ { reps: 6, weight: 60 }, { reps: 6, weight: 60 }, { reps: 6, weight: 60 }, { reps: 6, weight: 60 } ] },
+      { name: "Dumbbell Calf Raise", sets: [ { reps: 8, weight: 52 }, { reps: 8, weight: 52 }, { reps: 8, weight: 52 }, { reps: 8, weight: 52 } ] },
+      { name: "Calf Raises Machine", sets: [ { reps: 10, weight: 81 }, { reps: 10, weight: 81 }, { reps: 10, weight: 81 }, { reps: 10, weight: 81 } ] },
+      { name: "Dumbbell Sumo Squat", sets: [ { reps: 8, weight: 26 }, { reps: 8, weight: 26 }, { reps: 8, weight: 26 }, { reps: 8, weight: 26 } ] },
+      { name: "Pallof Press", sets: [ { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 }, { reps: 8, weight: 18 } ] },
+      { name: "VKR", sets: [ { reps: 12 }, { reps: 12 }, { reps: 12 }, { reps: 12 } ] },
+    ],
+  },
   // 20 Nov — Pull (10:30)
   {
     datetime: "2026-11-20T10:30", note: "Pull day (10:30) — Lat Pulldown (Triangle) 77kg×3×9, as suggested (new PR). Diverging Seated Row 100kg×4×8 (heavier than the 97kg×4×12 best; not a PR by est. 1RM). Reverse Incline DB Row 26kg each×4×12, as suggested (ties best). Cable Face Pull 36kg×3×11 (new PR). Incline Hammer Curl 20kg each×3×6 (below 3×8 best). EZ Bar Curl 10kg each + bar×3×11 (new PR). Forearm Twists 18kg each×4×8 (new PR). Core: Plank BW×3×40s (new PR), Hanging Knee Raise BW×3×6 (first logged). 5 new PRs.",
