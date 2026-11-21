@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
   "day_number": 147,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "23:30",
     "sleep_end": "07:30",
@@ -204,5 +204,6 @@
     "Breakfast eaten across ~08:00-08:45, logged at 08:45."
   ],
   "exclude_from_monthly_macros": true,
-  "exclude_reason": "User stopped food tracking mid-day 2026-11-21 (after ~11:30). Items logged before the request stay on record; supplements/meds/caffeine/workouts/lifestyle still logged."
+  "exclude_reason": "User stopped food tracking mid-day 2026-11-21 (after ~11:30). Items logged before the request stay on record; supplements/meds/caffeine/workouts/lifestyle still logged.",
+  "steps": 3000
 }
