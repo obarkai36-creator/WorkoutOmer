@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-21",
+  "day_number": 147,
+  "in_progress": true,
+  "sleep": {
+    "sleep_start": "23:30",
+    "sleep_end": "07:30",
+    "duration_hours": 8.0,
+    "quality": null,
+    "notes": "8.0h (night of 2026-11-20) — within the 7-9h target band."
+  },
+  "workout_today": false,
+  "caffeine_shots": 2,
+  "micros_sperm_priority": {
+    "zinc_mg": 0.6,
+    "selenium_mcg": 14,
+    "folate_mcg_dfe": 89,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 66,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 13.2
+  },
+  "status_note": "In progress. Slept 8.0h.",
+  "items": [
+    {
+      "time": "07:45",
+      "name": "Bilaxten (bilastine)",
+      "category": "medication",
+      "qty": "1 pill (morning)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "07:45",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (AM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "07:45",
+      "name": "Steronase (triamcinolone nasal spray)",
+      "category": "medication",
+      "qty": "1 dose",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "day 15/30."
+    },
+    {
+      "time": "08:00",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "2 shots",
+      "kcal": 5,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "08:45",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "150 g",
+      "kcal": 147,
+      "protein_g": 16.5,
+      "carbs_g": 5.1,
+      "fat_g": 6.45,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "same generic reference."
+    },
+    {
+      "time": "08:45",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "30 pieces",
+      "kcal": 79.5,
+      "protein_g": 4.1,
+      "carbs_g": 17.6,
+      "fat_g": 0.9,
+      "fiber_g": 5.4,
+      "time_approx": true,
+      "note": "standard reference."
+    },
+    {
+      "time": "08:45",
+      "name": "Honey",
+      "category": "food",
+      "qty": "5 g",
+      "kcal": 15.2,
+      "protein_g": 0,
+      "carbs_g": 4.1,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "time_approx": true
+    },
+    {
+      "time": "08:45",
+      "name": "Hamantasch (oznei haman cookie)",
+      "category": "food",
+      "qty": "15 g",
+      "kcal": 65,
+      "protein_g": 0.9,
+      "carbs_g": 9,
+      "fat_g": 2.8,
+      "fiber_g": 0.3,
+      "time_approx": true,
+      "note": "same generic filled-cookie reference (~435kcal/100g)."
+    }
+  ],
+  "assumptions": [
+    "Breakfast eaten across ~08:00-08:45, logged at 08:45."
+  ]
+}
