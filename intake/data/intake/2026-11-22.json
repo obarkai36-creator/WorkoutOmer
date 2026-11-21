@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-22",
+  "day_number": 148,
+  "in_progress": true,
+  "sleep": null,
+  "workout_today": false,
+  "caffeine_shots": 0,
+  "micros_sperm_priority": {
+    "zinc_mg": 3.6,
+    "selenium_mcg": 75,
+    "folate_mcg_dfe": 30,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 1.5,
+    "lycopene_mg": 0
+  },
+  "status_note": "Pre-logged lunch (planned, from 2026-11-21).",
+  "items": [
+    {
+      "time": "13:00",
+      "name": "Lunch (pre-packed) — peanut butter sauce noodles",
+      "category": "food",
+      "qty": "150 g",
+      "kcal": 300,
+      "protein_g": 9,
+      "carbs_g": 38,
+      "fat_g": 12,
+      "fiber_g": 2.5,
+      "time_approx": true,
+      "note": "generic peanut-sauce noodles (~200kcal/100g)."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch (pre-packed) — chicken schnitzel",
+      "category": "food",
+      "qty": "65 g",
+      "kcal": 172,
+      "protein_g": 13,
+      "carbs_g": 7.8,
+      "fat_g": 9.5,
+      "fiber_g": 0.4,
+      "time_approx": true,
+      "note": "generic breaded fried schnitzel (~265kcal/100g)."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch (pre-packed) — grilled chicken breast, plain",
+      "category": "food",
+      "qty": "200 g raw (~150 g cooked)",
+      "kcal": 240,
+      "protein_g": 46,
+      "carbs_g": 0,
+      "fat_g": 5,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "weighed pre-grill: raw breast ~120kcal/23g protein per 100g."
+    }
+  ],
+  "assumptions": [
+    "Lunch pre-logged on 2026-11-21 evening from the user's pre-packed plan; time placeholder 13:00 — confirm/adjust if eaten differently."
+  ]
+}
