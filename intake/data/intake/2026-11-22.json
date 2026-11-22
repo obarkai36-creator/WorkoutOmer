@@ -12,14 +12,14 @@
   "workout_today": false,
   "caffeine_shots": 3,
   "micros_sperm_priority": {
-    "zinc_mg": 29.6,
-    "selenium_mcg": 211,
-    "folate_mcg_dfe": 258,
+    "zinc_mg": 31.1,
+    "selenium_mcg": 226,
+    "folate_mcg_dfe": 368,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1073.8,
+    "vitamin_c_mg": 1139.8,
     "vitamin_d_iu": 2000,
-    "vitamin_e_mg": 135.5,
-    "lycopene_mg": 12.8
+    "vitamin_e_mg": 135.8,
+    "lycopene_mg": 26.0
   },
   "status_note": "In progress. Slept 6.6h.",
   "items": [
@@ -234,6 +234,52 @@
       "protein_g": 0,
       "carbs_g": 4.1,
       "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "19:00",
+      "name": "Dinner — Angel PRO Pita",
+      "category": "food",
+      "qty": "2 units (125 g)",
+      "kcal": 251.2,
+      "protein_g": 25.8,
+      "carbs_g": 28.4,
+      "fat_g": 2.4,
+      "fiber_g": 7.4
+    },
+    {
+      "time": "19:00",
+      "name": "Dinner — Simfonia cheese spread",
+      "category": "food",
+      "qty": "50 g",
+      "kcal": 54,
+      "protein_g": 4.9,
+      "carbs_g": 2.3,
+      "fat_g": 2.5,
+      "fiber_g": 0,
+      "note": "verified label rate."
+    },
+    {
+      "time": "19:00",
+      "name": "Dinner — Cherry tomatoes",
+      "category": "food",
+      "qty": "30 pieces",
+      "kcal": 79.5,
+      "protein_g": 4.1,
+      "carbs_g": 17.6,
+      "fat_g": 0.9,
+      "fiber_g": 5.4,
+      "note": "standard reference."
+    },
+    {
+      "time": "19:00",
+      "name": "Dinner — Olive oil (sprayed)",
+      "category": "food",
+      "qty": "2 spritzes (~2 g)",
+      "kcal": 17.7,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 2,
       "fiber_g": 0
     }
   ],
