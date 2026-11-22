@@ -10,15 +10,15 @@
     "notes": "6.6h (night of 2026-11-21) — below the 7-9h target band."
   },
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "micros_sperm_priority": {
-    "zinc_mg": 8.6,
-    "selenium_mcg": 87,
+    "zinc_mg": 28.6,
+    "selenium_mcg": 187,
     "folate_mcg_dfe": 164,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 18.8,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 1.5,
+    "vitamin_c_mg": 1018.8,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 135.5,
     "lycopene_mg": 1.8
   },
   "status_note": "In progress. Slept 6.6h.",
@@ -177,6 +177,29 @@
       "fat_g": 2.6,
       "fiber_g": 0.4,
       "note": "label reference (~487kcal/100g)."
+    },
+    {
+      "time": "15:00",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "15:30",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\"."
     }
   ],
   "assumptions": [
