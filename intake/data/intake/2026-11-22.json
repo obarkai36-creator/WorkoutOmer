@@ -16,7 +16,7 @@
     "selenium_mcg": 226,
     "folate_mcg_dfe": 368,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1139.8,
+    "vitamin_c_mg": 1147.8,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 135.8,
     "lycopene_mg": 26.0
@@ -237,6 +237,18 @@
       "fiber_g": 0
     },
     {
+      "time": "17:00",
+      "name": "Green apple",
+      "category": "food",
+      "qty": "1 medium (~180 g)",
+      "kcal": 94,
+      "protein_g": 0.5,
+      "carbs_g": 25,
+      "fat_g": 0.3,
+      "fiber_g": 4.3,
+      "note": "Granny Smith-type, generic reference."
+    },
+    {
       "time": "19:00",
       "name": "Dinner — Angel PRO Pita",
       "category": "food",
@@ -303,6 +315,28 @@
       "protein_g": 7.5,
       "carbs_g": 0,
       "fat_g": 2.25,
+      "fiber_g": 0
+    },
+    {
+      "time": "20:45",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (PM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "21:00",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
       "fiber_g": 0
     }
   ],
