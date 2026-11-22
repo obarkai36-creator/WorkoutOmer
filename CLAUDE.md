@@ -45,7 +45,8 @@
   from `expected_supplements_for()` so they don't count against compliance.
   Creatine paused 2026-11-02 through 2026-11-05 (resumed 11-06 20:00). Rhinolast
   spray (AM+PM rows) paused 2026-10-17 through 2026-11-06 (out of stock;
-  resumed 2026-11-07). Add any future
+  resumed 2026-11-07). Omega-3 paused 2026-11-22 through 2026-11-26 (per
+  user, resumes Friday 2026-11-27). Add any future
   pause there (then re-export the affected dates).
 
 - Travel (2026-11-01 out, Friday 2026-11-06 back): connecting flights both

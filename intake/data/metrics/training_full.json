@@ -1,5 +1,5 @@
 {
-  "now": 1795373183084,
+  "now": 1795376437997,
   "workouts": [
     {
       "datetime": "2026-11-21T09:30",
@@ -10624,7 +10624,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -10672,8 +10672,8 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 37,
-      "readyInHours": 11.8,
+      "pct": 36,
+      "readyInHours": 10.9,
       "ready": false
     },
     "adductors": {
@@ -10688,7 +10688,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 27,
+      "pct": 26,
       "readyInHours": 0,
       "ready": true
     },
@@ -10742,14 +10742,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         }
@@ -10789,14 +10789,14 @@
     "Legs": {
       "section": "Legs",
       "pct": 24,
-      "readyInHours": 11.8,
+      "readyInHours": 10.9,
       "muscles": [
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 37,
-          "readyInHours": 11.8,
+          "pct": 36,
+          "readyInHours": 10.9,
           "ready": false
         },
         {
@@ -10811,7 +10811,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 27,
+          "pct": 26,
           "readyInHours": 0,
           "ready": true
         },
@@ -12329,7 +12329,7 @@
     "fatigue": 5,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-22T18:46:23.084Z",
+    "readyAt": "2026-11-22T19:40:37.997Z",
     "neverLogged": false,
     "daysSince": 6,
     "suggestedExercises": [
@@ -12649,12 +12649,12 @@
         "section": "Pull",
         "fatigue": 28,
         "readyInHours": 0,
-        "daysSince": 2.3
+        "daysSince": 2.4
       },
       {
         "section": "Legs",
         "fatigue": 24,
-        "readyInHours": 11.8,
+        "readyInHours": 10.9,
         "daysSince": 1.4
       }
     ],

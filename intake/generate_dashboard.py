@@ -319,6 +319,7 @@ SUPPLEMENT_PAUSES = [
     # Rhinolast out of stock 2026-10-17, resumed 2026-11-07.
     ("Allergy spray · AM", "2026-10-17", "2026-11-06"),
     ("Allergy spray · PM", "2026-10-17", "2026-11-06"),
+    ("Omega-3", "2026-11-22", "2026-11-26"),  # paused per user, resumes Friday 2026-11-27
 ]
 
 
