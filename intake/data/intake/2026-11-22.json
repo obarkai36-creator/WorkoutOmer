@@ -131,7 +131,7 @@
       "note": "standard reference."
     },
     {
-      "time": "13:00",
+      "time": "12:15",
       "name": "Lunch (pre-packed) — peanut butter sauce noodles",
       "category": "food",
       "qty": "150 g",
@@ -140,11 +140,10 @@
       "carbs_g": 38,
       "fat_g": 12,
       "fiber_g": 2.5,
-      "time_approx": true,
       "note": "generic peanut-sauce noodles (~200kcal/100g)."
     },
     {
-      "time": "13:00",
+      "time": "12:15",
       "name": "Lunch (pre-packed) — chicken schnitzel",
       "category": "food",
       "qty": "65 g",
@@ -153,11 +152,10 @@
       "carbs_g": 7.8,
       "fat_g": 9.5,
       "fiber_g": 0.4,
-      "time_approx": true,
       "note": "generic breaded fried schnitzel (~265kcal/100g)."
     },
     {
-      "time": "13:00",
+      "time": "12:15",
       "name": "Lunch (pre-packed) — grilled chicken breast, plain",
       "category": "food",
       "qty": "200 g raw (~150 g cooked)",
@@ -166,11 +164,22 @@
       "carbs_g": 0,
       "fat_g": 5,
       "fiber_g": 0,
-      "time_approx": true,
       "note": "weighed pre-grill: raw breast ~120kcal/23g protein per 100g."
+    },
+    {
+      "time": "12:55",
+      "name": "Bounty chocolate bar",
+      "category": "food",
+      "qty": "10 g",
+      "kcal": 48.7,
+      "protein_g": 0.4,
+      "carbs_g": 5.9,
+      "fat_g": 2.6,
+      "fiber_g": 0.4,
+      "note": "label reference (~487kcal/100g)."
     }
   ],
   "assumptions": [
-    "Lunch pre-logged on 2026-11-21 evening from the user's pre-packed plan; time placeholder 13:00 — confirm/adjust if eaten differently."
+    "Lunch eaten 12:15 as pre-logged."
   ]
 }
