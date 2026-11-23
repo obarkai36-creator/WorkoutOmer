@@ -12,14 +12,14 @@
   "workout_today": false,
   "caffeine_shots": 5,
   "micros_sperm_priority": {
-    "zinc_mg": 31.3,
-    "selenium_mcg": 147,
-    "folate_mcg_dfe": 170,
+    "zinc_mg": 32.1,
+    "selenium_mcg": 166,
+    "folate_mcg_dfe": 219,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 1042,
+    "vitamin_c_mg": 1064,
     "vitamin_d_iu": 2000,
     "vitamin_e_mg": 136,
-    "lycopene_mg": 19.4
+    "lycopene_mg": 23.8
   },
   "status_note": "In progress. Slept 7.4h.",
   "items": [
@@ -233,6 +233,41 @@
       "kcal": 5,
       "protein_g": 0,
       "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "16:45",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "200 g",
+      "kcal": 196,
+      "protein_g": 22,
+      "carbs_g": 6.8,
+      "fat_g": 8.6,
+      "fiber_g": 0,
+      "note": "same generic reference."
+    },
+    {
+      "time": "16:45",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "10 pieces",
+      "kcal": 26.5,
+      "protein_g": 1.37,
+      "carbs_g": 5.87,
+      "fat_g": 0.3,
+      "fiber_g": 1.8,
+      "note": "standard reference."
+    },
+    {
+      "time": "16:45",
+      "name": "Honey",
+      "category": "food",
+      "qty": "5 g",
+      "kcal": 15.2,
+      "protein_g": 0,
+      "carbs_g": 4.1,
       "fat_g": 0,
       "fiber_g": 0
     }
