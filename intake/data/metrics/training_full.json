@@ -1,5 +1,5 @@
 {
-  "now": 1795414123624,
+  "now": 1795418134611,
   "workouts": [
     {
       "datetime": "2026-11-21T09:30",
@@ -10608,7 +10608,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -10664,7 +10664,7 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 23,
+      "pct": 22,
       "readyInHours": 0,
       "ready": true
     },
@@ -10673,8 +10673,8 @@
       "label": "Glutes",
       "section": "Legs",
       "pct": 30,
-      "readyInHours": 0.4,
-      "ready": false
+      "readyInHours": 0,
+      "ready": true
     },
     "adductors": {
       "key": "adductors",
@@ -10688,7 +10688,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "ready": true
     },
@@ -10712,14 +10712,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 5,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         }
@@ -10789,21 +10789,21 @@
     "Legs": {
       "section": "Legs",
       "pct": 19,
-      "readyInHours": 0.4,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
           "pct": 30,
-          "readyInHours": 0.4,
-          "ready": false
+          "readyInHours": 0,
+          "ready": true
         },
         {
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 23,
+          "pct": 22,
           "readyInHours": 0,
           "ready": true
         },
@@ -10811,7 +10811,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 20,
+          "pct": 19,
           "readyInHours": 0,
           "ready": true
         },
@@ -12326,10 +12326,10 @@
   "recommendation": {
     "section": "Push",
     "program": "Push / Pull / Legs + Cardio",
-    "fatigue": 5,
+    "fatigue": 4,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-23T06:08:43.624Z",
+    "readyAt": "2026-11-23T07:15:34.611Z",
     "neverLogged": false,
     "daysSince": 6.5,
     "suggestedExercises": [
@@ -12635,7 +12635,7 @@
     "ranked": [
       {
         "section": "Push",
-        "fatigue": 5,
+        "fatigue": 4,
         "readyInHours": 0,
         "daysSince": 6.5
       },
@@ -12649,12 +12649,12 @@
         "section": "Pull",
         "fatigue": 23,
         "readyInHours": 0,
-        "daysSince": 2.8
+        "daysSince": 2.9
       },
       {
         "section": "Legs",
         "fatigue": 19,
-        "readyInHours": 0.4,
+        "readyInHours": 0,
         "daysSince": 1.9
       }
     ],

@@ -10,16 +10,16 @@
     "notes": "7.4h (night of 2026-11-22) — within the 7-9h target band."
   },
   "workout_today": false,
-  "caffeine_shots": 1,
+  "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "zinc_mg": 4.8,
+    "selenium_mcg": 7,
+    "folate_mcg_dfe": 125,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 22,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 4.4
   },
   "status_note": "In progress. Slept 7.4h.",
   "items": [
@@ -105,6 +105,40 @@
       "fat_g": 2,
       "fiber_g": 0.6,
       "note": "generic granola (~470kcal/100g)."
+    },
+    {
+      "time": "09:15",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "2 slices (50 g)",
+      "kcal": 100,
+      "protein_g": 15,
+      "carbs_g": 0,
+      "fat_g": 4.5,
+      "fiber_g": 0
+    },
+    {
+      "time": "09:15",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "10 pieces",
+      "kcal": 26.5,
+      "protein_g": 1.37,
+      "carbs_g": 5.87,
+      "fat_g": 0.3,
+      "fiber_g": 1.8,
+      "note": "standard reference."
+    },
+    {
+      "time": "09:30",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "assumptions": [
