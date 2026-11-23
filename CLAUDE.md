@@ -49,6 +49,14 @@
   user, resumes Friday 2026-11-27). Add any future
   pause there (then re-export the affected dates).
 
+- Travel #2 (Tuesday 2026-11-24 out, Thursday 2026-11-26 back, per user
+  2026-11-23): ~5h + ~3h flights with a layover; warm destination (good
+  weather, light clothing — consider sun-exposure vitamin D estimates when
+  outdoor time is reported). Mark both flight days `travel_day: true` and
+  treat as rest days (no training pressure, expect low steps/sleep
+  disruption). Coincides with the omega-3 pause (through 11-26). Food
+  tracking continues as normal unless the user says otherwise.
+
 - Travel (2026-11-01 out, Friday 2026-11-06 back): connecting flights both
   ways (~4h + ~3h legs). Mark both days `travel_day: true` and treat as rest
   days — no training recommendation pressure, expect low steps, timezone/sleep
