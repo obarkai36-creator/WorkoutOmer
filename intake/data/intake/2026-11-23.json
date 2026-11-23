@@ -1,7 +1,7 @@
 {
   "date": "2026-11-23",
   "day_number": 149,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "22:30",
     "sleep_end": "05:55",
@@ -402,5 +402,6 @@
   "assumptions": [
     "Omega-3 paused through 2026-11-26 (per user).",
     "Lunch time not given (placeholder 12:15, before the 12:30 espresso); pasta cooked weight confirmed."
-  ]
+  ],
+  "steps": 7500
 }
