@@ -10,15 +10,15 @@
     "notes": "7.4h (night of 2026-11-22) — within the 7-9h target band."
   },
   "workout_today": false,
-  "caffeine_shots": 2,
+  "caffeine_shots": 3,
   "micros_sperm_priority": {
-    "zinc_mg": 11.3,
-    "selenium_mcg": 47,
+    "zinc_mg": 31.3,
+    "selenium_mcg": 147,
     "folate_mcg_dfe": 170,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 42,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 2,
+    "vitamin_c_mg": 1042,
+    "vitamin_d_iu": 2000,
+    "vitamin_e_mg": 136,
     "lycopene_mg": 19.4
   },
   "status_note": "In progress. Slept 7.4h.",
@@ -141,7 +141,7 @@
       "fiber_g": 0
     },
     {
-      "time": "13:00",
+      "time": "12:15",
       "name": "Lunch — pasta (cooked)",
       "category": "food",
       "qty": "150 g",
@@ -151,10 +151,10 @@
       "fat_g": 1.4,
       "fiber_g": 2.7,
       "time_approx": true,
-      "note": "assumed cooked weight (~158kcal/100g). If 150g was dry, it's ~2.4x this."
+      "note": "assumed cooked weight (~158kcal/100g). Cooked weight confirmed by user."
     },
     {
-      "time": "13:00",
+      "time": "12:15",
       "name": "Lunch — bolognese sauce with meat",
       "category": "food",
       "qty": "300 g",
@@ -165,10 +165,45 @@
       "fiber_g": 4.5,
       "time_approx": true,
       "note": "generic home-style beef bolognese (~120kcal/100g). Credits ~6mg zinc, ~20mcg selenium, ~15mg lycopene, ~20mg vitamin C, ~2mg vitamin E."
+    },
+    {
+      "time": "12:30",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "12:50",
+      "name": "Pesek Zman",
+      "category": "food",
+      "qty": "10 g",
+      "kcal": 53,
+      "protein_g": 0.8,
+      "carbs_g": 5.6,
+      "fat_g": 3,
+      "fiber_g": 0.2,
+      "note": "same Pesek Zman rate (~530kcal/100g)."
+    },
+    {
+      "time": "13:30",
+      "name": "Advance Physician Formulas Vitamin C+D3+E+Zinc+Selenium",
+      "category": "supplement",
+      "qty": "2 capsules",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "\"essential 5\"."
     }
   ],
   "assumptions": [
     "Omega-3 paused through 2026-11-26 (per user).",
-    "Lunch time not given (placeholder 13:00); pasta weight assumed cooked."
+    "Lunch time not given (placeholder 12:15, before the 12:30 espresso); pasta cooked weight confirmed."
   ]
 }
