@@ -12,14 +12,14 @@
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 4.8,
-    "selenium_mcg": 7,
-    "folate_mcg_dfe": 125,
+    "zinc_mg": 11.3,
+    "selenium_mcg": 47,
+    "folate_mcg_dfe": 170,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 22,
+    "vitamin_c_mg": 42,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 4.4
+    "vitamin_e_mg": 2,
+    "lycopene_mg": 19.4
   },
   "status_note": "In progress. Slept 7.4h.",
   "items": [
@@ -139,9 +139,36 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — pasta (cooked)",
+      "category": "food",
+      "qty": "150 g",
+      "kcal": 237,
+      "protein_g": 8.7,
+      "carbs_g": 46,
+      "fat_g": 1.4,
+      "fiber_g": 2.7,
+      "time_approx": true,
+      "note": "assumed cooked weight (~158kcal/100g). If 150g was dry, it's ~2.4x this."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — bolognese sauce with meat",
+      "category": "food",
+      "qty": "300 g",
+      "kcal": 360,
+      "protein_g": 24,
+      "carbs_g": 18,
+      "fat_g": 21,
+      "fiber_g": 4.5,
+      "time_approx": true,
+      "note": "generic home-style beef bolognese (~120kcal/100g). Credits ~6mg zinc, ~20mcg selenium, ~15mg lycopene, ~20mg vitamin C, ~2mg vitamin E."
     }
   ],
   "assumptions": [
-    "Omega-3 paused through 2026-11-26 (per user)."
+    "Omega-3 paused through 2026-11-26 (per user).",
+    "Lunch time not given (placeholder 13:00); pasta weight assumed cooked."
   ]
 }
