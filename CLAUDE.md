@@ -54,8 +54,12 @@
   weather, light clothing — consider sun-exposure vitamin D estimates when
   outdoor time is reported). Mark both flight days `travel_day: true` and
   treat as rest days (no training pressure, expect low steps/sleep
-  disruption). Coincides with the omega-3 pause (through 11-26). Food
-  tracking continues as normal unless the user says otherwise.
+  disruption). Coincides with the omega-3 pause (through 11-26). **UPDATE 2026-11-24**: user paused food tracking for
+  the trip — 2026-11-24 through 2026-11-26 inclusive, resume Friday
+  2026-11-27 without being asked. 11-24 breakfast (logged before the
+  request) stays on record. Same break pattern: everything else
+  (supplements/meds, caffeine, workouts, sleep, lifestyle, steps) as usual;
+  mark each day `exclude_from_monthly_macros: true` + `exclude_reason`.
 
 - Travel (2026-11-01 out, Friday 2026-11-06 back): connecting flights both
   ways (~4h + ~3h legs). Mark both days `travel_day: true` and treat as rest
