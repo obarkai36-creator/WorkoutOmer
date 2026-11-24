@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-24",
+  "day_number": 150,
+  "in_progress": true,
+  "travel_day": true,
+  "sleep": {
+    "sleep_start": "22:50",
+    "sleep_end": "05:20",
+    "duration_hours": 6.5,
+    "quality": null,
+    "notes": "6.5h (night of 2026-11-23) — below the 7-9h target band (early flight)."
+  },
+  "workout_today": false,
+  "caffeine_shots": 2,
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "status_note": "In progress. Travel day (flights out). Slept 6.5h.",
+  "items": [
+    {
+      "time": "05:20",
+      "name": "Bilaxten (bilastine)",
+      "category": "medication",
+      "qty": "1 pill (morning)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "05:20",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (AM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "05:20",
+      "name": "Steronase (triamcinolone nasal spray)",
+      "category": "medication",
+      "qty": "1 dose",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "day 18/30."
+    },
+    {
+      "time": "05:30",
+      "name": "Double espresso",
+      "category": "drink",
+      "qty": "2 shots",
+      "kcal": 5,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "05:40",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat",
+      "category": "food",
+      "qty": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "same reference (danone_pro_strawberry_0pct); flavor assumed."
+    },
+    {
+      "time": "05:40",
+      "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter",
+      "category": "food",
+      "qty": "10 g",
+      "kcal": 30.6,
+      "protein_g": 3.1,
+      "carbs_g": 4.4,
+      "fat_g": 1.4,
+      "fiber_g": 2.5,
+      "note": "verified reference (catalina_crunch_choc_pb_cereal)."
+    },
+    {
+      "time": "05:50",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    }
+  ],
+  "assumptions": [
+    "Travel day #2 out (5h+3h flights with layover). Omega-3 paused through 2026-11-26."
+  ]
+}
