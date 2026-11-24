@@ -1,5 +1,5 @@
 {
-  "now": 1795538304859,
+  "now": 1795544980075,
   "workouts": [
     {
       "datetime": "2026-11-21T09:30",
@@ -10608,7 +10608,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -10632,7 +10632,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -10664,7 +10664,7 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 13,
+      "pct": 12,
       "readyInHours": 0,
       "ready": true
     },
@@ -10672,7 +10672,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 17,
+      "pct": 16,
       "readyInHours": 0,
       "ready": true
     },
@@ -10712,14 +10712,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         }
@@ -10764,7 +10764,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         },
@@ -10795,7 +10795,7 @@
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 17,
+          "pct": 16,
           "readyInHours": 0,
           "ready": true
         },
@@ -10803,7 +10803,7 @@
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 13,
+          "pct": 12,
           "readyInHours": 0,
           "ready": true
         },
@@ -12326,12 +12326,12 @@
   "recommendation": {
     "section": "Push",
     "program": "Push / Pull / Legs + Cardio",
-    "fatigue": 3,
+    "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-24T16:38:24.859Z",
+    "readyAt": "2026-11-24T18:29:40.075Z",
     "neverLogged": false,
-    "daysSince": 7.9,
+    "daysSince": 8,
     "suggestedExercises": [
       {
         "name": "Incline Dumbbell Bench Press",
@@ -12635,15 +12635,15 @@
     "ranked": [
       {
         "section": "Push",
-        "fatigue": 3,
+        "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 7.9
+        "daysSince": 8
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 4.8
+        "daysSince": 4.9
       },
       {
         "section": "Pull",
@@ -12655,7 +12655,7 @@
         "section": "Legs",
         "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 3.3
+        "daysSince": 3.4
       }
     ],
     "suggestedCount": 9,
@@ -12663,7 +12663,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 4.8
+    "daysSinceAerobic": 4.9
   },
   "alerts": [
     {
@@ -12691,7 +12691,7 @@
       21,
       23
     ],
-    "daysSinceLast": 3.3,
+    "daysSinceLast": 3.4,
     "total": 98
   },
   "relstrength": {
@@ -12758,7 +12758,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 4.8,
+    "daysSinceLast": 4.9,
     "recent": [
       {
         "t": 1795122000000,
