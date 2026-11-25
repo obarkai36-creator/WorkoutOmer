@@ -22,7 +22,12 @@
   rotator cycling main + alternatives, and a "Copy session" button copies
   the chosen exercises as `Name load*sets*reps` lines (from the new
   `target.plan` field in engine.js `withPlan()`) for pasting back into the
-  logging chat (`?v=20261125-1`).
+  logging chat (`?v=20261125-1`). Barbell lifts (SNAPSHOT `bar:` field —
+  Bench/Incline/Decline Press bar 20kg, EZ Bar Curl bar 10kg) are shown and
+  prescribed as plates PER SIDE ("26.25kg each side"); `weight` stays the
+  total (2×side + bar) for 1RM math. When the user logs a barbell lift as
+  "Xkg each side" (or a bare number for these lifts, per 2026-11-25 request),
+  treat X as per-side and store total = 2X + bar.
   ATHLETE.weeklyTarget is now 3 strength + 1 aerobic. Gaps closed same day
   (user: "add exercises... longer sessions if needed"): added Back Extension (45°), Prone Y-Raise, Cable External Rotation, Hanging
   Knee Raise, Cable Crunch, Pallof Press, Side Plank, Dead Bug; sessions now

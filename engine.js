@@ -309,13 +309,21 @@ function weightIncrement(w) {
 function planLoad(best) {
   return String(best.text || "").split(" × ")[0].replace(/\s*\(.*$/, "").trim() || (best.weight ? best.weight + "kg" : "BW");
 }
-function withPlan(t, best, iso) {
+function withPlan(t, best, iso, bar) {
   if (!t) return t;
   const lbl = planLoad(best);
   if (iso) {
     const secs = best.scheme ? best.scheme.map((p) => p.seconds || 0) : null;
     const bump = t.status === "progress" ? 5 : 0;
     t.plan = secs ? `${lbl}*${secs.map((x) => x + bump + "s").join("+")}` : `${lbl}*${best.sets}*${(best.seconds || 0) + bump}s`;
+  } else if (bar) {
+    // Barbell lifts: prescribe plates per side (total = 2×side + bar).
+    const side = Math.max(0, ((best.weight || 0) - bar) / 2);
+    const weightStep = t.status === "progress" && /kg/.test(t.text) && !/rep/.test(t.text);
+    const ns = weightStep ? side + (side >= 20 ? 2.5 : 1.25) : side;
+    const reps = weightStep ? REP_RESTART : (best.reps || 0) + (t.status === "progress" ? 1 : 0);
+    t.plan = `${ns}kg each side*${best.sets}*${reps}`;
+    if (weightStep) t.text = `+${ns - side}kg each side (reset to ${best.sets}×${REP_RESTART})`;
   } else if (t.status === "progress" && /^\+\d/.test(t.text) && /kg/.test(t.text) && !/rep/.test(t.text)) {
     const w = best.weight || 0;
     const each = /each/.test(lbl);
@@ -330,7 +338,7 @@ function withPlan(t, best, iso) {
 }
 function nextLiftTarget(e, holdLoad) {
   const t = nextLiftTargetBase(e, holdLoad);
-  return e.best ? withPlan(t, e.best, e.iso) : t;
+  return e.best ? withPlan(t, e.best, e.iso, e.bar) : t;
 }
 function nextLiftTargetBase(e, holdLoad) {
   const best = e.best, latest = e.latest;

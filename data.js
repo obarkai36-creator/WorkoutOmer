@@ -303,12 +303,12 @@ const PROGRAM = {
  */
 const SNAPSHOT = [
   // ---- Chest ----
-  { name: "Bench Press",         section: "Chest", latest: { sets: 3, reps: 11, weight: 75, text: "27.5kg each side + 20kg bar × 3×11 (new PR)" }, best: { sets: 3, reps: 11, weight: 75, text: "27.5kg each side + 20kg bar × 3×11" } },
+  { name: "Bench Press",         section: "Chest", bar: 20, latest: { sets: 3, reps: 11, weight: 75, text: "27.5kg each side + 20kg bar × 3×11 (new PR)" }, best: { sets: 3, reps: 11, weight: 75, text: "27.5kg each side + 20kg bar × 3×11" } },
   { name: "Dumbbell Bench Press", section: "Chest", latest: { sets: 3, reps: 8, weight: 52, text: "26kg each × 3×8 (+2kg step-up, heaviest yet; not a PR by est. 1RM)" }, best: { sets: 4, reps: 12, weight: 48, text: "24kg each × 4×12" } },
-  { name: "Incline Bench Press", section: "Chest", latest: { sets: 3, reps: 6, weight: 70, text: "70kg × 3×6 (below best)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
+  { name: "Incline Bench Press", section: "Chest", bar: 20, latest: { sets: 3, reps: 6, weight: 70, text: "25kg each side + 20kg bar × 3×6 (below best)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "26.25kg each side + 20kg bar × 4×7" } },
   { name: "Incline Smith Machine Press", section: "Chest", latest: { sets: 4, reps: 8, weight: 40, text: "20kg each side × 4×8 (plates only — Smith bar weight not counted; first logged)" }, best: { sets: 4, reps: 8, weight: 40, text: "20kg each side × 4×8 (plates only)" } },
   { name: "Incline Dumbbell Bench Press", section: "Chest", latest: { sets: 1, reps: 10, weight: 48, text: "24kg each × 1×10 (abbreviated, 1 set only)" }, best: { sets: 4, reps: 11, weight: 48, text: "24kg each × 4×11" } },
-  { name: "Decline Bench Press", section: "Chest", latest: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7 (new PR)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "72.5kg × 4×7" } },
+  { name: "Decline Bench Press", section: "Chest", bar: 20, latest: { sets: 4, reps: 7, weight: 72.5, text: "26.25kg each side + 20kg bar × 4×7 (new PR)" }, best: { sets: 4, reps: 7, weight: 72.5, text: "26.25kg each side + 20kg bar × 4×7" } },
   { name: "Incline Pec Fly",     section: "Chest", latest: { sets: 4, reps: 8, weight: 40, text: "20kg each × 4×8 (new PR, as suggested)" }, best: { sets: 4, reps: 8, weight: 40, text: "20kg each × 4×8" } },
   { name: "Narrow Push-Ups",     section: "Chest", latest: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" }, best: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
@@ -349,7 +349,7 @@ const SNAPSHOT = [
   { name: "Incline DB Curl",      section: "Arms", latest: { sets: 4, reps: 10, weight: 12, text: "12kg each × 4×10 (lighter session, below the 20kg each×3×6 best)" }, best: { sets: 3, reps: 6, weight: 20, text: "20kg each × 3×6" } },
   { name: "Hammer Curl",          section: "Arms", latest: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" }, best: { sets: 4, reps: 10, weight: 20, text: "20kg × 4×10" } },
   { name: "Preacher Curl",        section: "Arms", latest: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" }, best: { sets: 3, reps: 7, weight: 35, text: "12.5kg each + bar × 3×7" } },
-  { name: "EZ Bar Curl",          section: "Arms", latest: { sets: 3, reps: 11, weight: 30, text: "10kg each + bar × 3×11 (new PR, +1 rep / 1 fewer set)" }, best: { sets: 3, reps: 11, weight: 30, text: "10kg each + bar × 3×11" } },
+  { name: "EZ Bar Curl",          section: "Arms", bar: 10, latest: { sets: 3, reps: 11, weight: 30, text: "10kg each side + 10kg bar × 3×11 (new PR, +1 rep / 1 fewer set)" }, best: { sets: 3, reps: 11, weight: 30, text: "10kg each side + 10kg bar × 3×11" } },
   { name: "Low Pulley Biceps Curl", section: "Arms", latest: { sets: 4, reps: 8, weight: 36, text: "36kg × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 36, text: "36kg × 4×8" } },
   { name: "Biceps Curl Machine",  section: "Arms", latest: { sets: 2, reps: 6, weight: 45, text: "45kg × 2×6" }, best: { sets: 3, reps: 6, weight: 45, text: "45kg × 3×6" } },
   { name: "Half Curl",            section: "Arms", latest: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" }, best: { sets: 4, reps: 5, weight: 36, text: "18kg each × 4×5" } },
