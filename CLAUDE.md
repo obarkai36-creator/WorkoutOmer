@@ -18,7 +18,11 @@
   `PROGRAM.coreRotation`. Past sessions are mapped to P/P/L by exercise.
   `docs/app.js` shows each row's region + alternatives; since 2026-11-15 (per
   user) each alternative also shows its own next-session target + best
-  (`?v=20261115-1`).
+  (`?v=20261115-1`). 2026-11-25 (per user): each recommended row has a ⇄
+  rotator cycling main + alternatives, and a "Copy session" button copies
+  the chosen exercises as `Name load*sets*reps` lines (from the new
+  `target.plan` field in engine.js `withPlan()`) for pasting back into the
+  logging chat (`?v=20261125-1`).
   ATHLETE.weeklyTarget is now 3 strength + 1 aerobic. Gaps closed same day
   (user: "add exercises... longer sessions if needed"): added Back Extension (45°), Prone Y-Raise, Cable External Rotation, Hanging
   Knee Raise, Cable Crunch, Pallof Press, Side Plank, Dead Bug; sessions now

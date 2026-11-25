@@ -303,7 +303,36 @@ function weightIncrement(w) {
   if (w >= 15) return 2;
   return 1;
 }
+// Concrete next-session prescription in the user's own logging style
+// ("72.5kg*4*7", "24kg each*4*12", "BW*2*25s") so the site's Copy button can
+// paste it straight back into the logging chat.
+function planLoad(best) {
+  return String(best.text || "").split(" × ")[0].replace(/\s*\(.*$/, "").trim() || (best.weight ? best.weight + "kg" : "BW");
+}
+function withPlan(t, best, iso) {
+  if (!t) return t;
+  const lbl = planLoad(best);
+  if (iso) {
+    const secs = best.scheme ? best.scheme.map((p) => p.seconds || 0) : null;
+    const bump = t.status === "progress" ? 5 : 0;
+    t.plan = secs ? `${lbl}*${secs.map((x) => x + bump + "s").join("+")}` : `${lbl}*${best.sets}*${(best.seconds || 0) + bump}s`;
+  } else if (t.status === "progress" && /^\+\d/.test(t.text) && /kg/.test(t.text) && !/rep/.test(t.text)) {
+    const w = best.weight || 0;
+    const each = /each/.test(lbl);
+    const per = each ? w / 2 : w;
+    const nw = per + weightIncrement(per);
+    const load = /^BW/.test(lbl) ? lbl : each ? `${nw}kg each` : `${nw}kg`;
+    t.plan = `${load}*${best.sets}*${REP_RESTART}`;
+  } else {
+    t.plan = `${lbl}*${best.sets}*${(best.reps || 0) + (t.status === "progress" ? 1 : 0)}`;
+  }
+  return t;
+}
 function nextLiftTarget(e, holdLoad) {
+  const t = nextLiftTargetBase(e, holdLoad);
+  return e.best ? withPlan(t, e.best, e.iso) : t;
+}
+function nextLiftTargetBase(e, holdLoad) {
   const best = e.best, latest = e.latest;
   if (!best) return null;
   const bestStats = recStats(best, e.iso);

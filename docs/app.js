@@ -478,9 +478,24 @@ function renderTrainingDetail(day, isLatest) {
   // daysSince is frozen at export time; advance it to the viewer's clock.
   const elapsedDays = day.training_now ? Math.max(0, (Date.now() - day.training_now) / 86400000) : 0;
   const liveDays = (d) => d === null || d === undefined ? null : d + elapsedDays;
-  const exRows = (rec.suggestedExercises || []).map((e) => `
-    <tr><td>${e.region ? `<div class="small muted">${e.region}</div>` : ""}${e.name}${e.preferred ? ` <span class="star">★ preferred</span>` : ""}${e.isNew ? ` <span class="tag">new</span>` : ""}${e.optional ? ` <span class="tag">optional</span>` : ""}${e.core ? ` <span class="tag">core</span>` : ""}${e.alternatives && e.alternatives.length ? `<div class="small muted" style="margin-top:4px">or:</div>${e.alternatives.map((a) => typeof a === "string" ? `<div class="small muted">· ${a}</div>` : `<div class="small muted">· <b>${a.name}</b>${a.isNew ? " (new)" : ""} — ${a.target ? a.target.text : ""}${a.best ? ` <span style="opacity:.75">(best ${a.best})</span>` : ""}</div>`).join("")}` : ""}</td><td>${e.best || "—"}</td>
-    <td class="num">${e.best1RM ? fmt(e.best1RM,1) : "—"}</td><td>${e.target ? e.target.text : ""}</td></tr>`).join("");
+  // Each row can rotate through its "or" options (main + alternatives); the
+  // Copy button then copies the chosen exercises' plans in the same
+  // "Name load*sets*reps" style used to log workouts back into the chat.
+  const recEx = rec.suggestedExercises || [];
+  window.__recOpts = recEx.map((e) => [{ name: e.name, best: e.best, target: e.target, isNew: e.isNew }]
+    .concat((e.alternatives || []).filter((a) => typeof a !== "string")));
+  window.__recSel = window.__recSel && window.__recSel.length === recEx.length ? window.__recSel : recEx.map(() => 0);
+  const optCell = (i) => {
+    const o = window.__recOpts[i][window.__recSel[i]] || window.__recOpts[i][0];
+    return `<b>${o.name}</b>${o.isNew ? ` <span class="tag">new</span>` : ""}`;
+  };
+  const exRows = recEx.map((e, i) => {
+    const opts = window.__recOpts[i], o = opts[window.__recSel[i]] || opts[0];
+    const others = opts.filter((x) => x !== o);
+    return `
+    <tr data-ex="${i}"><td>${e.region ? `<div class="small muted">${e.region}</div>` : ""}<span class="exname">${optCell(i)}</span>${e.optional ? ` <span class="tag">optional</span>` : ""}${e.core ? ` <span class="tag">core</span>` : ""}${opts.length > 1 ? ` <button class="rot" data-rot="${i}" title="Switch to the next option">⇄ ${window.__recSel[i] + 1}/${opts.length}</button>` : ""}<div class="orlist">${orList(others)}</div></td><td>${o.best || "—"}</td>
+    <td class="num">${i in recEx && o === opts[0] && e.best1RM ? fmt(e.best1RM,1) : "—"}</td><td>${o.target ? o.target.text : ""}</td></tr>`;
+  }).join("");
   const rankedRows = (rec.ranked || []).map((s) => `
     <tr><td>${s.section}</td><td class="num">${fmt(s.fatigue,0)}%</td><td class="num">${s.readyInHours === 0 ? "ready now" : fmt(s.readyInHours,1) + "h"}</td><td class="num">${s.daysSince === null ? "—" : fmt(liveDays(s.daysSince),1) + "d"}</td></tr>`).join("");
   const sections = day.training_sections || {};
@@ -503,7 +518,7 @@ function renderTrainingDetail(day, isLatest) {
       <div class="bignum" style="color:${HUES.training.b}">${rec.deload ? "Full-body deload" : rec.section}</div>${rec.program ? `<div class="small muted">${rec.program}</div>` : ""}
       <div class="metric-note">${rec.readyNow ? "Ready now" : "Rest " + fmt(rec.restHours,1) + "h"} · last trained ${rec.daysSince === null ? "never" : fmt(liveDays(rec.daysSince),1) + "d ago"}${rec.suggestedCount ? ` · go for <b style="color:var(--text-1)">${rec.suggestedCount} of ${rec.totalAvailable}</b> below (typical ${rec.typicalSessionSize})` : ""}</div>
       ${(rec.guidance || []).map((g) => `<div class="metric-note" style="margin-top:6px">💡 ${g}</div>`).join("")}
-      ${exRows ? `<div class="scrollbox" style="margin-top:12px;max-height:none"><table class="datatable">
+      ${exRows ? `<div style="margin-top:12px"><button class="copybtn" id="copyPlan">📋 Copy session</button> <span class="small muted" id="copyMsg"></span></div><div class="scrollbox" style="margin-top:8px;max-height:none"><table class="datatable">
         <thead><tr><th>Exercise</th><th>Best</th><th class="num">1RM</th><th>Target this session</th></tr></thead>
         <tbody>${exRows}</tbody></table></div>` : ""}
     </div>
@@ -781,4 +796,43 @@ async function boot() {
 }
 boot().catch((err) => {
   document.getElementById("content").innerHTML = `<div class="empty-state">Failed to load dashboard data: ${err.message}</div>`;
+});
+
+/* Recommended-session option rotator + copy (2026-11-25). */
+function orList(others) {
+  return others.length ? `<div class="small muted" style="margin-top:4px">or:</div>` + others.map((a) => `<div class="small muted">· <b>${a.name}</b>${a.isNew ? " (new)" : ""} — ${a.target ? a.target.text : ""}${a.best ? ` <span style="opacity:.75">(best ${a.best})</span>` : ""}</div>`).join("") : "";
+}
+function recPlanText() {
+  const opts = window.__recOpts || [], sel = window.__recSel || [];
+  return opts.map((os, i) => {
+    const o = os[sel[i]] || os[0];
+    return `${o.name} ${o.target && o.target.plan ? o.target.plan : "?kg*?*?"}`;
+  }).join("\n");
+}
+document.addEventListener("click", async (ev) => {
+  const rot = ev.target.closest && ev.target.closest("[data-rot]");
+  if (rot) {
+    const i = +rot.dataset.rot, n = window.__recOpts[i].length;
+    window.__recSel[i] = (window.__recSel[i] + 1) % n;
+    const row = rot.closest("tr"), e = window.__recOpts[i], o = e[window.__recSel[i]];
+    const others = e.filter((x) => x !== o);
+    row.querySelector(".exname").innerHTML = `<b>${o.name}</b>${o.isNew ? ' <span class="tag">new</span>' : ""}`;
+    rot.textContent = `⇄ ${window.__recSel[i] + 1}/${n}`;
+    const cells = row.children;
+    cells[1].textContent = o.best || "—";
+    cells[2].textContent = "—";
+    cells[3].textContent = o.target ? o.target.text : "";
+    row.querySelector(".orlist").innerHTML = orList(others);
+    return;
+  }
+  if (ev.target.id === "copyPlan") {
+    const txt = recPlanText(), msg = document.getElementById("copyMsg");
+    try { await navigator.clipboard.writeText(txt); msg.textContent = "Copied ✓"; }
+    catch (e) {
+      const ta = document.createElement("textarea"); ta.value = txt; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); msg.textContent = "Copied ✓"; } catch (_) { msg.textContent = "Copy failed"; }
+      ta.remove();
+    }
+    setTimeout(() => { if (msg) msg.textContent = ""; }, 2500);
+  }
 });
