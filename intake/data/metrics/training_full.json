@@ -1,10 +1,9 @@
 {
-  "now": 1795628371756,
+  "now": 1795628469677,
   "workouts": [
     {
-      "datetime": "2026-11-25T17:00",
-      "timeUnknown": true,
-      "note": "Push day — hotel gym, cable version (clock time not given, placeholder 17:00). Low-to-High Cable Press 12.5kg each side×4×8 (first logged). Chest Press Machine 73kg×4×6 (hotel machine; ties best). Mid Cable Fly 7.5kg each side×4×12 (first logged). Cable Shoulder Press 12.5kg each side×4×8 (first logged). Cable Lateral Raise 5kg each arm×4×8 (first logged). Overhead Cable Triceps Extension 10kg×4×12 (first logged). Rope Cable Extension 25kg×4×8 (hotel stack, not comparable). Cable Front Raise 12.5kg×4×8 (first logged). Core: Pallof Press 10kg×3×6 each side, Side Plank BW×2×25s each side (new PR). 6 new cable exercises added to rotation; 1 new PR.",
+      "datetime": "2026-11-25T16:15",
+      "note": "Push day — hotel gym, cable version (16:15). Low-to-High Cable Press 12.5kg each side×4×8 (first logged). Chest Press Machine 73kg×4×6 (hotel machine; ties best). Mid Cable Fly 7.5kg each side×4×12 (first logged). Cable Shoulder Press 12.5kg each side×4×8 (first logged). Cable Lateral Raise 5kg each arm×4×8 (first logged). Overhead Cable Triceps Extension 10kg×4×12 (first logged). Rope Cable Extension 25kg×4×8 (hotel stack, not comparable). Cable Front Raise 12.5kg×4×8 (first logged). Core: Pallof Press 10kg×3×6 each side, Side Plank BW×2×25s each side (new PR). 6 new cable exercises added to rotation; 1 new PR.",
       "exercises": [
         {
           "name": "Low-to-High Cable Press",
@@ -285,7 +284,7 @@
           "kind": "strength"
         }
       ],
-      "t": 1795626000000,
+      "t": 1795623300000,
       "muscleLoad": {
         "chest": 3272,
         "shoulders": 2349.6,
@@ -10902,7 +10901,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 42,
-      "readyInHours": 20.6,
+      "readyInHours": 19.8,
       "ready": false
     },
     "back": {
@@ -10933,8 +10932,8 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 43,
-      "readyInHours": 14.2,
+      "pct": 42,
+      "readyInHours": 13.4,
       "ready": false
     },
     "forearms": {
@@ -10981,7 +10980,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -10989,8 +10988,8 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 49,
-      "readyInHours": 14.4,
+      "pct": 47,
+      "readyInHours": 13.7,
       "ready": false
     },
     "cardio": {
@@ -11006,14 +11005,14 @@
     "Chest": {
       "section": "Chest",
       "pct": 42,
-      "readyInHours": 20.6,
+      "readyInHours": 19.8,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 42,
-          "readyInHours": 20.6,
+          "readyInHours": 19.8,
           "ready": false
         }
       ]
@@ -11050,15 +11049,15 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 16,
-      "readyInHours": 14.2,
+      "pct": 15,
+      "readyInHours": 13.4,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 43,
-          "readyInHours": 14.2,
+          "pct": 42,
+          "readyInHours": 13.4,
           "ready": false
         },
         {
@@ -11112,7 +11111,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 5,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         },
@@ -11128,15 +11127,15 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 49,
-      "readyInHours": 14.4,
+      "pct": 47,
+      "readyInHours": 13.7,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 49,
-          "readyInHours": 14.4,
+          "pct": 47,
+          "readyInHours": 13.7,
           "ready": false
         }
       ]
@@ -12746,7 +12745,7 @@
     "fatigue": 0,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-25T17:39:31.756Z",
+    "readyAt": "2026-11-25T17:41:09.677Z",
     "neverLogged": false,
     "daysSince": 5.9,
     "suggestedExercises": [
@@ -12823,8 +12822,8 @@
       {
         "section": "Push",
         "fatigue": 42,
-        "readyInHours": 20.6,
-        "daysSince": 0
+        "readyInHours": 19.8,
+        "daysSince": 0.1
       }
     ],
     "suggestedCount": 3,
@@ -12860,7 +12859,7 @@
       21,
       23
     ],
-    "daysSinceLast": 0,
+    "daysSinceLast": 0.1,
     "total": 99
   },
   "relstrength": {

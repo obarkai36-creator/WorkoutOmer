@@ -411,9 +411,9 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
-  // 25 Nov — Push (hotel, cables; time not given)
+  // 25 Nov — Push (hotel, cables; 16:15)
   {
-    datetime: "2026-11-25T17:00", timeUnknown: true, note: "Push day — hotel gym, cable version (clock time not given, placeholder 17:00). Low-to-High Cable Press 12.5kg each side×4×8 (first logged). Chest Press Machine 73kg×4×6 (hotel machine; ties best). Mid Cable Fly 7.5kg each side×4×12 (first logged). Cable Shoulder Press 12.5kg each side×4×8 (first logged). Cable Lateral Raise 5kg each arm×4×8 (first logged). Overhead Cable Triceps Extension 10kg×4×12 (first logged). Rope Cable Extension 25kg×4×8 (hotel stack, not comparable). Cable Front Raise 12.5kg×4×8 (first logged). Core: Pallof Press 10kg×3×6 each side, Side Plank BW×2×25s each side (new PR). 6 new cable exercises added to rotation; 1 new PR.",
+    datetime: "2026-11-25T16:15", note: "Push day — hotel gym, cable version (16:15). Low-to-High Cable Press 12.5kg each side×4×8 (first logged). Chest Press Machine 73kg×4×6 (hotel machine; ties best). Mid Cable Fly 7.5kg each side×4×12 (first logged). Cable Shoulder Press 12.5kg each side×4×8 (first logged). Cable Lateral Raise 5kg each arm×4×8 (first logged). Overhead Cable Triceps Extension 10kg×4×12 (first logged). Rope Cable Extension 25kg×4×8 (hotel stack, not comparable). Cable Front Raise 12.5kg×4×8 (first logged). Core: Pallof Press 10kg×3×6 each side, Side Plank BW×2×25s each side (new PR). 6 new cable exercises added to rotation; 1 new PR.",
     exercises: [
       { name: "Low-to-High Cable Press", sets: [ { reps: 8, weight: 25 }, { reps: 8, weight: 25 }, { reps: 8, weight: 25 }, { reps: 8, weight: 25 } ] },
       { name: "Chest Press Machine", sets: [ { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 } ] },
