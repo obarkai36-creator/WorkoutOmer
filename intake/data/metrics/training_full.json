@@ -1,5 +1,5 @@
 {
-  "now": 1795611136883,
+  "now": 1795624270701,
   "workouts": [
     {
       "datetime": "2026-11-21T09:30",
@@ -10632,7 +10632,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -10672,7 +10672,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     },
@@ -10757,14 +10757,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 2,
+      "pct": 1,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 5,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         },
@@ -10795,7 +10795,7 @@
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 12,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         },
@@ -12329,9 +12329,9 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-25T12:52:16.883Z",
+    "readyAt": "2026-11-25T16:31:10.701Z",
     "neverLogged": false,
-    "daysSince": 8.7,
+    "daysSince": 8.9,
     "suggestedExercises": [
       {
         "name": "Incline Dumbbell Bench Press",
@@ -12372,7 +12372,7 @@
         }
       },
       {
-        "name": "Chest Press Machine",
+        "name": "Standing Cable Chest Press",
         "region": "Chest — mid (sternal head)",
         "alternatives": [
           {
@@ -12396,17 +12396,28 @@
               "plan": "24kg each*4*12"
             },
             "isNew": false
+          },
+          {
+            "name": "Chest Press Machine",
+            "best": "73kg × 4×6",
+            "target": {
+              "status": "rebuild",
+              "text": "Rebuild to best (73kg × 4×6)",
+              "note": "Last session came in under your best (73kg × 4×6) — rebuild to that before pushing further.",
+              "plan": "73kg*4*6"
+            },
+            "isNew": false
           }
         ],
         "optional": false,
-        "best": "73kg × 4×6",
-        "best1RM": 87.6,
+        "best": "",
+        "best1RM": 0,
         "iso": false,
+        "isNew": true,
         "target": {
-          "status": "rebuild",
-          "text": "Rebuild to best (73kg × 4×6)",
-          "note": "Last session came in under your best (73kg × 4×6) — rebuild to that before pushing further.",
-          "plan": "73kg*4*6"
+          "status": "new",
+          "text": "Not yet attempted",
+          "note": "No logged sessions yet — pick a comfortable starting weight/reps."
         }
       },
       {
@@ -12660,25 +12671,25 @@
         "section": "Push",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 8.7
+        "daysSince": 8.9
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 5.7
+        "daysSince": 5.8
       },
       {
         "section": "Pull",
         "fatigue": 9,
         "readyInHours": 0,
-        "daysSince": 5.1
+        "daysSince": 5.3
       },
       {
         "section": "Legs",
         "fatigue": 7,
         "readyInHours": 0,
-        "daysSince": 4.1
+        "daysSince": 4.3
       }
     ],
     "suggestedCount": 9,
@@ -12686,7 +12697,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 5.7
+    "daysSinceAerobic": 5.8
   },
   "alerts": [
     {
@@ -12719,7 +12730,7 @@
       21,
       23
     ],
-    "daysSinceLast": 4.1,
+    "daysSinceLast": 4.3,
     "total": 98
   },
   "relstrength": {
@@ -12786,7 +12797,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 5.7,
+    "daysSinceLast": 5.8,
     "recent": [
       {
         "t": 1795122000000,
