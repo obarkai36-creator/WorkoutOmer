@@ -1,5 +1,5 @@
 {
-  "now": 1795566470315,
+  "now": 1795592311442,
   "workouts": [
     {
       "datetime": "2026-11-21T09:30",
@@ -10616,7 +10616,7 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "ready": true
     },
@@ -10632,7 +10632,7 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 6,
+      "pct": 5,
       "readyInHours": 0,
       "ready": true
     },
@@ -10656,7 +10656,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "ready": true
     },
@@ -10664,7 +10664,7 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "ready": true
     },
@@ -10672,7 +10672,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 15,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -10688,7 +10688,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     },
@@ -10727,14 +10727,14 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 11,
+          "pct": 10,
           "readyInHours": 0,
           "ready": true
         }
@@ -10764,7 +10764,7 @@
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 6,
+          "pct": 5,
           "readyInHours": 0,
           "ready": true
         },
@@ -10788,14 +10788,14 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 9,
+      "pct": 8,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 15,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -10803,7 +10803,7 @@
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 11,
+          "pct": 10,
           "readyInHours": 0,
           "ready": true
         },
@@ -10811,7 +10811,7 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 9,
+          "pct": 8,
           "readyInHours": 0,
           "ready": true
         },
@@ -10819,7 +10819,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         },
@@ -12329,9 +12329,9 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-25T00:27:50.315Z",
+    "readyAt": "2026-11-25T07:38:31.442Z",
     "neverLogged": false,
-    "daysSince": 8.2,
+    "daysSince": 8.5,
     "suggestedExercises": [
       {
         "name": "Incline Dumbbell Bench Press",
@@ -12637,25 +12637,25 @@
         "section": "Push",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 8.2
+        "daysSince": 8.5
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 5.1
+        "daysSince": 5.4
       },
       {
         "section": "Pull",
-        "fatigue": 11,
+        "fatigue": 10,
         "readyInHours": 0,
-        "daysSince": 4.6
+        "daysSince": 4.9
       },
       {
         "section": "Legs",
-        "fatigue": 9,
+        "fatigue": 8,
         "readyInHours": 0,
-        "daysSince": 3.6
+        "daysSince": 3.9
       }
     ],
     "suggestedCount": 9,
@@ -12663,7 +12663,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 5.1
+    "daysSinceAerobic": 5.4
   },
   "alerts": [
     {
@@ -12696,7 +12696,7 @@
       21,
       23
     ],
-    "daysSinceLast": 3.6,
+    "daysSinceLast": 3.9,
     "total": 98
   },
   "relstrength": {
@@ -12763,7 +12763,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 5.1,
+    "daysSinceLast": 5.4,
     "recent": [
       {
         "t": 1795122000000,
@@ -13325,15 +13325,22 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-11-24",
-      "start": "22:50",
-      "end": "05:20",
-      "hours": 6.5,
-      "note": "6.5h, below target (early flight)."
+      "date": "2026-11-25",
+      "start": "01:00",
+      "end": "07:05",
+      "hours": 6.08,
+      "note": "6.1h, below target (abroad)."
     },
-    "avg7": 7.5,
+    "avg7": 7.3,
     "status": "good",
     "history": [
+      {
+        "date": "2026-11-25",
+        "start": "01:00",
+        "end": "07:05",
+        "hours": 6.08,
+        "note": "6.1h, below target (abroad)."
+      },
       {
         "date": "2026-11-24",
         "start": "22:50",
