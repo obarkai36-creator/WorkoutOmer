@@ -116,6 +116,7 @@ const SECTION_ORDER = ["Chest", "Back", "Shoulders", "Arms", "Legs", "Core", "Ca
 const EXERCISE_LIBRARY = {
   // Chest
   "Bench Press":            { kind: "strength", muscles: { chest: 1.0, triceps: 0.4, shoulders: 0.3 } },
+  "Standing Cable Chest Press": { kind: "strength", muscles: { chest: 1.0, triceps: 0.4, shoulders: 0.3 } }, // dual adjustable pulley, handles at chest height
   "Dumbbell Bench Press":   { kind: "strength", muscles: { chest: 1.0, triceps: 0.4, shoulders: 0.3 } },
   "Incline Bench Press":    { kind: "strength", muscles: { chest: 1.0, shoulders: 0.4, triceps: 0.4 } },
   "Incline Smith Machine Press": { kind: "strength", muscles: { chest: 1.0, shoulders: 0.4, triceps: 0.4 } },
@@ -258,7 +259,7 @@ const PROGRAM = {
   days: {
     Push: { slots: [
       { region: "Chest — upper (clavicular head)", options: ["Incline Bench Press", "Incline Smith Machine Press", "Incline Dumbbell Bench Press"] },
-      { region: "Chest — mid (sternal head)", options: ["Bench Press", "Dumbbell Bench Press", "Chest Press Machine"] },
+      { region: "Chest — mid (sternal head)", options: ["Bench Press", "Dumbbell Bench Press", "Chest Press Machine", "Standing Cable Chest Press"] },
       { region: "Chest — stretch / adduction", options: ["Incline Pec Fly", "Pec Fly Machine", "Dumbbell Pec Fly"] },
       { region: "Front delts (overhead press)", options: ["Dumbbell Shoulder Press", "Converging Shoulder Press"] },
       { region: "Side delts", options: ["Lateral Raises", "Seated Lateral Raises"] },
