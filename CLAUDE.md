@@ -1,5 +1,8 @@
 # Session notes
 
+- Language (per user 2026-11-25): always reply in English in this session,
+  even when the user writes in Hebrew.
+
 - Workout program switched to Push / Pull / Legs + Cardio (2026-11-12, per
   user: 4 sessions/week, one each; 60-75 min; 1-2 alternating core exercises
   every session; arms folded into Push/Pull). Defined as `PROGRAM` in data.js:
