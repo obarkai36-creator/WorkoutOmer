@@ -1,18 +1,19 @@
 {
   "_note": "Training sessions (manually mirrored from ../data.js) + a live report_snapshot computed by sync_training_snapshot.mjs from ../data.js + ../engine.js — run that script after editing data.js so this stays correlated with the workout dashboard.",
   "report_snapshot": {
-    "report_date": "2026-11-23",
+    "report_date": "2026-11-25",
     "latest_session": "Legs day (09:30) — Leg Press 137kg×4×8 (heavier; not a PR by est. 1RM vs 132kg×4×12). Dumbbell RDL 22kg each×4×8 (new PR). Single-Leg Extensions 57kg each×3×4 — uncomfortable; dropped from the rotation per user (Leg Extensions now fills the slot). Hip Thrust 30kg each side (60kg)×4×6 (new PR, heaviest yet). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine 81kg×4×10 (ties best). Dumbbell Sumo Squat 26kg×4×8 (new PR). Core: Pallof Press 18kg×4×4 each side, VKR BW×4×12 (new PR). 4 new PRs.",
     "sessions_logged": 98,
-    "sessions_per_week": 3.3,
+    "sessions_per_week": 3,
     "typical_time": "afternoon",
     "aerobic_28d_km": 23.9,
     "aerobic_sessions_28d": 4,
     "avg_pace": "10:12/km",
     "avg_hr": 142,
-    "acwr": 1.03,
+    "acwr": 0.67,
     "recommended_next": "Push day",
     "alerts": [
+      "Load ratio 0.67 (<0.8). A normal training week will bring this back up.",
       "Nothing acutely concerning. The notes below are housekeeping, not warnings."
     ]
   },

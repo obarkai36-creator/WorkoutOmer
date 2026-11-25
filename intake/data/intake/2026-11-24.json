@@ -1,7 +1,7 @@
 {
   "date": "2026-11-24",
   "day_number": 150,
-  "in_progress": true,
+  "in_progress": false,
   "travel_day": true,
   "sleep": {
     "sleep_start": "22:50",
@@ -154,5 +154,6 @@
     "Travel day #2 out (5h+3h flights with layover). Omega-3 paused through 2026-11-26."
   ],
   "exclude_from_monthly_macros": true,
-  "exclude_reason": "Travel food-tracking break 2026-11-24 through 2026-11-26 (per user); breakfast items logged before the request stay on record."
+  "exclude_reason": "Travel food-tracking break 2026-11-24 through 2026-11-26 (per user); breakfast items logged before the request stay on record.",
+  "steps": 12000
 }
