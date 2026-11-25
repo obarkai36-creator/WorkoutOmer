@@ -149,6 +149,12 @@ const EXERCISE_LIBRARY = {
   "Dumbbell Shoulder Press":{ kind: "strength", muscles: { shoulders: 1.0, triceps: 0.4 } },
   "Lateral Raises":         { kind: "strength", muscles: { shoulders: 1.0 } },
   "Seated Lateral Raises":  { kind: "strength", muscles: { shoulders: 1.0 } },
+  "Low-to-High Cable Press": { kind: "strength", muscles: { chest: 1.0, shoulders: 0.4, triceps: 0.4 } }, // dual pulley, low anchors — upper chest
+  "Mid Cable Fly":          { kind: "strength", muscles: { chest: 1.0, shoulders: 0.2 } }, // dual pulley at chest height
+  "Cable Shoulder Press":   { kind: "strength", muscles: { shoulders: 1.0, triceps: 0.4 } },
+  "Cable Lateral Raise":    { kind: "strength", muscles: { shoulders: 1.0 } }, // single-arm, low pulley
+  "Overhead Cable Triceps Extension": { kind: "strength", muscles: { triceps: 1.0 } }, // rope, facing away
+  "Cable Front Raise":      { kind: "strength", muscles: { shoulders: 1.0 } },
   "Front Raises":           { kind: "strength", muscles: { shoulders: 1.0 } },
   "Rear Delt Machine":      { kind: "strength", muscles: { shoulders: 1.0, back: 0.3 } },
   "Shoulder Shrugs":        { kind: "strength", muscles: { shoulders: 0.7, back: 0.4 } },
@@ -258,15 +264,15 @@ const PROGRAM = {
   coreRotation: [["Plank", "Hanging Knee Raise"], ["Pallof Press", "VKR"], ["Cable Crunch", "Side Plank"], ["VKR to Sides", "Dead Bug"]], // flexion / anti-extension / anti-rotation / lateral, 2 per session
   days: {
     Push: { slots: [
-      { region: "Chest — upper (clavicular head)", options: ["Incline Bench Press", "Incline Smith Machine Press", "Incline Dumbbell Bench Press"] },
+      { region: "Chest — upper (clavicular head)", options: ["Incline Bench Press", "Incline Smith Machine Press", "Incline Dumbbell Bench Press", "Low-to-High Cable Press"] },
       { region: "Chest — mid (sternal head)", options: ["Bench Press", "Dumbbell Bench Press", "Chest Press Machine", "Standing Cable Chest Press"] },
-      { region: "Chest — stretch / adduction", options: ["Incline Pec Fly", "Pec Fly Machine", "Dumbbell Pec Fly"] },
-      { region: "Front delts (overhead press)", options: ["Dumbbell Shoulder Press", "Converging Shoulder Press"] },
-      { region: "Side delts", options: ["Lateral Raises", "Seated Lateral Raises"] },
-      { region: "Triceps — long head (overhead)", options: ["Overhead DB Triceps Extension", "Single-Hand DB Triceps Extension", "Flat DB Triceps Extension"] },
+      { region: "Chest — stretch / adduction", options: ["Incline Pec Fly", "Pec Fly Machine", "Dumbbell Pec Fly", "Mid Cable Fly"] },
+      { region: "Front delts (overhead press)", options: ["Dumbbell Shoulder Press", "Converging Shoulder Press", "Cable Shoulder Press"] },
+      { region: "Side delts", options: ["Lateral Raises", "Seated Lateral Raises", "Cable Lateral Raise"] },
+      { region: "Triceps — long head (overhead)", options: ["Overhead DB Triceps Extension", "Single-Hand DB Triceps Extension", "Flat DB Triceps Extension", "Overhead Cable Triceps Extension"] },
       { region: "Triceps — lateral/medial heads", options: ["Rope Cable Extension", "Triceps Extension Machine"] },
       { region: "Chest — lower (costal fibres)", options: ["Decline Bench Press", "Seated Dips", "Narrow Push-Ups"], optional: true },
-      { region: "Front delts (isolation)", options: ["Front Raises"], optional: true },
+      { region: "Front delts (isolation)", options: ["Front Raises", "Cable Front Raise"], optional: true },
     ] },
     Pull: { slots: [
       { region: "Lats — width (vertical pull)", options: ["Lat Pulldown (Wide Grip)", "Lat Pulldown (Triangle)"] },
@@ -314,7 +320,7 @@ const SNAPSHOT = [
   { name: "Narrow Push-Ups",     section: "Chest", latest: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" }, best: { sets: 4, reps: 10, weight: 81.00, text: "BW × 4×10" } },
   { name: "Dumbbell Pec Fly",    section: "Chest", latest: { sets: 4, reps: 7, weight: 36, text: "18kg each × 4×7" }, best: { sets: 4, reps: 8, weight: 32, text: "16kg each × 4×8" } },
   { name: "Pec Fly Machine",     section: "Chest", latest: { sets: 3, reps: 6, weight: 73, text: "73kg × 3×6 (deload)" }, best: { sets: 3, reps: 8, weight: 84, text: "84kg × 3×8" } },
-  { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 4, weight: 73, text: "73kg × 4×4" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
+  { name: "Chest Press Machine", section: "Chest", latest: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6 (hotel machine; ties best)" }, best: { sets: 4, reps: 6, weight: 73, text: "73kg × 4×6" } },
 
   // ---- Back ----
   { name: "Diverging Seated Row",    section: "Back", latest: { sets: 4, reps: 8, weight: 100, text: "100kg × 4×8 (heavier; not a PR by est. 1RM)" }, best: { sets: 4, reps: 12, weight: 97, text: "97kg × 4×12" } },
@@ -342,7 +348,7 @@ const SNAPSHOT = [
   { name: "Overhead DB Triceps Extension",    section: "Arms", latest: { sets: 4, reps: 12, weight: 20, text: "20kg × 4×12 (new PR, as suggested)" }, best: { sets: 4, reps: 12, weight: 20, text: "20kg × 4×12" } },
   { name: "Seated Dips",                      section: "Arms", latest: { sets: 3, reps: 9, weight: 94, text: "94kg × 3×9 (new PR, as suggested)" }, best: { sets: 3, reps: 9, weight: 94, text: "94kg × 3×9" } },
   { name: "Triceps Extension Machine",        section: "Arms", latest: { sets: 2, reps: 7, weight: 41, text: "41kg × 2×7 (to failure, end of session)" }, best: { sets: 3, reps: 8, weight: 41, text: "41kg × 3×8" } },
-  { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 6, weight: 64, text: "64kg × 4×6 (deload)" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
+  { name: "Rope Cable Extension",             section: "Arms", latest: { sets: 4, reps: 8, weight: 25, text: "25kg × 4×8 (hotel cable stack — not comparable to home)" }, best: { sets: 4, reps: 8, weight: 75, text: "75kg × 4×8" } },
   { name: "Single-Hand DB Triceps Extension", section: "Arms", latest: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" }, best: { sets: 4, reps: 9, weight: 12, text: "12kg each × 4×9" } },
 
   // ---- Arms: Biceps / Forearms ----
@@ -382,10 +388,16 @@ const SNAPSHOT = [
   // ---- Core ----
   { name: "Plank", section: "Core", iso: true, latest: { sets: 3, seconds: 40, weight: 80.25, text: "BW × 3×40s (new PR)" }, best: { sets: 3, seconds: 40, weight: 80.25, text: "BW × 3×40s" } },
   { name: "VKR", section: "Core", latest: { sets: 4, reps: 12, weight: 80.25, text: "BW × 4×12 (new PR)" }, best: { sets: 4, reps: 12, weight: 80.25, text: "BW × 4×12" } },
-  { name: "Pallof Press", section: "Core", latest: { sets: 4, reps: 4, weight: 18, text: "18kg × 4×4 each side" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" } },
+  { name: "Pallof Press", section: "Core", latest: { sets: 3, reps: 6, weight: 10, text: "10kg × 3×6 each side (hotel stack)" }, best: { sets: 4, reps: 8, weight: 18, text: "18kg × 4×8" } },
   { name: "Back Extension (45°)", section: "Legs", latest: { sets: 4, reps: 8, weight: 80.45, text: "BW × 4×8 (first logged)" }, best: { sets: 4, reps: 8, weight: 80.45, text: "BW × 4×8" } },
-  { name: "Side Plank", section: "Core", iso: true, latest: { sets: 2, seconds: 20, weight: 80.45, text: "BW × 2×20s each side (first logged)" }, best: { sets: 2, seconds: 20, weight: 80.45, text: "BW × 2×20s each side" } },
+  { name: "Side Plank", section: "Core", iso: true, latest: { sets: 2, seconds: 25, weight: 80.25, text: "BW × 2×25s each side (new PR, as suggested)" }, best: { sets: 2, seconds: 25, weight: 80.25, text: "BW × 2×25s each side" } },
   { name: "Hanging Knee Raise", section: "Core", latest: { sets: 3, reps: 6, weight: 80.25, text: "BW × 3×6 (first logged)" }, best: { sets: 3, reps: 6, weight: 80.25, text: "BW × 3×6" } },
+  { name: "Low-to-High Cable Press", section: "Chest", latest: { sets: 4, reps: 8, weight: 25, text: "12.5kg each side × 4×8 (first logged, hotel)" }, best: { sets: 4, reps: 8, weight: 25, text: "12.5kg each side × 4×8" } },
+  { name: "Mid Cable Fly", section: "Chest", latest: { sets: 4, reps: 12, weight: 15, text: "7.5kg each side × 4×12 (first logged, hotel)" }, best: { sets: 4, reps: 12, weight: 15, text: "7.5kg each side × 4×12" } },
+  { name: "Cable Shoulder Press", section: "Shoulders", latest: { sets: 4, reps: 8, weight: 25, text: "12.5kg each side × 4×8 (first logged, hotel)" }, best: { sets: 4, reps: 8, weight: 25, text: "12.5kg each side × 4×8" } },
+  { name: "Cable Lateral Raise", section: "Shoulders", latest: { sets: 4, reps: 8, weight: 5, text: "5kg each arm × 4×8 (first logged, hotel)" }, best: { sets: 4, reps: 8, weight: 5, text: "5kg each arm × 4×8" } },
+  { name: "Overhead Cable Triceps Extension", section: "Arms", latest: { sets: 4, reps: 12, weight: 10, text: "10kg × 4×12 (first logged, hotel)" }, best: { sets: 4, reps: 12, weight: 10, text: "10kg × 4×12" } },
+  { name: "Cable Front Raise", section: "Shoulders", latest: { sets: 4, reps: 8, weight: 12.5, text: "12.5kg × 4×8 (first logged, hotel)" }, best: { sets: 4, reps: 8, weight: 12.5, text: "12.5kg × 4×8" } },
   { name: "VKR to Sides", section: "Core", latest: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" }, best: { sets: 4, reps: 8, weight: 81.2, text: "BW × 4×8" } },
 ];
 
@@ -399,6 +411,22 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 25 Nov — Push (hotel, cables; time not given)
+  {
+    datetime: "2026-11-25T17:00", timeUnknown: true, note: "Push day — hotel gym, cable version (clock time not given, placeholder 17:00). Low-to-High Cable Press 12.5kg each side×4×8 (first logged). Chest Press Machine 73kg×4×6 (hotel machine; ties best). Mid Cable Fly 7.5kg each side×4×12 (first logged). Cable Shoulder Press 12.5kg each side×4×8 (first logged). Cable Lateral Raise 5kg each arm×4×8 (first logged). Overhead Cable Triceps Extension 10kg×4×12 (first logged). Rope Cable Extension 25kg×4×8 (hotel stack, not comparable). Cable Front Raise 12.5kg×4×8 (first logged). Core: Pallof Press 10kg×3×6 each side, Side Plank BW×2×25s each side (new PR). 6 new cable exercises added to rotation; 1 new PR.",
+    exercises: [
+      { name: "Low-to-High Cable Press", sets: [ { reps: 8, weight: 25 }, { reps: 8, weight: 25 }, { reps: 8, weight: 25 }, { reps: 8, weight: 25 } ] },
+      { name: "Chest Press Machine", sets: [ { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 }, { reps: 6, weight: 73 } ] },
+      { name: "Mid Cable Fly", sets: [ { reps: 12, weight: 15 }, { reps: 12, weight: 15 }, { reps: 12, weight: 15 }, { reps: 12, weight: 15 } ] },
+      { name: "Cable Shoulder Press", sets: [ { reps: 8, weight: 25 }, { reps: 8, weight: 25 }, { reps: 8, weight: 25 }, { reps: 8, weight: 25 } ] },
+      { name: "Cable Lateral Raise", sets: [ { reps: 8, weight: 5 }, { reps: 8, weight: 5 }, { reps: 8, weight: 5 }, { reps: 8, weight: 5 } ] },
+      { name: "Overhead Cable Triceps Extension", sets: [ { reps: 12, weight: 10 }, { reps: 12, weight: 10 }, { reps: 12, weight: 10 }, { reps: 12, weight: 10 } ] },
+      { name: "Rope Cable Extension", sets: [ { reps: 8, weight: 25 }, { reps: 8, weight: 25 }, { reps: 8, weight: 25 }, { reps: 8, weight: 25 } ] },
+      { name: "Cable Front Raise", sets: [ { reps: 8, weight: 12.5 }, { reps: 8, weight: 12.5 }, { reps: 8, weight: 12.5 }, { reps: 8, weight: 12.5 } ] },
+      { name: "Pallof Press", sets: [ { reps: 12, weight: 10 }, { reps: 12, weight: 10 }, { reps: 12, weight: 10 } ] },
+      { name: "Side Plank", sets: [ { seconds: 25 }, { seconds: 25 }, { seconds: 25 }, { seconds: 25 } ] },
+    ],
+  },
   // 21 Nov — Legs (09:30)
   {
     datetime: "2026-11-21T09:30", note: "Legs day (09:30) — Leg Press 137kg×4×8 (heavier; not a PR by est. 1RM vs 132kg×4×12). Dumbbell RDL 22kg each×4×8 (new PR). Single-Leg Extensions 57kg each×3×4 — uncomfortable; dropped from the rotation per user (Leg Extensions now fills the slot). Hip Thrust 30kg each side (60kg)×4×6 (new PR, heaviest yet). Dumbbell Calf Raise 26kg each×4×8. Calf Raises Machine 81kg×4×10 (ties best). Dumbbell Sumo Squat 26kg×4×8 (new PR). Core: Pallof Press 18kg×4×4 each side, VKR BW×4×12 (new PR). 4 new PRs.",
