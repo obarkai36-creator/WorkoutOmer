@@ -1,7 +1,7 @@
 {
   "date": "2026-11-25",
   "day_number": 151,
-  "in_progress": true,
+  "in_progress": false,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Travel food-tracking break 2026-11-24 through 2026-11-26 (per user).",
   "sleep": {
@@ -15,11 +15,11 @@
   "caffeine_shots": 0,
   "micros_sperm_priority": {
     "zinc_mg": 2.8,
-    "selenium_mcg": 0,
+    "selenium_mcg": 40,
     "folate_mcg_dfe": 100,
-    "omega3_epa_dha_mg": 0,
+    "omega3_epa_dha_mg": 2000,
     "vitamin_c_mg": 0,
-    "vitamin_d_iu": 0,
+    "vitamin_d_iu": 500,
     "vitamin_e_mg": 0,
     "lycopene_mg": 0
   },
@@ -75,7 +75,8 @@
   ],
   "assumptions": [
     "Steronase left at home — paused 11-25..11-26 (not counted as missed). Omega-3 paused through 11-26.",
-    "Essential-5 and creatine skipped today due to travel (per user) — paused in compliance for 11-25."
+    "Essential-5 and creatine skipped today due to travel (per user) — paused in compliance for 11-25.",
+    "Salmon dinner (food-tracking break, not itemized): credited ~2000mg EPA+DHA, ~500IU vitamin D, ~40mcg selenium (rough, ~150g portion assumed)."
   ],
   "planned_workout": {
     "section": "Push (hotel, cable version)",
@@ -142,5 +143,6 @@
         "reasoning": ""
       }
     ]
-  }
+  },
+  "steps": 9000
 }

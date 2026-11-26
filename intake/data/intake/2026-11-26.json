@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-26",
+  "day_number": 152,
+  "in_progress": true,
+  "travel_day": true,
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "Travel food-tracking break 2026-11-24 through 2026-11-26 (per user).",
+  "sleep": {
+    "sleep_start": "21:50",
+    "sleep_end": "05:15",
+    "duration_hours": 7.42,
+    "quality": null,
+    "notes": "7.4h (night of 2026-11-25) — within the 7-9h target band."
+  },
+  "workout_today": false,
+  "caffeine_shots": 1,
+  "micros_sperm_priority": {
+    "zinc_mg": 0,
+    "selenium_mcg": 0,
+    "folate_mcg_dfe": 0,
+    "omega3_epa_dha_mg": 0,
+    "vitamin_c_mg": 0,
+    "vitamin_d_iu": 0,
+    "vitamin_e_mg": 0,
+    "lycopene_mg": 0
+  },
+  "status_note": "In progress. Travel day (flights home). Slept 7.4h.",
+  "items": [
+    {
+      "time": "05:30",
+      "name": "Bilaxten (bilastine)",
+      "category": "medication",
+      "qty": "1 pill (morning)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "05:30",
+      "name": "Rhinolast (azelastine nasal spray)",
+      "category": "medication",
+      "qty": "1 dose (AM)",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    {
+      "time": "05:35",
+      "name": "Espresso",
+      "category": "drink",
+      "qty": "1 shot",
+      "kcal": 3,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    }
+  ],
+  "assumptions": [
+    "Travel day #2 back. Steronase + omega-3 paused through today."
+  ]
+}
