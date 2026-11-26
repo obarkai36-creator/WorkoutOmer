@@ -1,6 +1,34 @@
 {
-  "now": 1795672624464,
+  "now": 1795674131594,
   "workouts": [
+    {
+      "datetime": "2026-11-26T05:30",
+      "note": "Incline Walk (Technogym treadmill, hotel, ~05:30-06:20) — 4.00 km in 49:49, avg pace 12:27 min/km, 279 m elevation gain, 360 kcal per machine. Speed ~3.3-3.5 km/h, incline ramped 0→~7.3% and back down. No HR.",
+      "exercises": [
+        {
+          "name": "Incline Walk",
+          "distanceKm": 4,
+          "durationMin": 49.82,
+          "elevationGainM": 279,
+          "load": 448.38,
+          "top1RM": 0,
+          "topWeight": 0,
+          "muscles": {
+            "cardio": 448.38,
+            "quads": 89.676,
+            "calves": 89.676
+          },
+          "kind": "aerobic"
+        }
+      ],
+      "t": 1795671000000,
+      "muscleLoad": {
+        "cardio": 448.38,
+        "quads": 89.676,
+        "calves": 89.676
+      },
+      "isAerobic": true
+    },
     {
       "datetime": "2026-11-25T16:15",
       "note": "Push day — hotel gym, cable version (16:15). Low-to-High Cable Press 12.5kg each side×4×8 (first logged). Chest Press Machine 73kg×4×6 (hotel machine; ties best). Mid Cable Fly 7.5kg each side×4×12 (first logged). Cable Shoulder Press 12.5kg each side×4×8 (first logged). Cable Lateral Raise 5kg each arm×4×8 (first logged). Overhead Cable Triceps Extension 10kg×4×12 (first logged). Rope Cable Extension 25kg×4×8 (hotel stack, not comparable). Cable Front Raise 12.5kg×4×8 (first logged). Core: Pallof Press 10kg×3×6 each side, Side Plank BW×2×25s each side (new PR). 6 new cable exercises added to rotation; 1 new PR.",
@@ -10901,7 +10929,7 @@
       "label": "Chest",
       "section": "Chest",
       "pct": 34,
-      "readyInHours": 7.6,
+      "readyInHours": 7.2,
       "ready": false
     },
     "back": {
@@ -10933,7 +10961,7 @@
       "label": "Triceps",
       "section": "Arms",
       "pct": 31,
-      "readyInHours": 1.1,
+      "readyInHours": 0.7,
       "ready": false
     },
     "forearms": {
@@ -10980,7 +11008,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 3,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -10989,30 +11017,30 @@
       "label": "Core",
       "section": "Core",
       "pct": 31,
-      "readyInHours": 1.4,
+      "readyInHours": 1,
       "ready": false
     },
     "cardio": {
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
-      "ready": true
+      "pct": 56,
+      "readyInHours": 18.6,
+      "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
       "pct": 34,
-      "readyInHours": 7.6,
+      "readyInHours": 7.2,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
           "pct": 34,
-          "readyInHours": 7.6,
+          "readyInHours": 7.2,
           "ready": false
         }
       ]
@@ -11050,14 +11078,14 @@
     "Arms": {
       "section": "Arms",
       "pct": 11,
-      "readyInHours": 1.1,
+      "readyInHours": 0.7,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
           "pct": 31,
-          "readyInHours": 1.1,
+          "readyInHours": 0.7,
           "ready": false
         },
         {
@@ -11111,7 +11139,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 3,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         },
@@ -11128,30 +11156,30 @@
     "Core": {
       "section": "Core",
       "pct": 31,
-      "readyInHours": 1.4,
+      "readyInHours": 1,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
           "pct": 31,
-          "readyInHours": 1.4,
+          "readyInHours": 1,
           "ready": false
         }
       ]
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 0,
-      "readyInHours": 0,
+      "pct": 56,
+      "readyInHours": 18.6,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 0,
-          "readyInHours": 0,
-          "ready": true
+          "pct": 56,
+          "readyInHours": 18.6,
+          "ready": false
         }
       ]
     }
@@ -11391,7 +11419,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Low-to-High Cable Press",
@@ -11413,7 +11441,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Mid Cable Fly",
@@ -11434,7 +11462,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Back": [
@@ -11814,7 +11842,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Cable Lateral Raise",
@@ -11834,7 +11862,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Cable Front Raise",
@@ -11854,7 +11882,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Arms": [
@@ -11958,7 +11986,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 63,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Single-Hand DB Triceps Extension",
@@ -12200,7 +12228,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       }
     ],
     "Legs": [
@@ -12617,7 +12645,7 @@
         "isPR": false,
         "belowPR": true,
         "gap": 11,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Side Plank",
@@ -12637,7 +12665,7 @@
         "isPR": true,
         "belowPR": false,
         "gap": 0,
-        "inToday": true
+        "inToday": false
       },
       {
         "name": "Hanging Knee Raise",
@@ -12728,61 +12756,262 @@
       },
       {
         "label": "This wk",
-        "stress": 710,
-        "sessions": 4,
-        "acwr": 0.86
+        "stress": 769,
+        "sessions": 5,
+        "acwr": 1.01
       }
     ],
-    "acute": 64.97,
-    "chronic": 75.15,
-    "acwr": 0.86,
+    "acute": 79.7,
+    "chronic": 79.21,
+    "acwr": 1.01,
     "acwrZone": "ok",
-    "sessions28": 13
+    "sessions28": 14
   },
   "recommendation": {
-    "section": "Cardio",
+    "section": "Pull",
     "program": "Push / Pull / Legs + Cardio",
-    "fatigue": 0,
+    "fatigue": 7,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-26T05:57:04.464Z",
+    "readyAt": "2026-11-26T06:22:11.594Z",
     "neverLogged": false,
-    "daysSince": 6.4,
+    "daysSince": 5.8,
     "suggestedExercises": [
       {
-        "name": "Stationary Bike",
-        "region": "Cardio",
+        "name": "Lat Pulldown (Wide Grip)",
+        "region": "Lats — width (vertical pull)",
         "alternatives": [
-          "Incline Walk",
-          "Outdoor Run"
+          {
+            "name": "Lat Pulldown (Triangle)",
+            "best": "77kg × 3×9",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 3×10)",
+              "note": "Add 1 rep per set at the same weight — aim for 3×10 from 77kg × 3×9.",
+              "plan": "77kg*3*10"
+            },
+            "isNew": false
+          }
         ],
-        "best": "",
-        "best1RM": 0,
+        "optional": false,
+        "best": "75kg × 3×10",
+        "best1RM": 100,
         "iso": false,
         "target": {
-          "status": "cardio",
-          "text": "40-60 min zone 2 (conversational pace); incline walk or bike preferred."
+          "status": "rebuild",
+          "text": "Rebuild to best (75kg × 3×10)",
+          "note": "Last session came in under your best (75kg × 3×10) — rebuild to that before pushing further.",
+          "plan": "75kg*3*10"
         }
       },
       {
-        "name": "VKR to Sides",
-        "region": "Core (rotating)",
-        "alternatives": [],
+        "name": "Row Machine",
+        "region": "Mid back — thickness (horizontal row)",
+        "alternatives": [
+          {
+            "name": "Diverging Seated Row",
+            "best": "97kg × 4×12",
+            "target": {
+              "status": "rebuild",
+              "text": "Rebuild to best (97kg × 4×12)",
+              "note": "Last session came in under your best (97kg × 4×12) — rebuild to that before pushing further.",
+              "plan": "97kg*4*12"
+            },
+            "isNew": false
+          },
+          {
+            "name": "Low Row",
+            "best": "79kg × 4×12",
+            "target": {
+              "status": "progress",
+              "text": "+2.5kg (reset to 4×8)",
+              "note": "You're at 12 reps on 79kg × 4×12 — step the weight up ~2.5kg and reset to 4×8.",
+              "plan": "81.5kg*4*8"
+            },
+            "isNew": false
+          }
+        ],
         "optional": false,
-        "best": "BW × 4×8",
-        "best1RM": 102.9,
+        "best": "85.5kg × 4×8",
+        "best1RM": 108.3,
         "iso": false,
         "target": {
           "status": "progress",
           "text": "+1 rep (aim 4×9)",
-          "note": "Add 1 rep per set at the same weight — aim for 4×9 from BW × 4×8.",
-          "plan": "BW*4*9"
-        },
-        "core": true
+          "note": "Add 1 rep per set at the same weight — aim for 4×9 from 85.5kg × 4×8.",
+          "plan": "85.5kg*4*9"
+        }
       },
       {
-        "name": "Dead Bug",
-        "region": "Core (rotating)",
+        "name": "Reverse Incline DB Row",
+        "region": "Upper back — chest-supported row",
+        "alternatives": [],
+        "optional": false,
+        "best": "26kg each × 4×12",
+        "best1RM": 72.8,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+2.5kg (reset to 4×8)",
+          "note": "You're at 12 reps on 26kg each × 4×12 — step the weight up ~2.5kg and reset to 4×8.",
+          "plan": "28kg each*4*8"
+        }
+      },
+      {
+        "name": "Rear Delt Machine",
+        "region": "Rear delts",
+        "alternatives": [
+          {
+            "name": "Cable Face Pull",
+            "best": "36kg × 3×11",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 3×12)",
+              "note": "Add 1 rep per set at the same weight — aim for 3×12 from 36kg × 3×11.",
+              "plan": "36kg*3*12"
+            },
+            "isNew": false
+          }
+        ],
+        "optional": false,
+        "best": "73kg × 3×10",
+        "best1RM": 97.3,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 3×11)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×11 from 73kg × 3×10.",
+          "plan": "73kg*3*11"
+        }
+      },
+      {
+        "name": "Incline DB Curl",
+        "region": "Biceps — long head (stretched)",
+        "alternatives": [
+          {
+            "name": "Incline Hammer Curl",
+            "best": "20kg each × 3×8",
+            "target": {
+              "status": "rebuild",
+              "text": "Rebuild to best (20kg each × 3×8)",
+              "note": "Last session came in under your best (20kg each × 3×8) — rebuild to that before pushing further.",
+              "plan": "20kg each*3*8"
+            },
+            "isNew": false
+          }
+        ],
+        "optional": false,
+        "best": "20kg each × 3×6",
+        "best1RM": 24,
+        "iso": false,
+        "target": {
+          "status": "rebuild",
+          "text": "Rebuild to best (20kg each × 3×6)",
+          "note": "Last session came in under your best (20kg each × 3×6) — rebuild to that before pushing further.",
+          "plan": "20kg each*3*6"
+        }
+      },
+      {
+        "name": "Preacher Curl",
+        "region": "Biceps — short head",
+        "alternatives": [
+          {
+            "name": "EZ Bar Curl",
+            "best": "10kg each side + 10kg bar × 3×11",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 3×12)",
+              "note": "Add 1 rep per set at the same weight — aim for 3×12 from 10kg each side + 10kg bar × 3×11.",
+              "plan": "10kg each side*3*12"
+            },
+            "isNew": false
+          },
+          {
+            "name": "Biceps Curl Machine",
+            "best": "45kg × 3×6",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 3×7)",
+              "note": "Add 1 rep per set at the same weight — aim for 3×7 from 45kg × 3×6.",
+              "plan": "45kg*3*7"
+            },
+            "isNew": false
+          },
+          {
+            "name": "Cable Curl",
+            "best": "25kg × 3×10",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 3×11)",
+              "note": "Add 1 rep per set at the same weight — aim for 3×11 from 25kg × 3×10.",
+              "plan": "25kg*3*11"
+            },
+            "isNew": false
+          },
+          {
+            "name": "Low Pulley Biceps Curl",
+            "best": "36kg × 4×8",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 4×9)",
+              "note": "Add 1 rep per set at the same weight — aim for 4×9 from 36kg × 4×8.",
+              "plan": "36kg*4*9"
+            },
+            "isNew": false
+          },
+          {
+            "name": "Half Curl",
+            "best": "18kg each × 4×5",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 4×6)",
+              "note": "Add 1 rep per set at the same weight — aim for 4×6 from 18kg each × 4×5.",
+              "plan": "18kg each*4*6"
+            },
+            "isNew": false
+          }
+        ],
+        "optional": false,
+        "best": "12.5kg each + bar × 3×7",
+        "best1RM": 43.2,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 3×8)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×8 from 12.5kg each + bar × 3×7.",
+          "plan": "12.5kg each + bar*3*8"
+        }
+      },
+      {
+        "name": "Hammer Curl",
+        "region": "Brachialis / forearms",
+        "alternatives": [
+          {
+            "name": "Forearm Twists",
+            "best": "18kg each × 4×8",
+            "target": {
+              "status": "progress",
+              "text": "+1 rep (aim 4×9)",
+              "note": "Add 1 rep per set at the same weight — aim for 4×9 from 18kg each × 4×8.",
+              "plan": "18kg each*4*9"
+            },
+            "isNew": false
+          }
+        ],
+        "optional": false,
+        "best": "20kg × 4×10",
+        "best1RM": 26.7,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×11)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×11 from 20kg × 4×10.",
+          "plan": "20kg*4*11"
+        }
+      },
+      {
+        "name": "Prone Y-Raise",
+        "region": "Lower / mid traps",
         "alternatives": [],
         "optional": false,
         "best": "",
@@ -12793,20 +13022,117 @@
           "status": "new",
           "text": "Not yet attempted",
           "note": "No logged sessions yet — pick a comfortable starting weight/reps."
+        }
+      },
+      {
+        "name": "Dumbbell Pullover",
+        "region": "Lats — stretch (pullover)",
+        "alternatives": [],
+        "optional": true,
+        "best": "22.5kg × 4×11",
+        "best1RM": 30.8,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 4×12)",
+          "note": "Add 1 rep per set at the same weight — aim for 4×12 from 22.5kg × 4×11.",
+          "plan": "22.5kg*4*12"
+        }
+      },
+      {
+        "name": "Cable External Rotation",
+        "region": "Rotator cuff (external rotation)",
+        "alternatives": [],
+        "optional": true,
+        "best": "",
+        "best1RM": 0,
+        "iso": false,
+        "isNew": true,
+        "target": {
+          "status": "new",
+          "text": "Not yet attempted",
+          "note": "No logged sessions yet — pick a comfortable starting weight/reps."
+        }
+      },
+      {
+        "name": "Shoulder Shrugs",
+        "region": "Upper traps",
+        "alternatives": [],
+        "optional": true,
+        "best": "26kg each × 3×11",
+        "best1RM": 71.1,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 3×12)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×12 from 26kg each × 3×11.",
+          "plan": "26kg each*3*12"
+        }
+      },
+      {
+        "name": "Dead Hang",
+        "region": "Grip",
+        "alternatives": [
+          {
+            "name": "Farmer's Hold",
+            "best": "24kg each × 4×40s",
+            "target": {
+              "status": "progress",
+              "text": "+5s (aim 4×45s)",
+              "note": "Add 5s per set from your best (24kg each × 4×40s) — aim for 4×45s.",
+              "plan": "24kg each*4*45s"
+            },
+            "isNew": false
+          }
+        ],
+        "optional": true,
+        "best": "35s + 30s + 25s",
+        "best1RM": 0,
+        "iso": true,
+        "target": {
+          "status": "progress",
+          "text": "+5s each (aim 40s + 35s + 30s)",
+          "note": "Add 5s to each set from your best (35s + 30s + 25s) — aim for 40s + 35s + 30s.",
+          "plan": "35s + 30s + 25s*40s+35s+30s"
+        }
+      },
+      {
+        "name": "Plank",
+        "region": "Core (rotating)",
+        "alternatives": [],
+        "optional": false,
+        "best": "BW × 3×40s",
+        "best1RM": 0,
+        "iso": true,
+        "target": {
+          "status": "progress",
+          "text": "+5s (aim 3×45s)",
+          "note": "Add 5s per set from your best (BW × 3×40s) — aim for 3×45s.",
+          "plan": "BW*3*45s"
+        },
+        "core": true
+      },
+      {
+        "name": "Hanging Knee Raise",
+        "region": "Core (rotating)",
+        "alternatives": [],
+        "optional": false,
+        "best": "BW × 3×6",
+        "best1RM": 96.3,
+        "iso": false,
+        "target": {
+          "status": "progress",
+          "text": "+1 rep (aim 3×7)",
+          "note": "Add 1 rep per set at the same weight — aim for 3×7 from BW × 3×6.",
+          "plan": "BW*3*7"
         },
         "core": true
       }
     ],
     "guidance": [
-      "Cardio day of the 4-day Push / Pull / Legs / Cardio week."
+      "Each row is one muscle region; the listed exercise is this week's rotation pick — alternatives rotate in on later sessions. Optional rows fill the session if time allows."
     ],
     "ranked": [
-      {
-        "section": "Cardio",
-        "fatigue": 0,
-        "readyInHours": 0,
-        "daysSince": 6.4
-      },
       {
         "section": "Pull",
         "fatigue": 7,
@@ -12820,18 +13146,24 @@
         "daysSince": 4.9
       },
       {
+        "section": "Cardio",
+        "fatigue": 0,
+        "readyInHours": 0,
+        "daysSince": 0
+      },
+      {
         "section": "Push",
         "fatigue": 34,
-        "readyInHours": 7.6,
+        "readyInHours": 7.2,
         "daysSince": 0.6
       }
     ],
-    "suggestedCount": 3,
-    "totalAvailable": 3,
-    "typicalSessionSize": 1,
-    "aerobicLast7": 1,
+    "suggestedCount": 10,
+    "totalAvailable": 14,
+    "typicalSessionSize": 8,
+    "aerobicLast7": 2,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 6.4
+    "daysSinceAerobic": 0
   },
   "alerts": [
     {
@@ -12845,9 +13177,9 @@
     "Hamstrings lag quads (2.56×). Keep RDLs/leg curls heavy and add a set."
   ],
   "timing": {
-    "avgGap": 2.8,
+    "avgGap": 2.7,
     "longestGap": 35.7,
-    "perWeek": 3.3,
+    "perWeek": 3.5,
     "avgHour": 13,
     "todPref": "afternoon",
     "dow": [
@@ -12855,12 +13187,12 @@
       17,
       16,
       8,
-      7,
+      8,
       21,
       23
     ],
-    "daysSinceLast": 0.6,
-    "total": 99
+    "daysSinceLast": 0,
+    "total": 100
   },
   "relstrength": {
     "bodyweightKg": 80.25,
@@ -12909,15 +13241,15 @@
   },
   "aerobic": {
     "any": true,
-    "count": 47,
-    "km7": 2.8,
-    "km28": 23.9,
-    "totalKm": 189.3,
+    "count": 48,
+    "km7": 6.8,
+    "km28": 27.9,
+    "totalKm": 193.3,
     "longest": 13.35,
     "avgHr": 142,
     "bestPace": 3.152635719905586,
-    "avgPace": 10.196186029103744,
-    "paceTrend": 4.6,
+    "avgPace": 10.246381895123662,
+    "paceTrend": 2.3,
     "zones": {
       "Z1": 0,
       "Z2": 2,
@@ -12926,8 +13258,16 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 6.4,
+    "daysSinceLast": 0,
     "recent": [
+      {
+        "t": 1795671000000,
+        "name": "Incline Walk",
+        "distanceKm": 4,
+        "durationMin": 49.82,
+        "avgHr": null,
+        "pace": 12.455
+      },
       {
         "t": 1795122000000,
         "name": "Outdoor Walk",
@@ -12959,14 +13299,6 @@
         "durationMin": 40.07,
         "avgHr": null,
         "pace": 3.152635719905586
-      },
-      {
-        "t": 1792828380000,
-        "name": "Outdoor Walk",
-        "distanceKm": 5.6,
-        "durationMin": 60,
-        "avgHr": null,
-        "pace": 10.714285714285715
       }
     ]
   },

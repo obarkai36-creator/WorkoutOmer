@@ -411,6 +411,13 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
+  // 26 Nov — Incline Walk (hotel, 05:30)
+  {
+    datetime: "2026-11-26T05:30", note: "Incline Walk (Technogym treadmill, hotel, ~05:30-06:20) — 4.00 km in 49:49, avg pace 12:27 min/km, 279 m elevation gain, 360 kcal per machine. Speed ~3.3-3.5 km/h, incline ramped 0→~7.3% and back down. No HR.",
+    exercises: [
+      { name: "Incline Walk", distanceKm: 4.0, durationMin: 49.82, elevationGainM: 279 },
+    ],
+  },
   // 25 Nov — Push (hotel, cables; 16:15)
   {
     datetime: "2026-11-25T16:15", note: "Push day — hotel gym, cable version (16:15). Low-to-High Cable Press 12.5kg each side×4×8 (first logged). Chest Press Machine 73kg×4×6 (hotel machine; ties best). Mid Cable Fly 7.5kg each side×4×12 (first logged). Cable Shoulder Press 12.5kg each side×4×8 (first logged). Cable Lateral Raise 5kg each arm×4×8 (first logged). Overhead Cable Triceps Extension 10kg×4×12 (first logged). Rope Cable Extension 25kg×4×8 (hotel stack, not comparable). Cable Front Raise 12.5kg×4×8 (first logged). Core: Pallof Press 10kg×3×6 each side, Side Plank BW×2×25s each side (new PR). 6 new cable exercises added to rotation; 1 new PR.",
