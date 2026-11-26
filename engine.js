@@ -315,7 +315,7 @@ function withPlan(t, best, iso, bar) {
   if (iso) {
     const secs = best.scheme ? best.scheme.map((p) => p.seconds || 0) : null;
     const bump = t.status === "progress" ? 5 : 0;
-    t.plan = secs ? `${lbl}*${secs.map((x) => x + bump + "s").join("+")}` : `${lbl}*${best.sets}*${(best.seconds || 0) + bump}s`;
+    t.plan = secs ? `${/\d+s/.test(lbl) ? "BW" : lbl}*${secs.map((x) => x + bump + "s").join("+")}` : `${lbl}*${best.sets}*${(best.seconds || 0) + bump}s`;
   } else if (bar) {
     // Barbell lifts: prescribe plates per side (total = 2×side + bar).
     const side = Math.max(0, ((best.weight || 0) - bar) / 2);
