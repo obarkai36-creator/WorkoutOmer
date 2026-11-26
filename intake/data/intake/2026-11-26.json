@@ -1,7 +1,7 @@
 {
   "date": "2026-11-26",
   "day_number": 152,
-  "in_progress": true,
+  "in_progress": false,
   "travel_day": true,
   "exclude_from_monthly_macros": true,
   "exclude_reason": "Travel food-tracking break 2026-11-24 through 2026-11-26 (per user).",
@@ -110,5 +110,6 @@
   ],
   "assumptions": [
     "Travel day #2 back. Steronase + omega-3 paused through today."
-  ]
+  ],
+  "steps": 9000
 }

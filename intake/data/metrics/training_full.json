@@ -1,5 +1,5 @@
 {
-  "now": 1795725063699,
+  "now": 1795728679240,
   "workouts": [
     {
       "datetime": "2026-11-26T05:30",
@@ -10928,7 +10928,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 27,
+      "pct": 26,
       "readyInHours": 0,
       "ready": true
     },
@@ -10944,7 +10944,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 15,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -11024,22 +11024,22 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 35,
-      "readyInHours": 4.5,
+      "pct": 34,
+      "readyInHours": 3.5,
       "ready": false
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 27,
+      "pct": 26,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 27,
+          "pct": 26,
           "readyInHours": 0,
           "ready": true
         }
@@ -11062,14 +11062,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 15,
+      "pct": 14,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 15,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         }
@@ -11170,15 +11170,15 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 35,
-      "readyInHours": 4.5,
+      "pct": 34,
+      "readyInHours": 3.5,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 35,
-          "readyInHours": 4.5,
+          "pct": 34,
+          "readyInHours": 3.5,
           "ready": false
         }
       ]
@@ -12750,14 +12750,14 @@
       },
       {
         "label": "-1w",
-        "stress": 631,
-        "sessions": 3,
+        "stress": 678,
+        "sessions": 4,
         "acwr": 0.98
       },
       {
         "label": "This wk",
-        "stress": 769,
-        "sessions": 5,
+        "stress": 722,
+        "sessions": 4,
         "acwr": 1.01
       }
     ],
@@ -12773,9 +12773,9 @@
     "fatigue": 5,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-26T20:31:03.699Z",
+    "readyAt": "2026-11-26T21:31:19.240Z",
     "neverLogged": false,
-    "daysSince": 6.4,
+    "daysSince": 6.5,
     "suggestedExercises": [
       {
         "name": "Lat Pulldown (Wide Grip)",
@@ -13137,7 +13137,7 @@
         "section": "Pull",
         "fatigue": 5,
         "readyInHours": 0,
-        "daysSince": 6.4
+        "daysSince": 6.5
       },
       {
         "section": "Legs",
@@ -13147,7 +13147,7 @@
       },
       {
         "section": "Push",
-        "fatigue": 27,
+        "fatigue": 26,
         "readyInHours": 0,
         "daysSince": 1.2
       },
@@ -13155,15 +13155,15 @@
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 0.6
+        "daysSince": 0.7
       }
     ],
     "suggestedCount": 10,
     "totalAvailable": 14,
     "typicalSessionSize": 8,
-    "aerobicLast7": 2,
+    "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 0.6
+    "daysSinceAerobic": 0.7
   },
   "alerts": [
     {
@@ -13191,7 +13191,7 @@
       21,
       23
     ],
-    "daysSinceLast": 0.6,
+    "daysSinceLast": 0.7,
     "total": 100
   },
   "relstrength": {
@@ -13242,7 +13242,7 @@
   "aerobic": {
     "any": true,
     "count": 48,
-    "km7": 6.8,
+    "km7": 4,
     "km28": 27.9,
     "totalKm": 193.3,
     "longest": 13.35,
@@ -13258,7 +13258,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.6,
+    "daysSinceLast": 0.7,
     "recent": [
       {
         "t": 1795671000000,
