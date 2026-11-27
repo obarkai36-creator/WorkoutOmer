@@ -129,5 +129,7 @@
   ],
   "assumptions": [
     "Steronase stopped until further notice (per user)."
-  ]
+  ],
+  "exclude_from_monthly_macros": true,
+  "exclude_reason": "User stopped food tracking mid-day 2026-11-27 (after 11:00 breakfast). Items logged before the request stay on record; supplements/meds/caffeine/workouts/lifestyle still logged."
 }
