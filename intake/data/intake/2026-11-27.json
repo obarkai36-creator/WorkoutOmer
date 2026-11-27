@@ -12,14 +12,14 @@
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
+    "zinc_mg": 3.1,
     "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "folate_mcg_dfe": 115,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 13,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "lycopene_mg": 2.6
   },
   "status_note": "In progress. Slept 8.5h. Food tracking resumed.",
   "items": [
@@ -66,6 +66,30 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "09:30",
+      "name": "Manchego cheese",
+      "category": "food",
+      "qty": "7 g",
+      "kcal": 27.3,
+      "protein_g": 1.8,
+      "carbs_g": 0,
+      "fat_g": 2.3,
+      "fiber_g": 0,
+      "note": "generic aged manchego (~390kcal/100g)."
+    },
+    {
+      "time": "09:30",
+      "name": "Cherry tomatoes",
+      "category": "food",
+      "qty": "6 pieces",
+      "kcal": 15.9,
+      "protein_g": 0.82,
+      "carbs_g": 3.5,
+      "fat_g": 0.18,
+      "fiber_g": 1.08,
+      "note": "standard reference."
     }
   ],
   "assumptions": [
