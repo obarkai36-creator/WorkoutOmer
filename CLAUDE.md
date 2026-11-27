@@ -50,6 +50,9 @@
   generate_dashboard.py, matches "steronase". Log each dose as a zero-kcal
   medication item "Steronase (triamcinolone nasal spray)". Rhinolast back to
   2x/day from 2026-11-07 — resume the AM/PM spray reminders.
+  **UPDATE 2026-11-27**: user stopped Steronase "until further notice" —
+  `STERONASE_END_DATE` moved to 2026-11-24 (last dose). Don't expect/remind it;
+  if the user restarts it, add a new date window.
 
 - Supplement pauses (added 2026-11-03, per user: "make sure paused
   supplements don't impact the supplement graph"): `SUPPLEMENT_PAUSES` in

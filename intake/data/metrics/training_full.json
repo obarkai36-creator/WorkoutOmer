@@ -1,5 +1,5 @@
 {
-  "now": 1795728679240,
+  "now": 1795763239875,
   "workouts": [
     {
       "datetime": "2026-11-26T05:30",
@@ -10928,7 +10928,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 26,
+      "pct": 22,
       "readyInHours": 0,
       "ready": true
     },
@@ -10944,7 +10944,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 14,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     },
@@ -10960,7 +10960,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 21,
+      "pct": 16,
       "readyInHours": 0,
       "ready": true
     },
@@ -10976,7 +10976,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -10984,7 +10984,7 @@
       "key": "hamstrings",
       "label": "Hamstrings",
       "section": "Legs",
-      "pct": 5,
+      "pct": 4,
       "readyInHours": 0,
       "ready": true
     },
@@ -10992,7 +10992,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     },
@@ -11000,7 +11000,7 @@
       "key": "adductors",
       "label": "Adductors",
       "section": "Legs",
-      "pct": 1,
+      "pct": 0,
       "readyInHours": 0,
       "ready": true
     },
@@ -11008,7 +11008,7 @@
       "key": "calves",
       "label": "Calves",
       "section": "Legs",
-      "pct": 3,
+      "pct": 2,
       "readyInHours": 0,
       "ready": true
     },
@@ -11016,7 +11016,7 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 19,
+      "pct": 14,
       "readyInHours": 0,
       "ready": true
     },
@@ -11024,22 +11024,22 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 34,
-      "readyInHours": 3.5,
-      "ready": false
+      "pct": 24,
+      "readyInHours": 0,
+      "ready": true
     }
   },
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 26,
+      "pct": 22,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 26,
+          "pct": 22,
           "readyInHours": 0,
           "ready": true
         }
@@ -11062,14 +11062,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 14,
+      "pct": 11,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 14,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         }
@@ -11077,14 +11077,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 8,
+      "pct": 6,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 21,
+          "pct": 16,
           "readyInHours": 0,
           "ready": true
         },
@@ -11108,14 +11108,14 @@
     },
     "Legs": {
       "section": "Legs",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "glutes",
           "label": "Glutes",
           "section": "Legs",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         },
@@ -11123,7 +11123,7 @@
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
-          "pct": 5,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         },
@@ -11131,7 +11131,7 @@
           "key": "hamstrings",
           "label": "Hamstrings",
           "section": "Legs",
-          "pct": 5,
+          "pct": 4,
           "readyInHours": 0,
           "ready": true
         },
@@ -11139,7 +11139,7 @@
           "key": "calves",
           "label": "Calves",
           "section": "Legs",
-          "pct": 3,
+          "pct": 2,
           "readyInHours": 0,
           "ready": true
         },
@@ -11147,7 +11147,7 @@
           "key": "adductors",
           "label": "Adductors",
           "section": "Legs",
-          "pct": 1,
+          "pct": 0,
           "readyInHours": 0,
           "ready": true
         }
@@ -11155,14 +11155,14 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 19,
+      "pct": 14,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 19,
+          "pct": 14,
           "readyInHours": 0,
           "ready": true
         }
@@ -11170,16 +11170,16 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 34,
-      "readyInHours": 3.5,
+      "pct": 24,
+      "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 34,
-          "readyInHours": 3.5,
-          "ready": false
+          "pct": 24,
+          "readyInHours": 0,
+          "ready": true
         }
       ]
     }
@@ -12728,42 +12728,42 @@
         "label": "-5w",
         "stress": 381,
         "sessions": 3,
-        "acwr": 0.72
+        "acwr": 1.14
       },
       {
         "label": "-4w",
         "stress": 424,
         "sessions": 3,
-        "acwr": 0.69
+        "acwr": 1.11
       },
       {
         "label": "-3w",
         "stress": 615,
         "sessions": 4,
-        "acwr": 0.76
+        "acwr": 0.61
       },
       {
         "label": "-2w",
         "stress": 233,
         "sessions": 2,
-        "acwr": 0.68
+        "acwr": 0.66
       },
       {
         "label": "-1w",
         "stress": 678,
         "sessions": 4,
-        "acwr": 0.98
+        "acwr": 1.41
       },
       {
         "label": "This wk",
         "stress": 722,
         "sessions": 4,
-        "acwr": 1.01
+        "acwr": 0.81
       }
     ],
-    "acute": 79.7,
-    "chronic": 79.21,
-    "acwr": 1.01,
+    "acute": 59.77,
+    "chronic": 73.75,
+    "acwr": 0.81,
     "acwrZone": "ok",
     "sessions28": 14
   },
@@ -12773,9 +12773,9 @@
     "fatigue": 5,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-26T21:31:19.240Z",
+    "readyAt": "2026-11-27T07:07:19.875Z",
     "neverLogged": false,
-    "daysSince": 6.5,
+    "daysSince": 6.9,
     "suggestedExercises": [
       {
         "name": "Lat Pulldown (Wide Grip)",
@@ -13137,25 +13137,25 @@
         "section": "Pull",
         "fatigue": 5,
         "readyInHours": 0,
-        "daysSince": 6.5
+        "daysSince": 6.9
       },
       {
         "section": "Legs",
-        "fatigue": 4,
+        "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 5.5
+        "daysSince": 5.9
       },
       {
         "section": "Push",
-        "fatigue": 26,
+        "fatigue": 22,
         "readyInHours": 0,
-        "daysSince": 1.2
+        "daysSince": 1.6
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 0.7
+        "daysSince": 1.1
       }
     ],
     "suggestedCount": 10,
@@ -13163,7 +13163,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 0.7
+    "daysSinceAerobic": 1.1
   },
   "alerts": [
     {
@@ -13191,7 +13191,7 @@
       21,
       23
     ],
-    "daysSinceLast": 0.7,
+    "daysSinceLast": 1.1,
     "total": 100
   },
   "relstrength": {
@@ -13258,7 +13258,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.7,
+    "daysSinceLast": 1.1,
     "recent": [
       {
         "t": 1795671000000,
@@ -13820,15 +13820,22 @@
   "sleep": {
     "any": true,
     "current": {
-      "date": "2026-11-26",
-      "start": "21:50",
-      "end": "05:15",
-      "hours": 7.42,
-      "note": "7.4h, within target."
+      "date": "2026-11-27",
+      "start": "23:45",
+      "end": "08:15",
+      "hours": 8.5,
+      "note": "8.5h, within target."
     },
-    "avg7": 7.3,
+    "avg7": 7.2,
     "status": "good",
     "history": [
+      {
+        "date": "2026-11-27",
+        "start": "23:45",
+        "end": "08:15",
+        "hours": 8.5,
+        "note": "8.5h, within target."
+      },
       {
         "date": "2026-11-26",
         "start": "21:50",

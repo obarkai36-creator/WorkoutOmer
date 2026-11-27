@@ -309,7 +309,7 @@ MALARONE_ROW = ("Malarone", "malarone", None, False)
 MALARONE_START_DATE, MALARONE_END_DATE = "2026-11-01", "2026-11-12"
 # Steronase (triamcinolone nasal spray) — 1x/day, 30-day course per user.
 STERONASE_ROW = ("Steronase", "steronase", None, False)
-STERONASE_START_DATE, STERONASE_END_DATE = "2026-11-07", "2026-12-06"
+STERONASE_START_DATE, STERONASE_END_DATE = "2026-11-07", "2026-11-24"  # stopped per user 2026-11-27 (last dose 11-24; 11-25/26 paused while traveling)
 
 
 # User-requested pauses: a paused row is dropped from the expected list for
