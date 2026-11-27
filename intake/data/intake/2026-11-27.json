@@ -12,14 +12,14 @@
   "workout_today": false,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 3.1,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 115,
+    "zinc_mg": 5.5,
+    "selenium_mcg": 16,
+    "folate_mcg_dfe": 167,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 13,
+    "vitamin_c_mg": 33,
     "vitamin_d_iu": 0,
     "vitamin_e_mg": 0,
-    "lycopene_mg": 2.6
+    "lycopene_mg": 4.7
   },
   "status_note": "In progress. Slept 8.5h. Food tracking resumed.",
   "items": [
@@ -90,6 +90,41 @@
       "fat_g": 0.18,
       "fiber_g": 1.08,
       "note": "standard reference."
+    },
+    {
+      "time": "11:00",
+      "name": "Cottage cheese",
+      "category": "food",
+      "qty": "100 g",
+      "kcal": 98,
+      "protein_g": 11,
+      "carbs_g": 3.4,
+      "fat_g": 4.3,
+      "fiber_g": 0,
+      "note": "same generic reference."
+    },
+    {
+      "time": "11:00",
+      "name": "Yellow cheese, 9% (Tnuva Emek Light)",
+      "category": "food",
+      "qty": "2 slices (50 g)",
+      "kcal": 100,
+      "protein_g": 15,
+      "carbs_g": 0,
+      "fat_g": 4.5,
+      "fiber_g": 0
+    },
+    {
+      "time": "11:00",
+      "name": "Small salad (lettuce, cucumber, tomato, lemon juice)",
+      "category": "food",
+      "qty": "small bowl (~220 g)",
+      "kcal": 35,
+      "protein_g": 1.8,
+      "carbs_g": 7,
+      "fat_g": 0.4,
+      "fiber_g": 2.2,
+      "note": "assumed ~60g lettuce + ~80g cucumber + ~80g tomato + 10ml lemon juice, no oil. Credits ~2.1mg lycopene, ~20mg vitamin C, ~40mcg folate."
     }
   ],
   "assumptions": [
