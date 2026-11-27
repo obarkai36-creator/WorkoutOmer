@@ -1,5 +1,5 @@
 {
-  "now": 1795789181784,
+  "now": 1795797458576,
   "workouts": [
     {
       "datetime": "2026-11-26T05:30",
@@ -10928,7 +10928,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "ready": true
     },
@@ -10960,7 +10960,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 14,
+      "pct": 13,
       "readyInHours": 0,
       "ready": true
     },
@@ -10976,7 +10976,7 @@
       "key": "quads",
       "label": "Quads",
       "section": "Legs",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "ready": true
     },
@@ -11016,7 +11016,7 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "ready": true
     },
@@ -11024,7 +11024,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 19,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     }
@@ -11032,14 +11032,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 20,
+      "pct": 19,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 20,
+          "pct": 19,
           "readyInHours": 0,
           "ready": true
         }
@@ -11084,7 +11084,7 @@
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 14,
+          "pct": 13,
           "readyInHours": 0,
           "ready": true
         },
@@ -11120,18 +11120,18 @@
           "ready": true
         },
         {
-          "key": "quads",
-          "label": "Quads",
+          "key": "hamstrings",
+          "label": "Hamstrings",
           "section": "Legs",
           "pct": 4,
           "readyInHours": 0,
           "ready": true
         },
         {
-          "key": "hamstrings",
-          "label": "Hamstrings",
+          "key": "quads",
+          "label": "Quads",
           "section": "Legs",
-          "pct": 4,
+          "pct": 3,
           "readyInHours": 0,
           "ready": true
         },
@@ -11155,14 +11155,14 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 11,
+      "pct": 10,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 11,
+          "pct": 10,
           "readyInHours": 0,
           "ready": true
         }
@@ -11170,14 +11170,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 19,
+      "pct": 18,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 19,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         }
@@ -12773,9 +12773,9 @@
     "fatigue": 4,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-27T14:19:41.784Z",
+    "readyAt": "2026-11-27T16:37:38.576Z",
     "neverLogged": false,
-    "daysSince": 7.2,
+    "daysSince": 7.3,
     "suggestedExercises": [
       {
         "name": "Lat Pulldown (Wide Grip)",
@@ -13137,25 +13137,25 @@
         "section": "Pull",
         "fatigue": 4,
         "readyInHours": 0,
-        "daysSince": 7.2
+        "daysSince": 7.3
       },
       {
         "section": "Legs",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 6.2
+        "daysSince": 6.3
       },
       {
         "section": "Push",
-        "fatigue": 20,
+        "fatigue": 19,
         "readyInHours": 0,
-        "daysSince": 1.9
+        "daysSince": 2
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 1.4
+        "daysSince": 1.5
       }
     ],
     "suggestedCount": 10,
@@ -13163,7 +13163,7 @@
     "typicalSessionSize": 8,
     "aerobicLast7": 1,
     "aerobicTarget": 1,
-    "daysSinceAerobic": 1.4
+    "daysSinceAerobic": 1.5
   },
   "alerts": [
     {
@@ -13191,7 +13191,7 @@
       21,
       23
     ],
-    "daysSinceLast": 1.4,
+    "daysSinceLast": 1.5,
     "total": 100
   },
   "relstrength": {
@@ -13258,7 +13258,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.4,
+    "daysSinceLast": 1.5,
     "recent": [
       {
         "t": 1795671000000,
