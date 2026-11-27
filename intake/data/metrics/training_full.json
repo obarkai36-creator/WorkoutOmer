@@ -1,5 +1,5 @@
 {
-  "now": 1795808389356,
+  "now": 1795808710668,
   "workouts": [
     {
       "datetime": "2026-11-26T05:30",
@@ -12773,7 +12773,7 @@
     "fatigue": 4,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-27T19:39:49.356Z",
+    "readyAt": "2026-11-27T19:45:10.668Z",
     "neverLogged": false,
     "daysSince": 7.4,
     "suggestedExercises": [
@@ -12846,7 +12846,7 @@
         "name": "Reverse Incline DB Row",
         "region": "Upper back — chest-supported row",
         "alternatives": [],
-        "optional": false,
+        "optional": true,
         "best": "26kg each × 4×12",
         "best1RM": 72.8,
         "iso": false,
@@ -12998,7 +12998,7 @@
             "isNew": false
           }
         ],
-        "optional": false,
+        "optional": true,
         "best": "20kg × 4×10",
         "best1RM": 26.7,
         "iso": false,
@@ -13097,6 +13097,20 @@
         }
       },
       {
+        "name": "Quality run (after lifting)",
+        "region": "Run — Base phase · 10K in 60-65 min (~6:00-6:30/km) by end of Feb 2027",
+        "alternatives": [],
+        "best": "",
+        "best1RM": 0,
+        "iso": false,
+        "run": "quality",
+        "target": {
+          "status": "run",
+          "text": "Run/walk 6-8 × (2 min run / 1 min walk)",
+          "plan": "?km*run/walk 6-8×(2/1)"
+        }
+      },
+      {
         "name": "Plank",
         "region": "Core (rotating)",
         "alternatives": [],
@@ -13111,25 +13125,10 @@
           "plan": "BW*3*45s"
         },
         "core": true
-      },
-      {
-        "name": "Hanging Knee Raise",
-        "region": "Core (rotating)",
-        "alternatives": [],
-        "optional": false,
-        "best": "BW × 3×6",
-        "best1RM": 96.3,
-        "iso": false,
-        "target": {
-          "status": "progress",
-          "text": "+1 rep (aim 3×7)",
-          "note": "Add 1 rep per set at the same weight — aim for 3×7 from BW × 3×6.",
-          "plan": "BW*3*7"
-        },
-        "core": true
       }
     ],
     "guidance": [
+      "Lift first, then run (or run later in the day). Lifting sessions are trimmed to 6 core regions + 1 core exercise to leave room for the run; optional rows only if fresh.",
       "Each row is one muscle region; the listed exercise is this week's rotation pick — alternatives rotate in on later sessions. Optional rows fill the session if time allows."
     ],
     "ranked": [
@@ -13158,11 +13157,11 @@
         "daysSince": 1.6
       }
     ],
-    "suggestedCount": 10,
+    "suggestedCount": 8,
     "totalAvailable": 14,
-    "typicalSessionSize": 8,
+    "typicalSessionSize": 6,
     "aerobicLast7": 1,
-    "aerobicTarget": 1,
+    "aerobicTarget": 3,
     "daysSinceAerobic": 1.6
   },
   "alerts": [
@@ -13174,7 +13173,8 @@
   ],
   "changes": [
     "You're below your PR on 16 lifts — closest wins first: Rope Cable Extension (33% of best), Pallof Press (53% of best), Incline DB Curl (67% of best). Add a rep or a set before adding weight.",
-    "Hamstrings lag quads (2.56×). Keep RDLs/leg curls heavy and add a set."
+    "Hamstrings lag quads (2.56×). Keep RDLs/leg curls heavy and add a set.",
+    "Only 1/3 aerobic sessions this week — add an easy run or row."
   ],
   "timing": {
     "avgGap": 2.7,

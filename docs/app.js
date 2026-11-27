@@ -484,6 +484,7 @@ function renderTrainingDetail(day, isLatest) {
   const recEx = rec.suggestedExercises || [];
   window.__recOpts = recEx.map((e) => [{ name: e.name, best: e.best, target: e.target, isNew: e.isNew }]
     .concat((e.alternatives || []).filter((a) => typeof a !== "string")));
+  window.__recOptional = recEx.map((e) => !!e.optional);
   window.__recSel = window.__recSel && window.__recSel.length === recEx.length ? window.__recSel : recEx.map(() => 0);
   const optCell = (i) => {
     const o = window.__recOpts[i][window.__recSel[i]] || window.__recOpts[i][0];
@@ -804,10 +805,12 @@ function orList(others) {
 }
 function recPlanText() {
   const opts = window.__recOpts || [], sel = window.__recSel || [];
+  // Optional rows are left out of the copy (they're "only if fresh").
   return opts.map((os, i) => {
+    if ((window.__recOptional || [])[i]) return null;
     const o = os[sel[i]] || os[0];
     return `${o.name} ${o.target && o.target.plan ? o.target.plan : "?kg*?*?"}`;
-  }).join("\n");
+  }).filter(Boolean).join("\n");
 }
 document.addEventListener("click", async (ev) => {
   const rot = ev.target.closest && ev.target.closest("[data-rot]");

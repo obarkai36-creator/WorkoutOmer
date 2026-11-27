@@ -18,7 +18,7 @@ const ATHLETE = {
   name: "Omer",
   bodyweightKg: 81.00, // most recent weigh-in (see BODYWEIGHT log)
   units: { weight: "kg", distance: "km" },
-  weeklyTarget: { strengthSessions: 3, aerobicSessions: 1 }, // PPL + 1 cardio (2026-11-12)
+  weeklyTarget: { strengthSessions: 3, aerobicSessions: 3 }, // PPL + 3 runs (10K plan, 2026-11-27)
 };
 
 /* ---- Bodyweight log (newest first) ----------------------------------------
@@ -222,6 +222,7 @@ const EXERCISE_LIBRARY = {
   "Long Run":               { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.3, calves: 0.3 } },
   "Rehabilitation Run":     { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.2, calves: 0.2 } },
   "Incline Walk":           { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.2, calves: 0.2 } },
+  "Treadmill Run":          { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.3, calves: 0.3 } },
   "Outdoor Walk":           { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.2, calves: 0.2 } },
   "Stationary Bike":        { kind: "aerobic", muscles: { cardio: 1.0, quads: 0.4 } },
 };
@@ -256,17 +257,43 @@ const EXERCISE_LIBRARY = {
  * (erectors), Prone Y-Raise (lower traps), Cable External Rotation (rotator
  * cuff) and five core movements covering flexion, anti-extension,
  * anti-rotation and lateral flexion. */
+/* 10K goal (set 2026-11-27): 60-65 min (~6:00-6:30/km) by end of Feb 2027.
+ * Runs ride on the 4-session week: easy run after Push, quality run after
+ * Pull (legs fresh), long run on the Cardio day; Legs day has no run. Every
+ * 4th week is lighter (recovery). */
+const RUN_PLAN = {
+  goal: "10K in 60-65 min (~6:00-6:30/km) by end of Feb 2027",
+  phases: [
+    { name: "Base", until: "2026-12-21",
+      easy: { text: "Easy run 25-30 min, conversational (~7:00-7:30/km); walk breaks OK", plan: "?km*25-30min easy" },
+      quality: { text: "Run/walk 6-8 × (2 min run / 1 min walk)", plan: "?km*run/walk 6-8×(2/1)" },
+      long: { text: "Long run building to 5 km continuous (~7:00/km)", plan: "5km*~35min" } },
+    { name: "Build", until: "2027-01-18",
+      easy: { text: "Easy run 30-35 min continuous", plan: "?km*30-35min easy" },
+      quality: { text: "Intervals: 5 × 3 min at ~6:00/km, 2 min easy jog between", plan: "?km*5×3min@6:00" },
+      long: { text: "Long run 6 → 7.5 km at 6:45-7:00/km (+0.5 km/week)", plan: "6-7.5km*6:45-7:00/km" } },
+    { name: "Specific", until: "2027-02-15",
+      easy: { text: "Easy run 35-40 min", plan: "?km*35-40min easy" },
+      quality: { text: "Alternate weeks: tempo 20-25 min at ~6:15/km, or 6 × 800 m at ~5:40/km", plan: "?km*tempo 20-25min@6:15" },
+      long: { text: "Long run 8 → 10 km at 6:45-7:00/km", plan: "8-10km*6:45-7:00/km" } },
+    { name: "Taper", until: "2027-02-28",
+      easy: { text: "Easy run 25-30 min", plan: "?km*25-30min easy" },
+      quality: { text: "5 km at goal pace (~6:15/km)", plan: "5km*@6:15" },
+      long: { text: "Race: 10 km, target 60-65 min (start ~6:20/km, finish strong)", plan: "10km*60-65min" } },
+  ],
+};
+
 const PROGRAM = {
   name: "Push / Pull / Legs + Cardio",
   adopted: "2026-11-12",
   sessionsPerWeek: 4,
-  targetExercises: 8, // strength exercises per lifting session (~75-90 min, extended 2026-11-12 per user), core extra
-  coreRotation: [["Plank", "Hanging Knee Raise"], ["Pallof Press", "VKR"], ["Cable Crunch", "Side Plank"], ["VKR to Sides", "Dead Bug"]], // flexion / anti-extension / anti-rotation / lateral, 2 per session
+  targetExercises: 6, // trimmed 8 -> 6 on 2026-11-27 (per user) to make room for the 10K plan runs; 1 core + the run on Push/Pull
+  coreRotation: [["Plank"], ["Hanging Knee Raise"], ["Pallof Press"], ["VKR"], ["Cable Crunch"], ["Side Plank"], ["VKR to Sides"], ["Dead Bug"]], // 1 per session since 2026-11-27 (10K plan)
   days: {
-    Push: { slots: [
+    Push: { run: "easy", slots: [
       { region: "Chest — upper (clavicular head)", options: ["Incline Bench Press", "Incline Smith Machine Press", "Incline Dumbbell Bench Press", "Low-to-High Cable Press"] },
       { region: "Chest — mid (sternal head)", options: ["Bench Press", "Dumbbell Bench Press", "Chest Press Machine", "Standing Cable Chest Press"] },
-      { region: "Chest — stretch / adduction", options: ["Incline Pec Fly", "Pec Fly Machine", "Dumbbell Pec Fly", "Mid Cable Fly"] },
+      { region: "Chest — stretch / adduction", options: ["Incline Pec Fly", "Pec Fly Machine", "Dumbbell Pec Fly", "Mid Cable Fly"], optional: true },
       { region: "Front delts (overhead press)", options: ["Dumbbell Shoulder Press", "Converging Shoulder Press", "Cable Shoulder Press"] },
       { region: "Side delts", options: ["Lateral Raises", "Seated Lateral Raises", "Cable Lateral Raise"] },
       { region: "Triceps — long head (overhead)", options: ["Overhead DB Triceps Extension", "Single-Hand DB Triceps Extension", "Flat DB Triceps Extension", "Overhead Cable Triceps Extension"] },
@@ -274,14 +301,14 @@ const PROGRAM = {
       { region: "Chest — lower (costal fibres)", options: ["Decline Bench Press", "Seated Dips", "Narrow Push-Ups"], optional: true },
       { region: "Front delts (isolation)", options: ["Front Raises", "Cable Front Raise"], optional: true },
     ] },
-    Pull: { slots: [
+    Pull: { run: "quality", slots: [
       { region: "Lats — width (vertical pull)", options: ["Lat Pulldown (Wide Grip)", "Lat Pulldown (Triangle)"] },
       { region: "Mid back — thickness (horizontal row)", options: ["Diverging Seated Row", "Low Row", "Row Machine"] },
-      { region: "Upper back — chest-supported row", options: ["Reverse Incline DB Row"] },
+      { region: "Upper back — chest-supported row", options: ["Reverse Incline DB Row"], optional: true },
       { region: "Rear delts", options: ["Rear Delt Machine", "Cable Face Pull"] },
       { region: "Biceps — long head (stretched)", options: ["Incline DB Curl", "Incline Hammer Curl"] },
       { region: "Biceps — short head", options: ["Preacher Curl", "EZ Bar Curl", "Biceps Curl Machine", "Cable Curl", "Low Pulley Biceps Curl", "Half Curl"] },
-      { region: "Brachialis / forearms", options: ["Hammer Curl", "Forearm Twists"] },
+      { region: "Brachialis / forearms", options: ["Hammer Curl", "Forearm Twists"], optional: true },
       { region: "Lower / mid traps", options: ["Prone Y-Raise"] },
       { region: "Lats — stretch (pullover)", options: ["Dumbbell Pullover"], optional: true },
       { region: "Rotator cuff (external rotation)", options: ["Cable External Rotation"], optional: true },
@@ -295,11 +322,11 @@ const PROGRAM = {
       { region: "Hamstrings — knee flexion", options: ["Leg Curls"] },
       { region: "Glutes — max", options: ["Hip Thrust", "Glute Extension", "Glute Bridge"] },
       { region: "Calves — gastrocnemius", options: ["Dumbbell Calf Raise", "Standing Calf Raises (Frame)"] },
-      { region: "Calves — soleus (bent knee)", options: ["Calf Raises Machine"] },
-      { region: "Adductors / glute med (alternate)", options: ["Inner Thigh", "Outer Thigh", "Dumbbell Sumo Squat"] },
+      { region: "Calves — soleus (bent knee)", options: ["Calf Raises Machine"], optional: true },
+      { region: "Adductors / glute med (alternate)", options: ["Inner Thigh", "Outer Thigh", "Dumbbell Sumo Squat"], optional: true },
       { region: "Lower back — spinal erectors", options: ["Back Extension (45°)"], optional: true },
     ] },
-    Cardio: { cardio: true, options: ["Incline Walk", "Stationary Bike", "Outdoor Run"], note: "40-60 min zone 2 (conversational pace); incline walk or bike preferred." },
+    Cardio: { cardio: true, run: "long", options: ["Outdoor Run", "Treadmill Run"], note: "Long run (10K plan)." },
   },
 };
 
@@ -1371,5 +1398,5 @@ const WORKOUTS = [
 
 /* Expose for the engine. */
 if (typeof window !== "undefined") {
-  window.GYM_DATA = { ATHLETE, MUSCLES, SECTION_ORDER, EXERCISE_LIBRARY, PROGRAM, SNAPSHOT, WORKOUTS, BODYWEIGHT, SLEEP };
+  window.GYM_DATA = { ATHLETE, MUSCLES, SECTION_ORDER, EXERCISE_LIBRARY, PROGRAM, RUN_PLAN, SNAPSHOT, WORKOUTS, BODYWEIGHT, SLEEP };
 }

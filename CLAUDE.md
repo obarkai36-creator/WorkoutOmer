@@ -5,11 +5,16 @@
 
 - GOAL (set 2026-11-27, per user): run 10km by end of February 2027 in
   60-65 min (~6:00-6:30/km). Baseline: 2026-11-13 interval run 3.44km/24min
-  with walk breaks; 2026-11-26 incline walk 4km/50min. Proposed plan (pending
-  user OK to wire into PROGRAM): 3 runs/week alongside PPL — easy run, quality
-  run (intervals/tempo), long run (replaces the Cardio slot); phases: base
-  (Dec 1-21) → build (Dec 22-Jan 18) → specific (Jan 19-Feb 15) → taper
-  (Feb 16-28). Factor this goal into every training suggestion.
+  with walk breaks; 2026-11-26 incline walk 4km/50min; prior 10K 2026-02-27 in
+  66:15. IMPLEMENTED 2026-11-27 (user: 6 sessions/week unrealistic — keep 4,
+  attach runs to lifting days, fewer lifts): `RUN_PLAN` in data.js (phases
+  Base→Dec 21, Build→Jan 18, Specific→Feb 15, Taper→Feb 28, each with
+  easy/quality/long text+plan); PROGRAM days carry `run:` (Push=easy after
+  lifting, Pull=quality after lifting, Cardio=long run; Legs no run);
+  `targetExercises` 8→6 with 5 more slots made optional; core is now 1 per
+  session; weeklyTarget aerobic 3. engine.js `programRecommendation()` appends
+  the run row and only counts aerobic-only sessions as the Cardio/long-run
+  day. Copy button skips optional rows (`?v=20261127-1`). Factor this goal into every training suggestion.
 
 - Workout program switched to Push / Pull / Legs + Cardio (2026-11-12, per
   user: 4 sessions/week, one each; 60-75 min; 1-2 alternating core exercises

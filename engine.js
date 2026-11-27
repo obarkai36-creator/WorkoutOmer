@@ -743,7 +743,6 @@ function programRecommendation(data, workouts, sectionFat, now, bal, trends) {
   const lastEx = {};
   for (const w of workouts) {
     for (const ex of w.exercises) if (lastEx[ex.name] == null) lastEx[ex.name] = w.t;
-    if (w.isAerobic && lastDone.Cardio == null) lastDone.Cardio = w.t;
     const counts = {};
     let n = 0;
     for (const ex of w.exercises) {
@@ -755,6 +754,9 @@ function programRecommendation(data, workouts, sectionFat, now, bal, trends) {
     }
     for (const [d, c] of Object.entries(counts))
       if (lastDone[d] == null && (c >= 2 || c / n >= 0.4)) lastDone[d] = w.t;
+    // Cardio (long-run) day = an aerobic-only session; a short run tacked onto
+    // a Push/Pull lift doesn't count as the week's long run.
+    if (w.isAerobic && n === 0 && lastDone.Cardio == null) lastDone.Cardio = w.t;
   }
 
   const READY_TOLERANCE_HOURS = 6;
@@ -812,7 +814,26 @@ function programRecommendation(data, workouts, sectionFat, now, bal, trends) {
       suggestedExercises.push(entry(o, slot.region, alts, slot.optional));
     }
   }
-  // Core: rotate the pairs in PROGRAM.coreRotation by sessions since adoption.
+  // 10K plan run attached to this day (easy after Push, quality after Pull,
+  // long run on the Cardio day), from the current RUN_PLAN phase.
+  const RP = data.RUN_PLAN;
+  let runRow = null;
+  if (RP && day.run) {
+    const today = new Date(now).toISOString().slice(0, 10);
+    const phase = RP.phases.find((p) => today <= p.until) || RP.phases[RP.phases.length - 1];
+    const r = phase[day.run];
+    const label = { easy: "Easy run", quality: "Quality run", long: "Long run" }[day.run];
+    runRow = { name: day.cardio ? "Outdoor Run" : `${label} (after lifting)`, region: `Run — ${phase.name} phase · ${RP.goal}`,
+      alternatives: day.cardio ? ["Treadmill Run"] : [], best: "", best1RM: 0, iso: false, run: day.run,
+      target: { status: "run", text: r.text, plan: r.plan } };
+  }
+  if (day.cardio && runRow) suggestedExercises = [runRow];
+  else if (runRow) suggestedExercises.push(runRow);
+  if (runRow && trends && (trends.acwrZone === "danger" || trends.acwrZone === "caution"))
+    guidance.push(`Load ratio ${trends.acwr} is ${trends.acwrZone === "danger" ? "high" : "climbing"} — keep today's run easy and at the short end; skip the quality component if legs feel heavy.`);
+  if (runRow && !day.cardio) guidance.push("Lift first, then run (or run later in the day). Lifting sessions are trimmed to 6 core regions + 1 core exercise to leave room for the run; optional rows only if fresh.");
+
+  // Core: rotate PROGRAM.coreRotation by sessions since adoption.
   const since = Date.parse(P.adopted + "T00:00:00");
   const sessionsSince = workouts.filter((w) => w.t >= since).length;
   const core = P.coreRotation[sessionsSince % P.coreRotation.length];
@@ -828,7 +849,7 @@ function programRecommendation(data, workouts, sectionFat, now, bal, trends) {
     guidance.push(`Load ratio ${trends.acwr} is in the danger zone — keep weight/sets flat this session, no PR attempts.`);
   else if (trends && trends.acwrZone === "caution")
     guidance.push(`Load ratio ${trends.acwr} is climbing — fine to train, but cap volume growth (~10%) rather than chasing a big PR.`);
-  guidance.push(day.cardio ? "Cardio day of the 4-day Push / Pull / Legs / Cardio week." : "Each row is one muscle region; the listed exercise is this week's rotation pick — alternatives rotate in on later sessions. Optional rows fill the session if time allows.");
+  guidance.push(day.cardio ? "Long-run day of the 4-day week (10K plan)." : "Each row is one muscle region; the listed exercise is this week's rotation pick — alternatives rotate in on later sessions. Optional rows fill the session if time allows.");
 
   const strength = suggestedExercises.filter((e) => !e.core && !e.optional).length;
   const aerobicLast7 = workouts.filter((w) => now - w.t <= 7 * DAY && w.isAerobic).length;
@@ -843,7 +864,7 @@ function programRecommendation(data, workouts, sectionFat, now, bal, trends) {
     neverLogged: pick.daysSince == null,
     daysSince: pick.daysSince,
     suggestedExercises, guidance, ranked,
-    suggestedCount: day.cardio ? suggestedExercises.length : Math.min(P.targetExercises, strength) + core.length,
+    suggestedCount: day.cardio ? suggestedExercises.length : Math.min(P.targetExercises, strength) + core.length + (runRow ? 1 : 0),
     totalAvailable: suggestedExercises.length,
     typicalSessionSize: day.cardio ? 1 : P.targetExercises,
     aerobicLast7, aerobicTarget: data.ATHLETE.weeklyTarget.aerobicSessions,
