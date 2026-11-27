@@ -263,6 +263,13 @@ const EXERCISE_LIBRARY = {
  * 4th week is lighter (recovery). */
 const RUN_PLAN = {
   goal: "10K in 60-65 min (~6:00-6:30/km) by end of Feb 2027",
+  start: "2026-11-28",
+  // First session of each run type = baseline test (shown until one is logged).
+  baseline: {
+    easy: { text: "BASELINE: 30 min continuous at conversational pace (~7:00-7:30/km); walk only if needed — log distance + any walk breaks", plan: "?km*30min easy" },
+    quality: { text: "BASELINE: 10 min easy warm-up, then 2 km at a hard-but-steady effort (time it), 5 min easy cool-down — sets your race-pace estimate", plan: "2km*?min (TT) +10min WU/5min CD" },
+    long: { text: "BASELINE: as far as you can continuously up to 6 km at ~7:00/km (stop at 6 km) — log distance, time, and where you first needed to walk", plan: "?km*?min continuous" },
+  },
   phases: [
     { name: "Base", until: "2026-12-21",
       easy: { text: "Easy run 25-30 min, conversational (~7:00-7:30/km); walk breaks OK", plan: "?km*25-30min easy" },

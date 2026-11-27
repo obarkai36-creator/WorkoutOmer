@@ -821,7 +821,17 @@ function programRecommendation(data, workouts, sectionFat, now, bal, trends) {
   if (RP && day.run) {
     const today = new Date(now).toISOString().slice(0, 10);
     const phase = RP.phases.find((p) => today <= p.until) || RP.phases[RP.phases.length - 1];
-    const r = phase[day.run];
+    // Baseline test until a session of this run type has been logged since
+    // the plan started (easy = run inside a Push session, quality = inside a
+    // Pull session, long = aerobic-only session).
+    const start = Date.parse((RP.start || "2026-01-01") + "T00:00:00");
+    const doneType = workouts.some((w) => {
+      if (w.t < start || !w.isAerobic) return false;
+      const days = new Set(w.exercises.filter((x) => x.kind === "strength").map((x) => exDay[x.name]).filter(Boolean));
+      if (day.run === "long") return days.size === 0;
+      return days.has(day.run === "easy" ? "Push" : "Pull");
+    });
+    const r = (!doneType && RP.baseline && RP.baseline[day.run]) || phase[day.run];
     const label = { easy: "Easy run", quality: "Quality run", long: "Long run" }[day.run];
     runRow = { name: day.cardio ? "Outdoor Run" : `${label} (after lifting)`, region: `Run — ${phase.name} phase · ${RP.goal}`,
       alternatives: day.cardio ? ["Treadmill Run"] : [], best: "", best1RM: 0, iso: false, run: day.run,
