@@ -3,6 +3,14 @@
 - Language (per user 2026-11-25): always reply in English in this session,
   even when the user writes in Hebrew.
 
+- GOAL (set 2026-11-27, per user): run 10km by end of February 2027 in
+  60-65 min (~6:00-6:30/km). Baseline: 2026-11-13 interval run 3.44km/24min
+  with walk breaks; 2026-11-26 incline walk 4km/50min. Proposed plan (pending
+  user OK to wire into PROGRAM): 3 runs/week alongside PPL — easy run, quality
+  run (intervals/tempo), long run (replaces the Cardio slot); phases: base
+  (Dec 1-21) → build (Dec 22-Jan 18) → specific (Jan 19-Feb 15) → taper
+  (Feb 16-28). Factor this goal into every training suggestion.
+
 - Workout program switched to Push / Pull / Legs + Cardio (2026-11-12, per
   user: 4 sessions/week, one each; 60-75 min; 1-2 alternating core exercises
   every session; arms folded into Push/Pull). Defined as `PROGRAM` in data.js:

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "day_number": 153,
-  "in_progress": true,
+  "in_progress": false,
   "sleep": {
     "sleep_start": "23:45",
     "sleep_end": "08:15",
@@ -187,5 +187,6 @@
     "Steronase stopped until further notice (per user)."
   ],
   "exclude_from_monthly_macros": true,
-  "exclude_reason": "User stopped food tracking mid-day 2026-11-27 (after 11:00 breakfast). Items logged before the request stay on record; supplements/meds/caffeine/workouts/lifestyle still logged."
+  "exclude_reason": "User stopped food tracking mid-day 2026-11-27 (after 11:00 breakfast). Items logged before the request stay on record; supplements/meds/caffeine/workouts/lifestyle still logged.",
+  "steps": 2500
 }
