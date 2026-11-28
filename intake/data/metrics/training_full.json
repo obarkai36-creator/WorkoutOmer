@@ -1,5 +1,5 @@
 {
-  "now": 1795850286697,
+  "now": 1795852679288,
   "workouts": [
     {
       "datetime": "2026-11-28T08:00",
@@ -11201,8 +11201,8 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 64,
-      "readyInHours": 22.5,
+      "pct": 63,
+      "readyInHours": 22.4,
       "ready": false
     },
     "cardio": {
@@ -11210,7 +11210,7 @@
       "label": "Cardio",
       "section": "Cardio",
       "pct": 41,
-      "readyInHours": 9.7,
+      "readyInHours": 9.5,
       "ready": false
     }
   },
@@ -11340,15 +11340,15 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 64,
-      "readyInHours": 22.5,
+      "pct": 63,
+      "readyInHours": 22.4,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 64,
-          "readyInHours": 22.5,
+          "pct": 63,
+          "readyInHours": 22.4,
           "ready": false
         }
       ]
@@ -11356,14 +11356,14 @@
     "Cardio": {
       "section": "Cardio",
       "pct": 41,
-      "readyInHours": 9.7,
+      "readyInHours": 9.5,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
           "pct": 41,
-          "readyInHours": 9.7,
+          "readyInHours": 9.5,
           "ready": false
         }
       ]
@@ -12911,14 +12911,14 @@
     "weeks": [
       {
         "label": "-5w",
-        "stress": 573,
-        "sessions": 4,
+        "stress": 644,
+        "sessions": 5,
         "acwr": 1.1
       },
       {
         "label": "-4w",
-        "stress": 411,
-        "sessions": 3,
+        "stress": 340,
+        "sessions": 2,
         "acwr": 1.43
       },
       {
@@ -12958,7 +12958,7 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-28T07:18:06.697Z",
+    "readyAt": "2026-11-28T07:57:59.288Z",
     "neverLogged": false,
     "daysSince": 6.9,
     "suggestedExercises": [
@@ -13210,7 +13210,7 @@
         "section": "Push",
         "fatigue": 15,
         "readyInHours": 0,
-        "daysSince": 2.6
+        "daysSince": 2.7
       },
       {
         "section": "Cardio",
