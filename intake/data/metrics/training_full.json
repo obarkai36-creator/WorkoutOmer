@@ -1,5 +1,5 @@
 {
-  "now": 1795838729397,
+  "now": 1795843123414,
   "workouts": [
     {
       "datetime": "2026-11-26T05:30",
@@ -10928,7 +10928,7 @@
       "key": "chest",
       "label": "Chest",
       "section": "Chest",
-      "pct": 16,
+      "pct": 15,
       "readyInHours": 0,
       "ready": true
     },
@@ -10944,7 +10944,7 @@
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     },
@@ -10960,7 +10960,7 @@
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 10,
+      "pct": 9,
       "readyInHours": 0,
       "ready": true
     },
@@ -11016,7 +11016,7 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "ready": true
     },
@@ -11032,14 +11032,14 @@
   "sections": {
     "Chest": {
       "section": "Chest",
-      "pct": 16,
+      "pct": 15,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "chest",
           "label": "Chest",
           "section": "Chest",
-          "pct": 16,
+          "pct": 15,
           "readyInHours": 0,
           "ready": true
         }
@@ -11062,14 +11062,14 @@
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         }
@@ -11077,14 +11077,14 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 10,
+          "pct": 9,
           "readyInHours": 0,
           "ready": true
         },
@@ -11155,14 +11155,14 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 7,
+      "pct": 6,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 7,
+          "pct": 6,
           "readyInHours": 0,
           "ready": true
         }
@@ -12773,9 +12773,9 @@
     "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-28T04:05:29.397Z",
+    "readyAt": "2026-11-28T05:18:43.414Z",
     "neverLogged": false,
-    "daysSince": 7.7,
+    "daysSince": 7.8,
     "suggestedExercises": [
       {
         "name": "Lat Pulldown (Wide Grip)",
@@ -13136,7 +13136,7 @@
         "section": "Pull",
         "fatigue": 3,
         "readyInHours": 0,
-        "daysSince": 7.7
+        "daysSince": 7.8
       },
       {
         "section": "Legs",
@@ -13146,7 +13146,7 @@
       },
       {
         "section": "Push",
-        "fatigue": 16,
+        "fatigue": 15,
         "readyInHours": 0,
         "daysSince": 2.5
       },
@@ -13154,7 +13154,7 @@
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 1.9
+        "daysSince": 2
       }
     ],
     "suggestedCount": 8,
@@ -13162,7 +13162,7 @@
     "typicalSessionSize": 6,
     "aerobicLast7": 1,
     "aerobicTarget": 3,
-    "daysSinceAerobic": 1.9
+    "daysSinceAerobic": 2
   },
   "alerts": [
     {
@@ -13196,7 +13196,7 @@
       21,
       23
     ],
-    "daysSinceLast": 1.9,
+    "daysSinceLast": 2,
     "total": 100
   },
   "relstrength": {
@@ -13263,7 +13263,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 1.9,
+    "daysSinceLast": 2,
     "recent": [
       {
         "t": 1795671000000,

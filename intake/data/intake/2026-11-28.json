@@ -55,6 +55,30 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "07:00",
+      "name": "Danone PRO Strawberry Yogurt, 0% fat",
+      "category": "food",
+      "qty": "1 cup (200 g)",
+      "kcal": 112,
+      "protein_g": 20,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "note": "same reference (danone_pro_strawberry_0pct)."
+    },
+    {
+      "time": "07:00",
+      "name": "Catalina Crunch Protein Cereal, Chocolate Peanut Butter",
+      "category": "food",
+      "qty": "1 handful (~20 g)",
+      "kcal": 61.2,
+      "protein_g": 6.2,
+      "carbs_g": 8.8,
+      "fat_g": 2.8,
+      "fiber_g": 5,
+      "note": "verified reference (catalina_crunch_choc_pb_cereal); handful assumed ~20g."
     }
   ],
   "assumptions": []
