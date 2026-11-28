@@ -445,9 +445,9 @@ const SNAPSHOT = [
  * log real timestamps. Today's session time is set to this morning.
  */
 const WORKOUTS = [
-  // 28 Nov — Pull + quality-run baseline (time not given)
+  // 28 Nov — Pull + quality-run baseline (08:00)
   {
-    datetime: "2026-11-28T09:00", timeUnknown: true, note: "Pull day + 10K-plan quality-run BASELINE (clock time not given, placeholder 09:00). Lat Pulldown (Triangle) 77kg×3×10 (new PR). Diverging Seated Row 100kg×4×8 (repeat). Cable Face Pull 41kg×4×8 (new PR). Incline Hammer Curl 16kg each×3×8 — weight dropped for form; best reset per user. EZ Bar Curl 10kg each side + bar×3×12 (new PR). Plank BW×3×45s (new PR). Treadmill run: 0.8 km warm-up in 10 min; 2.0 km quality in 11:35 (5:47/km avg), progressive 9→12 km/h; 5 min cool-down at 4 km/h (~0.33 km). Riegel 10K estimate from the 2 km: ~64 min. 4 new PRs.",
+    datetime: "2026-11-28T08:00", note: "Pull day + 10K-plan quality-run BASELINE (08:00). Lat Pulldown (Triangle) 77kg×3×10 (new PR). Diverging Seated Row 100kg×4×8 (repeat). Cable Face Pull 41kg×4×8 (new PR). Incline Hammer Curl 16kg each×3×8 — weight dropped for form; best reset per user. EZ Bar Curl 10kg each side + bar×3×12 (new PR). Plank BW×3×45s (new PR). Treadmill run: 0.8 km warm-up in 10 min; 2.0 km quality in 11:35 (5:47/km avg), progressive 9→12 km/h; 5 min cool-down at 4 km/h (~0.33 km). Riegel 10K estimate from the 2 km: ~64 min. 4 new PRs.",
     exercises: [
       { name: "Lat Pulldown (Triangle)", sets: [ { reps: 10, weight: 77 }, { reps: 10, weight: 77 }, { reps: 10, weight: 77 } ] },
       { name: "Diverging Seated Row", sets: [ { reps: 8, weight: 100 }, { reps: 8, weight: 100 }, { reps: 8, weight: 100 }, { reps: 8, weight: 100 } ] },
