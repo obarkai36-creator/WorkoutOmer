@@ -12,14 +12,14 @@
   "workout_today": true,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 2.8,
-    "selenium_mcg": 0,
-    "folate_mcg_dfe": 100,
+    "zinc_mg": 4.1,
+    "selenium_mcg": 5,
+    "folate_mcg_dfe": 174,
     "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 0,
+    "vitamin_c_mg": 78,
     "vitamin_d_iu": 0,
-    "vitamin_e_mg": 0,
-    "lycopene_mg": 0
+    "vitamin_e_mg": 2,
+    "lycopene_mg": 12.3
   },
   "status_note": "In progress. Slept 6.2h.",
   "items": [
@@ -114,7 +114,34 @@
       "carbs_g": 0,
       "fat_g": 0,
       "fiber_g": 0
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — large salad with regular dressing (0.7 eaten)",
+      "category": "food",
+      "qty": "0.7 of: 1 lettuce head + 40 cherry tomatoes + 1 red onion + 40g baby mozzarella + regular maple-balsamic dressing",
+      "kcal": 421,
+      "protein_g": 14.1,
+      "carbs_g": 47.5,
+      "fat_g": 21.8,
+      "fiber_g": 9.4,
+      "time_approx": true,
+      "note": "regular-salad reference adjusted (+10 tomatoes, +0.5 onion, −10g mozzarella), full ≈ 602kcal, ×0.7. Credits ~12.3mg lycopene, ~78mg vitamin C, ~74mcg folate, ~2mg vitamin E."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — Manchego cheese",
+      "category": "food",
+      "qty": "7 g",
+      "kcal": 27.3,
+      "protein_g": 1.8,
+      "carbs_g": 0,
+      "fat_g": 2.3,
+      "fiber_g": 0,
+      "time_approx": true
     }
   ],
-  "assumptions": []
+  "assumptions": [
+    "Lunch time not given (placeholder 13:00). Bream (baked with 5g butter) and baked potatoes (15g oil? across batch) pending amounts from user."
+  ]
 }
