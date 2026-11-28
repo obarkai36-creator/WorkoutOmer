@@ -1,5 +1,5 @@
 {
-  "now": 1795843123414,
+  "now": 1795848609640,
   "workouts": [
     {
       "datetime": "2026-11-26T05:30",
@@ -11024,7 +11024,7 @@
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "ready": true
     }
@@ -11170,14 +11170,14 @@
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 12,
+      "pct": 11,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 12,
+          "pct": 11,
           "readyInHours": 0,
           "ready": true
         }
@@ -12773,7 +12773,7 @@
     "fatigue": 3,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-28T05:18:43.414Z",
+    "readyAt": "2026-11-28T06:50:09.640Z",
     "neverLogged": false,
     "daysSince": 7.8,
     "suggestedExercises": [
@@ -13142,19 +13142,19 @@
         "section": "Legs",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 6.8
+        "daysSince": 6.9
       },
       {
         "section": "Push",
         "fatigue": 15,
         "readyInHours": 0,
-        "daysSince": 2.5
+        "daysSince": 2.6
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 2
+        "daysSince": 2.1
       }
     ],
     "suggestedCount": 8,
@@ -13162,7 +13162,7 @@
     "typicalSessionSize": 6,
     "aerobicLast7": 1,
     "aerobicTarget": 3,
-    "daysSinceAerobic": 2
+    "daysSinceAerobic": 2.1
   },
   "alerts": [
     {
@@ -13196,7 +13196,7 @@
       21,
       23
     ],
-    "daysSinceLast": 2,
+    "daysSinceLast": 2.1,
     "total": 100
   },
   "relstrength": {
@@ -13263,7 +13263,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 2,
+    "daysSinceLast": 2.1,
     "recent": [
       {
         "t": 1795671000000,
