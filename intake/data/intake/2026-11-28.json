@@ -16,9 +16,9 @@
     "selenium_mcg": 93,
     "folate_mcg_dfe": 199,
     "omega3_epa_dha_mg": 1700,
-    "vitamin_c_mg": 98,
+    "vitamin_c_mg": 93,
     "vitamin_d_iu": 300,
-    "vitamin_e_mg": 3.2,
+    "vitamin_e_mg": 2.9,
     "lycopene_mg": 12.3
   },
   "status_note": "In progress. Slept 6.2h.",
@@ -157,17 +157,17 @@
       "time": "13:00",
       "name": "Lunch — baked potatoes with olive oil",
       "category": "food",
-      "qty": "120 g baked (of a 280 g raw batch with 15 g olive oil)",
-      "kcal": 199,
-      "protein_g": 3.2,
-      "carbs_g": 28,
-      "fat_g": 8.7,
-      "fiber_g": 3.1,
+      "qty": "120 g baked (of a 280 g baked batch with 15 g olive oil)",
+      "kcal": 169,
+      "protein_g": 2.5,
+      "carbs_g": 25.4,
+      "fat_g": 6.5,
+      "fiber_g": 2.6,
       "time_approx": true,
-      "note": "280g raw ≈ 210g baked (~25% water loss) → 120g eaten ≈ 57% of the batch, incl. ~8.6g of the 15g oil. Credits ~20mg vitamin C, ~1.2mg vitamin E."
+      "note": "120/280 = 43% of the batch: baked potato ~93kcal/100g + ~6.4g of the 15g olive oil. Credits ~15mg vitamin C, ~0.9mg vitamin E."
     }
   ],
   "assumptions": [
-    "Lunch time not given (placeholder 13:00). Bream weight treated as cooked/eaten; potatoes scaled from 280g raw batch (~210g baked)."
+    "Lunch time not given (placeholder 13:00). Bream weight treated as cooked/eaten; potatoes 120g of a 280g baked batch (43%)."
   ]
 }
