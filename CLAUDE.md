@@ -75,7 +75,10 @@
   spray (AM+PM rows) paused 2026-10-17 through 2026-11-06 (out of stock;
   resumed 2026-11-07). Omega-3 paused 2026-11-22 through 2026-11-26 (per
   user, resumes Friday 2026-11-27). Steronase paused 2026-11-25 through
-  2026-11-26 (left at home while traveling). Add any future
+  2026-11-26 (left at home while traveling). Rhinolast spray paused from
+  2026-11-28 PM / 2026-11-29 AM until further notice (ran out) — open-ended
+  window (end 2099-12-31); set a real end date when the user restocks, and
+  don't remind about the spray meanwhile. Add any future
   pause there (then re-export the affected dates).
 
 - Travel #2 (Tuesday 2026-11-24 out, Thursday 2026-11-26 back, per user

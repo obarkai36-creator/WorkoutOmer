@@ -321,6 +321,8 @@ SUPPLEMENT_PAUSES = [
     ("Allergy spray · PM", "2026-10-17", "2026-11-06"),
     ("Omega-3", "2026-11-22", "2026-11-26"),
     ("Steronase", "2026-11-25", "2026-11-26"),
+    ("Allergy spray · PM", "2026-11-28", "2099-12-31"),  # Rhinolast ran out 2026-11-28 — paused until further notice
+    ("Allergy spray · AM", "2026-11-29", "2099-12-31"),
     ("Creatine", "2026-11-25", "2026-11-25"),  # skipped (travel), per user
     ("Essential-5 (C+D+E+Zinc+Selenium)", "2026-11-25", "2026-11-25"),  # skipped (travel), per user  # left at home during travel #2  # paused per user, resumes Friday 2026-11-27
 ]

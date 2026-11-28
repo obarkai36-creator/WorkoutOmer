@@ -12,14 +12,14 @@
   "workout_today": true,
   "caffeine_shots": 4,
   "micros_sperm_priority": {
-    "zinc_mg": 27.2,
-    "selenium_mcg": 194,
-    "folate_mcg_dfe": 199,
+    "zinc_mg": 29.2,
+    "selenium_mcg": 209,
+    "folate_mcg_dfe": 294,
     "omega3_epa_dha_mg": 1700,
-    "vitamin_c_mg": 1096,
+    "vitamin_c_mg": 1144,
     "vitamin_d_iu": 2300,
     "vitamin_e_mg": 137.3,
-    "lycopene_mg": 12.3
+    "lycopene_mg": 27.1
   },
   "status_note": "In progress. Slept 6.2h.",
   "items": [
@@ -222,9 +222,80 @@
       "carbs_g": 18.1,
       "fat_g": 0.16,
       "fiber_g": 0.9
+    },
+    {
+      "time": "17:40",
+      "name": "Dinner — Angel PRO Pita",
+      "category": "food",
+      "qty": "2 units (125 g)",
+      "kcal": 251.2,
+      "protein_g": 25.8,
+      "carbs_g": 28.4,
+      "fat_g": 2.4,
+      "fiber_g": 7.4
+    },
+    {
+      "time": "17:40",
+      "name": "Dinner — Simfonia cheese spread",
+      "category": "food",
+      "qty": "50 g",
+      "kcal": 54,
+      "protein_g": 4.9,
+      "carbs_g": 2.3,
+      "fat_g": 2.5,
+      "fiber_g": 0,
+      "note": "verified label rate."
+    },
+    {
+      "time": "17:40",
+      "name": "Dinner — Bulgarit cheese 5%",
+      "category": "food",
+      "qty": "30 g",
+      "kcal": 32,
+      "protein_g": 4.2,
+      "carbs_g": 0.3,
+      "fat_g": 1.5,
+      "fiber_g": 0,
+      "note": "generic 5% bulgarit (~105kcal/100g)."
+    },
+    {
+      "time": "17:40",
+      "name": "Dinner — Tomato paste",
+      "category": "food",
+      "qty": "20 g",
+      "kcal": 16.4,
+      "protein_g": 0.9,
+      "carbs_g": 3.8,
+      "fat_g": 0.1,
+      "fiber_g": 0.8,
+      "note": "'tomato pasta' = tomato paste, as before. Credits ~6mg lycopene."
+    },
+    {
+      "time": "17:40",
+      "name": "Dinner — Cherry tomatoes",
+      "category": "food",
+      "qty": "20 pieces",
+      "kcal": 53,
+      "protein_g": 2.74,
+      "carbs_g": 11.74,
+      "fat_g": 0.6,
+      "fiber_g": 3.6,
+      "note": "standard reference."
+    },
+    {
+      "time": "21:00",
+      "name": "Creatine monohydrate",
+      "category": "supplement",
+      "qty": "5 g",
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
     }
   ],
   "assumptions": [
-    "Lunch time not given (placeholder 13:00). Bream weight treated as cooked/eaten; potatoes 120g of a 280g baked batch (43%)."
+    "Lunch time not given (placeholder 13:00). Bream weight treated as cooked/eaten; potatoes 120g of a 280g baked batch (43%).",
+    "Rhinolast ran out — PM spray not taken today; paused until further notice."
   ]
 }

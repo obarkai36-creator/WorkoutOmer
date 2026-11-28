@@ -1,5 +1,5 @@
 {
-  "now": 1795873951690,
+  "now": 1795880379475,
   "workouts": [
     {
       "datetime": "2026-11-28T08:00",
@@ -11121,15 +11121,15 @@
       "key": "back",
       "label": "Back",
       "section": "Back",
-      "pct": 46,
-      "readyInHours": 25.1,
+      "pct": 44,
+      "readyInHours": 23.3,
       "ready": false
     },
     "shoulders": {
       "key": "shoulders",
       "label": "Shoulders",
       "section": "Shoulders",
-      "pct": 19,
+      "pct": 18,
       "readyInHours": 0,
       "ready": true
     },
@@ -11137,15 +11137,15 @@
       "key": "biceps",
       "label": "Biceps",
       "section": "Arms",
-      "pct": 76,
-      "readyInHours": 37,
+      "pct": 73,
+      "readyInHours": 35.2,
       "ready": false
     },
     "triceps": {
       "key": "triceps",
       "label": "Triceps",
       "section": "Arms",
-      "pct": 8,
+      "pct": 7,
       "readyInHours": 0,
       "ready": true
     },
@@ -11177,7 +11177,7 @@
       "key": "glutes",
       "label": "Glutes",
       "section": "Legs",
-      "pct": 4,
+      "pct": 3,
       "readyInHours": 0,
       "ready": true
     },
@@ -11201,16 +11201,16 @@
       "key": "core",
       "label": "Core",
       "section": "Core",
-      "pct": 52,
-      "readyInHours": 16.5,
+      "pct": 49,
+      "readyInHours": 14.7,
       "ready": false
     },
     "cardio": {
       "key": "cardio",
       "label": "Cardio",
       "section": "Cardio",
-      "pct": 34,
-      "readyInHours": 3.6,
+      "pct": 32,
+      "readyInHours": 1.8,
       "ready": false
     }
   },
@@ -11232,29 +11232,29 @@
     },
     "Back": {
       "section": "Back",
-      "pct": 46,
-      "readyInHours": 25.1,
+      "pct": 44,
+      "readyInHours": 23.3,
       "muscles": [
         {
           "key": "back",
           "label": "Back",
           "section": "Back",
-          "pct": 46,
-          "readyInHours": 25.1,
+          "pct": 44,
+          "readyInHours": 23.3,
           "ready": false
         }
       ]
     },
     "Shoulders": {
       "section": "Shoulders",
-      "pct": 19,
+      "pct": 18,
       "readyInHours": 0,
       "muscles": [
         {
           "key": "shoulders",
           "label": "Shoulders",
           "section": "Shoulders",
-          "pct": 19,
+          "pct": 18,
           "readyInHours": 0,
           "ready": true
         }
@@ -11262,22 +11262,22 @@
     },
     "Arms": {
       "section": "Arms",
-      "pct": 28,
-      "readyInHours": 37,
+      "pct": 27,
+      "readyInHours": 35.2,
       "muscles": [
         {
           "key": "biceps",
           "label": "Biceps",
           "section": "Arms",
-          "pct": 76,
-          "readyInHours": 37,
+          "pct": 73,
+          "readyInHours": 35.2,
           "ready": false
         },
         {
           "key": "triceps",
           "label": "Triceps",
           "section": "Arms",
-          "pct": 8,
+          "pct": 7,
           "readyInHours": 0,
           "ready": true
         },
@@ -11297,14 +11297,6 @@
       "readyInHours": 0,
       "muscles": [
         {
-          "key": "glutes",
-          "label": "Glutes",
-          "section": "Legs",
-          "pct": 4,
-          "readyInHours": 0,
-          "ready": true
-        },
-        {
           "key": "quads",
           "label": "Quads",
           "section": "Legs",
@@ -11315,6 +11307,14 @@
         {
           "key": "hamstrings",
           "label": "Hamstrings",
+          "section": "Legs",
+          "pct": 3,
+          "readyInHours": 0,
+          "ready": true
+        },
+        {
+          "key": "glutes",
+          "label": "Glutes",
           "section": "Legs",
           "pct": 3,
           "readyInHours": 0,
@@ -11340,30 +11340,30 @@
     },
     "Core": {
       "section": "Core",
-      "pct": 52,
-      "readyInHours": 16.5,
+      "pct": 49,
+      "readyInHours": 14.7,
       "muscles": [
         {
           "key": "core",
           "label": "Core",
           "section": "Core",
-          "pct": 52,
-          "readyInHours": 16.5,
+          "pct": 49,
+          "readyInHours": 14.7,
           "ready": false
         }
       ]
     },
     "Cardio": {
       "section": "Cardio",
-      "pct": 34,
-      "readyInHours": 3.6,
+      "pct": 32,
+      "readyInHours": 1.8,
       "muscles": [
         {
           "key": "cardio",
           "label": "Cardio",
           "section": "Cardio",
-          "pct": 34,
-          "readyInHours": 3.6,
+          "pct": 32,
+          "readyInHours": 1.8,
           "ready": false
         }
       ]
@@ -12958,9 +12958,9 @@
     "fatigue": 2,
     "restHours": 0,
     "readyNow": true,
-    "readyAt": "2026-11-28T13:52:31.690Z",
+    "readyAt": "2026-11-28T15:39:39.475Z",
     "neverLogged": false,
-    "daysSince": 7.2,
+    "daysSince": 7.3,
     "suggestedExercises": [
       {
         "name": "Hack Squat",
@@ -13204,25 +13204,25 @@
         "section": "Legs",
         "fatigue": 2,
         "readyInHours": 0,
-        "daysSince": 7.2
+        "daysSince": 7.3
       },
       {
         "section": "Push",
         "fatigue": 13,
         "readyInHours": 0,
-        "daysSince": 2.9
+        "daysSince": 3
       },
       {
         "section": "Cardio",
         "fatigue": 0,
         "readyInHours": 0,
-        "daysSince": 2.3
+        "daysSince": 2.4
       },
       {
         "section": "Pull",
-        "fatigue": 46,
-        "readyInHours": 25.1,
-        "daysSince": 0.2
+        "fatigue": 44,
+        "readyInHours": 23.3,
+        "daysSince": 0.3
       }
     ],
     "suggestedCount": 7,
@@ -13230,7 +13230,7 @@
     "typicalSessionSize": 6,
     "aerobicLast7": 2,
     "aerobicTarget": 3,
-    "daysSinceAerobic": 0.2
+    "daysSinceAerobic": 0.3
   },
   "alerts": [
     {
@@ -13259,7 +13259,7 @@
       21,
       24
     ],
-    "daysSinceLast": 0.2,
+    "daysSinceLast": 0.3,
     "total": 101
   },
   "relstrength": {
@@ -13326,7 +13326,7 @@
       "Z5": 0
     },
     "maxHr": 190,
-    "daysSinceLast": 0.2,
+    "daysSinceLast": 0.3,
     "recent": [
       {
         "t": 1795852800000,
