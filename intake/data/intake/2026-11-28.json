@@ -12,13 +12,13 @@
   "workout_today": true,
   "caffeine_shots": 2,
   "micros_sperm_priority": {
-    "zinc_mg": 4.1,
-    "selenium_mcg": 5,
-    "folate_mcg_dfe": 174,
-    "omega3_epa_dha_mg": 0,
-    "vitamin_c_mg": 78,
-    "vitamin_d_iu": 0,
-    "vitamin_e_mg": 2,
+    "zinc_mg": 5.1,
+    "selenium_mcg": 93,
+    "folate_mcg_dfe": 199,
+    "omega3_epa_dha_mg": 1700,
+    "vitamin_c_mg": 98,
+    "vitamin_d_iu": 300,
+    "vitamin_e_mg": 3.2,
     "lycopene_mg": 12.3
   },
   "status_note": "In progress. Slept 6.2h.",
@@ -139,9 +139,35 @@
       "fat_g": 2.3,
       "fiber_g": 0,
       "time_approx": true
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — baked sea bream (5g butter)",
+      "category": "food",
+      "qty": "220 g cooked + 5 g butter",
+      "kcal": 333,
+      "protein_g": 52.8,
+      "carbs_g": 0,
+      "fat_g": 14,
+      "fiber_g": 0,
+      "time_approx": true,
+      "note": "cooked bream ~135kcal/24g protein/4.5g fat per 100g (weight assumed as eaten, cooked) + 5g butter. Credits ~1700mg EPA+DHA, ~88mcg selenium, ~300IU vitamin D, ~1mg zinc."
+    },
+    {
+      "time": "13:00",
+      "name": "Lunch — baked potatoes with olive oil",
+      "category": "food",
+      "qty": "120 g baked (of a 280 g raw batch with 15 g olive oil)",
+      "kcal": 199,
+      "protein_g": 3.2,
+      "carbs_g": 28,
+      "fat_g": 8.7,
+      "fiber_g": 3.1,
+      "time_approx": true,
+      "note": "280g raw ≈ 210g baked (~25% water loss) → 120g eaten ≈ 57% of the batch, incl. ~8.6g of the 15g oil. Credits ~20mg vitamin C, ~1.2mg vitamin E."
     }
   ],
   "assumptions": [
-    "Lunch time not given (placeholder 13:00). Bream (baked with 5g butter) and baked potatoes (15g oil? across batch) pending amounts from user."
+    "Lunch time not given (placeholder 13:00). Bream weight treated as cooked/eaten; potatoes scaled from 280g raw batch (~210g baked)."
   ]
 }
